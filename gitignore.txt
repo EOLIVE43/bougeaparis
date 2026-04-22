@@ -1,0 +1,47 @@
+# =============================================================================
+# BougeaParis.fr - .gitignore
+# =============================================================================
+
+# SECRETS - Ne JAMAIS commiter ces fichiers
+public_html/config/secrets.php
+.env
+.env.local
+*.secret
+
+# Cache applicatif (genere sur le serveur)
+public_html/api/cache/*
+!public_html/api/cache/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editeurs / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Dependances (si un jour on utilise Composer ou npm)
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Deploiement FTP (cache du workflow GitHub Actions)
+.ftp-deploy-sync-state.json
+
+# Fichiers temporaires PHP
+*.tmp
+*.bak
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
