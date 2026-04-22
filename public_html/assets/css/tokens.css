@@ -1,0 +1,105 @@
+/**
+ * Design tokens - BougeaParis.fr
+ *
+ * Source unique de verite pour toutes les variables visuelles du site.
+ * Modifier ce fichier change l'apparence partout sans toucher au contenu.
+ */
+
+:root {
+    /* ===== COULEURS ===== */
+    /* Couleur d'accent principale (teal) */
+    --color-primary:       #0F6E56;
+    --color-primary-fg:    #FFFFFF;
+    --color-primary-bg:    #E1F5EE;
+    --color-primary-dark:  #085041;
+    --color-primary-darker:#04342C;
+
+    /* Neutres */
+    --color-bg:            #FFFFFF;
+    --color-bg-alt:        #F7F9F8;
+    --color-bg-tertiary:   #F1F3F2;
+    --color-text:          #1A2B26;
+    --color-text-muted:    #5A6B66;
+    --color-text-soft:     #8A9691;
+    --color-border:        #E0E6E4;
+    --color-border-strong: #B8C2BE;
+
+    /* Etats */
+    --color-success:       #1D9E75;
+    --color-success-bg:    #E1F5EE;
+    --color-warning:       #BA7517;
+    --color-warning-bg:    #FAEEDA;
+    --color-danger:        #A32D2D;
+    --color-danger-bg:     #FCEBEB;
+    --color-info:          #185FA5;
+    --color-info-bg:       #E6F1FB;
+
+    /* ===== TYPOGRAPHIE ===== */
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-serif: Georgia, "Times New Roman", serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+    --fs-xs:    0.75rem;  /* 12px */
+    --fs-sm:    0.875rem; /* 14px */
+    --fs-base:  1rem;     /* 16px */
+    --fs-md:    1.125rem; /* 18px */
+    --fs-lg:    1.25rem;  /* 20px */
+    --fs-xl:    1.5rem;   /* 24px */
+    --fs-2xl:   1.875rem; /* 30px */
+    --fs-3xl:   2.25rem;  /* 36px */
+    --fs-4xl:   3rem;     /* 48px */
+
+    --fw-regular:  400;
+    --fw-medium:   500;
+    --fw-semibold: 600;
+    --fw-bold:     700;
+
+    --lh-tight:  1.2;
+    --lh-snug:   1.4;
+    --lh-normal: 1.6;
+    --lh-relaxed:1.75;
+
+    /* ===== ESPACEMENTS ===== */
+    --sp-0:   0;
+    --sp-1:   0.25rem;  /*  4px */
+    --sp-2:   0.5rem;   /*  8px */
+    --sp-3:   0.75rem;  /* 12px */
+    --sp-4:   1rem;     /* 16px */
+    --sp-5:   1.25rem;  /* 20px */
+    --sp-6:   1.5rem;   /* 24px */
+    --sp-8:   2rem;     /* 32px */
+    --sp-10:  2.5rem;   /* 40px */
+    --sp-12:  3rem;     /* 48px */
+    --sp-16:  4rem;     /* 64px */
+    --sp-20:  5rem;     /* 80px */
+    --sp-24:  6rem;     /* 96px */
+
+    /* ===== LAYOUT ===== */
+    --container-max:   1200px;
+    --container-pad-x: 1.25rem;
+
+    --radius-sm:  4px;
+    --radius-md:  8px;
+    --radius-lg:  12px;
+    --radius-xl:  16px;
+    --radius-full: 9999px;
+
+    --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-md:  0 2px 8px rgba(0, 0, 0, 0.06);
+    --shadow-lg:  0 8px 24px rgba(0, 0, 0, 0.08);
+
+    --z-base:     1;
+    --z-dropdown: 10;
+    --z-header:   100;
+    --z-modal:    1000;
+
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.2s ease;
+    --transition-slow: 0.3s ease;
+
+    /* ===== BREAKPOINTS (en requetes media) ===== */
+    /* sm:  >= 640px  */
+    /* md:  >= 768px  */
+    /* lg:  >= 1024px */
+    /* xl:  >= 1280px */
+}

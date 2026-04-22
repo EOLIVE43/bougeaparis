@@ -1,0 +1,51 @@
+/**
+ * Ad slots - BougeaParis.fr
+ * Styles des emplacements publicitaires (AdSense).
+ * Les slots ont une apparence minimaliste, peu visible quand vides.
+ */
+
+.ad-slot {
+    margin: var(--sp-8) 0;
+    text-align: center;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.ad-slot__label {
+    display: block;
+    font-size: 10px;
+    color: var(--color-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--sp-2);
+}
+
+/* Variantes par position */
+.ad-slot--header {
+    margin: var(--sp-4) 0 var(--sp-6);
+}
+
+.ad-slot--in-article {
+    margin: var(--sp-8) auto;
+    max-width: 728px;
+}
+
+.ad-slot--sidebar {
+    margin: 0 0 var(--sp-6);
+}
+
+.ad-slot--footer {
+    margin: var(--sp-8) 0 var(--sp-4);
+}
+
+/* Container pour respecter les largeurs standards */
+.ad-slot ins.adsbygoogle {
+    display: block;
+    min-height: 50px;
+}
+
+/* Quand AdSense est desactive, on masque totalement les slots vides */
+.ad-slot:empty,
+.ad-slot--disabled {
+    display: none !important;
+}
