@@ -4,12 +4,6 @@
  *
  * Moteur de rendu PHP pur (pas de Twig/Blade, pour rester leger).
  * Gere layouts, partials et composants reutilisables.
- *
- * Usage :
- *   $tpl = new Template('home');
- *   $tpl->with('title', 'Accueil')
- *       ->with('posts', $posts)
- *       ->render();
  */
 
 class Template
@@ -44,6 +38,18 @@ class Template
     }
 
     /**
+     * Retourne les donnees globales injectees dans tous les templates
+     */
+    private function globalData(): array
+    {
+        return [
+            'site' => Config::all('site'),
+            'nav'  => Config::all('nav'),
+            'ads'  => Config::all('ads'),
+        ];
+    }
+
+    /**
      * Partial : inclut un fichier de template avec des donnees
      */
     public function partial(string $path, array $data = []): void
@@ -52,8 +58,8 @@ class Template
         if (!file_exists($fullPath)) {
             throw new RuntimeException("Template introuvable : $path");
         }
-        // Variables disponibles dans le template
-        extract(array_merge($this->data, $data), EXTR_SKIP);
+        // Variables globales + data du template + data specifique
+        extract(array_merge($this->globalData(), $this->data, $data), EXTR_SKIP);
         $tpl = $this;
         $seo = $this->seo;
         include $fullPath;
@@ -83,11 +89,8 @@ class Template
         $content = ob_get_clean();
 
         // Donnees globales dispo dans le layout
-        $data = array_merge($this->data, [
+        $data = array_merge($this->globalData(), $this->data, [
             'content' => $content,
-            'site'    => Config::all('site'),
-            'nav'     => Config::all('nav'),
-            'ads'     => Config::all('ads'),
         ]);
 
         extract($data, EXTR_SKIP);
