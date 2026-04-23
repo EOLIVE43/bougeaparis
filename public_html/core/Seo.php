@@ -43,10 +43,16 @@ class Seo
     }
 
     public function setCanonical(string $path): self
-    {
+{
+    // Si l'argument est deja une URL complete (http/https), on l'utilise tel quel
+    // Sinon on concatene avec l'URL du site
+    if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
+        $this->data['canonical'] = $path;
+    } else {
         $this->data['canonical'] = rtrim(Config::get('site.url'), '/') . $path;
-        return $this;
     }
+    return $this;
+}
 
     public function setOgImage(string $url): self
     {
