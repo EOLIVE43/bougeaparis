@@ -6,8 +6,8 @@
 
 return [
     // Google Search Console
-    'gsc_enabled'           => false,
-    'gsc_verification_code' => '',  // ex : 'abc123xyz456'
+    'gsc_enabled'           => true,
+    'gsc_verification_code' => 'czchIjp46RR8O0ATPO8hVN0_tQyouwydJ7CvmY_qSg0',  // ex : 'abc123xyz456'
 
     // Google Analytics 4
     'ga4_enabled'           => false,
