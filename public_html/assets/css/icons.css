@@ -90,3 +90,9 @@
     .site-nav__list a { gap: 6px; }
     .bp-icon--md { width: 28px; height: 28px; border-radius: 7px; }
 }
+
+/* Espacement uniforme du menu */
+.site-nav__list {
+    gap: 28px;
+    justify-content: flex-end;
+}
