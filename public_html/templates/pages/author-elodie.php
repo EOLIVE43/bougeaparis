@@ -1,9 +1,10 @@
 <?php
 /**
- * Page auteur - Elodie
+ * Page auteur - Élodie
  */
 $author = Config::get('authors.elodie');
 ?>
+
 <nav class="breadcrumb" aria-label="Fil d'Ariane">
     <div class="container">
         <ol class="breadcrumb__list">
@@ -19,23 +20,23 @@ $author = Config::get('authors.elodie');
         <img src="<?= e($author['avatar']) ?>" alt="<?= e($author['name']) ?>" width="96" height="96" style="border-radius:50%; flex-shrink:0;">
         <div>
             <h1 class="hero__title" style="margin-bottom:0.25rem;"><?= e($author['name']) ?></h1>
-            <p class="hero__subtitle" style="margin:0;"><?= e($author['role']) ?> - <?= e($author['bio']) ?></p>
+            <p class="hero__subtitle" style="margin:0;"><?= e($author['role']) ?> &mdash; <?= e($author['bio']) ?></p>
         </div>
     </div>
 </section>
 
 <section class="section">
     <div class="container" style="max-width:800px;">
-        <h2>Specialites</h2>
-        <p>Elodie ecrit principalement sur :</p>
+        <h2>Spécialités</h2>
+        <p>Élodie écrit principalement sur :</p>
         <ul>
             <?php foreach ($author['specialties'] as $specialty): ?>
             <li><?= e(ucfirst($specialty)) ?></li>
             <?php endforeach; ?>
         </ul>
 
-        <h2>Articles recents</h2>
-        <p class="text-muted">Les premiers articles signes par Elodie seront publies tres prochainement.</p>
+        <h2>Articles récents</h2>
+        <p class="text-muted">Les premiers articles signés par Élodie seront publiés très prochainement.</p>
     </div>
 </section>
 
