@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/ads.css">
     <link rel="stylesheet" href="/assets/css/cocons.css">
+    <link rel="stylesheet" href="/assets/css/icons.css">
 
 
 
