@@ -1,13 +1,12 @@
 <?php
 /**
- * Header commun a toutes les pages
- * Logo + slogan + menu principal
+ * Header commun à toutes les pages
+ * Logo + slogan + menu principal (avec pictos)
  */
 $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
 <header class="site-header" role="banner">
     <div class="container site-header__inner">
-
         <a href="/" class="site-logo" aria-label="<?= e($site['brand_name']) ?> - Accueil">
             <span class="site-logo__mark" aria-hidden="true">B</span>
             <span class="site-logo__text">
@@ -27,13 +26,16 @@ $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
                         || ($item['url'] !== '/' && str_starts_with($currentPath, $item['url']));
                 ?>
                 <li class="site-nav__item">
-                    <a href="<?= e($item['url']) ?>" class="site-nav__link<?= $isActive ? ' is-active' : '' ?>">
-                        <?= e($item['label']) ?>
+                    <a href="<?= e($item['url']) ?>" class="site-nav__link<?= $isActive ? ' is-active' : '' ?>"<?= $isActive ? ' aria-current="page"' : '' ?>>
+                        <?php $tpl->partial('components/icon-menu', [
+                            'icon' => $item['icon'] ?? 'metro',
+                            'size' => 'md',
+                        ]); ?>
+                        <span class="site-nav__label"><?= e($item['label']) ?></span>
                     </a>
                 </li>
                 <?php endforeach; ?>
             </ul>
         </nav>
-
     </div>
 </header>
