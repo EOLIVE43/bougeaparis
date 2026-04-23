@@ -16,7 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <?= $seo->renderHead() ?>
-
+<?php if (!empty($analytics['gsc_enabled']) && !empty($analytics['gsc_verification_code'])): ?>
+    <meta name="google-site-verification" content="<?= e($analytics['gsc_verification_code']) ?>">
+<?php endif; ?>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="<?= e($site['favicon']) ?>">
     <link rel="apple-touch-icon" href="<?= e($site['favicon_png']) ?>">
