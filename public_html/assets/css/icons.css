@@ -1,0 +1,91 @@
+/* ==========================================================================
+   BougeaParis.fr - Styles des pictogrammes de marque (icons.css)
+   Badges carres teal reutilisables : menu, H2, cards, footer
+   ========================================================================== */
+
+
+/* Base : carre teal arrondi, picto SVG a l'interieur */
+.bp-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent, #0F6E56);
+    color: var(--color-accent, #0F6E56); /* used by currentColor in SVG paths */
+    border-radius: 8px;
+    flex-shrink: 0;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+.bp-icon svg {
+    display: block;
+    width: 65%;
+    height: 65%;
+    color: #FFFFFF; /* currentColor on white paths is overridden via fill="white", and body of picto uses this */
+}
+
+/* Tailles */
+.bp-icon--sm { width: 26px; height: 26px; border-radius: 6px; }
+.bp-icon--md { width: 32px; height: 32px; border-radius: 8px; }
+.bp-icon--lg { width: 40px; height: 40px; border-radius: 9px; }
+.bp-icon--xl { width: 48px; height: 48px; border-radius: 10px; }
+
+
+/* ---------- Integration dans le menu principal ---------- */
+.site-nav__list a {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Active state : le picto prend un fond legerement plus clair pour se distinguer */
+.site-nav__list a[aria-current="page"] .bp-icon,
+.site-nav__list a.is-active .bp-icon {
+    background: var(--color-accent-dark, #085041);
+}
+
+
+/* ---------- Integration dans les H2 des pages hub ---------- */
+.page-section__header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 0 0 1rem;
+}
+
+.page-section__header h2 {
+    margin: 0 !important;
+}
+
+
+/* ---------- Integration dans les cards "Related transports" ---------- */
+.related-grid__item {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px !important;
+}
+
+.related-grid__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.related-grid__item-text strong {
+    font-size: 0.95rem;
+    color: #0B1B15;
+}
+
+.related-grid__item-text span {
+    font-size: 0.8rem;
+    color: #667;
+}
+
+
+/* ---------- Responsive mobile ---------- */
+@media (max-width: 768px) {
+    .site-nav__list a { gap: 6px; }
+    .bp-icon--md { width: 28px; height: 28px; border-radius: 7px; }
+}
