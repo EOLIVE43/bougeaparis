@@ -1,78 +1,85 @@
 <?php
 /**
- * Composant icon-menu : rendu d'un picto transport dans un badge teal carre.
+ * Composant icon-menu V2 : pictos transport en style Lucide (trait minimaliste).
  *
  * Props :
- *   - icon : slug du picto ('metro', 'rer', 'bus', 'tram', 'plane', 'train', 'blog')
+ *   - icon : slug ('metro', 'rer', 'bus', 'tram', 'plane', 'train', 'blog')
  *   - size : 'sm' (26px), 'md' (32px, defaut), 'lg' (40px), 'xl' (48px)
  *   - class : classe CSS additionnelle optionnelle
  *
- * Rend :
- *   <span class="bp-icon bp-icon--md"><svg>...</svg></span>
+ * Rend : <span class="bp-icon bp-icon--md"><svg>...</svg></span>
  */
 
-$icon = $props['icon'] ?? 'metro';
-$size = $props['size'] ?? 'md';
+$icon        = $props['icon']  ?? 'metro';
+$size        = $props['size']  ?? 'md';
 $extra_class = $props['class'] ?? '';
 
 $svg_map = [
 
-    'metro' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M6 3h12a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V5a2 2 0 0 1 2-2z" fill="currentColor"/>
-        <rect x="6.5" y="6" width="4" height="4" rx="1" fill="white"/>
-        <rect x="13.5" y="6" width="4" height="4" rx="1" fill="white"/>
-        <circle cx="8" cy="15.5" r="1" fill="white"/>
-        <circle cx="16" cy="15.5" r="1" fill="white"/>
-        <path d="M7 19l-1.5 2M17 19l1.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    // Metro : wagon vu de face avec pare-brise haut + trait vertical + roues
+    'metro' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="3" width="16" height="13" rx="2"/>
+        <line x1="4" y1="9" x2="20" y2="9"/>
+        <line x1="12" y1="3" x2="12" y2="9"/>
+        <circle cx="8" cy="13" r="0.7" fill="currentColor" stroke="none"/>
+        <circle cx="16" cy="13" r="0.7" fill="currentColor" stroke="none"/>
+        <line x1="6" y1="18" x2="8" y2="21"/>
+        <line x1="18" y1="18" x2="16" y2="21"/>
     </svg>',
 
-    'rer' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M5 4h14a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2z" fill="currentColor"/>
-        <rect x="5" y="7" width="14" height="4" rx="0.5" fill="white"/>
-        <circle cx="7" cy="14.5" r="1" fill="white"/>
-        <circle cx="17" cy="14.5" r="1" fill="white"/>
-        <path d="M6 18l-1.5 2M18 18l1.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    // RER : train horizontal avec ligne centrale + grosses roues rondes
+    'rer' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="8" width="20" height="8" rx="1"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <circle cx="6" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+        <circle cx="18" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+        <line x1="9" y1="18" x2="15" y2="18"/>
     </svg>',
 
-    'bus' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M5 5h14a1.5 1.5 0 0 1 1.5 1.5V16a2 2 0 0 1-2 2H5.5a2 2 0 0 1-2-2V6.5A1.5 1.5 0 0 1 5 5z" fill="currentColor"/>
-        <rect x="5" y="7.5" width="4" height="4" rx="0.5" fill="white"/>
-        <rect x="10" y="7.5" width="4" height="4" rx="0.5" fill="white"/>
-        <rect x="15" y="7.5" width="4" height="4" rx="0.5" fill="white"/>
-        <circle cx="7.5" cy="17.5" r="1.5" fill="white"/>
-        <circle cx="16.5" cy="17.5" r="1.5" fill="white"/>
-        <circle cx="7.5" cy="17.5" r="0.6" fill="currentColor"/>
-        <circle cx="16.5" cy="17.5" r="0.6" fill="currentColor"/>
+    // Bus : carrosserie de profil avec 2 fenetres pleines + roues
+    'bus' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 7a2 2 0 0 1 2-2h13a3 3 0 0 1 3 3v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <rect x="5" y="7" width="4" height="4" fill="currentColor" stroke="none"/>
+        <rect x="11" y="7" width="4" height="4" fill="currentColor" stroke="none"/>
+        <circle cx="7" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+        <circle cx="17" cy="18" r="1.5" fill="currentColor" stroke="none"/>
     </svg>',
 
-    'tram' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 2v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M6 5h12a1.5 1.5 0 0 1 1.5 1.5v10a2 2 0 0 1-2 2H6.5a2 2 0 0 1-2-2v-10A1.5 1.5 0 0 1 6 5z" fill="currentColor"/>
-        <rect x="6" y="7.5" width="5" height="4" rx="0.5" fill="white"/>
-        <rect x="13" y="7.5" width="5" height="4" rx="0.5" fill="white"/>
-        <circle cx="8" cy="15.5" r="1" fill="white"/>
-        <circle cx="16" cy="15.5" r="1" fill="white"/>
-        <path d="M7 19l-1.5 2M17 19l1.5 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    // Tramway : carre vertical avec catenaire (ligne electrique au-dessus)
+    'tram' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="4" y1="2" x2="20" y2="2"/>
+        <line x1="12" y1="2" x2="12" y2="5"/>
+        <rect x="5" y="5" width="14" height="14" rx="2"/>
+        <line x1="5" y1="11" x2="19" y2="11"/>
+        <rect x="7" y="7" width="3" height="3" fill="currentColor" stroke="none"/>
+        <rect x="14" y="7" width="3" height="3" fill="currentColor" stroke="none"/>
+        <line x1="5" y1="21" x2="7" y2="19"/>
+        <line x1="19" y1="21" x2="17" y2="19"/>
     </svg>',
 
-    'plane' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M21 15.5l-1 2-7-1.5v4l1.5 1.5L12 22l-2.5-1.5v-3L8 18l-5-2 1-2 4 0.5V10L5 7l1-1.5 4.5 2.5L12 4a1.5 1.5 0 0 1 3 0l1.5 4 4.5-2.5L22 7l-3.5 3v4.5L21 15.5z" fill="currentColor"/>
+    // Aeroports : avion classique en croix (vue de dessus)
+    'plane' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21.5 10.5L14 9V4a2 2 0 0 0-4 0v5L2.5 10.5a1 1 0 0 0-.5 1.5l1.5 1.5 6.5-1v4l-2 1.5v2l4-1 4 1v-2l-2-1.5v-4l6.5 1 1.5-1.5a1 1 0 0 0-.5-1.5z"/>
     </svg>',
 
-    'train' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M5 4h14a1.5 1.5 0 0 1 1.5 1.5V15a3 3 0 0 1-3 3H6.5a3 3 0 0 1-3-3V5.5A1.5 1.5 0 0 1 5 4z" fill="currentColor"/>
-        <rect x="5" y="6.5" width="6" height="5" rx="0.5" fill="white"/>
-        <rect x="13" y="6.5" width="6" height="5" rx="0.5" fill="white"/>
-        <rect x="7" y="13" width="10" height="1.5" rx="0.3" fill="white"/>
-        <circle cx="7.5" cy="16.5" r="1" fill="white"/>
-        <circle cx="16.5" cy="16.5" r="1" fill="white"/>
-        <path d="M6 19l-1.5 2M18 19l1.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    // Transilien : train de banlieue allonge avec 2 fenetres + rail
+    'train' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="12" rx="1"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+        <rect x="5" y="6" width="5" height="3" fill="currentColor" stroke="none"/>
+        <rect x="14" y="6" width="5" height="3" fill="currentColor" stroke="none"/>
+        <circle cx="7" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+        <circle cx="17" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+        <path d="M1 16h22"/>
     </svg>',
 
-    'blog' => '<svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M5 3h10l4 4v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="currentColor"/>
-        <path d="M15 3v4h4" fill="white"/>
-        <path d="M7 11h10M7 14h10M7 17h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    // Blog : feuille avec coin plie + lignes de texte
+    'blog' => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+        <polyline points="14 3 14 9 20 9"/>
+        <line x1="8" y1="13" x2="16" y2="13"/>
+        <line x1="8" y1="17" x2="13" y2="17"/>
     </svg>',
 ];
 

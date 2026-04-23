@@ -1,16 +1,16 @@
 /* ==========================================================================
-   BougeaParis.fr - Styles des pictogrammes de marque (icons.css)
-   Badges carres teal reutilisables : menu, H2, cards, footer
+   BougeaParis.fr - Styles des pictogrammes V2 (icons.css)
+   Pictos en trait (Lucide-style) sur badges teal reutilisables
    ========================================================================== */
 
 
-/* Base : carre teal arrondi, picto SVG a l'interieur */
+/* Badge teal */
 .bp-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: var(--color-accent, #0F6E56);
-    color: var(--color-accent, #0F6E56); /* used by currentColor in SVG paths */
+    color: #FFFFFF;  /* currentColor dans le SVG prend cette couleur */
     border-radius: 8px;
     flex-shrink: 0;
     line-height: 0;
@@ -21,7 +21,8 @@
     display: block;
     width: 65%;
     height: 65%;
-    color: #FFFFFF; /* currentColor on white paths is overridden via fill="white", and body of picto uses this */
+    stroke: currentColor;
+    fill: none;
 }
 
 /* Tailles */
@@ -38,14 +39,14 @@
     gap: 8px;
 }
 
-/* Active state : le picto prend un fond legerement plus clair pour se distinguer */
+/* Active state : fond legerement plus fonce pour distinguer la page courante */
 .site-nav__list a[aria-current="page"] .bp-icon,
 .site-nav__list a.is-active .bp-icon {
     background: var(--color-accent-dark, #085041);
 }
 
 
-/* ---------- Integration dans les H2 des pages hub ---------- */
+/* ---------- Integration devant les H2 (optionnel) ---------- */
 .page-section__header {
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@
 
 
 /* ---------- Integration dans les cards "Related transports" ---------- */
-.related-grid__item {
+.related-grid__item--with-icon {
     display: flex !important;
     align-items: center;
     gap: 12px;
