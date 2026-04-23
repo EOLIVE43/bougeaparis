@@ -6,15 +6,27 @@
  *   - h1       : titre principal
  *   - subtitle : sous-titre
  *   - chiffres : array de [['value'=>'16', 'label'=>'Lignes'], ...]
+ *   - icon     : slug du picto (metro, rer, bus, tram, plane, train, blog) - optionnel
  */
 
 $h1       = $props['h1']       ?? '';
 $subtitle = $props['subtitle'] ?? '';
 $chiffres = $props['chiffres'] ?? [];
+$icon     = $props['icon']     ?? null;
 ?>
 <section class="hero-cocon">
     <div class="hero-cocon__inner">
-        <h1 class="hero-cocon__title"><?= htmlspecialchars($h1) ?></h1>
+        <div class="hero-cocon__heading">
+            <?php if ($icon): ?>
+                <?php $tpl->partial('components/icon-menu', [
+                    'icon' => $icon,
+                    'size' => 'xl',
+                    'class' => 'hero-cocon__icon',
+                ]); ?>
+            <?php endif; ?>
+            <h1 class="hero-cocon__title"><?= htmlspecialchars($h1) ?></h1>
+        </div>
+
         <?php if ($subtitle): ?>
             <p class="hero-cocon__subtitle"><?= htmlspecialchars($subtitle) ?></p>
         <?php endif; ?>

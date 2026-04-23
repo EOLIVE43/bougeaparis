@@ -26,6 +26,7 @@ $tpl->partial('components/breadcrumb', [
         'h1'       => $cocon['hero']['h1']       ?? '',
         'subtitle' => $cocon['hero']['subtitle'] ?? '',
         'chiffres' => $cocon['hero']['chiffres'] ?? [],
+        'icon'     => 'metro',
     ]);
     ?>
 

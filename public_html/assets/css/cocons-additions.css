@@ -1,0 +1,38 @@
+/* ==========================================================================
+   BougeaParis.fr - Styles additionnels hero avec picto (Livraison 2.3)
+   A AJOUTER A LA FIN DE cocons.css
+   ========================================================================== */
+
+
+/* Hero avec picto en ligne avec le H1 */
+.hero-cocon__heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-cocon__heading .bp-icon {
+    flex-shrink: 0;
+}
+
+/* Override : le H1 perd sa marge car deja geree par le heading */
+.hero-cocon__heading .hero-cocon__title {
+    margin: 0 !important;
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Responsive mobile : picto un peu plus petit pour pas saturer */
+@media (max-width: 640px) {
+    .hero-cocon__heading {
+        gap: 12px;
+    }
+    .hero-cocon__heading .bp-icon--xl {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+    }
+}

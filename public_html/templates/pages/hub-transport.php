@@ -1,7 +1,7 @@
 <?php
 /**
  * Template generique hub-transport.
- * Avec accents francais complets.
+ * Avec accents francais complets et picto dans le hero.
  */
 
 $tpl->seo
@@ -17,6 +17,15 @@ $traffic_cocon_map = [
     'bus'        => 'bus',
 ];
 $traffic_cocon = $traffic_cocon_map[$cocon_slug] ?? null;
+
+$icon_map = [
+    'rer'        => 'rer',
+    'bus'        => 'bus',
+    'tramway'    => 'tram',
+    'aeroports'  => 'plane',
+    'transilien' => 'train',
+];
+$hero_icon = $icon_map[$cocon_slug] ?? null;
 ?>
 
 <?php
@@ -35,6 +44,7 @@ $tpl->partial('components/breadcrumb', [
         'h1'       => $cocon['hero']['h1']       ?? '',
         'subtitle' => $cocon['hero']['subtitle'] ?? '',
         'chiffres' => $cocon['hero']['chiffres'] ?? [],
+        'icon'     => $hero_icon,
     ]);
     ?>
 
