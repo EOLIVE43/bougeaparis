@@ -3,13 +3,13 @@
  * Page d'accueil
  *
  * Version Livraison 1 : structure minimale propre.
- * La home enrichie (widget itineraire, trafic live, blog) viendra en Livraison 3.
+ * La home enrichie (widget itinéraire, trafic live, blog) viendra en Livraison 3.
  */
 ?>
 <section class="hero">
     <div class="container">
-        <h1 class="hero__title">Tous les transports de Paris et d'Ile-de-France</h1>
-        <p class="hero__subtitle">Metro, RER, bus, tramway, aeroports : horaires, itineraires et trafic en temps reel. Pour les Parisiens qui se deplacent comme pour les visiteurs qui decouvrent.</p>
+        <h1 class="hero__title">Tous les transports de Paris et d'Île-de-France</h1>
+        <p class="hero__subtitle">Métro, RER, bus, tramway, aéroports : horaires, itinéraires et trafic en temps réel. Pour les Parisiens qui se déplacent comme pour les visiteurs qui découvrent.</p>
     </div>
 </section>
 
@@ -18,8 +18,7 @@
 <section class="section">
     <div class="container">
         <h2 class="section__title">Les transports franciliens</h2>
-        <p class="section__intro">Choisissez votre mode de transport pour acceder au guide detaille : lignes, stations, horaires et infos pratiques.</p>
-
+        <p class="section__intro">Choisissez votre mode de transport pour accéder au guide détaillé : lignes, stations, horaires et infos pratiques.</p>
         <div class="mode-grid">
             <?php foreach ($nav['main'] as $item): if ($item['url'] === '/blog/') continue; ?>
             <a href="<?= e($item['url']) ?>" class="mode-card mode-card--<?= e($item['icon']) ?>">
@@ -36,9 +35,9 @@
 <section class="section section--alt">
     <div class="container">
         <h2 class="section__title">Le blog BougeaParis</h2>
-        <p class="section__intro">Actualite des transports parisiens, trafic, travaux, nouveautes du reseau et conseils pratiques mis a jour quotidiennement.</p>
+        <p class="section__intro">Actualité des transports parisiens, trafic, travaux, nouveautés du réseau et conseils pratiques mis à jour quotidiennement.</p>
         <p class="section__cta">
-            <a href="/blog/" class="btn btn--primary">Decouvrir le blog</a>
+            <a href="/blog/" class="btn btn--primary">Découvrir le blog</a>
         </p>
     </div>
 </section>
