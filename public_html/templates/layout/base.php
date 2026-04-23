@@ -28,7 +28,36 @@
     try{if(localStorage.getItem('bp_consent')==='granted'){gtag('consent','update',{'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});}}catch(e){}
     </script>
 <?php endif; ?>
-
+<!-- Schema.org : Organization + WebSite (global, emis sur toutes les pages) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://bougeaparis.fr/#organization",
+                "name": "BougeaParis.fr",
+                "url": "https://bougeaparis.fr/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://bougeaparis.fr/assets/img/logo/og-image.png",
+                    "width": 1200,
+                    "height": 630
+                },
+                "description": "Guide complet des transports en Île-de-France : métro, RER, bus, tramway, aéroports, Transilien. Horaires, tarifs et infos pratiques."
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://bougeaparis.fr/#website",
+                "url": "https://bougeaparis.fr/",
+                "name": "BougeaParis.fr",
+                "description": "Se déplacer. Visiter.",
+                "publisher": { "@id": "https://bougeaparis.fr/#organization" },
+                "inLanguage": "fr-FR"
+            }
+        ]
+    }
+    </script>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="<?= e($site['favicon']) ?>">
     <link rel="apple-touch-icon" href="<?= e($site['favicon_png']) ?>">
