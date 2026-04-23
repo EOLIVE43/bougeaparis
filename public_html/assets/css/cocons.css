@@ -837,3 +837,57 @@
     font-weight: 600;
     margin-left: 0.25rem;
 }
+/* ==========================================================================
+   Related-nav : mini-menu d'exploration autres transports (en bas de page hub)
+   ========================================================================== */
+
+.related-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+}
+
+.related-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    min-width: 100px;
+    text-decoration: none;
+    color: #0B1B15;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    transition: all .15s;
+}
+
+.related-nav__item:hover {
+    border-color: var(--color-accent, #0F6E56);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(15, 110, 86, 0.08);
+}
+
+.related-nav__label {
+    font-weight: 600;
+    font-size: 0.925rem;
+}
+
+.related-nav__item .bp-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+}
+
+@media (max-width: 640px) {
+    .related-nav {
+        gap: 0.75rem;
+        justify-content: center;
+    }
+    .related-nav__item {
+        min-width: 80px;
+        padding: 0.5rem 0.75rem;
+    }
+}
