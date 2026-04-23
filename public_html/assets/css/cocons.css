@@ -719,3 +719,73 @@
         border-radius: 9px;
     }
 }
+/* ==========================================================================
+   Line-grid : liens sur titre uniquement (patch anti-404)
+   ========================================================================== */
+
+.line-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    color: inherit;
+    transition: border-color .15s;
+}
+
+.line-grid__name--link {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+}
+
+.line-grid__name--link:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
+
+.line-grid__item:has(.line-grid__name--link:hover) {
+    border-color: var(--color-accent, #0F6E56);
+}
+
+.airport-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    color: inherit;
+    transition: border-color .15s;
+}
+
+.airport-grid__name--link {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.airport-grid__name--link:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
+
+.airport-grid__item:has(.airport-grid__name--link:hover) {
+    border-color: var(--color-accent, #0F6E56);
+}
+
+.bus-network-grid__name {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+}
+
+.bus-network-grid__name:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
