@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="/assets/css/layout.css">
     <link rel="stylesheet" href="/assets/css/components.css">
     <link rel="stylesheet" href="/assets/css/ads.css">
+    <link rel="stylesheet" href="/assets/css/cocons.css">
+
+
 
     <!-- RSS (blog) -->
     <link rel="alternate" type="application/rss+xml" title="<?= e($site['brand_name']) ?> - Blog" href="/blog/rss.xml">
