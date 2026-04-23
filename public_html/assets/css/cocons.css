@@ -789,3 +789,51 @@
     color: var(--color-accent, #0F6E56);
     text-decoration: underline;
 }
+/* ==========================================================================
+   Fix : reaffiche terminus + meta (nombre de stations, badge Auto)
+   ========================================================================== */
+
+.line-grid__info {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+    flex: 1;
+}
+
+.line-grid__name {
+    font-weight: 600;
+    color: #0B1B15;
+    font-size: 0.95rem;
+    display: block;
+}
+
+.line-grid__termini {
+    font-size: 0.8rem;
+    color: #667;
+    line-height: 1.35;
+    display: block;
+}
+
+.line-grid__arrow {
+    margin: 0 0.3rem;
+    color: #AAB;
+}
+
+.line-grid__meta {
+    font-size: 0.75rem;
+    color: #889;
+    margin-top: 0.15rem;
+    display: block;
+}
+
+.line-grid__tag {
+    display: inline-block;
+    background: var(--color-accent, #0F6E56);
+    color: #FFF;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+}
