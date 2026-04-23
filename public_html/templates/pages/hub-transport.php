@@ -1,8 +1,16 @@
 <?php
 /**
  * Template generique hub-transport.
- * Avec accents francais complets et picto dans le hero.
+ * Lit les variables depuis $props car appele en tant que partial via les wrappers.
  */
+
+// --- Recup des props passees par les wrappers hub-rer.php, hub-bus.php, etc. ---
+$cocon          = $props['cocon']          ?? [];
+$lines          = $props['lines']          ?? [];
+$cocon_slug     = $props['cocon_slug']     ?? '';
+$cocon_label    = $props['cocon_label']    ?? '';
+$grid_component = $props['grid_component'] ?? '';
+$data_key       = $props['data_key']       ?? '';
 
 $tpl->seo
     ->setTitle($cocon['seo']['title']       ?? '')
@@ -32,7 +40,7 @@ $hero_icon = $icon_map[$cocon_slug] ?? null;
 $tpl->partial('components/breadcrumb', [
     'items' => [
         ['label' => 'Accueil', 'url' => '/'],
-        ['label' => $cocon_label ?? ''],
+        ['label' => $cocon_label],
     ],
 ]);
 ?>
