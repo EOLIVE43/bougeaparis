@@ -53,17 +53,19 @@ class Template
      * Partial : inclut un fichier de template avec des donnees
      */
     public function partial(string $path, array $data = []): void
-    {
-        $fullPath = __DIR__ . '/../templates/' . $path . '.php';
-        if (!file_exists($fullPath)) {
-            throw new RuntimeException("Template introuvable : $path");
-        }
-        // Variables globales + data du template + data specifique
-        extract(array_merge($this->globalData(), $this->data, $data), EXTR_SKIP);
-        $tpl = $this;
-        $seo = $this->seo;
-        include $fullPath;
+{
+    $fullPath = __DIR__ . '/../templates/' . $path . '.php';
+    if (!file_exists($fullPath)) {
+        throw new RuntimeException("Template introuvable : $path");
     }
+    // Donnees globales (site, nav, ads) + donnees du template
+    extract(array_merge($this->globalData(), $this->data), EXTR_SKIP);
+    $tpl = $this;
+    $seo = $this->seo;
+    // Les props specifiques du partial sont passees dans $props
+    $props = $data;
+    include $fullPath;
+}
 
     /**
      * Rendu d'un composant (avec son propre scope)
