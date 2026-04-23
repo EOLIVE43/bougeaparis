@@ -1,0 +1,98 @@
+/* ==========================================================================
+   BougeaParis.fr - Banniere cookies RGPD (simple accepter/refuser)
+   ========================================================================== */
+
+.bp-cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #FFFFFF;
+    border-top: 2px solid var(--color-accent, #0F6E56);
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+    padding: 1rem 1.25rem;
+}
+
+.bp-cookie-banner[hidden] { display: none !important; }
+
+.bp-cookie-banner__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.bp-cookie-banner__text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.bp-cookie-banner__title {
+    margin: 0 0 0.25rem;
+    font-size: 0.95rem;
+    color: #0B1B15;
+}
+
+.bp-cookie-banner__desc {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #556;
+    line-height: 1.45;
+}
+
+.bp-cookie-banner__desc a {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
+
+.bp-cookie-banner__actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.bp-cookie-banner__btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid #D0D0D0;
+    background: #FFF;
+    color: #334;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .15s, border-color .15s;
+}
+
+.bp-cookie-banner__btn:hover {
+    background: #F5F5F5;
+    border-color: #BBB;
+}
+
+.bp-cookie-banner__btn--accept {
+    background: var(--color-accent, #0F6E56);
+    color: #FFF;
+    border-color: var(--color-accent, #0F6E56);
+}
+
+.bp-cookie-banner__btn--accept:hover {
+    background: var(--color-accent-dark, #085041);
+    border-color: var(--color-accent-dark, #085041);
+}
+
+@media (max-width: 640px) {
+    .bp-cookie-banner__inner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .bp-cookie-banner__actions {
+        justify-content: stretch;
+    }
+    .bp-cookie-banner__btn {
+        flex: 1;
+    }
+}
