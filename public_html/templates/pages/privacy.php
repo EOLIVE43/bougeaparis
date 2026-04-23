@@ -1,78 +1,75 @@
 <?php
 /**
- * Page Politique de confidentialite
+ * Page Politique de confidentialité
  */
 ?>
+
 <nav class="breadcrumb" aria-label="Fil d'Ariane">
     <div class="container">
         <ol class="breadcrumb__list">
             <li><a href="/">Accueil</a></li>
-            <li class="breadcrumb__current">Confidentialite</li>
+            <li class="breadcrumb__current">Confidentialité</li>
         </ol>
     </div>
 </nav>
 
 <section class="hero">
     <div class="container">
-        <h1 class="hero__title">Politique de confidentialite</h1>
+        <h1 class="hero__title">Politique de confidentialité</h1>
     </div>
 </section>
 
 <section class="section">
     <div class="container" style="max-width:800px;">
+        <p class="text-muted"><small>Dernière mise à jour : <?= date('d/m/Y') ?></small></p>
 
-        <p class="text-muted"><small>Derniere mise a jour : <?= date('d/m/Y') ?></small></p>
+        <h2>Données collectées</h2>
+        <p>BougeaParis.fr collecte le minimum de données nécessaires à son fonctionnement. Nous ne demandons aucune création de compte pour consulter le site.</p>
 
-        <h2>Donnees collectees</h2>
-        <p>BougeaParis.fr collecte le minimum de donnees necessaires a son fonctionnement. Nous ne demandons aucune creation de compte pour consulter le site.</p>
-
-        <h3>Donnees collectees automatiquement</h3>
+        <h3>Données collectées automatiquement</h3>
         <ul>
-            <li><strong>Donnees techniques</strong> : adresse IP, navigateur, systeme d'exploitation, pages visitees. Ces donnees sont collectees via les logs serveur pour des raisons de securite et conservees 12 mois maximum.</li>
-            <li><strong>Cookies</strong> : voir section dediee ci-dessous.</li>
+            <li><strong>Données techniques</strong> : adresse IP, navigateur, système d'exploitation, pages visitées. Ces données sont collectées via les logs serveur pour des raisons de sécurité et conservées 12 mois maximum.</li>
+            <li><strong>Cookies</strong> : voir section dédiée ci-dessous.</li>
         </ul>
 
-        <h3>Donnees que vous nous transmettez</h3>
+        <h3>Données que vous nous transmettez</h3>
         <ul>
-            <li><strong>Contact par email</strong> : si vous nous ecrivez, nous conservons votre email et votre message pour repondre a votre demande.</li>
+            <li><strong>Contact par email</strong> : si vous nous écrivez, nous conservons votre email et votre message pour répondre à votre demande.</li>
         </ul>
 
         <h2>Cookies</h2>
-        <p>BougeaParis.fr utilise des cookies pour ameliorer votre experience :</p>
+        <p>BougeaParis.fr utilise des cookies pour améliorer votre expérience :</p>
 
         <h3>Cookies essentiels</h3>
-        <p>Ces cookies sont necessaires au fonctionnement du site (memoriser vos preferences d'affichage, session technique). Ils ne peuvent pas etre desactives.</p>
+        <p>Ces cookies sont nécessaires au fonctionnement du site (mémoriser vos préférences d'affichage, session technique). Ils ne peuvent pas être désactivés.</p>
 
         <h3>Cookies de mesure d'audience</h3>
-        <p>Nous pouvons utiliser des outils de mesure d'audience (Google Analytics, Plausible, etc.) pour comprendre comment vous utilisez le site. Ces outils sont configures de facon a respecter votre vie privee.</p>
+        <p>Nous pouvons utiliser des outils de mesure d'audience (Google Analytics, Plausible, etc.) pour comprendre comment vous utilisez le site. Ces outils sont configurés de façon à respecter votre vie privée.</p>
 
         <h3>Cookies publicitaires</h3>
-        <p>Lorsque la publicite sera activee sur le site (via Google AdSense), des cookies publicitaires pourront etre deposes. Vous pouvez a tout moment gerer vos preferences publicitaires via les parametres de Google (<a href="https://myadcenter.google.com/" target="_blank" rel="noopener">myadcenter.google.com</a>).</p>
+        <p>Lorsque la publicité sera activée sur le site (via Google AdSense), des cookies publicitaires pourront être déposés. Vous pouvez à tout moment gérer vos préférences publicitaires via les paramètres de Google (<a href="https://myadcenter.google.com/" target="_blank" rel="noopener">myadcenter.google.com</a>).</p>
 
         <h2>Vos droits (RGPD)</h2>
-        <p>Conformement au Reglement General sur la Protection des Donnees (RGPD) et a la loi Informatique et Libertes, vous disposez des droits suivants :</p>
+        <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
         <ul>
-            <li>Droit d'acces a vos donnees personnelles</li>
+            <li>Droit d'accès à vos données personnelles</li>
             <li>Droit de rectification</li>
-            <li>Droit a l'effacement (droit a l'oubli)</li>
-            <li>Droit a la portabilite</li>
+            <li>Droit à l'effacement (droit à l'oubli)</li>
+            <li>Droit à la portabilité</li>
             <li>Droit d'opposition au traitement</li>
             <li>Droit de limitation du traitement</li>
         </ul>
+        <p>Pour exercer ces droits, contactez-nous à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
+        <p>Vous avez également le droit d'introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
 
-        <p>Pour exercer ces droits, contactez-nous a <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
-
-        <p>Vous avez egalement le droit d'introduire une reclamation aupres de la CNIL : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
-
-        <h2>Partage de donnees</h2>
-        <p>Nous ne vendons ni ne louons vos donnees personnelles. Elles peuvent etre partagees uniquement avec :</p>
+        <h2>Partage de données</h2>
+        <p>Nous ne vendons ni ne louons vos données personnelles. Elles peuvent être partagées uniquement avec :</p>
         <ul>
-            <li>Notre hebergeur (o2switch) dans le cadre strict du fonctionnement technique du site</li>
-            <li>Les autorites competentes si la loi nous y oblige</li>
+            <li>Notre hébergeur (o2switch) dans le cadre strict du fonctionnement technique du site</li>
+            <li>Les autorités compétentes si la loi nous y oblige</li>
         </ul>
 
         <h2>Contact</h2>
-        <p>Pour toute question concernant cette politique de confidentialite, ecrivez a <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
-
+        <p>Pour toute question concernant cette politique de confidentialité, écrivez à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
     </div>
 </section>
