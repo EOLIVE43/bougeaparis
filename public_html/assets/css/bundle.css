@@ -480,3 +480,17 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     .bp-cookie-banner__actions { justify-content: stretch; }
     .bp-cookie-banner__btn { flex: 1; }
 }
+/* ==========================================================================
+   Fix : contraste du .fr dans logo (accessibilite)
+   ========================================================================== */
+
+/* Header (fond blanc) : teal plus fonce pour passer le contraste WCAG AA */
+.site-logo__tld {
+    color: var(--color-primary-dark, #085041);
+}
+
+/* Footer (fond sombre) : teal clair pour etre lisible sur fond fonce */
+.site-footer .site-logo__tld,
+.site-footer__logo .site-logo__tld {
+    color: #5DCAA5;
+}
