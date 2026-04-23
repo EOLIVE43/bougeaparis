@@ -146,13 +146,9 @@ if ($mode === 'cocon') {
         </ul>
     <?php endif; ?>
 
-    <footer class="traffic-widget__footer">
-        <a href="<?= htmlspecialchars($articleUrl) ?>" class="traffic-widget__link">
-            Voir l'article complet du jour
-            <span aria-hidden="true">&rarr;</span>
-        </a>
-        <?php if (!$isToday): ?>
+    <?php if (!$isToday): ?>
+        <footer class="traffic-widget__footer">
             <span class="traffic-widget__warning">Données du <?= date('d/m/Y', strtotime($dateData)) ?></span>
-        <?php endif; ?>
-    </footer>
+        </footer>
+    <?php endif; ?>
 </aside>
