@@ -5,12 +5,11 @@
  * Menu principal (header) et menus secondaires (footer).
  * Modifier ce fichier pour changer les liens de navigation partout.
  */
-
 return [
     // Menu principal (header)
     'main' => [
         [
-            'label' => 'Metro',
+            'label' => 'Métro',
             'url'   => '/metro/',
             'icon'  => 'metro',
         ],
@@ -30,7 +29,7 @@ return [
             'icon'  => 'tram',
         ],
         [
-            'label' => 'Aeroports',
+            'label' => 'Aéroports',
             'url'   => '/aeroports/',
             'icon'  => 'plane',
         ],
@@ -45,30 +44,27 @@ return [
             'icon'  => 'blog',
         ],
     ],
-
-    // Menu footer - colonne 1 : decouvrir
+    // Menu footer - colonne 1 : découvrir
     'footer_discover' => [
-        ['label' => 'Metro de Paris',    'url' => '/metro/'],
-        ['label' => 'Reseau RER',        'url' => '/rer/'],
+        ['label' => 'Métro de Paris',    'url' => '/metro/'],
+        ['label' => 'Réseau RER',        'url' => '/rer/'],
         ['label' => 'Lignes de bus',     'url' => '/bus/'],
         ['label' => 'Tramways',          'url' => '/tramway/'],
-        ['label' => 'Aeroports',         'url' => '/aeroports/'],
+        ['label' => 'Aéroports',         'url' => '/aeroports/'],
         ['label' => 'Transilien',        'url' => '/transilien/'],
     ],
-
     // Menu footer - colonne 2 : utile
     'footer_tools' => [
         ['label' => 'Blog',              'url' => '/blog/'],
-        ['label' => 'Itineraires',       'url' => '/itineraires/'],
+        ['label' => 'Itinéraires',       'url' => '/itineraires/'],
         ['label' => 'Tarifs',            'url' => '/tarifs/'],
         ['label' => 'Plans',             'url' => '/plans/'],
     ],
-
-    // Menu footer - colonne 3 : a propos
+    // Menu footer - colonne 3 : à propos
     'footer_about' => [
-        ['label' => 'A propos',          'url' => '/a-propos/'],
+        ['label' => 'À propos',          'url' => '/a-propos/'],
         ['label' => 'Contact',           'url' => '/contact/'],
-        ['label' => 'Mentions legales',  'url' => '/mentions-legales/'],
-        ['label' => 'Confidentialite',   'url' => '/confidentialite/'],
+        ['label' => 'Mentions légales',  'url' => '/mentions-legales/'],
+        ['label' => 'Confidentialité',   'url' => '/confidentialite/'],
     ],
 ];
