@@ -46,6 +46,8 @@ class Template
             'site' => Config::all('site'),
             'nav'  => Config::all('nav'),
             'ads'  => Config::all('ads'),
+            'analytics' => Config::all('analytics'),
+
         ];
     }
 
