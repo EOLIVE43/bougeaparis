@@ -1,217 +1,132 @@
 <?php
 /**
- * Front controller - BougeaParis.fr
+ * Front Controller - BougeaParis.fr
  *
- * Point d'entree unique de l'application.
- * .htaccess redirige toutes les requetes non-fichier vers ce fichier.
+ * Livraison 2 : routing vers les nouveaux templates hub enrichis.
+ * Les 6 cocons (metro, rer, bus, tramway, aeroports, transilien) utilisent
+ * les templates dedies avec contenu editorial et composants.
+ *
+ * Pour chaque cocon :
+ * - Charge config/cocons/<slug>.php (contenu editorial)
+ * - Charge data/lines.json (donnees des lignes)
+ * - Rend le template pages/hub-<slug>.php
+ *
+ * Les autres pages (home, a-propos, contact, legal, 404...) continuent
+ * d'utiliser les templates de la Livraison 1.
  */
 
-// Chargement du noyau
-require __DIR__ . '/core/Config.php';
-require __DIR__ . '/core/bootstrap.php';
+declare(strict_types=1);
 
-// Recuperer le chemin demande
-$uri = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
-$uri = rtrim($uri, '/') ?: '/';
+// -------------------- Bootstrap --------------------
+require_once __DIR__ . '/core/bootstrap.php';
 
-// Router simplifie
-$routes = [
-    '/'                   => 'home',
-    '/metro'              => 'metro-hub',
-    '/rer'                => 'rer-hub',
-    '/bus'                => 'bus-hub',
-    '/tramway'            => 'tramway-hub',
-    '/aeroports'          => 'aeroports-hub',
-    '/transilien'         => 'transilien-hub',
-    '/blog'               => 'blog-index',
-    '/a-propos'           => 'about',
-    '/contact'            => 'contact',
-    '/mentions-legales'   => 'legal',
-    '/confidentialite'    => 'privacy',
-    '/auteur/ludo'        => 'author-ludo',
-    '/auteur/elodie'      => 'author-elodie',
-];
+// -------------------- Parse URL --------------------
+$uri  = $_SERVER['REQUEST_URI'] ?? '/';
+$path = parse_url($uri, PHP_URL_PATH) ?? '/';
+$path = rtrim($path, '/');
+if ($path === '') $path = '/';
 
-if (isset($routes[$uri])) {
-    $page = $routes[$uri];
-} else {
-    http_response_code(404);
-    $page = '404';
-}
-
-// Verification que le template existe
-$templatePath = __DIR__ . '/templates/pages/' . $page . '.php';
-if (!file_exists($templatePath)) {
-    // Fallback 404 si la page n'existe pas encore
-    http_response_code(404);
-    $page = '404';
-}
-
-// Rendu
-$tpl = new Template($page);
-
-// Configuration SEO par defaut selon la page
-configureSeoForPage($tpl, $page, $uri);
-
-$tpl->render();
-
+// -------------------- Helpers chargement cocon --------------------
 
 /**
- * Configure les meta SEO par defaut pour chaque page
+ * Charge le contenu editorial d'un cocon + les donnees lignes.
+ * Retourne false si un fichier manque.
  */
-function configureSeoForPage(Template $tpl, string $page, string $uri): void
-{
-    $site = Config::all('site');
+function bp_load_cocon(string $slug): array|false {
+    $cocon_path = __DIR__ . '/config/cocons/' . $slug . '.php';
+    $lines_path = __DIR__ . '/data/lines.json';
 
-    switch ($page) {
-        case 'home':
-            $tpl->seo
-                ->setTitle('Guide des transports parisiens', true)
-                ->setDescription('Metro, RER, bus, tramway, aeroports : retrouvez tout ce qu\'il faut savoir pour vous deplacer a Paris et en Ile-de-France. Horaires, itineraires, trafic en temps reel.')
-                ->setCanonical('/')
-                ->addSchema([
-                    '@context' => 'https://schema.org',
-                    '@type'    => 'WebSite',
-                    'name'     => $site['brand_name'],
-                    'alternateName' => 'Bouge a Paris',
-                    'url'      => $site['url'],
-                    'potentialAction' => [
-                        '@type' => 'SearchAction',
-                        'target' => [
-                            '@type' => 'EntryPoint',
-                            'urlTemplate' => $site['url'] . '/recherche/?q={search_term_string}',
-                        ],
-                        'query-input' => 'required name=search_term_string',
-                    ],
-                ])
-                ->addSchema([
-                    '@context' => 'https://schema.org',
-                    '@type'    => 'Organization',
-                    'name'     => $site['brand_name'],
-                    'url'      => $site['url'],
-                    'logo'     => $site['url'] . $site['logo_svg'],
-                    'email'    => $site['contact_email'],
-                ]);
-            break;
-
-        case 'metro-hub':
-            $tpl->seo
-                ->setTitle('Metro de Paris : lignes, stations et horaires')
-                ->setDescription('Le guide complet du metro parisien : 16 lignes, plus de 300 stations, plans, horaires et trafic en temps reel.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil', 'url' => '/'],
-                    ['label' => 'Metro',   'url' => '/metro/'],
-                ]);
-            break;
-
-        case 'rer-hub':
-            $tpl->seo
-                ->setTitle('RER Paris : lignes A, B, C, D, E')
-                ->setDescription('Le reseau RER d\'Ile-de-France : 5 lignes pour se deplacer rapidement entre Paris et la banlieue. Horaires, stations et trafic.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil', 'url' => '/'],
-                    ['label' => 'RER',     'url' => '/rer/'],
-                ]);
-            break;
-
-        case 'bus-hub':
-            $tpl->seo
-                ->setTitle('Bus a Paris : lignes de jour et Noctilien')
-                ->setDescription('Le reseau de bus parisien : lignes de jour, bus de nuit Noctilien, arrets, horaires et trafic temps reel.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil', 'url' => '/'],
-                    ['label' => 'Bus',     'url' => '/bus/'],
-                ]);
-            break;
-
-        case 'tramway-hub':
-            $tpl->seo
-                ->setTitle('Tramway de Paris et d\'Ile-de-France')
-                ->setDescription('Les 14 lignes de tramway de la region parisienne : trace, arrets, correspondances et horaires.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil', 'url' => '/'],
-                    ['label' => 'Tramway', 'url' => '/tramway/'],
-                ]);
-            break;
-
-        case 'aeroports-hub':
-            $tpl->seo
-                ->setTitle('Aeroports de Paris : CDG, Orly, Beauvais')
-                ->setDescription('Comment rejoindre les aeroports parisiens : Charles-de-Gaulle, Orly et Beauvais. Train, bus, RER, taxi et VTC.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil',   'url' => '/'],
-                    ['label' => 'Aeroports', 'url' => '/aeroports/'],
-                ]);
-            break;
-
-        case 'transilien-hub':
-            $tpl->seo
-                ->setTitle('Transilien : trains de banlieue en Ile-de-France')
-                ->setDescription('Les lignes Transilien H, J, K, L, N, P, R et U. Horaires, gares et informations sur les trains de banlieue parisiens.')
-                ->setCanonical($uri . '/')
-                ->setBreadcrumb([
-                    ['label' => 'Accueil',    'url' => '/'],
-                    ['label' => 'Transilien', 'url' => '/transilien/'],
-                ]);
-            break;
-
-        case 'blog-index':
-            $tpl->seo
-                ->setTitle('Blog : actualites des transports parisiens')
-                ->setDescription('Toute l\'actualite des transports a Paris : trafic, travaux, nouveautes du reseau, conseils pratiques et bons plans.')
-                ->setCanonical('/blog/');
-            break;
-
-        case 'about':
-            $tpl->seo
-                ->setTitle('A propos')
-                ->setDescription('Decouvrez BougeaParis.fr, le guide independant des transports parisiens redige par Ludo et Elodie.')
-                ->setCanonical('/a-propos/');
-            break;
-
-        case 'contact':
-            $tpl->seo
-                ->setTitle('Contact')
-                ->setDescription('Contactez l\'equipe de BougeaParis.fr pour toute question, suggestion ou signalement.')
-                ->setCanonical('/contact/');
-            break;
-
-        case 'legal':
-            $tpl->seo
-                ->setTitle('Mentions legales')
-                ->setDescription('Mentions legales de BougeaParis.fr.')
-                ->setCanonical('/mentions-legales/');
-            break;
-
-        case 'privacy':
-            $tpl->seo
-                ->setTitle('Politique de confidentialite')
-                ->setDescription('Politique de confidentialite et gestion des donnees sur BougeaParis.fr.')
-                ->setCanonical('/confidentialite/');
-            break;
-
-        case 'author-ludo':
-        case 'author-elodie':
-            $slug = str_replace('author-', '', $page);
-            $author = Config::get("authors.$slug");
-            if ($author) {
-                $tpl->seo
-                    ->setTitle($author['name'] . ' - ' . $author['role'])
-                    ->setDescription($author['bio'])
-                    ->setCanonical($author['url']);
-                $tpl->with('author', $author);
-            }
-            break;
-
-        case '404':
-            $tpl->seo
-                ->setTitle('Page introuvable')
-                ->setDescription('Cette page n\'existe pas ou a ete deplacee.');
-            break;
+    if (!file_exists($cocon_path) || !file_exists($lines_path)) {
+        return false;
     }
+
+    $cocon = require $cocon_path;
+    $lines = json_decode(file_get_contents($lines_path), true) ?: [];
+
+    return ['cocon' => $cocon, 'lines' => $lines];
+}
+
+/**
+ * Rend une page hub transport.
+ */
+function bp_render_hub(string $slug, string $template = null): void {
+    $data = bp_load_cocon($slug);
+    if (!$data) {
+        bp_render_404();
+        return;
+    }
+
+    $tpl = new Template($template ?? ('hub-' . $slug));
+    $tpl->withData([
+        'cocon' => $data['cocon'],
+        'lines' => $data['lines'],
+    ]);
+    $tpl->render();
+}
+
+/**
+ * Rend la page 404.
+ */
+function bp_render_404(): void {
+    http_response_code(404);
+    $tpl = new Template('404');
+    $tpl->render();
+}
+
+// -------------------- Routing --------------------
+
+switch ($path) {
+
+    // --- Home ---
+    case '/':
+        $tpl = new Template('home');
+        $tpl->render();
+        break;
+
+    // --- Pages hub transport (enrichies Livraison 2) ---
+    case '/metro':
+        bp_render_hub('metro');
+        break;
+    case '/rer':
+        bp_render_hub('rer');
+        break;
+    case '/bus':
+        bp_render_hub('bus');
+        break;
+    case '/tramway':
+        bp_render_hub('tramway');
+        break;
+    case '/aeroports':
+        bp_render_hub('aeroports');
+        break;
+    case '/transilien':
+        bp_render_hub('transilien');
+        break;
+
+    // --- Pages Livraison 1 ---
+    case '/blog':
+        (new Template('blog-index'))->render();
+        break;
+    case '/a-propos':
+        (new Template('about'))->render();
+        break;
+    case '/contact':
+        (new Template('contact'))->render();
+        break;
+    case '/mentions-legales':
+        (new Template('legal'))->render();
+        break;
+    case '/confidentialite':
+        (new Template('privacy'))->render();
+        break;
+    case '/auteur/ludo':
+        (new Template('author-ludo'))->render();
+        break;
+    case '/auteur/elodie':
+        (new Template('author-elodie'))->render();
+        break;
+
+    default:
+        bp_render_404();
+        break;
 }

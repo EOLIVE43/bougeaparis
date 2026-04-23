@@ -1,0 +1,692 @@
+/* ==========================================================================
+   BougeaParis.fr - Styles des composants Livraison 2
+   Cocons transport, badges, grilles, traffic-widget, FAQ, breadcrumb
+   ========================================================================== */
+
+
+/* ---------- BREADCRUMB ---------- */
+.breadcrumb {
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #666);
+}
+.breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.5rem;
+    margin: 0;
+    padding: 0 var(--container-padding, 1.5rem);
+    list-style: none;
+    max-width: var(--container-max, 1200px);
+    margin-inline: auto;
+}
+.breadcrumb__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.breadcrumb__item a {
+    color: var(--color-text-muted, #666);
+    text-decoration: none;
+}
+.breadcrumb__item a:hover { color: var(--color-accent, #0F6E56); text-decoration: underline; }
+.breadcrumb__item [aria-current="page"] { color: var(--color-text, #222); font-weight: 500; }
+.breadcrumb__separator { color: #bbb; }
+
+
+/* ---------- HERO COCON ---------- */
+.hero-cocon {
+    background: linear-gradient(180deg, #F5F9F7 0%, #FFFFFF 100%);
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #EEE;
+}
+.hero-cocon__inner {
+    max-width: var(--container-max, 1200px);
+    margin-inline: auto;
+    padding: 0 var(--container-padding, 1.5rem);
+}
+.hero-cocon__title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+    color: var(--color-text, #0B1B15);
+    letter-spacing: -0.02em;
+}
+.hero-cocon__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #455;
+    max-width: 720px;
+    margin: 0 0 2rem;
+}
+.hero-cocon__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.hero-cocon__stat {
+    background: #FFF;
+    padding: 1rem 1.25rem;
+    border: 1px solid #E8E8E8;
+    border-radius: 12px;
+    text-align: left;
+}
+.hero-cocon__stat-value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-accent, #0F6E56);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+.hero-cocon__stat-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #667;
+    font-weight: 500;
+}
+
+
+/* ---------- CONTAINER GENERIQUE DES PAGES COCON ---------- */
+.page-cocon__container {
+    max-width: var(--container-max, 1200px);
+    margin-inline: auto;
+    padding: 2rem var(--container-padding, 1.5rem);
+}
+.page-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 0;
+}
+.page-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+    color: var(--color-text, #0B1B15);
+    letter-spacing: -0.01em;
+}
+.page-section h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem;
+}
+.page-section p {
+    line-height: 1.65;
+    color: #334;
+    margin: 0 0 1rem;
+}
+.page-section p.lead {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #223;
+}
+.page-section ul, .page-section ol {
+    line-height: 1.7;
+    color: #334;
+    margin: 0 0 1rem;
+    padding-left: 1.5rem;
+}
+.page-section li { margin-bottom: 0.5rem; }
+
+.cta-box {
+    background: #E1F5EE;
+    border-left: 4px solid var(--color-accent, #0F6E56);
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+.cta-box p { margin: 0; }
+.cta-box a { color: var(--color-accent-dark, #085041); font-weight: 600; }
+
+.notice {
+    background: #FFF8E1;
+    border-left: 4px solid #E5B000;
+    padding: 0.875rem 1rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.925rem;
+    margin: 1.5rem 0;
+}
+
+.stats-list {
+    list-style: none;
+    padding-left: 0;
+}
+.stats-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #EEE;
+    line-height: 1.5;
+}
+.stats-list li:last-child { border-bottom: 0; }
+
+.steps-list {
+    counter-reset: step;
+    padding-left: 0;
+    list-style: none;
+}
+.steps-list li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 2.5rem;
+    line-height: 1.6;
+}
+.steps-list li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--color-accent, #0F6E56);
+    color: #FFF;
+    border-radius: 50%;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- TABLEAUX ---------- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.data-table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #667;
+    margin-bottom: 0.5rem;
+}
+.data-table th, .data-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #EEE;
+}
+.data-table th {
+    background: #F8F8F8;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #222;
+}
+.data-table tbody tr:last-child td { border-bottom: 0; }
+.data-table tbody tr:hover { background: #FCFCFC; }
+
+
+/* ---------- LINE BADGE (universel) ---------- */
+.line-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--badge-bg, #CCC);
+    color: var(--badge-text, #FFF);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1;
+}
+.line-badge--sm { width: 22px; height: 22px; font-size: 0.75rem; }
+.line-badge--md { width: 32px; height: 32px; font-size: 0.925rem; }
+.line-badge--lg { width: 44px; height: 44px; font-size: 1.125rem; }
+.line-badge--metro      { border-radius: 50%; }
+.line-badge--rer        { transform: rotate(45deg); border-radius: 4px; }
+.line-badge--rer .line-badge__text { transform: rotate(-45deg); display: inline-block; }
+.line-badge--tram       { border-radius: 6px; padding: 0 0.5rem; min-width: 32px; width: auto; }
+.line-badge--bus        { border-radius: 4px; padding: 0 0.5rem; min-width: 32px; width: auto; }
+.line-badge--transilien { border-radius: 4px; padding: 0 0.6rem; min-width: 32px; width: auto; }
+
+
+/* ---------- LINE GRID (commun) ---------- */
+.line-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    padding: 0;
+    list-style: none;
+}
+.line-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.line-grid__item:hover {
+    border-color: var(--color-accent, #0F6E56);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15,110,86,0.08);
+}
+.line-grid__badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+}
+.line-grid__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+    flex: 1;
+}
+.line-grid__name {
+    font-weight: 600;
+    color: #0B1B15;
+    font-size: 0.95rem;
+}
+.line-grid__termini {
+    font-size: 0.8rem;
+    color: #667;
+    line-height: 1.35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.line-grid__arrow { margin: 0 0.3rem; color: #AAB; }
+.line-grid__meta {
+    font-size: 0.75rem;
+    color: #889;
+    margin-top: 0.2rem;
+}
+.line-grid__tag {
+    display: inline-block;
+    background: var(--color-accent, #0F6E56);
+    color: #FFF;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* Metro : cercles */
+.line-grid__badge--metro {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+}
+
+/* RER : losanges */
+.line-grid__badge--rer {
+    width: 40px; height: 40px;
+    transform: rotate(45deg);
+    border-radius: 4px;
+}
+.line-grid__badge--rer .line-grid__badge-inner {
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+
+/* Tram : rectangles arrondis */
+.line-grid__badge--tram {
+    min-width: 44px; height: 30px;
+    padding: 0 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* Transilien : rectangles lettres */
+.line-grid__badge--transilien {
+    min-width: 40px; height: 40px;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+/* ---------- BUS NETWORK GRID (categorise) ---------- */
+.bus-network-grid { margin: 1.5rem 0; }
+.bus-network-grid__category { margin-bottom: 1.5rem; }
+.bus-network-grid__title {
+    font-size: 1rem !important;
+    color: #444;
+    margin: 0 0 0.75rem !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 0.875rem;
+}
+.bus-network-grid__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+}
+.bus-network-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+.bus-network-grid__item:hover {
+    border-color: var(--color-accent, #0F6E56);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15,110,86,0.08);
+}
+.bus-network-grid__badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    height: 30px;
+    padding: 0 0.6rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #FFF;
+}
+.bus-network-grid__badge--mobilien       { background: #D72E69; }
+.bus-network-grid__badge--urbain         { background: #8D3F9E; }
+.bus-network-grid__badge--petite-ceinture{ background: #2B7F50; }
+.bus-network-grid__badge--banlieue       { background: #0055C8; }
+.bus-network-grid__badge--express        { background: #E5007D; }
+.bus-network-grid__badge--noctilien      { background: #1B2F5B; }
+.bus-network-grid__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+.bus-network-grid__info strong { color: #0B1B15; font-size: 0.95rem; }
+.bus-network-grid__info span   { color: #667; font-size: 0.8rem; }
+
+
+/* ---------- AIRPORT GRID ---------- */
+.airport-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.airport-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .15s;
+}
+.airport-grid__item:hover {
+    border-color: var(--color-accent, #0F6E56);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(15,110,86,0.1);
+}
+.airport-grid__badge {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #002C5F;
+    color: #FFF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.airport-grid__code {
+    font-weight: 700;
+    font-size: 1.125rem;
+    letter-spacing: 0.03em;
+}
+.airport-grid__info { flex: 1; min-width: 0; }
+.airport-grid__name {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    margin: 0 0 0.25rem !important;
+    color: #0B1B15;
+}
+.airport-grid__meta {
+    font-size: 0.85rem;
+    color: #667;
+    margin: 0;
+}
+
+
+/* ---------- TRAFFIC WIDGET ---------- */
+.traffic-widget {
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0 2rem;
+    border-left: 4px solid var(--color-accent, #0F6E56);
+}
+.traffic-widget--normal     { border-left-color: #1FA67A; }
+.traffic-widget--disrupted  { border-left-color: #F59E0B; }
+.traffic-widget--interrupted{ border-left-color: #DC2626; }
+
+.traffic-widget__header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+.traffic-widget__dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.traffic-widget__dot--normal      { background: #1FA67A; }
+.traffic-widget__dot--disrupted   { background: #F59E0B; }
+.traffic-widget__dot--interrupted { background: #DC2626; }
+
+.traffic-widget__title {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+    color: #0B1B15;
+    flex: 1;
+    min-width: 0;
+}
+.traffic-widget__update {
+    font-size: 0.8rem;
+    color: #889;
+    white-space: nowrap;
+}
+
+.traffic-widget__summary {
+    margin: 0 0 0.75rem !important;
+    font-size: 0.95rem;
+    color: #334;
+    line-height: 1.5;
+}
+.traffic-widget__count { color: #667; font-size: 0.9rem; }
+
+.traffic-widget__lines {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+.traffic-widget__line {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.625rem 0.875rem;
+    background: #FAFAFA;
+    border-radius: 8px;
+}
+.traffic-widget__line--disrupted   { background: #FFF8E1; }
+.traffic-widget__line--interrupted { background: #FEE2E2; }
+.traffic-widget__line-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    margin-top: 0.35rem;
+    flex-shrink: 0;
+}
+.traffic-widget__line-dot--disrupted   { background: #F59E0B; }
+.traffic-widget__line-dot--interrupted { background: #DC2626; }
+.traffic-widget__line-body { flex: 1; min-width: 0; }
+.traffic-widget__line-name {
+    display: block;
+    font-weight: 700;
+    color: #0B1B15;
+    font-size: 0.9rem;
+}
+.traffic-widget__line-message {
+    margin: 0.2rem 0 0 !important;
+    font-size: 0.85rem;
+    color: #556;
+    line-height: 1.45;
+}
+
+.traffic-widget__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 0.875rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #F0F0F0;
+    font-size: 0.85rem;
+}
+.traffic-widget__link {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: none;
+    font-weight: 600;
+}
+.traffic-widget__link:hover { text-decoration: underline; }
+.traffic-widget__warning { color: #889; font-size: 0.8rem; font-style: italic; }
+
+.traffic-widget--compact { padding: 0.875rem 1rem; }
+.traffic-widget--compact .traffic-widget__title { font-size: 1rem !important; }
+
+
+/* ---------- FAQ ACCORDION ---------- */
+.faq-section {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: #F9FAFA;
+    border-radius: 12px;
+}
+.faq-section__title {
+    font-size: 1.5rem !important;
+    margin: 0 0 1.25rem !important;
+    color: #0B1B15;
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.faq-accordion__item {
+    background: #FFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faq-accordion__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0B1B15;
+    list-style: none;
+    transition: background .15s;
+}
+.faq-accordion__question::-webkit-details-marker { display: none; }
+.faq-accordion__question:hover { background: #FAFAFA; }
+.faq-accordion__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent, #0F6E56);
+    color: #FFF;
+    border-radius: 50%;
+    font-weight: 700;
+    transition: transform .2s;
+    font-size: 1.1rem;
+}
+.faq-accordion__item[open] .faq-accordion__icon { transform: rotate(45deg); }
+.faq-accordion__answer {
+    padding: 0 1.25rem 1.25rem;
+    color: #334;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+.faq-accordion__answer p { margin: 0 0 0.75rem; }
+.faq-accordion__answer p:last-child { margin-bottom: 0; }
+
+
+/* ---------- RELATED GRID (maillage inter-cocons) ---------- */
+.page-section--related {
+    background: #F5F9F7;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0 2rem;
+}
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.related-grid__item {
+    display: block;
+    padding: 0.875rem 1rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #334;
+    font-size: 0.925rem;
+    transition: all .15s;
+}
+.related-grid__item:hover {
+    border-color: var(--color-accent, #0F6E56);
+    background: #FCFEFD;
+}
+.related-grid__item strong { color: #0B1B15; }
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 640px) {
+    .hero-cocon { padding: 2rem 0 1.75rem; }
+    .hero-cocon__stats { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .hero-cocon__stat { padding: 0.75rem; }
+    .hero-cocon__stat-value { font-size: 1.4rem; }
+    .line-grid { grid-template-columns: 1fr; }
+    .faq-section { padding: 1.25rem; }
+    .page-section--related { padding: 1.25rem; }
+    .data-table { font-size: 0.85rem; }
+    .data-table th, .data-table td { padding: 0.55rem 0.75rem; }
+}
