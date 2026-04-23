@@ -1,17 +1,7 @@
 <?php
 /**
- * Template generique hub-transport
- *
- * Utilise pour : RER, bus, tramway, aeroports, transilien.
- * La variable $cocon_slug indique lequel on affiche.
- *
- * Variables :
- *   - $cocon : contenu editorial (config/cocons/xxx.php)
- *   - $lines : data/lines.json
- *   - $cocon_slug : 'rer', 'bus', 'tramway', 'aeroports', 'transilien'
- *   - $cocon_label : label lisible pour breadcrumb
- *   - $grid_component : nom du composant de grille a utiliser
- *   - $data_key : cle dans $lines (ex: 'rer', 'tramway', 'aeroports')
+ * Template generique hub-transport.
+ * Avec accents francais complets.
  */
 
 $tpl->seo
@@ -57,17 +47,15 @@ $tpl->partial('components/breadcrumb', [
             ]); ?>
         <?php endif; ?>
 
-        <!-- Intro -->
         <section class="page-section page-section--intro">
             <?= $cocon['intro'] ?? '' ?>
         </section>
 
         <?php $tpl->partial('ads/slot-header'); ?>
 
-        <!-- Grille des lignes / aeroports -->
         <?php if ($cocon_slug === 'aeroports'): ?>
             <section class="page-section" aria-labelledby="section-airports">
-                <h2 id="section-airports">Les 3 aeroports parisiens</h2>
+                <h2 id="section-airports">Les 3 aéroports parisiens</h2>
                 <?php $tpl->partial('components/airport-grid', [
                     'airports' => $lines['aeroports'] ?? [],
                     'link_base' => '/aeroports/',
@@ -75,7 +63,7 @@ $tpl->partial('components/breadcrumb', [
             </section>
         <?php elseif ($cocon_slug === 'bus'): ?>
             <section class="page-section" aria-labelledby="section-reseaux">
-                <h2 id="section-reseaux"><?= htmlspecialchars($cocon['section_reseaux']['title'] ?? 'Les reseaux') ?></h2>
+                <h2 id="section-reseaux"><?= htmlspecialchars($cocon['section_reseaux']['title'] ?? 'Les réseaux') ?></h2>
                 <?= $cocon['section_reseaux']['content'] ?? '' ?>
                 <?php $tpl->partial('components/line-grid-bus'); ?>
             </section>
@@ -90,7 +78,6 @@ $tpl->partial('components/breadcrumb', [
             </section>
         <?php endif; ?>
 
-        <!-- Sections editoriales specifiques (en ordre) -->
         <?php
         $sections_order = [
             'section_lignes', 'section_cdg', 'section_orly', 'section_beauvais',
@@ -111,27 +98,25 @@ $tpl->partial('components/breadcrumb', [
 
         <?php $tpl->partial('ads/slot-in-article'); ?>
 
-        <!-- FAQ avec schema.org -->
         <?php if (!empty($cocon['faq']['items'])): ?>
             <?php $tpl->partial('components/faq-accordion', [
-                'title' => $cocon['faq']['title'] ?? 'Questions frequentes',
+                'title' => $cocon['faq']['title'] ?? 'Questions fréquentes',
                 'items' => $cocon['faq']['items'],
                 'emit_schema' => true,
             ]); ?>
         <?php endif; ?>
 
-        <!-- Autres transports -->
         <section class="page-section page-section--related" aria-labelledby="section-related">
             <h2 id="section-related">Explorer les autres transports</h2>
             <div class="related-grid">
                 <?php
                 $all_cocons = [
-                    'metro'      => ['label' => 'Metro',      'desc' => '16 lignes, 308 stations'],
+                    'metro'      => ['label' => 'Métro',      'desc' => '16 lignes, 308 stations'],
                     'rer'        => ['label' => 'RER',        'desc' => '5 lignes express'],
                     'bus'        => ['label' => 'Bus',        'desc' => '1500+ lignes'],
                     'tramway'    => ['label' => 'Tramway',    'desc' => '13 lignes'],
                     'transilien' => ['label' => 'Transilien', 'desc' => '8 lignes de banlieue'],
-                    'aeroports'  => ['label' => 'Aeroports',  'desc' => 'CDG, Orly, Beauvais'],
+                    'aeroports'  => ['label' => 'Aéroports',  'desc' => 'CDG, Orly, Beauvais'],
                 ];
                 foreach ($all_cocons as $slug => $info):
                     if ($slug === $cocon_slug) continue;

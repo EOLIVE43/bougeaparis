@@ -2,15 +2,8 @@
 /**
  * Composant traffic-widget
  *
- * Affiche l'etat du trafic du jour pour un cocon, une ligne ou une station.
+ * Affiche l'état du trafic du jour pour un cocon, une ligne ou une station.
  * Lit /data/traffic/YYYY-MM-DD.json et filtre selon le contexte.
- *
- * Props :
- *   - mode         : 'cocon' | 'line' | 'station'
- *   - cocon        : 'metro' | 'rer' | 'bus' | 'tramway' | 'transilien'
- *   - line_slug    : 'metro-1', 'rer-a', etc.
- *   - station_lines: array de slugs de lignes
- *   - compact      : bool
  */
 
 $mode         = $props['mode']          ?? 'cocon';
@@ -19,7 +12,6 @@ $lineSlug     = $props['line_slug']     ?? null;
 $stationLines = $props['station_lines'] ?? [];
 $compact      = $props['compact']       ?? false;
 
-// --- Charger le JSON trafic du jour (fallback sur le plus recent) ---
 $today = date('Y-m-d');
 $jsonPath = __DIR__ . '/../../data/traffic/' . $today . '.json';
 
@@ -44,7 +36,6 @@ $dateData   = $data['date'] ?? $today;
 $lastUpdate = $data['last_update'] ?? '';
 $isToday    = ($dateData === $today);
 
-// --- Filtrer selon le mode ---
 $relevantLines = [];
 
 if ($mode === 'cocon' && $cocon) {
@@ -70,7 +61,6 @@ if (empty($relevantLines)) {
     return;
 }
 
-// --- Calculer l'etat global ---
 $disruptedCount   = 0;
 $interruptedCount = 0;
 $normalCount      = 0;
@@ -103,7 +93,7 @@ if ($lastUpdate) {
 $title = 'Trafic du jour';
 if ($mode === 'cocon') {
     $cocons = [
-        'metro'      => 'du metro',
+        'metro'      => 'du métro',
         'rer'        => 'du RER',
         'bus'        => 'des bus',
         'tramway'    => 'des tramways',
@@ -120,7 +110,7 @@ if ($mode === 'cocon') {
         <span class="traffic-widget__dot traffic-widget__dot--<?= $globalStatus ?>" aria-hidden="true"></span>
         <h2 class="traffic-widget__title"><?= htmlspecialchars($title) ?></h2>
         <?php if ($updateTime): ?>
-            <span class="traffic-widget__update">Mis a jour a <?= $updateTime ?></span>
+            <span class="traffic-widget__update">Mis à jour à <?= $updateTime ?></span>
         <?php endif; ?>
     </header>
 
@@ -131,7 +121,7 @@ if ($mode === 'cocon') {
         </p>
     <?php else: ?>
         <p class="traffic-widget__summary traffic-widget__summary--disrupted">
-            <strong><?= ($disruptedCount + $interruptedCount) ?> ligne<?= ($disruptedCount + $interruptedCount) > 1 ? 's' : '' ?> perturbee<?= ($disruptedCount + $interruptedCount) > 1 ? 's' : '' ?></strong>
+            <strong><?= ($disruptedCount + $interruptedCount) ?> ligne<?= ($disruptedCount + $interruptedCount) > 1 ? 's' : '' ?> perturbée<?= ($disruptedCount + $interruptedCount) > 1 ? 's' : '' ?></strong>
             <?php if ($normalCount > 0): ?>
                 sur <?= $totalCount ?>. Les autres lignes circulent normalement.
             <?php endif; ?>
@@ -162,7 +152,7 @@ if ($mode === 'cocon') {
             <span aria-hidden="true">&rarr;</span>
         </a>
         <?php if (!$isToday): ?>
-            <span class="traffic-widget__warning">Donnees du <?= date('d/m/Y', strtotime($dateData)) ?></span>
+            <span class="traffic-widget__warning">Données du <?= date('d/m/Y', strtotime($dateData)) ?></span>
         <?php endif; ?>
     </footer>
 </aside>
