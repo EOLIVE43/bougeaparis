@@ -690,3 +690,33 @@
     .data-table { font-size: 0.85rem; }
     .data-table th, .data-table td { padding: 0.55rem 0.75rem; }
 }
+
+/* Hero avec picto en ligne avec le H1 */
+.hero-cocon__heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-cocon__heading .bp-icon {
+    flex-shrink: 0;
+}
+
+.hero-cocon__heading .hero-cocon__title {
+    margin: 0 !important;
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 640px) {
+    .hero-cocon__heading {
+        gap: 12px;
+    }
+    .hero-cocon__heading .bp-icon--xl {
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+    }
+}
