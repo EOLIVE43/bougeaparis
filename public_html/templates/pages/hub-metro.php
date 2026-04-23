@@ -117,13 +117,28 @@ $tpl->partial('components/breadcrumb', [
 
         <section class="page-section page-section--related" aria-labelledby="section-related">
             <h2 id="section-related">Explorer les autres transports d'Île-de-France</h2>
-            <div class="related-grid">
-                <a href="/rer/" class="related-grid__item"><strong>RER</strong> &mdash; 5 lignes express</a>
-                <a href="/bus/" class="related-grid__item"><strong>Bus</strong> &mdash; 1500+ lignes</a>
-                <a href="/tramway/" class="related-grid__item"><strong>Tramway</strong> &mdash; 13 lignes</a>
-                <a href="/transilien/" class="related-grid__item"><strong>Transilien</strong> &mdash; 8 lignes</a>
-                <a href="/aeroports/" class="related-grid__item"><strong>Aéroports</strong> &mdash; CDG, Orly, Beauvais</a>
-            </div>
+            <nav class="related-nav" aria-label="Autres transports">
+                <a href="/rer/" class="related-nav__item">
+                    <span class="related-nav__label">RER</span>
+                    <?php $tpl->partial('components/icon-menu', ['icon' => 'rer', 'size' => 'lg']); ?>
+                </a>
+                <a href="/bus/" class="related-nav__item">
+                    <span class="related-nav__label">Bus</span>
+                    <?php $tpl->partial('components/icon-menu', ['icon' => 'bus', 'size' => 'lg']); ?>
+                </a>
+                <a href="/tramway/" class="related-nav__item">
+                    <span class="related-nav__label">Tramway</span>
+                    <?php $tpl->partial('components/icon-menu', ['icon' => 'tram', 'size' => 'lg']); ?>
+                </a>
+                <a href="/transilien/" class="related-nav__item">
+                    <span class="related-nav__label">Transilien</span>
+                    <?php $tpl->partial('components/icon-menu', ['icon' => 'train', 'size' => 'lg']); ?>
+                </a>
+                <a href="/aeroports/" class="related-nav__item">
+                    <span class="related-nav__label">Aéroports</span>
+                    <?php $tpl->partial('components/icon-menu', ['icon' => 'plane', 'size' => 'lg']); ?>
+                </a>
+            </nav>
         </section>
 
         <?php $tpl->partial('ads/slot-footer'); ?>

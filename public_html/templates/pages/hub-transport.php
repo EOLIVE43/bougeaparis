@@ -4,7 +4,6 @@
  * Lit les variables depuis $props car appele en tant que partial via les wrappers.
  */
 
-// --- Recup des props passees par les wrappers hub-rer.php, hub-bus.php, etc. ---
 $cocon          = $props['cocon']          ?? [];
 $lines          = $props['lines']          ?? [];
 $cocon_slug     = $props['cocon_slug']     ?? '';
@@ -126,24 +125,25 @@ $tpl->partial('components/breadcrumb', [
 
         <section class="page-section page-section--related" aria-labelledby="section-related">
             <h2 id="section-related">Explorer les autres transports</h2>
-            <div class="related-grid">
+            <nav class="related-nav" aria-label="Autres transports">
                 <?php
                 $all_cocons = [
-                    'metro'      => ['label' => 'Métro',      'desc' => '16 lignes, 308 stations'],
-                    'rer'        => ['label' => 'RER',        'desc' => '5 lignes express'],
-                    'bus'        => ['label' => 'Bus',        'desc' => '1500+ lignes'],
-                    'tramway'    => ['label' => 'Tramway',    'desc' => '13 lignes'],
-                    'transilien' => ['label' => 'Transilien', 'desc' => '8 lignes de banlieue'],
-                    'aeroports'  => ['label' => 'Aéroports',  'desc' => 'CDG, Orly, Beauvais'],
+                    'metro'      => ['label' => 'Métro',      'icon' => 'metro'],
+                    'rer'        => ['label' => 'RER',        'icon' => 'rer'],
+                    'bus'        => ['label' => 'Bus',        'icon' => 'bus'],
+                    'tramway'    => ['label' => 'Tramway',    'icon' => 'tram'],
+                    'transilien' => ['label' => 'Transilien', 'icon' => 'train'],
+                    'aeroports'  => ['label' => 'Aéroports',  'icon' => 'plane'],
                 ];
                 foreach ($all_cocons as $slug => $info):
                     if ($slug === $cocon_slug) continue;
                 ?>
-                    <a href="/<?= $slug ?>/" class="related-grid__item">
-                        <strong><?= htmlspecialchars($info['label']) ?></strong> &mdash; <?= htmlspecialchars($info['desc']) ?>
+                    <a href="/<?= $slug ?>/" class="related-nav__item">
+                        <span class="related-nav__label"><?= htmlspecialchars($info['label']) ?></span>
+                        <?php $tpl->partial('components/icon-menu', ['icon' => $info['icon'], 'size' => 'lg']); ?>
                     </a>
                 <?php endforeach; ?>
-            </div>
+            </nav>
         </section>
 
         <?php $tpl->partial('ads/slot-footer'); ?>
