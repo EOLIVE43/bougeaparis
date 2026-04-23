@@ -1,0 +1,81 @@
+/* ==========================================================================
+   BougeaParis.fr - Styles line-grid "lien sur titre uniquement"
+   A AJOUTER A LA FIN DE cocons.css
+   ========================================================================== */
+
+
+/* Les cards ne sont plus cliquables (pas de hover global) */
+.line-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.875rem 1rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    color: inherit;
+    transition: border-color .15s;
+}
+
+/* Plus de transform/shadow global sur la card */
+
+/* Lien sur le titre uniquement */
+.line-grid__name--link {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+}
+
+.line-grid__name--link:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
+
+/* La card reagit quand-meme legerement au hover du nom */
+.line-grid__item:has(.line-grid__name--link:hover) {
+    border-color: var(--color-accent, #0F6E56);
+}
+
+
+/* ---------- Airport grid aussi ---------- */
+.airport-grid__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    color: inherit;
+    transition: border-color .15s;
+}
+
+.airport-grid__name--link {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.airport-grid__name--link:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}
+
+.airport-grid__item:has(.airport-grid__name--link:hover) {
+    border-color: var(--color-accent, #0F6E56);
+}
+
+
+/* ---------- Bus network ---------- */
+.bus-network-grid__name {
+    color: #0B1B15;
+    text-decoration: none;
+    transition: color .15s;
+}
+
+.bus-network-grid__name:hover {
+    color: var(--color-accent, #0F6E56);
+    text-decoration: underline;
+}

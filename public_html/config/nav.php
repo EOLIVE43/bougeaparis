@@ -54,11 +54,10 @@ return [
         ['label' => 'Transilien',        'url' => '/transilien/'],
     ],
     // Menu footer - colonne 2 : utile
+    // Les pages /itineraires/, /tarifs/, /plans/ arriveront en Livraison 5+
+    // En attendant, seul /blog/ est actif
     'footer_tools' => [
         ['label' => 'Blog',              'url' => '/blog/'],
-        ['label' => 'Itinéraires',       'url' => '/itineraires/'],
-        ['label' => 'Tarifs',            'url' => '/tarifs/'],
-        ['label' => 'Plans',             'url' => '/plans/'],
     ],
     // Menu footer - colonne 3 : à propos
     'footer_about' => [

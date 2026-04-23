@@ -1,30 +1,42 @@
 <?php
-$airports = $props['airports'] ?? [];
-$linkBase = $props['link_base'] ?? '/aeroports/';
+/**
+ * Composant airport-grid : grille des 3 aeroports parisiens.
+ *
+ * Props :
+ *   - airports     : data/lines.json aeroports
+ *   - link_base    : base URL (defaut '/aeroports/')
+ *   - enable_links : activer les liens vers pages dediees (defaut false)
+ */
+
+$airports     = $props['airports']     ?? [];
+$link_base    = $props['link_base']    ?? '/aeroports/';
+$enable_links = $props['enable_links'] ?? false;
 
 if (empty($airports)) return;
 ?>
-<div class="airport-grid" role="list" aria-label="Aeroports de Paris">
+<ul class="airport-grid" role="list">
     <?php foreach ($airports as $airport):
-        $slug      = $airport['slug']              ?? '';
-        $name      = $airport['name']              ?? '';
-        $code      = $airport['code_iata']         ?? '';
-        $terminals = $airport['terminals']         ?? 0;
-        $distance  = $airport['distance_paris_km'] ?? '';
+        $slug    = $airport['slug']    ?? '';
+        $code    = $airport['code']    ?? '';
+        $name    = $airport['name']    ?? '';
+        $city    = $airport['city']    ?? '';
+        $distance= $airport['distance_from_paris_km'] ?? null;
+        $href    = $link_base . $slug . '/';
     ?>
-        <a href="<?= htmlspecialchars($linkBase . $slug . '/') ?>"
-           class="airport-grid__item"
-           role="listitem"
-           aria-label="<?= htmlspecialchars($name) ?>">
-            <div class="airport-grid__badge">
+        <li class="airport-grid__item">
+            <span class="airport-grid__badge" aria-hidden="true">
                 <span class="airport-grid__code"><?= htmlspecialchars($code) ?></span>
-            </div>
-            <div class="airport-grid__info">
-                <h3 class="airport-grid__name"><?= htmlspecialchars($name) ?></h3>
-                <p class="airport-grid__meta">
-                    <?= $terminals ?> terminaux &middot; <?= $distance ?> km de Paris
-                </p>
-            </div>
-        </a>
+            </span>
+            <span class="airport-grid__info">
+                <?php if ($enable_links): ?>
+                    <a href="<?= htmlspecialchars($href) ?>" class="airport-grid__name airport-grid__name--link"><?= htmlspecialchars($name) ?></a>
+                <?php else: ?>
+                    <span class="airport-grid__name"><?= htmlspecialchars($name) ?></span>
+                <?php endif; ?>
+                <?php if ($distance): ?>
+                    <p class="airport-grid__meta"><?= $distance ?> km de Paris</p>
+                <?php endif; ?>
+            </span>
+        </li>
     <?php endforeach; ?>
-</div>
+</ul>

@@ -24,7 +24,7 @@ return [
 </p>
 <p>
     Le réseau bus complète efficacement le métro et le RER, en desservant les zones peu accessibles
-    par rail, et en circulant <strong>la nuit</strong> grâce au réseau <a href="/bus/noctilien/">Noctilien</a>.
+    par rail, et en circulant <strong>la nuit</strong> grâce au réseau <strong>Noctilien</strong>.
 </p>
 <p>
     Les bus d'Île-de-France sont accessibles aux personnes à mobilité réduite sur la quasi-totalité

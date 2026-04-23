@@ -1,34 +1,50 @@
 <?php
-$lines        = $props['lines']         ?? [];
-$showTerminus = $props['show_terminus'] ?? true;
-$linkBase     = $props['link_base']     ?? '/rer/';
+/**
+ * Composant line-grid-rer : grille des lignes RER (losanges colores).
+ *
+ * Props similaires a line-grid-metro.
+ * Lien uniquement sur le nom (desactivable via enable_links).
+ */
+
+$lines         = $props['lines']         ?? [];
+$show_terminus = $props['show_terminus'] ?? true;
+$link_base     = $props['link_base']     ?? '/rer/';
+$enable_links  = $props['enable_links']  ?? false;
 
 if (empty($lines)) return;
 ?>
-<div class="line-grid line-grid--rer" role="list" aria-label="Liste des lignes RER">
+<ul class="line-grid line-grid--rer" role="list">
     <?php foreach ($lines as $line):
-        $short      = $line['short']      ?? '?';
-        $name       = $line['name']       ?? '';
-        $color      = $line['color']      ?? '#CCCCCC';
-        $textColor  = $line['text_color'] ?? '#FFFFFF';
-        $terminus_a = $line['terminus_a'] ?? '';
-        $terminus_b = $line['terminus_b'] ?? '';
+        $slug      = $line['slug']       ?? '';
+        $label     = $line['label']      ?? '';
+        $name      = $line['name']       ?? 'RER ' . $label;
+        $color     = $line['color']      ?? '#999999';
+        $textColor = $line['text_color'] ?? '#FFFFFF';
+        $termini   = $line['termini']    ?? [];
+        $stations  = $line['stations_count'] ?? null;
+        $href      = $link_base . 'ligne-' . strtolower($label) . '/';
     ?>
-        <a href="<?= htmlspecialchars($linkBase . strtolower($short) . '/') ?>"
-           class="line-grid__item line-grid__item--rer"
-           role="listitem"
-           aria-label="<?= htmlspecialchars($name) ?>">
-            <span class="line-grid__badge line-grid__badge--rer"
-                  style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;"
-                  aria-hidden="true"><span class="line-grid__badge-inner"><?= htmlspecialchars($short) ?></span></span>
-            <?php if ($showTerminus): ?>
-                <div class="line-grid__info">
+        <li class="line-grid__item">
+            <span class="line-grid__badge line-grid__badge--rer" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
+                <span class="line-grid__badge-inner"><?= htmlspecialchars($label) ?></span>
+            </span>
+            <span class="line-grid__info">
+                <?php if ($enable_links): ?>
+                    <a href="<?= htmlspecialchars($href) ?>" class="line-grid__name line-grid__name--link"><?= htmlspecialchars($name) ?></a>
+                <?php else: ?>
                     <span class="line-grid__name"><?= htmlspecialchars($name) ?></span>
+                <?php endif; ?>
+                <?php if ($show_terminus && !empty($termini)): ?>
                     <span class="line-grid__termini">
-                        <?= htmlspecialchars($terminus_a) ?> <span class="line-grid__arrow" aria-hidden="true">&harr;</span> <?= htmlspecialchars($terminus_b) ?>
+                        <?= htmlspecialchars($termini[0] ?? '') ?>
+                        <span class="line-grid__arrow" aria-hidden="true">&harr;</span>
+                        <?= htmlspecialchars($termini[1] ?? '') ?>
                     </span>
-                </div>
-            <?php endif; ?>
-        </a>
+                <?php endif; ?>
+                <?php if ($stations): ?>
+                    <span class="line-grid__meta"><?= $stations ?> gares</span>
+                <?php endif; ?>
+            </span>
+        </li>
     <?php endforeach; ?>
-</div>
+</ul>
