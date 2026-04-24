@@ -1,0 +1,11 @@
+# Protection du dossier content/
+# Les fichiers .md sont lus par PHP via Article.php uniquement
+# Accès HTTP direct interdit
+
+Options -Indexes
+
+<FilesMatch ".*">
+    Require all denied
+</FilesMatch>
+
+ErrorDocument 403 "Access forbidden"
