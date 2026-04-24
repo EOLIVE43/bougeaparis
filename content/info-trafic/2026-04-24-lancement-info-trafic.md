@@ -3,7 +3,7 @@ title: Lancement d'Info-Trafic BougeaParis.fr
 excerpt: À partir d'aujourd'hui, retrouvez chaque matin un bulletin complet sur l'état du trafic des transports en Île-de-France. Perturbations, travaux, conseils d'itinéraires.
 date: 2026-04-24
 author: ludo
-image: /content/info-trafic/images/bienvenue.jpg
+image: /assets/images/info-trafic/bienvenue.jpg
 image_alt: Quai de métro parisien avec une rame à l'arrêt
 category: trafic
 ---
