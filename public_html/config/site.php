@@ -41,5 +41,5 @@ return [
     'language' => 'fr',
     'timezone' => 'Europe/Paris',
     // Environnement
-    'debug' => false,
+    'debug' => true,
 ];
