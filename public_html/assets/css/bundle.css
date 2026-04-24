@@ -995,5 +995,200 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     }
 }
 /* ==========================================================================
+   11. Line search widget
+   ========================================================================== */
+
+.line-search {
+    background: linear-gradient(135deg, #E1F5EE 0%, #F7F9F8 100%);
+    border: 1px solid #C7E6DA;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.line-search__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #085041;
+    margin-bottom: 0.75rem;
+}
+
+.line-search__input-wrap {
+    position: relative;
+}
+
+.line-search__input {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 2.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 2px solid #C7E6DA;
+    border-radius: 8px;
+    background: #FFFFFF url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%230F6E56' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>") no-repeat 0.85rem center;
+    color: #1A2B26;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.line-search__input:focus {
+    outline: none;
+    border-color: #0F6E56;
+    box-shadow: 0 0 0 3px rgba(15, 110, 86, 0.15);
+}
+
+.line-search__input::placeholder {
+    color: #8A9A94;
+}
+
+.line-search__hint {
+    font-size: 0.8rem;
+    color: #5A6B65;
+    margin: 0.75rem 0 0 0;
+    text-align: center;
+}
+
+/* Resultat affiche */
+.line-search__result {
+    margin-top: 1rem;
+}
+
+.line-search__card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border-left: 4px solid #0F6E56;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.line-search__card--normal {
+    border-left-color: #0F6E56;
+    background: #F0FAF5;
+}
+.line-search__card--information {
+    border-left-color: #0F6E56;
+    background: #E1F5EE;
+}
+.line-search__card--perturbee {
+    border-left-color: #A06800;
+    background: #FFF8E6;
+}
+.line-search__card--bloquante {
+    border-left-color: #A32D2D;
+    background: #FDEFEF;
+}
+
+.line-search__badge {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.line-search__info {
+    flex: 1;
+    min-width: 0;
+}
+
+.line-search__line-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: #1A2B26;
+}
+
+.line-search__status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.line-search__card--normal .line-search__status {
+    color: #0F6E56;
+}
+.line-search__card--information .line-search__status {
+    color: #085041;
+}
+.line-search__card--perturbee .line-search__status {
+    color: #A06800;
+}
+.line-search__card--bloquante .line-search__status {
+    color: #A32D2D;
+}
+
+.line-search__status-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.line-search__card--normal .line-search__status-dot {
+    background: #0F6E56;
+}
+.line-search__card--information .line-search__status-dot {
+    background: #085041;
+}
+.line-search__card--perturbee .line-search__status-dot {
+    background: #A06800;
+}
+.line-search__card--bloquante .line-search__status-dot {
+    background: #A32D2D;
+}
+
+.line-search__detail {
+    font-size: 0.85rem;
+    color: #4A5A54;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.4;
+}
+
+.line-search__more {
+    font-size: 0.8rem;
+    color: #5A6B65;
+    font-style: italic;
+    margin: 0.35rem 0 0 0;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .line-search {
+        padding: 1rem;
+    }
+    .line-search__card {
+        padding: 0.85rem 1rem;
+        gap: 0.75rem;
+    }
+    .line-search__badge {
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+    .line-search__line-name {
+        font-size: 0.95rem;
+    }
+    .line-search__status {
+        font-size: 0.9rem;
+    }
+}
+/* ==========================================================================
    FIN bundle.css
    ========================================================================== */
