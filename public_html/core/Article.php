@@ -33,8 +33,8 @@ class Article
     private array $meta = [];
     private string $markdown = '';
     private string $html = '';
-    private string $section;
-    private string $slug;
+    private string $section = '';
+    private string $slug = '';
 
     /**
      * Charge un article depuis le filesystem.
@@ -57,7 +57,7 @@ class Article
     }
 
     /**
-     * Retourne le chemin du fichier markdown depuis la racine du projet.
+     * Retourne le chemin du fichier markdown.
      * content/ est HORS de public_html/ pour securite.
      */
     private static function contentPath(string $section, string $slug): string
@@ -133,8 +133,7 @@ class Article
     }
 
     /**
-     * Date formatee pour affichage humain.
-     * Ex: "24 avril 2026"
+     * Date formatee pour affichage humain. Ex: "24 avril 2026"
      */
     public function getDateFormatted(): string
     {
@@ -144,15 +143,10 @@ class Article
         $timestamp = strtotime($date);
         if (!$timestamp) return $date;
 
-        $months = [
-            1 => 'janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin',
-            'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'
-        ];
-        // Note : on utilise les versions sans accent pour eviter les problemes d'encoding
-        // Les templates ajouteront les accents via <?= html... ?> si besoin
         $monthsAcc = [
-            1 => 'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
-            'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'
+            1 => 'janvier', 2 => 'février', 3 => 'mars', 4 => 'avril',
+            5 => 'mai', 6 => 'juin', 7 => 'juillet', 8 => 'août',
+            9 => 'septembre', 10 => 'octobre', 11 => 'novembre', 12 => 'décembre'
         ];
 
         $day = (int) date('j', $timestamp);
