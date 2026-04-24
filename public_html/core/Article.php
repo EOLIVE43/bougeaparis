@@ -63,7 +63,7 @@ class Article
     private static function contentPath(string $section, string $slug): string
     {
         // On remonte d'un niveau pour sortir de public_html/
-        return __DIR__ . '/../../content/' . $section . '/' . $slug . '.md';
+    return __DIR__ . '/../content/' . $section . '/' . $slug . '.md';
     }
 
     /**
