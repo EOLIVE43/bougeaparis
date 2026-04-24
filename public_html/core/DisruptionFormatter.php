@@ -83,7 +83,7 @@ class DisruptionFormatter
      *
      * Format de sortie (exemple) :
      *
-     *   ### METRO
+     *   ### MÉTRO
      *
      *   **Métro 4** - Trafic interrompu (Travaux)
      *   Titre : Métro 4 : Travaux d'entretien - Trafic interrompu
@@ -122,7 +122,8 @@ class DisruptionFormatter
 
         $output = [];
         foreach ($byMode as $mode => $modeDisruptions) {
-            $label = strtoupper($modesLabels[$mode] ?? $mode);
+            // Utiliser mb_strtoupper pour gerer les accents UTF-8 correctement.
+            $label = mb_strtoupper($modesLabels[$mode] ?? $mode, 'UTF-8');
             $output[] = "### {$label}";
             $output[] = '';
 
