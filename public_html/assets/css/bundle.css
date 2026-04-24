@@ -885,7 +885,115 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 @media (min-width: 1024px) {
     .article { padding: var(--sp-10) var(--container-pad-x) var(--sp-24); }
 }
+/* ==========================================================================
+   10. Traffic banner (bandeau statut reseau)
+   ========================================================================== */
 
+.traffic-banner {
+    background: #F7F9F8;
+    border: 1px solid #E0E6E4;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.traffic-banner__title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #5A6B65;
+    margin: 0 0 1.25rem 0;
+    text-align: center;
+}
+
+.traffic-banner__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.traffic-banner__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.15s ease;
+}
+
+.traffic-banner__stat:hover {
+    transform: translateY(-2px);
+}
+
+.traffic-banner__stat-number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.35rem;
+}
+
+.traffic-banner__stat-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Variantes couleurs */
+.traffic-banner__stat--bloquante {
+    background: #FDECEC;
+    color: #A32D2D;
+}
+.traffic-banner__stat--bloquante .traffic-banner__stat-number {
+    color: #A32D2D;
+}
+
+.traffic-banner__stat--perturbee {
+    background: #FFF4E0;
+    color: #A06800;
+}
+.traffic-banner__stat--perturbee .traffic-banner__stat-number {
+    color: #A06800;
+}
+
+.traffic-banner__stat--information {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+.traffic-banner__stat--information .traffic-banner__stat-number {
+    color: #0F6E56;
+}
+
+.traffic-banner__source {
+    font-size: 0.8rem;
+    color: #5A6B65;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid #E0E6E4;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .traffic-banner {
+        padding: 1rem;
+    }
+    .traffic-banner__stats {
+        gap: 0.5rem;
+    }
+    .traffic-banner__stat {
+        padding: 0.9rem 0.25rem;
+    }
+    .traffic-banner__stat-number {
+        font-size: 1.75rem;
+    }
+    .traffic-banner__stat-label {
+        font-size: 0.7rem;
+    }
+}
 /* ==========================================================================
    FIN bundle.css
    ========================================================================== */
