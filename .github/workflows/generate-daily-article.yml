@@ -3,7 +3,8 @@ name: Generate daily article
 on:
   # Cron : chaque jour a 5h55 UTC = 7h55 CEST (ete) / 6h55 CET (hiver)
   schedule:
-    - cron: '55 5 * * *'
+    - cron: '0 4 * * *'
+       # 4h UTC = 6h Paris (ete CEST) / 5h Paris (hiver CET)
 
   # Permet de declencher manuellement depuis l'onglet Actions
   workflow_dispatch:
