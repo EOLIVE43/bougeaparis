@@ -409,3 +409,46 @@ Revenus AdSense attendus (an 1) : **300-1 500 €** → **ROI positif**.
 - **Newsletter quotidienne** basee sur l'article du jour
 - **Push RSS** pour les aggregateurs
 - **Encart trafic temps reel** sur home + pages hub (widget dynamique)
+---
+
+## 💡 Idées ajoutées en cours de route (à traiter après le core L4.2)
+
+### Widget de recherche de ligne en tête d'article
+
+**Concept :** permettre à l'internaute de taper "métro 6", "RER B" ou "tram T3" et voir instantanément l'état de sa ligne + un lien vers la page dédiée.
+
+**Ce que ça apporte :**
+- Amélioration UX forte (info trouvée en 2 secondes)
+- Maillage interne renforcé (clics vers /metro/ligne-X/, /rer/ligne-Y/)
+- Bon signal SEO (temps passé, taux de clic)
+- Valorise la data déjà générée par le pipeline
+
+**Briques techniques nécessaires :**
+- Sauvegarde du JSON par ligne (`groupByLine()` existe déjà dans `DisruptionFormatter`)
+- Fichier cible : `/data/traffic/YYYY-MM-DD.json`
+- Widget front (PHP + JS) avec :
+  - Autocomplétion (datalist HTML native ou lib légère)
+  - Suggestions ordonnées (Métro 1, 2... puis RER A-E... puis Tram T1-T13)
+  - Badge couleur selon sévérité (vert normal, orange perturbé, rouge interrompu)
+  - Lien direct vers la page ligne
+- CSS dédié (style teal BougeaParis)
+
+**Intégration envisagée :**
+- En tête de chaque article `/info-trafic/`
+- Potentiellement en header sitewide (à discuter)
+
+**À faire APRÈS :**
+1. Automatisation GitHub Actions (cron quotidien)
+2. ImageService Unsplash
+3. AdInjector (AdSense)
+
+**Priorité estimée :** Moyenne (nice-to-have mais très différenciant)
+
+---
+
+### Autres améliorations identifiées
+
+- **Titre de l'article mal extrait** : le H1 affiché dans la page est "Info trafic du YYYY-MM-DD" (valeur par défaut) au lieu du vrai titre accrocheur généré par Claude. Extraire proprement le H1 du Markdown vers le front-matter.
+- **Excerpt générique** : idem, extraire le vrai chapô du contenu pour qu'il apparaisse sous le titre.
+- **Marqueurs ad-slot visibles** : résolu en les retirant provisoirement, à réintégrer proprement via `AdInjector` quand AdSense sera actif.
+- **Article ne contient pas le widget "Aujourd'hui sur la ligne X"** : à ajouter sur les pages ligne cold (pas urgent).
