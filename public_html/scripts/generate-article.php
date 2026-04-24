@@ -119,18 +119,64 @@ try {
     log_info('  -> ' . $result['usage']['input_tokens'] . ' in + ' . $result['usage']['output_tokens'] . ' out');
     log_info('  -> Cout : ' . $result['usage']['cost_eur'] . ' EUR');
 
-    // 10. Nettoyer l'article (retirer marqueurs ad-slot)
+   // 10. Nettoyer l'article (retirer marqueurs ad-slot)
     $articleMd = $result['text'];
     $articleMd = str_replace('<!-- ad-slot: in-article-1 -->', '', $articleMd);
     $articleMd = str_replace('<!-- ad-slot: in-article-2 -->', '', $articleMd);
     $articleMd = preg_replace("/\n{3,}/", "\n\n", $articleMd);
 
-    // 11. Construire le front-matter
+    // 11. Extraire le titre (H1) et le chapo (premier paragraphe)
+    $extractedTitle = 'Info trafic du ' . $today;
+    $extractedExcerpt = 'Bulletin trafic quotidien du reseau francilien.';
+
+    $lines = explode("\n", $articleMd);
+    $foundTitle = false;
+    $foundExcerpt = false;
+
+    foreach ($lines as $i => $line) {
+        $trimmed = trim($line);
+
+        // Extraction du H1 (premiere ligne commencant par "# ")
+        if (!$foundTitle && strpos($trimmed, '# ') === 0 && strpos($trimmed, '## ') !== 0) {
+            $extractedTitle = trim(substr($trimmed, 2));
+            $foundTitle = true;
+            continue;
+        }
+
+        // Extraction du chapo : premier paragraphe non vide apres le H1,
+        // qui n'est pas un titre (#), ni une liste (-, *), ni un blockquote (>)
+        if ($foundTitle && !$foundExcerpt && $trimmed !== '') {
+            if ($trimmed[0] !== '#' && $trimmed[0] !== '-' && $trimmed[0] !== '*' && $trimmed[0] !== '>') {
+                $extractedExcerpt = $trimmed;
+                // Tronquer a 200 caracteres si trop long
+                if (mb_strlen($extractedExcerpt) > 200) {
+                    $extractedExcerpt = mb_substr($extractedExcerpt, 0, 197) . '...';
+                }
+                $foundExcerpt = true;
+                break;
+            }
+        }
+    }
+
+    log_info('  -> Titre extrait : ' . $extractedTitle);
+    log_info('  -> Chapo extrait : ' . mb_substr($extractedExcerpt, 0, 80) . '...');
+
+    // 12. Retirer le H1 du corps Markdown (il est deja dans le front-matter)
+    $articleMdWithoutH1 = preg_replace('/^#\s+.+\n+/m', '', $articleMd, 1);
+    // Nettoyer aussi le chapo qui suit le H1 (il est deja dans excerpt)
+    // On ne retire PAS le chapo : il fait partie integrante de l'article.
+    // Le front-matter excerpt est utilise uniquement pour les meta-descriptions et listings.
+
+    // 13. Echapper les caracteres YAML problematiques dans le front-matter
+    $safeTitle = str_replace(array('"', "\n", "\r"), array("'", ' ', ''), $extractedTitle);
+    $safeExcerpt = str_replace(array('"', "\n", "\r"), array("'", ' ', ''), $extractedExcerpt);
+
+    // 14. Construire le front-matter
     $slug = $today . '-bulletin-' . $angle['code'];
 
     $fm = "---\n";
-    $fm .= "title: Info trafic du " . $today . "\n";
-    $fm .= "excerpt: Bulletin trafic quotidien du reseau francilien.\n";
+    $fm .= 'title: "' . $safeTitle . "\"\n";
+    $fm .= 'excerpt: "' . $safeExcerpt . "\"\n";
     $fm .= "date: " . $today . "\n";
     $fm .= "author: ludo\n";
     $fm .= "image: /assets/images/info-trafic/bienvenue.jpg\n";
@@ -138,7 +184,7 @@ try {
     $fm .= "category: trafic\n";
     $fm .= "---\n\n";
 
-    $finalContent = $fm . $articleMd;
+    $finalContent = $fm . $articleMdWithoutH1;
 
     // 12. Sauvegarde
     log_info('[6/6] Sauvegarde...');
