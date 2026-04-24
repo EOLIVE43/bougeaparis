@@ -190,8 +190,8 @@ try {
 
     $finalContent = $fm . $articleMdWithoutH1;
 
-    // 12. Sauvegarde
-    log_info('[6/6] Sauvegarde...');
+    // 12. Sauvegarde article Markdown
+    log_info('[6/7] Sauvegarde article...');
     $targetDir = $projectRoot . '/content/info-trafic/';
     if (!is_dir($targetDir)) {
         mkdir($targetDir, 0755, true);
@@ -200,12 +200,48 @@ try {
 
     $written = file_put_contents($targetFile, $finalContent);
     if ($written === false) {
-        log_error('Echec ecriture fichier : ' . $targetFile);
+        log_error('Echec ecriture article : ' . $targetFile);
         exit(1);
     }
 
     log_info('  -> ' . $written . ' octets ecrits');
     log_info('  -> Fichier : content/info-trafic/' . $slug . '.md');
+
+    // 13. Sauvegarde du JSON des lignes (pour widget de recherche)
+    log_info('[7/7] Sauvegarde JSON des lignes...');
+    $byLine = $formatter->groupByLine($filtered);
+
+    $trafficData = array(
+        'generated_at' => date('c'),
+        'date' => $today,
+        'article_slug' => $slug,
+        'article_url' => '/info-trafic/' . $slug . '/',
+        'total_disruptions' => $stats['total'],
+        'lines' => $byLine,
+    );
+
+    $trafficDir = $projectRoot . '/data/traffic/';
+    if (!is_dir($trafficDir)) {
+        mkdir($trafficDir, 0755, true);
+    }
+    $trafficFile = $trafficDir . $today . '.json';
+
+    $trafficJson = json_encode($trafficData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    $trafficWritten = file_put_contents($trafficFile, $trafficJson);
+
+    if ($trafficWritten === false) {
+        log_error('Echec ecriture JSON trafic');
+        // Non bloquant : on continue
+    } else {
+        log_info('  -> ' . $trafficWritten . ' octets ecrits');
+        log_info('  -> Fichier : data/traffic/' . $today . '.json');
+        log_info('  -> ' . count($byLine) . ' lignes impactees');
+    }
+
+    // 14. Sauvegarde du "dernier en date" (alias pour le widget)
+    $latestFile = $trafficDir . 'latest.json';
+    @copy($trafficFile, $latestFile);
+    log_info('  -> Alias latest.json mis a jour');
 
     log_info('=== Generation terminee avec succes ===');
     exit(0);
