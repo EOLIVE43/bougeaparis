@@ -1,44 +1,29 @@
 name: Deploy to o2switch
-
 # Declenchement : a chaque push sur la branche main, ou manuellement
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 jobs:
   deploy:
     name: Deploy via FTP
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to o2switch via FTP
+      # Deploiement 1 : public_html/ vers la racine FTP (inchange)
+      - name: Deploy public_html to o2switch
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          # Serveur FTP o2switch (stocke dans GitHub Secrets)
           server: ${{ secrets.FTP_SERVER }}
-
-          # Identifiants FTP (stockes dans GitHub Secrets)
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-
-          # Protocole : FTPS recommande (TLS explicite)
           protocol: ftps
           port: 21
-
-          # Dossier local a deployer
           local-dir: ./public_html/
-
-          # Dossier distant sur le serveur
-          # Le compte FTP deploy-github pointe deja vers /public_html/
-          # donc on met "./"
           server-dir: ./
-
-          # Fichiers et dossiers a exclure du deploiement
           exclude: |
             **/.git*
             **/.git*/**
@@ -49,9 +34,24 @@ jobs:
             **/config/secrets.php
             **/api/cache/**
             **/api/cache/*
-
-          # Log plus verbeux pour debug
           log-level: standard
-
-          # Garder le cache FTP pour deploiement differentiel (upload uniquement les fichiers modifies)
           state-name: .ftp-deploy-sync-state.json
+
+      # Deploiement 2 : content/ vers /home/loxo5141/content/ (au-dessus de public_html)
+      - name: Deploy content to o2switch
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./content/
+          server-dir: ../content/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.DS_Store
+            **/README.md
+          log-level: standard
+          state-name: .ftp-deploy-content-sync-state.json
