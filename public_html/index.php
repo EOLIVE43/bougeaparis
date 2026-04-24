@@ -107,7 +107,7 @@ switch ($path) {
     case '/info-trafic':
         // Page liste : on scanne content/info-trafic/ pour lister les articles existants
         $articles = [];
-        $contentDir = __DIR__ . '/../content/info-trafic/';
+        $contentDir = __DIR__ . '/content/info-trafic/';
         if (is_dir($contentDir)) {
             $files = glob($contentDir . '*.md');
             // Tri par date descendante (les noms commencent par YYYY-MM-DD)
