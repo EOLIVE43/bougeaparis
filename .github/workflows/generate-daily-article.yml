@@ -1,0 +1,66 @@
+name: Generate daily article
+
+on:
+  # Cron : chaque jour a 5h55 UTC = 7h55 CEST (ete) / 6h55 CET (hiver)
+  schedule:
+    - cron: '55 5 * * *'
+
+  # Permet de declencher manuellement depuis l'onglet Actions
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup PHP 8.1
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: curl, mbstring, json
+          coverage: none
+
+      - name: Show PHP version
+        run: php -v
+
+      - name: Generate daily article
+        env:
+          PRIM_API_KEY: ${{ secrets.PRIM_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DISABLE_AUTO_PUBLICATION: ${{ secrets.DISABLE_AUTO_PUBLICATION }}
+        run: php public_html/scripts/generate-article.php
+
+      - name: Check if new file was created
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain public_html/content/info-trafic/)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in content/info-trafic/"
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
+
+      - name: Commit and push article
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config user.name "BougeaParis Bot"
+          git config user.email "bot@bougeaparis.fr"
+          git add public_html/content/info-trafic/
+          git commit -m "content: daily article $(date +%Y-%m-%d)"
+          git push
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          echo "## Generation report" >> $GITHUB_STEP_SUMMARY
+          echo "- Date: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- Changes: ${{ steps.check_changes.outputs.changes }}" >> $GITHUB_STEP_SUMMARY
