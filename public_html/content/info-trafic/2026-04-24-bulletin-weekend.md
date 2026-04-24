@@ -1,6 +1,6 @@
 ---
-title: Info trafic du 2026-04-24
-excerpt: Bulletin trafic quotidien du reseau francilien.
+title: "Week-end en vue : ce qui vous attend sur les transports franciliens"
+excerpt: "Alors que le week-end approche, notre rédaction fait le point sur l'état du réseau francilien ce vendredi 24 avril 2026. Entre travaux programmés, incidents ponctuels et perturbations qui se prolon..."
 date: 2026-04-24
 author: ludo
 image: /assets/images/info-trafic/bienvenue.jpg
@@ -8,74 +8,64 @@ image_alt: Metro parisien
 category: trafic
 ---
 
-# Week-end en vue : ce qui vous attend sur les transports franciliens
-
-À la veille du week-end, le réseau francilien affiche un visage contrasté. Alors que 226 perturbations sont recensées ce vendredi 24 avril 2026, dont 168 bloquantes, les usagers doivent composer avec des incidents en cours et anticiper les nombreux chantiers qui se poursuivront samedi et dimanche. Entre coupures d'alimentation électrique, travaux nocturnes et mouvements sociaux localisés, notre rédaction fait le point sur la situation ligne par ligne.
+Alors que le week-end approche, notre rédaction fait le point sur l'état du réseau francilien ce vendredi 24 avril 2026. Entre travaux programmés, incidents ponctuels et perturbations qui se prolongent, la journée s'annonce mouvementée sur plusieurs axes majeurs. Selon les données officielles d'Ile-de-France Mobilites (PRIM), 232 perturbations affectent le réseau ce vendredi, dont 172 bloquantes. Si le réseau bus parisien concentre l'essentiel des difficultés avec 165 perturbations, métros, RER et Transilien connaissent également leur lot de complications. Voici ce qu'il faut savoir pour anticiper vos déplacements de fin de semaine.
 
 ## Ce qu'il faut retenir
 
-- **RER B paralysé** : coupure d'alimentation électrique à Paris-Nord, trafic perturbé sur l'ensemble de la ligne
-- **Métro : plusieurs lignes touchées** : ligne 3 interrompue jusqu'au 12 mai, ligne 4 coupée entre Châtelet et Barbès jusqu'au 1er mai, mouvement social sur la ligne 13
-- **161 lignes de bus impactées** : principalement par des travaux et déviations, avec de nombreux arrêts non desservis
-- **Travaux nocturnes massifs** : RER A, C, D, E et Transilien fortement concernés en soirée et ce week-end
-- **Tramway T1 suspendu** : trafic interrompu jusqu'à fin août entre Asnières et Gare de Saint-Denis suite à des dégradations
+- **RER B paralysé** : coupure d'alimentation électrique à Paris Nord provoquant des perturbations majeures sur toute la ligne
+- **Métro 4 doublement impacté** : travaux entre Châtelet et Barbès jusqu'au 1er mai, plus un malaise voyageur à Vavin
+- **Mouvement social sur la ligne 13** : trafic réduit à 2 trains sur 3 toute la journée
+- **165 lignes de bus perturbées** : majoritairement pour travaux, avec des déviations ponctuelles liées à des manifestations
+- **Travaux nocturnes massifs** : RER A, C, D, E et plusieurs Transilien interrompus en soirée pour maintenance
 
 ## État du réseau ligne par ligne
 
 ### Métro
 
-La journée s'annonce compliquée sur plusieurs axes structurants. La **ligne 3** reste interrompue entre Gallieni et Gambetta jusqu'au 12 mai inclus en raison de travaux, avec un service de bus de remplacement en place. Sur la **ligne 4**, double peine : le tronçon Châtelet – Barbès-Rochechouart demeure fermé jusqu'au 1er mai pour travaux d'entretien, tandis qu'un malaise voyageur à Vavin empêche la desserte de cette station vers Porte de Clignancourt.
+Le réseau métropolitain connaît ce vendredi une situation contrastée. La **ligne 4** cumule les difficultés : outre les travaux d'entretien entre Châtelet et Barbès-Rochechouart qui se poursuivent jusqu'au 1er mai, un malaise voyageur à Vavin perturbe la circulation vers Porte de Clignancourt. La **ligne 3** reste également fortement impactée par des travaux entre Gallieni et Gambetta jusqu'au 12 mai, avec mise en place de bus de remplacement.
 
-La **ligne 13** connaît un trafic perturbé toute la journée avec seulement 2 trains sur 3 en raison d'un mouvement social local. Selon Ile-de-France Mobilités, des trains stationnent également entre Malakoff – Rue Etienne Dolet et Châtillon-Montrouge suite à un incident d'exploitation. Les lignes **2**, **3B**, **8**, **9**, **14** et **5** subissent diverses perturbations ponctuelles : bagage oublié, incidents techniques, ajustements d'intervalles.
+La **ligne 13** subit un mouvement social local qui réduit l'offre à deux trains sur trois toute la journée. Les lignes **3B**, **8**, **9** et **14** connaissent des incidents ponctuels (actionnement de signal d'alarme, incidents techniques), tandis que la **ligne 2** est perturbée en répercussion d'un bagage oublié sur le quai à Anvers.
 
 ### RER
 
-Le **RER B** traverse une journée noire. Une coupure d'alimentation électrique en gare de Paris-Nord perturbe l'ensemble de la ligne, impactant aussi bien les branches nord que sud. Notre rédaction recommande vivement de consulter le calculateur d'itinéraire avant tout déplacement et de prévoir des temps de parcours rallongés.
+C'est sur le **RER B** que la situation est la plus critique ce vendredi. Une coupure d'alimentation électrique à Paris Nord perturbe le trafic sur l'ensemble de la ligne, selon les informations relayées par IDFM. Le **RER D** subit également un ralentissement entre Stade de France et Orry-la-Ville en raison d'une panne électrique en gare, avec un allongement du temps de parcours pouvant atteindre 15 minutes.
 
-Le **RER D** affiche des ralentissements importants entre Orry-la-Ville et Corbeil-Essonnes via Évry-Courcouronnes, ainsi qu'entre Goussainville et Melun dans les deux sens. Selon IDFM, les allongements de temps de parcours peuvent atteindre 35 minutes, avec des modifications de dessertes et suppressions à prévoir.
-
-Les **RER A, C et E** sont principalement concernés par des travaux nocturnes qui débuteront à partir de 21h-22h et se poursuivront ce week-end. Le RER C applique un plan de transport adapté jusqu'au 29 mai avec quelques suppressions sur l'axe Paris-Austerlitz/Brétigny.
+Le **RER C** poursuit son programme de travaux nocturnes sur plusieurs branches (Dourdan, Juvisy, Versailles), avec interruptions de trafic dès 21h-22h selon les axes. Le **RER A** voit son trafic interrompu en soirée entre La Varenne-Chennevières et Boissy-Saint-Léger, tandis que le **RER E** connaît des coupures nocturnes vers Tournan et Chelles.
 
 ### Tramway
 
-Situation préoccupante sur le **T1** : le trafic reste interrompu entre Asnières – Quatre Routes et Gare de Saint-Denis jusqu'à fin août 2026 en raison de dégradations par un tiers. Un service de bus de remplacement fonctionne entre Asnières–Gennevilliers–Les Courtilles et Mairie de Villeneuve-la-Garenne.
-
-Le **T4** connaît des interruptions nocturnes entre Gargan et Aulnay-sous-Bois du 20 avril au 7 mai (hors week-ends), à partir de 22h55. Les tramways **T11** et **T13** subissent respectivement des ralentissements aux heures de pointe (mouvement social) et des interruptions nocturnes programmées jusqu'en juin.
+Le **tramway T1** demeure interrompu entre Asnières-Quatre Routes et Gare de Saint-Denis pour mesures de sécurité, avec une reprise envisagée seulement fin août 2026. Le **T4** est coupé en soirée entre Gargan et Aulnay-sous-Bois jusqu'au 7 mai. Le **T11** subit des ralentissements aux heures de pointe (7h30-9h et 18h-19h30) en raison d'un mouvement social local. Les tramways **T12** et **T13** connaissent également des perturbations ponctuelles.
 
 ### Transilien
 
-Les lignes **J** et **L** font face à une offre de transport adaptée du 20 au 30 avril suite à un incident d'exploitation rendant certains trains indisponibles. La **ligne L** est particulièrement touchée ce vendredi soir avec la suppression des missions Paris Saint-Lazare – Nanterre Université/Maisons-Laffitte à partir de 22h.
+Les lignes Transilien affichent une situation complexe. La **ligne H** est ralentie sur l'ensemble de son réseau (hors axe Pontoise-Creil) en raison de la même coupure électrique à Paris Nord qui affecte le RER B. Les lignes **J** et **L** voient certains trains supprimés suite à un incident d'exploitation rendant du matériel indisponible.
 
-Les **lignes P, N, R, H et U** connaissent toutes des interruptions nocturnes liées à des travaux sur le réseau ferroviaire, avec mise en place de bus de remplacement. La **ligne H** affiche également un trafic ralenti sur l'ensemble du réseau (hors axe Pontoise-Creil) en raison de la coupure d'alimentation électrique à Paris-Nord.
+Les travaux nocturnes dominent : **lignes L, N, P, R** et **U** interrompent leur trafic dès 21h-22h sur différents tronçons, avec bus de remplacement. Ces coupures, programmées jusqu'à fin avril voire début mai, s'inscrivent dans le cadre de la maintenance du réseau ferroviaire.
 
 ### Bus
 
-Le réseau bus parisien enregistre 161 lignes perturbées, principalement par des travaux de voirie. Parmi les incidents notables : la **ligne 152** voit son arrêt La Courneuve – 8 Mai 1945 non desservi en raison d'une manifestation (reprise prévue à 15h). Les **lignes 28 et 40** sont déviées entre 16h et 21h-22h pour le même motif.
-
-De nombreuses déviations de longue durée affectent les lignes de banlieue, certaines jusqu'en août-septembre 2026, notamment pour des chantiers d'infrastructure majeurs.
+Le réseau bus parisien concentre l'essentiel des perturbations avec 165 lignes impactées. La majorité des déviations sont liées à des travaux de voirie, certains s'étalant sur plusieurs mois. Plusieurs lignes subissent également des déviations ponctuelles ce vendredi en raison de manifestations : les **lignes 28, 40, 325** et **152** voient certains arrêts non desservis, avec des reprises estimées en soirée.
 
 ## Focus du jour : le RER B paralysé par une panne électrique
 
-La perturbation la plus marquante de cette journée concerne sans conteste le RER B. Une coupure d'alimentation électrique survenue en gare de Paris-Nord perturbe l'ensemble de la ligne depuis ce matin. Cette panne technique impacte directement les deux branches de la ligne : au nord vers l'aéroport Charles-de-Gaulle et Mitry-Claye, au sud vers Robinson et Saint-Rémy-lès-Chevreuse. 
-
-Selon les données officielles d'IDFM, les voyageurs doivent s'attendre à des retards conséquents, des suppressions de trains et des modifications de dessertes. La situation est d'autant plus complexe que cette ligne, déjà fragilisée par un plan de transport réduit durant les vacances scolaires (du 18 avril au 3 mai), voit sa capacité encore diminuée. Les équipes techniques sont mobilisées, mais aucune heure précise de rétablissement n'a été communiquée à cette heure. Les usagers réguliers du RER B, habitués à une fréquentation déjà dense en temps normal, devront impérativement prévoir des itinéraires alternatifs ou des délais supplémentaires importants pour leurs déplacements de fin de journée et de week-end.
+La perturbation la plus marquante de ce vendredi concerne sans conteste le **RER B**, affecté par une coupure d'alimentation électrique en gare de Paris Nord. Cette panne majeure perturbe le trafic sur l'ensemble de la ligne, impactant des milliers de voyageurs en cette fin de semaine précédant le week-end du 1er mai. Selon IDFM, la situation devrait se prolonger toute la journée. Les usagers sont invités à consulter le fil X du RER B pour suivre l'évolution en temps réel. Cette même panne affecte également la **ligne H du Transilien**, créant un effet domino sur l'axe nord du réseau francilien. Les alternatives restent limitées : métro ligne 4 et ligne 5 pour les déplacements intra-muros, mais la saturation risque d'être importante. À noter que le RER B subit par ailleurs un plan de transport réduit jusqu'au 3 mai dans le cadre des vacances scolaires, ce qui complique encore la situation. Cette accumulation de facteurs illustre la fragilité du réseau lors de pannes d'infrastructure critiques.
 
 ## Travaux en cours cette semaine
 
-- **Métro 3 et 4** : interruptions prolongées jusqu'au 12 mai (ligne 3) et 1er mai (ligne 4) pour travaux d'entretien et de modernisation
-- **RER C, D, E** : chantiers nocturnes quotidiens sur de nombreux tronçons, avec interruptions dès 21h-22h jusqu'à la fin du service
-- **Transilien L, P, N** : travaux de maintenance du réseau ferroviaire entraînant des interruptions nocturnes jusqu'à fin avril-début mai
-- **Réseau bus** : plus de 150 chantiers de voirie actifs simultanément, certains programmés jusqu'en août 2026
+- **Métro 3 et 4** : interruptions prolongées jusqu'à début mai pour maintenance, bus de remplacement en place
+- **RER A, C, D, E** : coupures nocturnes généralisées sur plusieurs branches pour travaux de modernisation du réseau
+- **Transilien L, N, P** : interruptions en soirée sur de nombreux axes, avec services de bus de substitution
+- **Tramway T1** : coupure longue durée pour mesures de sécurité suite à des dégradations
 
 ## Nos conseils pratiques
 
-- **Anticipez vos déplacements du week-end** : consultez le calculateur d'itinéraire IDFM avant de partir, les horaires sont mis à jour en temps réel
-- **Privilégiez les lignes de métro automatiques** (1, 14) moins sujettes aux incidents, dans la mesure du possible
-- **Prévoyez 20 à 30 minutes supplémentaires** pour vos trajets habituels, notamment sur le RER B et la ligne 13 du métro
-- **Téléchargez les applications officielles** RATP et Transilien pour suivre l'évolution des perturbations en direct et recevoir des alertes
+- **Anticipez vos trajets du week-end** : consultez dès maintenant les horaires de vos lignes habituelles, plusieurs travaux se poursuivent samedi et dimanche
+- **Privilégiez les itinéraires alternatifs** : en cas de perturbation sur le RER B ou la ligne H, reportez-vous sur les métros 4, 5 ou les lignes de bus en correspondance
+- **Téléchargez les applications RATP et Transilien** : elles intègrent les perturbations en temps réel et proposent des itinéraires adaptés
+- **Prévoyez du temps supplémentaire** : les allongements de parcours peuvent atteindre 15 à 20 minutes sur certains axes perturbés
 
 ## À suivre
 
-Les travaux nocturnes se poursuivront tout au long du week-end sur les RER et Transilien, avec des interruptions programmées dès vendredi soir. La situation du RER B devrait évoluer dans les prochaines heures, notre rédaction suivra de près le rétablissement progressif du trafic. Les usagers sont invités à consulter régulièrement les comptes officiels des transporteurs pour connaître les dernières actualisations.
+La situation devrait progressivement s'améliorer en fin de journée sur le RER B, sous réserve de la résolution de la panne électrique à Paris Nord. Les travaux nocturnes se poursuivront tout au long du week-end sur les RER et Transilien, avec des interruptions programmées dès 21h-22h. Le mouvement social sur la ligne 13 du métro devrait se prolonger jusqu'au 1er mai. Notre rédaction continuera de suivre l'évolution de la situation et vous tiendra informés de tout changement majeur via nos bulletins quotidiens.
 
-> *Cet article s'appuie sur les données officielles d'Île-de-France Mobilités (PRIM). Les informations sont vérifiées et complétées par la rédaction en cas d'événement majeur.*
+> *Cet article s'appuie sur les données officielles d'Ile-de-France Mobilités (PRIM). Les informations sont vérifiées et complétées par la rédaction en cas d'événement majeur.*
