@@ -103,10 +103,28 @@ switch ($path) {
         bp_render_hub('transilien');
         break;
 
-    // --- Pages Livraison 1 ---
-    case '/blog':
-        (new Template('blog-index'))->render();
+// --- Info-Trafic (Livraison 4) ---
+    case '/info-trafic':
+        // Page liste : on scanne content/info-trafic/ pour lister les articles existants
+        $articles = [];
+        $contentDir = __DIR__ . '/../content/info-trafic/';
+        if (is_dir($contentDir)) {
+            $files = glob($contentDir . '*.md');
+            // Tri par date descendante (les noms commencent par YYYY-MM-DD)
+            rsort($files);
+            foreach ($files as $file) {
+                $slug = basename($file, '.md');
+                $article = Article::load('info-trafic', $slug);
+                if ($article) {
+                    $articles[] = $article;
+                }
+            }
+        }
+        $tpl = new Template('info-trafic-index');
+        $tpl->withData(['articles' => $articles]);
+        $tpl->render();
         break;
+ 
     case '/a-propos':
         (new Template('about'))->render();
         break;
@@ -127,6 +145,17 @@ switch ($path) {
         break;
 
     default:
+        // Route dynamique /info-trafic/YYYY-MM-DD-slug/
+        if (preg_match('#^/info-trafic/([0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9\-]+)$#', $path, $matches)) {
+            $slug = $matches[1];
+            $article = Article::load('info-trafic', $slug);
+            if ($article) {
+                $tpl = new Template('info-trafic-article');
+                $tpl->withData(['article' => $article]);
+                $tpl->render();
+                break;
+            }
+        }
         bp_render_404();
         break;
 }
