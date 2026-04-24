@@ -182,6 +182,10 @@ try {
     $fm .= "image: /assets/images/info-trafic/bienvenue.jpg\n";
     $fm .= "image_alt: Metro parisien\n";
     $fm .= "category: trafic\n";
+    $fm .= "stats_bloquante: " . $stats['bloquante'] . "\n";
+    $fm .= "stats_perturbee: " . $stats['perturbee'] . "\n";
+    $fm .= "stats_information: " . $stats['information'] . "\n";
+    $fm .= "stats_total: " . $stats['total'] . "\n";
     $fm .= "---\n\n";
 
     $finalContent = $fm . $articleMdWithoutH1;
