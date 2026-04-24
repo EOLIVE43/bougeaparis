@@ -105,7 +105,35 @@ $shareUrlEnc = rawurlencode($shareUrl);
             </a>
         </div>
     </header>
-
+<!-- Bandeau statut reseau (si stats presentes dans front-matter) -->
+    <?php
+    $statsBloquante   = (int) ($article->getMeta('stats_bloquante') ?? 0);
+    $statsPerturbee   = (int) ($article->getMeta('stats_perturbee') ?? 0);
+    $statsInformation = (int) ($article->getMeta('stats_information') ?? 0);
+    $statsTotal       = (int) ($article->getMeta('stats_total') ?? 0);
+    if ($statsTotal > 0):
+    ?>
+        <section class="traffic-banner" aria-label="État du réseau aujourd'hui">
+            <h2 class="traffic-banner__title">État du réseau aujourd'hui</h2>
+            <div class="traffic-banner__stats">
+                <div class="traffic-banner__stat traffic-banner__stat--bloquante">
+                    <span class="traffic-banner__stat-number"><?= $statsBloquante ?></span>
+                    <span class="traffic-banner__stat-label">Trafic interrompu</span>
+                </div>
+                <div class="traffic-banner__stat traffic-banner__stat--perturbee">
+                    <span class="traffic-banner__stat-number"><?= $statsPerturbee ?></span>
+                    <span class="traffic-banner__stat-label">Trafic perturbé</span>
+                </div>
+                <div class="traffic-banner__stat traffic-banner__stat--information">
+                    <span class="traffic-banner__stat-number"><?= $statsInformation ?></span>
+                    <span class="traffic-banner__stat-label">Information</span>
+                </div>
+            </div>
+            <p class="traffic-banner__source">
+                Source : données officielles Île-de-France Mobilités (PRIM) · <?= $statsTotal ?> perturbations recensées
+            </p>
+        </section>
+    <?php endif; ?>
     <!-- Image hero (critique pour Discover) -->
     <?php if ($article->getImage()): ?>
         <figure class="article__hero">
