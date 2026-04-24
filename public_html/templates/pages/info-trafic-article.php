@@ -134,6 +134,8 @@ $shareUrlEnc = rawurlencode($shareUrl);
             </p>
         </section>
     <?php endif; ?>
+<!-- Widget de recherche de ligne -->
+    <?php include __DIR__ . '/../partials/line-search-widget.php'; ?>
     <!-- Image hero (critique pour Discover) -->
     <?php if ($article->getImage()): ?>
         <figure class="article__hero">
