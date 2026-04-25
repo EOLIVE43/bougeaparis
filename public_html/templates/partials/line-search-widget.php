@@ -24,6 +24,15 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
     ];
     $modeLabel = $modeLabels[$lineSearchMode] ?? 'd\'une ligne';
 
+    $modeRegions = [
+        'all'        => 'à Paris et en Île-de-France',
+        'metro'      => 'à Paris',
+        'rer'        => 'en Île-de-France',
+        'tramway'    => 'à Paris et en Île-de-France',
+        'transilien' => 'en Île-de-France',
+    ];
+    $regionLabel = $modeRegions[$lineSearchMode] ?? 'à Paris et en Île-de-France';
+
     $modePlaceholders = [
         'all'        => 'Ex : metro 6, RER B, tramway T3...',
         'metro'      => 'Ex : metro 6, ligne 4...',
@@ -34,7 +43,7 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
     $modePlaceholder = $modePlaceholders[$lineSearchMode] ?? 'Ex : metro 6, RER B, tramway T3...';
     ?>
     <label for="line-search-input" class="line-search__label">
-        Rechercher le trafic <?= htmlspecialchars($modeLabel) ?><?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
+        Rechercher le trafic <?= htmlspecialchars($modeLabel) ?> <?= htmlspecialchars($regionLabel) ?><?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
     </label>
 
     <div class="line-search__input-wrap">
