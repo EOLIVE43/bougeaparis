@@ -114,8 +114,20 @@ $shareUrlEnc = rawurlencode($shareUrl);
     if ($statsTotal > 0):
     ?>
         <section class="traffic-banner" aria-label="État du réseau aujourd'hui">
-            <h2 class="traffic-banner__title">État du réseau aujourd'hui</h2>
-            <div class="traffic-banner__stats">
+<?php
+            // Formatte la date de l'article en français
+            $articleDateTs = strtotime($article->getDateIso());
+            $joursFr = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+            $moisFr = ['', 'janvier', 'février', 'mars', 'avril', 'mai', 'juin',
+                       'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+            $articleDateFr = $joursFr[(int)date('w', $articleDateTs)] . ' '
+                           . (int)date('j', $articleDateTs) . ' '
+                           . $moisFr[(int)date('n', $articleDateTs)] . ' '
+                           . date('Y', $articleDateTs);
+            ?>
+            <h2 class="traffic-banner__title">
+                Info trafic aujourd'hui · <span class="traffic-banner__date"><?= e($articleDateFr) ?></span>
+            </h2>            <div class="traffic-banner__stats">
                 <div class="traffic-banner__stat traffic-banner__stat--bloquante">
                     <span class="traffic-banner__stat-number"><?= $statsBloquante ?></span>
                     <span class="traffic-banner__stat-label">Trafic interrompu</span>
@@ -135,7 +147,10 @@ $shareUrlEnc = rawurlencode($shareUrl);
         </section>
     <?php endif; ?>
 <!-- Widget de recherche de ligne -->
-    <?php include __DIR__ . '/../partials/line-search-widget.php'; ?>
+    <?php
+    $lineSearchDate = $articleDateFr ?? '';
+    include __DIR__ . '/../partials/line-search-widget.php';
+    ?>
     <!-- Image hero (critique pour Discover) -->
     <?php if ($article->getImage()): ?>
         <figure class="article__hero">
