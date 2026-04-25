@@ -6,9 +6,9 @@
  */
 ?>
 
-<section class="line-search" aria-label="Rechercher l'etat d'une ligne">
+<section class="line-search" aria-label="Rechercher le trafic d'une ligne">
     <label for="line-search-input" class="line-search__label">
-        Rechercher l'etat d'une ligne
+        Rechercher le trafic d'une ligne<?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
     </label>
 
     <div class="line-search__input-wrap">
