@@ -22,7 +22,17 @@ class ArticlePrompt
         $prompt .= "Ton : " . $ton . "\n\n";
         $prompt .= "Accroche exemple : " . $accroche . "\n\n";
 
-        $prompt .= "STRUCTURE OBLIGATOIRE\n\n";
+$prompt .= "STRUCTURE OBLIGATOIRE\n\n";
+        $prompt .= "0. PREMIERE LIGNE : SEO_TITLE: <titre SEO optimise>\n";
+        $prompt .= "   - Format : 50-60 caracteres maximum.\n";
+        $prompt .= "   - DOIT contenir 'Info trafic' en debut.\n";
+        $prompt .= "   - DOIT contenir la date courte (ex: '25 avril 2026' ou 'samedi 25 avril').\n";
+        $prompt .= "   - DOIT differer du H1 (style media plus factuel).\n";
+        $prompt .= "   - Exemples valides :\n";
+        $prompt .= "     * 'Info trafic IDF samedi 25 avril 2026 en temps reel'\n";
+        $prompt .= "     * 'Info trafic Paris 25 avril : metro, RER, tramway'\n";
+        $prompt .= "     * 'Info trafic samedi 25 avril : RER C, metro 3 et 4 perturbes'\n";
+        $prompt .= "   - Puis SAUTE UNE LIGNE et continue avec le H1.\n";
         $prompt .= "1. H1 accrocheur (60-80 car), ne pas commencer par 'Bulletin' ou 'Info trafic'.\n";
         $prompt .= "2. Chapo : 2-3 phrases (80-120 mots).\n";
         $prompt .= "3. ## Ce qu'il faut retenir : 3-5 bullet points.\n";
@@ -52,7 +62,10 @@ class ArticlePrompt
         $prompt .= "- Ne pas oublier les deux marqueurs ad-slot.\n\n";
 
         $prompt .= "FORMAT DE SORTIE\n\n";
-        $prompt .= "Retourne UNIQUEMENT le Markdown, sans introduction, sans conclusion, sans balise code. Commence directement par le titre H1 (# ...).";
+        $prompt .= "Retourne UNIQUEMENT ce qui suit, sans introduction, sans balise code :\n";
+        $prompt .= "Ligne 1 : SEO_TITLE: <ton titre SEO>\n";
+        $prompt .= "Ligne 2 : (vide)\n";
+        $prompt .= "Ligne 3 et suivantes : article complet en Markdown commencant par le H1 (# ...).";
 
         return $prompt;
     }
