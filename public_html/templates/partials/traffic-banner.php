@@ -68,8 +68,20 @@ if (!is_array($bannerStats) || (int)($bannerStats['total'] ?? 0) === 0) {
         $modeText = isset($modeLabels[$bannerMode]) ? $modeLabels[$bannerMode] : '';
         ?>
         <section class="traffic-banner traffic-banner--clear" aria-label="Etat du reseau">
+            <?php
+            $modeLabelsClear = [
+                'all'        => '',
+                'metro'      => 'métro',
+                'rer'        => 'RER',
+                'tramway'    => 'tramway',
+                'transilien' => 'Transilien',
+                'bus'        => 'bus',
+            ];
+            $clearModeLabel = $modeLabelsClear[$bannerMode] ?? '';
+            $clearTitleSuffix = $clearModeLabel ? ' ' . $clearModeLabel : '';
+            ?>
             <h2 class="traffic-banner__title">
-                Info trafic aujourd'hui<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
+                Info trafic<?= htmlspecialchars($clearTitleSuffix) ?> en temps réel<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
             </h2>
             <p class="traffic-banner__clear-text">
                 ✓ Trafic normal <?= htmlspecialchars($modeText) ?> aujourd'hui.
@@ -102,7 +114,7 @@ $titleSuffix = $modeLabel ? ' ' . $modeLabel : '';
 
 <section class="traffic-banner" aria-label="Info trafic aujourd'hui">
     <h2 class="traffic-banner__title">
-        Info trafic<?= htmlspecialchars($titleSuffix) ?> aujourd'hui<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
+        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
     </h2>
 
     <div class="traffic-banner__stats">
