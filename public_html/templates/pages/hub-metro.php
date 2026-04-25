@@ -42,7 +42,6 @@ $tpl->partial('components/breadcrumb', [
         $lineSearchMode = 'metro';
         include __DIR__ . '/../partials/line-search-widget.php';
         ?>
-        ?>
 
         <section class="page-section page-section--intro">
             <?= $cocon['intro'] ?? '' ?>
