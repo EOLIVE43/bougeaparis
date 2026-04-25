@@ -43,9 +43,9 @@ jobs:
       - name: Check if new file was created
         id: check_changes
         run: |
-          if [ -n "$(git status --porcelain public_html/content/info-trafic/)" ]; then
+          if [ -n "$(git status --porcelain public_html/content/info-trafic/ public_html/data/traffic/)" ]; then
             echo "changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected in content/info-trafic/"
+            echo "Changes detected"
           else
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected"
@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "BougeaParis Bot"
           git config user.email "bot@bougeaparis.fr"
-          git add public_html/content/info-trafic/
+          git add public_html/content/info-trafic/ public_html/data/traffic/
           git commit -m "content: daily article $(date +%Y-%m-%d)"
           git push
       - name: Trigger deploy workflow
