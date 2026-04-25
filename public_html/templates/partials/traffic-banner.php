@@ -77,12 +77,32 @@ if (!is_array($bannerStats) || (int)($bannerStats['total'] ?? 0) === 0) {
                 'transilien' => 'Transilien',
                 'bus'        => 'bus',
             ];
+            $modeRegions = [
+                'all'        => 'à Paris et en Île-de-France',
+                'metro'      => 'à Paris',
+                'rer'        => 'en Île-de-France',
+                'tramway'    => 'à Paris et en Île-de-France',
+                'transilien' => 'en Île-de-France',
+                'bus'        => 'à Paris et en Île-de-France',
+            ];
             $clearModeLabel = $modeLabelsClear[$bannerMode] ?? '';
             $clearTitleSuffix = $clearModeLabel ? ' ' . $clearModeLabel : '';
+            $clearRegion = $modeRegions[$bannerMode] ?? 'à Paris et en Île-de-France';
             ?>
-            <h2 class="traffic-banner__title">
-                Info trafic<?= htmlspecialchars($clearTitleSuffix) ?> en temps réel<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
-            </h2>
+            <?php
+    $modeRegions = [
+        'all'        => 'à Paris et en Île-de-France',
+        'metro'      => 'à Paris',
+        'rer'        => 'en Île-de-France',
+        'tramway'    => 'à Paris et en Île-de-France',
+        'transilien' => 'en Île-de-France',
+        'bus'        => 'à Paris et en Île-de-France',
+    ];
+    $regionLabel = $modeRegions[$bannerMode] ?? 'à Paris et en Île-de-France';
+    ?>
+    <h2 class="traffic-banner__title">
+        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel <?= htmlspecialchars($regionLabel) ?><?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
+    </h2>
             <p class="traffic-banner__clear-text">
                 ✓ Trafic normal <?= htmlspecialchars($modeText) ?> aujourd'hui.
             </p>
