@@ -58,10 +58,28 @@ $tpl->partial('components/breadcrumb', [
     <div class="page-cocon__container">
 
         <?php if ($traffic_cocon): ?>
-            <?php $tpl->partial('components/traffic-widget', [
-                'mode'  => 'cocon',
-                'cocon' => $traffic_cocon,
-            ]); ?>
+            <?php
+            // Mapping cocon -> mode pour les nouveaux widgets
+            $cocoToMode = [
+                'metro'      => 'metro',
+                'rer'        => 'rer',
+                'tramway'    => 'tramway',
+                'transilien' => 'transilien',
+                'bus'        => 'bus',
+            ];
+            $widgetMode = $cocoToMode[$traffic_cocon] ?? 'all';
+
+            // Bandeau dynamique d'état du trafic du mode
+            $bannerMode = $widgetMode;
+            include __DIR__ . '/../partials/traffic-banner.php';
+            ?>
+            <?php if ($widgetMode !== 'bus'): ?>
+                <?php
+                // Widget de recherche (sauf pour bus, trop de lignes)
+                $lineSearchMode = $widgetMode;
+                include __DIR__ . '/../partials/line-search-widget.php';
+                ?>
+            <?php endif; ?>
         <?php endif; ?>
 
         <section class="page-section page-section--intro">
