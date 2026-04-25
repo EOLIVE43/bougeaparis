@@ -211,12 +211,48 @@ try {
     log_info('[7/7] Sauvegarde JSON des lignes...');
     $byLine = $formatter->groupByLine($filtered);
 
+    // Calculer les stats par mode (metro, rer, tramway, transilien, bus)
+    $statsByMode = array(
+        'metro'      => array('bloquante' => 0, 'perturbee' => 0, 'information' => 0, 'total' => 0),
+        'rer'        => array('bloquante' => 0, 'perturbee' => 0, 'information' => 0, 'total' => 0),
+        'tramway'    => array('bloquante' => 0, 'perturbee' => 0, 'information' => 0, 'total' => 0),
+        'transilien' => array('bloquante' => 0, 'perturbee' => 0, 'information' => 0, 'total' => 0),
+        'bus'        => array('bloquante' => 0, 'perturbee' => 0, 'information' => 0, 'total' => 0),
+    );
+
+    $modeMap = array(
+        'Metro'        => 'metro',
+        'RapidTransit' => 'rer',
+        'Tramway'      => 'tramway',
+        'LocalTrain'   => 'transilien',
+        'Bus'          => 'bus',
+    );
+
+    foreach ($filtered as $d) {
+        $primaryMode = isset($d['primary_mode']) ? $d['primary_mode'] : '';
+        $modeKey = isset($modeMap[$primaryMode]) ? $modeMap[$primaryMode] : null;
+        if ($modeKey === null) continue;
+
+        $sev = strtolower($d['severity']);
+        if (isset($statsByMode[$modeKey][$sev])) {
+            $statsByMode[$modeKey][$sev]++;
+        }
+        $statsByMode[$modeKey]['total']++;
+    }
+
     $trafficData = array(
         'generated_at' => date('c'),
         'date' => $today,
         'article_slug' => $slug,
         'article_url' => '/info-trafic/' . $slug . '/',
         'total_disruptions' => $stats['total'],
+        'stats_total' => array(
+            'bloquante'   => $stats['bloquante'],
+            'perturbee'   => $stats['perturbee'],
+            'information' => $stats['information'],
+            'total'       => $stats['total'],
+        ),
+        'stats_by_mode' => $statsByMode,
         'lines' => $byLine,
     );
 
