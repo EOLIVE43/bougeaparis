@@ -68,7 +68,7 @@
             { mode: 'LocalTrain',   key: 'transilien', prefix: 'Transilien' }
         ];
 
-        allLines = [];
+       allLines = [];
         groups.forEach(g => {
             const items = catalog[g.key] || [];
             items.forEach(line => {
@@ -77,7 +77,13 @@
                     shortName: line.short || line.label,
                     label: g.prefix + ' ' + (line.label || line.id),
                     color: line.color || '#0F6E56',
-                    textColor: line.text_color || '#FFFFFF'
+                    textColor: line.text_color || '#FFFFFF',
+                    slug: line.slug || '',
+                    hasPage: line.has_page === true,
+                    pathPrefix: g.key === 'metro' ? '/metro/' :
+                                g.key === 'rer' ? '/rer/' :
+                                g.key === 'tramway' ? '/tramway/' :
+                                g.key === 'transilien' ? '/transilien/' : '/'
                 });
             });
         });
@@ -209,6 +215,12 @@
             if (status.disruptions.length > 1) {
                 html += '    <p class="line-search__more">+ ' + (status.disruptions.length - 1) + ' autre perturbation sur cette ligne</p>';
             }
+        }
+
+        // Bouton "Voir la ligne" si la page existe
+        if (line.hasPage && line.slug) {
+            const url = line.pathPrefix + line.slug + '/';
+            html += '    <a href="' + escapeAttr(url) + '" class="line-search__cta">Voir la ' + escapeHtml(line.label) + ' →</a>';
         }
 
         html += '  </div>';
