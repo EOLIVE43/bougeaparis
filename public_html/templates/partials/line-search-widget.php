@@ -3,12 +3,38 @@
  * partials/line-search-widget.php
  *
  * Widget de recherche de ligne avec dropdown custom et badges colores.
+ *
+ * Variables disponibles :
+ *   $lineSearchMode (string) : 'all' | 'metro' | 'rer' | 'tramway' | 'transilien'
+ *                              Defaut : 'all'
+ *   $lineSearchDate (string) : date au format francais
  */
+if (!isset($lineSearchMode)) $lineSearchMode = 'all';
+if (!isset($lineSearchDate)) $lineSearchDate = '';
 ?>
 
-<section class="line-search" aria-label="Rechercher le trafic d'une ligne">
+<section class="line-search" aria-label="Rechercher le trafic d'une ligne" data-mode="<?= htmlspecialchars($lineSearchMode) ?>">
+    <?php
+    $modeLabels = [
+        'all'        => 'd\'une ligne',
+        'metro'      => 'd\'un métro',
+        'rer'        => 'd\'une ligne RER',
+        'tramway'    => 'd\'un tramway',
+        'transilien' => 'd\'un Transilien',
+    ];
+    $modeLabel = $modeLabels[$lineSearchMode] ?? 'd\'une ligne';
+
+    $modePlaceholders = [
+        'all'        => 'Ex : metro 6, RER B, tramway T3...',
+        'metro'      => 'Ex : metro 6, ligne 4...',
+        'rer'        => 'Ex : RER A, RER B...',
+        'tramway'    => 'Ex : tramway T3, T11...',
+        'transilien' => 'Ex : ligne H, ligne J...',
+    ];
+    $modePlaceholder = $modePlaceholders[$lineSearchMode] ?? 'Ex : metro 6, RER B, tramway T3...';
+    ?>
     <label for="line-search-input" class="line-search__label">
-        Rechercher le trafic d'une ligne<?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
+        Rechercher le trafic <?= htmlspecialchars($modeLabel) ?><?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
     </label>
 
     <div class="line-search__input-wrap">
@@ -16,7 +42,7 @@
             type="search"
             id="line-search-input"
             class="line-search__input"
-            placeholder="Ex : metro 6, RER B, tramway T3..."
+            placeholder="<?= htmlspecialchars($modePlaceholder) ?>"
             autocomplete="off"
             spellcheck="false"
             role="combobox"
@@ -61,14 +87,22 @@
 
     function buildAllLines() {
         if (!catalog) return;
-        const groups = [
+        const sectionEl = document.querySelector('.line-search');
+        const filterMode = sectionEl ? sectionEl.getAttribute('data-mode') : 'all';
+
+        let groups = [
             { mode: 'Metro',        key: 'metro',      prefix: 'Metro' },
             { mode: 'RapidTransit', key: 'rer',        prefix: 'RER' },
             { mode: 'Tramway',      key: 'tramway',    prefix: 'Tramway' },
             { mode: 'LocalTrain',   key: 'transilien', prefix: 'Transilien' }
         ];
 
-       allLines = [];
+        // Filtrage par mode si specifie
+        if (filterMode && filterMode !== 'all') {
+            groups = groups.filter(g => g.key === filterMode);
+        }
+
+        allLines = [];
         groups.forEach(g => {
             const items = catalog[g.key] || [];
             items.forEach(line => {
