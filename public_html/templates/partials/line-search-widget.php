@@ -182,4 +182,99 @@
         const statusConfig = {
             'NORMAL':      { cls: 'normal',      icon: 'OK', label: 'Trafic normal aujourd\'hui' },
             'INFORMATION': { cls: 'information', icon: 'i',  label: 'Information' },
-            'PERTURBEE':   { cls: 'perturbee',   icon: '!',
+            'PERTURBEE':   { cls: 'perturbee',   icon: '!',  label: 'Trafic perturbe' },
+            'BLOQUANTE':   { cls: 'bloquante',   icon: 'X',  label: 'Trafic interrompu' }
+        };
+        const cfg = statusConfig[status.severity] || statusConfig['NORMAL'];
+
+        let html = '';
+        html += '<div class="line-search__card line-search__card--' + cfg.cls + '">';
+        html += '  <div class="line-search__badge" style="background:' + escapeAttr(line.color) + ';color:' + escapeAttr(line.textColor) + '">' + escapeHtml(line.shortName) + '</div>';
+        html += '  <div class="line-search__info">';
+        html += '    <h3 class="line-search__line-name">' + escapeHtml(line.label) + '</h3>';
+        html += '    <p class="line-search__status"><span class="line-search__status-dot">' + cfg.icon + '</span> ' + escapeHtml(cfg.label) + '</p>';
+
+        if (status.disruptions.length > 0) {
+            const first = status.disruptions[0];
+            if (first.title) {
+                html += '    <p class="line-search__detail">' + escapeHtml(first.title) + '</p>';
+            }
+            if (status.disruptions.length > 1) {
+                html += '    <p class="line-search__more">+ ' + (status.disruptions.length - 1) + ' autre perturbation sur cette ligne</p>';
+            }
+        }
+
+        html += '  </div>';
+        html += '</div>';
+
+        resultEl.innerHTML = html;
+        resultEl.hidden = false;
+    }
+
+    function escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function escapeAttr(str) {
+        return escapeHtml(str);
+    }
+
+    // Input : filtrage en temps reel
+    input.addEventListener('input', function(e) {
+        const val = e.target.value;
+        const suggestions = filterLines(val);
+        renderDropdown(suggestions);
+        activeIndex = -1;
+
+        if (!val) {
+            resultEl.hidden = true;
+            resultEl.innerHTML = '';
+        }
+    });
+
+    // Focus : ne montre rien si l'input est vide
+    input.addEventListener('focus', function() {
+        const val = input.value;
+        if (val) {
+            renderDropdown(filterLines(val));
+        }
+    });
+
+    // Blur : masque le dropdown
+    input.addEventListener('blur', function() {
+        setTimeout(function() {
+            dropdown.hidden = true;
+            input.setAttribute('aria-expanded', 'false');
+        }, 150);
+    });
+
+    // Clavier : fleches haut/bas + Enter + Escape
+    input.addEventListener('keydown', function(e) {
+        if (dropdown.hidden) return;
+        const items = dropdown.querySelectorAll('.line-search__dropdown-item');
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            setActive(Math.min(activeIndex + 1, items.length - 1));
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            setActive(Math.max(activeIndex - 1, 0));
+        } else if (e.key === 'Enter' && activeIndex >= 0) {
+            e.preventDefault();
+            const suggestions = filterLines(input.value);
+            if (suggestions[activeIndex]) {
+                selectLine(suggestions[activeIndex]);
+            }
+        } else if (e.key === 'Escape') {
+            dropdown.hidden = true;
+            input.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+})();
+</script>
