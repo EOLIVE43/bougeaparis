@@ -223,7 +223,7 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
         const statusLabels = {
             'NORMAL':      'Trafic normal',
             'INFORMATION': 'Information',
-            'PERTURBEE':   'Perturbe',
+            'PERTURBEE':   'Perturbé',
             'BLOQUANTE':   'Interrompu'
         };
         suggestions.forEach((line, i) => {
