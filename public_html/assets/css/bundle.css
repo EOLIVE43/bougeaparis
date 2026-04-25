@@ -1334,6 +1334,35 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     color: #1A2B26;
     font-weight: 700;
 }
+/* Bouton "Voir la ligne" dans la card resultat */
+.line-search__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.85rem;
+    padding: 0.55rem 1rem;
+    background: #0F6E56;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.line-search__cta:hover {
+    background: #085041;
+    transform: translateY(-1px);
+}
+
+.line-search__cta:active {
+    transform: translateY(0);
+}
+
+.line-search__cta:focus-visible {
+    outline: 2px solid #0F6E56;
+    outline-offset: 2px;
+}
 /* ==========================================================================
    FIN bundle.css
    ========================================================================== */
