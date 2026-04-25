@@ -1289,6 +1289,45 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
         font-size: 0.9rem;
     }
 }
+/* Chip de statut dans le dropdown */
+.line-search__dropdown-chip {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.line-search__dropdown-chip--normal {
+    background: #E1F5EE;
+    color: #0F6E56;
+}
+
+.line-search__dropdown-chip--information {
+    background: #E5EEF7;
+    color: #2D5A85;
+}
+
+.line-search__dropdown-chip--perturbee {
+    background: #FFF4E0;
+    color: #A06800;
+}
+
+.line-search__dropdown-chip--bloquante {
+    background: #FDECEC;
+    color: #A32D2D;
+}
+
+@media (max-width: 640px) {
+    .line-search__dropdown-chip {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
 /* ==========================================================================
    FIN bundle.css
    ========================================================================== */
