@@ -64,7 +64,7 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
     <div id="line-search-result" class="line-search__result" hidden></div>
 
     <p class="line-search__hint">
-        Tapez le nom de votre ligne pour connaitre son etat actuel
+        Tapez le nom de votre ligne pour connaître son état actuel
     </p>
 </section>
 
