@@ -272,7 +272,7 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
         const statusConfig = {
             'NORMAL':      { cls: 'normal',      icon: 'OK', label: 'Trafic normal aujourd\'hui' },
             'INFORMATION': { cls: 'information', icon: 'i',  label: 'Information' },
-            'PERTURBEE':   { cls: 'perturbee',   icon: '!',  label: 'Trafic perturbe' },
+            'PERTURBEE':   { cls: 'perturbee',   icon: '!',  label: 'Trafic perturbé' },
             'BLOQUANTE':   { cls: 'bloquante',   icon: 'X',  label: 'Trafic interrompu' }
         };
         const cfg = statusConfig[status.severity] || statusConfig['NORMAL'];
