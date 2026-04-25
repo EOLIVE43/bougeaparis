@@ -132,9 +132,20 @@ $modeLabel = $modeLabels[$bannerMode] ?? '';
 $titleSuffix = $modeLabel ? ' ' . $modeLabel : '';
 ?>
 
+<?php
+$modeRegions = [
+    'all'        => 'à Paris et en Île-de-France',
+    'metro'      => 'à Paris',
+    'rer'        => 'en Île-de-France',
+    'tramway'    => 'à Paris et en Île-de-France',
+    'transilien' => 'en Île-de-France',
+    'bus'        => 'à Paris et en Île-de-France',
+];
+$regionLabel = $modeRegions[$bannerMode] ?? 'à Paris et en Île-de-France';
+?>
 <section class="traffic-banner" aria-label="Info trafic aujourd'hui">
     <h2 class="traffic-banner__title">
-        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel<?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
+        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel <span class="traffic-banner__region"><?= htmlspecialchars($regionLabel) ?></span><?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
     </h2>
 
     <div class="traffic-banner__stats">
