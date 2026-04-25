@@ -1363,6 +1363,38 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     outline: 2px solid #0F6E56;
     outline-offset: 2px;
 }
+/* Variante "clear" du bandeau (aucune perturbation) */
+.traffic-banner--clear {
+    background: linear-gradient(180deg, #F0FAF5 0%, #E1F5EE 100%);
+    border-color: #C8E8DA;
+}
+
+.traffic-banner__clear-text {
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0F6E56;
+}
+
+/* Lien "Lire l'article complet" */
+.traffic-banner__article-link {
+    color: #0F6E56;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.traffic-banner__article-link:hover {
+    color: #085041;
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .traffic-banner__clear-text {
+        font-size: 1rem;
+    }
+}
 /* ==========================================================================
    FIN bundle.css
    ========================================================================== */
