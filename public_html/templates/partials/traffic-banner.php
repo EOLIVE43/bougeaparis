@@ -101,7 +101,7 @@ if (!is_array($bannerStats) || (int)($bannerStats['total'] ?? 0) === 0) {
     $regionLabel = $modeRegions[$bannerMode] ?? 'à Paris et en Île-de-France';
     ?>
     <h2 class="traffic-banner__title">
-        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel <?= htmlspecialchars($regionLabel) ?><?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
+        Info trafic<?= htmlspecialchars($titleSuffix) ?> en temps réel <span class="traffic-banner__region"><?= htmlspecialchars($regionLabel) ?></span><?php if ($bannerDate): ?> · <span class="traffic-banner__date"><?= htmlspecialchars($bannerDate) ?></span><?php endif; ?>
     </h2>
             <p class="traffic-banner__clear-text">
                 ✓ Trafic normal <?= htmlspecialchars($modeText) ?> aujourd'hui.
