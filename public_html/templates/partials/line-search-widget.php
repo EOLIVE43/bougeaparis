@@ -43,7 +43,7 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
     $modePlaceholder = $modePlaceholders[$lineSearchMode] ?? 'Ex : metro 6, RER B, tramway T3...';
     ?>
     <label for="line-search-input" class="line-search__label">
-        Rechercher le trafic <?= htmlspecialchars($modeLabel) ?> <?= htmlspecialchars($regionLabel) ?><?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
+        Rechercher le trafic <?= htmlspecialchars($modeLabel) ?> <span class="line-search__region"><?= htmlspecialchars($regionLabel) ?></span><?php if (!empty($lineSearchDate)): ?> · <span class="line-search__date"><?= e($lineSearchDate) ?></span><?php endif; ?>
     </label>
 
     <div class="line-search__input-wrap">
