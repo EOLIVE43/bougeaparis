@@ -1395,6 +1395,18 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
         font-size: 1rem;
     }
 }
+/* Region : visible desktop, masque mobile (SEO preserve) */
+.traffic-banner__region,
+.line-search__region {
+    /* Visible par defaut (desktop + Googlebot) */
+}
+
+@media (max-width: 768px) {
+    .traffic-banner__region,
+    .line-search__region {
+        display: none;
+    }
+}
 /* ==========================================================================
    FIN bundle.css
    ========================================================================== */
