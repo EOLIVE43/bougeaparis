@@ -137,13 +137,20 @@
         }
 
         let html = '';
+        const statusLabels = {
+            'NORMAL':      'Trafic normal',
+            'INFORMATION': 'Information',
+            'PERTURBEE':   'Perturbe',
+            'BLOQUANTE':   'Interrompu'
+        };
         suggestions.forEach((line, i) => {
             const status = getLineStatus(line);
-            const dotClass = 'line-search__dropdown-dot--' + status.severity.toLowerCase();
+            const chipClass = 'line-search__dropdown-chip--' + status.severity.toLowerCase();
+            const chipLabel = statusLabels[status.severity] || 'Trafic normal';
             html += '<div class="line-search__dropdown-item" data-index="' + i + '" role="option">';
             html += '  <span class="line-search__dropdown-badge" style="background:' + escapeAttr(line.color) + ';color:' + escapeAttr(line.textColor) + '">' + escapeHtml(line.shortName) + '</span>';
             html += '  <span class="line-search__dropdown-label">' + escapeHtml(line.label) + '</span>';
-            html += '  <span class="line-search__dropdown-dot ' + dotClass + '" aria-hidden="true"></span>';
+            html += '  <span class="line-search__dropdown-chip ' + chipClass + '">' + escapeHtml(chipLabel) + '</span>';
             html += '</div>';
         });
         dropdown.innerHTML = html;
