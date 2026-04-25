@@ -33,10 +33,15 @@ $tpl->partial('components/breadcrumb', [
     <div class="page-cocon__container">
 
         <?php
-        $tpl->partial('components/traffic-widget', [
-            'mode'  => 'cocon',
-            'cocon' => 'metro',
-        ]);
+        // Bandeau dynamique d'état du métro (filtre auto sur le mode metro)
+        $bannerMode = 'metro';
+        include __DIR__ . '/../partials/traffic-banner.php';
+        ?>
+        <?php
+        // Widget de recherche d'une ligne metro
+        $lineSearchMode = 'metro';
+        include __DIR__ . '/../partials/line-search-widget.php';
+        ?>
         ?>
 
         <section class="page-section page-section--intro">
