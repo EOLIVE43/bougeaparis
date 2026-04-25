@@ -1,80 +1,90 @@
 ---
-title: "Sortie culturelle ce samedi : le point sur les transports franciliens"
-excerpt: "Ce samedi 25 avril 2026, les voyageurs franciliens qui souhaitent profiter des musées, des lieux culturels ou simplement flâner dans la capitale doivent composer avec de nombreux travaux programmés..."
+title: "Sortie culture ce samedi : les transports pour profiter de Paris"
+excerpt: "En ce samedi 25 avril 2026, le réseau francilien affiche un visage contrasté. Si plusieurs lignes de métro et RER sont impactées par des travaux de modernisation, les grands axes touristiques reste..."
 date: 2026-04-25
 author: ludo
 image: /assets/images/info-trafic/bienvenue.jpg
 image_alt: Metro parisien
 category: trafic
 stats_bloquante: 137
-stats_perturbee: 42
+stats_perturbee: 41
 stats_information: 1
-stats_total: 180
+stats_total: 179
 ---
 
-Ce samedi 25 avril 2026, les voyageurs franciliens qui souhaitent profiter des musées, des lieux culturels ou simplement flâner dans la capitale doivent composer avec de nombreux travaux programmés sur le réseau. Selon les données officielles d'Ile-de-France Mobilités (PRIM), 180 perturbations affectent l'ensemble des modes de transport, dont 137 bloquantes. Notre rédaction fait le point sur l'état du réseau pour vous permettre d'organiser au mieux vos déplacements culturels et touristiques.
+En ce samedi 25 avril 2026, le réseau francilien affiche un visage contrasté. Si plusieurs lignes de métro et RER sont impactées par des travaux de modernisation, les grands axes touristiques restent globalement accessibles. Musées, monuments et lieux de loisirs demeurent à portée de transports en commun, même si quelques ajustements d'itinéraire s'imposent. Notre rédaction fait le point sur l'état du réseau pour vous accompagner dans vos déplacements culturels du week-end.
 
 ## Ce qu'il faut retenir
 
-- **Métro 3 et 4 partiellement interrompus** : travaux d'entretien majeurs en cours jusqu'à début mai
-- **RER C très perturbé** : multiples interruptions ce week-end, notamment vers Versailles et Massy-Palaiseau
-- **RER A et D avec trafic allégé** : incidents et travaux ralentissent les circulations
-- **133 lignes de bus déviées** : principalement pour travaux et manifestations
-- **Tramway T11 perturbé** : mouvement social local jusqu'à 9h00
+- **Métro 3 et 4** : interruptions de trafic sur des tronçons centraux jusqu'à début mai, bus de remplacement en place
+- **RER C** : perturbations majeures ce week-end, notamment vers Versailles et sur l'axe sud
+- **RER A, B, D et E** : interruptions nocturnes et en soirée sur plusieurs branches
+- **Bus parisiens** : 133 lignes concernées par des déviations, principalement liées à des travaux
+- **Tramway T11** : trafic interrompu jusqu'à 9h ce matin en raison d'un mouvement social
 
 ## État du réseau ligne par ligne
 
 ### Métro
 
-Le métro parisien connaît deux interruptions importantes ce samedi. La **ligne 4** reste fermée entre Châtelet et Barbès-Rochechouart jusqu'au 1er mai inclus en raison de travaux d'entretien. Cette coupure impacte l'accès au quartier des Halles et à Montmartre. La **ligne 3** est également interrompue entre Gallieni et Gambetta jusqu'au 12 mai, avec mise en place de bus de remplacement. Ces deux fermetures compliquent l'accès à certains lieux culturels du nord et de l'est parisien.
+Le réseau métropolitain connaît deux perturbations significatives ce samedi. Selon les données d'Ile-de-France Mobilités, la **ligne 3** reste interrompue entre Gallieni et Gambetta jusqu'au 12 mai inclus en raison de travaux d'envergure. Un dispositif de bus de remplacement assure la continuité du service sur ce tronçon.
+
+La **ligne 4**, axe stratégique nord-sud de la capitale, voit son trafic interrompu entre Châtelet et Barbès-Rochechouart jusqu'au 1er mai. Cette coupure, liée à des travaux d'entretien, impacte notamment l'accès direct au quartier des Halles et à Montmartre. Les voyageurs peuvent emprunter les lignes alternatives ou les bus de substitution mis en place.
 
 ### RER
 
-Le RER connaît des perturbations significatives, particulièrement sur le **RER C**. Ce week-end, aucun train ne circule vers Massy-Palaiseau, les gares d'Ivry-sur-Seine, Vitry-sur-Seine et des Saules n'étant pas desservies. Le trafic est également interrompu entre Champ de Mars et Versailles Château, compliquant l'accès au château de Versailles pour les visiteurs. Les voyageurs devront se reporter sur la ligne N, le métro ou les tramways.
+Le **RER C** concentre l'essentiel des perturbations ce week-end. L'axe vers Versailles est particulièrement touché : le trafic est interrompu tout le week-end entre Champ de Mars et Saint-Quentin-en-Yvelines, ainsi qu'entre Champ de Mars et Versailles Château. Les visiteurs souhaitant rejoindre le château de Versailles devront emprunter la ligne N du Transilien en alternative.
 
-Le **RER A** subit une perturbation entre Poissy et Nanterre Préfecture en raison d'une difficulté d'acheminement du conducteur. Par ailleurs, le trafic est interrompu en soirée entre La Varenne-Chennevières et Boissy-Saint-Léger à partir de 21h45. Le **RER B** fonctionne avec des horaires modifiés dans le cadre du plan de transport des vacances scolaires jusqu'au 3 mai. Le **RER D** circule avec un train sur deux entre Goussainville et Melun toute la journée.
+Sur la branche sud, plusieurs secteurs ne sont pas desservis : les gares d'Athis-Mons, Ablon et Villeneuve-le-Roi sont court-circuitées ce samedi et dimanche. En soirée, à partir de 21h59, le trafic est interrompu entre Juvisy et Paris Austerlitz, tandis que la desserte vers Saint-Martin d'Étampes et Dourdan s'arrête également en début de soirée.
 
-Le **RER E** est interrompu entre Nanterre-la-Folie et Chelles-Gournay à partir de 22h45, ainsi qu'entre Nanterre et Villiers/Tournan dès 22h25.
+Le **RER A** subit des interruptions nocturnes entre Maisons-Laffitte et Cergy-le-Haut dès 21h50, ainsi qu'entre La Varenne-Chennevières et Boissy-Saint-Léger à partir de 21h45. Le **RER B** circule selon un plan de transport adapté durant les vacances scolaires, avec des horaires modifiés jusqu'au 3 mai.
+
+Le **RER D** affiche un trafic allégé entre Goussainville et Melun tout ce week-end, avec un train sur deux seulement. Le **RER E** connaît des interruptions nocturnes à partir de 22h25 vers Villiers-sur-Marne et Tournan, ainsi qu'entre Nanterre et Chelles dès 22h45.
 
 ### Tramway
 
-Le **tramway T1** reste totalement interrompu entre Asnières-Quatre Routes et Gare de Saint-Denis jusqu'à fin août 2026 suite à des dégradations. Un service de bus de remplacement est assuré. Le **T11** connaît une interruption totale jusqu'à 9h00 ce matin en raison d'un mouvement social local, puis un trafic ralenti de 7h30 à 9h00 et de 18h00 à 19h30. Le **T13** est interrompu chaque soir à partir de 22h00 jusqu'au 12 juin pour travaux.
+Le **tramway T1** reste interrompu entre Asnières-Quatre Routes et Gare de Saint-Denis jusqu'à fin août 2026, suite à des dégradations. Un service de bus de remplacement est assuré sur le tronçon concerné.
+
+Le **T11** a connu une interruption totale jusqu'à 9h ce matin en raison d'un mouvement social local. À cette heure, le trafic devrait avoir repris progressivement, bien que des ralentissements soient encore possibles en journée entre 7h30 et 9h, puis entre 18h et 19h30.
+
+Le **T13** voit ses circulations interrompues chaque soir à partir de 22h jusqu'au 12 juin, dans le cadre de travaux programmés. Le **T7** maintient un service normal, mais l'ascenseur de la station Aéroport d'Orly reste indisponible.
 
 ### Transilien
 
-Les lignes Transilien sont largement impactées par des travaux nocturnes et de week-end. La **ligne H** est interrompue entre Montsoult et Persan-Beaumont tout le week-end. La **ligne K** ne dessert pas Paris Nord-Mitry-Claye, obligeant les voyageurs à emprunter le RER B depuis Mitry-Claye. 
+La **ligne L** subit des interruptions en soirée dès 21h10 entre Saint-Cloud et Versailles Rive Droite, ainsi qu'entre Saint-Cloud et Saint-Nom-la-Bretèche. La **ligne N** est également perturbée vers Rambouillet avec un trafic interrompu en soirée.
 
-La **ligne L** subit des interruptions en soirée entre Saint-Cloud et Versailles Rive Droite/Saint-Nom-la-Bretèche. Certains trains ne circulent pas sur les axes vers Cergy-le-Haut en raison d'un incident d'exploitation. Les lignes **P** et **R** connaissent également de multiples interruptions nocturnes vers Coulommiers, Meaux, Provins et Château-Thierry.
+La **ligne P** connaît plusieurs coupures nocturnes : vers Coulommiers, Provins, Château-Thierry et Meaux à partir de 22h. La **ligne K** voit son trafic totalement interrompu ce week-end entre Paris Gare du Nord et Mitry-Claye. Les voyageurs doivent emprunter la ligne K jusqu'à Mitry-Claye, puis basculer sur le RER B.
+
+Les **lignes H, J, R et U** affichent également des perturbations nocturnes ou des suppressions partielles de trains, principalement liées à des travaux de maintenance du réseau ferroviaire.
 
 ### Bus
 
-Le réseau de bus parisien est particulièrement touché avec 133 lignes concernées par des déviations. Plusieurs manifestations prévues ce samedi entre 10h00 et 15h00, puis entre 20h00 et 21h00, entraînent des déviations sur les lignes 22, 30, 32, 54, 61, 76, 80, 95, 159, 160, 259 et 304. Les arrêts situés dans les secteurs du Louvre, de l'Opéra et des Champs-Élysées ne seront temporairement pas desservis.
+Le réseau de bus parisien enregistre 133 lignes perturbées ce samedi, un chiffre élevé qui s'explique par la multiplication des chantiers de voirie et quelques manifestations ponctuelles. La plupart des déviations concernent des arrêts non desservis sur des portions limitées, avec maintien du service global.
 
-De nombreux travaux de voirie impactent également les lignes de bus, notamment les lignes 88, 169, 42 et 30 qui ne desservent pas l'arrêt Place Balard jusqu'en juin. Les lignes desservant La Défense (141, 360) et Versailles (ligne N) connaissent aussi des déviations prolongées.
+Plusieurs lignes desservant des sites culturels majeurs sont concernées : la **ligne 30** connaît des déviations temporaires liées à une manifestation entre 20h et 21h dans le secteur de l'Étoile. Les **lignes 22, 32, 54, 76, 80 et 95** subissent également des perturbations ponctuelles dans la soirée pour le même motif.
 
 ## Focus du jour
 
-La perturbation la plus marquante de ce samedi concerne sans conteste le **RER C et l'accès à Versailles**. L'interruption totale entre Champ de Mars et Versailles Château tout le week-end prive les visiteurs, nombreux en cette période, de l'accès direct au célèbre château. Selon IDFM, les voyageurs doivent se reporter sur la ligne N du Transilien depuis la gare Montparnasse, ou utiliser le métro jusqu'à Pont de Sèvres puis un bus. Cette situation devrait générer une affluence importante sur ces lignes alternatives. Les horaires du calculateur d'itinéraire d'Île-de-France Mobilités tiennent compte de ces travaux, mais notre rédaction recommande de prévoir un temps de trajet rallongé d'au moins 30 minutes pour rejoindre Versailles. Les gares d'Athis-Mons, Ablon et Villeneuve-le-Roi ne sont également pas desservies ce week-end, les trains circulant directement entre Juvisy et Choisy-le-Roi.
+La perturbation la plus marquante de ce samedi concerne sans conteste le **RER C** et son impact sur l'accès au château de Versailles. L'interruption totale du trafic entre Champ de Mars et Versailles Château prive les visiteurs, parisiens comme touristes, de l'accès direct le plus utilisé vers le monument le plus visité d'Île-de-France. Selon IDFM, cette coupure s'inscrit dans un vaste programme de travaux sur le réseau ferroviaire qui mobilise plusieurs week-ends d'avril. La ligne N du Transilien constitue l'alternative principale, avec un départ depuis la gare Montparnasse. Les voyageurs doivent prévoir un temps de trajet légèrement allongé et anticiper une possible affluence accrue sur cette ligne de substitution. Pour ceux qui privilégient le métro puis le bus, des lignes RATP assurent également la liaison depuis les terminus ouest de la capitale, mais avec des temps de parcours nettement supérieurs. Cette situation illustre la complexité de maintenir un réseau centenaire tout en assurant sa modernisation continue.
 
 ## Travaux en cours cette semaine
 
-- **Métro 3 et 4** : travaux d'entretien majeurs se poursuivant jusqu'à début mai avec interruptions partielles
-- **RER C** : multiples chantiers nocturnes et de week-end sur l'ensemble du réseau jusqu'à fin avril
-- **RER A** : travaux entre Maisons-Laffitte et Cergy-le-Haut en soirée jusqu'au 29 avril
-- **Transilien L, P, R** : interruptions nocturnes programmées pour maintenance du réseau ferroviaire
+- **Métro 3 et 4** : poursuite des travaux d'entretien et de modernisation jusqu'à mi-mai
+- **RER C** : programme de maintenance intensif sur plusieurs branches, avec interruptions nocturnes en semaine et coupures étendues le week-end
+- **RER A** : travaux sur la branche est vers Boissy-Saint-Léger jusqu'au 30 avril
+- **Transilien L, N, P** : chantiers de rénovation des voies et des installations, principalement en soirée et la nuit
 
 ## Nos conseils pratiques
 
-**Anticipez votre trajet** : consultez le calculateur d'itinéraire d'Île-de-France Mobilités avant de partir, les données PRIM y sont intégrées en temps réel. Pour les visites culturelles, privilégiez les départs matinaux avant les interruptions de soirée.
+**Anticipez vos déplacements** : consultez l'application Île-de-France Mobilités ou le site RATP avant de partir, notamment pour les trajets vers les grands sites culturels comme Versailles, le Louvre ou La Défense. Les itinéraires alternatifs sont systématiquement proposés par les calculateurs.
 
-**Privilégiez les alternatives** : pour rejoindre Versailles, la ligne N depuis Montparnasse reste la meilleure option. Pour Disneyland, le RER A fonctionne normalement sur la branche Marne-la-Vallée. L'accès au Louvre et aux grands musées parisiens reste possible via les lignes de métro non impactées.
+**Privilégiez les départs matinaux** : les perturbations s'accentuent généralement en soirée, particulièrement sur les RER et Transilien. Pour une sortie culturelle, un départ avant 10h vous garantit un réseau plus fluide.
 
-**Restez informés** : suivez les comptes officiels RATP et SNCF sur les réseaux sociaux pour les mises à jour en temps réel. Les manifestations prévues ce samedi pourraient entraîner des déviations supplémentaires non programmées.
+**Prévoyez des marges** : en cas de correspondance entre plusieurs lignes perturbées, ajoutez 15 à 20 minutes à votre temps de trajet habituel. Les bus de remplacement, bien qu'efficaces, circulent à une vitesse inférieure aux trains.
 
-**Prévoyez du temps** : pour toute sortie culturelle ce samedi, ajoutez 20 à 30 minutes à votre temps de trajet habituel, particulièrement si vous devez emprunter plusieurs correspondances.
+**Restez informés** : en cas de manifestation ou d'incident, les perturbations peuvent évoluer rapidement. Notre rédaction suit en temps réel l'état du réseau et met à jour ses informations tout au long de la journée.
 
 ## À suivre
 
-Les perturbations sur le métro 3 et 4 se poursuivront la semaine prochaine, tout comme les travaux nocturnes sur le RER C. Le week-end du 2-3 mai devrait connaître un profil similaire avec de nombreux chantiers programmés. Notre rédaction continuera de suivre l'évolution de la situation et vous tiendra informés des éventuels changements majeurs sur le réseau francilien.
+La situation devrait progressivement s'améliorer à partir de lundi, avec la levée de plusieurs chantiers de week-end. Le RER C retrouvera une circulation normale vers Versailles dès dimanche soir. En revanche, les travaux sur les lignes de métro 3 et 4 se poursuivront encore plusieurs semaines. Les prochains week-ends de mai devraient connaître des perturbations similaires, IDFM ayant programmé un calendrier dense de maintenance printanière sur l'ensemble du réseau ferré francilien.
 
 > *Cet article s'appuie sur les données officielles d'Ile-de-France Mobilités (PRIM). Les informations sont vérifiées et complétées par la rédaction en cas d'événement majeur.*
