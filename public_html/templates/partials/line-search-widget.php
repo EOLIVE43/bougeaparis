@@ -90,6 +90,8 @@
     }
 
     function getLineTrafficKey(line) {
+        // Les cles dans latest.json sont du type :
+        //   metro-ligne-4, rer-ligne-a, tramway-ligne-t1, transilien-ligne-h
         const modeToPrefix = {
             'Metro': 'metro',
             'RapidTransit': 'rer',
@@ -97,15 +99,47 @@
             'LocalTrain': 'transilien'
         };
         const prefix = modeToPrefix[line.mode] || '';
-        return prefix + '-' + line.shortName.toLowerCase();
+        const shortLower = line.shortName.toLowerCase();
+        return prefix + '-ligne-' + shortLower;
+    }
+
+    // Renvoie l'entry trafic en testant plusieurs formats de cles possibles
+    function findTrafficEntry(line) {
+        if (!trafficData || !trafficData.lines) return null;
+        const lines = trafficData.lines;
+
+        // Essai 1 : cle composee mode-ligne-shortName (format reel)
+        const k1 = getLineTrafficKey(line);
+        if (lines[k1]) return lines[k1];
+
+        // Essai 2 : variantes de fallback
+        const modeToPrefix = {
+            'Metro': 'metro',
+            'RapidTransit': 'rer',
+            'Tramway': 'tramway',
+            'LocalTrain': 'transilien'
+        };
+        const prefix = modeToPrefix[line.mode] || '';
+        const shortLower = line.shortName.toLowerCase();
+
+        // Sans 'ligne-' (compatibilite ancienne)
+        if (lines[prefix + '-' + shortLower]) return lines[prefix + '-' + shortLower];
+
+        // Recherche fuzzy : on parcourt et matche par mode+shortName
+        for (const k in lines) {
+            const e = lines[k];
+            if (e && e.line && e.line.mode === line.mode && e.line.shortName === line.shortName) {
+                return e;
+            }
+        }
+        return null;
     }
 
     function getLineStatus(line) {
         if (!trafficData || !trafficData.lines) {
             return { severity: 'NORMAL', disruptions: [] };
         }
-        const key = getLineTrafficKey(line);
-        const entry = trafficData.lines[key];
+        const entry = findTrafficEntry(line);
         if (!entry || !entry.disruptions || entry.disruptions.length === 0) {
             return { severity: 'NORMAL', disruptions: [] };
         }
