@@ -22,8 +22,12 @@ if ($imageAbsolute && !str_starts_with($imageAbsolute, 'http')) {
     $imageAbsolute = rtrim($site['url'], '/') . $imageAbsolute;
 }
 
+// SEO title : utilise seo_title du front-matter si present, sinon fallback sur le title (H1)
+$seoTitleMeta = $article->getMeta('seo_title');
+$seoTitle = !empty($seoTitleMeta) ? $seoTitleMeta : $article->getTitle();
+
 $tpl->seo
-    ->setTitle($article->getTitle())
+    ->setTitle($seoTitle)
     ->setDescription($article->getExcerpt())
     ->setCanonical($article->getUrl())
     ->setOgType('article')
