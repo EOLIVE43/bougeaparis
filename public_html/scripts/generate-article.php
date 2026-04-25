@@ -125,17 +125,23 @@ try {
     $articleMd = str_replace('<!-- ad-slot: in-article-2 -->', '', $articleMd);
     $articleMd = preg_replace("/\n{3,}/", "\n\n", $articleMd);
 
-    // 11. Extraire le titre (H1) et le chapo (premier paragraphe)
+// 11. Extraire le titre (H1), le SEO title et le chapo (premier paragraphe)
     $extractedTitle = 'Info trafic du ' . $today;
+    $extractedSeoTitle = '';
     $extractedExcerpt = 'Bulletin trafic quotidien du reseau francilien.';
 
     $lines = explode("\n", $articleMd);
+    $foundSeoTitle = false;
     $foundTitle = false;
     $foundExcerpt = false;
-
     foreach ($lines as $i => $line) {
         $trimmed = trim($line);
-
+        // Extraction du SEO_TITLE (premiere ligne, format "SEO_TITLE: ...")
+        if (!$foundSeoTitle && stripos($trimmed, 'SEO_TITLE:') === 0) {
+            $extractedSeoTitle = trim(substr($trimmed, strlen('SEO_TITLE:')));
+            $foundSeoTitle = true;
+            continue;
+        }
         // Extraction du H1 (premiere ligne commencant par "# ")
         if (!$foundTitle && strpos($trimmed, '# ') === 0 && strpos($trimmed, '## ') !== 0) {
             $extractedTitle = trim(substr($trimmed, 2));
@@ -158,24 +164,32 @@ try {
         }
     }
 
-    log_info('  -> Titre extrait : ' . $extractedTitle);
+// Fallback : si pas de SEO_TITLE genere, on utilise le H1
+    if (!$foundSeoTitle || empty($extractedSeoTitle)) {
+        $extractedSeoTitle = $extractedTitle;
+        log_info('  -> SEO_TITLE absent, fallback sur H1');
+    } else {
+        log_info('  -> SEO_TITLE extrait : ' . $extractedSeoTitle);
+    }
+    log_info('  -> Titre extrait (H1) : ' . $extractedTitle);
     log_info('  -> Chapo extrait : ' . mb_substr($extractedExcerpt, 0, 80) . '...');
-
-    // 12. Retirer le H1 du corps Markdown (il est deja dans le front-matter)
-    $articleMdWithoutH1 = preg_replace('/^#\s+.+\n+/m', '', $articleMd, 1);
+    // 12a. Retirer le SEO_TITLE de la premiere ligne
+    $articleMdNoSeo = preg_replace('/^SEO_TITLE:.*\n+/im', '', $articleMd, 1);
+    // 12b. Retirer le H1 du corps Markdown (il est deja dans le front-matter)
+    $articleMdWithoutH1 = preg_replace('/^#\s+.+\n+/m', '', $articleMdNoSeo, 1);
     // Nettoyer aussi le chapo qui suit le H1 (il est deja dans excerpt)
     // On ne retire PAS le chapo : il fait partie integrante de l'article.
     // Le front-matter excerpt est utilise uniquement pour les meta-descriptions et listings.
 
     // 13. Echapper les caracteres YAML problematiques dans le front-matter
     $safeTitle = str_replace(array('"', "\n", "\r"), array("'", ' ', ''), $extractedTitle);
+    $safeSeoTitle = str_replace(array('"', "\n", "\r"), array("'", ' ', ''), $extractedSeoTitle);
     $safeExcerpt = str_replace(array('"', "\n", "\r"), array("'", ' ', ''), $extractedExcerpt);
-
     // 14. Construire le front-matter
     $slug = $today . '-bulletin-' . $angle['code'];
-
     $fm = "---\n";
     $fm .= 'title: "' . $safeTitle . "\"\n";
+    $fm .= 'seo_title: "' . $safeSeoTitle . "\"\n";
     $fm .= 'excerpt: "' . $safeExcerpt . "\"\n";
     $fm .= "date: " . $today . "\n";
     $fm .= "author: ludo\n";
