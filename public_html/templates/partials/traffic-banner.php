@@ -163,9 +163,20 @@ $regionLabel = $modeRegions[$bannerMode] ?? 'à Paris et en Île-de-France';
         </div>
     </div>
 
+    <?php
+    $modeAnchorTexts = [
+        'all'        => 'Voir le détail des perturbations',
+        'metro'      => 'Voir tout le trafic métro du jour',
+        'rer'        => 'Voir tout le trafic RER du jour',
+        'tramway'    => 'Voir tout le trafic tramway du jour',
+        'transilien' => 'Voir tout le trafic Transilien du jour',
+        'bus'        => 'Voir tout le trafic bus du jour',
+    ];
+    $anchorText = $modeAnchorTexts[$bannerMode] ?? 'Voir le détail des perturbations';
+    ?>
     <p class="traffic-banner__source">
         Source : données officielles Île-de-France Mobilités (PRIM) ·
         <?= $total ?> perturbation<?= $total > 1 ? 's' : '' ?> recensée<?= $total > 1 ? 's' : '' ?><?php if ($modeLabel): ?> sur le <?= htmlspecialchars($modeLabel) ?><?php endif; ?>
-        · <a href="<?= htmlspecialchars($bannerArticleUrl) ?>" class="traffic-banner__article-link">Lire l'article complet →</a>
+        · <a href="<?= htmlspecialchars($bannerArticleUrl) ?>" class="traffic-banner__article-link"><?= htmlspecialchars($anchorText) ?> →</a>
     </p>
 </section>
