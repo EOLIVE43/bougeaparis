@@ -1,0 +1,154 @@
+<?php
+/**
+ * Template page : ligne de métro (ex: /metro/ligne-1)
+ *
+ * Variables disponibles :
+ *   $line : array, données complètes de la ligne (data/lines/metro-X.json)
+ *   $tpl  : instance Template
+ *   $seo  : instance Seo
+ *
+ * Architecture : assemble 16 composants line/* via $tpl->partial(), en
+ * propageant $line à chacun. Le SEO est centralisé via $seo->set*().
+ */
+
+// -------------------- SEO --------------------
+
+$lineCode    = $line['code']      ?? '';
+$lineColor   = $line['color']     ?? '#0F6E56';
+$lineColorTx = $line['color_text']?? '#FFFFFF';
+$lineMode    = $line['mode']      ?? 'metro';
+$h1          = $line['seo']['h1']          ?? ('Ligne ' . $lineCode);
+$pageTitle   = $line['seo']['title']       ?? $h1;
+$pageDesc    = $line['seo']['description'] ?? '';
+$canonical   = '/metro/ligne-' . strtolower($lineCode);
+
+$tpl->seo
+    ->setTitle($pageTitle)
+    ->setDescription($pageDesc)
+    ->setCanonical($canonical)
+    ->setOgType('article');
+
+// Schema.org Article (E-E-A-T)
+$primaryAuthor = $line['meta']['primary_author'] ?? null;
+$datePublished = $line['meta']['dates']['published'] ?? '2026-04-28';
+$dateModified  = $line['meta']['dates']['updated']   ?? date('Y-m-d');
+
+$tpl->seo->addSchema([
+    '@context' => 'https://schema.org',
+    '@type'    => 'Article',
+    'headline' => $h1,
+    'description' => $pageDesc,
+    'datePublished' => $datePublished,
+    'dateModified'  => $dateModified,
+    'author' => $primaryAuthor ? [
+        '@type' => 'Person',
+        'name'  => $primaryAuthor['name'] ?? 'Ludo',
+        'url'   => 'https://bougeaparis.fr' . ($primaryAuthor['url'] ?? '/auteur/ludo/'),
+    ] : null,
+    'publisher' => [
+        '@type' => 'Organization',
+        'name'  => 'BougeaParis.fr',
+        'logo'  => [
+            '@type' => 'ImageObject',
+            'url'   => 'https://bougeaparis.fr/assets/img/logo/og-image.png',
+        ],
+    ],
+]);
+
+// Breadcrumb (rendu visuel + schema.org)
+$tpl->seo->setBreadcrumb([
+    ['label' => 'Accueil',         'url' => '/'],
+    ['label' => 'Métro',           'url' => '/metro/'],
+    ['label' => 'Ligne ' . $lineCode, 'url' => $canonical],
+]);
+
+// Charge le CSS dedie aux pages ligne (uniquement sur ces pages)
+$tpl->addStylesheet('/assets/css/line.css');
+
+if (Config::get('site.line_pages_noindex', false)) {
+    $tpl->seo->setRobots('noindex,follow');
+}
+?>
+
+<?php
+// Breadcrumb visible en haut de page
+$tpl->partial('components/breadcrumb', [
+    'items' => [
+        ['label' => 'Accueil', 'url' => '/'],
+        ['label' => 'Métro',   'url' => '/metro/'],
+        ['label' => 'Ligne ' . $lineCode],
+    ],
+]);
+?>
+
+<article class="line-page line-page--metro" data-line="<?= e($lineMode . '-' . $lineCode) ?>">
+    <div class="line-page__container">
+
+        <!-- 1. HERO -->
+        <?php $tpl->partial('components/line/hero', ['line' => $line]); ?>
+
+        <!-- ✨ Quick Actions -->
+        <?php $tpl->partial('components/line/quick-actions', ['line' => $line]); ?>
+
+        <!-- 2. INTRODUCTION SEO -->
+        <?php $tpl->partial('components/line/introduction', ['line' => $line]); ?>
+
+        <!-- AdSlot 1 : header -->
+        <?php $tpl->partial('ads/slot-header'); ?>
+
+        <!-- 3. PLAN VISUEL -->
+        <?php $tpl->partial('components/line/plan-visuel', ['line' => $line]); ?>
+
+        <!-- 4. TABLEAU DES STATIONS -->
+        <?php $tpl->partial('components/line/stations-table', ['line' => $line]); ?>
+
+        <!-- AdSlot 2 : in-article -->
+        <?php $tpl->partial('ads/slot-in-article'); ?>
+
+        <!-- 5. HORAIRES -->
+        <?php $tpl->partial('components/line/horaires', ['line' => $line]); ?>
+
+        <!-- 6. TRAFIC TEMPS RÉEL (DÉTAIL) -->
+        <?php $tpl->partial('components/line/trafic-temps-reel', ['line' => $line]); ?>
+
+        <!-- 7. ITINÉRAIRES POPULAIRES -->
+        <?php $tpl->partial('components/line/itineraires', ['line' => $line]); ?>
+
+        <!-- 8. QUE VOIR SUR LA LIGNE -->
+        <?php $tpl->partial('components/line/que-voir', ['line' => $line]); ?>
+
+        <!-- AdSlot 3 : in-article -->
+        <?php $tpl->partial('ads/slot-in-article'); ?>
+
+        <!-- 9. HISTOIRE DE LA LIGNE -->
+        <?php $tpl->partial('components/line/histoire', ['line' => $line]); ?>
+
+        <!-- 10. ACCESSIBILITÉ PMR -->
+        <?php $tpl->partial('components/line/accessibilite', ['line' => $line]); ?>
+
+        <!-- 11. TARIFS -->
+        <?php $tpl->partial('components/line/tarifs', ['line' => $line]); ?>
+
+        <!-- 12. TRAVAUX & FERMETURES -->
+        <?php $tpl->partial('components/line/travaux', ['line' => $line]); ?>
+
+        <!-- 13. FAQ -->
+        <?php $tpl->partial('components/line/faq', ['line' => $line]); ?>
+
+        <!-- AdSlot 4 : avant articles -->
+        <?php $tpl->partial('ads/slot-in-article'); ?>
+
+        <!-- 14. ARTICLES & ACTUALITÉS LIÉS -->
+        <?php $tpl->partial('components/line/articles-lies', ['line' => $line]); ?>
+
+        <!-- 15. LIENS INTERNES (cocon SEO) -->
+        <?php $tpl->partial('components/line/liens-internes', ['line' => $line]); ?>
+
+        <!-- 16. AUTEUR + DATES (E-E-A-T) -->
+        <?php $tpl->partial('components/line/meta-auteur', ['line' => $line]); ?>
+
+        <!-- AdSlot 5 : footer -->
+        <?php $tpl->partial('ads/slot-footer'); ?>
+
+    </div>
+</article>

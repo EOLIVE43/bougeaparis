@@ -4,6 +4,9 @@
  *
  * Moteur de rendu PHP pur (pas de Twig/Blade, pour rester leger).
  * Gere layouts, partials et composants reutilisables.
+ *
+ * Supporte aussi des stylesheets additionnels par page (ex: line.css uniquement
+ * sur les pages /metro/ligne-X/) via addStylesheet().
  */
 
 class Template
@@ -11,6 +14,7 @@ class Template
     private string $page;
     private string $layout = 'base';
     private array $data = [];
+    private array $extraStylesheets = [];
     public Seo $seo;
 
     public function __construct(string $page)
@@ -38,6 +42,26 @@ class Template
     }
 
     /**
+     * Ajoute une feuille de style supplementaire pour cette page,
+     * injectee dans le <head> par le layout.
+     *
+     * Utile pour charger un CSS specifique uniquement quand la page le requiert
+     * (ex: line.css ne charge que sur les pages ligne).
+     */
+    public function addStylesheet(string $href): self
+    {
+        if (!in_array($href, $this->extraStylesheets, true)) {
+            $this->extraStylesheets[] = $href;
+        }
+        return $this;
+    }
+
+    public function getExtraStylesheets(): array
+    {
+        return $this->extraStylesheets;
+    }
+
+    /**
      * Retourne les donnees globales injectees dans tous les templates
      */
     private function globalData(): array
@@ -55,19 +79,19 @@ class Template
      * Partial : inclut un fichier de template avec des donnees
      */
     public function partial(string $path, array $data = []): void
-{
-    $fullPath = __DIR__ . '/../templates/' . $path . '.php';
-    if (!file_exists($fullPath)) {
-        throw new RuntimeException("Template introuvable : $path");
+    {
+        $fullPath = __DIR__ . '/../templates/' . $path . '.php';
+        if (!file_exists($fullPath)) {
+            throw new RuntimeException("Template introuvable : $path");
+        }
+        // Donnees globales (site, nav, ads) + donnees du template
+        extract(array_merge($this->globalData(), $this->data), EXTR_SKIP);
+        $tpl = $this;
+        $seo = $this->seo;
+        // Les props specifiques du partial sont passees dans $props
+        $props = $data;
+        include $fullPath;
     }
-    // Donnees globales (site, nav, ads) + donnees du template
-    extract(array_merge($this->globalData(), $this->data), EXTR_SKIP);
-    $tpl = $this;
-    $seo = $this->seo;
-    // Les props specifiques du partial sont passees dans $props
-    $props = $data;
-    include $fullPath;
-}
 
     /**
      * Rendu d'un composant (avec son propre scope)
@@ -95,6 +119,7 @@ class Template
         // Donnees globales dispo dans le layout
         $data = array_merge($this->globalData(), $this->data, [
             'content' => $content,
+            'extra_stylesheets' => $this->extraStylesheets,
         ]);
 
         extract($data, EXTR_SKIP);

@@ -11,6 +11,9 @@
  * - Charge data/lines.json (donnees des lignes)
  * - Rend le template pages/hub-<slug>.php
  *
+ * Livraison 3 : pages détail ligne (ex: /metro/ligne-1).
+ * Charge data/lines/{slug}.json + rend templates/pages/line-metro.php.
+ *
  * Les autres pages (home, a-propos, contact, legal, 404...) continuent
  * d'utiliser les templates de la Livraison 1.
  */
@@ -47,6 +50,29 @@ function bp_load_cocon(string $slug): array|false {
 }
 
 /**
+ * Charge le détail d'une ligne (data/lines/{slug}.json).
+ * Retourne false si la ligne n'existe pas.
+ *
+ * @param string $mode 'metro' | 'rer' | 'bus' | 'tramway' | 'transilien'
+ * @param string $code Code de la ligne (1, 2, ..., A, B, T1, ...)
+ */
+function bp_load_line(string $mode, string $code): array|false {
+    $slug = $mode . '-' . strtolower($code);
+    $line_path = __DIR__ . '/data/lines/' . $slug . '.json';
+
+    if (!file_exists($line_path)) {
+        return false;
+    }
+
+    $json = file_get_contents($line_path);
+    $line = json_decode($json, true);
+    if (!is_array($line)) {
+        return false;
+    }
+    return $line;
+}
+
+/**
  * Rend une page hub transport.
  */
 function bp_render_hub(string $slug, string $template = null): void {
@@ -61,6 +87,24 @@ function bp_render_hub(string $slug, string $template = null): void {
         'cocon' => $data['cocon'],
         'lines' => $data['lines'],
     ]);
+    $tpl->render();
+}
+
+/**
+ * Rend une page détail de ligne.
+ *
+ * @param string $mode 'metro' (étendable plus tard à 'rer', 'tramway'...)
+ * @param string $code Code de la ligne ('1', '14', 'A'...)
+ */
+function bp_render_line(string $mode, string $code): void {
+    $line = bp_load_line($mode, $code);
+    if (!$line) {
+        bp_render_404();
+        return;
+    }
+
+    $tpl = new Template('line-' . $mode);
+    $tpl->withData(['line' => $line]);
     $tpl->render();
 }
 
@@ -103,7 +147,7 @@ switch ($path) {
         bp_render_hub('transilien');
         break;
 
-// --- Info-Trafic (Livraison 4) ---
+    // --- Info-Trafic (Livraison 4) ---
     case '/info-trafic':
         // Page liste : on scanne content/info-trafic/ pour lister les articles existants
         $articles = [];
@@ -124,7 +168,7 @@ switch ($path) {
         $tpl->withData(['articles' => $articles]);
         $tpl->render();
         break;
- 
+
     case '/a-propos':
         (new Template('about'))->render();
         break;
@@ -145,6 +189,12 @@ switch ($path) {
         break;
 
     default:
+        // Route dynamique /metro/ligne-{code} (ex: /metro/ligne-1, /metro/ligne-14, /metro/ligne-3bis)
+        if (preg_match('#^/metro/ligne-([a-z0-9]+)$#i', $path, $matches)) {
+            bp_render_line('metro', $matches[1]);
+            break;
+        }
+
         // Route dynamique /info-trafic/YYYY-MM-DD-slug/
         if (preg_match('#^/info-trafic/([0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9\-]+)$#', $path, $matches)) {
             $slug = $matches[1];

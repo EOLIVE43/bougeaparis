@@ -1,0 +1,1264 @@
+/* ============================================================
+   line.css - Styles spécifiques aux pages ligne (metro, rer, etc.)
+   Chargé uniquement sur /metro/ligne-X et équivalents.
+
+   Architecture :
+     1. Alias CSS vars (compat ZIP -> bundle repo)
+     2. Critical (above-the-fold pour pages ligne)
+     3. Sections (intro-seo, plan-visuel, stations-table, ...)
+   ============================================================ */
+
+/* ============================================================
+   1. Alias CSS variables
+   Les sections du ZIP utilisaient --teal, --text, etc.
+   Le bundle.css du repo utilise --color-primary, --color-text, etc.
+   On crée des alias pour ne pas avoir à réécrire les ~1100 règles.
+   ============================================================ */
+.line-page {
+    --teal:        var(--color-primary);
+    --teal-deep:   var(--color-primary-darker);
+    --text:        var(--color-text);
+    --text-muted:  var(--color-text-muted);
+    --text-soft:   var(--color-text-soft);
+    --bg:          var(--color-bg);
+    --border:      var(--color-border);
+    --green:       var(--color-success);
+    --orange:      var(--color-warning);
+    --red:         var(--color-danger);
+}
+
+/* ============================================================
+   2. Critical (hero, layout de base de la page)
+   ============================================================ */
+/* ============================================================
+   CSS CRITIQUE - inliné dans <head>
+   Contient uniquement le CSS nécessaire au rendu above-the-fold.
+   Le reste est dans bundle.css (chargé en async).
+   ============================================================ */
+
+/* Reset/fonts/tokens : déjà gérés par bundle.css du repo, on n'écrase pas globalement.
+   On rajoute juste les variables custom non présentes dans le bundle global,
+   scopées à .line-page pour ne polluer aucune autre page. */
+.line-page {
+    --teal-light:    #E1F5EE;
+    --teal-dark:     var(--color-primary-dark);
+    --green-bg:      #E8F5EE;
+    --green-border:  #B8D9C5;
+    --white:         #FFFFFF;
+}
+
+/* Site Header (above the fold) — supprimé : le repo a son propre header (.site-logo / .site-nav) */
+
+
+/* Page container (alias .line-page__container pour découplage propre) */
+.page-container,
+.line-page__container{max-width:1400px;margin:0 auto;padding:24px}
+
+/* Breadcrumb */
+.breadcrumb{font-size:13px;color:var(--text-muted);margin-bottom:24px}
+.breadcrumb a{color:var(--text-muted)}
+.breadcrumb a:hover{color:var(--teal);text-decoration:underline}
+.breadcrumb__separator{margin:0 8px;color:#B5C5C0}
+.breadcrumb__current{color:var(--text);font-weight:600}
+
+/* Layout 2 colonnes */
+.page-layout{display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:start}
+.page-content{min-width:0}
+.page-sidebar{position:relative}
+
+/* Hero (above the fold) */
+.hero{background:#fff;border-radius:16px;padding:36px;box-shadow:0 2px 12px rgba(0,0,0,.04);margin-bottom:24px}
+
+/* Pills mode + ligne */
+.hero__pills{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.pill-mode{display:inline-block;background:var(--text);color:#fff;font-size:12px;font-weight:700;padding:5px 11px;border-radius:4px;letter-spacing:0.08em}
+.pill-line{display:inline-block;font-size:14px;font-weight:800;padding:5px 13px;border-radius:4px;letter-spacing:0.04em}
+
+/* H1 - le plus important pour SEO */
+.hero__title{font-size:32px;font-weight:800;color:var(--text);line-height:1.2;letter-spacing:-0.02em;margin-bottom:14px}
+
+/* Lead */
+.hero__lead{font-size:17px;color:var(--text-soft);line-height:1.6;margin-bottom:24px;max-width:900px}
+.hero__lead strong{color:var(--text);font-weight:600}
+
+/* Bandeau trafic temps réel */
+.traffic-banner{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:10px;margin-bottom:24px;font-size:14px}
+.traffic-banner--ok{background:var(--green-bg);border:1px solid var(--green-border)}
+.traffic-banner--warn{background:#FFF4E0;border:1px solid #FFD691}
+.traffic-banner--bad{background:#FBE3E3;border:1px solid #F0AAAA}
+.traffic-banner__dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.traffic-banner--ok .traffic-banner__dot{background:var(--green)}
+.traffic-banner--warn .traffic-banner__dot{background:var(--orange)}
+.traffic-banner--bad .traffic-banner__dot{background:var(--red)}
+.traffic-banner__main{flex:1;min-width:0}
+.traffic-banner__title{font-weight:600;color:var(--text)}
+.traffic-banner__update{font-size:12px;color:var(--text-muted);margin-top:2px}
+.traffic-banner__link{color:var(--teal);font-weight:600;font-size:13px;flex-shrink:0}
+.traffic-banner__link:hover{text-decoration:underline}
+
+/* Stats clés */
+.hero__stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
+.stat-card{background:#F5FAF7;border-radius:10px;padding:14px 16px;border:1px solid #E0EDE6}
+.stat-card__icon{font-size:18px;margin-bottom:4px}
+.stat-card__value{font-size:22px;font-weight:800;color:var(--teal);line-height:1.1;letter-spacing:-0.01em}
+.stat-card__label{font-size:12px;color:var(--text-muted);margin-top:2px;text-transform:uppercase;letter-spacing:0.04em;font-weight:600}
+
+/* CTA */
+.hero__cta{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;font-size:16px;font-weight:700;padding:13px 24px;border-radius:10px;text-decoration:none;transition:background .2s}
+.hero__cta:hover{background:var(--teal-dark)}
+.hero__cta-icon{font-size:20px}
+
+/* Meta */
+.hero__meta{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;padding-top:20px;border-top:1px solid var(--border);font-size:12px;color:var(--text-muted)}
+.hero__meta-item{display:flex;align-items:center;gap:5px}
+.hero__meta a{color:var(--teal);font-weight:600}
+
+/* Mobile hero */
+@media (max-width:768px){
+  .hero{padding:24px 20px}
+  .hero__title{font-size:24px}
+  .hero__lead{font-size:15px}
+  .hero__stats{grid-template-columns:repeat(2,1fr)}
+  .traffic-banner{flex-wrap:wrap}
+  .traffic-banner__link{width:100%;text-align:right;margin-top:4px}
+}
+
+/* Ad slot - placeholder anti-CLS */
+.ad-slot{margin:24px 0;min-height:var(--ad-min-height-mobile,90px);display:flex;align-items:center;justify-content:center}
+.ad-slot--sticky{position:sticky;top:80px}
+.ad-slot__placeholder{background:linear-gradient(135deg,#E1F5EE 0%,#FAFCFB 100%);border:1.5px dashed #B8D9C5;border-radius:10px;padding:24px;width:100%;text-align:center;color:var(--teal-deep)}
+.ad-slot__placeholder-label{font-size:14px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase}
+.ad-slot__placeholder-info{font-size:12px;font-weight:500;margin-top:6px;opacity:0.75}
+
+/* Mobile */
+@media (max-width:900px){
+  .page-layout{grid-template-columns:1fr}
+  .page-sidebar{display:none}
+  .ad-slot--desktop-only{display:none!important}
+  .ad-slot{min-height:var(--ad-min-height-mobile,100px)}
+}
+@media (min-width:901px){
+  .ad-slot{min-height:var(--ad-min-height-desktop,90px)}
+}
+
+/* ============================================================
+   3. Sections (depuis bundle.css du ZIP, sans le footer)
+   ============================================================ */
+/* ============================================================
+   bundle.css - chargé en async
+   Contient le CSS du reste de la page (en dessous du hero).
+   ============================================================ */
+
+/* Sections génériques */
+.section{background:#fff;border-radius:16px;padding:30px 36px;box-shadow:0 2px 12px rgba(0,0,0,.04);margin-bottom:24px}
+.section h2{font-size:24px;font-weight:700;color:var(--text);line-height:1.3;letter-spacing:-0.01em;margin-bottom:18px}
+
+/* Section Introduction SEO */
+.intro-seo{background:#fff;border-radius:16px;padding:36px 40px;box-shadow:0 2px 12px rgba(0,0,0,.04);margin-bottom:24px;border-left:4px solid var(--teal)}
+.intro-seo__title{font-size:24px;font-weight:700;color:var(--text);line-height:1.3;letter-spacing:-0.01em;margin-bottom:20px}
+.intro-seo__content{font-size:16px;line-height:1.75;color:var(--text-soft)}
+.intro-seo__content p{margin-bottom:16px}
+.intro-seo__content p:last-child{margin-bottom:0}
+.intro-seo__content strong{color:var(--text);font-weight:600}
+.intro-seo__content a{color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s}
+.intro-seo__content a:hover{border-bottom-color:var(--teal)}
+.intro-seo__navigation{padding-top:16px;border-top:1px solid var(--border);font-size:15px;color:var(--text-muted)}
+
+@media (max-width:768px){
+  .intro-seo{padding:24px 20px}
+  .intro-seo__title{font-size:20px}
+  .intro-seo__content{font-size:15px}
+}
+
+
+/* ============================================================
+   Section Plan Visuel
+   ============================================================ */
+.section--plan-visuel{padding-bottom:36px}
+.plan-visuel__intro{margin-bottom:30px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.plan-visuel__intro strong{color:var(--text);font-weight:600}
+
+/* La frise */
+.line-plan{margin:0 -10px}
+.line-plan__scroll-wrapper{overflow-x:auto;overflow-y:visible;padding:0 10px;-webkit-overflow-scrolling:touch}
+.line-plan__frise{position:relative;min-width:1750px;padding:200px 30px 240px 30px;height:100px}
+.line-plan__line{position:absolute;left:30px;right:30px;top:calc(200px + 20px);height:4px;background:var(--line-color);z-index:1}
+.line-plan__stations{position:absolute;left:30px;right:30px;top:200px;display:flex;justify-content:space-between;z-index:2}
+.line-plan__station{position:relative;flex:1;text-align:center;min-width:0}
+
+/* Cercles stations (centrés sur la ligne) */
+.line-plan__dot{background:#fff;border:2.5px solid var(--text);border-radius:50%;margin:0 auto}
+.line-plan__dot--small{width:12px;height:12px;margin-top:16px}
+.line-plan__dot--major{width:24px;height:24px;border-width:3px;margin-top:10px}
+
+/* Pastilles de correspondance (au-dessus de la ligne) */
+.line-plan__corresp{position:absolute;bottom:calc(100% + 50px);left:50%;transform:translateX(-50%);display:flex;flex-direction:column-reverse;align-items:flex-start;width:max-content}
+.line-plan__connector{position:absolute;bottom:calc(100% + 5px);left:50%;transform:translateX(-50%);width:1px;height:30px;background:#C8D4D0}
+
+/* Pastille de correspondance */
+.pastille-corresp{display:table;margin-bottom:6px;padding:2px 7px;border-radius:5px;background:#fff;border:1.2px solid;line-height:1.1;white-space:nowrap}
+.pastille-corresp:first-child{margin-bottom:0}
+.pastille-corresp__mode{font-size:10px;font-weight:600;letter-spacing:0.02em;margin-right:6px}
+.pastille-corresp__line{font-size:11px;font-weight:400;letter-spacing:0.02em}
+
+/* Nom de la station (en bas, incliné) */
+.line-plan__name{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) rotate(55deg);transform-origin:top left;white-space:nowrap;font-size:11px;font-weight:500;color:var(--text);line-height:1.2}
+.line-plan__name--major{font-weight:700;font-size:12px}
+.line-plan__name-sub{display:block;font-size:9px;font-weight:400;color:var(--text-muted);font-style:italic}
+
+/* Étiquette culturelle teal (sous le nom) */
+.line-plan__label{position:absolute;top:calc(100% + 200px);left:50%;transform:translateX(-50%);text-align:center;width:130px;font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal-deep);line-height:1.5}
+
+/* Caption */
+.line-plan__caption{margin-top:24px;text-align:center;font-size:13px;color:var(--text-muted);font-style:italic}
+
+/* Légende */
+.plan-visuel__legend{margin-top:36px;padding:24px;background:var(--bg);border-radius:12px;border:1px solid var(--border)}
+.plan-visuel__legend-title{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text);margin-bottom:18px}
+.plan-visuel__legend-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.legend-item{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--text-soft)}
+.legend-item__visual{flex:0 0 60px;display:flex;align-items:center;justify-content:center}
+.legend-item__text strong{color:var(--text);font-weight:600;display:block;margin-bottom:2px}
+
+/* Mobile */
+@media (max-width:768px){
+  .line-plan__scroll-wrapper{margin:0 -20px;padding:0 20px}
+  .line-plan__caption{padding:0 20px}
+  .plan-visuel__legend-items{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   Section Tableau des stations
+   ============================================================ */
+.section--stations-table{padding-bottom:30px}
+.stations-table__intro{margin-bottom:24px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.stations-table__intro strong{color:var(--text);font-weight:600}
+.stations-table__intro a{color:var(--teal);font-weight:600;text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s}
+.stations-table__intro a:hover{border-bottom-color:var(--teal)}
+
+/* Tableau */
+.stations-table__wrapper{overflow-x:auto;border-radius:10px;border:1px solid var(--border)}
+.stations-table{width:100%;border-collapse:collapse;font-size:14px}
+
+/* Header du tableau */
+.stations-table thead{background:var(--bg);border-bottom:2px solid var(--border)}
+.stations-table th{padding:12px 16px;text-align:left;font-weight:700;font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em}
+
+/* Lignes */
+.stations-table tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.stations-table tbody tr:last-child{border-bottom:none}
+.stations-table tbody tr:hover{background:rgba(15,110,86,0.03)}
+.stations-table__row--major{background:rgba(255,255,255,1)}
+
+/* Cellules */
+.stations-table td{padding:14px 16px;vertical-align:middle}
+
+/* Colonnes spécifiques */
+.stations-table__col-num{width:50px;text-align:center}
+.stations-table__col-name{min-width:240px}
+.stations-table__col-corresp{min-width:300px}
+.stations-table__col-pmr{width:60px;text-align:center}
+
+/* Numéro */
+.stations-table__num{display:inline-block;font-size:13px;font-weight:600;color:var(--text-muted);width:30px;text-align:center}
+
+/* Nom de la station */
+.stations-table__name-link{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:inherit}
+.stations-table__name-link:hover .stations-table__name{color:var(--teal)}
+.stations-table__name{font-size:15px;font-weight:500;color:var(--text);transition:color .15s}
+.stations-table__name--major{font-weight:700;font-size:15px}
+.stations-table__subtitle{font-size:12px;color:var(--text-muted);font-style:italic}
+.stations-table__label{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-deep);margin-top:4px}
+
+/* Correspondances inline */
+.stations-table__corresp{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pastille-corresp--inline{margin-bottom:0}
+.stations-table__no-corresp{color:var(--text-muted);font-size:14px}
+
+/* PMR */
+.stations-table__pmr{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-weight:700;font-size:14px}
+.stations-table__pmr--yes{background:#E8F5EE;color:#2BAE5C;border:1.5px solid #B8D9C5}
+.stations-table__pmr--no{color:var(--text-muted);font-size:14px}
+
+/* Note */
+.stations-table__note{margin-top:18px;font-size:13px;color:var(--text-muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.stations-table__note a{color:var(--teal);font-weight:600;text-decoration:none}
+.stations-table__note a:hover{text-decoration:underline}
+
+/* Accessibilité */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+/* Mobile */
+@media (max-width:768px){
+  .stations-table__col-corresp{min-width:200px}
+  .stations-table th, .stations-table td{padding:10px 8px}
+  .stations-table__name{font-size:14px}
+}
+
+/* ============================================================
+   Section Horaires
+   ============================================================ */
+.section--horaires{padding-bottom:30px}
+.horaires__intro{margin-bottom:30px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.horaires__intro strong{color:var(--text);font-weight:600}
+.horaires__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:32px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Bloc 1 : Cards premier/dernier métro */
+.horaires__highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:10px}
+.schedule-card{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;position:relative}
+.schedule-card__icon{font-size:30px;margin-bottom:6px}
+.schedule-card__label{font-size:12px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px}
+.schedule-card__time{font-size:30px;font-weight:800;color:var(--text);line-height:1;letter-spacing:-0.02em;margin-bottom:6px}
+.schedule-card__detail{font-size:13px;color:var(--text-muted)}
+.schedule-card__badge{display:inline-block;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.04em;margin-left:6px;text-transform:uppercase;vertical-align:middle}
+.schedule-card--last-extended{background:#FFFBED;border-color:#F0DFA0}
+
+/* Bloc 2 : Tableau horaires par jour */
+.horaires__table-wrapper{overflow-x:auto;border-radius:10px;border:1px solid var(--border)}
+.horaires-table{width:100%;border-collapse:collapse;font-size:14px}
+.horaires-table thead{background:var(--bg);border-bottom:2px solid var(--border)}
+.horaires-table th{padding:12px 16px;text-align:left;font-weight:700;font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em}
+.horaires-table tbody tr{border-bottom:1px solid var(--border);transition:background .15s}
+.horaires-table tbody tr:last-child{border-bottom:none}
+.horaires-table tbody tr:hover{background:rgba(15,110,86,0.03)}
+.horaires-table td,.horaires-table tbody th{padding:12px 16px;color:var(--text);font-weight:500}
+.horaires-table tbody th{text-align:left}
+.horaires-table__row--extended{background:#FFFBED}
+.horaires-table__row--extended:hover{background:#FFF6D6}
+.horaires-table__badge{display:inline-block;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:0.05em;margin-left:8px;text-transform:uppercase;vertical-align:middle}
+
+/* Bloc 3 : Fréquence des rames */
+.frequency-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.frequency-card{background:#fff;border:1px solid var(--border);border-radius:10px;padding:18px;text-align:left;transition:transform 0.15s, box-shadow 0.15s}
+.frequency-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.frequency-card__label{font-size:12px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px}
+.frequency-card__interval{font-size:22px;font-weight:800;color:var(--text);line-height:1.1;letter-spacing:-0.02em;margin-bottom:6px}
+.frequency-card__times{font-size:13px;color:var(--text-muted);line-height:1.4}
+
+/* Note */
+.horaires__note{margin-top:24px;padding:14px 18px;background:var(--bg);border-radius:8px;font-size:13px;color:var(--text-muted);line-height:1.6}
+.horaires__note strong{color:var(--text-soft)}
+.horaires__note a{color:var(--teal);font-weight:600;text-decoration:none}
+.horaires__note a:hover{text-decoration:underline}
+
+/* Mobile */
+@media (max-width:768px){
+  .horaires__highlights{grid-template-columns:1fr}
+  .frequency-grid{grid-template-columns:repeat(2,1fr)}
+  .schedule-card__time{font-size:26px}
+  .frequency-card__interval{font-size:18px}
+}
+
+/* ============================================================
+   Section Trafic Temps Réel
+   ============================================================ */
+.section--trafic{padding-bottom:30px}
+.trafic__intro{margin-bottom:28px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.trafic__intro strong{color:var(--text);font-weight:600}
+.trafic__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:32px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Widget LIVE */
+.trafic-live{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;padding:22px 26px;border-radius:12px;border:1.5px solid;margin-bottom:8px}
+.trafic-live--ok{background:#E8F5EE;border-color:#B8D9C5}
+.trafic-live--warn{background:#FFF4E0;border-color:#FFD691}
+.trafic-live--bad{background:#FBE3E3;border-color:#F0AAAA}
+
+/* Indicator EN DIRECT */
+.trafic-live__indicator{display:flex;flex-direction:column;align-items:center;gap:6px}
+.trafic-live__dot{width:14px;height:14px;border-radius:50%;animation:pulse 2s ease-in-out infinite}
+.trafic-live--ok .trafic-live__dot{background:var(--green)}
+.trafic-live--warn .trafic-live__dot{background:var(--orange)}
+.trafic-live--bad .trafic-live__dot{background:var(--red)}
+.trafic-live__label{font-size:10px;font-weight:800;letter-spacing:0.1em;color:var(--text);text-transform:uppercase}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+
+/* Contenu principal */
+.trafic-live__main{flex:1}
+.trafic-live__title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:-0.01em}
+.trafic-live__description{font-size:14px;color:var(--text-soft);line-height:1.5;margin:0}
+
+/* Actions */
+.trafic-live__actions{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right}
+.trafic-live__update{font-size:12px;color:var(--text-muted);font-style:italic}
+.trafic-live__refresh{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;font-weight:600;padding:8px 14px;border-radius:8px;cursor:pointer;transition:all .15s}
+.trafic-live__refresh:hover{background:var(--bg);border-color:var(--text-muted)}
+.trafic-live__refresh-icon{font-size:16px;font-weight:700}
+
+/* Liste perturbations */
+.perturbation-list{display:flex;flex-direction:column;gap:14px}
+.perturbation{display:flex;gap:18px;padding:18px 20px;background:#fff;border:1px solid var(--border);border-radius:10px;border-left:4px solid var(--orange)}
+.perturbation__icon{font-size:24px;flex-shrink:0;line-height:1}
+.perturbation__content{flex:1;min-width:0}
+.perturbation__title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px}
+.perturbation__description{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:8px}
+.perturbation__zone{font-size:13px;color:var(--text-muted);background:var(--bg);padding:6px 10px;border-radius:6px;display:inline-block}
+.perturbation__zone strong{color:var(--text);font-weight:600}
+
+/* Lien bulletin trafic */
+.trafic__bulletin-link{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:24px}
+.trafic__bulletin-link-icon{font-size:32px;line-height:1}
+.trafic__bulletin-link-content{flex:1}
+.trafic__bulletin-link-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;opacity:0.7;margin-bottom:4px}
+.trafic__bulletin-link-title{font-size:15px;font-weight:600;line-height:1.4}
+.trafic__bulletin-link-cta{display:inline-flex;align-items:center;background:var(--accent-text,#1A2B26);color:var(--accent,#FFCD00);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s}
+.trafic__bulletin-link-cta:hover{transform:translateX(2px)}
+
+/* Source */
+.trafic__source{margin-top:18px;font-size:12px;color:var(--text-muted);font-style:italic;line-height:1.5}
+.trafic__source strong{color:var(--text-soft);font-weight:600}
+
+/* Mobile */
+@media (max-width:768px){
+  .trafic-live{grid-template-columns:auto 1fr;grid-template-rows:auto auto;gap:14px}
+  .trafic-live__actions{grid-column:1 / -1;flex-direction:row;justify-content:space-between;align-items:center}
+  .trafic__bulletin-link{grid-template-columns:auto 1fr;grid-template-rows:auto auto}
+  .trafic__bulletin-link-cta{grid-column:1 / -1;justify-content:center}
+}
+
+/* ============================================================
+   Section Itinéraires Populaires
+   ============================================================ */
+.section--itineraires{padding-bottom:30px}
+.itineraires__intro{margin-bottom:24px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.itineraires__intro strong{color:var(--text);font-weight:600}
+.itineraires__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:32px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Mini calculateur */
+.itineraire-calc{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--bg);border:2px dashed var(--border);border-radius:12px;margin-bottom:20px}
+.itineraire-calc__icon{font-size:32px;line-height:1}
+.itineraire-calc__main{flex:1}
+.itineraire-calc__title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px}
+.itineraire-calc__subtitle{font-size:13px;color:var(--text-muted)}
+.itineraire-calc__cta{display:inline-flex;align-items:center;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s}
+.itineraire-calc__cta:hover{transform:translateX(2px)}
+
+/* Grid itinéraires */
+.itineraire-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-bottom:10px}
+
+/* Card itinéraire */
+.itineraire-card{display:block;background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px 20px;text-decoration:none;color:inherit;transition:all .15s}
+.itineraire-card:hover{border-color:var(--accent,var(--teal));box-shadow:0 4px 12px rgba(0,0,0,.06);transform:translateY(-2px)}
+
+.itineraire-card__route{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.itineraire-card__from,.itineraire-card__to{min-width:0}
+.itineraire-card__label{font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:2px}
+.itineraire-card__station{font-size:14px;font-weight:700;color:var(--text);line-height:1.3}
+.itineraire-card__arrow{font-size:18px;color:var(--accent,var(--teal));font-weight:700;flex-shrink:0}
+
+.itineraire-card__meta{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--text-soft);flex-wrap:wrap;margin-bottom:8px}
+.itineraire-card__duration{display:flex;align-items:center;gap:4px;font-weight:600;color:var(--text)}
+.itineraire-card__transfers{color:var(--text-muted)}
+.itineraire-card__direct{display:inline-block;background:#E8F5EE;color:#2BAE5C;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.04em;text-transform:uppercase}
+.itineraire-card__lines{display:flex;gap:4px;margin-left:auto}
+.itineraire-card__line-pill{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:800}
+
+.itineraire-card__description{font-size:12px;color:var(--text-muted);font-style:italic;line-height:1.4}
+
+/* Itinéraires touristiques */
+.tourist-routes{display:flex;flex-direction:column;gap:14px}
+.tourist-route{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;border-left:4px solid var(--accent,var(--teal))}
+.tourist-route__header{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.tourist-route__icon{font-size:28px;line-height:1;flex-shrink:0}
+.tourist-route__title-wrapper{flex:1;min-width:0}
+.tourist-route__title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:2px;letter-spacing:-0.01em}
+.tourist-route__duration{font-size:12px;color:var(--text-muted);font-weight:500}
+.tourist-route__description{font-size:14px;color:var(--text-soft);line-height:1.5;margin-bottom:14px}
+.tourist-route__stops{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;line-height:1.6}
+.tourist-route__stop{background:var(--bg);color:var(--text);padding:4px 10px;border-radius:14px;font-weight:600;border:1px solid var(--border)}
+.tourist-route__arrow{color:var(--text-muted);font-size:14px;font-weight:700}
+
+/* Lien "Voir tous les itinéraires" */
+.itineraires__more{margin-top:24px;padding-top:20px;border-top:1px solid var(--border);text-align:center}
+.itineraires__more-link{display:inline-flex;align-items:center;color:var(--teal);font-weight:700;font-size:14px;text-decoration:none}
+.itineraires__more-link:hover{text-decoration:underline}
+
+/* Mobile */
+@media (max-width:768px){
+  .itineraire-calc{grid-template-columns:auto 1fr;grid-template-rows:auto auto}
+  .itineraire-calc__cta{grid-column:1 / -1;justify-content:center}
+  .itineraire-grid{grid-template-columns:1fr}
+  .itineraire-card__route{grid-template-columns:1fr;gap:8px}
+  .itineraire-card__arrow{display:none}
+  .itineraire-card__meta{flex-wrap:wrap}
+  .itineraire-card__lines{margin-left:0}
+}
+
+/* ============================================================
+   Section Que voir
+   ============================================================ */
+.section--que-voir{padding-bottom:30px}
+.que-voir__intro{margin-bottom:32px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.que-voir__intro strong{color:var(--text);font-weight:600}
+
+/* Bandeau thème */
+.theme-section{margin-bottom:32px}
+.theme-section:last-child{margin-bottom:0}
+.theme-section__header{display:flex;align-items:center;gap:14px;margin-bottom:18px;padding:14px 20px;background:var(--bg);border-radius:10px;border-left:4px solid var(--accent,#FFCD00)}
+.theme-section__icon{font-size:24px;line-height:1}
+.theme-section__title{font-size:16px;font-weight:700;color:var(--text);margin:0;flex:1;letter-spacing:-0.01em}
+.theme-section__count{font-size:12px;color:var(--text-muted);background:white;padding:4px 10px;border-radius:12px;font-weight:600;border:1px solid var(--border)}
+.theme-section__view-all{font-size:12px;font-weight:600;color:var(--teal);text-decoration:none;padding:5px 12px;border:1px solid var(--teal);border-radius:6px;transition:all .15s;white-space:nowrap}
+.theme-section__view-all:hover{background:var(--teal);color:white}
+
+/* Cards POI */
+.poi-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.poi-card{background:white;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all 0.15s;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.poi-card:hover{border-color:var(--accent,#FFCD00);box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-2px)}
+
+/* Image / Hero du POI (placeholder coloré pour l'instant) */
+.poi-card__image{height:140px;display:flex;align-items:center;justify-content:center;color:white;font-size:42px;position:relative}
+.poi-card__icon{z-index:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2))}
+
+/* Contenu */
+.poi-card__content{padding:14px 16px;flex:1;display:flex;flex-direction:column}
+.poi-card__name{font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.3}
+.poi-card__desc{font-size:13px;color:var(--text-soft);line-height:1.5;margin-bottom:12px;flex:1}
+.poi-card__station{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted);padding-top:10px;border-top:1px solid var(--border);line-height:1.4}
+.poi-card__station-icon{font-size:14px}
+.poi-card__station-name{color:var(--text-soft);font-weight:600}
+
+/* Mobile */
+@media (max-width:1024px){
+  .poi-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .poi-cards{grid-template-columns:1fr}
+  .theme-section__header{flex-wrap:wrap}
+  .theme-section__view-all{margin-left:auto}
+}
+
+/* ============================================================
+   Section Histoire de la ligne
+   ============================================================ */
+.section--histoire{padding-bottom:30px}
+.histoire__intro{margin-bottom:32px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.histoire__intro strong{color:var(--text);font-weight:600}
+.histoire__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:36px;margin-bottom:20px;letter-spacing:-0.01em}
+
+/* Chiffres clés */
+.histoire__key-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px}
+.key-fact{background:var(--accent-light,#FFF6CC);border:1px solid var(--accent,#FFCD00);border-radius:12px;padding:20px 18px;text-align:center;transition:transform 0.15s}
+.key-fact:hover{transform:translateY(-2px)}
+.key-fact__value{font-size:32px;font-weight:800;color:var(--accent-text,#1A2B26);line-height:1;letter-spacing:-0.02em;margin-bottom:6px}
+.key-fact__label{font-size:12px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px}
+.key-fact__desc{font-size:12px;color:var(--text-soft);line-height:1.4}
+
+/* Timeline */
+.histoire__timeline{position:relative;padding-left:0;display:flex;flex-direction:column;gap:0}
+
+/* Chaque événement */
+.timeline-event{display:flex;gap:24px;padding-bottom:24px;position:relative}
+.timeline-event:last-child{padding-bottom:0}
+
+/* Colonne année */
+.timeline-event__year-wrap{flex-shrink:0;width:90px;display:flex;flex-direction:column;align-items:center;position:relative}
+.timeline-event__year{font-size:22px;font-weight:800;color:var(--accent-text,#1A2B26);background:var(--accent,#FFCD00);padding:6px 12px;border-radius:8px;letter-spacing:-0.02em;z-index:2}
+
+/* Ligne verticale entre les événements */
+.timeline-event__line{position:absolute;top:42px;bottom:-24px;left:50%;width:2px;background:var(--border);transform:translateX(-50%);z-index:1}
+.timeline-event:last-child .timeline-event__line{display:none}
+
+/* Contenu */
+.timeline-event__content{flex:1;background:white;border:1px solid var(--border);border-radius:10px;padding:18px 22px;position:relative;transition:all 0.15s}
+.timeline-event__content:hover{border-color:var(--accent,#FFCD00);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.timeline-event__icon{font-size:24px;margin-bottom:8px;line-height:1}
+.timeline-event__title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:-0.01em}
+.timeline-event__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
+
+/* Anecdotes */
+.histoire__anecdotes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.anecdote{background:#FFF6E5;border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
+.anecdote__title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
+.anecdote__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
+
+/* Lien article approfondi */
+.histoire__article-link{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:32px}
+.histoire__article-link-icon{font-size:32px;line-height:1}
+.histoire__article-link-content{flex:1}
+.histoire__article-link-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;opacity:0.7;margin-bottom:4px}
+.histoire__article-link-title{font-size:15px;font-weight:600;line-height:1.4}
+.histoire__article-link-cta{display:inline-flex;align-items:center;background:var(--accent-text,#1A2B26);color:var(--accent,#FFCD00);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s;white-space:nowrap}
+.histoire__article-link-cta:hover{transform:translateX(2px)}
+
+/* Mobile */
+@media (max-width:768px){
+  .histoire__key-facts{grid-template-columns:repeat(2,1fr)}
+  .histoire__anecdotes{grid-template-columns:1fr}
+  .timeline-event__year-wrap{width:70px}
+  .timeline-event__year{font-size:18px;padding:4px 8px}
+  .histoire__article-link{grid-template-columns:auto 1fr}
+  .histoire__article-link-cta{grid-column:1 / -1;justify-content:center}
+}
+
+/* ============================================================
+   Section Accessibilité PMR
+   ============================================================ */
+.section--accessibilite{padding-bottom:30px}
+.accessibilite__intro{margin-bottom:30px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.accessibilite__intro strong{color:var(--text);font-weight:600}
+.accessibilite__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:36px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Stats */
+.accessibilite__stats{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:16px;margin-bottom:14px}
+
+/* Stat principale (avec cercle de progression) */
+.access-stat{background:white;border:1px solid var(--border);border-radius:12px;padding:24px;text-align:center}
+.access-stat__circle{position:relative;width:120px;height:120px;margin:0 auto 14px}
+.access-stat__progress{width:100%;height:100%;transform:rotate(0deg)}
+.access-stat__circle-value{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px;font-weight:800;color:var(--text);letter-spacing:-0.02em}
+.access-stat__label{font-size:13px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:4px}
+.access-stat__detail{font-size:13px;color:var(--text-muted)}
+
+/* Cercle de progression : couleur de la ligne */
+.access-stat__progress circle:nth-child(1){stroke:var(--bg)}
+.access-stat__progress circle:nth-child(2){stroke:var(--accent,#FFCD00)}
+
+/* Stats secondaires */
+.access-stat-card{background:white;border:1px solid var(--border);border-radius:12px;padding:18px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.access-stat-card__icon{font-size:30px;margin-bottom:8px;line-height:1}
+.access-stat-card__value{font-size:30px;font-weight:800;color:var(--text);line-height:1;letter-spacing:-0.02em;margin-bottom:8px}
+.access-stat-card__label{font-size:12px;color:var(--text-soft);line-height:1.4}
+
+/* Équipements */
+.accessibilite__equipment{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.equipment-card{display:flex;gap:14px;padding:18px 20px;background:var(--bg);border-radius:10px;border-left:3px solid var(--accent,#FFCD00)}
+.equipment-card__icon{font-size:28px;line-height:1;flex-shrink:0}
+.equipment-card__content{flex:1}
+.equipment-card__label{font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px}
+.equipment-card__desc{font-size:13px;color:var(--text-soft);line-height:1.5}
+
+/* Liste des stations accessibles */
+.accessibilite__stations-list{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.access-station{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#E8F5EE;border-radius:8px;border:1px solid #B8D9C5}
+.access-station--major{background:#D5EDDD;border-color:#7DBA94}
+.access-station__icon{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#2BAE5C;color:white;border-radius:50%;font-size:12px;font-weight:700;flex-shrink:0}
+.access-station__name{font-size:13px;font-weight:600;color:var(--text);flex:1;line-height:1.3}
+.access-station--major .access-station__name{font-weight:700}
+.access-station__subtitle{font-size:11px;color:var(--text-muted);font-style:italic}
+
+.accessibilite__note{font-size:13px;color:var(--text-muted);font-style:italic;line-height:1.6;padding:12px 16px;background:var(--bg);border-radius:8px;margin-top:8px}
+.accessibilite__note strong{color:var(--text-soft);font-weight:600}
+
+/* Conseils */
+.accessibilite__tips{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.access-tip{background:#FFF6E5;border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
+.access-tip__title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
+.access-tip__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
+
+/* Ressources externes */
+.accessibilite__resources{margin-top:32px;padding:22px 26px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26)}
+.accessibilite__resources-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;opacity:0.7;margin-bottom:14px}
+.accessibilite__resources-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.access-resource{display:block;padding:14px 18px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);border-radius:8px;text-decoration:none;color:var(--accent-text,#1A2B26);transition:all 0.15s}
+.access-resource:hover{background:rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.2);transform:translateY(-1px)}
+.access-resource__label{font-size:14px;font-weight:700;margin-bottom:4px}
+.access-resource__desc{font-size:12px;opacity:0.75;line-height:1.4}
+
+/* Mobile */
+@media (max-width:768px){
+  .accessibilite__stats{grid-template-columns:1fr 1fr}
+  .accessibilite__equipment{grid-template-columns:1fr}
+  .accessibilite__stations-list{grid-template-columns:repeat(2,1fr)}
+  .accessibilite__tips{grid-template-columns:1fr}
+  .accessibilite__resources-list{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   Section Tarifs
+   ============================================================ */
+.section--tarifs{padding-bottom:30px}
+.tarifs__intro{margin-bottom:32px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.tarifs__intro strong{color:var(--text);font-weight:600}
+.tarifs__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:32px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Cards principaux tarifs */
+.tarifs__main{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-bottom:14px}
+
+.fare-card{background:white;border:1.5px solid var(--border);border-radius:14px;padding:24px;position:relative;display:flex;flex-direction:column;gap:14px;transition:all 0.15s}
+.fare-card:hover{border-color:var(--accent,#FFCD00);box-shadow:0 4px 16px rgba(0,0,0,0.06);transform:translateY(-2px)}
+
+.fare-card--popular{border-color:var(--accent,#FFCD00);background:linear-gradient(135deg,#fff 0%,var(--accent-light,#FFF6CC) 100%)}
+
+.fare-card__badge{position:absolute;top:-10px;right:18px;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;letter-spacing:0.04em;text-transform:uppercase}
+
+/* Header de la card */
+.fare-card__header{display:flex;align-items:center;gap:14px}
+.fare-card__icon{font-size:32px;line-height:1;flex-shrink:0}
+.fare-card__title-wrap{flex:1;min-width:0}
+.fare-card__label{font-size:16px;font-weight:700;color:var(--text);margin:0;letter-spacing:-0.01em;line-height:1.2}
+.fare-card__subtitle{font-size:13px;color:var(--text-muted);margin-top:2px}
+
+/* Prix */
+.fare-card__price-wrap{display:flex;align-items:baseline;gap:4px;color:var(--text);line-height:1}
+.fare-card__price{font-size:42px;font-weight:800;letter-spacing:-0.03em}
+.fare-card__currency{font-size:24px;font-weight:700;color:var(--text-soft)}
+.fare-card__price-reduced{font-size:13px;color:var(--text-muted)}
+.fare-card__price-reduced strong{color:var(--text-soft);font-weight:700}
+
+/* Description */
+.fare-card__description{font-size:14px;color:var(--text-soft);line-height:1.5;margin:0;flex:1}
+
+/* Best for */
+.fare-card__best-for{display:flex;flex-direction:column;gap:4px;padding:12px 14px;background:var(--bg);border-radius:8px;font-size:13px;line-height:1.4}
+.fare-card--popular .fare-card__best-for{background:rgba(255,255,255,0.7)}
+.fare-card__best-for-label{font-weight:700;color:var(--text)}
+.fare-card__best-for-text{color:var(--text-soft)}
+
+/* Tarifs additionnels */
+.additional-fares-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.additional-fare{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:white;border:1px solid var(--border);border-radius:8px;font-size:14px}
+.additional-fare__label{color:var(--text-soft)}
+.additional-fare__price{font-weight:700;color:var(--text);background:var(--bg);padding:3px 10px;border-radius:5px}
+
+/* CTA vers page tarifs complète */
+.tarifs__cta{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:30px}
+.tarifs__cta-icon{font-size:32px;line-height:1}
+.tarifs__cta-content{flex:1}
+.tarifs__cta-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;opacity:0.7;margin-bottom:4px}
+.tarifs__cta-title{font-size:15px;font-weight:600;line-height:1.4}
+.tarifs__cta-btn{display:inline-flex;align-items:center;background:var(--accent-text,#1A2B26);color:var(--accent,#FFCD00);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s;white-space:nowrap}
+.tarifs__cta-btn:hover{transform:translateX(2px)}
+
+/* Note de mise à jour */
+.tarifs__update-note{margin-top:18px;padding:12px 16px;background:var(--bg);border-radius:8px;font-size:12px;color:var(--text-muted);line-height:1.6;font-style:italic}
+.tarifs__update-note a{color:var(--text-soft);text-decoration:underline}
+.tarifs__update-note strong{color:var(--text-soft);font-weight:600}
+
+/* Mobile */
+@media (max-width:768px){
+  .tarifs__main{grid-template-columns:1fr}
+  .additional-fares-grid{grid-template-columns:1fr}
+  .tarifs__cta{grid-template-columns:auto 1fr}
+  .tarifs__cta-btn{grid-column:1 / -1;justify-content:center}
+}
+
+/* ============================================================
+   Section Travaux & fermetures
+   ============================================================ */
+.section--travaux{padding-bottom:30px}
+.travaux__intro{margin-bottom:28px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.travaux__intro strong{color:var(--text);font-weight:600}
+.travaux__subtitle{font-size:18px;font-weight:700;color:var(--text);margin-top:36px;margin-bottom:18px;letter-spacing:-0.01em}
+
+/* Statut global (banner haut) */
+.works-status{display:flex;align-items:center;gap:18px;padding:18px 24px;border-radius:12px;border:1.5px solid;margin-bottom:14px}
+.works-status--clear{background:#E8F5EE;border-color:#B8D9C5}
+.works-status--has-works{background:#FFF4E0;border-color:#FFD691}
+.works-status__icon{font-size:32px;flex-shrink:0;line-height:1}
+.works-status__content{flex:1}
+.works-status__title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:4px;letter-spacing:-0.01em}
+.works-status__detail{font-size:14px;color:var(--text-soft)}
+
+/* Liste de travaux */
+.works-list{display:flex;flex-direction:column;gap:14px}
+
+/* Card travaux */
+.work-card{background:white;border:1px solid var(--border);border-radius:12px;padding:20px 24px;border-left:4px solid var(--accent,#FFCD00);transition:all 0.15s}
+.work-card:hover{box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.work-card--current.severity-high{border-left-color:#E2231A;background:#FBE3E3}
+.work-card--current.severity-medium{border-left-color:#F39C12;background:#FFF4E0}
+.work-card--current.severity-low{border-left-color:#5BC0DE;background:#E8F4F8}
+.work-card--upcoming{border-left-color:#5A6B66;background:var(--bg)}
+
+/* Header card */
+.work-card__header{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.work-card__icon{font-size:24px;line-height:1;flex-shrink:0;margin-top:2px}
+.work-card__header-content{flex:1;min-width:0}
+.work-card__title{font-size:16px;font-weight:700;color:var(--text);margin:0 0 6px 0;letter-spacing:-0.01em;line-height:1.3}
+.work-card__dates{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;color:var(--text-soft);font-weight:500}
+.work-card__dates-icon{font-size:14px}
+.work-card__weekends-badge{background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.04em}
+
+/* Description */
+.work-card__description{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0 0 14px 0}
+
+/* Stations concernées */
+.work-card__stations{margin-top:14px;padding:12px 14px;background:rgba(0,0,0,0.02);border-radius:8px}
+.work-card__stations-label{font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;letter-spacing:0.04em}
+.work-card__stations-list{display:flex;flex-wrap:wrap;gap:6px}
+.work-station{font-size:12px;background:white;border:1px solid var(--border);padding:3px 10px;border-radius:6px;color:var(--text-soft);font-weight:500}
+
+/* Alternatives */
+.work-card__alternatives{margin-top:14px;padding:14px;background:#FFFBED;border-radius:8px;border:1px dashed #F0DFA0}
+.work-card__alternatives-label{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:0.02em}
+.work-card__alternatives-list{margin:0;padding-left:20px;font-size:13px;color:var(--text-soft);line-height:1.6}
+.work-card__alternatives-list li{margin-bottom:4px}
+.work-card__alternatives-list li:last-child{margin-bottom:0}
+
+/* Travaux terminés */
+.works-completed-list{display:flex;flex-direction:column;gap:10px}
+.work-completed{display:flex;gap:14px;padding:14px 18px;background:#F0F8F2;border:1px solid #C8E0D0;border-radius:10px;opacity:0.85}
+.work-completed__icon{font-size:20px;flex-shrink:0;line-height:1.2}
+.work-completed__content{flex:1}
+.work-completed__title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:2px;letter-spacing:-0.01em}
+.work-completed__date{font-size:12px;color:#1F8043;font-weight:600;margin-bottom:6px}
+.work-completed__desc{font-size:13px;color:var(--text-muted);line-height:1.5;margin:0}
+
+/* CTA Calendrier */
+.travaux__cta{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:30px}
+.travaux__cta-icon{font-size:32px;line-height:1}
+.travaux__cta-content{flex:1}
+.travaux__cta-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;opacity:0.7;margin-bottom:4px}
+.travaux__cta-title{font-size:15px;font-weight:600;line-height:1.4}
+.travaux__cta-btn{display:inline-flex;align-items:center;background:var(--accent-text,#1A2B26);color:var(--accent,#FFCD00);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s;white-space:nowrap}
+.travaux__cta-btn:hover{transform:translateX(2px)}
+
+/* Note */
+.travaux__update-note{margin-top:18px;padding:12px 16px;background:var(--bg);border-radius:8px;font-size:12px;color:var(--text-muted);line-height:1.6;font-style:italic}
+.travaux__update-note strong{color:var(--text-soft);font-weight:600}
+
+/* Mobile */
+@media (max-width:768px){
+  .work-card{padding:16px 18px}
+  .travaux__cta{grid-template-columns:auto 1fr}
+  .travaux__cta-btn{grid-column:1 / -1;justify-content:center}
+}
+
+/* ============================================================
+   Section FAQ
+   ============================================================ */
+.section--faq{padding-bottom:30px}
+.faq__intro{margin-bottom:28px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.faq__intro strong{color:var(--text);font-weight:600}
+
+/* Liste FAQ */
+.faq__list{display:flex;flex-direction:column;gap:10px}
+
+/* Item FAQ (accordéon HTML5 natif) */
+.faq-item{background:white;border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:all 0.2s}
+.faq-item:hover{border-color:#C8D6CC}
+.faq-item[open]{border-color:var(--accent,#FFCD00);box-shadow:0 2px 12px rgba(0,0,0,0.04)}
+
+/* Question (toujours visible, cliquable) */
+.faq-item__question{display:flex;align-items:center;gap:14px;padding:18px 22px;cursor:pointer;font-size:15px;font-weight:600;color:var(--text);list-style:none;letter-spacing:-0.01em;line-height:1.4;transition:background 0.15s}
+.faq-item__question::-webkit-details-marker{display:none}
+.faq-item__question::marker{display:none}
+.faq-item__question:hover{background:var(--bg)}
+.faq-item__question-text{flex:1}
+
+/* Icône chevron */
+.faq-item__icon{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:32px;height:32px;background:var(--bg);border-radius:50%;color:var(--text-soft);transition:all 0.25s ease}
+.faq-item[open] .faq-item__icon{background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);transform:rotate(180deg)}
+
+/* Réponse (cachée par défaut, visible quand open) */
+.faq-item__answer{padding:0 22px 20px;color:var(--text-soft);font-size:14px;line-height:1.7;border-top:1px solid var(--border);margin-top:0;animation:faq-fade-in 0.3s ease}
+.faq-item__answer p{margin:14px 0 0}
+
+/* Animation d'ouverture */
+@keyframes faq-fade-in{
+  from{opacity:0;transform:translateY(-4px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* CTA contact */
+.faq__contact-cta{display:flex;align-items:center;gap:14px;padding:16px 22px;background:var(--bg);border-radius:10px;margin-top:24px;font-size:14px;color:var(--text-soft);flex-wrap:wrap}
+.faq__contact-icon{font-size:22px;line-height:1}
+.faq__contact-text{flex:1}
+.faq__contact-link{color:var(--teal,#0F6E56);font-weight:700;text-decoration:none;border-bottom:1.5px solid transparent;transition:border-color 0.15s}
+.faq__contact-link:hover{border-bottom-color:var(--teal,#0F6E56)}
+
+/* Mobile */
+@media (max-width:768px){
+  .faq-item__question{padding:14px 16px;font-size:14px}
+  .faq-item__answer{padding:0 16px 16px}
+}
+
+/* ============================================================
+   Section Articles & actualités liés
+   ============================================================ */
+.section--articles{padding-bottom:30px}
+.articles__intro{margin-bottom:24px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.articles__intro strong{color:var(--text);font-weight:600}
+
+/* Grid principal : featured (1.4fr) + secondaires (1fr) */
+.articles__grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;margin-bottom:24px}
+
+/* Articles secondaires : flex column */
+.articles__secondary{display:flex;flex-direction:column;gap:12px}
+
+/* Card commune */
+.article-card{background:white;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all 0.2s}
+.article-card:hover{border-color:var(--accent,#FFCD00);box-shadow:0 4px 16px rgba(0,0,0,0.08);transform:translateY(-2px)}
+.article-card__link{display:block;text-decoration:none;color:inherit;height:100%}
+
+/* Article featured (grand) */
+.article-card--featured{display:flex;flex-direction:column}
+.article-card--featured .article-card__image-wrap{position:relative;height:240px;overflow:hidden}
+.article-card--featured .article-card__title{font-size:20px;font-weight:700;line-height:1.3;margin-bottom:10px;letter-spacing:-0.01em}
+.article-card--featured .article-card__excerpt{font-size:14px;line-height:1.6;color:var(--text-soft);margin-bottom:14px}
+.article-card--featured .article-card__content{padding:18px 22px}
+
+/* Articles secondaires (compacts, en row) */
+.article-card--secondary .article-card__link{display:flex;flex-direction:row;height:100%}
+.article-card--secondary .article-card__image-wrap{position:relative;flex-shrink:0;width:130px;height:auto;min-height:100px}
+.article-card--secondary .article-card__content{flex:1;padding:14px 16px;display:flex;flex-direction:column;justify-content:space-between;min-width:0}
+.article-card--secondary .article-card__title{font-size:14px;font-weight:700;line-height:1.4;margin-bottom:8px;color:var(--text);letter-spacing:-0.01em;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Image placeholder (en attendant les vraies images) */
+.article-card__image{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,0.3)}
+.article-card__placeholder-icon{font-size:48px;opacity:0.4}
+.article-card--secondary .article-card__placeholder-icon{font-size:32px}
+
+/* Badge catégorie */
+.article-card__category{position:absolute;top:12px;left:12px;display:inline-flex;padding:5px 12px;background:var(--teal);color:white;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;border-radius:5px}
+
+/* Meta (auteur, date, temps lecture) */
+.article-card__meta{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted);flex-wrap:wrap;line-height:1.4}
+.article-card__author strong{color:var(--text-soft);font-weight:700}
+.article-card__date{color:var(--text-muted)}
+.article-card__reading-time{color:var(--text-muted)}
+.article-card__separator{color:var(--text-muted);opacity:0.5}
+
+/* CTA "Voir tous les articles" (en jaune ligne pour cohérence) */
+.articles__cta{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26)}
+.articles__cta-icon{font-size:32px;line-height:1}
+.articles__cta-content{flex:1}
+.articles__cta-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;opacity:0.7;margin-bottom:4px}
+.articles__cta-title{font-size:15px;font-weight:600;line-height:1.4}
+.articles__cta-btn{display:inline-flex;align-items:center;background:var(--accent-text,#1A2B26);color:var(--accent,#FFCD00);font-weight:700;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;transition:transform .15s;white-space:nowrap}
+.articles__cta-btn:hover{transform:translateX(2px)}
+
+/* Mobile */
+@media (max-width:768px){
+  .articles__grid{grid-template-columns:1fr}
+  .article-card--featured .article-card__image-wrap{height:180px}
+  .article-card--featured .article-card__title{font-size:18px}
+  .articles__cta{grid-template-columns:auto 1fr}
+  .articles__cta-btn{grid-column:1 / -1;justify-content:center}
+}
+
+/* ============================================================
+   Section Liens internes
+   ============================================================ */
+.section--liens{padding-bottom:30px}
+.liens__intro{margin-bottom:30px;font-size:16px;line-height:1.7;color:var(--text-soft)}
+.liens__intro strong{color:var(--text);font-weight:600}
+
+.liens__group{margin-bottom:32px}
+.liens__group:last-child{margin-bottom:0}
+
+.liens__subtitle{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;color:var(--text);margin-bottom:14px;letter-spacing:-0.01em}
+.liens__subtitle-icon{font-size:20px;line-height:1}
+
+/* Cards lignes (correspondances) */
+.liens__cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+
+.line-card{display:flex;align-items:center;gap:18px;padding:14px 18px;background:white;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit;transition:all 0.15s}
+.line-card:hover{border-color:var(--accent,#FFCD00);box-shadow:0 2px 12px rgba(0,0,0,0.06);transform:translateY(-1px)}
+
+/* Pastille de la ligne */
+.line-card__pill{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:36px;height:36px;border-radius:50%;font-weight:800;font-size:15px;letter-spacing:-0.5px;border:1.5px solid rgba(0,0,0,0.08);margin-right:18px}
+
+/* Contenu de la card */
+.line-card__content{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.line-card__name{font-size:14px;font-weight:700;color:var(--text);letter-spacing:-0.01em}
+.line-card__stations{font-size:12px;color:var(--text-muted);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Découvrir d'autres lignes (pills compactes) */
+.liens__discover{display:flex;flex-wrap:wrap;gap:8px}
+.discover-pill{display:inline-flex;align-items:center;gap:12px;padding:6px 18px 6px 6px;background:white;border:1px solid var(--border);border-radius:30px;text-decoration:none;color:inherit;transition:all 0.15s}
+.discover-pill:hover{border-color:var(--accent,#FFCD00);background:var(--bg)}
+.discover-pill--current{background:var(--accent-light,#FFF6CC);border-color:var(--accent,#FFCD00)}
+.discover-pill__pill{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-weight:800;font-size:13px;letter-spacing:-0.5px;border:1.5px solid rgba(0,0,0,0.08);margin-right:12px}
+.discover-pill__name{font-size:13px;font-weight:600;color:var(--text)}
+
+/* Pages liées */
+.liens__related{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.related-card{display:flex;align-items:center;gap:18px;padding:16px 20px;background:white;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit;transition:all 0.15s}
+.related-card:hover{border-color:var(--teal);background:var(--bg);transform:translateX(2px)}
+.related-card__icon{font-size:24px;line-height:1;flex-shrink:0;margin-right:18px}
+.related-card__content{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.related-card__label{font-size:14px;font-weight:700;color:var(--text);letter-spacing:-0.01em}
+.related-card__desc{font-size:12px;color:var(--text-muted);line-height:1.4}
+.related-card__arrow{font-size:18px;color:var(--text-muted);transition:all 0.15s;flex-shrink:0}
+.related-card:hover .related-card__arrow{color:var(--teal);transform:translateX(2px)}
+
+/* Mobile */
+@media (max-width:768px){
+  .liens__cards{grid-template-columns:1fr}
+  .liens__related{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   Section Meta auteur + dates
+   ============================================================ */
+.section--meta{padding-bottom:30px}
+.meta__inner{background:white;border:1px solid var(--border);border-radius:14px;padding:30px 32px;display:flex;flex-direction:column;gap:24px}
+
+/* Auteur principal */
+.meta-author{display:flex;align-items:flex-start;gap:32px}
+.meta-author__avatar{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:80px;height:80px;border-radius:50%;color:white;font-weight:800;font-size:32px;text-decoration:none;letter-spacing:-1px;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:all 0.15s}
+.meta-author__avatar:hover{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.15)}
+
+.meta-author__content{flex:1;min-width:0}
+.meta-author__header{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}
+.meta-author__name{font-size:18px;font-weight:800;color:var(--text);letter-spacing:-0.02em;text-decoration:none;line-height:1.2}
+.meta-author__name:hover{color:var(--teal)}
+.meta-author__role{font-size:13px;font-weight:600;color:var(--teal);letter-spacing:-0.01em}
+
+.meta-author__bio{font-size:14px;line-height:1.6;color:var(--text-soft);margin:0 0 12px 0}
+
+.meta-author__tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.meta-tag{display:inline-flex;font-size:11px;font-weight:600;padding:3px 10px;background:var(--bg);color:var(--text-soft);border-radius:5px;letter-spacing:0.02em}
+
+.meta-author__profile-link{display:inline-flex;align-items:center;font-size:13px;font-weight:700;color:var(--teal);text-decoration:none;border-bottom:1.5px solid transparent;transition:border-color 0.15s}
+.meta-author__profile-link:hover{border-bottom-color:var(--teal)}
+
+/* Co-auteur (ligne compacte) */
+.meta-coauthor{display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 18px;background:var(--bg);border-radius:10px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.meta-coauthor__label{font-weight:600;color:var(--text)}
+.meta-coauthor__link{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--text);font-weight:700}
+.meta-coauthor__avatar{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;color:white;font-weight:800;font-size:12px;letter-spacing:-0.5px}
+.meta-coauthor__name{border-bottom:1.5px solid transparent;transition:border-color 0.15s}
+.meta-coauthor__link:hover .meta-coauthor__name{border-bottom-color:var(--text)}
+.meta-coauthor__role{color:var(--text-muted)}
+.meta-coauthor__sections{font-size:12px;color:var(--text-muted);font-style:italic}
+
+/* Dates */
+.meta-dates{display:flex;flex-wrap:wrap;gap:14px;padding:14px 18px;background:#FFF6E5;border-radius:10px;border-left:3px solid var(--accent,#FFCD00)}
+.meta-date{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-soft)}
+.meta-date__icon{font-size:16px;line-height:1}
+.meta-date__label{font-weight:600;color:var(--text)}
+.meta-date__value{color:var(--text-soft)}
+
+/* Sources */
+.meta-sources__title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:10px;letter-spacing:-0.01em}
+.meta-sources__list{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:6px}
+.meta-sources__list li{font-size:13px;line-height:1.5}
+.meta-sources__list a{display:inline-flex;align-items:center;gap:4px;color:var(--text-soft);text-decoration:none;border-bottom:1px solid transparent;transition:all 0.15s;padding:4px 0}
+.meta-sources__list a:hover{color:var(--teal);border-bottom-color:var(--teal)}
+
+/* Disclaimer */
+.meta-disclaimer{display:flex;gap:12px;padding:14px 18px;background:#F5F4EA;border-radius:10px;border-left:3px solid var(--text-muted)}
+.meta-disclaimer__icon{font-size:18px;line-height:1.4;flex-shrink:0}
+.meta-disclaimer p{font-size:12px;color:var(--text-muted);line-height:1.6;margin:0}
+.meta-disclaimer strong{color:var(--text-soft);font-weight:700}
+
+/* Mobile */
+@media (max-width:768px){
+  .meta__inner{padding:20px 22px}
+  .meta-author{flex-direction:column;gap:14px;align-items:flex-start}
+  .meta-author__avatar{width:64px;height:64px;font-size:26px}
+  .meta-sources__list{grid-template-columns:1fr}
+}
+
+/* Ligne "données live" avec point pulsé rouge */
+.meta-date--live{padding-top:6px;border-top:1px dashed rgba(0,0,0,0.08);margin-top:4px;width:100%}
+.meta-date__icon--pulse{position:relative;display:inline-flex;width:10px;height:10px;background:#E2231A;border-radius:50%;flex-shrink:0;margin-right:8px}
+.meta-date__icon--pulse::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:inherit;border-radius:50%;animation:meta-pulse 1.8s ease-out infinite}
+@keyframes meta-pulse{
+  0%{transform:scale(1);opacity:1}
+  100%{transform:scale(2.5);opacity:0}
+}
+.meta-date--live .meta-date__label{font-weight:600;color:var(--text);letter-spacing:0;margin-right:0}
+
+/* ===== DESKTOP : barre horizontale compacte ===== */
+.page-toc{background:white;border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:24px;position:sticky;top:80px;z-index:20;backdrop-filter:blur(8px);background:rgba(255,255,255,0.95)}
+
+.page-toc__inner{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+
+.page-toc__label{display:inline-flex;align-items:center;gap:6px;flex-shrink:0;padding:6px 0;font-size:13px;font-weight:700;color:var(--text);letter-spacing:-0.01em;white-space:nowrap}
+.page-toc__label-icon{font-size:16px;line-height:1}
+
+.page-toc__list{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;flex:1}
+.page-toc__item{margin:0}
+
+.page-toc__link{display:inline-flex;align-items:center;gap:6px;padding:6px 12px 6px 8px;background:var(--bg);border:1px solid transparent;border-radius:6px;text-decoration:none;color:var(--text-soft);font-size:13px;font-weight:600;transition:all 0.15s;white-space:nowrap;letter-spacing:-0.01em}
+.page-toc__link:hover{background:var(--accent-light,#FFF6CC);color:var(--text);border-color:var(--accent,#FFCD00)}
+.page-toc__link.is-active{background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);border-color:var(--accent,#FFCD00);box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+
+.page-toc__icon{font-size:14px;line-height:1;flex-shrink:0}
+.page-toc__text{line-height:1.2}
+
+/* ===== MOBILE : bouton flottant ===== */
+.toc-fab{display:none;position:fixed;bottom:20px;right:20px;align-items:center;gap:8px;padding:12px 18px 12px 14px;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);border:none;border-radius:50px;font-size:14px;font-weight:700;letter-spacing:-0.01em;box-shadow:0 4px 16px rgba(0,0,0,0.15);cursor:pointer;z-index:50;opacity:0;transform:translateY(20px);transition:all 0.25s ease;font-family:inherit}
+.toc-fab.is-visible{opacity:1;transform:translateY(0)}
+.toc-fab:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.2)}
+.toc-fab:active{transform:translateY(0)}
+.toc-fab__icon{font-size:18px;line-height:1}
+
+/* ===== Modale mobile ===== */
+.toc-modal{position:fixed;inset:0;z-index:60;display:flex;align-items:flex-end;justify-content:center}
+.toc-modal[hidden]{display:none}
+.toc-modal__backdrop{position:absolute;inset:0;background:rgba(0,0,0,0.5);animation:toc-fade-in 0.2s ease}
+.toc-modal__content{position:relative;width:100%;max-width:600px;max-height:85vh;background:white;border-radius:20px 20px 0 0;display:flex;flex-direction:column;animation:toc-slide-up 0.3s ease;overflow:hidden}
+
+.toc-modal__header{display:flex;align-items:center;justify-content:space-between;padding:20px 22px 14px;border-bottom:1px solid var(--border);flex-shrink:0}
+.toc-modal__title{font-size:18px;font-weight:800;color:var(--text);margin:0;letter-spacing:-0.02em}
+.toc-modal__close{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:var(--bg);border:none;border-radius:50%;font-size:16px;color:var(--text);cursor:pointer;transition:background 0.15s}
+.toc-modal__close:hover{background:var(--border)}
+
+.toc-modal__list{margin:0;padding:8px 14px 22px;list-style:none;overflow-y:auto;flex:1}
+.toc-modal__list li{margin:0}
+
+.toc-modal__link{display:flex;align-items:center;gap:14px;padding:14px 14px;color:var(--text);text-decoration:none;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:-0.01em;transition:background 0.15s}
+.toc-modal__link:hover,.toc-modal__link:active{background:var(--bg)}
+.toc-modal__link.is-active{background:var(--accent-light,#FFF6CC);color:var(--accent-text,#1A2B26);font-weight:700}
+.toc-modal__icon{font-size:22px;line-height:1;flex-shrink:0}
+.toc-modal__text{flex:1}
+.toc-modal__arrow{font-size:16px;color:var(--text-muted);flex-shrink:0}
+
+@keyframes toc-fade-in{
+  from{opacity:0}
+  to{opacity:1}
+}
+@keyframes toc-slide-up{
+  from{transform:translateY(100%)}
+  to{transform:translateY(0)}
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+  /* Sur mobile : on cache la barre horizontale, on affiche le FAB */
+  .page-toc{display:none}
+  .toc-fab{display:inline-flex}
+}
+
+@media (max-width: 1100px) and (min-width: 769px){
+  /* Sur tablette : barre simplifiée */
+  .page-toc__icon{display:none}
+  .page-toc__link{padding:5px 10px}
+}
+
+/* ============================================================
+   Quick Actions (chips d'action rapide)
+   ============================================================ */
+.quick-actions{
+  display:table;
+  width:100%;
+  border-spacing:14px 0;
+  margin-bottom:24px;
+  margin-left:-14px;
+  margin-right:-14px;
+}
+
+.quick-action{
+  display:table-cell;
+  vertical-align:middle;
+  width:33.33%;
+  padding:16px 20px;
+  background:white;
+  border:1.5px solid var(--border);
+  border-radius:14px;
+  text-decoration:none;
+  color:var(--text);
+  transition:all 0.18s ease;
+  box-sizing:border-box;
+}
+
+/* Reset display:flex sur les enfants directs pour garder le rendu interne */
+.quick-action__inner{
+  display:flex;
+  align-items:center;
+  width:100%;
+}
+.quick-action:hover{
+  border-color:var(--accent,#FFCD00);
+  background:var(--accent-light,#FFF6CC);
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Icône (cercle 44px à gauche) */
+.quick-action__icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:44px;
+  height:44px;
+  background:var(--accent-light,#FFF6CC);
+  border-radius:50%;
+  font-size:20px;
+  flex-shrink:0;
+  margin-right:16px;
+  line-height:1;
+  vertical-align:middle;
+}
+
+/* Variante "live" : fond vert clair + dot animé */
+.quick-action--live .quick-action__icon{background:#E5F4EC}
+.quick-action__icon-dot{
+  display:block;
+  width:14px;
+  height:14px;
+  background:#2BAE5C;
+  border-radius:50%;
+  position:relative;
+}
+.quick-action__icon-dot::before{
+  content:'';
+  position:absolute;
+  top:-3px;left:-3px;right:-3px;bottom:-3px;
+  border:2px solid #2BAE5C;
+  border-radius:50%;
+  animation:quick-action-pulse 1.6s ease-out infinite;
+  opacity:0.6;
+}
+@keyframes quick-action-pulse{
+  0%{transform:scale(0.9);opacity:0.7}
+  100%{transform:scale(1.8);opacity:0}
+}
+
+/* Bloc texte (label + titre) */
+.quick-action__content{
+  flex:1;
+  min-width:0;
+  line-height:1.3;
+}
+.quick-action__label{
+  display:block;
+  font-size:11px;
+  font-weight:700;
+  color:#5A6B66;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  margin-bottom:3px;
+}
+.quick-action__title{
+  display:block;
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:-0.01em;
+}
+
+/* Flèche à droite */
+.quick-action__arrow{
+  margin-left:14px;
+  color:#A0ABA6;
+  font-size:18px;
+  flex-shrink:0;
+  transition:all 0.15s;
+}
+.quick-action:hover .quick-action__arrow{
+  color:var(--text);
+  transform:translateX(3px);
+}
+
+/* Mobile : stack vertical */
+@media (max-width:768px){
+  .quick-actions{display:block;margin:0 0 24px}
+  .quick-action{display:block;width:100%;margin-bottom:10px}
+}
+
+/* Avatars images SVG (Ludo, Élodie) */
+.meta-author__avatar { padding: 0; overflow: hidden; margin-right: 8px; }
+.meta-author__avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+.meta-coauthor__avatar { padding: 0; overflow: hidden; }
+.meta-coauthor__avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}

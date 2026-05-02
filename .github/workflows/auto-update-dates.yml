@@ -1,0 +1,71 @@
+name: Auto-update dates rédactionnelles
+
+# Déclenchement : à chaque push sur main qui modifie des fichiers de lignes
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public_html/data/lines/**.json'
+
+# Empêcher les boucles infinies (le commit auto déclencherait à nouveau l'action)
+concurrency:
+  group: auto-update-dates
+  cancel-in-progress: false
+
+jobs:
+  update-dates:
+    runs-on: ubuntu-latest
+    # Important : ne pas tourner sur les commits faits par cette action elle-même
+    if: "!contains(github.event.head_commit.message, '[auto-dates]')"
+
+    permissions:
+      contents: write  # nécessaire pour pousser le commit auto
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # On a besoin de l'historique pour comparer avec HEAD~1
+          fetch-depth: 2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: json, mbstring
+
+      - name: Detect editorial changes and update dates
+        id: update
+        run: |
+          echo "Détection des changements rédactionnels..."
+          php scripts/update-line-dates.php
+
+          # Vérifier si des fichiers ont été modifiés
+          if [[ -n "$(git status --porcelain public_html/data/lines/)" ]]; then
+            echo "changes=true" >> "$GITHUB_OUTPUT"
+            echo "Des changements ont été détectés et appliqués."
+          else
+            echo "changes=false" >> "$GITHUB_OUTPUT"
+            echo "Aucun changement rédactionnel à propager."
+          fi
+
+      - name: Configure git for auto-commit
+        if: steps.update.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push updated dates
+        if: steps.update.outputs.changes == 'true'
+        run: |
+          git add public_html/data/lines/
+          git commit -m "[auto-dates] MAJ automatique de meta.dates.updated"
+          git push origin main
+          echo "✅ Dates rédactionnelles mises à jour automatiquement"
+
+      - name: Summary (no changes)
+        if: steps.update.outputs.changes == 'false'
+        run: |
+          echo "ℹ️ Aucun changement rédactionnel détecté."
+          echo "Les modifications poussées concernent des champs techniques ou temps réel."

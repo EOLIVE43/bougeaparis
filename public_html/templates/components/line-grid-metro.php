@@ -6,17 +6,20 @@
  *   - lines         : array des lignes du metro (data/lines.json)
  *   - show_terminus : afficher les terminus (defaut true)
  *   - link_base     : base URL pour les liens (defaut '/metro/')
- *   - enable_links  : activer les liens (defaut false tant que pages lignes pas creees)
+ *   - enable_links  : "smart" (defaut) | true | false
+ *                     "smart" : interroge Routes::exists() ligne par ligne -> chaque ligne
+ *                               s'active automatiquement quand sa page est creee
+ *                     true    : active toutes les lignes
+ *                     false   : aucune ligne active
  *
  * Comportement :
  *   - Lien uniquement sur le nom de la ligne (pas sur toute la card)
- *   - Si enable_links=false, le nom n'est pas un lien
  */
 
 $lines         = $props['lines']         ?? [];
 $show_terminus = $props['show_terminus'] ?? true;
 $link_base     = $props['link_base']     ?? '/metro/';
-$enable_links  = $props['enable_links']  ?? false;
+$enable_links  = $props['enable_links']  ?? 'smart';
 
 if (empty($lines)) return;
 ?>
@@ -31,13 +34,20 @@ if (empty($lines)) return;
         $stations  = $line['stations_count'] ?? null;
         $auto      = !empty($line['automatic']);
         $href      = $link_base . 'ligne-' . $label . '/';
+
+        // Determination de l'activation du lien
+        if ($enable_links === 'smart') {
+            $isLinkActive = class_exists('Routes') && Routes::exists(rtrim($href, '/'));
+        } else {
+            $isLinkActive = (bool)$enable_links;
+        }
     ?>
         <li class="line-grid__item">
             <span class="line-grid__badge line-grid__badge--metro" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
                 <?= htmlspecialchars($label) ?>
             </span>
             <span class="line-grid__info">
-                <?php if ($enable_links): ?>
+                <?php if ($isLinkActive): ?>
                     <a href="<?= htmlspecialchars($href) ?>" class="line-grid__name line-grid__name--link"><?= htmlspecialchars($name) ?></a>
                 <?php else: ?>
                     <span class="line-grid__name"><?= htmlspecialchars($name) ?></span>

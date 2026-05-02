@@ -42,4 +42,8 @@ return [
     'timezone' => 'Europe/Paris',
     // Environnement
     'debug' => true,
+
+    // Phase de test pages ligne : true = noindex sur /metro/ligne-X (7 jours preview)
+    // Mettre false avant indexation Google
+    'line_pages_noindex' => true,
 ];

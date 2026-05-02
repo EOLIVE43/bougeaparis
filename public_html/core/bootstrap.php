@@ -18,6 +18,9 @@ spl_autoload_register(function ($class) {
     }
 });
 
+// Helpers métier (fonctions globales : pastilleCorresp, etc.)
+require_once __DIR__ . '/helpers.php';
+
 // Mode debug selon config
 $debug = Config::get('site.debug', false);
 if ($debug) {
@@ -55,3 +58,12 @@ if (!function_exists('component')) {
         Template::component($name, $props);
     }
 }
+
+/**
+ * Helper : charge les conditional-link helpers (Routes::exists + conditionalLink*).
+ * Routes est chargée automatiquement par l'autoload via Routes::exists(),
+ * mais les fonctions globales conditionalLink* doivent être définies ici.
+ *
+ * On force l'inclusion une fois pour avoir les fonctions globales disponibles.
+ */
+class_exists('Routes'); // déclenche l'autoload
