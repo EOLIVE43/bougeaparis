@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "last_updated": "2025-01-01",
+    "source": "Île-de-France Mobilités",
+    "source_url": "https://www.iledefrance-mobilites.fr/titres-et-tarifs",
+    "note": "Tarifs en vigueur au 1er janvier 2025. À mettre à jour annuellement."
+  },
+
+  "ticket_unique": {
+    "name": "Ticket t+",
+    "icon": "🎫",
+    "price": "2,15 €",
+    "duration": "Aller simple",
+    "validity": "Métro, RER intra-Paris, bus, tramway",
+    "description": "Le ticket à l'unité, valable pour un trajet en métro avec correspondances illimitées dans le réseau métro/RER pendant 2 heures.",
+    "best_for": "Voyage occasionnel, touristes en visite courte",
+    "transfers": "Correspondances métro/RER illimitées en 2h"
+  },
+
+  "carnet": {
+    "name": "Carnet de 10 tickets t+",
+    "icon": "📦",
+    "price": "17,35 €",
+    "price_per_ticket": "1,73 €",
+    "savings": "Économie de 19% par rapport au ticket à l'unité",
+    "validity": "Métro, RER intra-Paris, bus, tramway",
+    "description": "10 tickets t+ vendus en carnet, chargés sur Navigo Easy ou ticket papier. Tarif réduit -19% par rapport à l'achat à l'unité.",
+    "best_for": "Voyageurs réguliers occasionnels, séjour de quelques jours"
+  },
+
+  "navigo_easy": {
+    "name": "Navigo Easy",
+    "icon": "💳",
+    "price": "2 €",
+    "price_label": "Carte rechargeable",
+    "validity": "Anonyme, rechargeable",
+    "description": "Carte sans contact rechargeable avec des tickets t+, carnets, ou forfait journée. Anonyme, parfait pour les visiteurs occasionnels.",
+    "best_for": "Touristes, voyageurs occasionnels qui veulent éviter les tickets papier"
+  },
+
+  "navigo_decouverte": {
+    "name": "Navigo Découverte",
+    "icon": "🗓️",
+    "price": "5 €",
+    "price_label": "Carte personnalisée",
+    "validity": "Personnelle (photo obligatoire)",
+    "weekly_price": "30,75 €",
+    "weekly_label": "Forfait hebdomadaire",
+    "monthly_price": "88,80 €",
+    "monthly_label": "Forfait mensuel",
+    "description": "Carte personnelle avec photo, permettant de charger des forfaits Navigo (semaine, mois). Tarif unique pour toutes les zones (1-5).",
+    "best_for": "Visiteurs séjournant 4 jours ou plus, ou utilisant le métro intensivement"
+  },
+
+  "navigo_liberte_plus": {
+    "name": "Navigo Liberté+",
+    "icon": "♾️",
+    "price": "Gratuit",
+    "price_label": "Carte personnalisée",
+    "validity": "Paiement à l'usage, prélèvement mensuel",
+    "description": "Carte personnelle gratuite, vous payez vos trajets à la fin du mois (1,73 € par voyage métro/RER). Plafond mensuel garanti.",
+    "best_for": "Résidents franciliens occasionnels, salariés qui voyagent peu"
+  },
+
+  "free_categories": [
+    {
+      "category": "Enfants -4 ans",
+      "icon": "👶",
+      "description": "Voyagent gratuitement, sans titre de transport"
+    },
+    {
+      "category": "Enfants 4-10 ans",
+      "icon": "🧒",
+      "description": "Tarif réduit (-50%) sur tickets t+ et forfaits Navigo"
+    },
+    {
+      "category": "Imagine'R (-26 ans)",
+      "icon": "🎓",
+      "description": "Forfait étudiant à tarif préférentiel pour scolaires et étudiants"
+    },
+    {
+      "category": "Forfait Navigo Solidarité",
+      "icon": "💚",
+      "description": "Tarif réduit -75% pour bénéficiaires CSS, RSA, ASS, AAH"
+    }
+  ],
+
+  "advice": [
+    {
+      "profile": "Touriste 1 journée",
+      "icon": "🗺️",
+      "recommendation": "Carnet de 10 tickets t+",
+      "reasoning": "Pour 5-8 voyages dans la journée, le carnet est plus économique que les tickets à l'unité (économie de 19%). Surplus utilisable un autre jour."
+    },
+    {
+      "profile": "Touriste 4-7 jours",
+      "icon": "✈️",
+      "recommendation": "Forfait Navigo Hebdomadaire (du lundi au dimanche)",
+      "reasoning": "À partir de 14 trajets dans la semaine (~2 par jour), le forfait Navigo hebdomadaire devient rentable. Trajets illimités sur tout le réseau Île-de-France."
+    },
+    {
+      "profile": "Résident Paris",
+      "icon": "🏠",
+      "recommendation": "Forfait Navigo Mensuel",
+      "reasoning": "Pour usage quotidien, le forfait mensuel est imbattable. Trajets illimités tout le réseau, y compris vers les aéroports CDG et Orly."
+    },
+    {
+      "profile": "Voyageur occasionnel",
+      "icon": "🚇",
+      "recommendation": "Navigo Liberté+ ou tickets à l'unité",
+      "reasoning": "Si vous prenez le métro 1 à 2 fois par semaine, le Liberté+ vous permet de payer uniquement vos trajets effectifs sans forfait mensuel."
+    }
+  ]
+}

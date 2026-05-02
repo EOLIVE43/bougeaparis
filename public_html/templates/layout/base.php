@@ -3,12 +3,13 @@
  * Layout de base - version optimisee perf (bundle CSS + lazy gtag)
  *
  * Variables disponibles :
- *   $site      : config du site
- *   $nav       : config de navigation
- *   $ads       : config AdSense
- *   $analytics : config analytics (GSC + GA4)
- *   $content   : contenu HTML de la page
- *   $seo       : instance Seo pour rendu du <head>
+ *   $site              : config du site
+ *   $nav               : config de navigation
+ *   $ads               : config AdSense
+ *   $analytics         : config analytics (GSC + GA4)
+ *   $content           : contenu HTML de la page
+ *   $seo               : instance Seo pour rendu du <head>
+ *   $extra_stylesheets : array de CSS additionnels demandes par la page (via $tpl->addStylesheet())
  */
 ?><!DOCTYPE html>
 <html lang="<?= e($site['language']) ?>">
@@ -64,6 +65,13 @@
 
     <!-- Bundle CSS unique (fusion des 8 CSS) -->
     <link rel="stylesheet" href="/assets/css/bundle.css">
+
+<?php /* CSS additionnels demandes par la page (ex: line.css sur /metro/ligne-X/) */ ?>
+<?php if (!empty($extra_stylesheets)): ?>
+<?php foreach ($extra_stylesheets as $href): ?>
+    <link rel="stylesheet" href="<?= e($href) ?>">
+<?php endforeach; ?>
+<?php endif; ?>
 
     <!-- RSS (blog) -->
     <link rel="alternate" type="application/rss+xml" title="<?= e($site['brand_name']) ?> - Blog" href="/blog/rss.xml">

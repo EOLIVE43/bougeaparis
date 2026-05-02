@@ -43,16 +43,16 @@ class Seo
     }
 
     public function setCanonical(string $path): self
-{
-    // Si l'argument est deja une URL complete (http/https), on l'utilise tel quel
-    // Sinon on concatene avec l'URL du site
-    if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
-        $this->data['canonical'] = $path;
-    } else {
-        $this->data['canonical'] = rtrim(Config::get('site.url'), '/') . $path;
+    {
+        // Si l'argument est deja une URL complete (http/https), on l'utilise tel quel
+        // Sinon on concatene avec l'URL du site
+        if (str_starts_with($path, 'http://') || str_starts_with($path, 'https://')) {
+            $this->data['canonical'] = $path;
+        } else {
+            $this->data['canonical'] = rtrim(Config::get('site.url'), '/') . $path;
+        }
+        return $this;
     }
-    return $this;
-}
 
     public function setOgImage(string $url): self
     {
@@ -65,6 +65,15 @@ class Seo
     public function setOgType(string $type): self
     {
         $this->data['og_type'] = $type;
+        return $this;
+    }
+
+    /**
+     * Override la directive robots (ex: 'noindex,follow' pour phase de test).
+     */
+    public function setRobots(string $directive): self
+    {
+        $this->data['robots'] = $directive;
         return $this;
     }
 
@@ -83,6 +92,8 @@ class Seo
      */
     public function addSchema(array $schema): self
     {
+        // Filtrage des valeurs null (utile pour author optionnel etc.)
+        $schema = $this->filterNulls($schema);
         $this->schemas[] = $schema;
         return $this;
     }
@@ -177,5 +188,24 @@ class Seo
     {
         if (mb_strlen($text) <= $maxLen) return $text;
         return mb_substr($text, 0, $maxLen - 1) . '…';
+    }
+
+    /**
+     * Supprime récursivement les valeurs null d'un tableau.
+     * Utile pour les schemas où certaines clés sont optionnelles.
+     */
+    private function filterNulls(array $arr): array
+    {
+        $out = [];
+        foreach ($arr as $k => $v) {
+            if ($v === null) continue;
+            if (is_array($v)) {
+                $filtered = $this->filterNulls($v);
+                if (!empty($filtered)) $out[$k] = $filtered;
+            } else {
+                $out[$k] = $v;
+            }
+        }
+        return $out;
     }
 }
