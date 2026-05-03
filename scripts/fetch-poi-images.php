@@ -174,6 +174,14 @@ const WIKIMEDIA_ARCHIVE_PATTERNS = [
     '/\(\s*ca\.\s*1[8-9]\d{2}/i',    // ca. 1850, ca. 1900, etc.
     '/\(NYPL/i',                     // New York Public Library tag
     '/Carnavalet/i',                 // Musée Carnavalet (souvent vieilles photos)
+    // v1.4.6 : Patterns BNF/Gallica et Agence Rol (toutes vieilles photos)
+    '/btv1b\d+/i',                   // BNF Gallica (ex: btv1b53232129m)
+    '/gallica/i',                    // BNF Gallica direct
+    '/Agence\s+Rol/i',               // Agence photographique Rol (1900-1940)
+    '/Fortepan\s+\d+/i',             // Fortepan = archives Hongroises (souvent anciennes)
+    '/LCCN\d+/',                     // Library of Congress Control Number
+    '/Bestanddeelnr\s+\d+/i',        // Nationaal Archief Néerlandais (vieux)
+    '/RP-F-\d+/',                    // Rijksmuseum Foto (anciens)
 ];
 
 /**
@@ -288,6 +296,39 @@ function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
     }
 
     return $score;
+}
+
+/**
+ * v1.4.6 : Nettoyer l'image d'un POI quand le téléchargement échoue.
+ * Supprime les fichiers WebP existants et retire le champ image du JSON.
+ * Permet d'éviter qu'une vieille mauvaise photo reste affichée sur le site.
+ *
+ * @param array  $poi       POI courant (référence pour modif)
+ * @param string $imageDir  Dossier des images du thème (pour calcul des paths)
+ * @param array  $line      Données de la ligne (pour sauvegarde JSON)
+ * @param string $lineFile  Chemin du JSON de la ligne
+ */
+function cleanupPoiImage(array &$poi, string $imageDir, array $line, string $lineFile): void {
+    $existingFull  = $imageDir . '/' . $poi['slug'] . '.webp';
+    $existingThumb = $imageDir . '/' . $poi['slug'] . '-thumb.webp';
+    $cleaned = false;
+    if (file_exists($existingFull)) {
+        unlink($existingFull);
+        $cleaned = true;
+    }
+    if (file_exists($existingThumb)) {
+        unlink($existingThumb);
+        $cleaned = true;
+    }
+    if (isset($poi['image'])) {
+        unset($poi['image']);
+        // Sauvegarde immédiate du JSON sans le champ image
+        file_put_contents($lineFile, json_encode($line, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+        $cleaned = true;
+    }
+    if ($cleaned) {
+        echo "      🧹 Image existante nettoyée\n";
+    }
 }
 
 /**
@@ -839,6 +880,8 @@ foreach ($lineFiles as $lineFile) {
                 $forced = fetchWikimediaFile($override['wikimedia_file'], $config);
                 if (!$forced) {
                     echo "      ✗ Fichier forcé introuvable\n";
+                    // v1.4.6 : cleanup de l'image existante
+                    cleanupPoiImage($poi, $imageDir, $line, $lineFile);
                     continue;
                 }
                 $best = $forced;
@@ -850,6 +893,8 @@ foreach ($lineFiles as $lineFile) {
                 $candidates = searchWikimediaImages($searchQuery, $config, $extraBlocklist);
                 if (empty($candidates)) {
                     echo "      ✗ Aucune image trouvée (score >= 30)\n";
+                    // v1.4.6 : nettoyer l'image existante pour éviter qu'une vieille mauvaise photo reste affichée
+                    cleanupPoiImage($poi, $imageDir, $line, $lineFile);
                     continue;
                 }
                 echo "      📥 " . count($candidates) . " candidats apr\u00e8s filtrage\n";
