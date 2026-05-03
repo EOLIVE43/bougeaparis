@@ -1587,3 +1587,188 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     .hub-intro { font-size: 1rem; }
     .article-list__items { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   PATCH v1.3 — Équilibrer texte/gras + cluster Gares
+   ============================================================ */
+
+/* Foncer le texte global pour réduire le contraste avec les <strong> */
+:root {
+    --color-text: #0F1E1A;
+    --color-text-soft: #2C3833;
+}
+
+/* Adoucir les <strong> dans le contenu courant des sections (paragraphes) :
+   on garde le poids visuel du gras mais sans en faire trop */
+.line-page p strong,
+.line-page li strong,
+.line-page__container p strong,
+.intro-seo p strong,
+.section p strong,
+.section li strong,
+.que-voir__intro p strong,
+.plan-visuel__intro p strong,
+.stations-table__intro p strong,
+.section--liens p strong,
+.hub-gares__lead strong,
+.hub-gares__intro p strong {
+    font-weight: 600;
+}
+
+/* ============================================================
+   Cluster Gares - hub /gares/
+   ============================================================ */
+
+.hub-gares__header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border, #E0E6E4);
+}
+.hub-gares__header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+}
+.hub-gares__lead {
+    font-size: 1.0625rem;
+    color: var(--color-text);
+    line-height: 1.65;
+    max-width: 820px;
+    margin: 0;
+}
+
+.hub-gares__grid-section {
+    margin-bottom: 3rem;
+}
+.hub-gares__grid-section > h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 1.5rem;
+    letter-spacing: -0.01em;
+}
+
+.hub-gares__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.gare-card {
+    background: #FFF;
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    position: relative;
+}
+.gare-card:hover {
+    box-shadow: 0 4px 16px rgba(15, 110, 86, 0.10);
+    transform: translateY(-1px);
+}
+.gare-card--inactive {
+    opacity: 0.85;
+}
+
+.gare-card__icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.gare-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 0.5rem;
+    letter-spacing: -0.01em;
+}
+.gare-card__title-link {
+    color: var(--color-text);
+    text-decoration: none;
+    background-image: linear-gradient(transparent calc(100% - 2px), var(--color-primary) 2px);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.25s ease, color 0.15s ease;
+}
+.gare-card__title-link:hover {
+    color: var(--color-primary);
+    background-size: 100% 100%;
+}
+.gare-card__title-link--inactive {
+    color: var(--color-text-muted);
+    cursor: default;
+    pointer-events: none;
+}
+.gare-card__desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-soft);
+    line-height: 1.55;
+    margin: 0 0 1rem;
+}
+.gare-card__compagnies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 0.75rem;
+}
+.gare-card__cie {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    background: var(--color-primary-bg, #E1F5EE);
+    color: var(--color-primary-darker, #04342C);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 999px;
+    letter-spacing: 0.01em;
+}
+.gare-card__soon {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border);
+}
+
+.hub-gares__intro,
+.hub-gares__alternatives {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    background: #FAFCFB;
+    border-left: 4px solid var(--color-primary);
+    border-radius: 0 8px 8px 0;
+}
+.hub-gares__intro h2,
+.hub-gares__alternatives h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0 0 1rem;
+}
+.hub-gares__intro p,
+.hub-gares__alternatives p {
+    color: var(--color-text-soft);
+    line-height: 1.65;
+    margin: 0 0 1rem;
+}
+.hub-gares__alternatives ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    color: var(--color-text-soft);
+    line-height: 1.7;
+}
+.hub-gares__alternatives a {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+.hub-gares__alternatives a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hub-gares__grid { grid-template-columns: 1fr; }
+    .hub-gares__header h1 { font-size: 1.5rem; }
+}

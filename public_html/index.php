@@ -146,6 +146,11 @@ switch ($path) {
     case '/transilien':
         bp_render_hub('transilien');
         break;
+    case '/gares':
+        // Hub cluster Gares (livraison future : 7 grandes gares parisiennes)
+        // Pour l'instant : page squelette "Bientôt disponible"
+        (new Template('hub-gares'))->render();
+        break;
 
     // --- Info-Trafic (Livraison 4) ---
     case '/info-trafic':
@@ -192,6 +197,41 @@ switch ($path) {
         // Route dynamique /metro/ligne-{code} (ex: /metro/ligne-1, /metro/ligne-14, /metro/ligne-3bis)
         if (preg_match('#^/metro/ligne-([a-z0-9]+)$#i', $path, $matches)) {
             bp_render_line('metro', $matches[1]);
+            break;
+        }
+
+        // Route dynamique /metro/station/{slug} - URL canonique unique par station
+        // (peu importe combien de lignes la desservent, évite duplicate content)
+        if (preg_match('#^/metro/station/([a-z0-9\-]+)$#', $path, $matches)) {
+            $slug = $matches[1];
+            $stationFile = __DIR__ . '/data/stations/' . $slug . '.json';
+            if (file_exists($stationFile)) {
+                $station = json_decode(file_get_contents($stationFile), true);
+                if (is_array($station)) {
+                    $tpl = new Template('station-metro');
+                    $tpl->withData(['station' => $station]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
+            break;
+        }
+
+        // Route dynamique /gare/{slug} - 7 grandes gares parisiennes
+        if (preg_match('#^/gare/([a-z0-9\-]+)$#', $path, $matches)) {
+            $slug = $matches[1];
+            $gareFile = __DIR__ . '/data/gares/' . $slug . '.json';
+            if (file_exists($gareFile)) {
+                $gare = json_decode(file_get_contents($gareFile), true);
+                if (is_array($gare)) {
+                    $tpl = new Template('gare-detail');
+                    $tpl->withData(['gare' => $gare]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
             break;
         }
 

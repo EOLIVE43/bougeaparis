@@ -6,12 +6,16 @@
  * - Trait coloré horizontal
  * - Cercles centrés sur la ligne (terminus, pôles majeurs, stations classiques)
  * - Noms de stations inclinés en bas
- * - Pastilles de correspondance en haut (au-dessus du trait)
+ * - Pastilles de correspondance en haut (SVG cohérent avec helpers)
  * - Étiquettes culturelles teal sous les noms
+ *
+ * v1.3 :
+ * - Pastilles uniformisées via pastilleCorresp() (style bord blanc)
+ * - Bouton "Agrandir" qui ouvre une lightbox plein écran
+ * - Scroll horizontal propre sur mobile (pas de double scrollbar)
  *
  * Variables attendues :
  * - $line : array, données de la ligne (depuis JSON)
- * - $lineColor : string, couleur officielle
  */
 
 $stations = $line['stations'];
@@ -34,7 +38,16 @@ $lineColor = $line['color'] ?? '#0F6E56';
   <!-- LE PLAN -->
   <figure class="line-plan" role="img" aria-label="Plan de la ligne <?= htmlspecialchars($line['code']) ?> du métro de Paris, de <?= htmlspecialchars($line['terminus_a']) ?> à <?= htmlspecialchars($line['terminus_b']) ?>">
 
-    <div class="line-plan__scroll-wrapper">
+    <!-- Bouton Agrandir (lightbox) -->
+    <button type="button"
+            class="line-plan__zoom-btn"
+            data-lightbox-target="line-plan-content"
+            aria-label="Agrandir le plan de la ligne <?= htmlspecialchars($line['code']) ?>">
+      <span class="line-plan__zoom-icon" aria-hidden="true">⛶</span>
+      <span class="line-plan__zoom-label">Agrandir</span>
+    </button>
+
+    <div class="line-plan__scroll-wrapper" id="line-plan-content">
       <div class="line-plan__frise" style="--line-color: <?= htmlspecialchars($lineColor) ?>;">
 
         <!-- La ligne horizontale colorée -->
@@ -46,13 +59,16 @@ $lineColor = $line['color'] ?? '#0F6E56';
           <?php foreach ($stations as $station): ?>
             <div class="line-plan__station <?= $station['is_major'] ? 'line-plan__station--major' : '' ?>">
 
-              <!-- Pastilles de correspondance (au-dessus de la ligne) -->
+              <!-- Pastilles de correspondance (SVG, style cohérent avec le tableau) -->
               <?php if (!empty($station['correspondences'])): ?>
                 <div class="line-plan__corresp">
                   <?php foreach ($station['correspondences'] as $corresp): ?>
-                    <span class="pastille-corresp" style="border-color: <?= htmlspecialchars($corresp['color']) ?>;">
-                      <span class="pastille-corresp__mode" style="color: <?= htmlspecialchars($corresp['color']) ?>;"><?= htmlspecialchars($corresp['mode']) ?></span><span class="pastille-corresp__line" style="color: <?= htmlspecialchars($corresp['color']) ?>;"><?= htmlspecialchars($corresp['line']) ?></span>
-                    </span>
+                    <?= pastilleCorresp(
+                        $corresp['mode'],
+                        $corresp['line'],
+                        $corresp['color'],
+                        'small'
+                    ) ?>
                   <?php endforeach; ?>
                 </div>
                 <div class="line-plan__connector" aria-hidden="true"></div>

@@ -3,7 +3,12 @@
  * Section Tableau des stations — Page ligne de métro
  *
  * Liste complète des stations avec correspondances et PMR.
- * Schema.org : ItemList contenant des Place pour rich snippets.
+ *
+ * v1.3 — Refactor :
+ * - URL canonique stations : /metro/station/{slug}/ (au lieu de /metro/ligne-1/{slug}/)
+ *   → évite duplicate content (Châtelet est sur 5 lignes mais a 1 seule URL)
+ * - Smart linking via Routes::exists() : noms inactifs/gris si page pas créée
+ * - Pastilles correspondances en SVG (pastilleCorresp()) pour cohérence avec le plan
  *
  * Variables attendues :
  * - $line : array, données de la ligne
@@ -11,22 +16,6 @@
 
 $stations = $line['stations'];
 $totalStations = count($stations);
-
-// Helper : transforme un slug à partir d'un nom
-function stationToSlug($name) {
-  $slug = mb_strtolower($name);
-  $slug = strtr($slug, [
-    'à'=>'a','á'=>'a','â'=>'a','ä'=>'a','ã'=>'a',
-    'é'=>'e','è'=>'e','ê'=>'e','ë'=>'e',
-    'í'=>'i','ì'=>'i','î'=>'i','ï'=>'i',
-    'ó'=>'o','ò'=>'o','ô'=>'o','ö'=>'o','õ'=>'o',
-    'ú'=>'u','ù'=>'u','û'=>'u','ü'=>'u',
-    'ç'=>'c','ñ'=>'n', "'"=>'-', ' '=>'-'
-  ]);
-  $slug = preg_replace('/[^a-z0-9\-]/', '', $slug);
-  $slug = preg_replace('/-+/', '-', $slug);
-  return trim($slug, '-');
-}
 ?>
 
 <section class="section section--stations-table" id="stations-table" aria-labelledby="stations-title">
@@ -41,23 +30,20 @@ function stationToSlug($name) {
     <?php endif; ?>
   </div>
 
-  <!-- Schema.org ItemList -->
+  <!-- Schema.org : ItemList des stations (E-E-A-T + données structurées) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Stations de la ligne <?= htmlspecialchars($line['code']) ?> du métro parisien",
+    "name": "Stations de la ligne <?= htmlspecialchars($line['code']) ?>",
     "numberOfItems": <?= $totalStations ?>,
     "itemListElement": [
       <?php foreach ($stations as $i => $station): ?>
       {
         "@type": "ListItem",
         "position": <?= $i + 1 ?>,
-        "item": {
-          "@type": "Place",
-          "name": <?= json_encode($station['name'] . (!empty($station['subtitle']) ? ' (' . $station['subtitle'] . ')' : '')) ?>,
-          "url": "https://bougeaparis.fr/metro/ligne-<?= $line['code'] ?>/<?= stationToSlug($station['name']) ?>/"
-        }
+        "name": <?= json_encode($station['name'] . (!empty($station['subtitle']) ? ' (' . $station['subtitle'] . ')' : '')) ?>,
+        "url": "https://bougeaparis.fr<?= Routes::stationUrl($station['name']) ?>"
       }<?= $i < $totalStations - 1 ? ',' : '' ?>
       <?php endforeach; ?>
     ]
@@ -67,22 +53,22 @@ function stationToSlug($name) {
   <!-- Tableau des stations -->
   <div class="stations-table__wrapper">
     <table class="stations-table">
+      <caption class="sr-only">Liste des stations de la ligne <?= htmlspecialchars($line['code']) ?> du métro avec correspondances et accessibilité PMR.</caption>
       <thead>
         <tr>
           <th class="stations-table__col-num" scope="col">#</th>
           <th class="stations-table__col-name" scope="col">Station</th>
           <th class="stations-table__col-corresp" scope="col">Correspondances</th>
-          <th class="stations-table__col-pmr" scope="col" title="Personnes à mobilité réduite">
-            <span class="visually-hidden">Accessibilité PMR</span>
-            <span aria-hidden="true">♿</span>
+          <th class="stations-table__col-pmr" scope="col">
+            <span aria-label="Accessibilité PMR" title="Accessibilité PMR">♿</span>
           </th>
         </tr>
       </thead>
       <tbody>
         <?php foreach ($stations as $i => $station):
           $isMajor = $station['is_major'];
-          $stationSlug = stationToSlug($station['name']);
-          $stationUrl = '/metro/ligne-' . $line['code'] . '/' . $stationSlug . '/';
+          $stationUrl = Routes::stationUrl($station['name']);
+          $stationActive = Routes::exists(rtrim($stationUrl, '/'));
         ?>
           <tr class="<?= $isMajor ? 'stations-table__row--major' : '' ?>">
 
@@ -91,9 +77,13 @@ function stationToSlug($name) {
               <span class="stations-table__num"><?= $i + 1 ?></span>
             </td>
 
-            <!-- Nom de la station -->
+            <!-- Nom de la station + sous-titre + label culturel -->
             <td class="stations-table__col-name">
-              <a href="<?= htmlspecialchars($stationUrl) ?>" class="stations-table__name-link">
+              <?php if ($stationActive): ?>
+                <a href="<?= htmlspecialchars($stationUrl) ?>" class="stations-table__name-link">
+              <?php else: ?>
+                <span class="stations-table__name-link stations-table__name-link--inactive" data-future-url="<?= htmlspecialchars($stationUrl) ?>">
+              <?php endif; ?>
                 <span class="stations-table__name <?= $isMajor ? 'stations-table__name--major' : '' ?>">
                   <?= htmlspecialchars($station['name']) ?>
                 </span>
@@ -105,17 +95,20 @@ function stationToSlug($name) {
                     <?= str_replace("\n", ' · ', htmlspecialchars($station['cultural_label'])) ?>
                   </span>
                 <?php endif; ?>
-              </a>
+              <?= $stationActive ? '</a>' : '</span>' ?>
             </td>
 
-            <!-- Correspondances -->
+            <!-- Correspondances (pastilles SVG style "plan visuel") -->
             <td class="stations-table__col-corresp">
               <?php if (!empty($station['correspondences'])): ?>
                 <div class="stations-table__corresp">
                   <?php foreach ($station['correspondences'] as $corresp): ?>
-                    <span class="pastille-corresp pastille-corresp--inline" style="border-color: <?= htmlspecialchars($corresp['color']) ?>;">
-                      <span class="pastille-corresp__mode" style="color: <?= htmlspecialchars($corresp['color']) ?>;"><?= htmlspecialchars($corresp['mode']) ?></span><span class="pastille-corresp__line" style="color: <?= htmlspecialchars($corresp['color']) ?>;"><?= htmlspecialchars($corresp['line']) ?></span>
-                    </span>
+                    <?= pastilleCorresp(
+                        $corresp['mode'],
+                        $corresp['line'],
+                        $corresp['color'],
+                        'small'
+                    ) ?>
                   <?php endforeach; ?>
                 </div>
               <?php else: ?>
@@ -141,12 +134,5 @@ function stationToSlug($name) {
       </tbody>
     </table>
   </div>
-
-  <!-- Note légale et lien PMR -->
-  <p class="stations-table__note">
-    <span class="stations-table__pmr stations-table__pmr--yes" aria-hidden="true">✓</span>
-    Stations <strong>accessibles aux personnes à mobilité réduite (PMR)</strong>.
-    <a href="#accessibilite">Voir le détail de l'accessibilité sur la ligne <?= htmlspecialchars($line['code']) ?></a>.
-  </p>
 
 </section>
