@@ -1,11 +1,63 @@
 <?php
 /**
  * Helpers de rendu spécifiques aux pages de transport
- * (pastille de correspondance, etc.)
+ * (pastille de correspondance, formats de date FR, etc.)
  *
  * Note : les fonctions globales courtes (e, url, asset, component) sont
  * dans bootstrap.php. Ce fichier regroupe les helpers métier transport.
  */
+
+if (!function_exists('dateFr')) {
+    /**
+     * Formate une date en français sans dépendre de strftime() (déprécié PHP 8.1+)
+     * ni de la locale système (instable selon hébergeur).
+     *
+     * Usage :
+     *   dateFr()                        // "vendredi 2 mai 2026"
+     *   dateFr(time(), 'short')         // "2 mai 2026"
+     *   dateFr('2026-04-28', 'short')   // "28 avril 2026"
+     *   dateFr(null, 'long_with_day')   // "vendredi 2 mai 2026"
+     *
+     * @param int|string|null $date  Timestamp, date string (parsable par strtotime), ou null pour "now"
+     * @param string $format         'short' | 'long_with_day' (défaut)
+     */
+    function dateFr($date = null, string $format = 'long_with_day'): string
+    {
+        if ($date === null) {
+            $ts = time();
+        } elseif (is_int($date)) {
+            $ts = $date;
+        } else {
+            $ts = strtotime((string)$date);
+            if ($ts === false) return '';
+        }
+
+        $jours = [
+            'Monday'    => 'lundi',
+            'Tuesday'   => 'mardi',
+            'Wednesday' => 'mercredi',
+            'Thursday'  => 'jeudi',
+            'Friday'    => 'vendredi',
+            'Saturday'  => 'samedi',
+            'Sunday'    => 'dimanche',
+        ];
+        $mois = [
+            1 => 'janvier', 2 => 'février', 3 => 'mars',     4 => 'avril',
+            5 => 'mai',     6 => 'juin',    7 => 'juillet',  8 => 'août',
+            9 => 'septembre', 10 => 'octobre', 11 => 'novembre', 12 => 'décembre',
+        ];
+
+        $j = (int)date('j', $ts);
+        $m = $mois[(int)date('n', $ts)];
+        $y = (int)date('Y', $ts);
+        $d = $jours[date('l', $ts)];
+
+        if ($format === 'short') {
+            return sprintf('%d %s %d', $j, $m, $y);
+        }
+        return sprintf('%s %d %s %d', $d, $j, $m, $y);
+    }
+}
 
 if (!function_exists('pastilleCorresp')) {
     /**

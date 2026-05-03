@@ -14,7 +14,7 @@ $lineColor   = $line['color']      ?? '#0F6E56';
 $h1          = $line['seo']['h1']  ?? ('Ligne ' . ($line['code'] ?? ''));
 $updatedDate = isset($line['meta']['dates']['updated_human'])
     ? $line['meta']['dates']['updated_human']
-    : date('j F Y');
+    : dateFr(null, 'short');
 
 $trafficStatus   = 'ok';
 $trafficMessage  = 'Trafic normal sur la ligne ' . $line['code'];

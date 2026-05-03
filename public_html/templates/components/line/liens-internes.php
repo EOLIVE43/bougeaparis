@@ -13,11 +13,13 @@
  * Stratégie SEO :
  * - Maillage interne fort (signal de cocon sémantique)
  * - Couleurs officielles IDFM pour identification visuelle
- * - Texte ancrage pertinent ("Ligne 4", "RER A", etc.)
+ * - Texte ancrage pertinent ("Ligne 4", "RER A", etc.) UNIQUEMENT sur le titre
+ * - Smart linking : si la page de destination n'existe pas (cf. Routes::active),
+ *   le titre devient un <span> non cliquable (--inactive). Évite les liens 404.
  *
  * Stratégie UX :
  * - Pastilles colorées (rapides à scanner)
- * - Stations en correspondance affichées
+ * - Stations en correspondance affichées sous le titre, non cliquables
  * - 3 niveaux : correspondances directes / découverte / pages liées
  */
 
@@ -53,12 +55,14 @@ $introText = $line['intros']['liens_internes'] ?? null;
       </h3>
       <div class="liens__cards">
         <?php foreach ($internalLinks['connections_metro'] as $conn): ?>
-          <a href="<?= htmlspecialchars($conn['url']) ?>" class="line-card">
+          <article class="line-card">
             <span class="line-card__pill" style="background:<?= htmlspecialchars($conn['color']) ?>;color:<?= htmlspecialchars($conn['color_text']) ?>;">
               <?= htmlspecialchars($conn['code']) ?>
             </span>
             <span class="line-card__content">
-              <span class="line-card__name"><?= htmlspecialchars($conn['name']) ?></span>
+              <span class="line-card__name">
+                <?= conditionalLink($conn['url'], htmlspecialchars($conn['name']), 'line-card__name-link') ?>
+              </span>
               <?php if (!empty($conn['stations'])): ?>
                 <span class="line-card__stations">
                   À <?= count($conn['stations']) ?> station<?= count($conn['stations']) > 1 ? 's' : '' ?>&nbsp;:
@@ -66,7 +70,7 @@ $introText = $line['intros']['liens_internes'] ?? null;
                 </span>
               <?php endif; ?>
             </span>
-          </a>
+          </article>
         <?php endforeach; ?>
       </div>
     </div>
@@ -86,12 +90,14 @@ $introText = $line['intros']['liens_internes'] ?? null;
         $merged = array_merge($internalLinks['connections_rer'] ?? [], $internalLinks['connections_other'] ?? []);
         foreach ($merged as $conn):
         ?>
-          <a href="<?= htmlspecialchars($conn['url']) ?>" class="line-card">
+          <article class="line-card">
             <span class="line-card__pill" style="background:<?= htmlspecialchars($conn['color']) ?>;color:<?= htmlspecialchars($conn['color_text']) ?>;">
               <?= htmlspecialchars($conn['code']) ?>
             </span>
             <span class="line-card__content">
-              <span class="line-card__name"><?= htmlspecialchars($conn['name']) ?></span>
+              <span class="line-card__name">
+                <?= conditionalLink($conn['url'], htmlspecialchars($conn['name']), 'line-card__name-link') ?>
+              </span>
               <?php if (!empty($conn['stations'])): ?>
                 <span class="line-card__stations">
                   À <?= count($conn['stations']) ?> station<?= count($conn['stations']) > 1 ? 's' : '' ?>&nbsp;:
@@ -99,7 +105,7 @@ $introText = $line['intros']['liens_internes'] ?? null;
                 </span>
               <?php endif; ?>
             </span>
-          </a>
+          </article>
         <?php endforeach; ?>
       </div>
     </div>
@@ -115,13 +121,21 @@ $introText = $line['intros']['liens_internes'] ?? null;
         Découvrir d'autres lignes de métro parisien
       </h3>
       <div class="liens__discover">
-        <?php foreach ($internalLinks['discover_metro_lines'] as $disc): ?>
-          <a href="<?= htmlspecialchars($disc['url']) ?>" class="discover-pill <?= !empty($disc['is_current']) ? 'discover-pill--current' : '' ?>" <?= !empty($disc['is_current']) ? 'aria-current="page"' : '' ?>>
+        <?php foreach ($internalLinks['discover_metro_lines'] as $disc):
+            $isCurrent = !empty($disc['is_current']);
+            $exists = !$isCurrent && Routes::exists(rtrim($disc['url'] ?? '', '/'));
+            $tagOpen  = $isCurrent ? '<span aria-current="page"' : ($exists ? '<a href="' . htmlspecialchars($disc['url']) . '"' : '<span data-future-url="' . htmlspecialchars($disc['url'] ?? '') . '"');
+            $tagClose = ($exists && !$isCurrent) ? '</a>' : '</span>';
+            $cssClass = 'discover-pill';
+            if ($isCurrent) $cssClass .= ' discover-pill--current';
+            if (!$exists && !$isCurrent) $cssClass .= ' discover-pill--inactive';
+        ?>
+          <?= $tagOpen ?> class="<?= $cssClass ?>">
             <span class="discover-pill__pill" style="background:<?= htmlspecialchars($disc['color']) ?>;color:<?= htmlspecialchars($disc['color_text']) ?>;">
               <?= htmlspecialchars($disc['code']) ?>
             </span>
             <span class="discover-pill__name"><?= htmlspecialchars($disc['name']) ?></span>
-          </a>
+          <?= $tagClose ?>
         <?php endforeach; ?>
       </div>
     </div>
@@ -137,15 +151,22 @@ $introText = $line['intros']['liens_internes'] ?? null;
         Pages liées au métro parisien
       </h3>
       <div class="liens__related">
-        <?php foreach ($internalLinks['related_pages'] as $page): ?>
-          <a href="<?= htmlspecialchars($page['url']) ?>" class="related-card">
+        <?php foreach ($internalLinks['related_pages'] as $page):
+            $exists = Routes::exists(rtrim($page['url'] ?? '', '/'));
+            $cssClass = 'related-card' . ($exists ? '' : ' related-card--inactive');
+        ?>
+          <?php if ($exists): ?>
+            <a href="<?= htmlspecialchars($page['url']) ?>" class="<?= $cssClass ?>">
+          <?php else: ?>
+            <div class="<?= $cssClass ?>" data-future-url="<?= htmlspecialchars($page['url'] ?? '') ?>">
+          <?php endif; ?>
             <span class="related-card__icon" aria-hidden="true"><?= htmlspecialchars($page['icon']) ?></span>
             <span class="related-card__content">
               <span class="related-card__label"><?= htmlspecialchars($page['label']) ?></span>
               <span class="related-card__desc"><?= htmlspecialchars($page['description']) ?></span>
             </span>
-            <span class="related-card__arrow" aria-hidden="true">→</span>
-          </a>
+            <?php if ($exists): ?><span class="related-card__arrow" aria-hidden="true">→</span><?php endif; ?>
+          <?= $exists ? '</a>' : '</div>' ?>
         <?php endforeach; ?>
       </div>
     </div>

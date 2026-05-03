@@ -900,8 +900,8 @@
 
 /* Image placeholder (en attendant les vraies images) */
 .article-card__image{width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:rgba(0,0,0,0.3)}
-.article-card__placeholder-icon{font-size:48px;opacity:0.4}
-.article-card--secondary .article-card__placeholder-icon{font-size:32px}
+.article-card__placeholder-icon{font-size:64px;opacity:0.85;filter:drop-shadow(0 2px 4px rgba(0,0,0,0.08))}
+.article-card--secondary .article-card__placeholder-icon{font-size:40px}
 
 /* Badge catégorie */
 .article-card__category{position:absolute;top:12px;left:12px;display:inline-flex;padding:5px 12px;background:var(--teal);color:white;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;border-radius:5px}
@@ -1261,4 +1261,75 @@
   border-radius: 50%;
   display: block;
   object-fit: cover;
+}
+
+/* ============================================================
+   PATCH v1.2 — Smart linking sur cards (POI, line, article)
+   Styles pour les liens conditionnels :
+   - Lien actif : couleur teal + soulignement subtil
+   - Lien inactif (page pas encore créée) : pas cliquable, gris
+   ============================================================ */
+
+/* Liens de titre dans les cards (article-card, line-card, poi-card) */
+.article-card__title-link,
+.line-card__name-link,
+.poi-card__name-link {
+    color: var(--text);
+    text-decoration: none;
+    background-image: linear-gradient(transparent calc(100% - 2px), var(--teal) 2px);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.25s ease, color 0.15s ease;
+}
+.article-card__title-link:hover,
+.line-card__name-link:hover,
+.poi-card__name-link:hover {
+    color: var(--teal);
+    background-size: 100% 100%;
+}
+
+/* Liens inactifs (page pas encore créée) — versions --inactive du conditionalLink */
+.article-card__title-link--inactive,
+.line-card__name-link--inactive,
+.poi-card__name-link--inactive,
+.related-card--inactive,
+.discover-pill--inactive {
+    color: var(--text-muted);
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Cards complètes : retirer les anciens hovers envahissants
+   maintenant que les <a class="article-card__link"> sont supprimés */
+.article-card,
+.line-card,
+.poi-card {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.article-card:hover,
+.line-card:hover,
+.poi-card:hover {
+    box-shadow: 0 4px 16px rgba(15, 110, 86, 0.10);
+    transform: translateY(-1px);
+}
+
+/* Card "related" : titre + flèche */
+.related-card__label {
+    color: var(--text);
+    font-weight: 600;
+}
+a.related-card .related-card__label {
+    color: var(--teal);
+}
+a.related-card:hover .related-card__label {
+    text-decoration: underline;
+}
+.related-card--inactive .related-card__arrow {
+    display: none;
+}
+
+/* Discover-pill inactive (lignes pas encore créées) */
+.discover-pill--inactive .discover-pill__name {
+    color: var(--text-muted);
 }

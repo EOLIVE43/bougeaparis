@@ -11,12 +11,9 @@
  * Architecture :
  * - Lit l'intro depuis $line['intros']['que_voir'] (avec fallback)
  * - Affiche les thèmes depuis $line['points_of_interest']
- * - Chaque card POI = lien vers /tourisme/{categorie}/{slug}/
- * - Bandeau thème = lien vers /tourisme/{categorie}/
- *
- * Le helper renderInternalLink (à créer) gère les liens conditionnels :
- * - Si la page POI existe : <a href>
- * - Sinon : <span> stylé non cliquable
+ * - Chaque card POI = lien sur le NOM uniquement (pas sur toute la card)
+ * - Smart linking : si la page POI/catégorie n'existe pas (cf. Routes::active),
+ *   le titre devient un <span> non cliquable. Évite les liens 404.
  */
 
 $pois = $line['points_of_interest'] ?? null;
@@ -49,26 +46,33 @@ $introText = $line['intros']['que_voir'] ?? null;
           <?= htmlspecialchars(str_replace('{code}', $line['code'], $theme['title_template'])) ?>
         </h3>
         <span class="theme-section__count"><?= count($theme['items']) ?> lieux</span>
-        <a href="<?= htmlspecialchars($theme['category_url']) ?>" class="theme-section__view-all">
-          Voir tout →
-        </a>
+        <?php
+          // "Voir tout" : actif uniquement si la page categorie existe
+          $catUrl = $theme['category_url'] ?? '';
+          if (!empty($catUrl) && Routes::exists(rtrim($catUrl, '/'))):
+        ?>
+          <a href="<?= htmlspecialchars($catUrl) ?>" class="theme-section__view-all">
+            Voir tout →
+          </a>
+        <?php endif; ?>
       </div>
 
       <!-- Cards POI -->
       <div class="poi-cards">
-        <?php foreach ($theme['items'] as $poi): ?>
-          <?php
-            // URL de la page POI individuelle
-            $poiUrl = $theme['category_url'] . $poi['slug'] . '/';
-          ?>
-          <a href="<?= htmlspecialchars($poiUrl) ?>" class="poi-card" itemscope itemtype="https://schema.org/<?= htmlspecialchars($poi['schema_type']) ?>">
+        <?php foreach ($theme['items'] as $poi):
+          // URL de la page POI individuelle (peut ne pas exister encore)
+          $poiUrl = $theme['category_url'] . $poi['slug'] . '/';
+        ?>
+          <article class="poi-card" itemscope itemtype="https://schema.org/<?= htmlspecialchars($poi['schema_type']) ?>">
 
             <div class="poi-card__image" style="background: <?= htmlspecialchars($theme['color_gradient']) ?>;">
               <span class="poi-card__icon" aria-hidden="true"><?= htmlspecialchars($poi['icon']) ?></span>
             </div>
 
             <div class="poi-card__content">
-              <div class="poi-card__name" itemprop="name"><?= htmlspecialchars($poi['name']) ?></div>
+              <div class="poi-card__name" itemprop="name">
+                <?= conditionalLink($poiUrl, htmlspecialchars($poi['name']), 'poi-card__name-link') ?>
+              </div>
               <div class="poi-card__desc" itemprop="description"><?= htmlspecialchars($poi['description']) ?></div>
               <div class="poi-card__station">
                 <span class="poi-card__station-icon" aria-hidden="true">🚇</span>
@@ -76,7 +80,7 @@ $introText = $line['intros']['que_voir'] ?? null;
               </div>
             </div>
 
-          </a>
+          </article>
         <?php endforeach; ?>
       </div>
 
