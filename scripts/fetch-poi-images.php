@@ -35,8 +35,8 @@ declare(strict_types=1);
 // =====================================================================
 
 $config = [
-    'data_dir'         => __DIR__ . '/../data/lines',
-    'images_dir'       => __DIR__ . '/../assets/images/poi',
+    'data_dir'         => __DIR__ . '/../public_html/data/lines',
+    'images_dir'       => __DIR__ . '/../public_html/assets/images/poi',
     'wikimedia_api'    => 'https://commons.wikimedia.org/w/api.php',
 
     // Discover-friendly : 1200×675 = ratio 16:9
