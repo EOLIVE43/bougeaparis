@@ -96,8 +96,7 @@ jobs:
 
       - name: Run fetch-poi-images.php
         run: |
-          cd public_html
-          php ../scripts/fetch-poi-images.php ${{ steps.args.outputs.args }}
+          php scripts/fetch-poi-images.php ${{ steps.args.outputs.args }}
 
       - name: Check if there are changes
         id: check_changes
