@@ -56,8 +56,8 @@ $introText = $line['intros']['liens_internes'] ?? null;
       <div class="liens__cards">
         <?php foreach ($internalLinks['connections_metro'] as $conn): ?>
           <article class="line-card">
-            <span class="line-card__pill" style="background:<?= htmlspecialchars($conn['color']) ?>;color:<?= htmlspecialchars($conn['color_text']) ?>;">
-              <?= htmlspecialchars($conn['code']) ?>
+            <span class="line-card__pastille">
+              <?= pastilleCorresp('M', $conn['code'], $conn['color'], 'inline') ?>
             </span>
             <span class="line-card__content">
               <span class="line-card__name">
@@ -66,7 +66,14 @@ $introText = $line['intros']['liens_internes'] ?? null;
               <?php if (!empty($conn['stations'])): ?>
                 <span class="line-card__stations">
                   À <?= count($conn['stations']) ?> station<?= count($conn['stations']) > 1 ? 's' : '' ?>&nbsp;:
-                  <?= htmlspecialchars(implode(', ', $conn['stations'])) ?>
+                  <?php
+                    // Smart linking sur chaque nom de station
+                    $stationLinks = array_map(
+                        fn($s) => stationLink($s, 'line-card__station-link'),
+                        $conn['stations']
+                    );
+                    echo implode(', ', $stationLinks);
+                  ?>
                 </span>
               <?php endif; ?>
             </span>
@@ -89,10 +96,23 @@ $introText = $line['intros']['liens_internes'] ?? null;
         <?php
         $merged = array_merge($internalLinks['connections_rer'] ?? [], $internalLinks['connections_other'] ?? []);
         foreach ($merged as $conn):
+            // Détecter le mode (RER, T, TRANS) depuis le code de la ligne
+            $code = strtoupper($conn['code'] ?? '');
+            if (preg_match('/^[A-E]$/', $code)) {
+                $mode = 'RER';
+                $line = $code;
+            } elseif (preg_match('/^T(\d+[ab]?)$/i', $code, $m)) {
+                $mode = 'T';
+                $line = $m[1];
+            } else {
+                // Transilien (J, L, U, N, P, R...) ou autre
+                $mode = 'TRANS';
+                $line = $code;
+            }
         ?>
           <article class="line-card">
-            <span class="line-card__pill" style="background:<?= htmlspecialchars($conn['color']) ?>;color:<?= htmlspecialchars($conn['color_text']) ?>;">
-              <?= htmlspecialchars($conn['code']) ?>
+            <span class="line-card__pastille">
+              <?= pastilleCorresp($mode, $line, $conn['color'], 'inline') ?>
             </span>
             <span class="line-card__content">
               <span class="line-card__name">
@@ -101,7 +121,13 @@ $introText = $line['intros']['liens_internes'] ?? null;
               <?php if (!empty($conn['stations'])): ?>
                 <span class="line-card__stations">
                   À <?= count($conn['stations']) ?> station<?= count($conn['stations']) > 1 ? 's' : '' ?>&nbsp;:
-                  <?= htmlspecialchars(implode(', ', $conn['stations'])) ?>
+                  <?php
+                    $stationLinks = array_map(
+                        fn($s) => stationLink($s, 'line-card__station-link'),
+                        $conn['stations']
+                    );
+                    echo implode(', ', $stationLinks);
+                  ?>
                 </span>
               <?php endif; ?>
             </span>
@@ -131,8 +157,8 @@ $introText = $line['intros']['liens_internes'] ?? null;
             if (!$exists && !$isCurrent) $cssClass .= ' discover-pill--inactive';
         ?>
           <?= $tagOpen ?> class="<?= $cssClass ?>">
-            <span class="discover-pill__pill" style="background:<?= htmlspecialchars($disc['color']) ?>;color:<?= htmlspecialchars($disc['color_text']) ?>;">
-              <?= htmlspecialchars($disc['code']) ?>
+            <span class="discover-pill__pastille">
+              <?= pastilleCorresp('M', $disc['code'], $disc['color'], 'inline') ?>
             </span>
             <span class="discover-pill__name"><?= htmlspecialchars($disc['name']) ?></span>
           <?= $tagClose ?>

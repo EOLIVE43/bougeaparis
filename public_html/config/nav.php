@@ -29,6 +29,11 @@ return [
             'icon'  => 'tram',
         ],
         [
+            'label' => 'Gares',
+            'url'   => '/gares/',
+            'icon'  => 'train',
+        ],
+        [
             'label' => 'Aéroports',
             'url'   => '/aeroports/',
             'icon'  => 'plane',
@@ -39,8 +44,8 @@ return [
             'icon'  => 'train',
         ],
         [
-            'label' => 'Blog',
-            'url'   => '/blog/',
+            'label' => 'Info-Trafic',
+            'url'   => '/info-trafic/',
             'icon'  => 'blog',
         ],
     ],
@@ -50,14 +55,13 @@ return [
         ['label' => 'Réseau RER',        'url' => '/rer/'],
         ['label' => 'Lignes de bus',     'url' => '/bus/'],
         ['label' => 'Tramways',          'url' => '/tramway/'],
+        ['label' => 'Gares parisiennes', 'url' => '/gares/'],
         ['label' => 'Aéroports',         'url' => '/aeroports/'],
         ['label' => 'Transilien',        'url' => '/transilien/'],
     ],
     // Menu footer - colonne 2 : utile
-    // Les pages /itineraires/, /tarifs/, /plans/ arriveront en Livraison 5+
-    // En attendant, seul /blog/ est actif
     'footer_tools' => [
-        ['label' => 'Blog',              'url' => '/blog/'],
+        ['label' => 'Info-Trafic',       'url' => '/info-trafic/'],
     ],
     // Menu footer - colonne 3 : à propos
     'footer_about' => [
