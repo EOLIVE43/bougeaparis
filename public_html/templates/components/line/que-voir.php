@@ -13,11 +13,39 @@
  * - Sinon, fallback sur l'emoji 'icon' avec gradient coloré
  * - Schema.org Article requiert un champ 'image' → on l'ajoute si dispo
  * - Attribution Wikimedia obligatoire pour CC BY-SA → affichée discrètement
+ *
+ * v1.4.6 — Filtrage POI skippés :
+ * - Les POI marqués `skip: true` dans /data/poi-overrides.json sont retirés de la liste
+ *   avant l'affichage. Le compteur "X lieux" est mis à jour automatiquement.
  */
 
 $pois = $line['points_of_interest'] ?? null;
 if (!$pois) {
     return; // Pas de POI définis pour cette ligne
+}
+
+// v1.4.6 : Charger les overrides POI (poi-overrides.json) et retirer les POI marqués skip:true
+$overridesFile = __DIR__ . '/../../../data/poi-overrides.json';
+$skipSlugs = [];
+if (file_exists($overridesFile)) {
+    $overrides = json_decode(file_get_contents($overridesFile), true);
+    if (is_array($overrides)) {
+        foreach ($overrides as $slug => $cfg) {
+            if (is_array($cfg) && !empty($cfg['skip'])) {
+                $skipSlugs[] = $slug;
+            }
+        }
+    }
+}
+if (!empty($skipSlugs)) {
+    foreach ($pois as $themeKey => &$theme) {
+        if (!isset($theme['items'])) continue;
+        $theme['items'] = array_values(array_filter(
+            $theme['items'],
+            fn($poi) => !in_array($poi['slug'] ?? '', $skipSlugs, true)
+        ));
+    }
+    unset($theme);
 }
 
 $introText = $line['intros']['que_voir'] ?? null;

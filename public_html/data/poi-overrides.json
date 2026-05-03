@@ -1,5 +1,5 @@
 {
-  "_doc": "Overrides Wikimedia pour les POI à risque. v1.4.5 supports skip:true (force fallback emoji), wikimedia_file (forcer un fichier Commons précis), wikimedia_query + wikimedia_blocklist (orienter la recherche).",
+  "_doc": "Overrides Wikimedia pour les POI à risque. v1.4.6 — Curation manuelle ciblée pour les 6 POI restants problématiques.",
 
   "_format": {
     "skip": "bool — si true, ne télécharger aucune image, supprimer celle existante, fallback sur emoji",
@@ -10,22 +10,22 @@
 
   "arc-de-triomphe": {
     "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg",
-    "_comment": "Vue moderne de l'arc, façade côté Champs-Élysées, ciel dégagé"
+    "_comment": "Validé v1.4.5 — Vue moderne 2010 par Jiuguang Wang"
   },
 
   "place-de-la-concorde": {
-    "wikimedia_query": "Place de la Concorde Paris obélisque fontaine",
-    "wikimedia_blocklist": ["revolution", "révolution", "guillotine", "1789", "1793", "louis xvi", "panorama 1900"]
+    "wikimedia_file": "P1020407 Paris VIII Place de la Concorde Obelisque rwk.JPG",
+    "_comment": "Photo moderne Mbzt CC-BY-3.0"
   },
 
   "memorial-shoah": {
     "skip": true,
-    "_comment": "Lieu sensible, pas de bonne photo trouvée. Fallback emoji + gradient violet."
+    "_comment": "Skippé. Le POI sera également retiré du metro-1.json (curation manuelle)."
   },
 
   "opera-bastille": {
-    "wikimedia_query": "Opéra Bastille Paris Carlos Ott facade architecture",
-    "wikimedia_blocklist": ["interior", "stage", "performance", "garnier", "palais"]
+    "wikimedia_file": "Opéra und Place de la Bastille.JPG",
+    "_comment": "Vue moderne CC-BY-3.0"
   },
 
   "champs-elysees": {
@@ -39,8 +39,8 @@
   },
 
   "le-marais": {
-    "wikimedia_query": "Le Marais Paris rue street modern",
-    "wikimedia_blocklist": ["interior", "courtyard", "cour intérieure"]
+    "wikimedia_query": "rue Marais Paris architecture",
+    "wikimedia_blocklist": ["interior", "courtyard", "cour intérieure", "ancien", "1900"]
   },
 
   "louvre": {
@@ -49,12 +49,12 @@
   },
 
   "orangerie": {
-    "wikimedia_file": "Musée de l'Orangerie - 02.jpg",
-    "_comment": "Vue extérieure du musée, façade côté jardin"
+    "wikimedia_query": "Musée Orangerie Paris Tuileries",
+    "wikimedia_blocklist": ["nymphéas", "monet", "painting", "interior", "perspective"]
   },
 
   "arts-decoratifs": {
-    "wikimedia_query": "Musée Arts Décoratifs Paris facade Louvre Marsan"
+    "wikimedia_query": "Musée Arts Décoratifs Paris facade"
   },
 
   "jardin-des-tuileries": {
@@ -67,7 +67,8 @@
   },
 
   "bois-de-vincennes": {
-    "wikimedia_query": "Bois de Vincennes Paris Lac Daumesnil"
+    "wikimedia_query": "Château de Vincennes Paris",
+    "wikimedia_blocklist": ["interior", "geese", "oies", "duck", "bird"]
   },
 
   "hotel-de-ville": {
