@@ -1,0 +1,146 @@
+name: Fetch POI images
+
+# Workflow déclenchable manuellement depuis l'onglet Actions du repo
+# (workflow_dispatch = bouton "Run workflow")
+#
+# Usage typique :
+# 1. Premier run : mode=dry-run, line=metro-1, poi=(vide) → vérifier que tous
+#    les POI sont trouvés et le script ne plante pas
+# 2. Test sur 1 POI : mode=apply, line=metro-1, poi=arc-de-triomphe →
+#    valider visuellement le rendu (watermark, qualité)
+# 3. Batch complet : mode=apply, line=metro-1, poi=(vide) → toutes les images
+#
+# Le workflow commit les changements (images + JSON mis à jour) directement
+# sur la branche main, ce qui déclenche le workflow de déploiement existant.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Mode d''exécution'
+        required: true
+        default: 'dry-run'
+        type: choice
+        options:
+          - dry-run
+          - apply
+      line:
+        description: 'Ligne à traiter (laisser vide pour toutes les lignes)'
+        required: false
+        default: 'metro-1'
+        type: string
+      poi:
+        description: 'Slug d''un POI spécifique (laisser vide pour tous les POI de la ligne)'
+        required: false
+        default: ''
+        type: string
+      force:
+        description: 'Forcer le re-téléchargement même si l''image existe déjà'
+        required: false
+        default: false
+        type: boolean
+
+# Permissions nécessaires pour que le workflow puisse pousser des commits
+permissions:
+  contents: write
+
+jobs:
+  fetch-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # Largement suffisant : ~50 POI × 5 secondes = 4 min
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP 8.2 with GD extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: gd, mbstring, curl, json
+          tools: none
+          coverage: none
+
+      - name: Verify PHP environment
+        run: |
+          php -v
+          php -m | grep -E '^(gd|curl|mbstring|json)$' || (echo "Extensions manquantes" && exit 1)
+          echo "PHP environment OK"
+
+      - name: Verify font availability
+        run: |
+          if [ -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf ]; then
+            echo "✅ DejaVuSans-Bold trouvé"
+          else
+            echo "⚠️ DejaVuSans-Bold absent — le script fera un fallback sur imagestring()"
+          fi
+
+      - name: Build script arguments
+        id: args
+        run: |
+          ARGS=""
+          if [ "${{ inputs.mode }}" = "dry-run" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ -n "${{ inputs.line }}" ]; then
+            ARGS="$ARGS --line=${{ inputs.line }}"
+          fi
+          if [ -n "${{ inputs.poi }}" ]; then
+            ARGS="$ARGS --poi=${{ inputs.poi }}"
+          fi
+          if [ "${{ inputs.force }}" = "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+          echo "args=$ARGS" >> $GITHUB_OUTPUT
+          echo "Arguments : $ARGS"
+
+      - name: Run fetch-poi-images.php
+        run: |
+          cd public_html
+          php ../scripts/fetch-poi-images.php ${{ steps.args.outputs.args }}
+
+      - name: Check if there are changes
+        id: check_changes
+        if: inputs.mode == 'apply'
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Modifications détectées :"
+            git status --short
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "Aucune modification détectée"
+          fi
+
+      - name: Commit and push changes
+        if: inputs.mode == 'apply' && steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public_html/assets/images/poi/ public_html/data/lines/
+          git commit -m "chore(images): fetch POI images via Wikimedia [skip ci]
+
+          Mode: ${{ inputs.mode }}
+          Line: ${{ inputs.line }}
+          POI: ${{ inputs.poi || '(all)' }}
+          Force: ${{ inputs.force }}"
+          git push origin main
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 Résumé du run" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode** : ${{ inputs.mode }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Ligne** : ${{ inputs.line || '(toutes)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **POI** : ${{ inputs.poi || '(tous)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Force** : ${{ inputs.force }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ inputs.mode }}" = "dry-run" ]; then
+            echo "✅ Dry-run terminé. Aucune modification effectuée." >> $GITHUB_STEP_SUMMARY
+          elif [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
+            echo "✅ Images téléchargées et commitées sur main" >> $GITHUB_STEP_SUMMARY
+            echo "Le workflow Deploy to o2switch va se déclencher automatiquement" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ Aucune nouvelle image (déjà présentes ou erreurs)" >> $GITHUB_STEP_SUMMARY
+          fi
