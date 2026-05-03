@@ -117,14 +117,123 @@ function httpGet(string $url, array $config): ?string {
  *
  * Retourne un tableau de candidats avec leurs métadonnées.
  */
-function searchWikimediaImages(string $query, array $config): array {
+/**
+ * Liste de mots-clés à BANNIR (score très négatif).
+ * Si le titre ou la description contient ces termes, l'image est filtrée
+ * ou fortement pénalisée.
+ */
+const WIKIMEDIA_BLOCKLIST = [
+    // Évènements historiques (souvent foule, pas du POI lui-même)
+    'war', 'wwii', 'wwi', 'world war', 'great war',
+    '1900', '1914', '1918', '1939', '1944', '1945', '1968', '1970',
+    'liberation', 'libération', 'bataille', 'battle', 'combat',
+    'armistice', 'victory', 'victoire', 'defile', 'défilé', 'parade',
+    // Foule et manifestations
+    'crowd', 'crowds', 'foule', 'manifestation', 'protest', 'protests',
+    'gathering', 'rassemblement', 'demonstration',
+    // Évènements tristes
+    'funeral', 'funérailles', 'memorial service', 'commémoration', 'tribute',
+    'mourning', 'casket',
+    // Militaire
+    'patriot', 'patriots', 'military', 'soldier', 'soldiers',
+    'tank', 'sherman', 'jeep', 'army', 'armée',
+    // Vues anciennes (nuit/sépia/pré-couleur)
+    'sepia', 'monochrome', 'old photograph', 'historical photo',
+    'antique', 'vintage photograph', 'archival',
+    // Plans
+    'plan', 'map', 'carte', 'diagram', 'blueprint', 'illustration',
+    'engraving', 'gravure', 'drawing', 'dessin', 'sketch', 'croquis',
+    'painting', 'peinture', 'tableau',
+    // Images peu utiles
+    'logo', 'sign', 'panneau', 'placard',
+];
+
+/**
+ * Mots-clés POSITIFS (boost de score).
+ * Privilégier les vues panoramiques modernes et bien éclairées.
+ */
+const WIKIMEDIA_BOOSTLIST = [
+    // Cadrage
+    'view', 'vue', 'panorama', 'aerial', 'overview', 'wide',
+    // Lumière
+    'sunset', 'sunrise', 'twilight', 'illuminated', 'lit', 'night',
+    'golden hour', 'evening', 'crepuscule',
+    // Architecture
+    'facade', 'façade', 'architecture', 'building', 'monument',
+    'exterior', 'extérieur',
+    // Saison
+    'summer', 'spring', 'été', 'printemps',
+];
+
+/**
+ * Calcule un score qualitatif pour un candidat image.
+ *
+ * Score positif = bonne image, négatif = à éviter.
+ *
+ * Composantes du score :
+ * - Score titre : -100 par terme bloqué, +20 par terme boosté
+ * - Score description : pareil mais moins fort (-50, +10)
+ * - Score taille : +10 par 1Mpx au-delà de 2Mpx (max 50)
+ * - Score ratio : +20 si ratio proche de 16:9, +10 si paysage, -20 si portrait
+ *
+ * @return int Score (peut être négatif)
+ */
+function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
+    $score = 0;
+    $title = strtolower($candidate['title'] ?? '');
+    $desc  = strtolower(strip_tags($candidate['description'] ?? ''));
+
+    // Blocklist par défaut
+    $blocklist = array_merge(WIKIMEDIA_BLOCKLIST, $extraBlocklist);
+    foreach ($blocklist as $term) {
+        $term = strtolower($term);
+        if (str_contains($title, $term)) $score -= 100;
+        if (str_contains($desc, $term))  $score -= 50;
+    }
+
+    // Boostlist
+    foreach (WIKIMEDIA_BOOSTLIST as $term) {
+        $term = strtolower($term);
+        if (str_contains($title, $term)) $score += 20;
+        if (str_contains($desc, $term))  $score += 10;
+    }
+
+    // Score taille
+    $w = $candidate['width']  ?? 0;
+    $h = $candidate['height'] ?? 0;
+    $megapixels = ($w * $h) / 1_000_000;
+    if ($megapixels >= 2) {
+        $score += min(50, (int)(($megapixels - 2) * 10));
+    }
+
+    // Score ratio (privilégier paysage proche de 16:9 = 1.78)
+    if ($h > 0) {
+        $ratio = $w / $h;
+        if ($ratio >= 1.5 && $ratio <= 2.0) {
+            $score += 20; // proche du 16:9
+        } elseif ($ratio >= 1.2 && $ratio < 1.5) {
+            $score += 10; // paysage classique
+        } elseif ($ratio < 1.0) {
+            $score -= 20; // portrait, mauvais cadrage pour Discover
+        }
+    }
+
+    return $score;
+}
+
+/**
+ * Recherche d'images Wikimedia Commons + scoring qualitatif.
+ *
+ * v1.4.4 : ne trie plus juste par taille. Calcule un score qualitatif et trie par score.
+ */
+function searchWikimediaImages(string $query, array $config, array $extraBlocklist = []): array {
     // 1. Rechercher les fichiers correspondants
     $searchUrl = $config['wikimedia_api'] . '?' . http_build_query([
         'action'    => 'query',
         'list'      => 'search',
         'srsearch'  => $query . ' filetype:bitmap',
         'srnamespace' => 6, // namespace File:
-        'srlimit'   => 10,
+        'srlimit'   => 20,  // 20 candidats pour avoir plus de choix
         'format'    => 'json',
     ]);
 
@@ -144,7 +253,7 @@ function searchWikimediaImages(string $query, array $config): array {
         'titles'      => implode('|', $titles),
         'prop'        => 'imageinfo',
         'iiprop'      => 'url|size|extmetadata',
-        'iiurlwidth'  => 1600,  // demande version 1600px
+        'iiurlwidth'  => 1600,
         'format'      => 'json',
     ]);
 
@@ -159,11 +268,11 @@ function searchWikimediaImages(string $query, array $config): array {
         $info = $page['imageinfo'][0] ?? null;
         if (!$info) continue;
 
-        // Filtre : ne garder que les images de bonne taille
+        // Filtre dur : ne garder que les images de bonne taille
         if (($info['width'] ?? 0) < 1200) continue;
 
         $meta = $info['extmetadata'] ?? [];
-        $candidates[] = [
+        $candidate = [
             'title'       => $page['title'],
             'url'         => $info['url'],
             'thumb_url'   => $info['thumburl'] ?? $info['url'],
@@ -175,12 +284,20 @@ function searchWikimediaImages(string $query, array $config): array {
             'license_url' => $meta['LicenseUrl']['value'] ?? '',
             'description' => strip_tags($meta['ImageDescription']['value'] ?? ''),
         ];
+
+        // Calculer le score qualitatif
+        $candidate['score'] = scoreCandidate($candidate, $extraBlocklist);
+
+        $candidates[] = $candidate;
     }
 
-    // Trier par taille décroissante (les plus grandes en premier)
-    usort($candidates, fn($a, $b) => ($b['width'] * $b['height']) - ($a['width'] * $a['height']));
+    // Filtrer les candidats au score < -100 (très négatif = vraiment à éviter)
+    $candidates = array_filter($candidates, fn($c) => $c['score'] > -100);
 
-    return $candidates;
+    // Trier par score décroissant (meilleure qualité en premier)
+    usort($candidates, fn($a, $b) => $b['score'] - $a['score']);
+
+    return array_values($candidates);
 }
 
 /**
@@ -511,6 +628,18 @@ if ($dryRun) {
     echo "🔍 MODE DRY-RUN (aucune modification)\n\n";
 }
 
+// v1.4.4 : Charger les overrides POI (queries custom + blocklists)
+$overridesFile = __DIR__ . '/../public_html/data/poi-overrides.json';
+$poiOverrides = [];
+if (file_exists($overridesFile)) {
+    $loaded = json_decode(file_get_contents($overridesFile), true);
+    if (is_array($loaded)) {
+        // Filtrer les clés meta qui commencent par '_'
+        $poiOverrides = array_filter($loaded, fn($k) => !str_starts_with($k, '_'), ARRAY_FILTER_USE_KEY);
+        echo "📋 " . count($poiOverrides) . " overrides POI chargés depuis poi-overrides.json\n\n";
+    }
+}
+
 $lineFiles = glob($config['data_dir'] . '/metro-*.json');
 
 foreach ($lineFiles as $lineFile) {
@@ -545,22 +674,34 @@ foreach ($lineFiles as $lineFile) {
 
             echo "    → {$poi['name']}\n";
 
+            // v1.4.4 : Override de la recherche par POI si défini dans poi-overrides.json
+            $override = $poiOverrides[$poi['slug']] ?? [];
+            $searchQuery = $override['wikimedia_query'] ?? ($poi['name'] . ' Paris');
+            $extraBlocklist = $override['wikimedia_blocklist'] ?? [];
+
+            if (!empty($override['wikimedia_query'])) {
+                echo "      🔧 Query custom : '{$searchQuery}'\n";
+            }
+            if (!empty($extraBlocklist)) {
+                echo "      🛡️  Blocklist custom : " . count($extraBlocklist) . " termes\n";
+            }
+
             if ($dryRun) {
-                echo "      [DRY] Recherche Wikimedia : '{$poi['name']} Paris'\n";
+                echo "      [DRY] Recherche Wikimedia : '{$searchQuery}'\n";
                 continue;
             }
 
-            // 1. Recherche sur Wikimedia
-            $candidates = searchWikimediaImages($poi['name'] . ' Paris', $config);
+            // 1. Recherche sur Wikimedia avec scoring
+            $candidates = searchWikimediaImages($searchQuery, $config, $extraBlocklist);
             if (empty($candidates)) {
                 echo "      ✗ Aucune image trouvée\n";
                 continue;
             }
-            echo "      📥 " . count($candidates) . " candidats trouvés\n";
+            echo "      📥 " . count($candidates) . " candidats apr\u00e8s filtrage\n";
 
-            // 2. Sélectionner le meilleur (déjà trié par taille)
+            // 2. Sélectionner le meilleur (déjà trié par score)
             $best = $candidates[0];
-            echo "      📷 Sélection : {$best['title']} ({$best['width']}x{$best['height']})\n";
+            echo "      📷 Sélection : {$best['title']} ({$best['width']}x{$best['height']}) [score: {$best['score']}]\n";
             echo "      👤 Auteur : {$best['author']}\n";
 
             // 3. Télécharger

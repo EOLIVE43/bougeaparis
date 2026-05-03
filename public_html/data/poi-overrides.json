@@ -1,0 +1,68 @@
+{
+  "_doc": "Overrides Wikimedia pour les POI à risque. Le script fetch-poi-images.php va lire ce fichier et appliquer les overrides en mémoire avant le traitement de chaque POI. Aucun champ ici n'écrase le metro-1.json — c'est juste un overlay.",
+
+  "arc-de-triomphe": {
+    "wikimedia_query": "Arc de Triomphe Paris architecture facade",
+    "wikimedia_blocklist": ["liberation", "wwii", "1944", "1945", "tank", "parade", "défilé"]
+  },
+
+  "place-de-la-concorde": {
+    "wikimedia_query": "Place de la Concorde Paris obélisque",
+    "wikimedia_blocklist": ["revolution", "révolution", "guillotine", "1789", "1793", "louis xvi"]
+  },
+
+  "memorial-shoah": {
+    "wikimedia_query": "Mémorial Shoah Paris facade exterior",
+    "wikimedia_blocklist": ["holocaust", "auschwitz", "concentration", "camp", "prisoner", "deportation", "nazi", "victims", "names"]
+  },
+
+  "opera-bastille": {
+    "wikimedia_query": "Opéra Bastille Paris facade",
+    "wikimedia_blocklist": ["interior", "stage", "performance"]
+  },
+
+  "champs-elysees": {
+    "wikimedia_query": "Avenue Champs Elysées Paris view",
+    "wikimedia_blocklist": ["liberation", "1944", "1945", "wwii", "parade", "défilé", "manifestation", "yellow vest", "gilet jaune", "protest"]
+  },
+
+  "quartier-bastille": {
+    "wikimedia_query": "Place Bastille Paris colonne juillet",
+    "wikimedia_blocklist": ["1789", "revolution", "prison", "storming", "prise"]
+  },
+
+  "le-marais": {
+    "wikimedia_query": "Le Marais Paris architecture rue"
+  },
+
+  "louvre": {
+    "wikimedia_query": "Musée du Louvre Paris pyramide",
+    "wikimedia_blocklist": ["interior", "joconde", "mona lisa", "painting", "tableau", "œuvre"]
+  },
+
+  "orangerie": {
+    "wikimedia_query": "Musée Orangerie Paris facade Tuileries",
+    "wikimedia_blocklist": ["nymphéas", "monet", "painting", "interior"]
+  },
+
+  "arts-decoratifs": {
+    "wikimedia_query": "Musée Arts Décoratifs Paris Louvre"
+  },
+
+  "jardin-des-tuileries": {
+    "wikimedia_query": "Jardin des Tuileries Paris"
+  },
+
+  "place-des-vosges": {
+    "wikimedia_query": "Place des Vosges Paris arcades"
+  },
+
+  "bois-de-vincennes": {
+    "wikimedia_query": "Bois de Vincennes Paris lac"
+  },
+
+  "hotel-de-ville": {
+    "wikimedia_query": "Hôtel de Ville Paris facade architecture",
+    "wikimedia_blocklist": ["1944", "wwii", "liberation", "occupation", "manifestation", "yellow vest"]
+  }
+}
