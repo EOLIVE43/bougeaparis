@@ -137,15 +137,43 @@ const WIKIMEDIA_BLOCKLIST = [
     // Militaire
     'patriot', 'patriots', 'military', 'soldier', 'soldiers',
     'tank', 'sherman', 'jeep', 'army', 'armée',
-    // Vues anciennes (nuit/sépia/pré-couleur)
+    // Vues anciennes (sépia/pré-couleur)
     'sepia', 'monochrome', 'old photograph', 'historical photo',
-    'antique', 'vintage photograph', 'archival',
-    // Plans
+    'antique', 'vintage photograph', 'archival', 'archives',
+    // Plans / gravures / dessins (images NON photographiques)
     'plan', 'map', 'carte', 'diagram', 'blueprint', 'illustration',
-    'engraving', 'gravure', 'drawing', 'dessin', 'sketch', 'croquis',
-    'painting', 'peinture', 'tableau',
+    'engraving', 'gravure', 'gravur', 'drawing', 'dessin', 'sketch', 'croquis',
+    'painting', 'peinture', 'tableau', 'lithograph', 'lithographie',
+    'etching', 'eau-forte', 'estampe', 'aquatint', 'aquatinte',
+    'vue perspective', 'vüe perspective', 'perspectiva',
+    // Sources d'archives douteuses pour notre usage
+    'metropolitan museum', 'library of congress', 'BnF',
+    'rijksmuseum', 'getty research',
     // Images peu utiles
     'logo', 'sign', 'panneau', 'placard',
+];
+
+/**
+ * Patterns regex qui identifient des références d'archives anciennes
+ * dans les noms de fichiers Wikimedia. Si match → -300 (refus quasi-certain).
+ *
+ * Exemples détectés :
+ * - "PH73522.jpg" (photo d'archive Carnavalet, BnF, etc.)
+ * - "MET DP834300.jpg" (Metropolitan Museum Department Photo)
+ * - "QB.260.jpg" (Quai Branly archives)
+ * - "G.21037.jpg" (Galerie/inventaire numéroté)
+ * - "ca. 1900–40" (date approximative ancienne)
+ * - "(NBY 420925)" (New York Public Library)
+ */
+const WIKIMEDIA_ARCHIVE_PATTERNS = [
+    '/\bPH\d{3,}/',                  // PH73522
+    '/\bMET\s+DP\d+/i',              // MET DP834300
+    '/\bQB\.\d+/i',                  // QB.260
+    '/\bG\.\d{4,}/',                 // G.21037
+    '/\bNBY\s+\d+/i',                // NBY 420925
+    '/\(\s*ca\.\s*1[8-9]\d{2}/i',    // ca. 1850, ca. 1900, etc.
+    '/\(NYPL/i',                     // New York Public Library tag
+    '/Carnavalet/i',                 // Musée Carnavalet (souvent vieilles photos)
 ];
 
 /**
@@ -166,6 +194,28 @@ const WIKIMEDIA_BOOSTLIST = [
 ];
 
 /**
+ * Détecte si l'auteur d'une image est probablement décédé avant 1950
+ * (donc l'image est très probablement ancienne/sépia/gravure).
+ *
+ * Cherche des patterns comme :
+ * - "Blancard, Hippolyte (1843 - 1924)"
+ * - "Lansiaux, Charles Joseph Antoine (Aniche, 09–03–1855 - Paris, après 06–04–1939)"
+ * - "Normand, Louis Marie (Paris, 18–03–1789 - Paris, 10–05–1874)"
+ *
+ * @return bool true si auteur ancien détecté
+ */
+function isAncientAuthor(string $authorString): bool {
+    if (preg_match_all('/\b(1[7-9]\d{2}|20\d{2})\b/', $authorString, $matches)) {
+        $years = array_map('intval', $matches[1]);
+        $maxYear = max($years);
+        // Si la dernière mention d'année dans la bio auteur est < 1950
+        // → l'auteur est probablement mort avant 1950 → image probablement ancienne
+        return $maxYear > 0 && $maxYear < 1950;
+    }
+    return false;
+}
+
+/**
  * Calcule un score qualitatif pour un candidat image.
  *
  * Score positif = bonne image, négatif = à éviter.
@@ -182,6 +232,8 @@ function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
     $score = 0;
     $title = strtolower($candidate['title'] ?? '');
     $desc  = strtolower(strip_tags($candidate['description'] ?? ''));
+    $titleRaw = $candidate['title'] ?? '';  // version non-lowercase pour regex case-sensitive
+    $author = $candidate['author'] ?? '';
 
     // Blocklist par défaut
     $blocklist = array_merge(WIKIMEDIA_BLOCKLIST, $extraBlocklist);
@@ -191,11 +243,28 @@ function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
         if (str_contains($desc, $term))  $score -= 50;
     }
 
+    // v1.4.5 : Patterns d'archives anciennes dans le titre (refus quasi-certain)
+    foreach (WIKIMEDIA_ARCHIVE_PATTERNS as $pattern) {
+        if (preg_match($pattern, $titleRaw)) {
+            $score -= 300;
+        }
+    }
+
+    // v1.4.5 : Auteur ancien détecté (mort avant 1950) → pénalité forte
+    if (isAncientAuthor($author)) {
+        $score -= 250;
+    }
+
     // Boostlist
     foreach (WIKIMEDIA_BOOSTLIST as $term) {
         $term = strtolower($term);
         if (str_contains($title, $term)) $score += 20;
         if (str_contains($desc, $term))  $score += 10;
+    }
+
+    // v1.4.5 : Boost si année récente (2010+) dans le titre
+    if (preg_match('/\b20[1-2]\d\b/', $titleRaw)) {
+        $score += 30;
     }
 
     // Score taille
@@ -219,6 +288,53 @@ function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
     }
 
     return $score;
+}
+
+/**
+ * v1.4.5 : Récupère un fichier Wikimedia spécifique par son nom de fichier.
+ * Utilisé pour les overrides manuels (wikimedia_file dans poi-overrides.json).
+ *
+ * @param string $fileName Nom complet du fichier (sans préfixe "File:"),
+ *                          ex: "Arc de Triomphe, Paris 2022-04-19.jpg"
+ * @return array|null Métadonnées du fichier, ou null si introuvable
+ */
+function fetchWikimediaFile(string $fileName, array $config): ?array {
+    // Préfixer "File:" si pas déjà présent
+    $title = str_starts_with($fileName, 'File:') ? $fileName : 'File:' . $fileName;
+
+    $infoUrl = $config['wikimedia_api'] . '?' . http_build_query([
+        'action'      => 'query',
+        'titles'      => $title,
+        'prop'        => 'imageinfo',
+        'iiprop'      => 'url|size|extmetadata',
+        'iiurlwidth'  => 1600,
+        'format'      => 'json',
+    ]);
+
+    $response = httpGet($infoUrl, $config);
+    if (!$response) return null;
+
+    $data = json_decode($response, true);
+    $pages = $data['query']['pages'] ?? [];
+    $page = reset($pages);
+    if (!$page || isset($page['missing'])) return null;
+
+    $info = $page['imageinfo'][0] ?? null;
+    if (!$info) return null;
+
+    $meta = $info['extmetadata'] ?? [];
+    return [
+        'title'       => $page['title'],
+        'url'         => $info['url'],
+        'thumb_url'   => $info['thumburl'] ?? $info['url'],
+        'width'       => $info['width'],
+        'height'      => $info['height'],
+        'mime'        => $info['mime'] ?? 'image/jpeg',
+        'author'      => strip_tags($meta['Artist']['value'] ?? 'Anonyme'),
+        'license'     => $meta['LicenseShortName']['value'] ?? 'CC BY-SA',
+        'license_url' => $meta['LicenseUrl']['value'] ?? '',
+        'description' => strip_tags($meta['ImageDescription']['value'] ?? ''),
+    ];
 }
 
 /**
@@ -292,7 +408,9 @@ function searchWikimediaImages(string $query, array $config, array $extraBlockli
     }
 
     // Filtrer les candidats au score < -100 (très négatif = vraiment à éviter)
-    $candidates = array_filter($candidates, fn($c) => $c['score'] > -100);
+    // v1.4.5 : Score minimum strict à 30 (avant -100 = trop laxiste)
+    // Si pas de candidat avec score >= 30 → on préfère le fallback emoji
+    $candidates = array_filter($candidates, fn($c) => $c['score'] >= 30);
 
     // Trier par score décroissant (meilleure qualité en premier)
     usort($candidates, fn($a, $b) => $b['score'] - $a['score']);
@@ -676,6 +794,26 @@ foreach ($lineFiles as $lineFile) {
 
             // v1.4.4 : Override de la recherche par POI si défini dans poi-overrides.json
             $override = $poiOverrides[$poi['slug']] ?? [];
+
+            // v1.4.5 : skip=true → on supprime l'image existante et on saute le POI
+            // (la card affichera l'emoji fallback)
+            if (!empty($override['skip'])) {
+                echo "      ⏭️  Skippé volontairement (override skip:true)\n";
+                // Si une image existe déjà, on la supprime + on retire le champ image du JSON
+                if (!$dryRun) {
+                    $existingFull  = $imageDir . '/' . $poi['slug'] . '.webp';
+                    $existingThumb = $imageDir . '/' . $poi['slug'] . '-thumb.webp';
+                    if (file_exists($existingFull))  unlink($existingFull);
+                    if (file_exists($existingThumb)) unlink($existingThumb);
+                    if (isset($poi['image'])) {
+                        unset($poi['image']);
+                        // Sauvegarde immédiate du JSON sans le champ image
+                        file_put_contents($lineFile, json_encode($line, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+                    }
+                }
+                continue;
+            }
+
             $searchQuery = $override['wikimedia_query'] ?? ($poi['name'] . ' Paris');
             $extraBlocklist = $override['wikimedia_blocklist'] ?? [];
 
@@ -688,21 +826,39 @@ foreach ($lineFiles as $lineFile) {
 
             if ($dryRun) {
                 echo "      [DRY] Recherche Wikimedia : '{$searchQuery}'\n";
+                if (!empty($override['wikimedia_file'])) {
+                    echo "      [DRY] Fichier forcé : '{$override['wikimedia_file']}'\n";
+                }
                 continue;
             }
 
-            // 1. Recherche sur Wikimedia avec scoring
-            $candidates = searchWikimediaImages($searchQuery, $config, $extraBlocklist);
-            if (empty($candidates)) {
-                echo "      ✗ Aucune image trouvée\n";
-                continue;
-            }
-            echo "      📥 " . count($candidates) . " candidats apr\u00e8s filtrage\n";
+            // v1.4.5 : Si wikimedia_file défini → forcer ce fichier précis
+            //         (bypass complet du système de recherche/scoring)
+            if (!empty($override['wikimedia_file'])) {
+                echo "      🎯 Fichier forcé : '{$override['wikimedia_file']}'\n";
+                $forced = fetchWikimediaFile($override['wikimedia_file'], $config);
+                if (!$forced) {
+                    echo "      ✗ Fichier forcé introuvable\n";
+                    continue;
+                }
+                $best = $forced;
+                $best['score'] = 9999; // marqueur pour info
+                echo "      📷 Fichier : {$best['title']} ({$best['width']}x{$best['height']})\n";
+                echo "      👤 Auteur : {$best['author']}\n";
+            } else {
+                // 1. Recherche sur Wikimedia avec scoring
+                $candidates = searchWikimediaImages($searchQuery, $config, $extraBlocklist);
+                if (empty($candidates)) {
+                    echo "      ✗ Aucune image trouvée (score >= 30)\n";
+                    continue;
+                }
+                echo "      📥 " . count($candidates) . " candidats apr\u00e8s filtrage\n";
 
-            // 2. Sélectionner le meilleur (déjà trié par score)
-            $best = $candidates[0];
-            echo "      📷 Sélection : {$best['title']} ({$best['width']}x{$best['height']}) [score: {$best['score']}]\n";
-            echo "      👤 Auteur : {$best['author']}\n";
+                // 2. Sélectionner le meilleur (déjà trié par score)
+                $best = $candidates[0];
+                echo "      📷 Sélection : {$best['title']} ({$best['width']}x{$best['height']}) [score: {$best['score']}]\n";
+                echo "      👤 Auteur : {$best['author']}\n";
+            }
 
             // 3. Télécharger
             $tmpFile = downloadImage($best['url'], $config);

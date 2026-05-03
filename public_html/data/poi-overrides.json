@@ -1,24 +1,31 @@
 {
-  "_doc": "Overrides Wikimedia pour les POI à risque. Le script fetch-poi-images.php va lire ce fichier et appliquer les overrides en mémoire avant le traitement de chaque POI. Aucun champ ici n'écrase le metro-1.json — c'est juste un overlay.",
+  "_doc": "Overrides Wikimedia pour les POI à risque. v1.4.5 supports skip:true (force fallback emoji), wikimedia_file (forcer un fichier Commons précis), wikimedia_query + wikimedia_blocklist (orienter la recherche).",
+
+  "_format": {
+    "skip": "bool — si true, ne télécharger aucune image, supprimer celle existante, fallback sur emoji",
+    "wikimedia_file": "string — nom complet du fichier Commons (sans 'File:'). Bypass la recherche.",
+    "wikimedia_query": "string — query custom passée à l'API search Wikimedia",
+    "wikimedia_blocklist": "array — termes additionnels à pénaliser dans le scoring"
+  },
 
   "arc-de-triomphe": {
-    "wikimedia_query": "Arc de Triomphe Paris architecture facade",
-    "wikimedia_blocklist": ["liberation", "wwii", "1944", "1945", "tank", "parade", "défilé"]
+    "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg",
+    "_comment": "Vue moderne de l'arc, façade côté Champs-Élysées, ciel dégagé"
   },
 
   "place-de-la-concorde": {
-    "wikimedia_query": "Place de la Concorde Paris obélisque",
-    "wikimedia_blocklist": ["revolution", "révolution", "guillotine", "1789", "1793", "louis xvi"]
+    "wikimedia_query": "Place de la Concorde Paris obélisque fontaine",
+    "wikimedia_blocklist": ["revolution", "révolution", "guillotine", "1789", "1793", "louis xvi", "panorama 1900"]
   },
 
   "memorial-shoah": {
-    "wikimedia_query": "Mémorial Shoah Paris facade exterior",
-    "wikimedia_blocklist": ["holocaust", "auschwitz", "concentration", "camp", "prisoner", "deportation", "nazi", "victims", "names"]
+    "skip": true,
+    "_comment": "Lieu sensible, pas de bonne photo trouvée. Fallback emoji + gradient violet."
   },
 
   "opera-bastille": {
-    "wikimedia_query": "Opéra Bastille Paris facade",
-    "wikimedia_blocklist": ["interior", "stage", "performance"]
+    "wikimedia_query": "Opéra Bastille Paris Carlos Ott facade architecture",
+    "wikimedia_blocklist": ["interior", "stage", "performance", "garnier", "palais"]
   },
 
   "champs-elysees": {
@@ -32,25 +39,27 @@
   },
 
   "le-marais": {
-    "wikimedia_query": "Le Marais Paris architecture rue"
+    "wikimedia_query": "Le Marais Paris rue street modern",
+    "wikimedia_blocklist": ["interior", "courtyard", "cour intérieure"]
   },
 
   "louvre": {
     "wikimedia_query": "Musée du Louvre Paris pyramide",
-    "wikimedia_blocklist": ["interior", "joconde", "mona lisa", "painting", "tableau", "œuvre"]
+    "wikimedia_blocklist": ["interior", "joconde", "mona lisa", "painting", "tableau", "œuvre", "ruins"]
   },
 
   "orangerie": {
-    "wikimedia_query": "Musée Orangerie Paris facade Tuileries",
-    "wikimedia_blocklist": ["nymphéas", "monet", "painting", "interior"]
+    "wikimedia_file": "Musée de l'Orangerie - 02.jpg",
+    "_comment": "Vue extérieure du musée, façade côté jardin"
   },
 
   "arts-decoratifs": {
-    "wikimedia_query": "Musée Arts Décoratifs Paris Louvre"
+    "wikimedia_query": "Musée Arts Décoratifs Paris facade Louvre Marsan"
   },
 
   "jardin-des-tuileries": {
-    "wikimedia_query": "Jardin des Tuileries Paris"
+    "wikimedia_query": "Jardin des Tuileries Paris bassin",
+    "wikimedia_blocklist": ["interior", "ruins", "ancien"]
   },
 
   "place-des-vosges": {
@@ -58,11 +67,11 @@
   },
 
   "bois-de-vincennes": {
-    "wikimedia_query": "Bois de Vincennes Paris lac"
+    "wikimedia_query": "Bois de Vincennes Paris Lac Daumesnil"
   },
 
   "hotel-de-ville": {
-    "wikimedia_query": "Hôtel de Ville Paris facade architecture",
+    "wikimedia_query": "Hôtel de Ville Paris facade",
     "wikimedia_blocklist": ["1944", "wwii", "liberation", "occupation", "manifestation", "yellow vest"]
   }
 }
