@@ -27,7 +27,7 @@ $perturbations = []; // En prod : récupérer depuis latest.json filtré par lig
 // ];
 
 $todayDate = date('d/m/Y');
-$todayHuman = strftime('%A %d %B %Y', time());
+$todayHuman = dateFr();
 ?>
 
 <section class="section section--trafic" id="trafic-temps-reel" aria-labelledby="trafic-title">

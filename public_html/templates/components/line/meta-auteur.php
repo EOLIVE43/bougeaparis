@@ -128,7 +128,7 @@ $sources = $meta['sources'] ?? [];
         <ul class="meta-sources__list">
           <?php foreach ($sources as $source): ?>
             <li>
-              <a href="<?= htmlspecialchars($source['url']) ?>" rel="noopener noreferrer" target="_blank">
+              <a href="<?= htmlspecialchars($source['url']) ?>" rel="nofollow noopener noreferrer" target="_blank">
                 <?= htmlspecialchars($source['label']) ?>
                 <span aria-hidden="true">↗</span>
               </a>
