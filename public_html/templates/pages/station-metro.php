@@ -16,7 +16,7 @@
  *  2. AdSense slot — header
  *  3. Correspondances (métro + RER)
  *  4. Introduction SEO
- *  5. AdSense slot — in-article
+ *  5. AdSense slot — in-articlec
  *  6. Stations adjacentes (par ligne)
  *  7. Histoire de la station
  *  8. FAQ (avec schema.org)
@@ -347,6 +347,14 @@ $tpl->partial('components/breadcrumb', [
       </div>
     </section>
   <?php endif; ?>
+
+<!-- ============================================================
+       4bis. HORAIRES PAR LIGNE
+       ============================================================ -->
+  <?php $tpl->partial('components/station/horaires-par-ligne', [
+      'lines'       => $lines,
+      'stationName' => $name,
+  ]); ?>
 
   <!-- ============================================================
        5. HISTOIRE
