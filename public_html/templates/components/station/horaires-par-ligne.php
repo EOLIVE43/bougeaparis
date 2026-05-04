@@ -37,7 +37,8 @@ if (is_array($lines ?? null)) {
     }
 }
 echo '</div>';
-
+$lines       = $props['lines']       ?? null;
+$stationName = $props['stationName'] ?? null;
 if (empty($lines) || !is_array($lines)) {
     return;
 }
