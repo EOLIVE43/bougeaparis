@@ -35,16 +35,21 @@
 
 .station-hero__placeholder {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--color-primary, #0F6E56), var(--color-primary-dark, #085041));
     color: #FFFFFF;
 }
+@media (min-width: 768px) {
+    .station-hero__placeholder {
+        height: 240px;
+    }
+}
 .station-hero__placeholder-icon {
-    font-size: 4rem;
-    opacity: 0.4;
+    font-size: 3rem;
+    opacity: 0.5;
 }
 
 .station-hero__content {
