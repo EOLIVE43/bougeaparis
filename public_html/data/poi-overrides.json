@@ -24,8 +24,8 @@
   },
 
   "opera-bastille": {
-    "wikimedia_file": "Opéra und Place de la Bastille.JPG",
-    "_comment": "Vue moderne CC-BY-3.0"
+    "wikimedia_file": "Bastiglia, con Opera Bastille.jpg",
+    "_comment": "v1.4.7 — Photo paysage 4608x3456 (avant: portrait Opéra und Place qui se cropait mal en 16:9)"
   },
 
   "champs-elysees": {
@@ -67,8 +67,9 @@
   },
 
   "bois-de-vincennes": {
-    "wikimedia_query": "Château de Vincennes Paris",
-    "wikimedia_blocklist": ["interior", "geese", "oies", "duck", "bird"]
+    "wikimedia_query": "Donjon Vincennes Paris château",
+    "wikimedia_blocklist": ["interior", "geese", "oies", "duck", "bird", "métro", "metro", "panneau", "station", "ratp", "information", "transport"],
+    "_comment": "v1.4.7 — On change pour 'Donjon Vincennes' (le donjon est une vraie photo monument). Ajout blocklist 'metro/station/ratp' pour éviter les panneaux RATP."
   },
 
   "hotel-de-ville": {
