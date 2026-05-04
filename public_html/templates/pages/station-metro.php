@@ -59,8 +59,12 @@ $canonical = '/metro/station/' . $slug . '/';
 $tpl->addStylesheet('/assets/css/station.css');
 
 // SEO de base
+$lineCount = count($lines);
+$rerCodes = !empty($rer) ? ' + RER ' . implode(' ', array_column($rer, 'code')) : '';
+$arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
+
 $tpl->seo
-    ->setTitle('Station ' . $name . ' — Métro Paris : correspondances, plan et infos pratiques')
+    ->setTitle('Station ' . $name . $arrLabel . ' : ' . $lineCount . ' ligne' . ($lineCount > 1 ? 's' : '') . ' métro' . $rerCodes)
     ->setDescription($hero['description'] ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, stations adjacentes, histoire et conseils pratiques.'))
     ->setCanonical($canonical)
     ->setBreadcrumb([
