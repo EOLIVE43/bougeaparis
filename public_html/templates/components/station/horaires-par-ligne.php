@@ -25,18 +25,6 @@
  * @since Livraison 5
  */
 
-echo '<div style="background:#FFE5A0;padding:1rem;margin:1rem 0;border:2px solid orange;font-family:monospace;font-size:13px">';
-echo '<strong>🐛 DEBUG horaires-par-ligne</strong><br>';
-echo 'function getLineSchedule exists: ' . (function_exists('getLineSchedule') ? '✅ YES' : '❌ NO') . '<br>';
-echo 'lines passé au composant: ' . (is_array($lines ?? null) ? count($lines) . ' lignes' : 'PAS UN ARRAY') . '<br>';
-if (is_array($lines ?? null)) {
-    foreach ($lines as $i => $line) {
-        $slug = $line['slug'] ?? '(pas de slug)';
-        $sched = function_exists('getLineSchedule') ? getLineSchedule($slug) : null;
-        echo "&nbsp;&nbsp;[$i] slug=<strong>$slug</strong> → schedule: " . ($sched ? '✅ trouvé (' . count($sched) . ' clés)' : '❌ null') . '<br>';
-    }
-}
-echo '</div>';
 $lines       = $props['lines']       ?? null;
 $stationName = $props['stationName'] ?? null;
 if (empty($lines) || !is_array($lines)) {
