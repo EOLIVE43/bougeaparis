@@ -855,6 +855,51 @@ foreach ($lineFiles as $lineFile) {
                 continue;
             }
 
+            // v1.4.9 : local_image=true → utilise un fichier WebP déjà uploadé manuellement
+            // dans /assets/images/poi/{theme}/{slug}.webp (ne télécharge rien depuis Wikimedia)
+            if (!empty($override['local_image'])) {
+                $localFull  = $imageDir . '/' . $poi['slug'] . '.webp';
+                $localThumb = $imageDir . '/' . $poi['slug'] . '-thumb.webp';
+                echo "      📁 Image locale (upload manuel)\n";
+                if (!file_exists($localFull)) {
+                    echo "      ✗ Fichier {$poi['slug']}.webp introuvable dans le dossier {$themeKey}/\n";
+                    echo "         Upload-le manuellement dans public_html/assets/images/poi/{$themeKey}/\n";
+                    if (!$dryRun) {
+                        cleanupPoiImage($poi, $imageDir, $line, $lineFile);
+                    }
+                    continue;
+                }
+                if ($dryRun) {
+                    echo "      [DRY] Fichier local trouvé : {$localFull}\n";
+                    continue;
+                }
+                // Récupérer dimensions de l'image locale
+                $size = @getimagesize($localFull);
+                $width  = $size[0] ?? 1200;
+                $height = $size[1] ?? 675;
+                // Construire le bloc image avec attribution custom (ou défaut)
+                $localCredit = $override['local_credit'] ?? [];
+                $poi['image'] = [
+                    'src'    => '/assets/images/poi/' . $themeKey . '/' . $poi['slug'] . '.webp',
+                    'thumb'  => file_exists($localThumb)
+                                ? '/assets/images/poi/' . $themeKey . '/' . $poi['slug'] . '-thumb.webp'
+                                : '/assets/images/poi/' . $themeKey . '/' . $poi['slug'] . '.webp',
+                    'alt'    => $localCredit['alt'] ?? ($poi['name'] . ' à Paris'),
+                    'width'  => $width,
+                    'height' => $height,
+                    'credit' => [
+                        'author'      => $localCredit['author']      ?? 'BougeaParis',
+                        'license'     => $localCredit['license']     ?? 'Tous droits réservés',
+                        'license_url' => $localCredit['license_url'] ?? '',
+                        'wikimedia_url' => '',
+                    ],
+                ];
+                file_put_contents($lineFile, json_encode($line, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+                echo "      ✅ Image locale référencée dans le JSON ({$width}x{$height})\n";
+                echo "      👤 Auteur : " . ($localCredit['author'] ?? 'BougeaParis') . "\n";
+                continue;
+            }
+
             $searchQuery = $override['wikimedia_query'] ?? ($poi['name'] . ' Paris');
             $extraBlocklist = $override['wikimedia_blocklist'] ?? [];
 
