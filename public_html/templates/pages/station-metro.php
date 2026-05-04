@@ -110,6 +110,7 @@ if (!empty($faq)) {
 }
 ?>
 
+<div class="container">
 <article class="station-page">
 
   <!-- ============================================================
@@ -385,3 +386,4 @@ if (!empty($faq)) {
   <?php endif; ?>
 
 </article>
+</div>
