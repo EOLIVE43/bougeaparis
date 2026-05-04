@@ -8,11 +8,17 @@
  *
  * Variables attendues :
  *   $exits       : array, liste des sorties.
- *                  Chaque entrée : { number, name, latitude, longitude, accessible }
- *                  - number : string ("1", "2", "1A"...)
- *                  - name : string (adresse / repère en surface)
+ *                  Chaque entrée : { number, name, address_full?, postcode?, city?,
+ *                                    latitude, longitude, accessible }
+ *                  - number       : string ("1", "2", "1A"...)
+ *                  - name         : string (libellé court IDFM, ex. "pl. du Châtelet")
+ *                  - address_full : string optionnel, adresse postale complète
+ *                                   ("12 Avenue Victoria 75001 Paris") issue de
+ *                                   api-adresse.data.gouv.fr (reverse geocoding)
+ *                  - postcode     : string optionnel ("75001")
+ *                  - city         : string optionnel ("Paris")
  *                  - latitude/longitude : float
- *                  - accessible : true (PMR), false (non PMR), null (info indispo)
+ *                  - accessible   : true (PMR), false (non PMR), null (info indispo)
  *   $stationName : string, nom de la station (pour le titre / aria-labels)
  *
  * Affichage responsive :
@@ -58,25 +64,34 @@ foreach ($exits as $e) {
 
   <ul class="sorties-list" role="list" aria-label="Liste numérotée des sorties">
     <?php foreach ($exits as $exit):
-      $number    = (string)($exit['number'] ?? '');
-      $name      = (string)($exit['name'] ?? '');
-      $accessible = $exit['accessible'] ?? null;
-      $hasNumber = $number !== '';
+      $number      = (string)($exit['number']       ?? '');
+      $name        = (string)($exit['name']         ?? '');
+      $addressFull = (string)($exit['address_full'] ?? '');
+      $accessible  = $exit['accessible'] ?? null;
+      $hasNumber   = $number !== '';
+      $hasAddress  = $addressFull !== '' && $addressFull !== $name;
     ?>
       <li class="sortie-item">
         <span class="sortie-number" aria-hidden="true">
           <?= $hasNumber ? e($number) : '·' ?>
         </span>
         <div class="sortie-content">
-          <?php if ($hasNumber): ?>
-            <span class="visually-hidden">Sortie <?= e($number) ?> : </span>
-          <?php endif; ?>
-          <span class="sortie-name"><?= e($name) ?></span>
-          <?php if ($accessible === true): ?>
-            <span class="badge-pmr" title="Sortie accessible aux personnes à mobilité réduite">
-              <span aria-hidden="true">♿</span>
-              <span class="visually-hidden">Accessible PMR</span>
-              <span aria-hidden="true">PMR</span>
+          <div class="sortie-content__main">
+            <?php if ($hasNumber): ?>
+              <span class="visually-hidden">Sortie <?= e($number) ?> : </span>
+            <?php endif; ?>
+            <span class="sortie-name"><?= e($name) ?></span>
+            <?php if ($accessible === true): ?>
+              <span class="badge-pmr" title="Sortie accessible aux personnes à mobilité réduite">
+                <span aria-hidden="true">♿</span>
+                <span class="visually-hidden">Accessible PMR</span>
+                <span aria-hidden="true">PMR</span>
+              </span>
+            <?php endif; ?>
+          </div>
+          <?php if ($hasAddress): ?>
+            <span class="sortie-address" aria-label="Adresse postale">
+              <?= e($addressFull) ?>
             </span>
           <?php endif; ?>
         </div>

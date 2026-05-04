@@ -651,7 +651,7 @@ a.horaires-card__badge:hover {
 
 .sortie-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.875rem;
     padding: 0.75rem 1rem;
     background: #FFFFFF;
@@ -659,6 +659,11 @@ a.horaires-card__badge:hover {
     border-radius: 10px;
     transition: border-color var(--transition-base, 0.2s ease),
                 box-shadow var(--transition-base, 0.2s ease);
+}
+@media (min-width: 1024px) {
+    .sortie-item {
+        padding: 0.875rem 1.125rem;
+    }
 }
 .sortie-item:hover {
     border-color: var(--color-primary, #0F6E56);
@@ -680,11 +685,19 @@ a.horaires-card__badge:hover {
     line-height: 1;
     flex-shrink: 0;
     font-variant-numeric: tabular-nums;
+    /* Aligne legerement avec la 1ere ligne du contenu */
+    margin-top: 0.0625rem;
 }
 
 .sortie-content {
     flex: 1 1 auto;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.sortie-content__main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -693,10 +706,24 @@ a.horaires-card__badge:hover {
 
 .sortie-name {
     color: var(--color-text, #1A2B26);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
     line-height: 1.35;
     word-break: break-word;
+}
+
+.sortie-address {
+    display: block;
+    color: var(--color-text-muted, #5A6B66);
+    font-size: 0.8125rem; /* 13px */
+    line-height: 1.4;
+    word-break: break-word;
+}
+@media (min-width: 1024px) {
+    .sortie-address {
+        font-size: 0.85rem;
+        margin-top: 0.1rem;
+    }
 }
 
 /* Badge PMR coherent avec .badge-extended (ratio + visuel) */

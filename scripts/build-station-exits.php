@@ -33,9 +33,19 @@ ini_set('memory_limit', '512M');
  * @package BougeaParis\Scripts
  */
 
-const ROOT       = __DIR__ . '/..';
-const GTFS_DIR   = __DIR__ . '/cache-gtfs/idfm-gtfs';
-const STATIONS_DIR = ROOT . '/public_html/data/stations';
+const ROOT          = __DIR__ . '/..';
+const GTFS_DIR      = __DIR__ . '/cache-gtfs/idfm-gtfs';
+const STATIONS_DIR  = ROOT . '/public_html/data/stations';
+const ADDR_CACHE_FILE = __DIR__ . '/cache-gtfs/addresses-cache.json';
+
+// API adresse.data.gouv.fr (preconnectee dans templates/layout/base.php)
+const ADDR_API_URL  = 'https://api-adresse.data.gouv.fr/reverse/';
+// Fair-use : 50 req/sec officiels ; on se cale a 30 pour avoir du marge
+const ADDR_API_SLEEP_US = 35_000; // 35ms entre 2 requetes
+// Toutes les N requetes reseau, on flush le cache sur disque
+const ADDR_CACHE_FLUSH_EVERY = 50;
+// Format de la cle : 6 decimales (~10cm de precision)
+const ADDR_CACHE_KEY_DECIMALS = 6;
 
 // Filtre transferts : on accepte large (jusqu'a 10 min) pour ne pas couper les
 // connexions inter-hub legitimes comme Chatelet <-> Chatelet-Les Halles (480s).
@@ -116,6 +126,106 @@ function normalize_name(string $s): string {
     $s = preg_replace('/[^a-z0-9 ]/', ' ', $s);
     $s = preg_replace('/\s+/', ' ', trim($s));
     return $s;
+}
+
+/**
+ * Charge le cache d'adresses depuis le disque (cle "lat,lon" -> infos adresse).
+ * Retourne un tableau vide si le fichier n'existe pas ou est invalide.
+ */
+function load_address_cache(): array {
+    if (!is_file(ADDR_CACHE_FILE)) return [];
+    $raw = @file_get_contents(ADDR_CACHE_FILE);
+    if ($raw === false) return [];
+    $data = json_decode($raw, true);
+    return is_array($data) ? $data : [];
+}
+
+/**
+ * Ecrit le cache sur disque de maniere atomique (tmpfile + rename).
+ * Evite la corruption en cas de crash pendant l'ecriture.
+ */
+function save_address_cache(array $cache): void {
+    $tmp = ADDR_CACHE_FILE . '.tmp';
+    $json = json_encode($cache, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    if ($json === false) return;
+    file_put_contents($tmp, $json);
+    rename($tmp, ADDR_CACHE_FILE);
+}
+
+/** Cle de cache adresse a partir de lat/lon. */
+function addr_cache_key(float $lat, float $lon): string {
+    return sprintf('%.' . ADDR_CACHE_KEY_DECIMALS . 'f,%.' . ADDR_CACHE_KEY_DECIMALS . 'f', $lat, $lon);
+}
+
+/**
+ * Appelle l'API api-adresse.data.gouv.fr en reverse geocoding.
+ * Tente "type=housenumber" en priorite, puis "type=street" en fallback.
+ *
+ * Retourne ['label', 'postcode', 'city', 'housenumber', 'street'] ou null si rien trouve.
+ */
+function api_reverse_geocode(float $lat, float $lon): ?array {
+    foreach (['housenumber', 'street'] as $type) {
+        $url = ADDR_API_URL . '?lon=' . rawurlencode((string)$lon) . '&lat=' . rawurlencode((string)$lat) . '&type=' . $type;
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT        => 10,
+            CURLOPT_CONNECTTIMEOUT => 5,
+            CURLOPT_USERAGENT      => 'BougeaParis-build-station-exits/1.0 (+https://bougeaparis.fr)',
+            CURLOPT_HTTPHEADER     => ['Accept: application/json'],
+        ]);
+        $resp = curl_exec($ch);
+        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $err  = curl_error($ch);
+        curl_close($ch);
+
+        if ($resp === false || $code !== 200) {
+            log_info(sprintf('  API reverse-geocode HTTP %d (%s) lat=%.6f lon=%.6f%s',
+                $code, $type, $lat, $lon, $err ? " err=$err" : ''));
+            continue;
+        }
+
+        $data = json_decode($resp, true);
+        $features = $data['features'] ?? [];
+        if (empty($features)) continue;
+
+        $p = $features[0]['properties'] ?? [];
+        if (empty($p['label'])) continue;
+
+        return [
+            'label'       => $p['label']       ?? null,
+            'postcode'    => $p['postcode']    ?? null,
+            'city'        => $p['city']        ?? null,
+            'housenumber' => $p['housenumber'] ?? null,
+            'street'      => $p['street']      ?? ($p['name'] ?? null),
+        ];
+    }
+    return null;
+}
+
+/**
+ * Reverse-geocode avec cache. Modifie $cache et $cacheDirty in-place.
+ * Le caller est responsable de flush periodiquement le cache sur disque.
+ */
+function reverse_geocode(float $lat, float $lon, array &$cache, int &$apiCalls): ?array {
+    $key = addr_cache_key($lat, $lon);
+    if (isset($cache[$key])) return $cache[$key];
+
+    // Sleep avant l'appel pour respecter le fair-use (sauf premiere requete)
+    if ($apiCalls > 0) usleep(ADDR_API_SLEEP_US);
+    $apiCalls++;
+
+    $result = api_reverse_geocode($lat, $lon);
+    if ($result === null) {
+        // On cache aussi les "miss" pour ne pas re-interroger l'API en boucle
+        $cache[$key] = ['label' => null, 'postcode' => null, 'city' => null,
+                        'housenumber' => null, 'street' => null,
+                        'fetched_at' => date('c'), 'miss' => true];
+        return $cache[$key];
+    }
+    $result['fetched_at'] = date('c');
+    $cache[$key] = $result;
+    return $result;
 }
 
 /** Stream un fichier CSV GTFS. */
@@ -349,7 +459,7 @@ function expand_hub_via_name_overlap(string $primary, array $transferGraph, arra
 // 3. CONSTRUCTION DES EXITS PAR STATION
 // ============================================================================
 
-function build_exits(array $stationJson, array &$nameToParents, array &$stops, array &$transferGraph, array &$parentToExits): array {
+function build_exits(array $stationJson, array &$nameToParents, array &$stops, array &$transferGraph, array &$parentToExits, array &$addrCache, int &$apiCalls, callable $maybeFlush): array {
     $primary = match_primary_parent($stationJson, $nameToParents, $stops);
     $info = ['primary_match' => $primary, 'parents_used' => [], 'edges' => [], 'exits_count' => 0, 'exits' => []];
     if (!$primary) return $info;
@@ -372,12 +482,23 @@ function build_exits(array $stationJson, array &$nameToParents, array &$stops, a
                 2 => false,
                 default => null,
             };
+
+            // Reverse geocoding (api-adresse.data.gouv.fr) avec cache disque
+            $apiBefore = $apiCalls;
+            $addr = reverse_geocode((float)$e['lat'], (float)$e['lon'], $addrCache, $apiCalls);
+            if ($apiCalls !== $apiBefore) {
+                $maybeFlush(); // appel reseau effectue : peut declencher un flush si seuil atteint
+            }
+
             $exits[] = [
-                'number'    => (string)($e['stop_code'] ?? ''),
-                'name'      => $e['name'],
-                'latitude'  => round($e['lat'], 6),
-                'longitude' => round($e['lon'], 6),
-                'accessible' => $accessible,
+                'number'       => (string)($e['stop_code'] ?? ''),
+                'name'         => $e['name'],
+                'address_full' => $addr['label']    ?? null,
+                'postcode'     => $addr['postcode'] ?? null,
+                'city'         => $addr['city']     ?? null,
+                'latitude'     => round($e['lat'], 6),
+                'longitude'    => round($e['lon'], 6),
+                'accessible'   => $accessible,
             ];
         }
     }
@@ -389,6 +510,31 @@ function build_exits(array $stationJson, array &$nameToParents, array &$stops, a
 
 // ============================================================================
 // 4. ITERATION SUR LES JSON STATION
+// ============================================================================
+
+// ============================================================================
+// 1bis. CACHE D'ADRESSES (reverse geocoding api-adresse.data.gouv.fr)
+// ============================================================================
+
+log_info('Phase 1bis: cache adresses');
+$addrCache = load_address_cache();
+$apiCalls  = 0; // compteur cumulatif (reset si tu veux)
+$pendingFlush = 0; // nb d'appels API depuis le dernier flush
+
+$maybeFlush = function () use (&$addrCache, &$pendingFlush, &$apiCalls): void {
+    $pendingFlush++;
+    if ($pendingFlush >= ADDR_CACHE_FLUSH_EVERY) {
+        save_address_cache($addrCache);
+        log_info(sprintf('  cache adresses flushe (%d entrees, %d appels API total)',
+            count($addrCache), $apiCalls));
+        $pendingFlush = 0;
+    }
+};
+log_info(sprintf('  %d adresses deja en cache (%s)', count($addrCache),
+    is_file(ADDR_CACHE_FILE) ? 'fichier present' : 'cache vide / inexistant'));
+
+// ============================================================================
+// 2. ITERATION SUR LES JSON STATION
 // ============================================================================
 
 log_info('Phase 2: iteration data/stations/*.json');
@@ -417,7 +563,7 @@ foreach ($files as $path) {
         $skipCount++; continue;
     }
 
-    $info = build_exits($json, $nameToParents, $stops, $transferGraph, $parentToExits);
+    $info = build_exits($json, $nameToParents, $stops, $transferGraph, $parentToExits, $addrCache, $apiCalls, $maybeFlush);
 
     if ($preview) {
         echo "\n";
@@ -453,10 +599,11 @@ foreach ($files as $path) {
             echo "  Existant dans JSON : " . (is_array($existing) ? count($existing) . ' sortie(s)' : '(aucune cle exits)') . "\n";
             echo "  --- Liste calculee ---\n";
             foreach ($info['exits'] as $e) {
-                printf("    %-5s %-40s lat=%.5f lon=%.5f acc=%s\n",
+                $addr = $e['address_full'] ?? '(pas d\'adresse)';
+                printf("    %-5s %-32s | %-50s acc=%s\n",
                     $e['number'] ?: '-',
-                    mb_strimwidth($e['name'], 0, 38, '...'),
-                    $e['latitude'], $e['longitude'],
+                    mb_strimwidth($e['name'], 0, 30, '...'),
+                    mb_strimwidth($addr, 0, 48, '...'),
                     var_export($e['accessible'], true));
             }
         }
@@ -491,6 +638,11 @@ foreach ($files as $path) {
     log_info("  $slug : " . count($info['exits']) . " sorties ecrites (parents: " . count($info['parents_used']) . ")");
     $wroteCount++;
 }
+
+// Flush final du cache adresses (en plus des flushes incrementaux)
+save_address_cache($addrCache);
+log_info(sprintf('Cache adresses sauvegarde : %d entrees totales, %d appels API effectues cette run',
+    count($addrCache), $apiCalls));
 
 if ($preview) {
     log_info("Preview terminee. Aucun fichier ecrit.");
