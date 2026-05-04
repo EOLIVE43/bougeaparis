@@ -33,22 +33,28 @@
     object-fit: cover;
 }
 
+.station-hero--placeholder {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .station-hero__placeholder {
     width: 100%;
-    height: 180px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--color-primary, #0F6E56), var(--color-primary-dark, #085041));
     color: #FFFFFF;
+    border-radius: var(--station-radius);
 }
 @media (min-width: 768px) {
     .station-hero__placeholder {
-        height: 240px;
+        height: 200px;
     }
 }
 .station-hero__placeholder-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     opacity: 0.5;
 }
 
