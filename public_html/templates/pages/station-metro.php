@@ -1,0 +1,387 @@
+<?php
+/**
+ * Template page station métro — station-metro.php
+ *
+ * Variables fournies par le router :
+ * - $station : array, données chargées depuis data/stations/{slug}.json
+ *
+ * Variables fournies par Template (extract automatique) :
+ * - $tpl     : Template instance (pour SEO + addStylesheet)
+ * - $seo     : Seo instance
+ * - $site    : config site
+ * - $nav     : config navigation
+ *
+ * Sections :
+ *  1. Hero (nom, badges lignes, photo, tagline, description)
+ *  2. AdSense slot — header
+ *  3. Correspondances (métro + RER)
+ *  4. Introduction SEO
+ *  5. AdSense slot — in-article
+ *  6. Stations adjacentes (par ligne)
+ *  7. Histoire de la station
+ *  8. FAQ (avec schema.org)
+ *  9. Conseils pratiques
+ * 10. AdSense slot — footer
+ *
+ * @package BougeaParis\Templates\Pages
+ * @since Livraison 5
+ */
+
+if (!isset($station) || !is_array($station)) {
+    http_response_code(500);
+    echo "Erreur : données de station manquantes.";
+    return;
+}
+
+// =====================================================================
+// SETUP : SEO + CSS
+// =====================================================================
+
+$slug      = $station['slug']      ?? 'unknown';
+$name      = $station['name']      ?? 'Station';
+$nameFull  = $station['name_full'] ?? $name;
+$arr       = $station['arrondissement'] ?? '';
+$address   = $station['address']   ?? '';
+$lines     = $station['lines']     ?? [];
+$rer       = $station['rer_correspondences'] ?? [];
+$hero      = $station['hero']      ?? [];
+$adjacent  = $station['adjacent_stations'] ?? [];
+$image     = $station['image']     ?? null;
+$intros    = $station['intro_paragraphs'] ?? [];
+$faq       = $station['faq']       ?? [];
+$tips      = $station['practical_tips'] ?? [];
+$history   = $station['history']   ?? [];
+
+$hasImage  = !empty($image['src']);
+$canonical = '/metro/station/' . $slug . '/';
+
+// Charger le CSS dédié
+$tpl->addStylesheet('/assets/css/station.css');
+
+// SEO de base
+$tpl->seo
+    ->setTitle('Station ' . $name . ' — Métro Paris : correspondances, plan et infos pratiques')
+    ->setDescription($hero['description'] ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, stations adjacentes, histoire et conseils pratiques.'))
+    ->setCanonical($canonical)
+    ->setBreadcrumb([
+        ['label' => 'Accueil',  'url' => '/'],
+        ['label' => 'Métro',    'url' => '/metro/'],
+        ['label' => 'Stations', 'url' => '/metro/'],
+        ['label' => $name,      'url' => $canonical],
+    ]);
+
+// Schema.org SubwayStation pour SEO
+$tpl->seo->addSchema([
+    '@context' => 'https://schema.org',
+    '@type'    => 'SubwayStation',
+    'name'     => $name,
+    'address'  => [
+        '@type'           => 'PostalAddress',
+        'streetAddress'   => $address ?: null,
+        'addressLocality' => 'Paris',
+        'addressCountry'  => 'FR',
+    ],
+    'geo' => [
+        '@type'     => 'GeoCoordinates',
+        'latitude'  => $station['latitude']  ?? null,
+        'longitude' => $station['longitude'] ?? null,
+    ],
+    'image' => $hasImage ? rtrim(Config::get('site.url'), '/') . $image['src'] : null,
+]);
+
+// Schema FAQPage si on a des FAQ
+if (!empty($faq)) {
+    $faqEntities = [];
+    foreach ($faq as $item) {
+        $faqEntities[] = [
+            '@type'          => 'Question',
+            'name'           => $item['question'],
+            'acceptedAnswer' => [
+                '@type' => 'Answer',
+                'text'  => $item['answer'],
+            ],
+        ];
+    }
+    $tpl->seo->addSchema([
+        '@context'   => 'https://schema.org',
+        '@type'      => 'FAQPage',
+        'mainEntity' => $faqEntities,
+    ]);
+}
+?>
+
+<article class="station-page">
+
+  <!-- ============================================================
+       1. HERO
+       ============================================================ -->
+  <section class="station-hero <?= $hasImage ? 'station-hero--with-image' : 'station-hero--placeholder' ?>"
+           aria-labelledby="station-hero-title">
+
+    <?php if ($hasImage): ?>
+      <div class="station-hero__image">
+        <img src="<?= Template::e($image['src']) ?>"
+             alt="<?= Template::e($image['alt'] ?? $name) ?>"
+             width="1200" height="675"
+             loading="eager" fetchpriority="high">
+      </div>
+    <?php else: ?>
+      <div class="station-hero__placeholder" aria-hidden="true">
+        <span class="station-hero__placeholder-icon">🚇</span>
+      </div>
+    <?php endif; ?>
+
+    <div class="station-hero__content">
+      <div class="station-hero__badges" aria-label="Lignes desservant la station">
+        <?php foreach ($lines as $line):
+          $lineUrl = '/metro/' . $line['slug'] . '/';
+          $lineExists = Routes::exists(rtrim($lineUrl, '/'));
+        ?>
+          <?php if ($lineExists): ?>
+            <a href="<?= Template::e($lineUrl) ?>"
+               class="station-line-badge"
+               style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+               aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+              <?= Template::e($line['code']) ?>
+            </a>
+          <?php else: ?>
+            <span class="station-line-badge station-line-badge--inactive"
+                  style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+                  aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+              <?= Template::e($line['code']) ?>
+            </span>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </div>
+
+      <h1 id="station-hero-title">
+        Station <?= Template::e($name) ?>
+      </h1>
+
+      <?php if (!empty($hero['tagline'])): ?>
+        <p class="station-hero__tagline"><?= Template::e($hero['tagline']) ?></p>
+      <?php endif; ?>
+
+      <?php if (!empty($hero['description'])): ?>
+        <p class="station-hero__description">
+          <?= Template::e($hero['description']) ?>
+        </p>
+      <?php endif; ?>
+
+      <?php if ($address): ?>
+        <p class="station-hero__address">
+          <span aria-hidden="true">📍</span>
+          <?= Template::e($address) ?>
+        </p>
+      <?php endif; ?>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       2. CORRESPONDANCES (métro + RER)
+       ============================================================ -->
+  <section class="station-section section-correspondances" id="correspondances" aria-labelledby="correspondances-title">
+
+    <h2 id="correspondances-title">Correspondances à la station <?= Template::e($name) ?></h2>
+
+    <p class="section-intro">
+      La <strong>station <?= Template::e($name) ?></strong> permet de correspondre entre <?= count($lines) ?> lignes de métro<?= !empty($rer) ? ' et ' . count($rer) . ' lignes de RER' : '' ?>.
+    </p>
+
+    <div class="correspondances-grid">
+
+      <!-- Métro -->
+      <div class="correspondances-block">
+        <h3>Lignes de métro desservant la station</h3>
+        <ul class="correspondances-list">
+          <?php foreach ($lines as $line):
+            $lineUrl = '/metro/' . $line['slug'] . '/';
+            $lineExists = Routes::exists(rtrim($lineUrl, '/'));
+          ?>
+            <li>
+              <?php if ($lineExists): ?>
+                <a href="<?= Template::e($lineUrl) ?>" class="correspondance-line-link">
+              <?php else: ?>
+                <span class="correspondance-line-link correspondance-line-link--inactive">
+              <?php endif; ?>
+                <span class="correspondance-line-badge"
+                      style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
+                  <?= Template::e($line['code']) ?>
+                </span>
+                <span class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</span>
+              <?php if ($lineExists): ?></a><?php else: ?></span><?php endif; ?>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </div>
+
+      <!-- RER -->
+      <?php if (!empty($rer)): ?>
+        <div class="correspondances-block">
+          <h3>Correspondances RER (via Châtelet — Les Halles)</h3>
+          <ul class="correspondances-list">
+            <?php foreach ($rer as $r):
+              $rerUrl = '/rer/rer-' . strtolower($r['code']) . '/';
+              $rerExists = Routes::exists(rtrim($rerUrl, '/'));
+            ?>
+              <li>
+                <?php if ($rerExists): ?>
+                  <a href="<?= Template::e($rerUrl) ?>" class="correspondance-line-link">
+                <?php else: ?>
+                  <span class="correspondance-line-link correspondance-line-link--inactive">
+                <?php endif; ?>
+                  <span class="correspondance-line-badge correspondance-line-badge--rer"
+                        style="background:<?= Template::e($r['color']) ?>;color:#FFFFFF;">
+                    RER <?= Template::e($r['code']) ?>
+                  </span>
+                  <span class="correspondance-line-name">
+                    <?php if (!empty($r['walking_minutes'])): ?>
+                      <span class="correspondance-line-walking"><?= (int)$r['walking_minutes'] ?> min à pied</span>
+                    <?php endif; ?>
+                  </span>
+                <?php if ($rerExists): ?></a><?php else: ?></span><?php endif; ?>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+          <p class="correspondances-note">
+            <small>Les correspondances RER s'effectuent via les couloirs souterrains menant à la gare Châtelet — Les Halles. Comptez environ 3 à 5 minutes de marche.</small>
+          </p>
+        </div>
+      <?php endif; ?>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. INTRODUCTION SEO (paragraphes longs)
+       ============================================================ -->
+  <?php if (!empty($intros)): ?>
+    <section class="station-section section-intro-seo" aria-label="Présentation de la station">
+      <?php foreach ($intros as $paragraph): ?>
+        <p><?= $paragraph ?></p>
+      <?php endforeach; ?>
+    </section>
+  <?php endif; ?>
+
+  <!-- ============================================================
+       4. STATIONS ADJACENTES (par ligne)
+       ============================================================ -->
+  <?php if (!empty($adjacent)): ?>
+    <section class="station-section section-adjacent" id="stations-adjacentes" aria-labelledby="adjacent-title">
+
+      <h2 id="adjacent-title">Stations adjacentes à <?= Template::e($name) ?></h2>
+
+      <p class="section-intro">
+        Voici les stations directement avant et après <?= Template::e($name) ?> sur chacune des <?= count($lines) ?> lignes desservies.
+      </p>
+
+      <div class="adjacent-grid">
+        <?php foreach ($lines as $line):
+          $lineSlug = $line['slug'];
+          $adj = $adjacent[$lineSlug] ?? null;
+          if (!$adj) continue;
+        ?>
+          <div class="adjacent-line-block">
+            <h3 class="adjacent-line-title">
+              <span class="adjacent-line-badge"
+                    style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
+                <?= Template::e($line['code']) ?>
+              </span>
+              <span>Ligne <?= Template::e($line['code']) ?></span>
+            </h3>
+
+            <div class="adjacent-stations">
+              <?php
+                $prev = $adj['previous'] ?? null;
+                $next = $adj['next']     ?? null;
+              ?>
+
+              <?php if ($prev):
+                $prevUrl = '/metro/station/' . $prev['slug'] . '/';
+              ?>
+                <div class="adjacent-station adjacent-station--prev">
+                  <span class="adjacent-station-arrow" aria-hidden="true">←</span>
+                  <div>
+                    <span class="adjacent-station-direction">Direction <?= Template::e($prev['direction']) ?></span>
+                    <?= conditionalLink($prevUrl, Template::e($prev['name']), 'adjacent-station-name') ?>
+                  </div>
+                </div>
+              <?php else: ?>
+                <div class="adjacent-station adjacent-station--terminus">
+                  <span class="adjacent-station-name">Terminus</span>
+                </div>
+              <?php endif; ?>
+
+              <?php if ($next):
+                $nextUrl = '/metro/station/' . $next['slug'] . '/';
+              ?>
+                <div class="adjacent-station adjacent-station--next">
+                  <div>
+                    <span class="adjacent-station-direction">Direction <?= Template::e($next['direction']) ?></span>
+                    <?= conditionalLink($nextUrl, Template::e($next['name']), 'adjacent-station-name') ?>
+                  </div>
+                  <span class="adjacent-station-arrow" aria-hidden="true">→</span>
+                </div>
+              <?php else: ?>
+                <div class="adjacent-station adjacent-station--terminus">
+                  <span class="adjacent-station-name">Terminus</span>
+                </div>
+              <?php endif; ?>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <!-- ============================================================
+       5. HISTOIRE
+       ============================================================ -->
+  <?php if (!empty($history['paragraphs'])): ?>
+    <section class="station-section section-history" id="histoire" aria-labelledby="history-title">
+      <h2 id="history-title"><?= Template::e($history['title'] ?? 'Histoire de la station') ?></h2>
+      <?php foreach ($history['paragraphs'] as $para): ?>
+        <p><?= $para ?></p>
+      <?php endforeach; ?>
+    </section>
+  <?php endif; ?>
+
+  <!-- ============================================================
+       6. FAQ (rendu HTML — schema.org est dans le head via $seo->addSchema)
+       ============================================================ -->
+  <?php if (!empty($faq)): ?>
+    <section class="station-section section-faq" id="faq" aria-labelledby="faq-title">
+
+      <h2 id="faq-title">Questions fréquentes sur la station <?= Template::e($name) ?></h2>
+
+      <div class="faq-list">
+        <?php foreach ($faq as $i => $item): ?>
+          <details class="faq-item" <?= $i === 0 ? 'open' : '' ?>>
+            <summary class="faq-question">
+              <?= Template::e($item['question']) ?>
+            </summary>
+            <div class="faq-answer">
+              <p><?= Template::e($item['answer']) ?></p>
+            </div>
+          </details>
+        <?php endforeach; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <!-- ============================================================
+       7. CONSEILS PRATIQUES
+       ============================================================ -->
+  <?php if (!empty($tips)): ?>
+    <section class="station-section section-tips" id="conseils" aria-labelledby="tips-title">
+      <h2 id="tips-title">Conseils pratiques pour bien circuler à <?= Template::e($name) ?></h2>
+      <ul class="tips-list">
+        <?php foreach ($tips as $tip): ?>
+          <li><span class="tips-icon" aria-hidden="true">💡</span> <?= Template::e($tip) ?></li>
+        <?php endforeach; ?>
+      </ul>
+    </section>
+  <?php endif; ?>
+
+</article>
