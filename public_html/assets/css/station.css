@@ -620,3 +620,104 @@ a.horaires-card__badge:hover {
         color: var(--color-text-muted, #5A6B66);
     }
 }
+
+/* ============================================================
+   9. SORTIES (acces de la station, donnees IDFM/GTFS)
+   ============================================================ */
+
+.section-sorties {
+    margin-top: 2.5rem;
+}
+
+.sorties-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+}
+@media (min-width: 640px) {
+    .sorties-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sorties-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.sortie-item {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 0.75rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: 10px;
+    transition: border-color var(--transition-base, 0.2s ease),
+                box-shadow var(--transition-base, 0.2s ease);
+}
+.sortie-item:hover {
+    border-color: var(--color-primary, #0F6E56);
+    box-shadow: var(--shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.04));
+}
+
+.sortie-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    border-radius: 50%;
+    background: var(--color-primary, #0F6E56);
+    color: var(--color-primary-fg, #FFFFFF);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1;
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.sortie-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sortie-name {
+    color: var(--color-text, #1A2B26);
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    word-break: break-word;
+}
+
+/* Badge PMR coherent avec .badge-extended (ratio + visuel) */
+.badge-pmr {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: var(--color-success-bg, #E1F5EE);
+    color: var(--color-success, #1D9E75);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm, 4px);
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.sorties-note {
+    margin-top: 1rem;
+    color: var(--color-text-muted, #5A6B66);
+    font-style: italic;
+}
+

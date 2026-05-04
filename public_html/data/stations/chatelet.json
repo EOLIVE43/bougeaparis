@@ -1,87 +1,294 @@
 {
-  "_doc": "Données structurées de la station Châtelet. Format JSON station BougeaParis v1.",
-
-  "slug": "chatelet",
-  "name": "Châtelet",
-  "name_full": "Châtelet — Métro & RER",
-  "arrondissement": "1er",
-  "address": "Place Sainte-Opportune, 75001 Paris",
-  "latitude": 48.8585,
-  "longitude": 2.347,
-
-  "lines": [
-    { "type": "metro", "code": "1",  "slug": "metro-1",  "color": "#FFCD00", "text_color": "#000000" },
-    { "type": "metro", "code": "4",  "slug": "metro-4",  "color": "#A0006E", "text_color": "#FFFFFF" },
-    { "type": "metro", "code": "7",  "slug": "metro-7",  "color": "#F19FBA", "text_color": "#000000" },
-    { "type": "metro", "code": "11", "slug": "metro-11", "color": "#704B1C", "text_color": "#FFFFFF" },
-    { "type": "metro", "code": "14", "slug": "metro-14", "color": "#62259D", "text_color": "#FFFFFF" }
-  ],
-
-  "rer_correspondences": [
-    { "code": "A", "color": "#E2231A", "station_name": "Châtelet — Les Halles", "walking_minutes": 3 },
-    { "code": "B", "color": "#5291CE", "station_name": "Châtelet — Les Halles", "walking_minutes": 3 },
-    { "code": "D", "color": "#02864B", "station_name": "Châtelet — Les Halles", "walking_minutes": 3 }
-  ],
-
-  "hero": {
-    "tagline": "La station la plus fréquentée du métro parisien",
-    "description": "Au cœur de Paris, Châtelet est la plus grande station souterraine d'Europe. Desservie par 5 lignes de métro et reliée aux 3 lignes du RER via Châtelet — Les Halles, elle est le carrefour névralgique du réseau parisien. Plus de 750 000 voyageurs y transitent chaque jour, faisant d'elle le plus grand pôle d'échanges de la capitale."
-  },
-
-  "adjacent_stations": {
-    "metro-1": {
-      "previous": { "name": "Louvre — Rivoli",  "slug": "louvre-rivoli",  "direction": "La Défense" },
-      "next":     { "name": "Hôtel de Ville",   "slug": "hotel-de-ville", "direction": "Château de Vincennes" }
+    "_doc": "Données structurées de la station Châtelet. Format JSON station BougeaParis v1.",
+    "slug": "chatelet",
+    "name": "Châtelet",
+    "name_full": "Châtelet — Métro & RER",
+    "arrondissement": "1er",
+    "address": "Place Sainte-Opportune, 75001 Paris",
+    "latitude": 48.8585,
+    "longitude": 2.347,
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F19FBA",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "A",
+            "color": "#E2231A",
+            "station_name": "Châtelet — Les Halles",
+            "walking_minutes": 3
+        },
+        {
+            "code": "B",
+            "color": "#5291CE",
+            "station_name": "Châtelet — Les Halles",
+            "walking_minutes": 3
+        },
+        {
+            "code": "D",
+            "color": "#02864B",
+            "station_name": "Châtelet — Les Halles",
+            "walking_minutes": 3
+        }
+    ],
+    "hero": {
+        "tagline": "La station la plus fréquentée du métro parisien",
+        "description": "Au cœur de Paris, Châtelet est la plus grande station souterraine d'Europe. Desservie par 5 lignes de métro et reliée aux 3 lignes du RER via Châtelet — Les Halles, elle est le carrefour névralgique du réseau parisien. Plus de 750 000 voyageurs y transitent chaque jour, faisant d'elle le plus grand pôle d'échanges de la capitale."
     },
-    "metro-4": {
-      "previous": { "name": "Les Halles",       "slug": "les-halles",     "direction": "Porte de Clignancourt" },
-      "next":     { "name": "Cité",             "slug": "cite",           "direction": "Bagneux — Lucie Aubrac" }
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Louvre — Rivoli",
+                "slug": "louvre-rivoli",
+                "direction": "La Défense"
+            },
+            "next": {
+                "name": "Hôtel de Ville",
+                "slug": "hotel-de-ville",
+                "direction": "Château de Vincennes"
+            }
+        },
+        "metro-4": {
+            "previous": {
+                "name": "Les Halles",
+                "slug": "les-halles",
+                "direction": "Porte de Clignancourt"
+            },
+            "next": {
+                "name": "Cité",
+                "slug": "cite",
+                "direction": "Bagneux — Lucie Aubrac"
+            }
+        },
+        "metro-7": {
+            "previous": {
+                "name": "Pont Neuf",
+                "slug": "pont-neuf",
+                "direction": "La Courneuve — 8 Mai 1945"
+            },
+            "next": {
+                "name": "Pont Marie",
+                "slug": "pont-marie",
+                "direction": "Villejuif / Mairie d'Ivry"
+            }
+        },
+        "metro-11": {
+            "previous": {
+                "name": "Hôtel de Ville",
+                "slug": "hotel-de-ville",
+                "direction": "Châtelet (terminus)"
+            },
+            "next": null
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Pyramides",
+                "slug": "pyramides",
+                "direction": "Saint-Denis — Pleyel"
+            },
+            "next": {
+                "name": "Gare de Lyon",
+                "slug": "gare-de-lyon",
+                "direction": "Aéroport d'Orly"
+            }
+        }
     },
-    "metro-7": {
-      "previous": { "name": "Pont Neuf",        "slug": "pont-neuf",      "direction": "La Courneuve — 8 Mai 1945" },
-      "next":     { "name": "Pont Marie",       "slug": "pont-marie",     "direction": "Villejuif / Mairie d'Ivry" }
+    "intro_paragraphs": [
+        "La <strong>station Châtelet</strong> est sans conteste le pôle d'échanges le plus important du <strong>métro parisien</strong>. Située au cœur du 1er arrondissement, à deux pas de l'Hôtel de Ville et du quartier des Halles, elle dessert 5 lignes de métro et permet d'accéder en quelques minutes au complexe RER Châtelet — Les Halles, qui voit passer chacun des 3 RER A, B et D.",
+        "Avec ses dizaines de couloirs souterrains, ses tapis roulants et ses 18+ sorties numérotées, <strong>Châtelet est aussi connue pour sa complexité</strong>. Mais bien orienté, vous traversez tout Paris en quelques minutes : la rive droite, le Marais, l'Île de la Cité, ou la rive gauche, tous accessibles depuis cette plaque tournante."
+    ],
+    "faq": [
+        {
+            "question": "Combien de lignes de métro desservent la station Châtelet ?",
+            "answer": "La station Châtelet est desservie par 5 lignes de métro : la ligne 1, la ligne 4, la ligne 7, la ligne 11 (qui y a son terminus historique côté ouest) et la ligne 14. Elle est également reliée par des couloirs souterrains à la gare RER Châtelet — Les Halles, qui dessert les RER A, B et D."
+        },
+        {
+            "question": "Quelle est la différence entre Châtelet et Châtelet — Les Halles ?",
+            "answer": "Châtelet est le nom de la station de métro (5 lignes), tandis que Châtelet — Les Halles désigne la gare RER (3 lignes). Les deux sont reliées par un long couloir souterrain. Comptez 3 à 5 minutes de marche entre les quais métro et RER, selon votre point de départ et la sortie visée."
+        },
+        {
+            "question": "Comment se repérer dans la station Châtelet ?",
+            "answer": "Châtelet possède plus de 18 sorties numérotées et plusieurs niveaux. Suivez les panneaux indiquant la ligne ou la sortie souhaitée dès l'entrée. Pour gagner du temps, mémorisez la sortie la plus proche de votre destination en surface : Hôtel de Ville (sortie 14), Place du Châtelet (sortie 1), rue de Rivoli (sortie 6)."
+        }
+    ],
+    "practical_tips": [
+        "Aux heures de pointe (8h-10h et 17h-19h), privilégiez les correspondances par les couloirs périphériques pour éviter les zones les plus chargées.",
+        "Pour rejoindre le RER, suivez systématiquement les panneaux jaunes \"RER A/B/D\". Les couloirs vers Les Halles sont longs : prévoyez 5 minutes de marche supplémentaires.",
+        "Si vous transportez des bagages volumineux, sachez que toutes les sorties ne disposent pas d'ascenseurs. Les sorties 13 et 14 (place du Châtelet) sont les plus accessibles."
+    ],
+    "history": {
+        "title": "Une histoire qui suit celle du métro parisien",
+        "paragraphs": [
+            "La station Châtelet est ouverte le 6 août 1900, quelques semaines après l'inauguration de la première ligne du métropolitain entre Porte Maillot et Porte de Vincennes. Elle prend le nom de la place du Châtelet, elle-même héritée de l'ancien Grand Châtelet, forteresse médiévale détruite en 1802.",
+            "Au fil des décennies, la station s'agrandit : la ligne 4 en 1908, la ligne 7 en 1926, la ligne 11 en 1935 (qui y a son terminus ouest), et enfin la ligne 14 en 1998. La connexion avec la gare RER Châtelet — Les Halles, ouverte en 1977, transforme définitivement Châtelet en plus grand pôle d'échanges souterrain d'Europe."
+        ]
     },
-    "metro-11": {
-      "previous": { "name": "Hôtel de Ville",   "slug": "hotel-de-ville", "direction": "Châtelet (terminus)" },
-      "next":     null
-    },
-    "metro-14": {
-      "previous": { "name": "Pyramides",        "slug": "pyramides",      "direction": "Saint-Denis — Pleyel" },
-      "next":     { "name": "Gare de Lyon",     "slug": "gare-de-lyon",   "direction": "Aéroport d'Orly" }
-    }
-  },
-
-  "intro_paragraphs": [
-    "La <strong>station Châtelet</strong> est sans conteste le pôle d'échanges le plus important du <strong>métro parisien</strong>. Située au cœur du 1er arrondissement, à deux pas de l'Hôtel de Ville et du quartier des Halles, elle dessert 5 lignes de métro et permet d'accéder en quelques minutes au complexe RER Châtelet — Les Halles, qui voit passer chacun des 3 RER A, B et D.",
-    "Avec ses dizaines de couloirs souterrains, ses tapis roulants et ses 18+ sorties numérotées, <strong>Châtelet est aussi connue pour sa complexité</strong>. Mais bien orienté, vous traversez tout Paris en quelques minutes : la rive droite, le Marais, l'Île de la Cité, ou la rive gauche, tous accessibles depuis cette plaque tournante."
-  ],
-
-  "faq": [
-    {
-      "question": "Combien de lignes de métro desservent la station Châtelet ?",
-      "answer": "La station Châtelet est desservie par 5 lignes de métro : la ligne 1, la ligne 4, la ligne 7, la ligne 11 (qui y a son terminus historique côté ouest) et la ligne 14. Elle est également reliée par des couloirs souterrains à la gare RER Châtelet — Les Halles, qui dessert les RER A, B et D."
-    },
-    {
-      "question": "Quelle est la différence entre Châtelet et Châtelet — Les Halles ?",
-      "answer": "Châtelet est le nom de la station de métro (5 lignes), tandis que Châtelet — Les Halles désigne la gare RER (3 lignes). Les deux sont reliées par un long couloir souterrain. Comptez 3 à 5 minutes de marche entre les quais métro et RER, selon votre point de départ et la sortie visée."
-    },
-    {
-      "question": "Comment se repérer dans la station Châtelet ?",
-      "answer": "Châtelet possède plus de 18 sorties numérotées et plusieurs niveaux. Suivez les panneaux indiquant la ligne ou la sortie souhaitée dès l'entrée. Pour gagner du temps, mémorisez la sortie la plus proche de votre destination en surface : Hôtel de Ville (sortie 14), Place du Châtelet (sortie 1), rue de Rivoli (sortie 6)."
-    }
-  ],
-
-  "practical_tips": [
-    "Aux heures de pointe (8h-10h et 17h-19h), privilégiez les correspondances par les couloirs périphériques pour éviter les zones les plus chargées.",
-    "Pour rejoindre le RER, suivez systématiquement les panneaux jaunes \"RER A/B/D\". Les couloirs vers Les Halles sont longs : prévoyez 5 minutes de marche supplémentaires.",
-    "Si vous transportez des bagages volumineux, sachez que toutes les sorties ne disposent pas d'ascenseurs. Les sorties 13 et 14 (place du Châtelet) sont les plus accessibles."
-  ],
-
-  "history": {
-    "title": "Une histoire qui suit celle du métro parisien",
-    "paragraphs": [
-      "La station Châtelet est ouverte le 6 août 1900, quelques semaines après l'inauguration de la première ligne du métropolitain entre Porte Maillot et Porte de Vincennes. Elle prend le nom de la place du Châtelet, elle-même héritée de l'ancien Grand Châtelet, forteresse médiévale détruite en 1802.",
-      "Au fil des décennies, la station s'agrandit : la ligne 4 en 1908, la ligne 7 en 1926, la ligne 11 en 1935 (qui y a son terminus ouest), et enfin la ligne 14 en 1998. La connexion avec la gare RER Châtelet — Les Halles, ouverte en 1977, transforme définitivement Châtelet en plus grand pôle d'échanges souterrain d'Europe."
+    "exits": [
+        {
+            "number": "1",
+            "name": "Porte Marguerite de Navarre",
+            "latitude": 48.860433,
+            "longitude": 2.346346,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Forum Porte Berger",
+            "latitude": 48.861386,
+            "longitude": 2.346334,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Forum - Pte Lescot",
+            "latitude": 48.861682,
+            "longitude": 2.347816,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "Forum - Pte Rambuteau",
+            "latitude": 48.862559,
+            "longitude": 2.346932,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Forum - Pte Saint-Eustache",
+            "latitude": 48.86283,
+            "longitude": 2.345538,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "Forum - Pte du Pont Neuf",
+            "latitude": 48.861712,
+            "longitude": 2.345103,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "Forum - Pte du Jour",
+            "latitude": 48.863171,
+            "longitude": 2.343817,
+            "accessible": null
+        },
+        {
+            "number": "8",
+            "name": "Forum - Pte du Louvre",
+            "latitude": 48.862278,
+            "longitude": 2.343215,
+            "accessible": null
+        },
+        {
+            "number": "9",
+            "name": "r. Montorgueil",
+            "latitude": 48.862808,
+            "longitude": 2.346493,
+            "accessible": null
+        },
+        {
+            "number": "10",
+            "name": "pl. Ste-Opportune",
+            "latitude": 48.859564,
+            "longitude": 2.346943,
+            "accessible": null
+        },
+        {
+            "number": "11",
+            "name": "r. de Rivoli",
+            "latitude": 48.859191,
+            "longitude": 2.346225,
+            "accessible": null
+        },
+        {
+            "number": "12",
+            "name": "r. Bertin Poirée",
+            "latitude": 48.85932,
+            "longitude": 2.345065,
+            "accessible": null
+        },
+        {
+            "number": "13",
+            "name": "r. des Lavandières",
+            "latitude": 48.858957,
+            "longitude": 2.346119,
+            "accessible": null
+        },
+        {
+            "number": "14",
+            "name": "r. Saint-Denis",
+            "latitude": 48.85863,
+            "longitude": 2.347131,
+            "accessible": null
+        },
+        {
+            "number": "15",
+            "name": "Théâtre du Châtelet",
+            "latitude": 48.857836,
+            "longitude": 2.346746,
+            "accessible": null
+        },
+        {
+            "number": "16",
+            "name": "pl. du Châtelet",
+            "latitude": 48.85765,
+            "longitude": 2.347294,
+            "accessible": null
+        },
+        {
+            "number": "17",
+            "name": "Théâtre de la Ville",
+            "latitude": 48.857536,
+            "longitude": 2.347867,
+            "accessible": null
+        },
+        {
+            "number": "18",
+            "name": "av. Victoria",
+            "latitude": 48.857298,
+            "longitude": 2.348715,
+            "accessible": null
+        },
+        {
+            "number": "19",
+            "name": "r. Saint-Martin",
+            "latitude": 48.857122,
+            "longitude": 2.349358,
+            "accessible": null
+        }
     ]
-  }
 }
