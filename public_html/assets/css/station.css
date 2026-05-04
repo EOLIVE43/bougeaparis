@@ -1,0 +1,403 @@
+/* ============================================================
+   Page Station — CSS dédié
+   v1 MVP : 8 sections (hero, correspondances, intro, adjacent,
+   history, FAQ, tips, ads)
+   ============================================================ */
+
+/* --- Variables fallback (si pas dans bundle.css) --- */
+.station-page {
+    --station-spacing: 2rem;
+    --station-radius: 12px;
+}
+
+/* ============================================================
+   1. HERO
+   ============================================================ */
+.station-hero {
+    position: relative;
+    margin-bottom: var(--station-spacing);
+    border-radius: var(--station-radius);
+    overflow: hidden;
+    background: var(--color-bg-light, #F4F8F6);
+}
+
+.station-hero__image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    position: relative;
+}
+.station-hero__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.station-hero__placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary, #0F6E56), var(--color-primary-dark, #085041));
+    color: #FFFFFF;
+}
+.station-hero__placeholder-icon {
+    font-size: 4rem;
+    opacity: 0.4;
+}
+
+.station-hero__content {
+    padding: 2rem 1.5rem;
+}
+
+.station-hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.station-line-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+.station-line-badge:hover {
+    transform: scale(1.1);
+}
+
+.station-hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+    color: var(--color-text, #0F1E1A);
+}
+
+.station-hero__tagline {
+    font-size: 1.125rem;
+    color: var(--color-primary, #0F6E56);
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+
+.station-hero__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text, #0F1E1A);
+    margin: 0 0 1rem 0;
+}
+
+.station-hero__address {
+    color: var(--color-text-muted, #5A6B66);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ============================================================
+   Sections génériques
+   ============================================================ */
+.station-section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+.station-section h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0 0 1rem 0;
+    color: var(--color-text, #0F1E1A);
+}
+
+.station-section h3 {
+    font-size: 1.125rem;
+    margin: 1.5rem 0 0.75rem 0;
+    color: var(--color-text, #0F1E1A);
+}
+
+.section-intro {
+    font-size: 1rem;
+    color: var(--color-text-muted, #5A6B66);
+    margin: 0 0 1.5rem 0;
+}
+
+/* ============================================================
+   2. CORRESPONDANCES
+   ============================================================ */
+.correspondances-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .correspondances-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.correspondances-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.correspondance-line-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-text, #0F1E1A);
+    background: var(--color-bg-light, #F4F8F6);
+    transition: background 0.2s ease;
+}
+.correspondance-line-link:hover {
+    background: var(--color-bg-hover, #E8F0EC);
+}
+.correspondance-line-link--inactive {
+    cursor: default;
+    opacity: 0.7;
+}
+.correspondance-line-link--inactive:hover {
+    background: var(--color-bg-light, #F4F8F6);
+}
+
+.correspondance-line-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+.correspondance-line-badge--rer {
+    width: auto;
+    padding: 0 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.correspondance-line-name {
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+}
+.correspondance-line-walking {
+    font-size: 0.8rem;
+    color: var(--color-text-muted, #5A6B66);
+}
+
+.correspondances-note {
+    margin-top: 1rem;
+    color: var(--color-text-muted, #5A6B66);
+    font-style: italic;
+}
+
+/* ============================================================
+   3. INTRO SEO
+   ============================================================ */
+.section-intro-seo p {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+}
+
+/* ============================================================
+   4. STATIONS ADJACENTES
+   ============================================================ */
+.adjacent-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+@media (min-width: 768px) {
+    .adjacent-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+.adjacent-line-block {
+    background: var(--color-bg-light, #F4F8F6);
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+.adjacent-line-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 1rem 0 !important;
+    font-size: 1rem !important;
+}
+
+.adjacent-line-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.adjacent-stations {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.adjacent-station {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid var(--color-border, #E0E6E4);
+}
+
+.adjacent-station--prev {
+    flex-direction: row;
+}
+.adjacent-station--next {
+    flex-direction: row-reverse;
+}
+.adjacent-station--terminus {
+    background: var(--color-bg-hover, #E8F0EC);
+    color: var(--color-text-muted, #5A6B66);
+    font-style: italic;
+    justify-content: center;
+}
+
+.adjacent-station > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.adjacent-station-arrow {
+    font-size: 1.25rem;
+    color: var(--color-primary, #0F6E56);
+}
+
+.adjacent-station-direction {
+    font-size: 0.75rem;
+    color: var(--color-text-muted, #5A6B66);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.adjacent-station-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text, #0F1E1A);
+    text-decoration: none;
+}
+a.adjacent-station-name:hover {
+    color: var(--color-primary, #0F6E56);
+    text-decoration: underline;
+}
+
+/* ============================================================
+   5. HISTORY
+   ============================================================ */
+.section-history p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+    color: var(--color-text, #0F1E1A);
+}
+
+/* ============================================================
+   6. FAQ
+   ============================================================ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faq-item {
+    background: var(--color-bg-light, #F4F8F6);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.faq-item[open] {
+    background: #FFFFFF;
+    border: 1px solid var(--color-border, #E0E6E4);
+}
+
+.faq-question {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-text, #0F1E1A);
+    list-style: none;
+    position: relative;
+}
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem;
+    color: var(--color-primary, #0F6E56);
+    transition: transform 0.2s ease;
+}
+.faq-item[open] .faq-question::after {
+    content: '−';
+}
+
+.faq-answer {
+    padding: 0 1.25rem 1.25rem;
+}
+.faq-answer p {
+    margin: 0;
+    color: var(--color-text, #0F1E1A);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   7. CONSEILS PRATIQUES
+   ============================================================ */
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.tips-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--color-bg-light, #F4F8F6);
+    border-left: 3px solid var(--color-primary, #0F6E56);
+    border-radius: 4px;
+}
+
+.tips-icon {
+    font-size: 1.125rem;
+    flex-shrink: 0;
+}
