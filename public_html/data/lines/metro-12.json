@@ -1,0 +1,410 @@
+{
+    "id": "metro-12",
+    "mode": "metro",
+    "code": "12",
+    "name": "Ligne 12",
+    "color": "#00814F",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Front Populaire",
+    "terminus_b": "Mairie d'Issy",
+    "stations_count": 31,
+    "length_km": 17,
+    "duration_minutes": 42,
+    "automated": false,
+    "opened_year": 1910,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "6 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "5 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Mairie d'Issy",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Corentin Celton",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Versailles",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "2",
+                    "color": "#cead2c"
+                },
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Convention",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Vaugirard",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Volontaires",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Pasteur",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Falguière",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "N",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare Montparnasse",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "N",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Notre-Dame des Champs",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Rennes",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Sèvres - Babylone",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Rue du Bac",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Solférino",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Assemblée Nationale",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Concorde",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Madeleine",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Gare Saint-Lazare",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Trinité - d'Estienne d'Orves",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Notre-Dame-de-Lorette",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Georges",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Pigalle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Abbesses",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Lamarck - Caulaincourt",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Jules Joffrin",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Marcadet - Poissonniers / Eugène Sue",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Marx Dormoy",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de la Chapelle",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Front Populaire",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Aimé Césaire",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mairie d'Aubervilliers",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

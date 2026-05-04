@@ -1,0 +1,416 @@
+{
+    "id": "metro-3",
+    "mode": "metro",
+    "code": "3",
+    "name": "Ligne 3",
+    "color": "#9F9825",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Pont de Levallois – Bécon",
+    "terminus_b": "Gallieni",
+    "stations_count": 25,
+    "length_km": 11.6,
+    "duration_minutes": 30,
+    "automated": false,
+    "opened_year": 1904,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "3 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "4 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "8 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "6 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Pont de Levallois - Bécon",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Anatole France",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Louise Michel",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Champerret",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Péreire Levallois",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Wagram",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Malesherbes",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Villiers",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Europe",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare Saint-Lazare",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Havre - Caumartin",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Opéra",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Quatre Septembre",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Bourse",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Sentier",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Réaumur - Sébastopol",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Arts et Métiers",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Temple",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "République",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Parmentier",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Rue Saint-Maur",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Père Lachaise",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gambetta",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3bis",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gallieni",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Bagnolet",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

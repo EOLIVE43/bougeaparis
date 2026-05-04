@@ -1,0 +1,336 @@
+{
+    "id": "metro-2",
+    "mode": "metro",
+    "code": "2",
+    "name": "Ligne 2",
+    "color": "#0064B0",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Porte Dauphine",
+    "terminus_b": "Nation",
+    "stations_count": 25,
+    "length_km": 12.3,
+    "duration_minutes": 33,
+    "automated": false,
+    "opened_year": 1900,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "6 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "5 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Porte Dauphine",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Victor Hugo",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Charles de Gaulle - Étoile",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Ternes",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Courcelles",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Monceau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Villiers",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Rome",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place de Clichy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Blanche",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pigalle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Anvers",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Barbès - Rochechouart",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "La Chapelle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "H",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "K",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Stalingrad",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Jaurès",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Colonel Fabien",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Belleville",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Couronnes",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Ménilmontant",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Père Lachaise",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Philippe Auguste",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Alexandre Dumas",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Avron",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Nation",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        }
+    ]
+}

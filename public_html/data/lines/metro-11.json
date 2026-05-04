@@ -1,0 +1,255 @@
+{
+    "id": "metro-11",
+    "mode": "metro",
+    "code": "11",
+    "name": "Ligne 11",
+    "color": "#8D5E2A",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Châtelet",
+    "terminus_b": "Rosny – Bois-Perrier",
+    "stations_count": 19,
+    "length_km": 12.2,
+    "duration_minutes": 24,
+    "automated": false,
+    "opened_year": 1935,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "4 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "5 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "4 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Châtelet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Hôtel de Ville",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Rambuteau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Arts et Métiers",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "République",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Goncourt",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Belleville",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pyrénées",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Jourdain",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place des Fêtes",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Télégraphe",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte des Lilas",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3bis",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Mairie des Lilas",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Serge Gainsbourg",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Romainville - Carnot",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Montreuil - Hôpital",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "La Dhuys",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Coteaux Beauclair",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Rosny Bois Perrier",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                }
+            ],
+            "accessible": true
+        }
+    ]
+}

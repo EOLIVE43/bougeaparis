@@ -1,0 +1,84 @@
+{
+    "id": "metro-3bis",
+    "mode": "metro",
+    "code": "3B",
+    "name": "Ligne 3B",
+    "stations_count": 4,
+    "length_km": 1.4,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h27",
+            "saturday": "5h27",
+            "sunday": "5h27"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "3 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "4 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "8 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "6 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Gambetta",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pelleport",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Fargeau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte des Lilas",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        }
+    ],
+    "color": "#98D4E2",
+    "color_text": "#000000",
+    "terminus_a": "Gambetta",
+    "terminus_b": "Porte des Lilas",
+    "automated": false,
+    "opened_year": 1971,
+    "duration_minutes": 3
+}

@@ -1,0 +1,387 @@
+{
+    "id": "metro-13",
+    "mode": "metro",
+    "code": "13",
+    "name": "Ligne 13",
+    "color": "#98D4E2",
+    "color_text": "#000000",
+    "terminus_a": "Saint-Denis – Université / Asnières – Les Courtilles",
+    "terminus_b": "Châtillon – Montrouge",
+    "stations_count": 32,
+    "length_km": 18.1,
+    "duration_minutes": 37,
+    "automated": false,
+    "opened_year": 1911,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "12h00"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "6 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "5 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "7 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Saint-Denis - Université",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Basilique de Saint-Denis / Cité Langevin",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "1",
+                    "color": "#0055C8"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Denis - Porte de Paris",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "8",
+                    "color": "#5291CE"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Carrefour Pleyel",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Mairie de Saint-Ouen",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Garibaldi",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Saint-Ouen",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Guy Môquet",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "La Fourche",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place de Clichy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Liège",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare Saint-Lazare",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Miromesnil",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Champs-Élysées - Clemenceau",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Invalides",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Varenne",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Saint-François-Xavier",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Duroc",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare Montparnasse",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "N",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gaîté",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Pernety",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Plaisance",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Vanves",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Malakoff - Plateau de Vanves",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Malakoff - Rue Etienne Dolet",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Châtillon - Montrouge",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "3b",
+                    "color": "#86BE13"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Asnières - Gennevilliers - Les Courtilles",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Les Agnettes",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Gabriel Péri",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mairie de Clichy",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Clichy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Brochant",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

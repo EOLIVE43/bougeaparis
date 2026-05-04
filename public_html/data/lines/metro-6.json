@@ -1,0 +1,363 @@
+{
+    "id": "metro-6",
+    "mode": "metro",
+    "code": "6",
+    "name": "Ligne 6",
+    "color": "#83C491",
+    "color_text": "#000000",
+    "terminus_a": "Charles de Gaulle – Étoile",
+    "terminus_b": "Nation",
+    "stations_count": 28,
+    "length_km": 13.6,
+    "duration_minutes": 36,
+    "automated": false,
+    "opened_year": 1909,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "5 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "5 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Charles de Gaulle - Étoile",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Kléber",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Boissière",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Trocadéro",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Passy",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Bir-Hakeim",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Dupleix",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "La Motte-Picquet - Grenelle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Cambronne",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Sèvres-Lecourbe",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pasteur",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare Montparnasse",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "N",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Edgar Quinet",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Raspail",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Denfert-Rochereau",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Jacques",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Glacière",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Corvisart",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place d'Italie",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Nationale",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Chevaleret",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Quai de la Gare",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Bercy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Dugommier",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Daumesnil",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Bel-Air",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Picpus",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Nation",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        }
+    ]
+}

@@ -1,0 +1,578 @@
+{
+    "id": "metro-7",
+    "mode": "metro",
+    "code": "7",
+    "name": "Ligne 7",
+    "color": "#F3A4BA",
+    "color_text": "#000000",
+    "terminus_a": "La Courneuve – 8 Mai 1945",
+    "terminus_b": "Villejuif – Louis Aragon / Mairie d'Ivry",
+    "stations_count": 38,
+    "length_km": 18.5,
+    "duration_minutes": 46,
+    "automated": false,
+    "opened_year": 1910,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h28",
+            "saturday": "5h28",
+            "sunday": "5h28"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h17",
+            "saturday": "2h17",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "4 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "6 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "5 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Le Kremlin-Bicêtre",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Villejuif Léo Lagrange",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Villejuif Paul Vaillant-Couturier",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Villejuif - Louis Aragon",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "7",
+                    "color": "#F28E42"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "La Courneuve - 8 Mai 1945",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "1",
+                    "color": "#0055C8"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Fort d'Aubervilliers",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Aubervilliers-Pantin Quatre Chemins",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de la Villette",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Corentin Cariou",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Crimée",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Riquet",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Stalingrad",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Louis Blanc",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Château Landon",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7bis",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "P",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare de l'Est",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "H",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "K",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "P",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Poissonnière",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Cadet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Le Peletier",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Chaussée d'Antin - La Fayette",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Opéra",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pyramides",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Palais Royal - Musée du Louvre",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pont Neuf",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Châtelet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Pont Marie (Cité des Arts)",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Sully - Morland",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Jussieu",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Place Monge",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Censier - Daubenton",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Les Gobelins",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place d'Italie",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Tolbiac",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Maison Blanche",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Porte d'Italie",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Choisy",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                },
+                {
+                    "mode": "T",
+                    "line": "9",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Porte d'Ivry",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                },
+                {
+                    "mode": "T",
+                    "line": "9",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pierre et Marie Curie",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mairie d'Ivry",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

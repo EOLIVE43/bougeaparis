@@ -1,0 +1,352 @@
+{
+    "id": "metro-14",
+    "mode": "metro",
+    "code": "14",
+    "name": "Ligne 14",
+    "color": "#662483",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Saint-Denis – Pleyel",
+    "terminus_b": "Aéroport d'Orly",
+    "stations_count": 21,
+    "length_km": 27.7,
+    "duration_minutes": 40,
+    "automated": true,
+    "opened_year": 1998,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h16",
+            "friday": "2h15",
+            "saturday": "2h17",
+            "sunday": "1h19"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "90 secondes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "5 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "4 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Saint-Denis - Pleyel",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Mairie de Saint-Ouen",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Saint-Ouen",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Porte de Clichy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Pont Cardinet",
+            "correspondences": [
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Gare Saint-Lazare",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Madeleine",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Pyramides",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Châtelet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Gare de Lyon",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "R",
+                    "color": "#F28E42"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Bercy",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Cour Saint-Emilion",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Bibliothèque François Mitterrand",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                },
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Olympiades",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Maison Blanche",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Hôpital Bicêtre",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Villejuif - Gustave Roussy",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "L'Haÿ-les-Roses",
+            "correspondences": [],
+            "accessible": true
+        },
+        {
+            "name": "Chevilly-Larue (Marché International)",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "7",
+                    "color": "#F28E42"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Thiais - Orly (Pont de Rungis)",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Aéroport d’Orly (Terminaux 1-2-3)",
+            "correspondences": [],
+            "accessible": true
+        }
+    ]
+}

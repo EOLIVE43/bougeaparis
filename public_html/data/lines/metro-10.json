@@ -1,0 +1,279 @@
+{
+    "id": "metro-10",
+    "mode": "metro",
+    "code": "10",
+    "name": "Ligne 10",
+    "color": "#E3B32A",
+    "color_text": "#000000",
+    "terminus_a": "Boulogne – Pont de Saint-Cloud",
+    "terminus_b": "Gare d'Austerlitz",
+    "stations_count": 23,
+    "length_km": 11.5,
+    "duration_minutes": 28,
+    "automated": false,
+    "opened_year": 1923,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "4 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "5 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "9 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "6 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Mirabeau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Chardon Lagache",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Michel-Ange - Molitor",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Boulogne Pont de Saint-Cloud",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Boulogne Jean Jaurès",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte d'Auteuil",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Michel-Ange - Auteuil",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Église d'Auteuil",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Javel",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Charles Michels",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Avenue Émile Zola",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "La Motte-Picquet - Grenelle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Ségur",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Duroc",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Vaneau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Sèvres - Babylone",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Mabillon",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Odéon",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Cluny - La Sorbonne",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Maubert - Mutualité",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Cardinal Lemoine",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Jussieu",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare d'Austerlitz",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        }
+    ]
+}

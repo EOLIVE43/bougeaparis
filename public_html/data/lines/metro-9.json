@@ -1,0 +1,533 @@
+{
+    "id": "metro-9",
+    "mode": "metro",
+    "code": "9",
+    "name": "Ligne 9",
+    "color": "#D5C900",
+    "color_text": "#000000",
+    "terminus_a": "Pont de Sèvres",
+    "terminus_b": "Mairie de Montreuil",
+    "stations_count": 37,
+    "length_km": 19.5,
+    "duration_minutes": 49,
+    "automated": false,
+    "opened_year": 1922,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "6 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "5 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Pont de Sèvres",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Billancourt",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Marcel Sembat",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Saint-Cloud",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Exelmans",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Michel-Ange - Molitor",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Michel-Ange - Auteuil",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Jasmin",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Ranelagh",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "La Muette",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Rue de la Pompe",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Trocadéro",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Iéna",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Alma - Marceau",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Franklin D. Roosevelt",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Philippe-du-Roule",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Miromesnil",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Augustin",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Havre - Caumartin",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "J",
+                    "color": "#D5C900"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "L",
+                    "color": "#7A99C9"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Chaussée d'Antin - La Fayette",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Richelieu - Drouot",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Grands Boulevards",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Bonne Nouvelle",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Strasbourg - Saint-Denis",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "4",
+                    "color": "#C04191"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "République",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Oberkampf",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Ambroise",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Voltaire",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Charonne",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Rue des Boulets",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Nation",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Buzenval",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Maraîchers",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Montreuil",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Robespierre",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Croix de Chavaux",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mairie de Montreuil",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

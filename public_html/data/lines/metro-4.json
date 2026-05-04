@@ -1,0 +1,533 @@
+{
+    "id": "metro-4",
+    "mode": "metro",
+    "code": "4",
+    "name": "Ligne 4",
+    "color": "#C04191",
+    "color_text": "#FFFFFF",
+    "terminus_a": "Bagneux – Lucie Aubrac",
+    "terminus_b": "Porte de Clignancourt",
+    "stations_count": 29,
+    "length_km": 13.2,
+    "duration_minutes": 36,
+    "automated": true,
+    "opened_year": 1908,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h30",
+            "saturday": "5h30",
+            "sunday": "5h30"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h15"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "2 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "3 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "5 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "4 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Bagneux - Lucie Aubrac",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Barbara",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mairie de Montrouge",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Porte d'Orléans",
+            "correspondences": [
+                {
+                    "mode": "T",
+                    "line": "3a",
+                    "color": "#FF7E2E"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Alésia",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Mouton-Duvernet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Denfert-Rochereau",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Raspail",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Vavin",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Gare Montparnasse",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "6",
+                    "color": "#83C491"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                },
+                {
+                    "mode": "M",
+                    "line": "13",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "N",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Placide",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Sulpice",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                },
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Germain-des-Prés",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Odéon",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Saint-Michel Notre-Dame",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "10",
+                    "color": "#E3B32A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Cité",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "C",
+                    "color": "#F3D006"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Châtelet",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "1",
+                    "color": "#FFCE00"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "M",
+                    "line": "14",
+                    "color": "#662483"
+                },
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                }
+            ],
+            "accessible": true
+        },
+        {
+            "name": "Les Halles",
+            "correspondences": [
+                {
+                    "mode": "RER",
+                    "line": "A",
+                    "color": "#E2231A"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Etienne Marcel",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Réaumur - Sébastopol",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Strasbourg - Saint-Denis",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "3",
+                    "color": "#9F9825"
+                },
+                {
+                    "mode": "M",
+                    "line": "8",
+                    "color": "#CEADD2"
+                },
+                {
+                    "mode": "M",
+                    "line": "9",
+                    "color": "#D5C900"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Château d'Eau",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Gare de l'Est",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "H",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "K",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "P",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Gare du Nord",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                },
+                {
+                    "mode": "RER",
+                    "line": "B",
+                    "color": "#5291CE"
+                },
+                {
+                    "mode": "RER",
+                    "line": "D",
+                    "color": "#007E49"
+                },
+                {
+                    "mode": "RER",
+                    "line": "E",
+                    "color": "#C28FC4"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "H",
+                    "color": "#98D4E2"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "K",
+                    "color": "#8D5E2A"
+                },
+                {
+                    "mode": "TRANS",
+                    "line": "P",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Barbès - Rochechouart",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Château Rouge",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Marcadet - Poissonniers / Eugène Sue",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Simplon / Albert Kahn",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "12",
+                    "color": "#00814F"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Porte de Clignancourt",
+            "correspondences": [],
+            "accessible": false
+        }
+    ]
+}

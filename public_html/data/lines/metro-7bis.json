@@ -1,0 +1,141 @@
+{
+    "id": "metro-7bis",
+    "mode": "metro",
+    "code": "7B",
+    "name": "Ligne 7B",
+    "stations_count": 8,
+    "length_km": 3.2,
+    "duration_minutes": 8,
+    "schedule": {
+        "first_departure": {
+            "weekday": "5h31",
+            "saturday": "5h31",
+            "sunday": "5h31"
+        },
+        "last_departure": {
+            "weekday": "1h15",
+            "friday": "2h15",
+            "saturday": "2h15",
+            "sunday": "1h14"
+        },
+        "frequency": {
+            "peak_hours": {
+                "label": "Heures de pointe",
+                "times": "7h-9h30 et 17h-20h",
+                "interval": "4 minutes"
+            },
+            "off_peak": {
+                "label": "Heures creuses",
+                "times": "9h30-17h et 20h-23h",
+                "interval": "5 minutes"
+            },
+            "evening": {
+                "label": "Soiree",
+                "times": "23h-1h",
+                "interval": "9 minutes"
+            },
+            "weekend": {
+                "label": "Week-end",
+                "times": "Toute la journee",
+                "interval": "7 minutes"
+            }
+        }
+    },
+    "stations": [
+        {
+            "name": "Louis Blanc",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Jaurès",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                },
+                {
+                    "mode": "M",
+                    "line": "7",
+                    "color": "#F3A4BA"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Bolivar",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "2",
+                    "color": "#0064B0"
+                },
+                {
+                    "mode": "M",
+                    "line": "5",
+                    "color": "#F28E42"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Buttes Chaumont",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Botzaris",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Place des Fêtes",
+            "correspondences": [
+                {
+                    "mode": "M",
+                    "line": "11",
+                    "color": "#8D5E2A"
+                }
+            ],
+            "accessible": false
+        },
+        {
+            "name": "Pré-Saint-Gervais",
+            "correspondences": [],
+            "accessible": false
+        },
+        {
+            "name": "Danube",
+            "correspondences": [],
+            "accessible": false
+        }
+    ],
+    "color": "#83C491",
+    "color_text": "#000000",
+    "terminus_a": "Louis Blanc",
+    "terminus_b": "Pré Saint-Gervais",
+    "automated": false,
+    "opened_year": 1967
+}
