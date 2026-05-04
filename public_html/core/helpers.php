@@ -131,3 +131,52 @@ if (!function_exists('pastilleCorresp')) {
 SVG;
     }
 }
+if (!function_exists('getLineSchedule')) {
+    /**
+     * Charge et retourne les horaires d'une ligne depuis son JSON.
+     *
+     * Réutilise les données déjà saisies dans data/lines/{slug}.json (clé "schedule").
+     * Cache mémoire intra-requête : si on appelle 5 fois pour la même ligne sur
+     * la même page (ex: page station Châtelet avec 5 lignes), un seul read disque.
+     *
+     * Usage :
+     *   $schedule = getLineSchedule('metro-1');
+     *   if ($schedule) {
+     *       echo $schedule['first_departure']['weekday']; // "5h30"
+     *   }
+     *
+     * @param string $lineSlug Slug de la ligne (ex: "metro-1", "metro-14")
+     * @return array<string,mixed>|null Section "schedule" du JSON, ou null si absent/erreur
+     */
+    function getLineSchedule(string $lineSlug): ?array
+    {
+        static $cache = [];
+
+        if (array_key_exists($lineSlug, $cache)) {
+            return $cache[$lineSlug];
+        }
+
+        // Sanitize : on n'accepte que des slugs alphanumériques + tirets
+        if (!preg_match('/^[a-z0-9-]+$/', $lineSlug)) {
+            return $cache[$lineSlug] = null;
+        }
+
+        $path = __DIR__ . '/../data/lines/' . $lineSlug . '.json';
+
+        if (!is_file($path)) {
+            return $cache[$lineSlug] = null;
+        }
+
+        $raw = @file_get_contents($path);
+        if ($raw === false) {
+            return $cache[$lineSlug] = null;
+        }
+
+        $data = json_decode($raw, true);
+        if (!is_array($data) || empty($data['schedule'])) {
+            return $cache[$lineSlug] = null;
+        }
+
+        return $cache[$lineSlug] = $data['schedule'];
+    }
+}
