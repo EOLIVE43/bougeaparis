@@ -3,6 +3,8 @@
 
   "_format": {
     "skip": "bool — si true, ne télécharger aucune image, supprimer celle existante, fallback sur emoji",
+    "local_image": "bool — si true, utilise un fichier WebP uploadé manuellement dans /assets/images/poi/{theme}/{slug}.webp",
+    "local_credit": "object {author, license, license_url, alt} — attribution pour l'image locale",
     "wikimedia_file": "string — nom complet du fichier Commons (sans 'File:'). Bypass la recherche.",
     "wikimedia_query": "string — query custom passée à l'API search Wikimedia",
     "wikimedia_blocklist": "array — termes additionnels à pénaliser dans le scoring"
@@ -24,9 +26,13 @@
   },
 
   "opera-bastille": {
-    "wikimedia_query": "Place de la Bastille opera",
-    "wikimedia_blocklist": ["interior", "stage", "performance", "garnier", "palais garnier", "1944", "1789", "metro", "manifestation", "yellow vest"],
-    "_comment": "v1.4.8 — Plus de fichier forcé (les fichiers candidats ont été supprimés/contestés sur Wikimedia). On laisse la recherche jouer avec query + blocklist serré."
+    "local_image": true,
+    "local_credit": {
+      "author": "BougeaParis",
+      "license": "Photo personnelle",
+      "alt": "Opéra Bastille à Paris, place de la Bastille"
+    },
+    "_comment": "v1.4.9 — Image uploadée manuellement dans public_html/assets/images/poi/monuments/opera-bastille.webp (Wikimedia n'a pas de bonne photo libre)"
   },
 
   "champs-elysees": {
