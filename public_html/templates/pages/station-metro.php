@@ -126,10 +126,6 @@ if (!empty($faq)) {
              width="1200" height="675"
              loading="eager" fetchpriority="high">
       </div>
-    <?php else: ?>
-      <div class="station-hero__placeholder" aria-hidden="true">
-        <span class="station-hero__placeholder-icon">🚇</span>
-      </div>
     <?php endif; ?>
 
     <div class="station-hero__content">
