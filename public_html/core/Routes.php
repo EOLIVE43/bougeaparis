@@ -71,6 +71,8 @@ class Routes
      *   'chatelet', 'la-defense', 'charles-de-gaulle-etoile', 'concorde',
      */
     private static array $activeStationSlugs = [
+       'chatelet',
+   ];
         // Aucune station active pour le moment.
     ];
 
