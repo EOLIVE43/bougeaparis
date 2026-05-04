@@ -110,6 +110,18 @@ if (!empty($faq)) {
 }
 ?>
 
+<?php
+// Breadcrumb visible en haut de page
+$tpl->partial('components/breadcrumb', [
+    'items' => [
+        ['label' => 'Accueil',  'url' => '/'],
+        ['label' => 'Métro',    'url' => '/metro/'],
+        ['label' => 'Stations', 'url' => '/metro/'],
+        ['label' => 'Station ' . $name],
+    ],
+]);
+?>
+
 <div class="container">
 <article class="station-page">
 
