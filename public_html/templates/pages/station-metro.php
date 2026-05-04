@@ -351,15 +351,7 @@ $tpl->partial('components/breadcrumb', [
 <!-- ============================================================
        4bis. HORAIRES PAR LIGNE
        ============================================================ -->
-  <?php
-  echo '<div style="background:#FFE5A0;padding:1rem;margin:1rem 0;border:2px solid red;font-family:monospace;font-size:13px">';
-  echo '<strong>🐛 DEBUG appel partial</strong><br>';
-  echo '$lines isset: ' . (isset($lines) ? 'YES' : 'NO') . '<br>';
-  echo '$lines is_array: ' . (is_array($lines ?? null) ? 'YES, ' . count($lines) . ' items' : 'NO') . '<br>';
-  echo '$name isset: ' . (isset($name) ? 'YES = ' . $name : 'NO') . '<br>';
-  echo '</div>';
-
-  $tpl->partial('components/station/horaires-par-ligne', [
+  <?php $tpl->partial('components/station/horaires-par-ligne', [
       'lines'       => $lines,
       'stationName' => $name,
   ]);
