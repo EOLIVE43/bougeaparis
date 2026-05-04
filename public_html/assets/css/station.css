@@ -570,10 +570,53 @@ a.horaires-card__badge:hover {
         padding: 0.85rem 1rem;
         text-align: left;
         border-bottom: 1px solid var(--color-border, #E0E6E4);
+        vertical-align: middle;
     }
 
     .horaires-table thead th {
         font-weight: 600;
         font-size: 0.85rem;
         text-transform: uppercase;
-        letter-spacing:
+        letter-spacing: 0.5px;
+        color: var(--color-text-muted, #5A6B66);
+    }
+
+    .horaires-table tbody tr:last-child th,
+    .horaires-table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .horaires-table tbody tr:hover {
+        background: var(--color-bg-light, #F4F8F6);
+    }
+
+    .horaires-table__line-cell {
+        width: 80px;
+        text-align: center !important;
+        vertical-align: middle;
+    }
+
+    .horaires-table__badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.25rem;
+        height: 2.25rem;
+        min-width: 2.25rem;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1;
+        text-decoration: none;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        transition: transform 0.15s ease;
+    }
+    a.horaires-table__badge:hover {
+        transform: scale(1.1);
+    }
+
+    .horaires-table .text-muted {
+        color: var(--color-text-muted, #5A6B66);
+    }
+}
