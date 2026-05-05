@@ -791,12 +791,6 @@ a.horaires-card__badge:hover {
     white-space: nowrap;
 }
 
-.sorties-note {
-    margin-top: 1rem;
-    color: var(--color-text-muted, #5A6B66);
-    font-style: italic;
-}
-
 /* ============================================================
    11. POI A PROXIMITE (Wikidata + Wikipedia + Commons)
    ============================================================ */
@@ -1163,5 +1157,44 @@ a.horaires-card__badge:hover {
 .trafic-block__footer-icon {
     font-weight: 700;
     margin-right: 0.25rem;
+}
+
+/* Paragraphe SEO statique sous le bloc trafic (toujours visible) */
+.trafic-info-seo {
+    margin-bottom: 2rem;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--color-primary, #0F6E56);
+    background: var(--color-bg-alt, #F7F9F8);
+    border-radius: 0 var(--radius-md, 8px) var(--radius-md, 8px) 0;
+}
+@media (min-width: 768px) {
+    .trafic-info-seo {
+        padding: 1.1rem 1.5rem;
+    }
+}
+.trafic-info-seo__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text, #1A2B26);
+    line-height: 1.3;
+}
+@media (min-width: 768px) {
+    .trafic-info-seo__title {
+        font-size: 1.15rem;
+    }
+}
+.trafic-info-seo__lead {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-muted, #5A6B66);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+.trafic-info-seo__lead:last-child {
+    margin-bottom: 0;
+}
+.trafic-info-seo__lead strong {
+    color: var(--color-text, #1A2B26);
+    font-weight: 600;
 }
 

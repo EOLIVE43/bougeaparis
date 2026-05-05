@@ -175,14 +175,11 @@ $renderItem = function (array $exit): void {
     </ul>
   <?php endif; ?>
 
-  <p class="sorties-note">
-    <small>
-      Sources : IDFM (Île-de-France Mobilités), GTFS officiel + adresses
-      api-adresse.data.gouv.fr.
-      Les indications PMR ne sont pas toujours renseignées dans les données
-      ouvertes ; en cas de doute, consultez l'application <em>RATP Bonjour</em>
-      ou l'agent à l'accueil.
-    </small>
-  </p>
+  <?php
+  // NOTE : crédit sources retiré ici, désormais centralisé sur la page
+  // dédiée /sources/ (et lien "Sources et données" dans le footer global).
+  // Évite la répétition entre composants pour des sources qui sont les
+  // mêmes pour toutes les pages station/ligne.
+  ?>
 
 </section>

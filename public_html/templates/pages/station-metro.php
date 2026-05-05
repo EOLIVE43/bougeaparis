@@ -294,6 +294,17 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
+       1ter. INFO TRAFIC SEO (paragraphe statique, persistent meme si
+            aucune perturbation, pour ranker sur "trafic", "perturbation",
+            "incident metro {station}" en permanence dans le HTML).
+       ============================================================ -->
+  <?php $tpl->partial('components/station/trafic-info-seo', [
+      'stationName' => $name,
+      'lines'       => $lines,
+  ]);
+  ?>
+
+  <!-- ============================================================
        2. CORRESPONDANCES (métro + RER)
        ============================================================ -->
   <section class="station-section section-correspondances" id="correspondances" aria-labelledby="correspondances-title">
