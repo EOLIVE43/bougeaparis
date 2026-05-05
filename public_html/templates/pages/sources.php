@@ -35,7 +35,7 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
 </nav>
 
 <section class="hero">
-    <div class="container">
+    <div class="container" style="max-width:800px;">
         <h1 class="hero__title">Sources et données utilisées sur Bouge à Paris</h1>
         <p class="hero__subtitle">
             Bouge à Paris s'engage sur la transparence des informations qu'il publie.
