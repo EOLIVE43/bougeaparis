@@ -107,7 +107,7 @@ $count = count($pois);
               <span class="poi-exit__icon" aria-hidden="true">→</span>
               Sortie <strong><?= e((string)$exit['number']) ?></strong>
               <?php if (!empty($exit['name'])): ?>
-                « <?= e($exit['name']) ?> »
+                « <?= e(expandIdfmAbbreviations((string)$exit['name'])) ?> »
               <?php endif; ?>
               ·
               <span class="poi-exit__walk"><?= (int)$exit['walk_minutes'] ?> min à pied</span>

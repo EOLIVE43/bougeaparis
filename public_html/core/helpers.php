@@ -416,3 +416,74 @@ if (!function_exists('getRerTerminus')) {
         return $config[$code] ?? null;
     }
 }
+
+// =============================================================================
+// LIBELLES IDFM (helper d'affichage)
+// =============================================================================
+
+if (!function_exists('expandIdfmAbbreviations')) {
+    /**
+     * Etend les abreviations courantes des libelles IDFM/GTFS en versions
+     * lisibles. Utilise UNIQUEMENT a l'affichage : les fichiers data/ gardent
+     * les libelles bruts du GTFS.
+     *
+     * Exemples :
+     *   "r. de Rivoli"        → "Rue de Rivoli"
+     *   "pl. Ste-Opportune"   → "Place Sainte-Opportune"
+     *   "av. Victoria"        → "Avenue Victoria"
+     *   "bd Sébastopol"       → "Boulevard Sébastopol"
+     *   "Forum - Pte Lescot"  → "Forum - Porte Lescot"
+     *   "St-Denis-Pleyel"     → "Saint-Denis-Pleyel"
+     *   "Mal Foch"            → "Maréchal Foch"
+     *
+     * Ne touche pas aux mots qui ne matchent pas une abreviation cataloguee :
+     *   "Rivoli" reste "Rivoli", "rue de Rivoli" reste "rue de Rivoli".
+     */
+    function expandIdfmAbbreviations(string $text): string
+    {
+        if ($text === '') return $text;
+
+        static $patterns = null, $replacements = null;
+        if ($patterns === null) {
+            // Ordre crucial : Ste avant St, Gnal avant Gal pour eviter
+            // les chevauchements (St matcherait sinon le debut de Ste).
+            $map = [
+                // Voies en bas de casse avec point + espace
+                'r\. '   => 'Rue ',
+                'pl\. '  => 'Place ',
+                'av\. '  => 'Avenue ',
+                'bd\. '  => 'Boulevard ',
+                'bld\. ' => 'Boulevard ',
+                'imp\. ' => 'Impasse ',
+                'sq\. '  => 'Square ',
+                'rte\. ' => 'Route ',
+                // Sans point (rare mais possible : "bd Sebastopol")
+                'bd '    => 'Boulevard ',
+                // Mot a simplement capitaliser
+                'allée ' => 'Allée ',
+                // Voies capitalisees avec point
+                'R\. '   => 'Rue ',
+                'Pl\. '  => 'Place ',
+                'Av\. '  => 'Avenue ',
+                // Prefixes "saints"/Porte avant espace ou tiret (Ste avant St)
+                'Ste(?=[\s\-])' => 'Sainte',
+                'St(?=[\s\-])'  => 'Saint',
+                'Pte(?=[\s\-])' => 'Porte',
+                // Titres (Gnal avant Gal)
+                'Mal(?=[\s\-])'  => 'Maréchal',
+                'Pdt(?=[\s\-])'  => 'Président',
+                'Gnal(?=[\s\-])' => 'Général',
+                'Gal(?=[\s\-])'  => 'Général',
+                'Cdt(?=[\s\-])'  => 'Commandant',
+            ];
+            $patterns     = [];
+            $replacements = [];
+            foreach ($map as $p => $r) {
+                // \b en debut : non-mot ou debut de chaine devant l'abreviation.
+                $patterns[]     = '/\b' . $p . '/u';
+                $replacements[] = $r;
+            }
+        }
+        return preg_replace($patterns, $replacements, $text);
+    }
+}

@@ -96,7 +96,7 @@ $renderItem = function (array $exit): void {
           <?php if ($hasNumber): ?>
             <span class="visually-hidden">Sortie <?= e($number) ?> : </span>
           <?php endif; ?>
-          <span class="sortie-name"><?= e($name) ?></span>
+          <span class="sortie-name"><?= e(expandIdfmAbbreviations($name)) ?></span>
           <?php if ($accessible === true): ?>
             <span class="badge-pmr" title="Sortie accessible aux personnes à mobilité réduite">
               <span aria-hidden="true">♿</span>
@@ -107,7 +107,7 @@ $renderItem = function (array $exit): void {
         </div>
         <?php if ($hasAddress): ?>
           <span class="sortie-address" aria-label="Adresse postale">
-            <?= e($addressFull) ?>
+            <?= e(expandIdfmAbbreviations($addressFull)) ?>
           </span>
         <?php endif; ?>
       </div>

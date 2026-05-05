@@ -40,8 +40,8 @@ foreach ($exits as $e) {
     if (!isset($e['latitude'], $e['longitude'])) continue;
     $exitsForJs[] = [
         'number'  => (string)($e['number']       ?? ''),
-        'name'    => (string)($e['name']         ?? ''),
-        'address' => (string)($e['address_full'] ?? ''),
+        'name'    => expandIdfmAbbreviations((string)($e['name']         ?? '')),
+        'address' => expandIdfmAbbreviations((string)($e['address_full'] ?? '')),
         'lat'     => (float)$e['latitude'],
         'lon'     => (float)$e['longitude'],
     ];
