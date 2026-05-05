@@ -904,6 +904,10 @@ a.horaires-card__badge:hover {
     color: var(--color-text-muted, #5A6B66);
     line-height: 1.5;
     margin: 0;
+    /* S'etire pour combler la hauteur restante : pousse le bloc .poi-exit
+       en bas pour aligner les "Sortie X · Y min" sur la meme ligne entre
+       cartes voisines (.poi-content est deja flex column / flex 1). */
+    flex: 1 1 auto;
 }
 
 .poi-exit {
@@ -914,6 +918,9 @@ a.horaires-card__badge:hover {
     font-weight: 500;
     color: var(--color-text, #1A2B26);
     line-height: 1.4;
+    /* Garantit l'alignement en bas meme si .poi-description est absente
+       (graceful : POI sans extract Wikipedia, fallback sur description Wikidata). */
+    margin-top: auto;
 }
 .poi-exit__icon {
     color: var(--color-primary, #0F6E56);
