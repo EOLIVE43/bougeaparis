@@ -240,10 +240,31 @@
     font-weight: 400;
     word-break: break-word;
 }
-.correspondance-line-terminus span[aria-hidden="true"] {
+.correspondance-line-terminus > span[aria-hidden="true"] {
     color: var(--color-primary, #0F6E56);
     margin: 0 0.15rem;
     font-weight: 500;
+}
+
+/* Variante hierarchique : RER multi-branches, 1 ligne par direction
+   ("Vers l'ouest : ..." / "Vers l'est : ...") */
+.correspondance-line-terminus--multi {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin-top: 0.25rem;
+}
+.correspondance-line-terminus__direction {
+    display: block;
+    line-height: 1.4;
+}
+.correspondance-line-terminus__label {
+    color: var(--color-primary-darker, #04342C);
+    font-weight: 600;
+    margin-right: 0.25rem;
+}
+.correspondance-line-terminus__list {
+    color: var(--color-text-muted, #5A6B66);
 }
 
 .correspondances-note {

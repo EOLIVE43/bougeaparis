@@ -386,6 +386,18 @@ $tpl->partial('components/breadcrumb', [
             <?php foreach ($rer as $r):
               $rerUrl = '/rer/rer-' . strtolower($r['code']) . '/';
               $rerExists = Routes::exists(rtrim($rerUrl, '/'));
+              // Charge terminus depuis config/rer-terminus.php
+              $rerInfo = function_exists('getRerTerminus')
+                  ? getRerTerminus((string)$r['code'])
+                  : null;
+              // Format adaptatif : compact si <=3 terminus total, hierarchique sinon
+              $totalTerminus = 0;
+              if ($rerInfo) {
+                  foreach ($rerInfo['directions'] as $dir) {
+                      $totalTerminus += count($dir['terminus']);
+                  }
+              }
+              $useHierarchical = $totalTerminus >= 4;
             ?>
               <li>
                 <?php if ($rerExists): ?>
@@ -400,6 +412,41 @@ $tpl->partial('components/breadcrumb', [
                   <span class="correspondance-line-name">
                     <?php if (!empty($r['walking_minutes'])): ?>
                       <span class="correspondance-line-walking"><?= (int)$r['walking_minutes'] ?> min à pied</span>
+                    <?php endif; ?>
+                    <?php if ($rerInfo && !$useHierarchical):
+                      // Format compact : "↔ Term_a ⇄ Term_b" (ou "Term_a / Term_a2")
+                      $parts = [];
+                      foreach ($rerInfo['directions'] as $dir) {
+                          $parts[] = implode(' / ', $dir['terminus']);
+                      }
+                    ?>
+                      <small class="correspondance-line-terminus">
+                        <span aria-hidden="true">↔</span>
+                        <?= Template::e($parts[0] ?? '') ?>
+                        <?php if (count($parts) > 1): ?>
+                          <span aria-hidden="true">⇄</span>
+                          <?= Template::e($parts[1]) ?>
+                        <?php endif; ?>
+                      </small>
+                    <?php elseif ($rerInfo && $useHierarchical):
+                      // Format hierarchique : 1 ligne par direction
+                    ?>
+                      <small class="correspondance-line-terminus correspondance-line-terminus--multi">
+                        <?php foreach ($rerInfo['directions'] as $dir):
+                          // Elision francaise : "vers l'X" si label commence par
+                          // voyelle (ouest, est) sinon "vers le X" (nord, sud).
+                          $firstChar = mb_strtolower(mb_substr($dir['label'], 0, 1, 'UTF-8'), 'UTF-8');
+                          $vowelStart = (bool) preg_match('/^[aeiouyhâêîôûäëïöü]/u', $firstChar);
+                          $preposition = $vowelStart ? "l'" : "le ";
+                        ?>
+                          <span class="correspondance-line-terminus__direction">
+                            <span class="correspondance-line-terminus__label">Vers <?= e($preposition) ?><?= Template::e($dir['label']) ?> :</span>
+                            <span class="correspondance-line-terminus__list">
+                              <?= Template::e(implode(', ', $dir['terminus'])) ?>
+                            </span>
+                          </span>
+                        <?php endforeach; ?>
+                      </small>
                     <?php endif; ?>
                   </span>
                 <?php if ($rerExists): ?></a><?php else: ?></span><?php endif; ?>

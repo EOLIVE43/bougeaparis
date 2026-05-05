@@ -386,3 +386,33 @@ if (!function_exists('getLineMeta')) {
         ];
     }
 }
+
+if (!function_exists('getRerTerminus')) {
+    /**
+     * Retourne les terminus d'une ligne RER, structures par direction.
+     *
+     * Utilise la config curatoriale config/rer-terminus.php (libelles GTFS
+     * officiels). Cache memoire intra-requete.
+     *
+     * Usage :
+     *   $info = getRerTerminus('A');
+     *   foreach ($info['directions'] as $dir) {
+     *       echo $dir['label']; // "ouest"
+     *       echo implode(', ', $dir['terminus']); // "Saint-Germain..., Cergy..."
+     *   }
+     *
+     * @param string $code Code RER (A, B, C, D, E)
+     * @return array{directions:array<int,array{label:string,terminus:array<int,string>}>}|null
+     */
+    function getRerTerminus(string $code): ?array
+    {
+        static $config = null;
+        if ($config === null) {
+            $path = __DIR__ . '/../config/rer-terminus.php';
+            $config = is_file($path) ? require $path : [];
+            if (!is_array($config)) $config = [];
+        }
+        $code = strtoupper(trim($code));
+        return $config[$code] ?? null;
+    }
+}
