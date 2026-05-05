@@ -450,9 +450,6 @@ $tpl->partial('components/breadcrumb', [
               </li>
             <?php endforeach; ?>
           </ul>
-          <p class="correspondances-note">
-            <small>Les correspondances RER s'effectuent via les couloirs souterrains menant à la gare Châtelet — Les Halles. Comptez environ 3 à 5 minutes de marche.</small>
-          </p>
         </div>
       <?php endif; ?>
 
