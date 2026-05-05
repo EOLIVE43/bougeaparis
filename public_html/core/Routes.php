@@ -52,6 +52,7 @@ class Routes
         '/contact',
         '/mentions-legales',
         '/confidentialite',
+        '/sources',
         '/auteur/ludo',
         '/auteur/elodie',
 

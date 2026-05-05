@@ -186,6 +186,9 @@ switch ($path) {
     case '/confidentialite':
         (new Template('privacy'))->render();
         break;
+    case '/sources':
+        (new Template('sources'))->render();
+        break;
     case '/auteur/ludo':
         (new Template('author-ludo'))->render();
         break;

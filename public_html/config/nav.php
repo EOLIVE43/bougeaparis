@@ -67,6 +67,7 @@ return [
     'footer_about' => [
         ['label' => 'À propos',          'url' => '/a-propos/'],
         ['label' => 'Contact',           'url' => '/contact/'],
+        ['label' => 'Sources et données', 'url' => '/sources/'],
         ['label' => 'Mentions légales',  'url' => '/mentions-legales/'],
         ['label' => 'Confidentialité',   'url' => '/confidentialite/'],
     ],
