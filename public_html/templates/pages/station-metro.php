@@ -489,6 +489,15 @@ $tpl->partial('components/breadcrumb', [
   <?php endif; ?>
 
   <!-- ============================================================
+       6bis. POI A PROXIMITE (Wikidata + Wikipedia + Commons)
+       ============================================================ -->
+  <?php $tpl->partial('components/station/poi-nearby', [
+      'pois'        => $station['nearby_pois'] ?? [],
+      'stationName' => $name,
+  ]);
+  ?>
+
+  <!-- ============================================================
        7. CONSEILS PRATIQUES
        ============================================================ -->
   <?php if (!empty($tips)): ?>
