@@ -40,9 +40,6 @@
 .station-hero {
     position: relative;
     margin-bottom: var(--station-spacing);
-    border-radius: var(--station-radius);
-    overflow: hidden;
-    background: var(--color-bg-light, #F4F8F6);
 }
 
 .station-hero__image {
@@ -53,6 +50,8 @@
     /* Mobile : aspect-ratio 16:9, max-height 240px (compact) */
     aspect-ratio: 16 / 9;
     max-height: 240px;
+    /* Espace blanc avec le bloc info qui suit (bg page bleed) */
+    margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
     .station-hero__image {
@@ -60,6 +59,7 @@
            pour que H1 + raccourcis restent above the fold */
         aspect-ratio: 3 / 1;
         max-height: 400px;
+        margin-bottom: 1.5rem;
     }
 }
 .station-hero__image picture,
@@ -98,6 +98,8 @@
 
 .station-hero__content {
     padding: 2rem 1.5rem;
+    background: var(--color-bg-light, #F4F8F6);
+    border-radius: var(--station-radius);
 }
 
 .station-hero__badges {
