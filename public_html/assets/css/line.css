@@ -61,7 +61,10 @@
 .breadcrumb{font-size:13px;color:var(--text-muted);margin-bottom:0}
 .breadcrumb a{color:var(--text-muted)}
 .breadcrumb a:hover{color:var(--teal);text-decoration:underline}
-.breadcrumb__separator{margin:0 8px;color:#B5C5C0}
+/* Pas de margin explicite : le gap horizontal vient de .breadcrumb__list
+   (gap:.5rem) et .breadcrumb__item (gap:.5rem) du bundle global. Aligne le
+   rendu sur les pages station (Châtelet ref). */
+.breadcrumb__separator{color:#B5C5C0}
 .breadcrumb__current{color:var(--text);font-weight:600}
 
 /* Layout 2 colonnes */
