@@ -745,7 +745,7 @@ $tpl->partial('components/breadcrumb', [
   if (!empty($station['updated_at'])) {
       $updatedTs = is_int($station['updated_at'])
           ? $station['updated_at']
-          : strtotime((string)$station['updated_at']) ?: null;
+          : (strtotime((string)$station['updated_at']) ?: null);
   }
   if ($updatedTs === null) {
       $stationFilePath = __DIR__ . '/../../data/stations/' . $slug . '.json';
