@@ -735,5 +735,31 @@ $tpl->partial('components/breadcrumb', [
     </section>
   <?php endif; ?>
 
+  <!-- ============================================================
+       8. DATE DE MISE A JOUR (signal de fraicheur Discover).
+            Source : filemtime() sur le JSON station si pas de champ
+            'updated_at' explicite dans data/stations/{slug}.json.
+       ============================================================ -->
+  <?php
+  $updatedTs = null;
+  if (!empty($station['updated_at'])) {
+      $updatedTs = is_int($station['updated_at'])
+          ? $station['updated_at']
+          : strtotime((string)$station['updated_at']) ?: null;
+  }
+  if ($updatedTs === null) {
+      $stationFilePath = __DIR__ . '/../../data/stations/' . $slug . '.json';
+      if (is_file($stationFilePath)) {
+          $updatedTs = filemtime($stationFilePath);
+      }
+  }
+  if ($updatedTs):
+  ?>
+    <p class="station-last-updated">
+      Page mise à jour le
+      <time datetime="<?= e(date('Y-m-d', $updatedTs)) ?>"><?= e(dateFr($updatedTs)) ?></time>.
+    </p>
+  <?php endif; ?>
+
 </article>
 </div>

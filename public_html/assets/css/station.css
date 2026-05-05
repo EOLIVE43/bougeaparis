@@ -1655,3 +1655,21 @@ a.horaires-card__badge:hover {
     margin: 0;
 }
 
+/* ============================================================
+   16. DATE DE MISE A JOUR (signal de fraicheur Discover).
+       Petit, discret, aligne a droite ; centre sur mobile.
+   ============================================================ */
+.station-last-updated {
+    margin: 2.5rem 0 0;
+    text-align: right;
+    font-size: 0.85em;
+    color: var(--color-text-muted, #5A6B66);
+    font-style: italic;
+}
+@media (max-width: 599px) {
+    .station-last-updated {
+        text-align: center;
+    }
+}
+
+
