@@ -481,6 +481,23 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
+       4quater. CARTE INTERACTIVE (Leaflet + OpenStreetMap, lazy-load)
+                Affichee uniquement au clic du bouton, ne charge ni
+                Leaflet JS/CSS ni les tuiles tant que l'utilisateur
+                n'a pas demande explicitement le plan.
+       ============================================================ -->
+  <?php $tpl->partial('components/station/carte', [
+      'station' => [
+          'lat'  => $station['latitude']  ?? null,
+          'lon'  => $station['longitude'] ?? null,
+          'name' => $name,
+      ],
+      'exits' => $station['exits']        ?? [],
+      'pois'  => $station['nearby_pois']  ?? [],
+  ]);
+  ?>
+
+  <!-- ============================================================
        5. HISTOIRE
        ============================================================ -->
   <?php if (!empty($history['paragraphs'])): ?>
