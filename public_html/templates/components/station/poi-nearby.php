@@ -126,15 +126,11 @@ $count = count($pois);
     <?php endforeach; ?>
   </ul>
 
-  <p class="poi-note">
-    <small>
-      Sources : <a href="https://www.wikidata.org/" target="_blank" rel="noopener noreferrer">Wikidata</a>
-      (sélection automatique par notoriété),
-      <a href="https://fr.wikipedia.org/" target="_blank" rel="noopener noreferrer">Wikipédia FR</a>
-      (descriptions),
-      <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
-      (photos). Temps à pied estimés à 80 m/min depuis la sortie de métro la plus proche.
-    </small>
-  </p>
+  <?php
+  // NOTE : crédit sources retiré ici, désormais centralisé dans le footer global
+  // (templates/layout/footer.php → bloc .site-footer__sources). Cela évite
+  // la duplication entre pages station/ligne/etc. qui utilisent toutes les
+  // mêmes sources ouvertes (IDFM, BAN, Wikidata, Wikipedia, Commons).
+  ?>
 
 </section>

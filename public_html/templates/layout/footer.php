@@ -43,6 +43,31 @@ $year = date('Y');
                 </p>
             </div>
         </div>
+        <div class="site-footer__sources">
+            <h2 class="site-footer__sources-heading">Sources &amp; données</h2>
+            <ul class="site-footer__sources-list">
+                <li>
+                    <strong>Transport et horaires</strong> :
+                    <a href="https://transport.data.gouv.fr/datasets/reseau-urbain-et-interurbain-dile-de-france-mobilites"
+                       rel="noopener noreferrer" target="_blank">Île-de-France Mobilités</a>
+                    &mdash; GTFS officiel, licence ODbL.
+                </li>
+                <li>
+                    <strong>Adresses postales</strong> :
+                    <a href="https://adresse.data.gouv.fr/"
+                       rel="noopener noreferrer" target="_blank">Base Adresse Nationale</a>
+                    via api-adresse.data.gouv.fr &mdash; licence Etalab 2.0.
+                </li>
+                <li>
+                    <strong>Monuments et sites notables</strong> :
+                    <a href="https://www.wikidata.org/" rel="noopener noreferrer" target="_blank">Wikidata</a>,
+                    <a href="https://fr.wikipedia.org/" rel="noopener noreferrer" target="_blank">Wikipédia</a>
+                    et
+                    <a href="https://commons.wikimedia.org/" rel="noopener noreferrer" target="_blank">Wikimedia Commons</a>
+                    &mdash; licences CC0 et CC-BY-SA.
+                </li>
+            </ul>
+        </div>
         <div class="site-footer__legal">
             <p class="site-footer__notice"><?= e($site['non_official_notice']) ?></p>
             <p class="site-footer__copy">&copy; <?= $year ?> <?= e($site['brand_name']) ?> &mdash; Tous droits réservés.</p>

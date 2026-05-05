@@ -44,7 +44,9 @@ const WP_SUMMARY_URL = 'https://fr.wikipedia.org/api/rest_v1/page/summary/';
 const COMMONS_FILE   = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
 
 const SEARCH_RADIUS_KM    = 0.8;        // rayon SPARQL
-const TOP_N               = 10;         // top retenu par station
+const TOP_N               = 12;         // top retenu par station
+const MIN_POIS            = 6;          // si moins, on n'ecrit pas (section pas affichee)
+const SPARQL_LIMIT        = 40;         // marge pour absorber les dedup
 const PROXIMITY_DEDUP_M   = 50;         // 2 POIs a < N m = doublon thematique
 const WALK_M_PER_MIN      = 80;         // vitesse pieton parisien
 const SPARQL_SLEEP_US     = 250_000;    // 250 ms entre 2 SPARQL (~4 req/s)
@@ -113,6 +115,9 @@ function save_cache(array $cache): void {
 /** Heuristique de categorisation depuis label + description. */
 function categorize(string $label, string $desc): string {
     $s = mb_strtolower($label . ' ' . $desc, 'UTF-8');
+    // Ordre IMPORTANT : les regles plus specifiques d'abord pour eviter
+    // qu'un mot generique (ex. "ile " dans "ile de la Cite" qui apparait
+    // dans la description d'un hopital) capture en premier.
     $rules = [
         'cathédrale'                 => 'cathédrale',
         'basilique'                  => 'basilique',
@@ -120,22 +125,22 @@ function categorize(string $label, string $desc): string {
         'église'                     => 'église',
         'mosquée'                    => 'mosquée',
         'synagogue'                  => 'synagogue',
+        'hôpital|hôtel-dieu'         => 'hôpital',
+        'mairie|hôtel de ville'      => 'mairie',
+        'palais|château'             => 'palais',
         'musée|centre.+art|centre culturel' => 'musée',
         'théâtre|opéra'              => 'théâtre',
+        'gare '                      => 'gare',
         'pont|passerelle'            => 'pont',
         'tour '                      => 'tour',
         'place '                     => 'place',
-        'île '                       => 'île',
         'jardin|parc '               => 'jardin',
-        'palais|château'             => 'palais',
-        'mairie|hôtel de ville'      => 'mairie',
-        'gare '                      => 'gare',
         'magasin|grand magasin'      => 'commerce',
-        'hôpital|hôtel-dieu'         => 'hôpital',
         'librairie'                  => 'librairie',
         'café '                      => 'café',
         'fontaine'                   => 'fontaine',
         'statue'                     => 'statue',
+        'île '                       => 'île',
         'cité|cite'                  => 'quartier',
         'monument'                   => 'monument',
     ];
@@ -168,6 +173,7 @@ function http_get(string $url, int $timeout = 20): ?string {
 /** Lance la requete SPARQL Wikidata centree sur (lat, lon). */
 function sparql_query_around(float $lat, float $lon): array {
     $radius = SEARCH_RADIUS_KM;
+    $limit  = SPARQL_LIMIT;
     $q = <<<SPARQL
 SELECT DISTINCT ?item ?itemLabel ?itemDescription ?coord ?image ?wparticle ?sitelinks
 WHERE {
@@ -188,7 +194,7 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "fr,en" . }
 }
 ORDER BY DESC(?sitelinks)
-LIMIT 30
+LIMIT $limit
 SPARQL;
 
     $ch = curl_init(SPARQL_URL . '?query=' . urlencode($q));
@@ -317,9 +323,14 @@ function enrich_poi(array $b, array &$cache, int &$apiCalls): array {
     $wpurl    = $b['wparticle']['value'] ?? null;
     $wpTitle  = $wpurl ? wikipedia_title_from_url($wpurl) : null;
 
-    // Cache hit ?
+    // Cache hit : on retourne mais on RECALCULE la category dynamiquement
+    // (les regles heuristiques peuvent evoluer entre 2 versions du script,
+    // on ne veut pas un cache stale sur ce champ).
     if (isset($cache[$id]) && !empty($cache[$id]['wikipedia_extract'])) {
-        return $cache[$id];
+        $entry = $cache[$id];
+        $entry['category'] = categorize($entry['name'] ?? '', $entry['description'] ?? '');
+        $cache[$id] = $entry; // re-persist la nouvelle category
+        return $entry;
     }
 
     $extract = null; $thumbUrl = null;
@@ -391,6 +402,13 @@ function build_nearby_pois(array $stationJson, array &$cache, int &$apiCalls): a
 
     $top = select_top_pois($bindings, TOP_N);
     log_info(sprintf('  Apres dedup id+description+proximite (50m) : %d', count($top)));
+
+    // Fallback : si moins de MIN_POIS POIs apres filtrage, on n'ecrit pas la
+    // section (la station n'a pas assez de richesse touristique notable).
+    if (count($top) < MIN_POIS) {
+        log_info(sprintf('  < %d POIs (MIN_POIS), section non emise', MIN_POIS));
+        return $info;
+    }
 
     $pois = [];
     foreach ($top as $b) {

@@ -193,6 +193,12 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .site-footer__list a:hover { color: var(--color-primary-bg); }
 .site-footer__contact { margin-top: var(--sp-4); font-size: var(--fs-sm); }
 .site-footer__contact a { color: var(--color-primary-bg); }
+.site-footer__sources { border-top: 1px solid rgba(255,255,255,.1); padding-top: var(--sp-5); margin-top: var(--sp-6); margin-bottom: var(--sp-4); font-size: .85em; color: #8A9691; }
+.site-footer__sources-heading { font-size: var(--fs-xs); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 var(--sp-2) 0; color: #B8C2BE; }
+.site-footer__sources-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--sp-1); line-height: 1.55; }
+.site-footer__sources-list strong { color: #B8C2BE; font-weight: 600; }
+.site-footer__sources-list a { color: var(--color-primary-bg, #E1F5EE); text-decoration: underline; text-underline-offset: 2px; }
+.site-footer__sources-list a:hover { text-decoration: none; }
 .site-footer__legal { border-top: 1px solid rgba(255,255,255,.1); padding-top: var(--sp-6); display: flex; flex-direction: column; gap: var(--sp-2); font-size: var(--fs-xs); color: #8A9691; }
 .site-footer__notice { margin: 0; font-style: italic; }
 .site-footer__copy { margin: 0; }
