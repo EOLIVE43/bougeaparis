@@ -552,21 +552,43 @@ $tpl->partial('components/breadcrumb', [
 
   <!-- ============================================================
        4. STATIONS ADJACENTES (par ligne)
+            Defensive : pre-filtre les lignes qui ont au moins une station
+            adjacente (prev OU next). Skip toute la section si aucune ligne
+            desservie n'a de data utilisable (cas station avec adjacent_stations
+            absent/malforme). Pluralisation correcte 1 ligne / N lignes.
        ============================================================ -->
-  <?php if (!empty($adjacent)): ?>
+  <?php
+  $adjacentBlocks = [];
+  if (!empty($adjacent)) {
+      foreach ($lines as $line) {
+          $adj = $adjacent[$line['slug']] ?? null;
+          if (!$adj) continue;
+          $prev = $adj['previous'] ?? null;
+          $next = $adj['next']     ?? null;
+          if (!$prev && !$next) continue; // skip H3 vide
+          $adjacentBlocks[] = ['line' => $line, 'prev' => $prev, 'next' => $next];
+      }
+  }
+  $adjacentCount = count($adjacentBlocks);
+  ?>
+  <?php if ($adjacentCount > 0): ?>
     <section class="station-section section-adjacent" id="stations-adjacentes" aria-labelledby="adjacent-title">
 
       <h2 id="adjacent-title">Stations adjacentes à <?= Template::e($name) ?></h2>
 
       <p class="section-intro">
-        Voici les stations directement avant et après <?= Template::e($name) ?> sur chacune des <?= count($lines) ?> lignes desservies.
+        <?php if ($adjacentCount === 1): ?>
+          Voici les stations directement avant et après <?= Template::e($name) ?> sur la ligne desservie.
+        <?php else: ?>
+          Voici les stations directement avant et après <?= Template::e($name) ?> sur chacune des <?= (int)$adjacentCount ?> lignes desservies.
+        <?php endif; ?>
       </p>
 
       <div class="adjacent-grid">
-        <?php foreach ($lines as $line):
-          $lineSlug = $line['slug'];
-          $adj = $adjacent[$lineSlug] ?? null;
-          if (!$adj) continue;
+        <?php foreach ($adjacentBlocks as $block):
+          $line = $block['line'];
+          $prev = $block['prev'];
+          $next = $block['next'];
         ?>
           <div class="adjacent-line-block">
             <h3 class="adjacent-line-title">
@@ -578,11 +600,6 @@ $tpl->partial('components/breadcrumb', [
             </h3>
 
             <div class="adjacent-stations">
-              <?php
-                $prev = $adj['previous'] ?? null;
-                $next = $adj['next']     ?? null;
-              ?>
-
               <?php if ($prev):
                 $prevUrl = '/metro/station/' . $prev['slug'] . '/';
               ?>
