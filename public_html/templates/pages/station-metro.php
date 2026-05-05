@@ -278,6 +278,22 @@ $tpl->partial('components/breadcrumb', [
   </section>
 
   <!-- ============================================================
+       1bis. TRAFIC TEMPS REEL (donnees IDFM PRIM, cache serveur 5 min)
+            Bandeau adaptatif : mince et vert si trafic normal,
+            bloc complet et coloré si au moins une perturbation.
+       ============================================================ -->
+  <?php
+  $traffic = function_exists('getDisruptionsForStation')
+      ? getDisruptionsForStation($lines)
+      : null;
+  $tpl->partial('components/station/trafic-temps-reel', [
+      'traffic'     => $traffic,
+      'stationName' => $name,
+      'allLines'    => $lines,
+  ]);
+  ?>
+
+  <!-- ============================================================
        2. CORRESPONDANCES (métro + RER)
        ============================================================ -->
   <section class="station-section section-correspondances" id="correspondances" aria-labelledby="correspondances-title">

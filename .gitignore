@@ -3,7 +3,10 @@
 # =============================================================================
 
 # SECRETS - Ne JAMAIS commiter ces fichiers
+# (le pattern secrets.* couvre aussi secrets.php.rtf, secrets.bak,
+# secrets.local.php, etc. — gitignore ne supporte pas les commentaires inline)
 public_html/config/secrets.php
+public_html/config/secrets.*
 .env
 .env.local
 *.secret

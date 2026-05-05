@@ -13,12 +13,17 @@
  * avec le contenu ci-dessous (en remplacant les valeurs).
  */
 
+// Convention : nom des cles ALIGNE sur les variables d'environnement
+// (utilisees par le workflow GitHub Actions et scripts/generate-article.php
+// via getenv('PRIM_API_KEY')). Ne pas utiliser snake_case ici.
 return [
     // Cle API PRIM (Ile-de-France Mobilites)
     // A obtenir sur : https://prim.iledefrance-mobilites.fr
-    'prim_api_key' => 'COLLER_ICI_VOTRE_CLE_API_PRIM',
+    'PRIM_API_KEY' => 'COLLER_ICI_VOTRE_CLE_API_PRIM',
 
-    // Cle API Navitia (optionnel - si vous utilisez Navitia en plus de PRIM)
-    // A obtenir sur : https://navitia.io
-    'navitia_api_key' => '',
+    // Cle API Anthropic (utilisee par scripts/generate-article.php)
+    'ANTHROPIC_API_KEY' => '',
+
+    // Cle API Navitia (optionnel)
+    'NAVITIA_API_KEY' => '',
 ];

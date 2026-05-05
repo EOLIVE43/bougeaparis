@@ -180,6 +180,125 @@ if (!function_exists('getLineSchedule')) {
         return $cache[$lineSlug] = $data['schedule'];
     }
 }
+
+// =============================================================================
+// TRAFIC TEMPS REEL (PRIM IDFM)
+// =============================================================================
+
+if (!function_exists('getDisruptionsForStation')) {
+    /**
+     * Recupere les perturbations PRIM impactant les lignes desservant une station.
+     *
+     * Pipeline (avec cache 5 min via PrimClient) :
+     *   1. Lit la cle PRIM depuis secrets.php (PRIM_API_KEY) ou getenv.
+     *   2. PrimClient::fetchDisruptions() avec cache fichier 5 min
+     *      dans public_html/api/cache/prim/.
+     *   3. DisruptionFilter::filter() -> garde les actives + scope editorial.
+     *   4. DisruptionFormatter::groupByLine() -> indexe par slug "mode-ligne-X".
+     *   5. Filtre par les codes de lignes de la station (ex. ['1','4','7','11','14']
+     *      pour Chatelet).
+     *
+     * Graceful degradation : si la cle est absente, l'API plante et que le
+     * cache n'existe pas, retourne null. Le composant qui consomme verifie
+     * et n'affiche rien dans ce cas.
+     *
+     * @param array<int,array{code:string,color?:string,text_color?:string}> $stationLines
+     *        Le champ $station['lines'] du JSON station.
+     * @return array{has_disruption:bool,max_severity:?string,
+     *               lines_with_disruptions:array,lines_normal:array,
+     *               fetched_at:?string}|null
+     */
+    function getDisruptionsForStation(array $stationLines): ?array
+    {
+        if (empty($stationLines)) return null;
+
+        // 1. Cle (secrets.php > env), convention PRIM_API_KEY uppercase
+        //    alignee avec scripts/generate-article.php et le workflow GitHub.
+        $key = null;
+        $secretsPath = __DIR__ . '/../config/secrets.php';
+        if (is_file($secretsPath)) {
+            $secrets = @include $secretsPath;
+            if (is_array($secrets)) {
+                $key = $secrets['PRIM_API_KEY'] ?? $secrets['prim_api_key'] ?? null;
+            }
+        }
+        if (!$key) $key = getenv('PRIM_API_KEY') ?: null;
+        if (!$key || $key === 'COLLER_ICI_VOTRE_CLE_API_PRIM') {
+            return null; // graceful : pas de bloc trafic
+        }
+
+        // 2. PrimClient + filter/formatter (lazy require)
+        require_once __DIR__ . '/PrimClient.php';
+        require_once __DIR__ . '/DisruptionFilter.php';
+        require_once __DIR__ . '/DisruptionFormatter.php';
+
+        $cacheDir = __DIR__ . '/../api/cache/prim';
+        try {
+            $client = new PrimClient($key, $cacheDir);
+            $raw = $client->fetchDisruptions();
+        } catch (\Throwable $e) {
+            return null;
+        }
+        if (!is_array($raw)) return null;
+
+        // 3. Filtre + groupByLine
+        $networks = require __DIR__ . '/../config/networks.php';
+        $filter = new DisruptionFilter($networks);
+        $filtered = $filter->filter($raw);
+        $formatter = new DisruptionFormatter($networks);
+        $byLine = $formatter->groupByLine($filtered);
+
+        // 4. Filtrer aux lignes de la station. Slug PRIM = "metro/ligne-{code}",
+        //    cle dans groupByLine = "metro-ligne-{code}" (le "/" devient "-").
+        $linesWithDisruptions = [];
+        $linesNormal = [];
+        $maxSeverityWeight = 0;
+        $maxSeverity = null;
+        $severityWeights = $networks['severity_weight'] ?? [
+            'BLOQUANTE' => 30, 'PERTURBEE' => 20, 'INFORMATION' => 10,
+        ];
+
+        foreach ($stationLines as $line) {
+            $code = (string)($line['code'] ?? '');
+            if ($code === '') continue;
+            $primKey = 'metro-ligne-' . strtolower($code);
+            $entry = $byLine[$primKey] ?? null;
+            if ($entry !== null && !empty($entry['disruptions'])) {
+                // Dedup PRIM peut emettre 2 disruptions au meme titre/severite
+                $seen = [];
+                $unique = [];
+                foreach ($entry['disruptions'] as $d) {
+                    $sig = ($d['severity'] ?? '') . '|' . ($d['title'] ?? '');
+                    if (isset($seen[$sig])) continue;
+                    $seen[$sig] = true;
+                    $unique[] = $d;
+                    $w = (int)($severityWeights[$d['severity'] ?? ''] ?? 0);
+                    if ($w > $maxSeverityWeight) {
+                        $maxSeverityWeight = $w;
+                        $maxSeverity = $d['severity'] ?? null;
+                    }
+                }
+                $linesWithDisruptions[] = [
+                    'code'        => $code,
+                    'color'       => (string)($line['color'] ?? '#888'),
+                    'text_color'  => (string)($line['text_color'] ?? '#fff'),
+                    'disruptions' => $unique,
+                ];
+            } else {
+                $linesNormal[] = $code;
+            }
+        }
+
+        return [
+            'has_disruption'         => !empty($linesWithDisruptions),
+            'max_severity'           => $maxSeverity,
+            'lines_with_disruptions' => $linesWithDisruptions,
+            'lines_normal'           => $linesNormal,
+            'fetched_at'             => date('c'),
+        ];
+    }
+}
+
 if (!function_exists('getLineSchedule')) {
     /**
      * Charge et retourne les horaires d'une ligne depuis son JSON.
