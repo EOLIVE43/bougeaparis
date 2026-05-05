@@ -15,24 +15,24 @@ $year = date('Y');
                 </div>
                 <p class="site-footer__baseline"><?= e($site['description']) ?></p>
             </div>
-            <div class="site-footer__col">
-                <h2 class="site-footer__heading">Découvrir</h2>
+            <nav class="site-footer__col" aria-label="Découvrir">
+                <p class="site-footer__heading">Découvrir</p>
                 <ul class="site-footer__list">
                     <?php foreach ($nav['footer_discover'] as $link): ?>
                     <li><a href="<?= e($link['url']) ?>"><?= e($link['label']) ?></a></li>
                     <?php endforeach; ?>
                 </ul>
-            </div>
-            <div class="site-footer__col">
-                <h2 class="site-footer__heading">Outils</h2>
+            </nav>
+            <nav class="site-footer__col" aria-label="Outils">
+                <p class="site-footer__heading">Outils</p>
                 <ul class="site-footer__list">
                     <?php foreach ($nav['footer_tools'] as $link): ?>
                     <li><a href="<?= e($link['url']) ?>"><?= e($link['label']) ?></a></li>
                     <?php endforeach; ?>
                 </ul>
-            </div>
-            <div class="site-footer__col">
-                <h2 class="site-footer__heading">À propos</h2>
+            </nav>
+            <nav class="site-footer__col" aria-label="À propos">
+                <p class="site-footer__heading">À propos</p>
                 <ul class="site-footer__list">
                     <?php foreach ($nav['footer_about'] as $link): ?>
                     <li><a href="<?= e($link['url']) ?>"><?= e($link['label']) ?></a></li>
@@ -41,7 +41,7 @@ $year = date('Y');
                 <p class="site-footer__contact">
                     <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>
                 </p>
-            </div>
+            </nav>
         </div>
         <div class="site-footer__legal">
             <p class="site-footer__notice"><?= e($site['non_official_notice']) ?></p>
