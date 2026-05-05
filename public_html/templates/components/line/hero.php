@@ -124,10 +124,10 @@ $buildSrcset = function (array $widthMap): string {
     </div>
   </div>
 
-  <a href="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" class="hero__cta">
+  <span class="hero__cta hero__cta--inactive" data-future-url="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" aria-disabled="true">
     <span class="hero__cta-icon" aria-hidden="true">🗺️</span>
     Calculer un itinéraire sur la ligne <?= htmlspecialchars($line['code']) ?>
-  </a>
+  </span>
 
   <div class="hero__meta">
     <div class="hero__meta-item">

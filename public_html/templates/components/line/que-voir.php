@@ -80,23 +80,6 @@ foreach ($pois as $theme) {
     object-position: center;
 }
 .poi-card--with-image .poi-card__icon { display: none; }
-.poi-card__credit {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid var(--color-border, #E0E6E4);
-    font-size: 0.75rem;
-    color: var(--color-text-muted, #5A6B66);
-    line-height: 1.4;
-}
-.poi-card__credit a {
-    color: var(--color-text-muted, #5A6B66);
-    text-decoration: underline;
-    text-decoration-color: rgba(90, 107, 102, 0.3);
-}
-.poi-card__credit a:hover {
-    color: var(--color-primary, #0F6E56);
-    text-decoration-color: currentColor;
-}
 </style>
 <?php endif; ?>
 
@@ -168,21 +151,6 @@ foreach ($pois as $theme) {
                 <span class="poi-card__station-icon" aria-hidden="true">🚇</span>
                 <span>Station&nbsp;: <span class="poi-card__station-name"><?= htmlspecialchars($poi['station']) ?></span></span>
               </div>
-              <?php if ($hasImage && !empty($poi['image']['credit']['author'])): ?>
-                <div class="poi-card__credit">
-                  Photo&nbsp;:
-                  <?php if (!empty($poi['image']['credit']['wikimedia_url'])): ?>
-                    <a href="<?= htmlspecialchars($poi['image']['credit']['wikimedia_url']) ?>" rel="nofollow noopener" target="_blank">
-                      <?= htmlspecialchars($poi['image']['credit']['author']) ?>
-                    </a>
-                  <?php else: ?>
-                    <?= htmlspecialchars($poi['image']['credit']['author']) ?>
-                  <?php endif; ?>
-                  <?php if (!empty($poi['image']['credit']['license'])): ?>
-                    · <?= htmlspecialchars($poi['image']['credit']['license']) ?>
-                  <?php endif; ?>
-                </div>
-              <?php endif; ?>
             </div>
 
           </article>
@@ -191,5 +159,11 @@ foreach ($pois as $theme) {
 
     </div>
   <?php endforeach; ?>
+
+  <?php if ($hasAnyImage): ?>
+    <p class="que-voir__credits-link">
+      Crédits photographiques : <a href="/sources/#credits-photos">voir nos sources →</a>
+    </p>
+  <?php endif; ?>
 
 </section>

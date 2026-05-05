@@ -38,9 +38,9 @@ function routeSlug($from, $to) {
       <div class="itineraire-calc__title">Calculer un itinéraire personnalisé</div>
       <div class="itineraire-calc__subtitle">De n'importe quelle adresse vers une station de la ligne <?= htmlspecialchars($line['code']) ?></div>
     </div>
-    <a href="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" class="itineraire-calc__cta">
+    <span class="itineraire-calc__cta itineraire-calc__cta--inactive" data-future-url="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" aria-disabled="true">
       Calculer →
-    </a>
+    </span>
   </div>
 
   <!-- Top itinéraires populaires -->
@@ -48,7 +48,7 @@ function routeSlug($from, $to) {
 
   <div class="itineraire-grid">
     <?php foreach ($popularRoutes as $route): ?>
-      <a href="/itineraires/<?= routeSlug($route['from']['slug'], $route['to']['slug']) ?>/" class="itineraire-card">
+      <span class="itineraire-card itineraire-card--inactive" data-future-url="/itineraires/<?= routeSlug($route['from']['slug'], $route['to']['slug']) ?>/" aria-disabled="true">
 
         <!-- Trajet : départ → arrivée -->
         <div class="itineraire-card__route">
@@ -90,7 +90,7 @@ function routeSlug($from, $to) {
           <div class="itineraire-card__description"><?= htmlspecialchars($route['description']) ?></div>
         <?php endif; ?>
 
-      </a>
+      </span>
     <?php endforeach; ?>
   </div>
 
@@ -128,9 +128,9 @@ function routeSlug($from, $to) {
 
   <!-- Lien vers tous les itinéraires -->
   <div class="itineraires__more">
-    <a href="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" class="itineraires__more-link">
+    <span class="itineraires__more-link itineraires__more-link--inactive" data-future-url="/itineraires/?line=<?= htmlspecialchars($line['code']) ?>" aria-disabled="true">
       Voir tous les itinéraires sur la ligne <?= htmlspecialchars($line['code']) ?> →
-    </a>
+    </span>
   </div>
 
 </section>

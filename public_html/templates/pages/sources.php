@@ -151,6 +151,92 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
             </li>
         </ul>
 
+        <h2 id="credits-photos">Crédits photographiques</h2>
+        <p>
+            Toutes les photos affichées sur Bouge à Paris proviennent de
+            <strong>Wikimedia Commons</strong>, sous licences libres (CC0, CC BY,
+            CC BY-SA). La liste ci-dessous recense chaque image avec son auteur,
+            sa licence et un lien direct vers la page Wikimedia source.
+        </p>
+
+        <?php
+        // Aggregation dynamique des credits depuis tous les JSON lignes/stations.
+        // Le user voit donc une liste qui s'enrichit automatiquement a chaque
+        // nouvelle ligne/station livree, sans intervention manuelle ici.
+        $allCredits = [];
+        $linesDir    = __DIR__ . '/../../data/lines';
+        $stationsDir = __DIR__ . '/../../data/stations';
+
+        $pushHero = function (array $d, string $kind) use (&$allCredits): void {
+            $img = $d['hero_image'] ?? null;
+            $c   = $img['credit']  ?? null;
+            if (!is_array($c) || empty($c['author'])) return;
+            $name = $d['name'] ?? $d['name_full'] ?? ($d['code'] ?? '');
+            $allCredits[] = [
+                'context'   => "Photo hero — $kind " . $name,
+                'author'    => $c['author'],
+                'license'   => $c['license']     ?? '',
+                'source_url'=> $c['source_url']  ?? '',
+                'date'      => $c['date']        ?? '',
+            ];
+        };
+
+        foreach (glob($linesDir . '/*.json') as $f) {
+            $d = json_decode(@file_get_contents($f), true);
+            if (!is_array($d)) continue;
+            $pushHero($d, 'ligne');
+            foreach (($d['points_of_interest'] ?? []) as $theme) {
+                foreach (($theme['items'] ?? []) as $poi) {
+                    $img = $poi['image'] ?? null;
+                    $c   = $img['credit'] ?? null;
+                    if (!is_array($c) || empty($c['author'])) continue;
+                    $allCredits[] = [
+                        'context'   => 'POI — ' . ($poi['name'] ?? '') . ' (ligne ' . ($d['code'] ?? '') . ')',
+                        'author'    => $c['author'],
+                        'license'   => $c['license']       ?? '',
+                        'source_url'=> $c['wikimedia_url'] ?? '',
+                        'date'      => $c['date']          ?? '',
+                    ];
+                }
+            }
+        }
+        foreach (glob($stationsDir . '/*.json') as $f) {
+            $d = json_decode(@file_get_contents($f), true);
+            if (!is_array($d)) continue;
+            $pushHero($d, 'station');
+        }
+
+        // Dedup par (context, author)
+        $seen = [];
+        $uniqueCredits = [];
+        foreach ($allCredits as $c) {
+            $k = $c['context'] . '|' . $c['author'];
+            if (isset($seen[$k])) continue;
+            $seen[$k] = true;
+            $uniqueCredits[] = $c;
+        }
+        // Tri : heros lignes d'abord, puis POIs, puis stations
+        usort($uniqueCredits, fn($a, $b) => strcmp($a['context'], $b['context']));
+        ?>
+        <?php if (!empty($uniqueCredits)): ?>
+            <ul class="credits-photos__list">
+                <?php foreach ($uniqueCredits as $c): ?>
+                    <li>
+                        <strong><?= e($c['context']) ?></strong> —
+                        <?php if (!empty($c['source_url'])): ?>
+                            <a href="<?= e($c['source_url']) ?>" target="_blank" rel="noopener noreferrer"><?= e($c['author']) ?></a>
+                        <?php else: ?>
+                            <?= e($c['author']) ?>
+                        <?php endif; ?>
+                        <?php if (!empty($c['license'])): ?> · <?= e($c['license']) ?><?php endif; ?>
+                        <?php if (!empty($c['date'])): ?> · <?= e($c['date']) ?><?php endif; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php else: ?>
+            <p><em>Aucune image referencee pour le moment.</em></p>
+        <?php endif; ?>
+
         <h2>Mentions légales et indépendance</h2>
         <p>
             Bouge à Paris est un site éditorial <strong>indépendant</strong>.

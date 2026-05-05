@@ -77,7 +77,7 @@ if (!function_exists('pastilleCorresp')) {
     function pastilleCorresp(string $mode, string $line, string $color, string $size = 'default'): string
     {
         $sizes = [
-            'small'   => ['fontMode' => 9,  'fontLine' => 10, 'padX' => 6,  'padY' => 2, 'gap' => 5, 'radius' => 4, 'border' => 1],
+            'small'   => ['fontMode' => 11, 'fontLine' => 12, 'padX' => 8,  'padY' => 3, 'gap' => 6, 'radius' => 5, 'border' => 1.2],
             'inline'  => ['fontMode' => 10, 'fontLine' => 11, 'padX' => 7,  'padY' => 2, 'gap' => 6, 'radius' => 5, 'border' => 1.2],
             'default' => ['fontMode' => 12, 'fontLine' => 13, 'padX' => 9,  'padY' => 3, 'gap' => 8, 'radius' => 6, 'border' => 1.2],
             'large'   => ['fontMode' => 14, 'fontLine' => 15, 'padX' => 11, 'padY' => 4, 'gap' => 9, 'radius' => 7, 'border' => 1.5],

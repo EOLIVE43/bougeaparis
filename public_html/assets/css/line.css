@@ -73,8 +73,10 @@
    Pattern : 2 blocs adjacents (mimic .station-hero, eviter card-bleed fragile).
    .hero          = wrapper transparent
    .hero__image   = bloc image standalone, full-width container content
-   .hero__content = card blanche (background, padding, radius, shadow) */
-.hero{margin-bottom:24px}
+   .hero__content = card blanche (background, padding, radius, shadow)
+   IMPORTANT : on override les valeurs de bundle.css ligne 170
+   (padding 96px, background gris, border-bottom : creent une bande parasite). */
+.hero{margin-bottom:24px;padding:0;background:transparent;border-bottom:0}
 
 /* Bloc image standalone : aspect-ratio + max-height par breakpoint, ses
    propres bords arrondis (4 coins). Pas de marges negatives. */
@@ -513,6 +515,10 @@
 .section--que-voir{padding-bottom:30px}
 .que-voir__intro{margin-bottom:32px;font-size:16px;line-height:1.7;color:var(--text-soft)}
 .que-voir__intro strong{color:var(--text);font-weight:600}
+/* Lien discret en bas de section : credits regroupes sur /sources/ */
+.que-voir__credits-link{margin:24px 0 0;font-size:13px;color:var(--text-muted);font-style:italic;text-align:right}
+.que-voir__credits-link a{color:var(--text-muted);text-decoration:underline;text-decoration-color:rgba(90,107,102,.3)}
+.que-voir__credits-link a:hover{color:var(--teal);text-decoration-color:currentColor}
 
 /* Bandeau thème */
 .theme-section{margin-bottom:32px}
@@ -1313,11 +1319,21 @@
 .line-card__name-link--inactive,
 .poi-card__name-link--inactive,
 .related-card--inactive,
-.discover-pill--inactive {
+.discover-pill--inactive,
+.hero__cta--inactive,
+.itineraire-calc__cta--inactive,
+.itineraire-card--inactive,
+.itineraires__more-link--inactive {
     color: var(--text-muted);
     cursor: default;
     pointer-events: none;
     opacity: 0.7;
+}
+/* Pour les CTAs colores (background teal), neutraliser le fond au inactive */
+.hero__cta--inactive,
+.itineraire-calc__cta--inactive {
+    background: var(--text-muted);
+    color: #fff;
 }
 
 /* Cards complètes : retirer les anciens hovers envahissants
