@@ -180,19 +180,20 @@ $introText = $line['intros']['liens_internes'] ?? null;
         <?php foreach ($internalLinks['related_pages'] as $page):
             $exists = Routes::exists(rtrim($page['url'] ?? '', '/'));
             $cssClass = 'related-card' . ($exists ? '' : ' related-card--inactive');
+            $futureAttr = $exists ? '' : ' data-future-url="' . htmlspecialchars($page['url'] ?? '') . '"';
         ?>
-          <?php if ($exists): ?>
-            <a href="<?= htmlspecialchars($page['url']) ?>" class="<?= $cssClass ?>">
-          <?php else: ?>
-            <div class="<?= $cssClass ?>" data-future-url="<?= htmlspecialchars($page['url'] ?? '') ?>">
-          <?php endif; ?>
+          <div class="<?= $cssClass ?>"<?= $futureAttr ?>>
             <span class="related-card__icon" aria-hidden="true"><?= htmlspecialchars($page['icon']) ?></span>
             <span class="related-card__content">
-              <span class="related-card__label"><?= htmlspecialchars($page['label']) ?></span>
+              <?php if ($exists): ?>
+                <a href="<?= htmlspecialchars($page['url']) ?>" class="related-card__title-link"><?= htmlspecialchars($page['label']) ?></a>
+              <?php else: ?>
+                <span class="related-card__label"><?= htmlspecialchars($page['label']) ?></span>
+              <?php endif; ?>
               <span class="related-card__desc"><?= htmlspecialchars($page['description']) ?></span>
             </span>
             <?php if ($exists): ?><span class="related-card__arrow" aria-hidden="true">→</span><?php endif; ?>
-          <?= $exists ? '</a>' : '</div>' ?>
+          </div>
         <?php endforeach; ?>
       </div>
     </div>

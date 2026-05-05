@@ -54,15 +54,14 @@ HTML,
     <em>Gare du Nord</em>, <em>Montparnasse-Bienvenüe</em> ou <em>République</em>.
 </p>
 <p>
-    Le plan officiel est édité par la RATP et mis à jour régulièrement. Il est disponible en
-    téléchargement au format PDF sur le site officiel, et affiché dans toutes les stations du réseau.
+    Le plan officiel est édité par <strong>Île-de-France Mobilités</strong> et affiché dans toutes
+    les stations du réseau, ainsi qu'en téléchargement sur le site de l'opérateur.
 </p>
 <div class="cta-box">
     <p>
-        <strong>Consulter le plan officiel :</strong>
-        <a href="https://www.ratp.fr/plan-metro" target="_blank" rel="noopener noreferrer">
-            Télécharger le plan du métro (PDF sur ratp.fr)
-        </a>
+        <strong>Plan détaillé de chaque ligne :</strong> retrouvez ci-dessous nos
+        <a href="#section-lignes">fiches dédiées aux 16 lignes du métro</a>,
+        avec stations, horaires, trafic en temps réel et tourisme à proximité.
     </p>
 </div>
 HTML,

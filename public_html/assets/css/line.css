@@ -54,7 +54,7 @@
    padding-top:0 : le breadcrumb (au-dessus, dans bundle.css) porte deja 1rem
    de padding-bottom, on ne rajoute rien pour garder le hero compact. */
 .page-container,
-.line-page__container{max-width:1400px;margin:0 auto;padding:0 24px 24px}
+.line-page__container{max-width:1200px;margin:0 auto;padding:0 24px 24px}
 
 /* Breadcrumb scopage line-page : annule le margin-bottom (le bundle global
    applique deja padding 1rem 0 sur .breadcrumb, suffisant pour aerer). */
@@ -992,16 +992,22 @@
 .discover-pill__pill{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-weight:800;font-size:13px;letter-spacing:-0.5px;border:1.5px solid rgba(0,0,0,0.08);margin-right:12px}
 .discover-pill__name{font-size:13px;font-weight:600;color:var(--text)}
 
-/* Pages liées */
+/* Pages liées : card est un div, lien sur le titre uniquement */
 .liens__related{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.related-card{display:flex;align-items:center;gap:18px;padding:16px 20px;background:white;border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit;transition:all 0.15s}
-.related-card:hover{border-color:var(--teal);background:var(--bg);transform:translateX(2px)}
+.related-card{display:flex;align-items:center;gap:18px;padding:16px 20px;background:white;border:1px solid var(--border);border-radius:10px;color:inherit;transition:all 0.15s}
+/* Hover uniquement sur les cards actives (i.e. pas --inactive) */
+.related-card:not(.related-card--inactive):hover{border-color:var(--teal);background:var(--bg)}
 .related-card__icon{font-size:24px;line-height:1;flex-shrink:0;margin-right:18px}
 .related-card__content{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
-.related-card__label{font-size:14px;font-weight:700;color:var(--text);letter-spacing:-0.01em}
+/* Titre actif (cards cliquables) : teal souligne, c'est le seul element link */
+.related-card__title-link{font-size:14px;font-weight:700;color:var(--teal);letter-spacing:-0.01em;text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:1px}
+.related-card__title-link:hover{text-decoration-thickness:2px}
+/* Titre inactif (page pas encore creee) : gris, pas souligne */
+.related-card__label{font-size:14px;font-weight:700;color:var(--text-muted);letter-spacing:-0.01em}
 .related-card__desc{font-size:12px;color:var(--text-muted);line-height:1.4}
-.related-card__arrow{font-size:18px;color:var(--text-muted);transition:all 0.15s;flex-shrink:0}
-.related-card:hover .related-card__arrow{color:var(--teal);transform:translateX(2px)}
+/* Fleche : visible uniquement sur cards actives, en teal */
+.related-card__arrow{font-size:18px;color:var(--teal);transition:transform 0.15s;flex-shrink:0}
+.related-card:not(.related-card--inactive):hover .related-card__arrow{transform:translateX(2px)}
 
 /* Mobile */
 @media (max-width:768px){
@@ -1350,17 +1356,9 @@
     transform: translateY(-1px);
 }
 
-/* Card "related" : titre + flèche */
-.related-card__label {
-    color: var(--text);
-    font-weight: 600;
-}
-a.related-card .related-card__label {
-    color: var(--teal);
-}
-a.related-card:hover .related-card__label {
-    text-decoration: underline;
-}
+/* Card "related" : fleche masquee sur cards inactives (pas de cible cliquable).
+   Note : les rules .related-card__label/.related-card__title-link/hover sont
+   regroupees plus haut dans le fichier (section "Pages liées"). */
 .related-card--inactive .related-card__arrow {
     display: none;
 }
