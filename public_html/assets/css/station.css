@@ -18,6 +18,22 @@
     }
 }
 
+/* --- Scroll-margin-top pour les ancres quick-links (#trafic, #sorties, etc.)
+   Le header global est sticky avec min-height 72px (+ border) ; on offset les
+   cibles d'ancre pour que le titre h2 ne soit pas masque sous le header. --- */
+.station-section,
+.station-page .trafic-banner,
+.station-page .trafic-block {
+    scroll-margin-top: 100px;
+}
+@media (max-width: 767px) {
+    .station-section,
+    .station-page .trafic-banner,
+    .station-page .trafic-block {
+        scroll-margin-top: 90px;
+    }
+}
+
 /* ============================================================
    1. HERO
    ============================================================ */
