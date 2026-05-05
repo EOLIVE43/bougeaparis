@@ -341,7 +341,7 @@ $tpl->partial('components/breadcrumb', [
 
       <!-- Métro -->
       <div class="correspondances-block">
-        <h3>Lignes de métro desservant la station</h3>
+        <h3>Lignes de métro à <?= Template::e($name) ?></h3>
         <ul class="correspondances-list">
           <?php foreach ($lines as $line):
             // URL publique : /metro/ligne-{code}/ (derive depuis code, pas slug).
