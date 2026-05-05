@@ -194,6 +194,24 @@
 .correspondance-line-link:hover {
     background: var(--color-bg-hover, #E8F0EC);
 }
+/* Hover sur les liens cliquables (a.correspondance-line-link) : indices
+   visuels supplementaires pour distinguer des spans inactifs.
+   Le selecteur a.correspondance-line-link cible UNIQUEMENT les <a> (pas
+   les <span class="correspondance-line-link correspondance-line-link--inactive">). */
+a.correspondance-line-link:hover,
+a.correspondance-line-link:focus-visible {
+    background: var(--color-primary-bg, #E1F5EE);
+}
+a.correspondance-line-link:hover .correspondance-line-name,
+a.correspondance-line-link:focus-visible .correspondance-line-name {
+    color: var(--color-primary, #0F6E56);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+a.correspondance-line-link:focus-visible {
+    outline: 2px solid var(--color-primary, #0F6E56);
+    outline-offset: 2px;
+}
 .correspondance-line-link--inactive {
     cursor: default;
     opacity: 0.7;

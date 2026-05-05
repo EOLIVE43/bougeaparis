@@ -344,7 +344,12 @@ $tpl->partial('components/breadcrumb', [
         <h3>Lignes de métro desservant la station</h3>
         <ul class="correspondances-list">
           <?php foreach ($lines as $line):
-            $lineUrl = '/metro/' . $line['slug'] . '/';
+            // L'URL publique d'une ligne metro est /metro/ligne-{code}/ (pas
+            // /metro/{slug}/ qui est le file-slug type "metro-1"). On derive
+            // depuis $line['code'] pour rester insensible au slug stocke dans
+            // chatelet.json. Cohérent avec la dérivation deja faite dans le
+            // bloc Schema.org SubwayStation/subwayLine de cette meme page.
+            $lineUrl = '/metro/ligne-' . strtolower((string)($line['code'] ?? '')) . '/';
             $lineExists = Routes::exists(rtrim($lineUrl, '/'));
             // Charge meta ligne (terminus_a/_b) depuis data/lines/{slug}.json
             $lineMeta = function_exists('getLineMeta')
