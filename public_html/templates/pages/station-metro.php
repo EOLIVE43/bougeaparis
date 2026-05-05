@@ -278,14 +278,36 @@ $tpl->partial('components/breadcrumb', [
   </section>
 
   <!-- ============================================================
-       1bis. TRAFIC TEMPS REEL (donnees IDFM PRIM, cache serveur 5 min)
-            Bandeau adaptatif : mince et vert si trafic normal,
-            bloc complet et coloré si au moins une perturbation.
+       1bis. QUICK LINKS (barre de raccourcis vers les sections)
+            Place juste sous le hero pour que l'utilisateur puisse
+            sauter directement à la section qu'il veut lire (trafic,
+            sorties, plan, horaires, etc.). Le bouton "Trafic" porte
+            un badge dynamique selon l'etat du reseau.
        ============================================================ -->
   <?php
   $traffic = function_exists('getDisruptionsForStation')
       ? getDisruptionsForStation($lines)
       : null;
+  // disruptionsCount : null si API inconnue, 0 si trafic normal,
+  // sinon nombre de lignes de la station impactees.
+  $disruptionsCount = null;
+  if (is_array($traffic)) {
+      $disruptionsCount = count($traffic['lines_with_disruptions'] ?? []);
+  }
+  $tpl->partial('components/station/quick-links', [
+      'disruptionsCount' => $disruptionsCount,
+      'hasExits'         => !empty($station['exits']),
+      'hasPois'          => !empty($station['nearby_pois']),
+      'hasFaq'           => !empty($faq),
+  ]);
+  ?>
+
+  <!-- ============================================================
+       1ter. TRAFIC TEMPS REEL (donnees IDFM PRIM, cache serveur 5 min)
+            Bandeau adaptatif : mince et vert si trafic normal,
+            bloc complet et coloré si au moins une perturbation.
+       ============================================================ -->
+  <?php
   $tpl->partial('components/station/trafic-temps-reel', [
       'traffic'     => $traffic,
       'stationName' => $name,

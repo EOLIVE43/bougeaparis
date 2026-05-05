@@ -66,7 +66,7 @@ $severityLabel = match ($maxSeverity) {
 
 <?php if (!$hasDisruption): ?>
   <!-- Cas 1 : trafic normal sur toutes les lignes desservies -->
-  <section class="trafic-banner trafic--normal" aria-label="État du trafic">
+  <section class="trafic-banner trafic--normal" id="trafic" aria-label="État du trafic">
     <div class="trafic-banner__inner">
       <span class="trafic-banner__icon" aria-hidden="true">✓</span>
       <span class="trafic-banner__message">

@@ -1358,3 +1358,133 @@ a.horaires-card__badge:hover {
     font-weight: 600;
 }
 
+/* ============================================================
+   14. QUICK LINKS (barre de raccourcis sous le hero)
+   ============================================================ */
+
+.quick-links {
+    margin: 0 0 1.25rem 0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border, #E0E6E4);
+}
+@media (min-width: 768px) {
+    .quick-links {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.quick-links__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    /* Mobile : scroll horizontal touch-friendly, pas de wrap */
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    /* Cache la scrollbar par defaut sur webkit (apparait au hover) */
+    scroll-snap-type: x proximity;
+}
+.quick-links__list::-webkit-scrollbar {
+    height: 4px;
+}
+.quick-links__list::-webkit-scrollbar-thumb {
+    background: var(--color-border, #E0E6E4);
+    border-radius: 4px;
+}
+@media (min-width: 768px) {
+    .quick-links__list {
+        gap: 0.75rem;
+        flex-wrap: wrap; /* desktop : wrap si manque de place */
+        overflow-x: visible;
+    }
+}
+
+.quick-links__item {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.quick-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 1rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    color: var(--color-text, #1A2B26);
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: background var(--transition-base, 0.2s ease),
+                color var(--transition-base, 0.2s ease),
+                border-color var(--transition-base, 0.2s ease),
+                transform var(--transition-base, 0.2s ease);
+}
+.quick-link:hover {
+    background: var(--color-primary-bg, #E1F5EE);
+    color: var(--color-primary-darker, #04342C);
+    border-color: var(--color-primary, #0F6E56);
+}
+.quick-link:focus-visible {
+    outline: 3px solid var(--color-primary-bg, #E1F5EE);
+    outline-offset: 2px;
+}
+.quick-link:active {
+    transform: scale(0.97);
+}
+
+.quick-link__icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+.quick-link__label {
+    font-weight: 500;
+}
+
+/* Variante alerte : trafic perturbé */
+.quick-link--alert {
+    background: var(--color-warning-bg, #FAEEDA);
+    color: var(--color-warning, #BA7517);
+    border-color: var(--color-warning, #BA7517);
+    font-weight: 600;
+}
+.quick-link--alert:hover {
+    background: var(--color-warning, #BA7517);
+    color: #FFFFFF;
+    border-color: var(--color-warning, #BA7517);
+}
+
+/* Badge à droite du label */
+.quick-link__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.25rem;
+    height: 1.25rem;
+    padding: 0 0.4rem;
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-left: 0.15rem;
+    font-variant-numeric: tabular-nums;
+}
+.quick-link__badge--ok {
+    background: var(--color-success-bg, #E1F5EE);
+    color: var(--color-success, #1D9E75);
+}
+.quick-link__badge--alert {
+    background: var(--color-warning, #BA7517);
+    color: #FFFFFF;
+}
+.quick-link--alert:hover .quick-link__badge--alert {
+    background: #FFFFFF;
+    color: var(--color-warning, #BA7517);
+}
+

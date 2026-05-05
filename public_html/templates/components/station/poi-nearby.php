@@ -41,7 +41,7 @@ if (empty($pois)) return;
 $count = count($pois);
 ?>
 
-<section class="station-section section-poi" id="poi" aria-labelledby="poi-heading">
+<section class="station-section section-poi" id="poi-nearby" aria-labelledby="poi-heading">
 
   <h2 id="poi-heading">Que voir à proximité de la station <?= e($stationName) ?></h2>
 

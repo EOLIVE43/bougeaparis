@@ -76,7 +76,7 @@ $nbPois    = count($poisForJs);
 if ($nbExits === 0 && $nbPois === 0) return;
 ?>
 
-<section class="station-section section-carte" id="carte" aria-labelledby="carte-title">
+<section class="station-section section-carte" id="plan" aria-labelledby="carte-title">
 
   <h2 id="carte-title">Plan de la station <?= e($stationName) ?></h2>
 
