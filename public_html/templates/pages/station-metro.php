@@ -380,38 +380,10 @@ $tpl->partial('components/breadcrumb', [
         </ul>
       </div>
 
-      <!-- RER -->
+<!-- RER -->
       <?php if (!empty($rer)): ?>
-        <?php
-        // Liste des codes RER formatee : "A, B et D" (virgule + et avant dernier)
-        $rerCodes = array_values(array_filter(array_column($rer, 'code')));
-        if (count($rerCodes) === 1) {
-            $rerListFormatted = $rerCodes[0];
-        } elseif (count($rerCodes) === 2) {
-            $rerListFormatted = $rerCodes[0] . ' et ' . $rerCodes[1];
-        } else {
-            $last = array_pop($rerCodes);
-            $rerListFormatted = implode(', ', $rerCodes) . ' et ' . $last;
-        }
-        // Nom de la gare RER (champ deja present dans rer_correspondences[i].station_name).
-        // Si toutes les entrees ont le meme station_name (cas typique d'un hub),
-        // on l'utilise dans l'intro. Sinon fallback sans mention de gare.
-        $rerStationNames = array_unique(array_filter(array_column($rer, 'station_name')));
-        $rerVia = (count($rerStationNames) === 1) ? reset($rerStationNames) : null;
-        ?>
         <div class="correspondances-block">
           <h3>Correspondances RER à <?= Template::e($name) ?></h3>
-          <p class="section-intro section-intro--rer">
-            Les <strong>RER <?= e($rerListFormatted) ?></strong>
-            <?php if ($rerVia): ?>
-              sont accessibles via les couloirs souterrains menant à la gare
-              <strong><?= e($rerVia) ?></strong>. Comptez 3 à 5 minutes de
-              marche selon la sortie.
-            <?php else: ?>
-              sont accessibles depuis la station <strong><?= e($name) ?></strong>.
-              Comptez 3 à 5 minutes de marche selon la sortie.
-            <?php endif; ?>
-          </p>
           <ul class="correspondances-list">
             <?php foreach ($rer as $r):
               $rerUrl = '/rer/rer-' . strtolower($r['code']) . '/';
