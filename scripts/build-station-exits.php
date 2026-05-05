@@ -616,7 +616,11 @@ foreach ($files as $path) {
         $skipCount++; continue;
     }
 
-    // Si exits existant, preserver les valeurs accessible non-null saisies manuellement
+    // Si exits existant, preserver les valeurs editoriales saisies manuellement :
+    //  - "accessible" (true/false) : override PMR par sortie
+    //  - "sector"                  : regroupement editorial (forum, rivoli, seine...)
+    // Tout le reste (name, address_full, postcode, city, lat, lon) est rafraichi
+    // depuis le GTFS + reverse geocoding.
     $existing = $json['exits'] ?? [];
     if (is_array($existing) && !empty($existing)) {
         $byNumber = [];
@@ -628,6 +632,8 @@ foreach ($files as $path) {
             if ($key !== '' && isset($byNumber[$key])) {
                 $oldAcc = $byNumber[$key]['accessible'] ?? null;
                 if ($oldAcc !== null) $newExit['accessible'] = $oldAcc;
+                $oldSector = $byNumber[$key]['sector'] ?? null;
+                if ($oldSector !== null && $oldSector !== '') $newExit['sector'] = $oldSector;
             }
         }
         unset($newExit);

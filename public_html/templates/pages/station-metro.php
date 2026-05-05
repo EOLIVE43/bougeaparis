@@ -358,10 +358,11 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
-       4ter. SORTIES (acces numerotes de la station, donnees IDFM/GTFS)
+       4ter. SORTIES (acces numerotes, eventuellement regroupes par secteurs)
        ============================================================ -->
   <?php $tpl->partial('components/station/sorties', [
-      'exits'       => $station['exits'] ?? [],
+      'exits'       => $station['exits']        ?? [],
+      'exitSectors' => $station['exit_sectors'] ?? null,
       'stationName' => $name,
   ]);
   ?>

@@ -156,6 +156,23 @@
             "Au fil des décennies, la station s'agrandit : la ligne 4 en 1908, la ligne 7 en 1926, la ligne 11 en 1935 (qui y a son terminus ouest), et enfin la ligne 14 en 1998. La connexion avec la gare RER Châtelet — Les Halles, ouverte en 1977, transforme définitivement Châtelet en plus grand pôle d'échanges souterrain d'Europe."
         ]
     },
+    "exit_sectors": {
+        "forum": {
+            "title": "Secteur Forum",
+            "exits_range": "Sorties 1 à 9",
+            "description": "Accès direct au Westfield Forum des Halles, au Centre Pompidou et à la rue Montorgueil. C'est aussi le secteur le plus pratique pour rejoindre les RER A, B et D."
+        },
+        "rivoli": {
+            "title": "Secteur Rivoli",
+            "exits_range": "Sorties 10 à 14",
+            "description": "Accès direct à la rue de Rivoli, à l'Hôtel de Ville et au Louvre. Idéal pour vos trajets vers le 1er arrondissement nord."
+        },
+        "seine": {
+            "title": "Secteur Seine",
+            "exits_range": "Sorties 15 à 19",
+            "description": "Accès direct à la place du Châtelet, au Théâtre du Châtelet et à l'Île de la Cité. Le secteur le plus proche de la Seine et de Notre-Dame."
+        }
+    },
     "exits": [
         {
             "number": "1",
@@ -165,7 +182,8 @@
             "city": "Paris",
             "latitude": 48.860433,
             "longitude": 2.346346,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "2",
@@ -175,7 +193,8 @@
             "city": "Paris",
             "latitude": 48.861386,
             "longitude": 2.346334,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "3",
@@ -185,7 +204,8 @@
             "city": "Paris",
             "latitude": 48.861682,
             "longitude": 2.347816,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "4",
@@ -195,7 +215,8 @@
             "city": "Paris",
             "latitude": 48.862559,
             "longitude": 2.346932,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "5",
@@ -205,7 +226,8 @@
             "city": "Paris",
             "latitude": 48.86283,
             "longitude": 2.345538,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "6",
@@ -215,7 +237,8 @@
             "city": "Paris",
             "latitude": 48.861712,
             "longitude": 2.345103,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "7",
@@ -225,7 +248,8 @@
             "city": "Paris",
             "latitude": 48.863171,
             "longitude": 2.343817,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "8",
@@ -235,7 +259,8 @@
             "city": "Paris",
             "latitude": 48.862278,
             "longitude": 2.343215,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "9",
@@ -245,7 +270,8 @@
             "city": "Paris",
             "latitude": 48.862808,
             "longitude": 2.346493,
-            "accessible": null
+            "accessible": null,
+            "sector": "forum"
         },
         {
             "number": "10",
@@ -255,7 +281,8 @@
             "city": "Paris",
             "latitude": 48.859564,
             "longitude": 2.346943,
-            "accessible": null
+            "accessible": null,
+            "sector": "rivoli"
         },
         {
             "number": "11",
@@ -265,7 +292,8 @@
             "city": "Paris",
             "latitude": 48.859191,
             "longitude": 2.346225,
-            "accessible": null
+            "accessible": null,
+            "sector": "rivoli"
         },
         {
             "number": "12",
@@ -275,7 +303,8 @@
             "city": "Paris",
             "latitude": 48.85932,
             "longitude": 2.345065,
-            "accessible": null
+            "accessible": null,
+            "sector": "rivoli"
         },
         {
             "number": "13",
@@ -285,7 +314,8 @@
             "city": "Paris",
             "latitude": 48.858957,
             "longitude": 2.346119,
-            "accessible": null
+            "accessible": null,
+            "sector": "rivoli"
         },
         {
             "number": "14",
@@ -295,7 +325,8 @@
             "city": "Paris",
             "latitude": 48.85863,
             "longitude": 2.347131,
-            "accessible": null
+            "accessible": null,
+            "sector": "rivoli"
         },
         {
             "number": "15",
@@ -305,7 +336,8 @@
             "city": "Paris",
             "latitude": 48.857836,
             "longitude": 2.346746,
-            "accessible": null
+            "accessible": null,
+            "sector": "seine"
         },
         {
             "number": "16",
@@ -315,7 +347,8 @@
             "city": "Paris",
             "latitude": 48.85765,
             "longitude": 2.347294,
-            "accessible": null
+            "accessible": null,
+            "sector": "seine"
         },
         {
             "number": "17",
@@ -325,7 +358,8 @@
             "city": "Paris",
             "latitude": 48.857536,
             "longitude": 2.347867,
-            "accessible": null
+            "accessible": null,
+            "sector": "seine"
         },
         {
             "number": "18",
@@ -335,7 +369,8 @@
             "city": "Paris",
             "latitude": 48.857298,
             "longitude": 2.348715,
-            "accessible": null
+            "accessible": null,
+            "sector": "seine"
         },
         {
             "number": "19",
@@ -345,7 +380,8 @@
             "city": "Paris",
             "latitude": 48.857122,
             "longitude": 2.349358,
-            "accessible": null
+            "accessible": null,
+            "sector": "seine"
         }
     ]
 }

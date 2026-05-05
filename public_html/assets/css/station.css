@@ -629,6 +629,55 @@ a.horaires-card__badge:hover {
     margin-top: 2.5rem;
 }
 
+/* Bloc secteur (regroupement par signaletique RATP) */
+.sorties-sector {
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .sorties-sector {
+        margin-bottom: 2.5rem;
+    }
+}
+.sorties-sector:last-child {
+    margin-bottom: 0;
+}
+
+.sorties-sector__title {
+    color: var(--color-primary, #0F6E56);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+@media (min-width: 768px) {
+    .sorties-sector__title {
+        font-size: 1.25rem;
+    }
+}
+
+.sorties-sector__range {
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--color-text-muted, #5A6B66);
+    letter-spacing: 0.01em;
+}
+
+.sorties-sector__desc {
+    font-style: italic;
+    color: var(--color-text-muted, #5A6B66);
+    margin: 0 0 1.25rem 0;
+    line-height: 1.55;
+    font-size: 0.95rem;
+}
+
+/* Variante "Autres sorties" : titre plus neutre pour distinguer du regroupement officiel */
+.sorties-sector--other .sorties-sector__title {
+    color: var(--color-text-muted, #5A6B66);
+}
+
 .sorties-list {
     list-style: none;
     margin: 0;
