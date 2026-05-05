@@ -366,13 +366,6 @@ a.correspondance-line-name:focus-visible {
 .adjacent-station--next {
     flex-direction: row-reverse;
 }
-.adjacent-station--terminus {
-    background: var(--color-bg-hover, #E8F0EC);
-    color: var(--color-text-muted, #5A6B66);
-    font-style: italic;
-    justify-content: center;
-}
-
 .adjacent-station > div {
     display: flex;
     flex-direction: column;
@@ -384,22 +377,45 @@ a.correspondance-line-name:focus-visible {
     color: var(--color-primary, #0F6E56);
 }
 
-.adjacent-station-direction {
-    font-size: 0.75rem;
-    color: var(--color-text-muted, #5A6B66);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
+/* Nom de la station adjacente : info principale, en gros gras et couleur normale */
 .adjacent-station-name {
+    display: block;
     font-weight: 600;
-    font-size: 0.95rem;
-    color: var(--color-text, #0F1E1A);
+    font-size: 1rem;
+    color: var(--color-text, #1A2B26);
     text-decoration: none;
+    line-height: 1.3;
 }
-a.adjacent-station-name:hover {
+a.adjacent-station-name {
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+a.adjacent-station-name:hover,
+a.adjacent-station-name:focus-visible {
     color: var(--color-primary, #0F6E56);
     text-decoration: underline;
+    text-underline-offset: 2px;
+}
+a.adjacent-station-name:focus-visible {
+    outline: 2px solid var(--color-primary, #0F6E56);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+/* Variante inactive (page station pas encore creee) : pas de hover, juste gris */
+.adjacent-station-name--inactive {
+    color: var(--color-text, #1A2B26);
+    cursor: default;
+}
+
+/* Direction : info secondaire, en plus petit et color-text-muted (sous le nom) */
+.adjacent-station-direction {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text-muted, #5A6B66);
+    margin-top: 0.15rem;
+    line-height: 1.35;
+    font-weight: 400;
+    /* Plus de text-transform/letter-spacing : convention web moderne (RATP,
+       SNCF, Citymapper) → texte normal en sous-titre. */
 }
 
 /* ============================================================

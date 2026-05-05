@@ -509,13 +509,9 @@ $tpl->partial('components/breadcrumb', [
                 <div class="adjacent-station adjacent-station--prev">
                   <span class="adjacent-station-arrow" aria-hidden="true">←</span>
                   <div>
-                    <span class="adjacent-station-direction">Direction <?= Template::e($prev['direction']) ?></span>
                     <?= conditionalLink($prevUrl, Template::e($prev['name']), 'adjacent-station-name') ?>
+                    <span class="adjacent-station-direction">Vers <?= Template::e($prev['direction']) ?></span>
                   </div>
-                </div>
-              <?php else: ?>
-                <div class="adjacent-station adjacent-station--terminus">
-                  <span class="adjacent-station-name">Terminus</span>
                 </div>
               <?php endif; ?>
 
@@ -524,14 +520,10 @@ $tpl->partial('components/breadcrumb', [
               ?>
                 <div class="adjacent-station adjacent-station--next">
                   <div>
-                    <span class="adjacent-station-direction">Direction <?= Template::e($next['direction']) ?></span>
                     <?= conditionalLink($nextUrl, Template::e($next['name']), 'adjacent-station-name') ?>
+                    <span class="adjacent-station-direction">Vers <?= Template::e($next['direction']) ?></span>
                   </div>
                   <span class="adjacent-station-arrow" aria-hidden="true">→</span>
-                </div>
-              <?php else: ?>
-                <div class="adjacent-station adjacent-station--terminus">
-                  <span class="adjacent-station-name">Terminus</span>
                 </div>
               <?php endif; ?>
             </div>
