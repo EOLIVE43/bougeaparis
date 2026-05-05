@@ -47,14 +47,33 @@
 
 .station-hero__image {
     width: 100%;
-    aspect-ratio: 16 / 9;
     overflow: hidden;
     position: relative;
+    border-radius: var(--station-radius, 12px);
+    /* Mobile : aspect-ratio 16:9, max-height 240px (compact) */
+    aspect-ratio: 16 / 9;
+    max-height: 240px;
 }
+@media (min-width: 768px) {
+    .station-hero__image {
+        /* Desktop : aspect-ratio 3:1 (panoramique), max-height 400px
+           pour que H1 + raccourcis restent above the fold */
+        aspect-ratio: 3 / 1;
+        max-height: 400px;
+    }
+}
+.station-hero__image picture,
 .station-hero__image img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center 60%; /* legerement vers le bas, sujet souvent en bas pour edicules */
+}
+.station-hero__image picture img {
+    /* Quand <picture> entoure <img>, on n'applique pas object-fit deux fois */
+    object-fit: inherit;
+    object-position: inherit;
 }
 
 .station-hero__placeholder {

@@ -51,3 +51,11 @@ package-lock.json
 
 # Cache GTFS (telecharge par scripts/build-line-jsons.php)
 scripts/cache-gtfs/
+
+# Images stations (regenerees par scripts/build-station-hero.php depuis Wikimedia)
+# A uploader manuellement via FTP en prod ou via un workflow GitHub dedie.
+# IMPORTANT : ces fichiers ne sont PAS deployes par le workflow deploy.yml
+# (qui checkout le repo). Sur o2switch, faire FTP manuel apres chaque run.
+public_html/assets/img/stations/*/*.avif
+public_html/assets/img/stations/*/*.webp
+public_html/assets/img/stations/*/*.jpg

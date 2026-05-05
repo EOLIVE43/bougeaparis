@@ -54,6 +54,20 @@ const TARGET_THUMB_W = 1600;
 const SCORE_HIGH     = 12;
 const SCORE_LOW      = 6;
 
+// Pipeline image local : tailles + formats
+const IMAGE_WIDTHS    = [400, 800, 1200, 1600];
+const IMAGE_OUTDIR    = ROOT . '/public_html/assets/img/stations';
+const IMAGE_OUT_RELATIVE = '/assets/img/stations';
+
+// Outils image (paths absolus pour eviter dependence du PATH)
+const TOOL_SIPS_CANDIDATES    = ['/usr/bin/sips'];
+const TOOL_CWEBP_CANDIDATES   = ['/opt/homebrew/bin/cwebp', '/usr/local/bin/cwebp', 'cwebp'];
+const TOOL_AVIFENC_CANDIDATES = ['/opt/homebrew/bin/avifenc', '/usr/local/bin/avifenc', 'avifenc'];
+
+const WEBP_QUALITY = 80;
+const AVIF_MIN     = 30; // qualite : plus bas = meilleur, 30-50 plage equilibree
+const AVIF_MAX     = 50;
+
 // CLI
 $opts = parse_cli_args($argv);
 $onlyStation = $opts['station']     ?? null;
@@ -273,6 +287,123 @@ function thumb_url_from_imageinfo(array $ii): ?string {
 }
 
 // ============================================================================
+// PIPELINE IMAGE LOCAL (download + resize + AVIF/WebP/JPG)
+// ============================================================================
+
+/** Resout le 1er chemin existant et executable parmi les candidats. */
+function find_tool(array $candidates): ?string {
+    foreach ($candidates as $c) {
+        if (is_file($c) && is_executable($c)) return $c;
+        // Si c'est un nom court, tester via shell
+        if (!str_contains($c, '/')) {
+            $found = trim((string)shell_exec("command -v $c 2>/dev/null"));
+            if ($found !== '') return $found;
+        }
+    }
+    return null;
+}
+
+/** Telecharge un binaire depuis Wikimedia avec User-Agent propre. */
+function download_image(string $url, string $destPath): bool {
+    $fp = @fopen($destPath, 'wb');
+    if (!$fp) return false;
+    $ch = curl_init($url);
+    curl_setopt_array($ch, [
+        CURLOPT_FILE           => $fp,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_TIMEOUT        => 30,
+        CURLOPT_CONNECTTIMEOUT => 8,
+        CURLOPT_USERAGENT      => USER_AGENT,
+    ]);
+    $ok = curl_exec($ch);
+    $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+    fclose($fp);
+    if (!$ok || $code !== 200) {
+        @unlink($destPath);
+        return false;
+    }
+    return filesize($destPath) > 0;
+}
+
+/**
+ * Download original + resize + convert AVIF/WebP/JPG en 4 tailles.
+ *
+ * Retourne array des chemins relatifs ecrits (pour stockage dans le JSON station)
+ * ou null en cas d'echec partiel (les fichiers partiels sont nettoyes).
+ */
+function build_local_image_versions(string $slug, string $sourceUrl, array &$tools): ?array {
+    if (empty($tools['sips']) || empty($tools['cwebp']) || empty($tools['avifenc'])) {
+        return null;
+    }
+    $outDir = IMAGE_OUTDIR . '/' . $slug;
+    if (!is_dir($outDir) && !@mkdir($outDir, 0755, true) && !is_dir($outDir)) {
+        log_info("    ERREUR : impossible de creer $outDir");
+        return null;
+    }
+
+    // Download original (la version 1920px de Wikimedia est suffisante pour 1600w)
+    $tmpOrig = $outDir . '/_original.jpg';
+    log_info("    download original ...");
+    if (!download_image($sourceUrl, $tmpOrig)) {
+        log_info("    ERREUR : download $sourceUrl");
+        return null;
+    }
+    log_info("    original telecharge : " . number_format(filesize($tmpOrig)) . " octets");
+
+    $versions = ['avif' => [], 'webp' => [], 'jpg' => []];
+    $allOk = true;
+
+    foreach (IMAGE_WIDTHS as $w) {
+        $jpgFile  = "$outDir/$slug-$w.jpg";
+        $webpFile = "$outDir/$slug-$w.webp";
+        $avifFile = "$outDir/$slug-$w.avif";
+
+        // 1. Resize JPG via sips -Z (preserve ratio, max dimension = $w)
+        $cmd = sprintf('%s -Z %d %s --out %s 2>&1',
+            escapeshellcmd($tools['sips']), $w,
+            escapeshellarg($tmpOrig), escapeshellarg($jpgFile));
+        exec($cmd, $out, $code);
+        if ($code !== 0 || !is_file($jpgFile)) {
+            log_info("    ERREUR sips $w (code=$code)");
+            $allOk = false; continue;
+        }
+
+        // 2. WebP depuis le JPG resize (q=80, plage equilibree)
+        $cmd = sprintf('%s -q %d %s -o %s 2>&1',
+            escapeshellcmd($tools['cwebp']), WEBP_QUALITY,
+            escapeshellarg($jpgFile), escapeshellarg($webpFile));
+        exec($cmd, $out, $code);
+        if ($code !== 0 || !is_file($webpFile)) {
+            log_info("    ERREUR cwebp $w (code=$code)");
+            $allOk = false;
+        }
+
+        // 3. AVIF depuis le JPG resize (--min/--max pour qualite controlee)
+        $cmd = sprintf('%s --min %d --max %d %s %s 2>&1',
+            escapeshellcmd($tools['avifenc']), AVIF_MIN, AVIF_MAX,
+            escapeshellarg($jpgFile), escapeshellarg($avifFile));
+        exec($cmd, $out, $code);
+        if ($code !== 0 || !is_file($avifFile)) {
+            log_info("    ERREUR avifenc $w (code=$code)");
+            $allOk = false;
+        }
+
+        $rel = IMAGE_OUT_RELATIVE . '/' . $slug;
+        $versions['jpg'][$w]  = "$rel/$slug-$w.jpg";
+        $versions['webp'][$w] = "$rel/$slug-$w.webp";
+        $versions['avif'][$w] = "$rel/$slug-$w.avif";
+    }
+
+    @unlink($tmpOrig);
+
+    if (!$allOk) {
+        log_info("    AVERTISSEMENT : conversions partielles (certaines tailles/formats manquent)");
+    }
+    return $versions;
+}
+
+// ============================================================================
 // PIPELINE PAR STATION
 // ============================================================================
 
@@ -370,8 +501,28 @@ function find_hero_for_station(array $station, array &$cache): array {
 // MAIN
 // ============================================================================
 
-log_info('Phase 1: chargement cache + iteration stations');
+log_info('Phase 1: chargement cache + detection outils');
 $cache = load_cache();
+
+// Detection outils image (sips natif macOS, cwebp & avifenc via Homebrew)
+$tools = [
+    'sips'    => find_tool(TOOL_SIPS_CANDIDATES),
+    'cwebp'   => find_tool(TOOL_CWEBP_CANDIDATES),
+    'avifenc' => find_tool(TOOL_AVIFENC_CANDIDATES),
+];
+foreach ($tools as $name => $path) {
+    if ($path) {
+        log_info("  outil $name : $path");
+    } else {
+        log_info("  outil $name : ABSENT");
+    }
+}
+$canConvertImages = $tools['sips'] && $tools['cwebp'] && $tools['avifenc'];
+if (!$canConvertImages) {
+    log_info('  AVERTISSEMENT : un ou plusieurs outils image absents.');
+    log_info('    macOS : brew install webp libavif (sips est natif).');
+    log_info('    Le script continuera mais ne convertira pas les images.');
+}
 
 $files = glob(STATIONS_DIR . '/*.json');
 if ($onlyStation) {
@@ -385,22 +536,28 @@ foreach ($files as $path) {
     $json = json_decode(file_get_contents($path), true);
     if (!is_array($json)) continue;
 
-    // Skip si manual (preservation curation)
+    // Skip find_hero si manual (preservation curation), MAIS on continue
+    // sur le pipeline image local pour generer/regenerer les versions AVIF/WebP/JPG.
     $existing = $json['hero_image'] ?? null;
-    if (is_array($existing) && ($existing['source'] ?? '') === 'manual') {
-        log_info("  $slug : SKIP (source=manual)");
-        $results[$slug] = ['level' => 'manual', 'slug' => $slug, 'name' => $json['name'] ?? null];
-        continue;
-    }
+    $isManual = is_array($existing) && ($existing['source'] ?? '') === 'manual';
 
-    log_info("  $slug : recherche image...");
-    $info = find_hero_for_station($json, $cache);
-    $results[$slug] = $info;
+    if ($isManual) {
+        log_info("  $slug : source=manual (skip recherche, pipeline image conserve)");
+        $results[$slug] = ['level' => 'manual', 'slug' => $slug, 'name' => $json['name'] ?? null];
+    } else {
+        log_info("  $slug : recherche image...");
+        $info = find_hero_for_station($json, $cache);
+        $results[$slug] = $info;
+    }
 
     if ($preview || $reviewOnly) continue; // pas d'ecriture en preview
 
-    // Ecriture conditionnelle
-    if (!empty($info['best'])) {
+    // En mode auto, on a calcule un best ; on prepare le JSON hero_image
+    if (!$isManual) {
+        if (empty($info['best'])) {
+            log_info("    pas de match → pas d'ecriture");
+            continue;
+        }
         $best = $info['best'];
         $json['hero_image'] = [
             'url'    => $best['thumb_url'],
@@ -418,11 +575,25 @@ foreach ($files as $path) {
             'confidence_score' => $best['score'],
             'confidence_level' => $info['level'],
         ];
-        file_put_contents($path, pretty_json($json) . "\n");
-        log_info("    ecrit : score={$best['score']} level={$info['level']}");
-    } else {
-        log_info("    pas de match → pas d'ecriture");
+        log_info("    score={$best['score']} level={$info['level']}");
     }
+
+    // Pipeline image local : telecharge l'original Wikimedia + resize 4 tailles
+    // + convertit en AVIF/WebP/JPG. URL source = $json['hero_image']['url']
+    // (pour manual et auto).
+    $heroUrl = $json['hero_image']['url'] ?? null;
+    if ($heroUrl && $canConvertImages) {
+        log_info("    pipeline image local en cours...");
+        $local = build_local_image_versions($slug, $heroUrl, $tools);
+        if ($local) {
+            $json['hero_image']['local_versions'] = $local;
+            log_info("    local_versions ecrit (" . count($local['avif']) . "x" . count($local) . " fichiers)");
+        }
+    } elseif ($heroUrl && !$canConvertImages) {
+        log_info("    skip pipeline image (outils manquants)");
+    }
+
+    file_put_contents($path, pretty_json($json) . "\n");
 }
 
 save_cache($cache);

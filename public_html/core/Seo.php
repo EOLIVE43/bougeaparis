@@ -11,8 +11,10 @@ class Seo
 {
     private array $data = [];
     private array $schemas = [];
-    /** URLs d'images a precharger (hero LCP). */
+    /** URLs d'images simples a precharger (hero LCP). */
     private array $preloadImages = [];
+    /** Sets srcset pour preload responsive (hero LCP avec multiples tailles). */
+    private array $preloadImageSets = [];
 
     public function __construct()
     {
@@ -72,6 +74,24 @@ class Seo
     public function addPreloadImage(string $url): self
     {
         if ($url !== '') $this->preloadImages[] = $url;
+        return $this;
+    }
+
+    /**
+     * Preload responsive : <link rel="preload" as="image" imagesrcset="..."
+     * imagesizes="..." type="..." fetchpriority="high">. Permet au navigateur
+     * de choisir la bonne variante selon la viewport avant le HTML parsing.
+     *
+     * @param array<int,string> $widthMap [width => url]
+     */
+    public function addPreloadImageSet(array $widthMap, string $mimeType, string $sizes): self
+    {
+        if (empty($widthMap)) return $this;
+        $this->preloadImageSets[] = [
+            'widths'    => $widthMap,
+            'mime_type' => $mimeType,
+            'sizes'     => $sizes,
+        ];
         return $this;
     }
 
@@ -192,6 +212,18 @@ class Seo
             $out .= '<link rel="preload" as="image" href="'
                  . htmlspecialchars($url, ENT_QUOTES, 'UTF-8')
                  . '" fetchpriority="high">' . "\n";
+        }
+        // Preload responsive avec imagesrcset (multi-tailles AVIF)
+        foreach ($this->preloadImageSets as $set) {
+            $srcset = [];
+            foreach ($set['widths'] as $w => $url) {
+                $srcset[] = htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . ' ' . (int)$w . 'w';
+            }
+            $out .= '<link rel="preload" as="image"'
+                 . ' imagesrcset="' . implode(', ', $srcset) . '"'
+                 . ' imagesizes="' . htmlspecialchars($set['sizes'], ENT_QUOTES, 'UTF-8') . '"'
+                 . ' type="' . htmlspecialchars($set['mime_type'], ENT_QUOTES, 'UTF-8') . '"'
+                 . ' fetchpriority="high">' . "\n";
         }
 
         // Schemas JSON-LD

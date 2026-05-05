@@ -84,9 +84,29 @@ $tpl->seo
     ->setCanonical($canonical);
 
 // Hero image : og:image (partages sociaux + Discover) + preload LCP
+// Si on a des local_versions, on prend l'AVIF 1200 pour og:image (taille optimale
+// pour les overlays sociaux) et on preload les variantes AVIF avec imagesrcset.
+$localVersions = $heroImage['local_versions'] ?? null;
 if ($hasImage && !empty($heroImage['url'])) {
-    $tpl->seo->setOgImage($heroImage['url']);
-    $tpl->seo->addPreloadImage($heroImage['url']);
+    $ogImg = !empty($localVersions['avif'][1200])
+        ? $localVersions['avif'][1200]
+        : $heroImage['url'];
+    $tpl->seo->setOgImage($ogImg);
+    if ($localVersions && !empty($localVersions['avif'])) {
+        // Preload imagesrcset (3 tailles AVIF : 400, 800, 1200 — le 1600 est
+        // pour les ecrans 4K, on l'omet du preload pour eviter d'overshoot).
+        $tpl->seo->addPreloadImageSet(
+            [
+                400  => $localVersions['avif'][400],
+                800  => $localVersions['avif'][800],
+                1200 => $localVersions['avif'][1200],
+            ],
+            'image/avif',
+            '(max-width: 768px) 100vw, 1200px'
+        );
+    } else {
+        $tpl->seo->addPreloadImage($heroImage['url']);
+    }
 }
 
 // =====================================================================
@@ -246,12 +266,49 @@ $tpl->partial('components/breadcrumb', [
 
     <?php if ($hasImage): ?>
       <div class="station-hero__image">
-        <img src="<?= Template::e($heroImage['url']) ?>"
-             alt="<?= Template::e($heroImage['alt'] ?? $name) ?>"
-             width="<?= (int)($heroImage['width']  ?? 1600) ?>"
-             height="<?= (int)($heroImage['height'] ?? 900) ?>"
-             loading="eager" fetchpriority="high"
-             referrerpolicy="no-referrer">
+        <?php
+        $altText = $heroImage['alt'] ?? $name;
+        $imgWidth = (int)($heroImage['width']  ?? 1600);
+        $imgHeight = (int)($heroImage['height'] ?? 900);
+        $sizes = '(max-width: 768px) 100vw, 1200px';
+
+        // Si on a des local_versions (AVIF/WebP/JPG), on utilise <picture> pour
+        // que le navigateur choisisse le format optimal. Sinon, simple <img>.
+        $hasPicture = is_array($localVersions ?? null)
+            && !empty($localVersions['avif'])
+            && !empty($localVersions['webp'])
+            && !empty($localVersions['jpg']);
+
+        $buildSrcset = function (array $widthMap): string {
+            $parts = [];
+            foreach ($widthMap as $w => $url) {
+                $parts[] = htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . ' ' . (int)$w . 'w';
+            }
+            return implode(', ', $parts);
+        };
+        ?>
+        <?php if ($hasPicture): ?>
+          <picture>
+            <source type="image/avif"
+                    srcset="<?= $buildSrcset($localVersions['avif']) ?>"
+                    sizes="<?= e($sizes) ?>">
+            <source type="image/webp"
+                    srcset="<?= $buildSrcset($localVersions['webp']) ?>"
+                    sizes="<?= e($sizes) ?>">
+            <img src="<?= Template::e($localVersions['jpg'][1200] ?? reset($localVersions['jpg'])) ?>"
+                 srcset="<?= $buildSrcset($localVersions['jpg']) ?>"
+                 sizes="<?= e($sizes) ?>"
+                 alt="<?= Template::e($altText) ?>"
+                 width="<?= $imgWidth ?>" height="<?= $imgHeight ?>"
+                 loading="eager" fetchpriority="high">
+          </picture>
+        <?php else: ?>
+          <img src="<?= Template::e($heroImage['url']) ?>"
+               alt="<?= Template::e($altText) ?>"
+               width="<?= $imgWidth ?>" height="<?= $imgHeight ?>"
+               loading="eager" fetchpriority="high"
+               referrerpolicy="no-referrer">
+        <?php endif; ?>
       </div>
     <?php endif; ?>
 
