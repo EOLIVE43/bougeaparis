@@ -95,9 +95,9 @@ $severityLabel = match ($maxSeverity) {
         <span class="trafic-block__icon" aria-hidden="true">
           <?= $maxSeverity === 'BLOQUANTE' ? '🚫' : '⚠️' ?>
         </span>
-        <h2 class="trafic-block__title" id="trafic-title">
+        <h3 class="trafic-block__title" id="trafic-title">
           <?= e($severityLabel) ?> à la station <?= e($stationName) ?>
-        </h2>
+        </h3>
       </div>
       <?php if ($updatedLabel): ?>
         <span class="trafic-block__time">

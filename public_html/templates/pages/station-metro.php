@@ -385,7 +385,19 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
-       1ter. TRAFIC TEMPS REEL (donnees IDFM PRIM, cache serveur 5 min)
+       1ter. INFO TRAFIC SEO (paragraphe statique, H2 PARENT du bloc dynamique
+            qui suit. Toujours present pour ranker sur "trafic", "perturbation",
+            "incident metro {station}" meme en l'absence de perturbation).
+       ============================================================ -->
+  <?php $tpl->partial('components/station/trafic-info-seo', [
+      'stationName' => $name,
+      'lines'       => $lines,
+  ]);
+  ?>
+
+  <!-- ============================================================
+       1quater. TRAFIC TEMPS REEL (donnees IDFM PRIM, cache serveur 5 min).
+            Enfant semantique du H2 SEO ci-dessus : titre H3.
             Bandeau adaptatif : mince et vert si trafic normal,
             bloc complet et coloré si au moins une perturbation.
        ============================================================ -->
@@ -394,17 +406,6 @@ $tpl->partial('components/breadcrumb', [
       'traffic'     => $traffic,
       'stationName' => $name,
       'allLines'    => $lines,
-  ]);
-  ?>
-
-  <!-- ============================================================
-       1ter. INFO TRAFIC SEO (paragraphe statique, persistent meme si
-            aucune perturbation, pour ranker sur "trafic", "perturbation",
-            "incident metro {station}" en permanence dans le HTML).
-       ============================================================ -->
-  <?php $tpl->partial('components/station/trafic-info-seo', [
-      'stationName' => $name,
-      'lines'       => $lines,
   ]);
   ?>
 
