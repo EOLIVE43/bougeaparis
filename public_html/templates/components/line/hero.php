@@ -73,6 +73,8 @@ $buildSrcset = function (array $widthMap): string {
     </div>
   <?php endif; ?>
 
+  <div class="hero__content">
+
   <div class="hero__pills">
     <span class="pill-mode">MÉTRO</span>
     <span class="pill-line" style="background: <?= htmlspecialchars($lineColor) ?>; color: <?= htmlspecialchars($line['color_text'] ?? '#1A2B26') ?>;">
@@ -141,4 +143,6 @@ $buildSrcset = function (array $widthMap): string {
       Temps de lecture : 8 minutes
     </div>
   </div>
+
+  </div><!-- /.hero__content -->
 </section>

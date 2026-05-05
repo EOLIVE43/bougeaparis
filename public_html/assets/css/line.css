@@ -69,18 +69,23 @@
 .page-content{min-width:0}
 .page-sidebar{position:relative}
 
-/* Hero (above the fold). overflow:hidden : la card clippe l'image hero qui
-   bleed via negative margins jusqu'a ses bords + arrondit ses coins haut. */
-.hero{background:#fff;border-radius:16px;padding:36px;box-shadow:0 2px 12px rgba(0,0,0,.04);margin-bottom:24px;overflow:hidden}
+/* Hero (above the fold).
+   Pattern : 2 blocs adjacents (mimic .station-hero, eviter card-bleed fragile).
+   .hero          = wrapper transparent
+   .hero__image   = bloc image standalone, full-width container content
+   .hero__content = card blanche (background, padding, radius, shadow) */
+.hero{margin-bottom:24px}
 
-/* Hero image : full-bleed en haut de la card hero (ecole B = image-first).
-   Negative margins pour deborder le padding de la card. Aspect-ratio 3:1
-   desktop / 16:9 mobile pour preserver CLS=0 et signal LCP optimal. */
-.hero__image{margin:-36px -36px 24px;border-radius:16px 16px 0 0;overflow:hidden;aspect-ratio:16/9;max-height:240px;background:#f4f4f4}
+/* Bloc image standalone : aspect-ratio + max-height par breakpoint, ses
+   propres bords arrondis (4 coins). Pas de marges negatives. */
+.hero__image{width:100%;overflow:hidden;border-radius:16px;aspect-ratio:16/9;max-height:240px;margin-bottom:16px;background:#f4f4f4}
 @media (min-width:769px){.hero__image{aspect-ratio:3/1;max-height:400px}}
 .hero__image picture,.hero__image img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 50%}
 .hero__image picture img{object-fit:inherit;object-position:inherit}
-@media (max-width:768px){.hero__image{margin:-24px -20px 18px}}
+
+/* Card blanche heritee de l'ancien .hero : pills, h1, lead, trafic, stats,
+   cta, meta. Garde l'identite visuelle hero (background + radius + shadow). */
+.hero__content{background:#fff;border-radius:16px;padding:36px;box-shadow:0 2px 12px rgba(0,0,0,.04)}
 
 /* Pills mode + ligne */
 .hero__pills{display:flex;align-items:center;gap:8px;margin-bottom:18px}
@@ -128,7 +133,7 @@
 
 /* Mobile hero */
 @media (max-width:768px){
-  .hero{padding:24px 20px}
+  .hero__content{padding:24px 20px}
   .hero__title{font-size:24px}
   .hero__lead{font-size:15px}
   .hero__stats{grid-template-columns:repeat(2,1fr)}
