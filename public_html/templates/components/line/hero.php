@@ -20,9 +20,59 @@ $trafficStatus   = 'ok';
 $trafficMessage  = 'Trafic normal sur la ligne ' . $line['code'];
 $trafficUpdate   = '32 secondes';
 $ridersFormatted = number_format(($line['daily_riders'] ?? 0) / 1000, 0) . 'K';
+
+// Hero image : nouveau format hero_image (avec local_versions AVIF/WebP/JPG).
+$heroImage      = $line['hero_image'] ?? null;
+$hasImage       = is_array($heroImage) && !empty($heroImage['url']);
+$localVersions  = $hasImage ? ($heroImage['local_versions'] ?? null) : null;
+$hasPicture     = is_array($localVersions)
+    && !empty($localVersions['avif'])
+    && !empty($localVersions['webp'])
+    && !empty($localVersions['jpg']);
+
+$buildSrcset = function (array $widthMap): string {
+    $parts = [];
+    foreach ($widthMap as $w => $url) {
+        $parts[] = htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . ' ' . (int)$w . 'w';
+    }
+    return implode(', ', $parts);
+};
 ?>
 
-<section class="hero" aria-labelledby="hero-title">
+<section class="hero<?= $hasImage ? ' hero--with-image' : '' ?>" aria-labelledby="hero-title">
+
+  <?php if ($hasImage):
+    $imgAlt = $heroImage['alt'] ?? ('Ligne ' . ($line['code'] ?? '') . ' du métro de Paris');
+    $imgW   = (int)($heroImage['width']  ?? 1600);
+    $imgH   = (int)($heroImage['height'] ?? 1040);
+    $sizes  = '(max-width: 768px) 100vw, 1200px';
+  ?>
+    <div class="hero__image">
+      <?php if ($hasPicture): ?>
+        <picture>
+          <source type="image/avif"
+                  srcset="<?= $buildSrcset($localVersions['avif']) ?>"
+                  sizes="<?= htmlspecialchars($sizes) ?>">
+          <source type="image/webp"
+                  srcset="<?= $buildSrcset($localVersions['webp']) ?>"
+                  sizes="<?= htmlspecialchars($sizes) ?>">
+          <img src="<?= htmlspecialchars($localVersions['jpg'][1200] ?? reset($localVersions['jpg'])) ?>"
+               srcset="<?= $buildSrcset($localVersions['jpg']) ?>"
+               sizes="<?= htmlspecialchars($sizes) ?>"
+               alt="<?= htmlspecialchars($imgAlt) ?>"
+               width="<?= $imgW ?>" height="<?= $imgH ?>"
+               loading="eager" fetchpriority="high">
+        </picture>
+      <?php else: ?>
+        <img src="<?= htmlspecialchars($heroImage['url']) ?>"
+             alt="<?= htmlspecialchars($imgAlt) ?>"
+             width="<?= $imgW ?>" height="<?= $imgH ?>"
+             loading="eager" fetchpriority="high"
+             referrerpolicy="no-referrer">
+      <?php endif; ?>
+    </div>
+  <?php endif; ?>
+
   <div class="hero__pills">
     <span class="pill-mode">MÉTRO</span>
     <span class="pill-line" style="background: <?= htmlspecialchars($lineColor) ?>; color: <?= htmlspecialchars($line['color_text'] ?? '#1A2B26') ?>;">

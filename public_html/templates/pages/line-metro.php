@@ -28,6 +28,22 @@ $tpl->seo
     ->setCanonical($canonical)
     ->setOgType('article');
 
+// Hero image (LCP) : preload responsive + og:image si presente.
+$heroImage = $line['hero_image'] ?? null;
+if (is_array($heroImage) && !empty($heroImage['url'])) {
+    $tpl->seo->setOgImage($heroImage['url']);
+    $localVersionsLine = $heroImage['local_versions'] ?? null;
+    if (is_array($localVersionsLine) && !empty($localVersionsLine['avif'])) {
+        $tpl->seo->addPreloadImageSet(
+            $localVersionsLine['avif'],
+            'image/avif',
+            '(max-width: 768px) 100vw, 1200px'
+        );
+    } else {
+        $tpl->seo->addPreloadImage($heroImage['url']);
+    }
+}
+
 // Schema.org Article (E-E-A-T)
 $primaryAuthor = $line['meta']['primary_author'] ?? null;
 $datePublished = $line['meta']['dates']['published'] ?? '2026-04-28';

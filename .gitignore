@@ -59,3 +59,9 @@ scripts/cache-gtfs/
 public_html/assets/img/stations/*/*.avif
 public_html/assets/img/stations/*/*.webp
 public_html/assets/img/stations/*/*.jpg
+
+# Images lignes (regenerees par scripts/build-line-hero.php depuis Wikimedia)
+# Meme regle que stations : FTP manuel apres chaque run.
+public_html/assets/img/lines/*/*.avif
+public_html/assets/img/lines/*/*.webp
+public_html/assets/img/lines/*/*.jpg
