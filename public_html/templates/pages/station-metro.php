@@ -66,23 +66,77 @@ $arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
 $tpl->seo
     ->setTitle('Station ' . $name . $arrLabel . ' : ' . $lineCount . ' ligne' . ($lineCount > 1 ? 's' : '') . ' métro' . $rerCodes)
     ->setDescription($hero['description'] ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, stations adjacentes, histoire et conseils pratiques.'))
-    ->setCanonical($canonical)
-    ->setBreadcrumb([
-        ['label' => 'Accueil',  'url' => '/'],
-        ['label' => 'Métro',    'url' => '/metro/'],
-        ['label' => 'Stations', 'url' => '/metro/'],
-        ['label' => $name,      'url' => $canonical],
-    ]);
+    ->setCanonical($canonical);
 
-// Schema.org SubwayStation pour SEO
-$tpl->seo->addSchema([
-    '@context' => 'https://schema.org',
-    '@type'    => 'SubwayStation',
-    'name'     => $name,
-    'address'  => [
+// =====================================================================
+// SCHEMA.ORG : @graph unifie (BreadcrumbList + SubwayStation + FAQPage)
+// =====================================================================
+//
+// On construit un seul bloc JSON-LD avec @graph plutot que 3 schemas
+// separes : permet le cross-referencement par @id et limite les blocs
+// dupliques pour les crawlers (Google, Bing, et lecteurs schemas locaux).
+//
+// On bypass deliberement Seo::setBreadcrumb() (qui addSchema separement)
+// pour fusionner BreadcrumbList dans le @graph.
+
+$siteUrl       = rtrim(Config::get('site.url'), '/');
+$canonicalAbs  = $siteUrl . $canonical;
+$breadcrumbItems = [
+    ['label' => 'Accueil',  'url' => '/'],
+    ['label' => 'Métro',    'url' => '/metro/'],
+    ['label' => 'Stations', 'url' => '/metro/'],
+    ['label' => $name,      'url' => $canonical],
+];
+
+// 1. BreadcrumbList
+$breadcrumbList = [];
+foreach ($breadcrumbItems as $i => $crumb) {
+    $breadcrumbList[] = [
+        '@type'    => 'ListItem',
+        'position' => $i + 1,
+        'name'     => $crumb['label'],
+        'item'     => $siteUrl . $crumb['url'],
+    ];
+}
+
+// 2. SubwayStation (enrichi : description, lignes desservies, accessibilite,
+//    contexte geographique). Schema.org n'a pas de propriete subwayLine
+//    standard, on l'utilise comme extension : Google et autres parseurs
+//    acceptent les proprietes inconnues sans rejeter le schema.
+$subwayLines = [];
+foreach ($lines as $line) {
+    // L'URL publique d'une ligne est /metro/ligne-{code}/ (pas /metro/{slug}/
+    // qui est le file-slug type "metro-1"). On derive depuis $line['code']
+    // pour rester insensible au slug stocke dans chatelet.json.
+    $lineCode    = (string)($line['code'] ?? '');
+    $lineUrlSlug = 'ligne-' . strtolower($lineCode);
+    $lineUrl     = '/metro/' . $lineUrlSlug . '/';
+    $entry = [
+        '@type'       => 'Service',
+        'name'        => 'Ligne ' . $lineCode,
+        'serviceType' => 'Métro Paris',
+        'provider'    => [
+            '@type' => 'Organization',
+            'name'  => 'RATP',
+        ],
+    ];
+    if (Routes::exists(rtrim($lineUrl, '/'))) {
+        $entry['url'] = $siteUrl . $lineUrl;
+    }
+    $subwayLines[] = $entry;
+}
+
+$stationNode = [
+    '@type'              => 'SubwayStation',
+    '@id'                => $canonicalAbs . '#station',
+    'name'               => $name,
+    'description'        => $hero['description'] ?? null,
+    'url'                => $canonicalAbs,
+    'address'            => [
         '@type'           => 'PostalAddress',
         'streetAddress'   => $address ?: null,
         'addressLocality' => 'Paris',
+        'addressRegion'   => 'Île-de-France',
         'addressCountry'  => 'FR',
     ],
     'geo' => [
@@ -90,10 +144,24 @@ $tpl->seo->addSchema([
         'latitude'  => $station['latitude']  ?? null,
         'longitude' => $station['longitude'] ?? null,
     ],
-    'image' => $hasImage ? rtrim(Config::get('site.url'), '/') . $image['src'] : null,
-]);
+    'image'              => $hasImage ? $siteUrl . $image['src'] : null,
+    'isAccessibleForFree'=> true,
+    'publicAccess'       => true,
+    'containedInPlace'   => [
+        '@type' => 'City',
+        'name'  => 'Paris',
+        'address' => [
+            '@type'           => 'PostalAddress',
+            'addressLocality' => 'Paris',
+            'addressRegion'   => 'Île-de-France',
+            'addressCountry'  => 'FR',
+        ],
+    ],
+    'subwayLine'         => $subwayLines,
+];
 
-// Schema FAQPage si on a des FAQ
+// 3. FAQPage (si la station a une FAQ)
+$faqNode = null;
 if (!empty($faq)) {
     $faqEntities = [];
     foreach ($faq as $item) {
@@ -106,12 +174,30 @@ if (!empty($faq)) {
             ],
         ];
     }
-    $tpl->seo->addSchema([
-        '@context'   => 'https://schema.org',
+    $faqNode = [
         '@type'      => 'FAQPage',
+        '@id'        => $canonicalAbs . '#faq',
         'mainEntity' => $faqEntities,
-    ]);
+    ];
 }
+
+// Assemblage @graph
+$graphNodes = [
+    [
+        '@type'           => 'BreadcrumbList',
+        '@id'             => $canonicalAbs . '#breadcrumb',
+        'itemListElement' => $breadcrumbList,
+    ],
+    $stationNode,
+];
+if ($faqNode !== null) {
+    $graphNodes[] = $faqNode;
+}
+
+$tpl->seo->addSchema([
+    '@context' => 'https://schema.org',
+    '@graph'   => $graphNodes,
+]);
 ?>
 
 <?php
