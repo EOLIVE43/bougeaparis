@@ -673,6 +673,14 @@ $tpl->partial('components/breadcrumb', [
   <?php endif; ?>
 
   <!-- ============================================================
+       5bis. LE SAVIEZ-VOUS (anecdotes verifiees sur la station)
+       ============================================================ -->
+  <?php $tpl->partial('components/station/trivia', [
+      'trivia'      => $station['trivia'] ?? [],
+      'stationName' => $name,
+  ]); ?>
+
+  <!-- ============================================================
        6. FAQ (rendu HTML — schema.org est dans le head via $seo->addSchema)
        ============================================================ -->
   <?php if (!empty($faq)): ?>
