@@ -344,31 +344,28 @@ $tpl->partial('components/breadcrumb', [
         <h3>Lignes de métro desservant la station</h3>
         <ul class="correspondances-list">
           <?php foreach ($lines as $line):
-            // L'URL publique d'une ligne metro est /metro/ligne-{code}/ (pas
-            // /metro/{slug}/ qui est le file-slug type "metro-1"). On derive
-            // depuis $line['code'] pour rester insensible au slug stocke dans
-            // chatelet.json. Cohérent avec la dérivation deja faite dans le
-            // bloc Schema.org SubwayStation/subwayLine de cette meme page.
+            // URL publique : /metro/ligne-{code}/ (derive depuis code, pas slug).
             $lineUrl = '/metro/ligne-' . strtolower((string)($line['code'] ?? '')) . '/';
             $lineExists = Routes::exists(rtrim($lineUrl, '/'));
-            // Charge meta ligne (terminus_a/_b) depuis data/lines/{slug}.json
             $lineMeta = function_exists('getLineMeta')
                 ? getLineMeta((string)($line['slug'] ?? ''))
                 : null;
+            $hasTerminus = $lineMeta
+                && ($lineMeta['terminus_a'] !== '' || $lineMeta['terminus_b'] !== '');
           ?>
             <li>
-              <?php if ($lineExists): ?>
-                <a href="<?= Template::e($lineUrl) ?>" class="correspondance-line-link">
-              <?php else: ?>
-                <span class="correspondance-line-link correspondance-line-link--inactive">
-              <?php endif; ?>
+              <div class="correspondance-line-link<?= $lineExists ? '' : ' correspondance-line-link--inactive' ?>">
                 <span class="correspondance-line-badge"
                       style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
                   <?= Template::e($line['code']) ?>
                 </span>
-                <span class="correspondance-line-name">
-                  Ligne <?= Template::e($line['code']) ?> du métro
-                  <?php if ($lineMeta && ($lineMeta['terminus_a'] !== '' || $lineMeta['terminus_b'] !== '')): ?>
+                <div class="correspondance-line-content">
+                  <?php if ($lineExists): ?>
+                    <a href="<?= Template::e($lineUrl) ?>" class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</a>
+                  <?php else: ?>
+                    <span class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</span>
+                  <?php endif; ?>
+                  <?php if ($hasTerminus): ?>
                     <small class="correspondance-line-terminus">
                       <span aria-hidden="true">↔</span>
                       <?= Template::e($lineMeta['terminus_a']) ?>
@@ -376,8 +373,8 @@ $tpl->partial('components/breadcrumb', [
                       <?= Template::e($lineMeta['terminus_b']) ?>
                     </small>
                   <?php endif; ?>
-                </span>
-              <?php if ($lineExists): ?></a><?php else: ?></span><?php endif; ?>
+                </div>
+              </div>
             </li>
           <?php endforeach; ?>
         </ul>
@@ -391,7 +388,6 @@ $tpl->partial('components/breadcrumb', [
             <?php foreach ($rer as $r):
               $rerUrl = '/rer/rer-' . strtolower($r['code']) . '/';
               $rerExists = Routes::exists(rtrim($rerUrl, '/'));
-              // Charge terminus depuis config/rer-terminus.php
               $rerInfo = function_exists('getRerTerminus')
                   ? getRerTerminus((string)$r['code'])
                   : null;
@@ -405,21 +401,21 @@ $tpl->partial('components/breadcrumb', [
               $useHierarchical = $totalTerminus >= 4;
             ?>
               <li>
-                <?php if ($rerExists): ?>
-                  <a href="<?= Template::e($rerUrl) ?>" class="correspondance-line-link">
-                <?php else: ?>
-                  <span class="correspondance-line-link correspondance-line-link--inactive">
-                <?php endif; ?>
+                <div class="correspondance-line-link<?= $rerExists ? '' : ' correspondance-line-link--inactive' ?>">
                   <span class="correspondance-line-badge correspondance-line-badge--rer"
                         style="background:<?= Template::e($r['color']) ?>;color:#FFFFFF;">
                     RER <?= Template::e($r['code']) ?>
                   </span>
-                  <span class="correspondance-line-name">
+                  <div class="correspondance-line-content">
+                    <?php if ($rerExists): ?>
+                      <a href="<?= Template::e($rerUrl) ?>" class="correspondance-line-name">RER <?= Template::e($r['code']) ?></a>
+                    <?php else: ?>
+                      <span class="correspondance-line-name">RER <?= Template::e($r['code']) ?></span>
+                    <?php endif; ?>
                     <?php if (!empty($r['walking_minutes'])): ?>
                       <span class="correspondance-line-walking"><?= (int)$r['walking_minutes'] ?> min à pied</span>
                     <?php endif; ?>
                     <?php if ($rerInfo && !$useHierarchical):
-                      // Format compact : "↔ Term_a ⇄ Term_b" (ou "Term_a / Term_a2")
                       $parts = [];
                       foreach ($rerInfo['directions'] as $dir) {
                           $parts[] = implode(' / ', $dir['terminus']);
@@ -433,13 +429,9 @@ $tpl->partial('components/breadcrumb', [
                           <?= Template::e($parts[1]) ?>
                         <?php endif; ?>
                       </small>
-                    <?php elseif ($rerInfo && $useHierarchical):
-                      // Format hierarchique : 1 ligne par direction
-                    ?>
+                    <?php elseif ($rerInfo && $useHierarchical): ?>
                       <small class="correspondance-line-terminus correspondance-line-terminus--multi">
                         <?php foreach ($rerInfo['directions'] as $dir):
-                          // Elision francaise : "vers l'X" si label commence par
-                          // voyelle (ouest, est) sinon "vers le X" (nord, sud).
                           $firstChar = mb_strtolower(mb_substr($dir['label'], 0, 1, 'UTF-8'), 'UTF-8');
                           $vowelStart = (bool) preg_match('/^[aeiouyhâêîôûäëïöü]/u', $firstChar);
                           $preposition = $vowelStart ? "l'" : "le ";
@@ -453,8 +445,8 @@ $tpl->partial('components/breadcrumb', [
                         <?php endforeach; ?>
                       </small>
                     <?php endif; ?>
-                  </span>
-                <?php if ($rerExists): ?></a><?php else: ?></span><?php endif; ?>
+                  </div>
+                </div>
               </li>
             <?php endforeach; ?>
           </ul>

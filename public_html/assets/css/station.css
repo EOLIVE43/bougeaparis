@@ -180,44 +180,50 @@
     gap: 0.5rem;
 }
 
+/* Container visuel d'une ligne dans la section Correspondances.
+   Plus un <a> depuis le fix du scope du lien : le lien cliquable est
+   maintenant uniquement sur le nom de ligne (.correspondance-line-name)
+   pour ne pas inclure les terminus en dessous. */
 .correspondance-line-link {
     display: flex;
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem;
     border-radius: 8px;
-    text-decoration: none;
     color: var(--color-text, #0F1E1A);
     background: var(--color-bg-light, #F4F8F6);
-    transition: background 0.2s ease;
 }
-.correspondance-line-link:hover {
-    background: var(--color-bg-hover, #E8F0EC);
+.correspondance-line-link--inactive {
+    opacity: 0.7;
 }
-/* Hover sur les liens cliquables (a.correspondance-line-link) : indices
-   visuels supplementaires pour distinguer des spans inactifs.
-   Le selecteur a.correspondance-line-link cible UNIQUEMENT les <a> (pas
-   les <span class="correspondance-line-link correspondance-line-link--inactive">). */
-a.correspondance-line-link:hover,
-a.correspondance-line-link:focus-visible {
-    background: var(--color-primary-bg, #E1F5EE);
+
+/* Wrapper du contenu textuel (nom + terminus + walking RER) en column */
+.correspondance-line-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1 1 auto;
+    min-width: 0;
 }
-a.correspondance-line-link:hover .correspondance-line-name,
-a.correspondance-line-link:focus-visible .correspondance-line-name {
+
+/* Lien cliquable sur le nom de ligne UNIQUEMENT (pas sur les terminus) */
+a.correspondance-line-name {
+    color: var(--color-text, #1A2B26);
+    text-decoration: none;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    display: inline;
+    align-self: flex-start; /* le link n'occupe que la largeur de son texte */
+}
+a.correspondance-line-name:hover,
+a.correspondance-line-name:focus-visible {
     color: var(--color-primary, #0F6E56);
     text-decoration: underline;
     text-underline-offset: 2px;
 }
-a.correspondance-line-link:focus-visible {
+a.correspondance-line-name:focus-visible {
     outline: 2px solid var(--color-primary, #0F6E56);
     outline-offset: 2px;
-}
-.correspondance-line-link--inactive {
-    cursor: default;
-    opacity: 0.7;
-}
-.correspondance-line-link--inactive:hover {
-    background: var(--color-bg-light, #F4F8F6);
+    border-radius: 2px;
 }
 
 .correspondance-line-badge {
@@ -240,8 +246,7 @@ a.correspondance-line-link:focus-visible {
 
 .correspondance-line-name {
     font-size: 0.95rem;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
 }
 .correspondance-line-walking {
     font-size: 0.8rem;
