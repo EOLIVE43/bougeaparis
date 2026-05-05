@@ -346,6 +346,10 @@ $tpl->partial('components/breadcrumb', [
           <?php foreach ($lines as $line):
             $lineUrl = '/metro/' . $line['slug'] . '/';
             $lineExists = Routes::exists(rtrim($lineUrl, '/'));
+            // Charge meta ligne (terminus_a/_b) depuis data/lines/{slug}.json
+            $lineMeta = function_exists('getLineMeta')
+                ? getLineMeta((string)($line['slug'] ?? ''))
+                : null;
           ?>
             <li>
               <?php if ($lineExists): ?>
@@ -357,7 +361,17 @@ $tpl->partial('components/breadcrumb', [
                       style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
                   <?= Template::e($line['code']) ?>
                 </span>
-                <span class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</span>
+                <span class="correspondance-line-name">
+                  Ligne <?= Template::e($line['code']) ?> du métro
+                  <?php if ($lineMeta && ($lineMeta['terminus_a'] !== '' || $lineMeta['terminus_b'] !== '')): ?>
+                    <small class="correspondance-line-terminus">
+                      <span aria-hidden="true">↔</span>
+                      <?= Template::e($lineMeta['terminus_a']) ?>
+                      <span aria-hidden="true">⇄</span>
+                      <?= Template::e($lineMeta['terminus_b']) ?>
+                    </small>
+                  <?php endif; ?>
+                </span>
               <?php if ($lineExists): ?></a><?php else: ?></span><?php endif; ?>
             </li>
           <?php endforeach; ?>

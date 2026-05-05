@@ -230,6 +230,22 @@
     color: var(--color-text-muted, #5A6B66);
 }
 
+/* Terminus de ligne sous le nom (ex. "Ligne 1 du metro" / "↔ La Defense ⇄ Chateau de Vincennes") */
+.correspondance-line-terminus {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text-muted, #5A6B66);
+    margin-top: 0.15rem;
+    line-height: 1.4;
+    font-weight: 400;
+    word-break: break-word;
+}
+.correspondance-line-terminus span[aria-hidden="true"] {
+    color: var(--color-primary, #0F6E56);
+    margin: 0 0.15rem;
+    font-weight: 500;
+}
+
 .correspondances-note {
     margin-top: 1rem;
     color: var(--color-text-muted, #5A6B66);

@@ -348,3 +348,41 @@ if (!function_exists('getLineSchedule')) {
         return $cache[$lineSlug] = $data['schedule'];
     }
 }
+
+if (!function_exists('getLineMeta')) {
+    /**
+     * Retourne les meta d'une ligne (terminus, code, name) depuis
+     * data/lines/{slug}.json. Cache memoire intra-requete.
+     *
+     * Usage :
+     *   $meta = getLineMeta('metro-1');
+     *   if ($meta) {
+     *       echo $meta['terminus_a']; // "La Defense (Grande Arche)"
+     *       echo $meta['terminus_b']; // "Chateau de Vincennes"
+     *   }
+     *
+     * @param string $lineSlug Slug fichier (ex: "metro-1", "metro-3bis")
+     * @return array{terminus_a:string,terminus_b:string,code:string,name:string}|null
+     */
+    function getLineMeta(string $lineSlug): ?array
+    {
+        static $cache = [];
+        if (array_key_exists($lineSlug, $cache)) return $cache[$lineSlug];
+        if (!preg_match('/^[a-z0-9-]+$/', $lineSlug)) return $cache[$lineSlug] = null;
+        $path = __DIR__ . '/../data/lines/' . $lineSlug . '.json';
+        if (!is_file($path)) return $cache[$lineSlug] = null;
+        $raw = @file_get_contents($path);
+        if ($raw === false) return $cache[$lineSlug] = null;
+        $data = json_decode($raw, true);
+        if (!is_array($data)) return $cache[$lineSlug] = null;
+        $tA = (string)($data['terminus_a'] ?? '');
+        $tB = (string)($data['terminus_b'] ?? '');
+        if ($tA === '' && $tB === '') return $cache[$lineSlug] = null;
+        return $cache[$lineSlug] = [
+            'terminus_a' => $tA,
+            'terminus_b' => $tB,
+            'code'       => (string)($data['code'] ?? ''),
+            'name'       => (string)($data['name'] ?? ''),
+        ];
+    }
+}
