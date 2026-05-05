@@ -264,6 +264,38 @@ $tpl->partial('components/breadcrumb', [
   <section class="station-hero <?= $hasImage ? 'station-hero--with-image' : 'station-hero--placeholder' ?>"
            aria-labelledby="station-hero-title">
 
+    <div class="station-hero__header">
+      <div class="station-hero__badges" aria-label="Lignes desservant la station">
+        <?php foreach ($lines as $line):
+          $lineUrl = '/metro/' . $line['slug'] . '/';
+          $lineExists = Routes::exists(rtrim($lineUrl, '/'));
+        ?>
+          <?php if ($lineExists): ?>
+            <a href="<?= Template::e($lineUrl) ?>"
+               class="station-line-badge"
+               style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+               aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+              <?= Template::e($line['code']) ?>
+            </a>
+          <?php else: ?>
+            <span class="station-line-badge station-line-badge--inactive"
+                  style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+                  aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+              <?= Template::e($line['code']) ?>
+            </span>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </div>
+
+      <h1 id="station-hero-title">
+        Station <?= Template::e($name) ?>
+      </h1>
+
+      <?php if (!empty($hero['tagline'])): ?>
+        <p class="station-hero__tagline"><?= Template::e($hero['tagline']) ?></p>
+      <?php endif; ?>
+    </div>
+
     <?php if ($hasImage): ?>
       <div class="station-hero__image">
         <?php
@@ -312,37 +344,7 @@ $tpl->partial('components/breadcrumb', [
       </div>
     <?php endif; ?>
 
-    <div class="station-hero__content">
-      <div class="station-hero__badges" aria-label="Lignes desservant la station">
-        <?php foreach ($lines as $line):
-          $lineUrl = '/metro/' . $line['slug'] . '/';
-          $lineExists = Routes::exists(rtrim($lineUrl, '/'));
-        ?>
-          <?php if ($lineExists): ?>
-            <a href="<?= Template::e($lineUrl) ?>"
-               class="station-line-badge"
-               style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
-               aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
-              <?= Template::e($line['code']) ?>
-            </a>
-          <?php else: ?>
-            <span class="station-line-badge station-line-badge--inactive"
-                  style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
-                  aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
-              <?= Template::e($line['code']) ?>
-            </span>
-          <?php endif; ?>
-        <?php endforeach; ?>
-      </div>
-
-      <h1 id="station-hero-title">
-        Station <?= Template::e($name) ?>
-      </h1>
-
-      <?php if (!empty($hero['tagline'])): ?>
-        <p class="station-hero__tagline"><?= Template::e($hero['tagline']) ?></p>
-      <?php endif; ?>
-
+    <div class="station-hero__body">
       <?php if (!empty($hero['description'])): ?>
         <p class="station-hero__description">
           <?= Template::e($hero['description']) ?>

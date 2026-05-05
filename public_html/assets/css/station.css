@@ -96,8 +96,18 @@
     opacity: 0.5;
 }
 
-.station-hero__content {
-    padding: 2rem 1.5rem;
+.station-hero__header {
+    padding: 2rem 1.5rem 1.25rem;
+}
+.station-hero__header > :last-child {
+    margin-bottom: 0;
+}
+
+.station-hero__body {
+    padding: 1.25rem 1.5rem 2rem;
+}
+.station-hero__body > :last-child {
+    margin-bottom: 0;
 }
 
 .station-hero__badges {
