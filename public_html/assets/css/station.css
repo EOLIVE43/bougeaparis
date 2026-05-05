@@ -8,11 +8,13 @@
 .station-page {
     --station-spacing: 2rem;
     --station-radius: 12px;
-    padding-top: 2rem;
+    /* Espace breadcrumb -> hero : reduit (le breadcrumb a deja padding 1rem 0
+       en bas via components.css, on ajoute juste un peu de respiration). */
+    padding-top: 0.75rem;
 }
 @media (min-width: 768px) {
     .station-page {
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 }
 
