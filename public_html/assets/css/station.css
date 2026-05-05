@@ -8,14 +8,9 @@
 .station-page {
     --station-spacing: 2rem;
     --station-radius: 12px;
-    /* Espace breadcrumb -> hero : reduit (le breadcrumb a deja padding 1rem 0
-       en bas via components.css, on ajoute juste un peu de respiration). */
-    padding-top: 0.75rem;
-}
-@media (min-width: 768px) {
-    .station-page {
-        padding-top: 1rem;
-    }
+    /* Le breadcrumb porte deja padding 1rem 0 (cf bundle.css) : on ne rajoute
+       plus de padding-top ici pour garder un bloc hero compact. */
+    padding-top: 0;
 }
 
 /* --- Scroll-margin-top pour les ancres quick-links (#trafic, #sorties, etc.)
@@ -39,7 +34,14 @@
    ============================================================ */
 .station-hero {
     position: relative;
-    margin-bottom: var(--station-spacing);
+    /* Hero compact : 0.5rem mobile / 0.75rem desktop avant les raccourcis
+       (quick-links ajoute deja 0.5rem de padding-top). */
+    margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+    .station-hero {
+        margin-bottom: 0.75rem;
+    }
 }
 
 .station-hero__image {
