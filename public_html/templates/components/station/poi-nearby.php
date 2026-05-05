@@ -60,9 +60,18 @@ $count = count($pois);
       $category    = (string)($poi['category']     ?? '');
       $description = (string)($poi['description']  ?? '');
       $imageUrl    = (string)($poi['image_url']    ?? '');
-      $wikiUrl     = (string)($poi['wikipedia_url'] ?? '');
+      // wikipedia_url conserve dans le JSON (audit + future migration vers
+      // pages POI internes) mais NON utilise pour le rendu : voir TODO ci-dessous.
       $exit        = $poi['nearest_exit']           ?? null;
       $featured    = !empty($poi['is_featured']);
+
+      // Wikidata renvoie les labels en bas de casse ("cathedrale Notre-Dame",
+      // "pont Neuf", "ile de la Cite"). On force une majuscule sur la 1re lettre
+      // uniquement (preserve "Notre-Dame", "La Samaritaine", "Saint-Eustache",
+      // ...) en multi-byte safe pour les accents (mb_strtoupper sur 1 char).
+      $nameDisplay = $name !== ''
+          ? mb_strtoupper(mb_substr($name, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($name, 1, null, 'UTF-8')
+          : '';
 
       $hasImage = $imageUrl !== '';
       $hasExit  = is_array($exit) && !empty($exit['number']);
@@ -71,7 +80,7 @@ $count = count($pois);
         <?php if ($hasImage): ?>
           <div class="poi-image">
             <img src="<?= e($imageUrl) ?>"
-                 alt="<?= e($name) ?>"
+                 alt="<?= e($nameDisplay) ?>"
                  loading="lazy"
                  referrerpolicy="no-referrer"
                  width="400" height="225">
@@ -87,7 +96,7 @@ $count = count($pois);
             <span class="poi-category"><?= e($category) ?></span>
           <?php endif; ?>
 
-          <h3 class="poi-name"><?= e($name) ?></h3>
+          <h3 class="poi-name"><?= e($nameDisplay) ?></h3>
 
           <?php if ($description !== ''): ?>
             <p class="poi-description"><?= e($description) ?></p>
@@ -106,15 +115,12 @@ $count = count($pois);
             </div>
           <?php endif; ?>
 
-          <?php if ($wikiUrl !== ''): ?>
-            <a class="poi-link"
-               href="<?= e($wikiUrl) ?>"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="<?= e($name) ?> sur Wikipédia (nouvel onglet)">
-              En savoir plus →
-            </a>
-          <?php endif; ?>
+          <?php
+          // TODO: réactiver le lien quand les pages POI internes existeront (/lieu/{slug}/)
+          // Pour l'instant, on évite d'envoyer le trafic vers Wikipedia.
+          // L'URL Wikipedia reste disponible dans $poi['wikipedia_url'] pour audit
+          // et pour la future migration vers un lien interne « → Découvrir [POI] ».
+          ?>
         </div>
       </li>
     <?php endforeach; ?>
