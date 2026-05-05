@@ -498,6 +498,18 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
+       4quinquies. POI A PROXIMITE (Wikidata + Wikipedia + Commons)
+                   Place ici (et plus apres FAQ) pour grouper la
+                   sequence narrative geographique :
+                   sorties -> plan -> POIs -> histoire/FAQ.
+       ============================================================ -->
+  <?php $tpl->partial('components/station/poi-nearby', [
+      'pois'        => $station['nearby_pois'] ?? [],
+      'stationName' => $name,
+  ]);
+  ?>
+
+  <!-- ============================================================
        5. HISTOIRE
        ============================================================ -->
   <?php if (!empty($history['paragraphs'])): ?>
@@ -531,15 +543,6 @@ $tpl->partial('components/breadcrumb', [
       </div>
     </section>
   <?php endif; ?>
-
-  <!-- ============================================================
-       6bis. POI A PROXIMITE (Wikidata + Wikipedia + Commons)
-       ============================================================ -->
-  <?php $tpl->partial('components/station/poi-nearby', [
-      'pois'        => $station['nearby_pois'] ?? [],
-      'stationName' => $name,
-  ]);
-  ?>
 
   <!-- ============================================================
        7. CONSEILS PRATIQUES
