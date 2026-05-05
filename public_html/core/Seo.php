@@ -11,6 +11,8 @@ class Seo
 {
     private array $data = [];
     private array $schemas = [];
+    /** URLs d'images a precharger (hero LCP). */
+    private array $preloadImages = [];
 
     public function __construct()
     {
@@ -59,6 +61,17 @@ class Seo
         $this->data['og_image'] = str_starts_with($url, 'http')
             ? $url
             : rtrim(Config::get('site.url'), '/') . $url;
+        return $this;
+    }
+
+    /**
+     * Marque une image a precharger en LCP (rendu via <link rel="preload"
+     * as="image" fetchpriority="high"> dans le <head>). Utilise pour le hero
+     * des pages station/ligne afin d'optimiser le Largest Contentful Paint.
+     */
+    public function addPreloadImage(string $url): self
+    {
+        if ($url !== '') $this->preloadImages[] = $url;
         return $this;
     }
 
@@ -172,6 +185,13 @@ class Seo
             if (!empty($a['section'])) {
                 $out .= '<meta property="article:section" content="' . htmlspecialchars($a['section'], ENT_QUOTES, 'UTF-8') . "\">\n";
             }
+        }
+
+        // Preload images (LCP : hero des pages station/ligne)
+        foreach ($this->preloadImages as $url) {
+            $out .= '<link rel="preload" as="image" href="'
+                 . htmlspecialchars($url, ENT_QUOTES, 'UTF-8')
+                 . '" fetchpriority="high">' . "\n";
         }
 
         // Schemas JSON-LD

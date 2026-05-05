@@ -52,7 +52,22 @@ $faq       = $station['faq']       ?? [];
 $tips      = $station['practical_tips'] ?? [];
 $history   = $station['history']   ?? [];
 
-$hasImage  = !empty($image['src']);
+// Hero image : nouveau format (hero_image avec url/alt/width/height) ou
+// fallback sur l'ancien champ image. Si rien : placeholder gradient.
+$heroImage = $station['hero_image'] ?? null;
+if (!is_array($heroImage) || empty($heroImage['url'])) {
+    if (!empty($image['src'])) {
+        $heroImage = [
+            'url'    => $image['src'],
+            'alt'    => $image['alt'] ?? $name,
+            'width'  => 1200,
+            'height' => 675,
+        ];
+    } else {
+        $heroImage = null;
+    }
+}
+$hasImage  = $heroImage !== null;
 $canonical = '/metro/station/' . $slug . '/';
 
 // Charger le CSS dédié
@@ -67,6 +82,12 @@ $tpl->seo
     ->setTitle('Station ' . $name . $arrLabel . ' : ' . $lineCount . ' ligne' . ($lineCount > 1 ? 's' : '') . ' métro' . $rerCodes)
     ->setDescription($hero['description'] ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, stations adjacentes, histoire et conseils pratiques.'))
     ->setCanonical($canonical);
+
+// Hero image : og:image (partages sociaux + Discover) + preload LCP
+if ($hasImage && !empty($heroImage['url'])) {
+    $tpl->seo->setOgImage($heroImage['url']);
+    $tpl->seo->addPreloadImage($heroImage['url']);
+}
 
 // =====================================================================
 // SCHEMA.ORG : @graph unifie (BreadcrumbList + SubwayStation + FAQPage)
@@ -144,7 +165,9 @@ $stationNode = [
         'latitude'  => $station['latitude']  ?? null,
         'longitude' => $station['longitude'] ?? null,
     ],
-    'image'              => $hasImage ? $siteUrl . $image['src'] : null,
+    'image'              => ($hasImage && !empty($heroImage['url']))
+        ? (str_starts_with($heroImage['url'], 'http') ? $heroImage['url'] : $siteUrl . $heroImage['url'])
+        : null,
     'isAccessibleForFree'=> true,
     'publicAccess'       => true,
     'containedInPlace'   => [
@@ -223,10 +246,12 @@ $tpl->partial('components/breadcrumb', [
 
     <?php if ($hasImage): ?>
       <div class="station-hero__image">
-        <img src="<?= Template::e($image['src']) ?>"
-             alt="<?= Template::e($image['alt'] ?? $name) ?>"
-             width="1200" height="675"
-             loading="eager" fetchpriority="high">
+        <img src="<?= Template::e($heroImage['url']) ?>"
+             alt="<?= Template::e($heroImage['alt'] ?? $name) ?>"
+             width="<?= (int)($heroImage['width']  ?? 1600) ?>"
+             height="<?= (int)($heroImage['height'] ?? 900) ?>"
+             loading="eager" fetchpriority="high"
+             referrerpolicy="no-referrer">
       </div>
     <?php endif; ?>
 
