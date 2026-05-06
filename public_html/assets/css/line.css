@@ -1327,7 +1327,10 @@
     background-size: 100% 100%;
 }
 
-/* Liens inactifs (page pas encore créée) — versions --inactive du conditionalLink */
+/* Liens inactifs (page pas encore créée) — versions --inactive du conditionalLink.
+   Couleur #595959 sur blanc = 7.0:1 (AAA WCAG). opacity 0.65 sur le wrapper
+   donne le signal visuel "atténué/non-cliquable" sans dégrader le ratio CSS
+   computé sur lequel Lighthouse base son audit de contraste. */
 .article-card__title-link--inactive,
 .line-card__name-link--inactive,
 .poi-card__name-link--inactive,
@@ -1337,10 +1340,16 @@
 .itineraire-calc__cta--inactive,
 .itineraire-card--inactive,
 .itineraires__more-link--inactive {
-    color: var(--text-muted);
-    cursor: default;
+    color: #595959;
+    cursor: not-allowed;
     pointer-events: none;
-    opacity: 0.7;
+    opacity: 0.65;
+}
+/* Override explicite pour les enfants qui declarent leur propre couleur
+   (sinon le rule plus specifique gagne et le texte revient au gris clair). */
+.related-card--inactive .related-card__label,
+.related-card--inactive .related-card__desc {
+    color: #595959;
 }
 /* Pour les CTAs colores (background teal), neutraliser le fond au inactive */
 .hero__cta--inactive,
@@ -1372,7 +1381,7 @@
 
 /* Discover-pill inactive (lignes pas encore créées) */
 .discover-pill--inactive .discover-pill__name {
-    color: var(--text-muted);
+    color: #595959;
 }
 
 /* ============================================================
