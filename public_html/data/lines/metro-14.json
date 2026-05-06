@@ -348,5 +348,1086 @@
             "correspondences": [],
             "accessible": true
         }
-    ]
+    ],
+    "color_light": "#E0D3E6",
+    "automated_year": 1998,
+    "daily_riders": 820000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr. Spécialiste du trafic, des travaux et de l'organisation pratique des déplacements.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-06",
+            "updated": "2026-05-06",
+            "updated_human": "6 mai 2026"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 1 du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_1_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "internal_links": {
+        "discover_metro_lines": [
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#FFCE00",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#0064B0",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#9F9825",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#98D4E2",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#C04191",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#F28E42",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#83C491",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#F3A4BA",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#83C491",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#CEADD2",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#D5C900",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#E3B32A",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#8D5E2A",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#00814F",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#98D4E2",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            },
+            {
+                "code": "",
+                "name": "Ligne ",
+                "color": "#662483",
+                "color_text": "#FFF",
+                "url": "/metro/ligne-/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "intros": {
+        "introduction_title": "le métro automatique le plus fréquenté de Paris",
+        "introduction": "Inaugurée en 1998 sous le nom de projet Météor (« métro est-ouest rapide »), la <strong>ligne 14</strong> est la <strong>première ligne entièrement automatique</strong> du métro parisien. Sans conducteur, équipée de portes palières sur 100% de ses quais, elle fait figure de référence en matière de modernité et d'accessibilité. En 2024, ses prolongements Saint-Denis Pleyel au nord et Aéroport d'Orly au sud ont fait passer la ligne de 9 à 21 stations en deux décennies. Conséquence : sa <strong>fréquentation a bondi de 45%</strong> et la ligne 14 a détrôné en 2026 la ligne 1 historique pour devenir la <strong>plus empruntée du réseau</strong>, avec 820 000 voyageurs quotidiens.",
+        "plan": "Le tracé de la ligne 14 forme un axe nord-sud structurant de l'agglomération parisienne, reliant Saint-Denis Pleyel et le futur cluster post-JO du nord à l'aéroport d'Orly via Saint-Lazare, Châtelet et Bercy. C'est l'une des rares lignes du métro de Paris à desservir directement un aéroport international.",
+        "stations": "La ligne 14 compte 21 stations dont plusieurs pôles d'échanges majeurs : Saint-Lazare (correspondance vers les lignes Transilien J et L), Châtelet (5 lignes de métro et 3 RER), Gare de Lyon (TGV Sud, TER Bourgogne-Auvergne, RER A et D) et l'Aéroport d'Orly (terminaux 1, 2, 3 et 4 par navette interne).",
+        "horaires": "Le service ligne 14 fonctionne tous les jours de 5h30 à 1h15, avec prolongation jusqu'à 2h15 les vendredis, samedis et veilles de fêtes. En heure de pointe, une rame passe toutes les <strong>85 secondes</strong>, soit la fréquence la plus élevée du réseau parisien.",
+        "trafic": "L'automatisation intégrale et l'absence de conducteur permettent à la ligne 14 d'afficher l'un des taux de régularité les plus élevés du réseau RATP. Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "La ligne 14 propose des trajets directs entre des pôles stratégiques de Paris et de la petite couronne : <strong>Châtelet → Aéroport d'Orly</strong> en 25 minutes (contre 40 min en RER B), <strong>Saint-Lazare → Gare de Lyon</strong> en 12 minutes, <strong>Saint-Denis Pleyel → Châtelet</strong> en 17 minutes.",
+        "que_voir": "La ligne 14 dessert plusieurs sites emblématiques de Paris : la Pyramide du Louvre et la Comédie-Française (station Pyramides), le quartier des grands magasins et l'Opéra (Saint-Lazare puis Madeleine), l'Accor Arena et la Cinémathèque (Bercy), le quartier asiatique des Olympiades dans le 13ᵉ, et bien sûr l'Aéroport d'Orly accessible directement.",
+        "histoire": "Conçue dès les années 1980 pour répondre à la saturation du RER A, la ligne 14 « Météor » a été ouverte le 15 octobre 1998 entre Madeleine et Bibliothèque François Mitterrand. Cinq prolongements en 25 ans ont fait passer la ligne de 7 à 21 stations, dont le double prolongement Saint-Denis Pleyel ↔ Orly inauguré pour les Jeux Olympiques de Paris 2024.",
+        "accessibilite": "La ligne 14 a été conçue dès l'origine pour être <strong>100% accessible aux personnes à mobilité réduite</strong>. Toutes les stations disposent d'ascenseurs, les quais sont à hauteur de plancher des rames et les portes palières automatiques sécurisent l'attente. C'est la seule ligne du métro parisien historique entièrement accessible PMR.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 14 fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "Après les prolongements monumentaux livrés en 2024 pour les JO, la ligne 14 entre dans une phase de stabilisation et d'amélioration des stations existantes. Aucun prolongement futur n'est annoncé à ce jour.",
+        "faq": "Premier métro à 5h30, dernier métro à 1h15 (2h15 vendredi-samedi), trajet Châtelet-Orly en 25 min : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 14, avec des réponses précises basées sur les données officielles IDFM 2026.",
+        "articles_lies": "Trafic en direct, dossiers sur les nouveautés et conseils pratiques : retrouvez les derniers articles de BougeaParis dédiés à la ligne 14.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1989",
+                "title": "Décision et lancement du projet Météor",
+                "icon": "📋",
+                "description": "Le Schéma directeur d'Île-de-France entérine la création d'une nouvelle ligne automatique pour soulager le RER A saturé. Le projet est baptisé Météor (Métro Est-Ouest Rapide)."
+            },
+            {
+                "year": "1998",
+                "title": "Ouverture historique le 15 octobre",
+                "icon": "🎉",
+                "description": "La ligne 14 est inaugurée entre Madeleine et Bibliothèque François Mitterrand : 7 stations, 7,2 km. C'est le premier métro entièrement automatique sans conducteur du réseau parisien."
+            },
+            {
+                "year": "2003",
+                "title": "Prolongement à Saint-Lazare",
+                "icon": "🚉",
+                "description": "Le 16 décembre, la ligne 14 atteint la gare Saint-Lazare au nord, offrant une nouvelle correspondance majeure avec les lignes Transilien J et L."
+            },
+            {
+                "year": "2007",
+                "title": "Extension sud à Olympiades",
+                "icon": "🏯",
+                "description": "Le 26 juin, ouverture de la station Olympiades dans le 13ᵉ arrondissement, plongeant dans le quartier asiatique parisien."
+            },
+            {
+                "year": "2020",
+                "title": "Prolongement à Mairie de Saint-Ouen",
+                "icon": "🏙️",
+                "description": "Le 14 décembre, ouverture de 4 nouvelles stations au nord (Pont Cardinet, Porte de Clichy, Saint-Ouen, Mairie de Saint-Ouen). La ligne passe de 9 à 13 stations."
+            },
+            {
+                "year": "2024",
+                "title": "Double prolongement Saint-Denis Pleyel ↔ Orly",
+                "icon": "🏟️",
+                "description": "Inauguration le 24 juin pour les Jeux Olympiques de Paris : 8 nouvelles stations au sud jusqu'à l'Aéroport d'Orly, et 1 station au nord à Saint-Denis Pleyel. La ligne 14 connecte désormais le Stade de France à l'aéroport en passant par le centre de Paris."
+            },
+            {
+                "year": "2026",
+                "title": "Ligne la plus fréquentée du réseau",
+                "icon": "🥇",
+                "description": "Avec 820 000 voyageurs par jour, la ligne 14 détrône la ligne 1 historique (750 000 voy/j) pour devenir la ligne la plus empruntée du métro parisien. Une montée en charge spectaculaire portée par les prolongements 2020 et 2024."
+            }
+        ],
+        "key_facts": [
+            "Ligne 14 = 21 stations en 2026, contre 7 à l'origine en 1998",
+            "100% des stations sont accessibles aux personnes à mobilité réduite",
+            "Couleur officielle violet : #62259D",
+            "Matériel roulant : MP14 CC (mis en service progressivement à partir de 2020)",
+            "Fréquence en heure de pointe : 1 rame toutes les 85 secondes (record réseau)",
+            "Trajet complet Saint-Denis Pleyel ↔ Aéroport d'Orly : 40 minutes"
+        ],
+        "anecdotes": [
+            {
+                "title": "Pourquoi le nom « Météor » ?",
+                "description": "Le projet d'origine a été baptisé Météor pour « MÉTro Est-Ouest Rapide », bien que le tracé final soit en réalité orienté nord-sud après le prolongement de 2024. Le nom de code est resté en interne RATP, même si le public la connaît simplement comme « la 14 »."
+            },
+            {
+                "title": "Premier métro 100% automatique",
+                "description": "Quand la ligne 14 ouvre en 1998, c'est la première ligne entièrement automatique du métro parisien. Sans conducteur, les rames sont pilotées en continu par le système de contrôle commande. Il faudra attendre 2012 pour voir la ligne 1 historique passer à son tour en mode automatique."
+            },
+            {
+                "title": "Toutes les stations équipées de portes palières",
+                "description": "La ligne 14 a été conçue dès l'origine avec des portes palières en façade de quai sur l'intégralité de son tracé. C'est une signature visuelle unique : aucune autre ligne historique du métro parisien n'en est équipée à 100%."
+            },
+            {
+                "title": "Une fréquence record de 85 secondes",
+                "description": "Aux heures de pointe du matin et du soir, une rame passe toutes les 85 secondes en moyenne, soit la fréquence la plus élevée de tout le réseau parisien. Cette performance est rendue possible par le système de pilotage automatique CBTC qui optimise les distances de sécurité entre rames."
+            },
+            {
+                "title": "Détrône la ligne 1 historique en 2026",
+                "description": "En janvier 2026, IDFM publie les chiffres de fréquentation : la ligne 14 atteint 820 000 voyageurs par jour, dépassant la ligne 1 (750 000) qui détenait le record depuis l'inauguration du métro parisien en 1900. Une révolution silencieuse en seulement 28 ans d'existence."
+            },
+            {
+                "title": "Châtelet → Orly en 25 minutes chrono",
+                "description": "Le trajet direct entre Châtelet et l'Aéroport d'Orly prend 25 minutes en ligne 14, contre 40 minutes via le RER B + Orlyval. Une concurrence directe au RER B, avec en bonus l'absence de changement et un confort supérieur des rames MP14 CC."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Combien de stations compte la ligne 14 du métro parisien ?",
+            "answer": "La ligne 14 compte 21 stations en 2026, de Saint-Denis Pleyel au nord à l'Aéroport d'Orly au sud. Les stations majeures sont Saint-Lazare, Madeleine, Pyramides, Châtelet, Gare de Lyon, Bercy, Bibliothèque François Mitterrand et Olympiades."
+        },
+        {
+            "question": "À quelle heure passe le premier métro ligne 14 ?",
+            "answer": "Le premier métro ligne 14 part de chaque terminus à 5h30 du matin, tous les jours de la semaine. Comme toutes les lignes du métro parisien, le service débute à 5h30."
+        },
+        {
+            "question": "À quelle heure passe le dernier métro ligne 14 ?",
+            "answer": "Le dernier métro ligne 14 part de chaque terminus à 1h15 du matin la semaine, et 2h15 les vendredis, samedis et veilles de fêtes. La ligne suit le calendrier standard du métro parisien."
+        },
+        {
+            "question": "Combien de temps pour aller de Châtelet à l'Aéroport d'Orly en ligne 14 ?",
+            "answer": "Comptez environ 25 minutes pour le trajet Châtelet → Aéroport d'Orly via la ligne 14, sans correspondance. C'est plus rapide que le RER B + Orlyval (40 minutes) et avec un confort supérieur."
+        },
+        {
+            "question": "La ligne 14 est-elle vraiment automatique ?",
+            "answer": "Oui, la ligne 14 est intégralement automatique depuis son inauguration en 1998. Les rames roulent sans conducteur, pilotées par le système CBTC. Les portes palières sur l'ensemble des quais garantissent la sécurité des voyageurs."
+        },
+        {
+            "question": "La ligne 14 dessert-elle directement l'aéroport d'Orly ?",
+            "answer": "Oui, depuis le 24 juin 2024, la ligne 14 dessert directement l'Aéroport d'Orly via la station « Aéroport d'Orly », terminus sud. Une navette interne dessert ensuite les terminaux 1, 2, 3 et 4 sans coût supplémentaire."
+        },
+        {
+            "question": "Quelles correspondances depuis Saint-Lazare en ligne 14 ?",
+            "answer": "À Saint-Lazare, la ligne 14 offre des correspondances avec les lignes 3, 12 et 13 du métro, ainsi qu'avec les lignes Transilien J et L au départ de la gare de Saint-Lazare (Mantes-la-Jolie, Versailles, Cergy)."
+        },
+        {
+            "question": "Quelles stations de la ligne 14 sont accessibles PMR ?",
+            "answer": "Les 21 stations de la ligne 14 sont 100% accessibles aux personnes à mobilité réduite : ascenseurs sur l'intégralité du parcours, quais à hauteur de plancher des rames, portes palières automatiques. C'est la seule ligne du métro parisien entièrement accessible PMR."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 21,
+            "total_count": 21,
+            "accessibility_rate": 100,
+            "elevators_count": 84,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "title": "Ascenseurs sur toutes les stations",
+                "description": "Les 21 stations de la ligne 14 disposent d'ascenseurs reliant la voirie aux quais, sans rupture de charge."
+            },
+            {
+                "icon": "🚪",
+                "title": "Portes palières automatiques",
+                "description": "L'intégralité des quais est équipée de portes palières en façade, garantissant la sécurité des voyageurs en fauteuil ou avec poussette."
+            },
+            {
+                "icon": "📐",
+                "title": "Quais à hauteur de plancher",
+                "description": "Les quais et les rames MP14 CC sont calés à la même hauteur, supprimant la marche entre quai et train. Aucune rampe ni assistance n'est nécessaire."
+            },
+            {
+                "icon": "🔊",
+                "title": "Annonces sonores et visuelles",
+                "description": "Toutes les stations et rames diffusent les annonces en sonore et en visuel sur écrans LCD, conformément aux normes WCAG."
+            }
+        ],
+        "tips": [
+            "L'accessibilité est totale sur la ligne 14 : aucune réservation préalable n'est nécessaire pour les voyageurs PMR.",
+            "Les rames MP14 CC offrent des espaces dédiés clairement signalés (place fauteuil + poussette).",
+            "Pour les correspondances, vérifier l'accessibilité de la ligne destinataire : la 1, la 4 et la 14 sont totalement accessibles, mais ce n'est pas le cas de toutes les autres lignes historiques."
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-06",
+        "current_works": [],
+        "upcoming_works": [],
+        "recent_works": [
+            {
+                "date": "2024-06-24",
+                "title": "Prolongement Saint-Denis Pleyel + Aéroport d'Orly",
+                "description": "Inauguration de 9 nouvelles stations (8 au sud, 1 au nord) pour les Jeux Olympiques de Paris 2024. La ligne passe de 13 à 21 stations et connecte directement le Stade de France à l'aéroport d'Orly via le centre de Paris.",
+                "icon": "🏟️"
+            },
+            {
+                "date": "2020-12-14",
+                "title": "Prolongement Mairie de Saint-Ouen",
+                "description": "Ouverture de 4 nouvelles stations au nord (Pont Cardinet, Porte de Clichy, Saint-Ouen, Mairie de Saint-Ouen). Désaturation partielle de la ligne 13.",
+                "icon": "🏙️"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Pyramide du Louvre",
+                    "slug": "pyramide-louvre",
+                    "station": "Pyramides",
+                    "station_slug": "pyramides",
+                    "icon": "🔺",
+                    "description": "L'entrée monumentale en verre du musée du Louvre, conçue par I.M. Pei et inaugurée en 1989, est emblématique du Paris contemporain.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Comédie-Française",
+                    "slug": "comedie-francaise",
+                    "station": "Pyramides",
+                    "station_slug": "pyramides",
+                    "icon": "🎭",
+                    "description": "Salle Richelieu, théâtre national fondé sous Louis XIV en 1680. Programmation classique et contemporaine, place du Palais-Royal.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Opéra Garnier",
+                    "slug": "opera-garnier",
+                    "station": "Madeleine",
+                    "station_slug": "madeleine",
+                    "icon": "🎼",
+                    "description": "Chef-d'œuvre architectural de Charles Garnier, inauguré en 1875. Accès rapide depuis Madeleine via la galerie souterraine ou un trajet de 5 minutes à pied.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Église de la Madeleine",
+                    "slug": "eglise-madeleine",
+                    "station": "Madeleine",
+                    "station_slug": "madeleine",
+                    "icon": "⛪",
+                    "description": "Édifice néoclassique inspiré d'un temple antique, achevé en 1842. Niche au centre du quartier des grands magasins et de la gastronomie parisienne.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Tour Saint-Jacques",
+                    "slug": "tour-saint-jacques",
+                    "station": "Châtelet",
+                    "station_slug": "chatelet",
+                    "icon": "🗼",
+                    "description": "Vestige gothique flamboyant du XVIᵉ siècle, classé monument historique. Surplombe le square Saint-Jacques, à 5 minutes à pied de Châtelet.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Stade de France",
+                    "slug": "stade-de-france",
+                    "station": "Saint-Denis Pleyel",
+                    "station_slug": "saint-denis-pleyel",
+                    "icon": "🏟️",
+                    "description": "Enceinte sportive nationale inaugurée en 1998 pour la Coupe du monde de football. Capacité 80 000 places. Concerts, finales et grands événements.",
+                    "schema_type": "SportsActivityLocation"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées à visiter le long de la ligne {code}",
+            "icon": "🖼️",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Musée du Louvre",
+                    "slug": "musee-louvre",
+                    "station": "Pyramides",
+                    "station_slug": "pyramides",
+                    "icon": "🖼️",
+                    "description": "Le plus grand musée d'art au monde, 35 000 œuvres exposées, dont la Joconde. Ouvert tous les jours sauf mardi, accès direct depuis Pyramides en 5 minutes à pied.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Cinémathèque française",
+                    "slug": "cinematheque-francaise",
+                    "station": "Bercy",
+                    "station_slug": "bercy",
+                    "icon": "🎞️",
+                    "description": "Musée du cinéma fondé par Henri Langlois, abrité dans le bâtiment de Frank Gehry au parc de Bercy. Salles de projection, expositions, archives.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Bibliothèque nationale de France",
+                    "slug": "bnf",
+                    "station": "Bibliothèque François Mitterrand",
+                    "station_slug": "bibliotheque-francois-mitterrand",
+                    "icon": "📚",
+                    "description": "Site François Mitterrand de la BnF, conçu par Dominique Perrault. Quatre tours en forme de livre ouvert. Salles de lecture publiques et expositions.",
+                    "schema_type": "Library"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Olympiades — Chinatown parisien",
+                    "slug": "quartier-olympiades",
+                    "station": "Olympiades",
+                    "station_slug": "olympiades",
+                    "icon": "🏮",
+                    "description": "Le plus grand quartier asiatique d'Europe, dans le 13ᵉ arrondissement. Restaurants vietnamiens, chinois, cambodgiens, marchés Tang Frères, dim sum réputés.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Bercy Village",
+                    "slug": "bercy-village",
+                    "station": "Cour Saint-Émilion",
+                    "station_slug": "cour-saint-emilion",
+                    "icon": "🍷",
+                    "description": "Anciens chais à vin reconvertis en zone commerciale et de loisirs sur la rive droite. Restaurants, boutiques, cinéma UGC, ambiance pavée et arborée.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier des Grands Magasins",
+                    "slug": "grands-magasins",
+                    "station": "Saint-Lazare",
+                    "station_slug": "saint-lazare",
+                    "icon": "🛍️",
+                    "description": "Galeries Lafayette, Printemps Haussmann, boulevard des Italiens : le cœur du shopping parisien, à 5 minutes à pied de Saint-Lazare ou Madeleine.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Saint-Denis Pleyel — quartier post-JO",
+                    "slug": "saint-denis-pleyel",
+                    "station": "Saint-Denis Pleyel",
+                    "station_slug": "saint-denis-pleyel",
+                    "icon": "🏗️",
+                    "description": "Nouveau pôle d'affaires et résidentiel du Grand Paris, autour du Village des Athlètes (JO 2024) reconverti en logements. Cité du Cinéma, futur cluster créatif.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "gares": {
+            "title_template": "Gares et grands pôles d'échange de la ligne {code}",
+            "icon": "🚉",
+            "color_gradient": "linear-gradient(135deg, #4299E1 0%, #2563AC 100%)",
+            "category_url": "/gares/",
+            "items": [
+                {
+                    "name": "Gare de Lyon",
+                    "slug": "gare-lyon",
+                    "station": "Gare de Lyon",
+                    "station_slug": "gare-de-lyon",
+                    "icon": "🚄",
+                    "description": "Grande gare TGV pour le sud-est de la France et l'Italie, RER A et D, restaurant historique Le Train Bleu. Pôle d'échange majeur du réseau.",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Gare Saint-Lazare",
+                    "slug": "gare-saint-lazare",
+                    "station": "Saint-Lazare",
+                    "station_slug": "saint-lazare",
+                    "icon": "🚆",
+                    "description": "Troisième gare parisienne en fréquentation. Lignes Transilien J et L vers la Normandie, Versailles, Cergy. Halle métallique classée monument historique.",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Aéroport d'Orly",
+                    "slug": "aeroport-orly",
+                    "station": "Aéroport d'Orly",
+                    "station_slug": "aeroport-orly",
+                    "icon": "✈️",
+                    "description": "Deuxième aéroport de Paris, accessible directement par la ligne 14 depuis le 24 juin 2024. Navette interne gratuite vers les terminaux 1, 2, 3 et 4.",
+                    "schema_type": "Airport"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "pyramide-louvre",
+                        "name": "Pyramide du Louvre",
+                        "description": "L'entrée monumentale en verre du musée du Louvre, conçue par I.M. Pei et inaugurée en 1989, est emblématique du Paris contemporain.",
+                        "station": "Pyramides",
+                        "station_slug": "pyramides"
+                    },
+                    {
+                        "slug": "comedie-francaise",
+                        "name": "Comédie-Française",
+                        "description": "Salle Richelieu, théâtre national fondé sous Louis XIV en 1680. Programmation classique et contemporaine, place du Palais-Royal.",
+                        "station": "Pyramides",
+                        "station_slug": "pyramides"
+                    },
+                    {
+                        "slug": "opera-garnier",
+                        "name": "Opéra Garnier",
+                        "description": "Chef-d'œuvre architectural de Charles Garnier, inauguré en 1875. Accès rapide depuis Madeleine via la galerie souterraine ou un trajet de 5 minutes à pied.",
+                        "station": "Madeleine",
+                        "station_slug": "madeleine"
+                    },
+                    {
+                        "slug": "eglise-madeleine",
+                        "name": "Église de la Madeleine",
+                        "description": "Édifice néoclassique inspiré d'un temple antique, achevé en 1842. Niche au centre du quartier des grands magasins et de la gastronomie parisienne.",
+                        "station": "Madeleine",
+                        "station_slug": "madeleine"
+                    },
+                    {
+                        "slug": "tour-saint-jacques",
+                        "name": "Tour Saint-Jacques",
+                        "description": "Vestige gothique flamboyant du XVIᵉ siècle, classé monument historique. Surplombe le square Saint-Jacques, à 5 minutes à pied de Châtelet.",
+                        "station": "Châtelet",
+                        "station_slug": "chatelet"
+                    },
+                    {
+                        "slug": "stade-de-france",
+                        "name": "Stade de France",
+                        "description": "Enceinte sportive nationale inaugurée en 1998 pour la Coupe du monde de football. Capacité 80 000 places. Concerts, finales et grands événements.",
+                        "station": "Saint-Denis Pleyel",
+                        "station_slug": "saint-denis-pleyel"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🖼️",
+                "title": "Musées à visiter",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "musee-louvre",
+                        "name": "Musée du Louvre",
+                        "description": "Le plus grand musée d'art au monde, 35 000 œuvres exposées, dont la Joconde. Ouvert tous les jours sauf mardi, accès direct depuis Pyramides en 5 minutes à pied.",
+                        "station": "Pyramides",
+                        "station_slug": "pyramides"
+                    },
+                    {
+                        "slug": "cinematheque-francaise",
+                        "name": "Cinémathèque française",
+                        "description": "Musée du cinéma fondé par Henri Langlois, abrité dans le bâtiment de Frank Gehry au parc de Bercy. Salles de projection, expositions, archives.",
+                        "station": "Bercy",
+                        "station_slug": "bercy"
+                    },
+                    {
+                        "slug": "bnf",
+                        "name": "Bibliothèque nationale de France",
+                        "description": "Site François Mitterrand de la BnF, conçu par Dominique Perrault. Quatre tours en forme de livre ouvert. Salles de lecture publiques et expositions.",
+                        "station": "Bibliothèque François Mitterrand",
+                        "station_slug": "bibliotheque-francois-mitterrand"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-olympiades",
+                        "name": "Olympiades — Chinatown parisien",
+                        "description": "Le plus grand quartier asiatique d'Europe, dans le 13ᵉ arrondissement. Restaurants vietnamiens, chinois, cambodgiens, marchés Tang Frères, dim sum réputés.",
+                        "station": "Olympiades",
+                        "station_slug": "olympiades"
+                    },
+                    {
+                        "slug": "bercy-village",
+                        "name": "Bercy Village",
+                        "description": "Anciens chais à vin reconvertis en zone commerciale et de loisirs sur la rive droite. Restaurants, boutiques, cinéma UGC, ambiance pavée et arborée.",
+                        "station": "Cour Saint-Émilion",
+                        "station_slug": "cour-saint-emilion"
+                    },
+                    {
+                        "slug": "grands-magasins",
+                        "name": "Quartier des Grands Magasins",
+                        "description": "Galeries Lafayette, Printemps Haussmann, boulevard des Italiens : le cœur du shopping parisien, à 5 minutes à pied de Saint-Lazare ou Madeleine.",
+                        "station": "Saint-Lazare",
+                        "station_slug": "saint-lazare"
+                    },
+                    {
+                        "slug": "saint-denis-pleyel",
+                        "name": "Saint-Denis Pleyel — quartier post-JO",
+                        "description": "Nouveau pôle d'affaires et résidentiel du Grand Paris, autour du Village des Athlètes (JO 2024) reconverti en logements. Cité du Cinéma, futur cluster créatif.",
+                        "station": "Saint-Denis Pleyel",
+                        "station_slug": "saint-denis-pleyel"
+                    }
+                ]
+            },
+            {
+                "id": "gares",
+                "icon": "🚉",
+                "title": "Gares et grands pôles",
+                "category_url": "/gares/",
+                "pois": [
+                    {
+                        "slug": "gare-lyon",
+                        "name": "Gare de Lyon",
+                        "description": "Grande gare TGV pour le sud-est de la France et l'Italie, RER A et D, restaurant historique Le Train Bleu. Pôle d'échange majeur du réseau.",
+                        "station": "Gare de Lyon",
+                        "station_slug": "gare-de-lyon"
+                    },
+                    {
+                        "slug": "gare-saint-lazare",
+                        "name": "Gare Saint-Lazare",
+                        "description": "Troisième gare parisienne en fréquentation. Lignes Transilien J et L vers la Normandie, Versailles, Cergy. Halle métallique classée monument historique.",
+                        "station": "Saint-Lazare",
+                        "station_slug": "saint-lazare"
+                    },
+                    {
+                        "slug": "aeroport-orly",
+                        "name": "Aéroport d'Orly",
+                        "description": "Deuxième aéroport de Paris, accessible directement par la ligne 14 depuis le 24 juin 2024. Navette interne gratuite vers les terminaux 1, 2, 3 et 4.",
+                        "station": "Aéroport d'Orly",
+                        "station_slug": "aeroport-orly"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "Du Stade de France au Louvre",
+            "description": "L'axe culture-sport du Grand Paris : du Stade de France à la Pyramide du Louvre, sans changer de ligne",
+            "stops": [
+                "Saint-Denis Pleyel",
+                "Saint-Ouen",
+                "Saint-Lazare",
+                "Madeleine",
+                "Pyramides"
+            ],
+            "duration_min": 22,
+            "icon": "🏟️"
+        },
+        {
+            "title": "Direct vers Orly, alternative au RER B",
+            "description": "L'itinéraire le plus rapide pour rejoindre l'aéroport d'Orly depuis le centre de Paris : 25 minutes chrono, sans correspondance",
+            "stops": [
+                "Châtelet",
+                "Gare de Lyon",
+                "Bercy",
+                "Olympiades",
+                "Maison Blanche",
+                "Aéroport d'Orly"
+            ],
+            "duration_min": 25,
+            "icon": "✈️"
+        },
+        {
+            "title": "Le tracé historique de 1998",
+            "description": "Le tronçon original de la ligne Météor, entre Madeleine et la Bibliothèque François Mitterrand",
+            "stops": [
+                "Madeleine",
+                "Pyramides",
+                "Châtelet",
+                "Gare de Lyon",
+                "Bercy",
+                "Cour Saint-Émilion",
+                "Bibliothèque François Mitterrand"
+            ],
+            "duration_min": 18,
+            "icon": "🏛️"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Châtelet",
+                "slug": "chatelet"
+            },
+            "to": {
+                "name": "Aéroport d'Orly",
+                "slug": "aeroport-orly"
+            },
+            "duration_min": 25,
+            "transfers": 0,
+            "lines": [
+                "14"
+            ],
+            "description": "Trajet direct vers l'aéroport, alternative rapide au RER B + Orlyval",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Saint-Lazare",
+                "slug": "saint-lazare"
+            },
+            "to": {
+                "name": "Gare de Lyon",
+                "slug": "gare-de-lyon"
+            },
+            "duration_min": 12,
+            "transfers": 0,
+            "lines": [
+                "14"
+            ],
+            "description": "Liaison express entre les deux grandes gares ferroviaires de Paris (Nord-Ouest ↔ Sud-Est)",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Saint-Denis Pleyel",
+                "slug": "saint-denis-pleyel"
+            },
+            "to": {
+                "name": "Châtelet",
+                "slug": "chatelet"
+            },
+            "duration_min": 17,
+            "transfers": 0,
+            "lines": [
+                "14"
+            ],
+            "description": "Connexion du nord du Grand Paris au cœur historique parisien",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Madeleine",
+                "slug": "madeleine"
+            },
+            "to": {
+                "name": "Bibliothèque François Mitterrand",
+                "slug": "bibliotheque-francois-mitterrand"
+            },
+            "duration_min": 15,
+            "transfers": 0,
+            "lines": [
+                "14"
+            ],
+            "description": "Le tracé original de 1998, des grands magasins à la BnF",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Bercy",
+                "slug": "bercy"
+            },
+            "to": {
+                "name": "Saint-Lazare",
+                "slug": "saint-lazare"
+            },
+            "duration_min": 14,
+            "transfers": 0,
+            "lines": [
+                "14"
+            ],
+            "description": "Liaison nord-sud entre l'Accor Arena et le quartier des affaires",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "Ligne 14 : pourquoi elle a détrôné la ligne 1 en 2026",
+            "slug": "ligne-14-detroner-ligne-1-2026",
+            "url": "/info-trafic/ligne-14-detroner-ligne-1-2026/",
+            "category": "Analyse",
+            "category_slug": "analyse",
+            "category_color": "#62259D",
+            "excerpt": "Avec 820 000 voyageurs par jour, la ligne 14 est devenue en 2026 la plus fréquentée du réseau parisien. Retour sur 28 ans de prolongements et de croissance fulgurante.",
+            "author": "Ludo",
+            "published_at": "2026-05-01T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "Comment fonctionne un métro automatique ?",
+            "slug": "metro-automatique-fonctionnement",
+            "url": "/info-trafic/metro-automatique-fonctionnement/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#0F6E56",
+            "excerpt": "Du système CBTC aux portes palières, plongée dans la mécanique invisible des lignes 14, 1 et 4 du métro parisien.",
+            "author": "Ludo",
+            "published_at": "2026-04-20T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 8,
+            "image": ""
+        },
+        {
+            "title": "Tout sur le prolongement de la ligne 14 jusqu'à Orly",
+            "slug": "prolongement-ligne-14-orly",
+            "url": "/info-trafic/prolongement-ligne-14-orly/",
+            "category": "Dossier",
+            "category_slug": "dossier",
+            "category_color": "#BA7517",
+            "excerpt": "8 nouvelles stations, 14 km de tunnels supplémentaires, 25 minutes pour rejoindre l'aéroport d'Orly depuis Châtelet : le bilan 18 mois après l'ouverture des JO.",
+            "author": "Ludo",
+            "published_at": "2026-03-15T10:00:00",
+            "published_label": "Mars 2026",
+            "reading_time": 10,
+            "image": ""
+        },
+        {
+            "title": "Saint-Denis Pleyel : la nouvelle gare star du Grand Paris",
+            "slug": "saint-denis-pleyel-gare-grand-paris",
+            "url": "/info-trafic/saint-denis-pleyel-gare-grand-paris/",
+            "category": "Reportage",
+            "category_slug": "reportage",
+            "category_color": "#2C5282",
+            "excerpt": "Plus grand pôle d'échanges du Grand Paris en construction, Saint-Denis Pleyel concentre la 14, la 15, la 16, la 17 et le RER D. Visite guidée.",
+            "author": "Ludo",
+            "published_at": "2026-02-20T08:30:00",
+            "published_label": "Février 2026",
+            "reading_time": 7,
+            "image": ""
+        }
+    ],
+    "seo": {
+        "h1": "Métro Ligne 14 Paris : plan, horaires et trafic",
+        "title": "Métro Ligne 14 Paris : plan, stations, horaires et trafic temps réel",
+        "description": "Toute l'info sur la ligne 14 du métro parisien : 21 stations de Saint-Denis Pleyel à l'Aéroport d'Orly, premier métro automatique du réseau, horaires, trafic temps réel et correspondances.",
+        "lead": "Toute l'information sur la <strong>ligne 14 du métro parisien</strong>, devenue en 2026 la <strong>ligne la plus fréquentée du réseau</strong> avec 820 000 voyageurs par jour. <strong>21 stations</strong> de <strong>Saint-Denis Pleyel</strong> à l'<strong>Aéroport d'Orly</strong>, premier métro entièrement automatique de Paris, mis en service en 1998 et prolongé pour les Jeux Olympiques 2024."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Ligne-14-Pyramides1.jpg",
+        "alt": "Quai de la station Pyramides sur la ligne 14, avec ses portes palières emblématiques et sa voûte arquée",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Pline",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Ligne-14-Pyramides1.jpg",
+            "date": "2006-10",
+            "description": "Station Pyramides, vue plongée sur les portes palières et la voûte arquée"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-14/ligne-14-400.avif",
+                "800": "/assets/img/lines/ligne-14/ligne-14-800.avif",
+                "1200": "/assets/img/lines/ligne-14/ligne-14-1200.avif",
+                "1600": "/assets/img/lines/ligne-14/ligne-14-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-14/ligne-14-400.webp",
+                "800": "/assets/img/lines/ligne-14/ligne-14-800.webp",
+                "1200": "/assets/img/lines/ligne-14/ligne-14-1200.webp",
+                "1600": "/assets/img/lines/ligne-14/ligne-14-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-14/ligne-14-400.jpg",
+                "800": "/assets/img/lines/ligne-14/ligne-14-800.jpg",
+                "1200": "/assets/img/lines/ligne-14/ligne-14-1200.jpg",
+                "1600": "/assets/img/lines/ligne-14/ligne-14-1600.jpg"
+            }
+        }
+    }
 }
