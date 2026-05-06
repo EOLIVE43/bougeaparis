@@ -82,5 +82,29 @@
   "hotel-de-ville": {
     "wikimedia_query": "Hôtel de Ville Paris facade",
     "wikimedia_blocklist": ["1944", "wwii", "liberation", "occupation", "manifestation", "yellow vest"]
+  },
+
+  "quartier-olympiades": {
+    "wikimedia_query": "Olympiades 13e arrondissement Paris tours",
+    "wikimedia_blocklist": ["plan", "carte", "metro logo", "JO 2024", "olympic games", "olympics", "village athletes"],
+    "_comment": "v1.4.10 — Ligne 14 : éviter confusion avec JO 2024 / Village des Athlètes. Cible : tours Olympiades + Chinatown 13e."
+  },
+
+  "grands-magasins": {
+    "wikimedia_query": "Galeries Lafayette Haussmann Paris coupole",
+    "wikimedia_blocklist": ["interior shop", "boutique", "merchandise", "ralph lauren", "luxury brand"],
+    "_comment": "v1.4.10 — Ligne 14 : terme générique remplacé par lieu emblématique du quartier (Galeries Lafayette + sa coupole iconique)."
+  },
+
+  "saint-denis-pleyel": {
+    "wikimedia_query": "Tour Pleyel Saint-Denis France",
+    "wikimedia_blocklist": ["plan", "carte", "metro logo", "village athletes", "village athlètes", "olympic", "ratp"],
+    "_comment": "v1.4.10 — Ligne 14 : quartier neuf (post-JO 2024), peu de photos libres récentes. Fallback sur Tour Pleyel iconique du quartier."
+  },
+
+  "aeroport-orly": {
+    "wikimedia_query": "Aéroport Paris Orly terminal extérieur",
+    "wikimedia_blocklist": ["plan", "carte", "logo", "interior", "departure board", "tarmac", "runway", "boeing", "airbus", "aircraft maintenance"],
+    "_comment": "v1.4.10 — Ligne 14 : éviter logos compagnies, intérieurs terminaux, planes. Cible : façade extérieure terminal."
   }
 }
