@@ -125,12 +125,26 @@ foreach ($pois as $theme) {
           <article class="poi-card <?= $hasImage ? 'poi-card--with-image' : '' ?>" itemscope itemtype="https://schema.org/<?= htmlspecialchars($poi['schema_type']) ?>">
 
             <?php if ($hasImage): ?>
-              <!-- Photo réelle (Wikimedia, optimisée Discover 1200x675) -->
+              <!-- Photo réelle (Wikimedia, optimisée Discover 1200x675).
+                   Srcset : mobile sert le thumb 600w (~80KB), desktop sert le full 1200w (~150KB).
+                   Économie typique sur mobile : ~50% du poids image. -->
+              <?php
+                $imgSrc   = $poi['image']['src']                   ?? '';
+                $imgThumb = $poi['image']['thumb']                 ?? '';
+                $imgAlt   = $poi['image']['alt']                   ?? $poi['name'];
+                $imgW     = (int)($poi['image']['width']  ?? 1200);
+                $imgH     = (int)($poi['image']['height'] ?? 675);
+                $hasThumb = $imgThumb !== '' && $imgThumb !== $imgSrc;
+              ?>
               <div class="poi-card__image poi-card__image--photo">
-                <img src="<?= htmlspecialchars($poi['image']['src']) ?>"
-                     alt="<?= htmlspecialchars($poi['image']['alt'] ?? $poi['name']) ?>"
-                     width="<?= htmlspecialchars($poi['image']['width'] ?? 1200) ?>"
-                     height="<?= htmlspecialchars($poi['image']['height'] ?? 675) ?>"
+                <img src="<?= htmlspecialchars($imgSrc) ?>"
+                     <?php if ($hasThumb): ?>
+                     srcset="<?= htmlspecialchars($imgThumb) ?> 600w, <?= htmlspecialchars($imgSrc) ?> 1200w"
+                     sizes="(max-width: 768px) 100vw, 380px"
+                     <?php endif; ?>
+                     alt="<?= htmlspecialchars($imgAlt) ?>"
+                     width="<?= $imgW ?>"
+                     height="<?= $imgH ?>"
                      loading="lazy"
                      decoding="async"
                      itemprop="image">
