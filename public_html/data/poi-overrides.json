@@ -84,10 +84,14 @@
     "wikimedia_blocklist": ["1944", "wwii", "liberation", "occupation", "manifestation", "yellow vest"]
   },
 
+  "bnf": {
+    "wikimedia_file": "Bibliothèque nationale de France - site Richelieu - façade rue de Richelieu depuis square Louvois.jpg",
+    "_comment": "v1.4.11 — Ligne 14 : BnF Richelieu, façade historique vue depuis square Louvois. wikimedia_query précédent matchait Hôtel de Ville incendié 1871."
+  },
+
   "quartier-olympiades": {
-    "wikimedia_query": "Olympiades 13e arrondissement Paris tours",
-    "wikimedia_blocklist": ["plan", "carte", "metro logo", "JO 2024", "olympic games", "olympics", "village athletes"],
-    "_comment": "v1.4.10 — Ligne 14 : éviter confusion avec JO 2024 / Village des Athlètes. Cible : tours Olympiades + Chinatown 13e."
+    "wikimedia_file": "Avenue de Choisy, 75013 Paris, France August 2013.jpg",
+    "_comment": "v1.4.11 — Ligne 14 : Avenue de Choisy 13e, enseignes asiatiques verticales, identité Chinatown parisien. wikimedia_query précédent matchait pollution atmosphérique."
   },
 
   "grands-magasins": {
@@ -97,14 +101,12 @@
   },
 
   "saint-denis-pleyel": {
-    "wikimedia_query": "Tour Pleyel Saint-Denis France",
-    "wikimedia_blocklist": ["plan", "carte", "metro logo", "village athletes", "village athlètes", "olympic", "ratp"],
-    "_comment": "v1.4.10 — Ligne 14 : quartier neuf (post-JO 2024), peu de photos libres récentes. Fallback sur Tour Pleyel iconique du quartier."
+    "wikimedia_file": "Tour Pleyel après sa rénovation.jpg",
+    "_comment": "v1.4.11 — Ligne 14 : Tour Pleyel post-rénovation 2024, image récente du quartier post-JO. wikimedia_query précédent matchait gare RER."
   },
 
   "aeroport-orly": {
-    "wikimedia_query": "Aéroport Paris Orly terminal extérieur",
-    "wikimedia_blocklist": ["plan", "carte", "logo", "interior", "departure board", "tarmac", "runway", "boeing", "airbus", "aircraft maintenance"],
-    "_comment": "v1.4.10 — Ligne 14 : éviter logos compagnies, intérieurs terminaux, planes. Cible : façade extérieure terminal."
+    "wikimedia_file": "Aéroport Orly Ouest 2011 29.jpg",
+    "_comment": "v1.4.11 — Ligne 14 : façade extérieure terminal Orly Ouest, architecture identifiable. wikimedia_query+blocklist v1.4.10 trop sévère, aucun match."
   }
 }
