@@ -66,7 +66,7 @@ $totalStations = count($stations);
       </thead>
       <tbody>
         <?php foreach ($stations as $i => $station):
-          $isMajor = $station['is_major'];
+          $isMajor = $station['is_major'] ?? false;
           $stationUrl = Routes::stationUrl($station['name']);
           $stationActive = Routes::exists(rtrim($stationUrl, '/'));
         ?>

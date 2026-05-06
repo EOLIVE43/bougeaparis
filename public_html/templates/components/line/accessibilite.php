@@ -98,7 +98,7 @@ $stats = $accessibility['stats'];
     <h3 class="accessibilite__subtitle">Stations accessibles aux PMR sur la ligne <?= htmlspecialchars($line['code']) ?></h3>
     <div class="accessibilite__stations-list">
       <?php foreach ($accessibility['accessible_stations'] as $station): ?>
-        <div class="access-station <?= $station['is_major'] ? 'access-station--major' : '' ?>">
+        <div class="access-station <?= ($station['is_major'] ?? false) ? 'access-station--major' : '' ?>">
           <span class="access-station__icon" aria-label="Station accessible PMR">✓</span>
           <span class="access-station__name"><?= htmlspecialchars($station['name']) ?></span>
           <?php if (!empty($station['subtitle'])): ?>

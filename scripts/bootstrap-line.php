@@ -244,6 +244,23 @@ function apply_patches(array &$d, array $ref, int|string $lineNum): array {
     // 12. hero_image : a remplir par scripts/build-line-hero.php
     $patch('hero_image', null);
 
+    // 13. Stations : flag is_major sur chaque station si absent.
+    //     Heuristique : terminus (premier/dernier) OR ≥3 correspondances.
+    //     Pas defensif sur les composants line/* desormais (?? false partout)
+    //     mais on flag quand meme proprement pour avoir un rendu visuel correct.
+    if (isset($d['stations']) && is_array($d['stations'])) {
+        $total = count($d['stations']);
+        foreach ($d['stations'] as $i => &$station) {
+            if (!isset($station['is_major'])) {
+                $isTerminus = ($i === 0 || $i === $total - 1);
+                $nCorresp = count($station['correspondences'] ?? []);
+                $station['is_major'] = $isTerminus || $nCorresp >= 3;
+                $diff["stations[$i].is_major"] = '+' . ($station['is_major'] ? 'true' : 'false');
+            }
+        }
+        unset($station);
+    }
+
     return $diff;
 }
 

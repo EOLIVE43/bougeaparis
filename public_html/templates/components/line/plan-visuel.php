@@ -57,7 +57,7 @@ $lineColor = $line['color'] ?? '#0F6E56';
         <div class="line-plan__stations">
 
           <?php foreach ($stations as $station): ?>
-            <div class="line-plan__station <?= $station['is_major'] ? 'line-plan__station--major' : '' ?>">
+            <div class="line-plan__station <?= ($station['is_major'] ?? false) ? 'line-plan__station--major' : '' ?>">
 
               <!-- Pastilles de correspondance (SVG, style cohérent avec le tableau) -->
               <?php if (!empty($station['correspondences'])): ?>
@@ -75,11 +75,11 @@ $lineColor = $line['color'] ?? '#0F6E56';
               <?php endif; ?>
 
               <!-- Le rond de la station (centré sur la ligne) -->
-              <div class="line-plan__dot <?= $station['is_major'] ? 'line-plan__dot--major' : 'line-plan__dot--small' ?>"
-                   <?= $station['is_major'] ? '' : 'aria-hidden="true"' ?>></div>
+              <div class="line-plan__dot <?= ($station['is_major'] ?? false) ? 'line-plan__dot--major' : 'line-plan__dot--small' ?>"
+                   <?= ($station['is_major'] ?? false) ? '' : 'aria-hidden="true"' ?>></div>
 
               <!-- Nom de la station (sous la ligne, incliné) -->
-              <div class="line-plan__name <?= $station['is_major'] ? 'line-plan__name--major' : '' ?>">
+              <div class="line-plan__name <?= ($station['is_major'] ?? false) ? 'line-plan__name--major' : '' ?>">
                 <?= htmlspecialchars($station['name']) ?>
               </div>
 
