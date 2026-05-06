@@ -1329,11 +1329,23 @@
 
 /* Liens inactifs (page pas encore créée) — versions --inactive du conditionalLink.
    Pas d'opacity (Lighthouse v11+ comptabilise l'alpha dans le ratio computé).
-   Signal visuel "désactivé" via bg gris très léger + bordure pointillée +
-   cursor:not-allowed. Couleur #595959 sur #F8F9FA = 6.7:1 (AAA WCAG). */
+   Couleur #595959 sur fond clair = 7.0:1 (AAA WCAG).
+   --
+   Split en 2 groupes pour eviter le pointille parasite autour des titres
+   inline (un <span> sans border-width hérite de border-width:medium si on
+   set border-style, ce qui dessine 3px de dashed autour du texte).
+*/
+
+/* Groupe INLINE : titres dans des cards (texte seulement, pas de bg ni bord) */
 .article-card__title-link--inactive,
 .line-card__name-link--inactive,
-.poi-card__name-link--inactive,
+.poi-card__name-link--inactive {
+    color: #595959;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Groupe BLOCK : cards complètes / CTAs / pills (bg + bordure dashed visible) */
 .related-card--inactive,
 .discover-pill--inactive,
 .hero__cta--inactive,
