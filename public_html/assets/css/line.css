@@ -1328,9 +1328,9 @@
 }
 
 /* Liens inactifs (page pas encore créée) — versions --inactive du conditionalLink.
-   Couleur #595959 sur blanc = 7.0:1 (AAA WCAG). opacity 0.65 sur le wrapper
-   donne le signal visuel "atténué/non-cliquable" sans dégrader le ratio CSS
-   computé sur lequel Lighthouse base son audit de contraste. */
+   Pas d'opacity (Lighthouse v11+ comptabilise l'alpha dans le ratio computé).
+   Signal visuel "désactivé" via bg gris très léger + bordure pointillée +
+   cursor:not-allowed. Couleur #595959 sur #F8F9FA = 6.7:1 (AAA WCAG). */
 .article-card__title-link--inactive,
 .line-card__name-link--inactive,
 .poi-card__name-link--inactive,
@@ -1343,7 +1343,9 @@
     color: #595959;
     cursor: not-allowed;
     pointer-events: none;
-    opacity: 0.65;
+    background-color: #F8F9FA;
+    border-color: #D5DBD8;
+    border-style: dashed;
 }
 /* Override explicite pour les enfants qui declarent leur propre couleur
    (sinon le rule plus specifique gagne et le texte revient au gris clair). */
