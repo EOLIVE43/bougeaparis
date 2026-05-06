@@ -98,17 +98,38 @@ $tpl->partial('components/breadcrumb', [
 ?>
 
 <?php
-// Couleur d'accent dynamique : injecte les 3 CSS custom properties depuis le
-// JSON ligne, scopees a l'article. Toutes les rules `var(--accent,#FFCD00)`
-// dans line.css picqueront automatiquement la couleur de la ligne courante.
-// - --accent       : couleur de la ligne (#62259D pour L14, #FFCD00 pour L1, etc.)
-// - --accent-light : version eclaircie (pour fonds doux, key-fact cards, ...)
-// - --accent-text  : couleur du texte sur fond accent (noir sur jaune L1, blanc sur violet L14)
+// Couleur d'accent dynamique : injecte 5 CSS custom properties depuis le JSON
+// ligne, scopees a l'article. Les rules de line.css picquent automatiquement
+// la couleur de la ligne courante (DRY pour les 16 lignes).
+//
+// - --accent            : couleur de la ligne (#62259D L14, #FFCD00 L1, ...)
+// - --accent-light      : version eclaircie 80% (pour key-fact, discover-pill)
+// - --accent-text       : couleur du texte sur fond accent
+// - --accent-bg-soft    : tint tres pale 92% (anecdote, schedule, alternatives)
+// - --accent-border-soft: tint medium 65% (border dashed, separateurs)
+$lightenHex = function (string $hex, float $mix): string {
+    $hex = ltrim($hex, '#');
+    if (strlen($hex) !== 6) return '#FFFFFF';
+    $r = (int)hexdec(substr($hex, 0, 2));
+    $g = (int)hexdec(substr($hex, 2, 2));
+    $b = (int)hexdec(substr($hex, 4, 2));
+    $r = (int)round($r + $mix * (255 - $r));
+    $g = (int)round($g + $mix * (255 - $g));
+    $b = (int)round($b + $mix * (255 - $b));
+    return sprintf('#%02X%02X%02X', $r, $g, $b);
+};
+$lineColorRaw  = $line['color']       ?? '#FFCD00';
+$lineColorLite = $line['color_light'] ?? '#FFF6CC';
+$lineColorText = $line['color_text']  ?? '#1A2B26';
+$accentBgSoft     = $lightenHex($lineColorRaw, 0.92);
+$accentBorderSoft = $lightenHex($lineColorRaw, 0.65);
 $accentStyle = sprintf(
-    '--accent:%s;--accent-light:%s;--accent-text:%s;',
-    htmlspecialchars($line['color']      ?? '#FFCD00', ENT_QUOTES, 'UTF-8'),
-    htmlspecialchars($line['color_light']?? '#FFF6CC', ENT_QUOTES, 'UTF-8'),
-    htmlspecialchars($line['color_text'] ?? '#1A2B26', ENT_QUOTES, 'UTF-8')
+    '--accent:%s;--accent-light:%s;--accent-text:%s;--accent-bg-soft:%s;--accent-border-soft:%s;',
+    htmlspecialchars($lineColorRaw,     ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($lineColorLite,    ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($lineColorText,    ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($accentBgSoft,     ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($accentBorderSoft, ENT_QUOTES, 'UTF-8')
 );
 ?>
 <article class="line-page line-page--metro"

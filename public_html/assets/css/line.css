@@ -336,7 +336,7 @@
 .schedule-card__time{font-size:30px;font-weight:800;color:var(--text);line-height:1;letter-spacing:-0.02em;margin-bottom:6px}
 .schedule-card__detail{font-size:13px;color:var(--text-muted)}
 .schedule-card__badge{display:inline-block;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:0.04em;margin-left:6px;text-transform:uppercase;vertical-align:middle}
-.schedule-card--last-extended{background:#FFFBED;border-color:#F0DFA0}
+.schedule-card--last-extended{background:var(--accent-bg-soft,#FFFBED);border-color:var(--accent-border-soft,#F0DFA0)}
 
 /* Bloc 2 : Tableau horaires par jour */
 .horaires__table-wrapper{overflow-x:auto;border-radius:10px;border:1px solid var(--border)}
@@ -348,8 +348,8 @@
 .horaires-table tbody tr:hover{background:rgba(15,110,86,0.03)}
 .horaires-table td,.horaires-table tbody th{padding:12px 16px;color:var(--text);font-weight:500}
 .horaires-table tbody th{text-align:left}
-.horaires-table__row--extended{background:#FFFBED}
-.horaires-table__row--extended:hover{background:#FFF6D6}
+.horaires-table__row--extended{background:var(--accent-bg-soft,#FFFBED)}
+.horaires-table__row--extended:hover{background:var(--accent-light,#FFF6D6)}
 .horaires-table__badge{display:inline-block;background:var(--accent,#FFCD00);color:var(--accent-text,#1A2B26);font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;letter-spacing:0.05em;margin-left:8px;text-transform:uppercase;vertical-align:middle}
 
 /* Bloc 3 : Fréquence des rames */
@@ -600,7 +600,7 @@
 
 /* Anecdotes */
 .histoire__anecdotes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.anecdote{background:#FFF6E5;border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
+.anecdote{background:var(--accent-bg-soft,#FFF6E5);border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
 .anecdote__title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
 .anecdote__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
 
@@ -674,7 +674,7 @@
 
 /* Conseils */
 .accessibilite__tips{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.access-tip{background:#FFF6E5;border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
+.access-tip{background:var(--accent-bg-soft,#FFF6E5);border-left:4px solid var(--accent,#FFCD00);border-radius:8px;padding:18px 20px}
 .access-tip__title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.04em}
 .access-tip__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
 
@@ -812,7 +812,7 @@
 .work-station{font-size:12px;background:white;border:1px solid var(--border);padding:3px 10px;border-radius:6px;color:var(--text-soft);font-weight:500}
 
 /* Alternatives */
-.work-card__alternatives{margin-top:14px;padding:14px;background:#FFFBED;border-radius:8px;border:1px dashed #F0DFA0}
+.work-card__alternatives{margin-top:14px;padding:14px;background:var(--accent-bg-soft,#FFFBED);border-radius:8px;border:1px dashed var(--accent-border-soft,#F0DFA0)}
 .work-card__alternatives-label{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:0.02em}
 .work-card__alternatives-list{margin:0;padding-left:20px;font-size:13px;color:var(--text-soft);line-height:1.6}
 .work-card__alternatives-list li{margin-bottom:4px}
@@ -1058,7 +1058,7 @@
 .meta-coauthor__sections{font-size:12px;color:var(--text-muted);font-style:italic}
 
 /* Dates */
-.meta-dates{display:flex;flex-wrap:wrap;gap:14px;padding:14px 18px;background:#FFF6E5;border-radius:10px;border-left:3px solid var(--accent,#FFCD00)}
+.meta-dates{display:flex;flex-wrap:wrap;gap:14px;padding:14px 18px;background:var(--accent-bg-soft,#FFF6E5);border-radius:10px;border-left:3px solid var(--accent,#FFCD00)}
 .meta-date{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-soft)}
 .meta-date__icon{font-size:16px;line-height:1}
 .meta-date__label{font-weight:600;color:var(--text)}
