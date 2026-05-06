@@ -508,7 +508,10 @@
         "dates": {
             "published": "2026-05-06",
             "updated": "2026-05-06",
-            "updated_human": "6 mai 2026"
+            "updated_human": "6 mai 2026",
+            "published_label": "6 mai 2026",
+            "updated_label": "6 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
         },
         "sources": [
             {
@@ -845,38 +848,49 @@
         "equipment": [
             {
                 "icon": "♿",
-                "title": "Ascenseurs sur toutes les stations",
-                "description": "Les 21 stations de la ligne 14 disposent d'ascenseurs reliant la voirie aux quais, sans rupture de charge."
+                "description": "Les 21 stations de la ligne 14 disposent d'ascenseurs reliant la voirie aux quais, sans rupture de charge.",
+                "label": "Ascenseurs sur toutes les stations"
             },
             {
                 "icon": "🚪",
-                "title": "Portes palières automatiques",
-                "description": "L'intégralité des quais est équipée de portes palières en façade, garantissant la sécurité des voyageurs en fauteuil ou avec poussette."
+                "description": "L'intégralité des quais est équipée de portes palières en façade, garantissant la sécurité des voyageurs en fauteuil ou avec poussette.",
+                "label": "Portes palières automatiques"
             },
             {
                 "icon": "📐",
-                "title": "Quais à hauteur de plancher",
-                "description": "Les quais et les rames MP14 CC sont calés à la même hauteur, supprimant la marche entre quai et train. Aucune rampe ni assistance n'est nécessaire."
+                "description": "Les quais et les rames MP14 CC sont calés à la même hauteur, supprimant la marche entre quai et train. Aucune rampe ni assistance n'est nécessaire.",
+                "label": "Quais à hauteur de plancher"
             },
             {
                 "icon": "🔊",
-                "title": "Annonces sonores et visuelles",
-                "description": "Toutes les stations et rames diffusent les annonces en sonore et en visuel sur écrans LCD, conformément aux normes WCAG."
+                "description": "Toutes les stations et rames diffusent les annonces en sonore et en visuel sur écrans LCD, conformément aux normes WCAG.",
+                "label": "Annonces sonores et visuelles"
             }
         ],
         "tips": [
-            "L'accessibilité est totale sur la ligne 14 : aucune réservation préalable n'est nécessaire pour les voyageurs PMR.",
-            "Les rames MP14 CC offrent des espaces dédiés clairement signalés (place fauteuil + poussette).",
-            "Pour les correspondances, vérifier l'accessibilité de la ligne destinataire : la 1, la 4 et la 14 sont totalement accessibles, mais ce n'est pas le cas de toutes les autres lignes historiques."
+            {
+                "title": "Avant de voyager",
+                "description": "Vérifiez en temps réel le fonctionnement des ascenseurs sur l'application Bonjour RATP ou Île-de-France Mobilités. La ligne 14 est 100% accessible mais des pannes ponctuelles peuvent survenir."
+            },
+            {
+                "title": "Espaces dédiés dans les rames",
+                "description": "Les rames MP14 CC offrent des espaces clairement signalés pour fauteuils roulants et poussettes. Privilégiez les voitures de tête ou de queue, mieux dimensionnées."
+            },
+            {
+                "title": "Correspondances : attention aux autres lignes",
+                "description": "L'accessibilité est totale sur la ligne 14, mais ce n'est pas le cas sur toutes les autres lignes du métro. Vérifiez l'accessibilité des lignes que vous comptez emprunter en correspondance."
+            }
         ],
         "external_resources": [
             {
                 "label": "Page accessibilité Île-de-France Mobilités",
-                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite"
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
             },
             {
                 "label": "Service d'accompagnement Accès Plus",
-                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees"
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
             }
         ],
         "accessible_stations": []
@@ -887,16 +901,16 @@
         "upcoming_works": [],
         "recent_works": [
             {
-                "date": "2024-06-24",
                 "title": "Prolongement Saint-Denis Pleyel + Aéroport d'Orly",
                 "description": "Inauguration de 9 nouvelles stations (8 au sud, 1 au nord) pour les Jeux Olympiques de Paris 2024. La ligne passe de 13 à 21 stations et connecte directement le Stade de France à l'aéroport d'Orly via le centre de Paris.",
-                "icon": "🏟️"
+                "icon": "🏟️",
+                "completed_label": "Terminé le 24 juin 2024"
             },
             {
-                "date": "2020-12-14",
                 "title": "Prolongement Mairie de Saint-Ouen",
                 "description": "Ouverture de 4 nouvelles stations au nord (Pont Cardinet, Porte de Clichy, Saint-Ouen, Mairie de Saint-Ouen). Désaturation partielle de la ligne 13.",
-                "icon": "🏙️"
+                "icon": "🏙️",
+                "completed_label": "Terminé le 14 décembre 2020"
             }
         ],
         "calendar_url": "https://www.ratp.fr/travaux",
