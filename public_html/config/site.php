@@ -44,6 +44,7 @@ return [
     'debug' => true,
 
     // Phase de test pages ligne : true = noindex sur /metro/ligne-X (7 jours preview)
-    // Mettre false avant indexation Google
-    'line_pages_noindex' => true,
+    // Activé le 2026-05-06 : pages ligne désormais indexables (ligne 1 PageSpeed 100/100,
+    // contenu riche, schema.org propre). Les futures lignes hériteront automatiquement.
+    'line_pages_noindex' => false,
 ];
