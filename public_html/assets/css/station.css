@@ -273,14 +273,16 @@ a.correspondance-line-name:focus-visible {
 }
 .correspondance-line-walking {
     font-size: 0.8rem;
-    color: var(--color-text-muted, #5A6B66);
+    /* #3D4A47 sur fond card #F4F8F6 = 7.4:1 (AAA) — plus lisible que --text-muted (5:1) */
+    color: #3D4A47;
 }
 
-/* Terminus de ligne sous le nom (ex. "Ligne 1 du metro" / "↔ La Defense ⇄ Chateau de Vincennes") */
+/* Terminus de ligne sous le nom (ex. "Ligne 1 du metro" / "↔ La Defense ⇄ Chateau de Vincennes")
+   #3D4A47 sur fond card #F4F8F6 = 7.4:1 (AAA), plus lisible que --text-muted (5:1) */
 .correspondance-line-terminus {
     display: block;
     font-size: 0.8rem;
-    color: var(--color-text-muted, #5A6B66);
+    color: #3D4A47;
     margin-top: 0.15rem;
     line-height: 1.4;
     font-weight: 400;
@@ -310,7 +312,8 @@ a.correspondance-line-name:focus-visible {
     margin-right: 0.25rem;
 }
 .correspondance-line-terminus__list {
-    color: var(--color-text-muted, #5A6B66);
+    /* #3D4A47 sur fond card #F4F8F6 = 7.4:1 (AAA) */
+    color: #3D4A47;
 }
 
 /* ============================================================
