@@ -1,14 +1,31 @@
 name: Deploy to o2switch
-# Declenchement : a chaque push sur la branche main, ou manuellement
+# Declenchement : a chaque push sur main, ou manuel via "Run workflow".
+# Skip si le push ne touche que de la doc (CLAUDE.md, README, .gitignore...).
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
   workflow_dispatch:
+
+# Eviter les deploys parallels qui se marchent dessus (state file FTP +
+# connexion FTPS). 2 pushs rapides : le 2e attend la fin du 1er au lieu de
+# creer une race condition. cancel-in-progress=false pour ne jamais couper
+# un upload en cours (risque de fichiers corrompus).
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
 jobs:
   deploy:
     name: Deploy via FTP
     runs-on: ubuntu-latest
+    # Garde-fou : si la connexion FTPS hang, on coupe a 15 min au lieu de
+    # laisser tourner jusqu'a la limite GitHub de 6h (cas du freeze 2026-05-05
+    # ou les runs apparaissaient "in progress" indefiniment).
+    timeout-minutes: 15
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
