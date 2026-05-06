@@ -114,26 +114,151 @@ function lighten_color(string $hex, float $mix = 0.8): string {
 }
 
 /**
- * Reconstruit la liste des "discover_metro_lines" pour un metro-X.json
- * depuis data/lines.json (liste resume de toutes les lignes).
+ * Charge l'index data/lines.json et retourne les lignes metro indexees par code.
+ *
+ * @return array<string, array> code => {name, color, color_text, url}
  */
-function build_discover_lines(string|int $currentLine): array {
+function load_metro_index(): array {
+    static $cache = null;
+    if ($cache !== null) return $cache;
+    $cache = [];
     $linesIndex = ROOT . '/public_html/data/lines.json';
-    if (!is_file($linesIndex)) return [];
+    if (!is_file($linesIndex)) return $cache;
     $idx = json_decode(file_get_contents($linesIndex), true);
-    if (!is_array($idx)) return [];
-    $out = [];
+    if (!is_array($idx)) return $cache;
+    // lines.json utilise 'label' / 'id' (pas 'code'). Normalisation.
     foreach ($idx['metro'] ?? [] as $line) {
-        if (($line['code'] ?? null) == $currentLine) continue;
-        $out[] = [
-            'code'       => (string)($line['code'] ?? ''),
-            'name'       => 'Ligne ' . ($line['code'] ?? ''),
-            'color'      => $line['color']      ?? '#999',
-            'color_text' => $line['color_text'] ?? '#FFF',
-            'url'        => '/metro/ligne-' . strtolower((string)($line['code'] ?? '')) . '/',
+        $code = (string)($line['label'] ?? $line['id'] ?? '');
+        if ($code === '') continue;
+        $cache[$code] = [
+            'code'       => $code,
+            'name'       => $line['name'] ?? "Ligne $code",
+            'color'      => $line['color']       ?? '#999',
+            'color_text' => $line['text_color']  ?? $line['color_text'] ?? '#FFF',
+            'url'        => '/metro/ligne-' . strtolower($code) . '/',
         ];
     }
+    return $cache;
+}
+
+/**
+ * Reconstruit la liste des "discover_metro_lines" : 4 lignes (self + top 3
+ * lignes les plus connectees a la courante par stations partagees).
+ */
+function build_discover_lines(string|int $currentLine, array $connectionsMetro): array {
+    $idx = load_metro_index();
+    $currentCode = (string)$currentLine;
+
+    // Trier les connexions par nombre de stations partagees (desc)
+    $sorted = $connectionsMetro;
+    usort($sorted, fn($a, $b) => count($b['stations'] ?? []) - count($a['stations'] ?? []));
+    $top3 = array_slice($sorted, 0, 3);
+
+    $out = [];
+    // 1. Self (is_current: true)
+    if (isset($idx[$currentCode])) {
+        $self = $idx[$currentCode];
+        $self['is_current'] = true;
+        $out[] = $self;
+    }
+    // 2. Top 3 connectees
+    foreach ($top3 as $conn) {
+        $code = $conn['code'];
+        if ($code === $currentCode || !isset($idx[$code])) continue;
+        $out[] = $idx[$code];
+    }
     return $out;
+}
+
+/**
+ * Construit les 3 listes de correspondances (metro/rer/other) en parcourant
+ * les stations de la ligne et en groupant les correspondances par mode+code.
+ *
+ * @param array $stations Liste des stations de la ligne (chaque station a
+ *                        eventuellement un champ 'correspondences[]' avec
+ *                        {mode, line, color, ...}).
+ * @param string|int $currentLine Code de la ligne courante (ex: '14').
+ * @return array {connections_metro, connections_rer, connections_other}
+ */
+function build_connections(array $stations, string|int $currentLine): array {
+    $metroIdx = load_metro_index();
+    $currentCode = (string)$currentLine;
+
+    // mode + code => array de noms de stations partagees
+    $groups = [];
+
+    foreach ($stations as $st) {
+        $stName = $st['name'] ?? '';
+        if ($stName === '') continue;
+        foreach ($st['correspondences'] ?? [] as $c) {
+            $mode = $c['mode'] ?? '';
+            $code = (string)($c['line'] ?? '');
+            if ($mode === '' || $code === '') continue;
+            // Skip self
+            if ($mode === 'M' && $code === $currentCode) continue;
+            $key = "$mode-$code";
+            if (!isset($groups[$key])) {
+                $groups[$key] = [
+                    'mode'       => $mode,
+                    'code'       => $code,
+                    'color'      => $c['color']      ?? '#999',
+                    'color_text' => $c['color_text'] ?? '#FFF',
+                    'stations'   => [],
+                ];
+            }
+            if (!in_array($stName, $groups[$key]['stations'], true)) {
+                $groups[$key]['stations'][] = $stName;
+            }
+        }
+    }
+
+    $metro = []; $rer = []; $other = [];
+    foreach ($groups as $g) {
+        $code = $g['code'];
+        $mode = $g['mode'];
+        $entry = [
+            'code'       => $code,
+            'color'      => $g['color'],
+            'color_text' => $g['color_text'],
+            'stations'   => $g['stations'],
+        ];
+        if ($mode === 'M') {
+            // Pour metro on utilise les data canoniques de l'index si dispo
+            if (isset($metroIdx[$code])) {
+                $entry['name']       = $metroIdx[$code]['name'];
+                $entry['color']      = $metroIdx[$code]['color'];
+                $entry['color_text'] = $metroIdx[$code]['color_text'];
+                $entry['url']        = $metroIdx[$code]['url'];
+            } else {
+                $entry['name'] = "Ligne $code";
+                $entry['url']  = "/metro/ligne-" . strtolower($code) . "/";
+            }
+            $metro[] = $entry;
+        } elseif ($mode === 'RER') {
+            $entry['name'] = "RER $code";
+            $entry['url']  = "/rer/rer-" . strtolower($code) . "/";
+            $rer[] = $entry;
+        } elseif ($mode === 'T') {
+            $entry['name'] = "Tramway T$code";
+            $entry['url']  = "/tramway/t" . strtolower($code) . "/";
+            $other[] = $entry;
+        } elseif ($mode === 'TRANS') {
+            $entry['name'] = "Transilien $code";
+            $entry['url']  = "/transilien/" . strtolower($code) . "/";
+            $other[] = $entry;
+        }
+    }
+
+    // Tri : metro par code numerique croissant ; RER alpha ; other alpha
+    usort($metro, fn($a, $b) => strnatcmp($a['code'], $b['code']));
+    usort($rer,   fn($a, $b) => strcmp($a['code'], $b['code']));
+    usort($other, fn($a, $b) => strcmp($a['name'], $b['name']));
+
+    return [
+        'connections_metro' => $metro,
+        'connections_rer'   => $rer,
+        'connections_other' => $other,
+    ];
 }
 
 /**
@@ -224,11 +349,23 @@ function apply_patches(array &$d, array $ref, int|string $lineNum): array {
         'liens_internes' => '',
     ]);
 
-    // 10. internal_links : auto-build depuis data/lines.json
-    $patch('internal_links', [
-        'discover_metro_lines' => build_discover_lines($lineNum),
+    // 10. internal_links : auto-build depuis stations[].correspondences[]
+    //     (connections_metro/rer/other) + discover_metro_lines = self + top 3
+    //     les plus connectees + related_pages copie depuis metro-1 (uniformes).
+    $stations = $d['stations'] ?? [];
+    $connections = build_connections($stations, $lineNum);
+    $internalLinks = array_merge($connections, [
+        'discover_metro_lines' => build_discover_lines($lineNum, $connections['connections_metro']),
         'related_pages'        => $ref['internal_links']['related_pages'] ?? [],
     ]);
+    // Force le re-calcul si l'internal_links existant est incomplet (n'a pas
+    // les 5 keys attendues : connections_metro/rer/other + discover + related).
+    $existing = $d['internal_links'] ?? [];
+    $hasFullSet = isset($existing['connections_metro'], $existing['connections_rer'], $existing['connections_other']);
+    if (!$hasFullSet) {
+        $d['internal_links'] = $internalLinks;
+        $diff['internal_links'] = '+rebuild (5 keys)';
+    }
 
     // 11. Stubs editoriaux vides (a enrichir : aucune valeur par defaut sensible)
     $patch('history', ['paragraphs' => [], 'timeline' => []]);

@@ -537,118 +537,266 @@
         ]
     },
     "internal_links": {
-        "discover_metro_lines": [
+        "connections_metro": [
             {
-                "code": "",
-                "name": "Ligne ",
+                "code": "1",
                 "color": "#FFCE00",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "color_text": "#000000",
+                "stations": [
+                    "Pyramides",
+                    "Châtelet",
+                    "Gare de Lyon"
+                ],
+                "name": "Ligne 1",
+                "url": "/metro/ligne-1/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#0064B0",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
+                "code": "3",
                 "color": "#9F9825",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gare Saint-Lazare"
+                ],
+                "name": "Ligne 3",
+                "url": "/metro/ligne-3/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#98D4E2",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
+                "code": "4",
                 "color": "#C04191",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "Ligne 4",
+                "url": "/metro/ligne-4/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gare de Lyon"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "6",
+                "color": "#83C491",
+                "color_text": "#000000",
+                "stations": [
+                    "Bercy"
+                ],
+                "name": "Ligne 6",
+                "url": "/metro/ligne-6/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Pyramides",
+                    "Châtelet",
+                    "Maison Blanche"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "stations": [
+                    "Madeleine"
+                ],
+                "name": "Ligne 8",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "stations": [
+                    "Gare Saint-Lazare"
+                ],
+                "name": "Ligne 9",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "Ligne 11",
+                "url": "/metro/ligne-11/"
+            },
+            {
+                "code": "12",
+                "color": "#00814F",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gare Saint-Lazare",
+                    "Madeleine"
+                ],
+                "name": "Ligne 12",
+                "url": "/metro/ligne-12/"
+            },
+            {
+                "code": "13",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Saint-Denis - Pleyel",
+                    "Mairie de Saint-Ouen",
+                    "Porte de Clichy",
+                    "Gare Saint-Lazare"
+                ],
+                "name": "Ligne 13",
+                "url": "/metro/ligne-13/"
+            }
+        ],
+        "connections_rer": [
+            {
+                "code": "A",
+                "color": "#E2231A",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet",
+                    "Gare de Lyon"
+                ],
+                "name": "RER A",
+                "url": "/rer/rer-a/"
+            },
+            {
+                "code": "B",
+                "color": "#5291CE",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "RER B",
+                "url": "/rer/rer-b/"
+            },
+            {
+                "code": "C",
+                "color": "#F3D006",
+                "color_text": "#FFF",
+                "stations": [
+                    "Saint-Ouen",
+                    "Porte de Clichy",
+                    "Bibliothèque François Mitterrand",
+                    "Thiais - Orly (Pont de Rungis)"
+                ],
+                "name": "RER C",
+                "url": "/rer/rer-c/"
+            },
+            {
+                "code": "D",
+                "color": "#007E49",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet",
+                    "Gare de Lyon"
+                ],
+                "name": "RER D",
+                "url": "/rer/rer-d/"
+            },
+            {
+                "code": "E",
+                "color": "#C28FC4",
+                "color_text": "#FFF",
+                "stations": [
+                    "Gare Saint-Lazare"
+                ],
+                "name": "RER E",
+                "url": "/rer/rer-e/"
+            }
+        ],
+        "connections_other": [
+            {
+                "code": "3a",
+                "color": "#FF7E2E",
+                "color_text": "#FFF",
+                "stations": [
+                    "Bibliothèque François Mitterrand",
+                    "Maison Blanche"
+                ],
+                "name": "Tramway T3a",
+                "url": "/tramway/t3a/"
+            },
+            {
+                "code": "7",
                 "color": "#F28E42",
                 "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "stations": [
+                    "Chevilly-Larue (Marché International)"
+                ],
+                "name": "Tramway T7",
+                "url": "/tramway/t7/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#83C491",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#F3A4BA",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#83C491",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#CEADD2",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
+                "code": "J",
                 "color": "#D5C900",
                 "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "stations": [
+                    "Gare Saint-Lazare"
+                ],
+                "name": "Transilien J",
+                "url": "/transilien/j/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#E3B32A",
+                "code": "L",
+                "color": "#7A99C9",
                 "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "stations": [
+                    "Pont Cardinet",
+                    "Gare Saint-Lazare"
+                ],
+                "name": "Transilien L",
+                "url": "/transilien/l/"
             },
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#8D5E2A",
+                "code": "R",
+                "color": "#F28E42",
                 "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
+                "stations": [
+                    "Gare de Lyon"
+                ],
+                "name": "Transilien R",
+                "url": "/transilien/r/"
+            }
+        ],
+        "discover_metro_lines": [
             {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#00814F",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
-                "color": "#98D4E2",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
-            },
-            {
-                "code": "",
-                "name": "Ligne ",
+                "code": "14",
+                "name": "Ligne 14",
                 "color": "#662483",
-                "color_text": "#FFF",
-                "url": "/metro/ligne-/"
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-14/",
+                "is_current": true
+            },
+            {
+                "code": "13",
+                "name": "Ligne 13",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "url": "/metro/ligne-13/"
+            },
+            {
+                "code": "1",
+                "name": "Ligne 1",
+                "color": "#FFCE00",
+                "color_text": "#000000",
+                "url": "/metro/ligne-1/"
+            },
+            {
+                "code": "7",
+                "name": "Ligne 7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "url": "/metro/ligne-7/"
             }
         ],
         "related_pages": [
