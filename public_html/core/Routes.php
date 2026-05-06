@@ -56,8 +56,10 @@ class Routes
         '/auteur/ludo',
         '/auteur/elodie',
 
-        // Pages lignes métro (à activer au fur et à mesure)
-        '/metro/ligne-1',
+        // Pages lignes métro : detection DYNAMIQUE via isLineActive() (cf. exists()).
+        // Une ligne est consideree active si data/lines/metro-{N}.json existe ET
+        // si hero_image.url y est non vide (signal "production editoriale terminee").
+        // Plus besoin d'editer cette liste pour chaque livraison de ligne.
 
         // Patterns dynamiques
         '~^/info-trafic/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9\-]+$~',
@@ -111,7 +113,37 @@ class Routes
             return in_array($matches[1], self::$activeGareSlugs, true);
         }
 
+        // 4. Pages ligne metro — detection dynamique (data/lines/metro-{N}.json
+        //    existe ET hero_image.url non vide).
+        if (preg_match('~^/metro/ligne-([a-z0-9]+)$~', $clean, $matches) === 1) {
+            return self::isLineActive($matches[1]);
+        }
+
         return false;
+    }
+
+    /**
+     * Detection dynamique de l'activation d'une ligne metro. Une ligne est
+     * "active" (= page liee cliquable) si :
+     *   - data/lines/metro-{code}.json existe
+     *   - hero_image.url est non vide (signal "editorial complet, page publiee")
+     *
+     * Cache statique : 1 seul IO par code par requete (les composants liens-
+     * internes peuvent verifier 11+ correspondances par render).
+     */
+    private static function isLineActive(string $code): bool
+    {
+        static $cache = [];
+        $key = strtolower($code);
+        if (array_key_exists($key, $cache)) return $cache[$key];
+
+        $path = __DIR__ . '/../data/lines/metro-' . $key . '.json';
+        if (!is_file($path)) return $cache[$key] = false;
+
+        $raw = @file_get_contents($path);
+        $d = $raw !== false ? json_decode($raw, true) : null;
+        $active = is_array($d) && !empty($d['hero_image']['url']);
+        return $cache[$key] = $active;
     }
 
     /**
