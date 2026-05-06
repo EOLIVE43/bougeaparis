@@ -97,7 +97,23 @@ $tpl->partial('components/breadcrumb', [
 ]);
 ?>
 
-<article class="line-page line-page--metro" data-line="<?= e($lineMode . '-' . $lineCode) ?>">
+<?php
+// Couleur d'accent dynamique : injecte les 3 CSS custom properties depuis le
+// JSON ligne, scopees a l'article. Toutes les rules `var(--accent,#FFCD00)`
+// dans line.css picqueront automatiquement la couleur de la ligne courante.
+// - --accent       : couleur de la ligne (#62259D pour L14, #FFCD00 pour L1, etc.)
+// - --accent-light : version eclaircie (pour fonds doux, key-fact cards, ...)
+// - --accent-text  : couleur du texte sur fond accent (noir sur jaune L1, blanc sur violet L14)
+$accentStyle = sprintf(
+    '--accent:%s;--accent-light:%s;--accent-text:%s;',
+    htmlspecialchars($line['color']      ?? '#FFCD00', ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($line['color_light']?? '#FFF6CC', ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($line['color_text'] ?? '#1A2B26', ENT_QUOTES, 'UTF-8')
+);
+?>
+<article class="line-page line-page--metro"
+         data-line="<?= e($lineMode . '-' . $lineCode) ?>"
+         style="<?= $accentStyle ?>">
     <div class="line-page__container">
 
         <!-- 1. HERO -->
