@@ -820,12 +820,16 @@
 
 /* Travaux terminés */
 .works-completed-list{display:flex;flex-direction:column;gap:10px}
-.work-completed{display:flex;gap:14px;padding:14px 18px;background:#F0F8F2;border:1px solid #C8E0D0;border-radius:10px;opacity:0.85}
+/* "Travaux récemment terminés" : pas d'opacity (cassait le contraste WCAG AA
+   pour __date et __desc). Le bg vert clair + l'icone ✓ + la teinte verte du
+   __date suffisent comme signal visuel "archive". Les couleurs sont durcies
+   pour un ratio >= 7:1 (AAA) sur fond #F0F8F2. */
+.work-completed{display:flex;gap:14px;padding:14px 18px;background:#F0F8F2;border:1px solid #C8E0D0;border-radius:10px}
 .work-completed__icon{font-size:20px;flex-shrink:0;line-height:1.2}
 .work-completed__content{flex:1}
 .work-completed__title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:2px;letter-spacing:-0.01em}
-.work-completed__date{font-size:12px;color:#1F8043;font-weight:600;margin-bottom:6px}
-.work-completed__desc{font-size:13px;color:var(--text-muted);line-height:1.5;margin:0}
+.work-completed__date{font-size:12px;color:#176030;font-weight:600;margin-bottom:6px}
+.work-completed__desc{font-size:13px;color:#475753;line-height:1.5;margin:0}
 
 /* CTA Calendrier */
 .travaux__cta{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:30px}
