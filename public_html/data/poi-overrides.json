@@ -1,6 +1,5 @@
 {
   "_doc": "Overrides Wikimedia pour les POI à risque. v1.4.6 — Curation manuelle ciblée pour les 6 POI restants problématiques.",
-
   "_format": {
     "skip": "bool — si true, ne télécharger aucune image, supprimer celle existante, fallback sur emoji",
     "local_image": "bool — si true, utilise un fichier WebP uploadé manuellement dans /assets/images/poi/{theme}/{slug}.webp",
@@ -9,124 +8,231 @@
     "wikimedia_query": "string — query custom passée à l'API search Wikimedia",
     "wikimedia_blocklist": "array — termes additionnels à pénaliser dans le scoring"
   },
-
   "arc-de-triomphe": {
-    "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg",
-    "_comment": "Validé v1.4.5 — Vue moderne 2010 par Jiuguang Wang"
+    "shared_asset": true,
+    "registry_key": "arc-de-triomphe",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/arc-de-triomphe.webp"
   },
-
   "place-de-la-concorde": {
-    "wikimedia_file": "P1020407 Paris VIII Place de la Concorde Obelisque rwk.JPG",
-    "_comment": "Photo moderne Mbzt CC-BY-3.0"
+    "shared_asset": true,
+    "registry_key": "place-de-la-concorde",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/place-de-la-concorde.webp"
   },
-
   "memorial-shoah": {
     "skip": true,
     "_comment": "Skippé. Le POI sera également retiré du metro-1.json (curation manuelle)."
   },
-
   "opera-bastille": {
-    "local_image": true,
-    "local_credit": {
-      "author": "BougeaParis",
-      "license": "Photo personnelle",
-      "alt": "Opéra Bastille à Paris, place de la Bastille"
-    },
-    "_comment": "v1.4.9 — Image uploadée manuellement dans public_html/assets/images/poi/monuments/opera-bastille.webp (Wikimedia n'a pas de bonne photo libre)"
+    "shared_asset": true,
+    "registry_key": "opera-bastille",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/opera-bastille.webp"
   },
-
   "champs-elysees": {
     "wikimedia_query": "Avenue Champs Elysées Paris view",
-    "wikimedia_blocklist": ["liberation", "1944", "1945", "wwii", "parade", "défilé", "manifestation", "yellow vest", "gilet jaune", "protest"]
+    "wikimedia_blocklist": [
+      "liberation",
+      "1944",
+      "1945",
+      "wwii",
+      "parade",
+      "défilé",
+      "manifestation",
+      "yellow vest",
+      "gilet jaune",
+      "protest"
+    ]
   },
-
   "quartier-bastille": {
-    "wikimedia_query": "Place Bastille Paris colonne juillet",
-    "wikimedia_blocklist": ["1789", "revolution", "prison", "storming", "prise"]
+    "shared_asset": true,
+    "registry_key": "quartier-bastille",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/quartier-bastille.webp"
   },
-
   "le-marais": {
     "wikimedia_query": "rue Marais Paris architecture",
-    "wikimedia_blocklist": ["interior", "courtyard", "cour intérieure", "ancien", "1900"]
+    "wikimedia_blocklist": [
+      "interior",
+      "courtyard",
+      "cour intérieure",
+      "ancien",
+      "1900"
+    ]
   },
-
   "louvre": {
     "wikimedia_query": "Musée du Louvre Paris pyramide",
-    "wikimedia_blocklist": ["interior", "joconde", "mona lisa", "painting", "tableau", "œuvre", "ruins"]
+    "wikimedia_blocklist": [
+      "interior",
+      "joconde",
+      "mona lisa",
+      "painting",
+      "tableau",
+      "œuvre",
+      "ruins"
+    ]
   },
-
   "orangerie": {
-    "wikimedia_query": "Musée Orangerie Paris Tuileries",
-    "wikimedia_blocklist": ["nymphéas", "monet", "painting", "interior", "perspective"]
+    "shared_asset": true,
+    "registry_key": "orangerie",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/orangerie.webp"
   },
-
   "arts-decoratifs": {
     "wikimedia_query": "Musée Arts Décoratifs Paris facade"
   },
-
   "jardin-des-tuileries": {
     "wikimedia_query": "Jardin des Tuileries Paris bassin",
-    "wikimedia_blocklist": ["interior", "ruins", "ancien"]
+    "wikimedia_blocklist": [
+      "interior",
+      "ruins",
+      "ancien"
+    ]
   },
-
   "place-des-vosges": {
     "wikimedia_query": "Place des Vosges Paris arcades"
   },
-
   "bois-de-vincennes": {
     "wikimedia_query": "Donjon Vincennes Paris château",
-    "wikimedia_blocklist": ["interior", "geese", "oies", "duck", "bird", "métro", "metro", "panneau", "station", "ratp", "information", "transport"],
+    "wikimedia_blocklist": [
+      "interior",
+      "geese",
+      "oies",
+      "duck",
+      "bird",
+      "métro",
+      "metro",
+      "panneau",
+      "station",
+      "ratp",
+      "information",
+      "transport"
+    ],
     "_comment": "v1.4.7 — On change pour 'Donjon Vincennes' (le donjon est une vraie photo monument). Ajout blocklist 'metro/station/ratp' pour éviter les panneaux RATP."
   },
-
   "hotel-de-ville": {
-    "wikimedia_query": "Hôtel de Ville Paris facade",
-    "wikimedia_blocklist": ["1944", "wwii", "liberation", "occupation", "manifestation", "yellow vest"]
+    "shared_asset": true,
+    "registry_key": "hotel-de-ville",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/hotel-de-ville.webp"
   },
-
   "bnf": {
     "wikimedia_file": "Bibliothèque nationale de France - site Richelieu - façade rue de Richelieu depuis square Louvois.jpg",
     "_comment": "v1.4.11 — Ligne 14 : BnF Richelieu, façade historique vue depuis square Louvois. wikimedia_query précédent matchait Hôtel de Ville incendié 1871."
   },
-
   "quartier-olympiades": {
     "wikimedia_file": "Avenue de Choisy, 75013 Paris, France August 2013.jpg",
     "_comment": "v1.4.11 — Ligne 14 : Avenue de Choisy 13e, enseignes asiatiques verticales, identité Chinatown parisien. wikimedia_query précédent matchait pollution atmosphérique."
   },
-
   "grands-magasins": {
-    "wikimedia_query": "Galeries Lafayette Haussmann Paris coupole",
-    "wikimedia_blocklist": ["interior shop", "boutique", "merchandise", "ralph lauren", "luxury brand"],
-    "_comment": "v1.4.10 — Ligne 14 : terme générique remplacé par lieu emblématique du quartier (Galeries Lafayette + sa coupole iconique)."
+    "shared_asset": true,
+    "registry_key": "grands-magasins",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/grands-magasins.webp"
   },
-
   "saint-denis-pleyel": {
     "wikimedia_file": "Tour Pleyel après sa rénovation.jpg",
     "_comment": "v1.4.11 — Ligne 14 : Tour Pleyel post-rénovation 2024, image récente du quartier post-JO. wikimedia_query précédent matchait gare RER."
   },
-
   "aeroport-orly": {
     "wikimedia_file": "Aéroport Orly Ouest 2011 29.jpg",
     "_comment": "v1.4.11 — Ligne 14 : façade extérieure terminal Orly Ouest, architecture identifiable. wikimedia_query+blocklist v1.4.10 trop sévère, aucun match."
   },
-
   "tour-saint-jacques": {
-    "wikimedia_file": "Tour Saint-Jacques 060708.jpg",
-    "_comment": "v1.4.12 — Ligne 14 : Tour Saint-Jacques en couleur (06/07/2008), architecture gothique flamboyante visible. Le run précédent matchait un panorama Charles Soulier 1865 (vue depuis la tour, pas de la tour)."
+    "shared_asset": true,
+    "registry_key": "tour-saint-jacques",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/tour-saint-jacques.webp"
   },
-
   "puces-saint-ouen": {
     "wikimedia_file": "Puces de saint ouen.jpg",
     "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file après échec scoring sur wikimedia_query. Auteur KoS, CC BY-SA 3.0, 3008×2000. Vue représentative du marché."
   },
-
   "saint-germain-des-pres-eglise": {
     "wikimedia_file": "Nave of Abbaye de Saint-Germain-des-Prés, Paris, France - Diliff.jpg",
     "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file. Vue intérieure de la nef par Diliff (photographe Wikimedia réputé pour ses vues HDR d'architecture), CC BY-SA 3.0, 5157×5738. Différencie de la carte quartier (extérieur)."
   },
-
   "goutte-d-or": {
-    "wikimedia_file": "Magasin africain à la Goutte d'Or (MédiHAL 670582).jpg",
-    "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file après mismatch Mont-de-Piété et échec scoring. Photo authentique du quartier 18e (rue Polonceau, magasin africain), domaine public, par Michelle Guillon (MédiHAL)."
+    "shared_asset": true,
+    "registry_key": "goutte-d-or",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/goutte-d-or.webp"
+  },
+  "lion-de-belfort": {
+    "shared_asset": true,
+    "registry_key": "lion-de-belfort",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/lion-de-belfort.webp"
+  },
+  "catacombes": {
+    "shared_asset": true,
+    "registry_key": "catacombes",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/catacombes.webp"
+  },
+  "theatre-chatelet": {
+    "shared_asset": true,
+    "registry_key": "theatre-chatelet",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/theatre-chatelet.webp"
+  },
+  "theatre-odeon": {
+    "shared_asset": true,
+    "registry_key": "theatre-odeon",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/theatre-odeon.webp"
+  },
+  "gare-du-nord": {
+    "shared_asset": true,
+    "registry_key": "gare-du-nord",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/gare-du-nord.webp"
+  },
+  "gare-de-l-est": {
+    "shared_asset": true,
+    "registry_key": "gare-de-l-est",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/gare-de-l-est.webp"
+  },
+  "tour-montparnasse": {
+    "shared_asset": true,
+    "registry_key": "tour-montparnasse",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/tour-montparnasse.webp"
+  },
+  "gare-montparnasse": {
+    "shared_asset": true,
+    "registry_key": "gare-montparnasse",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/gare-montparnasse.webp"
+  },
+  "cimetiere-montparnasse": {
+    "shared_asset": true,
+    "registry_key": "cimetiere-montparnasse",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/cimetiere-montparnasse.webp"
+  },
+  "pyramide-louvre": {
+    "shared_asset": true,
+    "registry_key": "pyramide-louvre",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/pyramide-louvre.webp"
+  },
+  "comedie-francaise": {
+    "shared_asset": true,
+    "registry_key": "comedie-francaise",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/comedie-francaise.webp"
+  },
+  "opera-garnier": {
+    "shared_asset": true,
+    "registry_key": "opera-garnier",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/opera-garnier.webp"
+  },
+  "eglise-madeleine": {
+    "shared_asset": true,
+    "registry_key": "eglise-madeleine",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/eglise-madeleine.webp"
+  },
+  "musee-louvre": {
+    "shared_asset": true,
+    "registry_key": "musee-louvre",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/musee-louvre.webp"
+  },
+  "cinematheque-francaise": {
+    "shared_asset": true,
+    "registry_key": "cinematheque-francaise",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/cinematheque-francaise.webp"
+  },
+  "gare-lyon": {
+    "shared_asset": true,
+    "registry_key": "gare-lyon",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/gare-lyon.webp"
+  },
+  "gare-saint-lazare": {
+    "shared_asset": true,
+    "registry_key": "gare-saint-lazare",
+    "_comment": "v2.0.0 shared : POI mutualisé via poi-registry.json (utilisé par plusieurs lignes du métro). Pas de fetch Wikimedia, asset partagé /shared/gare-saint-lazare.webp"
   }
 }

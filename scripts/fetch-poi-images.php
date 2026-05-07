@@ -308,6 +308,31 @@ function scoreCandidate(array $candidate, array $extraBlocklist = []): int {
  * @param array  $line      Données de la ligne (pour sauvegarde JSON)
  * @param string $lineFile  Chemin du JSON de la ligne
  */
+/**
+ * v2.0.0 — Charge poi-registry.json (cache statique, 1 IO par run).
+ * Utilisé par le mode shared_asset pour résoudre l'asset d'un POI partagé
+ * entre plusieurs lignes du métro parisien.
+ */
+function loadPoiRegistry(array $config): array {
+    static $cache = null;
+    if ($cache !== null) return $cache;
+    $path = __DIR__ . '/../public_html/data/poi-registry.json';
+    if (!is_file($path)) {
+        echo "    ⚠️  poi-registry.json introuvable ({$path})\n";
+        $cache = ['pois' => []];
+        return $cache;
+    }
+    $raw = @file_get_contents($path);
+    $d = $raw !== false ? json_decode($raw, true) : null;
+    if (!is_array($d)) {
+        echo "    ⚠️  poi-registry.json invalide\n";
+        $cache = ['pois' => []];
+        return $cache;
+    }
+    $cache = $d;
+    return $cache;
+}
+
 function cleanupPoiImage(array &$poi, string $imageDir, array $line, string $lineFile): void {
     $existingFull  = $imageDir . '/' . $poi['slug'] . '.webp';
     $existingThumb = $imageDir . '/' . $poi['slug'] . '-thumb.webp';
@@ -852,6 +877,50 @@ foreach ($lineFiles as $lineFile) {
                         file_put_contents($lineFile, json_encode($line, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
                     }
                 }
+                continue;
+            }
+
+            // v2.0.0 : shared_asset → résout le POI depuis poi-registry.json.
+            // Aucune requête Wikimedia, aucun scoring/crop/watermark. Le fichier
+            // physique doit pré-exister dans /assets/images/poi/shared/ (migration
+            // initiale ou ajout manuel). Mutualise les POIs accessibles depuis
+            // plusieurs lignes du métro parisien.
+            if (!empty($override['shared_asset'])) {
+                $regKey = $override['registry_key'] ?? $poi['slug'];
+                $reg = loadPoiRegistry($config);
+                if (!isset($reg['pois'][$regKey])) {
+                    echo "      ✗ shared_asset : registry_key '{$regKey}' introuvable dans poi-registry.json\n";
+                    continue;
+                }
+                $entry = $reg['pois'][$regKey];
+                $sharedFull  = $config['images_dir'] . '/' . $entry['asset'];
+                $sharedThumb = $config['images_dir'] . '/' . $entry['thumb'];
+                if (!file_exists($sharedFull)) {
+                    echo "      ✗ shared_asset : fichier physique manquant : {$sharedFull}\n";
+                    continue;
+                }
+                if ($dryRun) {
+                    echo "      [DRY] shared_asset OK : {$entry['asset']}\n";
+                    continue;
+                }
+                $size = @getimagesize($sharedFull);
+                $ws   = $entry['wikimedia_source'] ?? [];
+                $poi['image'] = [
+                    'src'    => '/assets/images/poi/' . $entry['asset'],
+                    'thumb'  => '/assets/images/poi/' . $entry['thumb'],
+                    'alt'    => $entry['alt'] ?? ($poi['name'] . ' à Paris'),
+                    'width'  => $size[0] ?? 1200,
+                    'height' => $size[1] ?? 675,
+                    'credit' => [
+                        'author'        => $ws['author']      ?? 'unknown',
+                        'license'       => $ws['license']     ?? 'unknown',
+                        'license_url'   => $ws['license_url'] ?? '',
+                        'wikimedia_url' => $ws['url']         ?? '',
+                        'source'        => 'shared_asset (poi-registry)',
+                    ],
+                ];
+                echo "      ↪  shared_asset → {$entry['asset']} (lignes : "
+                   . implode(', ', $entry['lines'] ?? []) . ")\n";
                 continue;
             }
 
