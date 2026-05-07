@@ -67,7 +67,8 @@
                     "color": "#E2231A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Kléber",
@@ -88,12 +89,14 @@
                     "color": "#E2231A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Boissière",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Trocadéro",
@@ -104,12 +107,14 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Passy",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Bir-Hakeim",
@@ -120,12 +125,14 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Dupleix",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "La Motte-Picquet - Grenelle",
@@ -141,7 +148,8 @@
                     "color": "#E3B32A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Cambronne",
@@ -157,7 +165,8 @@
                     "color": "#E3B32A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Sèvres-Lecourbe",
@@ -168,7 +177,8 @@
                     "color": "#00814F"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Pasteur",
@@ -179,7 +189,8 @@
                     "color": "#00814F"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Gare Montparnasse",
@@ -205,12 +216,14 @@
                     "color": "#00814F"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Edgar Quinet",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Raspail",
@@ -221,7 +234,8 @@
                     "color": "#C04191"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Denfert-Rochereau",
@@ -237,7 +251,8 @@
                     "color": "#5291CE"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Saint-Jacques",
@@ -253,17 +268,20 @@
                     "color": "#5291CE"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Glacière",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Corvisart",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Place d'Italie",
@@ -279,22 +297,26 @@
                     "color": "#F3A4BA"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Nationale",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Chevaleret",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Quai de la Gare",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Bercy",
@@ -305,12 +327,14 @@
                     "color": "#662483"
                 }
             ],
-            "accessible": true
+            "accessible": true,
+            "is_major": true
         },
         {
             "name": "Dugommier",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Daumesnil",
@@ -321,17 +345,20 @@
                     "color": "#CEADD2"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Bel-Air",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Picpus",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Nation",
@@ -357,7 +384,1205 @@
                     "color": "#E2231A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         }
-    ]
+    ],
+    "color_light": "#E6F3E9",
+    "daily_riders": 330000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr. Spécialiste du trafic, des travaux et de l'organisation pratique des déplacements.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-07",
+            "updated": "2026-05-07",
+            "updated_human": "7 mai 2026",
+            "published_label": "7 mai 2026",
+            "updated_label": "7 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 1 du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_1_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "intros": {
+        "introduction_title": "demi-cercle aérien sud du métro parisien",
+        "introduction": "La <strong>ligne 6 du métro parisien</strong> trace un grand demi-cercle au sud de la capitale, depuis <strong>Charles de Gaulle Étoile</strong> à l'ouest jusqu'à <strong>Nation</strong> à l'est. Avec sa jumelle la ligne 2 (qui forme l'arc nord), elle constitue la <strong>rocade complète</strong> autour de Paris, suivant l'emplacement de l'ancien mur des Fermiers généraux du XVIIIᵉ siècle. Inaugurée en 1903 et complétée en 1909, la ligne 6 dessert aujourd'hui <strong>28 stations</strong> sur 13,6 kilomètres et transporte environ <strong>330 000 voyageurs par jour</strong>.",
+        "plan": "Le tracé de la ligne 6 est unique sur le réseau parisien par son <strong>profil aérien dominant</strong> : <strong>6,1 km de viaduc</strong> sur 13,6 km totaux, soit près de 45 % du parcours en surface. Deux traversées spectaculaires de la Seine : le viaduc métallique de <strong>Bir-Hakeim</strong> à l'ouest (1906, classé monument historique en 1986) et le pont de pierre de <strong>Bercy</strong> à l'est (le seul viaduc en pierre du métro de Paris, élargi en 1903). Entre les deux, des stations aériennes en plein cœur du 15ᵉ et du 13ᵉ arrondissement (Cambronne, Sèvres-Lecourbe, La Motte-Picquet, Glacière, Quai de la Gare).",
+        "stations": "La ligne 6 compte 28 stations dont plusieurs pôles d'échanges majeurs : Charles de Gaulle – Étoile (correspondance lignes 1 et 2, RER A), Trocadéro (ligne 9), Montparnasse-Bienvenüe (lignes 4, 12, 13, TGV Atlantique), Denfert-Rochereau (ligne 4, RER B, Catacombes), Place d'Italie (lignes 5, 7), Bercy (ligne 14, gare TGV de Bercy) et Nation (lignes 1, 2, 9, RER A).",
+        "horaires": "Le service ligne 6 fonctionne tous les jours de 5h30 à 1h15, avec prolongation jusqu'à 2h15 les vendredis, samedis et veilles de fêtes. La fréquence est d'environ 2 minutes en heure de pointe et 4 à 5 minutes le soir et le week-end.",
+        "trafic": "La ligne 6 connaît une affluence soutenue mais reste l'une des plus régulières du réseau, son tracé en grande partie aérien limitant les types de pannes affectant les lignes souterraines. Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "La ligne 6 propose des trajets stratégiques : <strong>Étoile → Nation</strong> en 30 minutes (rocade complète), <strong>Bir-Hakeim → Trocadéro</strong> en 3 minutes (le panorama Tour Eiffel obligatoire), <strong>Étoile → Bercy</strong> en 20 minutes (traversée patrimoniale), <strong>Denfert-Rochereau → Bir-Hakeim</strong> en 10 minutes (Catacombes vers Tour Eiffel).",
+        "que_voir": "La ligne 6 dessert l'<strong>Arc de Triomphe</strong> à Étoile, le <strong>Trocadéro</strong> et la <strong>Tour Eiffel</strong> (Bir-Hakeim), le <strong>cimetière du Montparnasse</strong>, les <strong>Catacombes de Paris</strong> à Denfert-Rochereau, et <strong>Bercy Village</strong>. Le passage entre Passy et Bir-Hakeim offre l'un des panoramas les plus photographiés du transport public mondial.",
+        "histoire": "Mise en service en 1903 entre Étoile et Passy puis en 1909 entre Place d'Italie et Nation, la ligne 6 a pris sa configuration actuelle en <strong>1942</strong> avec le transfert du tronçon Étoile ↔ Place d'Italie de la ligne 5 vers la ligne 6. Le <strong>matériel MP73</strong>, en service depuis 1974, est progressivement remplacé depuis janvier 2023 par les <strong>MP89 CC</strong> issus de la ligne 4 (récupérés après l'automatisation de cette dernière).",
+        "accessibilite": "La ligne 6 reste l'une des moins accessibles aux personnes à mobilité réduite : ses nombreuses stations aériennes (Bir-Hakeim, Passy, Cambronne, Sèvres-Lecourbe, La Motte-Picquet, etc.) souffrent de contraintes architecturales historiques fortes (escaliers métalliques, pas d'ascenseur d'origine). Quelques stations en correspondance avec des lignes accessibles (Étoile, Nation, Bercy via ligne 14) offrent un accès partiel.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 6 fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "Le grand chantier en cours est le remplacement progressif du matériel MP73 (en service depuis 1974) par les MP89 CC issus de la ligne 4. Les MP89 sont des rames automatisables récupérées après la conversion automatique de la ligne 4 en décembre 2022 ; un programme de redéploiement les amène progressivement sur la ligne 6 depuis janvier 2023.",
+        "faq": "Pourquoi autant de viaducs aériens, comment voir la Tour Eiffel depuis le métro, quelle correspondance pour la 14 : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 6, avec des réponses précises basées sur les données officielles IDFM 2026.",
+        "articles_lies": "Trafic en direct, dossiers panorama et conseils pratiques : retrouvez les derniers articles de BougeaParis dédiés à la ligne 6.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1903",
+                "title": "Inauguration entre Étoile et Passy",
+                "icon": "🎉",
+                "description": "Le 5 novembre 1903, ouverture du tronçon Étoile ↔ Passy sur l'arc circulaire sud (alors rattaché à la ligne 2 sud)."
+            },
+            {
+                "year": "1906",
+                "title": "Ouverture du viaduc de Passy",
+                "icon": "🌉",
+                "description": "Le 24 avril 1906, prolongement à Place d'Italie et mise en service du viaduc métallique de Passy (pont de Bir-Hakeim) au-dessus de la Seine."
+            },
+            {
+                "year": "1909",
+                "title": "Création de la ligne 6 indépendante",
+                "icon": "🚇",
+                "description": "Le 1er mars 1909, ouverture du tronçon Place d'Italie ↔ Nation comme « ligne 6 ». À l'époque, l'arc Étoile ↔ Place d'Italie appartient encore à la ligne 5."
+            },
+            {
+                "year": "1942",
+                "title": "Tracé actuel établi",
+                "icon": "🔀",
+                "description": "Le 6 octobre 1942, le tronçon Étoile ↔ Place d'Italie est transféré de la ligne 5 vers la ligne 6, formant l'arc semi-circulaire complet de la ligne 6 telle qu'on la connaît aujourd'hui."
+            },
+            {
+                "year": "1974",
+                "title": "Arrivée du matériel MP73",
+                "icon": "🚆",
+                "description": "En juillet 1974, équipement de la ligne 6 avec le matériel MP73 sur pneumatiques (premier matériel sur pneus pour cette ligne)."
+            },
+            {
+                "year": "1986",
+                "title": "Viaduc de Passy classé monument historique",
+                "icon": "🏛️",
+                "description": "Le viaduc métallique de Passy (pont de Bir-Hakeim) est inscrit aux Monuments historiques pour son architecture métallique caractéristique du début du XXᵉ siècle."
+            },
+            {
+                "year": "2007",
+                "title": "Installation du SIEL",
+                "icon": "📺",
+                "description": "En novembre 2007, déploiement du Système d'Information en Ligne (SIEL) : écrans temps réel d'arrivée des prochaines rames sur les quais."
+            },
+            {
+                "year": "2023",
+                "title": "Début du remplacement MP73 → MP89 CC",
+                "icon": "🔄",
+                "description": "En janvier 2023, début du redéploiement des rames MP89 CC issues de la ligne 4 (libérées par l'automatisation de la ligne 4 en décembre 2022) vers la ligne 6."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "6,1 km",
+                "label": "En aérien (sur 13,6 km totaux)",
+                "description": "Plus haut pourcentage de tracé aérien du métro parisien (~45 %). Panoramas constants depuis les rames côté Cambronne, Sèvres-Lecourbe, La Motte-Picquet, Bel-Air."
+            },
+            {
+                "value": "2",
+                "label": "Traversées de la Seine",
+                "description": "Viaduc métallique de Bir-Hakeim à l'ouest (1906, monument historique) et viaduc en pierre de Bercy à l'est — seul pont en pierre du réseau métro."
+            },
+            {
+                "value": "1986",
+                "label": "Viaduc Bir-Hakeim classé MH",
+                "description": "Inscription aux Monuments historiques pour son architecture métallique signée Louis Biette, ingénieur des Ponts et Chaussées."
+            },
+            {
+                "value": "330k",
+                "label": "Voyageurs par jour",
+                "description": "Affluence soutenue, ligne touristique majeure (Tour Eiffel, Catacombes, Arc de Triomphe, Bercy)."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "Le mur des Fermiers généraux",
+                "description": "Les lignes 2 et 6 forment un anneau quasi parfait autour de Paris parce qu'elles suivent l'emplacement de l'ancien mur des Fermiers généraux, enceinte fiscale construite au XVIIIᵉ siècle (1784-1790) pour percevoir l'octroi sur les marchandises entrant dans la ville. Détruit en 1860 lors de l'annexion des communes périphériques par Paris, son tracé est devenu la rocade des boulevards extérieurs, puis la rocade des deux lignes de métro."
+            },
+            {
+                "title": "Bir-Hakeim et Chicago : un échange transatlantique",
+                "description": "En 2001, la station Bir-Hakeim a échangé une de ses entrées Guimard Art nouveau d'origine avec la ville de Chicago. La structure parisienne a été démontée puis réinstallée à la station Van Buren Street du Loop, près du Millenium Park. En contrepartie, la station Bir-Hakeim a reçu une œuvre artistique contemporaine de l'artiste américaine Judy Ledgerwood."
+            },
+            {
+                "title": "Le viaduc de Bercy en pierre, unique sur le réseau",
+                "description": "Le pont de Bercy date de 1864, mais a été élargi en 1903 pour accueillir la ligne 6 en aérien. C'est le seul viaduc en pierre du métro parisien (les autres viaducs métro, comme Passy, sont métalliques). Sa double fonction routière + ferroviaire en fait un ouvrage hybride remarquable."
+            },
+            {
+                "title": "Belmondo sur le toit du métro",
+                "description": "En 1975, le tournage du film « Peur sur la Ville » d'Henri Verneuil avec Jean-Paul Belmondo inclut une séquence d'action célèbre sur le toit d'une rame de la ligne 6 entre les stations Montparnasse et Passy. Le cascadeur Rémy Julienne a doublé l'acteur pour la séquence sur le viaduc de Passy."
+            },
+            {
+                "title": "Le panorama Tour Eiffel + métro",
+                "description": "Le passage entre les stations Passy et Bir-Hakeim offre l'un des plans les plus photographiés du transport public mondial : la Tour Eiffel en arrière-plan, le métro aérien sortant du viaduc, la Seine en contrebas. Apparaît régulièrement en couverture de magazines, dans les films français des années 1950-1980, et chaque été dans les selfies touristiques."
+            },
+            {
+                "title": "La solution espagnole d'Étoile",
+                "description": "Le terminus Charles de Gaulle – Étoile de la ligne 6 utilise une « solution espagnole » : une voie unique encadrée par deux quais distincts (un pour la descente, un pour la montée). Cette configuration permet d'optimiser le retournement des rames en terminus, et reste unique sur le réseau parisien à ce jour."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Pourquoi la ligne 6 a-t-elle autant de portions aériennes ?",
+            "answer": "La ligne 6 longe l'ancien mur des Fermiers généraux, sur des boulevards larges qui permettaient de construire les viaducs en surface — solution moins coûteuse que le creusement de tunnels au début du XXᵉ siècle. La géologie sud de Paris (alluvions, anciennes carrières) compliquait également les forages souterrains. Au total, 6,1 km sur 13,6 km totaux sont en aérien, soit près de 45 % du parcours."
+        },
+        {
+            "question": "Quelle est la meilleure station pour voir la Tour Eiffel depuis le métro ?",
+            "answer": "Le passage entre les stations Passy et Bir-Hakeim, sur le viaduc de Passy, offre LE plan iconique : Tour Eiffel en arrière-plan, Seine en contrebas, métro aérien dans le cadre. Pour un arrêt prolongé, descendre à la station Bir-Hakeim et longer le pont à pied vers la pointe de l'île aux Cygnes."
+        },
+        {
+            "question": "À quelle heure passe le premier métro ligne 6 ?",
+            "answer": "Le premier métro ligne 6 part de chaque terminus à 5h30 du matin, tous les jours de la semaine."
+        },
+        {
+            "question": "À quelle heure passe le dernier métro ligne 6 ?",
+            "answer": "Le dernier métro ligne 6 part vers 1h15 la semaine, et 2h15 les vendredis, samedis et veilles de fêtes."
+        },
+        {
+            "question": "Comment accéder aux Catacombes de Paris via la ligne 6 ?",
+            "answer": "Descendre à la station Denfert-Rochereau (correspondance ligne 4 et RER B). L'entrée des Catacombes est sur la place Denfert-Rochereau, à 2 minutes à pied de la sortie. Compter une longue file d'attente sans réservation préalable."
+        },
+        {
+            "question": "Quelle correspondance pour aller de la ligne 6 à la ligne 14 ?",
+            "answer": "À la station Bercy, correspondance directe avec la ligne 14 (vers Saint-Denis Pleyel ou Aéroport d'Orly). C'est aussi la station d'accès à la gare TGV de Bercy (lignes Bourgogne, Auvergne, Italie)."
+        },
+        {
+            "question": "La ligne 6 est-elle accessible aux personnes à mobilité réduite ?",
+            "answer": "L'accessibilité PMR de la ligne 6 reste très limitée. Les stations aériennes (Bir-Hakeim, Passy, Cambronne, Sèvres-Lecourbe, etc.) ont des contraintes architecturales fortes : escaliers métalliques d'origine, peu d'ascenseurs. Quelques pôles en correspondance avec des lignes accessibles (Étoile, Nation, Bercy) offrent un accès partiel."
+        },
+        {
+            "question": "Combien de temps pour parcourir toute la ligne 6 ?",
+            "answer": "Comptez environ 30 à 35 minutes pour faire le trajet complet entre les terminus Charles de Gaulle – Étoile et Nation, soit l'arc semi-circulaire au sud de Paris."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 3,
+            "total_count": 28,
+            "accessibility_rate": 11,
+            "elevators_count": 6,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "label": "Accessibilité limitée (~11 %)",
+                "description": "Environ 3 stations sur 28 disposent d'ascenseurs PMR (principalement les pôles d'échange en correspondance avec des lignes accessibles : Étoile via ligne 1, Nation via ligne 1, Bercy via ligne 14)."
+            },
+            {
+                "icon": "🚆",
+                "label": "Rames MP73 (1974) en transition",
+                "description": "Le matériel MP73 historique est progressivement remplacé par les MP89 CC issus de la ligne 4 depuis 2023. Les nouvelles rames offrent des espaces dédiés signalés et des annonces sonores et visuelles."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations aériennes : contraintes architecturales",
+                "description": "Les nombreuses stations aériennes (Bir-Hakeim, Passy, Cambronne, La Motte-Picquet, Sèvres-Lecourbe, Glacière, Quai de la Gare) ont des escaliers métalliques d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
+            },
+            {
+                "icon": "🔊",
+                "label": "Annonces sonores et visuelles",
+                "description": "Le SIEL (Système d'Information en Ligne) déployé en 2007 affiche les prochaines rames sur écrans LCD aux quais. Les annonces vocales sont présentes dans les rames récentes."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Vérifier l'accessibilité avant de partir",
+                "description": "La majorité des stations de la ligne 6 ne sont pas accessibles aux PMR. Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage pour vérifier les ascenseurs disponibles à la station de destination."
+            },
+            {
+                "title": "Privilégier les pôles accessibles",
+                "description": "Pour un voyage PMR sur la ligne 6, privilégier les stations Charles de Gaulle Étoile, Nation et Bercy qui offrent un accès via leurs correspondances accessibles (lignes 1 et 14)."
+            },
+            {
+                "title": "Modernisation matériel sans changement architectural",
+                "description": "Le remplacement MP73 → MP89 CC en cours améliore le confort en rame mais ne change pas l'accessibilité physique des stations aériennes. Patience pour un programme global PMR."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-07",
+        "current_works": [],
+        "upcoming_works": [],
+        "recent_works": [
+            {
+                "icon": "🔄",
+                "title": "Remplacement progressif MP73 → MP89 CC",
+                "completed_label": "En cours depuis janvier 2023",
+                "description": "Redéploiement des rames MP89 CC issues de la ligne 4 (libérées par l'automatisation de la 4 en décembre 2022). Programme étalé sur plusieurs années, MP73 progressivement retiré."
+            },
+            {
+                "icon": "📺",
+                "title": "Modernisation SIEL et écrans voyageurs",
+                "completed_label": "Terminé 2024",
+                "description": "Mise à jour des écrans d'information voyageur sur l'ensemble des stations, intégration des données trafic temps réel via PRIM IDFM."
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Arc de Triomphe",
+                    "slug": "arc-de-triomphe",
+                    "station": "Charles de Gaulle – Étoile",
+                    "station_slug": "etoile",
+                    "icon": "🏛️",
+                    "description": "Monument emblématique au sommet des Champs-Élysées, commandé par Napoléon en 1806. Vue panoramique 360° sur Paris depuis la terrasse, à 50 m de hauteur. Tombe du Soldat inconnu et flamme du souvenir.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Tour Eiffel",
+                    "slug": "tour-eiffel",
+                    "station": "Bir-Hakeim",
+                    "station_slug": "bir-hakeim",
+                    "icon": "🗼",
+                    "description": "Symbole de Paris construit pour l'Exposition universelle de 1889 par Gustave Eiffel. 330 m de hauteur. Accès direct à 5 minutes à pied de la station Bir-Hakeim, vue spectaculaire depuis le pont éponyme.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Pont de Bir-Hakeim",
+                    "slug": "pont-de-bir-hakeim",
+                    "station": "Bir-Hakeim",
+                    "station_slug": "bir-hakeim",
+                    "icon": "🌉",
+                    "description": "Viaduc métallique à deux niveaux (route + métro aérien) construit en 1903-1906 par Louis Biette. Inscrit aux Monuments historiques en 1986. Vue iconique sur la Tour Eiffel — le plan le plus photographié du transport public mondial.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Trocadéro et palais de Chaillot",
+                    "slug": "trocadero",
+                    "station": "Trocadéro",
+                    "station_slug": "trocadero",
+                    "icon": "🏛️",
+                    "description": "Palais de Chaillot construit pour l'Exposition universelle de 1937, abritant aujourd'hui plusieurs musées (Cité de l'architecture, Musée de l'Homme, Musée national de la Marine). Esplanade offrant la plus belle vue sur la Tour Eiffel.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Place de la Nation",
+                    "slug": "place-de-la-nation",
+                    "station": "Nation",
+                    "station_slug": "nation",
+                    "icon": "⛲",
+                    "description": "Vaste rond-point au centre duquel trône le « Triomphe de la République » de Jules Dalou (1899). Ancienne barrière du Trône, point de jonction de la rocade lignes 2/6 et de plusieurs RER (A) et lignes de métro (1, 9)."
+                },
+                {
+                    "name": "Viaduc de Bercy",
+                    "slug": "viaduc-bercy",
+                    "station": "Bercy",
+                    "station_slug": "bercy",
+                    "icon": "🌉",
+                    "description": "Seul viaduc en pierre du métro parisien. Pont datant de 1864 élargi en 1903 pour soutenir la ligne 6. Double fonction routière et ferroviaire, accès au pôle TGV de Bercy.",
+                    "schema_type": "Monument"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Catacombes de Paris",
+                    "slug": "catacombes",
+                    "station": "Denfert-Rochereau",
+                    "station_slug": "denfert-rochereau",
+                    "icon": "💀",
+                    "description": "Ossuaire municipal aménagé dans d'anciennes carrières du XVIIIᵉ siècle. Plus de 6 millions de squelettes parisiens transférés à 20 m sous terre depuis 1786. Visite recommandée avec réservation préalable.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Cité de l'Architecture et du Patrimoine",
+                    "slug": "cite-architecture",
+                    "station": "Trocadéro",
+                    "station_slug": "trocadero",
+                    "icon": "🏛️",
+                    "description": "Musée d'architecture installé au palais de Chaillot. Galerie des moulages monumentaux, expositions sur l'évolution architecturale française du Moyen Âge à nos jours.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Musée de la Libération de Paris",
+                    "slug": "musee-liberation",
+                    "station": "Denfert-Rochereau",
+                    "station_slug": "denfert-rochereau",
+                    "icon": "🪖",
+                    "description": "Musée Jean Moulin – Musée du Général Leclerc – Musée de la Libération de Paris. Installé place Denfert-Rochereau dans l'ancien pavillon Ledoux et l'abri PC du colonel Rol-Tanguy (août 1944). Reprise en 2019 dans un nouveau bâtiment.",
+                    "schema_type": "Museum"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Cimetière du Montparnasse",
+                    "slug": "cimetiere-montparnasse",
+                    "station": "Edgar Quinet",
+                    "station_slug": "edgar-quinet",
+                    "icon": "🕊️",
+                    "description": "Deuxième plus grand cimetière intra-muros de Paris (19 ha). Tombes de Baudelaire, Sartre, Beauvoir, Maupassant, Serge Gainsbourg, Beckett, Tristan Tzara.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier de Passy",
+                    "slug": "quartier-passy",
+                    "station": "Passy",
+                    "station_slug": "passy",
+                    "icon": "🏛️",
+                    "description": "Ancien village indépendant de Paris (rattaché en 1860), cœur résidentiel chic du 16ᵉ arrondissement. Maison de Balzac, Musée du Vin, vue sur la Tour Eiffel depuis les ruelles en pente.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Bercy Village",
+                    "slug": "bercy-village",
+                    "station": "Bercy",
+                    "station_slug": "bercy",
+                    "icon": "🍷",
+                    "description": "Anciens chais à vin reconvertis en zone commerciale et de loisirs. Restaurants, boutiques, cinéma UGC, ambiance pavée et arborée. Accès direct depuis Bercy.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Bois de Vincennes",
+                    "slug": "bois-de-vincennes",
+                    "station": "Bel-Air",
+                    "station_slug": "bel-air",
+                    "icon": "🌳",
+                    "description": "Plus grand espace vert de Paris (995 ha), à l'est. Parc Floral, Château de Vincennes (accès par ligne 1), hippodrome, lac Daumesnil. Foire du Trône au printemps sur la pelouse de Reuilly."
+                },
+                {
+                    "name": "Place de la Nation",
+                    "slug": "quartier-nation",
+                    "station": "Nation",
+                    "station_slug": "nation",
+                    "icon": "⛲",
+                    "description": "Pôle de la rocade est, vie commerciale dynamique autour du cours de Vincennes et de l'avenue du Trône. Marché aux fleurs hebdomadaire, accès Bois de Vincennes.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "gares": {
+            "title_template": "Gares ferroviaires desservies par la ligne {code}",
+            "icon": "🚉",
+            "color_gradient": "linear-gradient(135deg, #4299E1 0%, #2563AC 100%)",
+            "category_url": "/gares/",
+            "items": [
+                {
+                    "name": "Gare Montparnasse",
+                    "slug": "gare-montparnasse",
+                    "station": "Montparnasse-Bienvenüe",
+                    "station_slug": "montparnasse-bienvenue",
+                    "icon": "🚆",
+                    "description": "Gare TGV Atlantique pour la Bretagne, le Pays de la Loire, le Sud-Ouest et l'Espagne. Modernisée en 2017 avec un toit végétalisé. Pôle d'échange majeur (lignes 4, 6, 12, 13).",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Gare de Bercy",
+                    "slug": "gare-de-bercy",
+                    "station": "Bercy",
+                    "station_slug": "bercy",
+                    "icon": "🚄",
+                    "description": "Gare TGV pour les liaisons vers la Bourgogne, l'Auvergne, l'Italie. Appui de la gare de Lyon, point de départ des trains-couchettes Intercités. Accès direct ligne 6 et ligne 14.",
+                    "schema_type": "TrainStation"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "arc-de-triomphe",
+                        "name": "Arc de Triomphe",
+                        "description": "Monument emblématique au sommet des Champs-Élysées, commandé par Napoléon en 1806. Vue panoramique 360° sur Paris depuis la terrasse, à 50 m de hauteur. Tombe du Soldat inconnu et flamme du souvenir.",
+                        "station": "Charles de Gaulle – Étoile",
+                        "station_slug": "etoile"
+                    },
+                    {
+                        "slug": "tour-eiffel",
+                        "name": "Tour Eiffel",
+                        "description": "Symbole de Paris construit pour l'Exposition universelle de 1889 par Gustave Eiffel. 330 m de hauteur. Accès direct à 5 minutes à pied de la station Bir-Hakeim, vue spectaculaire depuis le pont éponyme.",
+                        "station": "Bir-Hakeim",
+                        "station_slug": "bir-hakeim"
+                    },
+                    {
+                        "slug": "pont-de-bir-hakeim",
+                        "name": "Pont de Bir-Hakeim",
+                        "description": "Viaduc métallique à deux niveaux (route + métro aérien) construit en 1903-1906 par Louis Biette. Inscrit aux Monuments historiques en 1986. Vue iconique sur la Tour Eiffel — le plan le plus photographié du transport public mondial.",
+                        "station": "Bir-Hakeim",
+                        "station_slug": "bir-hakeim"
+                    },
+                    {
+                        "slug": "trocadero",
+                        "name": "Trocadéro et palais de Chaillot",
+                        "description": "Palais de Chaillot construit pour l'Exposition universelle de 1937, abritant aujourd'hui plusieurs musées (Cité de l'architecture, Musée de l'Homme, Musée national de la Marine). Esplanade offrant la plus belle vue sur la Tour Eiffel.",
+                        "station": "Trocadéro",
+                        "station_slug": "trocadero"
+                    },
+                    {
+                        "slug": "place-de-la-nation",
+                        "name": "Place de la Nation",
+                        "description": "Vaste rond-point au centre duquel trône le « Triomphe de la République » de Jules Dalou (1899). Ancienne barrière du Trône, point de jonction de la rocade lignes 2/6 et de plusieurs RER (A) et lignes de métro (1, 9).",
+                        "station": "Nation",
+                        "station_slug": "nation"
+                    },
+                    {
+                        "slug": "viaduc-bercy",
+                        "name": "Viaduc de Bercy",
+                        "description": "Seul viaduc en pierre du métro parisien. Pont datant de 1864 élargi en 1903 pour soutenir la ligne 6. Double fonction routière et ferroviaire, accès au pôle TGV de Bercy.",
+                        "station": "Bercy",
+                        "station_slug": "bercy"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "catacombes",
+                        "name": "Catacombes de Paris",
+                        "description": "Ossuaire municipal aménagé dans d'anciennes carrières du XVIIIᵉ siècle. Plus de 6 millions de squelettes parisiens transférés à 20 m sous terre depuis 1786. Visite recommandée avec réservation préalable.",
+                        "station": "Denfert-Rochereau",
+                        "station_slug": "denfert-rochereau"
+                    },
+                    {
+                        "slug": "cite-architecture",
+                        "name": "Cité de l'Architecture et du Patrimoine",
+                        "description": "Musée d'architecture installé au palais de Chaillot. Galerie des moulages monumentaux, expositions sur l'évolution architecturale française du Moyen Âge à nos jours.",
+                        "station": "Trocadéro",
+                        "station_slug": "trocadero"
+                    },
+                    {
+                        "slug": "musee-liberation",
+                        "name": "Musée de la Libération de Paris",
+                        "description": "Musée Jean Moulin – Musée du Général Leclerc – Musée de la Libération de Paris. Installé place Denfert-Rochereau dans l'ancien pavillon Ledoux et l'abri PC du colonel Rol-Tanguy (août 1944). Reprise en 2019 dans un nouveau bâtiment.",
+                        "station": "Denfert-Rochereau",
+                        "station_slug": "denfert-rochereau"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "cimetiere-montparnasse",
+                        "name": "Cimetière du Montparnasse",
+                        "description": "Deuxième plus grand cimetière intra-muros de Paris (19 ha). Tombes de Baudelaire, Sartre, Beauvoir, Maupassant, Serge Gainsbourg, Beckett, Tristan Tzara.",
+                        "station": "Edgar Quinet",
+                        "station_slug": "edgar-quinet"
+                    },
+                    {
+                        "slug": "quartier-passy",
+                        "name": "Quartier de Passy",
+                        "description": "Ancien village indépendant de Paris (rattaché en 1860), cœur résidentiel chic du 16ᵉ arrondissement. Maison de Balzac, Musée du Vin, vue sur la Tour Eiffel depuis les ruelles en pente.",
+                        "station": "Passy",
+                        "station_slug": "passy"
+                    },
+                    {
+                        "slug": "bercy-village",
+                        "name": "Bercy Village",
+                        "description": "Anciens chais à vin reconvertis en zone commerciale et de loisirs. Restaurants, boutiques, cinéma UGC, ambiance pavée et arborée. Accès direct depuis Bercy.",
+                        "station": "Bercy",
+                        "station_slug": "bercy"
+                    },
+                    {
+                        "slug": "bois-de-vincennes",
+                        "name": "Bois de Vincennes",
+                        "description": "Plus grand espace vert de Paris (995 ha), à l'est. Parc Floral, Château de Vincennes (accès par ligne 1), hippodrome, lac Daumesnil. Foire du Trône au printemps sur la pelouse de Reuilly.",
+                        "station": "Bel-Air",
+                        "station_slug": "bel-air"
+                    },
+                    {
+                        "slug": "quartier-nation",
+                        "name": "Place de la Nation",
+                        "description": "Pôle de la rocade est, vie commerciale dynamique autour du cours de Vincennes et de l'avenue du Trône. Marché aux fleurs hebdomadaire, accès Bois de Vincennes.",
+                        "station": "Nation",
+                        "station_slug": "nation"
+                    }
+                ]
+            },
+            {
+                "id": "gares",
+                "icon": "🚉",
+                "title": "Gares et grands pôles",
+                "category_url": "/gares/",
+                "pois": [
+                    {
+                        "slug": "gare-montparnasse",
+                        "name": "Gare Montparnasse",
+                        "description": "Gare TGV Atlantique pour la Bretagne, le Pays de la Loire, le Sud-Ouest et l'Espagne. Modernisée en 2017 avec un toit végétalisé. Pôle d'échange majeur (lignes 4, 6, 12, 13).",
+                        "station": "Montparnasse-Bienvenüe",
+                        "station_slug": "montparnasse-bienvenue"
+                    },
+                    {
+                        "slug": "gare-de-bercy",
+                        "name": "Gare de Bercy",
+                        "description": "Gare TGV pour les liaisons vers la Bourgogne, l'Auvergne, l'Italie. Appui de la gare de Lyon, point de départ des trains-couchettes Intercités. Accès direct ligne 6 et ligne 14.",
+                        "station": "Bercy",
+                        "station_slug": "bercy"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "Le tour panoramique — De Bir-Hakeim à Cambronne",
+            "description": "5 stations aériennes consécutives offrant des vues sur la Tour Eiffel et le sud-ouest de Paris. Itinéraire à faire côté droit dans le sens Étoile → Nation pour la meilleure vue.",
+            "stops": [
+                "Bir-Hakeim",
+                "Dupleix",
+                "La Motte-Picquet – Grenelle",
+                "Sèvres-Lecourbe",
+                "Cambronne"
+            ],
+            "duration_min": 10,
+            "icon": "🌉"
+        },
+        {
+            "title": "Le parcours patrimoine — De Étoile à Bercy",
+            "description": "Arc de Triomphe, Trocadéro, Tour Eiffel via Bir-Hakeim, Catacombes via Denfert-Rochereau, Bercy Village. La ligne 6 enchaîne 5 monuments majeurs en 20 minutes.",
+            "stops": [
+                "Charles de Gaulle – Étoile",
+                "Trocadéro",
+                "Bir-Hakeim",
+                "Denfert-Rochereau",
+                "Bercy"
+            ],
+            "duration_min": 20,
+            "icon": "🏛️"
+        },
+        {
+            "title": "Le sud-est actif — De Nation à Bel-Air",
+            "description": "Sortie est de la ligne 6, accès au Bois de Vincennes via Bel-Air, Foire du Trône au printemps sur la pelouse de Reuilly.",
+            "stops": [
+                "Nation",
+                "Picpus",
+                "Bel-Air",
+                "Daumesnil"
+            ],
+            "duration_min": 7,
+            "icon": "🌳"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Charles de Gaulle – Étoile",
+                "slug": "etoile"
+            },
+            "to": {
+                "name": "Nation",
+                "slug": "nation"
+            },
+            "duration_min": 30,
+            "transfers": 0,
+            "lines": [
+                "6"
+            ],
+            "description": "L'arc semi-circulaire complet de la ligne 6, ouest-sud-est de Paris",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Bir-Hakeim",
+                "slug": "bir-hakeim"
+            },
+            "to": {
+                "name": "Trocadéro",
+                "slug": "trocadero"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "6"
+            ],
+            "description": "Le passage iconique avec panorama Tour Eiffel, viaduc de Passy en sortie",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Charles de Gaulle – Étoile",
+                "slug": "etoile"
+            },
+            "to": {
+                "name": "Bercy",
+                "slug": "bercy"
+            },
+            "duration_min": 20,
+            "transfers": 0,
+            "lines": [
+                "6"
+            ],
+            "description": "Traversée patrimoniale ouest-est : Arc de Triomphe → Tour Eiffel → Catacombes → Bercy Village",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Denfert-Rochereau",
+                "slug": "denfert-rochereau"
+            },
+            "to": {
+                "name": "Bir-Hakeim",
+                "slug": "bir-hakeim"
+            },
+            "duration_min": 10,
+            "transfers": 0,
+            "lines": [
+                "6"
+            ],
+            "description": "Catacombes vers Tour Eiffel, deux sites majeurs en 10 minutes",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Nation",
+                "slug": "nation"
+            },
+            "to": {
+                "name": "Bercy",
+                "slug": "bercy"
+            },
+            "duration_min": 5,
+            "transfers": 0,
+            "lines": [
+                "6"
+            ],
+            "description": "Court trajet vers le pôle multimodal Bercy (ligne 14, gare TGV de Bercy)",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "Bir-Hakeim et Chicago : un échange transatlantique",
+            "slug": "bir-hakeim-chicago",
+            "url": "/info-trafic/bir-hakeim-chicago/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "En 2001, la station Bir-Hakeim a échangé une de ses entrées Guimard avec la ville de Chicago. Récit d'un troc inattendu entre deux capitales mondiales.",
+            "author": "Ludo",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 5,
+            "image": ""
+        },
+        {
+            "title": "6,1 km en aérien : pourquoi la ligne 6 sort à l'air libre",
+            "slug": "ligne-6-aerienne",
+            "url": "/info-trafic/ligne-6-aerienne/",
+            "category": "Dossier",
+            "category_slug": "dossier",
+            "category_color": "#0F6E56",
+            "excerpt": "Mur des Fermiers généraux, géologie sud parisienne, choix de Bienvenüe : pourquoi la ligne 6 a-t-elle autant de viaducs ?",
+            "author": "Ludo",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 7,
+            "image": ""
+        },
+        {
+            "title": "MP73 → MP89 CC : la transition matériel de la ligne 6",
+            "slug": "mp73-mp89-ligne-6",
+            "url": "/info-trafic/mp73-mp89-ligne-6/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#BA7517",
+            "excerpt": "Janvier 2023 : début du remplacement du MP73 par les MP89 CC issus de la ligne 4 automatisée. Calendrier, premières arrivées, retours d'expérience.",
+            "author": "Ludo",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "Le panorama Tour Eiffel depuis le métro : guide pratique",
+            "slug": "panorama-eiffel-metro",
+            "url": "/info-trafic/panorama-eiffel-metro/",
+            "category": "Tourisme",
+            "category_slug": "tourisme",
+            "category_color": "#BA7517",
+            "excerpt": "De Passy à Bir-Hakeim, le passage le plus photographié du transport public mondial. Côté droit ou gauche, heures dorées, technique pour le cliché parfait.",
+            "author": "Ludo",
+            "published_at": "2026-03-25T08:30:00",
+            "published_label": "Mars 2026",
+            "reading_time": 4,
+            "image": ""
+        }
+    ],
+    "seo": {
+        "h1": "Métro Ligne 6 Paris : plan, horaires et trafic",
+        "title": "Métro Ligne 6 Paris : plan, stations, horaires et trafic temps réel",
+        "description": "Toute l'info sur la ligne 6 du métro parisien : 28 stations de Charles de Gaulle Étoile à Nation, 6,1 km en aérien, deux traversées de la Seine via les viaducs de Bir-Hakeim et Bercy.",
+        "lead": "Toute l'information sur la <strong>ligne 6 du métro parisien</strong>, demi-cercle sud reliant <strong>Charles de Gaulle Étoile</strong> à <strong>Nation</strong> via Trocadéro, Bir-Hakeim, Montparnasse, Denfert-Rochereau et Bercy. <strong>28 stations</strong> sur 13,6 km dont <strong>6,1 km en aérien</strong> — le plus haut pourcentage de tracé en surface du métro parisien. Deux traversées spectaculaires de la Seine : le viaduc métallique de Bir-Hakeim (1906, classé monument historique) et le pont de pierre de Bercy. Environ 330 000 voyageurs par jour."
+    },
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:Passy_(m%C3%A9tro_Paris)_MP73_n%C2%B06524_par_Cramos.JPG",
+        "alt": "Rame MP73 sortant de la station aérienne Passy sur le viaduc de Bir-Hakeim, ligne 6 du métro parisien",
+        "width": 1600,
+        "height": 1067,
+        "credit": {
+            "author": "Cramos",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Passy_(m%C3%A9tro_Paris)_MP73_n%C2%B06524_par_Cramos.JPG",
+            "date": "2016-03-12",
+            "description": "Rame MP73 n°6524 sortant de la station Passy sur le viaduc de Passy (pont de Bir-Hakeim) — vue caractéristique de la ligne 6"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-6/ligne-6-400.avif",
+                "800": "/assets/img/lines/ligne-6/ligne-6-800.avif",
+                "1200": "/assets/img/lines/ligne-6/ligne-6-1200.avif",
+                "1600": "/assets/img/lines/ligne-6/ligne-6-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-6/ligne-6-400.webp",
+                "800": "/assets/img/lines/ligne-6/ligne-6-800.webp",
+                "1200": "/assets/img/lines/ligne-6/ligne-6-1200.webp",
+                "1600": "/assets/img/lines/ligne-6/ligne-6-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-6/ligne-6-400.jpg",
+                "800": "/assets/img/lines/ligne-6/ligne-6-800.jpg",
+                "1200": "/assets/img/lines/ligne-6/ligne-6-1200.jpg",
+                "1600": "/assets/img/lines/ligne-6/ligne-6-1600.jpg"
+            }
+        }
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "1",
+                "color": "#FFCE00",
+                "color_text": "#000000",
+                "stations": [
+                    "Charles de Gaulle - Étoile",
+                    "Kléber",
+                    "Nation"
+                ],
+                "name": "Ligne 1",
+                "url": "/metro/ligne-1/"
+            },
+            {
+                "code": "2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Charles de Gaulle - Étoile",
+                    "Kléber",
+                    "Nation"
+                ],
+                "name": "Ligne 2",
+                "url": "/metro/ligne-2/"
+            },
+            {
+                "code": "4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gare Montparnasse",
+                    "Raspail",
+                    "Denfert-Rochereau",
+                    "Saint-Jacques"
+                ],
+                "name": "Ligne 4",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Place d'Italie"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Place d'Italie"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "stations": [
+                    "La Motte-Picquet - Grenelle",
+                    "Cambronne",
+                    "Daumesnil"
+                ],
+                "name": "Ligne 8",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "stations": [
+                    "Trocadéro",
+                    "Nation"
+                ],
+                "name": "Ligne 9",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "10",
+                "color": "#E3B32A",
+                "color_text": "#000000",
+                "stations": [
+                    "La Motte-Picquet - Grenelle",
+                    "Cambronne"
+                ],
+                "name": "Ligne 10",
+                "url": "/metro/ligne-10/"
+            },
+            {
+                "code": "12",
+                "color": "#00814F",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Sèvres-Lecourbe",
+                    "Pasteur",
+                    "Gare Montparnasse"
+                ],
+                "name": "Ligne 12",
+                "url": "/metro/ligne-12/"
+            },
+            {
+                "code": "13",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Gare Montparnasse"
+                ],
+                "name": "Ligne 13",
+                "url": "/metro/ligne-13/"
+            },
+            {
+                "code": "14",
+                "color": "#662483",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Bercy"
+                ],
+                "name": "Ligne 14",
+                "url": "/metro/ligne-14/"
+            }
+        ],
+        "connections_rer": [
+            {
+                "code": "A",
+                "color": "#E2231A",
+                "color_text": "#FFF",
+                "stations": [
+                    "Charles de Gaulle - Étoile",
+                    "Kléber",
+                    "Nation"
+                ],
+                "name": "RER A",
+                "url": "/rer/rer-a/"
+            },
+            {
+                "code": "B",
+                "color": "#5291CE",
+                "color_text": "#FFF",
+                "stations": [
+                    "Denfert-Rochereau",
+                    "Saint-Jacques"
+                ],
+                "name": "RER B",
+                "url": "/rer/rer-b/"
+            },
+            {
+                "code": "C",
+                "color": "#F3D006",
+                "color_text": "#FFF",
+                "stations": [
+                    "Bir-Hakeim"
+                ],
+                "name": "RER C",
+                "url": "/rer/rer-c/"
+            }
+        ],
+        "connections_other": [
+            {
+                "code": "N",
+                "color": "#00814F",
+                "color_text": "#FFF",
+                "stations": [
+                    "Gare Montparnasse"
+                ],
+                "name": "Transilien N",
+                "url": "/transilien/n/"
+            }
+        ],
+        "discover_metro_lines": [
+            {
+                "code": "6",
+                "name": "Ligne 6",
+                "color": "#83C491",
+                "color_text": "#000000",
+                "url": "/metro/ligne-6/",
+                "is_current": true
+            },
+            {
+                "code": "4",
+                "name": "Ligne 4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "1",
+                "name": "Ligne 1",
+                "color": "#FFCE00",
+                "color_text": "#000000",
+                "url": "/metro/ligne-1/"
+            },
+            {
+                "code": "2",
+                "name": "Ligne 2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-2/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    }
 }
