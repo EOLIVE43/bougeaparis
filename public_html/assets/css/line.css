@@ -424,7 +424,11 @@
 .perturbation__zone strong{color:var(--text);font-weight:600}
 
 /* Lien bulletin trafic */
-.trafic__bulletin-link{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:24px}
+/* v1.5.1 a11y : background utilise --accent-strong (auto-darken si --accent
+   ne passe pas AA avec --accent-text). Pour L1/L4/L14 dont --accent passe
+   deja, --accent-strong = --accent : aucun changement visuel. Pour L6/L7
+   futures (vert/rose claires), --accent-strong sera assombri auto. */
+.trafic__bulletin-link{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding:18px 22px;background:var(--accent-strong,var(--accent,#FFCD00));border-radius:12px;color:var(--accent-text,#1A2B26);margin-top:24px}
 .trafic__bulletin-link-icon{font-size:32px;line-height:1}
 .trafic__bulletin-link-content{flex:1}
 /* v1.5.0 a11y : retrait opacity (Lighthouse v11+ compte l'alpha dans le ratio).
@@ -686,7 +690,8 @@
 .access-tip__desc{font-size:14px;color:var(--text-soft);line-height:1.6;margin:0}
 
 /* Ressources externes */
-.accessibilite__resources{margin-top:32px;padding:22px 26px;background:var(--accent,#FFCD00);border-radius:12px;color:var(--accent-text,#1A2B26)}
+/* v1.5.1 a11y : background utilise --accent-strong (auto-darken AA). */
+.accessibilite__resources{margin-top:32px;padding:22px 26px;background:var(--accent-strong,var(--accent,#FFCD00));border-radius:12px;color:var(--accent-text,#1A2B26)}
 /* v1.5.0 a11y : retrait opacity (Lighthouse v11+ compte l'alpha). Hiérarchie préservée via font-size + uppercase. */
 .accessibilite__resources-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:14px}
 .accessibilite__resources-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}

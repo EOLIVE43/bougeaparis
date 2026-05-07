@@ -98,7 +98,7 @@ $tpl->partial('components/breadcrumb', [
 ?>
 
 <?php
-// Couleur d'accent dynamique : injecte 5 CSS custom properties depuis le JSON
+// Couleur d'accent dynamique : injecte 6 CSS custom properties depuis le JSON
 // ligne, scopees a l'article. Les rules de line.css picquent automatiquement
 // la couleur de la ligne courante (DRY pour les 16 lignes).
 //
@@ -107,6 +107,11 @@ $tpl->partial('components/breadcrumb', [
 // - --accent-text       : couleur du texte sur fond accent
 // - --accent-bg-soft    : tint tres pale 92% (anecdote, schedule, alternatives)
 // - --accent-border-soft: tint medium 65% (border dashed, separateurs)
+// - --accent-strong     : version assombrie SI besoin pour passer AA (4.5:1)
+//                         entre --accent-text et le bg. Si --accent passe deja,
+//                         retourne --accent inchange (preserve identite visuelle
+//                         pour L1/L4/L14). Pour les futures lignes claires
+//                         (L6/L7/L9/L10/L12/L13), darken automatiquement.
 $lightenHex = function (string $hex, float $mix): string {
     $hex = ltrim($hex, '#');
     if (strlen($hex) !== 6) return '#FFFFFF';
@@ -118,18 +123,56 @@ $lightenHex = function (string $hex, float $mix): string {
     $b = (int)round($b + $mix * (255 - $b));
     return sprintf('#%02X%02X%02X', $r, $g, $b);
 };
+// Helpers WCAG : luminance relative + ratio de contraste
+$wcagLuminance = function (string $hex): float {
+    $hex = ltrim($hex, '#');
+    if (strlen($hex) !== 6) return 1.0;
+    $rgb = [hexdec(substr($hex, 0, 2)), hexdec(substr($hex, 2, 2)), hexdec(substr($hex, 4, 2))];
+    $lin = array_map(function ($c) {
+        $cs = $c / 255;
+        return $cs <= 0.03928 ? ($cs / 12.92) : pow(($cs + 0.055) / 1.055, 2.4);
+    }, $rgb);
+    return 0.2126 * $lin[0] + 0.7152 * $lin[1] + 0.0722 * $lin[2];
+};
+$wcagContrast = function (string $a, string $b) use ($wcagLuminance): float {
+    $la = $wcagLuminance($a); $lb = $wcagLuminance($b);
+    return (max($la, $lb) + 0.05) / (min($la, $lb) + 0.05);
+};
+// Blend with black at $mix (0..1) : 0 = unchanged, 1 = pure black
+$blendBlack = function (string $hex, float $mix): string {
+    $hex = ltrim($hex, '#');
+    if (strlen($hex) !== 6) return '#000000';
+    $r = (int)round(hexdec(substr($hex, 0, 2)) * (1 - $mix));
+    $g = (int)round(hexdec(substr($hex, 2, 2)) * (1 - $mix));
+    $b = (int)round(hexdec(substr($hex, 4, 2)) * (1 - $mix));
+    return sprintf('#%02X%02X%02X', $r, $g, $b);
+};
+// darken_until_contrast : si contrast(text, accent) >= 4.5, retourne accent
+// inchange. Sinon assombrit accent par paliers de 5% jusqu'a passer AA.
+$darkenUntilContrast = function (string $accent, string $text, float $target = 4.5)
+    use ($wcagContrast, $blendBlack): string {
+    if ($wcagContrast($text, $accent) >= $target) return $accent;
+    for ($mix = 0.05; $mix <= 0.95; $mix += 0.05) {
+        $candidate = $blendBlack($accent, $mix);
+        if ($wcagContrast($text, $candidate) >= $target) return $candidate;
+    }
+    return '#000000';
+};
+
 $lineColorRaw  = $line['color']       ?? '#FFCD00';
 $lineColorLite = $line['color_light'] ?? '#FFF6CC';
 $lineColorText = $line['color_text']  ?? '#1A2B26';
 $accentBgSoft     = $lightenHex($lineColorRaw, 0.92);
 $accentBorderSoft = $lightenHex($lineColorRaw, 0.65);
+$accentStrong     = $darkenUntilContrast($lineColorRaw, $lineColorText, 4.5);
 $accentStyle = sprintf(
-    '--accent:%s;--accent-light:%s;--accent-text:%s;--accent-bg-soft:%s;--accent-border-soft:%s;',
+    '--accent:%s;--accent-light:%s;--accent-text:%s;--accent-bg-soft:%s;--accent-border-soft:%s;--accent-strong:%s;',
     htmlspecialchars($lineColorRaw,     ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($lineColorLite,    ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($lineColorText,    ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($accentBgSoft,     ENT_QUOTES, 'UTF-8'),
-    htmlspecialchars($accentBorderSoft, ENT_QUOTES, 'UTF-8')
+    htmlspecialchars($accentBorderSoft, ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($accentStrong,     ENT_QUOTES, 'UTF-8')
 );
 ?>
 <article class="line-page line-page--metro"
