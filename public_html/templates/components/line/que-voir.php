@@ -149,11 +149,11 @@ foreach ($pois as $theme) {
 
       <!-- Bandeau du thème (titre + lien catégorie) -->
       <div class="theme-section__header">
-        <span class="theme-section__icon" aria-hidden="true"><?= htmlspecialchars($theme['icon']) ?></span>
+        <span class="theme-section__icon" aria-hidden="true"><?= htmlspecialchars($theme['icon'] ?? '📍') ?></span>
         <h3 class="theme-section__title">
-          <?= htmlspecialchars(str_replace('{code}', $line['code'], $theme['title_template'])) ?>
+          <?= htmlspecialchars(str_replace('{code}', $line['code'] ?? '', $theme['title_template'] ?? '')) ?>
         </h3>
-        <span class="theme-section__count"><?= count($theme['items']) ?> lieux</span>
+        <span class="theme-section__count"><?= count($theme['items'] ?? []) ?> lieux</span>
         <?php
           // "Voir tout" : actif uniquement si la page categorie existe
           $catUrl = $theme['category_url'] ?? '';
@@ -171,7 +171,7 @@ foreach ($pois as $theme) {
           $poiUrl   = $theme['category_url'] . $poi['slug'] . '/';
           $hasImage = !empty($poi['image']) && !empty($poi['image']['src']);
         ?>
-          <article class="poi-card <?= $hasImage ? 'poi-card--with-image' : '' ?>" itemscope itemtype="https://schema.org/<?= htmlspecialchars($poi['schema_type']) ?>">
+          <article class="poi-card <?= $hasImage ? 'poi-card--with-image' : '' ?>" itemscope itemtype="https://schema.org/<?= htmlspecialchars($poi['schema_type'] ?? 'Place') ?>">
 
             <?php if ($hasImage): ?>
               <!-- Photo réelle (Wikimedia, optimisée Discover 1200x675).
@@ -200,19 +200,19 @@ foreach ($pois as $theme) {
               </div>
             <?php else: ?>
               <!-- Fallback : emoji thématique sur gradient coloré -->
-              <div class="poi-card__image" style="background: <?= htmlspecialchars($theme['color_gradient']) ?>;">
-                <span class="poi-card__icon" aria-hidden="true"><?= htmlspecialchars($poi['icon']) ?></span>
+              <div class="poi-card__image" style="background: <?= htmlspecialchars($theme['color_gradient'] ?? '#0F6E56') ?>;">
+                <span class="poi-card__icon" aria-hidden="true"><?= htmlspecialchars($poi['icon'] ?? '📍') ?></span>
               </div>
             <?php endif; ?>
 
             <div class="poi-card__content">
               <div class="poi-card__name" itemprop="name">
-                <?= conditionalLink($poiUrl, htmlspecialchars($poi['name']), 'poi-card__name-link') ?>
+                <?= conditionalLink($poiUrl, htmlspecialchars($poi['name'] ?? ''), 'poi-card__name-link') ?>
               </div>
-              <div class="poi-card__desc" itemprop="description"><?= htmlspecialchars($poi['description']) ?></div>
+              <div class="poi-card__desc" itemprop="description"><?= htmlspecialchars($poi['description'] ?? '') ?></div>
               <div class="poi-card__station">
                 <span class="poi-card__station-icon" aria-hidden="true">🚇</span>
-                <span>Station&nbsp;: <span class="poi-card__station-name"><?= htmlspecialchars($poi['station']) ?></span></span>
+                <span>Station&nbsp;: <span class="poi-card__station-name"><?= htmlspecialchars($poi['station'] ?? '') ?></span></span>
               </div>
             </div>
 

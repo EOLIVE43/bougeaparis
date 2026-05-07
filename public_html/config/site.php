@@ -40,8 +40,8 @@ return [
     'locale'   => 'fr_FR',
     'language' => 'fr',
     'timezone' => 'Europe/Paris',
-    // Environnement
-    'debug' => true,
+    // Environnement (false en prod : aucune sortie d'erreur PHP visible côté visiteur)
+    'debug' => false,
 
     // Phase de test pages ligne : true = noindex sur /metro/ligne-X (7 jours preview)
     // Activé le 2026-05-06 : pages ligne désormais indexables (ligne 1 PageSpeed 100/100,
