@@ -938,8 +938,15 @@ foreach ($lineFiles as $lineFile) {
                 $candidates = searchWikimediaImages($searchQuery, $config, $extraBlocklist);
                 if (empty($candidates)) {
                     echo "      ✗ Aucune image trouvée (score >= 30)\n";
-                    // v1.4.6 : nettoyer l'image existante pour éviter qu'une vieille mauvaise photo reste affichée
-                    cleanupPoiImage($poi, $imageDir, $line, $lineFile);
+                    // v1.4.15 : NE PLUS supprimer l'image existante en cas de "no match".
+                    // Garder l'ancienne image vaut mieux qu'un placeholder vide (régression
+                    // observée sur les overrides wikimedia_query trop longues qui matchaient
+                    // 0 fichiers et déclenchaient un nettoyage destructif).
+                    // Le cleanup reste actif via override "skip:true" si on veut explicitement
+                    // virer une image, et via le branch "fichier forcé introuvable" plus haut.
+                    if (!empty($poi['image']['src'])) {
+                        echo "      ↩  Image existante préservée (pas de cleanup destructif)\n";
+                    }
                     continue;
                 }
                 echo "      📥 " . count($candidates) . " candidats apr\u00e8s filtrage\n";

@@ -116,20 +116,17 @@
   },
 
   "puces-saint-ouen": {
-    "wikimedia_query": "Marché aux Puces Saint-Ouen allée Paul Bert",
-    "wikimedia_blocklist": ["sculpture", "isolated", "panoramio", "metal scrap"],
-    "_comment": "v1.4.13 — Ligne 4 : run précédent matchait une sculpture rouillée isolée hors-contexte. Cible : vue d'allée ou stands d'antiquités représentative du marché."
+    "wikimedia_file": "Puces de saint ouen.jpg",
+    "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file après échec scoring sur wikimedia_query. Auteur KoS, CC BY-SA 3.0, 3008×2000. Vue représentative du marché."
   },
 
   "saint-germain-des-pres-eglise": {
-    "wikimedia_query": "Église Saint-Germain-des-Prés intérieur nef chœur",
-    "wikimedia_blocklist": ["facade", "exterior", "abbey ext", "tower"],
-    "_comment": "v1.4.13 — Ligne 4 : doublon visuel avec la carte quartier (même angle extérieur). Cible : vue intérieure (nef/chœur/voûte) pour différencier les 2 cards."
+    "wikimedia_file": "Nave of Abbaye de Saint-Germain-des-Prés, Paris, France - Diliff.jpg",
+    "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file. Vue intérieure de la nef par Diliff (photographe Wikimedia réputé pour ses vues HDR d'architecture), CC BY-SA 3.0, 5157×5738. Différencie de la carte quartier (extérieur)."
   },
 
   "goutte-d-or": {
-    "wikimedia_query": "Quartier Goutte d'Or Paris 18e Barbès rue",
-    "wikimedia_blocklist": ["Mont-de-Piété", "Crédit Municipal", "Francs-Bourgeois", "haussmannien"],
-    "_comment": "v1.4.13 — Ligne 4 : mismatch confirmé. Le run précédent matchait 'Mont-de-Piété, Goutte d'Or, Paris 9 April 2015.jpg' (auteur Jeanne Menjoulet) qui montre le Crédit Municipal du 4e arr., PAS le quartier Goutte d'Or 18e."
+    "wikimedia_file": "Magasin africain à la Goutte d'Or (MédiHAL 670582).jpg",
+    "_comment": "v1.4.14 — Ligne 4 : passage en wikimedia_file après mismatch Mont-de-Piété et échec scoring. Photo authentique du quartier 18e (rue Polonceau, magasin africain), domaine public, par Michelle Guillon (MédiHAL)."
   }
 }
