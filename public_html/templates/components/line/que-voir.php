@@ -27,10 +27,12 @@ if (!$pois) {
 // v1.4.6 : Charger les overrides POI (poi-overrides.json) et retirer les POI marqués skip:true
 $overridesFile = __DIR__ . '/../../../data/poi-overrides.json';
 $skipSlugs = [];
+$overrides = [];
 if (file_exists($overridesFile)) {
-    $overrides = json_decode(file_get_contents($overridesFile), true);
-    if (is_array($overrides)) {
-        foreach ($overrides as $slug => $cfg) {
+    $overridesParsed = json_decode(file_get_contents($overridesFile), true);
+    if (is_array($overridesParsed)) {
+        $overrides = $overridesParsed;
+        foreach ($overridesParsed as $slug => $cfg) {
             if (is_array($cfg) && !empty($cfg['skip'])) {
                 $skipSlugs[] = $slug;
             }
@@ -44,6 +46,53 @@ if (!empty($skipSlugs)) {
             $theme['items'],
             fn($poi) => !in_array($poi['slug'] ?? '', $skipSlugs, true)
         ));
+    }
+    unset($theme);
+}
+
+// v2.0.0 : résolution registry-aware. Si un POI est marqué shared_asset
+// dans poi-overrides.json, on force son image.src vers /assets/images/poi/shared/...
+// même si le JSON ligne n'a pas encore été ré-écrit par le workflow Fetch POI.
+// Le template devient ainsi self-sufficient : page propre dès que les fichiers
+// /shared/ sont en place + le registry à jour, sans attendre le re-fetch.
+$registryFile = __DIR__ . '/../../../data/poi-registry.json';
+$poiRegistry = [];
+if (file_exists($registryFile)) {
+    $regParsed = json_decode(file_get_contents($registryFile), true);
+    if (is_array($regParsed)) {
+        $poiRegistry = $regParsed['pois'] ?? [];
+    }
+}
+if (!empty($overrides) && !empty($poiRegistry)) {
+    foreach ($pois as $themeKey => &$theme) {
+        if (!isset($theme['items'])) continue;
+        foreach ($theme['items'] as &$poi) {
+            $slug = $poi['slug'] ?? '';
+            if ($slug === '') continue;
+            $cfg = $overrides[$slug] ?? null;
+            if (!is_array($cfg) || empty($cfg['shared_asset'])) continue;
+            $regKey = $cfg['registry_key'] ?? $slug;
+            if (!isset($poiRegistry[$regKey])) continue;
+            $entry = $poiRegistry[$regKey];
+            // Override l'image avec la version shared canonique (même si le JSON
+            // ligne pointait vers l'ancien path /poi/{theme}/{slug}.webp).
+            $ws = $entry['wikimedia_source'] ?? [];
+            $poi['image'] = [
+                'src'    => '/assets/images/poi/' . ($entry['asset']  ?? "shared/$slug.webp"),
+                'thumb'  => '/assets/images/poi/' . ($entry['thumb']  ?? "shared/$slug-thumb.webp"),
+                'alt'    => $entry['alt']    ?? ($poi['name'] . ' à Paris'),
+                'width'  => $poi['image']['width']  ?? 1200,
+                'height' => $poi['image']['height'] ?? 675,
+                'credit' => [
+                    'author'        => $ws['author']      ?? 'unknown',
+                    'license'       => $ws['license']     ?? 'unknown',
+                    'license_url'   => $ws['license_url'] ?? '',
+                    'wikimedia_url' => $ws['url']         ?? '',
+                    'source'        => 'shared_asset (poi-registry)',
+                ],
+            ];
+        }
+        unset($poi);
     }
     unset($theme);
 }
