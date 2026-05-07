@@ -1,0 +1,684 @@
+{
+  "_doc": "Registre central des POIs partagés entre plusieurs lignes du métro parisien. Source unique de vérité pour les attributions Wikimedia (page /sources/) et résolution des assets (mode shared_asset dans poi-overrides.json).",
+  "version": "1.0",
+  "updated_at": "2026-05-07",
+  "pois": {
+    "arc-de-triomphe": {
+      "name": "Arc de Triomphe",
+      "asset": "shared/arc-de-triomphe.webp",
+      "thumb": "shared/arc-de-triomphe-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AArc+de+Triomphe%2C+Paris+21+October+2010.jpg",
+        "author": "Jiuguang Wang",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Charles de Gaulle - Étoile"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-2",
+        "metro-6"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Arc de Triomphe à Paris, station Charles de Gaulle - Étoile",
+      "source_line": "metro-1"
+    },
+    "place-de-la-concorde": {
+      "name": "Place de la Concorde",
+      "asset": "shared/place-de-la-concorde.webp",
+      "thumb": "shared/place-de-la-concorde-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AP1020407+Paris+VIII+Place+de+la+Concorde+Obelisque+rwk.JPG",
+        "author": "Mbzt",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Concorde"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-8",
+        "metro-12"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Place de la Concorde à Paris, station Concorde",
+      "source_line": "metro-1"
+    },
+    "hotel-de-ville": {
+      "name": "Hôtel de Ville",
+      "asset": "shared/hotel-de-ville.webp",
+      "thumb": "shared/hotel-de-ville-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHotel+de+Ville+de+Paris+2012.JPG",
+        "author": "Marcin Białek",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Hôtel de Ville"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-11"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Hôtel de Ville à Paris, station Hôtel de Ville",
+      "source_line": "metro-1"
+    },
+    "opera-bastille": {
+      "name": "Opéra Bastille",
+      "asset": "shared/opera-bastille.webp",
+      "thumb": "shared/opera-bastille-thumb.webp",
+      "wikimedia_source": {
+        "file": "unknown",
+        "url": "",
+        "author": "BougeaParis",
+        "license": "Photo personnelle",
+        "license_url": "",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Bastille"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-5",
+        "metro-8"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Opéra Bastille à Paris, place de la Bastille",
+      "source_line": "metro-1"
+    },
+    "orangerie": {
+      "name": "Musée de l'Orangerie",
+      "asset": "shared/orangerie.webp",
+      "thumb": "shared/orangerie-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AThe+Orangerie+at+Cheverny.jpg",
+        "author": "Telemaque MySon",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Concorde"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-8",
+        "metro-12"
+      ],
+      "categories": [
+        "musees"
+      ],
+      "alt": "Musée de l'Orangerie à Paris, station Concorde",
+      "source_line": "metro-1"
+    },
+    "quartier-bastille": {
+      "name": "Quartier Bastille",
+      "asset": "shared/quartier-bastille.webp",
+      "thumb": "shared/quartier-bastille-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AColonne+de+Juillet+above+Buildings.jpg",
+        "author": "DiscoA340",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Bastille"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-5",
+        "metro-8"
+      ],
+      "categories": [
+        "quartiers"
+      ],
+      "alt": "Quartier Bastille à Paris, station Bastille",
+      "source_line": "metro-1"
+    },
+    "tour-saint-jacques": {
+      "name": "Tour Saint-Jacques",
+      "asset": "shared/tour-saint-jacques.webp",
+      "thumb": "shared/tour-saint-jacques-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATour+Saint-Jacques+060708.jpg",
+        "author": "Cormac",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Châtelet"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-4",
+        "metro-7",
+        "metro-11",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Tour Saint-Jacques à Paris, station Châtelet",
+      "source_line": "metro-4"
+    },
+    "lion-de-belfort": {
+      "name": "Lion de Belfort",
+      "asset": "shared/lion-de-belfort.webp",
+      "thumb": "shared/lion-de-belfort-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ALe+Lion+de+Belfort%2C+Paris+August+2013.jpg",
+        "author": "Tommie Hansen",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Denfert-Rochereau"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-6"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Lion de Belfort à Paris, station Denfert-Rochereau",
+      "source_line": "metro-4"
+    },
+    "catacombes": {
+      "name": "Catacombes de Paris",
+      "asset": "shared/catacombes.webp",
+      "thumb": "shared/catacombes-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACatacumbas%2C+Par%C3%ADs%2C+Francia%2C+2022-11-01%2C+DD+102-104+HDR.jpg",
+        "author": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Denfert-Rochereau"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-6"
+      ],
+      "categories": [
+        "musees"
+      ],
+      "alt": "Catacombes de Paris à Paris, station Denfert-Rochereau",
+      "source_line": "metro-4"
+    },
+    "theatre-chatelet": {
+      "name": "Théâtre du Châtelet",
+      "asset": "shared/theatre-chatelet.webp",
+      "thumb": "shared/theatre-chatelet-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AParis+-+Th%C3%A9%C3%A2tre+du+Ch%C3%A2telet%2C+vue+depuis+le+plateau.jpg",
+        "author": "HaguardDuNord",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Châtelet"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-4",
+        "metro-7",
+        "metro-11",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Théâtre du Châtelet à Paris, station Châtelet",
+      "source_line": "metro-4"
+    },
+    "theatre-odeon": {
+      "name": "Théâtre de l'Odéon",
+      "asset": "shared/theatre-odeon.webp",
+      "thumb": "shared/theatre-odeon-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATh%C3%A9%C3%A2tre+de+l%27Od%C3%A9on+at+night%2C+Paris+December+2014.jpg",
+        "author": "Jean-François Gornet from Paris, France",
+        "license": "CC BY-SA 2.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Odéon"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-10"
+      ],
+      "categories": [
+        "musees"
+      ],
+      "alt": "Théâtre de l'Odéon à Paris, station Odéon",
+      "source_line": "metro-4"
+    },
+    "goutte-d-or": {
+      "name": "Goutte d'Or",
+      "asset": "shared/goutte-d-or.webp",
+      "thumb": "shared/goutte-d-or-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AMagasin+africain+%C3%A0+la+Goutte+d%27Or+%28M%C3%A9diHAL+670582%29.jpg",
+        "author": "\nMichelle Guillon",
+        "license": "Public domain",
+        "license_url": "",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Marcadet — Poissonniers"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-12"
+      ],
+      "categories": [
+        "quartiers"
+      ],
+      "alt": "Goutte d'Or à Paris, station Marcadet — Poissonniers",
+      "source_line": "metro-4"
+    },
+    "gare-du-nord": {
+      "name": "Gare du Nord",
+      "asset": "shared/gare-du-nord.webp",
+      "thumb": "shared/gare-du-nord-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGare+du+Nord%2C+Paris+6+April+2014+002.jpg",
+        "author": "Chris Sampson",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Gare du Nord"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-5"
+      ],
+      "categories": [
+        "gares"
+      ],
+      "alt": "Gare du Nord à Paris, station Gare du Nord",
+      "source_line": "metro-4"
+    },
+    "gare-de-l-est": {
+      "name": "Gare de l'Est",
+      "asset": "shared/gare-de-l-est.webp",
+      "thumb": "shared/gare-de-l-est-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AParis+Gare+de+l%27Est+toits+2013.jpg",
+        "author": "JLPC\n",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Gare de l'Est"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-5",
+        "metro-7"
+      ],
+      "categories": [
+        "gares"
+      ],
+      "alt": "Gare de l'Est à Paris, station Gare de l'Est",
+      "source_line": "metro-4"
+    },
+    "tour-montparnasse": {
+      "name": "Tour Montparnasse",
+      "asset": "shared/tour-montparnasse.webp",
+      "thumb": "shared/tour-montparnasse-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AParis+Night.jpg",
+        "author": "Benh LIEU SONG",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Montparnasse-Bienvenüe"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-6",
+        "metro-12",
+        "metro-13"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Tour Montparnasse à Paris, station Montparnasse-Bienvenüe",
+      "source_line": "metro-4"
+    },
+    "gare-montparnasse": {
+      "name": "Gare Montparnasse",
+      "asset": "shared/gare-montparnasse.webp",
+      "thumb": "shared/gare-montparnasse-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3A2024-12-27+TGV+Euroduplex+rame+881%2C+Paris+Montparnasse.jpg",
+        "author": "rail fox (flufftech.net)",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Montparnasse-Bienvenüe"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-6",
+        "metro-12",
+        "metro-13"
+      ],
+      "categories": [
+        "gares"
+      ],
+      "alt": "Gare Montparnasse à Paris, station Montparnasse-Bienvenüe",
+      "source_line": "metro-4"
+    },
+    "cimetiere-montparnasse": {
+      "name": "Cimetière du Montparnasse",
+      "asset": "shared/cimetiere-montparnasse.webp",
+      "thumb": "shared/cimetiere-montparnasse-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACimetiere+Montparnasse+Paris+Genie+Daillion.jpg",
+        "author": "Myrabella",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Edgar Quinet",
+        "Raspail",
+        "Gaîté"
+      ],
+      "lines": [
+        "metro-4",
+        "metro-6",
+        "metro-13"
+      ],
+      "categories": [
+        "quartiers"
+      ],
+      "alt": "Cimetière du Montparnasse à Paris, station Edgar Quinet",
+      "source_line": "metro-4"
+    },
+    "pyramide-louvre": {
+      "name": "Pyramide du Louvre",
+      "asset": "shared/pyramide-louvre.webp",
+      "thumb": "shared/pyramide-louvre-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AFontaine+de+la+Pyramide+du+Louvre+%2C+23+August+2016.jpg",
+        "author": "Guilhem Vellut from Paris, France",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Pyramides"
+      ],
+      "lines": [
+        "metro-7",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Pyramide du Louvre à Paris, station Pyramides",
+      "source_line": "metro-14"
+    },
+    "comedie-francaise": {
+      "name": "Comédie-Française",
+      "asset": "shared/comedie-francaise.webp",
+      "thumb": "shared/comedie-francaise-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACom%C3%A9die-Fran%C3%A7aise+-+west+facade.JPG",
+        "author": "Daderot",
+        "license": "Public domain",
+        "license_url": "",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Pyramides",
+        "Palais-Royal"
+      ],
+      "lines": [
+        "metro-7",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Comédie-Française à Paris, station Pyramides",
+      "source_line": "metro-14"
+    },
+    "opera-garnier": {
+      "name": "Opéra Garnier",
+      "asset": "shared/opera-garnier.webp",
+      "thumb": "shared/opera-garnier-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AOp%C3%A9ra+Garnier+view+from+Printemps+Haussmann+%281%29.jpg",
+        "author": "Selbymay",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Madeleine"
+      ],
+      "lines": [
+        "metro-8",
+        "metro-12",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Opéra Garnier à Paris, station Madeleine",
+      "source_line": "metro-14"
+    },
+    "eglise-madeleine": {
+      "name": "Église de la Madeleine",
+      "asset": "shared/eglise-madeleine.webp",
+      "thumb": "shared/eglise-madeleine-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AParis+Rue+royale+depuis+la+Madeleine+2014.jpg",
+        "author": "JLPC\n",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Madeleine"
+      ],
+      "lines": [
+        "metro-8",
+        "metro-12",
+        "metro-14"
+      ],
+      "categories": [
+        "monuments"
+      ],
+      "alt": "Église de la Madeleine à Paris, station Madeleine",
+      "source_line": "metro-14"
+    },
+    "musee-louvre": {
+      "name": "Musée du Louvre",
+      "asset": "shared/musee-louvre.webp",
+      "thumb": "shared/musee-louvre-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACour+Marly%2C+Mus%C3%A9e+du+Louvre+from+Paris.jpg",
+        "author": "Wilfredor",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Pyramides",
+        "Palais-Royal"
+      ],
+      "lines": [
+        "metro-7",
+        "metro-14"
+      ],
+      "categories": [
+        "musees"
+      ],
+      "alt": "Musée du Louvre à Paris, station Pyramides",
+      "source_line": "metro-14"
+    },
+    "cinematheque-francaise": {
+      "name": "Cinémathèque française",
+      "asset": "shared/cinematheque-francaise.webp",
+      "thumb": "shared/cinematheque-francaise-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACin%C3%A9math%C3%A8que+fran%C3%A7aise+de+nuit+en+janvier+2020.jpg",
+        "author": "Benoît Prieur",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Bercy"
+      ],
+      "lines": [
+        "metro-6",
+        "metro-14"
+      ],
+      "categories": [
+        "musees"
+      ],
+      "alt": "Cinémathèque française à Paris, station Bercy",
+      "source_line": "metro-14"
+    },
+    "gare-lyon": {
+      "name": "Gare de Lyon",
+      "asset": "shared/gare-lyon.webp",
+      "thumb": "shared/gare-lyon-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AParis-Gare-de-Lyon+-+2015-05-02+-+IMG-0032.jpg",
+        "author": "Poudou99",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Gare de Lyon"
+      ],
+      "lines": [
+        "metro-1",
+        "metro-14"
+      ],
+      "categories": [
+        "gares"
+      ],
+      "alt": "Gare de Lyon à Paris, station Gare de Lyon",
+      "source_line": "metro-14"
+    },
+    "grands-magasins": {
+      "name": "Quartier des Grands Magasins",
+      "asset": "shared/grands-magasins.webp",
+      "thumb": "shared/grands-magasins-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACoupole+Galeries+Lafayette+Haussmann+-+Paris+IX+%28FR75%29+-+2023-05-06+-+5.jpg",
+        "author": "Chabe01",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Saint-Lazare"
+      ],
+      "lines": [
+        "metro-3",
+        "metro-12",
+        "metro-13",
+        "metro-14"
+      ],
+      "categories": [
+        "quartiers"
+      ],
+      "alt": "Quartier des Grands Magasins à Paris, station Saint-Lazare",
+      "source_line": "metro-14"
+    },
+    "gare-saint-lazare": {
+      "name": "Gare Saint-Lazare",
+      "asset": "shared/gare-saint-lazare.webp",
+      "thumb": "shared/gare-saint-lazare-thumb.webp",
+      "wikimedia_source": {
+        "file": "Wikimedia Commons",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGare+de+Paris-Saint-Lazare%2C+West+View%2C+Paris+8e+20140223.jpg",
+        "author": "DXR",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fetched_at": "2026-05-06"
+      },
+      "stations": [
+        "Saint-Lazare"
+      ],
+      "lines": [
+        "metro-3",
+        "metro-12",
+        "metro-13",
+        "metro-14"
+      ],
+      "categories": [
+        "gares"
+      ],
+      "alt": "Gare Saint-Lazare à Paris, station Saint-Lazare",
+      "source_line": "metro-14"
+    }
+  }
+}
