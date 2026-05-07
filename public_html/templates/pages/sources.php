@@ -160,12 +160,13 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
         </p>
 
         <?php
-        // Aggregation dynamique des credits depuis tous les JSON lignes/stations.
-        // Le user voit donc une liste qui s'enrichit automatiquement a chaque
-        // nouvelle ligne/station livree, sans intervention manuelle ici.
+        // v2.0.0 : aggregation depuis 3 sources, source unique de vérité pour les
+        // POIs shared (poi-registry.json), fallback sur les JSON lignes/stations
+        // pour les heros et les POIs solo (1 ligne).
         $allCredits = [];
         $linesDir    = __DIR__ . '/../../data/lines';
         $stationsDir = __DIR__ . '/../../data/stations';
+        $registryPath = __DIR__ . '/../../data/poi-registry.json';
 
         $pushHero = function (array $d, string $kind) use (&$allCredits): void {
             $img = $d['hero_image'] ?? null;
@@ -181,12 +182,37 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
             ];
         };
 
+        // 1. Heros lignes + POIs solo (non shared) depuis les JSON par ligne
+        $sharedSlugs = [];
+        if (is_file($registryPath)) {
+            $reg = json_decode(@file_get_contents($registryPath), true);
+            $sharedSlugs = array_keys($reg['pois'] ?? []);
+            // 1a. POIs shared : source canonique = registry (1 entrée par POI,
+            //     pas par ligne — élimine les doublons)
+            foreach ($reg['pois'] ?? [] as $slug => $entry) {
+                $ws = $entry['wikimedia_source'] ?? [];
+                if (empty($ws['author']) || $ws['author'] === 'unknown') continue;
+                $linesList = array_map(fn($l) => str_replace('metro-', 'L', $l), $entry['lines'] ?? []);
+                $allCredits[] = [
+                    'context'   => 'POI partagé — ' . ($entry['name'] ?? $slug) . ' (' . implode(', ', $linesList) . ')',
+                    'author'    => $ws['author'],
+                    'license'   => $ws['license']     ?? '',
+                    'source_url'=> $ws['url']         ?? '',
+                    'date'      => $ws['fetched_at']  ?? '',
+                ];
+            }
+        }
+
+        // 2. Heros lignes + POIs solo
         foreach (glob($linesDir . '/*.json') as $f) {
             $d = json_decode(@file_get_contents($f), true);
             if (!is_array($d)) continue;
             $pushHero($d, 'ligne');
             foreach (($d['points_of_interest'] ?? []) as $theme) {
                 foreach (($theme['items'] ?? []) as $poi) {
+                    $slug = $poi['slug'] ?? '';
+                    // Skip POIs shared (déjà ajoutés depuis registry, source canonique)
+                    if (in_array($slug, $sharedSlugs, true)) continue;
                     $img = $poi['image'] ?? null;
                     $c   = $img['credit'] ?? null;
                     if (!is_array($c) || empty($c['author'])) continue;
@@ -200,13 +226,14 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
                 }
             }
         }
+        // 3. Heros stations
         foreach (glob($stationsDir . '/*.json') as $f) {
             $d = json_decode(@file_get_contents($f), true);
             if (!is_array($d)) continue;
             $pushHero($d, 'station');
         }
 
-        // Dedup par (context, author)
+        // Dedup par (context, author) au cas où
         $seen = [];
         $uniqueCredits = [];
         foreach ($allCredits as $c) {
@@ -215,7 +242,7 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
             $seen[$k] = true;
             $uniqueCredits[] = $c;
         }
-        // Tri : heros lignes d'abord, puis POIs, puis stations
+        // Tri : heros lignes d'abord, puis POIs partagés, puis POIs solo, puis stations
         usort($uniqueCredits, fn($a, $b) => strcmp($a['context'], $b['context']));
         ?>
         <?php if (!empty($uniqueCredits)): ?>
