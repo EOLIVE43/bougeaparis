@@ -113,5 +113,23 @@
   "tour-saint-jacques": {
     "wikimedia_file": "Tour Saint-Jacques 060708.jpg",
     "_comment": "v1.4.12 — Ligne 14 : Tour Saint-Jacques en couleur (06/07/2008), architecture gothique flamboyante visible. Le run précédent matchait un panorama Charles Soulier 1865 (vue depuis la tour, pas de la tour)."
+  },
+
+  "puces-saint-ouen": {
+    "wikimedia_query": "Marché aux Puces Saint-Ouen allée Paul Bert",
+    "wikimedia_blocklist": ["sculpture", "isolated", "panoramio", "metal scrap"],
+    "_comment": "v1.4.13 — Ligne 4 : run précédent matchait une sculpture rouillée isolée hors-contexte. Cible : vue d'allée ou stands d'antiquités représentative du marché."
+  },
+
+  "saint-germain-des-pres-eglise": {
+    "wikimedia_query": "Église Saint-Germain-des-Prés intérieur nef chœur",
+    "wikimedia_blocklist": ["facade", "exterior", "abbey ext", "tower"],
+    "_comment": "v1.4.13 — Ligne 4 : doublon visuel avec la carte quartier (même angle extérieur). Cible : vue intérieure (nef/chœur/voûte) pour différencier les 2 cards."
+  },
+
+  "goutte-d-or": {
+    "wikimedia_query": "Quartier Goutte d'Or Paris 18e Barbès rue",
+    "wikimedia_blocklist": ["Mont-de-Piété", "Crédit Municipal", "Francs-Bourgeois", "haussmannien"],
+    "_comment": "v1.4.13 — Ligne 4 : mismatch confirmé. Le run précédent matchait 'Mont-de-Piété, Goutte d'Or, Paris 9 April 2015.jpg' (auteur Jeanne Menjoulet) qui montre le Crédit Municipal du 4e arr., PAS le quartier Goutte d'Or 18e."
   }
 }
