@@ -87,7 +87,7 @@ $buildSrcset = function (array $widthMap): string {
   </h1>
 
   <p class="hero__lead">
-    <?= $line['seo']['lead'] ?>
+    <?= $line['seo']['lead'] ?? '' ?>
   </p>
 
   <div class="traffic-banner traffic-banner--<?= $trafficStatus ?>" role="status" aria-live="polite">
