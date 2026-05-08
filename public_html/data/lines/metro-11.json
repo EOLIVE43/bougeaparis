@@ -87,7 +87,8 @@
                     "color": "#007E49"
                 }
             ],
-            "accessible": true
+            "accessible": true,
+            "is_major": true
         },
         {
             "name": "Hôtel de Ville",
@@ -113,12 +114,14 @@
                     "color": "#662483"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Rambuteau",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Arts et Métiers",
@@ -129,7 +132,8 @@
                     "color": "#9F9825"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "République",
@@ -155,12 +159,14 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Goncourt",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Belleville",
@@ -171,17 +177,20 @@
                     "color": "#0064B0"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Pyrénées",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Jourdain",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Place des Fêtes",
@@ -192,12 +201,14 @@
                     "color": "#83C491"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Télégraphe",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Porte des Lilas",
@@ -208,37 +219,44 @@
                     "color": "#98D4E2"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Mairie des Lilas",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "Serge Gainsbourg",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "Romainville - Carnot",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "Montreuil - Hôpital",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "La Dhuys",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "Coteaux Beauclair",
             "correspondences": [],
-            "accessible": true
+            "accessible": true,
+            "is_major": false
         },
         {
             "name": "Rosny Bois Perrier",
@@ -249,7 +267,1178 @@
                     "color": "#C28FC4"
                 }
             ],
-            "accessible": true
+            "accessible": true,
+            "is_major": true
         }
-    ]
+    ],
+    "color_light": "#E8DFD4",
+    "daily_riders": 234000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-08",
+            "updated": "2026-05-08",
+            "updated_human": "8 mai 2026",
+            "published_label": "8 mai 2026",
+            "updated_label": "8 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 11 du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_11_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "seo": {
+        "h1": "Métro Ligne 11 Paris : plan, horaires et trafic",
+        "title": "Métro Ligne 11 Paris : 19 stations, prolongement 2024 Rosny-Bois-Perrier",
+        "description": "Tout sur la ligne 11 du métro parisien : Châtelet ↔ Rosny-Bois-Perrier, 19 stations, prolongement majeur 2024, station Arts et Métiers Nautilus.",
+        "lead": "Toute l'info sur la <strong>ligne 11 du métro parisien</strong>, axe diagonal ouest-est reliant <strong>Châtelet</strong> à <strong>Rosny – Bois-Perrier</strong> — terminus est étendu lors du <strong>prolongement majeur du 13 juin 2024</strong>. <strong>19 stations</strong> sur 11,7 km, environ <strong>234 000 voyageurs par jour</strong>. La 11 a inauguré le pneumatique sur le réseau parisien en 1956 et abrite deux joyaux patrimoniaux : la station <strong>Arts et Métiers</strong> (design Nautilus 1994 par François Schuiten) et la station <strong>Coteaux Beauclair</strong> (313ᵉ station du réseau, première station 100 % aérienne depuis 1905 sur le viaduc de Marc Mimram)."
+    },
+    "intros": {
+        "introduction_title": "axe ouest-est rénové en 2024",
+        "introduction": "La <strong>ligne 11 du métro parisien</strong> trace une diagonale ouest-est de la capitale, depuis <strong>Châtelet</strong> (Paris 1er/4ᵉ arrondissement) jusqu'à <strong>Rosny – Bois-Perrier</strong> en Seine-Saint-Denis. Le 13 juin 2024, après 90 ans d'attente, la ligne 11 est <strong>sortie de Paris intra-muros</strong> avec un prolongement majeur de 6 nouvelles stations vers la banlieue est. <strong>19 stations</strong> au total, 11,7 kilomètres, environ <strong>234 000 voyageurs par jour</strong>.",
+        "plan": "Le tracé de la ligne 11 traverse Paris d'ouest en est : Châtelet (correspondance lignes 1, 4, 7, 14, RER A/B/D), Hôtel de Ville (ligne 1), Arts et Métiers (ligne 3), République (lignes 3, 5, 8, 9), Belleville (ligne 2), Pyrénées, Jourdain, Place des Fêtes, Télégraphe (la station la plus haute du réseau à 96 m d'altitude), Porte des Lilas, Mairie des Lilas. Depuis le 13 juin 2024, prolongement vers <strong>Liberté</strong>, <strong>Place Carnot – Centenaire</strong>, <strong>Hôpital de Montreuil</strong>, <strong>Romainville-Carnot</strong>, <strong>La Dhuys</strong>, <strong>Coteaux Beauclair</strong> (station 100 % aérienne sur viaduc de 580 m), <strong>Rosny – Bois-Perrier</strong> (RER E).",
+        "stations": "La ligne 11 compte 19 stations. Parmi les pôles d'échanges majeurs : <strong>Châtelet</strong> (terminus ouest), <strong>Hôtel de Ville</strong>, <strong>Rambuteau</strong>, <strong>Arts et Métiers</strong>, <strong>République</strong>, <strong>Belleville</strong>, <strong>Pyrénées</strong>, <strong>Jourdain</strong>, <strong>Place des Fêtes</strong>, <strong>Télégraphe</strong>, <strong>Porte des Lilas</strong>, <strong>Mairie des Lilas</strong>, et les 7 stations du prolongement 2024 jusqu'à <strong>Rosny – Bois-Perrier</strong>.",
+        "horaires": "Le service de la ligne 11 fonctionne tous les jours de 5h30 à 1h15, avec prolongation jusqu'à 2h15 les vendredis, samedis et veilles de fêtes. La fréquence est d'environ 2 minutes en heure de pointe et 4 à 5 minutes le soir et le week-end.",
+        "trafic": "La ligne 11 connaît une affluence renforcée depuis le prolongement de juin 2024. Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "La ligne 11 propose des trajets stratégiques : <strong>Châtelet → Coteaux Beauclair</strong> en 25 minutes, <strong>Châtelet → Arts et Métiers</strong> en 3 minutes (accès station-musée Nautilus), <strong>Hôtel de Ville → Belleville</strong> en 10 minutes, <strong>République → Rosny – Bois-Perrier</strong> en 22 minutes, <strong>Mairie des Lilas → Coteaux Beauclair</strong> en 10 minutes (parcours du prolongement 2024).",
+        "que_voir": "La ligne 11 dessert la <strong>station Arts et Métiers</strong> (design Nautilus 1994), le <strong>Musée des Arts et Métiers</strong>, l'<strong>Hôtel de Ville de Paris</strong>, le quartier de <strong>Belleville</strong> (street-art), la station <strong>Télégraphe</strong> (la plus haute du réseau à 96 m) et la nouvelle station <strong>Coteaux Beauclair</strong> (sur viaduc de Marc Mimram).",
+        "histoire": "Inaugurée le <strong>28 avril 1935</strong> entre Châtelet et Porte des Lilas, prolongée à Mairie des Lilas en 1937. En <strong>1956</strong>, la ligne 11 devient la <strong>première ligne du métro parisien équipée de pneumatiques</strong>. En <strong>1994</strong>, design Nautilus de la station Arts et Métiers par François Schuiten. Le <strong>13 juin 2024</strong>, prolongement majeur de 6 nouvelles stations vers Rosny – Bois-Perrier ; arrivée des nouvelles rames <strong>MP14 CC</strong>.",
+        "accessibilite": "Avec le prolongement 2024, la ligne 11 est devenue <strong>l'une des mieux accessibles PMR</strong> du réseau : les 7 nouvelles stations modernes sont 100 % accessibles, soit environ 37 % des stations équipées (contre 8-13 % sur les lignes historiques). Le matériel <strong>MP14 CC</strong> propose des annonces sonores et visuelles, ainsi que des rames climatisées (premier sur le réseau parisien).",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 11 fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "La ligne 11 vient de bénéficier d'un programme de modernisation majeur entre 2014 et 2024 : prolongement Rosny – Bois-Perrier (1,3 milliard d'euros), remplacement intégral du matériel par les MP14 CC. Le prolongement Rosny ↔ Noisy-Champs initialement prévu pour 2030 a été reporté sine die. Aucun chantier majeur en cours.",
+        "faq": "Quelles sont les nouvelles stations 2024, comment voir la station Arts et Métiers, accessibilité PMR : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 11.",
+        "articles_lies": "Trafic en direct, dossiers patrimoine et conseils pratiques : retrouvez les derniers articles de BougeaParis dédiés à la ligne 11.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "1",
+                "color": "#FFCE00",
+                "color_text": "#000000",
+                "stations": [
+                    "Châtelet",
+                    "Hôtel de Ville"
+                ],
+                "name": "Ligne 1",
+                "url": "/metro/ligne-1/"
+            },
+            {
+                "code": "2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Belleville"
+                ],
+                "name": "Ligne 2",
+                "url": "/metro/ligne-2/"
+            },
+            {
+                "code": "3",
+                "color": "#9F9825",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Arts et Métiers",
+                    "République"
+                ],
+                "name": "Ligne 3",
+                "url": "/metro/ligne-3/"
+            },
+            {
+                "code": "3bis",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Porte des Lilas"
+                ],
+                "name": "Ligne 3bis",
+                "url": "/metro/ligne-3bis/"
+            },
+            {
+                "code": "4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Châtelet",
+                    "Hôtel de Ville"
+                ],
+                "name": "Ligne 4",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "République"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Châtelet",
+                    "Hôtel de Ville"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "7bis",
+                "color": "#83C491",
+                "color_text": "#000000",
+                "stations": [
+                    "Place des Fêtes"
+                ],
+                "name": "Ligne 7bis",
+                "url": "/metro/ligne-7bis/"
+            },
+            {
+                "code": "8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "stations": [
+                    "République"
+                ],
+                "name": "Ligne 8",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "stations": [
+                    "République"
+                ],
+                "name": "Ligne 9",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "14",
+                "color": "#662483",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Châtelet",
+                    "Hôtel de Ville"
+                ],
+                "name": "Ligne 14",
+                "url": "/metro/ligne-14/"
+            }
+        ],
+        "connections_rer": [
+            {
+                "code": "A",
+                "color": "#E2231A",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "RER A",
+                "url": "/rer/rer-a/"
+            },
+            {
+                "code": "B",
+                "color": "#5291CE",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "RER B",
+                "url": "/rer/rer-b/"
+            },
+            {
+                "code": "D",
+                "color": "#007E49",
+                "color_text": "#FFF",
+                "stations": [
+                    "Châtelet"
+                ],
+                "name": "RER D",
+                "url": "/rer/rer-d/"
+            },
+            {
+                "code": "E",
+                "color": "#C28FC4",
+                "color_text": "#FFF",
+                "stations": [
+                    "Rosny Bois Perrier"
+                ],
+                "name": "RER E",
+                "url": "/rer/rer-e/"
+            }
+        ],
+        "connections_other": [],
+        "discover_metro_lines": [
+            {
+                "code": "11",
+                "name": "Ligne 11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-11/",
+                "is_current": true
+            },
+            {
+                "code": "1",
+                "name": "Ligne 1",
+                "color": "#FFCE00",
+                "color_text": "#000000",
+                "url": "/metro/ligne-1/"
+            },
+            {
+                "code": "3",
+                "name": "Ligne 3",
+                "color": "#9F9825",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-3/"
+            },
+            {
+                "code": "4",
+                "name": "Ligne 4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-4/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1935",
+                "title": "Ouverture Châtelet ↔ Porte des Lilas",
+                "icon": "🎉",
+                "description": "Le 28 avril 1935, ouverture du tronçon initial. Une ligne courte (~5 km) initialement conçue comme transversale du centre-est de Paris."
+            },
+            {
+                "year": "1937",
+                "title": "Prolongement à Mairie des Lilas",
+                "icon": "🚇",
+                "description": "Le 17 février 1937, prolongement de Porte des Lilas à Mairie des Lilas. Ce terminus est restera figé pendant 87 ans, jusqu'au prolongement de 2024."
+            },
+            {
+                "year": "1956",
+                "title": "Première ligne pneumatique",
+                "icon": "⚙️",
+                "description": "Le 8 novembre 1956, la ligne 11 devient la PREMIÈRE LIGNE DU MÉTRO PARISIEN équipée de pneumatiques (matériel MP55). Innovation majeure : roulement plus silencieux, meilleure adhérence en pente. Technologie ensuite étendue aux lignes 1, 4, 6 et 14."
+            },
+            {
+                "year": "1967",
+                "title": "Mise en service MP59",
+                "icon": "🚆",
+                "description": "Remplacement progressif des MP55 par les MP59. Ces rames resteront en service exceptionnellement longtemps — jusqu'en 2024, soit 57 ans d'exploitation continue, parmi les plus anciennes du réseau."
+            },
+            {
+                "year": "1994",
+                "title": "Aménagement Nautilus de la station Arts et Métiers",
+                "icon": "🐚",
+                "description": "En octobre 1994, design steampunk de la station par François Schuiten (Cités obscures), pour le bicentenaire du Conservatoire. 800 plaques de cuivre, hublots, engrenages — Nautilus de Jules Verne."
+            },
+            {
+                "year": "2014",
+                "title": "Lancement du projet de prolongement",
+                "icon": "🏗️",
+                "description": "Approbation du projet d'extension de la ligne 11 à Rosny – Bois-Perrier. Chantier de 10 ans incluant le viaduc de Coteaux Beauclair (580 m) signé Marc Mimram."
+            },
+            {
+                "year": "2024",
+                "title": "Prolongement Rosny – Bois-Perrier",
+                "icon": "🌉",
+                "description": "Le 13 juin 2024, ÉVÉNEMENT FONDATEUR : ouverture de 6 nouvelles stations + nouveau terminus Rosny – Bois-Perrier (RER E). Coteaux Beauclair = 313ᵉ station du réseau et PREMIÈRE STATION 100 % AÉRIENNE depuis 1905."
+            },
+            {
+                "year": "2024",
+                "title": "Mise en service MP14 CC",
+                "icon": "🚄",
+                "description": "Remplacement intégral des MP59 par les MP14 CC. 5 voitures, capacité augmentée. PREMIER MATÉRIEL CLIMATISÉ DU MÉTRO PARISIEN."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "19",
+                "label": "Stations",
+                "description": "De Châtelet (Paris 1er/4ᵉ) à Rosny – Bois-Perrier (Seine-Saint-Denis 93), avec 7 nouvelles stations ouvertes le 13 juin 2024."
+            },
+            {
+                "value": "1956",
+                "label": "Première ligne pneumatique",
+                "description": "La ligne 11 a inauguré le pneumatique sur le réseau parisien — technologie ensuite étendue aux lignes 1, 4, 6 et 14."
+            },
+            {
+                "value": "96 m",
+                "label": "Station la plus haute",
+                "description": "Les voies de la station Télégraphe culminent à 96 m d'altitude — record du réseau parisien, paradoxalement station profonde (24 m sous voirie) grâce au relief de Belleville."
+            },
+            {
+                "value": "234k",
+                "label": "Voyageurs / jour",
+                "description": "Affluence renforcée depuis le prolongement de juin 2024 vers Rosny."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "Le Nautilus de Jules Verne sous Paris",
+                "description": "En 1994, pour le bicentenaire du Conservatoire National des Arts et Métiers, le dessinateur belge <strong>François Schuiten</strong> (auteur des « Cités obscures » avec Benoît Peeters) a entièrement repensé la station Arts et Métiers. Résultat : 800 plaques de cuivre fixées par rivets, hublots ronds, engrenages monumentaux au plafond, ambiance « submersible » inspirée du Nautilus du capitaine Nemo dans « Vingt mille lieues sous les mers » de Jules Verne. C'est aujourd'hui l'une des stations les plus photographiées du métro parisien et considérée comme l'une des plus belles par la Ville de Paris."
+            },
+            {
+                "title": "Coteaux Beauclair, la 313ᵉ du réseau",
+                "description": "La station inaugurée le 13 juin 2024 est non seulement la 313ᵉ station du réseau parisien, mais aussi la <strong>première station 100 % aérienne construite sur le réseau depuis 1905</strong>. Située sur un viaduc de 580 m conçu par l'architecte renommé <strong>Marc Mimram</strong>, à 8 m de hauteur. Verrière protectrice sur les quais. Innovation architecturale majeure pour le réseau métropolitain — alors que la quasi-totalité des stations parisiennes sont souterraines."
+            },
+            {
+                "title": "Le pneumatique inventé sur la 11",
+                "description": "En 1956, la ligne 11 devient la PREMIÈRE LIGNE DU MÉTRO PARISIEN à utiliser des pneumatiques au lieu du fer. Bénéfices : roulement plus silencieux, meilleure adhérence dans les pentes (notamment celles de Belleville). La technologie sera ensuite étendue aux lignes 1, 4, 6 puis 14. C'est l'une des rares innovations du métro parisien exportée dans le monde entier (Mexico, Santiago, Montréal, Lyon, etc.)."
+            },
+            {
+                "title": "Télégraphe, la station la plus haute de Paris",
+                "description": "À Belleville, les voies de la station Télégraphe culminent à <strong>96 m d'altitude</strong> — record absolu du réseau parisien. Paradoxe géologique : la station est profonde (24 m sous la voirie) mais reste la plus haute en altitude grâce au relief de Belleville (ancienne hauteur fortifiée de Paris, point culminant historique de la rive droite avec 128 m à la rue du Télégraphe en surface)."
+            },
+            {
+                "title": "Le métro qui chauffe Paris",
+                "description": "Un immeuble géré par Paris Habitat dans Paris Centre est <strong>chauffé par la chaleur du tunnel de la ligne 11</strong>. Une pompe à chaleur récupère la chaleur ambiante du tunnel (~20 °C en hiver vs 5 °C en surface) et fournit 35 % des besoins en chauffage de 20 logements sociaux. Innovation environnementale concrète — première du genre sur le réseau métropolitain parisien."
+            },
+            {
+                "title": "Les MP59, 57 ans de service",
+                "description": "Les rames MP59 retirées en 2024 figuraient parmi les plus anciennes du réseau parisien : certaines approchaient 57 ans d'exploitation continue (1967-2024). Témoignage de la qualité de fabrication des années 1960 et de la robustesse de l'entretien RATP. Un MP59 a été conservé pour l'AMTUIR (Association pour le Musée des Transports Urbains, Interurbains et Ruraux)."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Quelles sont les nouvelles stations de la ligne 11 ouvertes en 2024 ?",
+            "answer": "Le 13 juin 2024, le prolongement de la ligne 11 a ajouté 6 nouvelles stations + 1 nouveau terminus : <strong>Liberté</strong>, <strong>Place Carnot – Centenaire</strong>, <strong>Hôpital de Montreuil</strong>, <strong>Romainville-Carnot</strong>, <strong>La Dhuys</strong>, <strong>Coteaux Beauclair</strong> (station aérienne) et <strong>Rosny – Bois-Perrier</strong> (terminus est, correspondance RER E)."
+        },
+        {
+            "question": "Comment visiter la station Arts et Métiers ?",
+            "answer": "Descendre à la station <strong>Arts et Métiers</strong> sur la ligne 11. Les quais entièrement habillés de cuivre dans un style Nautilus (design François Schuiten 1994, hommage à Jules Verne) sont accessibles librement aux voyageurs. C'est une visite gratuite à faire le temps d'une attente, considérée comme l'une des plus belles stations du réseau parisien."
+        },
+        {
+            "question": "Comment aller au centre commercial Rosny 2 ?",
+            "answer": "Descendre au terminus <strong>Rosny – Bois-Perrier</strong>. Le centre commercial Rosny 2 est à 5 minutes à pied de la sortie. Correspondance avec le RER E (vers Magenta / Haussmann Saint-Lazare ou Chelles)."
+        },
+        {
+            "question": "Comment voir le viaduc de Coteaux Beauclair ?",
+            "answer": "Le viaduc de 580 m, conçu par l'architecte <strong>Marc Mimram</strong>, supporte la station aérienne <strong>Coteaux Beauclair</strong>. Pour le voir de l'extérieur, descendre à la station — les abords du viaduc sont accessibles à pied. La structure métallique et béton est l'un des ouvrages d'art majeurs du métro parisien moderne."
+        },
+        {
+            "question": "Combien de temps pour traverser la ligne 11 ?",
+            "answer": "Comptez environ <strong>25 à 30 minutes</strong> pour le trajet complet entre Châtelet et Rosny – Bois-Perrier, soit la diagonale ouest-est de Paris vers la Seine-Saint-Denis."
+        },
+        {
+            "question": "Quel est le matériel actuel de la ligne 11 ?",
+            "answer": "Le matériel <strong>MP14 CC</strong> (Châtelet-Coteaux), mis en service en 2024 en remplacement des MP59 historiques (1967-2024). 5 voitures (vs 4 sur MP59), capacité augmentée. <strong>Premier matériel climatisé du métro parisien</strong>, annonces sonores et visuelles complètes, livrée Île-de-France Mobilités blanc/bleu."
+        },
+        {
+            "question": "La ligne 11 est-elle accessible PMR ?",
+            "answer": "Oui, c'est l'une des <strong>mieux accessibles PMR</strong> du réseau parisien grâce au prolongement de 2024 : les 7 nouvelles stations (Liberté à Rosny – Bois-Perrier) sont 100 % accessibles. Les stations historiques (Châtelet, Hôtel de Ville, Arts et Métiers, République, Belleville, etc.) restent limitées en accessibilité, contraintes architecturales 1935-1937 obligent."
+        },
+        {
+            "question": "Pourquoi la ligne 11 est-elle pneumatique ?",
+            "answer": "La ligne 11 est la <strong>première ligne du métro parisien à avoir adopté le pneumatique en 1956</strong> (matériel MP55). Bénéfices : roulement plus silencieux, meilleure adhérence en pente (notamment celles de Belleville). La technologie a ensuite été étendue aux lignes 1, 4, 6 et 14."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 7,
+            "total_count": 19,
+            "accessibility_rate": 37,
+            "elevators_count": 15,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "label": "Accessibilité élevée (~37 %)",
+                "description": "7 stations sur 19 disposent d'ascenseurs PMR — toutes les nouvelles stations du prolongement 2024 (Liberté, Place Carnot – Centenaire, Hôpital de Montreuil, Romainville-Carnot, La Dhuys, Coteaux Beauclair, Rosny – Bois-Perrier). Taux d'accessibilité supérieur à la moyenne du réseau."
+            },
+            {
+                "icon": "❄️",
+                "label": "Premier matériel climatisé du réseau",
+                "description": "Le MP14 CC est le PREMIER MATÉRIEL DU MÉTRO PARISIEN à proposer des rames intégralement climatisées."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations historiques contraignantes",
+                "description": "Les stations centrales ouvertes en 1935-1937 ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
+            },
+            {
+                "icon": "🔊",
+                "label": "Annonces sonores et visuelles",
+                "description": "Le SIEL affiche les prochaines rames sur écrans LCD aux quais. Annonces vocales systématiques en rame MP14 CC."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Privilégier les stations du prolongement 2024",
+                "description": "Pour un voyage PMR sur la ligne 11, privilégier les 7 stations modernes du prolongement (Liberté à Rosny – Bois-Perrier), toutes équipées d'ascenseurs et signalétique PMR complète."
+            },
+            {
+                "title": "Vérifier l'accessibilité avant de partir",
+                "description": "Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage pour vérifier les ascenseurs disponibles à la station de destination."
+            },
+            {
+                "title": "Service Accès Plus",
+                "description": "Pour un trajet PMR sécurisé, demander 24 h à l'avance le service Accès Plus d'Île-de-France Mobilités : un agent accompagne du quai d'origine au quai de destination."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-08",
+        "current_works": [],
+        "upcoming_works": [],
+        "recent_works": [
+            {
+                "icon": "🌉",
+                "title": "Prolongement Mairie des Lilas → Rosny – Bois-Perrier",
+                "completed_label": "Inauguré 13 juin 2024",
+                "description": "Chantier majeur 2014-2024 : 6 nouvelles stations + 1 terminus est. Coût : 1,3 milliard d'euros. Inclut le viaduc de Coteaux Beauclair (580 m, architecte Marc Mimram) et la première station 100 % aérienne du réseau depuis 1905.",
+                "dates_label": "2014-2024"
+            },
+            {
+                "icon": "🚆",
+                "title": "Remplacement MP59 → MP14 CC",
+                "completed_label": "Terminé 2024",
+                "description": "Remplacement intégral des rames MP59 historiques (1967-2024) par le MP14 CC. 5 voitures, capacité augmentée, premier matériel climatisé du métro parisien.",
+                "dates_label": "2024"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Station Arts et Métiers (Nautilus)",
+                    "slug": "arts-et-metiers-station-nautilus",
+                    "station": "Arts et Métiers",
+                    "station_slug": "arts-et-metiers",
+                    "icon": "🐚",
+                    "description": "Aménagement steampunk 1994 par François Schuiten pour le bicentenaire du Conservatoire National des Arts et Métiers. 800 plaques de cuivre fixées par rivets, hublots, engrenages au plafond, ambiance Nautilus inspirée du capitaine Nemo de Jules Verne. Considérée comme l'une des plus belles stations du métro parisien.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Viaduc de Coteaux Beauclair",
+                    "slug": "viaduc-coteaux-beauclair",
+                    "station": "Coteaux Beauclair",
+                    "station_slug": "coteaux-beauclair",
+                    "icon": "🌉",
+                    "description": "Ouvrage métallique et béton de 580 m construit pour le prolongement 2024 de la ligne 11. Conçu par l'architecte Marc Mimram. Supporte la station Coteaux Beauclair (313ᵉ station du réseau parisien, première 100 % aérienne depuis 1905).",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Station Télégraphe — la plus haute",
+                    "slug": "station-telegraphe-plus-haute",
+                    "station": "Télégraphe",
+                    "station_slug": "telegraphe",
+                    "icon": "📍",
+                    "description": "À Belleville, les voies de la station Télégraphe culminent à 96 m d'altitude — record absolu du réseau parisien. Paradoxe géologique : station profonde (24 m sous voirie) mais altitude record grâce au relief de Belleville.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Hôtel de Ville de Paris",
+                    "slug": "hotel-de-ville",
+                    "station": "Hôtel de Ville",
+                    "station_slug": "hotel-de-ville",
+                    "icon": "🏛️",
+                    "description": "Édifice néo-Renaissance reconstruit après l'incendie de 1871 (Commune de Paris). Siège de la municipalité parisienne. Esplanade piétonne accueillant des événements (patinoire, marché de Noël, expositions).",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Place de la République",
+                    "slug": "place-de-la-republique",
+                    "station": "République",
+                    "station_slug": "republique",
+                    "icon": "🗽",
+                    "description": "Vaste place centrale dominée par la statue de Marianne (1883). Pôle de manifestations citoyennes, marché de Noël hivernal, esplanade piétonne réaménagée en 2013.",
+                    "schema_type": "Monument"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Musée des Arts et Métiers",
+                    "slug": "musee-arts-et-metiers",
+                    "station": "Arts et Métiers",
+                    "station_slug": "arts-et-metiers",
+                    "icon": "⚙️",
+                    "description": "Conservatoire National des Arts et Métiers, fondé en 1794. Collections d'instruments scientifiques, machines industrielles, prototypes historiques (pendule de Foucault, avion de Clément Ader, maquette de la Statue de la Liberté de Bartholdi). Sortie directe de la station.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Musée Édith Piaf",
+                    "slug": "musee-edith-piaf",
+                    "station": "Belleville",
+                    "station_slug": "belleville",
+                    "icon": "🎤",
+                    "description": "Petit musée associatif dédié à la « Môme Piaf ». Installé dans un appartement de Belleville, son quartier d'origine. Collection privée de photos, costumes, lettres, objets. Visites sur rendez-vous uniquement.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Centre Pompidou",
+                    "slug": "centre-pompidou",
+                    "station": "Rambuteau",
+                    "station_slug": "rambuteau",
+                    "icon": "🎨",
+                    "description": "Musée national d'art moderne fondé en 1977. Architecture iconique de Renzo Piano et Richard Rogers (tuyauterie apparente, escalator-chenille). Bibliothèque publique d'information, terrasse panoramique 6ᵉ étage. Sortie Rambuteau directe.",
+                    "schema_type": "Museum"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Quartier de Belleville",
+                    "slug": "quartier-belleville",
+                    "station": "Belleville",
+                    "station_slug": "belleville",
+                    "icon": "🎨",
+                    "description": "Quartier multiculturel et créatif du 20ᵉ arrondissement. Street-art remarquable (rue Dénoyez, rue de Belleville), parc de Belleville avec vue panoramique sur Paris, restaurants chinois et tunisiens. Marché de Belleville (mardi/vendredi).",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier Arts et Métiers",
+                    "slug": "quartier-arts-et-metiers",
+                    "station": "Arts et Métiers",
+                    "station_slug": "arts-et-metiers",
+                    "icon": "📚",
+                    "description": "Cœur historique du 3ᵉ arrondissement. Conservatoire National des Arts et Métiers, Carreau du Temple (halle 1865 reconvertie en centre culturel), Square du Temple-Élie Wiesel. Architecture Restauration et Belle Époque.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier de Rosny-Bois-Perrier",
+                    "slug": "quartier-rosny-banlieue-est",
+                    "station": "Rosny – Bois-Perrier",
+                    "station_slug": "rosny-bois-perrier",
+                    "icon": "🛍️",
+                    "description": "Pôle commercial de la banlieue est : centre commercial Rosny 2 (l'un des plus grands d'Île-de-France), gare RER E, parc des Coteaux Beauclair. Banlieue résidentielle de la Seine-Saint-Denis.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier de Mairie des Lilas",
+                    "slug": "quartier-mairie-des-lilas",
+                    "station": "Mairie des Lilas",
+                    "station_slug": "mairie-des-lilas",
+                    "icon": "🌳",
+                    "description": "Cœur de ville des Lilas, ancien terminus est de la ligne 11 jusqu'en 2024. Vie de quartier, marché bi-hebdomadaire, parc Lucie-Aubrac, théâtre du Garde-Chasse.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "gares": {
+            "title_template": "Gares et grands pôles desservis par la ligne {code}",
+            "icon": "🚉",
+            "color_gradient": "linear-gradient(135deg, #4299E1 0%, #2563AC 100%)",
+            "category_url": "/gares/",
+            "items": [
+                {
+                    "name": "Châtelet – Les Halles",
+                    "slug": "chatelet-les-halles",
+                    "station": "Châtelet",
+                    "station_slug": "chatelet",
+                    "icon": "🚆",
+                    "description": "Plus grande station souterraine d'Europe (5 lignes de métro + 3 lignes de RER). Pôle multimodal central de Paris : RER A (vers la Défense ou Marne-la-Vallée), RER B (vers CDG ou Saint-Rémy), RER D (vers le sud-est), métros 1, 4, 7, 11, 14. 750 000 voyageurs par jour.",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Gare de Rosny – Bois-Perrier",
+                    "slug": "gare-rosny-bois-perrier",
+                    "station": "Rosny – Bois-Perrier",
+                    "station_slug": "rosny-bois-perrier",
+                    "icon": "🚄",
+                    "description": "Gare RER E (vers Magenta / Haussmann Saint-Lazare ou Chelles), accessible depuis le terminus est de la ligne 11 ouvert en 2024. Pôle multimodal pour la banlieue est.",
+                    "schema_type": "TrainStation"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "arts-et-metiers-station-nautilus",
+                        "name": "Station Arts et Métiers (Nautilus)",
+                        "description": "Aménagement steampunk 1994 par François Schuiten pour le bicentenaire du Conservatoire National des Arts et Métiers. 800 plaques de cuivre fixées par rivets, hublots, engrenages au plafond, ambiance Nautilus inspirée du capitaine Nemo de Jules Verne. Considérée comme l'une des plus belles stations du métro parisien.",
+                        "station": "Arts et Métiers",
+                        "station_slug": "arts-et-metiers"
+                    },
+                    {
+                        "slug": "viaduc-coteaux-beauclair",
+                        "name": "Viaduc de Coteaux Beauclair",
+                        "description": "Ouvrage métallique et béton de 580 m construit pour le prolongement 2024 de la ligne 11. Conçu par l'architecte Marc Mimram. Supporte la station Coteaux Beauclair (313ᵉ station du réseau parisien, première 100 % aérienne depuis 1905).",
+                        "station": "Coteaux Beauclair",
+                        "station_slug": "coteaux-beauclair"
+                    },
+                    {
+                        "slug": "station-telegraphe-plus-haute",
+                        "name": "Station Télégraphe — la plus haute",
+                        "description": "À Belleville, les voies de la station Télégraphe culminent à 96 m d'altitude — record absolu du réseau parisien. Paradoxe géologique : station profonde (24 m sous voirie) mais altitude record grâce au relief de Belleville.",
+                        "station": "Télégraphe",
+                        "station_slug": "telegraphe"
+                    },
+                    {
+                        "slug": "hotel-de-ville",
+                        "name": "Hôtel de Ville de Paris",
+                        "description": "Édifice néo-Renaissance reconstruit après l'incendie de 1871 (Commune de Paris). Siège de la municipalité parisienne. Esplanade piétonne accueillant des événements (patinoire, marché de Noël, expositions).",
+                        "station": "Hôtel de Ville",
+                        "station_slug": "hotel-de-ville"
+                    },
+                    {
+                        "slug": "place-de-la-republique",
+                        "name": "Place de la République",
+                        "description": "Vaste place centrale dominée par la statue de Marianne (1883). Pôle de manifestations citoyennes, marché de Noël hivernal, esplanade piétonne réaménagée en 2013.",
+                        "station": "République",
+                        "station_slug": "republique"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "musee-arts-et-metiers",
+                        "name": "Musée des Arts et Métiers",
+                        "description": "Conservatoire National des Arts et Métiers, fondé en 1794. Collections d'instruments scientifiques, machines industrielles, prototypes historiques (pendule de Foucault, avion de Clément Ader, maquette de la Statue de la Liberté de Bartholdi). Sortie directe de la station.",
+                        "station": "Arts et Métiers",
+                        "station_slug": "arts-et-metiers"
+                    },
+                    {
+                        "slug": "musee-edith-piaf",
+                        "name": "Musée Édith Piaf",
+                        "description": "Petit musée associatif dédié à la « Môme Piaf ». Installé dans un appartement de Belleville, son quartier d'origine. Collection privée de photos, costumes, lettres, objets. Visites sur rendez-vous uniquement.",
+                        "station": "Belleville",
+                        "station_slug": "belleville"
+                    },
+                    {
+                        "slug": "centre-pompidou",
+                        "name": "Centre Pompidou",
+                        "description": "Musée national d'art moderne fondé en 1977. Architecture iconique de Renzo Piano et Richard Rogers (tuyauterie apparente, escalator-chenille). Bibliothèque publique d'information, terrasse panoramique 6ᵉ étage. Sortie Rambuteau directe.",
+                        "station": "Rambuteau",
+                        "station_slug": "rambuteau"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-belleville",
+                        "name": "Quartier de Belleville",
+                        "description": "Quartier multiculturel et créatif du 20ᵉ arrondissement. Street-art remarquable (rue Dénoyez, rue de Belleville), parc de Belleville avec vue panoramique sur Paris, restaurants chinois et tunisiens. Marché de Belleville (mardi/vendredi).",
+                        "station": "Belleville",
+                        "station_slug": "belleville"
+                    },
+                    {
+                        "slug": "quartier-arts-et-metiers",
+                        "name": "Quartier Arts et Métiers",
+                        "description": "Cœur historique du 3ᵉ arrondissement. Conservatoire National des Arts et Métiers, Carreau du Temple (halle 1865 reconvertie en centre culturel), Square du Temple-Élie Wiesel. Architecture Restauration et Belle Époque.",
+                        "station": "Arts et Métiers",
+                        "station_slug": "arts-et-metiers"
+                    },
+                    {
+                        "slug": "quartier-rosny-banlieue-est",
+                        "name": "Quartier de Rosny-Bois-Perrier",
+                        "description": "Pôle commercial de la banlieue est : centre commercial Rosny 2 (l'un des plus grands d'Île-de-France), gare RER E, parc des Coteaux Beauclair. Banlieue résidentielle de la Seine-Saint-Denis.",
+                        "station": "Rosny – Bois-Perrier",
+                        "station_slug": "rosny-bois-perrier"
+                    },
+                    {
+                        "slug": "quartier-mairie-des-lilas",
+                        "name": "Quartier de Mairie des Lilas",
+                        "description": "Cœur de ville des Lilas, ancien terminus est de la ligne 11 jusqu'en 2024. Vie de quartier, marché bi-hebdomadaire, parc Lucie-Aubrac, théâtre du Garde-Chasse.",
+                        "station": "Mairie des Lilas",
+                        "station_slug": "mairie-des-lilas"
+                    }
+                ]
+            },
+            {
+                "id": "gares",
+                "icon": "🚉",
+                "title": "Gares et grands pôles",
+                "category_url": "/gares/",
+                "pois": [
+                    {
+                        "slug": "chatelet-les-halles",
+                        "name": "Châtelet – Les Halles",
+                        "description": "Plus grande station souterraine d'Europe (5 lignes de métro + 3 lignes de RER). Pôle multimodal central de Paris : RER A (vers la Défense ou Marne-la-Vallée), RER B (vers CDG ou Saint-Rémy), RER D (vers le sud-est), métros 1, 4, 7, 11, 14. 750 000 voyageurs par jour.",
+                        "station": "Châtelet",
+                        "station_slug": "chatelet"
+                    },
+                    {
+                        "slug": "gare-rosny-bois-perrier",
+                        "name": "Gare de Rosny – Bois-Perrier",
+                        "description": "Gare RER E (vers Magenta / Haussmann Saint-Lazare ou Chelles), accessible depuis le terminus est de la ligne 11 ouvert en 2024. Pôle multimodal pour la banlieue est.",
+                        "station": "Rosny – Bois-Perrier",
+                        "station_slug": "rosny-bois-perrier"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "L'itinéraire patrimoine — De Châtelet à Mairie des Lilas",
+            "description": "Parcours culturel cœur de ville : Châtelet, Hôtel de Ville, Arts et Métiers (Nautilus), République, Belleville (street-art), Pyrénées, Jourdain, Place des Fêtes, Télégraphe (la station la plus haute), Porte des Lilas, Mairie des Lilas.",
+            "stops": [
+                "Châtelet",
+                "Hôtel de Ville",
+                "Rambuteau",
+                "Arts et Métiers",
+                "République",
+                "Goncourt",
+                "Belleville",
+                "Pyrénées",
+                "Jourdain",
+                "Place des Fêtes",
+                "Télégraphe",
+                "Porte des Lilas",
+                "Mairie des Lilas"
+            ],
+            "duration_min": 18,
+            "icon": "🏛️"
+        },
+        {
+            "title": "L'itinéraire prolongement 2024 — De Mairie des Lilas à Rosny",
+            "description": "Découverte des 6 nouvelles stations 2024 + terminus est. Highlight : station aérienne Coteaux Beauclair sur le viaduc de Marc Mimram (580 m), premier ouvrage de ce type sur le réseau depuis 1905.",
+            "stops": [
+                "Mairie des Lilas",
+                "Liberté",
+                "Place Carnot – Centenaire",
+                "Hôpital de Montreuil",
+                "Romainville-Carnot",
+                "La Dhuys",
+                "Coteaux Beauclair",
+                "Rosny – Bois-Perrier"
+            ],
+            "duration_min": 12,
+            "icon": "🌉"
+        },
+        {
+            "title": "L'itinéraire connecteur — De Châtelet aux portes est",
+            "description": "Axe est-ouest pour rejoindre la banlieue 93 depuis le centre de Paris en environ 30 minutes. Alternative aux lignes 7 ou 9 pour traverser Paris.",
+            "stops": [
+                "Châtelet",
+                "République",
+                "Belleville",
+                "Mairie des Lilas",
+                "Coteaux Beauclair",
+                "Rosny – Bois-Perrier"
+            ],
+            "duration_min": 30,
+            "icon": "🚇"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Châtelet",
+                "slug": "chatelet"
+            },
+            "to": {
+                "name": "Coteaux Beauclair",
+                "slug": "coteaux-beauclair"
+            },
+            "duration_min": 25,
+            "transfers": 0,
+            "lines": [
+                "11"
+            ],
+            "description": "Axe complet 2024 — Paris centre vers banlieue 93, traversée de la ligne et accès au viaduc de Marc Mimram",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Châtelet",
+                "slug": "chatelet"
+            },
+            "to": {
+                "name": "Arts et Métiers",
+                "slug": "arts-et-metiers"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "11"
+            ],
+            "description": "Accès rapide à la station-musée Nautilus (design François Schuiten 1994)",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Hôtel de Ville",
+                "slug": "hotel-de-ville"
+            },
+            "to": {
+                "name": "Belleville",
+                "slug": "belleville"
+            },
+            "duration_min": 10,
+            "transfers": 0,
+            "lines": [
+                "11"
+            ],
+            "description": "Axe culturel 4ᵉ ↔ 20ᵉ arrondissements",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "République",
+                "slug": "republique"
+            },
+            "to": {
+                "name": "Rosny – Bois-Perrier",
+                "slug": "rosny-bois-perrier"
+            },
+            "duration_min": 22,
+            "transfers": 0,
+            "lines": [
+                "11"
+            ],
+            "description": "Axe nouveau — République vers le terminus est de la ligne",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Mairie des Lilas",
+                "slug": "mairie-des-lilas"
+            },
+            "to": {
+                "name": "Coteaux Beauclair",
+                "slug": "coteaux-beauclair"
+            },
+            "duration_min": 10,
+            "transfers": 0,
+            "lines": [
+                "11"
+            ],
+            "description": "Parcours du prolongement 2024",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "Coteaux Beauclair : la 313ᵉ station du métro parisien",
+            "slug": "coteaux-beauclair-313e",
+            "url": "/info-trafic/coteaux-beauclair-313e/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Première station 100 % aérienne du métro parisien depuis 1905, sur le viaduc de Marc Mimram. Récit du chantier exceptionnel 2014-2024.",
+            "author": "Ludo",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 7,
+            "image": ""
+        },
+        {
+            "title": "Le Nautilus de la station Arts et Métiers",
+            "slug": "arts-et-metiers-nautilus",
+            "url": "/info-trafic/arts-et-metiers-nautilus/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "François Schuiten, 1994 : 800 plaques de cuivre, hublots, engrenages — comment la ligne 11 a obtenu l'une des plus belles stations du monde.",
+            "author": "Élodie",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "1956 : la ligne 11 inaugure le pneumatique",
+            "slug": "pneumatique-1956-ligne-11",
+            "url": "/info-trafic/pneumatique-1956-ligne-11/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Première ligne du métro parisien équipée de pneumatiques. Comment cette innovation a essaimé dans le monde entier.",
+            "author": "Ludo",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 5,
+            "image": ""
+        },
+        {
+            "title": "Télégraphe, la station la plus haute du métro parisien",
+            "slug": "telegraphe-station-plus-haute",
+            "url": "/info-trafic/telegraphe-station-plus-haute/",
+            "category": "Tourisme",
+            "category_slug": "tourisme",
+            "category_color": "#8a570f",
+            "excerpt": "96 m d'altitude à Belleville. Pourquoi la station Télégraphe détient ce record paradoxal du réseau parisien.",
+            "author": "Ludo",
+            "published_at": "2026-03-25T08:30:00",
+            "published_label": "Mars 2026",
+            "reading_time": 4,
+            "image": ""
+        }
+    ],
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:MP_14_-_Coteaux_Beauclair_(1).jpg",
+        "alt": "Rame MP14 CC à la station aérienne Coteaux-Beauclair, ligne 11 du métro parisien, jour de l'inauguration du prolongement le 13 juin 2024",
+        "width": 1600,
+        "height": 1067,
+        "credit": {
+            "author": "Capitaine AdBlock",
+            "license": "CC0",
+            "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:MP_14_-_Coteaux_Beauclair_(1).jpg",
+            "date": "2024-06-13",
+            "description": "Arrivée d'une rame MP14 CC à la station Coteaux-Beauclair, sur la ligne 11 du métro de Paris, le jour de son inauguration. Première station 100% aérienne construite sur le réseau parisien depuis 1905, sur le viaduc de 580 m conçu par Marc Mimram"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-11/ligne-11-400.avif",
+                "800": "/assets/img/lines/ligne-11/ligne-11-800.avif",
+                "1200": "/assets/img/lines/ligne-11/ligne-11-1200.avif",
+                "1600": "/assets/img/lines/ligne-11/ligne-11-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-11/ligne-11-400.webp",
+                "800": "/assets/img/lines/ligne-11/ligne-11-800.webp",
+                "1200": "/assets/img/lines/ligne-11/ligne-11-1200.webp",
+                "1600": "/assets/img/lines/ligne-11/ligne-11-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-11/ligne-11-400.jpg",
+                "800": "/assets/img/lines/ligne-11/ligne-11-800.jpg",
+                "1200": "/assets/img/lines/ligne-11/ligne-11-1200.jpg",
+                "1600": "/assets/img/lines/ligne-11/ligne-11-1600.jpg"
+            }
+        }
+    }
 }
