@@ -206,7 +206,7 @@
 /* La frise */
 .line-plan{margin:0 -10px}
 .line-plan__scroll-wrapper{overflow-x:auto;overflow-y:visible;padding:0 10px;-webkit-overflow-scrolling:touch}
-.line-plan__frise{position:relative;min-width:1750px;padding:200px 30px 240px 30px;height:100px}
+.line-plan__frise{position:relative;min-width:var(--frise-min-width,1750px);padding:200px 30px 240px 30px;height:100px}
 .line-plan__line{position:absolute;left:30px;right:30px;top:calc(200px + 20px);height:4px;background:var(--line-color);z-index:1}
 .line-plan__stations{position:absolute;left:30px;right:30px;top:200px;display:flex;justify-content:space-between;z-index:2}
 .line-plan__station{position:relative;flex:1;text-align:center;min-width:0}

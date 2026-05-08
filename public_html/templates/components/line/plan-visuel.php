@@ -21,6 +21,12 @@
 $stations = $line['stations'];
 $totalStations = count($stations);
 $lineColor = $line['color'] ?? '#0F6E56';
+
+// Largeur minimale dynamique de la frise : ~78px par station, ce qui réserve
+// assez de place pour qu'un label 2-lignes en oblique 55° ("La Motte-Picquet
+// - Grenelle") ne déborde pas sur la station voisine. Plancher 1750px pour
+// préserver l'aspect actuel sur les lignes courtes (L14 ~21 stations).
+$friseMinWidth = max(1750, $totalStations * 78);
 ?>
 
 <section class="section section--plan-visuel" id="plan-visuel" aria-labelledby="plan-title">
@@ -48,7 +54,7 @@ $lineColor = $line['color'] ?? '#0F6E56';
     </button>
 
     <div class="line-plan__scroll-wrapper" id="line-plan-content">
-      <div class="line-plan__frise" style="--line-color: <?= htmlspecialchars($lineColor) ?>;">
+      <div class="line-plan__frise" style="--line-color: <?= htmlspecialchars($lineColor) ?>; --frise-min-width: <?= (int)$friseMinWidth ?>px;">
 
         <!-- La ligne horizontale colorée -->
         <div class="line-plan__line" aria-hidden="true"></div>
