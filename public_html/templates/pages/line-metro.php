@@ -164,24 +164,28 @@ $lineColorLite = $line['color_light'] ?? '#FFF6CC';
 $lineColorText = $line['color_text']  ?? '#1A2B26';
 $accentBgSoft     = $lightenHex($lineColorRaw, 0.92);
 $accentBorderSoft = $lightenHex($lineColorRaw, 0.65);
-// Deux variables d'accent darkenées, pour deux usages distincts :
-//  --accent-strong  : bg coloré + texte --accent-text (badges, CTA, pills)
-//                     → darken jusqu'à contraste(accent-text, accent) >= 4.5
-//  --accent-on-light : couleur sur fond clair/blanc (.stat-card__value,
-//                     .key-fact__value, eyebrows, accents typo)
-//                     → darken jusqu'à contraste(accent, blanc) >= 4.5
-// Les deux sont indépendantes pour éviter qu'un fix d'un côté casse l'autre.
-$accentStrong  = $darkenUntilContrast($lineColorRaw, $lineColorText, 4.5);
-$accentOnLight = $darkenUntilContrast($lineColorRaw, '#FFFFFF',     4.5);
+// Trois variables d'accent darkenées, pour trois usages distincts :
+//  --accent-strong       : bg coloré + texte --accent-text (badges, CTA, pills)
+//                          → darken jusqu'à contraste(accent-text, accent) >= 4.5
+//  --accent-on-light     : couleur sur fond blanc/quasi-blanc
+//                          → darken jusqu'à contraste(accent, blanc) >= 4.5
+//  --accent-text-on-soft : couleur sur fond --accent-light (pastel ligne,
+//                          ex .stat-card avec bg pastel ligne)
+//                          → darken jusqu'à contraste(accent, accent-light) >= 4.5
+// Indépendantes pour éviter qu'un fix d'un contexte casse les autres.
+$accentStrong      = $darkenUntilContrast($lineColorRaw, $lineColorText, 4.5);
+$accentOnLight     = $darkenUntilContrast($lineColorRaw, '#FFFFFF',      4.5);
+$accentTextOnSoft  = $darkenUntilContrast($lineColorRaw, $lineColorLite, 4.5);
 $accentStyle = sprintf(
-    '--accent:%s;--accent-light:%s;--accent-text:%s;--accent-bg-soft:%s;--accent-border-soft:%s;--accent-strong:%s;--accent-on-light:%s;',
+    '--accent:%s;--accent-light:%s;--accent-text:%s;--accent-bg-soft:%s;--accent-border-soft:%s;--accent-strong:%s;--accent-on-light:%s;--accent-text-on-soft:%s;',
     htmlspecialchars($lineColorRaw,     ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($lineColorLite,    ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($lineColorText,    ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($accentBgSoft,     ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($accentBorderSoft, ENT_QUOTES, 'UTF-8'),
     htmlspecialchars($accentStrong,     ENT_QUOTES, 'UTF-8'),
-    htmlspecialchars($accentOnLight,    ENT_QUOTES, 'UTF-8')
+    htmlspecialchars($accentOnLight,    ENT_QUOTES, 'UTF-8'),
+    htmlspecialchars($accentTextOnSoft, ENT_QUOTES, 'UTF-8')
 );
 ?>
 <article class="line-page line-page--metro"
