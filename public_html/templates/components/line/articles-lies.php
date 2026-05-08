@@ -69,7 +69,7 @@ $iconForCategory = function (string $cat): string {
         <div class="article-card__image" style="background: linear-gradient(135deg, <?= htmlspecialchars($featured['category_color']) ?>22 0%, <?= htmlspecialchars($featured['category_color']) ?>44 100%);">
           <span class="article-card__placeholder-icon" aria-hidden="true"><?= $iconForCategory($featured['category'] ?? '') ?></span>
         </div>
-        <span class="article-card__category" style="background: <?= htmlspecialchars($featured['category_color']) ?>;">
+        <span class="article-card__category" style="background: <?= htmlspecialchars($featured['category_color']) ?>; color: #fff;">
           <?= htmlspecialchars($featured['category']) ?>
         </span>
       </div>
@@ -98,7 +98,7 @@ $iconForCategory = function (string $cat): string {
             <div class="article-card__image" style="background: linear-gradient(135deg, <?= htmlspecialchars($article['category_color']) ?>22 0%, <?= htmlspecialchars($article['category_color']) ?>44 100%);">
               <span class="article-card__placeholder-icon" aria-hidden="true"><?= $iconForCategory($article['category'] ?? '') ?></span>
             </div>
-            <span class="article-card__category" style="background: <?= htmlspecialchars($article['category_color']) ?>;">
+            <span class="article-card__category" style="background: <?= htmlspecialchars($article['category_color']) ?>; color: #fff;">
               <?= htmlspecialchars($article['category']) ?>
             </span>
           </div>

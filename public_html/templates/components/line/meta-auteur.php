@@ -77,7 +77,7 @@ $sources = $meta['sources'] ?? [];
         <a href="<?= htmlspecialchars($coAuthor['url']) ?>" class="meta-coauthor__link">
           <span class="meta-coauthor__avatar">
             <?php if (!empty($coAuthor['avatar_svg'])): ?>
-              <img src="<?= htmlspecialchars($coAuthor['avatar_svg']) ?>" alt="<?= htmlspecialchars($coAuthor['name']) ?>" class="meta-coauthor__avatar-img" width="28" height="28" loading="lazy">
+              <img src="<?= htmlspecialchars($coAuthor['avatar_svg']) ?>" alt="" class="meta-coauthor__avatar-img" width="28" height="28" loading="lazy">
             <?php else: ?>
               <span class="meta-coauthor__avatar-initials" style="background:<?= htmlspecialchars($coAuthor['avatar_color']) ?>;">
                 <?= htmlspecialchars($coAuthor['avatar_initials']) ?>

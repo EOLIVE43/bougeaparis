@@ -7,7 +7,7 @@ $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
 ?>
 <header class="site-header" role="banner">
     <div class="container site-header__inner">
-        <a href="/" class="site-logo" aria-label="<?= e($site['brand_name']) ?> - Accueil">
+        <a href="/" class="site-logo">
             <span class="site-logo__mark" aria-hidden="true">B</span>
             <span class="site-logo__text">
                 <span class="site-logo__name">Bougea<span class="site-logo__name-accent">Paris</span><span class="site-logo__tld">.fr</span></span>

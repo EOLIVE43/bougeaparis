@@ -77,7 +77,7 @@ $buildSrcset = function (array $widthMap): string {
 
   <div class="hero__pills">
     <span class="pill-mode">MÉTRO</span>
-    <span class="pill-line" style="background: <?= htmlspecialchars($lineColor) ?>; color: <?= htmlspecialchars($line['color_text'] ?? '#1A2B26') ?>;">
+    <span class="pill-line" style="background: var(--accent-strong, <?= htmlspecialchars($lineColor) ?>); color: <?= htmlspecialchars($line['color_text'] ?? '#1A2B26') ?>;">
       LIGNE <?= htmlspecialchars($line['code']) ?>
     </span>
   </div>
