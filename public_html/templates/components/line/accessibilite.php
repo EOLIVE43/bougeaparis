@@ -87,7 +87,7 @@ $stats = $accessibility['stats'];
         <div class="equipment-card__icon" aria-hidden="true"><?= htmlspecialchars($eq['icon']) ?></div>
         <div class="equipment-card__content">
           <div class="equipment-card__label"><?= htmlspecialchars($eq['label']) ?></div>
-          <div class="equipment-card__desc"><?= htmlspecialchars($eq['description']) ?></div>
+          <div class="equipment-card__desc"><?= richText($eq['description'] ?? '') ?></div>
         </div>
       </div>
     <?php endforeach; ?>
@@ -118,7 +118,7 @@ $stats = $accessibility['stats'];
     <?php foreach ($accessibility['tips'] as $tip): ?>
       <div class="access-tip">
         <div class="access-tip__title"><?= htmlspecialchars($tip['title']) ?></div>
-        <p class="access-tip__desc"><?= htmlspecialchars($tip['description']) ?></p>
+        <p class="access-tip__desc"><?= richText($tip['description'] ?? '') ?></p>
       </div>
     <?php endforeach; ?>
   </div>
@@ -131,7 +131,7 @@ $stats = $accessibility['stats'];
         <?php foreach ($accessibility['external_resources'] as $res): ?>
           <a href="<?= htmlspecialchars($res['url']) ?>" rel="noopener noreferrer" target="_blank" class="access-resource">
             <div class="access-resource__label"><?= htmlspecialchars($res['label']) ?> <span aria-hidden="true">↗</span></div>
-            <div class="access-resource__desc"><?= htmlspecialchars($res['description']) ?></div>
+            <div class="access-resource__desc"><?= richText($res['description'] ?? '') ?></div>
           </a>
         <?php endforeach; ?>
       </div>

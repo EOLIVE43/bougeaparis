@@ -488,6 +488,28 @@ if (!function_exists('expandIdfmAbbreviations')) {
     }
 }
 
+if (!function_exists('richText')) {
+    /**
+     * Sanitize un texte éditorial qui peut contenir du HTML inline.
+     * Whitelist : <strong>, <em>, <br>, <a> uniquement. Tout le reste strippé.
+     *
+     * Utilisé pour les champs de contenu rédactionnel (descriptions FAQ,
+     * anecdotes, history, itineraires, popular_routes, accessibility tips,
+     * works) où l'auteur peut mettre en gras des mots-clés ou ajouter
+     * des liens internes.
+     *
+     * Sécurité : les JSON éditoriaux sont commités côté admin, pas
+     * user-generated → pas de risque XSS direct. La whitelist sert
+     * surtout de garde-fou contre des balises affichées en clair par
+     * htmlspecialchars (bug constaté FAQ ligne 9 : "<strong>" affiché
+     * littéralement).
+     */
+    function richText(?string $content): string {
+        if ($content === null || $content === '') return '';
+        return strip_tags($content, '<strong><em><br><a>');
+    }
+}
+
 if (!function_exists('wrapStationName')) {
     /**
      * Casse les noms de stations longs en 2 lignes pour le plan visuel.

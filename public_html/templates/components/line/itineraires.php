@@ -87,7 +87,7 @@ function routeSlug($from, $to) {
 
         <!-- Description -->
         <?php if (!empty($route['description'])): ?>
-          <div class="itineraire-card__description"><?= htmlspecialchars($route['description']) ?></div>
+          <div class="itineraire-card__description"><?= richText($route['description'] ?? '') ?></div>
         <?php endif; ?>
 
       </span>
@@ -110,7 +110,7 @@ function routeSlug($from, $to) {
             </div>
           </div>
 
-          <p class="tourist-route__description"><?= htmlspecialchars($route['description']) ?></p>
+          <p class="tourist-route__description"><?= richText($route['description'] ?? '') ?></p>
 
           <div class="tourist-route__stops">
             <?php foreach ($route['stops'] as $i => $stop): ?>

@@ -91,7 +91,7 @@ function getSeverityClass($severity) {
             </div>
           </div>
 
-          <p class="work-card__description"><?= htmlspecialchars($work['description']) ?></p>
+          <p class="work-card__description"><?= richText($work['description'] ?? '') ?></p>
 
           <?php if (!empty($work['stations_affected'])): ?>
             <div class="work-card__stations">
@@ -136,7 +136,7 @@ function getSeverityClass($severity) {
             </div>
           </div>
 
-          <p class="work-card__description"><?= htmlspecialchars($work['description']) ?></p>
+          <p class="work-card__description"><?= richText($work['description'] ?? '') ?></p>
 
           <?php if (!empty($work['stations_affected'])): ?>
             <div class="work-card__stations">
@@ -163,7 +163,7 @@ function getSeverityClass($severity) {
           <div class="work-completed__content">
             <div class="work-completed__title"><?= htmlspecialchars($work['title']) ?></div>
             <div class="work-completed__date"><?= htmlspecialchars($work['completed_label']) ?></div>
-            <p class="work-completed__desc"><?= htmlspecialchars($work['description']) ?></p>
+            <p class="work-completed__desc"><?= richText($work['description'] ?? '') ?></p>
           </div>
         </div>
       <?php endforeach; ?>

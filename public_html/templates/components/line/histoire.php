@@ -47,7 +47,7 @@ $introText = $line['intros']['histoire'] ?? null;
       <div class="key-fact">
         <div class="key-fact__value"><?= htmlspecialchars($fact['value']) ?></div>
         <div class="key-fact__label"><?= htmlspecialchars($fact['label']) ?></div>
-        <div class="key-fact__desc"><?= htmlspecialchars($fact['description']) ?></div>
+        <div class="key-fact__desc"><?= richText($fact['description'] ?? '') ?></div>
       </div>
     <?php endforeach; ?>
   </div>
@@ -64,7 +64,7 @@ $introText = $line['intros']['histoire'] ?? null;
         <div class="timeline-event__content">
           <div class="timeline-event__icon" aria-hidden="true"><?= htmlspecialchars($date['icon']) ?></div>
           <h4 class="timeline-event__title"><?= htmlspecialchars($date['title']) ?></h4>
-          <p class="timeline-event__desc"><?= htmlspecialchars($date['description']) ?></p>
+          <p class="timeline-event__desc"><?= richText($date['description'] ?? '') ?></p>
         </div>
       </article>
     <?php endforeach; ?>
@@ -77,7 +77,7 @@ $introText = $line['intros']['histoire'] ?? null;
       <?php foreach ($history['anecdotes'] as $anecdote): ?>
         <div class="anecdote">
           <div class="anecdote__title"><?= htmlspecialchars($anecdote['title']) ?></div>
-          <p class="anecdote__desc"><?= htmlspecialchars($anecdote['description']) ?></p>
+          <p class="anecdote__desc"><?= richText($anecdote['description'] ?? '') ?></p>
         </div>
       <?php endforeach; ?>
     </div>

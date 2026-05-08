@@ -53,7 +53,7 @@ $introText = $line['intros']['faq'] ?? null;
           </span>
         </summary>
         <div class="faq-item__answer">
-          <p><?= htmlspecialchars($item['answer']) ?></p>
+          <p><?= richText($item['answer'] ?? '') ?></p>
         </div>
       </details>
     <?php endforeach; ?>
@@ -82,7 +82,7 @@ $introText = $line['intros']['faq'] ?? null;
             "name" => $item['question'],
             "acceptedAnswer" => [
                 "@type" => "Answer",
-                "text" => $item['answer']
+                "text" => strip_tags($item['answer'] ?? '')
             ]
         ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
     }
