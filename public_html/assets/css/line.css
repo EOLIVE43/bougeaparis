@@ -227,12 +227,13 @@
 .pastille-corresp__line{font-size:11px;font-weight:400;letter-spacing:0.02em}
 
 /* Nom de la station (en bas, incliné).
-   white-space:normal pour permettre le wrap multi-ligne via <br> injecté par
-   wrapStationName() côté PHP (noms longs avec " - " : "La Motte-Picquet -
-   Grenelle" → 2 lignes). line-height:1.05 + max-width pour compacter visuellement
-   sans empiéter sur la station voisine. */
-.line-plan__name{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) rotate(55deg);transform-origin:top left;white-space:normal;font-size:11px;font-weight:500;color:var(--text);line-height:1.05;max-width:170px;text-align:left}
-.line-plan__name--major{font-weight:700;font-size:12px;max-width:185px}
+   white-space:nowrap empêche tout wrap automatique du browser (qui sinon
+   couperait "La Motte-Picquet" au tiret intra-mot ou aux espaces). Le <br>
+   injecté par wrapStationName() reste un line break dur respecté malgré
+   nowrap, donc on obtient EXACTEMENT 2 lignes au point décidé côté PHP.
+   line-height:1.05 pour compacter visuellement les 2 lignes. */
+.line-plan__name{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) rotate(55deg);transform-origin:top left;white-space:nowrap;font-size:11px;font-weight:500;color:var(--text);line-height:1.05;text-align:left}
+.line-plan__name--major{font-weight:700;font-size:12px}
 .line-plan__name-sub{display:block;font-size:9px;font-weight:400;color:var(--text-muted);font-style:italic}
 
 /* Étiquette culturelle teal (sous le nom) */
