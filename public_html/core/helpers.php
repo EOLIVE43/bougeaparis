@@ -487,3 +487,54 @@ if (!function_exists('expandIdfmAbbreviations')) {
         return preg_replace($patterns, $replacements, $text);
     }
 }
+
+if (!function_exists('wrapStationName')) {
+    /**
+     * Casse les noms de stations longs en 2 lignes pour le plan visuel.
+     * Retourne du HTML déjà échappé (htmlspecialchars + <br>).
+     *
+     * Règles (par ordre de priorité) :
+     *  1. Si le nom contient " - " (séparateur composé) → wrap au tiret
+     *  2. Sinon si > 16 caractères et contient un espace → wrap au premier espace
+     *     après position 8 (préfère un point d'équilibre)
+     *  3. Sinon → nom inchangé
+     */
+    function wrapStationName(string $name): string {
+        $name = trim($name);
+        $len = mb_strlen($name);
+        // 1. Tiret entouré d'espaces : "La Motte-Picquet - Grenelle"
+        if (strpos($name, ' - ') !== false) {
+            [$left, $right] = explode(' - ', $name, 2);
+            return htmlspecialchars(trim($left), ENT_QUOTES, 'UTF-8')
+                . '<br>- '
+                . htmlspecialchars(trim($right), ENT_QUOTES, 'UTF-8');
+        }
+        // 2. Nom > 19 chars : split à l'espace le plus proche du milieu,
+        // en interdisant un mot < 3 chars d'un côté ou de l'autre.
+        if ($len > 19 && strpos($name, ' ') !== false) {
+            $target = $len / 2;
+            $best   = null;
+            $bestDist = PHP_INT_MAX;
+            $offset = 0;
+            while (($pos = mb_strpos($name, ' ', $offset)) !== false) {
+                $leftLen  = $pos;
+                $rightLen = $len - $pos - 1;
+                if ($leftLen >= 3 && $rightLen >= 3) {
+                    $dist = abs($pos - $target);
+                    if ($dist < $bestDist) {
+                        $bestDist = $dist;
+                        $best     = $pos;
+                    }
+                }
+                $offset = $pos + 1;
+            }
+            if ($best !== null) {
+                return htmlspecialchars(mb_substr($name, 0, $best), ENT_QUOTES, 'UTF-8')
+                    . '<br>'
+                    . htmlspecialchars(mb_substr($name, $best + 1), ENT_QUOTES, 'UTF-8');
+            }
+        }
+        // 3. Nom court ou non splittable : inchangé
+        return htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
+    }
+}

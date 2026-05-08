@@ -78,9 +78,12 @@ $lineColor = $line['color'] ?? '#0F6E56';
               <div class="line-plan__dot <?= ($station['is_major'] ?? false) ? 'line-plan__dot--major' : 'line-plan__dot--small' ?>"
                    <?= ($station['is_major'] ?? false) ? '' : 'aria-hidden="true"' ?>></div>
 
-              <!-- Nom de la station (sous la ligne, incliné) -->
+              <!-- Nom de la station (sous la ligne, incliné).
+                   wrapStationName() casse les noms longs sur 2 lignes au tiret
+                   de séparation (ex: "La Motte-Picquet - Grenelle"). HTML déjà
+                   échappé par le helper. -->
               <div class="line-plan__name <?= ($station['is_major'] ?? false) ? 'line-plan__name--major' : '' ?>">
-                <?= htmlspecialchars($station['name']) ?>
+                <?= wrapStationName($station['name']) ?>
               </div>
 
               <!-- Étiquette culturelle teal -->

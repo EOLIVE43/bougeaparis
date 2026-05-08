@@ -226,9 +226,13 @@
 .pastille-corresp__mode{font-size:10px;font-weight:600;letter-spacing:0.02em;margin-right:6px}
 .pastille-corresp__line{font-size:11px;font-weight:400;letter-spacing:0.02em}
 
-/* Nom de la station (en bas, incliné) */
-.line-plan__name{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) rotate(55deg);transform-origin:top left;white-space:nowrap;font-size:11px;font-weight:500;color:var(--text);line-height:1.2}
-.line-plan__name--major{font-weight:700;font-size:12px}
+/* Nom de la station (en bas, incliné).
+   white-space:normal pour permettre le wrap multi-ligne via <br> injecté par
+   wrapStationName() côté PHP (noms longs avec " - " : "La Motte-Picquet -
+   Grenelle" → 2 lignes). line-height:1.05 + max-width pour compacter visuellement
+   sans empiéter sur la station voisine. */
+.line-plan__name{position:absolute;top:calc(100% + 18px);left:50%;transform:translateX(-50%) rotate(55deg);transform-origin:top left;white-space:normal;font-size:11px;font-weight:500;color:var(--text);line-height:1.05;max-width:170px;text-align:left}
+.line-plan__name--major{font-weight:700;font-size:12px;max-width:185px}
 .line-plan__name-sub{display:block;font-size:9px;font-weight:400;color:var(--text-muted);font-style:italic}
 
 /* Étiquette culturelle teal (sous le nom) */
