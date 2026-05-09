@@ -79,13 +79,8 @@ $tpl->seo
         <p>Les informations de trafic, horaires et itinéraires présentées sur ce site sont issues des API publiques de PRIM (Île-de-France Mobilités) et de data.iledefrance-mobilites.fr, sous licence ODbL.</p>
 
         <h2>Données personnelles (RGPD)</h2>
-        <p>BougeaParis.fr <strong>ne collecte aucune donnée personnelle</strong> de ses visiteurs :</p>
-        <ul>
-            <li>Pas de formulaire utilisateur</li>
-            <li>Pas de compte utilisateur</li>
-            <li>Pas de newsletter</li>
-            <li>Pas de tracking publicitaire</li>
-        </ul>
+        <p>BougeaParis.fr <strong>ne collecte aucune donnée personnelle directement</strong> via formulaire, compte utilisateur ou abonnement. Le site fait toutefois appel à des services tiers pour la mesure d'audience et l'analyse de référencement (voir section Cookies). Aucune donnée personnelle identifiante n'est conservée ou exploitée par BougeaParis.fr en propre.</p>
+        <p>L'utilisateur dispose d'un droit d'accès, de rectification et d'opposition concernant les données traitées par les services tiers (Google Analytics notamment), à exercer directement auprès de Google ou via les outils de désactivation mentionnés dans la section Cookies.</p>
         <p>Si vous nous contactez par email à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>, votre adresse email sera utilisée uniquement pour répondre à votre demande, conformément au RGPD.</p>
 
         <h2>Cookies</h2>
