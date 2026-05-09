@@ -631,6 +631,15 @@ $tpl->partial('components/breadcrumb', [
   <?php endif; ?>
 
 <!-- ============================================================
+       4bis-pre. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
+       ============================================================ -->
+  <?php $tpl->partial('components/station/itineraires-populaires', [
+      'itineraries' => $station['popular_itineraries'] ?? [],
+      'stationName' => $name,
+      'stationSlug' => $station['slug'] ?? null,
+  ]); ?>
+
+  <!-- ============================================================
        4bis. HORAIRES PAR LIGNE
        ============================================================ -->
   <?php $tpl->partial('components/station/horaires-par-ligne', [
