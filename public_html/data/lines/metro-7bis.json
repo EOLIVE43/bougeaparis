@@ -1,8 +1,8 @@
 {
     "id": "metro-7bis",
     "mode": "metro",
-    "code": "7B",
-    "name": "Ligne 7B",
+    "code": "7bis",
+    "name": "Ligne 7bis",
     "stations_count": 8,
     "length_km": 3.2,
     "duration_minutes": 8,
@@ -61,7 +61,8 @@
                     "color": "#F3A4BA"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Jaurès",
@@ -82,7 +83,8 @@
                     "color": "#F3A4BA"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Bolivar",
@@ -98,17 +100,20 @@
                     "color": "#F28E42"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Buttes Chaumont",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Botzaris",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Place des Fêtes",
@@ -119,23 +124,897 @@
                     "color": "#8D5E2A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Pré-Saint-Gervais",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Danube",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         }
     ],
-    "color": "#83C491",
+    "color": "#7BB87C",
     "color_text": "#000000",
     "terminus_a": "Louis Blanc",
     "terminus_b": "Pré Saint-Gervais",
     "automated": false,
-    "opened_year": 1967
+    "opened_year": 1967,
+    "color_light": "#E6F3E9",
+    "daily_riders": 11000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-09",
+            "updated": "2026-05-09",
+            "updated_human": "9 mai 2026",
+            "published_label": "9 mai 2026",
+            "updated_label": "9 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 7bis du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_7_bis_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "seo": {
+        "h1": "Métro Ligne 7bis Paris : 8 stations, MF88 exclusif, Buttes-Chaumont",
+        "title": "Métro Ligne 7bis Paris : 8 stations, parc Buttes-Chaumont, MF88 exclusif",
+        "description": "Tout sur la ligne 7bis du métro parisien : Louis Blanc ↔ Pré-Saint-Gervais, 8 stations, parc des Buttes-Chaumont, MF88 matériel exclusif au réseau.",
+        "lead": "Toute l'info sur la <strong>ligne 7bis du métro parisien</strong>, courte navette à l'est de Paris entre <strong>Louis Blanc</strong> (10ᵉ) et <strong>Pré-Saint-Gervais</strong> (19ᵉ). <strong>8 stations</strong> sur 2,879 km — la <strong>2ᵉ ligne la plus courte du réseau</strong> après la 3bis. Environ <strong>11 000 voyageurs par jour</strong>. Née d'une <strong>scission de la ligne 7</strong> le 3 décembre 1967 (4 ans avant la création de la 3bis). Particularités : matériel <strong>MF88 EXCLUSIF</strong> au réseau (9 rames, 1993-2027), station <strong>Buttes-Chaumont à configuration unique</strong> (deux voûtes en plein cintre dues aux carrières de gypse), accès au <strong>parc des Buttes-Chaumont</strong>, l'un des plus beaux parcs de Paris."
+    },
+    "intros": {
+        "introduction_title": "deuxième plus courte ligne, MF88 exclusif, Buttes-Chaumont",
+        "introduction": "La <strong>ligne 7bis du métro parisien</strong> est une courte navette de <strong>8 stations</strong> à l'est de Paris, reliant <strong>Louis Blanc</strong> (10ᵉ arrondissement) à <strong>Pré-Saint-Gervais</strong> (19ᵉ arrondissement). Avec ses <strong>2,879 km</strong>, c'est la <strong>2ᵉ ligne la plus courte</strong> du métro parisien après la 3bis (1,3 km). Environ <strong>11 000 voyageurs par jour</strong>, l'une des moins fréquentées du réseau (15ᵉ sur 16).",
+        "plan": "La ligne 7bis n'est pas une ligne nouvelle. Elle est née d'une <strong>scission de la ligne 7</strong> le <strong>3 décembre 1967</strong>, soit <strong>4 ans avant la création de la 3bis</strong> (scission de la 3 en 1971). Avant 1967, la branche Louis Blanc ↔ Pré-Saint-Gervais était exploitée comme un embranchement de la ligne 7. Quand la 7 a été prolongée vers le sud (Mairie d'Ivry), la branche nord a été détachée et exploitée en navette indépendante.",
+        "stations": "La ligne 7bis dessert 8 stations : <strong>Louis Blanc</strong> (correspondance ligne 7), <strong>Jaurès</strong> (correspondance lignes 2, 5), <strong>Bolivar</strong>, <strong>Buttes-Chaumont</strong> (parc, configuration architecturale unique), <strong>Botzaris</strong> (parc), <strong>Place des Fêtes</strong> (correspondance ligne 11), <strong>Danube</strong>, <strong>Pré-Saint-Gervais</strong> (terminus est).",
+        "horaires": "Le service de la ligne 7bis fonctionne tous les jours de 5h30 à 0h40 (1h40 vendredi/samedi/veilles de fêtes). Fréquence d'environ 4 minutes en heure de pointe et 6 à 8 minutes le soir et le week-end.",
+        "trafic": "La ligne 7bis a une affluence très réduite (~11 000 voyageurs/jour, 15ᵉ sur 16 lignes). Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "Trajets sur la ligne 7bis : <strong>Louis Blanc → Pré-Saint-Gervais</strong> en 10 minutes (parcours complet), <strong>Jaurès → Buttes-Chaumont</strong> en 3 minutes (axe parc), <strong>Place des Fêtes → Pré-Saint-Gervais</strong> en 3 minutes (axe nord-est).",
+        "que_voir": "La ligne 7bis dessert le <strong>parc des Buttes-Chaumont</strong> (stations Buttes-Chaumont et Botzaris) — l'un des plus beaux parcs de Paris (1867, créé par Adolphe Alphand sur d'anciennes carrières de gypse, lac, falaises, temple antique sur îlot, pont suspendu de 65 m). Patrimoine technique unique : la station <strong>Buttes-Chaumont</strong> avec sa configuration architecturale exceptionnelle (deux voûtes en plein cintre dues aux carrières instables).",
+        "histoire": "La ligne 7bis trouve ses origines en <strong>1911</strong> avec l'ouverture du tronçon Louis Blanc ↔ Pré-Saint-Gervais sous le nom de ligne 7. En <strong>1912</strong>, ouverture des stations Buttes-Chaumont et Place des Fêtes (retardées par les difficultés géologiques — anciennes carrières de gypse). Le <strong>11 mars 1918</strong>, drame de la station Bolivar (66 victimes pendant un bombardement). Le <strong>3 décembre 1967</strong>, scission de la ligne 7 : la branche Louis Blanc ↔ Pré-Saint-Gervais devient la ligne 7bis. En <strong>1993-1994</strong>, arrivée du matériel <strong>MF88</strong> EXCLUSIF à la 7bis (9 rames, présentées en 1992 dans la station désaffectée Porte des Lilas). Le MF88 sera remplacé par le MF19 en 2027.",
+        "accessibilite": "La ligne 7bis dispose d'<strong>ascenseurs publics opérationnels dans plusieurs stations à grande profondeur</strong> (Pré-Saint-Gervais : paire d'ascenseurs à double entrée ; Jaurès : ascenseurs un par direction ; Place des Fêtes : ascenseur historique). Ces équipements sont utilisables par tous les voyageurs (PMR, parents avec poussettes, voyageurs avec bagages). En revanche, AUCUNE station n'est conforme aux normes PMR strictes de 2005 (signalétique, espacement quai-train, etc.) — les ascenseurs Plumet ou historiques ne respectent pas tous les critères modernes.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 7bis fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "La ligne 7bis utilise le matériel <strong>MF88 EXCLUSIF</strong> au réseau parisien depuis 1993-1994 (9 rames seulement, construites par ANF Industrie 1990-1992). Le MF88 sera remplacé par le <strong>MF19 à l'horizon 2027</strong>, fin d'une époque pour la 7bis. Un projet ancien de fusion 7bis + 3bis prolongée vers Château-Landon ou Magenta a été <strong>repoussé au-delà de 2030</strong> par manque d'intérêt économique.",
+        "faq": "Pourquoi la 7bis existe-t-elle, qu'est-ce que le MF88, configuration Buttes-Chaumont : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 7bis.",
+        "articles_lies": "Trafic en direct, dossiers patrimoine (configuration Buttes-Chaumont, drame Bolivar 1918, MF88 exclusif) : retrouvez les articles BougeaParis dédiés à la ligne 7bis.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Louis Blanc",
+                    "Jaurès",
+                    "Bolivar"
+                ],
+                "name": "Ligne 2",
+                "url": "/metro/ligne-2/"
+            },
+            {
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Louis Blanc",
+                    "Jaurès",
+                    "Bolivar"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Louis Blanc",
+                    "Jaurès"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Place des Fêtes"
+                ],
+                "name": "Ligne 11",
+                "url": "/metro/ligne-11/"
+            }
+        ],
+        "connections_rer": [],
+        "connections_other": [],
+        "discover_metro_lines": [
+            {
+                "code": "7bis",
+                "name": "Ligne 7bis",
+                "color": "#83C491",
+                "color_text": "#000000",
+                "url": "/metro/ligne-7bis/",
+                "is_current": true
+            },
+            {
+                "code": "2",
+                "name": "Ligne 2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-2/"
+            },
+            {
+                "code": "5",
+                "name": "Ligne 5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "7",
+                "name": "Ligne 7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "url": "/metro/ligne-7/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1911",
+                "title": "Ouverture branche Louis Blanc ↔ Pré-Saint-Gervais",
+                "icon": "🎉",
+                "description": "Le 18 janvier 1911, ouverture du tronçon initial sous le nom de ligne 7 (exploité comme embranchement). Premier maillon de la future 7bis."
+            },
+            {
+                "year": "1912",
+                "title": "Ouverture Buttes-Chaumont et Place des Fêtes",
+                "icon": "🏗️",
+                "description": "Le 13 février 1912, ouverture des stations Buttes-Chaumont et Place des Fêtes — retardées de plus d'un an à cause des difficultés géologiques. Anciennes carrières de gypse instables sous le tracé, nécessitant des ouvrages de soutènement exceptionnels."
+            },
+            {
+                "year": "1918",
+                "title": "DRAME DE BOLIVAR",
+                "icon": "🕯️",
+                "description": "Le 11 mars 1918, lors d'un bombardement allemand, la station Bolivar (aménagée en abri anti-aérien) connaît un drame : la foule prise de panique s'écrase sur les portes d'accès BLOQUÉES VERS L'INTÉRIEUR. Bilan : 66 VICTIMES. Tragédie historique du métro parisien à mentionner avec respect."
+            },
+            {
+                "year": "1967",
+                "title": "CRÉATION DE LA LIGNE 7BIS",
+                "icon": "🔀",
+                "description": "Le 3 décembre 1967, ÉVÉNEMENT FONDATEUR : la branche Louis Blanc ↔ Pré-Saint-Gervais est SCINDÉE de la ligne 7 (qui prolonge vers Mairie d'Ivry au sud) et devient indépendante sous le nom de LIGNE 7BIS. Première ligne « bis » du métro parisien — 4 ans avant la création de la 3bis (1971)."
+            },
+            {
+                "year": "1981",
+                "title": "Fin du Sprague-Thomson, MF67",
+                "icon": "🚆",
+                "description": "En juillet 1981, fin du matériel Sprague-Thomson historique sur la 7bis, remplacé par le MF67. La ligne servira ensuite de banc d'essai pour le MF88 dans les années 1990."
+            },
+            {
+                "year": "1993-1994",
+                "title": "ARRIVÉE DU MF88 — matériel exclusif",
+                "icon": "🚄",
+                "description": "Mise en service du matériel MF88 sur la 7bis. EXCLUSIVITÉ DU RÉSEAU PARISIEN : 9 rames seulement construites par ANF Industrie (1990-1992), réservées à la 7bis. Présentées à la presse en 1992 dans la station désaffectée Porte des Lilas par Francis Lorentz, président de la RATP. Le MF88 sera remplacé par le MF19 à l'horizon 2027."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "8",
+                "label": "Stations",
+                "description": "Louis Blanc, Jaurès, Bolivar, Buttes-Chaumont, Botzaris, Place des Fêtes, Danube, Pré-Saint-Gervais."
+            },
+            {
+                "value": "2,879 km",
+                "label": "2ᵉ plus courte ligne",
+                "description": "La 7bis est la 2ᵉ ligne la plus courte du métro parisien, après la 3bis (1,3 km)."
+            },
+            {
+                "value": "9 rames",
+                "label": "MF88 exclusif",
+                "description": "Le matériel MF88 est EXCLUSIF à la 7bis sur tout le réseau parisien — 9 rames seulement construites par ANF Industrie (1990-1992). Sera remplacé par le MF19 en 2027."
+            },
+            {
+                "value": "11 000",
+                "label": "Voyageurs / jour",
+                "description": "L'une des plus faibles affluences du réseau (15ᵉ sur 16 lignes, ~4 millions/an)."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "Buttes-Chaumont, station architecturalement unique",
+                "description": "La station Buttes-Chaumont a une configuration <strong>UNIQUE au sein du réseau parisien</strong> : <strong>deux voûtes en plein cintre</strong> déterminant deux stations à voie unique (vs 1 voûte + 2 voies sur les stations standards). Cette particularité s'explique par les terrains très instables sous le parc des Buttes-Chaumont — anciennes <strong>carrières de gypse</strong> exploitées jusqu'au XIXᵉ siècle, galeries de 10 m de largeur et hauteur. Les ingénieurs ont dû construire un piédroit axial supplémentaire au centre du tunnel et des éperons en maçonnerie sur les piliers de gypse subsistants."
+            },
+            {
+                "title": "Le drame de Bolivar 1918 — 66 victimes",
+                "description": "Lors d'un bombardement allemand le <strong>11 mars 1918</strong>, la station Bolivar (aménagée en abri anti-aérien) connaît un drame. La foule prise de panique s'écrase sur les <strong>portes d'accès bloquées vers l'intérieur</strong>. Bilan : <strong>66 victimes</strong>. Tragédie historique du métro parisien, peu connue du grand public, à mentionner avec respect. Les portes mal conçues ne pouvaient s'ouvrir avec la pression de la foule."
+            },
+            {
+                "title": "MF88 — le matériel exclusif unique au réseau",
+                "description": "Entre 1993 et aujourd'hui, la 7bis est la <strong>SEULE LIGNE DU RÉSEAU PARISIEN à utiliser le matériel MF88</strong>. <strong>9 rames</strong> seulement construites par ANF Industrie (1990-1992), réservées à la 7bis. Le MF88 a été présenté à la presse en 1992 dans la station désaffectée Porte des Lilas par Francis Lorentz, président de la RATP 1992-1994. Sera remplacé par le MF19 à l'horizon 2027 — fin d'une époque."
+            },
+            {
+                "title": "Née d'une scission en 1967, 4 ans avant la 3bis",
+                "description": "La 7bis n'a pas été créée comme ligne nouvelle. Le <strong>3 décembre 1967</strong>, la branche Louis Blanc ↔ Pré-Saint-Gervais a été <strong>débranchée</strong> de la ligne 7 (qui prolongeait vers Mairie d'Ivry). Cas similaire à la ligne 3bis (scission de la 3 en 1971), mais avec 4 ans d'avance. La 7bis est donc l'<strong>aînée des deux « lignes bis »</strong> du réseau."
+            },
+            {
+                "title": "La voie navette désaffectée vers la 3bis",
+                "description": "Depuis Pré-Saint-Gervais, une <strong>voie navette désaffectée</strong> reliait à la station Porte des Lilas (ligne 3bis). Fermée en septembre 1939 (Seconde Guerre mondiale), jamais rouverte. La station intermédiaire désaffectée « Porte des Lilas - Cinéma » est aujourd'hui utilisée pour des tournages de films. Cette voie pourrait être réactivée dans le projet de fusion 3bis + 7bis prolongée vers Château-Landon ou Magenta — projet repoussé au-delà de 2030."
+            },
+            {
+                "title": "Le parc des Buttes-Chaumont, paradis urbain",
+                "description": "La 7bis dessert l'un des <strong>plus beaux parcs de Paris</strong> (stations Buttes-Chaumont et Botzaris). Créé en 1867 par Adolphe Alphand sur d'anciennes carrières de gypse. Lac, falaises spectaculaires, temple antique romantique sur un îlot, pont suspendu de 65 m, grottes artificielles. Décor naturel exceptionnel intra-muros, fréquenté par les Parisiens et les touristes."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Pourquoi la ligne 7bis existe-t-elle ?",
+            "answer": "La ligne 7bis est née d'une <strong>scission de la ligne 7</strong> le <strong>3 décembre 1967</strong>. Avant cette date, la branche Louis Blanc ↔ Pré-Saint-Gervais faisait partie intégrante de la ligne 7. Quand la 7 a été prolongée vers Mairie d'Ivry au sud, la branche nord a été détachée pour devenir une ligne navette indépendante. La 7bis est née 4 ans avant la 3bis (créée par scission de la 3 en 1971)."
+        },
+        {
+            "question": "Quelle est la 2ᵉ ligne la plus courte du métro parisien ?",
+            "answer": "La <strong>ligne 7bis</strong> avec 2,879 km et 8 stations seulement (Louis Blanc, Jaurès, Bolivar, Buttes-Chaumont, Botzaris, Place des Fêtes, Danube, Pré-Saint-Gervais). La plus courte est la 3bis (1,3 km, 4 stations)."
+        },
+        {
+            "question": "Comment aller au parc des Buttes-Chaumont via la ligne 7bis ?",
+            "answer": "Descendre à <strong>Buttes-Chaumont</strong> (entrée principale au sud-ouest du parc) ou <strong>Botzaris</strong> (entrée nord-est). Le parc est l'un des plus beaux de Paris, créé en 1867 par Adolphe Alphand sur d'anciennes carrières de gypse. Lac, falaises, temple antique, pont suspendu."
+        },
+        {
+            "question": "Qu'est-ce que le MF88 ?",
+            "answer": "Le <strong>MF88</strong> est le matériel roulant <strong>EXCLUSIF à la ligne 7bis</strong> depuis 1993-1994. <strong>9 rames seulement</strong> construites par ANF Industrie (1990-1992), réservées à cette seule ligne sur tout le réseau parisien. Sera remplacé par le MF19 à l'horizon 2027 — fin d'une époque pour la 7bis."
+        },
+        {
+            "question": "Combien de temps pour traverser la ligne 7bis ?",
+            "answer": "Comptez environ <strong>8 à 10 minutes</strong> pour le trajet complet entre Louis Blanc et Pré-Saint-Gervais. La 7bis est très courte (2,879 km, 8 stations)."
+        },
+        {
+            "question": "La ligne 7bis est-elle accessible PMR ?",
+            "answer": "La ligne 7bis dispose d'<strong>ascenseurs publics opérationnels</strong> dans plusieurs stations à grande profondeur : <strong>Pré-Saint-Gervais</strong> (paire d'ascenseurs à double entrée), <strong>Jaurès</strong> (ascenseurs un par direction, station partagée avec L2/L5), <strong>Place des Fêtes</strong> (ascenseur historique). Ces équipements sont utilisables par tous (PMR, poussettes, bagages). En revanche, AUCUNE station n'est conforme aux normes PMR strictes 2005 — les ascenseurs sont historiques et ne respectent pas tous les critères modernes."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 0,
+            "total_count": 8,
+            "accessibility_rate": 0,
+            "elevators_count": 5,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "🛗",
+                "label": "5 ascenseurs publics opérationnels",
+                "description": "La ligne 7bis dispose d'ASCENSEURS PUBLICS dans plusieurs stations à grande profondeur (carrières de gypse) : Pré-Saint-Gervais (paire d'ascenseurs à double entrée), Jaurès (un par direction, partagé avec L2/L5), Place des Fêtes (ascenseur historique). Utilisables par TOUS : voyageurs PMR, parents avec poussettes, voyageurs avec bagages, seniors."
+            },
+            {
+                "icon": "♿",
+                "label": "PMR conforme norme 2005 : 0 station",
+                "description": "Bien que plusieurs stations disposent d'ascenseurs publics, AUCUNE n'est conforme aux normes PMR strictes de 2005 (largeurs, signalétique tactile, espacement quai-train, etc.). Les ascenseurs historiques (Plumet ou similaires) ne respectent pas tous les critères modernes."
+            },
+            {
+                "icon": "🚆",
+                "label": "Matériel MF88 exclusif",
+                "description": "Le matériel MF88 (exclusif à la 7bis depuis 1993, 9 rames) propose des annonces sonores et visuelles complètes. Sera remplacé par le MF19 à l'horizon 2027 — accessibilité visuelle améliorée attendue."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations historiques 1911-1912",
+                "description": "Les 8 stations ouvertes en 1911-1912 ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure. Les ascenseurs historiques de Pré-Saint-Gervais, Jaurès et Place des Fêtes sont une particularité liée à la profondeur exceptionnelle des quais (carrières de gypse)."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Profitez des ascenseurs publics historiques",
+                "description": "Les ascenseurs des stations Pré-Saint-Gervais, Jaurès et Place des Fêtes sont OUVERTS À TOUS — pas seulement aux voyageurs PMR. Pratiques avec une poussette, des bagages lourds ou pour éviter les escaliers profonds liés aux carrières de gypse."
+            },
+            {
+                "title": "PMR strict : privilégier les correspondances",
+                "description": "Pour un voyage en fauteuil roulant strict (norme 2005), privilégier les correspondances modernisées : ligne 11 à Place des Fêtes (récemment modernisée pour le prolongement Rosny-Bois-Perrier 2024)."
+            },
+            {
+                "title": "Service Accès Plus",
+                "description": "Pour un trajet PMR sécurisé, demander 24 h à l'avance le service Accès Plus d'Île-de-France Mobilités : un agent accompagne du quai d'origine au quai de destination."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-09",
+        "current_works": [],
+        "upcoming_works": [
+            {
+                "icon": "🚄",
+                "title": "Remplacement MF88 → MF19",
+                "completed_label": "Prévu 2027",
+                "description": "Fin annoncée du matériel MF88 (1993-2027) sur la ligne 7bis, remplacement par le MF19 (constructeur Alstom). Le MF88 a été le matériel EXCLUSIF de la 7bis pendant plus de 30 ans (9 rames seulement). Bénéfices MF19 attendus : freinage électrique intégral, éclairage LED, accessibilité visuelle améliorée.",
+                "dates_label": "2027"
+            }
+        ],
+        "recent_works": [
+            {
+                "icon": "📺",
+                "title": "Modernisation SIEL et écrans voyageurs",
+                "completed_label": "Terminé 2024",
+                "description": "Mise à jour des écrans d'information voyageur sur les 8 stations, intégration des données trafic temps réel via PRIM IDFM.",
+                "dates_label": "2024"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Parc des Buttes-Chaumont",
+                    "slug": "parc-buttes-chaumont",
+                    "station": "Buttes-Chaumont",
+                    "station_slug": "buttes-chaumont",
+                    "icon": "🌳",
+                    "description": "L'un des plus beaux parcs de Paris (1867), créé par Adolphe Alphand sur d'anciennes carrières de gypse. 25 hectares. Lac avec îlot rocheux surmonté du Temple de la Sibylle, falaises spectaculaires de 30 m, pont suspendu de 65 m, grottes artificielles, cascade. Accès depuis Buttes-Chaumont (sud) ou Botzaris (nord).",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Station Buttes-Chaumont — architecture unique",
+                    "slug": "station-buttes-chaumont-architecture-unique",
+                    "station": "Buttes-Chaumont",
+                    "station_slug": "buttes-chaumont",
+                    "icon": "🏗️",
+                    "description": "Configuration UNIQUE au sein du réseau parisien : deux voûtes en plein cintre déterminant deux stations à voie unique (vs 1 voûte + 2 voies standards). Patrimoine technique exceptionnel lié aux anciennes carrières de gypse instables sous le parc des Buttes-Chaumont. Piédroit axial et éperons de soutènement visibles depuis les quais.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Drame de Bolivar 1918",
+                    "slug": "drame-bolivar-1918",
+                    "station": "Bolivar",
+                    "station_slug": "bolivar",
+                    "icon": "🕯️",
+                    "description": "Le 11 mars 1918, drame historique : 66 victimes lors d'un bombardement allemand. La station Bolivar, aménagée en abri anti-aérien, a vu la foule s'écraser sur des portes bloquées vers l'intérieur. Tragédie peu connue du grand public, à mentionner avec respect comme témoignage de l'histoire de la Première Guerre mondiale à Paris.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Voie navette désaffectée Pré-Saint-Gervais ↔ Porte des Lilas",
+                    "slug": "voie-navette-pre-saint-gervais",
+                    "station": "Pré-Saint-Gervais",
+                    "station_slug": "pre-saint-gervais",
+                    "icon": "👻",
+                    "description": "Tunnel ferroviaire désaffecté reliant la 7bis (Pré-Saint-Gervais) à la 3bis (Porte des Lilas). Fermé en septembre 1939, jamais rouvert. Vestige du réseau initial d'avant-guerre. Projet de fusion 3bis + 7bis encore théorique pour 2030+.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "MF88 — matériel exclusif unique au réseau",
+                    "slug": "mf88-materiel-exclusif",
+                    "station": "Pré-Saint-Gervais",
+                    "station_slug": "pre-saint-gervais",
+                    "icon": "🚄",
+                    "description": "Matériel roulant EXCLUSIF à la ligne 7bis depuis 1993-1994. 9 rames seulement construites par ANF Industrie (1990-1992). Présenté à la presse en 1992 dans la station désaffectée Porte des Lilas par Francis Lorentz, président de la RATP. Sera remplacé par le MF19 à l'horizon 2027.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Temple de la Sibylle (parc Buttes-Chaumont)",
+                    "slug": "temple-sibylle-buttes-chaumont",
+                    "station": "Buttes-Chaumont",
+                    "station_slug": "buttes-chaumont",
+                    "icon": "🏛️",
+                    "description": "Temple antique romantique sur l'îlot rocheux du lac du parc des Buttes-Chaumont. Inspiré du temple de Vesta à Tivoli (Italie). Construit en 1867 par Gabriel Davioud. Décor signature du parc, accessible à pied via les ponts. Vue panoramique sur le 19ᵉ arrondissement.",
+                    "schema_type": "Monument"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Quartier des Buttes-Chaumont",
+                    "slug": "quartier-buttes-chaumont",
+                    "station": "Buttes-Chaumont",
+                    "station_slug": "buttes-chaumont",
+                    "icon": "🌳",
+                    "description": "Quartier résidentiel populaire du 19ᵉ arrondissement, autour du parc des Buttes-Chaumont. Architecture du début du XXᵉ siècle, ambiance villageoise, cafés et restaurants conviviaux, pâtisseries traditionnelles.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier Place des Fêtes",
+                    "slug": "quartier-place-des-fetes",
+                    "station": "Place des Fêtes",
+                    "station_slug": "place-des-fetes",
+                    "icon": "🏘️",
+                    "description": "Quartier animé du 19ᵉ arrondissement, autour de la place du même nom. Marché Place des Fêtes (mardi/vendredi/dimanche), cinéma indépendant Le Méliès, vie de quartier authentique.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Pré-Saint-Gervais",
+                    "slug": "quartier-pre-saint-gervais",
+                    "station": "Pré-Saint-Gervais",
+                    "station_slug": "pre-saint-gervais",
+                    "icon": "🏙️",
+                    "description": "Limite est du 19ᵉ arrondissement, vers la commune Pré-Saint-Gervais (Seine-Saint-Denis). Architecture moderne et résidentielle, ambiance populaire en mutation.",
+                    "schema_type": "Place"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "parc-buttes-chaumont",
+                        "name": "Parc des Buttes-Chaumont",
+                        "description": "L'un des plus beaux parcs de Paris (1867), créé par Adolphe Alphand sur d'anciennes carrières de gypse. 25 hectares. Lac avec îlot rocheux surmonté du Temple de la Sibylle, falaises spectaculaires de 30 m, pont suspendu de 65 m, grottes artificielles, cascade. Accès depuis Buttes-Chaumont (sud) ou Botzaris (nord).",
+                        "station": "Buttes-Chaumont",
+                        "station_slug": "buttes-chaumont"
+                    },
+                    {
+                        "slug": "station-buttes-chaumont-architecture-unique",
+                        "name": "Station Buttes-Chaumont — architecture unique",
+                        "description": "Configuration UNIQUE au sein du réseau parisien : deux voûtes en plein cintre déterminant deux stations à voie unique (vs 1 voûte + 2 voies standards). Patrimoine technique exceptionnel lié aux anciennes carrières de gypse instables sous le parc des Buttes-Chaumont. Piédroit axial et éperons de soutènement visibles depuis les quais.",
+                        "station": "Buttes-Chaumont",
+                        "station_slug": "buttes-chaumont"
+                    },
+                    {
+                        "slug": "drame-bolivar-1918",
+                        "name": "Drame de Bolivar 1918",
+                        "description": "Le 11 mars 1918, drame historique : 66 victimes lors d'un bombardement allemand. La station Bolivar, aménagée en abri anti-aérien, a vu la foule s'écraser sur des portes bloquées vers l'intérieur. Tragédie peu connue du grand public, à mentionner avec respect comme témoignage de l'histoire de la Première Guerre mondiale à Paris.",
+                        "station": "Bolivar",
+                        "station_slug": "bolivar"
+                    },
+                    {
+                        "slug": "voie-navette-pre-saint-gervais",
+                        "name": "Voie navette désaffectée Pré-Saint-Gervais ↔ Porte des Lilas",
+                        "description": "Tunnel ferroviaire désaffecté reliant la 7bis (Pré-Saint-Gervais) à la 3bis (Porte des Lilas). Fermé en septembre 1939, jamais rouvert. Vestige du réseau initial d'avant-guerre. Projet de fusion 3bis + 7bis encore théorique pour 2030+.",
+                        "station": "Pré-Saint-Gervais",
+                        "station_slug": "pre-saint-gervais"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "mf88-materiel-exclusif",
+                        "name": "MF88 — matériel exclusif unique au réseau",
+                        "description": "Matériel roulant EXCLUSIF à la ligne 7bis depuis 1993-1994. 9 rames seulement construites par ANF Industrie (1990-1992). Présenté à la presse en 1992 dans la station désaffectée Porte des Lilas par Francis Lorentz, président de la RATP. Sera remplacé par le MF19 à l'horizon 2027.",
+                        "station": "Pré-Saint-Gervais",
+                        "station_slug": "pre-saint-gervais"
+                    },
+                    {
+                        "slug": "temple-sibylle-buttes-chaumont",
+                        "name": "Temple de la Sibylle (parc Buttes-Chaumont)",
+                        "description": "Temple antique romantique sur l'îlot rocheux du lac du parc des Buttes-Chaumont. Inspiré du temple de Vesta à Tivoli (Italie). Construit en 1867 par Gabriel Davioud. Décor signature du parc, accessible à pied via les ponts. Vue panoramique sur le 19ᵉ arrondissement.",
+                        "station": "Buttes-Chaumont",
+                        "station_slug": "buttes-chaumont"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-buttes-chaumont",
+                        "name": "Quartier des Buttes-Chaumont",
+                        "description": "Quartier résidentiel populaire du 19ᵉ arrondissement, autour du parc des Buttes-Chaumont. Architecture du début du XXᵉ siècle, ambiance villageoise, cafés et restaurants conviviaux, pâtisseries traditionnelles.",
+                        "station": "Buttes-Chaumont",
+                        "station_slug": "buttes-chaumont"
+                    },
+                    {
+                        "slug": "quartier-place-des-fetes",
+                        "name": "Quartier Place des Fêtes",
+                        "description": "Quartier animé du 19ᵉ arrondissement, autour de la place du même nom. Marché Place des Fêtes (mardi/vendredi/dimanche), cinéma indépendant Le Méliès, vie de quartier authentique.",
+                        "station": "Place des Fêtes",
+                        "station_slug": "place-des-fetes"
+                    },
+                    {
+                        "slug": "quartier-pre-saint-gervais",
+                        "name": "Pré-Saint-Gervais",
+                        "description": "Limite est du 19ᵉ arrondissement, vers la commune Pré-Saint-Gervais (Seine-Saint-Denis). Architecture moderne et résidentielle, ambiance populaire en mutation.",
+                        "station": "Pré-Saint-Gervais",
+                        "station_slug": "pre-saint-gervais"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "L'itinéraire complet — De Louis Blanc à Pré-Saint-Gervais",
+            "description": "Parcours intégral de la ligne 7bis : Louis Blanc (correspondance ligne 7), Jaurès (correspondances L2/L5), Bolivar, Buttes-Chaumont (parc + station unique), Botzaris (parc), Place des Fêtes (correspondance L11), Danube, Pré-Saint-Gervais. 8 stations, 10 minutes.",
+            "stops": [
+                "Louis Blanc",
+                "Jaurès",
+                "Bolivar",
+                "Buttes-Chaumont",
+                "Botzaris",
+                "Place des Fêtes",
+                "Danube",
+                "Pré-Saint-Gervais"
+            ],
+            "duration_min": 10,
+            "icon": "🚇"
+        },
+        {
+            "title": "L'itinéraire patrimoine — Buttes-Chaumont et architecture unique",
+            "description": "Parcours patrimoine technique et nature : Bolivar (drame 1918), Buttes-Chaumont (configuration architecturale UNIQUE — deux voûtes en plein cintre + parc spectaculaire), Botzaris (entrée nord du parc), Place des Fêtes. 4 stations, ~5 minutes.",
+            "stops": [
+                "Bolivar",
+                "Buttes-Chaumont",
+                "Botzaris",
+                "Place des Fêtes"
+            ],
+            "duration_min": 5,
+            "icon": "🌳"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Louis Blanc",
+                "slug": "louis-blanc"
+            },
+            "to": {
+                "name": "Pré-Saint-Gervais",
+                "slug": "pre-saint-gervais"
+            },
+            "duration_min": 10,
+            "transfers": 0,
+            "lines": [
+                "7bis"
+            ],
+            "description": "Ligne complète — parcours total de la 7bis, 8 stations",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Jaurès",
+                "slug": "jaures"
+            },
+            "to": {
+                "name": "Buttes-Chaumont",
+                "slug": "buttes-chaumont"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "7bis"
+            ],
+            "description": "Axe parc — accès rapide au parc des Buttes-Chaumont",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Place des Fêtes",
+                "slug": "place-des-fetes"
+            },
+            "to": {
+                "name": "Pré-Saint-Gervais",
+                "slug": "pre-saint-gervais"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "7bis"
+            ],
+            "description": "Axe nord-est — Place des Fêtes vers terminus",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "Buttes-Chaumont — la station architecturalement unique",
+            "slug": "station-buttes-chaumont-architecture",
+            "url": "/info-trafic/station-buttes-chaumont-architecture/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Deux voûtes en plein cintre, anciennes carrières de gypse, piédroit axial : pourquoi cette station de la 7bis est unique au réseau parisien.",
+            "author": "Élodie",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "MF88 — le matériel exclusif de la 7bis (1993-2027)",
+            "slug": "mf88-materiel-exclusif-ligne-7bis",
+            "url": "/info-trafic/mf88-materiel-exclusif-ligne-7bis/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "9 rames seulement, ANF Industrie 1990-1992, présentation en 1992 dans la station fantôme Porte des Lilas. Récit du matériel le plus rare du réseau parisien.",
+            "author": "Ludo",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 7,
+            "image": ""
+        },
+        {
+            "title": "Le drame de Bolivar 1918 — 66 victimes oubliées",
+            "slug": "drame-bolivar-1918",
+            "url": "/info-trafic/drame-bolivar-1918/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "11 mars 1918, bombardement allemand, panique dans l'abri anti-aérien : retour respectueux sur l'une des tragédies les plus oubliées du métro parisien.",
+            "author": "Élodie",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 5,
+            "image": ""
+        }
+    ],
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:MF88-RATP.JPG",
+        "alt": "Rame MF88 du métro parisien à la station Pré-Saint-Gervais, ligne 7bis — matériel exclusif au réseau",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Kevin.B (Kyah117)",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:MF88-RATP.JPG",
+            "date": "2007-10-21",
+            "description": "Rame MF88 à la station Pré-Saint-Gervais (terminus est de la ligne 7bis). Le MF88 est le matériel roulant EXCLUSIF à la ligne 7bis depuis 1993 — 9 rames seulement construites par ANF Industrie (1990-1992). Sera remplacé par le MF19 à l'horizon 2027"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-7bis/ligne-7bis-400.avif",
+                "800": "/assets/img/lines/ligne-7bis/ligne-7bis-800.avif",
+                "1200": "/assets/img/lines/ligne-7bis/ligne-7bis-1200.avif",
+                "1600": "/assets/img/lines/ligne-7bis/ligne-7bis-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-7bis/ligne-7bis-400.webp",
+                "800": "/assets/img/lines/ligne-7bis/ligne-7bis-800.webp",
+                "1200": "/assets/img/lines/ligne-7bis/ligne-7bis-1200.webp",
+                "1600": "/assets/img/lines/ligne-7bis/ligne-7bis-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-7bis/ligne-7bis-400.jpg",
+                "800": "/assets/img/lines/ligne-7bis/ligne-7bis-800.jpg",
+                "1200": "/assets/img/lines/ligne-7bis/ligne-7bis-1200.jpg",
+                "1600": "/assets/img/lines/ligne-7bis/ligne-7bis-1600.jpg"
+            }
+        }
+    }
 }
