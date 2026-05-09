@@ -51,12 +51,14 @@
         {
             "name": "Mirabeau",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Chardon Lagache",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Michel-Ange - Molitor",
@@ -67,22 +69,26 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Boulogne Pont de Saint-Cloud",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Boulogne Jean Jaurès",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Porte d'Auteuil",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Michel-Ange - Auteuil",
@@ -93,12 +99,14 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Église d'Auteuil",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Javel",
@@ -109,17 +117,20 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Charles Michels",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Avenue Émile Zola",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "La Motte-Picquet - Grenelle",
@@ -135,12 +146,14 @@
                     "color": "#CEADD2"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Ségur",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Duroc",
@@ -156,12 +169,14 @@
                     "color": "#98D4E2"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Vaneau",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Sèvres - Babylone",
@@ -177,7 +192,8 @@
                     "color": "#00814F"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Mabillon",
@@ -188,7 +204,8 @@
                     "color": "#C04191"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Odéon",
@@ -209,7 +226,8 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Cluny - La Sorbonne",
@@ -230,12 +248,14 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Maubert - Mutualité",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Cardinal Lemoine",
@@ -246,7 +266,8 @@
                     "color": "#F3A4BA"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Jussieu",
@@ -257,7 +278,8 @@
                     "color": "#F3A4BA"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Gare d'Austerlitz",
@@ -273,7 +295,1142 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         }
-    ]
+    ],
+    "color_light": "#F9F0D4",
+    "daily_riders": 190000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-09",
+            "updated": "2026-05-09",
+            "updated_human": "9 mai 2026",
+            "published_label": "9 mai 2026",
+            "updated_label": "9 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 10 du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_10_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "seo": {
+        "h1": "Métro Ligne 10 Paris : plan, horaires et trafic",
+        "title": "Métro Ligne 10 Paris : 23 stations, Quartier Latin, voûte Bazaine Cluny",
+        "description": "Tout sur la ligne 10 du métro parisien : Boulogne ↔ Gare d'Austerlitz, 23 stations, axe Quartier Latin, voûte Bazaine Cluny-La Sorbonne, Mirabeau quai surélevé.",
+        "lead": "Toute l'info sur la <strong>ligne 10 du métro parisien</strong>, axe sinueux rive gauche reliant <strong>Boulogne – Pont de Saint-Cloud</strong> (Hauts-de-Seine) à <strong>Gare d'Austerlitz</strong> (Paris 13ᵉ). <strong>23 stations</strong> sur 11,5 km, environ <strong>190 000 voyageurs par jour</strong>. Tracé unique : boucle Auteuil dans le 16ᵉ, traversée du 7ᵉ, axe <strong>Quartier Latin</strong> (Mabillon, Odéon, Cluny-La Sorbonne, Maubert, Cardinal Lemoine, Jussieu). Patrimoine artistique exceptionnel : <strong>voûte Bazaine</strong> à Cluny-La Sorbonne (mosaïque 400 m² de 1988 réouverte après 49 ans de fermeture) et <strong>quai surélevé de Mirabeau</strong>. Première ligne du réseau à recevoir le matériel <strong>MF19</strong> en octobre 2025."
+    },
+    "intros": {
+        "introduction_title": "axe sinueux rive gauche, signature Quartier Latin",
+        "introduction": "La <strong>ligne 10 du métro parisien</strong> trace un axe sinueux rive gauche, depuis <strong>Boulogne – Pont de Saint-Cloud</strong> (Hauts-de-Seine) jusqu'à <strong>Gare d'Austerlitz</strong> (Paris 13ᵉ). <strong>23 stations</strong> sur 11,5 kilomètres, environ <strong>190 000 voyageurs par jour</strong> — l'une des lignes les moins fréquentées du réseau, presque exclusivement intra-muros rive gauche. Tracé en U unique au métro parisien, hérité des réorganisations de 1937.",
+        "plan": "La ligne 10 forme une trajectoire sinueuse à travers Paris rive gauche : la <strong>boucle Auteuil</strong> dans le 16ᵉ (Église d'Auteuil → Mirabeau → Chardon Lagache → Michel-Ange-Molitor) précède l'extension à Boulogne (1981). Au sud, la ligne traverse le 7ᵉ arrondissement (Sèvres-Babylone, Vaneau, Duroc, La Motte-Picquet – Grenelle), puis entre dans le <strong>Quartier Latin</strong> (Mabillon, Odéon, <strong>Cluny-La Sorbonne</strong>, Maubert-Mutualité, Cardinal Lemoine, Jussieu) et termine à Gare d'Austerlitz.",
+        "stations": "La ligne 10 compte 23 stations dont les pôles d'échanges majeurs : <strong>Boulogne – Pont de Saint-Cloud</strong> (terminus ouest), <strong>Michel-Ange-Auteuil</strong> (ligne 9), <strong>Mirabeau</strong> (station signature, quai surélevé unique), <strong>La Motte-Picquet – Grenelle</strong> (lignes 6, 8), <strong>Sèvres-Babylone</strong> (ligne 12, Bon Marché), <strong>Mabillon</strong>, <strong>Odéon</strong> (ligne 4), <strong>Cluny-La Sorbonne</strong> (RER B, RER C — Saint-Michel-Notre-Dame), <strong>Jussieu</strong> (ligne 7), <strong>Gare d'Austerlitz</strong> (terminus est, ligne 5, RER C).",
+        "horaires": "Le service de la ligne 10 fonctionne tous les jours de 5h30 à 1h15, avec prolongation jusqu'à 2h15 les vendredis, samedis et veilles de fêtes. La fréquence est d'environ 3 minutes en heure de pointe et 5 à 7 minutes le soir et le week-end (ligne moins chargée que les axes principaux).",
+        "trafic": "La ligne 10 connaît une affluence relativement modérée par rapport aux autres lignes du réseau (~190k voyageurs/jour). Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "La ligne 10 propose des trajets stratégiques : <strong>Gare d'Austerlitz → Cluny-La Sorbonne</strong> en 5 minutes (axe Quartier Latin), <strong>Boulogne Pont de Saint-Cloud → Sèvres-Babylone</strong> en 22 minutes (axe ouest-est complet), <strong>Sèvres-Babylone → Cluny-La Sorbonne</strong> en 8 minutes (shopping vers culture), <strong>Mirabeau → Église d'Auteuil</strong> en 3 minutes (boucle Auteuil), <strong>Cardinal Lemoine → Boulogne Jean Jaurès</strong> en 25 minutes (traversée Paris rive gauche).",
+        "que_voir": "La ligne 10 dessert un parcours culturel et patrimonial exceptionnel : <strong>Cluny-La Sorbonne</strong> (voûte Bazaine, Musée de Cluny — Moyen Âge, Sorbonne), <strong>Cardinal Lemoine</strong> (Panthéon proximité), <strong>Maubert-Mutualité</strong> (Notre-Dame proximité), <strong>Jussieu</strong> (Jardin des Plantes), <strong>Sèvres-Babylone</strong> (Le Bon Marché), <strong>Mirabeau</strong> (quai surélevé unique), <strong>Boulogne</strong> (Roland-Garros, Bois de Boulogne, Hippodrome d'Auteuil).",
+        "histoire": "Inaugurée le <strong>30 décembre 1923</strong> entre Invalides et Croix-Rouge, la ligne 10 a connu une <strong>réorganisation majeure en 1937</strong> : elle cède son tronçon Auteuil à la ligne 8 et reprend le tronçon Bastille → Opéra de l'ancienne ligne 8. Configuration stable depuis. La station <strong>Cluny</strong> ouvre en 1930, ferme en 1939 (Seconde Guerre mondiale) et reste « fantôme » pendant 49 ans avant d'être <strong>rouverte le 17 février 1988</strong> sous le nom Cluny-La Sorbonne, avec la voûte monumentale de Jean Bazaine. Le matériel <strong>MF67</strong> remplace le matériel articulé en juin 1994. En <strong>octobre 2025</strong>, la ligne 10 devient la PREMIÈRE LIGNE à recevoir le nouveau matériel <strong>MF19</strong>.",
+        "accessibilite": "La ligne 10 est l'une des moins accessibles aux personnes à mobilité réduite : son infrastructure historique 1923-1939 implique des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure. Les stations modernisées récentes (Boulogne 1981, Cluny-La Sorbonne 1988) sont légèrement mieux équipées. Le matériel MF19 (depuis octobre 2025) propose des annonces sonores et visuelles complètes, accessibilité visuelle améliorée par rapport au MF67.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 10 fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "La ligne 10 est en phase de modernisation matériel majeure : depuis <strong>octobre 2025</strong>, le nouveau matériel <strong>MF19</strong> (constructeur Alstom) remplace progressivement les MF67 historiques (en service depuis le 15 juin 1994). La ligne 10 est la <strong>première du réseau parisien à recevoir le MF19</strong>. Cohabitation MF67/MF19 pendant la transition. Bénéfices : -20 % consommation énergie (freinage électrique intégral, éclairage LED), capacité accrue, accessibilité visuelle améliorée.",
+        "faq": "Comment voir la voûte Bazaine, quelle particularité de Mirabeau, quel matériel actuel : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 10.",
+        "articles_lies": "Trafic en direct, dossiers patrimoine (voûte Bazaine, Mirabeau quai surélevé, MF19 première ligne 2025) et conseils pratiques : retrouvez les derniers articles de BougeaParis dédiés à la ligne 10.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Sèvres - Babylone",
+                    "Mabillon",
+                    "Odéon",
+                    "Cluny - La Sorbonne"
+                ],
+                "name": "Ligne 4",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gare d'Austerlitz"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "6",
+                "color": "#83C491",
+                "color_text": "#000000",
+                "stations": [
+                    "La Motte-Picquet - Grenelle"
+                ],
+                "name": "Ligne 6",
+                "url": "/metro/ligne-6/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Cardinal Lemoine",
+                    "Jussieu"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "stations": [
+                    "La Motte-Picquet - Grenelle"
+                ],
+                "name": "Ligne 8",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "stations": [
+                    "Michel-Ange - Molitor",
+                    "Michel-Ange - Auteuil"
+                ],
+                "name": "Ligne 9",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "12",
+                "color": "#00814F",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Duroc",
+                    "Sèvres - Babylone"
+                ],
+                "name": "Ligne 12",
+                "url": "/metro/ligne-12/"
+            },
+            {
+                "code": "13",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Duroc"
+                ],
+                "name": "Ligne 13",
+                "url": "/metro/ligne-13/"
+            }
+        ],
+        "connections_rer": [
+            {
+                "code": "B",
+                "color": "#5291CE",
+                "color_text": "#FFF",
+                "stations": [
+                    "Odéon",
+                    "Cluny - La Sorbonne"
+                ],
+                "name": "RER B",
+                "url": "/rer/rer-b/"
+            },
+            {
+                "code": "C",
+                "color": "#F3D006",
+                "color_text": "#FFF",
+                "stations": [
+                    "Javel",
+                    "Odéon",
+                    "Cluny - La Sorbonne",
+                    "Gare d'Austerlitz"
+                ],
+                "name": "RER C",
+                "url": "/rer/rer-c/"
+            }
+        ],
+        "connections_other": [],
+        "discover_metro_lines": [
+            {
+                "code": "10",
+                "name": "Ligne 10",
+                "color": "#E3B32A",
+                "color_text": "#000000",
+                "url": "/metro/ligne-10/",
+                "is_current": true
+            },
+            {
+                "code": "4",
+                "name": "Ligne 4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "7",
+                "name": "Ligne 7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "9",
+                "name": "Ligne 9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "url": "/metro/ligne-9/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1923",
+                "title": "Ouverture Invalides ↔ Croix-Rouge",
+                "icon": "🎉",
+                "description": "Le 30 décembre 1923, ouverture du premier tronçon de la ligne 10 originale. La station Croix-Rouge sera fermée plus tard (devenue station fantôme)."
+            },
+            {
+                "year": "1925",
+                "title": "Prolongement à Mabillon",
+                "icon": "🚇",
+                "description": "La ligne 10 atteint Mabillon, première étape vers le Quartier Latin."
+            },
+            {
+                "year": "1930",
+                "title": "Ouverture station Cluny",
+                "icon": "📍",
+                "description": "Le 15 février 1930, ouverture de la station Cluny entre Odéon et Maubert. Elle prendra le nom Cluny-La Sorbonne 58 ans plus tard."
+            },
+            {
+                "year": "1937",
+                "title": "Réorganisation majeure du réseau",
+                "icon": "🔀",
+                "description": "La ligne 10 cède son tronçon Auteuil à la ligne 8 et reprend le tronçon Bastille → Opéra de l'ancienne ligne 8. Le tracé en U actuel se forme. Restructuration complexe du réseau parisien, héritage des trois raccordements de service avec lignes 4, 7 et 8."
+            },
+            {
+                "year": "1939",
+                "title": "Fermeture station Cluny — début des 49 ans fantômes",
+                "icon": "👻",
+                "description": "Le 2 septembre 1939, fermeture de la station Cluny pour cause de Seconde Guerre mondiale (jugée trop proche d'Odéon et Maubert). Restera fermée pendant 49 ans, devenant l'une des stations fantômes les plus connues du métro parisien."
+            },
+            {
+                "year": "1981",
+                "title": "Prolongement Boulogne — Pont de Saint-Cloud",
+                "icon": "📍",
+                "description": "Le 2 octobre 1981, ouverture de la station Boulogne — Pont de Saint-Cloud, terminus ouest actuel. Extension de la ligne 10 hors de Paris vers les Hauts-de-Seine."
+            },
+            {
+                "year": "1988",
+                "title": "RÉOUVERTURE Cluny-La Sorbonne + voûte Bazaine",
+                "icon": "🎨",
+                "description": "Le 17 février 1988, ÉVÉNEMENT MAJEUR : réouverture de la station Cluny-La Sorbonne après 49 ans de fermeture, pour assurer la correspondance avec le RER B et le RER C (gare Saint-Michel-Notre-Dame). Aménagement artistique exceptionnel : voûte monumentale de Jean Bazaine en mosaïque, 400 m² de lave émaillée de Volvic, 60 000 tesselles, signatures d'étudiants célèbres de la Sorbonne."
+            },
+            {
+                "year": "1994",
+                "title": "Mise en service MF67",
+                "icon": "🚆",
+                "description": "Le 15 juin 1994, remplacement du matériel articulé historique par le MF67. Fin des rames articulées « Sprague-Thomson » sur la 10. Le MF67 restera en service 31 ans (1994-2025)."
+            },
+            {
+                "year": "2025",
+                "title": "PREMIÈRE LIGNE À RECEVOIR LE MF19",
+                "icon": "🚄",
+                "description": "En octobre 2025, la ligne 10 devient la PREMIÈRE LIGNE du métro parisien à recevoir le nouveau matériel MF19 (constructeur Alstom). Remplacement progressif des MF67. Bénéfices : -20 % consommation énergie (freinage électrique intégral, éclairage LED), accessibilité visuelle améliorée."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "23",
+                "label": "Stations",
+                "description": "De Boulogne — Pont de Saint-Cloud (Hauts-de-Seine 92) à Gare d'Austerlitz (Paris 13ᵉ). Tracé en U unique, presque exclusivement rive gauche."
+            },
+            {
+                "value": "400 m²",
+                "label": "Voûte Bazaine Cluny",
+                "description": "Mosaïque monumentale de Jean Bazaine, voûte de la station Cluny-La Sorbonne (1988). 60 000 tesselles en lave émaillée de Volvic, ~100 couleurs. Représentation des « Oiseaux » + signatures d'étudiants célèbres de la Sorbonne (Rimbaud, Marie Curie, Pasteur, Pascal, Robespierre, Saint Louis...)."
+            },
+            {
+                "value": "190k",
+                "label": "Voyageurs par jour",
+                "description": "L'une des lignes les moins fréquentées du réseau, presque exclusivement intra-muros rive gauche."
+            },
+            {
+                "value": "2025",
+                "label": "Première ligne MF19",
+                "description": "En octobre 2025, la ligne 10 devient la première du réseau parisien à recevoir le nouveau matériel MF19. Modernisation après 31 ans de service du MF67 (1994-2025)."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "Cluny-La Sorbonne, station fantôme 49 ans",
+                "description": "Ouverte en 1930 sous le nom <strong>Cluny</strong>, fermée le 2 septembre 1939 (Seconde Guerre mondiale, jugée trop proche d'Odéon et Maubert). Reste fermée pendant <strong>49 ans</strong>. Réouverte le 17 février 1988 pour assurer la correspondance avec les RER B et C (gare Saint-Michel-Notre-Dame). Cas unique au réseau parisien d'une station fantôme rouverte avec une œuvre d'art monumentale."
+            },
+            {
+                "title": "La voûte Bazaine et les signatures de la Sorbonne",
+                "description": "Pour marquer la réouverture de Cluny-La Sorbonne en 1988, Jack Lang (ministre de la Culture) commande à <strong>Jean Bazaine</strong> une œuvre monumentale. Mosaïque 400 m² en lave émaillée de Volvic, 60 000 tesselles, 100 couleurs. Voûte représentant les « Oiseaux » symboliques de l'esprit, mais surtout : <strong>signatures en mosaïque d'étudiants célèbres de la Sorbonne</strong> — Saint Louis, Rabelais, Robespierre, Rimbaud, Verlaine, George Sand, Marie Curie, Blaise Pascal, Louis Pasteur, Gustave Courbet. À chercher sur la voûte le temps d'une attente."
+            },
+            {
+                "title": "Mirabeau et l'envol — quai surélevé unique",
+                "description": "La station <strong>Mirabeau</strong> a la pente la plus prononcée du métro parisien : <strong>40 ‰</strong> (40 mm par mètre). Un de ses deux quais est SURÉLEVÉ pour passer au plus près des fondations de l'église d'Auteuil. Sensation d'envol particulière depuis la rame à l'arrivée. Disposition exceptionnelle au sein du réseau parisien."
+            },
+            {
+                "title": "Seule ligne intra-muros sans pilotage automatique",
+                "description": "Malgré sa proximité avec le centre, la ligne 10 est la <strong>seule ligne intra-muros</strong> (hors lignes courtes 3bis et 7bis) à ne PAS être équipée du pilotage automatique. Cause historique : le matériel articulé jusqu'en 1994 n'était pas compatible. Quand le MF67 l'a remplacé en juin 1994, l'investissement en pilotage automatique a été jugé non rentable au regard du faible trafic (~190k voy/j)."
+            },
+            {
+                "title": "La ligne en U — tracé sinueux unique",
+                "description": "Le tracé de la ligne 10 est <strong>unique au réseau parisien</strong> : la ligne ne forme pas un axe droit mais remonte vers Auteuil, fait une boucle dans le 16ᵉ (Église d'Auteuil → Mirabeau → Chardon Lagache → Michel-Ange-Molitor), redescend à Javel, traverse le 7ᵉ arrondissement, entre dans le Quartier Latin, et termine à Gare d'Austerlitz. Tracé hérité des réorganisations majeures de 1937. Trois raccordements de service subsistent avec les lignes 4 (Cluny), 7 (Maubert) et 8 (La Motte-Picquet)."
+            },
+            {
+                "title": "MF19 — première ligne du réseau (octobre 2025)",
+                "description": "La ligne 10 est la <strong>PREMIÈRE LIGNE</strong> du métro parisien à recevoir le nouveau matériel <strong>MF19</strong> (constructeur Alstom). Mise en service progressive depuis octobre 2025, cohabitation avec le MF67 historique pendant la transition. Bénéfices : <strong>-20 % de consommation énergie</strong> (freinage électrique intégral, éclairage LED), capacité accrue, accessibilité visuelle améliorée. Modernisation après 31 ans de bons et loyaux services du MF67 (1994-2025)."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Comment voir la voûte Bazaine de Cluny-La Sorbonne ?",
+            "answer": "Descendre à la station <strong>Cluny-La Sorbonne</strong> sur la ligne 10. Lever les yeux vers la voûte au plafond — la mosaïque monumentale « Les Oiseaux » de Jean Bazaine couvre 400 m² avec 60 000 tesselles en lave émaillée de Volvic. À voir le temps d'une attente sur le quai. Une seconde œuvre par Claude Maréchal (600 m²) forme un ruban continu jusqu'à la correspondance Saint-Michel-Notre-Dame (RER B et C)."
+        },
+        {
+            "question": "Quelles signatures peut-on lire à Cluny-La Sorbonne ?",
+            "answer": "La voûte Bazaine intègre des signatures en mosaïque d'étudiants célèbres de la Sorbonne : <strong>Saint Louis</strong>, <strong>Rabelais</strong>, <strong>Robespierre</strong>, <strong>Rimbaud</strong>, <strong>Verlaine</strong>, <strong>George Sand</strong>, <strong>Marie Curie</strong>, <strong>Blaise Pascal</strong>, <strong>Louis Pasteur</strong>, <strong>Gustave Courbet</strong>. Œuvre dirigée par Jean Bazaine, réalisée par le mosaïste Gino Silvestri da Belun (1988)."
+        },
+        {
+            "question": "Comment aller à la Sorbonne / Quartier Latin via la ligne 10 ?",
+            "answer": "Descendre à <strong>Cluny-La Sorbonne</strong> directement, sortie face au boulevard Saint-Germain. Le bâtiment historique de la Sorbonne et le Musée de Cluny (Moyen Âge) sont à 2 minutes à pied. Pour le Panthéon : descendre <strong>Cardinal Lemoine</strong>. Pour Notre-Dame : descendre <strong>Maubert-Mutualité</strong>."
+        },
+        {
+            "question": "Quelle est la particularité de la station Mirabeau ?",
+            "answer": "La station <strong>Mirabeau</strong> a un quai surélevé unique au métro parisien, avec la pente la plus prononcée du réseau (<strong>40 ‰</strong>, soit 40 mm par mètre). Disposition liée aux fondations de l'église d'Auteuil voisine. Sensation d'envol particulière depuis la rame à l'arrivée. À tester en descendant à la station."
+        },
+        {
+            "question": "Combien de temps pour traverser la ligne 10 ?",
+            "answer": "Comptez environ <strong>28 minutes</strong> pour le trajet complet entre Boulogne — Pont de Saint-Cloud et Gare d'Austerlitz, soit l'axe sinueux rive gauche de Paris."
+        },
+        {
+            "question": "La ligne 10 est-elle accessible PMR ?",
+            "answer": "Très peu. L'infrastructure historique 1923-1939 implique des escaliers d'origine difficiles à équiper d'ascenseurs. Les stations modernisées récentes (Boulogne 1981, Cluny-La Sorbonne 1988) sont légèrement mieux équipées. Le matériel <strong>MF19</strong> récent (depuis octobre 2025) propose des annonces sonores et visuelles complètes, accessibilité visuelle améliorée par rapport au MF67."
+        },
+        {
+            "question": "Quel est le matériel actuel sur la ligne 10 ?",
+            "answer": "Cohabitation <strong>MF67 historique</strong> (depuis le 15 juin 1994) et <strong>MF19 nouveau</strong> (depuis octobre 2025). La ligne 10 est la <strong>PREMIÈRE LIGNE du réseau parisien à recevoir le MF19</strong>. Remplacement progressif des MF67 sur les prochaines années."
+        },
+        {
+            "question": "Pourquoi la ligne 10 n'est-elle pas automatisée ?",
+            "answer": "La ligne 10 est la <strong>seule ligne intra-muros</strong> sans pilotage automatique (avec les lignes courtes 3bis et 7bis). Cause historique : le matériel articulé jusqu'en 1994 n'était pas compatible. Quand le MF67 l'a remplacé, l'investissement en pilotage automatique a été jugé non rentable au regard du faible trafic (~190 000 voyageurs par jour)."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 2,
+            "total_count": 23,
+            "accessibility_rate": 9,
+            "elevators_count": 4,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "label": "Accessibilité limitée (~9 %)",
+                "description": "Environ 2 stations sur 23 disposent d'ascenseurs PMR. Principalement les terminus modernisés récents (Boulogne — Pont de Saint-Cloud 1981, Boulogne Jean Jaurès) et la station rénovée Cluny-La Sorbonne (1988)."
+            },
+            {
+                "icon": "🚆",
+                "label": "MF19 récent (depuis octobre 2025)",
+                "description": "La ligne 10 est la PREMIÈRE LIGNE à recevoir le nouveau matériel MF19. Annonces sonores et visuelles complètes, accessibilité visuelle améliorée par rapport au MF67. Cohabitation avec MF67 pendant la transition."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations historiques contraignantes",
+                "description": "Les stations centrales ouvertes en 1923-1939 (Mabillon, Odéon, Cluny, Maubert, Cardinal Lemoine, Jussieu) ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
+            },
+            {
+                "icon": "🔊",
+                "label": "Annonces sonores et visuelles",
+                "description": "Le SIEL (Système d'Information en Ligne) affiche les prochaines rames sur écrans LCD aux quais. Annonces vocales systématiques en rame MF19 (et progressivement sur MF67 modernisés)."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Privilégier les terminus modernisés",
+                "description": "Pour un voyage PMR sur la ligne 10, privilégier les stations Boulogne — Pont de Saint-Cloud, Boulogne Jean Jaurès et Cluny-La Sorbonne. Les autres stations centrales restent peu accessibles."
+            },
+            {
+                "title": "Vérifier l'accessibilité avant de partir",
+                "description": "Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage pour vérifier les ascenseurs disponibles à la station de destination."
+            },
+            {
+                "title": "Service Accès Plus",
+                "description": "Pour un trajet PMR sécurisé, demander 24 h à l'avance le service Accès Plus d'Île-de-France Mobilités : un agent accompagne du quai d'origine au quai de destination."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-09",
+        "current_works": [],
+        "upcoming_works": [],
+        "recent_works": [
+            {
+                "icon": "🚄",
+                "title": "Mise en service MF19 — première ligne du réseau",
+                "completed_label": "Démarré octobre 2025",
+                "description": "La ligne 10 devient la PREMIÈRE LIGNE du métro parisien à recevoir le nouveau matériel MF19 (constructeur Alstom). Remplacement progressif des MF67 historiques (1994-2025). Bénéfices : -20 % consommation énergie, freinage électrique intégral, éclairage LED, accessibilité visuelle améliorée. Cohabitation MF67/MF19 pendant la transition.",
+                "dates_label": "Depuis octobre 2025"
+            },
+            {
+                "icon": "📺",
+                "title": "Modernisation SIEL et écrans voyageurs",
+                "completed_label": "Terminé 2024",
+                "description": "Mise à jour des écrans d'information voyageur sur l'ensemble des stations, intégration des données trafic temps réel via PRIM IDFM.",
+                "dates_label": "2024"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Voûte Bazaine — Cluny-La Sorbonne",
+                    "slug": "voute-bazaine-cluny",
+                    "station": "Cluny-La Sorbonne",
+                    "station_slug": "cluny-la-sorbonne",
+                    "icon": "🎨",
+                    "description": "Mosaïque monumentale de Jean Bazaine (1988), 400 m² de lave émaillée de Volvic, 60 000 tesselles, 100 couleurs. Voûte représentant les « Oiseaux » symboliques + signatures d'étudiants célèbres de la Sorbonne (Rimbaud, Marie Curie, Pasteur, Pascal, Robespierre, Saint Louis, Rabelais, Verlaine, George Sand, Courbet). Patrimoine artistique unique du métro parisien.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Musée de Cluny — Moyen Âge",
+                    "slug": "musee-cluny-moyen-age",
+                    "station": "Cluny-La Sorbonne",
+                    "station_slug": "cluny-la-sorbonne",
+                    "icon": "🏛️",
+                    "description": "Hôtel de Cluny (XVᵉ siècle) abritant le Musée national du Moyen Âge. Collections exceptionnelles de tapisseries (La Dame à la licorne, 6 tapisseries fin XVᵉ siècle), sculptures, vitraux. Vestiges des thermes gallo-romains de Lutèce. Sortie directe Cluny-La Sorbonne.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "La Sorbonne",
+                    "slug": "sorbonne",
+                    "station": "Cluny-La Sorbonne",
+                    "station_slug": "cluny-la-sorbonne",
+                    "icon": "🎓",
+                    "description": "Université historique de Paris fondée en 1257 par Robert de Sorbon. Bâtiment actuel (1885-1901) en architecture néo-classique, chapelle de la Sorbonne (XVIIᵉ siècle), grand amphithéâtre. Cœur du Quartier Latin.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Panthéon",
+                    "slug": "pantheon",
+                    "station": "Cardinal Lemoine",
+                    "station_slug": "cardinal-lemoine",
+                    "icon": "🏛️",
+                    "description": "Mausolée des grands hommes de la République française. Architecture néo-classique de Soufflot (1758-1790). Crypte abritant les tombes de Voltaire, Rousseau, Hugo, Zola, Pasteur, Marie Curie, Joséphine Baker. Pendule de Foucault au centre. Sortie Cardinal Lemoine + 5 min à pied.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Église d'Auteuil",
+                    "slug": "eglise-d-auteuil",
+                    "station": "Église d'Auteuil",
+                    "station_slug": "eglise-d-auteuil",
+                    "icon": "⛪",
+                    "description": "Église Notre-Dame d'Auteuil, style néo-byzantin construite 1877-1892. Quartier résidentiel chic du 16ᵉ. La station du métro est nommée d'après cette église, dont les fondations conditionnent le quai surélevé unique de la station Mirabeau voisine.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Gare d'Austerlitz",
+                    "slug": "gare-d-austerlitz",
+                    "station": "Gare d'Austerlitz",
+                    "station_slug": "gare-d-austerlitz",
+                    "icon": "🚆",
+                    "description": "Gare Intercités vers le Sud-Ouest (Bordeaux, Toulouse, Limoges) et l'Espagne. Liaisons RER C. Halle métallique remarquable. Modernisation en cours dans le cadre du projet « Paris Rive Gauche ». Terminus est de la ligne 10.",
+                    "schema_type": "TrainStation"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Mirabeau — quai surélevé unique",
+                    "slug": "mirabeau-quai-sureleve",
+                    "station": "Mirabeau",
+                    "station_slug": "mirabeau",
+                    "icon": "🚇",
+                    "description": "Station signature de la ligne 10. Un de ses deux quais est surélevé pour passer au plus près des fondations de l'église d'Auteuil. Pente de 40 ‰ (40 mm par mètre) — la plus prononcée du métro parisien. Sensation d'envol depuis la rame.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Théâtre de l'Odéon",
+                    "slug": "theatre-odeon",
+                    "station": "Odéon",
+                    "station_slug": "odeon",
+                    "icon": "🎭",
+                    "description": "Théâtre national fondé en 1782, bâtiment néo-classique. Salle Cleopâtre (790 places), salle Berthier (650 places). Programmation théâtrale contemporaine et classique. Sortie directe Odéon.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Le Bon Marché Rive Gauche",
+                    "slug": "bon-marche",
+                    "station": "Sèvres-Babylone",
+                    "station_slug": "sevres-babylone",
+                    "icon": "🛍️",
+                    "description": "Premier grand magasin de Paris, fondé en 1852. Architecture en fer et verre signée Eiffel/Boileau. La Grande Épicerie de Paris (alimentation gourmet) à côté. Style art de vivre rive gauche.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Jardin des Plantes",
+                    "slug": "jardin-des-plantes",
+                    "station": "Jussieu",
+                    "station_slug": "jussieu",
+                    "icon": "🌳",
+                    "description": "Plus ancien jardin botanique de Paris (1635), 28 hectares. Ménagerie (zoo historique), serres tropicales, alpinarium, écoles de botanique. Voisin du Muséum national d'Histoire naturelle. Accès depuis Jussieu (3 min à pied).",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Quartier Latin",
+                    "slug": "quartier-latin-cluny",
+                    "station": "Cluny-La Sorbonne",
+                    "station_slug": "cluny-la-sorbonne",
+                    "icon": "🎓",
+                    "description": "Cœur étudiant de Paris depuis le Moyen Âge. Sorbonne, Collège de France, École Normale Supérieure, Lycée Louis-le-Grand. Librairies historiques, cafés littéraires, restaurants. Boulevard Saint-Michel, place de la Sorbonne.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Saint-Germain-des-Prés",
+                    "slug": "quartier-saint-germain-mabillon",
+                    "station": "Mabillon",
+                    "station_slug": "mabillon",
+                    "icon": "📚",
+                    "description": "Quartier historique des intellectuels et artistes (Sartre, Beauvoir, Vian, Prévert). Place Saint-Germain, Café de Flore, Les Deux Magots, Brasserie Lipp. Galeries d'art, librairies, marchés (rue de Buci). Sortie Mabillon.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Auteuil — le 16ᵉ élégant",
+                    "slug": "auteuil-elegant-16e",
+                    "station": "Église d'Auteuil",
+                    "station_slug": "eglise-d-auteuil",
+                    "icon": "🏛️",
+                    "description": "Quartier résidentiel chic du 16ᵉ arrondissement. Architecture haussmannienne et Art déco, ambassades, hôtels particuliers. Maison de Balzac, Musée Marmottan-Monet (Impressionnisme). Hippodrome d'Auteuil, Bois de Boulogne à proximité.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Boulogne — Pont de Saint-Cloud",
+                    "slug": "boulogne-pont-saint-cloud-quartier",
+                    "station": "Boulogne — Pont de Saint-Cloud",
+                    "station_slug": "boulogne-pont-saint-cloud",
+                    "icon": "🌳",
+                    "description": "Commune des Hauts-de-Seine au sud-ouest de Paris. Bois de Boulogne, parc des Princes (PSG), Roland-Garros (tournoi), Stade Jean-Bouin (rugby). Hôtel de ville moderniste de Tony Garnier (1934).",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "gares": {
+            "title_template": "Gares et grands pôles desservis par la ligne {code}",
+            "icon": "🚉",
+            "color_gradient": "linear-gradient(135deg, #4299E1 0%, #2563AC 100%)",
+            "category_url": "/gares/",
+            "items": [
+                {
+                    "name": "Gare d'Austerlitz",
+                    "slug": "gare-d-austerlitz",
+                    "station": "Gare d'Austerlitz",
+                    "station_slug": "gare-d-austerlitz",
+                    "icon": "🚆",
+                    "description": "Gare Intercités vers le Sud-Ouest (Bordeaux, Toulouse, Limoges) et l'Espagne. Liaisons RER C. Halle métallique remarquable. Terminus est de la ligne 10. Correspondance ligne 5.",
+                    "schema_type": "TrainStation"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "voute-bazaine-cluny",
+                        "name": "Voûte Bazaine — Cluny-La Sorbonne",
+                        "description": "Mosaïque monumentale de Jean Bazaine (1988), 400 m² de lave émaillée de Volvic, 60 000 tesselles, 100 couleurs. Voûte représentant les « Oiseaux » symboliques + signatures d'étudiants célèbres de la Sorbonne (Rimbaud, Marie Curie, Pasteur, Pascal, Robespierre, Saint Louis, Rabelais, Verlaine, George Sand, Courbet). Patrimoine artistique unique du métro parisien.",
+                        "station": "Cluny-La Sorbonne",
+                        "station_slug": "cluny-la-sorbonne"
+                    },
+                    {
+                        "slug": "musee-cluny-moyen-age",
+                        "name": "Musée de Cluny — Moyen Âge",
+                        "description": "Hôtel de Cluny (XVᵉ siècle) abritant le Musée national du Moyen Âge. Collections exceptionnelles de tapisseries (La Dame à la licorne, 6 tapisseries fin XVᵉ siècle), sculptures, vitraux. Vestiges des thermes gallo-romains de Lutèce. Sortie directe Cluny-La Sorbonne.",
+                        "station": "Cluny-La Sorbonne",
+                        "station_slug": "cluny-la-sorbonne"
+                    },
+                    {
+                        "slug": "sorbonne",
+                        "name": "La Sorbonne",
+                        "description": "Université historique de Paris fondée en 1257 par Robert de Sorbon. Bâtiment actuel (1885-1901) en architecture néo-classique, chapelle de la Sorbonne (XVIIᵉ siècle), grand amphithéâtre. Cœur du Quartier Latin.",
+                        "station": "Cluny-La Sorbonne",
+                        "station_slug": "cluny-la-sorbonne"
+                    },
+                    {
+                        "slug": "pantheon",
+                        "name": "Panthéon",
+                        "description": "Mausolée des grands hommes de la République française. Architecture néo-classique de Soufflot (1758-1790). Crypte abritant les tombes de Voltaire, Rousseau, Hugo, Zola, Pasteur, Marie Curie, Joséphine Baker. Pendule de Foucault au centre. Sortie Cardinal Lemoine + 5 min à pied.",
+                        "station": "Cardinal Lemoine",
+                        "station_slug": "cardinal-lemoine"
+                    },
+                    {
+                        "slug": "eglise-d-auteuil",
+                        "name": "Église d'Auteuil",
+                        "description": "Église Notre-Dame d'Auteuil, style néo-byzantin construite 1877-1892. Quartier résidentiel chic du 16ᵉ. La station du métro est nommée d'après cette église, dont les fondations conditionnent le quai surélevé unique de la station Mirabeau voisine.",
+                        "station": "Église d'Auteuil",
+                        "station_slug": "eglise-d-auteuil"
+                    },
+                    {
+                        "slug": "gare-d-austerlitz",
+                        "name": "Gare d'Austerlitz",
+                        "description": "Gare Intercités vers le Sud-Ouest (Bordeaux, Toulouse, Limoges) et l'Espagne. Liaisons RER C. Halle métallique remarquable. Modernisation en cours dans le cadre du projet « Paris Rive Gauche ». Terminus est de la ligne 10.",
+                        "station": "Gare d'Austerlitz",
+                        "station_slug": "gare-d-austerlitz"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "mirabeau-quai-sureleve",
+                        "name": "Mirabeau — quai surélevé unique",
+                        "description": "Station signature de la ligne 10. Un de ses deux quais est surélevé pour passer au plus près des fondations de l'église d'Auteuil. Pente de 40 ‰ (40 mm par mètre) — la plus prononcée du métro parisien. Sensation d'envol depuis la rame.",
+                        "station": "Mirabeau",
+                        "station_slug": "mirabeau"
+                    },
+                    {
+                        "slug": "theatre-odeon",
+                        "name": "Théâtre de l'Odéon",
+                        "description": "Théâtre national fondé en 1782, bâtiment néo-classique. Salle Cleopâtre (790 places), salle Berthier (650 places). Programmation théâtrale contemporaine et classique. Sortie directe Odéon.",
+                        "station": "Odéon",
+                        "station_slug": "odeon"
+                    },
+                    {
+                        "slug": "bon-marche",
+                        "name": "Le Bon Marché Rive Gauche",
+                        "description": "Premier grand magasin de Paris, fondé en 1852. Architecture en fer et verre signée Eiffel/Boileau. La Grande Épicerie de Paris (alimentation gourmet) à côté. Style art de vivre rive gauche.",
+                        "station": "Sèvres-Babylone",
+                        "station_slug": "sevres-babylone"
+                    },
+                    {
+                        "slug": "jardin-des-plantes",
+                        "name": "Jardin des Plantes",
+                        "description": "Plus ancien jardin botanique de Paris (1635), 28 hectares. Ménagerie (zoo historique), serres tropicales, alpinarium, écoles de botanique. Voisin du Muséum national d'Histoire naturelle. Accès depuis Jussieu (3 min à pied).",
+                        "station": "Jussieu",
+                        "station_slug": "jussieu"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-latin-cluny",
+                        "name": "Quartier Latin",
+                        "description": "Cœur étudiant de Paris depuis le Moyen Âge. Sorbonne, Collège de France, École Normale Supérieure, Lycée Louis-le-Grand. Librairies historiques, cafés littéraires, restaurants. Boulevard Saint-Michel, place de la Sorbonne.",
+                        "station": "Cluny-La Sorbonne",
+                        "station_slug": "cluny-la-sorbonne"
+                    },
+                    {
+                        "slug": "quartier-saint-germain-mabillon",
+                        "name": "Saint-Germain-des-Prés",
+                        "description": "Quartier historique des intellectuels et artistes (Sartre, Beauvoir, Vian, Prévert). Place Saint-Germain, Café de Flore, Les Deux Magots, Brasserie Lipp. Galeries d'art, librairies, marchés (rue de Buci). Sortie Mabillon.",
+                        "station": "Mabillon",
+                        "station_slug": "mabillon"
+                    },
+                    {
+                        "slug": "auteuil-elegant-16e",
+                        "name": "Auteuil — le 16ᵉ élégant",
+                        "description": "Quartier résidentiel chic du 16ᵉ arrondissement. Architecture haussmannienne et Art déco, ambassades, hôtels particuliers. Maison de Balzac, Musée Marmottan-Monet (Impressionnisme). Hippodrome d'Auteuil, Bois de Boulogne à proximité.",
+                        "station": "Église d'Auteuil",
+                        "station_slug": "eglise-d-auteuil"
+                    },
+                    {
+                        "slug": "boulogne-pont-saint-cloud-quartier",
+                        "name": "Boulogne — Pont de Saint-Cloud",
+                        "description": "Commune des Hauts-de-Seine au sud-ouest de Paris. Bois de Boulogne, parc des Princes (PSG), Roland-Garros (tournoi), Stade Jean-Bouin (rugby). Hôtel de ville moderniste de Tony Garnier (1934).",
+                        "station": "Boulogne — Pont de Saint-Cloud",
+                        "station_slug": "boulogne-pont-saint-cloud"
+                    }
+                ]
+            },
+            {
+                "id": "gares",
+                "icon": "🚉",
+                "title": "Gares et grands pôles",
+                "category_url": "/gares/",
+                "pois": [
+                    {
+                        "slug": "gare-d-austerlitz",
+                        "name": "Gare d'Austerlitz",
+                        "description": "Gare Intercités vers le Sud-Ouest (Bordeaux, Toulouse, Limoges) et l'Espagne. Liaisons RER C. Halle métallique remarquable. Terminus est de la ligne 10. Correspondance ligne 5.",
+                        "station": "Gare d'Austerlitz",
+                        "station_slug": "gare-d-austerlitz"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "L'itinéraire Quartier Latin — De Mabillon à Jussieu",
+            "description": "Parcours culturel exceptionnel sur 6 stations en 1,5 km : Mabillon (Saint-Germain-des-Prés), Odéon (Théâtre de l'Odéon), Cluny-La Sorbonne (voûte Bazaine + Musée de Cluny + Sorbonne), Maubert-Mutualité (Notre-Dame proximité), Cardinal Lemoine (Panthéon proximité), Jussieu (Jardin des Plantes).",
+            "stops": [
+                "Mabillon",
+                "Odéon",
+                "Cluny-La Sorbonne",
+                "Maubert-Mutualité",
+                "Cardinal Lemoine",
+                "Jussieu"
+            ],
+            "duration_min": 12,
+            "icon": "🎓"
+        },
+        {
+            "title": "L'itinéraire Auteuil-Boulogne — Le 16ᵉ élégant",
+            "description": "Boucle Auteuil + extension Boulogne : Mirabeau (quai surélevé unique), Chardon Lagache, Michel-Ange-Molitor, Boulogne Jean Jaurès, Boulogne — Pont de Saint-Cloud. Proximité Roland-Garros, Hippodrome d'Auteuil, Bois de Boulogne, Parc des Princes.",
+            "stops": [
+                "Mirabeau",
+                "Chardon Lagache",
+                "Michel-Ange-Molitor",
+                "Boulogne Jean Jaurès",
+                "Boulogne — Pont de Saint-Cloud"
+            ],
+            "duration_min": 12,
+            "icon": "🎾"
+        },
+        {
+            "title": "L'itinéraire shopping Saint-Germain — Sèvres-Babylone",
+            "description": "Axe transversal 7ᵉ/6ᵉ arrondissements : Sèvres-Babylone (Le Bon Marché, La Grande Épicerie), Mabillon (rue de Buci marché), Odéon (librairies, cafés littéraires). Cœur historique Saint-Germain-des-Prés.",
+            "stops": [
+                "Sèvres-Babylone",
+                "Mabillon",
+                "Odéon"
+            ],
+            "duration_min": 5,
+            "icon": "🛍️"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Gare d'Austerlitz",
+                "slug": "gare-d-austerlitz"
+            },
+            "to": {
+                "name": "Cluny-La Sorbonne",
+                "slug": "cluny-la-sorbonne"
+            },
+            "duration_min": 5,
+            "transfers": 0,
+            "lines": [
+                "10"
+            ],
+            "description": "Axe Quartier Latin — accès rapide à la voûte Bazaine, à la Sorbonne et au Musée de Cluny depuis la gare",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Boulogne — Pont de Saint-Cloud",
+                "slug": "boulogne-pont-saint-cloud"
+            },
+            "to": {
+                "name": "Sèvres-Babylone",
+                "slug": "sevres-babylone"
+            },
+            "duration_min": 22,
+            "transfers": 0,
+            "lines": [
+                "10"
+            ],
+            "description": "Axe ouest-est complet — Boulogne 92 vers Le Bon Marché",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Sèvres-Babylone",
+                "slug": "sevres-babylone"
+            },
+            "to": {
+                "name": "Cluny-La Sorbonne",
+                "slug": "cluny-la-sorbonne"
+            },
+            "duration_min": 8,
+            "transfers": 0,
+            "lines": [
+                "10"
+            ],
+            "description": "Axe shopping vers culture — Bon Marché vers Quartier Latin",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Mirabeau",
+                "slug": "mirabeau"
+            },
+            "to": {
+                "name": "Église d'Auteuil",
+                "slug": "eglise-d-auteuil"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "10"
+            ],
+            "description": "Boucle Auteuil — découverte du quai surélevé Mirabeau et du 16ᵉ élégant",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Cardinal Lemoine",
+                "slug": "cardinal-lemoine"
+            },
+            "to": {
+                "name": "Boulogne Jean Jaurès",
+                "slug": "boulogne-jean-jaures"
+            },
+            "duration_min": 25,
+            "transfers": 0,
+            "lines": [
+                "10"
+            ],
+            "description": "Traversée Paris rive gauche — Panthéon vers banlieue ouest",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "La voûte Bazaine de Cluny-La Sorbonne",
+            "slug": "voute-bazaine-cluny",
+            "url": "/info-trafic/voute-bazaine-cluny/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "400 m² de mosaïque, 60 000 tesselles, signatures d'étudiants célèbres : récit de l'œuvre de Jean Bazaine pour la réouverture de la station fantôme en 1988.",
+            "author": "Élodie",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 7,
+            "image": ""
+        },
+        {
+            "title": "Mirabeau — la station qui s'envole",
+            "slug": "mirabeau-quai-sureleve",
+            "url": "/info-trafic/mirabeau-quai-sureleve/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Quai surélevé unique au métro parisien, pente de 40 ‰ : pourquoi la station Mirabeau a une disposition si particulière.",
+            "author": "Ludo",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 5,
+            "image": ""
+        },
+        {
+            "title": "MF19 — première ligne du réseau (octobre 2025)",
+            "slug": "mf19-ligne-10-octobre-2025",
+            "url": "/info-trafic/mf19-ligne-10-octobre-2025/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "La ligne 10 inaugure le nouveau matériel MF19 d'Alstom. Bénéfices, calendrier de déploiement, fin du règne MF67.",
+            "author": "Ludo",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "La ligne 10, l'unique tracé en U du métro parisien",
+            "slug": "ligne-10-trace-en-u",
+            "url": "/info-trafic/ligne-10-trace-en-u/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "Boucle Auteuil, traversée du 7ᵉ, Quartier Latin, Gare d'Austerlitz : pourquoi la ligne 10 a un tracé si sinueux ? Héritage des réorganisations de 1937.",
+            "author": "Ludo",
+            "published_at": "2026-03-25T08:30:00",
+            "published_label": "Mars 2026",
+            "reading_time": 4,
+            "image": ""
+        }
+    ],
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:Rame_MF67_Station_Mirabeau_M%C3%A9tro_Paris_Ligne_10_-_Paris_XVI_(FR75)_-_2022-07-04_-_1.jpg",
+        "alt": "Rame MF67 à la station Mirabeau de la ligne 10 du métro parisien — quai surélevé unique du réseau",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Rame_MF67_Station_Mirabeau_M%C3%A9tro_Paris_Ligne_10_-_Paris_XVI_(FR75)_-_2022-07-04_-_1.jpg",
+            "date": "2022-07-04",
+            "description": "Rame MF67 à la station Mirabeau, l'une des deux stations signature de la ligne 10. Quai surélevé unique du métro parisien (pente 40‰), passant au plus près des fondations de l'église d'Auteuil. Témoignage du matériel MF67 historique (1994-2025), en cours de remplacement par le MF19 depuis octobre 2025"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-10/ligne-10-400.avif",
+                "800": "/assets/img/lines/ligne-10/ligne-10-800.avif",
+                "1200": "/assets/img/lines/ligne-10/ligne-10-1200.avif",
+                "1600": "/assets/img/lines/ligne-10/ligne-10-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-10/ligne-10-400.webp",
+                "800": "/assets/img/lines/ligne-10/ligne-10-800.webp",
+                "1200": "/assets/img/lines/ligne-10/ligne-10-1200.webp",
+                "1600": "/assets/img/lines/ligne-10/ligne-10-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-10/ligne-10-400.jpg",
+                "800": "/assets/img/lines/ligne-10/ligne-10-800.jpg",
+                "1200": "/assets/img/lines/ligne-10/ligne-10-1200.jpg",
+                "1600": "/assets/img/lines/ligne-10/ligne-10-1600.jpg"
+            }
+        }
+    }
 }
