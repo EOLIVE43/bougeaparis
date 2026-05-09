@@ -51,17 +51,20 @@
         {
             "name": "Pont de Levallois - Bécon",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Anatole France",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Louise Michel",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Porte de Champerret",
@@ -72,7 +75,8 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Péreire Levallois",
@@ -83,17 +87,20 @@
                     "color": "#F3D006"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Wagram",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Malesherbes",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Villiers",
@@ -104,7 +111,8 @@
                     "color": "#0064B0"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Europe",
@@ -135,7 +143,8 @@
                     "color": "#7A99C9"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Gare Saint-Lazare",
@@ -176,7 +185,8 @@
                     "color": "#7A99C9"
                 }
             ],
-            "accessible": true
+            "accessible": true,
+            "is_major": true
         },
         {
             "name": "Havre - Caumartin",
@@ -232,7 +242,8 @@
                     "color": "#7A99C9"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Opéra",
@@ -258,7 +269,8 @@
                     "color": "#E2231A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Quatre Septembre",
@@ -274,17 +286,20 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Bourse",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Sentier",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Réaumur - Sébastopol",
@@ -305,7 +320,8 @@
                     "color": "#D5C900"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Arts et Métiers",
@@ -316,7 +332,8 @@
                     "color": "#8D5E2A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Temple",
@@ -342,7 +359,8 @@
                     "color": "#8D5E2A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "République",
@@ -368,17 +386,20 @@
                     "color": "#8D5E2A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Parmentier",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Rue Saint-Maur",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Père Lachaise",
@@ -389,7 +410,8 @@
                     "color": "#0064B0"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Gambetta",
@@ -400,17 +422,1262 @@
                     "color": "#98D4E2"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Gallieni",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Porte de Bagnolet",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         }
-    ]
+    ],
+    "color_light": "#ECEAD3",
+    "daily_riders": 360000,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-09",
+            "updated": "2026-05-09",
+            "updated_human": "9 mai 2026",
+            "published_label": "9 mai 2026",
+            "updated_label": "9 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 3 du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_3_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "seo": {
+        "h1": "Métro Ligne 3 Paris : plan, horaires et trafic",
+        "title": "Métro Ligne 3 Paris : 25 stations, traversée nord, Saint-Lazare, Père-Lachaise",
+        "description": "Tout sur la ligne 3 du métro parisien : Pont de Levallois ↔ Gallieni, 25 stations, traversée nord d'ouest en est, Saint-Lazare la plus fréquentée, Père-Lachaise.",
+        "lead": "Toute l'info sur la <strong>ligne 3 du métro parisien</strong>, axe traversier nord d'ouest en est reliant <strong>Pont de Levallois — Bécon</strong> (Hauts-de-Seine 92) à <strong>Gallieni</strong> (Bagnolet 93). <strong>25 stations</strong> sur 11,7 km, environ <strong>360 000 voyageurs par jour</strong>. Troisième ligne ouverte du métro parisien (19 octobre 1904). Axe stratégique : <strong>Saint-Lazare</strong> (l'une des stations les plus fréquentées du réseau, 34,5 millions/an), grands magasins (Printemps, Galeries Lafayette), <strong>Opéra Garnier</strong>, Bourse, Arts et Métiers, République, <strong>Père-Lachaise</strong> (premier escalier mécanique du métro 1909). Particularité unique : la ligne 3 a une <strong>ramification historique</strong> — la ligne 3bis, née d'une scission en 1971."
+    },
+    "intros": {
+        "introduction_title": "traversée nord d'ouest en est, axe grands magasins + Père-Lachaise",
+        "introduction": "La <strong>ligne 3 du métro parisien</strong> traverse Paris d'ouest en est par le nord, depuis <strong>Pont de Levallois — Bécon</strong> (Hauts-de-Seine 92) jusqu'à <strong>Gallieni</strong> (Bagnolet 93). <strong>25 stations</strong> sur 11,7 kilomètres, environ <strong>360 000 voyageurs par jour</strong>. Troisième ligne ouverte du métro parisien le <strong>19 octobre 1904</strong>, après la 1 (juillet 1900) et la 2 (décembre 1900). Axe historique majeur du nord parisien.",
+        "plan": "Le tracé de la ligne 3 dessert les quartiers stratégiques du nord parisien : <strong>Levallois-Perret</strong> (Hauts-de-Seine, quartier d'affaires), <strong>Champerret</strong> (Palais des Congrès), 17ᵉ arrondissement résidentiel, <strong>Saint-Lazare</strong> (gare et quartier des grands magasins — Printemps Haussmann + Galeries Lafayette), <strong>Opéra</strong> (Opéra Garnier), <strong>Bourse</strong> (Palais Brongniart), quartier du <strong>Sentier</strong> (textile traditionnel), <strong>Arts et Métiers</strong> (Musée + station Nautilus partagée avec la ligne 11), <strong>République</strong>, <strong>Père-Lachaise</strong> (cimetière touristique majeur), et <strong>Gallieni</strong> (Bagnolet, Gare Routière Internationale).",
+        "stations": "La ligne 3 compte 25 stations dont les pôles d'échanges majeurs : <strong>Pont de Levallois — Bécon</strong> (terminus ouest), <strong>Porte de Champerret</strong>, <strong>Wagram</strong>, <strong>Villiers</strong> (ligne 2), <strong>Saint-Lazare</strong> (lignes 9, 12, 13, 14, RER E + Transilien J/L — l'une des stations les plus fréquentées du réseau), <strong>Opéra</strong> (lignes 7, 8, RER A), <strong>Bourse</strong>, <strong>Arts et Métiers</strong> (ligne 11), <strong>République</strong> (lignes 5, 8, 9, 11), <strong>Père-Lachaise</strong> (ligne 2), <strong>Gambetta</strong> (correspondance ligne 3bis), <strong>Gallieni</strong> (terminus est, gare routière internationale).",
+        "horaires": "Le service de la ligne 3 fonctionne tous les jours de 5h30 à 1h15, avec prolongation jusqu'à 2h15 les vendredis, samedis et veilles de fêtes. La fréquence est d'environ 2 minutes en heure de pointe et 4 à 5 minutes le soir et le week-end.",
+        "trafic": "La ligne 3 connaît une affluence soutenue, principalement liée à Saint-Lazare (la station la plus fréquentée du réseau). Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "La ligne 3 propose des trajets stratégiques : <strong>Saint-Lazare → Opéra</strong> en 3 minutes (axe grands magasins), <strong>Saint-Lazare → République</strong> en 10 minutes (axe nord-est), <strong>Pont de Levallois → Saint-Lazare</strong> en 12 minutes (banlieue ouest vers gare), <strong>Opéra → Père-Lachaise</strong> en 12 minutes (axe culture), <strong>République → Gallieni</strong> en 12 minutes (sortie Paris vers Bagnolet).",
+        "que_voir": "La ligne 3 dessert un parcours commercial et culturel exceptionnel : <strong>Printemps Haussmann</strong> (Saint-Lazare), <strong>Galeries Lafayette</strong> (Havre-Caumartin), <strong>Opéra Garnier</strong> (Opéra), <strong>Palais Brongniart — ancienne Bourse</strong> (Bourse), <strong>Musée des Arts et Métiers</strong> (Arts et Métiers, station Nautilus partagée avec la ligne 11), <strong>place de la République</strong>, <strong>cimetière du Père-Lachaise</strong> (sépultures de Jim Morrison, Édith Piaf, Oscar Wilde, Frédéric Chopin, Marcel Proust...).",
+        "histoire": "Inaugurée le <strong>19 octobre 1904</strong> entre Père-Lachaise et Villiers, la ligne 3 est la <strong>3ᵉ ligne ouverte du métro parisien</strong>. En <strong>1909</strong>, installation du <strong>premier escalier mécanique</strong> du métro parisien à la station Père-Lachaise (correspondance L2/L3). Innovation majeure de l'époque. Le <strong>27 mars 1971</strong>, événement historique : la branche Gambetta ↔ Porte des Lilas est <strong>scindée</strong> et devient la <strong>ligne 3bis</strong> indépendante, tandis que la ligne 3 est prolongée à Gallieni (Bagnolet).",
+        "accessibilite": "La ligne 3 est l'une des moins accessibles aux personnes à mobilité réduite : son infrastructure historique 1904-1937 implique des escaliers d'origine difficiles à équiper d'ascenseurs. Les stations modernisées récentes (Gallieni 1971, Saint-Lazare en correspondance avec la ligne 14 modernisée) sont légèrement mieux équipées. Le matériel <strong>MF67</strong> propose des annonces sonores et visuelles complètes.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 3 fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "La ligne 3 est en attente du remplacement matériel : le <strong>MF67</strong> historique doit être progressivement remplacé par le <strong>MF19</strong>, calendrier précis à confirmer. Programme régulier d'entretien des stations à fort flux (Saint-Lazare, Opéra, République).",
+        "faq": "Quelle est la station la plus fréquentée, comment aller aux Galeries Lafayette, qu'est-ce que la ligne 3bis : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 3.",
+        "articles_lies": "Trafic en direct, dossiers patrimoine (premier escalier mécanique 1909, scission ligne 3bis 1971, station Parmentier pomme de terre) et conseils pratiques : retrouvez les derniers articles de BougeaParis dédiés à la ligne 3.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "2",
+                "color": "#0064B0",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Villiers",
+                    "Père Lachaise"
+                ],
+                "name": "Ligne 2",
+                "url": "/metro/ligne-2/"
+            },
+            {
+                "code": "3bis",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Gambetta"
+                ],
+                "name": "Ligne 3bis",
+                "url": "/metro/ligne-3bis/"
+            },
+            {
+                "code": "4",
+                "color": "#C04191",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Réaumur - Sébastopol"
+                ],
+                "name": "Ligne 4",
+                "url": "/metro/ligne-4/"
+            },
+            {
+                "code": "5",
+                "color": "#F28E42",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Temple",
+                    "République"
+                ],
+                "name": "Ligne 5",
+                "url": "/metro/ligne-5/"
+            },
+            {
+                "code": "7",
+                "color": "#F3A4BA",
+                "color_text": "#000000",
+                "stations": [
+                    "Havre - Caumartin",
+                    "Opéra"
+                ],
+                "name": "Ligne 7",
+                "url": "/metro/ligne-7/"
+            },
+            {
+                "code": "8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "stations": [
+                    "Havre - Caumartin",
+                    "Opéra",
+                    "Quatre Septembre",
+                    "Réaumur - Sébastopol",
+                    "Temple",
+                    "République"
+                ],
+                "name": "Ligne 8",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "stations": [
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin",
+                    "Opéra",
+                    "Quatre Septembre",
+                    "Réaumur - Sébastopol",
+                    "Temple",
+                    "République"
+                ],
+                "name": "Ligne 9",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Arts et Métiers",
+                    "Temple",
+                    "République"
+                ],
+                "name": "Ligne 11",
+                "url": "/metro/ligne-11/"
+            },
+            {
+                "code": "12",
+                "color": "#00814F",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Europe",
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "Ligne 12",
+                "url": "/metro/ligne-12/"
+            },
+            {
+                "code": "13",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "stations": [
+                    "Europe",
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "Ligne 13",
+                "url": "/metro/ligne-13/"
+            },
+            {
+                "code": "14",
+                "color": "#662483",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Europe",
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "Ligne 14",
+                "url": "/metro/ligne-14/"
+            }
+        ],
+        "connections_rer": [
+            {
+                "code": "A",
+                "color": "#E2231A",
+                "color_text": "#FFF",
+                "stations": [
+                    "Havre - Caumartin",
+                    "Opéra"
+                ],
+                "name": "RER A",
+                "url": "/rer/rer-a/"
+            },
+            {
+                "code": "C",
+                "color": "#F3D006",
+                "color_text": "#FFF",
+                "stations": [
+                    "Porte de Champerret",
+                    "Péreire Levallois"
+                ],
+                "name": "RER C",
+                "url": "/rer/rer-c/"
+            },
+            {
+                "code": "E",
+                "color": "#C28FC4",
+                "color_text": "#FFF",
+                "stations": [
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "RER E",
+                "url": "/rer/rer-e/"
+            }
+        ],
+        "connections_other": [
+            {
+                "code": "J",
+                "color": "#D5C900",
+                "color_text": "#FFF",
+                "stations": [
+                    "Europe",
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "Transilien J",
+                "url": "/transilien/j/"
+            },
+            {
+                "code": "L",
+                "color": "#7A99C9",
+                "color_text": "#FFF",
+                "stations": [
+                    "Europe",
+                    "Gare Saint-Lazare",
+                    "Havre - Caumartin"
+                ],
+                "name": "Transilien L",
+                "url": "/transilien/l/"
+            }
+        ],
+        "discover_metro_lines": [
+            {
+                "code": "3",
+                "name": "Ligne 3",
+                "color": "#9F9825",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-3/",
+                "is_current": true
+            },
+            {
+                "code": "9",
+                "name": "Ligne 9",
+                "color": "#D5C900",
+                "color_text": "#000000",
+                "url": "/metro/ligne-9/"
+            },
+            {
+                "code": "8",
+                "name": "Ligne 8",
+                "color": "#CEADD2",
+                "color_text": "#000000",
+                "url": "/metro/ligne-8/"
+            },
+            {
+                "code": "11",
+                "name": "Ligne 11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-11/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1904",
+                "title": "Ouverture Père-Lachaise ↔ Villiers",
+                "icon": "🎉",
+                "description": "Le 19 octobre 1904, ouverture du tronçon initial sous l'appellation « ligne 3 ». TROISIÈME LIGNE OUVERTE du métro parisien après la 1 (juillet 1900) et la 2 (décembre 1900). Réseau métropolitain en pleine expansion."
+            },
+            {
+                "year": "1904",
+                "title": "Prolongement à Place Gambetta",
+                "icon": "🚇",
+                "description": "Le 23 octobre 1904, prolongement Père-Lachaise ↔ Place Gambetta. La ligne s'étend rapidement vers l'est, Gambetta devenant le terminus historique avant le prolongement de 1971."
+            },
+            {
+                "year": "1909",
+                "title": "Premier escalier mécanique du métro",
+                "icon": "⚙️",
+                "description": "Installation du PREMIER ESCALIER MÉCANIQUE du métro parisien à la station Père-Lachaise (correspondance L2/L3). Innovation majeure de l'époque, ensuite généralisée sur l'ensemble du réseau parisien puis exportée mondialement."
+            },
+            {
+                "year": "1910",
+                "title": "Prolongement Villiers ↔ Pereire",
+                "icon": "📍",
+                "description": "La ligne 3 s'étend vers l'ouest, premier passage dans le 17ᵉ arrondissement résidentiel."
+            },
+            {
+                "year": "1937",
+                "title": "Prolongement Pont de Levallois — Bécon",
+                "icon": "🏗️",
+                "description": "Prolongement final ouest jusqu'à Pont de Levallois — Bécon (terminus actuel ouest). Première sortie de la ligne 3 hors Paris vers la banlieue 92."
+            },
+            {
+                "year": "1971",
+                "title": "SCISSION DE LA LIGNE 3BIS",
+                "icon": "🔀",
+                "description": "Le 27 mars 1971, ÉVÉNEMENT FONDATEUR : la branche Gambetta ↔ Porte des Lilas est SCINDÉE et devient indépendante sous le nom de LIGNE 3BIS. Avant cette date, les rames de la 3 alternaient entre les deux terminus (Pont de Levallois et Porte des Lilas). Le tronc principal est prolongé à Gallieni."
+            },
+            {
+                "year": "1971",
+                "title": "Prolongement à Gallieni",
+                "icon": "📍",
+                "description": "Prolongement à Gallieni (Bagnolet 93) — terminus actuel est. Désenclavement de la banlieue 93 nord-est et accès à la Gare Routière Internationale."
+            },
+            {
+                "year": "2011",
+                "title": "Voie lactée — œuvre Cadieux à Saint-Lazare",
+                "icon": "🎨",
+                "description": "Installation de l'œuvre « La Voie lactée » de l'artiste québécoise Geneviève Cadieux dans le couloir de correspondance Saint-Lazare (lignes 14↔9). Mosaïque représentant des lèvres monumentales — œuvre photographique transposée en mosaïque."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "25",
+                "label": "Stations",
+                "description": "De Pont de Levallois — Bécon (Hauts-de-Seine 92) à Gallieni (Bagnolet 93). Traversée nord de Paris d'ouest en est."
+            },
+            {
+                "value": "34,5M",
+                "label": "Saint-Lazare voyageurs/an",
+                "description": "L'une des stations les plus fréquentées du réseau parisien (34,53 millions de voyageurs/an, chiffre 2004 toutes lignes confondues). Connectée à la plus grande gare ferroviaire de Paris."
+            },
+            {
+                "value": "1904",
+                "label": "3ᵉ ligne du réseau",
+                "description": "Ouverte le 19 octobre 1904, après la 1 (juillet 1900) et la 2 (décembre 1900). L'une des plus anciennes lignes du métro parisien."
+            },
+            {
+                "value": "360k",
+                "label": "Voyageurs par jour",
+                "description": "Affluence soutenue liée à Saint-Lazare et au tronçon central (Opéra, Bourse, République, Père-Lachaise)."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "Le premier escalier mécanique du métro à Père-Lachaise",
+                "description": "En 1909, installation du <strong>tout premier escalier mécanique</strong> du métro parisien à la station Père-Lachaise (correspondance L2/L3). Innovation majeure de l'époque, témoignage de la modernité du réseau parisien dans son siècle. La technologie sera ensuite progressivement généralisée à l'ensemble du réseau puis exportée dans le monde entier."
+            },
+            {
+                "title": "La scission de la 3bis en 1971",
+                "description": "Peu de Parisiens savent que la <strong>ligne 3bis est née d'une scission de la 3</strong>. Avant le 27 mars 1971, les rames de la ligne 3 alternaient entre les deux terminus est : Gallieni (en projet) ou Porte des Lilas. Quand la 3 a été prolongée à Gallieni en 1971, la branche Porte des Lilas a été <strong>détachée</strong> et exploitée en navette indépendante — naissance de la ligne 3bis. La station Gambetta reste le point de jonction historique entre les deux."
+            },
+            {
+                "title": "Saint-Lazare et la « Voie lactée » de Cadieux",
+                "description": "Depuis 2011, le couloir de correspondance entre les lignes 14 et 9 à Saint-Lazare héberge l'œuvre <strong>« La Voie lactée »</strong> de l'artiste québécoise <strong>Geneviève Cadieux</strong>. Mosaïque monumentale représentant des <strong>lèvres</strong>, œuvre photographique transposée en mosaïque. Patrimoine artistique parisien moderne, à découvrir le temps d'une correspondance."
+            },
+            {
+                "title": "Parmentier — la station qui célèbre la pomme de terre",
+                "description": "La station <strong>Parmentier</strong> rend hommage à l'agronome <strong>Antoine Parmentier</strong> (1737-1813), célèbre pour avoir popularisé la pomme de terre en France au XVIIIᵉ siècle. Décorations murales évoquant le tubercule et son histoire. Anecdote culinaire dans le métro parisien — l'une des stations à thématique légère du réseau."
+            },
+            {
+                "title": "Saint-Lazare — la station la plus fréquentée",
+                "description": "<strong>34,53 millions de voyageurs par an</strong> (chiffre 2004, toutes lignes confondues) — Saint-Lazare ligne 3 est l'une des stations les plus fréquentées du réseau parisien. La gare ferroviaire au-dessus dessert la Normandie et toute l'Île-de-France ouest, soit environ 450 000 voyageurs/jour. Pôle multimodal majeur (lignes 3, 9, 12, 13, 14, RER E, Transilien J/L)."
+            },
+            {
+                "title": "Gallieni — passerelle vers l'Europe",
+                "description": "Le terminus est, <strong>Gallieni</strong> (Bagnolet), dessert la <strong>Gare Routière Internationale</strong> — l'une des plus importantes d'Europe. Bus internationaux Eurolines, FlixBus et autres compagnies vers l'Allemagne, l'Espagne, l'Italie, le Royaume-Uni, les pays de l'Est. Point de départ de nombreux voyages low-cost européens depuis Paris."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Quelle est la station la plus fréquentée de la ligne 3 ?",
+            "answer": "<strong>Saint-Lazare</strong> avec environ <strong>34,53 millions de voyageurs par an</strong> (chiffre 2004, toutes lignes confondues). L'une des stations les plus fréquentées du réseau parisien. Connectée à la plus grande gare ferroviaire de Paris (gare Saint-Lazare). Pôle multimodal majeur (lignes 3, 9, 12, 13, 14, RER E + Transilien J/L)."
+        },
+        {
+            "question": "Comment aller aux Galeries Lafayette via la ligne 3 ?",
+            "answer": "Descendre à <strong>Havre-Caumartin</strong> (correspondance ligne 9 + RER A) ou à <strong>Opéra</strong>. Sortie directe sur le Boulevard Haussmann face aux Galeries Lafayette. Le Printemps Haussmann est juste à côté."
+        },
+        {
+            "question": "La ligne 3 dessert-elle la Bourse de Paris ?",
+            "answer": "Oui, station <strong>Bourse</strong> — accès direct au <strong>Palais Brongniart</strong>, ancien siège de la Bourse de Paris (1826-1998). Aujourd'hui centre événementiel et de congrès. Architecture néoclassique remarquable."
+        },
+        {
+            "question": "Comment aller au Père-Lachaise via la ligne 3 ?",
+            "answer": "Descendre à <strong>Père-Lachaise</strong> (correspondance ligne 2). Accès direct au cimetière. La station est aussi historique : c'est ici qu'a été installé en 1909 le <strong>premier escalier mécanique du métro parisien</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la ligne 3bis ?",
+            "answer": "La <strong>ligne 3bis</strong> est née d'une <strong>scission de la 3</strong> en 1971. Avant cette date, la branche Gambetta ↔ Porte des Lilas faisait partie de la ligne 3. Quand la 3 a été prolongée à Gallieni le 27 mars 1971, la branche Porte des Lilas a été détachée et exploitée en navette indépendante sous le nom de <strong>3bis</strong>. Station de jonction historique : Gambetta."
+        },
+        {
+            "question": "Combien de temps pour traverser la ligne 3 ?",
+            "answer": "Comptez environ <strong>25 à 30 minutes</strong> pour le trajet complet entre Pont de Levallois — Bécon et Gallieni, soit la traversée nord d'ouest en est de Paris."
+        },
+        {
+            "question": "La ligne 3 est-elle accessible PMR ?",
+            "answer": "Très peu. L'infrastructure historique 1904-1937 implique des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure. Les stations modernisées récentes (Gallieni 1971, Saint-Lazare en correspondance avec la ligne 14 modernisée) offrent un accès partiel. Le matériel MF67 propose des annonces sonores et visuelles complètes."
+        },
+        {
+            "question": "Quel est le matériel actuel de la ligne 3 ?",
+            "answer": "Le matériel <strong>MF67</strong> historique est en cours de remplacement progressif. Le <strong>MF19</strong> est prévu, calendrier précis à confirmer (vague indication post-2027 selon IDFM)."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 2,
+            "total_count": 25,
+            "accessibility_rate": 8,
+            "elevators_count": 4,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "label": "Accessibilité limitée (~8 %)",
+                "description": "Environ 2 stations sur 25 disposent d'ascenseurs PMR. Principalement le terminus est Gallieni (1971) et la correspondance avec la ligne 14 à Saint-Lazare (modernisée)."
+            },
+            {
+                "icon": "🚆",
+                "label": "Matériel MF67 historique",
+                "description": "Le matériel MF67 propose des annonces sonores et visuelles complètes. Remplacement par le MF19 prévu, calendrier à confirmer."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations historiques contraignantes",
+                "description": "Les stations centrales ouvertes en 1904-1937 (Saint-Lazare, Opéra, République, Père-Lachaise) ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
+            },
+            {
+                "icon": "🔊",
+                "label": "Annonces sonores et visuelles",
+                "description": "Le SIEL (Système d'Information en Ligne) affiche les prochaines rames sur écrans LCD aux quais. Annonces vocales systématiques en rame."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Privilégier les correspondances accessibles",
+                "description": "Pour un voyage PMR sur la ligne 3, privilégier les correspondances avec des lignes accessibles : ligne 14 à Saint-Lazare (totalement accessible), ligne 11 à République (modernisée), terminus Gallieni à l'est."
+            },
+            {
+                "title": "Vérifier l'accessibilité avant de partir",
+                "description": "Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage pour vérifier les ascenseurs disponibles à la station de destination."
+            },
+            {
+                "title": "Service Accès Plus",
+                "description": "Pour un trajet PMR sécurisé, demander 24 h à l'avance le service Accès Plus d'Île-de-France Mobilités : un agent accompagne du quai d'origine au quai de destination."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-09",
+        "current_works": [],
+        "upcoming_works": [
+            {
+                "icon": "🚆",
+                "title": "Remplacement MF67 → MF19",
+                "completed_label": "Calendrier à confirmer",
+                "description": "Programme de remplacement progressif du MF67 historique par le MF19. Calendrier précis à confirmer (vague indication post-2027 selon IDFM).",
+                "dates_label": "Post-2027"
+            }
+        ],
+        "recent_works": [
+            {
+                "icon": "📺",
+                "title": "Modernisation SIEL et écrans voyageurs",
+                "completed_label": "Terminé 2024",
+                "description": "Mise à jour des écrans d'information voyageur sur l'ensemble des stations, intégration des données trafic temps réel via PRIM IDFM.",
+                "dates_label": "2024"
+            },
+            {
+                "icon": "🎨",
+                "title": "« La Voie lactée » de Cadieux à Saint-Lazare",
+                "completed_label": "Inauguré 2011",
+                "description": "Installation de l'œuvre monumentale de l'artiste québécoise Geneviève Cadieux dans le couloir de correspondance Saint-Lazare (lignes 14↔9). Mosaïque représentant des lèvres monumentales.",
+                "dates_label": "2011"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Opéra Garnier",
+                    "slug": "opera-garnier",
+                    "station": "Opéra",
+                    "station_slug": "opera",
+                    "icon": "🎭",
+                    "description": "Chef-d'œuvre du Second Empire inauguré en 1875 par Charles Garnier. Façade monumentale, grand escalier, plafond Chagall. Visite et spectacles d'opéra et de ballet. Accessible directement via la sortie nord de la station Opéra.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Palais Brongniart — ancienne Bourse",
+                    "slug": "palais-brongniart-bourse",
+                    "station": "Bourse",
+                    "station_slug": "bourse",
+                    "icon": "🏛️",
+                    "description": "Ancien siège de la Bourse de Paris (1826-1998). Architecture néoclassique d'Alexandre-Théodore Brongniart, achevée 1826. Aujourd'hui centre événementiel et de congrès. Sortie directe Bourse.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Place de la République",
+                    "slug": "place-de-la-republique",
+                    "station": "République",
+                    "station_slug": "republique",
+                    "icon": "🗽",
+                    "description": "Vaste place centrale de Paris dominée par la statue de Marianne (1883), 9 m de haut. Pôle de manifestations citoyennes, vie nocturne, marché de Noël hivernal. Réaménagée en 2013 avec une grande esplanade piétonne.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Cimetière du Père-Lachaise",
+                    "slug": "cimetiere-pere-lachaise",
+                    "station": "Père-Lachaise",
+                    "station_slug": "pere-lachaise",
+                    "icon": "🌳",
+                    "description": "Plus grand cimetière intra-muros de Paris (44 ha). Sépultures célèbres : Jim Morrison, Édith Piaf, Oscar Wilde, Frédéric Chopin, Honoré de Balzac, Marcel Proust, Jean de La Fontaine, Molière. Allées arborées, monuments funéraires Art nouveau et Art déco.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Gare Saint-Lazare",
+                    "slug": "gare-saint-lazare",
+                    "station": "Saint-Lazare",
+                    "station_slug": "saint-lazare",
+                    "icon": "🚆",
+                    "description": "Gare Saint-Lazare, l'une des 6 grandes gares parisiennes. Trains Transilien J et L vers la Normandie et la banlieue ouest, RER E. Environ 450 000 voyageurs par jour. Pôle multimodal (lignes 3, 9, 12, 13, 14).",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Galeries Lafayette Haussmann",
+                    "slug": "galeries-lafayette",
+                    "station": "Havre-Caumartin",
+                    "station_slug": "havre-caumartin",
+                    "icon": "🛍️",
+                    "description": "Grand magasin emblématique fondé en 1893. Coupole Art nouveau classée Monument historique (1912). Toit-terrasse panoramique sur Paris (gratuit). Accès direct via Havre-Caumartin (correspondance ligne 9 + RER A).",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Musée des Arts et Métiers",
+                    "slug": "musee-arts-et-metiers",
+                    "station": "Arts et Métiers",
+                    "station_slug": "arts-et-metiers",
+                    "icon": "⚙️",
+                    "description": "Conservatoire National des Arts et Métiers, fondé en 1794. Collections d'instruments scientifiques, machines industrielles, prototypes historiques (pendule de Foucault, avion de Clément Ader, maquette de la Statue de la Liberté de Bartholdi). Sortie directe de la station — quais habillés de cuivre style Nautilus (design Schuiten 1994, partagé avec la ligne 11).",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Voie lactée — Geneviève Cadieux",
+                    "slug": "voie-lactee-cadieux-saint-lazare",
+                    "station": "Saint-Lazare",
+                    "station_slug": "saint-lazare",
+                    "icon": "💋",
+                    "description": "Œuvre monumentale de l'artiste québécoise Geneviève Cadieux (2011) dans le couloir de correspondance Saint-Lazare entre les lignes 14 et 9. Mosaïque représentant des lèvres, œuvre photographique transposée en mosaïque. Patrimoine artistique parisien moderne, à découvrir le temps d'une correspondance.",
+                    "schema_type": "Museum"
+                },
+                {
+                    "name": "Printemps Haussmann",
+                    "slug": "printemps-haussmann",
+                    "station": "Havre-Caumartin",
+                    "station_slug": "havre-caumartin",
+                    "icon": "🛍️",
+                    "description": "Grand magasin fondé en 1865, l'un des plus anciens de Paris. Coupole Art nouveau classée Monument historique. Toit-terrasse Brasserie Printemps avec vue panoramique sur Paris. Accès Havre-Caumartin ou Saint-Lazare.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Musée Jean-Jacques Henner",
+                    "slug": "musee-jean-jacques-henner",
+                    "station": "Malesherbes",
+                    "station_slug": "malesherbes",
+                    "icon": "🎨",
+                    "description": "Musée national consacré au peintre alsacien Jean-Jacques Henner (1829-1905), installé dans l'hôtel particulier où il vécut et travailla. Collection de tableaux, dessins et sculptures dans le décor d'origine. Sortie directe Malesherbes.",
+                    "schema_type": "Museum"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Quartier du Sentier",
+                    "slug": "quartier-sentier-textile",
+                    "station": "Sentier",
+                    "station_slug": "sentier",
+                    "icon": "🧵",
+                    "description": "Quartier historique du textile parisien (2ᵉ arrondissement). Confection, prêt-à-porter, grossistes. Évolution récente : start-ups numériques (« Silicon Sentier »), restaurants tendance, vie nocturne. Architecture Restauration et Belle Époque.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier des Grands Boulevards",
+                    "slug": "quartier-grands-boulevards",
+                    "station": "Bourse",
+                    "station_slug": "bourse",
+                    "icon": "🎭",
+                    "description": "Axe boulevardier historique du nord parisien (Madeleine ↔ République). Théâtres (Théâtre des Variétés, Folies Bergère), passages couverts XIXᵉ siècle (Galerie Vivienne, Passage des Panoramas), brasseries, vie nocturne.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Père-Lachaise — quartier",
+                    "slug": "quartier-pere-lachaise-est",
+                    "station": "Père-Lachaise",
+                    "station_slug": "pere-lachaise",
+                    "icon": "🌳",
+                    "description": "Quartier populaire du 20ᵉ arrondissement, autour du cimetière. Rue de la Roquette, rue Saint-Maur, ambiance villageoise. Cafés, boulangeries traditionnelles, scène artistique alternative.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Levallois-Perret — quartier d'affaires",
+                    "slug": "quartier-levallois",
+                    "station": "Pont de Levallois — Bécon",
+                    "station_slug": "pont-de-levallois-becon",
+                    "icon": "🏢",
+                    "description": "Commune limitrophe au nord-ouest de Paris (Hauts-de-Seine). Pôle d'affaires (sièges sociaux), parc de la Planchette, île de la Jatte (peintres impressionnistes Seurat). Architecture moderne et résidentielle haut de gamme.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "gares": {
+            "title_template": "Gares et grands pôles desservis par la ligne {code}",
+            "icon": "🚉",
+            "color_gradient": "linear-gradient(135deg, #4299E1 0%, #2563AC 100%)",
+            "category_url": "/gares/",
+            "items": [
+                {
+                    "name": "Gare Saint-Lazare",
+                    "slug": "gare-saint-lazare",
+                    "station": "Saint-Lazare",
+                    "station_slug": "saint-lazare",
+                    "icon": "🚆",
+                    "description": "Gare Saint-Lazare, l'une des 6 grandes gares parisiennes. Trains Transilien J et L vers la Normandie et la banlieue ouest, RER E. Environ 450 000 voyageurs par jour. Pôle multimodal (lignes 3, 9, 12, 13, 14). La station métro la plus fréquentée du réseau.",
+                    "schema_type": "TrainStation"
+                },
+                {
+                    "name": "Gare Routière Internationale Gallieni",
+                    "slug": "gare-routiere-internationale-gallieni",
+                    "station": "Gallieni",
+                    "station_slug": "gallieni",
+                    "icon": "🚌",
+                    "description": "Gare routière internationale de Bagnolet, l'une des plus importantes d'Europe. Bus internationaux Eurolines, FlixBus, BlaBlaBus vers Allemagne, Espagne, Italie, Royaume-Uni, pays de l'Est. Point de départ de nombreux voyages low-cost européens depuis Paris.",
+                    "schema_type": "BusStation"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "opera-garnier",
+                        "name": "Opéra Garnier",
+                        "description": "Chef-d'œuvre du Second Empire inauguré en 1875 par Charles Garnier. Façade monumentale, grand escalier, plafond Chagall. Visite et spectacles d'opéra et de ballet. Accessible directement via la sortie nord de la station Opéra.",
+                        "station": "Opéra",
+                        "station_slug": "opera"
+                    },
+                    {
+                        "slug": "palais-brongniart-bourse",
+                        "name": "Palais Brongniart — ancienne Bourse",
+                        "description": "Ancien siège de la Bourse de Paris (1826-1998). Architecture néoclassique d'Alexandre-Théodore Brongniart, achevée 1826. Aujourd'hui centre événementiel et de congrès. Sortie directe Bourse.",
+                        "station": "Bourse",
+                        "station_slug": "bourse"
+                    },
+                    {
+                        "slug": "place-de-la-republique",
+                        "name": "Place de la République",
+                        "description": "Vaste place centrale de Paris dominée par la statue de Marianne (1883), 9 m de haut. Pôle de manifestations citoyennes, vie nocturne, marché de Noël hivernal. Réaménagée en 2013 avec une grande esplanade piétonne.",
+                        "station": "République",
+                        "station_slug": "republique"
+                    },
+                    {
+                        "slug": "cimetiere-pere-lachaise",
+                        "name": "Cimetière du Père-Lachaise",
+                        "description": "Plus grand cimetière intra-muros de Paris (44 ha). Sépultures célèbres : Jim Morrison, Édith Piaf, Oscar Wilde, Frédéric Chopin, Honoré de Balzac, Marcel Proust, Jean de La Fontaine, Molière. Allées arborées, monuments funéraires Art nouveau et Art déco.",
+                        "station": "Père-Lachaise",
+                        "station_slug": "pere-lachaise"
+                    },
+                    {
+                        "slug": "gare-saint-lazare",
+                        "name": "Gare Saint-Lazare",
+                        "description": "Gare Saint-Lazare, l'une des 6 grandes gares parisiennes. Trains Transilien J et L vers la Normandie et la banlieue ouest, RER E. Environ 450 000 voyageurs par jour. Pôle multimodal (lignes 3, 9, 12, 13, 14).",
+                        "station": "Saint-Lazare",
+                        "station_slug": "saint-lazare"
+                    },
+                    {
+                        "slug": "galeries-lafayette",
+                        "name": "Galeries Lafayette Haussmann",
+                        "description": "Grand magasin emblématique fondé en 1893. Coupole Art nouveau classée Monument historique (1912). Toit-terrasse panoramique sur Paris (gratuit). Accès direct via Havre-Caumartin (correspondance ligne 9 + RER A).",
+                        "station": "Havre-Caumartin",
+                        "station_slug": "havre-caumartin"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "musee-arts-et-metiers",
+                        "name": "Musée des Arts et Métiers",
+                        "description": "Conservatoire National des Arts et Métiers, fondé en 1794. Collections d'instruments scientifiques, machines industrielles, prototypes historiques (pendule de Foucault, avion de Clément Ader, maquette de la Statue de la Liberté de Bartholdi). Sortie directe de la station — quais habillés de cuivre style Nautilus (design Schuiten 1994, partagé avec la ligne 11).",
+                        "station": "Arts et Métiers",
+                        "station_slug": "arts-et-metiers"
+                    },
+                    {
+                        "slug": "voie-lactee-cadieux-saint-lazare",
+                        "name": "Voie lactée — Geneviève Cadieux",
+                        "description": "Œuvre monumentale de l'artiste québécoise Geneviève Cadieux (2011) dans le couloir de correspondance Saint-Lazare entre les lignes 14 et 9. Mosaïque représentant des lèvres, œuvre photographique transposée en mosaïque. Patrimoine artistique parisien moderne, à découvrir le temps d'une correspondance.",
+                        "station": "Saint-Lazare",
+                        "station_slug": "saint-lazare"
+                    },
+                    {
+                        "slug": "printemps-haussmann",
+                        "name": "Printemps Haussmann",
+                        "description": "Grand magasin fondé en 1865, l'un des plus anciens de Paris. Coupole Art nouveau classée Monument historique. Toit-terrasse Brasserie Printemps avec vue panoramique sur Paris. Accès Havre-Caumartin ou Saint-Lazare.",
+                        "station": "Havre-Caumartin",
+                        "station_slug": "havre-caumartin"
+                    },
+                    {
+                        "slug": "musee-jean-jacques-henner",
+                        "name": "Musée Jean-Jacques Henner",
+                        "description": "Musée national consacré au peintre alsacien Jean-Jacques Henner (1829-1905), installé dans l'hôtel particulier où il vécut et travailla. Collection de tableaux, dessins et sculptures dans le décor d'origine. Sortie directe Malesherbes.",
+                        "station": "Malesherbes",
+                        "station_slug": "malesherbes"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-sentier-textile",
+                        "name": "Quartier du Sentier",
+                        "description": "Quartier historique du textile parisien (2ᵉ arrondissement). Confection, prêt-à-porter, grossistes. Évolution récente : start-ups numériques (« Silicon Sentier »), restaurants tendance, vie nocturne. Architecture Restauration et Belle Époque.",
+                        "station": "Sentier",
+                        "station_slug": "sentier"
+                    },
+                    {
+                        "slug": "quartier-grands-boulevards",
+                        "name": "Quartier des Grands Boulevards",
+                        "description": "Axe boulevardier historique du nord parisien (Madeleine ↔ République). Théâtres (Théâtre des Variétés, Folies Bergère), passages couverts XIXᵉ siècle (Galerie Vivienne, Passage des Panoramas), brasseries, vie nocturne.",
+                        "station": "Bourse",
+                        "station_slug": "bourse"
+                    },
+                    {
+                        "slug": "quartier-pere-lachaise-est",
+                        "name": "Père-Lachaise — quartier",
+                        "description": "Quartier populaire du 20ᵉ arrondissement, autour du cimetière. Rue de la Roquette, rue Saint-Maur, ambiance villageoise. Cafés, boulangeries traditionnelles, scène artistique alternative.",
+                        "station": "Père-Lachaise",
+                        "station_slug": "pere-lachaise"
+                    },
+                    {
+                        "slug": "quartier-levallois",
+                        "name": "Levallois-Perret — quartier d'affaires",
+                        "description": "Commune limitrophe au nord-ouest de Paris (Hauts-de-Seine). Pôle d'affaires (sièges sociaux), parc de la Planchette, île de la Jatte (peintres impressionnistes Seurat). Architecture moderne et résidentielle haut de gamme.",
+                        "station": "Pont de Levallois — Bécon",
+                        "station_slug": "pont-de-levallois-becon"
+                    }
+                ]
+            },
+            {
+                "id": "gares",
+                "icon": "🚉",
+                "title": "Gares et grands pôles",
+                "category_url": "/gares/",
+                "pois": [
+                    {
+                        "slug": "gare-saint-lazare",
+                        "name": "Gare Saint-Lazare",
+                        "description": "Gare Saint-Lazare, l'une des 6 grandes gares parisiennes. Trains Transilien J et L vers la Normandie et la banlieue ouest, RER E. Environ 450 000 voyageurs par jour. Pôle multimodal (lignes 3, 9, 12, 13, 14). La station métro la plus fréquentée du réseau.",
+                        "station": "Saint-Lazare",
+                        "station_slug": "saint-lazare"
+                    },
+                    {
+                        "slug": "gare-routiere-internationale-gallieni",
+                        "name": "Gare Routière Internationale Gallieni",
+                        "description": "Gare routière internationale de Bagnolet, l'une des plus importantes d'Europe. Bus internationaux Eurolines, FlixBus, BlaBlaBus vers Allemagne, Espagne, Italie, Royaume-Uni, pays de l'Est. Point de départ de nombreux voyages low-cost européens depuis Paris.",
+                        "station": "Gallieni",
+                        "station_slug": "gallieni"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "L'itinéraire grands magasins — De Saint-Lazare à Opéra",
+            "description": "Parcours commercial cœur Paris : Saint-Lazare (Printemps Haussmann), Havre-Caumartin (Galeries Lafayette + Printemps), Opéra (Opéra Garnier, accès Boulevard Haussmann). 3 stations touristiques pour la traversée Paris commercial.",
+            "stops": [
+                "Saint-Lazare",
+                "Havre-Caumartin",
+                "Opéra"
+            ],
+            "duration_min": 5,
+            "icon": "🛍️"
+        },
+        {
+            "title": "L'itinéraire culturel — De la Bourse au Père-Lachaise",
+            "description": "Parcours patrimoine : Bourse (Palais Brongniart), Sentier (quartier textile), Réaumur-Sébastopol, Arts et Métiers (Musée + Nautilus partagé avec L11), Temple, République, Parmentier (décor pomme de terre), Rue Saint-Maur, Père-Lachaise (cimetière + premier escalier mécanique 1909).",
+            "stops": [
+                "Bourse",
+                "Sentier",
+                "Réaumur-Sébastopol",
+                "Arts et Métiers",
+                "Temple",
+                "République",
+                "Parmentier",
+                "Rue Saint-Maur",
+                "Père-Lachaise"
+            ],
+            "duration_min": 15,
+            "icon": "🎓"
+        },
+        {
+            "title": "L'itinéraire transversal complet — De Levallois à Gallieni",
+            "description": "Traversée nord complète : Pont de Levallois (92), Anatole France, Louise Michel, Porte de Champerret (Palais des Congrès), 17ᵉ résidentiel, Saint-Lazare (gare), Opéra, Bourse, République, Père-Lachaise, Gallieni (Gare Routière Internationale 93). 25 stations en 25-30 minutes.",
+            "stops": [
+                "Pont de Levallois — Bécon",
+                "Porte de Champerret",
+                "Wagram",
+                "Villiers",
+                "Saint-Lazare",
+                "Opéra",
+                "Bourse",
+                "Sentier",
+                "République",
+                "Père-Lachaise",
+                "Gambetta",
+                "Gallieni"
+            ],
+            "duration_min": 28,
+            "icon": "🚇"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Saint-Lazare",
+                "slug": "saint-lazare"
+            },
+            "to": {
+                "name": "Opéra",
+                "slug": "opera"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "3"
+            ],
+            "description": "Axe grands magasins — Printemps Haussmann vers Galeries Lafayette + Opéra Garnier",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Saint-Lazare",
+                "slug": "saint-lazare"
+            },
+            "to": {
+                "name": "République",
+                "slug": "republique"
+            },
+            "duration_min": 10,
+            "transfers": 0,
+            "lines": [
+                "3"
+            ],
+            "description": "Axe nord-est — gare Saint-Lazare vers République",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Pont de Levallois — Bécon",
+                "slug": "pont-de-levallois-becon"
+            },
+            "to": {
+                "name": "Saint-Lazare",
+                "slug": "saint-lazare"
+            },
+            "duration_min": 12,
+            "transfers": 0,
+            "lines": [
+                "3"
+            ],
+            "description": "Banlieue ouest 92 vers Paris centre",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Opéra",
+                "slug": "opera"
+            },
+            "to": {
+                "name": "Père-Lachaise",
+                "slug": "pere-lachaise"
+            },
+            "duration_min": 12,
+            "transfers": 0,
+            "lines": [
+                "3"
+            ],
+            "description": "Axe culture — Opéra Garnier vers cimetière touristique majeur",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "République",
+                "slug": "republique"
+            },
+            "to": {
+                "name": "Gallieni",
+                "slug": "gallieni"
+            },
+            "duration_min": 12,
+            "transfers": 0,
+            "lines": [
+                "3"
+            ],
+            "description": "Sortie Paris vers Bagnolet et la Gare Routière Internationale",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "1909, Père-Lachaise : le premier escalier mécanique du métro",
+            "slug": "premier-escalier-mecanique-1909",
+            "url": "/info-trafic/premier-escalier-mecanique-1909/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Innovation majeure de la Belle Époque, le premier escalator parisien a été installé sur la ligne 3 à Père-Lachaise.",
+            "author": "Ludo",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 5,
+            "image": ""
+        },
+        {
+            "title": "La scission de la 3bis en 1971",
+            "slug": "scission-ligne-3bis-1971",
+            "url": "/info-trafic/scission-ligne-3bis-1971/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "Comment la ligne 3bis est née d'une scission de la ligne 3 le 27 mars 1971, lors du prolongement à Gallieni.",
+            "author": "Élodie",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 6,
+            "image": ""
+        },
+        {
+            "title": "« La Voie lactée » de Cadieux à Saint-Lazare",
+            "slug": "voie-lactee-cadieux-saint-lazare",
+            "url": "/info-trafic/voie-lactee-cadieux-saint-lazare/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "Mosaïque monumentale de Geneviève Cadieux installée en 2011 dans le couloir de correspondance Saint-Lazare. Lèvres en mosaïque, œuvre photographique transposée.",
+            "author": "Élodie",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 4,
+            "image": ""
+        },
+        {
+            "title": "Parmentier — la station qui célèbre la pomme de terre",
+            "slug": "station-parmentier-pomme-terre",
+            "url": "/info-trafic/station-parmentier-pomme-terre/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Hommage à l'agronome Antoine Parmentier — comment la station a été décorée sur le thème de la pomme de terre.",
+            "author": "Ludo",
+            "published_at": "2026-03-25T08:30:00",
+            "published_label": "Mars 2026",
+            "reading_time": 4,
+            "image": ""
+        }
+    ],
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:Metro_de_Paris_-_Ligne_3_-_Gambetta_04.jpg",
+        "alt": "Quais de la station Gambetta, ligne 3 du métro parisien — nœud d'embranchement avec la ligne 3bis",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Clicsouris",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Metro_de_Paris_-_Ligne_3_-_Gambetta_04.jpg",
+            "date": "2010-01",
+            "description": "Station Gambetta de la ligne 3 du métro de Paris, dans le 20ᵉ arrondissement. Nœud historique de la ligne — ancien terminus est avant le prolongement à Gallieni en 1971, et point de scission avec la ligne 3bis (branche Porte des Lilas devenue indépendante en 1971)"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-3/ligne-3-400.avif",
+                "800": "/assets/img/lines/ligne-3/ligne-3-800.avif",
+                "1200": "/assets/img/lines/ligne-3/ligne-3-1200.avif",
+                "1600": "/assets/img/lines/ligne-3/ligne-3-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-3/ligne-3-400.webp",
+                "800": "/assets/img/lines/ligne-3/ligne-3-800.webp",
+                "1200": "/assets/img/lines/ligne-3/ligne-3-1200.webp",
+                "1600": "/assets/img/lines/ligne-3/ligne-3-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-3/ligne-3-400.jpg",
+                "800": "/assets/img/lines/ligne-3/ligne-3-800.jpg",
+                "1200": "/assets/img/lines/ligne-3/ligne-3-1200.jpg",
+                "1600": "/assets/img/lines/ligne-3/ligne-3-1600.jpg"
+            }
+        }
+    }
 }
