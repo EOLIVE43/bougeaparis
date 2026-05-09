@@ -50,17 +50,20 @@
                     "color": "#9F9825"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         },
         {
             "name": "Pelleport",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Saint-Fargeau",
             "correspondences": [],
-            "accessible": false
+            "accessible": false,
+            "is_major": false
         },
         {
             "name": "Porte des Lilas",
@@ -71,14 +74,795 @@
                     "color": "#8D5E2A"
                 }
             ],
-            "accessible": false
+            "accessible": false,
+            "is_major": true
         }
     ],
-    "color": "#98D4E2",
+    "color": "#6EC4E8",
     "color_text": "#000000",
     "terminus_a": "Gambetta",
     "terminus_b": "Porte des Lilas",
     "automated": false,
     "opened_year": 1971,
-    "duration_minutes": 3
+    "duration_minutes": 3,
+    "color_light": "#EAF6F9",
+    "daily_riders": 5500,
+    "fares": {
+        "year": 2026,
+        "valid_since": "2026-01-01",
+        "last_check": "2026-05-01",
+        "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+        "main_fares": [
+            {
+                "type": "ticket-unitaire",
+                "icon": "🎫",
+                "label": "Ticket Métro - Train - RER",
+                "subtitle": "À l'unité",
+                "price": "2,55",
+                "price_reduced": "1,30",
+                "description": "Tarif unique pour un trajet métro, train ou RER en Île-de-France. Valable sur toute la ligne 1.",
+                "best_for": "Voyageurs occasionnels (1 à 5 trajets)",
+                "support": "Navigo Easy, application Île-de-France Mobilités, paiement sans contact"
+            },
+            {
+                "type": "navigo-jour",
+                "icon": "📅",
+                "label": "Navigo Jour",
+                "subtitle": "Toutes zones",
+                "price": "12,30",
+                "description": "Trajets illimités sur toute la journée (métro, train, RER, bus, tram). Idéal pour les visites touristiques.",
+                "best_for": "Voyageurs occasionnels (5+ trajets dans la journée)",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            },
+            {
+                "type": "navigo-mensuel",
+                "icon": "📆",
+                "label": "Pass Navigo Mensuel",
+                "subtitle": "Toutes zones",
+                "price": "90,80",
+                "price_reduced": "45,40",
+                "description": "Trajets illimités pendant un mois calendaire sur tout le réseau d'Île-de-France.",
+                "best_for": "Résidents et travailleurs réguliers (plus de 38 trajets / mois)",
+                "support": "Pass Navigo, application mobile",
+                "is_popular": true
+            },
+            {
+                "type": "ticket-aeroport",
+                "icon": "✈️",
+                "label": "Paris Région ↔ Aéroports",
+                "subtitle": "Tarif unique",
+                "price": "14",
+                "price_reduced": "7",
+                "description": "Trajet vers ou depuis Roissy CDG ou Orly, depuis n'importe quelle gare d'Île-de-France.",
+                "best_for": "Voyageurs en correspondance avec les aéroports parisiens",
+                "support": "Navigo Easy, application Île-de-France Mobilités"
+            }
+        ],
+        "additional_fares": [
+            {
+                "label": "Ticket Bus - Tram",
+                "price": "2,05"
+            },
+            {
+                "label": "Navigo Semaine",
+                "price": "32,40"
+            },
+            {
+                "label": "Navigo Annuel",
+                "price": "998,80"
+            },
+            {
+                "label": "Imagine R (étudiants)",
+                "price": "401,00"
+            },
+            {
+                "label": "Paris Visite 1 jour adulte",
+                "price": "30,80"
+            }
+        ]
+    },
+    "quick_actions": [
+        {
+            "id": "trafic",
+            "type": "live",
+            "label": "Voir le trafic",
+            "title": "État de la ligne en direct",
+            "anchor": "#trafic"
+        },
+        {
+            "id": "itineraires",
+            "type": "icon",
+            "icon": "🧭",
+            "label": "Itinéraire",
+            "title": "Calculer un trajet",
+            "anchor": "#itineraires"
+        },
+        {
+            "id": "tarifs",
+            "type": "icon",
+            "icon": "💳",
+            "label": "Tarifs",
+            "title": "Quel ticket choisir",
+            "anchor": "#tarifs"
+        }
+    ],
+    "meta": {
+        "primary_author": {
+            "id": "ludo",
+            "name": "Ludo",
+            "full_name": "Ludovic",
+            "role": "Co-fondateur · Spécialiste transport parisien",
+            "bio": "Passionné par les transports d'Île-de-France depuis plus de 15 ans, Ludo couvre l'actualité du métro, du RER, des bus et des tramways pour BougeàParis.fr.",
+            "url": "/auteur/ludo/",
+            "avatar_color": "#0F6E56",
+            "avatar_initials": "L",
+            "expertise_tags": [
+                "Métro parisien",
+                "Trafic temps réel",
+                "Travaux RATP/IDFM",
+                "Itinéraires"
+            ],
+            "avatar_svg": "/assets/img/authors/ludo.svg"
+        },
+        "co_author": {
+            "id": "elodie",
+            "name": "Élodie",
+            "full_name": "Élodie",
+            "role": "Co-fondatrice · Spécialiste tourisme & patrimoine",
+            "bio": "Guide passionnée d'histoire parisienne, Élodie écrit sur les monuments, musées et quartiers desservis par les transports parisiens. Diplômée en histoire de l'art.",
+            "url": "/auteur/elodie/",
+            "avatar_color": "#A1006B",
+            "avatar_initials": "E",
+            "contributed_sections": [
+                "Histoire de la ligne",
+                "Que voir le long de la ligne"
+            ],
+            "avatar_svg": "/assets/img/authors/elodie.svg"
+        },
+        "dates": {
+            "published": "2026-05-09",
+            "updated": "2026-05-09",
+            "updated_human": "9 mai 2026",
+            "published_label": "9 mai 2026",
+            "updated_label": "9 mai 2026",
+            "live_data_note": "Données trafic et travaux mises à jour automatiquement chaque jour"
+        },
+        "sources": [
+            {
+                "label": "Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "RATP – Site officiel",
+                "url": "https://www.ratp.fr/"
+            },
+            {
+                "label": "API PRIM (données temps réel IDFM)",
+                "url": "https://prim.iledefrance-mobilites.fr/"
+            },
+            {
+                "label": "data.ratp.fr (données ouvertes)",
+                "url": "https://data.ratp.fr/"
+            },
+            {
+                "label": "Wikipedia – Ligne 3bis du métro de Paris",
+                "url": "https://fr.wikipedia.org/wiki/Ligne_3bis_du_m%C3%A9tro_de_Paris"
+            }
+        ]
+    },
+    "seo": {
+        "h1": "Métro Ligne 3bis Paris : la plus courte ligne du réseau",
+        "title": "Métro Ligne 3bis Paris : 4 stations, plus courte ligne du métro, station fantôme",
+        "description": "Tout sur la ligne 3bis du métro parisien : Gambetta ↔ Porte des Lilas, 4 stations, 1,3 km — la plus courte et la moins fréquentée du réseau. Station fantôme Porte des Lilas-Cinéma.",
+        "lead": "Toute l'info sur la <strong>ligne 3bis du métro parisien</strong>, courte navette dans le 20ᵉ arrondissement entre <strong>Gambetta</strong> et <strong>Porte des Lilas</strong>. <strong>4 stations</strong> seulement (Gambetta, Pelleport, Saint-Fargeau, Porte des Lilas) sur 1,3 km — c'est la <strong>plus courte ligne du métro parisien</strong> et la <strong>moins fréquentée</strong> (~5 500 voyageurs/jour). Née d'une <strong>scission de la ligne 3</strong> le 27 mars 1971, elle conserve à Porte des Lilas une voie désaffectée devenue célèbre : la <strong>station fantôme « Porte des Lilas - Cinéma »</strong>, utilisée encore aujourd'hui pour des tournages de films."
+    },
+    "intros": {
+        "introduction_title": "plus courte ligne du métro, navette du 20ᵉ",
+        "introduction": "La <strong>ligne 3bis du métro parisien</strong> est une courte navette de <strong>4 stations</strong> dans le 20ᵉ arrondissement de Paris, reliant <strong>Gambetta</strong> à <strong>Porte des Lilas</strong>. Avec ses <strong>1,3 km</strong> seulement, c'est la <strong>plus courte ligne du métro parisien</strong>. Et avec ses <strong>5 500 voyageurs par jour</strong> environ, c'est aussi la <strong>moins fréquentée du réseau</strong> — la 3bis accueille en un an le trafic de la ligne 1 en quatre jours de semaine.",
+        "plan": "La ligne 3bis n'est pas une ligne nouvelle. Elle est née d'une <strong>scission de la ligne 3</strong> le <strong>27 mars 1971</strong>. Avant cette date, la branche Gambetta ↔ Porte des Lilas faisait partie intégrante de la ligne 3 ; quand la 3 a été prolongée vers Bagnolet-Gallieni, le déséquilibre de trafic prévu a justifié la séparation. À Porte des Lilas, une « voie navette » désaffectée depuis 1939 reste célèbre sous le nom de <strong>« Porte des Lilas - Cinéma »</strong> : station fantôme utilisée aujourd'hui encore pour des <strong>tournages de films</strong> et publicités.",
+        "stations": "La ligne 3bis dessert seulement 4 stations dans le 20ᵉ arrondissement : <strong>Gambetta</strong> (correspondance ligne 3), <strong>Pelleport</strong>, <strong>Saint-Fargeau</strong>, <strong>Porte des Lilas</strong> (correspondance ligne 11). Quartier résidentiel de l'est parisien.",
+        "horaires": "Le service de la ligne 3bis fonctionne tous les jours de 5h30 à 0h40 (1h40 vendredi/samedi/veilles de fêtes). Fréquence d'environ 4 minutes en heure de pointe et 6 à 8 minutes le soir et le week-end (trafic faible).",
+        "trafic": "La ligne 3bis a une affluence très réduite (~5 500 voyageurs/jour). Les éventuelles perturbations sont remontées en temps réel via les capteurs IDFM ; consultez ci-dessous l'état du trafic en direct.",
+        "itineraires": "Trajets sur la ligne 3bis : <strong>Gambetta → Porte des Lilas</strong> en 5 minutes (parcours complet), <strong>Pelleport → Porte des Lilas</strong> en 3 minutes, <strong>Saint-Fargeau → Gambetta</strong> en 3 minutes.",
+        "que_voir": "La ligne 3bis dessert le quartier résidentiel <strong>Pelleport-Saint-Fargeau</strong> dans le 20ᵉ arrondissement. Proximité du <strong>cimetière du Père-Lachaise</strong> via correspondance Gambetta → ligne 3. À Porte des Lilas, vestige patrimonial de la <strong>station fantôme « Porte des Lilas - Cinéma »</strong>.",
+        "histoire": "La ligne 3bis trouve ses origines en <strong>1921</strong> avec l'ouverture d'une branche est de la ligne 3 entre Gambetta et Porte des Lilas, accompagnée d'une <strong>voie navette</strong> reliant Porte des Lilas à Pré Saint-Gervais. La voie navette est <strong>fermée le 3 septembre 1939</strong> au début de la Seconde Guerre mondiale et n'a jamais été rouverte. Le <strong>27 mars 1971</strong>, lors du prolongement de la ligne 3 à Bagnolet-Gallieni, la branche Gambetta ↔ Porte des Lilas est <strong>scindée</strong> et devient la ligne 3bis indépendante.",
+        "accessibilite": "La ligne 3bis est l'une des moins accessibles aux personnes à mobilité réduite : son infrastructure historique 1921 implique des escaliers d'origine difficiles à équiper d'ascenseurs. Les correspondances modernisées (Gambetta vers ligne 3, Porte des Lilas vers ligne 11) peuvent offrir un accès partiel selon les ascenseurs des autres lignes. Le matériel <strong>MF67</strong> propose des annonces sonores et visuelles complètes.",
+        "tarifs": "Comme l'ensemble du métro francilien, la ligne 3bis fonctionne avec le ticket unique « Métro - Train - RER » à 2,55 € (1,30 € tarif réduit), valable sur tout le réseau. Les forfaits Navigo Mois, Semaine, Jour et Liberté+ sont également acceptés.",
+        "travaux": "La ligne 3bis utilise un matériel <strong>MF67</strong> en rames courtes (3 voitures par rame, 6 rames suffisent pour exploiter la ligne). Pas de pilotage automatique (comme les lignes 7bis et 10). Un projet ancien de fusion avec la ligne 7bis prolongée vers Château-Landon ou Magenta existe mais a été <strong>repoussé au-delà de 2030</strong> par manque d'intérêt économique.",
+        "faq": "Pourquoi la 3bis existe-t-elle, plus courte ligne, station fantôme : retrouvez ci-dessous les questions les plus fréquentes sur la ligne 3bis.",
+        "articles_lies": "Trafic en direct, dossiers patrimoine (station fantôme Porte des Lilas-Cinéma, scission 1971) : retrouvez les articles BougeaParis dédiés à la ligne 3bis.",
+        "liens_internes": "Découvrez le reste du métro parisien : les autres lignes, le plan, les tarifs, la calculatrice d'itinéraire, ainsi que les modes de transport complémentaires en Île-de-France."
+    },
+    "internal_links": {
+        "connections_metro": [
+            {
+                "code": "3",
+                "color": "#9F9825",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Gambetta"
+                ],
+                "name": "Ligne 3",
+                "url": "/metro/ligne-3/"
+            },
+            {
+                "code": "11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "stations": [
+                    "Porte des Lilas"
+                ],
+                "name": "Ligne 11",
+                "url": "/metro/ligne-11/"
+            }
+        ],
+        "connections_rer": [],
+        "connections_other": [],
+        "discover_metro_lines": [
+            {
+                "code": "3bis",
+                "name": "Ligne 3bis",
+                "color": "#98D4E2",
+                "color_text": "#000000",
+                "url": "/metro/ligne-3bis/",
+                "is_current": true
+            },
+            {
+                "code": "3",
+                "name": "Ligne 3",
+                "color": "#9F9825",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-3/"
+            },
+            {
+                "code": "11",
+                "name": "Ligne 11",
+                "color": "#8D5E2A",
+                "color_text": "#FFFFFF",
+                "url": "/metro/ligne-11/"
+            }
+        ],
+        "related_pages": [
+            {
+                "icon": "🚇",
+                "label": "Toutes les lignes de métro",
+                "url": "/metro/",
+                "description": "Découvrir les 16 lignes du métro parisien"
+            },
+            {
+                "icon": "🗺️",
+                "label": "Plans du métro de Paris",
+                "url": "/plans/metro/",
+                "description": "Plans interactifs et téléchargeables"
+            },
+            {
+                "icon": "💳",
+                "label": "Tarifs et titres de transport",
+                "url": "/tarifs/",
+                "description": "Comparer les tarifs métro, RER, bus, tram"
+            },
+            {
+                "icon": "🧭",
+                "label": "Calculer un itinéraire",
+                "url": "/itineraires/",
+                "description": "Trouvez votre trajet rapidement"
+            },
+            {
+                "icon": "🚊",
+                "label": "Tramway de Paris",
+                "url": "/tramway/",
+                "description": "Toutes les lignes de tramway en Île-de-France"
+            },
+            {
+                "icon": "🚌",
+                "label": "Bus de Paris",
+                "url": "/bus/",
+                "description": "Le réseau de bus parisien"
+            }
+        ]
+    },
+    "history": {
+        "key_dates": [
+            {
+                "year": "1921",
+                "title": "Ouverture branche Gambetta ↔ Porte des Lilas",
+                "icon": "🎉",
+                "description": "Le 27 novembre 1921, ouverture du tronçon Gambetta ↔ Porte des Lilas sous le nom de ligne 3 (à l'époque). Ouverture simultanée de la « voie navette » Porte des Lilas ↔ Pré Saint-Gervais reliant les deux branches du réseau."
+            },
+            {
+                "year": "1939",
+                "title": "Fermeture de la voie navette",
+                "icon": "👻",
+                "description": "Le 3 septembre 1939, fermeture de la voie navette Porte des Lilas ↔ Pré Saint-Gervais (Seconde Guerre mondiale). JAMAIS ROUVERTE faute de trafic suffisant. Naissance de la STATION FANTÔME « Porte des Lilas - Cinéma »."
+            },
+            {
+                "year": "1969",
+                "title": "Déplacement de Gambetta",
+                "icon": "🔧",
+                "description": "Le 23 août 1969, déplacement de la station Gambetta vers l'ouest en préparation de la création de la 3bis. La station actuelle Gambetta n'est pas exactement au même emplacement qu'en 1905 (ouverture initiale de la ligne 3)."
+            },
+            {
+                "year": "1971",
+                "title": "CRÉATION DE LA LIGNE 3BIS",
+                "icon": "🔀",
+                "description": "Le 27 mars 1971, ÉVÉNEMENT FONDATEUR : la branche Gambetta ↔ Porte des Lilas est SCINDÉE de la ligne 3 (qui prolonge vers Bagnolet-Gallieni) et devient indépendante sous le nom de LIGNE 3BIS. La plus courte ligne du métro parisien est née."
+            },
+            {
+                "year": "2010",
+                "title": "6 rames MF67 D en service",
+                "icon": "🚆",
+                "description": "Mise en service de 6 rames MF67 D, raccourcies à 3 voitures (vs 5 sur les autres lignes), adaptées au trafic faible de la 3bis."
+            }
+        ],
+        "key_facts": [
+            {
+                "value": "4",
+                "label": "Stations",
+                "description": "Gambetta, Pelleport, Saint-Fargeau, Porte des Lilas — toutes dans le 20ᵉ arrondissement de Paris."
+            },
+            {
+                "value": "1,3 km",
+                "label": "Plus courte ligne",
+                "description": "La ligne 3bis est la PLUS COURTE LIGNE du métro parisien — devant la 7bis (3 km) et la 14 ancienne avant prolongement."
+            },
+            {
+                "value": "5 500",
+                "label": "Voyageurs / jour",
+                "description": "L'une des plus faibles affluences du réseau parisien (~2 millions/an). La 3bis accueille en un an le trafic de la ligne 1 en quatre jours."
+            },
+            {
+                "value": "1971",
+                "label": "Née d'une scission",
+                "description": "Créée le 27 mars 1971 par scission de la ligne 3 (lors du prolongement à Bagnolet-Gallieni)."
+            }
+        ],
+        "anecdotes": [
+            {
+                "title": "La plus petite ligne du métro parisien",
+                "description": "La 3bis cumule trois records de petitesse : <strong>1,3 km de long</strong> (la plus courte du réseau), <strong>4 stations</strong> seulement, et <strong>~5 500 voyageurs/jour</strong> (la moins fréquentée). Anecdote chiffrée frappante : la 3bis accueille en UN AN le trafic de la ligne 1 en QUATRE JOURS DE SEMAINE."
+            },
+            {
+                "title": "Porte des Lilas - Cinéma, la station fantôme",
+                "description": "Entre 1921 et 1939, une <strong>voie navette</strong> reliait Porte des Lilas à Pré Saint-Gervais. Fermée le 3 septembre 1939 au début de la Seconde Guerre mondiale, elle n'a JAMAIS été rouverte par manque de trafic. Aujourd'hui devenue <strong>station fantôme « Porte des Lilas - Cinéma »</strong>, elle est utilisée régulièrement pour des <strong>tournages de films</strong> et publicités. Lieu mythique du patrimoine ferroviaire et cinématographique parisien."
+            },
+            {
+                "title": "La scission de 1971 — naissance de la 3bis",
+                "description": "La 3bis n'a pas été créée comme ligne nouvelle. Le <strong>27 mars 1971</strong>, la branche Gambetta ↔ Porte des Lilas a été DÉBRANCHÉE de la ligne 3 (qui prolongeait vers Bagnolet-Gallieni). Cas similaire à la ligne 7bis, née d'une scission de la 7 en 1967. Les deux lignes courtes du nord-est parisien partagent une histoire commune de scission."
+            },
+            {
+                "title": "Les rames courtes 3 voitures",
+                "description": "Faute de trafic, les rames MF67 de la 3bis sont composées de <strong>3 voitures seulement</strong> (vs 5 sur les autres lignes MF67). <strong>6 rames suffisent</strong> à exploiter la ligne. Plus petites, plus économiques, parfaitement adaptées à la navette courte du 20ᵉ arrondissement."
+            },
+            {
+                "title": "Le projet fusion 3bis + 7bis",
+                "description": "Il existe un projet ancien de relier la 3bis et la 7bis (Pré Saint-Gervais) via la voie navette désaffectée + prolongement vers Château-Landon ou Magenta. Projet <strong>repoussé au-delà de 2030</strong> par manque d'intérêt économique. La voie navette 1921-1939 attend toujours sa réouverture théorique — un siècle d'attente bientôt."
+            }
+        ],
+        "article_url": ""
+    },
+    "faq": [
+        {
+            "question": "Pourquoi la ligne 3bis existe-t-elle ?",
+            "answer": "La ligne 3bis est née d'une <strong>scission de la ligne 3</strong> le <strong>27 mars 1971</strong>. Avant cette date, la branche Gambetta ↔ Porte des Lilas faisait partie intégrante de la ligne 3. Quand la 3 a été prolongée vers Bagnolet-Gallieni, la branche Porte des Lilas a été détachée pour devenir une ligne navette indépendante."
+        },
+        {
+            "question": "Quelle est la plus courte ligne du métro parisien ?",
+            "answer": "La <strong>ligne 3bis</strong> avec 1,3 km et 4 stations seulement (Gambetta, Pelleport, Saint-Fargeau, Porte des Lilas). Toutes les stations sont dans le 20ᵉ arrondissement de Paris."
+        },
+        {
+            "question": "Qu'est-ce que la station fantôme Porte des Lilas - Cinéma ?",
+            "answer": "Une <strong>voie désaffectée</strong> à la station Porte des Lilas, qui reliait autrefois la 3bis à la 7bis (Pré Saint-Gervais). Fermée le 3 septembre 1939 au début de la Seconde Guerre mondiale, jamais rouverte. Aujourd'hui utilisée régulièrement pour des <strong>tournages de films</strong> et publicités — elle est devenue célèbre dans le milieu cinématographique."
+        },
+        {
+            "question": "Combien de temps pour traverser la ligne 3bis ?",
+            "answer": "Comptez environ <strong>5 minutes</strong> pour le trajet complet entre Gambetta et Porte des Lilas — la ligne 3bis est très courte (1,3 km, 4 stations)."
+        },
+        {
+            "question": "La ligne 3bis est-elle accessible PMR ?",
+            "answer": "Très peu. L'infrastructure historique de 1921 implique des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure. Les correspondances modernisées (Gambetta vers ligne 3, Porte des Lilas vers ligne 11) peuvent offrir un accès partiel."
+        },
+        {
+            "question": "Quelles correspondances sur la ligne 3bis ?",
+            "answer": "<strong>Gambetta</strong> : correspondance ligne 3 (terminus principal). <strong>Porte des Lilas</strong> : correspondance ligne 11 (axe Châtelet ↔ Rosny - Bois-Perrier)."
+        }
+    ],
+    "accessibility": {
+        "stats": {
+            "accessible_count": 0,
+            "total_count": 4,
+            "accessibility_rate": 0,
+            "elevators_count": 0,
+            "audio_announcements": true,
+            "visual_announcements": true
+        },
+        "equipment": [
+            {
+                "icon": "♿",
+                "label": "Accessibilité très limitée (~0 %)",
+                "description": "Aucune des 4 stations de la ligne 3bis ne dispose d'ascenseurs PMR. Infrastructure historique de 1921 difficile à moderniser, faible trafic n'a pas justifié d'investissement."
+            },
+            {
+                "icon": "🚆",
+                "label": "Matériel MF67 historique",
+                "description": "Le matériel MF67 (rames courtes 3 voitures) propose des annonces sonores et visuelles complètes. Pas de remplacement par MF19 prévu (ligne courte avec faible trafic)."
+            },
+            {
+                "icon": "🏗️",
+                "label": "Stations historiques contraignantes",
+                "description": "Les 4 stations ouvertes en 1921 ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
+            },
+            {
+                "icon": "🔄",
+                "label": "Accès partiel via correspondances",
+                "description": "Les correspondances Gambetta (ligne 3) et Porte des Lilas (ligne 11) peuvent offrir un accès partiel selon les ascenseurs des autres lignes."
+            }
+        ],
+        "tips": [
+            {
+                "title": "Privilégier les correspondances accessibles",
+                "description": "Pour un voyage PMR sur la ligne 3bis, privilégier les correspondances modernisées (ligne 11 à Porte des Lilas) — la 11 est l'une des mieux accessibles du réseau depuis le prolongement de 2024."
+            },
+            {
+                "title": "Vérifier l'accessibilité avant de partir",
+                "description": "Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage. Les ascenseurs des correspondances ne sont pas toujours en service."
+            },
+            {
+                "title": "Service Accès Plus",
+                "description": "Pour un trajet PMR sécurisé, demander 24 h à l'avance le service Accès Plus d'Île-de-France Mobilités : un agent accompagne du quai d'origine au quai de destination."
+            }
+        ],
+        "external_resources": [
+            {
+                "label": "Page accessibilité Île-de-France Mobilités",
+                "url": "https://www.iledefrance-mobilites.fr/le-reseau/services-de-mobilite/personnes-handicapees-mobilite-reduite",
+                "description": "Informations officielles sur l'accessibilité du réseau francilien"
+            },
+            {
+                "label": "Service d'accompagnement Accès Plus",
+                "url": "https://www.iledefrance-mobilites.fr/transports-publics/transports-adaptes-pour-personnes-handicapees",
+                "description": "Service d'assistance gratuit pour personnes handicapées en gare et en train"
+            }
+        ],
+        "accessible_stations": []
+    },
+    "works": {
+        "last_updated": "2026-05-09",
+        "current_works": [],
+        "upcoming_works": [],
+        "recent_works": [
+            {
+                "icon": "🚆",
+                "title": "Mise en service rames MF67 D 3 voitures",
+                "completed_label": "Terminé 2010",
+                "description": "6 rames MF67 D raccourcies à 3 voitures (vs 5 habituellement) mises en service sur la ligne 3bis. Adaptation au trafic faible.",
+                "dates_label": "2010"
+            },
+            {
+                "icon": "📺",
+                "title": "Modernisation SIEL et écrans voyageurs",
+                "completed_label": "Terminé 2024",
+                "description": "Mise à jour des écrans d'information voyageur sur les 4 stations, intégration des données trafic temps réel via PRIM IDFM.",
+                "dates_label": "2024"
+            }
+        ],
+        "calendar_url": "https://www.ratp.fr/travaux",
+        "subscribe_url": ""
+    },
+    "points_of_interest": {
+        "monuments": {
+            "title_template": "Monuments incontournables de la ligne {code} du métro",
+            "icon": "🏛️",
+            "color_gradient": "linear-gradient(135deg, #B89400 0%, #5A4500 100%)",
+            "category_url": "/tourisme/monuments/",
+            "items": [
+                {
+                    "name": "Station fantôme Porte des Lilas - Cinéma",
+                    "slug": "station-fantome-porte-lilas-cinema",
+                    "station": "Porte des Lilas",
+                    "station_slug": "porte-des-lilas",
+                    "icon": "🎬",
+                    "description": "Voie désaffectée à la station Porte des Lilas, ancienne « voie navette » reliant la 3bis à la 7bis (Pré Saint-Gervais). Fermée le 3 septembre 1939, jamais rouverte. Aujourd'hui utilisée régulièrement pour des TOURNAGES DE FILMS et publicités. Patrimoine ferroviaire et cinématographique unique du métro parisien.",
+                    "schema_type": "Monument"
+                },
+                {
+                    "name": "Cimetière du Père-Lachaise (proximité Gambetta)",
+                    "slug": "cimetiere-pere-lachaise",
+                    "station": "Gambetta",
+                    "station_slug": "gambetta",
+                    "icon": "🌳",
+                    "description": "Plus grand cimetière intra-muros de Paris (44 ha), accessible à 5 minutes à pied depuis Gambetta (correspondance ligne 3). Sépultures célèbres : Jim Morrison, Édith Piaf, Oscar Wilde, Frédéric Chopin, Honoré de Balzac, Marcel Proust.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Voie navette désaffectée 1921-1939",
+                    "slug": "voie-navette-pre-saint-gervais",
+                    "station": "Porte des Lilas",
+                    "station_slug": "porte-des-lilas",
+                    "icon": "👻",
+                    "description": "Tunnel ferroviaire désaffecté reliant la 3bis (Porte des Lilas) à la 7bis (Pré Saint-Gervais). Fermé en septembre 1939 (Seconde Guerre mondiale), jamais rouvert. Vestige du réseau initial d'avant-guerre. Projet de fusion 3bis + 7bis encore théorique pour 2030+.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "musees": {
+            "title_template": "Musées et théâtres de la ligne {code}",
+            "icon": "🎭",
+            "color_gradient": "linear-gradient(135deg, #2C5282 0%, #1A365D 100%)",
+            "category_url": "/tourisme/musees/",
+            "items": [
+                {
+                    "name": "Atelier de maintenance Saint-Fargeau",
+                    "slug": "atelier-saint-fargeau",
+                    "station": "Saint-Fargeau",
+                    "station_slug": "saint-fargeau",
+                    "icon": "🔧",
+                    "description": "Atelier de maintenance de la ligne 3bis (5 rue de la Py, 75020), édifié en 1904 et modernisé en 1967 pour accueillir le matériel MF67. 15 600 m² total, 10 190 m² couverts. Patrimoine ferroviaire historique.",
+                    "schema_type": "Place"
+                }
+            ]
+        },
+        "quartiers": {
+            "title_template": "Quartiers à découvrir le long de la ligne {code}",
+            "icon": "🏘️",
+            "color_gradient": "linear-gradient(135deg, #38A169 0%, #1F5C36 100%)",
+            "category_url": "/tourisme/quartiers/",
+            "items": [
+                {
+                    "name": "Quartier Pelleport-Saint-Fargeau",
+                    "slug": "quartier-pelleport-saint-fargeau",
+                    "station": "Pelleport",
+                    "station_slug": "pelleport",
+                    "icon": "🏘️",
+                    "description": "Quartier résidentiel populaire du 20ᵉ arrondissement. Architecture typique de la fin XIXᵉ et début XXᵉ siècle, ambiance villageoise. Marché Pelleport, parc de Belleville à proximité, vue panoramique sur Paris depuis les hauteurs.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier Gambetta — Père-Lachaise",
+                    "slug": "quartier-gambetta-pere-lachaise",
+                    "station": "Gambetta",
+                    "station_slug": "gambetta",
+                    "icon": "🌳",
+                    "description": "Cœur du 20ᵉ arrondissement, autour de la place Gambetta. Mairie du 20ᵉ, Théâtre national de la Colline, accès Père-Lachaise via la rue des Pyrénées. Cafés, restaurants, ambiance populaire.",
+                    "schema_type": "Place"
+                },
+                {
+                    "name": "Quartier Porte des Lilas",
+                    "slug": "quartier-porte-des-lilas",
+                    "station": "Porte des Lilas",
+                    "station_slug": "porte-des-lilas",
+                    "icon": "🏙️",
+                    "description": "Limite est du 20ᵉ arrondissement, porte de Paris vers Les Lilas (commune 93). Centre commercial Le Bocage, parc de la Butte du Chapeau Rouge à proximité, ambiance populaire en mutation.",
+                    "schema_type": "Place"
+                }
+            ]
+        }
+    },
+    "tourism": {
+        "themes": [
+            {
+                "id": "monuments",
+                "icon": "🏛️",
+                "title": "Monuments incontournables",
+                "category_url": "/tourisme/monuments/",
+                "pois": [
+                    {
+                        "slug": "station-fantome-porte-lilas-cinema",
+                        "name": "Station fantôme Porte des Lilas - Cinéma",
+                        "description": "Voie désaffectée à la station Porte des Lilas, ancienne « voie navette » reliant la 3bis à la 7bis (Pré Saint-Gervais). Fermée le 3 septembre 1939, jamais rouverte. Aujourd'hui utilisée régulièrement pour des TOURNAGES DE FILMS et publicités. Patrimoine ferroviaire et cinématographique unique du métro parisien.",
+                        "station": "Porte des Lilas",
+                        "station_slug": "porte-des-lilas"
+                    },
+                    {
+                        "slug": "cimetiere-pere-lachaise",
+                        "name": "Cimetière du Père-Lachaise (proximité Gambetta)",
+                        "description": "Plus grand cimetière intra-muros de Paris (44 ha), accessible à 5 minutes à pied depuis Gambetta (correspondance ligne 3). Sépultures célèbres : Jim Morrison, Édith Piaf, Oscar Wilde, Frédéric Chopin, Honoré de Balzac, Marcel Proust.",
+                        "station": "Gambetta",
+                        "station_slug": "gambetta"
+                    },
+                    {
+                        "slug": "voie-navette-pre-saint-gervais",
+                        "name": "Voie navette désaffectée 1921-1939",
+                        "description": "Tunnel ferroviaire désaffecté reliant la 3bis (Porte des Lilas) à la 7bis (Pré Saint-Gervais). Fermé en septembre 1939 (Seconde Guerre mondiale), jamais rouvert. Vestige du réseau initial d'avant-guerre. Projet de fusion 3bis + 7bis encore théorique pour 2030+.",
+                        "station": "Porte des Lilas",
+                        "station_slug": "porte-des-lilas"
+                    }
+                ]
+            },
+            {
+                "id": "musees",
+                "icon": "🎭",
+                "title": "Musées et théâtres",
+                "category_url": "/tourisme/musees/",
+                "pois": [
+                    {
+                        "slug": "atelier-saint-fargeau",
+                        "name": "Atelier de maintenance Saint-Fargeau",
+                        "description": "Atelier de maintenance de la ligne 3bis (5 rue de la Py, 75020), édifié en 1904 et modernisé en 1967 pour accueillir le matériel MF67. 15 600 m² total, 10 190 m² couverts. Patrimoine ferroviaire historique.",
+                        "station": "Saint-Fargeau",
+                        "station_slug": "saint-fargeau"
+                    }
+                ]
+            },
+            {
+                "id": "quartiers",
+                "icon": "🏘️",
+                "title": "Quartiers à découvrir",
+                "category_url": "/tourisme/quartiers/",
+                "pois": [
+                    {
+                        "slug": "quartier-pelleport-saint-fargeau",
+                        "name": "Quartier Pelleport-Saint-Fargeau",
+                        "description": "Quartier résidentiel populaire du 20ᵉ arrondissement. Architecture typique de la fin XIXᵉ et début XXᵉ siècle, ambiance villageoise. Marché Pelleport, parc de Belleville à proximité, vue panoramique sur Paris depuis les hauteurs.",
+                        "station": "Pelleport",
+                        "station_slug": "pelleport"
+                    },
+                    {
+                        "slug": "quartier-gambetta-pere-lachaise",
+                        "name": "Quartier Gambetta — Père-Lachaise",
+                        "description": "Cœur du 20ᵉ arrondissement, autour de la place Gambetta. Mairie du 20ᵉ, Théâtre national de la Colline, accès Père-Lachaise via la rue des Pyrénées. Cafés, restaurants, ambiance populaire.",
+                        "station": "Gambetta",
+                        "station_slug": "gambetta"
+                    },
+                    {
+                        "slug": "quartier-porte-des-lilas",
+                        "name": "Quartier Porte des Lilas",
+                        "description": "Limite est du 20ᵉ arrondissement, porte de Paris vers Les Lilas (commune 93). Centre commercial Le Bocage, parc de la Butte du Chapeau Rouge à proximité, ambiance populaire en mutation.",
+                        "station": "Porte des Lilas",
+                        "station_slug": "porte-des-lilas"
+                    }
+                ]
+            }
+        ]
+    },
+    "tourist_routes": [
+        {
+            "title": "L'itinéraire complet — De Gambetta à Porte des Lilas",
+            "description": "Parcours intégral de la plus courte ligne du métro parisien : Gambetta (correspondance ligne 3, accès Père-Lachaise via marche), Pelleport, Saint-Fargeau, Porte des Lilas (correspondance ligne 11, station fantôme « Porte des Lilas - Cinéma » à proximité). 4 stations, 5 minutes.",
+            "stops": [
+                "Gambetta",
+                "Pelleport",
+                "Saint-Fargeau",
+                "Porte des Lilas"
+            ],
+            "duration_min": 5,
+            "icon": "🚇"
+        }
+    ],
+    "popular_routes": [
+        {
+            "type": "transit",
+            "from": {
+                "name": "Gambetta",
+                "slug": "gambetta"
+            },
+            "to": {
+                "name": "Porte des Lilas",
+                "slug": "porte-des-lilas"
+            },
+            "duration_min": 5,
+            "transfers": 0,
+            "lines": [
+                "3bis"
+            ],
+            "description": "Ligne complète — parcours total de la 3bis, 4 stations",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Pelleport",
+                "slug": "pelleport"
+            },
+            "to": {
+                "name": "Porte des Lilas",
+                "slug": "porte-des-lilas"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "3bis"
+            ],
+            "description": "Axe nord 20ᵉ arrondissement",
+            "popular": true
+        },
+        {
+            "type": "transit",
+            "from": {
+                "name": "Saint-Fargeau",
+                "slug": "saint-fargeau"
+            },
+            "to": {
+                "name": "Gambetta",
+                "slug": "gambetta"
+            },
+            "duration_min": 3,
+            "transfers": 0,
+            "lines": [
+                "3bis"
+            ],
+            "description": "Axe sud 20ᵉ vers correspondance ligne 3",
+            "popular": true
+        }
+    ],
+    "related_articles": [
+        {
+            "title": "Porte des Lilas - Cinéma — la station fantôme du métro",
+            "slug": "station-fantome-porte-lilas-cinema",
+            "url": "/info-trafic/station-fantome-porte-lilas-cinema/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "Voie désaffectée 1939, jamais rouverte, devenue célèbre pour les tournages de films et publicités. Récit du patrimoine ferroviaire et cinématographique de la 3bis.",
+            "author": "Élodie",
+            "published_at": "2026-05-04T08:00:00",
+            "published_label": "Mai 2026",
+            "reading_time": 7,
+            "image": ""
+        },
+        {
+            "title": "La scission de la 3bis en 1971 — pourquoi cette ligne ?",
+            "slug": "scission-ligne-3bis-1971",
+            "url": "/info-trafic/scission-ligne-3bis-1971/",
+            "category": "Histoire",
+            "category_slug": "histoire",
+            "category_color": "#0F6E56",
+            "excerpt": "Comment la ligne 3bis est née d'une scission de la ligne 3 le 27 mars 1971, lors du prolongement à Gallieni.",
+            "author": "Ludo",
+            "published_at": "2026-04-22T10:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 5,
+            "image": ""
+        },
+        {
+            "title": "Les rames courtes de la 3bis — 3 voitures suffisent",
+            "slug": "rames-courtes-mf67-ligne-3bis",
+            "url": "/info-trafic/rames-courtes-mf67-ligne-3bis/",
+            "category": "Coulisses",
+            "category_slug": "coulisses",
+            "category_color": "#8a570f",
+            "excerpt": "Pourquoi la 3bis utilise des rames MF67 raccourcies à 3 voitures (vs 5 sur les autres lignes). Économie adaptée au faible trafic.",
+            "author": "Ludo",
+            "published_at": "2026-04-08T09:00:00",
+            "published_label": "Avril 2026",
+            "reading_time": 4,
+            "image": ""
+        }
+    ],
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/File:Station_Porte_Lilas_M%C3%A9tro_Paris_Ligne_3bis_-_Paris_XX_(FR75)_-_2022-06-24_-_1.jpg",
+        "alt": "Quais de la station Porte des Lilas, ligne 3bis du métro parisien — terminus est de la plus courte ligne du réseau",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Porte_Lilas_M%C3%A9tro_Paris_Ligne_3bis_-_Paris_XX_(FR75)_-_2022-06-24_-_1.jpg",
+            "date": "2022-06-24",
+            "description": "Station Porte des Lilas de la ligne 3bis du métro de Paris (20ᵉ arrondissement). Terminus est de la plus courte ligne du réseau (1,3 km, 4 stations). À proximité immédiate, la « voie navette » désaffectée 1921-1939 — devenue station fantôme « Porte des Lilas - Cinéma » utilisée régulièrement pour des tournages de films"
+        },
+        "source": "manual",
+        "confidence_score": null,
+        "confidence_level": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/lines/ligne-3bis/ligne-3bis-400.avif",
+                "800": "/assets/img/lines/ligne-3bis/ligne-3bis-800.avif",
+                "1200": "/assets/img/lines/ligne-3bis/ligne-3bis-1200.avif",
+                "1600": "/assets/img/lines/ligne-3bis/ligne-3bis-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/lines/ligne-3bis/ligne-3bis-400.webp",
+                "800": "/assets/img/lines/ligne-3bis/ligne-3bis-800.webp",
+                "1200": "/assets/img/lines/ligne-3bis/ligne-3bis-1200.webp",
+                "1600": "/assets/img/lines/ligne-3bis/ligne-3bis-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/lines/ligne-3bis/ligne-3bis-400.jpg",
+                "800": "/assets/img/lines/ligne-3bis/ligne-3bis-800.jpg",
+                "1200": "/assets/img/lines/ligne-3bis/ligne-3bis-1200.jpg",
+                "1600": "/assets/img/lines/ligne-3bis/ligne-3bis-1600.jpg"
+            }
+        }
+    }
 }
