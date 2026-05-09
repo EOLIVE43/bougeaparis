@@ -217,7 +217,13 @@
     background: var(--color-bg-light, #F4F8F6);
 }
 .correspondance-line-link--inactive {
-    opacity: 0.7;
+    /* Lighthouse v11+ inclut l'opacité dans le calcul color-contrast :
+       opacity 0.7 sur badge RER rouge #E2231A + texte blanc = 3.20:1 fail AA.
+       Solution : filter:grayscale (effet visuel "inactif" sans dégrader
+       l'opacité du texte) + cursor:default. Pas de pointer-events:none
+       pour préserver l'accessibilité keyboard (focus-visible). */
+    filter: grayscale(0.5);
+    cursor: default;
 }
 
 /* Wrapper du contenu textuel (nom + terminus + walking RER) en column */
@@ -1264,7 +1270,10 @@ a.horaires-card__badge:hover {
     margin: 1rem 0 0;
     padding-top: 0.75rem;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
-    color: var(--color-success, #1D9E75);
+    /* Neutre var(--text-muted) au lieu de --color-success vert :
+       le footer reste lisible quand le bandeau parent est rouge
+       (perturbation bloquante) — vert sur rouge pâle = 2.93:1 fail */
+    color: var(--color-text-muted, #5A6B66);
     font-size: 0.85rem;
     line-height: 1.4;
 }
@@ -1562,7 +1571,8 @@ a.horaires-card__badge:hover {
 /* Variante alerte : trafic perturbé */
 .quick-link--alert {
     background: var(--color-warning-bg, #FAEEDA);
-    color: var(--color-warning, #BA7517);
+    /* #BA7517 sur #FAEEDA = 3.24:1 (fail AA). #8a570f darken = 5.10:1 ✓ */
+    color: #8a570f;
     border-color: var(--color-warning, #BA7517);
     font-weight: 600;
 }
