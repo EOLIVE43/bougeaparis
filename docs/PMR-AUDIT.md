@@ -268,16 +268,30 @@ modernisation PMR systématique** des édicules historiques 1900.
   pour PMR strict ; Étoile en accès partiel via ascenseur avenue
   Carnot.
 
-## Stations L1 — détail PMR par station (préparation LOT 1)
+## Stations L1 LOT 1 — checklist factuelle (audit Wikipedia 2026-05-09)
 
-Pour chaque station produite LOT 1, audit factuel via Wikipedia
-station avant remplissage du bloc accessibility individuel.
-Sources à consulter :
+Statuts factuels relevés via API Wikipedia. À utiliser pour
+remplir le bloc `accessibility` individuel de chaque page station
+LOT 1 (et NE PAS dupliquer un statut générique L1).
 
-| Station | URL Wikipedia | À vérifier |
+| Station LOT 1 | Statut PMR | Détail à intégrer dans la fiche |
 |---|---|---|
-| La Défense — Grande Arche | `/La_Défense_-_Grande_Arche_(métro_de_Paris)` | Ascenseurs Cœur Transport, conformité 2005 |
-| Charles de Gaulle — Étoile | `/Charles_de_Gaulle_-_Étoile_(métro_de_Paris)` | Correspondance L2/L6/RER A modernisée |
-| Concorde | `/Concorde_(métro_de_Paris)` | Probablement non PMR (1900-1908) |
-| Tuileries | `/Tuileries_(métro_de_Paris)` | Probablement non PMR |
-| Palais Royal — Musée du Louvre | `/Palais_Royal_-_Musée_du_Louvre_(métro_de_Paris)` | Correspondance L7 historique |
+| La Défense — Grande Arche | ✅ Oui | Terminus moderne PMR-conforme, ascenseurs Cœur Transport. Mettre en avant ; recommander pour PMR. |
+| Charles de Gaulle — Étoile | ⚠️ Partiel | Wikipedia : Non. **Mais ascenseur avenue Carnot** mentionné (accès partiel L1). Correspondance L2/L6 : Non. RER A : ascenseur disponible. ⚠️ Ne PAS dire « PMR » sans nuance. |
+| Concorde | ❌ Non | 1900-1908, édicules historiques non modernisés. À mentionner comme non-PMR. |
+| Tuileries | ❌ Non | Édicules 1900 non modernisés. Non-PMR. |
+| Palais Royal — Musée du Louvre | ❓ À recouper | Wikipedia ambigu (regex « ? »). Correspondance L7 historique. À recouper IDFM/Bonjour RATP avant publication. |
+
+Pour les pages station LOT 1, **règle d'or** : le bloc
+`accessibility` doit refléter le statut de la station, pas une
+moyenne L1. Une formulation type :
+- ✅ « La station Châtelet est conforme PMR norme 2005 (accès
+  Porte Marguerite de Navarre, ascenseur). »
+- ⚠️ « L'accès PMR à Charles de Gaulle - Étoile est partiel :
+  un ascenseur dessert l'avenue Carnot mais les correspondances
+  L2/L6 ne sont pas accessibles. »
+- ❌ « La station Concorde n'est pas accessible aux personnes en
+  fauteuil roulant. Préférer Châtelet (correspondance via L1) ou
+  Gare de Lyon. »
+
+Status agrégé LOT 1 : 1 PMR / 1 partiel / 2 non / 1 à recouper sur 5.
