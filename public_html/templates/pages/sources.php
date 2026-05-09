@@ -264,6 +264,20 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
             <p><em>Aucune image referencee pour le moment.</em></p>
         <?php endif; ?>
 
+        <h2>Marques et signalétique</h2>
+        <p>
+            Les couleurs des lignes de métro, RER, tramway et Transilien (numéros, pastilles, codes couleur) reproduites sur ce site sont conformes à la
+            <strong>charte signalétique officielle Île-de-France Mobilités / RATP</strong>,
+            accessible publiquement sur <a href="https://www.iledefrance-mobilites.fr/" target="_blank" rel="noopener">iledefrance-mobilites.fr</a> et
+            <a href="https://www.ratp.fr/" target="_blank" rel="noopener">ratp.fr</a>.
+        </p>
+        <p>
+            Les <strong>pastilles numérotées</strong> et les noms de lignes sont des marques déposées par la
+            <strong>RATP</strong>, <strong>Île-de-France Mobilités</strong> ou la <strong>SNCF</strong>.
+            Leur usage sur BougeaParis.fr est <strong>strictement éditorial et descriptif</strong>,
+            dans le cadre de l'article L713-6 du Code de la propriété intellectuelle (référence nécessaire à la marque pour décrire un service). Pas de reproduction de la carte officielle complète du métro parisien.
+        </p>
+
         <h2>Mentions légales et indépendance</h2>
         <p>
             Bouge à Paris est un site éditorial <strong>indépendant</strong>.

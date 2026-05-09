@@ -41,8 +41,12 @@
         </p>
 
         <h2>Propriété intellectuelle</h2>
-        <p>L'ensemble des textes, illustrations et éléments graphiques présents sur BougeaParis.fr sont la propriété exclusive de l'éditeur, sauf mention contraire. Toute reproduction, totale ou partielle, est interdite sans autorisation préalable.</p>
-        <p>Les noms de lignes (M1, RER A, T3, etc.), leurs numéros et les couleurs associées sont des éléments d'information voyageur publics utilisés dans un but informatif. Ils sont issus des données ouvertes d'Île-de-France Mobilités et ne constituent en aucun cas une appropriation de marques ou de chartes graphiques tierces.</p>
+        <p>L'ensemble des textes originaux et éléments graphiques propres à BougeaParis.fr sont la propriété exclusive de l'éditeur, sauf mention contraire. Toute reproduction, totale ou partielle, est interdite sans autorisation préalable.</p>
+
+        <h2>Marques et signalétique des transports</h2>
+        <p>Les noms et logos des lignes de métro, RER, tramway, bus et Transilien mentionnés sur ce site sont des marques déposées par la <strong>RATP</strong>, <strong>Île-de-France Mobilités (IDFM)</strong> ou la <strong>SNCF</strong>. Les pastilles numérotées des lignes (M1, M4, RER A, T3a, etc.), leurs couleurs officielles et leur charte signalétique sont des éléments protégés.</p>
+        <p>Leur reproduction sur BougeaParis.fr est faite à <strong>titre informatif et éditorial</strong>, dans le cadre prévu par l'<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006279708/" target="_blank" rel="noopener">article L713-6 du Code de la propriété intellectuelle</a> (référence nécessaire à la marque pour décrire un service). Cette utilisation ne crée aucune intention de confusion avec les sites officiels et ne constitue pas une appropriation des marques concernées.</p>
+        <p>BougeaParis.fr <strong>n'est pas affilié</strong> à la RATP, IDFM, SNCF ou à aucun autre opérateur de transport.</p>
 
         <h2>Indépendance éditoriale</h2>
         <p>BougeaParis.fr est un site <strong>indépendant</strong>. Il n'est affilié ni à la RATP, ni à la SNCF, ni à Île-de-France Mobilités, ni à aucun autre opérateur de transport. Les informations publiées sont issues des données ouvertes officielles et de notre veille éditoriale.</p>
