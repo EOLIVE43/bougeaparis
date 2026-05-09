@@ -64,12 +64,12 @@
     <link rel="apple-touch-icon" href="<?= e($site['favicon_png']) ?>">
 
     <!-- Bundle CSS unique (fusion des 8 CSS) -->
-    <link rel="stylesheet" href="/assets/css/bundle.css">
+    <link rel="stylesheet" href="<?= e(asset('/assets/css/bundle.css')) ?>">
 
 <?php /* CSS additionnels demandes par la page (ex: line.css sur /metro/ligne-X/) */ ?>
 <?php if (!empty($extra_stylesheets)): ?>
 <?php foreach ($extra_stylesheets as $href): ?>
-    <link rel="stylesheet" href="<?= e($href) ?>">
+    <link rel="stylesheet" href="<?= e(asset($href)) ?>">
 <?php endforeach; ?>
 <?php endif; ?>
 
@@ -98,7 +98,7 @@
 <?php $tpl->partial('components/cookie-banner'); ?>
 <?php endif; ?>
 
-<script src="/assets/js/main.js" defer></script>
+<script src="<?= e(asset('/assets/js/main.js')) ?>" defer></script>
 
 <?php if (!empty($analytics['ga4_enabled']) && !empty($analytics['ga4_measurement_id'])): ?>
 <!-- Lazy loading GA4 : charge apres interaction ou au bout de 5 secondes -->

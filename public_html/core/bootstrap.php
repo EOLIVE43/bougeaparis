@@ -48,7 +48,24 @@ if (!function_exists('url')) {
 }
 
 if (!function_exists('asset')) {
+    /**
+     * Versionne les assets locaux (/assets/*) avec ?v=<mtime>.
+     * Permet un cache HTTP « immutable » long (1 an) sans risquer
+     * que les visiteurs voient une version obsolète après un déploiement :
+     * la query string change automatiquement quand le fichier change.
+     */
     function asset(string $path): string {
+        if ($path === '' || $path[0] !== '/') {
+            return $path;
+        }
+        $absolute = __DIR__ . '/..' . $path;
+        if (is_file($absolute)) {
+            $mtime = @filemtime($absolute);
+            if ($mtime) {
+                $sep = (strpos($path, '?') === false) ? '?' : '&';
+                return $path . $sep . 'v=' . $mtime;
+            }
+        }
         return $path;
     }
 }

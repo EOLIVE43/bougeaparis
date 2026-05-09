@@ -113,4 +113,4 @@ if ($nbExits === 0 && $nbPois === 0) return;
 
 </section>
 
-<script src="/assets/js/carte-station.js" defer></script>
+<script src="<?= e(asset('/assets/js/carte-station.js')) ?>" defer></script>
