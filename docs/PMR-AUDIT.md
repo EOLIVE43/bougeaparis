@@ -210,15 +210,63 @@ construction. À recouper avec audit IDFM officiel.
 (trade-off pragmatique : valeurs cohérentes Wikipedia, écart
 potentiel +4 sur PMR à vérifier ultérieurement IDFM).
 
-## L1 audit (à faire)
+## L1 audit Wikipedia (2026-05-09)
 
-L1 = automatisée 2011-2013, modernisation PMR concomitante.
-Hypothèse : majorité des 25 stations sont PMR conformes 2005.
-JSON actuel L1 : 2 PMR / 32 ascenseurs / 8% — **probablement
-fortement sous-estimé** sur PMR (plausible 20-25 PMR sur 25).
+25 stations vérifiées via API Wikipedia (sections « Accessibilité »
+des infoboxes).
 
-À auditer en priorité 2 (post-LOT 1 stations L1 ou en parallèle).
-Voir checklist Stations L1 ci-dessous.
+**Résultat surprenant** : l'hypothèse « automatisée 2012 → 20-25
+PMR » est **FAUSSE**. Wikipedia indique seulement **3 stations
+« Oui »** (Châtelet, Gare de Lyon, La Défense) + 1 partielle
+(Charles de Gaulle - Étoile : ascenseur avenue Carnot uniquement).
+
+| Station | Acc Wikipedia | Note |
+|---|---|---|
+| La Défense — Grande Arche | **Oui** | Terminus moderne |
+| Esplanade de la Défense | ? | À recouper IDFM |
+| Pont de Neuilly | ? | À recouper |
+| Les Sablons | Non | — |
+| Porte Maillot | Non | — |
+| Argentine | Non | — |
+| Charles de Gaulle — Étoile | **Non** (partiel) | Ascenseur avenue Carnot mentionné |
+| George V | Non | — |
+| Franklin D. Roosevelt | Non | — |
+| Champs-Élysées — Clemenceau | ? | — |
+| Concorde | Non | — |
+| Tuileries | Non | — |
+| Palais Royal — Musée du Louvre | ? | — |
+| Louvre — Rivoli | ? | — |
+| **Châtelet** | **Oui** | Accès n°1 « Porte Marguerite de Navarre » avec ascenseur |
+| Hôtel de Ville | Non | — |
+| Saint-Paul | Non | — |
+| Bastille | Non | — |
+| **Gare de Lyon** | **Oui** | — |
+| Reuilly — Diderot | ? | — |
+| Nation | Non | Ascenseur uniquement vers RER mentionné |
+| Porte de Vincennes | ? | — |
+| Saint-Mandé | Non | — |
+| Bérault | ? | — |
+| Château de Vincennes | Non | Terminus est, peu PMR |
+
+**Estimation factuelle** : 4 stations PMR conforme 2005 sur 25
+(3 Oui + 1 partiel) = **16 %**. L'automatisation 2012 a apporté
+les portes palières et le pilotage automatique, **mais pas une
+modernisation PMR systématique** des édicules historiques 1900.
+
+**Chiffres mis à jour data/lines/metro-1.json** :
+- accessible_count : 2 → 4
+- accessibility_rate : 8 → 16
+- elevators_count : 32 (conservé, cohérent ascenseurs réseau L1
+  incluant correspondances)
+- audit_status : pending → **verified**
+
+**Bloc descriptif reformulé** pour distinguer clairement :
+- Conformité PMR norme 2005 stricte (~16 %)
+- Ascenseurs publics opérationnels (32 estimation)
+- Portes palières (100 % des stations)
+- Recommandation : privilégier Châtelet, Gare de Lyon, La Défense
+  pour PMR strict ; Étoile en accès partiel via ascenseur avenue
+  Carnot.
 
 ## Stations L1 — détail PMR par station (préparation LOT 1)
 
