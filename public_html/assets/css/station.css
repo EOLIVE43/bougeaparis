@@ -657,7 +657,11 @@ a.horaires-card__badge:hover {
 }
 
 .horaires-card__row--extended dd {
-    color: #B8860B;
+    /* Service prolongé vendredi/samedi (« 2h15 »).
+       #B8860B (or sombre) sur blanc = 3.25:1 fail AA.
+       #8a570f darken = 5.83:1 ✓ — cohérent avec .quick-link--alert
+       et le pattern darken du batch (BA7517 → 8a570f). */
+    color: #8a570f;
 }
 
 /* ----------- Affichage DESKTOP : tableau comparatif ----------- */
