@@ -1,11 +1,16 @@
 # =============================================================
-# BougeaParis.fr — .htaccess o2switch (overlay optims)
+# BougeaParis.fr — .htaccess o2switch
 # =============================================================
-# IMPORTANT : ce fichier n'inclut PAS de mod_rewrite pour le
-# front controller. Le routage applicatif (URL → index.php) est
-# déjà assuré par la config cPanel/o2switch en place. On ajoute
-# uniquement les optims manquantes : cache HTTP long, compression
-# explicite, sécurité fichiers sensibles.
+# Sections :
+#   1. Sécurité : protection fichiers sensibles
+#   2. Compression : Brotli (déjà actif côté o2switch) + gzip
+#   3. Cache HTTP : Cache-Control + Expires sur assets statiques
+#   4. Front controller : tout vers index.php (sauf assets réels)
+#
+# IMPORTANT : le bloc 4 (mod_rewrite) est NÉCESSAIRE — sans lui,
+# o2switch retourne 404 Apache sur toutes les URLs propres comme
+# /metro/, /metro/station/chatelet/, /mentions-legales/.
+# Régression constatée et corrigée le 2026-05-09.
 # =============================================================
 
 
@@ -93,4 +98,23 @@ Options -Indexes
     Header set X-Content-Type-Options "nosniff"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
     Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+
+# -------------------------------------------------------------
+# 4. Front controller — tout vers index.php sauf fichiers réels
+# -------------------------------------------------------------
+# Sans ces règles, o2switch retourne 404 sur les URLs propres
+# (/metro/, /mentions-legales/, etc.). Nécessaire pour le
+# routing PHP custom de BougeaParis.fr.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Si une requête matche un fichier ou un dossier réel → on sert
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Sinon → index.php (front controller PHP)
+    RewriteRule ^ index.php [L]
 </IfModule>
