@@ -486,7 +486,7 @@ $tpl->partial('components/breadcrumb', [
               <li>
                 <div class="correspondance-line-link<?= $rerExists ? '' : ' correspondance-line-link--inactive' ?>">
                   <span class="correspondance-line-badge correspondance-line-badge--rer"
-                        style="background:<?= Template::e($r['color']) ?>;color:#FFFFFF;">
+                        style="background:<?= Template::e(darkenForWhiteText($r['color'])) ?>;color:#FFFFFF;">
                     RER <?= Template::e($r['code']) ?>
                   </span>
                   <div class="correspondance-line-content">

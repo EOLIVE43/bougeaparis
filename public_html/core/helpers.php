@@ -560,3 +560,43 @@ if (!function_exists('wrapStationName')) {
         return htmlspecialchars($name, ENT_QUOTES, 'UTF-8');
     }
 }
+
+if (!function_exists('darkenForWhiteText')) {
+    /**
+     * Darken une couleur hex jusqu'à atteindre AA (4.5:1) avec texte blanc.
+     * Si la couleur passe déjà AA, retourne inchangée (no-op).
+     * Sinon blend progressif avec noir par paliers de 5%.
+     *
+     * Utilisé pour les pastilles correspondance (RER A bleu clair #5291CE
+     * + texte blanc = 3.33:1 fail) où la couleur source vient des JSON
+     * et ne peut pas être darkenée à la source.
+     */
+    function darkenForWhiteText(string $hex, float $target = 4.5): string {
+        $hex = ltrim($hex, '#');
+        if (strlen($hex) !== 6) return '#' . $hex;
+        // WCAG luminance + contrast helpers (inline pour autonomie)
+        $lum = function (string $h): float {
+            $rgb = [hexdec(substr($h, 0, 2)), hexdec(substr($h, 2, 2)), hexdec(substr($h, 4, 2))];
+            $rgb = array_map(function ($v) {
+                $v = $v / 255.0;
+                return $v <= 0.03928 ? $v / 12.92 : pow(($v + 0.055) / 1.055, 2.4);
+            }, $rgb);
+            return 0.2126 * $rgb[0] + 0.7152 * $rgb[1] + 0.0722 * $rgb[2];
+        };
+        $contrast = function (string $a, string $b) use ($lum): float {
+            $la = $lum($a); $lb = $lum($b);
+            return ($la > $lb) ? ($la + 0.05) / ($lb + 0.05) : ($lb + 0.05) / ($la + 0.05);
+        };
+        // Blanc = #FFFFFF. Si contraste >= target, retourne inchangé.
+        if ($contrast($hex, 'FFFFFF') >= $target) return '#' . $hex;
+        // Sinon blend progressif avec noir
+        for ($mix = 0.05; $mix <= 0.95; $mix += 0.05) {
+            $r = (int) round(hexdec(substr($hex, 0, 2)) * (1 - $mix));
+            $g = (int) round(hexdec(substr($hex, 2, 2)) * (1 - $mix));
+            $b = (int) round(hexdec(substr($hex, 4, 2)) * (1 - $mix));
+            $candidate = sprintf('%02X%02X%02X', $r, $g, $b);
+            if ($contrast($candidate, 'FFFFFF') >= $target) return '#' . $candidate;
+        }
+        return '#000000';
+    }
+}
