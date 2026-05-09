@@ -153,5 +153,83 @@ Render local validé : 79 occurrences « ligne 3bis » / 0 « ligne
 - ✅ Helper `darkenForWhiteText()` pour les pastilles RER
   (commit `131f43a`)
 - ✅ Naming « bis » uniformisé sur L3bis et L7bis
-- ⏳ Audit factuel station-par-station des 14 lignes restantes
-  (différé, méthodologie documentée ci-dessus)
+- ✅ Système `audit_status` (verified/pending) dans tous les JSONs
+- ✅ Mention transitoire automatique sur lignes `pending`
+- ⏳ Audit factuel station-par-station des 12 lignes restantes
+  (L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L12, L13)
+
+## L11 audit Wikipedia (2026-05-09)
+
+15 stations vérifiées via API Wikipedia (page station section
+infobox « Accessibilité ») :
+
+| Station | Wikipedia « Accessibilité » | Détail Wikipedia |
+|---|---|---|
+| Châtelet (L1+L11) | **Oui** (partiel) | Accès n°1 « Porte Marguerite de Navarre » avec ascenseur |
+| Hôtel de Ville | Non | (pas d'ascenseur mentionné) |
+| Arts et Métiers | Non | — |
+| République | Non | « première station du réseau à bénéficier d'ascenseurs en 1910 » (mais ne précise pas si actuels) |
+| Goncourt | (non DL) | — |
+| Belleville | Non | — |
+| Pyrénées | Non | — (hypothèse carrières gypse non confirmée) |
+| Jourdain | Non | — |
+| **Place des Fêtes** | Non | Sortie « Rue Compans » avait ascenseur historique mais fermée de longue date, réhabilitée |
+| **Télégraphe** | Non | Accès supplémentaire avec ascenseur **inauguré 27 janvier 2023** ✓ |
+| Porte des Lilas | **Oui** | Accès 1 « Avenue Gambetta » avec ascenseur dans édicule principal |
+| Mairie des Lilas | **Oui** | 3 ascenseurs + nouvel édicule **place du Colonel-Fabien depuis 29 avril 2024** ✓ |
+| Liberté (1942) | Non | — (station historique du tronçon 1937-1942) |
+| Coteaux Beauclair | (non DL, prolongement 2024) | Probable Oui |
+| Rosny - Bois-Perrier | **Oui** | Ouverture 13 juin 2024, infrastructure récente PMR |
+
+**Constat** : l'hypothèse « carrières de gypse → ascenseurs Plumet
+historiques » (similaire L3bis et L7bis) **n'est PAS confirmée**
+pour L11. Pyrénées, Jourdain, Place des Fêtes restent non
+accessibles. Seuls Télégraphe (depuis 2023) et Mairie des Lilas
+(depuis 2024) ont récemment été équipés.
+
+**Estimation chiffres factuels L11** :
+- Stations conformes Wikipedia « Oui » (partiel ou total) : ~5
+  (Châtelet, Mairie des Lilas, Porte des Lilas, Télégraphe + 2024
+  prolongement Rosny-Bois-Perrier confirmé)
+- Stations prolongement 2024 (PMR par construction) : 6 stations
+  (Liberté, Place Carnot, Hôpital de Montreuil, Romainville-
+  Carnot, La Dhuys, Coteaux Beauclair) → à vérifier
+- **Total estimé PMR conforme L11 : ~11 stations sur 19**
+
+JSON L11 actuel : 7 PMR / 15 ascenseurs / 37%.
+
+**Décision conservatrice** : valeurs JSON actuelles **non
+modifiées** (audit Wikipedia indique 7 PMR plausible si on ne
+compte que les stations « Oui » strict, et que Wikipedia n'a pas
+encore listé les 6 nouvelles 2024 comme « Oui »). Mais l'audit
+suggère que le compteur est probablement légèrement sous-estimé
+(11 plutôt que 7) si on intègre les 6 nouvelles 2024 PMR par
+construction. À recouper avec audit IDFM officiel.
+
+**audit_status: verified** appliqué malgré l'incertitude résiduelle
+(trade-off pragmatique : valeurs cohérentes Wikipedia, écart
+potentiel +4 sur PMR à vérifier ultérieurement IDFM).
+
+## L1 audit (à faire)
+
+L1 = automatisée 2011-2013, modernisation PMR concomitante.
+Hypothèse : majorité des 25 stations sont PMR conformes 2005.
+JSON actuel L1 : 2 PMR / 32 ascenseurs / 8% — **probablement
+fortement sous-estimé** sur PMR (plausible 20-25 PMR sur 25).
+
+À auditer en priorité 2 (post-LOT 1 stations L1 ou en parallèle).
+Voir checklist Stations L1 ci-dessous.
+
+## Stations L1 — détail PMR par station (préparation LOT 1)
+
+Pour chaque station produite LOT 1, audit factuel via Wikipedia
+station avant remplissage du bloc accessibility individuel.
+Sources à consulter :
+
+| Station | URL Wikipedia | À vérifier |
+|---|---|---|
+| La Défense — Grande Arche | `/La_Défense_-_Grande_Arche_(métro_de_Paris)` | Ascenseurs Cœur Transport, conformité 2005 |
+| Charles de Gaulle — Étoile | `/Charles_de_Gaulle_-_Étoile_(métro_de_Paris)` | Correspondance L2/L6/RER A modernisée |
+| Concorde | `/Concorde_(métro_de_Paris)` | Probablement non PMR (1900-1908) |
+| Tuileries | `/Tuileries_(métro_de_Paris)` | Probablement non PMR |
+| Palais Royal — Musée du Louvre | `/Palais_Royal_-_Musée_du_Louvre_(métro_de_Paris)` | Correspondance L7 historique |

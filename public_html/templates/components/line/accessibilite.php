@@ -79,6 +79,17 @@ $stats = $accessibility['stats'];
 
   </div>
 
+  <?php if (($accessibility['audit_status'] ?? 'pending') === 'pending'): ?>
+    <div class="accessibilite__notice" role="note" style="margin:1.5rem 0;padding:1rem 1.25rem;background:#FFF6CC;border-left:4px solid #8a570f;border-radius:8px;font-size:0.9rem;line-height:1.5;color:var(--color-text);">
+      <strong>ℹ️ Données accessibilité en cours de vérification factuelle.</strong>
+      Les chiffres ci-dessus sont basés sur des données générales et n'ont pas
+      encore fait l'objet d'un audit station-par-station. Pour l'information
+      la plus à jour sur les ascenseurs en service, consulter
+      <a href="https://www.bonjour-ratp.fr/" target="_blank" rel="noopener">Bonjour RATP</a>
+      ou contacter le service voyageurs RATP.
+    </div>
+  <?php endif; ?>
+
   <!-- Équipements -->
   <h3 class="accessibilite__subtitle">Équipements PMR sur la ligne <?= htmlspecialchars($line['code']) ?></h3>
   <div class="accessibilite__equipment">
