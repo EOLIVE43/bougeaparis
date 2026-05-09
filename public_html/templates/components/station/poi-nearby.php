@@ -43,7 +43,7 @@ $count = count($pois);
 
 <section class="station-section section-poi" id="poi-nearby" aria-labelledby="poi-heading">
 
-  <h2 id="poi-heading">Que voir à proximité de la station <?= e($stationName) ?></h2>
+  <h2 id="poi-heading">Que voir près de la station <?= e($stationName) ?> — <?= (int)$count ?> monuments à proximité</h2>
 
   <p class="section-intro">
     Cette sélection de

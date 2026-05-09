@@ -44,6 +44,9 @@ $arr       = $station['arrondissement'] ?? '';
 $address   = $station['address']   ?? '';
 $lines     = $station['lines']     ?? [];
 $rer       = $station['rer_correspondences'] ?? [];
+$tram      = $station['tram_correspondences'] ?? [];
+$transilien = $station['transilien_correspondences'] ?? [];
+$bus       = $station['bus_correspondences'] ?? [];
 $hero      = $station['hero']      ?? [];
 $adjacent  = $station['adjacent_stations'] ?? [];
 $image     = $station['image']     ?? null;
@@ -536,6 +539,124 @@ $tpl->partial('components/breadcrumb', [
         </div>
       <?php endif; ?>
 
+      <!-- Tramway -->
+      <?php if (!empty($tram)): ?>
+        <div class="correspondances-block">
+          <h3>Correspondances Tramway à <?= Template::e($name) ?></h3>
+          <ul class="correspondances-list">
+            <?php foreach ($tram as $t):
+              $tramCode = (string)($t['code'] ?? '');
+              $tramUrl  = '/tramway/t' . strtolower($tramCode) . '/';
+              $tramExists = Routes::exists(rtrim($tramUrl, '/'));
+            ?>
+              <li>
+                <div class="correspondance-line-link<?= $tramExists ? '' : ' correspondance-line-link--inactive' ?>">
+                  <span class="correspondance-line-badge correspondance-line-badge--tram"
+                        style="background:<?= Template::e(darkenForWhiteText($t['color'] ?? '#cead2c')) ?>;color:#FFFFFF;">
+                    T<?= Template::e($tramCode) ?>
+                  </span>
+                  <div class="correspondance-line-content">
+                    <?php if ($tramExists): ?>
+                      <a href="<?= Template::e($tramUrl) ?>" class="correspondance-line-name">Tramway T<?= Template::e($tramCode) ?></a>
+                    <?php else: ?>
+                      <span class="correspondance-line-name">Tramway T<?= Template::e($tramCode) ?></span>
+                    <?php endif; ?>
+                    <?php if (!empty($t['walking_minutes'])): ?>
+                      <span class="correspondance-line-walking"><?= (int)$t['walking_minutes'] ?> min à pied</span>
+                    <?php endif; ?>
+                    <?php if (!empty($t['destinations'])): ?>
+                      <small class="correspondance-line-terminus">
+                        <span aria-hidden="true">↔</span>
+                        <?= Template::e($t['destinations']) ?>
+                      </small>
+                    <?php endif; ?>
+                  </div>
+                </div>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
+      <!-- Transilien (SNCF) -->
+      <?php if (!empty($transilien)): ?>
+        <div class="correspondances-block">
+          <h3>Correspondances Transilien à <?= Template::e($name) ?></h3>
+          <ul class="correspondances-list">
+            <?php foreach ($transilien as $tn):
+              $tnCode = (string)($tn['code'] ?? '');
+              $tnUrl  = '/transilien/transilien-' . strtolower($tnCode) . '/';
+              $tnExists = Routes::exists(rtrim($tnUrl, '/'));
+            ?>
+              <li>
+                <div class="correspondance-line-link<?= $tnExists ? '' : ' correspondance-line-link--inactive' ?>">
+                  <span class="correspondance-line-badge correspondance-line-badge--transilien"
+                        style="background:<?= Template::e(darkenForWhiteText($tn['color'] ?? '#7A99C9')) ?>;color:#FFFFFF;">
+                    <?= Template::e($tnCode) ?>
+                  </span>
+                  <div class="correspondance-line-content">
+                    <?php if ($tnExists): ?>
+                      <a href="<?= Template::e($tnUrl) ?>" class="correspondance-line-name">Transilien <?= Template::e($tnCode) ?></a>
+                    <?php else: ?>
+                      <span class="correspondance-line-name">Transilien <?= Template::e($tnCode) ?></span>
+                    <?php endif; ?>
+                    <?php if (!empty($tn['walking_minutes'])): ?>
+                      <span class="correspondance-line-walking"><?= (int)$tn['walking_minutes'] ?> min à pied</span>
+                    <?php endif; ?>
+                    <?php if (!empty($tn['destinations'])): ?>
+                      <small class="correspondance-line-terminus">
+                        <span aria-hidden="true">↔</span>
+                        <?= Template::e($tn['destinations']) ?>
+                      </small>
+                    <?php endif; ?>
+                  </div>
+                </div>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
+      <!-- Bus (RATP + régional + Noctilien) -->
+      <?php
+      $busDiurnes = is_array($bus) ? ($bus['diurne'] ?? []) : [];
+      $busNoct    = is_array($bus) ? ($bus['nocturne'] ?? []) : [];
+      $busReg     = is_array($bus) ? ($bus['regional'] ?? []) : [];
+      $hasAnyBus  = !empty($busDiurnes) || !empty($busNoct) || !empty($busReg);
+      ?>
+      <?php if ($hasAnyBus): ?>
+        <div class="correspondances-block">
+          <h3>Lignes de bus à <?= Template::e($name) ?></h3>
+          <?php if (!empty($busDiurnes)): ?>
+            <p class="correspondance-bus-label"><strong>Bus diurnes :</strong>
+              <span class="correspondance-bus-list">
+                <?php foreach ($busDiurnes as $i => $b): ?>
+                  <span class="correspondance-bus-badge"><?= Template::e($b) ?></span><?= $i < count($busDiurnes) - 1 ? ' ' : '' ?>
+                <?php endforeach; ?>
+              </span>
+            </p>
+          <?php endif; ?>
+          <?php if (!empty($busNoct)): ?>
+            <p class="correspondance-bus-label"><strong>Noctilien :</strong>
+              <span class="correspondance-bus-list">
+                <?php foreach ($busNoct as $i => $b): ?>
+                  <span class="correspondance-bus-badge correspondance-bus-badge--noct"><?= Template::e($b) ?></span><?= $i < count($busNoct) - 1 ? ' ' : '' ?>
+                <?php endforeach; ?>
+              </span>
+            </p>
+          <?php endif; ?>
+          <?php if (!empty($busReg)): ?>
+            <p class="correspondance-bus-label"><strong>Bus régionaux :</strong>
+              <span class="correspondance-bus-list">
+                <?php foreach ($busReg as $i => $b): ?>
+                  <span class="correspondance-bus-badge correspondance-bus-badge--reg"><?= Template::e($b) ?></span><?= $i < count($busReg) - 1 ? ' ' : '' ?>
+                <?php endforeach; ?>
+              </span>
+            </p>
+          <?php endif; ?>
+        </div>
+      <?php endif; ?>
+
     </div>
   </section>
 
@@ -631,15 +752,6 @@ $tpl->partial('components/breadcrumb', [
   <?php endif; ?>
 
 <!-- ============================================================
-       4bis-pre. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
-       ============================================================ -->
-  <?php $tpl->partial('components/station/itineraires-populaires', [
-      'itineraries' => $station['popular_itineraries'] ?? [],
-      'stationName' => $name,
-      'stationSlug' => $station['slug'] ?? null,
-  ]); ?>
-
-  <!-- ============================================================
        4bis. HORAIRES PAR LIGNE
        ============================================================ -->
   <?php $tpl->partial('components/station/horaires-par-ligne', [
@@ -676,10 +788,23 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
+       4quater-bis. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
+                    Zone exploratoire : transition entre la
+                    sequence transactionnelle (correspondances,
+                    horaires, sorties, plan) et la sequence
+                    decouverte (POIs, histoire, FAQ).
+       ============================================================ -->
+  <?php $tpl->partial('components/station/itineraires-populaires', [
+      'itineraries' => $station['popular_itineraries'] ?? [],
+      'stationName' => $name,
+      'stationSlug' => $station['slug'] ?? null,
+  ]); ?>
+
+  <!-- ============================================================
        4quinquies. POI A PROXIMITE (Wikidata + Wikipedia + Commons)
                    Place ici (et plus apres FAQ) pour grouper la
                    sequence narrative geographique :
-                   sorties -> plan -> POIs -> histoire/FAQ.
+                   sorties -> plan -> itineraires -> POIs -> histoire/FAQ.
        ============================================================ -->
   <?php $tpl->partial('components/station/poi-nearby', [
       'pois'        => $station['nearby_pois'] ?? [],
@@ -692,7 +817,10 @@ $tpl->partial('components/breadcrumb', [
        ============================================================ -->
   <?php if (!empty($history['paragraphs'])): ?>
     <section class="station-section section-history" id="histoire" aria-labelledby="history-title">
-      <h2 id="history-title"><?= Template::e($history['title'] ?? 'Histoire de la station') ?></h2>
+      <h2 id="history-title">Histoire de la station <?= Template::e($nameFull) ?></h2>
+      <?php if (!empty($history['title']) && $history['title'] !== 'Histoire de la station'): ?>
+        <p class="section-subtitle"><em><?= Template::e($history['title']) ?></em></p>
+      <?php endif; ?>
       <?php foreach ($history['paragraphs'] as $para): ?>
         <p><?= $para ?></p>
       <?php endforeach; ?>
@@ -719,7 +847,7 @@ $tpl->partial('components/breadcrumb', [
         <?php foreach ($faq as $i => $item): ?>
           <details class="faq-item" <?= $i === 0 ? 'open' : '' ?>>
             <summary class="faq-question">
-              <?= richText($item['question']) ?>
+              <h3 class="faq-question__heading"><?= richText($item['question']) ?></h3>
             </summary>
             <div class="faq-answer">
               <p><?= richText($item['answer']) ?></p>
