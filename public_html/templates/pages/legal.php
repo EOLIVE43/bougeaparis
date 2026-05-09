@@ -37,9 +37,6 @@ $tpl->seo
             Email : <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>
         </p>
         <p><em>Directeur de la publication : Ludovic L.</em></p>
-        <p style="font-size:0.85em;color:var(--color-text-muted, #5A6B66);">
-            <em>Forme juridique et numéro SIRET : <span style="background:#FFF6CC;padding:2px 6px;">à compléter</span></em>
-        </p>
 
         <h2>Hébergement</h2>
         <p>
@@ -92,10 +89,20 @@ $tpl->seo
         <p>Si vous nous contactez par email à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>, votre adresse email sera utilisée uniquement pour répondre à votre demande, conformément au RGPD.</p>
 
         <h2>Cookies</h2>
-        <p>Le site BougeaParis.fr <strong>n'utilise pas de cookies de tracking</strong>. Seuls les cookies strictement nécessaires au fonctionnement technique du site peuvent être déposés (préférences d'affichage, état de session). Aucun cookie publicitaire ou d'analyse comportementale n'est utilisé.</p>
-        <p style="font-size:0.85em;color:var(--color-text-muted, #5A6B66);">
-            <em>Si Google Analytics, Google Search Console ou un autre tracker venait à être activé : <span style="background:#FFF6CC;padding:2px 6px;">à compléter avec le détail des cookies utilisés et la procédure de consentement</span></em>
-        </p>
+        <p>Le site bougeaparis.fr utilise les services suivants à des fins de mesure d'audience et d'optimisation SEO :</p>
+
+        <h3>Google Analytics (mesure d'audience)</h3>
+        <p>Le site utilise Google Analytics pour mesurer la fréquentation du site, identifier les pages les plus consultées et améliorer l'expérience utilisateur. Google Analytics dépose des cookies tiers (notamment <code>_ga</code>, <code>_ga_*</code>) sur le terminal de l'utilisateur. Ces cookies collectent des informations de manière anonyme (adresse IP anonymisée, type de navigateur, pages visitées, durée de visite, source de trafic).</p>
+        <p>Pour consulter la politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+        <p>Pour refuser le suivi par Google Analytics, l'utilisateur peut installer le module complémentaire de désactivation officiel : <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">tools.google.com/dlpage/gaoptout</a></p>
+
+        <h3>Google Search Console (analyse référencement)</h3>
+        <p>Le site utilise Google Search Console pour analyser sa performance dans les résultats de recherche Google. Cet outil <strong>ne dépose pas de cookies</strong> sur le terminal des visiteurs : il fonctionne via une vérification de propriété du domaine et collecte uniquement les données de recherche agrégées côté Google.</p>
+        <p>Pour plus d'informations sur Search Console : <a href="https://support.google.com/webmasters" target="_blank" rel="noopener">support.google.com/webmasters</a></p>
+
+        <h3>Consentement</h3>
+        <p>Conformément au RGPD et à la directive ePrivacy, l'utilisateur peut à tout moment refuser ces cookies via les paramètres de son navigateur ou les outils de désactivation mentionnés ci-dessus.</p>
+        <p>Pour toute question concernant la collecte de données, contacter <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
 
         <h2>Responsabilité</h2>
         <p>Malgré tout le soin apporté à la rédaction de ce site, des erreurs peuvent subsister. BougeaParis.fr ne saurait être tenu responsable des inexactitudes qui pourraient s'y trouver ni des conséquences d'une utilisation des informations qui y sont publiées. Pour toute information critique (dernier train, correspondance cruciale, etc.), nous vous invitons à vérifier auprès des opérateurs officiels.</p>
