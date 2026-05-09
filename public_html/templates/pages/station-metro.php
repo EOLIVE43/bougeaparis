@@ -345,7 +345,7 @@ $tpl->partial('components/breadcrumb', [
 
       <?php if (!empty($hero['description'])): ?>
         <p class="station-hero__description">
-          <?= Template::e($hero['description']) ?>
+          <?= richText($hero['description']) ?>
         </p>
       <?php endif; ?>
 
@@ -719,10 +719,10 @@ $tpl->partial('components/breadcrumb', [
         <?php foreach ($faq as $i => $item): ?>
           <details class="faq-item" <?= $i === 0 ? 'open' : '' ?>>
             <summary class="faq-question">
-              <?= Template::e($item['question']) ?>
+              <?= richText($item['question']) ?>
             </summary>
             <div class="faq-answer">
-              <p><?= Template::e($item['answer']) ?></p>
+              <p><?= richText($item['answer']) ?></p>
             </div>
           </details>
         <?php endforeach; ?>
@@ -738,7 +738,7 @@ $tpl->partial('components/breadcrumb', [
       <h2 id="tips-title">Conseils pratiques pour bien circuler à <?= Template::e($name) ?></h2>
       <ul class="tips-list">
         <?php foreach ($tips as $tip): ?>
-          <li><span class="tips-icon" aria-hidden="true">💡</span> <?= Template::e($tip) ?></li>
+          <li><span class="tips-icon" aria-hidden="true">💡</span> <?= richText($tip) ?></li>
         <?php endforeach; ?>
       </ul>
     </section>

@@ -39,7 +39,7 @@ if (empty($trivia) || !is_array($trivia)) {
           <div class="trivia-icon" aria-hidden="true"><?= Template::e($icon) ?></div>
         <?php endif; ?>
         <h3 class="trivia-title"><?= Template::e($title) ?></h3>
-        <p class="trivia-content"><?= Template::e($content) ?></p>
+        <p class="trivia-content"><?= richText($content) ?></p>
       </article>
     <?php endforeach; ?>
   </div>
