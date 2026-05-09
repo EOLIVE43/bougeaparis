@@ -1,8 +1,8 @@
 {
     "id": "metro-3bis",
     "mode": "metro",
-    "code": "3B",
-    "name": "Ligne 3B",
+    "code": "3bis",
+    "name": "Ligne 3bis",
     "stations_count": 4,
     "length_km": 1.4,
     "schedule": {
@@ -471,15 +471,20 @@
             "accessible_count": 0,
             "total_count": 4,
             "accessibility_rate": 0,
-            "elevators_count": 0,
+            "elevators_count": 6,
             "audio_announcements": true,
             "visual_announcements": true
         },
         "equipment": [
             {
+                "icon": "🛗",
+                "label": "6 ascenseurs publics opérationnels",
+                "description": "Particularité architecturale UNIQUE de la ligne 3bis : les stations Pelleport, Saint-Fargeau et Porte des Lilas sont équipées d'ASCENSEURS PUBLICS depuis l'origine (édicules Charles Plumet 1922), en raison de la profondeur exceptionnelle des quais (19-25 m, présence du lac Saint-Fargeau et carrières de gypse). Ces ascenseurs sont utilisables par TOUS : voyageurs PMR, parents avec poussettes, voyageurs avec bagages lourds, seniors."
+            },
+            {
                 "icon": "♿",
-                "label": "Accessibilité très limitée (~0 %)",
-                "description": "Aucune des 4 stations de la ligne 3bis ne dispose d'ascenseurs PMR. Infrastructure historique de 1921 difficile à moderniser, faible trafic n'a pas justifié d'investissement."
+                "label": "PMR conforme norme 2005 : 0 station",
+                "description": "Bien que 3 stations sur 4 disposent d'ascenseurs publics, AUCUNE n'est conforme aux normes PMR strictes de 2005 (largeurs, signalétique tactile, espacement quai-train, etc.). Les ascenseurs Plumet 1922 sont historiques et ne respectent pas tous les critères modernes."
             },
             {
                 "icon": "🚆",
@@ -488,23 +493,18 @@
             },
             {
                 "icon": "🏗️",
-                "label": "Stations historiques contraignantes",
-                "description": "Les 4 stations ouvertes en 1921 ont des escaliers d'origine difficiles à équiper d'ascenseurs sans modification structurelle majeure."
-            },
-            {
-                "icon": "🔄",
-                "label": "Accès partiel via correspondances",
-                "description": "Les correspondances Gambetta (ligne 3) et Porte des Lilas (ligne 11) peuvent offrir un accès partiel selon les ascenseurs des autres lignes."
+                "label": "Gambetta : pas d'ascenseur 3bis propre",
+                "description": "Seule la station Gambetta n'a pas d'ascenseur propre 3bis. Les voyageurs PMR peuvent utiliser les ascenseurs de la ligne 3 en correspondance (selon disponibilité)."
             }
         ],
         "tips": [
             {
-                "title": "Privilégier les correspondances accessibles",
-                "description": "Pour un voyage PMR sur la ligne 3bis, privilégier les correspondances modernisées (ligne 11 à Porte des Lilas) — la 11 est l'une des mieux accessibles du réseau depuis le prolongement de 2024."
+                "title": "Profitez des ascenseurs publics historiques",
+                "description": "Les ascenseurs des stations Pelleport, Saint-Fargeau et Porte des Lilas sont OUVERTS À TOUS — pas seulement aux voyageurs PMR. Pratiques avec une poussette, des bagages lourds ou pour éviter les escaliers profonds (jusqu'à 25 m)."
             },
             {
-                "title": "Vérifier l'accessibilité avant de partir",
-                "description": "Consulter l'application Bonjour RATP ou Île-de-France Mobilités avant le voyage. Les ascenseurs des correspondances ne sont pas toujours en service."
+                "title": "PMR strict : privilégier les correspondances",
+                "description": "Pour un voyage en fauteuil roulant strict (norme 2005), privilégier les correspondances modernisées : ligne 11 à Porte des Lilas (récemment modernisée pour le prolongement Rosny-Bois-Perrier 2024)."
             },
             {
                 "title": "Service Accès Plus",

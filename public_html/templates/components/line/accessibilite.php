@@ -62,13 +62,13 @@ $stats = $accessibility['stats'];
     <div class="access-stat-card">
       <div class="access-stat-card__icon" aria-hidden="true">♿</div>
       <div class="access-stat-card__value"><?= htmlspecialchars($stats['accessible_count']) ?></div>
-      <div class="access-stat-card__label">Stations accessibles<br>aux fauteuils roulants</div>
+      <div class="access-stat-card__label">Stations conformes<br>norme PMR 2005</div>
     </div>
 
     <div class="access-stat-card">
       <div class="access-stat-card__icon" aria-hidden="true">🛗</div>
       <div class="access-stat-card__value"><?= htmlspecialchars($stats['elevators_count']) ?></div>
-      <div class="access-stat-card__label">Ascenseurs<br>en service sur la ligne</div>
+      <div class="access-stat-card__label">Ascenseurs publics<br>opérationnels (tous usages)</div>
     </div>
 
     <div class="access-stat-card">
