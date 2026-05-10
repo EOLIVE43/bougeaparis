@@ -1772,3 +1772,20 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     .hub-gares__grid { grid-template-columns: 1fr; }
     .hub-gares__header h1 { font-size: 1.5rem; }
 }
+
+/* A11y systémique : liens dans paragraphes éditoriaux toujours soulignés.
+   WCAG 1.4.1 — la couleur seule ne suffit pas à distinguer un lien.
+   Cible : <p><a></a></p> dans les sections éditoriales (pages /tarifs/,
+   /a-propos/, /sources/, /info-trafic/, etc.). Exclut les liens stylés en
+   bouton/badge via :not([class]). */
+section.section p > a:not([class]),
+section.section li > a:not([class]) {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+section.section p > a:not([class]):hover,
+section.section p > a:not([class]):focus,
+section.section li > a:not([class]):hover,
+section.section li > a:not([class]):focus {
+    text-decoration-thickness: 2px;
+}
