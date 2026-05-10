@@ -326,13 +326,15 @@
     font-size: 0.7rem;
     font-weight: 400;
     margin-top: 0.2rem;
-    opacity: 0.95;
+    /* opacity retiré pour garantir le contraste WCAG AA */
 }
-.zones-map__ring--1 { background: #117049; border-radius: 8px 0 0 8px; }
-.zones-map__ring--2 { background: #1f8a64; }
-.zones-map__ring--3 { background: #3aa580; }
-.zones-map__ring--4 { background: #5cbf9c; }
-.zones-map__ring--5 { background: #8fd9bb; color: #04342C; border-radius: 0 8px 8px 0; }
+/* Dégradé de verts FONCÉS pour garantir WCAG AA (contraste blanc ≥ 4.5).
+   ring1 13.7, ring2 9.21, ring3 7.55, ring4 6.11, ring5 inversé text foncé. */
+.zones-map__ring--1 { background: #04342C; border-radius: 8px 0 0 8px; }
+.zones-map__ring--2 { background: #0a5239; }
+.zones-map__ring--3 { background: #0d6047; }
+.zones-map__ring--4 { background: #117049; }
+.zones-map__ring--5 { background: #C9EBD8; color: #04342C; border-radius: 0 8px 8px 0; }
 @media (max-width: 519px) {
     .zones-map__rings { grid-template-columns: repeat(5, 1fr); }
     .zones-map__ring { padding: 0.5rem 0.2rem; font-size: 0.85rem; }

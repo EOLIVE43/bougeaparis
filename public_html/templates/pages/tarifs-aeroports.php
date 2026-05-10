@@ -64,7 +64,7 @@ $renderOption = function (array $o, string $iconOverride = null) {
     <article class="tarif-card">
       <div class="tarif-card__header">
         <span class="tarif-card__icon" aria-hidden="true"><?= e($iconOverride ?: '✈️') ?></span>
-        <h4 class="tarif-card__title"><?= e($label) ?></h4>
+        <h3 class="tarif-card__title"><?= e($label) ?></h3>
         <?php if ($price !== null): ?>
           <span class="tarif-card__price">
             <?= e(format_price((float)$price)) ?>

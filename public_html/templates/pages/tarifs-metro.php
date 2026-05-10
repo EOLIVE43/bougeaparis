@@ -60,7 +60,7 @@ $renderCard = function (string $key, array $t) {
     <article class="tarif-card">
       <div class="tarif-card__header">
         <span class="tarif-card__icon" aria-hidden="true"><?= e($icon) ?></span>
-        <h4 class="tarif-card__title"><?= e($name) ?></h4>
+        <h3 class="tarif-card__title"><?= e($name) ?></h3>
         <?php if ($primary !== null): ?>
           <span class="tarif-card__price">
             <?= e(format_price((float)$primary)) ?>
