@@ -105,7 +105,7 @@ $renderCard = function (string $key, array $t) {
     <article class="tarif-card">
       <div class="tarif-card__header">
         <span class="tarif-card__icon" aria-hidden="true"><?= htmlspecialchars($icon, ENT_QUOTES, 'UTF-8') ?></span>
-        <h3 class="tarif-card__name"><?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?></h3>
+        <h4 class="tarif-card__name"><?= htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?></h4>
       </div>
       <?php if ($primaryEur !== null): ?>
         <div class="tarif-card__price">

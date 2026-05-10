@@ -2000,6 +2000,8 @@ a.maillage-pill:focus {
 .maillage-cta:hover,
 .maillage-cta:focus {
     background: var(--color-primary-dark, #0a5239);
+    color: #fff; /* override global a:hover qui mettait du vert sur vert */
+    text-decoration: none;
 }
 .maillage-cta--inactive {
     background: var(--color-bg-tertiary, #F1F3F2);
@@ -2162,6 +2164,8 @@ a.maillage-util:focus {
 .itineraires-hub-link__btn:hover,
 .itineraires-hub-link__btn:focus {
     background: var(--color-primary-dark, #0a5239);
+    color: #fff;
+    text-decoration: none;
 }
 .itineraires-hub-link__btn--inactive {
     background: var(--color-bg-tertiary, #F1F3F2);

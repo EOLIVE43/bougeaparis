@@ -747,12 +747,27 @@ $tpl->partial('components/breadcrumb', [
           $next = $block['next'];
         ?>
           <div class="adjacent-line-block">
+            <?php
+            // H3 enrichi avec directions selon type de station :
+            // - terminus (prev XOR next) → « direction {dir unique} »
+            // - centrale (prev AND next) → « directions {prev.dir} et {next.dir} »
+            $dirs = [];
+            if ($prev && !empty($prev['direction'])) $dirs[] = $prev['direction'];
+            if ($next && !empty($next['direction'])) $dirs[] = $next['direction'];
+            $dirs = array_values(array_unique($dirs));
+            $dirLabel = '';
+            if (count($dirs) === 1) {
+                $dirLabel = ' — direction ' . $dirs[0];
+            } elseif (count($dirs) >= 2) {
+                $dirLabel = ' — directions ' . $dirs[0] . ' et ' . $dirs[1];
+            }
+            ?>
             <h3 class="adjacent-line-title">
               <span class="adjacent-line-badge"
                     style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
                 <?= Template::e($line['code']) ?>
               </span>
-              <span>Ligne <?= Template::e($line['code']) ?></span>
+              <span>Ligne <?= Template::e($line['code']) ?><?= Template::e($dirLabel) ?></span>
             </h3>
 
             <div class="adjacent-stations">
