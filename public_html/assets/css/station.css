@@ -1824,6 +1824,21 @@ a.correspondance-bus-badge:focus {
     cursor: default;
 }
 
+/* A11y : liens dans le texte (intro / meta) doivent être discernables.
+   Pattern WCAG : underline + couleur, sinon contrast vs texte muted insuffisant. */
+.section-intro a,
+.tarifs-meta a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: currentColor;
+}
+.section-intro a:hover,
+.section-intro a:focus,
+.tarifs-meta a:hover,
+.tarifs-meta a:focus {
+    text-decoration-color: var(--color-primary, #117049);
+}
+
 /* SERVICES */
 .section-services { margin-top: 2.5rem; }
 .services-list {

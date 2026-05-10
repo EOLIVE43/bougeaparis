@@ -56,9 +56,9 @@ $hubActive = Routes::exists(rtrim($hubUrl, '/'));
     Les tarifs des transports en commun à <strong><?= Template::e($stationName) ?></strong> sont fixés par <strong>Île-de-France Mobilités</strong> et appliqués par la RATP et la SNCF. Voici les principaux titres en vigueur, valables sur le métro, le RER intra-Paris, le bus et le tramway.
   </p>
 
-  <div class="tarifs-grid" role="list">
+  <div class="tarifs-grid">
     <?php foreach ($mainTitles as $key => $t): ?>
-      <article class="tarif-card" role="listitem">
+      <article class="tarif-card">
         <div class="tarif-card__header">
           <span class="tarif-card__icon" aria-hidden="true"><?= Template::e($t['icon'] ?? '🎫') ?></span>
           <h3 class="tarif-card__name"><?= Template::e($t['name']) ?></h3>
