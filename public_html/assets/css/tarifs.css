@@ -1,0 +1,351 @@
+/* ============================================================
+   tarifs.css — Pages /tarifs/, /tarifs/metro/, /tarifs/aeroports/
+   Pattern visuel cohérent avec les pages station (cards,
+   bordure verte, espacement aéré, accordéon FAQ).
+   ============================================================ */
+
+/* ---------- Hiérarchie typographique ---------- */
+
+.tarifs-page {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.tarifs-page h2 {
+    font-size: 1.65rem;
+    line-height: 1.2;
+    margin: 2.5rem 0 1rem;
+    color: var(--color-text, #1A2B26);
+    border-bottom: 2px solid var(--color-border, #E0E6E4);
+    padding-bottom: 0.4rem;
+}
+@media (min-width: 768px) {
+    .tarifs-page h2 { font-size: 1.85rem; }
+}
+
+.tarifs-page h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin: 1.75rem 0 0.65rem;
+    color: var(--color-primary, #117049);
+}
+@media (min-width: 768px) {
+    .tarifs-page h3 { font-size: 1.35rem; }
+}
+
+.tarifs-page h4 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+    margin: 1rem 0 0.4rem;
+    color: var(--color-text, #1A2B26);
+}
+
+.tarifs-page p {
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+.tarifs-page ul {
+    line-height: 1.7;
+    padding-left: 1.5rem;
+}
+.tarifs-page ul li { margin: 0.25rem 0; }
+
+
+/* ---------- Cards Tarif (.tarif-card) ---------- */
+
+.tarifs-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.25rem 0 2rem;
+}
+@media (min-width: 720px) {
+    .tarifs-cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+.tarif-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-left: 3px solid var(--color-primary, #117049);
+    border-radius: 8px;
+    padding: 1.1rem 1.2rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+.tarif-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transform: translateY(-1px);
+}
+
+.tarif-card__header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+.tarif-card__icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+.tarif-card__title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text, #1A2B26);
+    flex: 1 1 auto;
+    line-height: 1.3;
+}
+.tarif-card__price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--color-primary, #117049);
+    line-height: 1;
+}
+.tarif-card__price-sub {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--color-text-muted, #5A6B66);
+}
+
+.tarif-card__body {
+    font-size: 0.95rem;
+}
+.tarif-card__body p {
+    margin: 0.4rem 0;
+    line-height: 1.5;
+}
+.tarif-card__features {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 0.6rem;
+}
+.tarif-card__features li {
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #5A6B66);
+    background: var(--color-bg-alt, #F7F9F8);
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+}
+.tarif-card__features li::before {
+    content: '✓ ';
+    color: var(--color-success, #0D6E4F);
+    font-weight: 700;
+}
+
+.tarif-card__sub {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+.tarif-card__sub li {
+    margin: 0.2rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+.tarif-card__sub li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary, #117049);
+}
+
+
+/* ---------- Tableau comparateur ---------- */
+
+.tarifs-compare-wrapper {
+    overflow-x: auto;
+    margin: 1rem 0 2rem;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid var(--color-border, #E0E6E4);
+}
+.tarifs-compare {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    background: #fff;
+}
+.tarifs-compare thead th {
+    background: var(--color-text, #1A2B26);
+    color: #fff;
+    padding: 0.65rem 0.9rem;
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.tarifs-compare thead th:not(:first-child) { text-align: center; }
+.tarifs-compare tbody td {
+    padding: 0.6rem 0.9rem;
+    border-bottom: 1px solid var(--color-border, #E0E6E4);
+    vertical-align: top;
+}
+.tarifs-compare tbody td:not(:first-child) { text-align: center; }
+.tarifs-compare tbody tr:nth-child(even) td {
+    background: var(--color-bg-alt, #F7F9F8);
+}
+.tarifs-compare tbody tr:hover td { background: #fff8e6; }
+.tarifs-compare__price { font-weight: 700; color: var(--color-primary, #117049); }
+
+
+/* ---------- FAQ accordéon ---------- */
+
+.faq-accordion {
+    margin: 1.25rem 0 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border, #E0E6E4);
+    overflow: hidden;
+    background: #fff;
+}
+.faq-accordion__item {
+    border-bottom: 1px solid var(--color-border, #E0E6E4);
+}
+.faq-accordion__item:last-child { border-bottom: 0; }
+.faq-accordion__item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.85rem 2.5rem 0.85rem 1rem;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text, #1A2B26);
+    line-height: 1.4;
+    transition: background 0.15s;
+}
+.faq-accordion__item summary::-webkit-details-marker { display: none; }
+.faq-accordion__item summary::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--color-primary, #117049);
+    transition: transform 0.2s;
+}
+.faq-accordion__item[open] summary::after {
+    content: '−';
+}
+.faq-accordion__item summary:hover {
+    background: var(--color-bg-alt, #F7F9F8);
+}
+.faq-accordion__item summary h3 {
+    /* La question reste un H3 sémantiquement, mais visuellement
+       calibrée comme un titre d'accordion. Override des styles
+       grands H3 de la page éditoriale. */
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: inherit;
+    padding: 0;
+    border: 0;
+}
+.faq-accordion__item summary:focus-visible {
+    outline: 2px solid var(--color-primary, #117049);
+    outline-offset: -2px;
+}
+.faq-accordion__answer {
+    padding: 0 1rem 1rem;
+    line-height: 1.6;
+    color: var(--color-text, #1A2B26);
+}
+.faq-accordion__answer p { margin: 0.5rem 0; }
+.faq-accordion__answer p:first-child { margin-top: 0; }
+
+
+/* ---------- Encadrés "À savoir" / "Attention" ---------- */
+
+.tarifs-callout {
+    margin: 1.25rem 0;
+    padding: 0.9rem 1.1rem;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    border-left: 3px solid;
+}
+.tarifs-callout--info {
+    background: #E6F1FB;
+    border-left-color: #185FA5;
+    color: #0d3d6f;
+}
+.tarifs-callout--warning {
+    background: #FAEEDA;
+    border-left-color: #8a570f;
+    color: #5a3508;
+}
+.tarifs-callout__icon {
+    font-weight: 700;
+    margin-right: 0.4rem;
+}
+.tarifs-callout strong { color: inherit; }
+
+
+/* ---------- Carte zones tarifaires (visuel simple) ---------- */
+
+.zones-map {
+    margin: 1.25rem 0 2rem;
+    padding: 1.5rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border-radius: 8px;
+    text-align: center;
+}
+.zones-map__title {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted, #5A6B66);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.zones-map__rings {
+    display: inline-grid;
+    grid-template-columns: repeat(5, minmax(60px, 90px));
+    gap: 0;
+    align-items: center;
+}
+.zones-map__ring {
+    padding: 0.6rem 0.4rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.1;
+    position: relative;
+}
+.zones-map__ring small {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 0.2rem;
+    opacity: 0.95;
+}
+.zones-map__ring--1 { background: #117049; border-radius: 8px 0 0 8px; }
+.zones-map__ring--2 { background: #1f8a64; }
+.zones-map__ring--3 { background: #3aa580; }
+.zones-map__ring--4 { background: #5cbf9c; }
+.zones-map__ring--5 { background: #8fd9bb; color: #04342C; border-radius: 0 8px 8px 0; }
+@media (max-width: 519px) {
+    .zones-map__rings { grid-template-columns: repeat(5, 1fr); }
+    .zones-map__ring { padding: 0.5rem 0.2rem; font-size: 0.85rem; }
+    .zones-map__ring small { font-size: 0.6rem; }
+}
+
+
+/* ---------- Méta footer ---------- */
+
+.tarifs-meta-footer {
+    margin: 2rem 0 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border, #E0E6E4);
+    font-size: 0.875rem;
+    color: var(--color-text-muted, #5A6B66);
+}
