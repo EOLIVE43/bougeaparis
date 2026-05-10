@@ -21,6 +21,9 @@
 
 $stationName = $props['stationName'] ?? null;
 $tariffZone  = isset($props['tariffZone']) ? (int) $props['tariffZone'] : null;
+$tariffZoneContext = $props['tariffZoneContext'] ?? null;
+$commune     = $props['commune'] ?? null;
+$modesList   = $props['modesList'] ?? null; // ex: "Ligne 1, RER A et E, tramway T2 et Transilien L et U"
 if (!$stationName) {
     return;
 }
@@ -44,25 +47,42 @@ $expired  = $validTo && (date('Y-m-d') > $validTo);
 $hubUrl    = '/tarifs/';
 $hubActive = Routes::exists(rtrim($hubUrl, '/'));
 
-// Recommandation contextuelle selon zone
-$zoneIntro = '';
+$stationE = htmlspecialchars($stationName, ENT_QUOTES, 'UTF-8');
+$communeE = $commune ? htmlspecialchars($commune, ENT_QUOTES, 'UTF-8') : null;
+$modesE   = $modesList ? htmlspecialchars($modesList, ENT_QUOTES, 'UTF-8') : null;
+
+// Composition de l'intro personnalisée par station :
+// 1) Zone + commune + modes desservis
+// 2) Recommandation contextuelle selon zone (1 = Paris centre, >1 = banlieue)
+// 3) Mention IDFM/RATP/SNCF
+$introParts = [];
 if ($tariffZone) {
-    $zoneLabel = $zones[(string)$tariffZone] ?? null;
-    if ($tariffZone === 1) {
-        $zoneIntro = sprintf(
-            ' La station %s est située en <strong>zone tarifaire %d</strong> (Paris intra-muros). Les tickets t+ et carnets sont valables sans supplément pour vos trajets.',
-            htmlspecialchars($stationName, ENT_QUOTES, 'UTF-8'),
-            $tariffZone
-        );
+    $ctxStr = $tariffZoneContext ? ' (' . htmlspecialchars($tariffZoneContext, ENT_QUOTES, 'UTF-8') . ')' : (
+        !empty($zones[(string)$tariffZone]) ? ' (' . htmlspecialchars($zones[(string)$tariffZone], ENT_QUOTES, 'UTF-8') . ')' : ''
+    );
+    $loc = "Située en <strong>zone tarifaire {$tariffZone}</strong>{$ctxStr}";
+    if ($communeE) $loc .= " — {$communeE}";
+    $loc .= ", la station {$stationE}";
+    if ($modesE) {
+        $loc .= " est desservie par {$modesE}.";
     } else {
-        $zoneIntro = sprintf(
-            ' La station %s est située en <strong>zone tarifaire %d</strong>%s. Pour les trajets vers le centre de Paris (zone 1) ou au-delà, le forfait Navigo Découverte au tarif unique 1-5 est souvent plus économique qu\'un cumul de tickets t+.',
-            htmlspecialchars($stationName, ENT_QUOTES, 'UTF-8'),
-            $tariffZone,
-            $zoneLabel ? ' (' . htmlspecialchars($zoneLabel, ENT_QUOTES, 'UTF-8') . ')' : ''
-        );
+        $loc .= ".";
     }
+    $introParts[] = $loc;
+
+    if ($tariffZone === 1) {
+        $introParts[] = "Tous les titres de transport classiques (Ticket t+, Carnet de 10, Navigo Easy, Navigo Découverte) sont valables pour entrer ou sortir à {$stationE} sans supplément. Le tarif unique francilien de 2,15 € s'applique quelle que soit la distance parcourue dans le réseau.";
+    } else {
+        $introParts[] = "Pour les déplacements vers le centre de Paris (zone 1), le tarif unique francilien de 2,15 € pour le ticket t+ et le forfait Navigo Découverte (toutes zones 1-5 au même prix) restent les options les plus économiques. Le carnet de 10 tickets t+ offre une réduction de 19 % pour les voyages occasionnels depuis {$stationE}.";
+    }
+} else {
+    // Fallback générique si zone inconnue
+    $intro_loc = "La station {$stationE}";
+    if ($modesE) $intro_loc .= " est desservie par {$modesE}";
+    $intro_loc .= ".";
+    $introParts[] = $intro_loc;
 }
+$introParts[] = "Les tarifs sont fixés par <strong>Île-de-France Mobilités</strong> et appliqués par la RATP, la SNCF et les opérateurs Transilien. Voici les principaux titres en vigueur, valables sur le métro, le RER intra-Paris, le bus et le tramway.";
 
 /**
  * Render commun d'une carte tarif (ticket ou pass).
@@ -129,9 +149,9 @@ $renderCard = function (string $key, array $t) {
 
   <h2 id="tarifs-title">Tarifs et titres de transport à <?= Template::e($stationName) ?></h2>
 
-  <p class="section-intro">
-    Les tarifs des transports en commun à <strong><?= Template::e($stationName) ?></strong> sont fixés par <strong>Île-de-France Mobilités</strong> et appliqués par la RATP et la SNCF. Voici les principaux titres en vigueur, valables sur le métro, le RER intra-Paris, le bus et le tramway.<?= $zoneIntro ?>
-  </p>
+  <?php foreach ($introParts as $i => $part): ?>
+    <p<?= $i === 0 ? ' class="section-intro"' : '' ?>><?= $part ?></p>
+  <?php endforeach; ?>
 
   <h3 class="tarifs-subtitle">Tickets à l'unité ou en carnet à <?= Template::e($stationName) ?></h3>
   <div class="tarifs-grid">

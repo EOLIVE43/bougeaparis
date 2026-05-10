@@ -52,6 +52,66 @@ if (empty($linesWithSchedule)) {
 }
 
 $stationName = $stationName ?? 'cette station';
+
+/**
+ * Convertit "5h30" ou "1h15" en minutes depuis 00h00. Les heures
+ * post-minuit (1h15, 2h15) sont décalées de +1440 pour comparaison
+ * monotone avec un service nocturne qui chevauche minuit.
+ */
+$timeToMinutes = function (?string $hhmm) {
+    if (!$hhmm) return null;
+    if (preg_match('/^(\d{1,2})h(\d{0,2})$/', trim($hhmm), $m)) {
+        $h = (int)$m[1]; $mn = $m[2] !== '' ? (int)$m[2] : 0;
+        $base = $h * 60 + $mn;
+        // 0h00-4h00 → service nocturne, ajoute 1440 min pour ordonnancement
+        if ($h < 4) $base += 1440;
+        return $base;
+    }
+    return null;
+};
+
+// Agrégation premier / dernier métro toutes lignes
+$earliest = null; $earliestLine = null; $earliestDir = null;
+$latestWeek = null; $latestWeekLine = null; $latestWeekDir = null;
+$latestExt = null;
+foreach ($linesWithSchedule as $item) {
+    $line = $item['line']; $sched = $item['schedule'];
+    $slug = $line['slug'] ?? '';
+    $meta = function_exists('getLineMeta') ? getLineMeta($slug) : null;
+    $direction = $meta['terminus_b'] ?? $meta['terminus_a'] ?? null;
+
+    $first = $sched['first_departure']['weekday'] ?? null;
+    $lastW = $sched['last_departure']['weekday'] ?? null;
+    $ext   = $sched['last_departure']['friday'] ?? $sched['last_departure']['saturday'] ?? null;
+
+    $firstMin = $timeToMinutes($first);
+    $lastMin  = $timeToMinutes($lastW);
+    $extMin   = $timeToMinutes($ext);
+
+    if ($firstMin !== null && ($earliest === null || $firstMin < $timeToMinutes($earliest))) {
+        $earliest = $first;
+        $earliestLine = $line['code'] ?? null;
+        $earliestDir = $direction;
+    }
+    if ($lastMin !== null && ($latestWeek === null || $lastMin > $timeToMinutes($latestWeek))) {
+        $latestWeek = $lastW;
+        $latestWeekLine = $line['code'] ?? null;
+        $latestWeekDir = $direction;
+    }
+    if ($extMin !== null && $lastMin !== null && $extMin > $lastMin) {
+        if ($latestExt === null || $extMin > $timeToMinutes($latestExt)) {
+            $latestExt = $ext;
+        }
+    }
+}
+
+$lineCount = count($linesWithSchedule);
+$lineCodes = array_map(fn($i) => $i['line']['code'] ?? '', $linesWithSchedule);
+$lineCodesLabel = $lineCount === 1
+    ? 'la Ligne ' . $lineCodes[0]
+    : ($lineCount === 2
+        ? 'les Lignes ' . $lineCodes[0] . ' et ' . $lineCodes[1]
+        : 'les Lignes ' . implode(', ', array_slice($lineCodes, 0, -1)) . ' et ' . end($lineCodes));
 ?>
 
 <section class="station-section section-horaires" id="horaires" aria-labelledby="horaires-title">
@@ -59,10 +119,24 @@ $stationName = $stationName ?? 'cette station';
   <h2 id="horaires-title">Horaires des lignes à <?= e($stationName) ?></h2>
 
   <p class="section-intro">
-    Premier et dernier métro, service prolongé du vendredi et samedi soir,
-    fréquence aux heures de pointe : retrouvez les horaires pratiques de chaque ligne
-    desservant la <strong>station <?= e($stationName) ?></strong>.
+    La station <strong><?= e($stationName) ?></strong> est desservie par <?= e($lineCodesLabel) ?> du métro, du lundi au dimanche.
   </p>
+
+  <?php if ($earliest && $latestWeek): ?>
+    <p>
+      Le <strong>premier métro à <?= e($stationName) ?></strong> circule à partir de <strong><?= e($earliest) ?></strong><?php if ($earliestLine && $earliestDir): ?> (Ligne <?= e($earliestLine) ?> direction <?= e($earliestDir) ?>)<?php endif; ?>, et le <strong>dernier métro à <?= e($stationName) ?></strong> quitte la station à <strong><?= e($latestWeek) ?></strong><?php if ($latestWeekLine && $latestWeekDir): ?> (Ligne <?= e($latestWeekLine) ?> direction <?= e($latestWeekDir) ?>)<?php endif; ?> en semaine.
+      <?php if ($latestExt): ?>
+        Le <strong>vendredi soir, le samedi soir et les veilles de fêtes</strong>, le service est prolongé jusqu'à <strong><?= e($latestExt) ?></strong> sur l'ensemble des lignes.
+      <?php endif; ?>
+    </p>
+    <p>
+      Pour des correspondances précises et adaptées à votre itinéraire depuis ou vers <?= e($stationName) ?>, consultez les horaires détaillés ci-dessous selon la ligne de votre choix.
+    </p>
+  <?php else: ?>
+    <p class="section-intro">
+      Premier et dernier métro, service prolongé du vendredi et samedi soir, fréquence aux heures de pointe : retrouvez les horaires pratiques de chaque ligne desservant la <strong>station <?= e($stationName) ?></strong>.
+    </p>
+  <?php endif; ?>
 
   <!-- Version mobile : cartes empilées -->
   <div class="horaires-cards" role="presentation">

@@ -146,7 +146,7 @@ $renderItem = function (array $exit): void {
     ?>
       <div class="sorties-sector" aria-labelledby="<?= e($sectionId) ?>">
         <h3 class="sorties-sector__title" id="<?= e($sectionId) ?>">
-          <?= e($title) ?>
+          Sorties <?= e($stationName) ?> — <?= e($title) ?>
           <?php if ($range !== ''): ?>
             <span class="sorties-sector__range"><?= e($range) ?></span>
           <?php endif; ?>
@@ -162,7 +162,7 @@ $renderItem = function (array $exit): void {
 
     <?php if (!empty($bySector['_other'])): ?>
       <div class="sorties-sector sorties-sector--other" aria-labelledby="sortie-secteur-other">
-        <h3 class="sorties-sector__title" id="sortie-secteur-other">Autres sorties</h3>
+        <h3 class="sorties-sector__title" id="sortie-secteur-other">Sorties <?= e($stationName) ?> — Autres accès</h3>
         <ul class="sorties-list" role="list">
           <?php foreach ($bySector['_other'] as $item) $renderItem($item); ?>
         </ul>

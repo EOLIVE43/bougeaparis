@@ -799,9 +799,38 @@ $tpl->partial('components/breadcrumb', [
        4bis-post. TARIFS ET TITRES DE TRANSPORT
                   (source : data/global/transit-pricing.json)
        ============================================================ -->
+  <?php
+  // Composition d'une liste lisible des modes desservant la station
+  // pour personnaliser l'intro tarifs (« la Ligne 1, le RER A et E, … »)
+  $modesParts = [];
+  if (!empty($lines)) {
+      $codes = array_map(fn($l) => $l['code'] ?? '', $lines);
+      $modesParts[] = (count($codes) === 1) ? 'la Ligne ' . $codes[0] : 'les Lignes ' . implode(', ', $codes);
+  }
+  if (!empty($rer)) {
+      $rerCodesL = array_map(fn($r) => $r['code'] ?? '', $rer);
+      $modesParts[] = (count($rerCodesL) === 1) ? 'le RER ' . $rerCodesL[0] : 'les RER ' . implode(' et ', $rerCodesL);
+  }
+  if (!empty($tram)) {
+      $tramCodesL = array_map(fn($t) => 'T' . ($t['code'] ?? ''), $tram);
+      $modesParts[] = (count($tramCodesL) === 1) ? 'le tramway ' . $tramCodesL[0] : 'les tramways ' . implode(' et ', $tramCodesL);
+  }
+  if (!empty($transilien)) {
+      $tnCodesL = array_map(fn($tn) => $tn['code'] ?? '', $transilien);
+      $modesParts[] = (count($tnCodesL) === 1) ? 'le Transilien ' . $tnCodesL[0] : 'les Transilien ' . implode(' et ', $tnCodesL);
+  }
+  $modesList = '';
+  if (!empty($modesParts)) {
+      $last = array_pop($modesParts);
+      $modesList = empty($modesParts) ? $last : implode(', ', $modesParts) . ' et ' . $last;
+  }
+  ?>
   <?php $tpl->partial('components/station/tarifs', [
-      'stationName' => $name,
-      'tariffZone'  => $station['tariff_zone'] ?? null,
+      'stationName'       => $name,
+      'tariffZone'        => $station['tariff_zone'] ?? null,
+      'tariffZoneContext' => $station['tariff_zone_context'] ?? null,
+      'commune'           => $station['commune'] ?? null,
+      'modesList'         => $modesList ?: null,
   ]); ?>
 
   <!-- ============================================================
