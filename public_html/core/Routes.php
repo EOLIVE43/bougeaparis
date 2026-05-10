@@ -79,6 +79,7 @@ class Routes
     private static array $activeStationSlugs = [
         'chatelet',
         'la-defense-grande-arche',
+        'charles-de-gaulle-etoile',
     ];
 
     /**

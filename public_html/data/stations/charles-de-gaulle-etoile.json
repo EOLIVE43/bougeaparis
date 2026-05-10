@@ -1,0 +1,279 @@
+{
+    "_doc": "Données structurées de la station Charles de Gaulle — Étoile. Format JSON station BougeaParis v1. Audit factuel Wikipedia 2026-05-10.",
+    "slug": "charles-de-gaulle-etoile",
+    "name": "Charles de Gaulle — Étoile",
+    "name_full": "Charles de Gaulle — Étoile (Métro 1, 2, 6 + RER A)",
+    "arrondissement": "8e/16e/17e",
+    "address": "Place Charles de Gaulle (anciennement place de l'Étoile), 75008 Paris",
+    "latitude": 48.8744,
+    "longitude": 2.2958,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris (75008/75016/75017)",
+    "is_major_hub": true,
+    "i18n": {
+        "en": null,
+        "es": null
+    },
+    "lines": [
+        {"type": "metro", "code": "1", "slug": "metro-1", "color": "#FFCD00", "text_color": "#000000"},
+        {"type": "metro", "code": "2", "slug": "metro-2", "color": "#0064B0", "text_color": "#FFFFFF"},
+        {"type": "metro", "code": "6", "slug": "metro-6", "color": "#6ECA97", "text_color": "#000000"}
+    ],
+    "rer_correspondences": [
+        {"code": "A", "color": "#E2231A", "station_name": "Charles de Gaulle — Étoile", "walking_minutes": 2}
+    ],
+    "bus_correspondences": {
+        "diurne": ["22", "30", "31", "52", "73", "92", "341"],
+        "nocturne": ["N11", "N24", "N53"],
+        "regional": []
+    },
+    "seo": {
+        "description": "Station Charles de Gaulle — Étoile (Métro 1, 2, 6, RER A) sous l'Arc de Triomphe : correspondances, sorties, plan, accès Champs-Élysées et 12 avenues rayonnantes."
+    },
+    "hero": {
+        "tagline": "Sous l'Arc de Triomphe — carrefour des Lignes 1, 2, 6 et du RER A",
+        "description": "Située sous la <strong>place Charles de Gaulle</strong> (place de l'Étoile), au carrefour de douze avenues parisiennes dont les Champs-Élysées, la station Charles de Gaulle — Étoile est l'un des plus anciens hubs du réseau parisien (ouverte en 1900). Elle dessert les <strong>lignes 1, 2 et 6 du métro</strong> ainsi que le <strong>RER A</strong>, faisant d'elle un nœud majeur de l'ouest parisien."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {"name": "Argentine", "slug": "argentine", "direction": "La Défense"},
+            "next": {"name": "George V", "slug": "george-v", "direction": "Château de Vincennes"}
+        },
+        "metro-2": {
+            "previous": {"name": "Ternes", "slug": "ternes", "direction": "Nation"},
+            "next": null
+        },
+        "metro-6": {
+            "previous": null,
+            "next": {"name": "Kléber", "slug": "kleber", "direction": "Nation"}
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>station Charles de Gaulle — Étoile</strong> est l'une des plus anciennes et des plus fréquentées du réseau parisien. Située sous la <strong>place Charles de Gaulle</strong> — anciennement place de l'Étoile — au sommet de l'<em>axe historique</em>, elle est dominée en surface par l'imposant Arc de Triomphe et se trouve au carrefour de <strong>12 avenues</strong> parmi les plus prestigieuses de Paris : Champs-Élysées, Foch, Grande Armée, Hoche, Friedland, Wagram, Carnot, Mac-Mahon, Iéna, Kléber, Marceau, Victor Hugo.",
+        "Cette station-carrefour dessert <strong>3 lignes de métro</strong> (1, 2 et 6) ainsi que le <strong>RER A</strong>, ce qui en fait l'un des nœuds majeurs de l'ouest parisien. Ouverte le <strong>1er septembre 1900</strong>, soit moins de 6 semaines après l'inauguration de la première ligne du métropolitain, elle a accompagné la naissance et l'extension du réseau pendant 125 ans. Aujourd'hui, environ <strong>17 millions de voyageurs</strong> y transitent chaque année dans le métro seul.",
+        "À cheval sur les 8e, 16e et 17e arrondissements, la station Charles de Gaulle — Étoile est un point de départ idéal pour explorer les Champs-Élysées et le quartier de l'Étoile. La <strong>tombe du Soldat inconnu</strong>, allumée chaque jour à 18h30 sous l'Arc de Triomphe, en fait également un haut lieu de mémoire. L'accessibilité PMR reste partielle : un ascenseur dessert l'avenue Carnot, mais les correspondances entre lignes ne sont pas accessibles aux fauteuils roulants."
+    ],
+    "faq": [
+        {
+            "question": "Comment rejoindre l'Arc de Triomphe depuis la station Charles de Gaulle — Étoile ?",
+            "answer": "L'<strong>Arc de Triomphe</strong> est directement au-dessus de la station. Empruntez les sorties qui débouchent sur la place Charles de Gaulle (côté est, vers les Champs-Élysées). Comptez 1 à 2 minutes à pied selon le quai d'arrivée. <strong>Important :</strong> pour accéder à l'Arc en lui-même, traversez le passage souterrain depuis la sortie « Champs-Élysées » — ne tentez jamais de traverser le rond-point en surface (extrêmement dangereux)."
+        },
+        {
+            "question": "À quelle heure passe le premier métro à Charles de Gaulle — Étoile ?",
+            "answer": "Le <strong>premier métro à Charles de Gaulle — Étoile</strong> circule à partir de <strong>5h30</strong> sur les lignes 1, 2 et 6, du lundi au dimanche. Le RER A débute également vers 5h30. Pour les voyageurs très matinaux (avant 5h30), le bus de jour reprend le relais à partir de 6h00."
+        },
+        {
+            "question": "À quelle heure passe le dernier métro à Charles de Gaulle — Étoile ?",
+            "answer": "Le <strong>dernier métro à Charles de Gaulle — Étoile</strong> quitte la station à <strong>1h15</strong> en semaine (dimanche au jeudi), avec un <strong>prolongement nocturne jusqu'à 2h15 le vendredi soir, le samedi soir et les veilles de fêtes</strong>. Le RER A dispose d'un dernier départ vers 0h45 selon la destination. Les Noctiliens N11, N24 et N53 prennent le relais depuis le rond-point en surface."
+        },
+        {
+            "question": "La station Charles de Gaulle — Étoile est-elle accessible aux PMR ?",
+            "answer": "Partiellement. Un <strong>ascenseur</strong> dessert l'<strong>avenue Carnot</strong> (sortie côté nord-est), accessible depuis le quai du RER A. Toutefois, la station n'est pas conforme intégralement à la norme PMR 2005 : les correspondances entre les lignes 1, 2 et 6 nécessitent des escaliers, et plusieurs sorties (Champs-Élysées, Friedland, Foch) ne disposent pas d'ascenseurs. Pour un accès PMR complet, privilégiez les stations <strong>Châtelet, Gare de Lyon ou La Défense — Grande Arche</strong>, intégralement conformes."
+        },
+        {
+            "question": "Quelles correspondances depuis Charles de Gaulle — Étoile ?",
+            "answer": "Depuis Charles de Gaulle — Étoile, vous pouvez correspondre avec : <strong>la Ligne 1 du métro</strong> (axe est-ouest, vers Châtelet, La Défense, Bastille), <strong>la Ligne 2</strong> (terminus ouest, vers Nation), <strong>la Ligne 6</strong> (terminus ouest, vers Nation par le sud — passe par Trocadéro, Bir-Hakeim, Montparnasse), et le <strong>RER A</strong> (axe est-ouest régional, vers La Défense, Disneyland, Cergy)."
+        },
+        {
+            "question": "Pourquoi 12 avenues rayonnent-elles depuis cette place ?",
+            "answer": "La <strong>place Charles de Gaulle</strong> (anciennement place de l'Étoile) tient son nom de sa configuration en étoile à douze branches, dessinée au XIXe siècle par le baron Haussmann. Les douze avenues sont : <strong>Champs-Élysées, Foch, Grande Armée, Hoche, Friedland, Wagram, Carnot, Mac-Mahon, Iéna, Kléber, Marceau, Victor Hugo</strong>. Cette configuration rayonnante en fait l'un des carrefours les plus emblématiques de Paris."
+        },
+        {
+            "question": "Quelle sortie pour les Champs-Élysées ?",
+            "answer": "Pour rejoindre les <strong>Champs-Élysées</strong>, empruntez les sorties côté est de la place (sorties « Champs-Élysées » ou « Wagram »). Vous débouchez directement sur le départ de l'avenue, à 50 m de l'Arc de Triomphe. La descente vers la Concorde fait environ 1,9 km, accessible à pied en 25-30 min ou en métro Ligne 1 (5 stations)."
+        },
+        {
+            "question": "Quelle sortie pour le quartier des affaires à La Défense depuis Étoile ?",
+            "answer": "Le plus rapide est la <strong>Ligne 1 directe</strong> (8 stations, environ 12 min jusqu'à La Défense — Grande Arche). Le <strong>RER A</strong> est encore plus rapide (1 station, 4 min) mais nécessite de descendre au niveau RER. Pour un trajet retour, ces 2 lignes restent les options principales."
+        },
+        {
+            "question": "Y a-t-il une consigne à bagages à Charles de Gaulle — Étoile ?",
+            "answer": "Pas de consigne RATP en propre. Des <strong>services privés</strong> (Nannybag, Bounce, Stasher) ont des points relais dans les commerces des Champs-Élysées et de l'avenue Friedland, à 5 min à pied. Pour des consignes officielles, les gares parisiennes (Saint-Lazare, Nord, Lyon) sont accessibles en 10-20 min de métro."
+        },
+        {
+            "question": "Combien de sorties compte la station Charles de Gaulle — Étoile ?",
+            "answer": "La station compte <strong>onze accès numérotés</strong>, répartis tout autour de la place Charles de Gaulle. Chacun débouche sur une avenue ou un point de la place, ce qui permet de rejoindre directement le quartier de votre choix sans avoir à traverser le rond-point en surface (interdit aux piétons en raison du trafic intense)."
+        },
+        {
+            "question": "Y a-t-il des commerces et restaurants à proximité ?",
+            "answer": "Oui, la station débouche en plein cœur du <strong>quartier des Champs-Élysées</strong>, qui compte plus de 200 commerces (luxe, prêt-à-porter, restauration). Sur l'avenue elle-même : grandes enseignes internationales, restaurants de marque, cinémas. Pour des bistrots plus authentiques, privilégiez les avenues secondaires (Wagram, Friedland) avec une offre plus locale."
+        },
+        {
+            "question": "Comment allumer la flamme du Soldat inconnu sous l'Arc de Triomphe ?",
+            "answer": "La cérémonie de <strong>ravivage de la flamme du Soldat inconnu</strong> a lieu chaque soir à <strong>18h30</strong>, devant l'Arc de Triomphe (côté sud, accès depuis la sortie Champs-Élysées). Elle est ouverte au public et constitue un moment de mémoire émouvant. Compter 30-45 min sur place. Aucune réservation requise."
+        }
+    ],
+    "practical_tips": [
+        "Aux heures de pointe (8h-10h et 17h-19h), la station Charles de Gaulle — Étoile est très fréquentée. Privilégiez les correspondances entre métros via les couloirs périphériques pour éviter les zones les plus chargées au centre.",
+        "Pour accéder à l'Arc de Triomphe depuis la station, utilisez impérativement les <strong>passages souterrains</strong> indiqués (sorties n°1 « Champs-Élysées » ou n°4 « Mac-Mahon »). Traverser le rond-point en surface est strictement interdit aux piétons et dangereux.",
+        "Si vous voyagez avec des bagages, sachez que seul l'accès <strong>avenue Carnot</strong> dispose d'un ascenseur. Préparez votre itinéraire en conséquence ou privilégiez la station Châtelet — Les Halles pour un confort PMR maximal.",
+        "Pour photographier l'Arc de Triomphe sans la foule, privilégiez le matin tôt (avant 9h) ou en fin de soirée. La cérémonie de ravivage de la flamme à 18h30 attire également beaucoup de visiteurs.",
+        "Le RER A vers La Défense est plus rapide que la Ligne 1 (4 min vs 12 min) mais plus saturé aux heures de pointe. Si vous voyagez avec une valise ou en heure creuse, la Ligne 1 reste plus confortable."
+    ],
+    "history": {
+        "title": "Une des plus anciennes stations du métro parisien",
+        "paragraphs": [
+            "La station Étoile (son nom d'origine) est ouverte le <strong>1er septembre 1900</strong>, soit un peu plus de six semaines après la mise en service de la première section de la ligne 1 entre Porte de Vincennes et Porte Maillot, le 19 juillet 1900. Jusqu'à cette date, les rames de métro la traversaient sans s'y arrêter. Le 2 octobre 1900, le terminus de la ligne 2 Sud (l'actuelle ligne 6) y est ouvert, suivi le 13 décembre 1900 par la station de la ligne 2 Nord (l'actuelle ligne 2).",
+            "Pendant la Seconde Guerre mondiale et l'entre-deux-guerres, la station fait l'objet de plusieurs réorganisations de réseau. Le <strong>19 janvier 1970</strong>, la station est mise en correspondance avec la nouvelle gare régionale de Charles de Gaulle — Étoile, embryon de l'actuelle ligne A du RER. Le <strong>30 novembre 1970</strong>, elle prend son toponyme actuel de Charles de Gaulle — Étoile, en hommage à l'ancien président, décédé deux semaines plus tôt."
+        ]
+    },
+    "trivia": [
+        {
+            "icon": "⭐",
+            "title": "Une étoile à douze branches",
+            "content": "La place Charles de Gaulle (anciennement place de l'Étoile) doit son ancien nom à sa configuration en étoile à <strong>douze branches</strong>, dessinée au XIXe siècle par le baron Haussmann. C'est l'un des plus grands ronds-points d'Europe et sa silhouette caractéristique en fait un repère reconnaissable depuis l'espace."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Sous l'Arc de Triomphe",
+            "content": "La station se trouve directement <strong>sous l'Arc de Triomphe</strong>, monument iconique commandé par Napoléon en 1806 et achevé en 1836 sous Louis-Philippe. La proximité géographique a transformé la station en point d'accès quasi-obligatoire pour les visiteurs du monument et de la flamme du Soldat inconnu."
+        },
+        {
+            "icon": "📅",
+            "title": "Une des premières stations du métro parisien",
+            "content": "Ouverte le 1er septembre 1900, Étoile fait partie des stations historiques mises en service dans les premiers mois du métro parisien. Elle a accompagné la naissance et l'extension de presque toutes les lignes du réseau pendant 125 ans, faisant d'elle l'une des plus anciennes encore en service en 2026."
+        },
+        {
+            "icon": "🚇",
+            "title": "Trois lignes de métro à terminus historique",
+            "content": "Étoile a été pendant longtemps un terminus pour plusieurs lignes : terminus ouest de la ligne 2, terminus est de l'ancienne « ligne 2 Sud » (devenue ligne 6). Aujourd'hui encore, c'est le <strong>terminus ouest des lignes 2 et 6</strong>, ce qui fait converger un grand nombre de voyageurs vers ce hub centralisé."
+        },
+        {
+            "icon": "🚄",
+            "title": "1970 : transformation par le RER A",
+            "content": "Le 19 janvier 1970, la station est mise en correspondance avec la nouvelle gare régionale, embryon du <strong>RER A</strong>. Ce maillage transforme Étoile en hub multimodal et accélère son rôle d'accès rapide vers La Défense (4 min en RER A) et l'est francilien. Le 30 novembre suivant, elle prend son nom actuel en hommage au général de Gaulle, décédé deux semaines plus tôt."
+        },
+        {
+            "icon": "🔥",
+            "title": "La flamme du Soldat inconnu",
+            "content": "Sous l'Arc de Triomphe, juste au-dessus de la station, brûle la <strong>flamme du Soldat inconnu</strong>, allumée pour la première fois en 1923. Chaque soir à 18h30, une cérémonie de ravivage est organisée par le Comité de la Flamme. Les voyageurs descendant à Étoile sont parfois témoins, en surface, de cet hommage perpétuel aux soldats morts pour la France."
+        }
+    ],
+    "exit_sectors": {
+        "champs_elysees": {
+            "title": "Secteur Champs-Élysées",
+            "exits_range": "Sorties est",
+            "description": "Accès direct à l'avenue des Champs-Élysées, aux commerces de luxe et à la descente vers la Concorde."
+        },
+        "arc_de_triomphe": {
+            "title": "Secteur Arc de Triomphe",
+            "exits_range": "Sorties centrales",
+            "description": "Accès via passage souterrain à l'Arc de Triomphe, à la flamme du Soldat inconnu et au sommet du monument."
+        },
+        "avenues_nord": {
+            "title": "Secteur avenues nord",
+            "exits_range": "Sorties Wagram, Hoche, Friedland",
+            "description": "Accès aux quartiers résidentiels et d'affaires du nord de la place (Monceau, Etoile-Wagram)."
+        },
+        "avenues_ouest": {
+            "title": "Secteur avenues ouest",
+            "exits_range": "Sorties Foch, Grande Armée, Carnot",
+            "description": "Accès aux quartiers du 16e arrondissement, à Foch et au prolongement vers la Défense via Grande Armée."
+        }
+    },
+    "exits": [
+        {"number": "1", "name": "Champs-Élysées Sud", "address_full": "Avenue des Champs-Élysées (côté sud), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8731, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
+        {"number": "2", "name": "Champs-Élysées Nord", "address_full": "Avenue des Champs-Élysées (côté nord), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8745, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
+        {"number": "3", "name": "Wagram", "address_full": "Avenue de Wagram, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8755, "longitude": 2.2960, "accessible": false, "sector": "avenues_nord"},
+        {"number": "4", "name": "Mac-Mahon", "address_full": "Avenue Mac-Mahon, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8753, "longitude": 2.2950, "accessible": false, "sector": "avenues_nord"},
+        {"number": "5", "name": "Carnot (PMR ascenseur)", "address_full": "Avenue Carnot, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8748, "longitude": 2.2940, "accessible": true, "sector": "avenues_ouest"},
+        {"number": "6", "name": "Grande Armée", "address_full": "Avenue de la Grande Armée, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8740, "longitude": 2.2935, "accessible": false, "sector": "avenues_ouest"},
+        {"number": "7", "name": "Foch", "address_full": "Avenue Foch, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8735, "longitude": 2.2945, "accessible": false, "sector": "avenues_ouest"},
+        {"number": "8", "name": "Kléber", "address_full": "Avenue Kléber, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8732, "longitude": 2.2955, "accessible": false, "sector": "avenues_ouest"},
+        {"number": "9", "name": "Marceau", "address_full": "Avenue Marceau, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8730, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
+        {"number": "10", "name": "Friedland", "address_full": "Avenue de Friedland, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8748, "longitude": 2.2972, "accessible": false, "sector": "avenues_nord"},
+        {"number": "11", "name": "Hoche", "address_full": "Avenue Hoche, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8755, "longitude": 2.2975, "accessible": false, "sector": "avenues_nord"}
+    ],
+    "popular_itineraries": [
+        {"destination_name": "Châtelet", "destination_slug": "chatelet", "destination_full_name": "Charles de Gaulle — Étoile → Châtelet", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 12, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-chatelet/"},
+        {"destination_name": "La Défense", "destination_slug": "la-defense-grande-arche", "destination_full_name": "Charles de Gaulle — Étoile → La Défense", "lines_used": ["1"], "lines_label": "Ligne 1 directe (ou RER A en 4 min)", "duration_minutes": 12, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-la-defense-grande-arche/"},
+        {"destination_name": "Tour Eiffel (Bir-Hakeim)", "destination_slug": "bir-hakeim", "destination_full_name": "Charles de Gaulle — Étoile → Tour Eiffel", "lines_used": ["6"], "lines_label": "Ligne 6 directe", "duration_minutes": 8, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-bir-hakeim/"},
+        {"destination_name": "Concorde", "destination_slug": "concorde", "destination_full_name": "Charles de Gaulle — Étoile → Concorde", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 5, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-concorde/"},
+        {"destination_name": "Aéroport CDG", "destination_slug": "aeroport-charles-de-gaulle", "destination_full_name": "Charles de Gaulle — Étoile → CDG", "lines_used": ["RER A", "RER B"], "lines_label": "RER A puis RER B (Châtelet)", "duration_minutes": 50, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-aeroport-charles-de-gaulle/"},
+        {"destination_name": "Disneyland Paris", "destination_slug": "disneyland-paris", "destination_full_name": "Charles de Gaulle — Étoile → Disneyland", "lines_used": ["RER A"], "lines_label": "RER A directe (Marne-la-Vallée — Chessy)", "duration_minutes": 45, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-disneyland-paris/"},
+        {"destination_name": "Versailles Saint-Quentin", "destination_slug": "versailles-saint-quentin", "destination_full_name": "Charles de Gaulle — Étoile → Versailles", "lines_used": ["RER A"], "lines_label": "RER A directe", "duration_minutes": 35, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-versailles-saint-quentin/"},
+        {"destination_name": "Nation", "destination_slug": "nation", "destination_full_name": "Charles de Gaulle — Étoile → Nation", "lines_used": ["6"], "lines_label": "Ligne 6 directe (sud)", "duration_minutes": 30, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-nation/"}
+    ],
+    "nearby_pois": [
+        {"wikidata_id": "Q64436", "name": "Arc de Triomphe", "category": "monument", "description": "Monument emblématique de Paris commandé par Napoléon en 1806 et achevé en 1836. Au sommet : panorama 360° sur les Champs-Élysées et l'axe historique. Sous l'arc : la flamme du Soldat inconnu, allumée chaque soir à 18h30.", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_de_Triomphe,_Paris_21_October_2010.jpg?width=400", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe,_Paris_21_October_2010.jpg", "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile", "latitude": 48.8738, "longitude": 2.2950, "nearest_exit": {"number": "2", "name": "Champs-Élysées Nord", "distance_m": 80, "walk_minutes": 1}},
+        {"wikidata_id": "Q550", "name": "Avenue des Champs-Élysées", "category": "avenue", "description": "Avenue mythique de 1,9 km descendant de l'Arc de Triomphe à la place de la Concorde. Plus de 200 commerces, restaurants et cinémas. Décor de défilés militaires (14 juillet) et arrivée du Tour de France.", "image_url": "/assets/images/poi/monuments/avenue-des-champs-elysees.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es", "wikimedia_file": "Champs-Élysées Paris.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es", "latitude": 48.8697, "longitude": 2.3079, "nearest_exit": {"number": "1", "name": "Champs-Élysées Sud", "distance_m": 50, "walk_minutes": 1}},
+        {"wikidata_id": "Q390243", "name": "Place Charles-de-Gaulle", "category": "place", "description": "Place en étoile à 12 branches dessinée par Haussmann au XIXe siècle. Ancienne place de l'Étoile, renommée en 1970 en hommage au général de Gaulle. Accueille l'Arc de Triomphe en son centre.", "image_url": "/assets/images/poi/monuments/place-charles-de-gaulle.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Place_Charles-de-Gaulle_(Paris)", "wikimedia_file": "Place Charles de Gaulle aerial.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Charles-de-Gaulle", "latitude": 48.8739, "longitude": 2.2947, "nearest_exit": {"number": "4", "name": "Mac-Mahon", "distance_m": 30, "walk_minutes": 1}},
+        {"wikidata_id": "Q790562", "name": "Avenue Foch", "category": "avenue", "description": "L'avenue la plus large de Paris (120 m) et l'une des plus prestigieuses. Quartier résidentiel de luxe, ambassades, hôtels particuliers. Mène au Bois de Boulogne.", "image_url": "/assets/images/poi/monuments/avenue-foch.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_Foch_(Luftaufnahme).JPG", "wikimedia_file": "Avenue Foch (Luftaufnahme).JPG"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Foch_(Paris)", "latitude": 48.8736, "longitude": 2.2886, "nearest_exit": {"number": "7", "name": "Foch", "distance_m": 50, "walk_minutes": 1}},
+        {"wikidata_id": "Q1028274", "name": "Avenue de la Grande-Armée", "category": "avenue", "description": "Avenue de 1,3 km reliant l'Étoile à la place de la Porte Maillot. Connue pour ses concessionnaires automobiles, magasins de moto et grands hôtels.", "image_url": "/assets/images/poi/monuments/avenue-de-la-grande-armee.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_de_la_Grande-Arm%C3%A9e_(Paris)", "wikimedia_file": "Avenue de la Grande-Armée from above.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_de_la_Grande-Arm%C3%A9e", "latitude": 48.8758, "longitude": 2.2886, "nearest_exit": {"number": "6", "name": "Grande Armée", "distance_m": 100, "walk_minutes": 2}},
+        {"wikidata_id": "Q2873695", "name": "Avenue Hoche", "category": "avenue", "description": "Avenue résidentielle prestigieuse du 8e arrondissement, reliant l'Étoile au parc Monceau. Hôtels particuliers, ambassades, sièges sociaux.", "image_url": "/assets/images/poi/monuments/avenue-hoche.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_Hoche_(Paris)", "wikimedia_file": "Paris VIII avenue Hoche.JPG"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Hoche", "latitude": 48.8761, "longitude": 2.3006, "nearest_exit": {"number": "11", "name": "Hoche", "distance_m": 80, "walk_minutes": 1}}
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "la salle d'échanges principale de la station",
+            "coverage_detail": "les quais des lignes 1, 2, 6 et le RER A"
+        },
+        "toilets": {
+            "public_paid": {"available": false},
+            "public_free": {"available": true, "location": "les commerces des Champs-Élysées et de l'avenue Wagram", "access": "à 5-10 min à pied selon le commerce"}
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs banques",
+            "locations": ["la salle d'échanges principale", "les sorties Champs-Élysées et Wagram"]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "à proximité du quai de la Ligne 1",
+            "services": "vente de titres, recharge Navigo, information voyageurs"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                {"name": "Nannybag", "type": "points relais commerces Champs-Élysées et Friedland"},
+                {"name": "Bounce", "type": "points relais commerces Champs-Élysées"},
+                {"name": "Stasher", "type": "points relais hôtels et commerces du quartier"}
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Avenue des Champs-Élysées (sortie n°1 ou n°2)",
+            "details": "200+ commerces de luxe et restaurants, ouverts 10h-23h selon enseigne",
+            "secondary": "Cafés et bistrots également présents sur les avenues Wagram, Friedland et Marceau"
+        }
+    },
+    "safety": {
+        "audit_status": "verified",
+        "audit_date": "2026-05-10",
+        "level": "standard",
+        "agents": true,
+        "police": true,
+        "tips": [
+            "Quartier touristique très fréquenté, particulièrement sur les Champs-Élysées et autour de l'Arc de Triomphe. Vigilance pickpockets accrue, surtout sur les sorties Champs-Élysées et lors des cérémonies du Soldat inconnu.",
+            "La station est sous vidéosurveillance et bénéficie d'une présence régulière d'agents RATP et de la police GPSR. La proximité du palais de l'Élysée explique également une présence policière renforcée sur les avenues Friedland et Hoche.",
+            "Pour les voyageurs avec valises, privilégiez l'ascenseur sortie Carnot ou les escalators principaux. Évitez les escaliers étroits aux heures de pointe (8h-10h, 17h-19h).",
+            "En soirée tardive (après 22h), les Champs-Élysées restent animés grâce aux cinémas et restaurants. Les rues plus calmes (Foch, Hoche) sont également bien éclairées et sécurisées."
+        ],
+        "notes": "La station est classée niveau de sécurité <strong>standard</strong> par la RATP. La forte affluence et la présence permanente d'agents en uniforme en font l'une des stations les mieux surveillées du réseau. La proximité du palais de l'Élysée et de plusieurs ambassades implique également une vigilance institutionnelle accrue."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg/1920px-Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg",
+        "alt": "Quai de la station Charles de Gaulle — Étoile, Ligne 2 du métro de Paris",
+        "width": 1600,
+        "height": 1067,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg",
+            "date": "2024-05-30"
+        },
+        "source": "manual"
+    },
+    "accessibility": {
+        "audit_status": "verified",
+        "audit_date": "2026-05-10",
+        "level": "partial",
+        "stats": {
+            "elevators_count": 1,
+            "accessible_lines": 0,
+            "total_lines": 4
+        },
+        "details": "Un ascenseur dessert l'avenue Carnot (sortie n°5) depuis le quai du RER A. Les correspondances métro entre les lignes 1, 2 et 6 ne sont pas accessibles aux fauteuils roulants. La station n'est pas conforme à la norme PMR 2005 dans son intégralité (audit Wikipedia 2026-05-09)."
+    }
+}
