@@ -1919,6 +1919,145 @@ a.correspondance-bus-badge:focus {
 
 
 /* ============================================================
+   16quater. MAILLAGE INTERNE BAS DE PAGE
+   « Continuer votre exploration depuis {station} »
+   ============================================================ */
+
+.section-maillage {
+    margin-top: 2.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--color-border, #E0E6E4);
+}
+.maillage-block {
+    margin-bottom: 1.75rem;
+}
+.maillage-block:last-child {
+    margin-bottom: 0;
+}
+.maillage-block__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text, #1A2B26);
+    margin: 0 0 0.75rem;
+}
+.maillage-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.maillage-pill {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0.85rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: var(--radius-md, 8px);
+    text-decoration: none;
+    color: var(--color-text, #1A2B26);
+    transition: background 0.15s, border-color 0.15s;
+    min-height: 44px; /* WCAG touch target */
+}
+a.maillage-pill:hover,
+a.maillage-pill:focus {
+    background: #fff;
+    border-color: var(--color-primary, #117049);
+}
+.maillage-pill__name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+.maillage-pill__subtitle {
+    font-size: 0.78rem;
+    color: var(--color-text-muted, #5A6B66);
+    margin-top: 0.1rem;
+}
+.maillage-pill--inactive {
+    color: var(--color-text-muted, #5A6B66);
+    cursor: default;
+    border-style: dashed;
+}
+
+.maillage-block--line-hub {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.maillage-cta {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radius-md, 8px);
+    background: var(--color-primary, #117049);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+.maillage-cta:hover,
+.maillage-cta:focus {
+    background: var(--color-primary-dark, #0a5239);
+}
+.maillage-cta--inactive {
+    background: var(--color-bg-tertiary, #F1F3F2);
+    color: var(--color-text-muted, #5A6B66);
+    cursor: default;
+    border: 1px dashed var(--color-border-strong, #B8C2BE);
+}
+
+.maillage-utils {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+}
+@media (min-width: 640px) {
+    .maillage-utils {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.maillage-util {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 0.95rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: var(--radius-md, 8px);
+    text-decoration: none;
+    color: var(--color-text, #1A2B26);
+    font-size: 0.95rem;
+    transition: background 0.15s, border-color 0.15s;
+    min-height: 44px;
+}
+a.maillage-util:hover,
+a.maillage-util:focus {
+    background: #fff;
+    border-color: var(--color-primary, #117049);
+}
+.maillage-util__icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.maillage-util__soon {
+    color: var(--color-text-muted, #5A6B66);
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-left: auto;
+}
+.maillage-util--inactive {
+    color: var(--color-text-muted, #5A6B66);
+    cursor: default;
+    border-style: dashed;
+}
+
+
+/* ============================================================
    17. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
    ============================================================ */
 

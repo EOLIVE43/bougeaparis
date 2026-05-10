@@ -1,0 +1,99 @@
+{
+  "_meta": {
+    "version": "2026-05-10",
+    "note": "Registre des grands hubs multimodaux du réseau parisien. Utilisé par le composant maillage-interne.php pour proposer des liens vers des stations comparables. type = catégorie thématique (central, business, transport, festif…). similar = 3-5 slugs de hubs reliés.",
+    "last_verified": "2026-05-10"
+  },
+  "hubs": {
+    "chatelet": {
+      "type": "central",
+      "label": "Châtelet",
+      "similar": ["gare-de-lyon", "saint-lazare", "republique", "nation"]
+    },
+    "la-defense-grande-arche": {
+      "type": "business",
+      "label": "La Défense",
+      "similar": ["chatelet", "gare-de-lyon", "saint-lazare", "auber"]
+    },
+    "gare-de-lyon": {
+      "type": "transport",
+      "label": "Gare de Lyon",
+      "similar": ["chatelet", "saint-lazare", "gare-du-nord", "gare-de-lest"]
+    },
+    "saint-lazare": {
+      "type": "transport",
+      "label": "Saint-Lazare",
+      "similar": ["gare-du-nord", "gare-de-lyon", "auber", "opera"]
+    },
+    "gare-du-nord": {
+      "type": "transport",
+      "label": "Gare du Nord",
+      "similar": ["gare-de-lest", "gare-de-lyon", "saint-lazare", "chatelet"]
+    },
+    "gare-de-lest": {
+      "type": "transport",
+      "label": "Gare de l'Est",
+      "similar": ["gare-du-nord", "gare-de-lyon", "republique", "stalingrad"]
+    },
+    "nation": {
+      "type": "central",
+      "label": "Nation",
+      "similar": ["bastille", "republique", "chatelet", "gare-de-lyon"]
+    },
+    "bastille": {
+      "type": "central",
+      "label": "Bastille",
+      "similar": ["nation", "republique", "chatelet", "gare-de-lyon"]
+    },
+    "republique": {
+      "type": "central",
+      "label": "République",
+      "similar": ["chatelet", "nation", "bastille", "strasbourg-saint-denis"]
+    },
+    "concorde": {
+      "type": "touristique",
+      "label": "Concorde",
+      "similar": ["chatelet", "charles-de-gaulle-etoile", "auber", "opera"]
+    },
+    "charles-de-gaulle-etoile": {
+      "type": "touristique",
+      "label": "Charles de Gaulle — Étoile",
+      "similar": ["la-defense-grande-arche", "auber", "concorde", "opera"]
+    },
+    "auber": {
+      "type": "central",
+      "label": "Auber",
+      "similar": ["opera", "saint-lazare", "chatelet", "concorde"]
+    },
+    "opera": {
+      "type": "central",
+      "label": "Opéra",
+      "similar": ["auber", "saint-lazare", "chatelet", "concorde"]
+    },
+    "strasbourg-saint-denis": {
+      "type": "central",
+      "label": "Strasbourg — Saint-Denis",
+      "similar": ["republique", "chatelet", "gare-de-lest", "nation"]
+    },
+    "stalingrad": {
+      "type": "nord",
+      "label": "Stalingrad",
+      "similar": ["gare-de-lest", "gare-du-nord", "republique", "nation"]
+    },
+    "place-d-italie": {
+      "type": "sud",
+      "label": "Place d'Italie",
+      "similar": ["chatelet", "nation", "bastille", "denfert-rochereau"]
+    },
+    "montparnasse-bienvenue": {
+      "type": "transport",
+      "label": "Montparnasse-Bienvenüe",
+      "similar": ["saint-lazare", "gare-de-lyon", "denfert-rochereau", "chatelet"]
+    },
+    "denfert-rochereau": {
+      "type": "sud",
+      "label": "Denfert-Rochereau",
+      "similar": ["place-d-italie", "montparnasse-bienvenue", "chatelet", "gare-de-lyon"]
+    }
+  }
+}

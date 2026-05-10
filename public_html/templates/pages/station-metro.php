@@ -962,6 +962,18 @@ $tpl->partial('components/breadcrumb', [
   <?php endif; ?>
 
   <!-- ============================================================
+       7bis. MAILLAGE INTERNE — « Continuer votre exploration »
+             4 blocs : stations voisines, hub ligne, hubs similaires
+             (si major_hub), liens utilitaires.
+       ============================================================ -->
+  <?php $tpl->partial('components/station/maillage-interne', [
+      'station'     => $station,
+      'stationName' => $name,
+      'stationSlug' => $slug,
+      'lines'       => $lines,
+  ]); ?>
+
+  <!-- ============================================================
        8. DATE DE MISE A JOUR (signal de fraicheur Discover).
             Source : filemtime() sur le JSON station si pas de champ
             'updated_at' explicite dans data/stations/{slug}.json.
