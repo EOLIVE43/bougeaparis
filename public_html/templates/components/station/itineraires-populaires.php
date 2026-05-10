@@ -79,13 +79,13 @@ $hubActive = $hubUrl ? Routes::exists(rtrim($hubUrl, '/')) : false;
       <li class="itineraire-card">
         <div class="itineraire-card__header">
           <span class="itineraire-card__arrow" aria-hidden="true">→</span>
-          <span class="itineraire-card__dest">
+          <h4 class="itineraire-card__title"<?= $futureUrl !== '' ? ' data-future-url="' . Template::e($futureUrl) . '"' : '' ?>>
             <?php if ($linkActive): ?>
               <a href="<?= Template::e($futureUrl) ?>"><?= Template::e($destFullName) ?></a>
             <?php else: ?>
-              <strong><?= Template::e($destFullName) ?></strong>
+              <?= Template::e($destFullName) ?>
             <?php endif; ?>
-          </span>
+          </h4>
         </div>
         <dl class="itineraire-card__meta">
           <?php if ($linesLabel !== ''): ?>

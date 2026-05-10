@@ -624,35 +624,53 @@ $tpl->partial('components/breadcrumb', [
       $busReg     = is_array($bus) ? ($bus['regional'] ?? []) : [];
       $hasAnyBus  = !empty($busDiurnes) || !empty($busNoct) || !empty($busReg);
       ?>
+      <?php
+      // Helper inline : rend une pastille bus, lien actif si la page
+      // /bus/ligne-{code}/ existe (Routes::exists), sinon span statique
+      // avec data-future-url pour traçabilité (cocon SEO posé en avance).
+      $renderBusBadge = function (string $code, string $extraClass = '') {
+          $url = '/bus/ligne-' . strtolower($code) . '/';
+          $cls = trim('correspondance-bus-badge ' . $extraClass);
+          if (Routes::exists(rtrim($url, '/'))) {
+              return '<a href="' . Template::e($url) . '" class="' . Template::e($cls) . '">'
+                   . Template::e($code) . '</a>';
+          }
+          return '<span class="' . Template::e($cls) . '" data-future-url="' . Template::e($url) . '">'
+               . Template::e($code) . '</span>';
+      };
+      ?>
       <?php if ($hasAnyBus): ?>
         <div class="correspondances-block">
           <h3>Lignes de bus à <?= Template::e($name) ?></h3>
           <?php if (!empty($busDiurnes)): ?>
-            <p class="correspondance-bus-label"><strong>Bus diurnes :</strong>
-              <span class="correspondance-bus-list">
-                <?php foreach ($busDiurnes as $i => $b): ?>
-                  <span class="correspondance-bus-badge"><?= Template::e($b) ?></span><?= $i < count($busDiurnes) - 1 ? ' ' : '' ?>
+            <div class="correspondance-bus-row">
+              <p class="correspondance-bus-label"><strong>Bus diurnes</strong></p>
+              <div class="correspondance-bus-list">
+                <?php foreach ($busDiurnes as $b): ?>
+                  <?= $renderBusBadge((string)$b) ?>
                 <?php endforeach; ?>
-              </span>
-            </p>
+              </div>
+            </div>
           <?php endif; ?>
           <?php if (!empty($busNoct)): ?>
-            <p class="correspondance-bus-label"><strong>Noctilien :</strong>
-              <span class="correspondance-bus-list">
-                <?php foreach ($busNoct as $i => $b): ?>
-                  <span class="correspondance-bus-badge correspondance-bus-badge--noct"><?= Template::e($b) ?></span><?= $i < count($busNoct) - 1 ? ' ' : '' ?>
+            <div class="correspondance-bus-row">
+              <p class="correspondance-bus-label"><strong>Noctilien</strong></p>
+              <div class="correspondance-bus-list">
+                <?php foreach ($busNoct as $b): ?>
+                  <?= $renderBusBadge((string)$b, 'correspondance-bus-badge--noct') ?>
                 <?php endforeach; ?>
-              </span>
-            </p>
+              </div>
+            </div>
           <?php endif; ?>
           <?php if (!empty($busReg)): ?>
-            <p class="correspondance-bus-label"><strong>Bus régionaux :</strong>
-              <span class="correspondance-bus-list">
-                <?php foreach ($busReg as $i => $b): ?>
-                  <span class="correspondance-bus-badge correspondance-bus-badge--reg"><?= Template::e($b) ?></span><?= $i < count($busReg) - 1 ? ' ' : '' ?>
+            <div class="correspondance-bus-row">
+              <p class="correspondance-bus-label"><strong>Bus régionaux</strong></p>
+              <div class="correspondance-bus-list">
+                <?php foreach ($busReg as $b): ?>
+                  <?= $renderBusBadge((string)$b, 'correspondance-bus-badge--reg') ?>
                 <?php endforeach; ?>
-              </span>
-            </p>
+              </div>
+            </div>
           <?php endif; ?>
         </div>
       <?php endif; ?>
