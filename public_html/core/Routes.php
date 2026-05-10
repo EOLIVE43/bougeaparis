@@ -81,6 +81,8 @@ class Routes
         'la-defense-grande-arche',
         'charles-de-gaulle-etoile',
         'concorde',
+        'tuileries',
+        'palais-royal-musee-du-louvre',
     ];
 
     /**
