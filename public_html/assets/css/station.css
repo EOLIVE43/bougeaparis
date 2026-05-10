@@ -1748,6 +1748,39 @@ a.correspondance-bus-badge:focus {
 }
 
 /* ============================================================
+   16bis-bis. ZONES PUBLICITAIRES PLACEHOLDER (AdSense futur)
+   Voir docs/MONETIZATION-STRATEGY.md
+   ============================================================ */
+
+.ad-zone {
+    margin: 2rem 0;
+    min-height: 90px; /* prévention CLS quand AdSense chargera */
+    text-align: center;
+    overflow: hidden;
+}
+.ad-zone:empty {
+    display: none; /* masqué tant que vide (V1, sans impact rendu) */
+}
+@media (min-width: 1024px) {
+    .ad-zone--debug:empty {
+        display: block;
+        background: #f0f0f0;
+        min-height: 90px;
+        position: relative;
+        border: 1px dashed #ccc;
+    }
+    .ad-zone--debug:empty::before {
+        content: "📢 Future zone AdSense";
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        color: #999;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ============================================================
    16ter. TARIFS, SERVICES, SÉCURITÉ (sections transversales)
    ============================================================ */
 

@@ -404,6 +404,12 @@ $tpl->partial('components/breadcrumb', [
   ]);
   ?>
 
+  <!-- Zone publicitaire 1 — post-hero/intro (placeholder, voir docs/MONETIZATION-STRATEGY.md) -->
+  <div class="ad-zone ad-zone--post-hero" data-ad-slot="post-hero"></div>
+
+  <?php
+  ?>
+
   <!-- ============================================================
        1ter. INFO TRAFIC SEO (paragraphe statique, H2 PARENT du bloc dynamique
             qui suit. Toujours present pour ranker sur "trafic", "perturbation",
@@ -883,6 +889,9 @@ $tpl->partial('components/breadcrumb', [
   ]);
   ?>
 
+  <!-- Zone publicitaire 2 — mid-content (placeholder) -->
+  <div class="ad-zone ad-zone--mid-content" data-ad-slot="mid-content"></div>
+
   <!-- ============================================================
        4quater-bis. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
                     Zone exploratoire : transition entre la
@@ -954,6 +963,9 @@ $tpl->partial('components/breadcrumb', [
     </section>
   <?php endif; ?>
 
+  <!-- Zone publicitaire 3 — pre-footer-content (placeholder) -->
+  <div class="ad-zone ad-zone--pre-footer-content" data-ad-slot="pre-footer-content"></div>
+
   <!-- ============================================================
        6bis. SÉCURITÉ ET CONSEILS VOYAGEUR
        ============================================================ -->
@@ -975,6 +987,9 @@ $tpl->partial('components/breadcrumb', [
       </ul>
     </section>
   <?php endif; ?>
+
+  <!-- Zone publicitaire 4 — pre-maillage (placeholder) -->
+  <div class="ad-zone ad-zone--pre-maillage" data-ad-slot="pre-maillage"></div>
 
   <!-- ============================================================
        7bis. MAILLAGE INTERNE — « Continuer votre exploration »
