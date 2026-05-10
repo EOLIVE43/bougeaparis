@@ -159,7 +159,7 @@ $renderCard = function (string $key, array $t) {
   </div>
 
   <?php if (!empty($passes)): ?>
-    <h3 class="tarifs-subtitle">Forfaits et abonnements Navigo</h3>
+    <h3 class="tarifs-subtitle">Forfaits et abonnements Navigo à <?= Template::e($stationName) ?></h3>
     <div class="tarifs-grid">
       <?php foreach ($passes as $key => $t) $renderCard($key, $t); ?>
     </div>
