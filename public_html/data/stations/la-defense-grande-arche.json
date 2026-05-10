@@ -60,13 +60,50 @@
         "nocturne": ["N24", "N53"],
         "regional": []
     },
+    "tariff_zone": 3,
     "services": {
-        "wifi": true,
-        "toilets": "Toilettes publiques au niveau du Cœur Transport (salle d'échanges RER), accès payant. Toilettes gratuites à proximité dans le centre commercial Westfield Les Quatre Temps.",
-        "atm": "Distributeurs de billets de plusieurs banques disponibles dans la salle d'échanges et au CNIT (sortie n°9).",
-        "consigne_bagages": "Pas de consigne RATP dédiée. Services privés (Nannybag, Bounce) avec points relais dans les commerces du parvis.",
-        "espace_voyageurs": "Espace voyageurs RATP au niveau de la salle d'échanges (Cœur Transport). Vente de titres, recharge Navigo et information voyageurs.",
-        "commerces": "Westfield Les Quatre Temps (sortie « C »), 220+ boutiques + restauration, ouvert 10h-20h30. Cafés et boulangeries également présents sur le parvis et au CNIT."
+        "wifi": {
+            "available": true,
+            "location_detail": "la salle d'échanges Cœur Transport",
+            "coverage_detail": "les quais Ligne 1 et les zones de correspondance vers le RER A, le RER E, le tramway T2 et les Transilien L et U"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "location": "du Cœur Transport (salle d'échanges RER)",
+                "access": "la sortie 6 ou 7"
+            },
+            "public_free": {
+                "available": true,
+                "location": "le centre commercial Westfield Les Quatre Temps",
+                "access": "sortie C, accessible directement depuis la salle d'échanges sans sortir au niveau de la rue"
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs banques",
+            "locations": [
+                "la salle d'échanges principale",
+                "le niveau de la sortie n°9 vers le CNIT"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "de la salle d'échanges Cœur Transport",
+            "services": "vente de titres, recharge Navigo, information voyageurs"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                {"name": "Nannybag", "type": "points relais dans les commerces du parvis"},
+                {"name": "Bounce", "type": "points relais dans les commerces du parvis"}
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Westfield Les Quatre Temps (sortie C)",
+            "details": "220+ boutiques + restauration, ouvert 10h-20h30",
+            "secondary": "Cafés et boulangeries également présents sur le parvis et au CNIT"
+        }
     },
     "safety": {
         "audit_status": "verified",

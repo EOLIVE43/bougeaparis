@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "version": "2026-01-01",
+    "valid_from": "2026-01-01",
+    "valid_to": "2026-12-31",
+    "source": "Île-de-France Mobilités",
+    "source_url": "https://www.iledefrance-mobilites.fr/titres-et-tarifs",
+    "last_verified": "2026-05-10",
+    "note": "Tarifs IDFM 2026. Source unique pour toutes les pages station BougeaParis. À re-vérifier au minimum chaque 1er janvier (changement annuel des tarifs)."
+  },
+
+  "tickets": {
+    "ticket_t_plus": {
+      "name": "Ticket t+",
+      "icon": "🎫",
+      "price_eur": 2.15,
+      "type": "unitaire",
+      "valid_for": "2 heures, métro/RER intra-Paris, correspondances illimitées",
+      "ideal_for": "Voyage occasionnel, touristes en visite courte",
+      "transfers_note": "Correspondances métro/RER illimitées en 2h"
+    },
+    "carnet_10": {
+      "name": "Carnet de 10 tickets t+",
+      "icon": "📦",
+      "price_eur": 17.35,
+      "price_per_ticket_eur": 1.735,
+      "discount_vs_unit_pct": 19,
+      "ideal_for": "Voyageurs réguliers occasionnels, séjour de quelques jours",
+      "valid_for": "Métro, RER intra-Paris, bus, tramway"
+    },
+    "navigo_easy": {
+      "name": "Navigo Easy",
+      "icon": "💳",
+      "price_eur": 2.00,
+      "type": "carte rechargeable anonyme",
+      "ideal_for": "Touristes, voyageurs occasionnels souhaitant éviter les tickets papier",
+      "valid_for": "Charge tickets t+, carnets, ou forfait journée"
+    }
+  },
+
+  "passes": {
+    "navigo_decouverte": {
+      "name": "Navigo Découverte",
+      "icon": "🗓️",
+      "card_price_eur": 5.00,
+      "weekly_price_eur": 30.75,
+      "monthly_price_eur": 88.80,
+      "type": "carte personnelle (photo obligatoire)",
+      "tariff_zones": "1-5",
+      "ideal_for": "Visiteurs séjournant 4 jours ou plus, ou utilisateurs intensifs"
+    },
+    "navigo_liberte_plus": {
+      "name": "Navigo Liberté+",
+      "icon": "♾️",
+      "card_price_eur": 0.00,
+      "price_per_trip_eur": 1.73,
+      "type": "carte personnelle, paiement à l'usage",
+      "billing": "prélèvement mensuel, plafond mensuel garanti",
+      "ideal_for": "Résidents franciliens occasionnels, salariés voyageant peu"
+    }
+  },
+
+  "free_categories": [
+    {
+      "category": "Enfants -4 ans",
+      "icon": "👶",
+      "description": "Voyagent gratuitement, sans titre de transport"
+    },
+    {
+      "category": "Enfants 4-10 ans",
+      "icon": "🧒",
+      "description": "Tarif réduit (-50%) sur tickets t+ et forfaits Navigo"
+    },
+    {
+      "category": "Imagine'R (-26 ans)",
+      "icon": "🎓",
+      "description": "Forfait étudiant à tarif préférentiel pour scolaires et étudiants"
+    },
+    {
+      "category": "Solidarité Transport (RSA, CSS)",
+      "icon": "💚",
+      "description": "Réduction 75% à 100% selon les ressources, attribuée par IDFM"
+    }
+  ],
+
+  "zones": {
+    "_doc": "Zones tarifaires IDFM. Forfait Navigo : tarif unique zones 1-5 depuis 2015. Tickets t+ valables zones 1-2 (Paris + petite couronne).",
+    "1": "Paris intra-muros",
+    "2": "Petite couronne (92, 93, 94 limitrophe)",
+    "3": "Banlieue proche (Puteaux, Issy, Saint-Denis...)",
+    "4": "Grande couronne intermédiaire",
+    "5": "Grande couronne lointaine"
+  }
+}

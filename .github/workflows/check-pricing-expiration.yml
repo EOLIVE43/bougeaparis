@@ -1,0 +1,56 @@
+name: Check transit pricing expiration
+
+# Vérifie que les tarifs IDFM ne sont pas expirés. Tourne 1 fois par
+# mois (le 5) + sur push qui touche transit-pricing.json.
+on:
+  schedule:
+    - cron: '0 9 5 * *'  # 9h00 UTC chaque 5 du mois
+  push:
+    branches: [main]
+    paths:
+      - 'public_html/data/global/transit-pricing.json'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify pricing is not expired
+        run: |
+          PRICING_FILE="public_html/data/global/transit-pricing.json"
+          if [ ! -f "$PRICING_FILE" ]; then
+            echo "::error::$PRICING_FILE not found"
+            exit 1
+          fi
+
+          VALID_TO=$(jq -r '._meta.valid_to // empty' "$PRICING_FILE")
+          LAST_VERIFIED=$(jq -r '._meta.last_verified // empty' "$PRICING_FILE")
+          TODAY=$(date -u +%Y-%m-%d)
+
+          echo "Today           : $TODAY"
+          echo "valid_to        : $VALID_TO"
+          echo "last_verified   : $LAST_VERIFIED"
+
+          if [ -z "$VALID_TO" ]; then
+            echo "::warning::_meta.valid_to is empty, cannot verify expiration"
+            exit 0
+          fi
+
+          if [[ "$TODAY" > "$VALID_TO" ]]; then
+            echo "::warning::Transit pricing has expired on $VALID_TO. Update $PRICING_FILE per docs/PRICING-MANAGEMENT.md."
+          else
+            echo "✅ Pricing valid until $VALID_TO"
+          fi
+
+          # Garde-fou supplémentaire : alerter si last_verified > 13 mois
+          if [ -n "$LAST_VERIFIED" ]; then
+            LAST_TS=$(date -u -d "$LAST_VERIFIED" +%s 2>/dev/null || echo 0)
+            CUT_TS=$(date -u -d "13 months ago" +%s)
+            if [ "$LAST_TS" -gt 0 ] && [ "$LAST_TS" -lt "$CUT_TS" ]; then
+              echo "::warning::last_verified=$LAST_VERIFIED is older than 13 months. Re-verify with IDFM."
+            fi
+          fi

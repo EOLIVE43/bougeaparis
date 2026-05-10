@@ -796,10 +796,12 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
-       4bis-post. TARIFS ET TITRES DE TRANSPORT (mutualisé tarifs.json)
+       4bis-post. TARIFS ET TITRES DE TRANSPORT
+                  (source : data/global/transit-pricing.json)
        ============================================================ -->
   <?php $tpl->partial('components/station/tarifs', [
       'stationName' => $name,
+      'tariffZone'  => $station['tariff_zone'] ?? null,
   ]); ?>
 
   <!-- ============================================================

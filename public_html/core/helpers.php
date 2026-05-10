@@ -600,3 +600,45 @@ if (!function_exists('darkenForWhiteText')) {
         return '#000000';
     }
 }
+
+if (!function_exists('transit_pricing')) {
+    /**
+     * Charge le JSON central des tarifs IDFM (data/global/transit-pricing.json).
+     * Source unique de vérité pour les tarifs métro / RER / bus / tram /
+     * Transilien sur les pages station + hub /tarifs/.
+     *
+     * Cache mémoire intra-requête (single read par render).
+     * Retourne array vide si fichier manquant ou JSON invalide.
+     *
+     * @return array
+     */
+    function transit_pricing(): array {
+        static $cache = null;
+        if ($cache === null) {
+            $path = __DIR__ . '/../data/global/transit-pricing.json';
+            if (is_file($path)) {
+                $parsed = json_decode((string) file_get_contents($path), true);
+                $cache = is_array($parsed) ? $parsed : [];
+            } else {
+                $cache = [];
+            }
+        }
+        return $cache;
+    }
+}
+
+if (!function_exists('format_price')) {
+    /**
+     * Formate un prix en euros au format FR : « 17,35 € » ou « Gratuit ».
+     *
+     * @param float|int|null $price
+     * @param bool           $showFree Afficher « Gratuit » si 0, sinon « 0,00 € »
+     * @return string
+     */
+    function format_price($price, bool $showFree = true): string {
+        if ($price === null) return '';
+        $f = (float) $price;
+        if ($showFree && $f === 0.0) return 'Gratuit';
+        return number_format($f, 2, ',', "\u{202F}") . "\u{202F}€";
+    }
+}
