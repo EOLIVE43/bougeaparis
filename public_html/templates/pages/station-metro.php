@@ -81,9 +81,26 @@ $lineCount = count($lines);
 $rerCodes = !empty($rer) ? ' + RER ' . implode(' ', array_column($rer, 'code')) : '';
 $arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
 
+// Meta description : 1) champ explicite seo.description si défini,
+// 2) sinon hero.description tronqué proprement à ~155 chars,
+// 3) sinon fallback générique.
+$metaDescRaw = $station['seo']['description']
+    ?? $hero['description']
+    ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, sorties, plan, horaires et conseils pratiques.');
+$metaDesc = strip_tags((string)$metaDescRaw);
+if (mb_strlen($metaDesc, 'UTF-8') > 158) {
+    // Coupe au dernier espace avant 155 chars pour éviter une coupure mid-mot.
+    $cut = mb_substr($metaDesc, 0, 155, 'UTF-8');
+    $lastSpace = mb_strrpos($cut, ' ', 0, 'UTF-8');
+    if ($lastSpace !== false && $lastSpace > 100) {
+        $cut = mb_substr($cut, 0, $lastSpace, 'UTF-8');
+    }
+    $metaDesc = rtrim($cut, " ,.;:") . '…';
+}
+
 $tpl->seo
     ->setTitle('Station ' . $name . $arrLabel . ' : ' . $lineCount . ' ligne' . ($lineCount > 1 ? 's' : '') . ' métro' . $rerCodes)
-    ->setDescription($hero['description'] ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, stations adjacentes, histoire et conseils pratiques.'))
+    ->setDescription($metaDesc)
     ->setCanonical($canonical);
 
 // Hero image : og:image (partages sociaux + Discover) + preload LCP
@@ -339,7 +356,7 @@ $tpl->partial('components/breadcrumb', [
       </div>
 
       <h1 id="station-hero-title">
-        Station <?= Template::e($name) ?>
+        Station <?= Template::e($nameFull) ?>
       </h1>
 
       <?php if (!empty($hero['tagline'])): ?>
@@ -779,6 +796,13 @@ $tpl->partial('components/breadcrumb', [
   ?>
 
   <!-- ============================================================
+       4bis-post. TARIFS ET TITRES DE TRANSPORT (mutualisé tarifs.json)
+       ============================================================ -->
+  <?php $tpl->partial('components/station/tarifs', [
+      'stationName' => $name,
+  ]); ?>
+
+  <!-- ============================================================
        4ter. SORTIES (acces numerotes, eventuellement regroupes par secteurs)
        ============================================================ -->
   <?php $tpl->partial('components/station/sorties', [
@@ -787,6 +811,14 @@ $tpl->partial('components/breadcrumb', [
       'stationName' => $name,
   ]);
   ?>
+
+  <!-- ============================================================
+       4ter-post. SERVICES ET INFOS PRATIQUES (WiFi, toilettes, etc.)
+       ============================================================ -->
+  <?php $tpl->partial('components/station/services', [
+      'services'    => $station['services'] ?? null,
+      'stationName' => $name,
+  ]); ?>
 
   <!-- ============================================================
        4quater. CARTE INTERACTIVE (Leaflet + OpenStreetMap, lazy-load)
@@ -875,6 +907,14 @@ $tpl->partial('components/breadcrumb', [
       </div>
     </section>
   <?php endif; ?>
+
+  <!-- ============================================================
+       6bis. SÉCURITÉ ET CONSEILS VOYAGEUR
+       ============================================================ -->
+  <?php $tpl->partial('components/station/securite', [
+      'safety'      => $station['safety'] ?? null,
+      'stationName' => $name,
+  ]); ?>
 
   <!-- ============================================================
        7. CONSEILS PRATIQUES

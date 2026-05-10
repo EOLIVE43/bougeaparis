@@ -1748,6 +1748,162 @@ a.correspondance-bus-badge:focus {
 }
 
 /* ============================================================
+   16ter. TARIFS, SERVICES, SÉCURITÉ (sections transversales)
+   ============================================================ */
+
+/* TARIFS */
+.section-tarifs { margin-top: 2.5rem; }
+.tarifs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    margin: 1.5rem 0;
+}
+@media (min-width: 640px) {
+    .tarifs-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+@media (min-width: 1024px) {
+    .tarifs-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.tarif-card {
+    background: var(--color-bg-alt, #F7F9F8);
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: var(--radius-md, 8px);
+    padding: 1rem 1.1rem;
+}
+.tarif-card__header {
+    display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;
+}
+.tarif-card__icon { font-size: 1.4rem; }
+.tarif-card__name {
+    margin: 0; font-size: 1rem; font-weight: 600;
+    color: var(--color-text, #1A2B26);
+}
+.tarif-card__price {
+    font-size: 1.5rem; font-weight: 700;
+    color: var(--color-primary, #117049);
+    margin-bottom: 0.25rem;
+}
+.tarif-card__price-label {
+    display: block; font-size: 0.75rem; font-weight: 400;
+    color: var(--color-text-muted, #5A6B66);
+}
+.tarif-card__sub {
+    list-style: none; margin: 0.4rem 0; padding: 0;
+    font-size: 0.875rem;
+}
+.tarif-card__sub li { margin: 0.15rem 0; }
+.tarif-card__desc {
+    margin: 0.5rem 0; font-size: 0.875rem;
+    color: var(--color-text, #1A2B26); line-height: 1.4;
+}
+.tarif-card__best {
+    margin: 0.4rem 0 0; font-size: 0.825rem;
+    color: var(--color-text-muted, #5A6B66);
+}
+.tarifs-subtitle {
+    font-size: 1.15rem; margin: 1.75rem 0 0.75rem;
+    color: var(--color-primary, #117049);
+}
+.tarifs-reduits-list {
+    list-style: none; margin: 0; padding: 0;
+}
+.tarifs-reduits-list li {
+    margin: 0.4rem 0; font-size: 0.95rem;
+    display: flex; align-items: flex-start; gap: 0.5rem;
+}
+.tarifs-reduits-icon { flex-shrink: 0; font-size: 1.1rem; }
+.tarifs-meta {
+    margin: 1.5rem 0 0; font-size: 0.875rem;
+    color: var(--color-text-muted, #5A6B66);
+    padding-top: 1rem; border-top: 1px solid var(--color-border, #E0E6E4);
+}
+.tarifs-hub-link { margin-left: 0.5rem; font-weight: 600; }
+.tarifs-hub-link--inactive {
+    color: var(--color-text-muted, #5A6B66);
+    cursor: default;
+}
+
+/* SERVICES */
+.section-services { margin-top: 2.5rem; }
+.services-list {
+    list-style: none; margin: 1.25rem 0; padding: 0;
+    display: grid; grid-template-columns: 1fr; gap: 0.6rem;
+}
+@media (min-width: 640px) {
+    .services-list { grid-template-columns: repeat(2, 1fr); }
+}
+.service-item {
+    display: flex; gap: 0.65rem; padding: 0.85rem 1rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: var(--radius-md, 8px);
+}
+.service-item__icon { flex-shrink: 0; font-size: 1.3rem; }
+.service-item__content { flex: 1 1 auto; }
+.service-item__label {
+    display: block; margin-bottom: 0.15rem;
+    color: var(--color-text, #1A2B26);
+}
+.service-item__detail {
+    display: block; font-size: 0.875rem;
+    color: var(--color-text-muted, #5A6B66); line-height: 1.4;
+}
+.service-item--no .service-item__icon { opacity: 0.4; }
+.service-item--no .service-item__detail { font-style: italic; }
+
+/* SÉCURITÉ */
+.section-securite { margin-top: 2.5rem; }
+.safety-level {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.5rem 1rem; border-radius: var(--radius-md, 8px);
+    background: var(--color-bg-alt, #F7F9F8);
+    border-left: 3px solid var(--color-primary, #117049);
+    margin: 1rem 0;
+}
+.safety-level--high { border-left-color: #8a570f; }
+.safety-level--low { border-left-color: var(--color-success, #0D6E4F); }
+.safety-presence {
+    list-style: none; margin: 1rem 0; padding: 0;
+    display: grid; grid-template-columns: 1fr; gap: 0.4rem;
+}
+@media (min-width: 640px) {
+    .safety-presence { grid-template-columns: repeat(2, 1fr); }
+}
+.safety-presence li {
+    display: flex; gap: 0.5rem; align-items: center;
+    padding: 0.6rem 0.85rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border-radius: var(--radius-sm, 4px);
+    font-size: 0.95rem;
+}
+.safety-subtitle {
+    font-size: 1.15rem; margin: 1.5rem 0 0.75rem;
+    color: var(--color-primary, #117049);
+}
+.safety-tips {
+    list-style: none; margin: 0; padding: 0;
+}
+.safety-tips li {
+    display: flex; gap: 0.5rem; align-items: flex-start;
+    margin: 0.5rem 0; line-height: 1.5;
+}
+.safety-tips__icon { flex-shrink: 0; font-size: 1.1rem; }
+.safety-notes {
+    margin: 1rem 0; padding: 0.85rem 1rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border-radius: var(--radius-sm, 4px);
+    font-size: 0.9rem; color: var(--color-text-muted, #5A6B66);
+}
+.safety-emergency {
+    margin: 1.5rem 0 0; padding: 1rem;
+    background: #fef3e7; border-left: 3px solid #8a570f;
+    border-radius: var(--radius-sm, 4px);
+}
+.safety-emergency p { margin: 0; }
+
+
+/* ============================================================
    17. ITINÉRAIRES POPULAIRES (V1 hub-and-spoke)
    ============================================================ */
 
