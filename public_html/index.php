@@ -195,6 +195,15 @@ switch ($path) {
     case '/auteur/elodie':
         (new Template('author-elodie'))->render();
         break;
+    case '/tarifs':
+        (new Template('tarifs-hub'))->render();
+        break;
+    case '/tarifs/metro':
+        (new Template('tarifs-metro'))->render();
+        break;
+    case '/tarifs/aeroports':
+        (new Template('tarifs-aeroports'))->render();
+        break;
 
     default:
         // Route dynamique /metro/ligne-{code} (ex: /metro/ligne-1, /metro/ligne-14, /metro/ligne-3bis)

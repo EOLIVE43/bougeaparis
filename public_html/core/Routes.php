@@ -48,6 +48,9 @@ class Routes
         '/transilien',
         '/gares',                 // Hub cluster gares (page squelette pour l'instant)
         '/info-trafic',
+        '/tarifs',
+        '/tarifs/metro',
+        '/tarifs/aeroports',
         '/a-propos',
         '/contact',
         '/mentions-legales',

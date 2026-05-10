@@ -90,5 +90,104 @@
     "3": "Banlieue proche (Puteaux, Issy, Saint-Denis...)",
     "4": "Grande couronne intermédiaire",
     "5": "Grande couronne lointaine"
+  },
+
+  "airports": {
+    "cdg": {
+      "name": "Aéroport Charles de Gaulle (CDG)",
+      "iata": "CDG",
+      "options": {
+        "rer_b": {
+          "label": "RER B direct Paris ↔ CDG",
+          "price_eur": 11.80,
+          "duration_min_paris": 35,
+          "frequency": "10-15 min",
+          "ideal_for": "Trajet rapide depuis Châtelet/Gare du Nord",
+          "valid_for": "billet « Paris-CDG » non couvert par le ticket t+"
+        },
+        "bus_350": {
+          "label": "Bus 350 (Gare de l'Est ↔ CDG)",
+          "price_eur": 2.15,
+          "duration_min_paris": 80,
+          "frequency": "15-30 min",
+          "ideal_for": "Voyageurs avec ticket t+ ou Navigo, sans bagage volumineux",
+          "valid_for": "ticket t+ et Navigo (zones 1-5)"
+        },
+        "roissybus": {
+          "label": "Roissybus (Opéra ↔ CDG)",
+          "price_eur": 16.60,
+          "duration_min_paris": 60,
+          "frequency": "15-20 min",
+          "ideal_for": "Liaison directe depuis le centre, bagages OK",
+          "valid_for": "billet dédié non couvert par t+"
+        }
+      }
+    },
+    "orly": {
+      "name": "Aéroport d'Orly",
+      "iata": "ORY",
+      "options": {
+        "metro_14_orly": {
+          "label": "Ligne 14 directe Paris ↔ Orly (depuis 2024)",
+          "price_eur": 13.00,
+          "duration_min_paris": 25,
+          "frequency": "3-6 min",
+          "ideal_for": "Le plus rapide et le plus simple, ouverture directe juin 2024",
+          "valid_for": "billet « Paris-Orly » dédié"
+        },
+        "rer_b_orlyval": {
+          "label": "RER B + Orlyval (Antony ↔ Orly)",
+          "price_eur": 13.55,
+          "duration_min_paris": 35,
+          "frequency": "5-10 min",
+          "ideal_for": "Alternative depuis Châtelet/Gare du Nord avant ligne 14",
+          "valid_for": "billet combiné RER B + Orlyval"
+        },
+        "tram_7": {
+          "label": "Tramway T7 (Villejuif ↔ Orly)",
+          "price_eur": 2.15,
+          "duration_min_paris": 70,
+          "frequency": "8-12 min",
+          "ideal_for": "Voyageurs depuis sud Paris avec ticket t+",
+          "valid_for": "ticket t+ et Navigo"
+        },
+        "orlybus": {
+          "label": "Orlybus (Denfert-Rochereau ↔ Orly)",
+          "price_eur": 11.50,
+          "duration_min_paris": 30,
+          "frequency": "10-15 min",
+          "ideal_for": "Liaison directe rapide depuis Denfert",
+          "valid_for": "billet dédié non couvert par t+"
+        }
+      }
+    },
+    "beauvais": {
+      "name": "Aéroport de Beauvais-Tillé",
+      "iata": "BVA",
+      "options": {
+        "navette": {
+          "label": "Navette officielle Porte Maillot ↔ Beauvais",
+          "price_eur": 17.90,
+          "duration_min_paris": 75,
+          "frequency": "selon vols low-cost",
+          "ideal_for": "Vols Ryanair, Wizz, Volotea — pas d'autre liaison directe",
+          "valid_for": "billet à acheter en ligne ou aux comptoirs"
+        }
+      }
+    }
+  },
+
+  "disneyland": {
+    "label": "Disneyland Paris (Marne-la-Vallée — Chessy)",
+    "options": {
+      "rer_a": {
+        "label": "RER A direct Paris ↔ Disneyland",
+        "price_eur": 8.45,
+        "duration_min_paris": 35,
+        "frequency": "10-15 min",
+        "ideal_for": "Le plus rapide et le plus utilisé",
+        "valid_for": "billet Origine-Destination ou Navigo zones 1-5"
+      }
+    }
   }
 }
