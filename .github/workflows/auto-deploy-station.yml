@@ -129,10 +129,23 @@ jobs:
 
       - name: Build hero variants
         if: ${{ github.event.inputs.skip_hero != 'true' }}
+        id: build_hero
         run: |
-          php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }} 2>&1 | tail -50
-          echo "### Hero generated" >> "$GITHUB_STEP_SUMMARY"
-          ls -la public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/ 2>/dev/null | tee -a "$GITHUB_STEP_SUMMARY" || echo "(pas de fichiers générés — peut-être skip si source=auto sans match)"
+          php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }} 2>&1 | tail -50 || true
+          DIR="public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/"
+          if [ -d "$DIR" ] && [ -n "$(ls -A "$DIR" 2>/dev/null)" ]; then
+            echo "hero_generated=true" >> "$GITHUB_OUTPUT"
+            echo "### ✅ Hero generated" >> "$GITHUB_STEP_SUMMARY"
+            ls -la "$DIR" | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            echo "hero_generated=false" >> "$GITHUB_OUTPUT"
+            echo "### ⚠️ Hero non généré côté CI" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Le script build-station-hero.php nécessite \`sips\` (macOS-only) pour le redimensionnement. Sur runner Linux, le pipeline image est skippé." >> "$GITHUB_STEP_SUMMARY"
+            echo "**Action Ludovic** : générer le hero manuellement en local (\`php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }}\`) puis upload manuel via cPanel ou commit avec exclusion gitignore." >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "Le reste du pipeline continue normalement (Lighthouse + validation)." >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Build POIs (Wikidata SPARQL + images Wikimedia)
         run: |
@@ -166,7 +179,7 @@ jobs:
           fi
 
       - name: Upload heros via FTP (assets/img/stations/{slug}/)
-        if: ${{ github.event.inputs.skip_hero != 'true' }}
+        if: ${{ github.event.inputs.skip_hero != 'true' && steps.build_hero.outputs.hero_generated == 'true' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}

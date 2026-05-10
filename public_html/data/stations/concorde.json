@@ -1,0 +1,148 @@
+{
+    "_doc": "Données structurées de la station Concorde. Format JSON BougeaParis v1. Audit Wikipedia 2026-05-10.",
+    "slug": "concorde",
+    "name": "Concorde",
+    "name_full": "Concorde (Métro 1, 8, 12)",
+    "arrondissement": "8e",
+    "address": "Place de la Concorde, 75008 Paris",
+    "latitude": 48.8657,
+    "longitude": 2.3214,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris (75008)",
+    "is_major_hub": true,
+    "i18n": {"en": null, "es": null},
+    "lines": [
+        {"type": "metro", "code": "1", "slug": "metro-1", "color": "#FFCD00", "text_color": "#000000"},
+        {"type": "metro", "code": "8", "slug": "metro-8", "color": "#CEADD2", "text_color": "#000000"},
+        {"type": "metro", "code": "12", "slug": "metro-12", "color": "#007852", "text_color": "#FFFFFF"}
+    ],
+    "bus_correspondences": {
+        "diurne": ["24", "42", "52", "72", "73", "84", "94"],
+        "nocturne": ["N11", "N24"],
+        "regional": []
+    },
+    "seo": {
+        "description": "Station Concorde (Métro 1, 8, 12) sous la place de la Concorde : correspondances, sorties, plan, accès Champs-Élysées, Tuileries, obélisque de Louxor."
+    },
+    "hero": {
+        "tagline": "Sous la place de la Concorde — Lignes 1, 8 et 12 au cœur historique de Paris",
+        "description": "Située sous l'une des plus belles places du monde, la <strong>station Concorde</strong> dessert les <strong>lignes 1, 8 et 12 du métro</strong>. Ouverte en 1900, elle marque le centre géographique de l'<em>axe historique</em> entre les Tuileries (Louvre) et les Champs-Élysées. La place elle-même, classée au patrimoine de l'UNESCO, est dominée par l'<strong>obélisque de Louxor</strong>, monument millénaire offert à la France par le pacha d'Égypte en 1830."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {"name": "Champs-Élysées — Clemenceau", "slug": "champs-elysees-clemenceau", "direction": "La Défense"},
+            "next": {"name": "Tuileries", "slug": "tuileries", "direction": "Château de Vincennes"}
+        },
+        "metro-8": {
+            "previous": {"name": "Madeleine", "slug": "madeleine", "direction": "Balard"},
+            "next": {"name": "Invalides", "slug": "invalides", "direction": "Pointe du Lac"}
+        },
+        "metro-12": {
+            "previous": {"name": "Madeleine", "slug": "madeleine", "direction": "Aubervilliers — Front Populaire"},
+            "next": {"name": "Assemblée Nationale", "slug": "assemblee-nationale", "direction": "Mairie d'Issy"}
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>station Concorde</strong> dessert l'une des plus célèbres places de Paris, située au cœur de l'<em>axe historique</em> qui relie le Louvre à la Grande Arche de la Défense. Ouverte le <strong>13 août 1900</strong> sur la première ligne du métro parisien, elle est l'une des plus anciennes stations encore en service. Aujourd'hui, elle dessert <strong>3 lignes de métro</strong> (1, 8, 12) qui en font un nœud important du centre-ouest parisien.",
+        "Au-dessus de la station se déploie la <strong>place de la Concorde</strong>, vaste esplanade de 8,64 hectares dessinée au XVIIIe siècle par Ange-Jacques Gabriel sous le règne de Louis XV. C'est ici qu'a eu lieu la guillotine de Louis XVI et de Marie-Antoinette pendant la Révolution française, puis l'inauguration de l'obélisque de Louxor en 1836. La place, classée au patrimoine mondial de l'UNESCO, est l'une des plus visitées de la capitale.",
+        "La station Concorde présente une particularité visuelle : le quai de la <strong>ligne 12</strong> est entièrement décoré de <strong>carreaux de céramique blancs gravés de lettres</strong> formant le texte de la Déclaration des droits de l'homme et du citoyen de 1789. Cet aménagement artistique, conçu par Françoise Schein en 1991, fait de la station Concorde l'une des plus singulières et photographiées du métro parisien. La station n'est pas accessible aux PMR (audit Wikipedia 2026-05-10)."
+    ],
+    "faq": [
+        {"question": "À quelle heure passe le premier métro à Concorde ?", "answer": "Le <strong>premier métro à Concorde</strong> circule à partir de <strong>5h30</strong> sur les lignes 1, 8 et 12, du lundi au dimanche. Pour les voyageurs très matinaux, le bus 24 et le bus 73 passent également dès 5h30 sur la place."},
+        {"question": "À quelle heure passe le dernier métro à Concorde ?", "answer": "Le <strong>dernier métro à Concorde</strong> quitte la station à <strong>1h15</strong> en semaine, avec un <strong>prolongement nocturne jusqu'à 2h15 le vendredi soir, le samedi soir et les veilles de fêtes</strong>. Les Noctiliens N11 et N24 prennent le relais depuis la place."},
+        {"question": "Comment rejoindre l'obélisque de Louxor depuis la station ?", "answer": "L'<strong>obélisque</strong> est au centre exact de la place, à environ 30 m de la sortie principale. Toutes les sorties Concorde débouchent à proximité : empruntez la sortie « Place de la Concorde » la plus proche de votre quai. Comptez 1-2 minutes à pied. L'obélisque mesure 23 m de haut et est âgé de plus de 3300 ans (datant du règne de Ramsès II)."},
+        {"question": "La station Concorde est-elle accessible aux PMR ?", "answer": "<strong>Non.</strong> La station Concorde n'est pas conforme à la norme PMR 2005. Aucun ascenseur ne dessert les quais des lignes 1, 8 ou 12. Pour un accès PMR sur l'axe historique, privilégiez la station <strong>La Défense — Grande Arche</strong> (terminus ouest L1) ou <strong>Châtelet</strong> (centre, accès n°1 « Porte Marguerite de Navarre »)."},
+        {"question": "Quelle sortie pour le Jardin des Tuileries ?", "answer": "Empruntez la sortie côté est de la place (sortie « Tuileries » ou « Concorde — Tuileries ») qui débouche directement à l'entrée ouest du jardin. Comptez 2 minutes à pied. Le jardin des Tuileries s'étend sur 25,5 hectares jusqu'au musée du Louvre, parfait pour une promenade le long de l'axe historique."},
+        {"question": "Quelle sortie pour les Champs-Élysées depuis Concorde ?", "answer": "Empruntez la sortie côté ouest de la place (sortie « Champs-Élysées »). Vous débouchez au pied du <strong>début des Champs-Élysées</strong>, à 1,9 km de l'Arc de Triomphe en remontée. Pour parcourir l'avenue à pied : compter 25-30 min. En métro Ligne 1, 4 stations (Concorde → Étoile)."},
+        {"question": "Que voir d'autre depuis Concorde ?", "answer": "À proximité immédiate : l'<strong>Hôtel de Crillon</strong> et les bâtiments jumeaux de Gabriel (côté nord), l'<strong>église de la Madeleine</strong> (5 min Ligne 8 ou 12), le <strong>Musée de l'Orangerie</strong> (à l'angle nord-ouest des Tuileries, abrite les Nymphéas de Monet), et le <strong>Palais Bourbon</strong> (Assemblée nationale, en traversant le pont de la Concorde, 5 min à pied)."},
+        {"question": "Combien de sorties compte la station Concorde ?", "answer": "La station compte <strong>10 accès numérotés</strong>, répartis tout autour de la place de la Concorde. Chacun débouche sur un côté différent de la place, ce qui permet de rejoindre directement votre destination (jardin des Tuileries, Champs-Élysées, Madeleine, ambassade, Concorde Lafayette) sans avoir à traverser la circulation."},
+        {"question": "Pourquoi le quai de la Ligne 12 est-il si particulier ?", "answer": "Le quai de la <strong>Ligne 12</strong> à Concorde est décoré de <strong>carreaux de céramique blancs</strong> sur lesquels sont gravés tous les articles de la <strong>Déclaration des droits de l'homme et du citoyen de 1789</strong>. Ce décor, signé Françoise Schein et inauguré en 1991, fait de Concorde l'une des plus belles stations artistiques du métro parisien. Les voyageurs peuvent y lire le texte intégral de la Déclaration en attendant la rame."},
+        {"question": "Y a-t-il des consignes à bagages à Concorde ?", "answer": "Pas de consigne RATP en propre. Des services privés (Nannybag, Bounce) sont disponibles dans les commerces du quartier (rue de Rivoli, rue Royale, place Vendôme à 5 min à pied). Pour des consignes officielles SNCF, la gare Saint-Lazare est accessible en 10 min via la Ligne 12 (3 stations)."},
+        {"question": "Quelle est la meilleure heure pour visiter la place ?", "answer": "Le <strong>matin tôt (avant 9h)</strong> ou en <strong>soirée (après 19h)</strong>, quand la circulation est moins dense et que la luminosité magnifie l'obélisque. La place est également très belle <strong>illuminée le soir</strong> (les fontaines de Hittorff sont éclairées de 19h à 23h en hiver, plus tard en été)."}
+    ],
+    "practical_tips": [
+        "Pour traverser la place de la Concorde à pied (sans quoi l'expérience reste limitée à voir l'obélisque), empruntez les passages piétons protégés et soyez très prudent : la circulation est intense (1 des plus grands carrefours de Paris).",
+        "Aux heures de pointe (8h-10h et 17h-19h), les correspondances entre les lignes 1, 8 et 12 sont fluides mais demandent quelques minutes de marche dans les couloirs souterrains. Suivez la signalétique colorée par ligne.",
+        "Pour photographier l'obélisque sans la foule, privilégiez le matin tôt ou les jours fériés. La place est piétonnisée certains week-ends d'été (renseignements Mairie de Paris).",
+        "Le Musée de l'Orangerie (Nymphéas de Monet, 8 toiles murales) ferme à 18h le mardi-dimanche et toute la journée le mardi. Réservation conseillée en ligne aux périodes de forte affluence.",
+        "Les bus 24 et 73, qui longent la Seine et la rue de Rivoli, offrent des trajets touristiques agréables depuis Concorde (vues sur la Seine, les Tuileries, le Louvre)."
+    ],
+    "history": {
+        "title": "Une station du tout premier métro parisien (1900)",
+        "paragraphs": [
+            "La station <strong>Concorde</strong> est ouverte le <strong>13 août 1900</strong>, quelques semaines après l'inauguration de la première ligne du métropolitain entre Porte Maillot et Porte de Vincennes (19 juillet 1900). Elle est l'une des stations historiques de l'axe est-ouest du réseau, faisant partie du tout premier service commercial. La <strong>ligne 8</strong> y arrive le 13 juillet 1913, suivie par la <strong>ligne 12</strong> (alors Nord-Sud, ligne A) le 5 novembre 1910 — devenant l'une des premières correspondances triples du réseau.",
+            "Le décor le plus marquant de la station est inauguré en <strong>1991</strong> : le quai de la ligne 12 est entièrement habillé de carreaux de céramique blancs sur lesquels sont gravés les <strong>17 articles de la Déclaration des droits de l'homme et du citoyen de 1789</strong>, œuvre de l'artiste <strong>Françoise Schein</strong>. Cette installation artistique célèbre la portée historique de la place située en surface (lieu d'exécution de Louis XVI en 1793). Concorde devient l'une des stations les plus singulières et photographiées du métro parisien."
+        ]
+    },
+    "trivia": [
+        {"icon": "🏛️", "title": "L'obélisque de Louxor : 3300 ans au-dessus du métro", "content": "L'<strong>obélisque de Louxor</strong>, qui domine la place, est un monument <strong>égyptien millénaire</strong> offert à la France par Méhémet Ali, vice-roi d'Égypte, en 1830 et inauguré sur la place le 25 octobre 1836. Il pèse 230 tonnes et mesure 23 m. C'est l'un des plus anciens monuments visibles à Paris."},
+        {"icon": "📜", "title": "Le quai-musée de la Ligne 12", "content": "Le quai de la <strong>Ligne 12</strong> est l'une des stations les plus singulières du métro parisien : ses murs sont décorés de carreaux de céramique blancs sur lesquels sont gravés tous les articles de la <strong>Déclaration des droits de l'homme et du citoyen de 1789</strong>. Œuvre de Françoise Schein inaugurée en 1991."},
+        {"icon": "⚖️", "title": "Lieu d'exécution sous la Révolution", "content": "Pendant la Révolution française, la place s'appelait <strong>place de la Révolution</strong>. C'est ici qu'a été guillotiné Louis XVI le 21 janvier 1793, suivi par Marie-Antoinette le 16 octobre 1793. Plus de 1000 personnes ont été exécutées sur cette place pendant la Terreur (1793-1794). Elle a été renommée « place de la Concorde » en 1795 pour symboliser la réconciliation nationale."},
+        {"icon": "📅", "title": "Une des premières stations du métro parisien", "content": "Concorde est ouverte le 13 août 1900, faisant partie du tout premier service commercial du métro entre Porte Maillot et Porte de Vincennes. Elle a accompagné l'extension du réseau pendant 125 ans, devenant l'une des plus anciennes stations encore en service en 2026."},
+        {"icon": "🎨", "title": "Patrimoine UNESCO", "content": "La <strong>place de la Concorde</strong> est classée au patrimoine mondial de l'UNESCO depuis 1991, dans le cadre de l'inscription des « Rives de la Seine ». Elle constitue avec le pont de la Concorde, les Tuileries et le Palais Bourbon un ensemble urbain reconnu comme exceptionnel."},
+        {"icon": "🎭", "title": "Au cœur de l'axe historique", "content": "La station se trouve au <strong>centre exact de l'axe historique</strong> de Paris : Louvre → Tuileries → Concorde → Champs-Élysées → Étoile → La Défense. Cet axe de 8 km, dessiné progressivement depuis Le Nôtre au XVIIe siècle, fait de Concorde un point de pivot majeur de l'urbanisme parisien."}
+    ],
+    "exits": [
+        {"number": "1", "name": "Place de la Concorde — Tuileries", "address_full": "Place de la Concorde (côté est), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8657, "longitude": 2.3219, "accessible": false, "sector": null},
+        {"number": "2", "name": "Champs-Élysées", "address_full": "Place de la Concorde (côté ouest), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8657, "longitude": 2.3209, "accessible": false, "sector": null},
+        {"number": "3", "name": "Rue de Rivoli", "address_full": "Rue de Rivoli (face Tuileries), 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8662, "longitude": 2.3214, "accessible": false, "sector": null},
+        {"number": "4", "name": "Hôtel de la Marine", "address_full": "Place de la Concorde (côté nord), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8666, "longitude": 2.3214, "accessible": false, "sector": null},
+        {"number": "5", "name": "Rue Royale (Madeleine)", "address_full": "Rue Royale, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8665, "longitude": 2.3220, "accessible": false, "sector": null},
+        {"number": "6", "name": "Hôtel de Crillon", "address_full": "10 Place de la Concorde, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8670, "longitude": 2.3211, "accessible": false, "sector": null},
+        {"number": "7", "name": "Pont de la Concorde", "address_full": "Pont de la Concorde, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8639, "longitude": 2.3198, "accessible": false, "sector": null},
+        {"number": "8", "name": "Quai des Tuileries", "address_full": "Quai des Tuileries, 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8638, "longitude": 2.3215, "accessible": false, "sector": null},
+        {"number": "9", "name": "Cours-la-Reine", "address_full": "Cours-la-Reine, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8640, "longitude": 2.3196, "accessible": false, "sector": null},
+        {"number": "10", "name": "Rue Saint-Florentin", "address_full": "Rue Saint-Florentin, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8662, "longitude": 2.3220, "accessible": false, "sector": null}
+    ],
+    "popular_itineraries": [
+        {"destination_name": "Châtelet", "destination_slug": "chatelet", "destination_full_name": "Concorde → Châtelet", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 8, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-chatelet/"},
+        {"destination_name": "La Défense", "destination_slug": "la-defense-grande-arche", "destination_full_name": "Concorde → La Défense", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 16, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-la-defense-grande-arche/"},
+        {"destination_name": "Charles de Gaulle — Étoile", "destination_slug": "charles-de-gaulle-etoile", "destination_full_name": "Concorde → Étoile", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 5, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-charles-de-gaulle-etoile/"},
+        {"destination_name": "Tour Eiffel (Bir-Hakeim)", "destination_slug": "bir-hakeim", "destination_full_name": "Concorde → Tour Eiffel", "lines_used": ["8", "6"], "lines_label": "Ligne 8 puis Ligne 6 (Motte-Picquet)", "duration_minutes": 18, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-bir-hakeim/"},
+        {"destination_name": "Madeleine", "destination_slug": "madeleine", "destination_full_name": "Concorde → Madeleine", "lines_used": ["8"], "lines_label": "Ligne 8 directe", "duration_minutes": 3, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-concorde/concorde-vers-madeleine/"},
+        {"destination_name": "Aéroport CDG", "destination_slug": "aeroport-charles-de-gaulle", "destination_full_name": "Concorde → CDG", "lines_used": ["1", "RER B"], "lines_label": "Ligne 1 puis RER B (Châtelet)", "duration_minutes": 50, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-aeroport-charles-de-gaulle/"},
+        {"destination_name": "Disneyland Paris", "destination_slug": "disneyland-paris", "destination_full_name": "Concorde → Disneyland", "lines_used": ["1", "RER A"], "lines_label": "Ligne 1 puis RER A (Châtelet)", "duration_minutes": 55, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-disneyland-paris/"},
+        {"destination_name": "Saint-Lazare", "destination_slug": "saint-lazare", "destination_full_name": "Concorde → Saint-Lazare", "lines_used": ["12"], "lines_label": "Ligne 12 directe", "duration_minutes": 6, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-concorde/concorde-vers-saint-lazare/"}
+    ],
+    "nearby_pois": [
+        {"wikidata_id": "Q189503", "name": "Place de la Concorde", "category": "place", "description": "L'une des plus belles places du monde, dessinée au XVIIIe siècle. 8,64 ha, classée UNESCO. Centre de l'axe historique parisien.", "image_url": "/assets/images/poi/monuments/place-de-la-concorde.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Place_de_la_Concorde", "wikimedia_file": "Place de la Concorde.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Concorde", "latitude": 48.8656, "longitude": 2.3212, "nearest_exit": {"number": "1", "name": "Place de la Concorde — Tuileries", "distance_m": 30, "walk_minutes": 1}},
+        {"wikidata_id": "Q1503331", "name": "Obélisque de Louxor", "category": "monument", "description": "Obélisque égyptien de 23 m, vieux de plus de 3300 ans, offert à la France par le pacha d'Égypte en 1830 et inauguré sur la place en 1836.", "image_url": "/assets/images/poi/monuments/obelisque-de-louxor.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Obelisk_of_Luxor", "wikimedia_file": "Obélisque de Louxor.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Ob%C3%A9lisque_de_Louxor", "latitude": 48.8655, "longitude": 2.3211, "nearest_exit": {"number": "1", "name": "Place de la Concorde — Tuileries", "distance_m": 50, "walk_minutes": 1}},
+        {"wikidata_id": "Q818517", "name": "Jardin des Tuileries", "category": "jardin", "description": "Jardin royal historique de 25,5 hectares, dessiné par Le Nôtre au XVIIe siècle. S'étend de la place de la Concorde au Louvre.", "image_url": "/assets/images/poi/jardins/jardin-des-tuileries.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Jardin_des_Tuileries", "wikimedia_file": "Jardin des Tuileries.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries", "latitude": 48.8639, "longitude": 2.3261, "nearest_exit": {"number": "1", "name": "Place de la Concorde — Tuileries", "distance_m": 100, "walk_minutes": 2}},
+        {"wikidata_id": "Q726781", "name": "Musée de l'Orangerie", "category": "musée", "description": "Musée niché à l'angle ouest des Tuileries, célèbre pour ses 8 panneaux de Nymphéas de Monet présentés dans 2 salles ovales.", "image_url": "/assets/images/poi/musees/musee-de-l-orangerie.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_de_l%27Orangerie", "wikimedia_file": "Musée de l'Orangerie.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie", "latitude": 48.8638, "longitude": 2.3225, "nearest_exit": {"number": "1", "name": "Place de la Concorde — Tuileries", "distance_m": 200, "walk_minutes": 3}},
+        {"wikidata_id": "Q692768", "name": "Hôtel de Crillon", "category": "monument", "description": "Palais du XVIIIe siècle dessiné par Ange-Jacques Gabriel, l'un des deux bâtiments jumeaux qui encadrent la rue Royale. Aujourd'hui hôtel de luxe.", "image_url": "/assets/images/poi/monuments/hotel-de-crillon.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:H%C3%B4tel_de_Crillon", "wikimedia_file": "Hôtel de Crillon.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Crillon", "latitude": 48.8673, "longitude": 2.3211, "nearest_exit": {"number": "6", "name": "Hôtel de Crillon", "distance_m": 30, "walk_minutes": 1}},
+        {"wikidata_id": "Q330564", "name": "Église de la Madeleine", "category": "monument", "description": "Église à l'allure de temple grec, achevée en 1842. Ses 52 colonnes corinthiennes et son fronton sculpté en font l'un des monuments néoclassiques majeurs de Paris.", "image_url": "/assets/images/poi/monuments/eglise-de-la-madeleine.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:%C3%89glise_de_la_Madeleine_(Paris)", "wikimedia_file": "Église de la Madeleine.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_la_Madeleine_(Paris)", "latitude": 48.8700, "longitude": 2.3245, "nearest_exit": {"number": "5", "name": "Rue Royale (Madeleine)", "distance_m": 400, "walk_minutes": 5}},
+        {"wikidata_id": "Q936633", "name": "Palais Bourbon", "category": "monument", "description": "Siège de l'Assemblée nationale française, palais du XVIIIe siècle situé sur la rive gauche, accessible depuis Concorde par le pont de la Concorde.", "image_url": "/assets/images/poi/monuments/palais-bourbon.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Palais_Bourbon", "wikimedia_file": "Palais Bourbon.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Bourbon", "latitude": 48.8621, "longitude": 2.3187, "nearest_exit": {"number": "7", "name": "Pont de la Concorde", "distance_m": 350, "walk_minutes": 4}}
+    ],
+    "services": {
+        "wifi": {"available": true, "location_detail": "la salle d'échanges des lignes 1, 8 et 12", "coverage_detail": "les quais des trois lignes"},
+        "toilets": {"public_paid": {"available": false}, "public_free": {"available": true, "location": "le Musée de l'Orangerie ou les Tuileries (kiosque)", "access": "à 5 min à pied"}},
+        "atm": {"available": true, "banks_count_estimate": "plusieurs banques", "locations": ["la salle d'échanges principale", "les commerces de la rue Royale"]},
+        "ratp_office": {"available": true, "location": "à proximité du quai de la Ligne 1", "services": "vente de titres, recharge Navigo, information voyageurs"},
+        "left_luggage": {"ratp_available": false, "third_party": [{"name": "Nannybag", "type": "points relais commerces de la place et de la rue Royale"}, {"name": "Bounce", "type": "points relais hôtels du quartier"}]},
+        "shopping_dining": {"main_location": "Rue Royale et place Vendôme (5-10 min à pied)", "details": "Boutiques de luxe, joaillerie, hôtels prestigieux", "secondary": "Cafés et brasseries également présents sur la place et le long des Tuileries"}
+    },
+    "safety": {
+        "audit_status": "verified", "audit_date": "2026-05-10", "level": "standard", "agents": true, "police": true,
+        "tips": [
+            "Quartier touristique très fréquenté, vigilance pickpockets accrue, surtout aux abords de l'obélisque et des sorties les plus visibles.",
+            "La place est sous vidéosurveillance et bénéficie d'une présence régulière d'agents RATP. La proximité de l'ambassade des États-Unis et du Palais de l'Élysée explique également une présence policière renforcée.",
+            "Pour traverser la place à pied, empruntez TOUJOURS les passages piétons protégés. La circulation y est intense, c'est l'un des carrefours les plus dangereux de Paris pour les piétons inattentifs.",
+            "En soirée tardive, les rues principales (Rivoli, Royale) restent animées. Évitez les contre-allées peu éclairées."
+        ],
+        "notes": "La station est classée niveau de sécurité <strong>standard</strong> par la RATP. La forte affluence et la présence permanente d'agents en uniforme en font l'une des stations les plus surveillées."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Acc%C3%A8s_Station_M%C3%A9tro_Concorde_Place_Concorde_-_Paris_VIII_(FR75)_-_2021-12-21_-_2.jpg/1920px-Acc%C3%A8s_Station_M%C3%A9tro_Concorde_Place_Concorde_-_Paris_VIII_(FR75)_-_2021-12-21_-_2.jpg",
+        "alt": "Accès à la station Concorde, place de la Concorde, Paris 8e",
+        "width": 1600,
+        "height": 1067,
+        "credit": {"author": "Chabe01", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Concorde_Place_Concorde_-_Paris_VIII_(FR75)_-_2021-12-21_-_2.jpg", "date": "2021-12-21"},
+        "source": "manual"
+    },
+    "accessibility": {
+        "audit_status": "verified", "audit_date": "2026-05-10", "level": "non-conforme",
+        "stats": {"elevators_count": 0, "accessible_lines": 0, "total_lines": 3},
+        "details": "Aucun ascenseur ne dessert les quais des lignes 1, 8 ou 12 à Concorde. Pour un accès PMR sur l'axe historique, privilégier La Défense — Grande Arche ou Châtelet. Audit Wikipedia 2026-05-10."
+    }
+}

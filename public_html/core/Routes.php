@@ -80,6 +80,7 @@ class Routes
         'chatelet',
         'la-defense-grande-arche',
         'charles-de-gaulle-etoile',
+        'concorde',
     ];
 
     /**
