@@ -1,0 +1,226 @@
+name: Auto-deploy station
+
+# Pipeline automatique de production d'une station métro :
+#   1. Validation JSON (champs critiques + Q-IDs Wikidata cohérents)
+#   2. Génération hero (12 variantes AVIF/WebP/JPG via build-station-hero.php)
+#   3. Génération images POIs (fetch-poi-images.php)
+#   4. Commit auto des assets générés (les heros sont gitignored, mais
+#      les POIs sont commités dans le repo : on fait un commit dédié)
+#   5. Le workflow Deploy o2switch existant prend ensuite le relais via FTP
+#   6. Lighthouse mobile post-deploy + résumé GitHub Actions
+#
+# Trigger : modification d'un JSON dans data/stations/, ou manuel.
+#
+# Voir docs/AUTO-DEPLOY-STATIONS.md pour la documentation complète.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public_html/data/stations/*.json'
+  workflow_dispatch:
+    inputs:
+      station_slug:
+        description: 'Slug de la station à traiter (ex: la-defense-grande-arche)'
+        required: true
+        type: string
+      skip_hero:
+        description: 'Skipper la génération du hero (si déjà uploadé manuellement)'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: auto-deploy-station-${{ github.event.inputs.station_slug || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: 1. Validation JSON
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      station_slug: ${{ steps.detect.outputs.slug }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # diff sur HEAD~1 pour détecter le slug modifié
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: json, mbstring, curl
+
+      - name: Detect station slug
+        id: detect
+        run: |
+          if [ -n "${{ github.event.inputs.station_slug }}" ]; then
+            SLUG="${{ github.event.inputs.station_slug }}"
+            echo "Manual dispatch : slug = $SLUG"
+          else
+            # Détecter le JSON station modifié dans le push
+            SLUG=$(git diff --name-only HEAD~1 HEAD | grep -oE 'public_html/data/stations/([^/]+)\.json' | head -1 | sed -E 's|.*/([^/]+)\.json|\1|')
+            echo "Push trigger : slug détecté = $SLUG"
+          fi
+          if [ -z "$SLUG" ]; then
+            echo "::error::Aucun slug de station détecté"
+            exit 1
+          fi
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+          echo "## Station : \`$SLUG\`" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Validate JSON station (champs + Q-IDs Wikidata)
+        run: |
+          php scripts/validate-station.php --slug=${{ steps.detect.outputs.slug }} --check-wikidata --json > /tmp/validation.json
+          cat /tmp/validation.json
+          # Echec si erreurs critiques
+          VALID=$(jq -r '.valid' /tmp/validation.json)
+          if [ "$VALID" != "true" ]; then
+            echo "::error::Validation station échouée"
+            jq -r '.errors[] | "- \(.)"' /tmp/validation.json
+            exit 1
+          fi
+          # Affiche warnings dans le summary
+          {
+            echo "### ✅ Validation OK"
+            POIS=$(jq -r '.pois_count' /tmp/validation.json)
+            echo "POIs déclarés : $POIS"
+            WARNS=$(jq -r '.warnings | length' /tmp/validation.json)
+            if [ "$WARNS" != "0" ]; then
+              echo ""
+              echo "#### ⚠️  Warnings ($WARNS) :"
+              jq -r '.warnings[] | "- \(.)"' /tmp/validation.json
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  generate-assets:
+    name: 2. Génération hero + POIs
+    runs-on: ubuntu-latest
+    needs: validate
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: json, mbstring, curl, gd
+
+      - name: Setup image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq webp libavif-bin imagemagick
+          # Fournit cwebp, avifenc, convert (sips macOS-only n'est pas dispo,
+          # build-station-hero.php a un fallback ImageMagick à activer si besoin)
+
+      - name: Setup Python (pour fetch POIs ad-hoc)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python image deps
+        run: pip install --quiet Pillow requests
+
+      - name: Build hero variants
+        if: ${{ github.event.inputs.skip_hero != 'true' }}
+        run: |
+          php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }} 2>&1 | tail -50
+          echo "### Hero generated" >> "$GITHUB_STEP_SUMMARY"
+          ls -la public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/ 2>/dev/null | tee -a "$GITHUB_STEP_SUMMARY" || echo "(pas de fichiers générés — peut-être skip si source=auto sans match)"
+
+      - name: Build POIs (Wikidata SPARQL + images Wikimedia)
+        run: |
+          # build-station-pois.php régénère le champ nearby_pois (déjà fait
+          # par Claude Code en local pour La Défense). On commente ici pour
+          # ne pas écraser des POIs curationnés manuellement. À activer pour
+          # les futures stations dont les POIs sont auto-générés.
+          # php scripts/build-station-pois.php --station=${{ needs.validate.outputs.station_slug }}
+
+          # Pipeline image POIs : pour l'instant, les POIs station sont
+          # gérés au cas par cas (script Python ad-hoc utilisé pour
+          # La Défense, voir docs/AUTO-DEPLOY-STATIONS.md). Cette étape
+          # est un placeholder pour la V2 qui appellera fetch-poi-images.php
+          # en mode station-aware.
+          echo "ℹ️  POIs déjà préparés en local (mode V1). V2 : fetch auto Wikidata."
+          echo "### POIs (V1 manuel)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit assets generated (si modifs)
+        run: |
+          # Les heros stations sont gitignored, donc rien à commit côté heros.
+          # Les POIs (si build-station-pois.php a tourné) seraient commités ici.
+          if [[ -n "$(git status --porcelain public_html/assets/images/poi/)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public_html/assets/images/poi/
+            git commit -m "chore(poi): auto-fetch images pour ${{ needs.validate.outputs.station_slug }} [auto-station]"
+            git push origin main
+            echo "### Assets POIs commités automatiquement" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Aucun changement POI à commit"
+          fi
+
+      - name: Upload heros via FTP (assets/img/stations/{slug}/)
+        if: ${{ github.event.inputs.skip_hero != 'true' }}
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/
+          server-dir: ./assets/img/stations/${{ needs.validate.outputs.station_slug }}/
+          state-name: .ftp-deploy-station-${{ needs.validate.outputs.station_slug }}.json
+          dangerous-clean-slate: false
+          log-level: standard
+
+  lighthouse:
+    name: 3. Lighthouse mobile post-deploy
+    runs-on: ubuntu-latest
+    needs: [validate, generate-assets]
+    timeout-minutes: 5
+    steps:
+      - name: Wait for FTP propagation
+        run: sleep 30
+
+      - name: HTTP test station URL
+        run: |
+          URL="https://bougeaparis.fr/metro/station/${{ needs.validate.outputs.station_slug }}/"
+          echo "Test : $URL"
+          CODE=$(curl -s -o /dev/null -w '%{http_code}' "$URL")
+          if [ "$CODE" != "200" ]; then
+            echo "::error::URL répond $CODE (attendu 200)"
+            exit 1
+          fi
+          echo "### ✅ HTTP 200 sur $URL" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Lighthouse mobile
+        run: |
+          npx -y lighthouse@11 \
+            "https://bougeaparis.fr/metro/station/${{ needs.validate.outputs.station_slug }}/" \
+            --form-factor=mobile \
+            --output=json \
+            --output-path=/tmp/lh.json \
+            --chrome-flags="--headless=new --no-sandbox" \
+            --quiet
+          # Affiche les scores
+          python3 - << 'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          d = json.load(open('/tmp/lh.json'))
+          print('### Lighthouse mobile')
+          print('| Catégorie | Score |')
+          print('|---|---|')
+          for cat in ['performance','accessibility','best-practices','seo']:
+              s = int(d['categories'][cat]['score']*100)
+              print(f'| {cat} | **{s}/100** |')
+          print('')
+          print('### Métriques')
+          for k in ['first-contentful-paint','largest-contentful-paint','cumulative-layout-shift','total-blocking-time']:
+              if k in d['audits']:
+                  print(f'- {k} : {d["audits"][k].get("displayValue","-")}')
+          PY
