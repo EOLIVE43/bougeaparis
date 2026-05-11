@@ -41,6 +41,20 @@ $tpl->seo
         </p>
     </header>
 
+    <?php
+    // Bandeau "Info trafic en temps reel" (3 stats + bouton vers le bulletin du jour).
+    // Le partial lit data/traffic/latest.json (source unique, mise a jour par le
+    // generateur bulletin) -> affichage cohérent avec les pages bulletin et les
+    // hubs transport. Si latest.json est absent ou indique aucune perturbation,
+    // le partial bascule en variante "Trafic normal" / placeholder.
+    $bannerMode = 'all';
+    include __DIR__ . '/../partials/traffic-banner.php';
+
+    // Widget recherche ligne (meme composant que sur les bulletins).
+    $lineSearchMode = 'all';
+    include __DIR__ . '/../partials/line-search-widget.php';
+    ?>
+
     <?php if (!empty($articles)): ?>
         <section class="article-list">
             <h2 class="sr-only">Articles récents</h2>

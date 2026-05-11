@@ -1476,8 +1476,11 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     font-size: 1.0625rem;
     color: var(--color-text, #0B1B15);
     line-height: 1.6;
-    max-width: 720px;
     margin: 0;
+    /* max-width retire : l'intro hub s'aligne sur la pleine largeur du
+       container .page-hub (1200px) pour cohérence visuelle avec les grilles
+       cards en dessous. Pour les intros longues (>2 lignes), prevoir un
+       wrapper specifique si le besoin de contrainte typographique revient. */
 }
 
 /* Liste articles (info-trafic) */
