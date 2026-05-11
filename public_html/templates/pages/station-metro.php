@@ -98,8 +98,12 @@ if (mb_strlen($metaDesc, 'UTF-8') > 158) {
     $metaDesc = rtrim($cut, " ,.;:") . '…';
 }
 
+// Title SEO calibré sur les volumes Keyword Planner ("{nom} métro" domine).
+// Voir buildStationTitle() dans core/helpers.php. Second parametre false :
+// desactive le suffixe ' - BougeaParis.fr' (15 car) sur les pages station
+// pour preserver la place des mots-cles SEO sous la limite 60 car SERP.
 $tpl->seo
-    ->setTitle('Station ' . $name . $arrLabel . ' : ' . $lineCount . ' ligne' . ($lineCount > 1 ? 's' : '') . ' métro' . $rerCodes)
+    ->setTitle(buildStationTitle($station), false)
     ->setDescription($metaDesc)
     ->setCanonical($canonical);
 

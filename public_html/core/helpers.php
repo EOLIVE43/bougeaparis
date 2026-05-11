@@ -642,3 +642,87 @@ if (!function_exists('format_price')) {
         return number_format($f, 2, ',', "\u{202F}") . "\u{202F}€";
     }
 }
+
+if (!function_exists('buildStationTitle')) {
+    /**
+     * Construit le <title> SEO d'une page station selon les regles SEO du
+     * brief Priorite 5 (volume Keyword Planner : "{nom} metro" domine).
+     *
+     * Format cible : "{Nom} métro {lignes compactes} : plan, horaires, sorties"
+     * Limite : 60 caracteres (limite SERP Google, mesuree en mb_strlen UTF-8).
+     *
+     * Format des lignes (ordre fixe metro -> rer -> tram -> transilien) :
+     *   Metro      : "M1 M4 M7"           (prefixe M, espace entre)
+     *   RER        : "RER A B D"          (prefixe RER unique, lettres separees)
+     *   Tramway    : "T1 T2 T3a"          (prefixe T, espace entre)
+     *   Transilien : "L U"                (lettre seule, pas de prefixe)
+     *
+     * Algorithme :
+     *   1. Title minimal : "{Nom} metro {lignes} : plan"
+     *   2. Cascade : ajouter ", horaires" puis ", sorties" tant que <= 60
+     *   3. Cas limite (minimal > 60) : reduire a 3 lignes + " + autres"
+     *      Le nom_station n'est JAMAIS tronque.
+     *
+     * Note : l'appelant doit utiliser setTitle($title, false) pour desactiver
+     * le suffixe title_suffix (' - BougeaParis.fr', 15 car) sur ces pages.
+     *
+     * @param array $station JSON station decode
+     * @return string Title final, pret pour setTitle($title, false)
+     */
+    function buildStationTitle(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+
+        // Extraction des codes par mode
+        $metro = [];
+        foreach (($station['lines'] ?? []) as $line) {
+            if (($line['type'] ?? '') === 'metro' && !empty($line['code'])) {
+                $metro[] = (string)$line['code'];
+            }
+        }
+        $rer   = array_values(array_filter(array_column($station['rer_correspondences']        ?? [], 'code')));
+        $tram  = array_values(array_filter(array_column($station['tramway_correspondences']    ?? [], 'code')));
+        $trans = array_values(array_filter(array_column($station['transilien_correspondences'] ?? [], 'code')));
+
+        // Compactage selon les regles de format
+        $compact = static function (array $m, array $r, array $t, array $tr): string {
+            $parts = [];
+            if ($m)  { $parts[] = implode(' ', array_map(static fn($c) => 'M' . $c, $m)); }
+            if ($r)  { $parts[] = 'RER ' . implode(' ', $r); }
+            if ($t)  { $parts[] = implode(' ', array_map(static fn($c) => 'T' . $c, $t)); }
+            if ($tr) { $parts[] = implode(' ', $tr); }
+            return implode(' ', $parts);
+        };
+
+        $linesStr = $compact($metro, $rer, $tram, $trans);
+        $title    = $name . ' métro' . ($linesStr !== '' ? ' ' . $linesStr : '') . ' : plan';
+
+        // Cas limite : > 60 car des le minimal -> reduire a 3 lignes + " + autres"
+        if (mb_strlen($title, 'UTF-8') > 60) {
+            $total = count($metro) + count($rer) + count($tram) + count($trans);
+            $kept  = ['m' => [], 'r' => [], 't' => [], 'tr' => []];
+            $taken = 0;
+            foreach (['m' => $metro, 'r' => $rer, 't' => $tram, 'tr' => $trans] as $k => $list) {
+                foreach ($list as $code) {
+                    if ($taken >= 3) { break 2; }
+                    $kept[$k][] = $code;
+                    $taken++;
+                }
+            }
+            $linesStr = $compact($kept['m'], $kept['r'], $kept['t'], $kept['tr']);
+            $autres   = ($total > 3) ? ' + autres' : '';
+            $title    = $name . ' métro' . ($linesStr !== '' ? ' ' . $linesStr : '') . $autres . ' : plan';
+        }
+
+        // Cascade des suffixes ", horaires" puis ", sorties"
+        foreach ([', horaires', ', sorties'] as $extra) {
+            if (mb_strlen($title . $extra, 'UTF-8') <= 60) {
+                $title .= $extra;
+            } else {
+                break;
+            }
+        }
+
+        return $title;
+    }
+}
