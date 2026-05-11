@@ -205,6 +205,17 @@ switch ($path) {
         (new Template('tarifs-aeroports'))->render();
         break;
 
+    // --- Hubs thematiques (refonte nav niveau 1) ---
+    case '/se-deplacer':
+        (new Template('hub-se-deplacer'))->render();
+        break;
+    case '/visiter':
+        (new Template('hub-visiter'))->render();
+        break;
+    case '/itineraires':
+        (new Template('itineraires-placeholder'))->render();
+        break;
+
     default:
         // Route dynamique /metro/ligne-{code} (ex: /metro/ligne-1, /metro/ligne-14, /metro/ligne-3bis)
         if (preg_match('#^/metro/ligne-([a-z0-9]+)$#i', $path, $matches)) {

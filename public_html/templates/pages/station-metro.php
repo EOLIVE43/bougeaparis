@@ -147,10 +147,10 @@ if ($hasImage && !empty($heroImage['url'])) {
 $siteUrl       = rtrim(Config::get('site.url'), '/');
 $canonicalAbs  = $siteUrl . $canonical;
 $breadcrumbItems = [
-    ['label' => 'Accueil',  'url' => '/'],
-    ['label' => 'Métro',    'url' => '/metro/'],
-    ['label' => 'Stations', 'url' => '/metro/'],
-    ['label' => $name,      'url' => $canonical],
+    ['label' => 'Accueil',     'url' => '/'],
+    ['label' => 'Se déplacer', 'url' => '/se-deplacer/'],
+    ['label' => 'Métro',       'url' => '/metro/'],
+    ['label' => $name,         'url' => $canonical],
 ];
 
 // 1. BreadcrumbList

@@ -51,6 +51,9 @@ class Routes
         '/tarifs',
         '/tarifs/metro',
         '/tarifs/aeroports',
+        '/se-deplacer',           // Hub agregateur "Se deplacer" (refonte nav)
+        '/visiter',                // Hub agregateur tourisme (refonte nav)
+        '/itineraires',            // Placeholder planificateur (refonte nav)
         '/a-propos',
         '/contact',
         '/mentions-legales',
