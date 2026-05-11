@@ -140,10 +140,11 @@ $renderCard = function (string $key, array $t) {
           </div>
         </div>
 
-        <div class="tarifs-callout tarifs-callout--info">
-          <span class="tarifs-callout__icon" aria-hidden="true">💡</span>
-          <strong>À savoir :</strong> le forfait Navigo Découverte est <strong>identique pour les 5 zones</strong>. Pas besoin de réfléchir à votre zone d'habitation pour calculer le prix de votre abonnement mensuel.
-        </div>
+        <?php
+        $icon = '💡'; $variant = 'info'; $label = 'À savoir';
+        $body = 'le forfait Navigo Découverte est <strong>identique pour les 5 zones</strong>. Pas besoin de réfléchir à votre zone d\'habitation pour calculer le prix de votre abonnement mensuel.';
+        include __DIR__ . '/../partials/info-callout.php';
+        ?>
 
         <h2>Tickets unitaires</h2>
         <p>Les tickets t+ et le carnet de 10 sont les solutions les plus économiques pour les voyageurs occasionnels et les touristes en visite courte (1 à 3 jours).</p>
@@ -190,10 +191,11 @@ $renderCard = function (string $key, array $t) {
         <h2>Tarifs spéciaux : aéroports et Disneyland</h2>
         <p>Pour les liaisons vers les aéroports parisiens et Disneyland, des billets dédiés s'appliquent. Le ticket t+ classique n'est pas toujours valable.</p>
 
-        <div class="tarifs-callout tarifs-callout--warning">
-          <span class="tarifs-callout__icon" aria-hidden="true">⚠️</span>
-          <strong>Attention :</strong> le ticket t+ ne couvre pas le RER B Paris ↔ CDG (11,80 €) ni la Ligne 14 vers Orly (13 €). Ces liaisons nécessitent un billet dédié.
-        </div>
+        <?php
+        $icon = '⚠️'; $variant = 'warning'; $label = 'Attention';
+        $body = 'le ticket t+ ne couvre pas le RER B Paris ↔ CDG (11,80 €) ni la Ligne 14 vers Orly (13 €). Ces liaisons nécessitent un billet dédié.';
+        include __DIR__ . '/../partials/info-callout.php';
+        ?>
 
         <ul>
             <li><strong>RER B vers Charles de Gaulle (CDG)</strong> : <?= e(format_price(11.80)) ?> — environ 35 min depuis Châtelet</li>
@@ -216,14 +218,7 @@ $renderCard = function (string $key, array $t) {
         </ul>
 
         <h2>Questions fréquentes sur les tarifs IDFM</h2>
-        <div class="faq-accordion">
-            <?php foreach ($faqs as $i => $f): ?>
-                <details class="faq-accordion__item" <?= $i === 0 ? 'open' : '' ?>>
-                    <summary><h3><?= e($f['q']) ?></h3></summary>
-                    <div class="faq-accordion__answer"><p><?= richText($f['a']) ?></p></div>
-                </details>
-            <?php endforeach; ?>
-        </div>
+        <?php include __DIR__ . '/../partials/faq-accordion.php'; /* consomme $faqs */ ?>
 
         <h2>Pour aller plus loin</h2>
         <ul>

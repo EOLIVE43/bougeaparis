@@ -351,3 +351,82 @@
     font-size: 0.875rem;
     color: var(--color-text-muted, #5A6B66);
 }
+
+/* ---------- Grille de chiffres clés (key-stats-grid) ---------- */
+/* Cards visuelles avec gros chiffre + label, dégradé vert primary.
+   Utilisé par /se-deplacer/, /visiter/, /itineraires/. */
+.key-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+.key-stat {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(135deg, #117049 0%, #0a5535 100%);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(17, 112, 73, 0.15);
+}
+.key-stat__number {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+.key-stat__label {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+.key-stat__sublabel {
+    font-size: 0.78rem;
+    opacity: 0.85;
+    margin-top: 0.25rem;
+    font-weight: 400;
+}
+@media (max-width: 480px) {
+    .key-stat { padding: 1.25rem 0.75rem; }
+    .key-stat__number { font-size: 1.85rem; }
+}
+
+/* ---------- Polish cards Hub (.tarif-card hover) ---------- */
+/* Ajout d'une ombre subtile au hover pour les cards utilisees sur les hubs.
+   Concerne /se-deplacer/, /visiter/, /itineraires/ qui reutilisent .tarif-card. */
+.tarif-card {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.tarif-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(17, 112, 73, 0.10);
+}
+
+/* ---------- Liste conseils stylisée (.conseil-list) ---------- */
+/* Utilisé sur /se-deplacer/ pour la section "Quel mode choisir selon votre trajet". */
+.conseil-list {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+    list-style: none;
+    padding: 0;
+}
+.conseil-list__item {
+    padding: 1rem 1.25rem;
+    background: var(--color-bg-alt, #F7F9F8);
+    border-left: 3px solid var(--color-primary, #0F6E56);
+    border-radius: 0 8px 8px 0;
+}
+.conseil-list__title {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text, #1A2B26);
+}
+.conseil-list__desc {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-text, #1A2B26);
+}
