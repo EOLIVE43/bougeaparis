@@ -19,6 +19,7 @@ return [
             'label' => 'Se déplacer',
             'url'   => '/se-deplacer/',
             'icon'  => 'train-front',
+            'child_icon_style' => 'outline', // pictos sous-menu en trait simple (coherence avec sous-menu Visiter)
             'children' => [
                 ['label' => 'Métro',      'url' => '/metro/',     'icon' => 'metro'],
                 ['label' => 'RER',        'url' => '/rer/',       'icon' => 'rer'],
