@@ -11,13 +11,29 @@
     "tariff_zone_context": "Paris intra-muros",
     "commune": "Paris (75001)",
     "is_major_hub": false,
-    "i18n": {"en": null, "es": null},
+    "i18n": {
+        "en": null,
+        "es": null
+    },
     "lines": [
-        {"type": "metro", "code": "1", "slug": "metro-1", "color": "#FFCD00", "text_color": "#000000"}
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
     ],
     "bus_correspondences": {
-        "diurne": ["68", "69", "72"],
-        "nocturne": ["N11", "N24"],
+        "diurne": [
+            "68",
+            "69",
+            "72"
+        ],
+        "nocturne": [
+            "N11",
+            "N24"
+        ],
         "regional": []
     },
     "seo": {
@@ -29,8 +45,16 @@
     },
     "adjacent_stations": {
         "metro-1": {
-            "previous": {"name": "Concorde", "slug": "concorde", "direction": "La Défense"},
-            "next": {"name": "Palais Royal — Musée du Louvre", "slug": "palais-royal-musee-du-louvre", "direction": "Château de Vincennes"}
+            "previous": {
+                "name": "Concorde",
+                "slug": "concorde",
+                "direction": "La Défense"
+            },
+            "next": {
+                "name": "Palais Royal — Musée du Louvre",
+                "slug": "palais-royal-musee-du-louvre",
+                "direction": "Château de Vincennes"
+            }
         }
     },
     "intro_paragraphs": [
@@ -39,15 +63,42 @@
         "Avec son architecture des années 1900 préservée, ses voûtes en demi-cercle et ses carreaux de céramique blancs caractéristiques, la station Tuileries conserve l'atmosphère du tout premier métro parisien. <strong>L'accessibilité PMR n'est pas assurée</strong> : aucun ascenseur ne dessert les quais (audit Wikipedia 2026-05-10). Pour un accès PMR sur l'axe historique, privilégiez La Défense — Grande Arche ou Châtelet."
     ],
     "faq": [
-        {"question": "À quelle heure passe le premier métro à Tuileries ?", "answer": "Le <strong>premier métro à Tuileries</strong> circule à partir de <strong>5h30</strong> sur la Ligne 1, du lundi au dimanche."},
-        {"question": "À quelle heure passe le dernier métro à Tuileries ?", "answer": "Le <strong>dernier métro à Tuileries</strong> quitte la station à <strong>1h15</strong> en semaine, avec un <strong>prolongement nocturne jusqu'à 2h15 le vendredi soir, le samedi soir et les veilles de fêtes</strong>. Les Noctiliens N11 et N24 prennent le relais sur la rue de Rivoli."},
-        {"question": "Comment rejoindre le jardin des Tuileries depuis la station ?", "answer": "Le jardin se trouve <strong>juste en face</strong> de la station. Empruntez la sortie côté sud (rue de Rivoli) et traversez vers le jardin. Comptez moins d'1 minute à pied. Ouvert tous les jours, de 7h-7h30 (selon saison) à 19h-23h selon période."},
-        {"question": "Quelle sortie pour le musée du Louvre depuis Tuileries ?", "answer": "Vous pouvez rejoindre le <strong>Louvre</strong> à pied en 8-10 min en traversant le jardin des Tuileries vers l'est. Sinon, plus rapide : reprenez la Ligne 1 direction Château de Vincennes et descendez à <strong>Palais Royal — Musée du Louvre</strong> (1 station). Sortie n°7 « Pyramide du Louvre » directement face à l'entrée principale."},
-        {"question": "La station Tuileries est-elle accessible aux PMR ?", "answer": "<strong>Non.</strong> La station Tuileries ne dispose d'aucun ascenseur. Les quais sont accessibles uniquement par escaliers. Pour un accès PMR sur l'axe historique, privilégiez <strong>La Défense — Grande Arche</strong> (terminus ouest L1) ou <strong>Châtelet</strong> (avec accès n°1 « Porte Marguerite de Navarre »)."},
-        {"question": "Quelle sortie pour la place Vendôme ?", "answer": "Empruntez la sortie principale (rue de Rivoli) puis remontez la rue de Castiglione vers le nord. Comptez 5 minutes à pied. La <strong>place Vendôme</strong> est connue pour ses joailleries de luxe, l'hôtel Ritz et la colonne Vendôme érigée en 1810 sur ordre de Napoléon."},
-        {"question": "Y a-t-il un café ou un restaurant accessible depuis Tuileries ?", "answer": "Oui, plusieurs <strong>cafés et brasseries</strong> sur la rue de Rivoli (côté nord). Au sud, dans le jardin lui-même : 2 cafés-restaurants saisonniers ouverts d'avril à octobre. Pour des options haut de gamme : le <strong>Café Le Nemours</strong> place Colette (5 min) ou les restaurants de la place Vendôme."},
-        {"question": "Combien de sorties compte la station Tuileries ?", "answer": "La station compte <strong>4 sorties</strong> donnant toutes sur la rue de Rivoli ou ses environs immédiats : sortie principale (face Tuileries), rue de Castiglione (vers place Vendôme), rue Saint-Florentin (vers la Concorde), et rue du Mont-Thabor."},
-        {"question": "Le musée de l'Orangerie est-il proche de Tuileries ?", "answer": "Oui, le <strong>musée de l'Orangerie</strong> est situé à l'angle ouest du jardin des Tuileries, à 5-7 minutes à pied de la station. Il abrite les célèbres <strong>Nymphéas de Monet</strong> dans 2 salles ovales conçues par l'artiste lui-même. Réservation conseillée en ligne."}
+        {
+            "question": "À quelle heure passe le premier métro à Tuileries ?",
+            "answer": "Le <strong>premier métro à Tuileries</strong> circule à partir de <strong>5h30</strong> sur la Ligne 1, du lundi au dimanche."
+        },
+        {
+            "question": "À quelle heure passe le dernier métro à Tuileries ?",
+            "answer": "Le <strong>dernier métro à Tuileries</strong> quitte la station à <strong>1h15</strong> en semaine, avec un <strong>prolongement nocturne jusqu'à 2h15 le vendredi soir, le samedi soir et les veilles de fêtes</strong>. Les Noctiliens N11 et N24 prennent le relais sur la rue de Rivoli."
+        },
+        {
+            "question": "Comment rejoindre le jardin des Tuileries depuis la station ?",
+            "answer": "Le jardin se trouve <strong>juste en face</strong> de la station. Empruntez la sortie côté sud (rue de Rivoli) et traversez vers le jardin. Comptez moins d'1 minute à pied. Ouvert tous les jours, de 7h-7h30 (selon saison) à 19h-23h selon période."
+        },
+        {
+            "question": "Quelle sortie pour le musée du Louvre depuis Tuileries ?",
+            "answer": "Vous pouvez rejoindre le <strong>Louvre</strong> à pied en 8-10 min en traversant le jardin des Tuileries vers l'est. Sinon, plus rapide : reprenez la Ligne 1 direction Château de Vincennes et descendez à <strong>Palais Royal — Musée du Louvre</strong> (1 station). Sortie n°7 « Pyramide du Louvre » directement face à l'entrée principale."
+        },
+        {
+            "question": "La station Tuileries est-elle accessible aux PMR ?",
+            "answer": "<strong>Non.</strong> La station Tuileries ne dispose d'aucun ascenseur. Les quais sont accessibles uniquement par escaliers. Pour un accès PMR sur l'axe historique, privilégiez <strong>La Défense — Grande Arche</strong> (terminus ouest L1) ou <strong>Châtelet</strong> (avec accès n°1 « Porte Marguerite de Navarre »)."
+        },
+        {
+            "question": "Quelle sortie pour la place Vendôme ?",
+            "answer": "Empruntez la sortie principale (rue de Rivoli) puis remontez la rue de Castiglione vers le nord. Comptez 5 minutes à pied. La <strong>place Vendôme</strong> est connue pour ses joailleries de luxe, l'hôtel Ritz et la colonne Vendôme érigée en 1810 sur ordre de Napoléon."
+        },
+        {
+            "question": "Y a-t-il un café ou un restaurant accessible depuis Tuileries ?",
+            "answer": "Oui, plusieurs <strong>cafés et brasseries</strong> sur la rue de Rivoli (côté nord). Au sud, dans le jardin lui-même : 2 cafés-restaurants saisonniers ouverts d'avril à octobre. Pour des options haut de gamme : le <strong>Café Le Nemours</strong> place Colette (5 min) ou les restaurants de la place Vendôme."
+        },
+        {
+            "question": "Combien de sorties compte la station Tuileries ?",
+            "answer": "La station compte <strong>4 sorties</strong> donnant toutes sur la rue de Rivoli ou ses environs immédiats : sortie principale (face Tuileries), rue de Castiglione (vers place Vendôme), rue Saint-Florentin (vers la Concorde), et rue du Mont-Thabor."
+        },
+        {
+            "question": "Le musée de l'Orangerie est-il proche de Tuileries ?",
+            "answer": "Oui, le <strong>musée de l'Orangerie</strong> est situé à l'angle ouest du jardin des Tuileries, à 5-7 minutes à pied de la station. Il abrite les célèbres <strong>Nymphéas de Monet</strong> dans 2 salles ovales conçues par l'artiste lui-même. Réservation conseillée en ligne."
+        }
     ],
     "practical_tips": [
         "La station est compacte (1 seule ligne) mais bien située : descendez ici si votre destination est Tuileries, place Vendôme ou rue de Castiglione. Pour le Louvre, préférez la station suivante (Palais Royal — Musée du Louvre).",
@@ -64,46 +115,356 @@
         ]
     },
     "trivia": [
-        {"icon": "📅", "title": "Une des premières stations du métro parisien", "content": "Tuileries est ouverte le 13 août 1900, dans les premières semaines de service commercial du métropolitain. Elle accompagne le métro depuis 125 ans en 2026."},
-        {"icon": "🏛️", "title": "Sous l'ancien palais royal", "content": "La station tient son nom du <strong>palais des Tuileries</strong>, ancienne résidence royale construite par Catherine de Médicis à partir de 1564 et détruite par un incendie pendant la Commune en mai 1871. Le jardin, lui, demeure et fait partie du Louvre depuis 1989."},
-        {"icon": "🌳", "title": "Le plus grand jardin parisien du centre", "content": "Le <strong>jardin des Tuileries</strong> couvre 25,5 hectares et constitue l'un des plus anciens jardins à la française. Dessiné par André Le Nôtre (jardinier de Louis XIV) au XVIIe siècle, il est classé au patrimoine mondial de l'UNESCO depuis 1991."},
-        {"icon": "🎨", "title": "Centre de l'axe historique", "content": "La station se trouve au centre de l'<strong>axe historique de Paris</strong> : Louvre → Tuileries → Concorde → Champs-Élysées → Étoile → La Défense. Cet axe de 8 km a été dessiné progressivement depuis Le Nôtre au XVIIe siècle."},
-        {"icon": "🚇", "title": "Configuration ancienne préservée", "content": "Avec ses voûtes en demi-cercle, ses carreaux blancs gravés, et ses anciens panneaux émaillés, la station Tuileries conserve l'atmosphère du tout premier métro parisien (style 1900). Peu de modifications majeures depuis l'origine."},
-        {"icon": "🎭", "title": "À deux pas de la Comédie-Française", "content": "À 5 minutes à pied, la <strong>place Colette</strong> abrite la <strong>Comédie-Française</strong> (Salle Richelieu), théâtre national fondé en 1680 par Louis XIV, le plus vieux théâtre de France encore en activité."}
+        {
+            "icon": "📅",
+            "title": "Une des premières stations du métro parisien",
+            "content": "Tuileries est ouverte le 13 août 1900, dans les premières semaines de service commercial du métropolitain. Elle accompagne le métro depuis 125 ans en 2026."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Sous l'ancien palais royal",
+            "content": "La station tient son nom du <strong>palais des Tuileries</strong>, ancienne résidence royale construite par Catherine de Médicis à partir de 1564 et détruite par un incendie pendant la Commune en mai 1871. Le jardin, lui, demeure et fait partie du Louvre depuis 1989."
+        },
+        {
+            "icon": "🌳",
+            "title": "Le plus grand jardin parisien du centre",
+            "content": "Le <strong>jardin des Tuileries</strong> couvre 25,5 hectares et constitue l'un des plus anciens jardins à la française. Dessiné par André Le Nôtre (jardinier de Louis XIV) au XVIIe siècle, il est classé au patrimoine mondial de l'UNESCO depuis 1991."
+        },
+        {
+            "icon": "🎨",
+            "title": "Centre de l'axe historique",
+            "content": "La station se trouve au centre de l'<strong>axe historique de Paris</strong> : Louvre → Tuileries → Concorde → Champs-Élysées → Étoile → La Défense. Cet axe de 8 km a été dessiné progressivement depuis Le Nôtre au XVIIe siècle."
+        },
+        {
+            "icon": "🚇",
+            "title": "Configuration ancienne préservée",
+            "content": "Avec ses voûtes en demi-cercle, ses carreaux blancs gravés, et ses anciens panneaux émaillés, la station Tuileries conserve l'atmosphère du tout premier métro parisien (style 1900). Peu de modifications majeures depuis l'origine."
+        },
+        {
+            "icon": "🎭",
+            "title": "À deux pas de la Comédie-Française",
+            "content": "À 5 minutes à pied, la <strong>place Colette</strong> abrite la <strong>Comédie-Française</strong> (Salle Richelieu), théâtre national fondé en 1680 par Louis XIV, le plus vieux théâtre de France encore en activité."
+        }
     ],
     "exits": [
-        {"number": "1", "name": "Jardin des Tuileries", "address_full": "Rue de Rivoli (face Tuileries), 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8643, "longitude": 2.3290, "accessible": false, "sector": null},
-        {"number": "2", "name": "Rue de Castiglione (Place Vendôme)", "address_full": "Rue de Castiglione, 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8651, "longitude": 2.3286, "accessible": false, "sector": null},
-        {"number": "3", "name": "Rue Saint-Florentin", "address_full": "Rue Saint-Florentin, 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8650, "longitude": 2.3270, "accessible": false, "sector": null},
-        {"number": "4", "name": "Rue du Mont-Thabor", "address_full": "Rue du Mont-Thabor, 75001 Paris", "postcode": "75001", "city": "Paris", "latitude": 48.8654, "longitude": 2.3289, "accessible": false, "sector": null}
+        {
+            "number": "1",
+            "name": "Jardin des Tuileries",
+            "address_full": "Rue de Rivoli (face Tuileries), 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.8643,
+            "longitude": 2.329,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "2",
+            "name": "Rue de Castiglione (Place Vendôme)",
+            "address_full": "Rue de Castiglione, 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.8651,
+            "longitude": 2.3286,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "3",
+            "name": "Rue Saint-Florentin",
+            "address_full": "Rue Saint-Florentin, 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.865,
+            "longitude": 2.327,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "4",
+            "name": "Rue du Mont-Thabor",
+            "address_full": "Rue du Mont-Thabor, 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.8654,
+            "longitude": 2.3289,
+            "accessible": false,
+            "sector": null
+        }
     ],
     "popular_itineraries": [
-        {"destination_name": "Châtelet", "destination_slug": "chatelet", "destination_full_name": "Tuileries → Châtelet", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 5, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-chatelet/"},
-        {"destination_name": "Musée du Louvre", "destination_slug": "palais-royal-musee-du-louvre", "destination_full_name": "Tuileries → Louvre", "lines_used": ["1"], "lines_label": "Ligne 1 directe (1 station)", "duration_minutes": 2, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-palais-royal-musee-du-louvre/"},
-        {"destination_name": "Concorde", "destination_slug": "concorde", "destination_full_name": "Tuileries → Concorde", "lines_used": ["1"], "lines_label": "Ligne 1 directe (1 station)", "duration_minutes": 2, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-concorde/"},
-        {"destination_name": "Charles de Gaulle — Étoile", "destination_slug": "charles-de-gaulle-etoile", "destination_full_name": "Tuileries → Étoile", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 7, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-charles-de-gaulle-etoile/"},
-        {"destination_name": "La Défense", "destination_slug": "la-defense-grande-arche", "destination_full_name": "Tuileries → La Défense", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 18, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-la-defense-grande-arche/"},
-        {"destination_name": "Aéroport CDG", "destination_slug": "aeroport-charles-de-gaulle", "destination_full_name": "Tuileries → CDG", "lines_used": ["1", "RER B"], "lines_label": "Ligne 1 puis RER B (Châtelet)", "duration_minutes": 50, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-aeroport-charles-de-gaulle/"},
-        {"destination_name": "Disneyland Paris", "destination_slug": "disneyland-paris", "destination_full_name": "Tuileries → Disneyland", "lines_used": ["1", "RER A"], "lines_label": "Ligne 1 puis RER A (Châtelet)", "duration_minutes": 55, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-tuileries/tuileries-vers-disneyland-paris/"},
-        {"destination_name": "Bastille", "destination_slug": "bastille", "destination_full_name": "Tuileries → Bastille", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 10, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-tuileries/tuileries-vers-bastille/"}
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Tuileries → Châtelet",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-chatelet/"
+        },
+        {
+            "destination_name": "Musée du Louvre",
+            "destination_slug": "palais-royal-musee-du-louvre",
+            "destination_full_name": "Tuileries → Louvre",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-palais-royal-musee-du-louvre/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Tuileries → Concorde",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-concorde/"
+        },
+        {
+            "destination_name": "Charles de Gaulle — Étoile",
+            "destination_slug": "charles-de-gaulle-etoile",
+            "destination_full_name": "Tuileries → Étoile",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-charles-de-gaulle-etoile/"
+        },
+        {
+            "destination_name": "La Défense",
+            "destination_slug": "la-defense-grande-arche",
+            "destination_full_name": "Tuileries → La Défense",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-la-defense-grande-arche/"
+        },
+        {
+            "destination_name": "Aéroport CDG",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Tuileries → CDG",
+            "lines_used": [
+                "1",
+                "RER B"
+            ],
+            "lines_label": "Ligne 1 puis RER B (Châtelet)",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-aeroport-charles-de-gaulle/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland-paris",
+            "destination_full_name": "Tuileries → Disneyland",
+            "lines_used": [
+                "1",
+                "RER A"
+            ],
+            "lines_label": "Ligne 1 puis RER A (Châtelet)",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-disneyland-paris/"
+        },
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Tuileries → Bastille",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-tuileries/tuileries-vers-bastille/"
+        }
     ],
     "nearby_pois": [
-        {"wikidata_id": "Q818517", "name": "Jardin des Tuileries", "category": "jardin", "description": "Plus grand jardin parisien du centre, dessiné par Le Nôtre au XVIIe siècle. Patrimoine UNESCO depuis 1991. 25,5 hectares.", "image_url": "/assets/images/poi/jardins/jardin-des-tuileries.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Jardin_des_Tuileries", "wikimedia_file": "Jardin des Tuileries.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries", "latitude": 48.8639, "longitude": 2.3261, "nearest_exit": {"number": "1", "name": "Jardin des Tuileries", "distance_m": 30, "walk_minutes": 1}},
-        {"wikidata_id": "Q19675", "name": "Musée du Louvre", "category": "musée", "description": "L'un des plus grands musées d'art au monde, abritant plus de 35 000 œuvres dont la Joconde, la Vénus de Milo, la Victoire de Samothrace.", "image_url": "/assets/images/poi/musees/musee-du-louvre.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_du_Louvre", "wikimedia_file": "Musée du Louvre.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre", "latitude": 48.8611, "longitude": 2.3358, "nearest_exit": {"number": "1", "name": "Jardin des Tuileries", "distance_m": 700, "walk_minutes": 9}},
-        {"wikidata_id": "Q13397", "name": "Pyramide du Louvre", "category": "monument", "description": "Pyramide de verre conçue par I. M. Pei et inaugurée en 1989. Entrée principale du musée du Louvre depuis cette date.", "image_url": "/assets/images/poi/monuments/pyramide-du-louvre.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Pyramide_du_Louvre", "wikimedia_file": "Pyramide du Louvre.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Pyramide_du_Louvre", "latitude": 48.8610, "longitude": 2.3359, "nearest_exit": {"number": "1", "name": "Jardin des Tuileries", "distance_m": 750, "walk_minutes": 10}},
-        {"wikidata_id": "Q643520", "name": "Place Vendôme", "category": "place", "description": "Place royale du XVIIe siècle, aujourd'hui haut lieu de la joaillerie de luxe (Cartier, Chanel, Boucheron) et de l'hôtellerie (Ritz). Colonne Vendôme érigée en 1810.", "image_url": "/assets/images/poi/monuments/place-vendome.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Place_Vend%C3%B4me", "wikimedia_file": "Place Vendôme.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Vend%C3%B4me", "latitude": 48.8676, "longitude": 2.3294, "nearest_exit": {"number": "2", "name": "Rue de Castiglione (Place Vendôme)", "distance_m": 350, "walk_minutes": 5}},
-        {"wikidata_id": "Q726781", "name": "Musée de l'Orangerie", "category": "musée", "description": "Musée niché à l'angle ouest des Tuileries, célèbre pour les 8 panneaux des Nymphéas de Monet présentés dans 2 salles ovales conçues par l'artiste.", "image_url": "/assets/images/poi/musees/musee-de-l-orangerie.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_de_l%27Orangerie", "wikimedia_file": "Musée de l'Orangerie.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie", "latitude": 48.8638, "longitude": 2.3225, "nearest_exit": {"number": "3", "name": "Rue Saint-Florentin", "distance_m": 250, "walk_minutes": 3}}
+        {
+            "wikidata_id": "Q818517",
+            "name": "Jardin des Tuileries",
+            "category": "jardin",
+            "description": "Plus grand jardin parisien du centre, dessiné par Le Nôtre au XVIIe siècle. Patrimoine UNESCO depuis 1991. 25,5 hectares.",
+            "image_url": "/assets/images/poi/jardins/jardin-des-tuileries.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Jardin_des_Tuileries",
+                "wikimedia_file": "Jardin des Tuileries.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries",
+            "latitude": 48.8639,
+            "longitude": 2.3261,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Jardin des Tuileries",
+                "distance_m": 30,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q19675",
+            "name": "Musée du Louvre",
+            "category": "musée",
+            "description": "L'un des plus grands musées d'art au monde, abritant plus de 35 000 œuvres dont la Joconde, la Vénus de Milo, la Victoire de Samothrace.",
+            "image_url": "/assets/images/poi/musees/musee-du-louvre.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_du_Louvre",
+                "wikimedia_file": "Musée du Louvre.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre",
+            "latitude": 48.8611,
+            "longitude": 2.3358,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Jardin des Tuileries",
+                "distance_m": 700,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q13397",
+            "name": "Pyramide du Louvre",
+            "category": "monument",
+            "description": "Pyramide de verre conçue par I. M. Pei et inaugurée en 1989. Entrée principale du musée du Louvre depuis cette date.",
+            "image_url": "/assets/images/poi/monuments/pyramide-du-louvre.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Pyramide_du_Louvre",
+                "wikimedia_file": "Pyramide du Louvre.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pyramide_du_Louvre",
+            "latitude": 48.861,
+            "longitude": 2.3359,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Jardin des Tuileries",
+                "distance_m": 750,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q643520",
+            "name": "Place Vendôme",
+            "category": "place",
+            "description": "Place royale du XVIIe siècle, aujourd'hui haut lieu de la joaillerie de luxe (Cartier, Chanel, Boucheron) et de l'hôtellerie (Ritz). Colonne Vendôme érigée en 1810.",
+            "image_url": "/assets/images/poi/monuments/place-vendome.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Place_Vend%C3%B4me",
+                "wikimedia_file": "Place Vendôme.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Vend%C3%B4me",
+            "latitude": 48.8676,
+            "longitude": 2.3294,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Rue de Castiglione (Place Vendôme)",
+                "distance_m": 350,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q726781",
+            "name": "Musée de l'Orangerie",
+            "category": "musée",
+            "description": "Musée niché à l'angle ouest des Tuileries, célèbre pour les 8 panneaux des Nymphéas de Monet présentés dans 2 salles ovales conçues par l'artiste.",
+            "image_url": "/assets/images/poi/musees/musee-de-l-orangerie.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Mus%C3%A9e_de_l%27Orangerie",
+                "wikimedia_file": "Musée de l'Orangerie.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie",
+            "latitude": 48.8638,
+            "longitude": 2.3225,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Rue Saint-Florentin",
+                "distance_m": 250,
+                "walk_minutes": 3
+            }
+        }
     ],
     "services": {
-        "wifi": {"available": true, "location_detail": "le quai et la salle d'échanges de la station", "coverage_detail": "le quai de la Ligne 1"},
-        "toilets": {"public_paid": {"available": false}, "public_free": {"available": true, "location": "le jardin des Tuileries (kiosques saisonniers) ou les commerces de la rue de Rivoli", "access": "à 1-3 min à pied"}},
-        "atm": {"available": true, "banks_count_estimate": "plusieurs commerces", "locations": ["la salle d'échanges", "les commerces de la rue de Rivoli"]},
-        "ratp_office": {"available": false},
-        "left_luggage": {"ratp_available": false, "third_party": [{"name": "Nannybag", "type": "points relais commerces de la rue de Rivoli et place Vendôme"}]},
-        "shopping_dining": {"main_location": "Rue de Rivoli (boutiques de luxe et brasseries)", "details": "Boutiques de luxe sur les arcades de Rivoli, brasseries et cafés", "secondary": "Place Vendôme (joailleries) et Carrousel du Louvre (galerie marchande) à 10 min à pied"}
+        "wifi": {
+            "available": true,
+            "location_detail": "le quai et la salle d'échanges de la station",
+            "coverage_detail": "le quai de la Ligne 1"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": true,
+                "location": "le jardin des Tuileries (kiosques saisonniers) ou les commerces de la rue de Rivoli",
+                "access": "à 1-3 min à pied"
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs commerces",
+            "locations": [
+                "la salle d'échanges",
+                "les commerces de la rue de Rivoli"
+            ]
+        },
+        "ratp_office": {
+            "available": false
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                {
+                    "name": "Nannybag",
+                    "type": "points relais commerces de la rue de Rivoli et place Vendôme"
+                }
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Rue de Rivoli (boutiques de luxe et brasseries)",
+            "details": "Boutiques de luxe sur les arcades de Rivoli, brasseries et cafés",
+            "secondary": "Place Vendôme (joailleries) et Carrousel du Louvre (galerie marchande) à 10 min à pied"
+        }
     },
     "safety": {
-        "audit_status": "verified", "audit_date": "2026-05-10", "level": "standard", "agents": true, "police": true,
+        "audit_status": "verified",
+        "audit_date": "2026-05-10",
+        "level": "standard",
+        "agents": true,
+        "police": true,
         "tips": [
             "Quartier touristique fréquenté, vigilance pickpockets aux abords des sorties principales et dans le jardin des Tuileries.",
             "La station bénéficie d'une présence régulière d'agents RATP et de la police GPSR. La rue de Rivoli est également bien surveillée.",
@@ -113,16 +474,48 @@
         "notes": "Station de niveau de sécurité <strong>standard</strong>. La forte affluence touristique en fait l'une des stations les plus surveillées de la Ligne 1."
     },
     "hero_image": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Acc%C3%A8s_Station_M%C3%A9tro_Tuileries_Rue_Rivoli_-_Paris_I_%28FR75%29_-_2021-12-21_-_1.jpg/1920px-Acc%C3%A8s_Station_M%C3%A9tro_Tuileries_Rue_Rivoli_-_Paris_I_%28FR75%29_-_2021-12-21_-_1.jpg",
-        "alt": "Accès à la station Tuileries, rue de Rivoli, Paris 1er",
-        "width": 1600,
-        "height": 1067,
-        "credit": {"author": "Chabe01", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Tuileries_Rue_Rivoli_-_Paris_I_(FR75)_-_2021-12-21_-_1.jpg", "date": "2021-12-21"},
-        "source": "manual"
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Station_Tuileries_M%C3%A9tro_Paris_Ligne_1_-_Paris_I_(FR75)_-_2025-01-11_-_2.jpg?width=1920",
+        "alt": "Station Tuileries, Ligne 1 du métro de Paris 1er (janvier 2025)",
+        "width": 5712,
+        "height": 4284,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Tuileries_M%C3%A9tro_Paris_Ligne_1_-_Paris_I_(FR75)_-_2025-01-11_-_2.jpg",
+            "date": "2025-01-11"
+        },
+        "source": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/tuileries/tuileries-400.avif",
+                "800": "/assets/img/stations/tuileries/tuileries-800.avif",
+                "1200": "/assets/img/stations/tuileries/tuileries-1200.avif",
+                "1600": "/assets/img/stations/tuileries/tuileries-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/tuileries/tuileries-400.webp",
+                "800": "/assets/img/stations/tuileries/tuileries-800.webp",
+                "1200": "/assets/img/stations/tuileries/tuileries-1200.webp",
+                "1600": "/assets/img/stations/tuileries/tuileries-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/tuileries/tuileries-400.jpg",
+                "800": "/assets/img/stations/tuileries/tuileries-800.jpg",
+                "1200": "/assets/img/stations/tuileries/tuileries-1200.jpg",
+                "1600": "/assets/img/stations/tuileries/tuileries-1600.jpg"
+            }
+        }
     },
     "accessibility": {
-        "audit_status": "verified", "audit_date": "2026-05-10", "level": "non-conforme",
-        "stats": {"elevators_count": 0, "accessible_lines": 0, "total_lines": 1},
+        "audit_status": "verified",
+        "audit_date": "2026-05-10",
+        "level": "non-conforme",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
         "details": "Aucun ascenseur. Quais accessibles uniquement par escaliers. Pour PMR sur l'axe historique, privilégier La Défense — Grande Arche ou Châtelet."
     }
 }

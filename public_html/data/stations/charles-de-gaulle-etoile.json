@@ -16,16 +16,51 @@
         "es": null
     },
     "lines": [
-        {"type": "metro", "code": "1", "slug": "metro-1", "color": "#FFCD00", "text_color": "#000000"},
-        {"type": "metro", "code": "2", "slug": "metro-2", "color": "#0064B0", "text_color": "#FFFFFF"},
-        {"type": "metro", "code": "6", "slug": "metro-6", "color": "#6ECA97", "text_color": "#000000"}
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#0064B0",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        }
     ],
     "rer_correspondences": [
-        {"code": "A", "color": "#E2231A", "station_name": "Charles de Gaulle — Étoile", "walking_minutes": 2}
+        {
+            "code": "A",
+            "color": "#E2231A",
+            "station_name": "Charles de Gaulle — Étoile",
+            "walking_minutes": 2
+        }
     ],
     "bus_correspondences": {
-        "diurne": ["22", "30", "31", "52", "73", "92", "341"],
-        "nocturne": ["N11", "N24", "N53"],
+        "diurne": [
+            "22",
+            "30",
+            "31",
+            "52",
+            "73",
+            "92",
+            "341"
+        ],
+        "nocturne": [
+            "N11",
+            "N24",
+            "N53"
+        ],
         "regional": []
     },
     "seo": {
@@ -37,16 +72,32 @@
     },
     "adjacent_stations": {
         "metro-1": {
-            "previous": {"name": "Argentine", "slug": "argentine", "direction": "La Défense"},
-            "next": {"name": "George V", "slug": "george-v", "direction": "Château de Vincennes"}
+            "previous": {
+                "name": "Argentine",
+                "slug": "argentine",
+                "direction": "La Défense"
+            },
+            "next": {
+                "name": "George V",
+                "slug": "george-v",
+                "direction": "Château de Vincennes"
+            }
         },
         "metro-2": {
-            "previous": {"name": "Ternes", "slug": "ternes", "direction": "Nation"},
+            "previous": {
+                "name": "Ternes",
+                "slug": "ternes",
+                "direction": "Nation"
+            },
             "next": null
         },
         "metro-6": {
             "previous": null,
-            "next": {"name": "Kléber", "slug": "kleber", "direction": "Nation"}
+            "next": {
+                "name": "Kléber",
+                "slug": "kleber",
+                "direction": "Nation"
+            }
         }
     },
     "intro_paragraphs": [
@@ -173,35 +224,374 @@
         }
     },
     "exits": [
-        {"number": "1", "name": "Champs-Élysées Sud", "address_full": "Avenue des Champs-Élysées (côté sud), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8731, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
-        {"number": "2", "name": "Champs-Élysées Nord", "address_full": "Avenue des Champs-Élysées (côté nord), 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8745, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
-        {"number": "3", "name": "Wagram", "address_full": "Avenue de Wagram, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8755, "longitude": 2.2960, "accessible": false, "sector": "avenues_nord"},
-        {"number": "4", "name": "Mac-Mahon", "address_full": "Avenue Mac-Mahon, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8753, "longitude": 2.2950, "accessible": false, "sector": "avenues_nord"},
-        {"number": "5", "name": "Carnot (PMR ascenseur)", "address_full": "Avenue Carnot, 75017 Paris", "postcode": "75017", "city": "Paris", "latitude": 48.8748, "longitude": 2.2940, "accessible": true, "sector": "avenues_ouest"},
-        {"number": "6", "name": "Grande Armée", "address_full": "Avenue de la Grande Armée, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8740, "longitude": 2.2935, "accessible": false, "sector": "avenues_ouest"},
-        {"number": "7", "name": "Foch", "address_full": "Avenue Foch, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8735, "longitude": 2.2945, "accessible": false, "sector": "avenues_ouest"},
-        {"number": "8", "name": "Kléber", "address_full": "Avenue Kléber, 75016 Paris", "postcode": "75016", "city": "Paris", "latitude": 48.8732, "longitude": 2.2955, "accessible": false, "sector": "avenues_ouest"},
-        {"number": "9", "name": "Marceau", "address_full": "Avenue Marceau, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8730, "longitude": 2.2965, "accessible": false, "sector": "champs_elysees"},
-        {"number": "10", "name": "Friedland", "address_full": "Avenue de Friedland, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8748, "longitude": 2.2972, "accessible": false, "sector": "avenues_nord"},
-        {"number": "11", "name": "Hoche", "address_full": "Avenue Hoche, 75008 Paris", "postcode": "75008", "city": "Paris", "latitude": 48.8755, "longitude": 2.2975, "accessible": false, "sector": "avenues_nord"}
+        {
+            "number": "1",
+            "name": "Champs-Élysées Sud",
+            "address_full": "Avenue des Champs-Élysées (côté sud), 75008 Paris",
+            "postcode": "75008",
+            "city": "Paris",
+            "latitude": 48.8731,
+            "longitude": 2.2965,
+            "accessible": false,
+            "sector": "champs_elysees"
+        },
+        {
+            "number": "2",
+            "name": "Champs-Élysées Nord",
+            "address_full": "Avenue des Champs-Élysées (côté nord), 75008 Paris",
+            "postcode": "75008",
+            "city": "Paris",
+            "latitude": 48.8745,
+            "longitude": 2.2965,
+            "accessible": false,
+            "sector": "champs_elysees"
+        },
+        {
+            "number": "3",
+            "name": "Wagram",
+            "address_full": "Avenue de Wagram, 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.8755,
+            "longitude": 2.296,
+            "accessible": false,
+            "sector": "avenues_nord"
+        },
+        {
+            "number": "4",
+            "name": "Mac-Mahon",
+            "address_full": "Avenue Mac-Mahon, 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.8753,
+            "longitude": 2.295,
+            "accessible": false,
+            "sector": "avenues_nord"
+        },
+        {
+            "number": "5",
+            "name": "Carnot (PMR ascenseur)",
+            "address_full": "Avenue Carnot, 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.8748,
+            "longitude": 2.294,
+            "accessible": true,
+            "sector": "avenues_ouest"
+        },
+        {
+            "number": "6",
+            "name": "Grande Armée",
+            "address_full": "Avenue de la Grande Armée, 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.874,
+            "longitude": 2.2935,
+            "accessible": false,
+            "sector": "avenues_ouest"
+        },
+        {
+            "number": "7",
+            "name": "Foch",
+            "address_full": "Avenue Foch, 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.8735,
+            "longitude": 2.2945,
+            "accessible": false,
+            "sector": "avenues_ouest"
+        },
+        {
+            "number": "8",
+            "name": "Kléber",
+            "address_full": "Avenue Kléber, 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.8732,
+            "longitude": 2.2955,
+            "accessible": false,
+            "sector": "avenues_ouest"
+        },
+        {
+            "number": "9",
+            "name": "Marceau",
+            "address_full": "Avenue Marceau, 75008 Paris",
+            "postcode": "75008",
+            "city": "Paris",
+            "latitude": 48.873,
+            "longitude": 2.2965,
+            "accessible": false,
+            "sector": "champs_elysees"
+        },
+        {
+            "number": "10",
+            "name": "Friedland",
+            "address_full": "Avenue de Friedland, 75008 Paris",
+            "postcode": "75008",
+            "city": "Paris",
+            "latitude": 48.8748,
+            "longitude": 2.2972,
+            "accessible": false,
+            "sector": "avenues_nord"
+        },
+        {
+            "number": "11",
+            "name": "Hoche",
+            "address_full": "Avenue Hoche, 75008 Paris",
+            "postcode": "75008",
+            "city": "Paris",
+            "latitude": 48.8755,
+            "longitude": 2.2975,
+            "accessible": false,
+            "sector": "avenues_nord"
+        }
     ],
     "popular_itineraries": [
-        {"destination_name": "Châtelet", "destination_slug": "chatelet", "destination_full_name": "Charles de Gaulle — Étoile → Châtelet", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 12, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-chatelet/"},
-        {"destination_name": "La Défense", "destination_slug": "la-defense-grande-arche", "destination_full_name": "Charles de Gaulle — Étoile → La Défense", "lines_used": ["1"], "lines_label": "Ligne 1 directe (ou RER A en 4 min)", "duration_minutes": 12, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-la-defense-grande-arche/"},
-        {"destination_name": "Tour Eiffel (Bir-Hakeim)", "destination_slug": "bir-hakeim", "destination_full_name": "Charles de Gaulle — Étoile → Tour Eiffel", "lines_used": ["6"], "lines_label": "Ligne 6 directe", "duration_minutes": 8, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-bir-hakeim/"},
-        {"destination_name": "Concorde", "destination_slug": "concorde", "destination_full_name": "Charles de Gaulle — Étoile → Concorde", "lines_used": ["1"], "lines_label": "Ligne 1 directe", "duration_minutes": 5, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-concorde/"},
-        {"destination_name": "Aéroport CDG", "destination_slug": "aeroport-charles-de-gaulle", "destination_full_name": "Charles de Gaulle — Étoile → CDG", "lines_used": ["RER A", "RER B"], "lines_label": "RER A puis RER B (Châtelet)", "duration_minutes": 50, "changes_count": 1, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-aeroport-charles-de-gaulle/"},
-        {"destination_name": "Disneyland Paris", "destination_slug": "disneyland-paris", "destination_full_name": "Charles de Gaulle — Étoile → Disneyland", "lines_used": ["RER A"], "lines_label": "RER A directe (Marne-la-Vallée — Chessy)", "duration_minutes": 45, "changes_count": 0, "search_volume_estimate": "high", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-disneyland-paris/"},
-        {"destination_name": "Versailles Saint-Quentin", "destination_slug": "versailles-saint-quentin", "destination_full_name": "Charles de Gaulle — Étoile → Versailles", "lines_used": ["RER A"], "lines_label": "RER A directe", "duration_minutes": 35, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-versailles-saint-quentin/"},
-        {"destination_name": "Nation", "destination_slug": "nation", "destination_full_name": "Charles de Gaulle — Étoile → Nation", "lines_used": ["6"], "lines_label": "Ligne 6 directe (sud)", "duration_minutes": 30, "changes_count": 0, "search_volume_estimate": "medium", "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-nation/"}
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Charles de Gaulle — Étoile → Châtelet",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-chatelet/"
+        },
+        {
+            "destination_name": "La Défense",
+            "destination_slug": "la-defense-grande-arche",
+            "destination_full_name": "Charles de Gaulle — Étoile → La Défense",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe (ou RER A en 4 min)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-la-defense-grande-arche/"
+        },
+        {
+            "destination_name": "Tour Eiffel (Bir-Hakeim)",
+            "destination_slug": "bir-hakeim",
+            "destination_full_name": "Charles de Gaulle — Étoile → Tour Eiffel",
+            "lines_used": [
+                "6"
+            ],
+            "lines_label": "Ligne 6 directe",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-bir-hakeim/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Charles de Gaulle — Étoile → Concorde",
+            "lines_used": [
+                "1"
+            ],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-concorde/"
+        },
+        {
+            "destination_name": "Aéroport CDG",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Charles de Gaulle — Étoile → CDG",
+            "lines_used": [
+                "RER A",
+                "RER B"
+            ],
+            "lines_label": "RER A puis RER B (Châtelet)",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-aeroport-charles-de-gaulle/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland-paris",
+            "destination_full_name": "Charles de Gaulle — Étoile → Disneyland",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A directe (Marne-la-Vallée — Chessy)",
+            "duration_minutes": 45,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-disneyland-paris/"
+        },
+        {
+            "destination_name": "Versailles Saint-Quentin",
+            "destination_slug": "versailles-saint-quentin",
+            "destination_full_name": "Charles de Gaulle — Étoile → Versailles",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A directe",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-versailles-saint-quentin/"
+        },
+        {
+            "destination_name": "Nation",
+            "destination_slug": "nation",
+            "destination_full_name": "Charles de Gaulle — Étoile → Nation",
+            "lines_used": [
+                "6"
+            ],
+            "lines_label": "Ligne 6 directe (sud)",
+            "duration_minutes": 30,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-charles-de-gaulle-etoile/charles-de-gaulle-etoile-vers-nation/"
+        }
     ],
     "nearby_pois": [
-        {"wikidata_id": "Q64436", "name": "Arc de Triomphe", "category": "monument", "description": "Monument emblématique de Paris commandé par Napoléon en 1806 et achevé en 1836. Au sommet : panorama 360° sur les Champs-Élysées et l'axe historique. Sous l'arc : la flamme du Soldat inconnu, allumée chaque soir à 18h30.", "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_de_Triomphe,_Paris_21_October_2010.jpg?width=400", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe,_Paris_21_October_2010.jpg", "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile", "latitude": 48.8738, "longitude": 2.2950, "nearest_exit": {"number": "2", "name": "Champs-Élysées Nord", "distance_m": 80, "walk_minutes": 1}},
-        {"wikidata_id": "Q550", "name": "Avenue des Champs-Élysées", "category": "avenue", "description": "Avenue mythique de 1,9 km descendant de l'Arc de Triomphe à la place de la Concorde. Plus de 200 commerces, restaurants et cinémas. Décor de défilés militaires (14 juillet) et arrivée du Tour de France.", "image_url": "/assets/images/poi/monuments/avenue-des-champs-elysees.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es", "wikimedia_file": "Champs-Élysées Paris.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es", "latitude": 48.8697, "longitude": 2.3079, "nearest_exit": {"number": "1", "name": "Champs-Élysées Sud", "distance_m": 50, "walk_minutes": 1}},
-        {"wikidata_id": "Q390243", "name": "Place Charles-de-Gaulle", "category": "place", "description": "Place en étoile à 12 branches dessinée par Haussmann au XIXe siècle. Ancienne place de l'Étoile, renommée en 1970 en hommage au général de Gaulle. Accueille l'Arc de Triomphe en son centre.", "image_url": "/assets/images/poi/monuments/place-charles-de-gaulle.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Place_Charles-de-Gaulle_(Paris)", "wikimedia_file": "Place Charles de Gaulle aerial.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Charles-de-Gaulle", "latitude": 48.8739, "longitude": 2.2947, "nearest_exit": {"number": "4", "name": "Mac-Mahon", "distance_m": 30, "walk_minutes": 1}},
-        {"wikidata_id": "Q790562", "name": "Avenue Foch", "category": "avenue", "description": "L'avenue la plus large de Paris (120 m) et l'une des plus prestigieuses. Quartier résidentiel de luxe, ambassades, hôtels particuliers. Mène au Bois de Boulogne.", "image_url": "/assets/images/poi/monuments/avenue-foch.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_Foch_(Luftaufnahme).JPG", "wikimedia_file": "Avenue Foch (Luftaufnahme).JPG"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Foch_(Paris)", "latitude": 48.8736, "longitude": 2.2886, "nearest_exit": {"number": "7", "name": "Foch", "distance_m": 50, "walk_minutes": 1}},
-        {"wikidata_id": "Q1028274", "name": "Avenue de la Grande-Armée", "category": "avenue", "description": "Avenue de 1,3 km reliant l'Étoile à la place de la Porte Maillot. Connue pour ses concessionnaires automobiles, magasins de moto et grands hôtels.", "image_url": "/assets/images/poi/monuments/avenue-de-la-grande-armee.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 3.0", "license_url": "https://creativecommons.org/licenses/by-sa/3.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_de_la_Grande-Arm%C3%A9e_(Paris)", "wikimedia_file": "Avenue de la Grande-Armée from above.jpg"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_de_la_Grande-Arm%C3%A9e", "latitude": 48.8758, "longitude": 2.2886, "nearest_exit": {"number": "6", "name": "Grande Armée", "distance_m": 100, "walk_minutes": 2}},
-        {"wikidata_id": "Q2873695", "name": "Avenue Hoche", "category": "avenue", "description": "Avenue résidentielle prestigieuse du 8e arrondissement, reliant l'Étoile au parc Monceau. Hôtels particuliers, ambassades, sièges sociaux.", "image_url": "/assets/images/poi/monuments/avenue-hoche.webp", "image_credit": {"author": "Wikimedia Commons", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_Hoche_(Paris)", "wikimedia_file": "Paris VIII avenue Hoche.JPG"}, "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Hoche", "latitude": 48.8761, "longitude": 2.3006, "nearest_exit": {"number": "11", "name": "Hoche", "distance_m": 80, "walk_minutes": 1}}
+        {
+            "wikidata_id": "Q64436",
+            "name": "Arc de Triomphe",
+            "category": "monument",
+            "description": "Monument emblématique de Paris commandé par Napoléon en 1806 et achevé en 1836. Au sommet : panorama 360° sur les Champs-Élysées et l'axe historique. Sous l'arc : la flamme du Soldat inconnu, allumée chaque soir à 18h30.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc_de_Triomphe,_Paris_21_October_2010.jpg?width=400",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe,_Paris_21_October_2010.jpg",
+                "wikimedia_file": "Arc de Triomphe, Paris 21 October 2010.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile",
+            "latitude": 48.8738,
+            "longitude": 2.295,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Champs-Élysées Nord",
+                "distance_m": 80,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q550",
+            "name": "Avenue des Champs-Élysées",
+            "category": "avenue",
+            "description": "Avenue mythique de 1,9 km descendant de l'Arc de Triomphe à la place de la Concorde. Plus de 200 commerces, restaurants et cinémas. Décor de défilés militaires (14 juillet) et arrivée du Tour de France.",
+            "image_url": "/assets/images/poi/monuments/avenue-des-champs-elysees.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es",
+                "wikimedia_file": "Champs-Élysées Paris.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_des_Champs-%C3%89lys%C3%A9es",
+            "latitude": 48.8697,
+            "longitude": 2.3079,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Champs-Élysées Sud",
+                "distance_m": 50,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q390243",
+            "name": "Place Charles-de-Gaulle",
+            "category": "place",
+            "description": "Place en étoile à 12 branches dessinée par Haussmann au XIXe siècle. Ancienne place de l'Étoile, renommée en 1970 en hommage au général de Gaulle. Accueille l'Arc de Triomphe en son centre.",
+            "image_url": "/assets/images/poi/monuments/place-charles-de-gaulle.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Place_Charles-de-Gaulle_(Paris)",
+                "wikimedia_file": "Place Charles de Gaulle aerial.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Charles-de-Gaulle",
+            "latitude": 48.8739,
+            "longitude": 2.2947,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Mac-Mahon",
+                "distance_m": 30,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q790562",
+            "name": "Avenue Foch",
+            "category": "avenue",
+            "description": "L'avenue la plus large de Paris (120 m) et l'une des plus prestigieuses. Quartier résidentiel de luxe, ambassades, hôtels particuliers. Mène au Bois de Boulogne.",
+            "image_url": "/assets/images/poi/monuments/avenue-foch.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_Foch_(Luftaufnahme).JPG",
+                "wikimedia_file": "Avenue Foch (Luftaufnahme).JPG"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Foch_(Paris)",
+            "latitude": 48.8736,
+            "longitude": 2.2886,
+            "nearest_exit": {
+                "number": "7",
+                "name": "Foch",
+                "distance_m": 50,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1028274",
+            "name": "Avenue de la Grande-Armée",
+            "category": "avenue",
+            "description": "Avenue de 1,3 km reliant l'Étoile à la place de la Porte Maillot. Connue pour ses concessionnaires automobiles, magasins de moto et grands hôtels.",
+            "image_url": "/assets/images/poi/monuments/avenue-de-la-grande-armee.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 3.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_de_la_Grande-Arm%C3%A9e_(Paris)",
+                "wikimedia_file": "Avenue de la Grande-Armée from above.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_de_la_Grande-Arm%C3%A9e",
+            "latitude": 48.8758,
+            "longitude": 2.2886,
+            "nearest_exit": {
+                "number": "6",
+                "name": "Grande Armée",
+                "distance_m": 100,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2873695",
+            "name": "Avenue Hoche",
+            "category": "avenue",
+            "description": "Avenue résidentielle prestigieuse du 8e arrondissement, reliant l'Étoile au parc Monceau. Hôtels particuliers, ambassades, sièges sociaux.",
+            "image_url": "/assets/images/poi/monuments/avenue-hoche.webp",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/Category:Avenue_Hoche_(Paris)",
+                "wikimedia_file": "Paris VIII avenue Hoche.JPG"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Avenue_Hoche",
+            "latitude": 48.8761,
+            "longitude": 2.3006,
+            "nearest_exit": {
+                "number": "11",
+                "name": "Hoche",
+                "distance_m": 80,
+                "walk_minutes": 1
+            }
+        }
     ],
     "services": {
         "wifi": {
@@ -210,13 +600,22 @@
             "coverage_detail": "les quais des lignes 1, 2, 6 et le RER A"
         },
         "toilets": {
-            "public_paid": {"available": false},
-            "public_free": {"available": true, "location": "les commerces des Champs-Élysées et de l'avenue Wagram", "access": "à 5-10 min à pied selon le commerce"}
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": true,
+                "location": "les commerces des Champs-Élysées et de l'avenue Wagram",
+                "access": "à 5-10 min à pied selon le commerce"
+            }
         },
         "atm": {
             "available": true,
             "banks_count_estimate": "plusieurs banques",
-            "locations": ["la salle d'échanges principale", "les sorties Champs-Élysées et Wagram"]
+            "locations": [
+                "la salle d'échanges principale",
+                "les sorties Champs-Élysées et Wagram"
+            ]
         },
         "ratp_office": {
             "available": true,
@@ -226,9 +625,18 @@
         "left_luggage": {
             "ratp_available": false,
             "third_party": [
-                {"name": "Nannybag", "type": "points relais commerces Champs-Élysées et Friedland"},
-                {"name": "Bounce", "type": "points relais commerces Champs-Élysées"},
-                {"name": "Stasher", "type": "points relais hôtels et commerces du quartier"}
+                {
+                    "name": "Nannybag",
+                    "type": "points relais commerces Champs-Élysées et Friedland"
+                },
+                {
+                    "name": "Bounce",
+                    "type": "points relais commerces Champs-Élysées"
+                },
+                {
+                    "name": "Stasher",
+                    "type": "points relais hôtels et commerces du quartier"
+                }
             ]
         },
         "shopping_dining": {
@@ -252,18 +660,38 @@
         "notes": "La station est classée niveau de sécurité <strong>standard</strong> par la RATP. La forte affluence et la présence permanente d'agents en uniforme en font l'une des stations les mieux surveillées du réseau. La proximité du palais de l'Élysée et de plusieurs ambassades implique également une vigilance institutionnelle accrue."
     },
     "hero_image": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg/1920px-Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg",
-        "alt": "Quai de la station Charles de Gaulle — Étoile, Ligne 2 du métro de Paris",
-        "width": 1600,
-        "height": 1067,
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Station_Charles_Gaulle_M%C3%A9tro_Paris_-_Paris_XVII_(FR75)_-_2026-02-24_-_12.jpg?width=1920",
+        "alt": "Station Charles de Gaulle — Étoile, accès Paris 17e (2026)",
+        "width": 5712,
+        "height": 4284,
         "credit": {
             "author": "Chabe01",
             "license": "CC BY-SA 4.0",
-            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Charles_Gaulle_%C3%89toile_M%C3%A9tro_Paris_Ligne_2_-_Paris_VIII_(FR75)_-_2024-05-30_-_2.jpg",
-            "date": "2024-05-30"
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Charles_Gaulle_M%C3%A9tro_Paris_-_Paris_XVII_(FR75)_-_2026-02-24_-_12.jpg",
+            "date": "2026-02-24"
         },
-        "source": "manual"
+        "source": "manual",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-400.avif",
+                "800": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-800.avif",
+                "1200": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1200.avif",
+                "1600": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-400.webp",
+                "800": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-800.webp",
+                "1200": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1200.webp",
+                "1600": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-400.jpg",
+                "800": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-800.jpg",
+                "1200": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1200.jpg",
+                "1600": "/assets/img/stations/charles-de-gaulle-etoile/charles-de-gaulle-etoile-1600.jpg"
+            }
+        }
     },
     "accessibility": {
         "audit_status": "verified",
