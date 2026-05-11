@@ -115,9 +115,16 @@ jobs:
       - name: Setup image tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq webp libavif-bin imagemagick
-          # Fournit cwebp, avifenc, convert (sips macOS-only n'est pas dispo,
-          # build-station-hero.php a un fallback ImageMagick à activer si besoin)
+          sudo apt-get install -y -qq imagemagick libavif-bin webp
+          # imagemagick → magick/convert (resize, cross-platform)
+          # libavif-bin → avifenc
+          # webp        → cwebp
+          # build-station-hero.php utilise magick/convert en priorité,
+          # avec fallback sips (macOS-only) si IM absent.
+          echo "Versions installées :"
+          (magick --version 2>/dev/null || convert --version) | head -1
+          cwebp -version 2>&1 | head -1
+          avifenc --version 2>&1 | head -1
 
       - name: Setup Python (pour fetch POIs ad-hoc)
         uses: actions/setup-python@v5
@@ -131,21 +138,16 @@ jobs:
         if: ${{ github.event.inputs.skip_hero != 'true' }}
         id: build_hero
         run: |
-          php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }} 2>&1 | tail -50 || true
+          php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }} 2>&1 | tail -50
           DIR="public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/"
-          if [ -d "$DIR" ] && [ -n "$(ls -A "$DIR" 2>/dev/null)" ]; then
-            echo "hero_generated=true" >> "$GITHUB_OUTPUT"
-            echo "### ✅ Hero generated" >> "$GITHUB_STEP_SUMMARY"
-            ls -la "$DIR" | tee -a "$GITHUB_STEP_SUMMARY"
-          else
-            echo "hero_generated=false" >> "$GITHUB_OUTPUT"
-            echo "### ⚠️ Hero non généré côté CI" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Le script build-station-hero.php nécessite \`sips\` (macOS-only) pour le redimensionnement. Sur runner Linux, le pipeline image est skippé." >> "$GITHUB_STEP_SUMMARY"
-            echo "**Action Ludovic** : générer le hero manuellement en local (\`php scripts/build-station-hero.php --station=${{ needs.validate.outputs.station_slug }}\`) puis upload manuel via cPanel ou commit avec exclusion gitignore." >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "Le reste du pipeline continue normalement (Lighthouse + validation)." >> "$GITHUB_STEP_SUMMARY"
+          if [ ! -d "$DIR" ] || [ -z "$(ls -A "$DIR" 2>/dev/null)" ]; then
+            echo "::error::Hero generation a échoué — dossier $DIR vide ou absent."
+            echo "Vérifier les logs ci-dessus pour identifier la cause (téléchargement Wikimedia, outils image…)."
+            exit 1
           fi
+          echo "hero_generated=true" >> "$GITHUB_OUTPUT"
+          echo "### ✅ Hero generated (12 variantes AVIF/WebP/JPG × 4 tailles)" >> "$GITHUB_STEP_SUMMARY"
+          ls -la "$DIR" | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Build POIs (Wikidata SPARQL + images Wikimedia)
         run: |

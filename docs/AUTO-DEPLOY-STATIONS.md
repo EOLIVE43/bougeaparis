@@ -131,15 +131,28 @@ php scripts/validate-station.php --slug={slug} --check-wikidata
 
 ### Hero generation échoue
 
-→ Vérifier que `hero_image.url` (Wikimedia thumb URL) répond 200 :
+→ Vérifier que `hero_image.url` (Wikimedia `Special:FilePath`)
+répond 200 ou 302 :
 ```bash
 curl -I "$HERO_URL"
 ```
 
-→ Vérifier les outils image dans le runner :
-```yaml
-sudo apt-get install -y webp libavif-bin imagemagick
-```
+→ Outils image requis (cross-platform depuis migration sips →
+ImageMagick) :
+
+| Outil | Rôle | Linux | macOS |
+|---|---|---|---|
+| `magick` ou `convert` | Resize JPG | `apt install imagemagick` | `brew install imagemagick` (fallback `sips` natif si IM absent) |
+| `cwebp` | Conversion WebP | `apt install webp` | `brew install webp` |
+| `avifenc` | Conversion AVIF | `apt install libavif-bin` | `brew install libavif` |
+
+Le script `build-station-hero.php` détecte automatiquement
+`magick` (IM 7) ou `convert` (IM 6) ; à défaut, fallback `sips`
+(macOS legacy). Le workflow CI installe ImageMagick par défaut.
+
+Si Hero échoue : vérifier dans le log du job 2 la ligne
+`ERREUR resize {w} (tool=…, code=…)`. Code 1 = problème
+ImageMagick (souvent disk full ou policy.xml restrictif).
 
 ### Upload FTP échoue
 

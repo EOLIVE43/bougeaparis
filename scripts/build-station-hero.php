@@ -60,9 +60,16 @@ const IMAGE_OUTDIR    = ROOT . '/public_html/assets/img/stations';
 const IMAGE_OUT_RELATIVE = '/assets/img/stations';
 
 // Outils image (paths absolus pour eviter dependence du PATH)
+// Resize : ImageMagick (magick 7 ou convert 6) en priorité → cross-platform
+// (macOS via brew install imagemagick / Linux via apt install imagemagick).
+// Fallback sips pour macOS sans ImageMagick (legacy).
+const TOOL_MAGICK_CANDIDATES  = [
+    '/opt/homebrew/bin/magick', '/usr/local/bin/magick', '/usr/bin/magick', 'magick',
+    '/opt/homebrew/bin/convert', '/usr/local/bin/convert', '/usr/bin/convert', 'convert',
+];
 const TOOL_SIPS_CANDIDATES    = ['/usr/bin/sips'];
-const TOOL_CWEBP_CANDIDATES   = ['/opt/homebrew/bin/cwebp', '/usr/local/bin/cwebp', 'cwebp'];
-const TOOL_AVIFENC_CANDIDATES = ['/opt/homebrew/bin/avifenc', '/usr/local/bin/avifenc', 'avifenc'];
+const TOOL_CWEBP_CANDIDATES   = ['/opt/homebrew/bin/cwebp', '/usr/local/bin/cwebp', '/usr/bin/cwebp', 'cwebp'];
+const TOOL_AVIFENC_CANDIDATES = ['/opt/homebrew/bin/avifenc', '/usr/local/bin/avifenc', '/usr/bin/avifenc', 'avifenc'];
 
 const WEBP_QUALITY = 80;
 const AVIF_MIN     = 30; // qualite : plus bas = meilleur, 30-50 plage equilibree
@@ -333,9 +340,18 @@ function download_image(string $url, string $destPath): bool {
  * ou null en cas d'echec partiel (les fichiers partiels sont nettoyes).
  */
 function build_local_image_versions(string $slug, string $sourceUrl, array &$tools): ?array {
-    if (empty($tools['sips']) || empty($tools['cwebp']) || empty($tools['avifenc'])) {
+    // Resize : ImageMagick (magick/convert) en priorité (cross-platform),
+    // sips en fallback macOS legacy. cwebp + avifenc cross-platform.
+    $resizer = $tools['magick'] ?: $tools['sips'];
+    if (empty($resizer) || empty($tools['cwebp']) || empty($tools['avifenc'])) {
+        log_info("    ERREUR : outils image manquants (resizer=" . ($resizer ?: 'absent') . ", cwebp=" . ($tools['cwebp'] ?: 'absent') . ", avifenc=" . ($tools['avifenc'] ?: 'absent') . ")");
         return null;
     }
+    // Détection du type de resizer pour adapter la syntaxe :
+    //   - ImageMagick : `magick|convert in -resize 'WxW>' -quality 92 -strip out`
+    //   - sips macOS  : `sips -Z W in --out out`
+    $isMagick = (basename($resizer) === 'magick' || basename($resizer) === 'convert');
+
     $outDir = IMAGE_OUTDIR . '/' . $slug;
     if (!is_dir($outDir) && !@mkdir($outDir, 0755, true) && !is_dir($outDir)) {
         log_info("    ERREUR : impossible de creer $outDir");
@@ -359,13 +375,24 @@ function build_local_image_versions(string $slug, string $sourceUrl, array &$too
         $webpFile = "$outDir/$slug-$w.webp";
         $avifFile = "$outDir/$slug-$w.avif";
 
-        // 1. Resize JPG via sips -Z (preserve ratio, max dimension = $w)
-        $cmd = sprintf('%s -Z %d %s --out %s 2>&1',
-            escapeshellcmd($tools['sips']), $w,
-            escapeshellarg($tmpOrig), escapeshellarg($jpgFile));
+        // 1. Resize JPG (preserve ratio, max dimension = $w)
+        if ($isMagick) {
+            // ImageMagick : '-resize WxW>' = scale only if larger (matche sips -Z),
+            // '-quality 92' pour JPG, '-strip' supprime métadonnées EXIF.
+            $cmd = sprintf('%s %s -resize %sx%s\\> -quality 92 -strip %s 2>&1',
+                escapeshellcmd($resizer),
+                escapeshellarg($tmpOrig),
+                (int)$w, (int)$w,
+                escapeshellarg($jpgFile));
+        } else {
+            // sips macOS legacy
+            $cmd = sprintf('%s -Z %d %s --out %s 2>&1',
+                escapeshellcmd($resizer), $w,
+                escapeshellarg($tmpOrig), escapeshellarg($jpgFile));
+        }
         exec($cmd, $out, $code);
         if ($code !== 0 || !is_file($jpgFile)) {
-            log_info("    ERREUR sips $w (code=$code)");
+            log_info("    ERREUR resize $w (tool=" . basename($resizer) . ", code=$code)");
             $allOk = false; continue;
         }
 
@@ -504,8 +531,13 @@ function find_hero_for_station(array $station, array &$cache): array {
 log_info('Phase 1: chargement cache + detection outils');
 $cache = load_cache();
 
-// Detection outils image (sips natif macOS, cwebp & avifenc via Homebrew)
+// Detection outils image (cross-platform):
+// - magick/convert : ImageMagick (Linux + macOS via brew)
+// - sips : fallback macOS legacy (si IM absent)
+// - cwebp : libwebp (Linux + macOS)
+// - avifenc : libavif (Linux + macOS)
 $tools = [
+    'magick'  => find_tool(TOOL_MAGICK_CANDIDATES),
     'sips'    => find_tool(TOOL_SIPS_CANDIDATES),
     'cwebp'   => find_tool(TOOL_CWEBP_CANDIDATES),
     'avifenc' => find_tool(TOOL_AVIFENC_CANDIDATES),
@@ -517,10 +549,12 @@ foreach ($tools as $name => $path) {
         log_info("  outil $name : ABSENT");
     }
 }
-$canConvertImages = $tools['sips'] && $tools['cwebp'] && $tools['avifenc'];
+$resizerOk = $tools['magick'] || $tools['sips'];
+$canConvertImages = $resizerOk && $tools['cwebp'] && $tools['avifenc'];
 if (!$canConvertImages) {
-    log_info('  AVERTISSEMENT : un ou plusieurs outils image absents.');
-    log_info('    macOS : brew install webp libavif (sips est natif).');
+    log_info('  AVERTISSEMENT : outils image insuffisants pour générer les variantes.');
+    log_info('    macOS    : brew install imagemagick webp libavif');
+    log_info('    Linux    : sudo apt install imagemagick libavif-bin webp');
     log_info('    Le script continuera mais ne convertira pas les images.');
 }
 
