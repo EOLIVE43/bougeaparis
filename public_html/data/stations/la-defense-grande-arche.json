@@ -56,8 +56,23 @@
         }
     ],
     "bus_correspondences": {
-        "diurne": ["73", "141", "144", "159", "174", "178", "258", "275", "276", "278", "360"],
-        "nocturne": ["N24", "N53"],
+        "diurne": [
+            "73",
+            "141",
+            "144",
+            "159",
+            "174",
+            "178",
+            "258",
+            "275",
+            "276",
+            "278",
+            "360"
+        ],
+        "nocturne": [
+            "N24",
+            "N53"
+        ],
         "regional": []
     },
     "tariff_zone": 3,
@@ -102,8 +117,14 @@
         "left_luggage": {
             "ratp_available": false,
             "third_party": [
-                {"name": "Nannybag", "type": "points relais dans les commerces du parvis"},
-                {"name": "Bounce", "type": "points relais dans les commerces du parvis"}
+                {
+                    "name": "Nannybag",
+                    "type": "points relais dans les commerces du parvis"
+                },
+                {
+                    "name": "Bounce",
+                    "type": "points relais dans les commerces du parvis"
+                }
             ]
         },
         "shopping_dining": {
@@ -409,7 +430,9 @@
             "destination_name": "Châtelet",
             "destination_slug": "chatelet",
             "destination_full_name": "La Défense → Châtelet",
-            "lines_used": ["1"],
+            "lines_used": [
+                "1"
+            ],
             "lines_label": "Ligne 1 directe",
             "duration_minutes": 22,
             "changes_count": 0,
@@ -420,7 +443,9 @@
             "destination_name": "Gare du Nord",
             "destination_slug": "gare-du-nord",
             "destination_full_name": "La Défense → Gare du Nord",
-            "lines_used": ["RER E"],
+            "lines_used": [
+                "RER E"
+            ],
             "lines_label": "RER E directe (depuis 2024)",
             "duration_minutes": 14,
             "changes_count": 0,
@@ -431,7 +456,10 @@
             "destination_name": "Aéroport Charles de Gaulle",
             "destination_slug": "aeroport-charles-de-gaulle",
             "destination_full_name": "La Défense → Aéroport CDG",
-            "lines_used": ["RER A", "RER B"],
+            "lines_used": [
+                "RER A",
+                "RER B"
+            ],
             "lines_label": "RER A puis RER B (Châtelet)",
             "duration_minutes": 45,
             "changes_count": 1,
@@ -442,7 +470,10 @@
             "destination_name": "Aéroport Orly",
             "destination_slug": "aeroport-orly",
             "destination_full_name": "La Défense → Aéroport Orly",
-            "lines_used": ["1", "14"],
+            "lines_used": [
+                "1",
+                "14"
+            ],
             "lines_label": "Ligne 1 puis Ligne 14 (Châtelet) jusqu'à Orly",
             "duration_minutes": 55,
             "changes_count": 1,
@@ -453,7 +484,9 @@
             "destination_name": "Disneyland Paris",
             "destination_slug": "disneyland-paris",
             "destination_full_name": "La Défense → Disneyland Paris",
-            "lines_used": ["RER A"],
+            "lines_used": [
+                "RER A"
+            ],
             "lines_label": "RER A directe (Marne-la-Vallée — Chessy)",
             "duration_minutes": 50,
             "changes_count": 0,
@@ -464,7 +497,9 @@
             "destination_name": "Versailles Saint-Quentin",
             "destination_slug": "versailles-saint-quentin",
             "destination_full_name": "La Défense → Versailles Saint-Quentin",
-            "lines_used": ["RER A"],
+            "lines_used": [
+                "RER A"
+            ],
             "lines_label": "RER A directe",
             "duration_minutes": 35,
             "changes_count": 0,
@@ -475,7 +510,10 @@
             "destination_name": "Tour Eiffel (Bir-Hakeim)",
             "destination_slug": "bir-hakeim",
             "destination_full_name": "La Défense → Tour Eiffel (Bir-Hakeim)",
-            "lines_used": ["1", "6"],
+            "lines_used": [
+                "1",
+                "6"
+            ],
             "lines_label": "Ligne 1 puis Ligne 6 (Charles de Gaulle - Étoile)",
             "duration_minutes": 25,
             "changes_count": 1,
@@ -486,7 +524,9 @@
             "destination_name": "Saint-Lazare",
             "destination_slug": "saint-lazare",
             "destination_full_name": "La Défense → Saint-Lazare",
-            "lines_used": ["Transilien L"],
+            "lines_used": [
+                "Transilien L"
+            ],
             "lines_label": "Transilien L directe",
             "duration_minutes": 12,
             "changes_count": 0,
@@ -500,7 +540,7 @@
             "name": "Grande Arche de la Défense",
             "category": "monument",
             "description": "Monument cubique évidé de 110 m de côté inauguré en 1989 pour le bicentenaire de la Révolution française. Conçue par l'architecte danois Johan Otto von Spreckelsen, elle ferme symboliquement l'axe historique de Paris.",
-            "image_url": "/assets/images/poi/monuments/grande-arche-de-la-defense.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Arche%2C%20France%20-%20April%202011.jpg?width=800",
             "image_credit": {
                 "author": "Paris 16",
                 "license": "CC BY 2.0",
@@ -523,7 +563,7 @@
             "name": "Westfield Les Quatre Temps",
             "category": "centre commercial",
             "description": "Centre commercial inauguré en 1981 sous la dalle de la Défense, l'un des plus grands d'Île-de-France avec plus de 220 boutiques et un cinéma UGC.",
-            "image_url": "/assets/images/poi/monuments/westfield-les-quatre-temps.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Centre%20commercial%20Les%20Quatre%20Temps.jpg?width=800",
             "image_credit": {
                 "author": "Jakubszypulka",
                 "license": "CC BY-SA 3.0",
@@ -546,7 +586,7 @@
             "name": "CNIT",
             "category": "monument",
             "description": "Centre des Nouvelles Industries et Technologies, voûte de béton record du monde à son inauguration en 1958, reconvertie en centre de bureaux et de congrès dans les années 1980.",
-            "image_url": "/assets/images/poi/monuments/cnit.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Details%20in%20Paris%20in%20October%201991%2012.jpg?width=800",
             "image_credit": {
                 "author": "Szilas",
                 "license": "CC BY-SA 4.0",
@@ -569,7 +609,7 @@
             "name": "Le Pouce de César",
             "category": "sculpture",
             "description": "Sculpture monumentale en bronze de 12 mètres de haut représentant un pouce humain, œuvre de l'artiste niçois César Baldaccini installée sur l'esplanade en 1994.",
-            "image_url": "/assets/images/poi/monuments/le-pouce-de-cesar.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Carpeaux%20-%20Puteaux%20%28FR92%29%20-%202022-01-30%20-%202.jpg?width=800",
             "image_credit": {
                 "author": "Chabe01",
                 "license": "CC BY-SA 4.0",
@@ -592,7 +632,7 @@
             "name": "Tour First",
             "category": "gratte-ciel",
             "description": "Plus haute tour de bureaux de France à son achèvement en 2011 (231 m, 52 étages). Anciennement Tour AXA, rénovée par l'architecte Kohn Pedersen Fox.",
-            "image_url": "/assets/images/poi/monuments/tour-first.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tours%20First%20et%20Saint-Gobain%20%2842975144462%29.jpg?width=800",
             "image_credit": {
                 "author": "Paris 16",
                 "license": "CC BY-SA 2.0",
@@ -615,7 +655,7 @@
             "name": "Esplanade de la Défense",
             "category": "place",
             "description": "Promenade piétonne de 1,2 km reliant le pont de Neuilly à la Grande Arche, jalonnée de plus de 60 œuvres d'art contemporain en plein air signées Calder, Miró, César, Takis, Serra et d'autres.",
-            "image_url": "/assets/images/poi/monuments/esplanade-de-la-defense.webp",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%A9fense-parvis-pano2.jpg?width=800",
             "image_credit": {
                 "author": "Jean-Christophe BENOIST",
                 "license": "CC BY 3.0",
