@@ -13,12 +13,12 @@
  * et inline mobile (cf. templates/layout/header.php + bundle.css mega-menu).
  */
 return [
-    // Menu principal (header) — 5 entrees niveau 1
+    // Menu principal (header) — 5 entrees niveau 1, pictos Lucide distincts
     'main' => [
         [
             'label' => 'Se déplacer',
             'url'   => '/se-deplacer/',
-            'icon'  => 'metro',
+            'icon'  => 'train-front',
             'children' => [
                 ['label' => 'Métro',      'url' => '/metro/',     'icon' => 'metro'],
                 ['label' => 'RER',        'url' => '/rer/',       'icon' => 'rer'],
@@ -32,31 +32,32 @@ return [
         [
             'label' => 'Visiter',
             'url'   => '/visiter/',
-            'icon'  => 'blog',
+            'icon'  => 'landmark',
+            'child_icon_style' => 'outline', // pictos sous-menu en trait simple (pas de container plein)
             'children' => [
-                ['label' => 'Monuments emblématiques',  'url' => '/visiter/#monuments'],
-                ['label' => 'Musées & arts',            'url' => '/visiter/#musees'],
-                ['label' => 'Places & avenues',         'url' => '/visiter/#places-avenues'],
-                ['label' => 'Jardins & espaces verts',  'url' => '/visiter/#jardins'],
-                ['label' => 'Patrimoine religieux',     'url' => '/visiter/#patrimoine-religieux'],
-                ['label' => 'Ponts & rives de Seine',   'url' => '/visiter/#ponts-seine'],
-                ['label' => 'Vie parisienne',           'url' => '/visiter/#vie-parisienne'],
+                ['label' => 'Monuments emblématiques',  'url' => '/visiter/#monuments',            'icon' => 'landmark'],
+                ['label' => 'Musées & arts',            'url' => '/visiter/#musees',               'icon' => 'building-2'],
+                ['label' => 'Places & avenues',         'url' => '/visiter/#places-avenues',       'icon' => 'compass'],
+                ['label' => 'Jardins & espaces verts',  'url' => '/visiter/#jardins',              'icon' => 'leaf'],
+                ['label' => 'Patrimoine religieux',     'url' => '/visiter/#patrimoine-religieux', 'icon' => 'church'],
+                ['label' => 'Ponts & rives de Seine',   'url' => '/visiter/#ponts-seine',          'icon' => 'archway'],
+                ['label' => 'Vie parisienne',           'url' => '/visiter/#vie-parisienne',       'icon' => 'coffee'],
             ],
         ],
         [
             'label' => 'Itinéraires',
             'url'   => '/itineraires/',
-            'icon'  => 'metro',
+            'icon'  => 'map',
         ],
         [
             'label' => 'Trafic temps réel',
             'url'   => '/info-trafic/',
-            'icon'  => 'blog',
+            'icon'  => 'activity',
         ],
         [
             'label' => 'Tarifs',
             'url'   => '/tarifs/',
-            'icon'  => 'metro',
+            'icon'  => 'euro',
         ],
     ],
 

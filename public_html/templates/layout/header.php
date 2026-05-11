@@ -49,14 +49,16 @@ $currentPath = $_SERVER['REQUEST_URI'] ?? '/';
                             </a>
                             <span class="site-nav__chevron" aria-hidden="true">▾</span>
                         </summary>
-                        <ul class="site-nav__submenu" aria-label="Sous-menu <?= e($item['label']) ?>">
+                        <?php $childIconStyle = $item['child_icon_style'] ?? 'block'; ?>
+                        <ul class="site-nav__submenu<?= $childIconStyle === 'outline' ? ' site-nav__submenu--outline' : '' ?>" aria-label="Sous-menu <?= e($item['label']) ?>">
                             <?php foreach ($item['children'] as $child): ?>
                             <li class="site-nav__submenu-item">
                                 <a href="<?= e($child['url']) ?>" class="site-nav__submenu-link">
                                     <?php if (!empty($child['icon'])): ?>
                                     <?php $tpl->partial('components/icon-menu', [
-                                        'icon' => $child['icon'],
-                                        'size' => 'md',
+                                        'icon'  => $child['icon'],
+                                        'size'  => 'md',
+                                        'style' => $childIconStyle,
                                     ]); ?>
                                     <?php endif; ?>
                                     <span><?= e($child['label']) ?></span>
