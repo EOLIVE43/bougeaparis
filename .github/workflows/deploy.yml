@@ -56,6 +56,74 @@ jobs:
           echo "Verifications :"
           ls -la "$CSS_DIR"/*.min.css
 
+      # Critical CSS above-the-fold : extrait via critical@7 sur 2 URLs pilotes
+      # (template station + template tarifs). Inlines dans <style> par
+      # Template::getCriticalCss() sur la prod. Permet le pattern preload+swap
+      # async pour bundle/station/tarifs (cf. base.php, conditionnel a la
+      # presence d'un fichier critical-X.css).
+      #
+      # Cible : reduire Speed Index mobile (baseline 4.0s sur Concorde).
+      # Threshold : critical-X.css doit rester < 14 KB (taille premier TCP
+      # packet) — au-dela on perd l'avantage du inline.
+      - name: Setup PHP for critical extraction
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: json, mbstring
+
+      - name: Extract critical CSS (template station + tarifs)
+        run: |
+          set -e
+          # Demarre serveur PHP local servant le repo (avec .min.css generes
+          # a l'etape precedente -> helper asset() sert les minifies)
+          php -S 127.0.0.1:8765 -t public_html/ > /tmp/php-srv.log 2>&1 &
+          SRV_PID=$!
+          # Wait pour init du serveur
+          sleep 2
+          # Sanity check : les 2 URLs pilotes repondent 200 ?
+          for path in "/metro/station/concorde/" "/tarifs/"; do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8765$path")
+            if [ "$CODE" != "200" ]; then
+              echo "::error::URL pilote $path repond $CODE (attendu 200)"
+              cat /tmp/php-srv.log
+              kill $SRV_PID 2>/dev/null || true
+              exit 1
+            fi
+          done
+
+          # Viewport mobile (412x915 = Pixel 5 portrait, cohérent Lighthouse mobile)
+          for pair in "concorde:/metro/station/concorde/:critical-station.css" "tarifs:/tarifs/:critical-tarifs.css"; do
+            LABEL="${pair%%:*}"
+            REST="${pair#*:}"
+            URL_PATH="${REST%%:*}"
+            OUT="public_html/assets/css/${REST##*:}"
+            echo ""
+            echo "::group::Extract $LABEL ($URL_PATH)"
+            npx -y critical@7 \
+              "http://127.0.0.1:8765${URL_PATH}" \
+              --base public_html/ \
+              --width 412 --height 915 \
+              > "$OUT" 2> /tmp/critical-$LABEL.log
+            if [ ! -s "$OUT" ]; then
+              echo "::error::Critical CSS vide pour $LABEL"
+              cat /tmp/critical-$LABEL.log
+              kill $SRV_PID 2>/dev/null || true
+              exit 1
+            fi
+            SIZE=$(wc -c < "$OUT")
+            echo "  $OUT : $SIZE octets"
+            # Warning si > 14 KB (au-dela on perd l'avantage critical inline)
+            if [ "$SIZE" -gt 14336 ]; then
+              echo "::warning::$OUT depasse 14 KB ($SIZE octets) — premier TCP packet."
+            fi
+            echo "::endgroup::"
+          done
+
+          kill $SRV_PID 2>/dev/null || true
+          echo ""
+          echo "Verifications finales :"
+          ls -la public_html/assets/css/critical-*.css
+
       # Deploiement 1 : public_html/ vers la racine FTP (inchange)
       - name: Deploy public_html to o2switch
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

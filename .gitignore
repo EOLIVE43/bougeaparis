@@ -71,3 +71,8 @@ public_html/assets/img/lines/*/*.jpg
 # Le helper asset() (core/bootstrap.php) bascule automatiquement .css -> .min.css
 # si le minifie est present. Local Mac = sert .css source, prod = sert .min.css.
 public_html/assets/css/*.min.css
+
+# Critical CSS above-the-fold : artefacts de build (deploy.yml etape "Extract
+# critical CSS"). Inlines dans <style> par Template::getCriticalCss(). Si absent
+# en local, fallback synchrone classique (cf. base.php). Jamais commites.
+public_html/assets/css/critical-*.css

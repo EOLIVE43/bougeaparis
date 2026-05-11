@@ -63,7 +63,27 @@
     <link rel="icon" type="image/svg+xml" href="<?= e($site['favicon']) ?>">
     <link rel="apple-touch-icon" href="<?= e($site['favicon_png']) ?>">
 
-    <!-- Bundle CSS unique (fusion des 8 CSS) -->
+<?php
+    // Critical CSS above-the-fold : si la page a un critical genere (CI),
+    // on l'inline et on charge bundle + additionals en preload async
+    // (non-blocking). Sinon : chargement synchrone classique (legacy).
+    $criticalCss = $tpl->getCriticalCss();
+    $hasCritical = $criticalCss !== '';
+?>
+<?php if ($hasCritical): ?>
+    <style id="critical-css"><?= $criticalCss ?></style>
+
+    <!-- Bundle CSS + additionals : preload non-blocking + swap async, fallback noscript -->
+    <link rel="preload" href="<?= e(asset('/assets/css/bundle.css')) ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="<?= e(asset('/assets/css/bundle.css')) ?>"></noscript>
+<?php if (!empty($extra_stylesheets)): ?>
+<?php foreach ($extra_stylesheets as $href): ?>
+    <link rel="preload" href="<?= e(asset($href)) ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="<?= e(asset($href)) ?>"></noscript>
+<?php endforeach; ?>
+<?php endif; ?>
+<?php else: ?>
+    <!-- Bundle CSS unique (fusion des 8 CSS) — chargement synchrone (legacy) -->
     <link rel="stylesheet" href="<?= e(asset('/assets/css/bundle.css')) ?>">
 
 <?php /* CSS additionnels demandes par la page (ex: line.css sur /metro/ligne-X/) */ ?>
@@ -71,6 +91,7 @@
 <?php foreach ($extra_stylesheets as $href): ?>
     <link rel="stylesheet" href="<?= e(asset($href)) ?>">
 <?php endforeach; ?>
+<?php endif; ?>
 <?php endif; ?>
 
     <!-- RSS (blog) -->

@@ -62,6 +62,36 @@ class Template
     }
 
     /**
+     * Retourne le CSS critical above-the-fold a inliner dans <style>.
+     *
+     * Convention : pour chaque addStylesheet('/assets/css/X.css'), on cherche
+     * public_html/assets/css/critical-X.css (genere en CI par `critical@7`
+     * dans deploy.yml, jamais commite au repo).
+     *
+     * Si AUCUN critical n'est trouve, retourne '' -> base.php tombe en
+     * synchrone classique (comportement legacy preserve pour les pages
+     * non encore optimisees : home, blog, lignes...).
+     *
+     * Si un critical est present, le layout passe en mode preload+swap
+     * async (cf. base.php) : critical inline en <style>, le reste des CSS
+     * (bundle + additionals) en preload non-blocking.
+     */
+    public function getCriticalCss(): string
+    {
+        $css = '';
+        $cssDir = __DIR__ . '/../assets/css';
+        foreach ($this->extraStylesheets as $href) {
+            if (preg_match('|/assets/css/([a-z0-9-]+)\.css$|i', $href, $m)) {
+                $file = $cssDir . '/critical-' . $m[1] . '.css';
+                if (is_file($file)) {
+                    $css .= file_get_contents($file);
+                }
+            }
+        }
+        return $css;
+    }
+
+    /**
      * Retourne les donnees globales injectees dans tous les templates
      */
     private function globalData(): array
