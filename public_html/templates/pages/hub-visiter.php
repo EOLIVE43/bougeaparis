@@ -30,14 +30,15 @@ $groupsMap = [
     'ponts-seine'          => ['pont','île'],
     'vie-parisienne'       => ['mairie','commerce','café','hôpital','centre commercial'],
 ];
+// Mapping picto Lucide par categorie (coherence avec sous-menu nav Visiter)
 $cards = [
-    'monuments'            => ['title' => 'Monuments emblématiques',  'lead' => 'Symboles de Paris : Arc de Triomphe, Grande Arche, obélisque de Louxor, pyramide du Louvre et autres icônes urbaines.', 'pois' => []],
-    'musees'               => ['title' => 'Musées & arts',            'lead' => 'Les grands musées et institutions culturelles : Louvre, Centre Pompidou, Orangerie, Comédie-Française.', 'pois' => []],
-    'places-avenues'       => ['title' => 'Places & avenues iconiques','lead' => 'Concorde, Champs-Élysées, place Vendôme, Étoile : les espaces urbains les plus reconnaissables de Paris.', 'pois' => []],
-    'jardins'              => ['title' => 'Jardins & espaces verts',  'lead' => 'Tuileries, Palais-Royal, Carrousel : poumons verts au cœur de la capitale, héritage des jardins royaux.', 'pois' => []],
-    'patrimoine-religieux' => ['title' => 'Patrimoine religieux',     'lead' => 'Notre-Dame, Sainte-Chapelle, Saint-Eustache : architecture gothique et histoire millénaire.', 'pois' => []],
-    'ponts-seine'          => ['title' => 'Ponts & rives de Seine',   'lead' => 'Pont Neuf, pont des Arts, île de la Cité : la Seine et ses traversées, axe historique de Paris.', 'pois' => []],
-    'vie-parisienne'       => ['title' => 'Vie parisienne',           'lead' => 'Lieux de vie urbaine au-delà des monuments : hôtel de ville, La Samaritaine, café de la Régence, hôtel-Dieu.', 'pois' => []],
+    'monuments'            => ['title' => 'Monuments emblématiques',  'icon' => 'landmark',   'lead' => 'Symboles de Paris : Arc de Triomphe, Grande Arche, obélisque de Louxor, pyramide du Louvre et autres icônes urbaines.', 'pois' => []],
+    'musees'               => ['title' => 'Musées & arts',            'icon' => 'building-2', 'lead' => 'Les grands musées et institutions culturelles : Louvre, Centre Pompidou, Orangerie, Comédie-Française.', 'pois' => []],
+    'places-avenues'       => ['title' => 'Places & avenues iconiques','icon' => 'compass',   'lead' => 'Concorde, Champs-Élysées, place Vendôme, Étoile : les espaces urbains les plus reconnaissables de Paris.', 'pois' => []],
+    'jardins'              => ['title' => 'Jardins & espaces verts',  'icon' => 'leaf',       'lead' => 'Tuileries, Palais-Royal, Carrousel : poumons verts au cœur de la capitale, héritage des jardins royaux.', 'pois' => []],
+    'patrimoine-religieux' => ['title' => 'Patrimoine religieux',     'icon' => 'church',     'lead' => 'Notre-Dame, Sainte-Chapelle, Saint-Eustache : architecture gothique et histoire millénaire.', 'pois' => []],
+    'ponts-seine'          => ['title' => 'Ponts & rives de Seine',   'icon' => 'archway',    'lead' => 'Pont Neuf, pont des Arts, île de la Cité : la Seine et ses traversées, axe historique de Paris.', 'pois' => []],
+    'vie-parisienne'       => ['title' => 'Vie parisienne',           'icon' => 'coffee',     'lead' => 'Lieux de vie urbaine au-delà des monuments : hôtel de ville, La Samaritaine, café de la Régence, hôtel-Dieu.', 'pois' => []],
 ];
 $seen = [];
 foreach ($activeStations as $slug) {
@@ -54,6 +55,7 @@ foreach ($activeStations as $slug) {
                     'name'          => $poi['name'] ?? '?',
                     'description'   => $poi['description'] ?? '',
                     'wikipedia_url' => $poi['wikipedia_url'] ?? '',
+                    'image_url'     => $poi['image_url']    ?? '',  // pattern Special:FilePath, deja en place
                     'station_slug'  => $slug,
                     'station_name'  => $data['name'] ?? '?',
                 ];
@@ -133,6 +135,13 @@ $faqs = [
         <?php foreach ($cards as $key => $card): ?>
             <article class="tarif-card" id="<?= e($key) ?>">
                 <div class="tarif-card__header">
+                    <span class="tarif-card__icon" aria-hidden="true">
+                        <?php $tpl->partial('components/icon-menu', [
+                            'icon'  => $card['icon'],
+                            'size'  => 'md',
+                            'style' => 'outline',
+                        ]); ?>
+                    </span>
                     <h3 class="tarif-card__title"><?= e($card['title']) ?></h3>
                 </div>
                 <div class="tarif-card__body">
@@ -163,14 +172,36 @@ $faqs = [
 
         <h2>Top lieux à visiter par métro</h2>
         <p>Sélection des sites les plus emblématiques accessibles depuis les stations actuellement détaillées sur BougeaParis :</p>
-        <ul class="conseil-list">
-            <?php foreach ($topPois as $poi): ?>
-            <li class="conseil-list__item">
-                <h3 class="conseil-list__title"><?= e($poi['name']) ?></h3>
-                <p class="conseil-list__desc">
-                    Station <?= stationLink($poi['station_name']) ?>.
-                    <?= e(mb_substr($poi['description'], 0, 140) . '…') ?>
-                </p>
+        <ul class="visiter-poi-grid" role="list">
+            <?php foreach ($topPois as $poi):
+                $nameDisplay = $poi['name'] !== ''
+                    ? mb_strtoupper(mb_substr($poi['name'], 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($poi['name'], 1, null, 'UTF-8')
+                    : '';
+                $hasImage = !empty($poi['image_url']);
+            ?>
+            <li class="visiter-poi-card">
+                <?php if ($hasImage): ?>
+                <div class="visiter-poi-card__image">
+                    <img src="<?= e($poi['image_url']) ?>"
+                         alt="<?= e($nameDisplay) ?>"
+                         loading="lazy" decoding="async"
+                         referrerpolicy="no-referrer"
+                         width="400" height="225">
+                </div>
+                <?php else: ?>
+                <div class="visiter-poi-card__image visiter-poi-card__image--placeholder" aria-hidden="true">
+                    <span>📍</span>
+                </div>
+                <?php endif; ?>
+                <div class="visiter-poi-card__content">
+                    <h3 class="visiter-poi-card__name"><?= e($nameDisplay) ?></h3>
+                    <div class="visiter-poi-card__station">
+                        Station <?= stationLink($poi['station_name']) ?>
+                    </div>
+                    <?php if (!empty($poi['description'])): ?>
+                    <p class="visiter-poi-card__desc"><?= e(mb_substr($poi['description'], 0, 140) . '…') ?></p>
+                    <?php endif; ?>
+                </div>
             </li>
             <?php endforeach; ?>
         </ul>

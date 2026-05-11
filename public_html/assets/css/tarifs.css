@@ -403,6 +403,91 @@
     box-shadow: 0 6px 18px rgba(17, 112, 73, 0.10);
 }
 
+/* ---------- Visiter : Top lieux en cards format POI ---------- */
+/* Reprend visuellement le look .poi-card des pages stations (station.css)
+   sans dependance cross-template (station.css n'est pas charge sur /visiter/).
+   Le composant station.php fait foi : ce visuel s'en inspire mais reste autonome. */
+.visiter-poi-grid {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+@media (min-width: 640px) {
+    .visiter-poi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+    .visiter-poi-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.visiter-poi-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.visiter-poi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(17, 112, 73, 0.10);
+}
+.visiter-poi-card__image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--color-bg-alt, #F7F9F8);
+}
+.visiter-poi-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.visiter-poi-card__image--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.visiter-poi-card__content {
+    padding: 1rem 1.1rem 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+.visiter-poi-card__name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text, #1A2B26);
+}
+.visiter-poi-card__station {
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #5A6B66);
+}
+.visiter-poi-card__station a { color: var(--color-primary, #0F6E56); text-decoration: none; }
+.visiter-poi-card__station a:hover { text-decoration: underline; }
+.visiter-poi-card__desc {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--color-text, #1A2B26);
+}
+
+/* ---------- Polish .tarif-card__icon pour pictos Lucide outline ---------- */
+/* Sur les cards categorie de /visiter/, le picto Lucide outline (trait vert
+   primary, 18x18) s'aligne en flex avec le h3. Voir hub-visiter.php. */
+.tarif-card__header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.tarif-card__icon { flex-shrink: 0; line-height: 0; }
+
 /* ---------- Liste conseils stylisée (.conseil-list) ---------- */
 /* Utilisé sur /se-deplacer/ pour la section "Quel mode choisir selon votre trajet". */
 .conseil-list {
