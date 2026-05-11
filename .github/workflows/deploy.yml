@@ -30,6 +30,32 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # Minification CSS — generee a la volee, jamais commitee au repo.
+      # Node deja present sur le runner (cache npx). Le helper asset() PHP
+      # bascule .css -> .min.css cote serveur si le fichier existe (voir
+      # core/bootstrap.php). Source unique de verite = .css source lisible.
+      #
+      # CSS minifies : bundle (global) + station + tarifs + line.
+      # Gain attendu : ~25-30% sur le payload CSS au-dessus de la fold.
+      - name: Minify CSS
+        run: |
+          set -e
+          CSS_DIR="public_html/assets/css"
+          for f in bundle station tarifs line; do
+            SRC="$CSS_DIR/$f.css"
+            OUT="$CSS_DIR/$f.min.css"
+            if [ -f "$SRC" ]; then
+              npx -y clean-css-cli@5 --compatibility "ie9" -o "$OUT" "$SRC"
+              SRC_SIZE=$(wc -c < "$SRC")
+              OUT_SIZE=$(wc -c < "$OUT")
+              echo "  $f.css : $SRC_SIZE -> $OUT_SIZE octets ($((100 - OUT_SIZE*100/SRC_SIZE))% de gain)"
+            else
+              echo "  $f.css : absent, skip"
+            fi
+          done
+          echo "Verifications :"
+          ls -la "$CSS_DIR"/*.min.css
+
       # Deploiement 1 : public_html/ vers la racine FTP (inchange)
       - name: Deploy public_html to o2switch
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5

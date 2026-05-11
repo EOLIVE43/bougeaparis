@@ -53,20 +53,37 @@ if (!function_exists('asset')) {
      * Permet un cache HTTP « immutable » long (1 an) sans risquer
      * que les visiteurs voient une version obsolète après un déploiement :
      * la query string change automatiquement quand le fichier change.
+     *
+     * Fallback CSS minifié : si /assets/css/X.css est demandé ET qu'un
+     * /assets/css/X.min.css existe à côté (généré en CI au déploiement,
+     * jamais commité au repo), on sert le .min.css. Le mtime du fichier
+     * réellement servi est utilisé pour le cache-bust, donc les caches
+     * navigateur restent cohérents entre dev (source) et prod (minifié).
      */
     function asset(string $path): string {
         if ($path === '' || $path[0] !== '/') {
             return $path;
         }
-        $absolute = __DIR__ . '/..' . $path;
+        $base = __DIR__ . '/..';
+
+        // Bascule .css → .min.css si l'artefact minifié est présent
+        $serve = $path;
+        if (substr($path, -4) === '.css' && substr($path, -8) !== '.min.css') {
+            $minPath = substr($path, 0, -4) . '.min.css';
+            if (is_file($base . $minPath)) {
+                $serve = $minPath;
+            }
+        }
+
+        $absolute = $base . $serve;
         if (is_file($absolute)) {
             $mtime = @filemtime($absolute);
             if ($mtime) {
-                $sep = (strpos($path, '?') === false) ? '?' : '&';
-                return $path . $sep . 'v=' . $mtime;
+                $sep = (strpos($serve, '?') === false) ? '?' : '&';
+                return $serve . $sep . 'v=' . $mtime;
             }
         }
-        return $path;
+        return $serve;
     }
 }
 

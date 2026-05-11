@@ -65,3 +65,9 @@ public_html/assets/img/stations/*/*.jpg
 public_html/assets/img/lines/*/*.avif
 public_html/assets/img/lines/*/*.webp
 public_html/assets/img/lines/*/*.jpg
+
+# CSS minifies : artefacts de build generes en CI (deploy.yml etape "Minify CSS")
+# avant l'upload FTP. Source unique de verite au repo = .css source lisible (RGPD).
+# Le helper asset() (core/bootstrap.php) bascule automatiquement .css -> .min.css
+# si le minifie est present. Local Mac = sert .css source, prod = sert .min.css.
+public_html/assets/css/*.min.css
