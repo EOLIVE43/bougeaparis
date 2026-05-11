@@ -1,31 +1,32 @@
 {
   "_meta": {
-    "last_updated": "2025-01-01",
+    "last_updated": "2026-01-01",
     "source": "Île-de-France Mobilités",
-    "source_url": "https://www.iledefrance-mobilites.fr/titres-et-tarifs",
-    "note": "Tarifs en vigueur au 1er janvier 2025. À mettre à jour annuellement."
+    "source_url": "https://www.iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+    "maintenance": "Source unique de vérité pour tous les tarifs affichés sur le site. Mettre à jour CHAQUE JANVIER depuis la page IDFM officielle (source_url ci-dessus). Quand ce fichier est à jour, l'ensemble des pages (home, FAQ, pages stations, hubs) se met à jour automatiquement via getTarif() dans core/helpers.php.",
+    "note": "Tarifs en vigueur au 1er janvier 2026. Refonte tarifaire majeure depuis 2025 : suppression du ticket t+ et du carnet de 10 tickets, remplacés par deux tickets distincts (Métro-Train-RER et Bus-Tram). Tarif unique aéroport 14 € unifié pour CDG et Orly. Hausse +2,3% sur les Navigo au 1er janvier 2026. Roissybus supprimé le 1er mars 2026."
   },
 
-  "ticket_unique": {
-    "name": "Ticket t+",
+  "ticket_metro_train_rer": {
+    "name": "Ticket Métro-Train-RER",
     "icon": "🎫",
-    "price": "2,15 €",
+    "price": "2,50 €",
     "duration": "Aller simple",
-    "validity": "Métro, RER intra-Paris, bus, tramway",
-    "description": "Le ticket à l'unité, valable pour un trajet en métro avec correspondances illimitées dans le réseau métro/RER pendant 2 heures.",
-    "best_for": "Voyage occasionnel, touristes en visite courte",
+    "validity": "Métro, RER, Transilien — toutes zones",
+    "description": "Ticket unitaire pour le réseau ferré urbain (métro, RER, Transilien). Tarif unique toutes zones depuis 2025. Correspondances métro/RER illimitées en 2 heures.",
+    "best_for": "Voyage occasionnel sur le réseau ferré",
     "transfers": "Correspondances métro/RER illimitées en 2h"
   },
 
-  "carnet": {
-    "name": "Carnet de 10 tickets t+",
-    "icon": "📦",
-    "price": "17,35 €",
-    "price_per_ticket": "1,73 €",
-    "savings": "Économie de 19% par rapport au ticket à l'unité",
-    "validity": "Métro, RER intra-Paris, bus, tramway",
-    "description": "10 tickets t+ vendus en carnet, chargés sur Navigo Easy ou ticket papier. Tarif réduit -19% par rapport à l'achat à l'unité.",
-    "best_for": "Voyageurs réguliers occasionnels, séjour de quelques jours"
+  "ticket_bus_tram": {
+    "name": "Ticket Bus-Tram",
+    "icon": "🚌",
+    "price": "2,00 €",
+    "duration": "Aller simple",
+    "validity": "Bus, tramway en Île-de-France",
+    "description": "Ticket dédié pour les trajets en bus et tramway uniquement. Tarif inférieur au ticket Métro-Train-RER. Correspondances bus/tram illimitées en 1h30.",
+    "best_for": "Trajets en surface sans métro ni RER",
+    "transfers": "Correspondances bus/tram illimitées en 1h30"
   },
 
   "navigo_easy": {
@@ -34,7 +35,7 @@
     "price": "2 €",
     "price_label": "Carte rechargeable",
     "validity": "Anonyme, rechargeable",
-    "description": "Carte sans contact rechargeable avec des tickets t+, carnets, ou forfait journée. Anonyme, parfait pour les visiteurs occasionnels.",
+    "description": "Carte sans contact rechargeable avec des tickets Métro-Train-RER, Bus-Tram, ou forfait Navigo Jour. Anonyme, parfait pour les visiteurs occasionnels.",
     "best_for": "Touristes, voyageurs occasionnels qui veulent éviter les tickets papier"
   },
 
@@ -44,11 +45,21 @@
     "price": "5 €",
     "price_label": "Carte personnalisée",
     "validity": "Personnelle (photo obligatoire)",
-    "weekly_price": "30,75 €",
-    "weekly_label": "Forfait hebdomadaire",
-    "monthly_price": "88,80 €",
-    "monthly_label": "Forfait mensuel",
-    "description": "Carte personnelle avec photo, permettant de charger des forfaits Navigo (semaine, mois). Tarif unique pour toutes les zones (1-5).",
+    "daily_price": "12,50 €",
+    "daily_label": "Forfait Navigo Jour (toutes zones)",
+    "weekly_price": "32,40 €",
+    "weekly_label": "Forfait hebdomadaire (toutes zones)",
+    "weekly_price_reduced": "16,20 €",
+    "monthly_price": "90,80 €",
+    "monthly_label": "Forfait mensuel (toutes zones)",
+    "monthly_price_reduced": "45,40 €",
+    "annual_price": "998,80 €",
+    "annual_label": "Forfait annuel (toutes zones)",
+    "senior_price": "544,80 €",
+    "senior_label": "Forfait Navigo Senior",
+    "imagine_r_price": "393,30 €",
+    "imagine_r_label": "Forfait Imagine R (hors frais de dossier)",
+    "description": "Carte personnelle avec photo, permettant de charger des forfaits Navigo (jour, semaine, mois, an). Tarif unique unifié toutes zones (1-5) depuis 2026.",
     "best_for": "Visiteurs séjournant 4 jours ou plus, ou utilisant le métro intensivement"
   },
 
@@ -57,9 +68,33 @@
     "icon": "♾️",
     "price": "Gratuit",
     "price_label": "Carte personnalisée",
+    "price_metro_train_rer": "2,04 €",
+    "price_metro_train_rer_reduced": "1,02 €",
+    "price_bus_tram": "1,64 €",
+    "price_bus_tram_reduced": "0,82 €",
     "validity": "Paiement à l'usage, prélèvement mensuel",
-    "description": "Carte personnelle gratuite, vous payez vos trajets à la fin du mois (1,73 € par voyage métro/RER). Plafond mensuel garanti.",
+    "description": "Carte personnelle gratuite, paiement à l'usage prélevé en fin de mois. Tarif réduit par trajet par rapport au ticket unitaire (2,04 € métro/RER, 1,64 € bus/tram).",
     "best_for": "Résidents franciliens occasionnels, salariés qui voyagent peu"
+  },
+
+  "aeroports": {
+    "name": "Ticket Paris Région ↔ Aéroports",
+    "icon": "✈️",
+    "price": "14 €",
+    "price_label": "Tarif unique unifié toutes liaisons aéroports",
+    "description": "Tarif unique unifié depuis 2025 pour tous les trajets entre Paris et les aéroports de Roissy-CDG et Orly. Applicable au RER B, métro 14, OrlyVal et navette OrlyBus.",
+    "covered_services": [
+      { "name": "RER B → Roissy-Charles-de-Gaulle", "duration_min": 35 },
+      { "name": "Métro 14 → Orly", "duration_min": 25 },
+      { "name": "OrlyVal + RER B → Orly", "duration_min": 30 },
+      { "name": "OrlyBus → Orly", "duration_min": 35 }
+    ],
+    "discontinued": {
+      "name": "Roissybus (Opéra ↔ CDG)",
+      "discontinued_date": "2026-03-01",
+      "note": "Service supprimé. Alternative : RER B au départ de Châtelet–Les Halles ou Gare du Nord, ou taxi."
+    },
+    "best_for": "Liaisons aéroports Paris–CDG et Paris–Orly en transport en commun"
   },
 
   "free_categories": [
@@ -71,17 +106,17 @@
     {
       "category": "Enfants 4-10 ans",
       "icon": "🧒",
-      "description": "Tarif réduit (-50%) sur tickets t+ et forfaits Navigo"
+      "description": "Tarif réduit (-50%) sur tickets et forfaits Navigo"
     },
     {
       "category": "Imagine'R (-26 ans)",
       "icon": "🎓",
-      "description": "Forfait étudiant à tarif préférentiel pour scolaires et étudiants"
+      "description": "Forfait étudiant à 393,30 € l'année (hors frais de dossier)"
     },
     {
       "category": "Forfait Navigo Solidarité",
       "icon": "💚",
-      "description": "Tarif réduit -75% pour bénéficiaires CSS, RSA, ASS, AAH"
+      "description": "Tarif réduit -50% à -75% pour bénéficiaires CSS, RSA, ASS, AAH"
     }
   ],
 
@@ -89,26 +124,26 @@
     {
       "profile": "Touriste 1 journée",
       "icon": "🗺️",
-      "recommendation": "Carnet de 10 tickets t+",
-      "reasoning": "Pour 5-8 voyages dans la journée, le carnet est plus économique que les tickets à l'unité (économie de 19%). Surplus utilisable un autre jour."
+      "recommendation": "Forfait Navigo Jour (12,50 €)",
+      "reasoning": "Pour 5 trajets ou plus dans la journée, le Navigo Jour devient plus économique que les tickets à l'unité (break-even à 5 × 2,50 €). Trajets illimités métro, RER, bus, tram, toutes zones."
     },
     {
       "profile": "Touriste 4-7 jours",
       "icon": "✈️",
-      "recommendation": "Forfait Navigo Hebdomadaire (du lundi au dimanche)",
-      "reasoning": "À partir de 14 trajets dans la semaine (~2 par jour), le forfait Navigo hebdomadaire devient rentable. Trajets illimités sur tout le réseau Île-de-France."
+      "recommendation": "Forfait Navigo Hebdomadaire (32,40 €)",
+      "reasoning": "À partir d'environ 13 trajets dans la semaine (~2 par jour), le forfait hebdomadaire devient rentable. Trajets illimités tout le réseau, du lundi au dimanche."
     },
     {
       "profile": "Résident Paris",
       "icon": "🏠",
-      "recommendation": "Forfait Navigo Mensuel",
-      "reasoning": "Pour usage quotidien, le forfait mensuel est imbattable. Trajets illimités tout le réseau, y compris vers les aéroports CDG et Orly."
+      "recommendation": "Forfait Navigo Mensuel (90,80 €)",
+      "reasoning": "Pour usage quotidien, le forfait mensuel est imbattable. Trajets illimités tout le réseau, y compris vers les aéroports CDG et Orly sans supplément."
     },
     {
       "profile": "Voyageur occasionnel",
       "icon": "🚇",
       "recommendation": "Navigo Liberté+ ou tickets à l'unité",
-      "reasoning": "Si vous prenez le métro 1 à 2 fois par semaine, le Liberté+ vous permet de payer uniquement vos trajets effectifs sans forfait mensuel."
+      "reasoning": "Si vous prenez le métro 1 à 2 fois par semaine, le Liberté+ vous permet de payer uniquement vos trajets effectifs (2,04 € métro/RER, 1,64 € bus/tram) sans engagement mensuel."
     }
   ]
 }

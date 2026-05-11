@@ -182,6 +182,57 @@ if (!function_exists('getLineSchedule')) {
 }
 
 // =============================================================================
+// TARIFS IDFM (source unique : data/tarifs.json)
+// =============================================================================
+
+if (!function_exists('getTarif')) {
+    /**
+     * Lit une valeur de data/tarifs.json. Source unique pour TOUS les tarifs
+     * affichés sur le site (home, FAQ, pages stations, hubs).
+     *
+     * Mise à jour annuelle (chaque janvier) depuis la page IDFM officielle
+     * (cf. _meta.source_url dans le JSON). Quand le JSON est à jour, l'ensemble
+     * des pages se met à jour automatiquement (~300 pages cibles).
+     *
+     * Cache mémoire intra-requête : 1 seul read disque même si appelé 50 fois.
+     *
+     * Usage :
+     *   echo getTarif('ticket_metro_train_rer', 'price');     // "2,50 €"
+     *   echo getTarif('navigo_decouverte', 'weekly_price');   // "32,40 €"
+     *   echo getTarif('aeroports', 'price');                  // "14 €"
+     *   $bloc = getTarif('navigo_decouverte');                // tableau complet
+     *   $meta = getTarif('_meta', 'last_updated');            // "2026-01-01"
+     *
+     * @param string      $key    Clé top-level (ex: 'ticket_metro_train_rer', 'navigo_decouverte', 'aeroports', '_meta')
+     * @param string|null $subkey Sous-clé optionnelle (ex: 'price', 'weekly_price', 'description')
+     * @return mixed|null         Valeur (string ou array), ou null si absente.
+     */
+    function getTarif(string $key, ?string $subkey = null)
+    {
+        static $cache = null;
+
+        if ($cache === null) {
+            $path = __DIR__ . '/../data/tarifs.json';
+            if (!is_file($path)) {
+                $cache = [];
+                return null;
+            }
+            $raw = @file_get_contents($path);
+            $data = $raw ? json_decode($raw, true) : null;
+            $cache = is_array($data) ? $data : [];
+        }
+
+        if (!array_key_exists($key, $cache)) {
+            return null;
+        }
+        if ($subkey === null) {
+            return $cache[$key];
+        }
+        return is_array($cache[$key]) ? ($cache[$key][$subkey] ?? null) : null;
+    }
+}
+
+// =============================================================================
 // TRAFIC TEMPS REEL (PRIM IDFM)
 // =============================================================================
 
