@@ -104,28 +104,27 @@
     border-radius: var(--station-radius);
 }
 
+/* .station-hero__badges : conteneur flex pour les pastilles .line-pill, placé
+   APRES le H1 dans le DOM (correction 2026-05-12 #15 — pastilles EN DESSOUS
+   du nom de station, cohérence avec home Section 4). */
 .station-hero__badges {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
-
-.station-line-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
+/* Hover sur les .line-pill DANS la section hero station uniquement (subtil) */
+.station-hero__badges .line-pill {
     transition: transform 0.15s ease;
 }
-.station-line-badge:hover {
+.station-hero__badges a.line-pill:hover {
     transform: scale(1.1);
 }
+
+/* NOTE : ancien bloc .station-line-badge supprimé (correction #15 2026-05-12).
+   Le markup utilise désormais .line-pill + modificateurs de forme/couleur
+   définis dans bundle.css (composant unifié homepage + stations). */
 
 .station-hero h1 {
     font-size: clamp(1.75rem, 4vw, 2.5rem);

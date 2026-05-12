@@ -337,31 +337,33 @@ $tpl->partial('components/breadcrumb', [
     <?php endif; ?>
 
     <div class="station-hero__content">
+      <h1 id="station-hero-title">
+        Station <?= Template::e($nameFull) ?>
+      </h1>
+
       <div class="station-hero__badges" aria-label="Lignes desservant la station">
         <?php foreach ($lines as $line):
-          $lineUrl = '/metro/' . $line['slug'] . '/';
+          $lineUrl    = '/metro/' . $line['slug'] . '/';
           $lineExists = Routes::exists(rtrim($lineUrl, '/'));
+          // Label affiché : "M1", "M4", "M14"… (prepend "M" sur le code numérique)
+          $pillLabel  = 'M' . $line['code'];
+          $pillShape  = linePillShape($pillLabel);
+          $pillSlug   = strtolower($pillLabel);
         ?>
           <?php if ($lineExists): ?>
             <a href="<?= Template::e($lineUrl) ?>"
-               class="station-line-badge"
-               style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+               class="line-pill line-pill--<?= Template::e($pillShape) ?> line-pill--<?= Template::e($pillSlug) ?>"
                aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
-              <?= Template::e($line['code']) ?>
+              <?= Template::e($pillLabel) ?>
             </a>
           <?php else: ?>
-            <span class="station-line-badge station-line-badge--inactive"
-                  style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;"
+            <span class="line-pill line-pill--<?= Template::e($pillShape) ?> line-pill--<?= Template::e($pillSlug) ?>"
                   aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
-              <?= Template::e($line['code']) ?>
+              <?= Template::e($pillLabel) ?>
             </span>
           <?php endif; ?>
         <?php endforeach; ?>
       </div>
-
-      <h1 id="station-hero-title">
-        Station <?= Template::e($nameFull) ?>
-      </h1>
 
       <?php if (!empty($hero['tagline'])): ?>
         <p class="station-hero__tagline"><?= Template::e($hero['tagline']) ?></p>

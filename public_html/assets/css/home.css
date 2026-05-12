@@ -207,84 +207,12 @@
 }
 
 /* =============================================================================
- * LINE-PILL — Pastilles de ligne génériques aux couleurs officielles RATP/IDFM
+ * .line-pill — DÉPLACÉ vers bundle.css (correction 2026-05-12 #15).
  *
- * Usage : <span class="line-pill line-pill--m1">M1</span>
- *         <span class="line-pill line-pill--rer-a">RER A</span>
- *
- * Couleurs officielles (standards de fait). NE PAS utiliser de logos officiels
- * ni la police Parisine — texte simple en system-ui/Inter pour rester licite.
- *
- * TODO design system : migrer les pages stations LOT 1 (qui utilisent
- * actuellement .home-station-card__line ou autres patterns) vers cette
- * classe .line-pill générique.
+ * Le composant est désormais chargé globalement via bundle.css avec 3 modificateurs
+ * de forme (.line-pill--metro / --metro-bis / --square) + 35 couleurs RATP/IDFM/SNCF.
+ * Helper PHP linePillShape() dans core/helpers.php pour le choix automatique.
  * ========================================================================== */
-
-.line-pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 30px;
-    padding: 0.18rem 0.55rem;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    border-radius: 999px;
-    background: #5d6970;
-    color: #fff;
-    line-height: 1.2;
-    font-family: system-ui, -apple-system, "Segoe UI", Inter, sans-serif;
-}
-
-/* --- Métro Paris --- */
-.line-pill--m1   { background: #FFCD00; color: #000; }
-.line-pill--m2   { background: #003CA6; color: #fff; }
-.line-pill--m3   { background: #837902; color: #fff; }
-.line-pill--m3bis { background: #6EC4E8; color: #000; }
-.line-pill--m4   { background: #CF009E; color: #fff; }
-.line-pill--m5   { background: #FF7E2E; color: #fff; }
-.line-pill--m6   { background: #79BB92; color: #fff; }
-.line-pill--m7   { background: #FA9ABA; color: #000; }
-.line-pill--m7bis { background: #79BB92; color: #fff; }
-.line-pill--m8   { background: #CDAEC7; color: #000; }
-.line-pill--m9   { background: #D5C900; color: #000; }
-.line-pill--m10  { background: #E3B32A; color: #000; }
-.line-pill--m11  { background: #7F491C; color: #fff; }
-.line-pill--m12  { background: #007852; color: #fff; }
-.line-pill--m13  { background: #6EC4E8; color: #000; }
-.line-pill--m14  { background: #662483; color: #fff; }
-
-/* --- RER --- */
-.line-pill--rer-a { background: #E2231A; color: #fff; }
-.line-pill--rer-b { background: #4F8FCC; color: #fff; }
-.line-pill--rer-c { background: #FFCD00; color: #000; }
-.line-pill--rer-d { background: #008169; color: #fff; }
-.line-pill--rer-e { background: #C04191; color: #fff; }
-
-/* --- Tramway --- */
-.line-pill--t1   { background: #002E66; color: #fff; }
-.line-pill--t2   { background: #CF009E; color: #fff; }
-.line-pill--t3a  { background: #B4A93A; color: #000; }
-.line-pill--t3b  { background: #FF7E2E; color: #fff; }
-.line-pill--t4   { background: #BF8F30; color: #fff; }
-.line-pill--t5   { background: #8C277A; color: #fff; }
-.line-pill--t6   { background: #C12035; color: #fff; }
-.line-pill--t7   { background: #B11D24; color: #fff; }
-.line-pill--t8   { background: #7E2E89; color: #fff; }
-.line-pill--t9   { background: #BC9D6A; color: #fff; }
-.line-pill--t10  { background: #00643C; color: #fff; }
-.line-pill--t11  { background: #B5B7B5; color: #000; }
-.line-pill--t13  { background: #739F00; color: #fff; }
-
-/* --- Transilien (SNCF) --- */
-.line-pill--h { background: #6A2566; color: #fff; }
-.line-pill--j { background: #C7C700; color: #000; }
-.line-pill--k { background: #B47A00; color: #fff; }
-.line-pill--l { background: #6E8C8C; color: #fff; }
-.line-pill--n { background: #008B85; color: #fff; }
-.line-pill--p { background: #E66B7B; color: #fff; }
-.line-pill--r { background: #F09EBA; color: #000; }
-.line-pill--u { background: #BE383D; color: #fff; }
 
 /* -- SECTION 5 — Top POIs (réutilise styles dupliqués de tarifs.css) ------ */
 
@@ -293,15 +221,14 @@
     margin: 1.75rem 0 0;
     text-align: center;
 }
-/* Wrapper inline-flex pour aligner les .line-pill à droite du nom de station.
-   Correction 2026-05-12 #10 : passage du texte vert simple à des pastilles
-   colorées RATP via .line-pill (cohérence visuelle avec Section 4). */
+/* Wrapper flex pour grouper les .line-pill EN DESSOUS du nom POI.
+   Correction 2026-05-12 #15 : passage du format inline (à côté de "Station {nom}")
+   au format groupé sur ligne dédiée — cohérence visuelle avec Section 4. */
 .visiter-poi-card__lines {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
-    margin-left: 0.5rem;
-    vertical-align: middle;
+    margin-top: 0.4rem;
 }
 
 /* -- SECTION 6 — Réseau en chiffres (réutilise .key-stats-grid) ----------- */

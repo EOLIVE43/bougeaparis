@@ -386,7 +386,7 @@ $linePillSlug = function (string $line): string {
                     <h3 class="home-station-card__name"><?= e($s['name']) ?></h3>
                     <div class="home-station-card__lines">
                         <?php foreach ($s['lines'] as $line): ?>
-                        <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
+                        <span class="line-pill line-pill--<?= e(linePillShape($line)) ?> line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
                         <?php endforeach; ?>
                     </div>
                     <p class="home-station-card__tagline"><?= e($s['tagline']) ?></p>
@@ -429,11 +429,11 @@ $linePillSlug = function (string $line): string {
                     <h3 class="visiter-poi-card__name"><?= e($poi['name']) ?></h3>
                     <div class="visiter-poi-card__station">
                         Station <?= stationLink($poi['station_name']) ?>
-                        <span class="visiter-poi-card__lines">
-                            <?php foreach ($poi['station_lines'] as $line): ?>
-                            <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
-                            <?php endforeach; ?>
-                        </span>
+                    </div>
+                    <div class="visiter-poi-card__lines">
+                        <?php foreach ($poi['station_lines'] as $line): ?>
+                        <span class="line-pill line-pill--<?= e(linePillShape($line)) ?> line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
+                        <?php endforeach; ?>
                     </div>
                     <p class="visiter-poi-card__desc"><?= e($poi['description']) ?></p>
                 </div>

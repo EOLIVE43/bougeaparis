@@ -182,6 +182,46 @@ if (!function_exists('getLineSchedule')) {
 }
 
 // =============================================================================
+// LINE-PILL — Helper de forme de pastille selon le mode de transport
+// =============================================================================
+
+if (!function_exists('linePillShape')) {
+    /**
+     * Retourne le modificateur de forme CSS pour une pastille de ligne, selon
+     * le label fourni. Utilisé conjointement avec .line-pill et .line-pill--{slug}
+     * (cf. bundle.css section LINE-PILL).
+     *
+     *   M1, M2, ..., M14         → 'metro'      (rond parfait 32×32 px)
+     *   M3bis, M7bis             → 'metro-bis'  (pill allongé pour label long)
+     *   RER A-E, T1-T13, H/J/.../U → 'square'   (carré arrondi border-radius 6px)
+     *   défaut (inconnu)         → 'square'    (fallback safe)
+     *
+     * Usage :
+     *   $shape = linePillShape('M1');     // "metro"
+     *   $shape = linePillShape('M3bis');  // "metro-bis"
+     *   $shape = linePillShape('RER A');  // "square"
+     *   echo "<span class='line-pill line-pill--{$shape} line-pill--m1'>M1</span>";
+     *
+     * @param string $line Label de la ligne (ex: "M1", "M14", "RER A", "T3a", "H")
+     * @return string      'metro' | 'metro-bis' | 'square'
+     */
+    function linePillShape(string $line): string
+    {
+        $line = trim($line);
+        // M{n}bis (rare : M3bis, M7bis) → forme allongée
+        if (preg_match('/^M\d+bis$/i', $line)) {
+            return 'metro-bis';
+        }
+        // M{n} (M1, M2, ..., M14) → rond parfait
+        if (preg_match('/^M\d+$/i', $line)) {
+            return 'metro';
+        }
+        // RER, T, Transilien (H/J/K/L/N/P/R/U) → carré arrondi
+        return 'square';
+    }
+}
+
+// =============================================================================
 // TARIFS IDFM (source unique : data/tarifs.json)
 // =============================================================================
 
