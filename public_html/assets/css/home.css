@@ -111,9 +111,12 @@
 
 /* -- SECTION 4 — Vitrine stations ------------------------------------------ */
 
-/* Intro full-width — override du bundle.css .section__intro { max-width: 65ch }
-   pour aligner sur la largeur de la grille des cards en dessous (full container) */
-.home-stations .section__intro { max-width: none; }
+/* Correction 2026-05-12 #9 : TOUS les intros de section full-width sur la home
+   (override du bundle.css .section__intro { max-width: 65ch } qui contraint
+   typographiquement). Sur la home, les intros doivent prendre la largeur du
+   container pour aligner visuellement avec les grilles de cards en dessous.
+   Scope = home uniquement (home.css n'est chargé que sur /). */
+.section__intro { max-width: none; }
 
 .home-stations-grid {
     display: grid;
@@ -121,26 +124,27 @@
     gap: 1.5rem;
     margin: 2rem 0 0;
 }
+/* Card stations : structure passive (carte non-cliquable globalement)
+   + CTA <a> dédié en bas (correction 2026-05-12 #13). Hover preservé sur
+   la card entière pour feedback visuel cohérent. */
 .home-station-card {
     background: #fff;
     border: 1px solid var(--color-border, #e3e8e5);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
 }
 .home-station-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 24px rgba(6, 102, 68, 0.1);
 }
-.home-station-card__link {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-}
 .home-station-card__image {
     aspect-ratio: 16 / 9;
     background: var(--color-bg-alt, #f6f9f7);
     overflow: hidden;
+    flex-shrink: 0;
 }
 .home-station-card__image img {
     width: 100%;
@@ -148,7 +152,14 @@
     object-fit: cover;
     display: block;
 }
-.home-station-card__content { padding: 1.1rem 1.25rem 1.35rem; }
+/* Layout flexbox vertical pour aligner les CTAs en bas même quand les
+   taglines ont des longueurs légèrement différentes (correction #14). */
+.home-station-card__content {
+    padding: 1.1rem 1.25rem 1.35rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 .home-station-card__name {
     font-size: 1.15rem;
     font-weight: 700;
@@ -161,16 +172,28 @@
     gap: 0.4rem;
     margin-bottom: 0.6rem;
 }
+/* La tagline pousse le CTA vers le bas via flex:1, donc tous les CTAs des
+   cards d'une même rangée s'alignent verticalement (uniformité visuelle). */
 .home-station-card__tagline {
     font-size: 0.92rem;
     line-height: 1.45;
     color: var(--color-text-muted, #4a5258);
     margin: 0 0 0.85rem;
+    flex: 1;
 }
+/* CTA = <a> dédié (zone cliquable réduite). Hover : soulignement. */
 .home-station-card__cta {
     color: var(--color-primary, #066644);
     font-weight: 600;
     font-size: 0.92rem;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: text-decoration 0.15s ease;
+}
+.home-station-card__cta:hover,
+.home-station-card__cta:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .home-stations__cta-mobile {
@@ -270,11 +293,15 @@
     margin: 1.75rem 0 0;
     text-align: center;
 }
+/* Wrapper inline-flex pour aligner les .line-pill à droite du nom de station.
+   Correction 2026-05-12 #10 : passage du texte vert simple à des pastilles
+   colorées RATP via .line-pill (cohérence visuelle avec Section 4). */
 .visiter-poi-card__lines {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
     margin-left: 0.5rem;
-    color: var(--color-primary, #066644);
-    font-weight: 600;
-    font-size: 0.85em;
+    vertical-align: middle;
 }
 
 /* -- SECTION 6 — Réseau en chiffres (réutilise .key-stats-grid) ----------- */

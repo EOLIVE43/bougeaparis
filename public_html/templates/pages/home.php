@@ -32,26 +32,28 @@ $tpl->seo
     ->setOgImage('/assets/img/logo/og-image.png');
 
 // -------------------- Données : 6 stations vitrine LOT 1 --------------------
+// Taglines harmonisées à ~14-16 mots chacune (2 lignes max desktop) pour
+// homogénéiser la hauteur des cards. Correction 2026-05-12 #14.
 $vitrineStations = [
     [
         'name'    => 'Châtelet',
         'slug'    => 'chatelet',
         'lines'   => ['M1', 'M4', 'M7', 'M11', 'M14'],
-        'tagline' => 'La station la plus fréquentée du métro parisien, carrefour majeur de cinq lignes (M1, M4, M7, M11, M14).',
+        'tagline' => 'La station la plus fréquentée du métro parisien, carrefour de cinq lignes au cœur de Paris.',
         'hidden_mobile' => false,
     ],
     [
         'name'    => 'Charles-de-Gaulle–Étoile',
         'slug'    => 'charles-de-gaulle-etoile',
         'lines'   => ['M1', 'M2', 'M6', 'RER A'],
-        'tagline' => "Sous l'Arc de Triomphe, carrefour entre l'avenue des Champs-Élysées et les douze avenues de la Place de l'Étoile.",
+        'tagline' => "Sous l'Arc de Triomphe, carrefour entre les Champs-Élysées et la Place de l'Étoile.",
         'hidden_mobile' => false,
     ],
     [
         'name'    => 'Concorde',
         'slug'    => 'concorde',
         'lines'   => ['M1', 'M8', 'M12'],
-        'tagline' => "Sous la plus belle place du monde, point central de l'axe historique parisien.",
+        'tagline' => "Sous la place de la Concorde, point central de l'axe historique parisien.",
         'hidden_mobile' => false,
     ],
     [
@@ -65,7 +67,7 @@ $vitrineStations = [
         'name'    => 'Tuileries',
         'slug'    => 'tuileries',
         'lines'   => ['M1'],
-        'tagline' => "Au cœur du jardin royal historique, entre le Louvre et la Place de la Concorde.",
+        'tagline' => "Au cœur du jardin royal historique, entre le Louvre et la Concorde.",
         'hidden_mobile' => true,
     ],
     [
@@ -87,7 +89,7 @@ $topPois = [
         'description'  => 'Le plus grand musée du monde et la pyramide de verre de Pei. Sortie directe depuis la station, sans remonter en surface.',
         'station_name' => 'Palais Royal–Musée du Louvre',
         'station_slug' => 'palais-royal-musee-du-louvre',
-        'station_lines'=> 'M1 M7',
+        'station_lines'=> ['M1', 'M7'],
     ],
     [
         'name'         => 'Cathédrale Notre-Dame',
@@ -95,7 +97,7 @@ $topPois = [
         'description'  => "Chef-d'œuvre de l'art gothique sur l'île de la Cité. À environ 10 minutes à pied depuis Châtelet en traversant le Pont au Change.",
         'station_name' => 'Châtelet',
         'station_slug' => 'chatelet',
-        'station_lines'=> 'M1 M4 M7 M11 M14',
+        'station_lines'=> ['M1', 'M4', 'M7', 'M11', 'M14'],
     ],
     [
         'name'         => 'Arc de Triomphe',
@@ -103,7 +105,7 @@ $topPois = [
         'description'  => "Monumental arc commandé par Napoléon, sommet de l'axe historique. Sortie en surface directement sur la Place de l'Étoile.",
         'station_name' => 'Charles-de-Gaulle–Étoile',
         'station_slug' => 'charles-de-gaulle-etoile',
-        'station_lines'=> 'M1 M2 M6 RER A',
+        'station_lines'=> ['M1', 'M2', 'M6', 'RER A'],
     ],
     [
         'name'         => 'Place de la Concorde',
@@ -111,7 +113,7 @@ $topPois = [
         'description'  => 'Plus célèbre place de Paris, au cœur des Rives de la Seine classées UNESCO depuis 1991, avec l’obélisque de Louxor en son centre. Sortie directe depuis la station.',
         'station_name' => 'Concorde',
         'station_slug' => 'concorde',
-        'station_lines'=> 'M1 M8 M12',
+        'station_lines'=> ['M1', 'M8', 'M12'],
     ],
     [
         'name'         => 'Jardin des Tuileries',
@@ -119,7 +121,7 @@ $topPois = [
         'description'  => 'Jardin royal historique de 25 hectares entre le Louvre et la Concorde. Accessible également depuis Concorde et Palais-Royal.',
         'station_name' => 'Tuileries',
         'station_slug' => 'tuileries',
-        'station_lines'=> 'M1',
+        'station_lines'=> ['M1'],
     ],
     [
         'name'         => 'Sainte-Chapelle',
@@ -127,7 +129,7 @@ $topPois = [
         'description'  => "Joyau gothique du XIIIᵉ siècle et ses vitraux exceptionnels, à l'intérieur du Palais de Justice sur l'île de la Cité.",
         'station_name' => 'Châtelet',
         'station_slug' => 'chatelet',
-        'station_lines'=> 'M1 M4 M7 M11 M14',
+        'station_lines'=> ['M1', 'M4', 'M7', 'M11', 'M14'],
     ],
     [
         'name'         => 'Centre Pompidou',
@@ -135,7 +137,7 @@ $topPois = [
         'description'  => "Musée d'art moderne et contemporain dans le bâtiment iconique de Piano et Rogers. À 8 minutes à pied de Châtelet.",
         'station_name' => 'Châtelet',
         'station_slug' => 'chatelet',
-        'station_lines'=> 'M1 M4 M7 M11 M14',
+        'station_lines'=> ['M1', 'M4', 'M7', 'M11', 'M14'],
     ],
     [
         'name'         => 'Grande Arche de la Défense',
@@ -143,7 +145,7 @@ $topPois = [
         'description'  => "Monumental cube ouvert moderne (1989), réplique géante de l'Arc de Triomphe alignée sur l'axe historique parisien.",
         'station_name' => 'La Défense–Grande Arche',
         'station_slug' => 'la-defense-grande-arche',
-        'station_lines'=> 'M1 RER A T2',
+        'station_lines'=> ['M1', 'RER A', 'T2'],
     ],
 ];
 
@@ -301,12 +303,16 @@ $linePillSlug = function (string $line): string {
 </section>
 
 <!-- =========================================================================
-     SECTION 2 — Module trafic temps réel (pleine largeur)
-     Réutilise partials/traffic-banner.php (lit data/traffic/latest.json)
+     SECTION 2 — Module trafic temps réel (pleine largeur) + recherche ligne
+     - partials/traffic-banner.php : bandeau stats (lit data/traffic/latest.json)
+     - partials/line-search-widget.php : champ recherche avec dropdown lignes
+       (réutilise le composant de /info-trafic/, mode 'metro' pour le label
+       "Rechercher le trafic d'un métro à Paris")
      ========================================================================= -->
 <section class="home-traffic">
     <div class="container">
         <?php $bannerMode = 'all'; include __DIR__ . '/../partials/traffic-banner.php'; ?>
+        <?php $lineSearchMode = 'metro'; include __DIR__ . '/../partials/line-search-widget.php'; ?>
         <p class="home-traffic__cta">
             <a href="/info-trafic/" class="link-underline">Voir tous les bulletins quotidiens →</a>
         </p>
@@ -318,11 +324,11 @@ $linePillSlug = function (string $line): string {
      ========================================================================= -->
 <section class="section home-entries">
     <div class="container">
-        <h2>Le guide complet en quatre accès</h2>
+        <h2>Métro, Bus, RER : Se déplacer et visiter Paris</h2>
         <p class="section__intro">
-            Quatre portes d'entrée pour explorer Paris en transport : par mode, par
-            lieu à visiter, par itinéraire, ou par perturbation du jour. Choisissez
-            l'angle qui correspond à votre besoin.
+            Quatre portes d'entrée pour explorer Paris en transport en commun :
+            par mode (métro, RER, bus, tramway), par lieu à visiter, par itinéraire,
+            ou par perturbation du jour. Choisissez l'angle qui correspond à votre besoin.
         </p>
         <ul class="home-entries-grid" role="list">
             <?php foreach ($entries as $entry): ?>
@@ -366,28 +372,26 @@ $linePillSlug = function (string $line): string {
                 $heroBase    = '/assets/img/stations/' . $s['slug'] . '/' . $s['slug'];
             ?>
             <article class="home-station-card<?= $hiddenClass ?>">
-                <a href="<?= e($url) ?>" class="home-station-card__link">
-                    <div class="home-station-card__image">
-                        <picture>
-                            <source srcset="<?= e(asset($heroBase . '-800.avif')) ?>" type="image/avif">
-                            <source srcset="<?= e(asset($heroBase . '-800.webp')) ?>" type="image/webp">
-                            <img src="<?= e(asset($heroBase . '-800.jpg')) ?>"
-                                 alt="<?= e($s['name']) ?>"
-                                 loading="lazy" decoding="async"
-                                 width="800" height="450">
-                        </picture>
+                <div class="home-station-card__image">
+                    <picture>
+                        <source srcset="<?= e(asset($heroBase . '-800.avif')) ?>" type="image/avif">
+                        <source srcset="<?= e(asset($heroBase . '-800.webp')) ?>" type="image/webp">
+                        <img src="<?= e(asset($heroBase . '-800.jpg')) ?>"
+                             alt="<?= e($s['name']) ?>"
+                             loading="lazy" decoding="async"
+                             width="800" height="450">
+                    </picture>
+                </div>
+                <div class="home-station-card__content">
+                    <h3 class="home-station-card__name"><?= e($s['name']) ?></h3>
+                    <div class="home-station-card__lines">
+                        <?php foreach ($s['lines'] as $line): ?>
+                        <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
+                        <?php endforeach; ?>
                     </div>
-                    <div class="home-station-card__content">
-                        <h3 class="home-station-card__name"><?= e($s['name']) ?></h3>
-                        <div class="home-station-card__lines">
-                            <?php foreach ($s['lines'] as $line): ?>
-                            <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
-                            <?php endforeach; ?>
-                        </div>
-                        <p class="home-station-card__tagline"><?= e($s['tagline']) ?></p>
-                        <span class="home-station-card__cta">Découvrir <?= e($s['name']) ?> →</span>
-                    </div>
-                </a>
+                    <p class="home-station-card__tagline"><?= e($s['tagline']) ?></p>
+                    <a href="<?= e($url) ?>" class="home-station-card__cta">Découvrir <?= e($s['name']) ?> →</a>
+                </div>
             </article>
             <?php endforeach; ?>
         </div>
@@ -425,7 +429,11 @@ $linePillSlug = function (string $line): string {
                     <h3 class="visiter-poi-card__name"><?= e($poi['name']) ?></h3>
                     <div class="visiter-poi-card__station">
                         Station <?= stationLink($poi['station_name']) ?>
-                        <span class="visiter-poi-card__lines"><?= e($poi['station_lines']) ?></span>
+                        <span class="visiter-poi-card__lines">
+                            <?php foreach ($poi['station_lines'] as $line): ?>
+                            <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
+                            <?php endforeach; ?>
+                        </span>
                     </div>
                     <p class="visiter-poi-card__desc"><?= e($poi['description']) ?></p>
                 </div>
@@ -467,7 +475,7 @@ $linePillSlug = function (string $line): string {
      ========================================================================= -->
 <section class="section home-usp">
     <div class="container">
-        <h2>Notre approche du guide</h2>
+        <h2>BougeaParis.fr : Guide des transports parisiens</h2>
         <p class="section__intro">
             Un guide indépendant des transports parisiens, <strong>gratuit</strong>
             et <strong>sans publicité intrusive</strong>. Notre approche : croiser
