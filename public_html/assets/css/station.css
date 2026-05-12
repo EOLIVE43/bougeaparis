@@ -587,22 +587,8 @@ a.adjacent-station-name:focus-visible {
     border-bottom: 1px solid var(--color-border, #E0E6E4);
 }
 
-.horaires-card__badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    flex-shrink: 0;
-    transition: transform 0.15s ease;
-}
-a.horaires-card__badge:hover {
-    transform: scale(1.08);
-}
+/* NOTE : ancien .horaires-card__badge supprimé (correction 18A 2026-05-12).
+   Le markup utilise désormais .line-pill (composant unifié bundle.css). */
 
 .horaires-card__line-label {
     font-weight: 600;
@@ -704,25 +690,8 @@ a.horaires-card__badge:hover {
         vertical-align: middle;
     }
 
-    .horaires-table__badge {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.25rem;
-        height: 2.25rem;
-        min-width: 2.25rem;
-        border-radius: 50%;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: 1;
-        text-decoration: none;
-        flex-shrink: 0;
-        box-sizing: border-box;
-        transition: transform 0.15s ease;
-    }
-    a.horaires-table__badge:hover {
-        transform: scale(1.1);
-    }
+    /* NOTE : ancien .horaires-table__badge supprimé (correction 18A 2026-05-12).
+       Le markup utilise désormais .line-pill (composant unifié bundle.css). */
 
     .horaires-table .text-muted {
         color: var(--color-text-muted, #5A6B66);

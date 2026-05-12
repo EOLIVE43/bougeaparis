@@ -216,8 +216,11 @@
 .line-plan__dot--small{width:12px;height:12px;margin-top:16px}
 .line-plan__dot--major{width:24px;height:24px;border-width:3px;margin-top:10px}
 
-/* Pastilles de correspondance (au-dessus de la ligne) */
-.line-plan__corresp{position:absolute;bottom:calc(100% + 50px);left:50%;transform:translateX(-50%);display:flex;flex-direction:column-reverse;align-items:flex-start;width:max-content}
+/* Pastilles de correspondance (au-dessus de la ligne)
+   Correction 18B (2026-05-12) : ajout gap:6px pour aérer la pile verticale
+   de pastilles SVG (markup nouveau .pastille-svg post-correction 16c sans
+   margin-bottom natif). */
+.line-plan__corresp{position:absolute;bottom:calc(100% + 50px);left:50%;transform:translateX(-50%);display:flex;flex-direction:column-reverse;align-items:flex-start;width:max-content;gap:6px}
 .line-plan__connector{position:absolute;bottom:calc(100% + 5px);left:50%;transform:translateX(-50%);width:1px;height:30px;background:#C8D4D0}
 
 /* Pastille de correspondance */

@@ -152,17 +152,24 @@ $lineCodesLabel = $lineCount === 1
       $lineUrl = '/metro/' . $line['slug'] . '/';
       $lineExists = class_exists('Routes') && Routes::exists(rtrim($lineUrl, '/'));
     ?>
+      <?php
+        // Correction 18A : migration vers .line-pill (cohérence avec hero badges,
+        // correspondances et adjacents stations — corrections 15/16a).
+        $pillLabel = 'M' . $line['code'];
+        $pillSlug  = 'm' . strtolower((string)$line['code']);
+        $pillShape = linePillShape($pillLabel);
+      ?>
       <div class="horaires-card">
         <div class="horaires-card__header">
           <?php if ($lineExists): ?>
-            <a href="<?= e($lineUrl) ?>" class="horaires-card__badge"
-               style="background:<?= e($line['color']) ?>;color:<?= e($line['text_color']) ?>;">
-              <?= e($line['code']) ?>
+            <a href="<?= e($lineUrl) ?>" class="line-pill line-pill--<?= e($pillShape) ?> line-pill--<?= e($pillSlug) ?>"
+               aria-label="Ligne <?= e($line['code']) ?> du métro">
+              <?= e($pillLabel) ?>
             </a>
           <?php else: ?>
-            <span class="horaires-card__badge"
-                  style="background:<?= e($line['color']) ?>;color:<?= e($line['text_color']) ?>;">
-              <?= e($line['code']) ?>
+            <span class="line-pill line-pill--<?= e($pillShape) ?> line-pill--<?= e($pillSlug) ?>"
+                  aria-label="Ligne <?= e($line['code']) ?> du métro">
+              <?= e($pillLabel) ?>
             </span>
           <?php endif; ?>
           <span class="horaires-card__line-label">Ligne <?= e($line['code']) ?> du métro</span>
@@ -222,18 +229,23 @@ $lineCodesLabel = $lineCount === 1
           $lineUrl = '/metro/' . $line['slug'] . '/';
           $lineExists = class_exists('Routes') && Routes::exists(rtrim($lineUrl, '/'));
         ?>
+          <?php
+            // Correction 18A : .line-pill dans la version desktop du tableau
+            $pillLabel = 'M' . $line['code'];
+            $pillSlug  = 'm' . strtolower((string)$line['code']);
+            $pillShape = linePillShape($pillLabel);
+          ?>
           <tr>
             <th scope="row" class="horaires-table__line-cell">
               <?php if ($lineExists): ?>
-                <a href="<?= e($lineUrl) ?>" class="horaires-table__badge"
-                   style="background:<?= e($line['color']) ?>;color:<?= e($line['text_color']) ?>;"
+                <a href="<?= e($lineUrl) ?>" class="line-pill line-pill--<?= e($pillShape) ?> line-pill--<?= e($pillSlug) ?>"
                    aria-label="Voir la page de la ligne <?= e($line['code']) ?>">
-                  <?= e($line['code']) ?>
+                  <?= e($pillLabel) ?>
                 </a>
               <?php else: ?>
-                <span class="horaires-table__badge"
-                      style="background:<?= e($line['color']) ?>;color:<?= e($line['text_color']) ?>;">
-                  <?= e($line['code']) ?>
+                <span class="line-pill line-pill--<?= e($pillShape) ?> line-pill--<?= e($pillSlug) ?>"
+                      aria-label="Ligne <?= e($line['code']) ?> du métro">
+                  <?= e($pillLabel) ?>
                 </span>
               <?php endif; ?>
             </th>
