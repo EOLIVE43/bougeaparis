@@ -1,0 +1,318 @@
+/* =============================================================================
+ * home.css — Styles dédiés à la page d'accueil refondue (mai 2026)
+ *
+ * Charge en plus de bundle.css via $tpl->addStylesheet('/assets/css/home.css').
+ * Le partial CSS .visiter-poi-card, .tarifs-callout, .key-stats-grid,
+ * .faq-accordion, .traffic-banner provient déjà du bundle ou de tarifs.css ;
+ * ce fichier n'ajoute QUE les styles spécifiques à la home.
+ * ========================================================================== */
+
+/* -- SECTION 1 — Hero éditorial -------------------------------------------- */
+
+.home-hero {
+    background: linear-gradient(135deg, var(--color-primary-light, #e8f5ef) 0%, var(--color-bg-alt, #f6f9f7) 100%);
+    padding: 4rem 0 3rem;
+}
+.home-hero .hero__title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+.home-hero .hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.55;
+    max-width: 780px;
+    color: var(--color-text, #1d2228);
+}
+.home-hero .hero__subtitle strong {
+    color: var(--color-primary, #066644);
+}
+
+/* -- SECTION 2 — Module trafic (pleine largeur) ---------------------------- */
+
+.home-traffic {
+    background: var(--color-bg-alt, #f6f9f7);
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-border, #e3e8e5);
+    border-bottom: 1px solid var(--color-border, #e3e8e5);
+}
+.home-traffic .traffic-banner {
+    margin: 0;
+}
+.home-traffic__cta {
+    margin: 1rem 0 0;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+/* -- SECTION 3 — 5 entrées du site (cards) --------------------------------- */
+
+.home-entries-grid {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+.home-entry-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #e3e8e5);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.home-entry-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(6, 102, 68, 0.08);
+    border-color: var(--color-primary, #066644);
+}
+.home-entry-card__link {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.25rem;
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+}
+.home-entry-card__icon {
+    margin-bottom: 0.85rem;
+}
+.home-entry-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--color-text, #1d2228);
+}
+.home-entry-card__desc {
+    flex: 1;
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--color-text-muted, #4a5258);
+    margin: 0 0 1rem;
+}
+.home-entry-card__cta {
+    color: var(--color-primary, #066644);
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+/* -- SECTION 4 — Vitrine stations ------------------------------------------ */
+
+.home-stations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 0;
+}
+.home-station-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #e3e8e5);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.home-station-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(6, 102, 68, 0.1);
+}
+.home-station-card__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.home-station-card__image {
+    aspect-ratio: 16 / 9;
+    background: var(--color-bg-alt, #f6f9f7);
+    overflow: hidden;
+}
+.home-station-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.home-station-card__content {
+    padding: 1.1rem 1.25rem 1.35rem;
+}
+.home-station-card__name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--color-text, #1d2228);
+}
+.home-station-card__lines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+.home-station-card__line {
+    background: var(--color-primary, #066644);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.18rem 0.55rem;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+}
+.home-station-card__tagline {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: var(--color-text-muted, #4a5258);
+    margin: 0 0 0.85rem;
+}
+.home-station-card__cta {
+    color: var(--color-primary, #066644);
+    font-weight: 600;
+    font-size: 0.92rem;
+}
+
+.home-stations__cta-mobile {
+    margin: 1.5rem 0 0;
+    text-align: center;
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .home-stations-grid__hidden-mobile { display: none; }
+    .home-stations__cta-mobile { display: block; }
+}
+
+/* -- SECTION 5 — Top POIs (réutilise .visiter-poi-card du bundle/tarifs.css)  */
+
+.home-pois .visiter-poi-grid {
+    margin-top: 2rem;
+}
+.home-pois__cta {
+    margin: 1.75rem 0 0;
+    text-align: center;
+}
+.visiter-poi-card__lines {
+    margin-left: 0.5rem;
+    color: var(--color-primary, #066644);
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+/* -- SECTION 6 — Réseau en chiffres (réutilise .key-stats-grid)             */
+
+.home-network .key-stats-grid {
+    margin-top: 2rem;
+}
+
+/* -- SECTION 7 — Pourquoi BougeaParis (4 USP) ------------------------------ */
+
+.home-usp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 1.5rem;
+}
+.home-usp-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #e3e8e5);
+    border-left: 4px solid var(--color-primary, #066644);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+.home-usp-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+    color: var(--color-primary, #066644);
+}
+.home-usp-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin: 0;
+    color: var(--color-text, #1d2228);
+}
+
+/* -- SECTION 8 — FAQ (réutilise .faq-accordion) ---------------------------- */
+
+.home-faq .faq-accordion {
+    margin-top: 2rem;
+}
+
+/* -- SECTION 9 — Maillage interne ------------------------------------------ */
+
+.home-mailing-grid {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+.home-mailing-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #e3e8e5);
+    border-radius: 10px;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.home-mailing-card:hover {
+    border-color: var(--color-primary, #066644);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(6, 102, 68, 0.07);
+}
+.home-mailing-card__link {
+    display: grid;
+    grid-template-areas:
+        "icon title cta"
+        "icon desc  cta";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    gap: 0.25rem 0.85rem;
+    padding: 1rem 1.15rem;
+    color: inherit;
+    text-decoration: none;
+}
+.home-mailing-card__icon { grid-area: icon; align-self: start; }
+.home-mailing-card__title {
+    grid-area: title;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text, #1d2228);
+}
+.home-mailing-card__desc {
+    grid-area: desc;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--color-text-muted, #4a5258);
+}
+.home-mailing-card__cta {
+    grid-area: cta;
+    color: var(--color-primary, #066644);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* -- Utility — link underline pour CTA inline ------------------------------ */
+.link-underline {
+    color: var(--color-primary, #066644);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.link-underline:hover { text-decoration-thickness: 2px; }
+
+/* -- Btn ghost fallback (au cas où non défini dans bundle) ----------------- */
+.btn--ghost {
+    display: inline-block;
+    padding: 0.65rem 1.25rem;
+    border: 1.5px solid var(--color-primary, #066644);
+    color: var(--color-primary, #066644);
+    background: transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.btn--ghost:hover {
+    background: var(--color-primary, #066644);
+    color: #fff;
+}

@@ -35,13 +35,13 @@ jobs:
       # bascule .css -> .min.css cote serveur si le fichier existe (voir
       # core/bootstrap.php). Source unique de verite = .css source lisible.
       #
-      # CSS minifies : bundle (global) + station + tarifs + line.
+      # CSS minifies : bundle (global) + station + tarifs + line + home.
       # Gain attendu : ~25-30% sur le payload CSS au-dessus de la fold.
       - name: Minify CSS
         run: |
           set -e
           CSS_DIR="public_html/assets/css"
-          for f in bundle station tarifs line; do
+          for f in bundle station tarifs line home; do
             SRC="$CSS_DIR/$f.css"
             OUT="$CSS_DIR/$f.min.css"
             if [ -f "$SRC" ]; then
@@ -56,10 +56,10 @@ jobs:
           echo "Verifications :"
           ls -la "$CSS_DIR"/*.min.css
 
-      # Critical CSS above-the-fold : extrait via critical@7 sur 2 URLs pilotes
-      # (template station + template tarifs). Inlines dans <style> par
+      # Critical CSS above-the-fold : extrait via critical@7 sur 3 URLs pilotes
+      # (homepage + template station + template tarifs). Inlines dans <style> par
       # Template::getCriticalCss() sur la prod. Permet le pattern preload+swap
-      # async pour bundle/station/tarifs (cf. base.php, conditionnel a la
+      # async pour bundle/station/tarifs/home (cf. base.php, conditionnel a la
       # presence d'un fichier critical-X.css).
       #
       # Cible : reduire Speed Index mobile (baseline 4.0s sur Concorde).
@@ -71,7 +71,7 @@ jobs:
           php-version: '8.1'
           extensions: json, mbstring
 
-      - name: Extract critical CSS (template station + tarifs)
+      - name: Extract critical CSS (homepage + template station + tarifs)
         run: |
           set -e
           # Demarre serveur PHP local servant le repo (avec .min.css generes
@@ -80,8 +80,8 @@ jobs:
           SRV_PID=$!
           # Wait pour init du serveur
           sleep 2
-          # Sanity check : les 2 URLs pilotes repondent 200 ?
-          for path in "/metro/station/concorde/" "/tarifs/"; do
+          # Sanity check : les 3 URLs pilotes repondent 200 ?
+          for path in "/" "/metro/station/concorde/" "/tarifs/"; do
             CODE=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:8765$path")
             if [ "$CODE" != "200" ]; then
               echo "::error::URL pilote $path repond $CODE (attendu 200)"
@@ -92,7 +92,7 @@ jobs:
           done
 
           # Viewport mobile (412x915 = Pixel 5 portrait, cohérent Lighthouse mobile)
-          for pair in "concorde:/metro/station/concorde/:critical-station.css" "tarifs:/tarifs/:critical-tarifs.css"; do
+          for pair in "home:/:critical-home.css" "concorde:/metro/station/concorde/:critical-station.css" "tarifs:/tarifs/:critical-tarifs.css"; do
             LABEL="${pair%%:*}"
             REST="${pair#*:}"
             URL_PATH="${REST%%:*}"
