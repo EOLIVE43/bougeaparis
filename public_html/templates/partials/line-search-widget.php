@@ -83,16 +83,27 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
     let allLines = [];
     let activeIndex = -1;
 
-    Promise.all([
-        fetch('/data/lines.json').then(r => r.ok ? r.json() : null),
-        fetch('/data/traffic/latest.json').then(r => r.ok ? r.json() : { lines: {} })
-    ]).then(([catalogData, traffic]) => {
-        catalog = catalogData;
-        trafficData = traffic || { lines: {} };
-        buildAllLines();
-    }).catch(err => {
-        console.warn('Line search widget: erreur de chargement', err);
-    });
+    // Lazy-loading (perf fix 2026-05-12) : les 2 fetch (/data/lines.json + /data/traffic/latest.json)
+    // ne se déclenchent QU'AU PREMIER FOCUS du champ de recherche. Avant ce fix, ils étaient
+    // déclenchés immédiatement au chargement de la page → TBT Lighthouse mobile à 6,6s
+    // (parse JSON 153 KB bloque le main thread). Désormais : ~200ms de lag au 1er focus,
+    // imperceptible, et 0 coût avant interaction.
+    let dataLoadPromise = null;
+    function ensureDataLoaded() {
+        if (dataLoadPromise) return dataLoadPromise;
+        dataLoadPromise = Promise.all([
+            fetch('/data/lines.json').then(r => r.ok ? r.json() : null),
+            fetch('/data/traffic/latest.json').then(r => r.ok ? r.json() : { lines: {} })
+        ]).then(([catalogData, traffic]) => {
+            catalog = catalogData;
+            trafficData = traffic || { lines: {} };
+            buildAllLines();
+        }).catch(err => {
+            console.warn('Line search widget: erreur de chargement', err);
+            dataLoadPromise = null; // permet de retry au prochain focus
+        });
+        return dataLoadPromise;
+    }
 
     function buildAllLines() {
         if (!catalog) return;
@@ -321,25 +332,31 @@ if (!isset($lineSearchDate)) $lineSearchDate = '';
         return escapeHtml(str);
     }
 
-    // Input : filtrage en temps reel
-    input.addEventListener('input', function(e) {
-        const val = e.target.value;
-        const suggestions = filterLines(val);
-        renderDropdown(suggestions);
-        activeIndex = -1;
-
-        if (!val) {
-            resultEl.hidden = true;
-            resultEl.innerHTML = '';
-        }
+    // Focus : déclenche le lazy-load des données au PREMIER focus (perf fix 2026-05-12).
+    // Si le user a déjà tapé une valeur, affiche le dropdown.
+    input.addEventListener('focus', function() {
+        ensureDataLoaded().then(() => {
+            const val = input.value;
+            if (val) {
+                renderDropdown(filterLines(val));
+            }
+        });
     });
 
-    // Focus : ne montre rien si l'input est vide
-    input.addEventListener('focus', function() {
-        const val = input.value;
-        if (val) {
-            renderDropdown(filterLines(val));
-        }
+    // Input : filtrage en temps reel. Si data pas encore chargée (cas rare où user
+    // tape avant que focus n'ait fini de charger), on attend la fin du load.
+    input.addEventListener('input', function(e) {
+        ensureDataLoaded().then(() => {
+            const val = e.target.value;
+            const suggestions = filterLines(val);
+            renderDropdown(suggestions);
+            activeIndex = -1;
+
+            if (!val) {
+                resultEl.hidden = true;
+                resultEl.innerHTML = '';
+            }
+        });
     });
 
     // Blur : masque le dropdown

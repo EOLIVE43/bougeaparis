@@ -288,10 +288,49 @@ try {
         log_info('  -> ' . count($byLine) . ' lignes impactees');
     }
 
-    // 14. Sauvegarde du "dernier en date" (alias pour le widget)
+    // 14. Sauvegarde "latest.json" — version SLIM consommée par le front
+    //
+    // Le fichier daté ($today.json) garde TOUS les champs (archive complète :
+    // id, cause, message, shortMessage, lastUpdate — utiles pour bulletins
+    // éditoriaux). Mais latest.json est fetché côté client par le widget de
+    // recherche (line-search-widget.php) qui n'utilise que :
+    //   - line.{mode, shortName, label}
+    //   - disruptions[].{severity, title}
+    // Garder le payload complet ferait passer latest.json à ~150 KB et
+    // gripper le TBT Lighthouse mobile (cf. incident perf 2026-05-12).
+    // Slim → ~22 KB (-86 %).
+    //
+    // Le partial PHP traffic-banner.php utilise uniquement stats_total /
+    // stats_by_mode / article_url / date (top-level keys préservées ici).
     $latestFile = $trafficDir . 'latest.json';
-    @copy($trafficFile, $latestFile);
-    log_info('  -> Alias latest.json mis a jour');
+
+    $latestSlim = [
+        'date'          => $trafficData['date'] ?? null,
+        'article_url'   => $trafficData['article_url'] ?? null,
+        'stats_total'   => $trafficData['stats_total'] ?? null,
+        'stats_by_mode' => $trafficData['stats_by_mode'] ?? null,
+        'lines'         => [],
+    ];
+    foreach ($trafficData['lines'] ?? [] as $key => $entry) {
+        $slimDisruptions = [];
+        foreach ($entry['disruptions'] ?? [] as $d) {
+            $slimDisruptions[] = [
+                'severity' => $d['severity'] ?? null,
+                'title'    => $d['title']    ?? null,
+            ];
+        }
+        $latestSlim['lines'][$key] = [
+            'line' => [
+                'mode'      => $entry['line']['mode']      ?? null,
+                'shortName' => $entry['line']['shortName'] ?? null,
+                'label'     => $entry['line']['label']     ?? null,
+            ],
+            'disruptions' => $slimDisruptions,
+        ];
+    }
+    $latestJson = json_encode($latestSlim, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    @file_put_contents($latestFile, $latestJson);
+    log_info('  -> latest.json slim mis a jour (' . strlen($latestJson) . ' octets)');
 
     log_info('=== Generation terminee avec succes ===');
     exit(0);
