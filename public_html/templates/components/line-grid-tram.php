@@ -21,9 +21,14 @@ if (empty($lines)) return;
         $stations  = $line['stations_count'] ?? null;
         $href      = $link_base . 'ligne-' . strtolower($label) . '/';
     ?>
+        <?php
+          // Correction 16b : .line-pill--square pour tramway. Label "T{code}".
+          $pillLabel = 'T' . $label;
+          $pillSlug  = 't' . strtolower((string)$label);
+        ?>
         <li class="line-grid__item">
-            <span class="line-grid__badge line-grid__badge--tram" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
-                <?= htmlspecialchars($label) ?>
+            <span class="line-pill line-pill--square line-pill--<?= htmlspecialchars($pillSlug) ?>" aria-hidden="true">
+                <?= htmlspecialchars($pillLabel) ?>
             </span>
             <span class="line-grid__info">
                 <?php if ($enable_links): ?>

@@ -24,9 +24,15 @@ if (empty($lines)) return;
         $stations  = $line['stations_count'] ?? null;
         $href      = $link_base . 'ligne-' . strtolower($label) . '/';
     ?>
+        <?php
+          // Correction 16b : .line-pill--square pour RER (couleurs RATP officielles bundle.css)
+          // Label "RER {code}" pour cohérence avec correspondances stations.
+          $pillLabel = 'RER ' . $label;
+          $pillSlug  = 'rer-' . strtolower((string)$label);
+        ?>
         <li class="line-grid__item">
-            <span class="line-grid__badge line-grid__badge--rer" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
-                <span class="line-grid__badge-inner"><?= htmlspecialchars($label) ?></span>
+            <span class="line-pill line-pill--square line-pill--<?= htmlspecialchars($pillSlug) ?>" aria-hidden="true">
+                <?= htmlspecialchars($pillLabel) ?>
             </span>
             <span class="line-grid__info">
                 <?php if ($enable_links): ?>

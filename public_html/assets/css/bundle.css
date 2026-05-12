@@ -409,7 +409,6 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 
 .line-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .75rem; margin: 1.5rem 0; padding: 0; list-style: none; }
 .line-grid__item { display: flex; align-items: center; gap: 1rem; padding: .875rem 1rem; background: #FFF; border: 1px solid #E5E5E5; border-radius: 10px; color: inherit; transition: border-color .15s; }
-.line-grid__badge { flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; line-height: 1; }
 .line-grid__info { display: flex !important; flex-direction: column; gap: .2rem; min-width: 0; flex: 1; }
 .line-grid__name { font-weight: 600; color: #0B1B15; font-size: .95rem; display: block; }
 .line-grid__name--link { color: #0B1B15; text-decoration: none; transition: color .15s; }
@@ -419,11 +418,9 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .line-grid__arrow { margin: 0 .3rem; color: #AAB; }
 .line-grid__meta { font-size: .75rem; color: #889; margin-top: .15rem; display: block; }
 .line-grid__tag { display: inline-block; background: var(--color-accent, #0F6E56); color: #FFF; padding: .1rem .4rem; border-radius: 3px; font-size: .7rem; font-weight: 600; margin-left: .25rem; }
-.line-grid__badge--metro { width: 40px; height: 40px; border-radius: 50%; }
-.line-grid__badge--rer { width: 40px; height: 40px; transform: rotate(45deg); border-radius: 4px; }
-.line-grid__badge--rer .line-grid__badge-inner { transform: rotate(-45deg); display: inline-block; }
-.line-grid__badge--tram { min-width: 44px; height: 30px; padding: 0 .5rem; border-radius: 6px; font-size: .9rem; }
-.line-grid__badge--transilien { min-width: 40px; height: 40px; border-radius: 4px; padding: 0 .5rem; font-size: 1.1rem; }
+/* NOTE : anciens .line-grid__badge / __badge--metro / __badge--rer / __badge--tram /
+   __badge--transilien retirés (correction 16b 2026-05-12). Le markup utilise
+   désormais .line-pill (cf. section LINE-PILL ci-dessus). */
 
 .bus-network-grid { margin: 1.5rem 0; }
 .bus-network-grid__category { margin-bottom: 1.5rem; }

@@ -42,9 +42,15 @@ if (empty($lines)) return;
             $isLinkActive = (bool)$enable_links;
         }
     ?>
+        <?php
+          // Correction 16b : migration vers .line-pill — label préfixé "M{code}" pour
+          // cohérence visuelle avec hero badges + correspondances stations (corrections 15/16a).
+          $pillLabel = 'M' . $label;
+          $pillSlug  = 'm' . strtolower((string)$label);
+        ?>
         <li class="line-grid__item">
-            <span class="line-grid__badge line-grid__badge--metro" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
-                <?= htmlspecialchars($label) ?>
+            <span class="line-pill line-pill--<?= htmlspecialchars(linePillShape($pillLabel)) ?> line-pill--<?= htmlspecialchars($pillSlug) ?>" aria-hidden="true">
+                <?= htmlspecialchars($pillLabel) ?>
             </span>
             <span class="line-grid__info">
                 <?php if ($isLinkActive): ?>

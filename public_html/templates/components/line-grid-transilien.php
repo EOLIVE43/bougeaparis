@@ -20,8 +20,12 @@ if (empty($lines)) return;
         $termini   = $line['termini']    ?? [];
         $href      = $link_base . 'ligne-' . strtolower($label) . '/';
     ?>
+        <?php
+          // Correction 16b : .line-pill--square pour Transilien (lettre seule H/J/K/...).
+          $pillSlug = strtolower((string)$label);
+        ?>
         <li class="line-grid__item">
-            <span class="line-grid__badge line-grid__badge--transilien" style="background-color: <?= htmlspecialchars($color) ?>; color: <?= htmlspecialchars($textColor) ?>;" aria-hidden="true">
+            <span class="line-pill line-pill--square line-pill--<?= htmlspecialchars($pillSlug) ?>" aria-hidden="true">
                 <?= htmlspecialchars($label) ?>
             </span>
             <span class="line-grid__info">
