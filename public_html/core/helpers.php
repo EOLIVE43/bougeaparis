@@ -61,72 +61,134 @@ if (!function_exists('dateFr')) {
 
 if (!function_exists('pastilleCorresp')) {
     /**
-     * Pastille Correspondance — SVG inline réutilisable
+     * Pastille Correspondance — SVG inline, style fill cohérent avec .line-pill
      *
-     * Usage :
+     * Refonte 2026-05-12 (correction 16c) : passage du style outline (rect blanc
+     * + bordure colorée + 2 textes séparés "M" + "1") au style fill (forme pleine
+     * couleur + 1 label centré "M1") pour cohérence visuelle avec le composant
+     * .line-pill de bundle.css (cf. corrections 15, 16a, 16b).
+     *
+     * Formes :
+     *   - mode "M" + line numérique → cercle plein (équiv. .line-pill--metro)
+     *   - mode "M" + line "Xbis"    → pill allongée (équiv. .line-pill--metro-bis)
+     *   - mode "RER" / "T" / "TRANS" → rect arrondi rx=6 (équiv. .line-pill--square)
+     *
+     * Couleur de texte : calculée via YIQ formula sur le fond (luminance ≥ 150
+     * = texte noir, sinon blanc). Pas hardcodé — fonctionne sur toute couleur.
+     *
+     * Usage (signature inchangée vs ancien helper) :
      *   echo pastilleCorresp('M',     '14', '#62259D');
      *   echo pastilleCorresp('RER',   'A',  '#E2231A');
      *   echo pastilleCorresp('T',     '2',  '#cead2c');
      *   echo pastilleCorresp('TRANS', 'L',  '#7A99C9');
      *
      * @param string $mode  "M" | "RER" | "T" | "TRANS"
-     * @param string $line  "1" à "14", "A" à "E", etc.
+     * @param string $line  "1" à "14", "A" à "E", "3a", "3b", "H", "3bis", etc.
      * @param string $color Couleur officielle de la ligne (#FFCD00…)
-     * @param string $size  "default" | "small" | "large" | "inline"
+     * @param string $size  "inline" (22px) | "small" (26px) | "default" (32px) | "large" (40px)
      */
     function pastilleCorresp(string $mode, string $line, string $color, string $size = 'default'): string
     {
+        // Hauteur en px selon le variant (match .line-pill 32 desktop / 28 mobile)
         $sizes = [
-            'small'   => ['fontMode' => 11, 'fontLine' => 12, 'padX' => 8,  'padY' => 3, 'gap' => 6, 'radius' => 5, 'border' => 1.2],
-            'inline'  => ['fontMode' => 10, 'fontLine' => 11, 'padX' => 7,  'padY' => 2, 'gap' => 6, 'radius' => 5, 'border' => 1.2],
-            'default' => ['fontMode' => 12, 'fontLine' => 13, 'padX' => 9,  'padY' => 3, 'gap' => 8, 'radius' => 6, 'border' => 1.2],
-            'large'   => ['fontMode' => 14, 'fontLine' => 15, 'padX' => 11, 'padY' => 4, 'gap' => 9, 'radius' => 7, 'border' => 1.5],
+            'inline'  => 22,
+            'small'   => 26,
+            'default' => 32,
+            'large'   => 40,
         ];
-        $s = $sizes[$size] ?? $sizes['default'];
+        $h = $sizes[$size] ?? $sizes['default'];
 
-        $modeChars = strlen($mode);
-        $lineChars = strlen($line);
-        $modeWidth = $modeChars * $s['fontMode'] * 0.65;
-        $lineWidth = $lineChars * $s['fontLine'] * 0.62;
+        // Label affiché — cohérent avec .line-pill (M1, RER A, T3a, H…)
+        $modeUpper = strtoupper($mode);
+        switch ($modeUpper) {
+            case 'M':     $label = 'M' . $line; break;
+            case 'RER':   $label = 'RER ' . $line; break;
+            case 'T':     $label = 'T' . $line; break;
+            case 'TRANS': $label = $line; break; // lettre seule pour Transilien
+            default:      $label = $line;
+        }
 
-        $totalWidth  = $s['padX'] + $modeWidth + $s['gap'] + $lineWidth + $s['padX'];
-        $totalHeight = max($s['fontMode'], $s['fontLine']) + ($s['padY'] * 2) + 2;
+        // Détermine la forme : cercle métro / pill allongée bis / square autres
+        $isMetroBis = ($modeUpper === 'M') && (bool)preg_match('/bis$/i', $line);
+        $isMetro    = ($modeUpper === 'M') && !$isMetroBis;
 
-        $textY = ($totalHeight / 2) + ($s['fontMode'] / 3.2);
-        $modeX = $s['padX'];
-        $lineX = $s['padX'] + $modeWidth + $s['gap'];
+        // Couleur de texte selon contraste (YIQ formula sur le hex fourni)
+        $hex = ltrim($color, '#');
+        if (strlen($hex) === 3) {
+            $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2];
+        }
+        if (strlen($hex) !== 6 || !ctype_xdigit($hex)) {
+            // Fallback couleur invalide : texte blanc + fond gris neutre
+            $color = '#5d6970';
+            $hex = '5d6970';
+        }
+        $r = hexdec(substr($hex, 0, 2));
+        $g = hexdec(substr($hex, 2, 2));
+        $b = hexdec(substr($hex, 4, 2));
+        $yiq = ($r * 299 + $g * 587 + $b * 114) / 1000;
+        $textColor = $yiq >= 150 ? '#000000' : '#FFFFFF';
 
-        $color = htmlspecialchars($color, ENT_QUOTES, 'UTF-8');
-        $mode  = htmlspecialchars($mode,  ENT_QUOTES, 'UTF-8');
-        $line  = htmlspecialchars($line,  ENT_QUOTES, 'UTF-8');
-        $aria  = $mode . ' ligne ' . $line;
+        // Police & dimensions calculées
+        $fontSize   = round($h * 0.42, 1); // ~9-17 px selon hauteur
+        $fontFamily = 'system-ui, -apple-system, "Segoe UI", Inter, sans-serif';
+        $charWidth  = $fontSize * 0.62;
+        $textWidth  = mb_strlen($label, 'UTF-8') * $charWidth;
+        $pad        = $h * 0.3;
+        $contentW   = $textWidth + $pad * 2;
+
+        if ($isMetro) {
+            // Cercle parfait — w = h
+            $w  = $h;
+            $rx = $h / 2;
+            $ry = $h / 2;
+        } elseif ($isMetroBis) {
+            // Pill allongée — min-width 1.5h pour accueillir "M3bis"
+            $w  = max($contentW, $h * 1.5);
+            $rx = $h / 2;
+            $ry = $h / 2;
+        } else {
+            // Square arrondi — min-width = h, w auto selon contenu
+            $w  = max($contentW, $h);
+            $rx = 6;
+            $ry = 6;
+        }
+
+        $textX = $w / 2;
+        $textY = $h / 2 + $fontSize * 0.35; // centrage vertical alphabetic baseline
+
+        // Aria-label sémantique pour accessibilité
+        switch ($modeUpper) {
+            case 'M':     $aria = 'Ligne ' . $line . ' du métro'; break;
+            case 'RER':   $aria = 'RER ' . $line; break;
+            case 'T':     $aria = 'Tramway ' . $line; break;
+            case 'TRANS': $aria = 'Transilien ' . $line; break;
+            default:      $aria = $label;
+        }
+
+        // Échappement HTML
+        $colorE = htmlspecialchars($color, ENT_QUOTES, 'UTF-8');
+        $labelE = htmlspecialchars($label, ENT_QUOTES, 'UTF-8');
+        $ariaE  = htmlspecialchars($aria,  ENT_QUOTES, 'UTF-8');
 
         return <<<SVG
 <svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 {$totalWidth} {$totalHeight}"
-     width="{$totalWidth}"
-     height="{$totalHeight}"
+     viewBox="0 0 {$w} {$h}"
+     width="{$w}"
+     height="{$h}"
      class="pastille-svg"
      role="img"
-     aria-label="{$aria}">
-  <title>{$aria}</title>
-  <rect x="{$s['border']}" y="{$s['border']}"
-        width="{$totalWidth}" height="{$totalHeight}"
-        rx="{$s['radius']}" ry="{$s['radius']}"
-        fill="white"
-        stroke="{$color}"
-        stroke-width="{$s['border']}"
-        transform="translate(-{$s['border']}, -{$s['border']})"/>
-  <text x="{$modeX}" y="{$textY}"
-        font-family="Inter, sans-serif"
-        font-size="{$s['fontMode']}"
-        font-weight="600"
-        fill="{$color}">{$mode}</text>
-  <text x="{$lineX}" y="{$textY}"
-        font-family="Inter, sans-serif"
-        font-size="{$s['fontLine']}"
-        font-weight="400"
-        fill="{$color}">{$line}</text>
+     aria-label="{$ariaE}">
+  <title>{$ariaE}</title>
+  <rect x="0" y="0" width="{$w}" height="{$h}"
+        rx="{$rx}" ry="{$ry}"
+        fill="{$colorE}"/>
+  <text x="{$textX}" y="{$textY}"
+        font-family="{$fontFamily}"
+        font-size="{$fontSize}"
+        font-weight="700"
+        fill="{$textColor}"
+        text-anchor="middle"
+        dominant-baseline="alphabetic">{$labelE}</text>
 </svg>
 SVG;
     }
