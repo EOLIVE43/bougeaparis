@@ -118,6 +118,21 @@ h6 { font-size: var(--fs-base); }
 p { margin: 0 0 var(--sp-4); }
 a { color: var(--color-primary); text-decoration: none; transition: color var(--transition-fast); }
 a:hover { color: var(--color-primary-dark); text-decoration: underline; }
+
+/* Accessibilité WCAG : liens éditoriaux soulignés par défaut (correction 2026-05-12)
+   Cible les liens "bare" (sans class) dans le contenu éditorial — paragraphes, listes,
+   description lists. Exclut volontairement les liens utilitaires (.btn, .card__cta,
+   .line-pill, .home-station-card__name-link, .breadcrumb__item a, etc.) qui ont leur
+   propre classe et sont identifiables par leur contexte/style.
+   WCAG 1.4.1 — un lien ne doit pas être identifiable uniquement par la couleur. */
+.main p a:not([class]),
+.main li a:not([class]),
+.main dd a:not([class]),
+.main dt a:not([class]),
+.main blockquote a:not([class]) {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 a:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: var(--radius-sm); }
 img, svg, video { max-width: 100%; height: auto; display: block; }
 ul, ol { margin: 0 0 var(--sp-4); padding-left: var(--sp-6); }
@@ -292,52 +307,55 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 /* Couleurs Métro Paris (16 lignes) */
 .line-pill--m1   { background: #FFCD00; color: #000; }
 .line-pill--m2   { background: #003CA6; color: #fff; }
-.line-pill--m3   { background: #837902; color: #fff; }
-.line-pill--m3bis { background: #6EC4E8; color: #000; }
-.line-pill--m4   { background: #CF009E; color: #fff; }
-.line-pill--m5   { background: #FF7E2E; color: #fff; }
-.line-pill--m6   { background: #79BB92; color: #fff; }
-.line-pill--m7   { background: #FA9ABA; color: #000; }
-.line-pill--m7bis { background: #79BB92; color: #fff; }
-.line-pill--m8   { background: #CDAEC7; color: #000; }
-.line-pill--m9   { background: #D5C900; color: #000; }
-.line-pill--m10  { background: #E3B32A; color: #000; }
-.line-pill--m11  { background: #7F491C; color: #fff; }
-.line-pill--m12  { background: #007852; color: #fff; }
-.line-pill--m13  { background: #6EC4E8; color: #000; }
-.line-pill--m14  { background: #662483; color: #fff; }
+/* Couleurs Métro Paris — texte choisi pour ratio WCAG AA ≥ 4.5:1 (audit 2026-05-12).
+   Compromis avec signalétique RATP officielle qui utilise blanc sur certaines
+   lignes claires : ici on privilégie la conformité accessibilité (loi 2019). */
+.line-pill--m3   { background: #837902; color: #000; }  /* WCAG 4.70:1 */
+.line-pill--m3bis { background: #6EC4E8; color: #000; } /* WCAG 10.72:1 */
+.line-pill--m4   { background: #CF009E; color: #fff; }  /* WCAG 5.06:1 */
+.line-pill--m5   { background: #FF7E2E; color: #000; }  /* WCAG 8.28:1 (était 2.54 fail) */
+.line-pill--m6   { background: #79BB92; color: #000; }  /* WCAG 9.34:1 (était 2.25 fail) */
+.line-pill--m7   { background: #FA9ABA; color: #000; }  /* WCAG 10.40:1 */
+.line-pill--m7bis { background: #79BB92; color: #000; } /* WCAG 9.34:1 (était 2.25 fail) */
+.line-pill--m8   { background: #CDAEC7; color: #000; }  /* WCAG 10.47:1 */
+.line-pill--m9   { background: #D5C900; color: #000; }  /* WCAG 12.18:1 */
+.line-pill--m10  { background: #E3B32A; color: #000; }  /* WCAG 10.75:1 */
+.line-pill--m11  { background: #7F491C; color: #fff; }  /* WCAG 7.31:1 */
+.line-pill--m12  { background: #007852; color: #fff; }  /* WCAG 5.51:1 */
+.line-pill--m13  { background: #6EC4E8; color: #000; }  /* WCAG 10.72:1 */
+.line-pill--m14  { background: #662483; color: #fff; }  /* WCAG 9.79:1 */
 
-/* RER (5 lignes A-E) */
-.line-pill--rer-a { background: #E2231A; color: #fff; }
-.line-pill--rer-b { background: #4F8FCC; color: #fff; }
-.line-pill--rer-c { background: #FFCD00; color: #000; }
-.line-pill--rer-d { background: #008169; color: #fff; }
-.line-pill--rer-e { background: #C04191; color: #fff; }
+/* RER (5 lignes A-E) — texte choisi pour ratio WCAG AA ≥ 4.5:1 */
+.line-pill--rer-a { background: #E2231A; color: #fff; } /* WCAG 4.68:1 */
+.line-pill--rer-b { background: #4F8FCC; color: #000; } /* WCAG 6.13:1 (était 3.42 fail) */
+.line-pill--rer-c { background: #FFCD00; color: #000; } /* WCAG 13.98:1 */
+.line-pill--rer-d { background: #008169; color: #fff; } /* WCAG 4.83:1 */
+.line-pill--rer-e { background: #C04191; color: #fff; } /* WCAG 4.77:1 */
 
-/* Tramway (T1-T13) */
-.line-pill--t1   { background: #002E66; color: #fff; }
-.line-pill--t2   { background: #CF009E; color: #fff; }
-.line-pill--t3a  { background: #B4A93A; color: #000; }
-.line-pill--t3b  { background: #FF7E2E; color: #fff; }
-.line-pill--t4   { background: #BF8F30; color: #fff; }
-.line-pill--t5   { background: #8C277A; color: #fff; }
-.line-pill--t6   { background: #C12035; color: #fff; }
-.line-pill--t7   { background: #B11D24; color: #fff; }
-.line-pill--t8   { background: #7E2E89; color: #fff; }
-.line-pill--t9   { background: #BC9D6A; color: #fff; }
-.line-pill--t10  { background: #00643C; color: #fff; }
-.line-pill--t11  { background: #B5B7B5; color: #000; }
-.line-pill--t13  { background: #739F00; color: #fff; }
+/* Tramway (T1-T13) — texte choisi pour ratio WCAG AA ≥ 4.5:1 */
+.line-pill--t1   { background: #002E66; color: #fff; }  /* WCAG 13.27:1 */
+.line-pill--t2   { background: #CF009E; color: #fff; }  /* WCAG 5.06:1 */
+.line-pill--t3a  { background: #B4A93A; color: #000; }  /* WCAG 8.68:1 */
+.line-pill--t3b  { background: #FF7E2E; color: #000; }  /* WCAG 8.28:1 (était 2.54 fail) */
+.line-pill--t4   { background: #BF8F30; color: #000; }  /* WCAG 7.19:1 (était 2.92 fail) */
+.line-pill--t5   { background: #8C277A; color: #fff; }  /* WCAG 7.82:1 */
+.line-pill--t6   { background: #C12035; color: #fff; }  /* WCAG 5.96:1 */
+.line-pill--t7   { background: #B11D24; color: #fff; }  /* WCAG 6.84:1 */
+.line-pill--t8   { background: #7E2E89; color: #fff; }  /* WCAG 7.96:1 */
+.line-pill--t9   { background: #BC9D6A; color: #000; }  /* WCAG 8.17:1 (était 2.57 fail) */
+.line-pill--t10  { background: #00643C; color: #fff; }  /* WCAG 7.27:1 */
+.line-pill--t11  { background: #B5B7B5; color: #000; }  /* WCAG 10.41:1 */
+.line-pill--t13  { background: #739F00; color: #000; }  /* WCAG 6.69:1 (était 3.14 fail) */
 
-/* Transilien SNCF (H/J/K/L/N/P/R/U) */
-.line-pill--h { background: #6A2566; color: #fff; }
-.line-pill--j { background: #C7C700; color: #000; }
-.line-pill--k { background: #B47A00; color: #fff; }
-.line-pill--l { background: #6E8C8C; color: #fff; }
-.line-pill--n { background: #008B85; color: #fff; }
-.line-pill--p { background: #E66B7B; color: #fff; }
-.line-pill--r { background: #F09EBA; color: #000; }
-.line-pill--u { background: #BE383D; color: #fff; }
+/* Transilien SNCF (H/J/K/L/N/P/R/U) — texte choisi pour ratio WCAG AA ≥ 4.5:1 */
+.line-pill--h { background: #6A2566; color: #fff; }     /* WCAG 10.15:1 */
+.line-pill--j { background: #C7C700; color: #000; }     /* WCAG 11.60:1 */
+.line-pill--k { background: #B47A00; color: #000; }     /* WCAG 5.72:1 (était 3.67 fail) */
+.line-pill--l { background: #6E8C8C; color: #000; }     /* WCAG 5.79:1 (était 3.63 fail) */
+.line-pill--n { background: #008B85; color: #000; }     /* WCAG 5.03:1 (était 4.17 fail) */
+.line-pill--p { background: #E66B7B; color: #000; }     /* WCAG 6.75:1 (était 3.11 fail) */
+.line-pill--r { background: #F09EBA; color: #000; }     /* WCAG 10.30:1 */
+.line-pill--u { background: #BE383D; color: #fff; }     /* WCAG 5.49:1 */
 
 .card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--sp-6); transition: all var(--transition-fast); }
 .card:hover { border-color: var(--color-border-strong); box-shadow: var(--shadow-md); }
@@ -416,7 +434,8 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .line-grid__item:has(.line-grid__name--link:hover) { border-color: var(--color-accent, #0F6E56); }
 .line-grid__termini { font-size: .8rem; color: #667; line-height: 1.35; display: block; }
 .line-grid__arrow { margin: 0 .3rem; color: #AAB; }
-.line-grid__meta { font-size: .75rem; color: #889; margin-top: .15rem; display: block; }
+/* WCAG AA fix 2026-05-12 : #889 sur #fff = 3.48:1 fail → #5A6B65 = 5.64:1 PASS */
+.line-grid__meta { font-size: .75rem; color: #5A6B65; margin-top: .15rem; display: block; }
 .line-grid__tag { display: inline-block; background: var(--color-accent, #0F6E56); color: #FFF; padding: .1rem .4rem; border-radius: 3px; font-size: .7rem; font-weight: 600; margin-left: .25rem; }
 /* NOTE : anciens .line-grid__badge / __badge--metro / __badge--rer / __badge--tram /
    __badge--transilien retirés (correction 16b 2026-05-12). Le markup utilise
@@ -1056,12 +1075,13 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
     color: #A32D2D;
 }
 
+/* WCAG AA fix 2026-05-12 : #A06800 sur #FFF4E0 = 4.31:1 fail → #8A570F = 5.58:1 PASS */
 .traffic-banner__stat--perturbee {
     background: #FFF4E0;
-    color: #A06800;
+    color: #8A570F;
 }
 .traffic-banner__stat--perturbee .traffic-banner__stat-number {
-    color: #A06800;
+    color: #8A570F;
 }
 
 .traffic-banner__stat--information {

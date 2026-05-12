@@ -112,21 +112,41 @@ if (!function_exists('pastilleCorresp')) {
         $isMetroBis = ($modeUpper === 'M') && (bool)preg_match('/bis$/i', $line);
         $isMetro    = ($modeUpper === 'M') && !$isMetroBis;
 
-        // Couleur de texte selon contraste (YIQ formula sur le hex fourni)
+        // Couleur de texte selon contraste WCAG AA (≥ 4.5:1) — correction 2026-05-12.
+        // L'ancien YIQ ≥ 150 donnait des FAILS WCAG sur ~13 couleurs (cf. .line-pill).
+        // Nouvelle approche : compute le ratio WCAG strict (luminance relative) sur
+        // les 2 candidats (#000 / #fff), retourne celui qui passe ≥ 4.5:1.
+        // Si les 2 passent, préfère #000 (signalétique RATP usuelle sur fonds clairs).
+        // Si les 2 fail (rare, couleur très moyenne), fallback sur le meilleur ratio.
         $hex = ltrim($color, '#');
         if (strlen($hex) === 3) {
             $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2];
         }
         if (strlen($hex) !== 6 || !ctype_xdigit($hex)) {
-            // Fallback couleur invalide : texte blanc + fond gris neutre
             $color = '#5d6970';
             $hex = '5d6970';
         }
         $r = hexdec(substr($hex, 0, 2));
         $g = hexdec(substr($hex, 2, 2));
         $b = hexdec(substr($hex, 4, 2));
-        $yiq = ($r * 299 + $g * 587 + $b * 114) / 1000;
-        $textColor = $yiq >= 150 ? '#000000' : '#FFFFFF';
+        // Relative luminance (WCAG 2.x formula sRGB)
+        $linearize = function ($c) {
+            $v = $c / 255;
+            return $v <= 0.03928 ? $v / 12.92 : pow(($v + 0.055) / 1.055, 2.4);
+        };
+        $L_bg    = 0.2126 * $linearize($r) + 0.7152 * $linearize($g) + 0.0722 * $linearize($b);
+        $L_white = 1.0; // luminance #fff = 1.0
+        $L_black = 0.0; // luminance #000 = 0.0
+        $ratioWhite = (max($L_bg, $L_white) + 0.05) / (min($L_bg, $L_white) + 0.05);
+        $ratioBlack = (max($L_bg, $L_black) + 0.05) / (min($L_bg, $L_black) + 0.05);
+        if ($ratioBlack >= 4.5) {
+            $textColor = '#000000'; // préfère noir si passe AA
+        } elseif ($ratioWhite >= 4.5) {
+            $textColor = '#FFFFFF';
+        } else {
+            // Aucun ne passe AA strict : prendre le meilleur
+            $textColor = $ratioBlack >= $ratioWhite ? '#000000' : '#FFFFFF';
+        }
 
         // Police & dimensions calculées
         $fontSize   = round($h * 0.42, 1); // ~9-17 px selon hauteur
