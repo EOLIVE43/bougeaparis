@@ -383,14 +383,15 @@ $linePillSlug = function (string $line): string {
                     </picture>
                 </div>
                 <div class="home-station-card__content">
-                    <h3 class="home-station-card__name"><?= e($s['name']) ?></h3>
+                    <h3 class="home-station-card__name">
+                        <a href="<?= e($url) ?>" class="home-station-card__name-link"><?= e($s['name']) ?></a>
+                    </h3>
                     <div class="home-station-card__lines">
                         <?php foreach ($s['lines'] as $line): ?>
                         <span class="line-pill line-pill--<?= e(linePillShape($line)) ?> line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
                         <?php endforeach; ?>
                     </div>
                     <p class="home-station-card__tagline"><?= e($s['tagline']) ?></p>
-                    <a href="<?= e($url) ?>" class="home-station-card__cta">Découvrir <?= e($s['name']) ?> →</a>
                 </div>
             </article>
             <?php endforeach; ?>

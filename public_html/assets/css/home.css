@@ -28,10 +28,13 @@
     line-height: 1.15;
     margin-bottom: 1rem;
 }
+/* Correction 17B (2026-05-12) : intro hero full-width sur la home.
+   Override du bundle.css .hero__subtitle { max-width: 60ch } qui contraint
+   typographiquement le sous-titre par rapport à la largeur du H1 au-dessus. */
 .home-hero .hero__subtitle {
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.55;
-    max-width: 780px;
+    max-width: none;
     color: var(--color-text, #1d2228);
 }
 .home-hero .hero__subtitle strong {
@@ -166,6 +169,24 @@
     margin: 0 0 0.5rem;
     color: var(--color-text, #1d2228);
 }
+/* Correction 17A (2026-05-12) : titre station cliquable (au lieu d'un CTA séparé) */
+.home-station-card__name-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+.home-station-card__name-link:hover,
+.home-station-card__name-link:focus-visible {
+    color: var(--color-primary, #066644);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* Hover de la card : souligne aussi le titre pour signal visuel cohérent */
+.home-station-card:hover .home-station-card__name-link {
+    color: var(--color-primary, #066644);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 .home-station-card__lines {
     display: flex;
     flex-wrap: wrap;
@@ -181,20 +202,9 @@
     margin: 0 0 0.85rem;
     flex: 1;
 }
-/* CTA = <a> dédié (zone cliquable réduite). Hover : soulignement. */
-.home-station-card__cta {
-    color: var(--color-primary, #066644);
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-decoration: none;
-    align-self: flex-start;
-    transition: text-decoration 0.15s ease;
-}
-.home-station-card__cta:hover,
-.home-station-card__cta:focus-visible {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
+/* NOTE : ancien .home-station-card__cta retiré (correction 17A 2026-05-12).
+   La zone cliquable est désormais portée par .home-station-card__name-link
+   (le H3 lui-même). */
 
 .home-stations__cta-mobile {
     margin: 1.5rem 0 0;
