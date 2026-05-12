@@ -2,9 +2,19 @@
  * home.css — Styles dédiés à la page d'accueil refondue (mai 2026)
  *
  * Charge en plus de bundle.css via $tpl->addStylesheet('/assets/css/home.css').
- * Le partial CSS .visiter-poi-card, .tarifs-callout, .key-stats-grid,
- * .faq-accordion, .traffic-banner provient déjà du bundle ou de tarifs.css ;
- * ce fichier n'ajoute QUE les styles spécifiques à la home.
+ *
+ * Contient :
+ *   1. Styles spécifiques à la home (hero, entries, stations, USP, mailing)
+ *   2. Classes RATP officielles .line-pill + modificateurs (toutes lignes IDFM)
+ *   3. DUPLICATION CONTROLEE depuis tarifs.css des classes partagées qui ne
+ *      sont pas dans bundle.css (.faq-accordion v2, .key-stats-grid,
+ *      .visiter-poi-grid, .visiter-poi-card, .tarifs-callout).
+ *
+ * TODO DESIGN SYSTEM (cf. rapport final 2026-05-12) :
+ *   Extraire les 5 blocs dupliqués dans un fichier components.css partagé,
+ *   chargé via le bundle ou un addStylesheet conditionnel.
+ *   Supprimer bundle.css lignes 386-394 (code mort .faq-accordion__question).
+ *   Renommer .tarifs-callout → .info-callout.
  * ========================================================================== */
 
 /* -- SECTION 1 — Hero éditorial -------------------------------------------- */
@@ -36,24 +46,28 @@
     border-top: 1px solid var(--color-border, #e3e8e5);
     border-bottom: 1px solid var(--color-border, #e3e8e5);
 }
-.home-traffic .traffic-banner {
-    margin: 0;
-}
+.home-traffic .traffic-banner { margin: 0; }
 .home-traffic__cta {
     margin: 1rem 0 0;
     text-align: right;
     font-size: 0.95rem;
 }
 
-/* -- SECTION 3 — 5 entrées du site (cards) --------------------------------- */
+/* -- SECTION 3 — 4 entrées du site (cards) -------------------------------- */
 
 .home-entries-grid {
     list-style: none;
     padding: 0;
     margin: 2rem 0 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
+}
+@media (max-width: 960px) {
+    .home-entries-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .home-entries-grid { grid-template-columns: 1fr; }
 }
 .home-entry-card {
     background: #fff;
@@ -75,9 +89,7 @@
     text-decoration: none;
     height: 100%;
 }
-.home-entry-card__icon {
-    margin-bottom: 0.85rem;
-}
+.home-entry-card__icon { margin-bottom: 0.85rem; }
 .home-entry-card__title {
     font-size: 1.15rem;
     font-weight: 700;
@@ -98,6 +110,10 @@
 }
 
 /* -- SECTION 4 — Vitrine stations ------------------------------------------ */
+
+/* Intro full-width — override du bundle.css .section__intro { max-width: 65ch }
+   pour aligner sur la largeur de la grille des cards en dessous (full container) */
+.home-stations .section__intro { max-width: none; }
 
 .home-stations-grid {
     display: grid;
@@ -132,9 +148,7 @@
     object-fit: cover;
     display: block;
 }
-.home-station-card__content {
-    padding: 1.1rem 1.25rem 1.35rem;
-}
+.home-station-card__content { padding: 1.1rem 1.25rem 1.35rem; }
 .home-station-card__name {
     font-size: 1.15rem;
     font-weight: 700;
@@ -146,15 +160,6 @@
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-bottom: 0.6rem;
-}
-.home-station-card__line {
-    background: var(--color-primary, #066644);
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.18rem 0.55rem;
-    border-radius: 999px;
-    letter-spacing: 0.03em;
 }
 .home-station-card__tagline {
     font-size: 0.92rem;
@@ -173,17 +178,94 @@
     text-align: center;
     display: none;
 }
-
 @media (max-width: 720px) {
     .home-stations-grid__hidden-mobile { display: none; }
     .home-stations__cta-mobile { display: block; }
 }
 
-/* -- SECTION 5 — Top POIs (réutilise .visiter-poi-card du bundle/tarifs.css)  */
+/* =============================================================================
+ * LINE-PILL — Pastilles de ligne génériques aux couleurs officielles RATP/IDFM
+ *
+ * Usage : <span class="line-pill line-pill--m1">M1</span>
+ *         <span class="line-pill line-pill--rer-a">RER A</span>
+ *
+ * Couleurs officielles (standards de fait). NE PAS utiliser de logos officiels
+ * ni la police Parisine — texte simple en system-ui/Inter pour rester licite.
+ *
+ * TODO design system : migrer les pages stations LOT 1 (qui utilisent
+ * actuellement .home-station-card__line ou autres patterns) vers cette
+ * classe .line-pill générique.
+ * ========================================================================== */
 
-.home-pois .visiter-poi-grid {
-    margin-top: 2rem;
+.line-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    padding: 0.18rem 0.55rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border-radius: 999px;
+    background: #5d6970;
+    color: #fff;
+    line-height: 1.2;
+    font-family: system-ui, -apple-system, "Segoe UI", Inter, sans-serif;
 }
+
+/* --- Métro Paris --- */
+.line-pill--m1   { background: #FFCD00; color: #000; }
+.line-pill--m2   { background: #003CA6; color: #fff; }
+.line-pill--m3   { background: #837902; color: #fff; }
+.line-pill--m3bis { background: #6EC4E8; color: #000; }
+.line-pill--m4   { background: #CF009E; color: #fff; }
+.line-pill--m5   { background: #FF7E2E; color: #fff; }
+.line-pill--m6   { background: #79BB92; color: #fff; }
+.line-pill--m7   { background: #FA9ABA; color: #000; }
+.line-pill--m7bis { background: #79BB92; color: #fff; }
+.line-pill--m8   { background: #CDAEC7; color: #000; }
+.line-pill--m9   { background: #D5C900; color: #000; }
+.line-pill--m10  { background: #E3B32A; color: #000; }
+.line-pill--m11  { background: #7F491C; color: #fff; }
+.line-pill--m12  { background: #007852; color: #fff; }
+.line-pill--m13  { background: #6EC4E8; color: #000; }
+.line-pill--m14  { background: #662483; color: #fff; }
+
+/* --- RER --- */
+.line-pill--rer-a { background: #E2231A; color: #fff; }
+.line-pill--rer-b { background: #4F8FCC; color: #fff; }
+.line-pill--rer-c { background: #FFCD00; color: #000; }
+.line-pill--rer-d { background: #008169; color: #fff; }
+.line-pill--rer-e { background: #C04191; color: #fff; }
+
+/* --- Tramway --- */
+.line-pill--t1   { background: #002E66; color: #fff; }
+.line-pill--t2   { background: #CF009E; color: #fff; }
+.line-pill--t3a  { background: #B4A93A; color: #000; }
+.line-pill--t3b  { background: #FF7E2E; color: #fff; }
+.line-pill--t4   { background: #BF8F30; color: #fff; }
+.line-pill--t5   { background: #8C277A; color: #fff; }
+.line-pill--t6   { background: #C12035; color: #fff; }
+.line-pill--t7   { background: #B11D24; color: #fff; }
+.line-pill--t8   { background: #7E2E89; color: #fff; }
+.line-pill--t9   { background: #BC9D6A; color: #fff; }
+.line-pill--t10  { background: #00643C; color: #fff; }
+.line-pill--t11  { background: #B5B7B5; color: #000; }
+.line-pill--t13  { background: #739F00; color: #fff; }
+
+/* --- Transilien (SNCF) --- */
+.line-pill--h { background: #6A2566; color: #fff; }
+.line-pill--j { background: #C7C700; color: #000; }
+.line-pill--k { background: #B47A00; color: #fff; }
+.line-pill--l { background: #6E8C8C; color: #fff; }
+.line-pill--n { background: #008B85; color: #fff; }
+.line-pill--p { background: #E66B7B; color: #fff; }
+.line-pill--r { background: #F09EBA; color: #000; }
+.line-pill--u { background: #BE383D; color: #fff; }
+
+/* -- SECTION 5 — Top POIs (réutilise styles dupliqués de tarifs.css) ------ */
+
+.home-pois .visiter-poi-grid { margin-top: 2rem; }
 .home-pois__cta {
     margin: 1.75rem 0 0;
     text-align: center;
@@ -195,19 +277,19 @@
     font-size: 0.85em;
 }
 
-/* -- SECTION 6 — Réseau en chiffres (réutilise .key-stats-grid)             */
+/* -- SECTION 6 — Réseau en chiffres (réutilise .key-stats-grid) ----------- */
+.home-network .key-stats-grid { margin-top: 2rem; }
 
-.home-network .key-stats-grid {
-    margin-top: 2rem;
-}
-
-/* -- SECTION 7 — Pourquoi BougeaParis (4 USP) ------------------------------ */
+/* -- SECTION 7 — Pourquoi BougeaParis (3 USP, grid 3 cols) ---------------- */
 
 .home-usp-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin: 2rem 0 1.5rem;
+}
+@media (max-width: 960px) {
+    .home-usp-grid { grid-template-columns: 1fr; }
 }
 .home-usp-card {
     background: #fff;
@@ -229,69 +311,10 @@
     color: var(--color-text, #1d2228);
 }
 
-/* -- SECTION 8 — FAQ (réutilise .faq-accordion) ---------------------------- */
+/* -- SECTION 8 — FAQ (réutilise .faq-accordion v2 — dupliqué ci-dessous) -- */
+.home-faq .faq-accordion { margin-top: 2rem; }
 
-.home-faq .faq-accordion {
-    margin-top: 2rem;
-}
-
-/* -- SECTION 9 — Maillage interne ------------------------------------------ */
-
-.home-mailing-grid {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-}
-.home-mailing-card {
-    background: #fff;
-    border: 1px solid var(--color-border, #e3e8e5);
-    border-radius: 10px;
-    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
-}
-.home-mailing-card:hover {
-    border-color: var(--color-primary, #066644);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(6, 102, 68, 0.07);
-}
-.home-mailing-card__link {
-    display: grid;
-    grid-template-areas:
-        "icon title cta"
-        "icon desc  cta";
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto 1fr;
-    align-items: center;
-    gap: 0.25rem 0.85rem;
-    padding: 1rem 1.15rem;
-    color: inherit;
-    text-decoration: none;
-}
-.home-mailing-card__icon { grid-area: icon; align-self: start; }
-.home-mailing-card__title {
-    grid-area: title;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 0;
-    color: var(--color-text, #1d2228);
-}
-.home-mailing-card__desc {
-    grid-area: desc;
-    font-size: 0.85rem;
-    line-height: 1.4;
-    margin: 0;
-    color: var(--color-text-muted, #4a5258);
-}
-.home-mailing-card__cta {
-    grid-area: cta;
-    color: var(--color-primary, #066644);
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-/* -- Utility — link underline pour CTA inline ------------------------------ */
+/* -- Utility — link underline pour CTA inline ----------------------------- */
 .link-underline {
     color: var(--color-primary, #066644);
     font-weight: 600;
@@ -300,7 +323,7 @@
 }
 .link-underline:hover { text-decoration-thickness: 2px; }
 
-/* -- Btn ghost fallback (au cas où non défini dans bundle) ----------------- */
+/* -- Btn ghost fallback ---------------------------------------------------- */
 .btn--ghost {
     display: inline-block;
     padding: 0.65rem 1.25rem;
@@ -315,4 +338,209 @@
 .btn--ghost:hover {
     background: var(--color-primary, #066644);
     color: #fff;
+}
+
+/* =============================================================================
+ * DUPLICATION CONTROLEE — composants partagés source : tarifs.css (mai 2026)
+ *
+ * Ces blocs sont aussi définis dans tarifs.css (chargé sur /tarifs/, /visiter/,
+ * /se-deplacer/, /itineraires/). Pour la home, on duplique localement plutôt
+ * que de charger tarifs.css supplémentaire — raison perf : éviter d'inliner
+ * critical-tarifs.css en plus de critical-home.css (qui ferait sauter le seuil
+ * critical < 14 KB).
+ *
+ * Quand la dette technique design system sera traitée, ces blocs partiront
+ * dans un components.css partagé chargé via bundle.
+ * ========================================================================== */
+
+/* ---------- FAQ accordéon (v2, source : tarifs.css L199-263) ---------- */
+.faq-accordion {
+    margin: 1.25rem 0 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border, #E0E6E4);
+    overflow: hidden;
+    background: #fff;
+}
+.faq-accordion__item {
+    border-bottom: 1px solid var(--color-border, #E0E6E4);
+}
+.faq-accordion__item:last-child { border-bottom: 0; }
+.faq-accordion__item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 0.85rem 2.5rem 0.85rem 1rem;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text, #1A2B26);
+    line-height: 1.4;
+    transition: background 0.15s;
+}
+.faq-accordion__item summary::-webkit-details-marker { display: none; }
+.faq-accordion__item summary::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--color-primary, #117049);
+    transition: transform 0.2s;
+}
+.faq-accordion__item[open] summary::after { content: '−'; }
+.faq-accordion__item summary:hover {
+    background: var(--color-bg-alt, #F7F9F8);
+}
+.faq-accordion__item summary h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: inherit;
+    padding: 0;
+    border: 0;
+}
+.faq-accordion__item summary:focus-visible {
+    outline: 2px solid var(--color-primary, #117049);
+    outline-offset: -2px;
+}
+.faq-accordion__answer {
+    padding: 0 1rem 1rem;
+    line-height: 1.6;
+    color: var(--color-text, #1A2B26);
+}
+.faq-accordion__answer p { margin: 0.5rem 0; }
+.faq-accordion__answer p:first-child { margin-top: 0; }
+
+/* ---------- Encadrés "À savoir" / "Attention" (source : tarifs.css L266-290) ---------- */
+.tarifs-callout {
+    margin: 1.25rem 0;
+    padding: 0.9rem 1.1rem;
+    border-radius: 8px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    border-left: 3px solid;
+}
+.tarifs-callout--info {
+    background: #E6F1FB;
+    border-left-color: #185FA5;
+    color: #0d3d6f;
+}
+.tarifs-callout--warning {
+    background: #FAEEDA;
+    border-left-color: #8a570f;
+    color: #5a3508;
+}
+.tarifs-callout__icon { font-weight: 700; margin-right: 0.4rem; }
+.tarifs-callout strong { color: inherit; }
+
+/* ---------- key-stats-grid (source : tarifs.css L355-393) ---------- */
+.key-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+.key-stat {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: linear-gradient(135deg, #117049 0%, #0a5535 100%);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(17, 112, 73, 0.15);
+}
+.key-stat__number {
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+.key-stat__label {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+.key-stat__sublabel {
+    font-size: 0.78rem;
+    opacity: 0.85;
+    margin-top: 0.25rem;
+    font-weight: 400;
+}
+@media (max-width: 480px) {
+    .key-stat { padding: 1.25rem 0.75rem; }
+    .key-stat__number { font-size: 1.85rem; }
+}
+
+/* ---------- visiter-poi-grid / -card (source : tarifs.css L406-479) ---------- */
+.visiter-poi-grid {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+@media (min-width: 640px) {
+    .visiter-poi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+    .visiter-poi-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.visiter-poi-card {
+    background: #fff;
+    border: 1px solid var(--color-border, #E0E6E4);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.visiter-poi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(17, 112, 73, 0.10);
+}
+.visiter-poi-card__image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--color-bg-alt, #F7F9F8);
+}
+.visiter-poi-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.visiter-poi-card__image--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.visiter-poi-card__content {
+    padding: 1rem 1.1rem 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+.visiter-poi-card__name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text, #1A2B26);
+}
+.visiter-poi-card__station {
+    font-size: 0.85rem;
+    color: var(--color-text-muted, #5A6B66);
+}
+.visiter-poi-card__station a { color: var(--color-primary, #0F6E56); text-decoration: none; }
+.visiter-poi-card__station a:hover { text-decoration: underline; }
+.visiter-poi-card__desc {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--color-text, #1A2B26);
 }

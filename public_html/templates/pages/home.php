@@ -233,7 +233,9 @@ $networkStats = [
     ['number' => '350+', 'label' => 'lignes de bus', 'sublabel' => 'en Île-de-France'],
 ];
 
-// -------------------- Données : 5 entrées du site (Section 3) --------------------
+// -------------------- Données : 4 entrées du site (Section 3) --------------------
+// La card "Tarifs" est retirée (correction 2026-05-12). Le lien reste accessible
+// via la nav principale + la maintenance des partials info-callout.
 $entries = [
     [
         'icon'  => 'train-front',
@@ -263,23 +265,24 @@ $entries = [
         'cta'   => 'Consulter le trafic →',
         'url'   => '/info-trafic/',
     ],
-    [
-        'icon'  => 'euro',
-        'title' => 'Tarifs',
-        'desc'  => 'Tous les <strong>titres de transport 2026</strong> : ticket à l\'unité (' . e($tMtr) . '), forfaits Navigo Jour, semaine, mois. Tarification unifiée toutes zones.',
-        'cta'   => 'Voir les tarifs →',
-        'url'   => '/tarifs/',
-    ],
 ];
 
-// -------------------- Données : 5 cards maillage interne (Section 9) --------------------
-$mailing = [
-    ['icon' => 'train-front', 'title' => 'Tous les modes',           'desc' => 'Le réseau francilien complet en un coup d\'œil : sept modes complémentaires, plans et fonctionnement.', 'url' => '/se-deplacer/'],
-    ['icon' => 'landmark',    'title' => 'Que visiter à Paris',      'desc' => 'Les monuments, musées, jardins et lieux emblématiques avec la station de métro la plus proche pour chacun.', 'url' => '/visiter/'],
-    ['icon' => 'euro',        'title' => 'Tarifs et titres de transport', 'desc' => 'Tous les tarifs IDFM 2026 : ticket à ' . e($tMtr) . ', forfaits Navigo, abonnements annuels. Source unique mise à jour chaque janvier.', 'url' => '/tarifs/'],
-    ['icon' => 'activity',    'title' => 'Info trafic temps réel',   'desc' => 'L\'état du réseau aujourd\'hui, bulletins quotidiens et perturbations actives, données IDF Mobilités officielles.', 'url' => '/info-trafic/'],
-    ['icon' => 'map',         'title' => 'Planifier un itinéraire',  'desc' => 'Outils tiers recommandés pour calculer un trajet précis d\'un point A à un point B en Île-de-France.', 'url' => '/itineraires/'],
-];
+/**
+ * Convertit une étiquette ligne ("M1", "RER A", "T3a") en slug modificateur
+ * pour la classe CSS .line-pill--{slug}. Casse insensible, sans accents,
+ * espaces remplacés par tirets.
+ *
+ * Exemples :
+ *   "M1"    → "m1"
+ *   "RER A" → "rer-a"
+ *   "T3a"   → "t3a"
+ *   "M3bis" → "m3bis"
+ */
+$linePillSlug = function (string $line): string {
+    $s = mb_strtolower(trim($line), 'UTF-8');
+    $s = preg_replace('/\s+/', '-', $s);
+    return $s;
+};
 ?>
 
 <!-- =========================================================================
@@ -315,11 +318,11 @@ $mailing = [
      ========================================================================= -->
 <section class="section home-entries">
     <div class="container">
-        <h2>Le guide complet en cinq accès</h2>
+        <h2>Le guide complet en quatre accès</h2>
         <p class="section__intro">
-            Cinq portes d'entrée pour explorer Paris en transport : par mode, par
-            lieu à visiter, par itinéraire, par perturbation du jour, ou par budget.
-            Choisissez l'angle qui correspond à votre besoin.
+            Quatre portes d'entrée pour explorer Paris en transport : par mode, par
+            lieu à visiter, par itinéraire, ou par perturbation du jour. Choisissez
+            l'angle qui correspond à votre besoin.
         </p>
         <ul class="home-entries-grid" role="list">
             <?php foreach ($entries as $entry): ?>
@@ -378,11 +381,11 @@ $mailing = [
                         <h3 class="home-station-card__name"><?= e($s['name']) ?></h3>
                         <div class="home-station-card__lines">
                             <?php foreach ($s['lines'] as $line): ?>
-                            <span class="home-station-card__line"><?= e($line) ?></span>
+                            <span class="line-pill line-pill--<?= e($linePillSlug($line)) ?>"><?= e($line) ?></span>
                             <?php endforeach; ?>
                         </div>
                         <p class="home-station-card__tagline"><?= e($s['tagline']) ?></p>
-                        <span class="home-station-card__cta">Découvrir la station →</span>
+                        <span class="home-station-card__cta">Découvrir <?= e($s['name']) ?> →</span>
                     </div>
                 </a>
             </article>
@@ -460,11 +463,11 @@ $mailing = [
 </section>
 
 <!-- =========================================================================
-     SECTION 7 — Pourquoi BougeaParis (4 USP + info-callout)
+     SECTION 7 — Notre approche du guide (3 USP + info-callout)
      ========================================================================= -->
 <section class="section home-usp">
     <div class="container">
-        <h2>Pourquoi choisir BougeaParis</h2>
+        <h2>Notre approche du guide</h2>
         <p class="section__intro">
             Un guide indépendant des transports parisiens, <strong>gratuit</strong>
             et <strong>sans publicité intrusive</strong>. Notre approche : croiser
@@ -492,23 +495,15 @@ $mailing = [
                 </p>
             </article>
             <article class="home-usp-card">
-                <h3>Conseils touristiques intégrés</h3>
+                <h3>Tous les modes, conseils touristiques inclus</h3>
                 <p>
-                    Pour chaque station de métro, les <strong>monuments</strong>,
-                    <strong>musées</strong> et <strong>places</strong> à proximité avec
-                    la <strong>sortie à privilégier</strong>. Une approche pensée pour
-                    les visiteurs : aller à un lieu en métro devient aller à un lieu
-                    <strong>et</strong> découvrir son quartier.
-                </p>
-            </article>
-            <article class="home-usp-card">
-                <h3>Couverture multimodale</h3>
-                <p>
-                    Tous les modes de transport franciliens : <strong>métro</strong>,
+                    Tous les modes de transport franciliens — <strong>métro</strong>,
                     <strong>RER</strong>, <strong>bus</strong>, <strong>tramway</strong>,
-                    <strong>Transilien</strong>, <strong>gares parisiennes</strong> et
-                    <strong>liaisons aéroports</strong>. Une seule source pour planifier
-                    l'ensemble de vos trajets en Île-de-France, sans changer d'application.
+                    <strong>Transilien</strong>, <strong>gares parisiennes</strong>,
+                    <strong>liaisons aéroports</strong> — dans un seul guide. Pour chaque
+                    station, les <strong>monuments</strong>, <strong>musées</strong> et
+                    <strong>lieux à visiter</strong> à proximité avec la <strong>sortie à
+                    privilégier</strong>. Une approche multimodale pensée pour les visiteurs.
                 </p>
             </article>
         </div>
@@ -541,31 +536,11 @@ $mailing = [
     </div>
 </section>
 
-<!-- =========================================================================
-     SECTION 9 — Maillage interne enrichi (5 cards)
-     ========================================================================= -->
-<section class="section home-mailing">
-    <div class="container">
-        <h2>Aller plus loin</h2>
-        <p class="section__intro">
-            Toutes les <strong>portes d'entrée</strong> du guide pour approfondir
-            un mode, un quartier, un trajet ou un tarif spécifique.
-        </p>
-        <ul class="home-mailing-grid" role="list">
-            <?php foreach ($mailing as $card): ?>
-            <li class="home-mailing-card">
-                <a href="<?= e($card['url']) ?>" class="home-mailing-card__link">
-                    <span class="home-mailing-card__icon" aria-hidden="true">
-                        <?php component('icon-menu', ['icon' => $card['icon'], 'size' => 'sm']); ?>
-                    </span>
-                    <h3 class="home-mailing-card__title"><?= e($card['title']) ?></h3>
-                    <p class="home-mailing-card__desc"><?= $card['desc'] ?></p>
-                    <span class="home-mailing-card__cta">→</span>
-                </a>
-            </li>
-            <?php endforeach; ?>
-        </ul>
-    </div>
-</section>
+<!--
+     Section 9 (maillage interne enrichi) supprimée le 2026-05-12.
+     Raison : redondante avec Section 3 (mêmes destinations, même format cards).
+     Le maillage interne reste assuré par la nav principale, les CTAs des sections
+     et les liens éditoriaux dans les FAQ.
+-->
 
 <?php include __DIR__ . '/../ads/slot-footer.php'; ?>
