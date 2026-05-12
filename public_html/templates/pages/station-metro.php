@@ -468,11 +468,17 @@ $tpl->partial('components/breadcrumb', [
             $hasTerminus = $lineMeta
                 && ($lineMeta['terminus_a'] !== '' || $lineMeta['terminus_b'] !== '');
           ?>
+            <?php
+              // Correction 16a : migration vers .line-pill (correction unifiée 2026-05-12).
+              // Label "M{code}" préfixé pour cohérence avec hero badges (correction 15).
+              $pillLabel = 'M' . $line['code'];
+              $pillSlug  = 'm' . strtolower((string)$line['code']);
+            ?>
             <li>
               <div class="correspondance-line-link<?= $lineExists ? '' : ' correspondance-line-link--inactive' ?>">
-                <span class="correspondance-line-badge"
-                      style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
-                  <?= Template::e($line['code']) ?>
+                <span class="line-pill line-pill--<?= Template::e(linePillShape($pillLabel)) ?> line-pill--<?= Template::e($pillSlug) ?>"
+                      aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+                  <?= Template::e($pillLabel) ?>
                 </span>
                 <div class="correspondance-line-content">
                   <?php if ($lineExists): ?>
@@ -515,11 +521,16 @@ $tpl->partial('components/breadcrumb', [
               }
               $useHierarchical = $totalTerminus >= 4;
             ?>
+              <?php
+                // Correction 16a : .line-pill--square + couleur RATP officielle via classe.
+                $rerLabel = 'RER ' . $r['code'];
+                $rerPillSlug = 'rer-' . strtolower($r['code']);
+              ?>
               <li>
                 <div class="correspondance-line-link<?= $rerExists ? '' : ' correspondance-line-link--inactive' ?>">
-                  <span class="correspondance-line-badge correspondance-line-badge--rer"
-                        style="background:<?= Template::e(darkenForWhiteText($r['color'])) ?>;color:#FFFFFF;">
-                    RER <?= Template::e($r['code']) ?>
+                  <span class="line-pill line-pill--square line-pill--<?= Template::e($rerPillSlug) ?>"
+                        aria-label="<?= Template::e($rerLabel) ?>">
+                    <?= Template::e($rerLabel) ?>
                   </span>
                   <div class="correspondance-line-content">
                     <?php if ($rerExists): ?>
@@ -578,11 +589,16 @@ $tpl->partial('components/breadcrumb', [
               $tramUrl  = '/tramway/t' . strtolower($tramCode) . '/';
               $tramExists = Routes::exists(rtrim($tramUrl, '/'));
             ?>
+              <?php
+                // Correction 16a : .line-pill--square pour tramway (couleurs officielles bundle.css)
+                $tramLabel = 'T' . $tramCode;
+                $tramPillSlug = 't' . strtolower($tramCode);
+              ?>
               <li>
                 <div class="correspondance-line-link<?= $tramExists ? '' : ' correspondance-line-link--inactive' ?>">
-                  <span class="correspondance-line-badge correspondance-line-badge--tram"
-                        style="background:<?= Template::e(darkenForWhiteText($t['color'] ?? '#cead2c')) ?>;color:#FFFFFF;">
-                    T<?= Template::e($tramCode) ?>
+                  <span class="line-pill line-pill--square line-pill--<?= Template::e($tramPillSlug) ?>"
+                        aria-label="Tramway <?= Template::e($tramLabel) ?>">
+                    <?= Template::e($tramLabel) ?>
                   </span>
                   <div class="correspondance-line-content">
                     <?php if ($tramExists): ?>
@@ -617,10 +633,14 @@ $tpl->partial('components/breadcrumb', [
               $tnUrl  = '/transilien/transilien-' . strtolower($tnCode) . '/';
               $tnExists = Routes::exists(rtrim($tnUrl, '/'));
             ?>
+              <?php
+                // Correction 16a : .line-pill--square pour Transilien (label = lettre seule H/J/K/...)
+                $tnPillSlug = strtolower($tnCode);
+              ?>
               <li>
                 <div class="correspondance-line-link<?= $tnExists ? '' : ' correspondance-line-link--inactive' ?>">
-                  <span class="correspondance-line-badge correspondance-line-badge--transilien"
-                        style="background:<?= Template::e(darkenForWhiteText($tn['color'] ?? '#7A99C9')) ?>;color:#FFFFFF;">
+                  <span class="line-pill line-pill--square line-pill--<?= Template::e($tnPillSlug) ?>"
+                        aria-label="Transilien <?= Template::e($tnCode) ?>">
                     <?= Template::e($tnCode) ?>
                   </span>
                   <div class="correspondance-line-content">
@@ -774,10 +794,15 @@ $tpl->partial('components/breadcrumb', [
                 $dirLabel = ' — directions ' . $dirs[0] . ' et ' . $dirs[1];
             }
             ?>
+            <?php
+              // Correction 16a : .line-pill--metro pour stations adjacentes métro (sur la même ligne)
+              $adjPillLabel = 'M' . $line['code'];
+              $adjPillSlug  = 'm' . strtolower((string)$line['code']);
+            ?>
             <h3 class="adjacent-line-title">
-              <span class="adjacent-line-badge"
-                    style="background:<?= Template::e($line['color']) ?>;color:<?= Template::e($line['text_color']) ?>;">
-                <?= Template::e($line['code']) ?>
+              <span class="line-pill line-pill--<?= Template::e(linePillShape($adjPillLabel)) ?> line-pill--<?= Template::e($adjPillSlug) ?>"
+                    aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+                <?= Template::e($adjPillLabel) ?>
               </span>
               <span>Ligne <?= Template::e($line['code']) ?><?= Template::e($dirLabel) ?></span>
             </h3>

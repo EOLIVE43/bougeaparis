@@ -254,23 +254,9 @@ a.correspondance-line-name:focus-visible {
     border-radius: 2px;
 }
 
-.correspondance-line-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 0.875rem;
-    flex-shrink: 0;
-}
-.correspondance-line-badge--rer {
-    width: auto;
-    padding: 0 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-}
+/* NOTE : ancien .correspondance-line-badge supprimé (correction 16a 2026-05-12).
+   Le markup utilise désormais .line-pill + modificateurs de forme/couleur
+   définis dans bundle.css (composant unifié homepage + stations + correspondances). */
 
 .correspondance-line-name {
     font-size: 0.95rem;
@@ -358,16 +344,8 @@ a.correspondance-line-name:focus-visible {
     font-size: 1rem !important;
 }
 
-.adjacent-line-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 0.875rem;
-}
+/* NOTE : ancien .adjacent-line-badge supprimé (correction 16a 2026-05-12).
+   Le markup utilise désormais .line-pill (composant unifié bundle.css). */
 
 .adjacent-stations {
     display: flex;
@@ -1739,12 +1717,9 @@ a.correspondance-bus-badge:focus {
     background: #5A6878;
 }
 
-.correspondance-line-badge--tram {
-    border-radius: 999px;
-}
-.correspondance-line-badge--transilien {
-    border-radius: 6px;
-}
+/* NOTE : anciens .correspondance-line-badge--tram et --transilien supprimés
+   (correction 16a 2026-05-12). Le markup utilise désormais .line-pill--square
+   + modificateurs couleur de bundle.css. */
 
 /* ============================================================
    16bis-bis. ZONES PUBLICITAIRES PLACEHOLDER (AdSense futur)
