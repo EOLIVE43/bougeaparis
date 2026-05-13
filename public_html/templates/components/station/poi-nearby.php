@@ -12,7 +12,13 @@
  *                  Chaque entrée : { wikidata_id, name, category, description,
  *                                    image_url, wikipedia_url, latitude,
  *                                    longitude, nearest_exit:{number, name,
- *                                    distance_m, walk_minutes} }
+ *                                    distance_m, walk_minutes},
+ *                                    access_hint:string|null }
+ *                  Note : access_hint (string libre optionnelle) prend le pas
+ *                  sur le bloc nearest_exit quand présent. À utiliser pour les
+ *                  POIs qui ne se résument pas à une sortie unique chiffrable
+ *                  (POI au-dessus de la station, accessible depuis plusieurs
+ *                  sorties, distance imprécise, etc.).
  *   $stationName : string, nom de la station (pour titre + aria).
  *
  * Affichage responsive :
@@ -63,6 +69,7 @@ $count = count($pois);
       // wikipedia_url conserve dans le JSON (audit + future migration vers
       // pages POI internes) mais NON utilise pour le rendu : voir TODO ci-dessous.
       $exit        = $poi['nearest_exit']           ?? null;
+      $accessHint  = (string)($poi['access_hint']    ?? '');
       $featured    = !empty($poi['is_featured']);
 
       // Wikidata renvoie les labels en bas de casse ("cathedrale Notre-Dame",
@@ -102,7 +109,12 @@ $count = count($pois);
             <p class="poi-description"><?= e($description) ?></p>
           <?php endif; ?>
 
-          <?php if ($hasExit): ?>
+          <?php if ($accessHint !== ''): ?>
+            <div class="poi-exit" aria-label="Accès depuis la station">
+              <span class="poi-exit__icon" aria-hidden="true">→</span>
+              <?= e($accessHint) ?>
+            </div>
+          <?php elseif ($hasExit): ?>
             <div class="poi-exit" aria-label="Accès depuis la station">
               <span class="poi-exit__icon" aria-hidden="true">→</span>
               Sortie <strong><?= e((string)$exit['number']) ?></strong>
