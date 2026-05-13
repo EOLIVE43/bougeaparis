@@ -1,0 +1,565 @@
+{
+    "_doc": "Données structurées de la station Bastille. Format JSON BougeaParis v1. Q-IDs Wikidata validés via SPARQL 2026-05-12. Production éditoriale 2026-05-13 (mode A pragmatique, faits validés ligne à ligne 2026-05-12).",
+    "slug": "bastille",
+    "name": "Bastille",
+    "name_full": "Bastille (Métro 1, 5, 8)",
+    "arrondissement": "4e, 11e, 12e",
+    "address": "Place de la Bastille, 75011 Paris",
+    "latitude": 48.85284,
+    "longitude": 2.36918,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#CDAEC7",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": ["20", "29", "69", "76", "87", "91"],
+        "nocturne": [],
+        "regional": [],
+        "_note": "Liste non exhaustive — les statistiques de desserte bus à la Bastille évoluent. Plusieurs autres lignes RATP marquent l'arrêt à proximité immédiate."
+    },
+    "seo": {
+        "description": "Station Bastille (Métro 1, 5, 8) sous la place de la Bastille : correspondances, sorties, plan, accès Opéra Bastille, Port de l'Arsenal, Coulée verte."
+    },
+    "hero": {
+        "tagline": "Sous la place de la Bastille — Lignes 1, 5 et 8 au cœur de l'est parisien",
+        "description": "Située sous l'une des places les plus chargées d'histoire de Paris, la <strong>station Bastille</strong> dessert les <strong>lignes 1, 5 et 8 du métro</strong>. Ouverte en 1900 sur la première ligne du métropolitain, elle se trouve à l'emplacement exact de l'<em>ancienne forteresse de la Bastille</em>, prise d'assaut le 14 juillet 1789. Aujourd'hui, la place est dominée par la <strong>Colonne de Juillet</strong> (1840) et bordée par l'<strong>Opéra Bastille</strong> (1989), faisant de cette station un nœud majeur du centre-est parisien."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Saint-Paul",
+                "slug": "saint-paul",
+                "direction": "La Défense"
+            },
+            "next": {
+                "name": "Gare de Lyon",
+                "slug": "gare-de-lyon",
+                "direction": "Château de Vincennes"
+            }
+        },
+        "metro-5": {
+            "previous": {
+                "name": "Bréguet — Sabin",
+                "slug": "breguet-sabin",
+                "direction": "Bobigny — Pablo Picasso"
+            },
+            "next": {
+                "name": "Quai de la Rapée",
+                "slug": "quai-de-la-rapee",
+                "direction": "Place d'Italie"
+            }
+        },
+        "metro-8": {
+            "previous": {
+                "name": "Chemin Vert",
+                "slug": "chemin-vert",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Ledru-Rollin",
+                "slug": "ledru-rollin",
+                "direction": "Pointe du Lac"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>station Bastille</strong> est l'une des plus emblématiques du métro parisien. Située sous la <strong>place de la Bastille</strong>, à la jonction des <strong>4e, 11e et 12e arrondissements</strong>, elle dessert trois lignes — la <strong>ligne 1</strong>, ouverte le <strong>19 juillet 1900</strong> dès la mise en service du métro de Paris, la <strong>ligne 5</strong> arrivée le <strong>17 décembre 1906</strong> et la <strong>ligne 8</strong> le <strong>5 mai 1931</strong>. Elle constitue un <em>point névralgique du centre-est parisien</em>, en correspondance avec de nombreuses lignes de bus (notamment les <strong>20, 29, 69, 76, 87 et 91</strong>) et à proximité immédiate du Marais, de l'Opéra Bastille, du Port de l'Arsenal et de l'entrée de la Coulée verte René-Dumont. Elle accueille plusieurs millions de voyageurs par an, même si les statistiques RATP fluctuent fortement selon les périodes.",
+        "La place tire son nom de la <strong>forteresse de la Bastille</strong>, édifiée à partir de <strong>1370</strong> sous Charles V par le prévôt de Paris <strong>Hugues Aubriot</strong>. D'abord ouvrage défensif protégeant la porte Saint-Antoine, elle est progressivement transformée en prison d'État sous l'Ancien Régime et devient l'un des symboles de l'arbitraire royal. Le <strong>14 juillet 1789</strong>, la prise de la Bastille par les Parisiens devient le symbole du début de la Révolution française. La forteresse est entièrement démolie dans la foulée, le chantier de démolition s'achevant au <strong>printemps 1790</strong>. La place est ensuite redessinée au cours du XIXe siècle ; quelques pavés au sol et des pierres conservées au <strong>square Henri-Galli</strong> en marquent encore aujourd'hui l'emplacement et les contours.",
+        "Avec ses trois lignes de métro (M1, M5, M8) et son réseau de bus dense, la <strong>station Bastille</strong> est l'un des grands nœuds de correspondance de la rive droite. Elle est à la fois un point de départ touristique majeur (Opéra Bastille, Marais, Port de l'Arsenal, Coulée verte vers le bois de Vincennes) et un nœud quotidien pour les habitants du 11e et du 12e. Sa position à l'extrémité est du <em>cocon historique parisien</em> en fait également un point de pivot vers les terminus orientaux (M5 vers Bobigny, M8 vers Créteil et Pointe du Lac, M1 vers Château de Vincennes). Attention : aucune des trois lignes n'est accessible aux PMR à Bastille — aucun ascenseur ne dessert les quais."
+    ],
+    "faq": [
+        {
+            "question": "Combien de lignes desservent la station Bastille ?",
+            "answer": "La station Bastille est desservie par <strong>trois lignes de métro</strong> : la <strong>ligne 1</strong> (axe est-ouest, vers La Défense ou Château de Vincennes), la <strong>ligne 5</strong> (vers Bobigny — Pablo Picasso ou Place d'Italie) et la <strong>ligne 8</strong> (vers Balard ou Pointe du Lac). C'est l'un des grands nœuds de correspondance de l'est parisien, complété par de nombreuses lignes de bus à la surface (notamment les <strong>20, 29, 69, 76, 87 et 91</strong>)."
+        },
+        {
+            "question": "Comment accéder à l'Opéra Bastille depuis la station ?",
+            "answer": "L'<strong>Opéra Bastille</strong> donne directement sur la place, à l'angle sud-est. Empruntez les sorties orientées vers la <strong>rue de Lyon</strong> ou le <strong>boulevard Henri-IV</strong> : le bâtiment est en face, à environ 100 m. Comptez <strong>2 minutes à pied</strong>. L'opéra, inauguré le 13 juillet 1989, dispose de plusieurs entrées : l'entrée principale du public se trouve au 120, rue de Lyon, et les guichets sont accessibles depuis la place de la Bastille elle-même."
+        },
+        {
+            "question": "La station Bastille est-elle accessible aux PMR ?",
+            "answer": "<strong>Non.</strong> Aucune des trois lignes (1, 5, 8) n'est accessible aux personnes à mobilité réduite à Bastille : <strong>aucun ascenseur</strong> ne dessert les quais. Malgré l'automatisation récente de la ligne 1 (2012-2013), la station reste non conforme à la norme PMR 2005. Pour un accès PMR sur l'est parisien, privilégiez la <strong>ligne 14</strong> (Gare de Lyon ou Saint-Lazare) ou la station <strong>Châtelet</strong> pour les correspondances centrales (audit Wikipedia / RATP 2026-05-12)."
+        },
+        {
+            "question": "Quels sont les horaires du premier et du dernier métro à Bastille ?",
+            "answer": "Le <strong>premier métro à Bastille</strong> circule à partir de <strong>5h30</strong> sur les lignes 1, 5 et 8, du lundi au dimanche. Le <strong>dernier métro</strong> quitte la station vers <strong>1h15 en semaine</strong>, avec un <strong>prolongement jusqu'à 2h15 le vendredi, le samedi et les veilles de fêtes</strong>. Les Noctiliens (bus de nuit) prennent ensuite le relais depuis les arrêts de la place. Les horaires détaillés par ligne sont disponibles via l'application RATP officielle."
+        },
+        {
+            "question": "Comment rejoindre le Port de l'Arsenal depuis la station ?",
+            "answer": "Le <strong>Port de l'Arsenal</strong>, port de plaisance d'environ <strong>180 anneaux</strong> situé entre la Seine et le canal Saint-Martin, est à <strong>3 minutes à pied</strong> de la station Bastille. Empruntez la sortie côté sud-ouest, en direction du <strong>boulevard Bourdon</strong> : vous longez le quai et arrivez directement au bassin. C'est l'un des points les plus agréables pour une pause en bord d'eau, avec terrasses de café, péniches résidentielles et embarcadère vers la Seine."
+        },
+        {
+            "question": "Où se trouve la Colonne de Juillet ?",
+            "answer": "La <strong>Colonne de Juillet</strong> se dresse <strong>au centre exact de la place de la Bastille</strong>, à environ 30 m de la plupart des sorties de la station. Inaugurée le <strong>28 juillet 1840</strong>, elle commémore les <em>Trois Glorieuses</em> (les 27, 28 et 29 juillet 1830) et porte gravés les <strong>504 noms</strong> des combattants morts pour la Liberté. Elle mesure <strong>47 mètres de haut</strong>, surmontée du <em>Génie de la Liberté</em> doré d'<strong>Auguste Dumont</strong>. Visible depuis n'importe quelle sortie de la station."
+        },
+        {
+            "question": "Quelle sortie prendre pour rejoindre le Marais depuis Bastille ?",
+            "answer": "Pour rejoindre le <strong>Marais</strong>, empruntez la sortie côté ouest de la station, en direction de la <strong>rue Saint-Antoine</strong>. Cette artère remonte directement vers le cœur du Marais (rue de Sévigné, place des Vosges) en <strong>5 à 10 minutes à pied</strong>. Pour le Marais nord (rue des Archives, rue Vieille-du-Temple), il peut être plus rapide de redescendre d'une station avec la <strong>ligne 1 jusqu'à Saint-Paul</strong> (1 minute), qui dépose en plein cœur du quartier."
+        },
+        {
+            "question": "La place de la Bastille a-t-elle vraiment été l'emplacement de la forteresse ?",
+            "answer": "Oui. La <strong>forteresse de la Bastille</strong>, édifiée à partir de <strong>1370</strong> sous Charles V par le prévôt Hugues Aubriot, occupait précisément l'emplacement de la place actuelle. Démolie après sa prise le 14 juillet 1789, son contour est aujourd'hui matérialisé par des <strong>pavés différents au sol</strong> visibles sur la place. Certaines pierres d'origine, retrouvées en <strong>1899</strong> lors du creusement de la ligne 1 du métro, ont été déplacées et exposées au <strong>square Henri-Galli</strong>, à 5 minutes à pied au sud."
+        }
+    ],
+    "practical_tips": [
+        "Aux heures de pointe (8h-10h et 17h-19h), les correspondances entre les lignes 1, 5 et 8 sont fluides mais demandent quelques minutes de marche dans les couloirs souterrains. Suivez la signalétique colorée par ligne.",
+        "Le quartier est très animé en soirée et la nuit : les <strong>rue de la Roquette</strong> et <strong>rue de Lappe</strong> concentrent bars, restaurants et discothèques. Vigilance accrue pour les sorties tardives, notamment côté pickpockets aux abords de la place.",
+        "Pour le cœur du Marais (place des Vosges, rue des Rosiers), il est souvent plus rapide de descendre à <strong>Saint-Paul (M1, 1 min depuis Bastille)</strong> qu'à Bastille elle-même.",
+        "Pour accéder au Port de l'Arsenal côté sud, la station <strong>Quai de la Rapée (M5)</strong> peut être plus pratique : prévoir 5 min à pied le long du bassin si vous arrivez par le sud.",
+        "Le <strong>14 juillet</strong>, la place accueille le rassemblement officiel et un grand bal populaire : certaines sorties de la station sont temporairement fermées ce jour-là. Prévoir une station alternative (Gare de Lyon, République, Saint-Paul).",
+        "Le <strong>boulevard Beaumarchais</strong> (au nord de la place) offre une ambiance bobo avec boutiques de mode, concept-stores et cafés — idéal pour une balade après une visite de la Colonne ou de l'Opéra."
+    ],
+    "history": {
+        "title": "Au pied d'une forteresse devenue place révolutionnaire",
+        "paragraphs": [
+            "La <strong>forteresse de la Bastille</strong> est édifiée à partir de <strong>1370</strong> sous le règne de Charles V, à l'initiative du prévôt de Paris <strong>Hugues Aubriot</strong>. Conçue à l'origine pour défendre la porte Saint-Antoine, elle compte huit tours rondes reliées par des courtines, encerclant une cour intérieure. Au fil des siècles, elle devient un symbole de l'arbitraire royal et sert de prison d'État, accueillant des prisonniers célèbres (le Masque de fer, Voltaire, le marquis de Sade). Le <strong>14 juillet 1789</strong>, la foule parisienne, à la recherche de poudre et d'armes, prend la forteresse d'assaut. Sa démolition est ordonnée dès le lendemain et s'achève au <strong>printemps 1790</strong>. La place qui la remplace est dessinée progressivement entre 1792 et le début du XIXe siècle.",
+            "La <strong>station Bastille</strong> de la <strong>ligne 1</strong> est mise en service le <strong>19 juillet 1900</strong>, dans le cadre de l'ouverture de la toute première ligne du métropolitain entre Porte Maillot et Porte de Vincennes — quelques jours après l'inauguration et en pleine Exposition universelle. Elle fait donc partie des stations originelles du réseau. La <strong>ligne 5</strong> y arrive le <strong>17 décembre 1906</strong>, lors de l'ouverture de la première section <em>Place Mazas — Lancry</em>, dont Bastille est l'une des têtes de pont. La <strong>ligne 8</strong> rejoint enfin la station le <strong>5 mai 1931</strong>, lors de l'extension <em>Richelieu-Drouot → Porte de Charenton</em>, faisant alors de Bastille l'un des premiers nœuds triples de la rive droite.",
+            "Au-dessus de la station, deux monuments majeurs racontent l'histoire moderne de la place. La <strong>Colonne de Juillet</strong>, inaugurée le <strong>28 juillet 1840</strong> en commémoration des <em>Trois Glorieuses</em> (les journées révolutionnaires des 27, 28 et 29 juillet 1830), s'élève à <strong>47 mètres</strong> et porte gravés les <strong>504 noms</strong> des combattants morts pour la Liberté. À son sommet, le <strong>Génie de la Liberté</strong>, sculpture dorée d'<strong>Auguste Dumont</strong>, brandit une torche et des chaînes brisées. Plus à l'est, l'<strong>Opéra Bastille</strong>, voulu par François Mitterrand pour le bicentenaire de la Révolution, est inauguré le <strong>13 juillet 1989</strong>. Conçu par l'architecte uruguayen <strong>Carlos Ott</strong>, son grand auditorium peut accueillir <strong>2745 spectateurs</strong>."
+        ]
+    },
+    "trivia": [
+        {
+            "icon": "🏰",
+            "title": "Les pavés qui dessinent la forteresse au sol",
+            "content": "Sur la <strong>place de la Bastille</strong>, des <strong>pavés différents au sol</strong> retracent encore aujourd'hui le contour exact de l'ancienne forteresse. Cette signalétique discrète, installée au XXe siècle, permet aux promeneurs attentifs de retrouver l'emplacement des huit tours et des courtines de l'ouvrage médiéval démoli en 1789-1790."
+        },
+        {
+            "icon": "🎭",
+            "title": "L'Opéra Bastille a failli être construit ailleurs",
+            "content": "L'<strong>Opéra Bastille</strong> aurait pu ne jamais voir le jour à cet emplacement. Le projet d'un grand opéra populaire, voulu par François Mitterrand pour le <strong>bicentenaire de la Révolution</strong>, avait initialement plusieurs sites en concurrence. Le choix de la Bastille, symboliquement chargé, est arrêté en 1982. L'opéra, conçu par l'architecte uruguayen <strong>Carlos Ott</strong> et abritant <strong>2745 places</strong> dans sa grande salle, est inauguré le 13 juillet 1989, veille du bicentenaire."
+        },
+        {
+            "icon": "🗿",
+            "title": "Des pierres de la Bastille retrouvées en construisant la ligne 1",
+            "content": "Lors du <strong>creusement de la ligne 1</strong> du métro en <strong>1899</strong>, les ouvriers tombent sur des fondations et plusieurs pierres de l'ancienne forteresse, oubliées sous la place depuis la démolition de 1789-1790. Ces vestiges sont soigneusement extraits puis déplacés au <strong>square Henri-Galli</strong>, à quelques minutes à pied au sud de la place. On peut encore y voir aujourd'hui un assemblage de pierres représentant un fragment d'une des tours médiévales."
+        },
+        {
+            "icon": "🗽",
+            "title": "Le Génie de la Liberté au sommet de la Colonne",
+            "content": "Au sommet de la <strong>Colonne de Juillet</strong>, à 47 mètres de hauteur, se dresse une sculpture dorée représentant un jeune homme ailé portant une torche et des chaînes brisées : c'est le <strong>Génie de la Liberté</strong>, œuvre du sculpteur <strong>Auguste Dumont</strong>. À ne pas confondre avec Bartholdi, auteur de la Statue de la Liberté de New York : ces deux œuvres, distantes d'un demi-siècle, sont indépendantes."
+        },
+        {
+            "icon": "📜",
+            "title": "504 noms gravés pour la Liberté",
+            "content": "La <strong>Colonne de Juillet</strong> porte gravés sur son fût les noms de <strong>504 combattants</strong> morts pendant les <strong>Trois Glorieuses</strong>, les journées révolutionnaires des <strong>27, 28 et 29 juillet 1830</strong> qui mirent fin au règne de Charles X. La crypte située sous la colonne abrite leurs restes. Inaugurée le 28 juillet 1840 par Louis-Philippe, dix ans jour pour jour après les événements, elle est l'un des monuments commémoratifs les plus complets de Paris."
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place de la Bastille — Boulevard Beaumarchais",
+            "address_full": "Boulevard Beaumarchais (face place de la Bastille), 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.85345,
+            "longitude": 2.36915,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "2",
+            "name": "Rue Saint-Antoine (Marais)",
+            "address_full": "Rue Saint-Antoine (départ ouest), 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.85308,
+            "longitude": 2.36842,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "3",
+            "name": "Rue de la Roquette",
+            "address_full": "Rue de la Roquette (départ), 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.85322,
+            "longitude": 2.36988,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "4",
+            "name": "Boulevard Bourdon (Port de l'Arsenal)",
+            "address_full": "Boulevard Bourdon, 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.85213,
+            "longitude": 2.36844,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "5",
+            "name": "Rue de Lyon (Opéra Bastille)",
+            "address_full": "Rue de Lyon (départ nord), 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.85240,
+            "longitude": 2.36980,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "6",
+            "name": "Boulevard Henri-IV",
+            "address_full": "Boulevard Henri-IV (départ), 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.85220,
+            "longitude": 2.36880,
+            "accessible": false,
+            "sector": null
+        },
+        {
+            "number": "7",
+            "name": "Boulevard Richard-Lenoir",
+            "address_full": "Boulevard Richard-Lenoir (départ sud), 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.85363,
+            "longitude": 2.36963,
+            "accessible": false,
+            "sector": null
+        }
+    ],
+    "_exits_note": "Coordonnées approximatives basées sur géolocalisation manuelle des accès périphériques de la place. À affiner via GTFS IDFM (scripts/build-station-exits.php) si besoin de précision décamétrique.",
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Bastille → Châtelet",
+            "lines_used": ["1"],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare de Lyon",
+            "destination_slug": "gare-de-lyon",
+            "destination_full_name": "Bastille → Gare de Lyon",
+            "lines_used": ["1"],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-gare-de-lyon/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Bastille → République",
+            "lines_used": ["5"],
+            "lines_label": "Ligne 5 directe",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-republique/"
+        },
+        {
+            "destination_name": "Charles de Gaulle — Étoile",
+            "destination_slug": "charles-de-gaulle-etoile",
+            "destination_full_name": "Bastille → Étoile",
+            "lines_used": ["1"],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 22,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-charles-de-gaulle-etoile/"
+        },
+        {
+            "destination_name": "La Défense",
+            "destination_slug": "la-defense-grande-arche",
+            "destination_full_name": "Bastille → La Défense",
+            "lines_used": ["1"],
+            "lines_label": "Ligne 1 directe",
+            "duration_minutes": 26,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-la-defense-grande-arche/"
+        },
+        {
+            "destination_name": "Tour Eiffel (Bir-Hakeim)",
+            "destination_slug": "bir-hakeim",
+            "destination_full_name": "Bastille → Tour Eiffel",
+            "lines_used": ["8", "6"],
+            "lines_label": "Ligne 8 puis Ligne 6 (La Motte-Picquet — Grenelle)",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-bir-hakeim/"
+        },
+        {
+            "destination_name": "Aéroport CDG",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Bastille → CDG",
+            "lines_used": ["1", "RER B"],
+            "lines_label": "Ligne 1 puis RER B (Châtelet — Les Halles)",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-aeroport-charles-de-gaulle/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland-paris",
+            "destination_full_name": "Bastille → Disneyland",
+            "lines_used": ["1", "RER A"],
+            "lines_label": "Ligne 1 puis RER A (Nation ou Châtelet)",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bastille/bastille-vers-disneyland-paris/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q778784",
+            "name": "Place de la Bastille",
+            "category": "place",
+            "description": "Place historique de Paris (4e, 11e, 12e), emplacement de l'ancienne forteresse démolie en 1789-1790. Symbole de la Révolution française.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20Bastille%20depuis%20l%27Op%C3%A9ra.jpg?width=800",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Place_de_la_Bastille_depuis_l%27Op%C3%A9ra.jpg",
+                "wikimedia_file": "Place de la Bastille depuis l'Opéra.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Bastille",
+            "latitude": 48.85314,
+            "longitude": 2.36911,
+            "nearest_exit": {
+                "number": null,
+                "name": "Place de la Bastille",
+                "distance_m": 33,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q269641",
+            "name": "Colonne de Juillet",
+            "category": "monument",
+            "description": "Colonne de 47 m inaugurée le 28 juillet 1840 en hommage aux Trois Glorieuses (1830). 504 noms gravés, surmontée du Génie de la Liberté doré.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Colonne%20de%20Juillet%20972.jpg?width=800",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Colonne_de_Juillet_972.jpg",
+                "wikimedia_file": "Colonne de Juillet 972.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Colonne_de_Juillet",
+            "latitude": 48.85306,
+            "longitude": 2.36917,
+            "nearest_exit": {
+                "number": null,
+                "name": "Place de la Bastille — centre",
+                "distance_m": 25,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q638423",
+            "name": "Opéra Bastille",
+            "category": "monument",
+            "description": "Opéra moderne inauguré le 13 juillet 1989, conçu par l'architecte uruguayen Carlos Ott pour le bicentenaire de la Révolution. Grande salle de 2745 places.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20und%20Place%20de%20la%20Bastille.JPG?width=800",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Op%C3%A9ra_und_Place_de_la_Bastille.JPG",
+                "wikimedia_file": "Opéra und Place de la Bastille.JPG"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Bastille",
+            "latitude": 48.85194,
+            "longitude": 2.37056,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Rue de Lyon (Opéra Bastille)",
+                "distance_m": 115,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1102184",
+            "name": "Port de l'Arsenal",
+            "category": "patrimoine",
+            "description": "Port de plaisance d'environ 180 anneaux situé entre la Seine et le canal Saint-Martin. Promenade très prisée à 3 min à pied de la place.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20port%20Arsenal.jpg?width=800",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Paris_port_Arsenal.jpg",
+                "wikimedia_file": "Paris port Arsenal.jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Port_de_l%27Arsenal",
+            "latitude": 48.85100,
+            "longitude": 2.36800,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bourdon (Port de l'Arsenal)",
+                "distance_m": 200,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2060889",
+            "name": "Coulée verte René-Dumont",
+            "category": "jardin",
+            "description": "Ancienne Promenade Plantée, sentier vert de 4,7 km installé sur un ancien viaduc ferroviaire, reliant Bastille au bois de Vincennes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Promenade%20plant%C3%A9e%2C%20Paris%20August%202009%20%2810%29.jpg?width=800",
+            "image_credit": {
+                "author": "Wikimedia Commons",
+                "license": "CC BY-SA 4.0",
+                "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+                "source_url": "https://commons.wikimedia.org/wiki/File:Promenade_plant%C3%A9e%2C_Paris_August_2009_%2810%29.jpg",
+                "wikimedia_file": "Promenade plantée, Paris August 2009 (10).jpg"
+            },
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Coul%C3%A9e_verte_Ren%C3%A9-Dumont",
+            "latitude": 48.84957,
+            "longitude": 2.37110,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Rue de Lyon (Opéra Bastille)",
+                "distance_m": 370,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "la salle d'échanges des lignes 1, 5 et 8",
+            "coverage_detail": "les quais des trois lignes"
+        },
+        "toilets": {
+            "public_paid": { "available": false },
+            "public_free": {
+                "available": true,
+                "location": "le Port de l'Arsenal (sanitaires municipaux) ou la Coulée verte René-Dumont (avenue Daumesnil)",
+                "access": "à 3-5 min à pied"
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs banques",
+            "locations": [
+                "la salle d'échanges principale",
+                "les commerces de la rue Saint-Antoine et du boulevard Beaumarchais"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "à proximité du quai de la Ligne 1",
+            "services": "vente de titres, recharge Navigo, information voyageurs"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                {
+                    "name": "Nannybag",
+                    "type": "points relais commerces du quartier (rue Saint-Antoine, rue de la Roquette, boulevard Beaumarchais)"
+                },
+                {
+                    "name": "Bounce",
+                    "type": "points relais hôtels du 4e et du 11e"
+                }
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Rue de la Roquette et rue de Lappe (5 min à pied)",
+            "details": "Bars, restaurants, discothèques, ambiance soirée animée surtout le week-end",
+            "secondary": "Boulevard Beaumarchais (boutiques de mode, concept-stores bobo) et rue Saint-Antoine (cœur du Marais, restaurants)"
+        }
+    },
+    "safety": {
+        "audit_status": "verified",
+        "audit_date": "2026-05-13",
+        "level": "vigilant",
+        "agents": true,
+        "police": true,
+        "tips": [
+            "Quartier touristique et festif très fréquenté : <strong>vigilance pickpockets</strong> accrue, surtout aux abords des sorties les plus passantes et autour de la Colonne de Juillet.",
+            "En soirée tardive (notamment vendredi et samedi), les rue de la Roquette et rue de Lappe concentrent la vie nocturne : préférer rester en groupe et privilégier les artères principales pour rejoindre la station.",
+            "Pour <strong>traverser la place à pied</strong>, empruntez les passages piétons protégés : l'axe est complexe (multiples carrefours autour de la Colonne), avec une circulation dense aux heures de pointe.",
+            "La place de la Bastille est un lieu historique de <strong>rassemblements politiques et manifestations</strong>. Vérifiez les actualités locales (préfecture de Paris) en cas de déplacement les jours sensibles : certaines sorties peuvent être temporairement fermées."
+        ],
+        "notes": "La station est classée niveau de sécurité <strong>standard à vigilant</strong> selon les périodes. Présence d'agents RATP et de forces de police régulière, renforcée lors des manifestations et du 14 juillet."
+    },
+    "hero_image": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20Bastille%20depuis%20l%27Op%C3%A9ra.jpg?width=1920",
+        "alt": "Vue de la Place de la Bastille depuis l'Opéra Bastille, avec la Colonne de Juillet au centre",
+        "width": 1920,
+        "height": 1080,
+        "credit": {
+            "author": "Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Place_de_la_Bastille_depuis_l%27Op%C3%A9ra.jpg"
+        },
+        "source": "wikidata_p18_q778784",
+        "local_versions": {
+            "avif": {
+                "400":  "/assets/img/stations/bastille/bastille-400.avif",
+                "800":  "/assets/img/stations/bastille/bastille-800.avif",
+                "1200": "/assets/img/stations/bastille/bastille-1200.avif",
+                "1600": "/assets/img/stations/bastille/bastille-1600.avif"
+            },
+            "webp": {
+                "400":  "/assets/img/stations/bastille/bastille-400.webp",
+                "800":  "/assets/img/stations/bastille/bastille-800.webp",
+                "1200": "/assets/img/stations/bastille/bastille-1200.webp",
+                "1600": "/assets/img/stations/bastille/bastille-1600.webp"
+            },
+            "jpg": {
+                "400":  "/assets/img/stations/bastille/bastille-400.jpg",
+                "800":  "/assets/img/stations/bastille/bastille-800.jpg",
+                "1200": "/assets/img/stations/bastille/bastille-1200.jpg",
+                "1600": "/assets/img/stations/bastille/bastille-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "verified",
+        "audit_date": "2026-05-12",
+        "level": "non-conforme",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 3
+        },
+        "details": "Aucun ascenseur ne dessert les quais des lignes 1, 5 ou 8 à Bastille. Station historique non-PMR malgré l'automatisation récente de la ligne 1 (2012-2013). Pour un accès PMR sur l'axe est de Paris, privilégier la ligne 14 (Gare de Lyon ou Saint-Lazare). Audit Wikipedia / RATP officiel 2026-05-12."
+    }
+}

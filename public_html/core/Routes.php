@@ -86,6 +86,7 @@ class Routes
         'concorde',
         'tuileries',
         'palais-royal-musee-du-louvre',
+        'bastille',
     ];
 
     /**
