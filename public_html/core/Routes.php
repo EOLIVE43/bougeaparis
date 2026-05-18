@@ -72,22 +72,16 @@ class Routes
     ];
 
     /**
-     * Liste blanche des stations métro actives.
-     * Ajouter ici le slug d'une station quand sa page est prête.
-     * Tant qu'une station n'est pas listée, son lien est gris (smart-link inactif).
+     * Détection dynamique de l'activation d'une station métro.
+     * Une station est "active" (= page liée cliquable) si :
+     *   - data/stations/{slug}.json existe
+     *   - "published": true au niveau racine du JSON (garde-fou : squelettes
+     *     non terminés restent en 404 tant qu'on ne flippe pas le flag).
      *
-     * Exemples futurs :
-     *   'chatelet', 'la-defense', 'charles-de-gaulle-etoile', 'concorde',
+     * Pas de liste blanche à maintenir : il suffit de pousser un JSON station
+     * avec published=true pour activer la route correspondante.
+     * Cf. isLineActive() pour le même pattern côté lignes métro.
      */
-    private static array $activeStationSlugs = [
-        'chatelet',
-        'la-defense-grande-arche',
-        'charles-de-gaulle-etoile',
-        'concorde',
-        'tuileries',
-        'palais-royal-musee-du-louvre',
-        'bastille',
-    ];
 
     /**
      * Liste blanche des gares actives (cluster /gare/{slug}/).
@@ -115,9 +109,10 @@ class Routes
             }
         }
 
-        // 2. Pages station métro — activation par slug-list
+        // 2. Pages station métro — détection dynamique (data/stations/{slug}.json
+        //    existe ET "published": true au niveau racine).
         if (preg_match('~^/metro/station/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
-            return in_array($matches[1], self::$activeStationSlugs, true);
+            return self::isStationActive($matches[1]);
         }
 
         // 3. Pages gare — activation par slug-list
@@ -155,6 +150,29 @@ class Routes
         $raw = @file_get_contents($path);
         $d = $raw !== false ? json_decode($raw, true) : null;
         $active = is_array($d) && !empty($d['hero_image']['url']);
+        return $cache[$key] = $active;
+    }
+
+    /**
+     * Détection dynamique de l'activation d'une station métro. Même pattern
+     * que isLineActive() : scan data/stations/{slug}.json + flag racine.
+     * Garde-fou : un squelette JSON (published:false ou flag absent) ne sera
+     * PAS activé, même s'il est présent en prod — utile pour push de review.
+     *
+     * Cache statique par slug : 1 seul IO par slug par requête.
+     */
+    private static function isStationActive(string $slug): bool
+    {
+        static $cache = [];
+        $key = strtolower($slug);
+        if (array_key_exists($key, $cache)) return $cache[$key];
+
+        $path = __DIR__ . '/../data/stations/' . $key . '.json';
+        if (!is_file($path)) return $cache[$key] = false;
+
+        $raw = @file_get_contents($path);
+        $d = $raw !== false ? json_decode($raw, true) : null;
+        $active = is_array($d) && ($d['published'] ?? false) === true;
         return $cache[$key] = $active;
     }
 

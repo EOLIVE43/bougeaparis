@@ -225,12 +225,15 @@ switch ($path) {
 
         // Route dynamique /metro/station/{slug} - URL canonique unique par station
         // (peu importe combien de lignes la desservent, évite duplicate content)
+        // Garde-fou : la station n'est servie que si "published": true au niveau
+        // racine du JSON. Sinon → 404 (squelette en review, pas encore publié).
+        // Même critère que Routes::isStationActive() pour les liens internes.
         if (preg_match('#^/metro/station/([a-z0-9\-]+)$#', $path, $matches)) {
             $slug = $matches[1];
             $stationFile = __DIR__ . '/data/stations/' . $slug . '.json';
             if (file_exists($stationFile)) {
                 $station = json_decode(file_get_contents($stationFile), true);
-                if (is_array($station)) {
+                if (is_array($station) && ($station['published'] ?? false) === true) {
                     $tpl = new Template('station-metro');
                     $tpl->withData(['station' => $station]);
                     $tpl->render();
