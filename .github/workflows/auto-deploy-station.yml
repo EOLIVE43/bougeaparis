@@ -151,19 +151,42 @@ jobs:
 
       - name: Build POIs (Wikidata SPARQL + images Wikimedia)
         run: |
-          # build-station-pois.php régénère le champ nearby_pois (déjà fait
-          # par Claude Code en local pour La Défense). On commente ici pour
-          # ne pas écraser des POIs curationnés manuellement. À activer pour
-          # les futures stations dont les POIs sont auto-générés.
-          # php scripts/build-station-pois.php --station=${{ needs.validate.outputs.station_slug }}
+          SLUG="${{ needs.validate.outputs.station_slug }}"
+          JSON="public_html/data/stations/${SLUG}.json"
 
-          # Pipeline image POIs : pour l'instant, les POIs station sont
-          # gérés au cas par cas (script Python ad-hoc utilisé pour
-          # La Défense, voir docs/AUTO-DEPLOY-STATIONS.md). Cette étape
-          # est un placeholder pour la V2 qui appellera fetch-poi-images.php
-          # en mode station-aware.
-          echo "ℹ️  POIs déjà préparés en local (mode V1). V2 : fetch auto Wikidata."
-          echo "### POIs (V1 manuel)" >> "$GITHUB_STEP_SUMMARY"
+          # Garde-fou anti-écrasement : si nearby_pois est déjà rempli dans
+          # le JSON station (POIs curationnés manuellement ou pré-générés via
+          # bootstrap-station.php), on skip la régénération SPARQL Wikidata.
+          # C'est ce qui protège les 7 stations LOT 1+2 historiques dont les
+          # POIs ont été audités manuellement (descriptions, Q-IDs, access_hint).
+          POIS_COUNT=$(jq '.nearby_pois // [] | length' "$JSON" 2>/dev/null || echo "0")
+          if [ "$POIS_COUNT" -gt 0 ]; then
+            echo "ℹ️  $POIS_COUNT POIs déjà présents dans $JSON — skip auto-generation."
+            echo "### POIs (curationnés / bootstrap) — $POIS_COUNT entrées, skip auto" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # Sinon : génération SPARQL Wikidata (build-station-pois.php) avec
+          # retry x3 + timeout 30s par tentative + backoff 5s. En cas d'échec
+          # total, on log un warning mais on ne fait pas échouer le workflow
+          # (la station peut être déployée sans POIs auto, puis relance manuelle
+          # via workflow_dispatch ou édition manuelle du JSON).
+          echo "🔄 nearby_pois vide pour $SLUG, génération via SPARQL Wikidata…"
+          for ATTEMPT in 1 2 3; do
+            if timeout 30s php scripts/build-station-pois.php --station="$SLUG" 2>&1 | tee /tmp/pois-${SLUG}.log; then
+              echo "✅ POIs générés avec succès (tentative $ATTEMPT/3)"
+              echo "### POIs (auto-generated, tentative $ATTEMPT/3)" >> "$GITHUB_STEP_SUMMARY"
+              head -50 /tmp/pois-${SLUG}.log >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            echo "::warning::Tentative $ATTEMPT/3 échouée (SPARQL flake, timeout 30s, ou erreur script)"
+            [ "$ATTEMPT" -lt 3 ] && sleep 5
+          done
+
+          echo "::warning::POIs non générés après 3 tentatives pour $SLUG. Station déployée sans POIs auto. À relancer via workflow_dispatch fetch-poi-images.yml ou édition manuelle du JSON."
+          echo "### ⚠️  POIs auto-generation failed (3/3 tentatives) — station déployée sans POIs" >> "$GITHUB_STEP_SUMMARY"
+          # Note : pas de exit 1 — on laisse le workflow continuer (hero + Lighthouse)
+          # pour ne pas bloquer une station par un flake SPARQL transient.
 
       - name: Commit assets generated (si modifs)
         run: |
