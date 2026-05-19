@@ -52,6 +52,10 @@ package-lock.json
 # Cache GTFS (telecharge par scripts/build-line-jsons.php)
 scripts/cache-gtfs/
 
+# Cache Wikipedia REST API (telecharge par scripts/diff-station-wikipedia.php).
+# TTL configurable (1h dev / 24h prod), regenerable, ~10-150 ko par station.
+scripts/cache-wikipedia/
+
 # Images stations (regenerees par scripts/build-station-hero.php depuis Wikimedia)
 # A uploader manuellement via FTP en prod ou via un workflow GitHub dedie.
 # IMPORTANT : ces fichiers ne sont PAS deployes par le workflow deploy.yml
