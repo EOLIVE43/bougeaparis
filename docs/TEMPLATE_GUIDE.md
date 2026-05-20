@@ -225,6 +225,124 @@ Le template d'affichage (`templates/components/station/poi-nearby.php`) devra g�
 
 ---
 
+## Section 10 — Quality gate Phase 1.4 + flip published
+
+### Process figé clôture pilote / batch T1+
+
+**Étape obligatoire** avant tout flip `published: true` sur une station :
+
+```bash
+php scripts/diff-station-wikipedia.php --slug=<station>
+```
+
+### Seuils décision publication
+
+| Score | Verdict | Décision |
+|---|---|---|
+| ≥ 90 | **pass** | Flip `published: true` autorisé direct |
+| 70-89 | **warning marginal** | Audit factuel humain des flags. Si flags = limites couverture diff-wikipedia (et non erreurs factuelles), flip autorisé avec note. Sinon corriger. |
+| < 70 | **fail** | Flip **bloqué**. Corriger les anomalies HIGH/MEDIUM avant. |
+
+### Audit factuel humain (warning marginal 70-89)
+
+Pour chaque flag (contradicted/partial/not_found), vérifier :
+- **Est-ce une vraie erreur factuelle ?** → Corriger dans le JSON
+- **Est-ce une limite de couverture diff-wikipedia ?** (fait correct mais pas dans les sources fetched) → Accepter, noter dans `_todo` pour Backlog E
+
+### Limite connue diff-wikipedia (Backlog E)
+
+`diff-station-wikipedia.php` fetch les POIs déclarés + entités thématiques fréquentes du contenu. **Ne fetch PAS** :
+- Pages Wikipédia "Ligne X du métro de Paris" (où sont les dates exactes ouverture des lignes)
+- Pages Wikipédia "Personnage historique" (où sont les détails biographiques)
+- Pages Wikipédia "Place X" si non POI déclaré
+
+**Conséquence** : dates précises type "19 octobre 1904" sortent en **partial** (année trouvée, date exacte non), noms type "Marc Chagall" / "Georges-Eugène Haussmann" sortent en **not_found** (cités dans le contenu mais pas dans les POIs fetched). Ce ne sont **PAS** des erreurs factuelles.
+
+### Exemple validé (Opéra pilote)
+
+Score : **89/100 (warning marginal)**
+- Contradicted : 0 ✓ (après fix 200→213 m Place Vendôme)
+- Verified : 70 (couverture haute)
+- Partials : 6 (3 dates métro 1904/1913/1916 × 2 occurrences) — limite Backlog E
+- Not found : 3 (Haussmann ×2 + Chagall) — limite Backlog E
+
+**Audit humain** : 6/6 partiels = dates Wikipédia confirmées (Ligne 3/8/7 du métro de Paris articles), 3/3 not_found = noms Wikipédia confirmés (article Marc Chagall, article Haussmann). 1/6 fix appliqué (Vendôme 200→213 m). **Pas d'erreur factuelle restante.**
+
+**Décision pilote** : score 89 warning marginal **accepté**, flip `published: true` reporté en autre session après livraison Backlog D (refacto template services.php pour 3-statuts, sinon rendu cassé en prod).
+
+---
+
+### Backlog E — Extension `scripts/diff-station-wikipedia.php` couverture
+
+**Priorité : NICE TO HAVE batch T2** (pas bloquant publi, ne casse rien si différé).
+
+**Spec** :
+- Étendre `identifyWikiTargets()` pour fetcher en plus des POIs déjà identifiés :
+  - Pages "Ligne X du métro de Paris" mentionnées dans `lines[]` (pour valider dates ouverture précises)
+  - Pages Wikipédia des **personnages historiques** mentionnés dans `history.paragraphs` (extraction par regex + filtres stopwords)
+  - Pages Wikipédia des **places nommées** mentionnées dans `intro_paragraphs` qui ne sont pas dans `nearby_pois`
+- Cap fetches à 25 sources/station (vs 19 actuel) pour éviter explosion temps
+- Cache 24h prod
+- Devrait faire passer Opéra de 89 → ~95 (pass clean)
+
+**Effort estimé** : 1h-1h30.
+
+**Justification non-bloquant** : score 89 warning marginal est acceptable pour publi T1 (audit humain confirme pas d'erreur factuelle). Backlog E améliore la qualité du gate, mais le contenu est déjà T0 strict.
+
+---
+
+## Récap final pilote Opéra (2026-05-13 → 2026-05-20)
+
+### Production éditoriale (10/10 sections)
+
+| # | Section | Statut Opéra | Pattern figé TEMPLATE_GUIDE |
+|---|---|---|---|
+| 1 | `seo.description` | ✅ 149 chars | "Station X (Métro N…) sous Y : correspondances, sorties, plan, accès A, B, C." |
+| 2 | `hero.tagline` + `hero.description` | ✅ 16 + 79 mots | "Sous {LIEU} — Lignes A, B et C au cœur {ZONE SEO}" + 3 phrases factuelles |
+| 3 | `intro_paragraphs` (3) | ✅ 111+99+119 mots | §1 IDENTITÉ → §2 HISTOIRE → §3 RÉSEAU+PMR (T0 strict) |
+| 4 | `history.title` + paragraphes (3) | ✅ 7 mots + 111+97+97 mots | T1/T2 toujours 3§ ; T3 fallback 2§ |
+| 5 | `faq` (8 Q/R) | ✅ 64-99 mots/réponse | Typologie Q1-Q8 + Q3 PMR + Q4 horaires conv RATP + T11 bus neutre |
+| 6 | `trivia` (4) + `practical_tips` (6) + POI desc top 5 | ✅ tous T0 strict | Trivia min 3 idéal 5 + tips impératif + POIs 6-N description: null |
+| 7 | `services` + `safety` + `accessibility` | ✅ 3-statuts + pending + verified | Default prudent null/pending + double métrique PMR + audit_date ISO |
+| 8 | `popular_itineraries` (8) | ✅ Option B "snippet + lien" | Destinations POIs/BÂTIMENTS/axes SEO (T9 strict) + lines_label SHORT |
+| 9 | `arrondissement` + `address` | ✅ stubs humains audités | Format Bastille strict + BAN/La Poste officiel UN seul CP |
+| 10 | Quality gate + flip published | ✅ exécuté, ⏳ flip reporté | Pass ≥ 90, warning 70-89 audit humain, fail < 70 |
+
+### Principes + règles figés (~900 lignes TEMPLATE_GUIDE)
+
+- **Principe T0** : Source ou rien — toute donnée factuelle sourcée au moment de la rédaction
+- **11 règles transversales** : T1-T11 + T9-bis (exception terminus T9 en contexte direction)
+- **12 leçons fact-check internalisées** (Chedanne vs Chanut, Hardouin-Mansart Vendôme, Garnier 5 mai 1862, Mac Mahon inauguration, Oller Olympia, etc.)
+
+### 5 backlogs techniques tracés
+
+| Backlog | Spec | Priorité |
+|---|---|---|
+| A | `scripts/build-station-bus.php` GTFS 300m | BLOQUANT batch T2 |
+| B | `scripts/build-station-services.php` IDFM page | BLOQUANT batch T2 |
+| C | Audit safety sources officielles (pas heuristique) | NICE TO HAVE batch T2 |
+| D | Refacto template services.php + migration JSONs LOT 1/2 + validate-station tolérance squelette | **BLOQUANT batch T1 + flip Opéra** |
+| E | Extension diff-wikipedia.php couverture (lignes + personnages) | NICE TO HAVE batch T2 |
+
+### Métriques pilote
+
+- **Durée** : 8 jours calendaires (2026-05-13 mid-pilote intermédiaire → 2026-05-20 clôture)
+- **Tours validation A++** : ~30 (10 sections × ~3 propositions/validations en moyenne)
+- **Commits pilote** : 3 (mid-pilote 0722a3a + sections 7-10 744dea3 + clôture)
+- **WebFetch sources Wikipédia FR** : 12 (Palais Garnier, Place Vendôme, Galeries Lafayette ×2, Église Madeleine, Olympia ×2, RER A, RER B, Opéra métro, Sacré-Cœur, Accessibilité métro)
+- **Anomalies fact-check détectées + corrigées** : 12 (Chedanne/Chanut, Vendôme octogonal→carré-pans-coupés, Garnier dates, Madeleine Huvé/Vignon, Olympia date+fondateur, Vendôme 200→213m)
+- **Score quality gate final** : 89/100 warning marginal (audit humain confirme 0 erreur factuelle restante)
+
+### Prochaines étapes (post-pilote)
+
+1. **Refacto TEMPLATE_GUIDE.md** (Tâche #14, BLOQUANT batch T1) — réorganiser en 6 parties logiques
+2. **Backlog D** (~2h, BLOQUANT flip Opéra + batch T1) — refacto template services + migration JSONs LOT 1/2 + validate-station tolérance squelette
+3. **Flip published:true Opéra** (1 commit) — publication finale après Backlog D
+4. **Batch T1** : 12 stations icônes restantes (Gare du Nord, Gare de Lyon, Saint-Lazare métro, Montparnasse-Bienvenüe, Madeleine, République, Nation, Trocadéro, Saint-Paul, Hôtel de Ville, Abbesses, Cité)
+5. **Backlogs A + B** (BLOQUANT T2) avant batch T2 stations secondaires
+
+---
+
 ## Section 9 — `arrondissement` + `address` (stubs humains audités T0)
 
 Ces 2 champs sont des **stubs humains** post-bootstrap : `bootstrap-station.php` les laisse vides (`""`) pour audit manuel. Aucune heuristique géographique (bbox lat/lon) ne les remplit automatiquement — la précision compte trop pour fauter aux frontières d'arrondissement.
