@@ -12,7 +12,7 @@
         "Backlog C : audit safety via communiqués RATP + presse locale datée (nice to have T2)",
         "Backlog D : refacto template services.php + migration JSONs LOT 1/2 + validate-station tolérance squelette (BLOQUANT T1)"
     ],
-    "published": false,
+    "published": true,
     "slug": "opera",
     "name": "Opéra",
     "name_full": "Opéra (Métro 3, 7, 8)",
@@ -597,7 +597,42 @@
         ],
         "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature touristique et commerciale du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
     },
-    "hero_image": null,
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ascenseur_Station_Op%C3%A9ra_M%C3%A9tro_Paris_-_Paris_IX_%28FR75%29_-_2025-10-14_-_1.jpg/1920px-Ascenseur_Station_Op%C3%A9ra_M%C3%A9tro_Paris_-_Paris_IX_%28FR75%29_-_2025-10-14_-_1.jpg",
+        "alt": "Opéra — métro de Paris",
+        "width": 1600,
+        "height": 1200,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Ascenseur_Station_Op%C3%A9ra_M%C3%A9tro_Paris_-_Paris_IX_(FR75)_-_2025-10-14_-_1.jpg",
+            "date": "2025-10-14"
+        },
+        "source": "auto",
+        "confidence_score": 8,
+        "confidence_level": "auto_low_confidence",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/opera/opera-400.avif",
+                "800": "/assets/img/stations/opera/opera-800.avif",
+                "1200": "/assets/img/stations/opera/opera-1200.avif",
+                "1600": "/assets/img/stations/opera/opera-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/opera/opera-400.webp",
+                "800": "/assets/img/stations/opera/opera-800.webp",
+                "1200": "/assets/img/stations/opera/opera-1200.webp",
+                "1600": "/assets/img/stations/opera/opera-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/opera/opera-400.jpg",
+                "800": "/assets/img/stations/opera/opera-800.jpg",
+                "1200": "/assets/img/stations/opera/opera-1200.jpg",
+                "1600": "/assets/img/stations/opera/opera-1600.jpg"
+            }
+        }
+    },
     "accessibility": {
         "audit_status": "verified",
         "audit_date": "2026-05-20",

@@ -67,11 +67,35 @@ if (!is_array($station)) {
 $errors = [];
 $warnings = [];
 
-// 1. Champs critiques
-$required = ['slug', 'name', 'address', 'latitude', 'longitude', 'lines', 'intro_paragraphs', 'faq', 'history'];
-foreach ($required as $field) {
+// Backlog D — lecture flag published (cohérence garde-fou Phase 1.3 routing).
+// Source de vérité unique : $station['published']. Une page squelette en review
+// (published:false) tolère certains champs vides en warnings ; une page exposée
+// (published:true) exige tous ces champs en erreurs critiques.
+$isPublished = ($station['published'] ?? false) === true;
+
+// Helper : règle stricte uniquement en mode publié.
+$strictIfPublished = function (string $message) use ($isPublished, &$errors, &$warnings): void {
+    if ($isPublished) {
+        $errors[] = $message;
+    } else {
+        $warnings[] = $message . " (toléré : published=false, deviendra erreur au flip)";
+    }
+};
+
+// 1. Champs critiques — séparés en 2 groupes :
+//    A. Intégrité minimale (toujours erreur, même squelette) : slug/name/lat/lon/lines/intro/faq/history
+//    B. Tolérés en squelette (warning si published:false, erreur si published:true) : address, arrondissement
+$required_strict     = ['slug', 'name', 'latitude', 'longitude', 'lines', 'intro_paragraphs', 'faq', 'history'];
+$required_published  = ['address', 'arrondissement'];
+
+foreach ($required_strict as $field) {
     if (empty($station[$field])) {
         $errors[] = "Champ manquant ou vide : $field";
+    }
+}
+foreach ($required_published as $field) {
+    if (empty($station[$field])) {
+        $strictIfPublished("Champ manquant ou vide : $field");
     }
 }
 
@@ -85,14 +109,15 @@ if ($lon < 1.8 || $lon > 2.7) {
     $errors[] = "Longitude hors Île-de-France : $lon";
 }
 
-// 3. Hero image
+// 3. Hero image — Groupe B (strictIfPublished : généré par workflow CI au flip published:true)
 $hero = $station['hero_image'] ?? null;
 if (!$hero) {
-    $errors[] = "hero_image absent";
+    $strictIfPublished("hero_image absent");
 } else {
     foreach (['url', 'alt'] as $f) {
-        if (empty($hero[$f])) $errors[] = "hero_image.$f manquant";
+        if (empty($hero[$f])) $strictIfPublished("hero_image.$f manquant");
     }
+    // crédits restent warnings : attribution Wikimedia, non bloquant
     if (empty($hero['credit']['author'])) $warnings[] = "hero_image.credit.author manquant (attribution Wikimedia)";
     if (empty($hero['credit']['license'])) $warnings[] = "hero_image.credit.license manquant";
 }

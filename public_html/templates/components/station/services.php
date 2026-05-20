@@ -169,6 +169,65 @@ $renderShopping = function ($s) use ($stationE): string {
     return "Commerces à proximité de la station {$stationE}.{$sec}";
 };
 
+/**
+ * Helpers rétrocompat schéma 3-statuts (Backlog D, pilote Opéra 2026-05).
+ *
+ * Convertit un service au nouveau schéma 3-statuts vers le format legacy
+ * `available: bool` que les closures $render* comprennent déjà. Aucune
+ * modification des renderers nécessaire → rétrocompat parfaite avec les
+ * 7 stations LOT 1+2 (schéma `available` plat) ET nouvelle Opéra (schéma
+ * status/value/source/audit_date).
+ *
+ * Retour null = signal "skip rendu" pour UX sobre (mode pending non affiché).
+ */
+$normalizeServiceLegacy = function ($service) {
+    if (!is_array($service)) return $service;             // string/bool legacy → inchangé
+    if (isset($service['status'])) {                       // nouveau schéma 3-statuts détecté
+        if ($service['status'] === 'pending') return null;
+        $legacy = $service;
+        $legacy['available'] = $service['value']
+            ?? ($service['status'] === 'verified_present');
+        return $legacy;
+    }
+    return $service;                                       // legacy déjà compatible
+};
+
+$normalizeToiletsLegacy = function ($t) {
+    if (!is_array($t)) return $t;
+    $result = [];
+    foreach (['public_paid', 'public_free'] as $key) {
+        if (!isset($t[$key])) continue;
+        if (isset($t[$key]['status'])) {                   // nouveau schéma 3-statuts
+            if ($t[$key]['status'] === 'pending') continue; // skip ce sous-toilet en pending
+            $sub = $t[$key];
+            $sub['available'] = $t[$key]['value']
+                ?? ($t[$key]['status'] === 'verified_present');
+            $result[$key] = $sub;
+        } else {
+            $result[$key] = $t[$key];                      // legacy
+        }
+    }
+    return empty($result) ? null : $result;
+};
+
+$normalizeLuggageLegacy = function ($l) {
+    if (!is_array($l)) return $l;
+    if (isset($l['ratp']) && is_array($l['ratp']) && isset($l['ratp']['status'])) {
+        // Nouveau schéma imbriqué : ratp.status + third_party[]
+        if ($l['ratp']['status'] === 'pending') {
+            // third_party reste affiché même si ratp pending (cas Nannybag/Bounce dispos)
+            if (empty($l['third_party'])) return null;
+            return ['ratp_available' => null, 'third_party' => $l['third_party']];
+        }
+        return [
+            'ratp_available' => $l['ratp']['value']
+                ?? ($l['ratp']['status'] === 'verified_present'),
+            'third_party'    => $l['third_party'] ?? [],
+        ];
+    }
+    return $l;                                             // legacy plat (ratp_available + third_party)
+};
+
 $items = [
     'wifi'             => ['label' => 'WiFi gratuit',           'icon' => '📶', 'render' => $renderWifi],
     'toilets'          => ['label' => 'Toilettes',              'icon' => '🚻', 'render' => $renderToilets],
@@ -214,6 +273,18 @@ if ($visibleCount === 0) {
     <?php foreach ($items as $key => $cfg):
       $val = $services[$key] ?? null;
       if ($val === null || $val === '') continue;
+
+      // Backlog D — normalisation rétrocompat schéma 3-statuts.
+      // shopping_dining = descriptif pur (pas de status binaire), pas de normalisation.
+      if ($key === 'toilets') {
+          $val = $normalizeToiletsLegacy($val);
+      } elseif ($key === 'left_luggage') {
+          $val = $normalizeLuggageLegacy($val);
+      } elseif ($key !== 'shopping_dining') {
+          $val = $normalizeServiceLegacy($val);
+      }
+      if ($val === null) continue;                       // skip si pending (UX sobre)
+
       $body = $cfg['render']($val);
       if ($body === '') continue;
     ?>

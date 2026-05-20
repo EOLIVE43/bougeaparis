@@ -57,12 +57,19 @@ scripts/cache-gtfs/
 scripts/cache-wikipedia/
 
 # Images stations (regenerees par scripts/build-station-hero.php depuis Wikimedia)
-# A uploader manuellement via FTP en prod ou via un workflow GitHub dedie.
-# IMPORTANT : ces fichiers ne sont PAS deployes par le workflow deploy.yml
-# (qui checkout le repo). Sur o2switch, faire FTP manuel apres chaque run.
+# Pattern par défaut : variantes uploadées par auto-deploy-station.yml Job 2 FTP.
+# Exceptions par station : commit explicite des variantes pour garantir présence
+# prod indépendamment de Wikimedia (Solution 1B Backlog D, à étendre via Backlog H).
 public_html/assets/img/stations/*/*.avif
 public_html/assets/img/stations/*/*.webp
 public_html/assets/img/stations/*/*.jpg
+
+# Exception Opéra (pilote T1 LIVE 2026-05-21) — Solution 1B :
+# variantes hero commitées pour garantir présence en prod via deploy.yml FTP
+# même si workflow CI Wikimedia fail. Pattern à généraliser via Backlog H.
+!public_html/assets/img/stations/opera/*.avif
+!public_html/assets/img/stations/opera/*.webp
+!public_html/assets/img/stations/opera/*.jpg
 
 # Images lignes (regenerees par scripts/build-line-hero.php depuis Wikimedia)
 # Meme regle que stations : FTP manuel apres chaque run.

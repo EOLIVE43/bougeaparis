@@ -272,6 +272,43 @@ Score : **89/100 (warning marginal)**
 
 ---
 
+### Backlog F — Migration JSONs LOT 1/2 vers schéma 3-statuts services
+
+**Priorité : NICE TO HAVE post-publi Opéra** (déplacée depuis Backlog D scope initial).
+
+**Spec** :
+- Convertir les 7 JSONs LOT 1/2 (`available: true/false` legacy) vers schéma 3-statuts (`status: verified_present/verified_absent` + `value: true/false` + `audit_date`)
+- Script Python ou PHP `scripts/migrate-services-3statuts.php` à créer
+- Rétrocompat 100% côté template grâce aux helpers normalize* (Backlog D point 1 livré) → **non bloquant** pour publi
+
+**Effort estimé** : ~1h (script + tests + commit 7 JSONs migrés).
+
+### Backlog G — Checks `validate-station.php` enrichis
+
+**Priorité : NICE TO HAVE batch T2** (déplacée depuis Backlog D scope initial — skip ce soir).
+
+**Spec** :
+- Ajouter contrôles enum sur `services.*.status` (pending/verified_absent/verified_present)
+- Ajouter contrôle enum sur `safety.audit_status` (pending/verified/outdated)
+- Ajouter warning si `_todo[]` non vide ET `published: true` (incite finalisation dette)
+- Tous en mode `$strictIfPublished` (Backlog D pattern)
+
+**Effort estimé** : 30 min + tests régression sur les 7 LOT 1/2 + Opéra.
+
+### Backlog H — Industrialisation pattern hero pour 299 stations restantes
+
+**Priorité : BLOQUANT batch T1** (à confirmer avant publi station T1 N°2).
+
+**Validation conceptuelle Solution 1B sur Opéra** : les variantes hero (jpg/webp/avif × tailles) sont **COMMITÉES** dans le repo pour garantir leur présence prod indépendamment de Wikimedia (workflow CI redondant pour audit, pas critique).
+
+**Spec post-pilote** :
+- Adapter `scripts/build-station-hero.php` pour systématiquement remplir `assets/img/stations/{slug}/` ET `hero_image` dans le JSON
+- Adapter `.gitignore` : exceptions par station ajoutées au fur et à mesure des publis (ou wildcard global si pattern stabilisé)
+- Estim long-terme : **~500 Mo de binaires sur 300 stations** (1.6 Mo × 300). Acceptable repo GitHub free (limite ~5 Go).
+- Documenter ce pattern dans `docs/AUTO-DEPLOY-STATIONS.md` post-confirmation
+
+**Justification** : sans ce pattern, chaque publi station dépend de Wikimedia CI = ~1-3% risque flake. À l'échelle 300 stations, garantie production prioritaire vs économie de quelques Mo de repo.
+
 ### Backlog E — Extension `scripts/diff-station-wikipedia.php` couverture
 
 **Priorité : NICE TO HAVE batch T2** (pas bloquant publi, ne casse rien si différé).
