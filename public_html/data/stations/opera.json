@@ -1,23 +1,23 @@
 {
     "_doc": "Squelette généré par bootstrap-station.php le 2026-05-19. Sections A+B auto, sections C en stubs à compléter (humain/LLM).",
     "_todo": [
-        "popular_itineraries (Section 8)",
-        "safety (Section 7)",
-        "accessibility détaillée (Section 7)",
-        "arrondissement",
-        "address (reverse-geo IDFM)",
-        "audit trivia URLs : Palais Garnier, Place Vendôme, Galeries Lafayette Haussmann (Wikipedia FR)",
-        "audit POI top 5 URLs : Garnier, Madeleine, Vendôme, Galeries Lafayette, Olympia (Wikipedia FR)",
+        "Flip published: true REPORTÉ en autre session (décision pilote 2026-05-20 : quality gate 89 warning marginal, audit factuel humain confirme 5/6 flags = limites diff-wikipedia couverture, pas erreurs)",
+        "Section 10 V2 : extension diff-wikipedia couverture (fetch Wikipédia 'Haussmann', 'Marc Chagall', 'Ligne 3 métro Paris') pour atteindre pass 90+",
+        "audit trivia URLs (Palais Garnier, Place Vendôme, Galeries Lafayette Haussmann) listées Wikipédia FR",
+        "audit POI top 5 URLs (Garnier, Madeleine, Vendôme, Galeries Lafayette, Olympia) listées Wikipédia FR",
         "audit annuel practical_tips (saisonnalité, événements paris.fr)",
         "POIs 6-12 description: null (V2 backlog après diff-wikipedia étendu POIs)",
-        "bus_correspondences (backlog A : scripts/build-station-bus.php avant T2)"
+        "Backlog A : scripts/build-station-bus.php (bloquant T2)",
+        "Backlog B : scripts/build-station-services.php (bloquant T2)",
+        "Backlog C : audit safety via communiqués RATP + presse locale datée (nice to have T2)",
+        "Backlog D : refacto template services.php + migration JSONs LOT 1/2 + validate-station tolérance squelette (BLOQUANT T1)"
     ],
     "published": false,
     "slug": "opera",
     "name": "Opéra",
     "name_full": "Opéra (Métro 3, 7, 8)",
-    "arrondissement": "",
-    "address": "",
+    "arrondissement": "9e, 2e",
+    "address": "Place de l'Opéra, 75009 Paris",
     "latitude": 48.87125775980426,
     "longitude": 2.331888034563735,
     "tariff_zone": 1,
@@ -171,7 +171,7 @@
         {
             "icon": "💎",
             "title": "Place Vendôme : 1699, Hardouin-Mansart et la statue de Louis XIV",
-            "content": "La <strong>place Vendôme</strong>, située à 200 m au sud de l'Opéra, est dessinée en <strong>1699</strong> par l'architecte <strong>Jules Hardouin-Mansart</strong> (par ailleurs architecte du château de Versailles). Sa forme est carrée à pans coupés aux angles. Au centre se trouvait à l'origine une <strong>statue équestre en bronze de Louis XIV</strong> par <strong>François Girardon</strong> (commande de Louvois), abattue par la foule le <strong>10 août 1792</strong>. La colonne Vendôme actuelle est érigée en <strong>1810</strong> sous Napoléon Ier à son emplacement."
+            "content": "La <strong>place Vendôme</strong>, située à 213 m au sud de l'Opéra, est dessinée en <strong>1699</strong> par l'architecte <strong>Jules Hardouin-Mansart</strong> (par ailleurs architecte du château de Versailles). Sa forme est carrée à pans coupés aux angles. Au centre se trouvait à l'origine une <strong>statue équestre en bronze de Louis XIV</strong> par <strong>François Girardon</strong> (commande de Louvois), abattue par la foule le <strong>10 août 1792</strong>. La colonne Vendôme actuelle est érigée en <strong>1810</strong> sous Napoléon Ier à son emplacement."
         },
         {
             "icon": "🏬",
@@ -179,7 +179,116 @@
             "content": "La coupole de verre du grand magasin <strong>Galeries Lafayette Haussmann</strong> est inaugurée le <strong>8 octobre 1912</strong>. Son point culminant se situe à <strong>43 mètres</strong> du sol. De style <em>Art nouveau</em>, elle est conçue sous la direction de l'architecte <strong>Georges Chedanne</strong>. Les <strong>vitraux néo-byzantins</strong> sont l'œuvre de <strong>Jacques Grüber</strong> (école de Nancy), avec ferronnerie de <strong>Louis Majorelle</strong>."
         }
     ],
-    "popular_itineraries": [],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tour Eiffel",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Opéra → Tour Eiffel",
+            "lines_used": [
+                "M8",
+                "M6"
+            ],
+            "lines_label": "Ligne 8 + Ligne 6, 1 correspondance",
+            "duration_minutes": 22,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Musée du Louvre",
+            "destination_slug": "musee-du-louvre",
+            "destination_full_name": "Opéra → Musée du Louvre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'avenue de l'Opéra (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-musee-du-louvre/"
+        },
+        {
+            "destination_name": "Champs-Élysées",
+            "destination_slug": "avenue-des-champs-elysees",
+            "destination_full_name": "Opéra → Champs-Élysées",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A direction La Défense, 1 station",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-avenue-des-champs-elysees/"
+        },
+        {
+            "destination_name": "Aéroport Charles-de-Gaulle",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Opéra → Aéroport CDG",
+            "lines_used": [
+                "RER A",
+                "RER B"
+            ],
+            "lines_label": "RER A + RER B direction Aéroport CDG 2 TGV, 1 correspondance",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-aeroport-charles-de-gaulle/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland-paris",
+            "destination_full_name": "Opéra → Disneyland Paris",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A direction Marne-la-Vallée — Chessy, direct",
+            "duration_minutes": 45,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-disneyland-paris/"
+        },
+        {
+            "destination_name": "Sacré-Cœur",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Opéra → Sacré-Cœur",
+            "lines_used": [
+                "M8",
+                "M12",
+                "funiculaire"
+            ],
+            "lines_label": "Ligne 8 + Ligne 12 + funiculaire de Montmartre, 2 correspondances",
+            "duration_minutes": 25,
+            "changes_count": 2,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-opera/opera-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Forum des Halles",
+            "destination_slug": "forum-des-halles",
+            "destination_full_name": "Opéra → Forum des Halles",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A direction Marne-la-Vallée — Chessy, 1 station",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-opera/opera-vers-forum-des-halles/"
+        },
+        {
+            "destination_name": "Gare Saint-Lazare",
+            "destination_slug": "gare-saint-lazare",
+            "destination_full_name": "Opéra → Gare Saint-Lazare",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Haussmann (~600 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-opera/opera-vers-gare-saint-lazare/"
+        }
+    ],
     "nearby_pois": [
         {
             "wikidata_id": "Q187840",
@@ -418,38 +527,60 @@
     ],
     "services": {
         "wifi": {
-            "available": false,
-            "location_detail": "",
-            "coverage_detail": ""
+            "status": "pending",
+            "value": null,
+            "source": null,
+            "audit_date": null,
+            "_note": "Non vérifié sur page IDFM/RATP officielle. Backlog B build-station-services.php."
         },
         "toilets": {
             "public_paid": {
-                "available": false
+                "status": "pending",
+                "value": null,
+                "source": null,
+                "audit_date": null
             },
             "public_free": {
-                "available": false,
+                "status": "pending",
+                "value": null,
                 "location": "",
-                "access": ""
+                "access": "",
+                "source": null,
+                "audit_date": null
             }
         },
         "atm": {
-            "available": false,
+            "status": "pending",
+            "value": null,
             "banks_count_estimate": "",
-            "locations": []
+            "locations": [],
+            "source": null,
+            "audit_date": null,
+            "_note": "Backlog B."
         },
         "ratp_office": {
-            "available": false,
+            "status": "pending",
+            "value": null,
             "location": "",
-            "services": ""
+            "services": "",
+            "source": null,
+            "audit_date": null,
+            "_note": "Backlog B."
         },
         "left_luggage": {
-            "ratp_available": false,
+            "ratp": {
+                "status": "pending",
+                "value": null,
+                "source": null,
+                "audit_date": null,
+                "_note": "Backlog B."
+            },
             "third_party": []
         },
         "shopping_dining": {
-            "main_location": "",
-            "details": "",
-            "secondary": ""
+            "main_location": "boulevards Haussmann et des Capucines",
+            "details": "Quartier des grands magasins (Galeries Lafayette au 38-42 boulevard Haussmann, Printemps au 64), boulangeries et cafés sur la place de l'Opéra",
+            "secondary": "Rue de la Paix vers la place Vendôme : joailliers de luxe et hôtels prestigieux"
         }
     },
     "safety": {
@@ -458,20 +589,26 @@
         "level": "",
         "agents": null,
         "police": null,
-        "tips": [],
-        "notes": ""
+        "tips": [
+            "Quartier touristique fréquenté : vigilance pickpockets accrue autour de la place de l'Opéra et des grands magasins.",
+            "Soirée tardive : axe boulevard des Capucines / Olympia / Grands Boulevards très animé, rester sur axes principaux pour rejoindre la station.",
+            "Forte affluence les samedis et veilles de fêtes (shopping intensif Galeries Lafayette + Printemps) : prévoir alternatives en transit.",
+            "La place de l'Opéra peut accueillir des événements officiels avec dispositif policier renforcé : vérifier paris.fr en cas de déplacement les jours sensibles."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature touristique et commerciale du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
     },
     "hero_image": null,
     "accessibility": {
-        "audit_status": "pending",
-        "audit_date": null,
-        "level": "",
+        "audit_status": "verified",
+        "audit_date": "2026-05-20",
+        "level": "non-conforme",
         "stats": {
             "elevators_count": 0,
             "accessible_lines": 0,
             "total_lines": 3
         },
-        "details": ""
+        "details": "Aucun ascenseur public ne dessert les quais des lignes 3, 7 ou 8 à Opéra. Station historique non conforme à la norme PMR 2005 (lignes ouvertes 1904-1916, modernisation 2007 du programme « Renouveau du métro » RATP pour M7 et M8 sans intégration d'ascenseurs PMR). Pour un trajet PMR sur l'axe centre-rive droite, la ligne 14 est intégralement accessible. Audit Wikipédia FR (infobox « Accessibilité : Non ») et plan PMR officiel RATP.",
+        "source": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_(m%C3%A9tro_de_Paris)"
     },
     "wikidata": {
         "qid": "Q1392037",
