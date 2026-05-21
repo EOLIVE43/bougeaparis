@@ -82,8 +82,11 @@ $count = count($pois);
 
       $hasImage = $imageUrl !== '';
       $hasExit  = is_array($exit) && !empty($exit['number']);
+      // Card compacte quand pas de description (POIs au-dela du Top 5 audite).
+      // Voir .poi-card--compact dans station.css (hauteur naturelle au lieu de stretch).
+      $isCompact = ($description === '');
     ?>
-      <li class="poi-card<?= $featured ? ' poi-card--featured' : '' ?>">
+      <li class="poi-card<?= $featured ? ' poi-card--featured' : '' ?><?= $isCompact ? ' poi-card--compact' : '' ?>">
         <?php if ($hasImage): ?>
           <div class="poi-image">
             <img src="<?= e($imageUrl) ?>"
