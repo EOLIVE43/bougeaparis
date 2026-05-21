@@ -533,11 +533,19 @@ $tpl->partial('components/breadcrumb', [
                     <?= Template::e($rerLabel) ?>
                   </span>
                   <div class="correspondance-line-content">
-                    <?php if ($rerExists): ?>
-                      <a href="<?= Template::e($rerUrl) ?>" class="correspondance-line-name">RER <?= Template::e($r['code']) ?></a>
-                    <?php else: ?>
-                      <span class="correspondance-line-name">RER <?= Template::e($r['code']) ?></span>
-                    <?php endif; ?>
+                    <div class="correspondance-line-title">
+                      <?php if ($rerExists): ?>
+                        <a href="<?= Template::e($rerUrl) ?>" class="correspondance-line-name">RER <?= Template::e($r['code']) ?></a>
+                      <?php else: ?>
+                        <span class="correspondance-line-name">RER <?= Template::e($r['code']) ?></span>
+                      <?php endif; ?>
+                      <?php if (!empty($r['station_name']) && $r['station_name'] !== $name):
+                        // Regle T13 : affiche station_name si different du nom courant.
+                        // conditionalLink prepare le futur lien vers /rer/{code}/station/{slug}/.
+                        $rerStationUrl = '/rer/' . strtolower((string)$r['code']) . '/station/' . Routes::stationSlug((string)$r['station_name']) . '/';
+                        echo conditionalLink($rerStationUrl, '· ' . Template::e((string)$r['station_name']), 'correspondance-line-station');
+                      endif; ?>
+                    </div>
                     <?php if (!empty($r['walking_minutes'])): ?>
                       <span class="correspondance-line-walking"><?= (int)$r['walking_minutes'] ?> min à pied</span>
                     <?php endif; ?>
@@ -672,6 +680,8 @@ $tpl->partial('components/breadcrumb', [
       $busNoct    = is_array($bus) ? ($bus['nocturne'] ?? []) : [];
       $busReg     = is_array($bus) ? ($bus['regional'] ?? []) : [];
       $hasAnyBus  = !empty($busDiurnes) || !empty($busNoct) || !empty($busReg);
+      // Fallback texte neutre (regle T11/T13) quand pas de liste GTFS auditee.
+      $busNote    = is_array($bus) ? (string)($bus['_note_visible'] ?? '') : '';
       ?>
       <?php
       // Helper inline : rend une pastille bus, lien actif si la page
@@ -721,6 +731,11 @@ $tpl->partial('components/breadcrumb', [
               </div>
             </div>
           <?php endif; ?>
+        </div>
+      <?php elseif ($busNote !== ''): ?>
+        <div class="correspondances-block">
+          <h3>Lignes de bus à <?= Template::e($name) ?></h3>
+          <p class="correspondances-bus-note"><?= Template::e($busNote) ?></p>
         </div>
       <?php endif; ?>
 

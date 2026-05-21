@@ -51,11 +51,21 @@
             "text_color": "#000000"
         }
     ],
+    "rer_correspondences": [
+        {
+            "code": "A",
+            "color": "#E2231A",
+            "station_name": "Auber",
+            "walking_minutes": 3,
+            "_note": "Correspondance à pied par la place de l'Opéra (~250-300m). Durée à affiner via plan RATP officiel — V2."
+        }
+    ],
     "bus_correspondences": {
         "diurne": [],
         "nocturne": [],
         "regional": [],
-        "_note": "auto: à compléter via RATP SIRI API en V2"
+        "_note": "auto: à compléter via RATP SIRI API en V2",
+        "_note_visible": "Plusieurs lignes de bus RATP desservent les abords de la place de l'Opéra et les boulevards Haussmann et des Capucines. Liste détaillée à venir."
     },
     "seo": {
         "description": "Station Opéra (Métro 3, 7, 8) sous la place de l'Opéra : correspondances, sorties, plan, accès Palais Garnier, Galeries Lafayette, Grands Boulevards."
