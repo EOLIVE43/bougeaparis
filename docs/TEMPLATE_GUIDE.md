@@ -52,6 +52,7 @@ Pour les sources acceptées :
 | **T11-superlatifs** | **Pas de superlatifs non sourcés** (cf. Section 4) : bannir "figure parmi les opéras les plus visités au monde", "monument incontournable", "chef-d'œuvre". Remplacer par formulation factuelle défendable ou chiffre sourcé daté. | T0 en application. |
 | **T12** | **Liens sortants interdits vers concurrents directs** : `bonjour-ratp.fr`, `ratp.fr`, `idfm.fr`, `iledefrance-mobilites.fr`, `citymapper.com`, `navitia.io`, `maps.google.com` en tant que destination cliquable (`<a href>`). **Mention textuelle neutre OK** si fonctionnellement utile (sans nommer le concurrent par son nom commercial). **Sources audit T0 en _doc/commentaire PHP/JSON tolérées** (non affichées au visiteur). **Autorisés** : Wikipédia, sites officiels POIs, data.gouv.fr, paris.fr. **Préco rédaction** : ramener le visiteur vers une page BougeaParis (rétention) plutôt que rediriger vers concurrent. | Positionnement BougeaParis = alternative indépendante, pas agrégateur de liens vers concurrents. Cohérence E-E-A-T + UX. |
 | **T13** | **Correspondances exhaustives** : la section correspondances d'une page station doit lister TOUS les modes accessibles à pied raisonnable depuis la station, pas uniquement les lignes desservant le quai. (1) RER/Transilien/Tram **à pied proche** (≤ 6 min, ≤ ~500 m) : inclure dans `rer_correspondences[]` / `tram_correspondences[]` / `transilien_correspondences[]` avec `walking_minutes` + `station_name`. Le template affiche `station_name` quand différent du nom de la station courante (clarifie correspondance externe à pied, ex : Opéra → RER A à Auber). (2) Bus : si liste de numéros vérifiée GTFS → `bus_correspondences.diurne/nocturne/regional[]` ; si pas auditée → champ `bus_correspondences._note_visible` avec formulation neutre T11 (« Plusieurs lignes de bus RATP desservent les abords… ») rendue côté front via fallback template. **Exclure** : correspondances éloignées (> 6 min) ou non documentées (T0 strict). **Ordre canonique** dans le JSON station : `lines` → `rer_correspondences` → `transilien_correspondences` → `tram_correspondences` → `bus_correspondences`. Cohérence sur les 299 stations futures. | Évite trous éditoriaux (Opéra publié sans RER A Auber alors qu'à 250 m = signal SEO + UX faible) tout en respectant T11 (pas inventer numéros bus). |
+| **T14** | **Qualité Lighthouse minimum publi** : chaque station avant flip `published: true` doit afficher **Lighthouse Mobile = 100/100** sur les 4 critères (Performances, Accessibilité, Bonnes pratiques, SEO). Desktop : 95+ acceptable, 100 idéal. Procédure pré-publi : Lighthouse mobile en local (Chrome DevTools) sur preview station via `php -S` + router dev, correction tout warning avant flip. Toute régression < 100 mobile bloque le flip. | Google Discover (objectif n°1 BougeaParis) est 100% mobile. Toute dégradation perfs Core Web Vitals = perte impressions Discover. Lighthouse 100/100 protège la promesse SEO de fond. |
 | T10 | **`<strong>` vs `<em>`** : `<strong>` sur les **entités factuelles** (nom station, lignes, monuments, dates clés). `<em>` sur les **expressions patrimoniales/SEO de zone** (*axe historique*, *Grands Boulevards*, *Paris haussmannien*, *Marais*). | Sémantique HTML + cohérence visuelle |
 
 ---
@@ -401,6 +402,36 @@ Détecté lors du grep final Tâche 2 du pipeline matinal 2026-05-21.
 3. **Flip published:true Opéra** (1 commit) — publication finale après Backlog D
 4. **Batch T1** : 12 stations icônes restantes (Gare du Nord, Gare de Lyon, Saint-Lazare métro, Montparnasse-Bienvenüe, Madeleine, République, Nation, Trocadéro, Saint-Paul, Hôtel de Ville, Abbesses, Cité)
 5. **Backlogs A + B** (BLOQUANT T2) avant batch T2 stations secondaires
+
+---
+
+## Pipeline matinal + soir post-publi Opéra (2026-05-21)
+
+Pipeline réalisé après la publi Opéra (clôture Backlog D + flip published:true) pour combler 6 trous éditoriaux/UX détectés à la visite LIVE.
+
+### Tâches 1-6 (toutes COMPLETED)
+
+| # | Tâche | Statut | Commit |
+|---|---|---|---|
+| 1 | Fix Q-ID Grévin root cause `validate-station.php` | ✅ done | ede89d2 |
+| 2 | Retrait liens « Bonjour RATP » + figer T12 + placeholder /itineraires/ | ✅ done | ede89d2 |
+| 3 | Toggle `$itinerariesHubExists = false` masquage card "voir tous itinéraires (bientôt)" | ✅ done | 227ed7a |
+| 4 | `poi-card--compact` si `description: null` (POIs 6-N Opéra) | ✅ done | 0075cbc |
+| 5 | Correspondances complètes Opéra (RER A Auber + bus textuel) + règle T13 + station_name UI | ✅ done | 2f49a14 |
+| 6 | Update TEMPLATE_GUIDE final (T14 + patterns figés + Tâches statuts) | ✅ done | _ce commit_ |
+
+### Patterns UI figés post-pilote
+
+**Pattern poi-card compact (Tâche 4)** : si une entrée `nearby_pois[i].description === null` (cohérent avec T0 strict — pas de prose sans audit), ajouter la classe `poi-card--compact` au `<li>` rendu par `templates/components/station/poi-nearby.php`. CSS : `align-self: start` sur les compactes uniquement (pattern masonry-like CSS Grid natif). Cards Top 5 (avec description auditée T0) gardent leur comportement standard (stretch sur rangée grid).
+
+**Pattern toggle hub "bientôt disponible" (Tâche 3)** : pour toute card / CTA qui pointe vers une page non encore créée, déclarer une variable PHP `$XxxExists = false` en haut du template + wrapper le rendu dans `<?php if ($XxxExists): ?> ... <?php endif; ?>`. Active la card quand la page cible existe (Phase 3). Pattern utilisé pour `$itinerariesHubExists` dans `itineraires-populaires.php` masquant la card "Voir tous les itinéraires depuis [STATION] (bientôt)" qui frustrait visuellement (lien désactivé). Réutilisable pour autres CTAs "bientôt" futurs.
+
+**Pattern correspondance externe `station_name` (Tâche 5)** : dans le template `station-metro.php` bloc RER, sous-wrapper `<div class="correspondance-line-title">` (flex row, column-gap 0.4rem) qui contient le nom RER + le span station_name `<span class="correspondance-line-station">· STATION</span>` rendu via `conditionalLink` quand `$r['station_name'] !== $name`. Évite que le visiteur croit que la correspondance est intra-station (ex : Opéra n'a pas de RER A sur ses quais, le RER A se prend à Auber 3 min à pied — sans `station_name` la confusion était possible). Régression positive sur Châtelet (affiche désormais "· Châtelet — Les Halles" sur les 3 RER, clarifiant que c'est l'autre pôle).
+
+### Reportés (Tâche 7 + Backlog J)
+
+- **Tâche 7** — menu hover desktop + zones tactiles 44×44 px : trop complexe pour fin de pipeline soir, report demain ou week-end.
+- **Backlog J** — articles blog `content/info-trafic/*.md` mentionnant Citymapper/IDFM/Google Maps (T12 violations côté contenu) + investigation lien sortant `$fares['source_url']` dans `tarifs.php`. NICE TO HAVE, pas BLOQUANT.
 
 ---
 
