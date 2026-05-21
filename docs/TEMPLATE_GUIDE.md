@@ -50,6 +50,7 @@ Pour les sources acceptées :
 | **T9-bis** | **Exception terminus (figée Section 5)** : les noms de stations terminus sont autorisés UNIQUEMENT dans le contexte « ligne X (direction TERMINUS_A ou TERMINUS_B) » ou « direction TERMINUS ». Hors ce contexte, T9 strict s'applique. | Convention RATP/IDFM officielle, mot-clé SEO « métro X direction Y » légitime, pas de cannibalisation entre page station et entité terminus. |
 | **T11** | **Données bus** : tout numéro de bus doit être issu d'une source vérifiable (GTFS IDFM arrêts <300m, ou page station IDFM officielle). **Connaissance générale = banni**. Si pas de source au moment de la rédaction : formulation neutre « plusieurs lignes de bus RATP » sans citer de numéros. | Sur 300 stations × 6 numéros = 1800 affirmations non vérifiées sinon. T0 en application. |
 | **T11-superlatifs** | **Pas de superlatifs non sourcés** (cf. Section 4) : bannir "figure parmi les opéras les plus visités au monde", "monument incontournable", "chef-d'œuvre". Remplacer par formulation factuelle défendable ou chiffre sourcé daté. | T0 en application. |
+| **T12** | **Liens sortants interdits vers concurrents directs** : `bonjour-ratp.fr`, `ratp.fr`, `idfm.fr`, `iledefrance-mobilites.fr`, `citymapper.com`, `navitia.io`, `maps.google.com` en tant que destination cliquable (`<a href>`). **Mention textuelle neutre OK** si fonctionnellement utile (sans nommer le concurrent par son nom commercial). **Sources audit T0 en _doc/commentaire PHP/JSON tolérées** (non affichées au visiteur). **Autorisés** : Wikipédia, sites officiels POIs, data.gouv.fr, paris.fr. **Préco rédaction** : ramener le visiteur vers une page BougeaParis (rétention) plutôt que rediriger vers concurrent. | Positionnement BougeaParis = alternative indépendante, pas agrégateur de liens vers concurrents. Cohérence E-E-A-T + UX. |
 | T10 | **`<strong>` vs `<em>`** : `<strong>` sur les **entités factuelles** (nom station, lignes, monuments, dates clés). `<em>` sur les **expressions patrimoniales/SEO de zone** (*axe historique*, *Grands Boulevards*, *Paris haussmannien*, *Marais*). | Sémantique HTML + cohérence visuelle |
 
 ---
@@ -294,6 +295,28 @@ Score : **89/100 (warning marginal)**
 - Tous en mode `$strictIfPublished` (Backlog D pattern)
 
 **Effort estimé** : 30 min + tests régression sur les 7 LOT 1/2 + Opéra.
+
+### Backlog J — T12 suite (extension scope retrait concurrents)
+
+**Priorité : NICE TO HAVE post-pilote** (pas bloquant batch T1, concerne contenus existants).
+
+Détecté lors du grep final Tâche 2 du pipeline matinal 2026-05-21.
+
+**Sous-chantiers** :
+
+1. **Reformulation 2 articles blog** `content/info-trafic/*.md` mentionnant Citymapper + Google Maps + IDFM comme apps recommandées. Violation T12 strict côté contenu publié.
+   - Fichiers : `2026-05-12-bulletin-zoom-travaux.md`, `2026-05-04-bulletin-semaine-a-venir.md`
+   - Estim : 30-45 min (relecture + reformulation avec redirection BougeaParis interne)
+
+2. **Investigation lien sortant `$fares['source_url']`** dans `templates/components/line/tarifs.php:117` + `templates/components/station/tarifs.php:184`. Si URL effective = `iledefrance-mobilites.fr` → violation T12. Soit retrait du lien sortant, soit reformulation "Source officielle : Île-de-France Mobilités" sans `href` cliquable.
+   - Estim : 15-30 min (audit URL + correction template)
+
+3. **(Bonus)** Étendre `scripts/validate-station.php` pour détecter liens sortants vers domaines concurrents (`idfm.fr`, `citymapper.com`, etc.) en mode warning ou error selon contexte.
+   - Estim : 1h
+
+**Note** : à traiter avant batch T1 idéalement, ou en parallèle des stations futures. Backlog tracé, pas d'urgence ce soir.
+
+---
 
 ### Backlog H — Industrialisation pattern hero pour 299 stations restantes
 

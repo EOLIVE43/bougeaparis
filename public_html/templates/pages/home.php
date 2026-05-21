@@ -190,7 +190,7 @@ $faqs = [
     [
         'q' => 'Où acheter un ticket de métro à Paris ?',
         // Sources : RATP (distributeurs, guichets, apps officielles Bonjour RATP + IDFM) ; tabacs partenaires.
-        'a' => "Plusieurs options s'offrent à vous pour acheter un <strong>ticket de métro à Paris</strong>. Les <strong>distributeurs automatiques</strong> sont présents dans toutes les stations, ils acceptent <strong>carte bancaire et espèces</strong> et proposent l'ensemble des titres. Les <strong>applications officielles Bonjour RATP</strong> (iOS/Android) et <strong>Île-de-France Mobilités</strong> permettent l'<strong>achat dématérialisé</strong> avec validation directe par smartphone NFC. Les <strong>bureaux de tabac partenaires</strong> vendent également les tickets papier et rechargent les cartes Navigo Easy. Enfin, les <strong>guichets agents</strong> subsistent dans les principales stations mais avec des horaires d'ouverture restreints. Pour les voyageurs réguliers, la <strong>carte Navigo Easy</strong> ({$nEasy}) rechargeable au voyage est la solution la plus pratique.",
+        'a' => "Plusieurs options s'offrent à vous pour acheter un <strong>ticket de métro à Paris</strong>. Les <strong>distributeurs automatiques</strong> sont présents dans toutes les stations, ils acceptent <strong>carte bancaire et espèces</strong> et proposent l'ensemble des titres. Les <strong>bureaux de tabac partenaires</strong> vendent également les tickets papier et rechargent les cartes Navigo Easy. Enfin, les <strong>guichets agents</strong> subsistent dans les principales stations mais avec des horaires d'ouverture restreints. Pour les voyageurs réguliers, la <strong>carte Navigo Easy</strong> ({$nEasy}) rechargeable au voyage est la solution la plus pratique.",
     ],
     [
         'q' => 'Le métro est-il accessible aux personnes à mobilité réduite ?',
@@ -256,8 +256,8 @@ $entries = [
     [
         'icon'  => 'map',
         'title' => 'Itinéraires',
-        'desc'  => 'Outils recommandés pour calculer un trajet d\'un point A à un point B en transport en commun en Île-de-France : <strong>Bonjour RATP</strong>, <strong>IDFM</strong>, <strong>Citymapper</strong>, <strong>Google Maps</strong>.',
-        'cta'   => 'Planifier un trajet →',
+        'desc'  => 'Le planificateur d\'itinéraires multimodaux <strong>BougeaParis</strong> est en cours de développement. En attendant, explorez le réseau via les pages dédiées par mode et par ligne.',
+        'cta'   => 'Découvrir la feuille de route →',
         'url'   => '/itineraires/',
     ],
     [

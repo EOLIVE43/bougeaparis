@@ -254,7 +254,14 @@ function checkWikidata(string $qid, string $expectedName): array {
     // 3 stratégies de match (une suffit pour valider) :
     // 1) Le name complet normalisé apparaît dans le haystack (ex: "cnit"
     //    apparaît dans aliases ou label si c'est un acronyme connu).
-    $nameNorm = strtolower(remove_accents(preg_replace('/[^A-Za-z0-9 ]/', ' ', $expectedName)));
+    // FIX bug ordre opérations (révélé pilote Opéra 2026-05-21) :
+    // remove_accents AVANT preg_replace, sinon les caractères accentués sont
+    // remplacés par des espaces avant normalisation. Ex : "musée Grévin"
+    // → "mus  e Gr  vin" → "mus e gr vin" (cassé). Régression silencieuse
+    // sur les POIs avec nom 100% accentué et tous les mots <4 chars sans accent
+    // (rare mais détectable). Les POIs avec au moins un mot ≥4 chars non
+    // accentué étaient récupérés par la stratégie 2 (faux négatif silencieux).
+    $nameNorm = strtolower(preg_replace('/[^A-Za-z0-9 ]/', ' ', remove_accents($expectedName)));
     $nameClean = trim(preg_replace('/\s+/', ' ', $nameNorm));
     if ($nameClean !== '' && str_contains($haystack, $nameClean)) {
         return ['error' => null, 'name_match' => true, 'label' => $labelFr ?: $labelEn];

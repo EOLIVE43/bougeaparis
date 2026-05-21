@@ -45,11 +45,11 @@ $faqs = [
     ['q' => 'Existe-t-il des tarifs réduits pour les jeunes ?',
      'a' => "Oui. Les <strong>moins de 4 ans</strong> voyagent gratuitement. Les <strong>4-10 ans</strong> bénéficient d'un tarif réduit de -50 %. Les <strong>scolaires et étudiants -26 ans</strong> peuvent souscrire au forfait Imagine'R à tarif préférentiel."],
     ['q' => 'Où acheter un ticket de métro à Paris ?',
-     'a' => "Aux <strong>guichets RATP</strong>, aux <strong>distributeurs automatiques</strong> dans toutes les stations, sur l'<strong>application Bonjour RATP</strong> (chargement Navigo Easy/Découverte) ou en ligne sur le site IDFM."],
+     'a' => "Aux <strong>guichets RATP</strong>, aux <strong>distributeurs automatiques</strong> dans toutes les stations, et chez les <strong>tabacs et points relais partenaires</strong> en Paris et région."],
     ['q' => 'Le Pass Navigo est-il rentable pour 4 jours à Paris ?',
      'a' => "Oui, généralement. Le <strong>forfait hebdomadaire Navigo Découverte (30,75 €)</strong> devient rentable à partir de 14 voyages dans la semaine."],
     ['q' => 'Les tarifs IDFM 2026 sont-ils valables toute l\'année ?',
-     'a' => "Oui. Les tarifs IDFM sont fixés annuellement et valables du 1er janvier au 31 décembre. Toute mise à jour est annoncée via le site officiel <strong>iledefrance-mobilites.fr</strong>."],
+     'a' => "Oui. Les tarifs IDFM sont fixés annuellement et valables du 1er janvier au 31 décembre. Toute mise à jour est annoncée via les canaux officiels d'IDFM."],
 ];
 
 $tpl->seo->addSchema([
@@ -212,9 +212,7 @@ $renderCard = function (string $key, array $t) {
         <ul>
             <li><strong>Distributeurs automatiques</strong> : présents dans toutes les stations métro et RER, paiement carte ou espèces.</li>
             <li><strong>Guichets RATP</strong> : conseil voyageur + vente de Navigo dans les stations principales.</li>
-            <li><strong>Application Bonjour RATP</strong> : achat de tickets t+ et chargement Navigo Easy/Découverte sur smartphone (Android NFC + iPhone récents).</li>
             <li><strong>Tabacs et points relais agréés</strong> en Paris et région.</li>
-            <li><strong>Site et app IDFM</strong> : commande de Navigo Découverte par envoi postal.</li>
         </ul>
 
         <h2>Questions fréquentes sur les tarifs IDFM</h2>

@@ -127,7 +127,6 @@ $renderCard = function (string $key, array $t) {
         <ul>
             <li><strong>Distributeurs automatiques</strong> dans toutes les stations métro (paiement CB ou espèces, multilingue).</li>
             <li><strong>Guichets RATP</strong> dans les stations principales (Châtelet, Gare de Lyon, Saint-Lazare, La Défense) — conseil + Navigo personnalisé.</li>
-            <li><strong>Application Bonjour RATP</strong> pour acheter et valider des tickets t+ via NFC sur smartphone.</li>
             <li><strong>Tabacs et points relais agréés</strong> en Paris et région.</li>
         </ul>
 

@@ -266,7 +266,7 @@ if ($visibleCount === 0) {
   <h2 id="services-title">Services et infos pratiques à <?= $stationE ?></h2>
 
   <p class="section-intro">
-    Voici les services disponibles à la station <strong><?= $stationE ?></strong>. Les équipements peuvent évoluer ; consultez l'application <a href="https://www.bonjour-ratp.fr/" target="_blank" rel="noopener">Bonjour RATP</a> pour l'information la plus à jour avant votre voyage.
+    Voici les services disponibles à la station <strong><?= $stationE ?></strong>. Les équipements peuvent évoluer ; pour l'information la plus à jour avant votre voyage, consultez l'affichage en station ou la page <a href="/info-trafic/">info-trafic BougeaParis</a>.
   </p>
 
   <ul class="services-list">

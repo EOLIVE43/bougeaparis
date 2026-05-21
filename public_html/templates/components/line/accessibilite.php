@@ -84,9 +84,8 @@ $stats = $accessibility['stats'];
       <strong>ℹ️ Données accessibilité en cours de vérification factuelle.</strong>
       Les chiffres ci-dessus sont basés sur des données générales et n'ont pas
       encore fait l'objet d'un audit station-par-station. Pour l'information
-      la plus à jour sur les ascenseurs en service, consulter
-      <a href="https://www.bonjour-ratp.fr/" target="_blank" rel="noopener">Bonjour RATP</a>
-      ou contacter le service voyageurs RATP.
+      la plus à jour sur les ascenseurs en service, consulter l'affichage
+      en station ou contacter le service voyageurs RATP.
     </div>
   <?php endif; ?>
 
