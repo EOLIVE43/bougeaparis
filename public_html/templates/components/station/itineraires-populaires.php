@@ -109,7 +109,14 @@ $hubActive = $hubUrl ? Routes::exists(rtrim($hubUrl, '/')) : false;
     <?php endforeach; ?>
   </ul>
 
-  <?php if ($hubUrl): ?>
+  <?php
+  // Tache 3 : toggle de masquage de la card "Voir tous les itineraires".
+  // Default false : la card disparait de toutes les pages stations
+  // (l'utilisateur la jugeait frustrante quand cocon /itineraires/ pas pret).
+  // Reactiver (= true) quand le cocon /itineraires/ sera lance (Phase 3).
+  $itinerariesHubExists = false;
+  ?>
+  <?php if ($hubUrl && $itinerariesHubExists): ?>
     <div class="itineraires-hub-link">
       <?php if ($hubActive): ?>
         <a href="<?= Template::e($hubUrl) ?>" class="itineraires-hub-link__btn">
