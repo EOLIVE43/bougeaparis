@@ -177,6 +177,45 @@ Wikidata) + `fetch-poi-images.php --station={slug}` (télécharge
 les images via P18 + crop 16:9 + WebP/AVIF). À activer dans le
 workflow quand le pipeline POI sera testé sur 5+ stations.
 
+## Backlog H — Stratégie gitignore heros stations (2026-05-26)
+
+**Décision (Option A)** : les variantes hero AVIF/WebP/JPG × 4 tailles
+(`public_html/assets/img/stations/{slug}/{slug}-{400,800,1200,1600}.{avif,webp,jpg}`)
+sont **trackées par défaut dans git**, plus aucune règle d'ignore ni
+d'exception par station. Le repo redevient source de vérité unique.
+
+**Avant** : `.gitignore` bloquait globalement
+`public_html/assets/img/stations/*/*.{avif,webp,jpg}` avec exception
+explicite pour la seule station Opéra (pilote Solution 1B). Les 7 autres
+stations publiées avaient leurs variantes en prod o2switch (uploadées
+FTP par le workflow CI) mais **absentes du repo** — drift silencieux
+entre prod et git.
+
+**Après** : un `git clone` frais reconstruit l'intégralité du périmètre
+servi en prod, sans dépendre d'un upload FTP historique ni d'une
+regénération depuis Wikimedia. Repro 100% garantie.
+
+**Conséquence opérationnelle** :
+- **Repo reproductible** : `git clone` + `php -S` → site complet en local,
+  toutes stations avec hero local AVIF/WebP/JPG. Aucun trou.
+- **Prod ↔ git synchronisés** : un commit hero arrive en prod via
+  `deploy.yml` (FTP général). Plus de désync possible.
+- **Estim repo** : ~1.6 Mo × 300 stations = ~500 Mo de binaires
+  long-terme. Acceptable repo GitHub free (limite ~5 Go).
+
+**Commit auto via CI** : le step `Commit assets generated` du workflow
+`auto-deploy-station.yml` (job `generate-assets`) détecte les variantes
+nouvellement générées par `build-station-hero.php` et les commit
+automatiquement sur `main` avec le tag `[auto-station]`. Aucun anti-loop
+n'est nécessaire : le trigger workflow filtre sur
+`public_html/data/stations/*.json`, un commit `[auto-station]` ne touche
+que `assets/img/stations/{slug}/` et `assets/images/poi/`, donc pas de
+boucle naturelle.
+
+**Rétro-traitement des 8 stations publiées** : étape H.4 séparée, commit
+unique des variantes locales des 7 stations LOT 1/2 + Bastille
+(régénération nécessaire pour celle-ci, jamais générée localement).
+
 ## ROI
 
 | Étape | Avant (manuel Ludovic) | Après (workflow) |

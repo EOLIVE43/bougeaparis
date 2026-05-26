@@ -56,20 +56,11 @@ scripts/cache-gtfs/
 # TTL configurable (1h dev / 24h prod), regenerable, ~10-150 ko par station.
 scripts/cache-wikipedia/
 
-# Images stations (regenerees par scripts/build-station-hero.php depuis Wikimedia)
-# Pattern par défaut : variantes uploadées par auto-deploy-station.yml Job 2 FTP.
-# Exceptions par station : commit explicite des variantes pour garantir présence
-# prod indépendamment de Wikimedia (Solution 1B Backlog D, à étendre via Backlog H).
-public_html/assets/img/stations/*/*.avif
-public_html/assets/img/stations/*/*.webp
-public_html/assets/img/stations/*/*.jpg
-
-# Exception Opéra (pilote T1 LIVE 2026-05-21) — Solution 1B :
-# variantes hero commitées pour garantir présence en prod via deploy.yml FTP
-# même si workflow CI Wikimedia fail. Pattern à généraliser via Backlog H.
-!public_html/assets/img/stations/opera/*.avif
-!public_html/assets/img/stations/opera/*.webp
-!public_html/assets/img/stations/opera/*.jpg
+# Images stations hero (Backlog H — Option A, 2026-05-26) :
+# Variantes AVIF/WebP/JPG × 4 tailles désormais TRACKÉES par défaut.
+# Décision : repo = source de vérité, prod et git toujours synchronisés.
+# Le workflow auto-deploy-station.yml commit auto les variantes générées
+# (cf. docs/AUTO-DEPLOY-STATIONS.md section "Backlog H").
 
 # Images lignes (regenerees par scripts/build-line-hero.php depuis Wikimedia)
 # Meme regle que stations : FTP manuel apres chaque run.

@@ -190,17 +190,28 @@ jobs:
 
       - name: Commit assets generated (si modifs)
         run: |
-          # Les heros stations sont gitignored, donc rien à commit côté heros.
-          # Les POIs (si build-station-pois.php a tourné) seraient commités ici.
-          if [[ -n "$(git status --porcelain public_html/assets/images/poi/)" ]]; then
+          # Backlog H (2026-05-26) : les heros stations sont désormais trackés
+          # par défaut (cf. .gitignore). On commit ici les variantes générées
+          # par build-station-hero.php + les images POIs si build-station-pois
+          # a tourné. 1 commit unique [auto-station] qui regroupe les 2.
+          HERO_DIR="public_html/assets/img/stations/${{ needs.validate.outputs.station_slug }}/"
+          POI_DIR="public_html/assets/images/poi/"
+          HERO_CHANGES=$(git status --porcelain "$HERO_DIR" 2>/dev/null)
+          POI_CHANGES=$(git status --porcelain "$POI_DIR" 2>/dev/null)
+          if [[ -n "$HERO_CHANGES" || -n "$POI_CHANGES" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public_html/assets/images/poi/
-            git commit -m "chore(poi): auto-fetch images pour ${{ needs.validate.outputs.station_slug }} [auto-station]"
+            [[ -n "$HERO_CHANGES" ]] && git add "$HERO_DIR"
+            [[ -n "$POI_CHANGES" ]]  && git add "$POI_DIR"
+            PARTS=()
+            [[ -n "$HERO_CHANGES" ]] && PARTS+=("hero")
+            [[ -n "$POI_CHANGES" ]]  && PARTS+=("poi")
+            SCOPE=$(IFS=+; echo "${PARTS[*]}")
+            git commit -m "chore(${SCOPE}): auto-generated assets pour ${{ needs.validate.outputs.station_slug }} [auto-station]"
             git push origin main
-            echo "### Assets POIs commités automatiquement" >> "$GITHUB_STEP_SUMMARY"
+            echo "### Assets ${SCOPE} commités automatiquement" >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "Aucun changement POI à commit"
+            echo "Aucun changement asset à commit"
           fi
 
       - name: Upload heros via FTP (assets/img/stations/{slug}/)
