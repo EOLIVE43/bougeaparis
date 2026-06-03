@@ -214,6 +214,11 @@ $stationNode = [
         : null,
     'isAccessibleForFree'=> true,
     'publicAccess'       => true,
+    'openingHoursSpecification' => SchemaHelpers::ratpMetroOpeningHours(),
+    'amenityFeature' => array_merge(
+        SchemaHelpers::stationAccessibilityFeatures($station),
+        SchemaHelpers::stationServiceFeatures($station)
+    ),
     'containedInPlace'   => [
         '@type' => 'City',
         'name'  => 'Paris',
@@ -248,6 +253,12 @@ if (!empty($faq)) {
     ];
 }
 
+// 4. ItemList des POIs voisins (top 5 audités T0, si présents)
+$nearbyPoisNode = SchemaHelpers::stationNearbyPoisAsItemList($station, $canonicalAbs);
+
+// 5. ItemList des itinéraires populaires (url conditionnelle Routes::exists)
+$itinerariesNode = SchemaHelpers::stationPopularItinerariesAsItemList($station, $canonicalAbs);
+
 // Assemblage @graph
 $graphNodes = [
     [
@@ -257,6 +268,12 @@ $graphNodes = [
     ],
     $stationNode,
 ];
+if ($nearbyPoisNode !== null) {
+    $graphNodes[] = $nearbyPoisNode;
+}
+if ($itinerariesNode !== null) {
+    $graphNodes[] = $itinerariesNode;
+}
 if ($faqNode !== null) {
     $graphNodes[] = $faqNode;
 }
