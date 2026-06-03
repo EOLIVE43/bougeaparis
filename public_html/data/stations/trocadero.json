@@ -1,0 +1,632 @@
+{
+    "_doc": "Squelette généré par bootstrap-station.php le 2026-06-03. Sections A+B auto, sections C en stubs à compléter (humain/LLM).",
+    "_todo": [
+        "seo.description",
+        "hero",
+        "intro_paragraphs",
+        "history",
+        "faq",
+        "practical_tips",
+        "trivia",
+        "popular_itineraries",
+        "safety",
+        "accessibility"
+    ],
+    "published": false,
+    "slug": "trocadero",
+    "name": "Trocadéro",
+    "name_full": "Trocadéro (Métro 6, 9)",
+    "arrondissement": "",
+    "address": "",
+    "latitude": 48.8634455913546,
+    "longitude": 2.287223474647482,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [],
+        "regional": [],
+        "_note": "auto: à compléter via RATP SIRI API en V2"
+    },
+    "seo": {
+        "description": "Station Trocadéro (Métro 6, 9) sous la place du Trocadéro-et-du-11-Novembre : sorties, correspondances, accès Palais de Chaillot, Tour Eiffel, musée de l'Homme et jardins du Trocadéro."
+    },
+    "hero": {
+        "tagline": "Sous la place du Trocadéro — Lignes 6 et 9 face à la Tour Eiffel",
+        "description": "Située dans le <strong>16e arrondissement</strong>, sous l'une des places les plus photographiées de Paris, la <strong>station Trocadéro</strong> dessert les <strong>lignes 6 et 9 du métro</strong>. Ouverte en <strong>1900</strong>, elle débouche directement sur l'esplanade du <strong>Palais de Chaillot</strong>, construit pour l'<em>Exposition universelle de 1937</em>, et offre l'une des vues les plus emblématiques sur la <strong>Tour Eiffel</strong>. La station dessert également le <strong>musée de l'Homme</strong>, le <strong>musée national de la Marine</strong>, la <strong>Cité de l'architecture et du patrimoine</strong> ainsi que les <strong>jardins du Trocadéro</strong>."
+    },
+    "adjacent_stations": {
+        "metro-6": {
+            "previous": {
+                "name": "Passy",
+                "slug": "passy",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Boissière",
+                "slug": "boissiere",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        },
+        "metro-9": {
+            "previous": {
+                "name": "Iéna",
+                "slug": "iena",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Rue de la Pompe",
+                "slug": "rue-de-la-pompe",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>station Trocadéro</strong> est l'un des grands carrefours touristiques du métro parisien. Située sous la <strong>place du Trocadéro-et-du-11-Novembre</strong>, dans le <strong>16e arrondissement</strong>, elle dessert deux lignes : la <strong>ligne 6</strong>, ouverte le <strong>2 octobre 1900</strong> comme terminus sud-est d'un embranchement de la <em>ligne 1</em> depuis Étoile, et la <strong>ligne 9</strong>, dont la station ouvre le <strong>8 novembre 1922</strong> comme terminus nord-est de son premier tronçon depuis Exelmans. Au-dessus de la station se dresse le <strong>Palais de Chaillot</strong>, construit pour l'<em>Exposition universelle de 1937</em>, dont l'esplanade offre l'une des vues les plus emblématiques sur la <strong>Tour Eiffel</strong>.",
+        "La <strong>place du Trocadéro</strong> a été créée en <strong>1869</strong> sous le <em>Second Empire</em> sous le nom de « place du Roi-de-Rome ». Elle prend le nom de « place du Trocadéro » en <strong>1877</strong>, en mémoire de la <strong>bataille du Trocadéro</strong> du 31 août 1823. Son nom actuel, « place du Trocadéro-et-du-11-Novembre », lui est attribué par arrêté municipal du <strong>18 octobre 1978</strong> en commémoration de l'<strong>armistice du 11 novembre 1918</strong>. Conçue comme un carrefour rayonnant de 164 mètres de diamètre, elle relie six avenues : avenue du Président-Wilson, avenue Kléber, avenue Raymond-Poincaré, avenue d'Eylau, avenue Georges-Mandel et avenue Paul-Doumer.",
+        "Avec ses <strong>deux lignes de métro</strong> et sa proximité immédiate du <strong>Palais de Chaillot</strong> (musée de l'Homme, musée national de la Marine, Cité de l'architecture et du patrimoine, Théâtre national de Chaillot), des <strong>jardins du Trocadéro</strong>, de l'<strong>Aquarium de Paris - Cinéaqua</strong> et de la <strong>Tour Eiffel</strong> (accessible à pied par le pont d'Iéna), la <strong>station Trocadéro</strong> est l'un des points d'entrée majeurs du tourisme parisien. En <strong>2019</strong>, <strong>9 327 124 voyageurs</strong> y sont entrés, plaçant la station au <strong>21e rang</strong> du réseau pour sa fréquentation. La station n'est pas accessible aux PMR : aucun ascenseur ne dessert les quais (audit Wikipédia FR / RATP 2026-06-03)."
+    ],
+    "history": {
+        "title": "De la bataille du Trocadéro à l'Exposition universelle de 1937",
+        "paragraphs": [
+            "La <strong>place du Trocadéro</strong> doit son nom à la <strong>bataille du Trocadéro</strong>, qui s'est déroulée le <strong>31 août 1823</strong> : lors de cet épisode des guerres d'Espagne, un corps expéditionnaire français commandé par le <strong>duc d'Angoulême</strong> s'empare du <strong>fort Louis</strong>, qui défendait le port de Cadix, et rétablit le roi <strong>Ferdinand VII</strong> sur son trône. Le site de la <em>colline de Chaillot</em> avait déjà servi en <strong>1826</strong> à une reconstitution de cette bataille devant le roi <strong>Charles X</strong>. Plusieurs projets architecturaux furent imaginés pour couronner la colline au cours du <em>XIXe siècle</em> — obélisque, tombeau de Napoléon, palais du peuple, arc de triomphe — sans jamais aboutir.",
+            "La <strong>place</strong> elle-même est créée en <strong>1869</strong> sous le <em>Second Empire</em>, sous le nom de « place du Roi-de-Rome », en hommage au fils de <strong>Napoléon Ier</strong>. La colline est arasée de trois mètres et nivelée, et un escalier est construit en granit vers le pont d'Iéna pour l'<em>Exposition universelle de 1867</em>. Elle prend le nom de « place du Trocadéro » en <strong>1877</strong>. Pour l'<em>Exposition universelle de 1878</em>, le <strong>palais du Trocadéro</strong> est construit sur la place par les architectes <strong>Gabriel Davioud</strong> et <strong>Jules Bourdais</strong>, dans un style d'inspirations mauresque et néo-byzantine. Les jardins du Trocadéro sont aménagés en contrebas par l'ingénieur <strong>Adolphe Alphand</strong>, autour d'une cascade.",
+            "Pour l'<em>Exposition universelle de 1937</em>, l'ancien palais du Trocadéro est démoli et remplacé par le <strong>Palais de Chaillot</strong>, conçu par les architectes <strong>Léon Azéma</strong>, <strong>Jacques Carlu</strong> et <strong>Louis-Hippolyte Boileau</strong>. Le nouvel édifice conserve l'ossature et les deux ailes en demi-cercles de l'ancien palais, mais la partie centrale est remplacée par une vaste esplanade donnant sur la <strong>Tour Eiffel</strong>. Le palais accueille successivement, entre <strong>1948</strong> et <strong>1951</strong>, deux sessions de l'<strong>Assemblée générale de l'ONU</strong>, dont celle du <strong>10 décembre 1948</strong> où est adoptée la <strong>Déclaration universelle des droits de l'homme</strong>. En commémoration, l'esplanade est renommée <strong>« parvis des droits de l'homme »</strong> par <strong>François Mitterrand</strong> le <strong>30 mai 1985</strong>. Le palais a été classé <strong>monument historique</strong> par arrêté du <strong>24 décembre 1980</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Combien de lignes desservent la station Trocadéro ?",
+            "answer": "La station Trocadéro est desservie par <strong>deux lignes de métro</strong> : la <strong>ligne 6</strong> (direction Charles de Gaulle - Étoile ou Nation) et la <strong>ligne 9</strong> (direction Pont de Sèvres ou Mairie de Montreuil). Elle est également desservie par les <strong>lignes 30 et 63 du réseau de bus RATP</strong>, par les <strong>lignes 22 et 32</strong> du réseau de bus La Défense - Saint Cloud, et la nuit par la <strong>ligne N53 du Noctilien</strong>. À noter : sur la ligne 9, le nom de la station est sous-titré « <em>Tour Eiffel</em> » sur les plaques disposées dans les couloirs."
+        },
+        {
+            "question": "Quelle sortie pour rejoindre la Tour Eiffel à pied ?",
+            "answer": "Empruntez la sortie <strong>1 « avenue du Président-Wilson »</strong> ou tout accès débouchant côté sud-est de la place, qui s'ouvre directement sur l'<strong>esplanade du Palais de Chaillot</strong>. De là, traversez l'esplanade puis les <strong>jardins du Trocadéro</strong> et le <strong>pont d'Iéna</strong> pour atteindre la <strong>Tour Eiffel</strong>. Comptez environ <strong>15 minutes à pied</strong> depuis la station, avec l'une des plus belles perspectives sur la tour sur tout le trajet."
+        },
+        {
+            "question": "La station Trocadéro est-elle accessible aux PMR ?",
+            "answer": "<strong>Non.</strong> Aucune des deux lignes (6 et 9) n'est accessible aux personnes à mobilité réduite à Trocadéro : <strong>aucun ascenseur</strong> ne dessert les quais. La station, ouverte en 1900 sur la ligne 6 et en 1922 sur la ligne 9, reste non conforme à la norme PMR 2005. Pour un trajet PMR vers la <strong>Tour Eiffel</strong>, la <strong>ligne 14</strong> est intégralement accessible : rejoignez-la par exemple depuis la station <em>Bercy</em> ou <em>Châtelet</em> selon votre point de départ, puis consultez le plan PMR officiel RATP."
+        },
+        {
+            "question": "Quels sont les horaires du premier et du dernier métro à Trocadéro ?",
+            "answer": "Le <strong>premier métro à Trocadéro</strong> circule à partir de <strong>5h30</strong> sur les lignes 6 et 9 (horaires standards du réseau RATP), du lundi au dimanche. Le <strong>dernier métro</strong> quitte la station vers <strong>1h15 en semaine</strong>, avec un <strong>prolongement jusqu'à 2h15 le vendredi, le samedi et les veilles de fêtes</strong>. La <strong>ligne N53 du Noctilien</strong> prend ensuite le relais depuis les arrêts proches de la place. Horaires précis par ligne via l'application RATP ou la page station IDFM officielle."
+        },
+        {
+            "question": "Quelle sortie pour le Palais de Chaillot et ses musées ?",
+            "answer": "Le <strong>Palais de Chaillot</strong> est directement au-dessus de la station, à l'angle sud-est de la place. Empruntez tout accès débouchant côté sud-est pour rejoindre l'esplanade. L'aile ouest abrite le <strong>musée de l'Homme</strong> et le <strong>musée national de la Marine</strong> ; l'aile est, la <strong>Cité de l'architecture et du patrimoine</strong> ; au centre, sous l'esplanade, le <strong>Théâtre national de Chaillot</strong>. Comptez moins de <strong>5 minutes à pied</strong> pour rejoindre l'entrée du musée souhaité depuis la station."
+        },
+        {
+            "question": "Où se trouvent les jardins du Trocadéro depuis la station ?",
+            "answer": "Les <strong>jardins du Trocadéro</strong> s'étendent en contrebas du <strong>Palais de Chaillot</strong>, entre l'esplanade et le pont d'Iéna, sur une superficie de <strong>93 930 m²</strong>. Depuis la station, traversez la place puis l'esplanade pour rejoindre les escaliers descendant vers la <strong>fontaine de Varsovie</strong>, dont les vingt jets d'eau étagés sur huit paliers successifs font face à la <strong>Tour Eiffel</strong>. L'<strong>Aquarium de Paris - Cinéaqua</strong> se trouve sur l'esplanade Bernard-Dupérier, dans les jardins."
+        },
+        {
+            "question": "Comment rejoindre le Centre culturel coréen depuis la station ?",
+            "answer": "Le <strong>Centre culturel coréen</strong> fait partie des établissements à proximité immédiate de la station Trocadéro, dans le quartier de Chaillot. Empruntez la sortie correspondant à l'<strong>avenue d'Iéna</strong> ou l'<strong>avenue du Président-Wilson</strong> selon l'adresse exacte du centre ; comptez quelques minutes à pied depuis la station. Vérifiez l'adresse précise et les horaires d'ouverture sur le site officiel du centre avant votre visite."
+        },
+        {
+            "question": "La station Trocadéro dispose-t-elle de sanitaires ?",
+            "answer": "<strong>Oui.</strong> En <strong>2026</strong>, après rénovation, des sanitaires datant de la <em>Belle Époque</em> ont été remis en service dans la station ; ils sont <strong>payants</strong>. Cette particularité fait de Trocadéro l'une des rares stations du métro parisien à disposer de toilettes publiques d'accès direct, conservées dans leur configuration historique d'origine (audit Wikipédia FR 2026-06-03)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Privilégiez</strong> la sortie débouchant sur l'esplanade du <strong>Palais de Chaillot</strong> pour photographier la <strong>Tour Eiffel</strong> : la perspective entre les deux ailes du palais est la plus emblématique du quartier.",
+        "<strong>Évitez</strong> les <strong>weekends ensoleillés</strong> et les <strong>fins de journée</strong> sur l'esplanade : forte affluence touristique, particulièrement en saison estivale.",
+        "<strong>Prévoyez</strong> une <strong>quinzaine de minutes à pied</strong> pour rejoindre la <strong>Tour Eiffel</strong> en passant par l'esplanade, les jardins du Trocadéro et le pont d'Iéna — l'un des trajets piétons les plus photogéniques de Paris.",
+        "<strong>Empruntez</strong> les escaliers descendant côté <strong>aile de Passy</strong> pour rejoindre la <strong>fontaine de Varsovie</strong> et l'<strong>Aquarium de Paris - Cinéaqua</strong>, situé sur l'esplanade Bernard-Dupérier.",
+        "<strong>Vigilance pickpockets</strong> sur l'esplanade et dans les jardins, particulièrement aux abords des points de vue Tour Eiffel : zone très fréquentée par les touristes, restez attentif à vos effets personnels.",
+        "<strong>Consultez</strong> les horaires officiels des musées (musée de l'Homme, musée national de la Marine, Cité de l'architecture et du patrimoine) avant votre visite : la plupart sont <strong>fermés le mardi</strong>, comme la majorité des musées nationaux français."
+    ],
+    "trivia": [
+        {
+            "icon": "⚔️",
+            "title": "Le « Trocadéro » : un fort espagnol de 1823",
+            "content": "Le nom <strong>Trocadéro</strong> vient du <strong>fort Louis</strong>, surnommé « fort du Trocadéro », qui défendait le port de <strong>Cadix</strong> en Espagne. Le <strong>31 août 1823</strong>, lors des guerres d'Espagne, un corps expéditionnaire français commandé par le <strong>duc d'Angoulême</strong> s'empare du fort et rétablit le roi <strong>Ferdinand VII</strong> sur son trône. En <strong>1826</strong>, une reconstitution de la bataille a lieu sur la colline de Chaillot devant le roi <strong>Charles X</strong> : la colline elle-même figurait alors le fort, et les troupes françaises partaient du Champ-de-Mars pour « conquérir » la colline."
+        },
+        {
+            "icon": "🎬",
+            "title": "L'esplanade de la « Welthauptstadt Germania » qui ne vit jamais le jour",
+            "content": "Le <strong>23 juin 1940</strong>, après l'invasion allemande, <strong>Adolf Hitler</strong> et son entourage militaire parcourent l'esplanade du Trocadéro. Le Führer prévoit dès lors d'en faire une copie à Berlin pour la future « <strong>Welthauptstadt Germania</strong> », projet de capitale mondiale du Reich finalement abandonné. La célèbre photographie d'Hitler posant face à la Tour Eiffel a été prise depuis cette esplanade — devenue, par un retournement de l'Histoire, le <strong>parvis des droits de l'homme</strong> en 1985."
+        },
+        {
+            "icon": "🕊️",
+            "title": "La Déclaration universelle des droits de l'homme adoptée ici",
+            "content": "Le <strong>10 décembre 1948</strong>, l'<strong>Assemblée générale de l'ONU</strong>, réunie dans le théâtre du <strong>Palais de Chaillot</strong>, adopte la <strong>Déclaration universelle des droits de l'homme</strong>. Une plaque commémorative rappelle l'événement dans le théâtre. C'est en mémoire de ce moment que <strong>François Mitterrand</strong> renomme officiellement l'esplanade « <strong>parvis des droits de l'homme</strong> » le <strong>30 mai 1985</strong>. Le palais avait accueilli deux sessions de l'Assemblée générale onusienne (la 3e en 1948 et la 6e en 1951-1952), bénéficiant d'une exception d'extraterritorialité temporaire."
+        },
+        {
+            "icon": "🐂",
+            "title": "Les sculptures animalières du Trocadéro, aujourd'hui devant le musée d'Orsay",
+            "content": "Autour de la fontaine du Trocadéro se trouvaient à l'origine <strong>quatre sculptures animalières en bronze</strong> datant de l'<em>Exposition universelle de 1878</em> : <strong>Le Cheval à la herse</strong> par <strong>Pierre Louis Rouillard</strong>, <strong>Le Jeune éléphant pris au piège</strong> par <strong>Emmanuel Frémiet</strong>, <strong>Le Rhinocéros</strong> par <strong>Henri-Alfred Jacquemart</strong> et <strong>Le Bœuf</strong> par <strong>Auguste Cain</strong>. Depuis <strong>1985</strong>, les trois premières trônent devant le <strong>musée d'Orsay</strong>, tandis que <strong>Le Bœuf</strong> a été transféré à <strong>Nîmes</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tour Eiffel",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Trocadéro → Tour Eiffel",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'esplanade et le pont d'Iéna (~1 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Arc de Triomphe",
+            "destination_slug": "arc-de-triomphe",
+            "destination_full_name": "Trocadéro → Arc de Triomphe",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "Ligne 6 direction Charles de Gaulle - Étoile, 4 stations",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-arc-de-triomphe/"
+        },
+        {
+            "destination_name": "Champs-Élysées",
+            "destination_slug": "avenue-des-champs-elysees",
+            "destination_full_name": "Trocadéro → Champs-Élysées",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "Ligne 6 direction Charles de Gaulle - Étoile, 4 stations",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-avenue-des-champs-elysees/"
+        },
+        {
+            "destination_name": "Musée du Louvre",
+            "destination_slug": "musee-du-louvre",
+            "destination_full_name": "Trocadéro → Musée du Louvre",
+            "lines_used": [
+                "M9",
+                "M1"
+            ],
+            "lines_label": "Ligne 9 + Ligne 1, 1 correspondance à Franklin D. Roosevelt",
+            "duration_minutes": 18,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-musee-du-louvre/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera-garnier",
+            "destination_full_name": "Trocadéro → Opéra Garnier",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "Ligne 9 direction Mairie de Montreuil, 7 stations",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-opera-garnier/"
+        },
+        {
+            "destination_name": "Aéroport Charles de Gaulle",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Trocadéro → Aéroport Charles de Gaulle",
+            "lines_used": [
+                "M6",
+                "RER B"
+            ],
+            "lines_label": "Ligne 6 + RER B direction Aéroport CDG 2 TGV, 1 correspondance à Charles de Gaulle - Étoile",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-aeroport-charles-de-gaulle/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland-paris",
+            "destination_full_name": "Trocadéro → Disneyland Paris",
+            "lines_used": [
+                "M9",
+                "RER A"
+            ],
+            "lines_label": "Ligne 9 + RER A direction Marne-la-Vallée — Chessy, 1 correspondance à Auber ou Charles de Gaulle - Étoile",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-disneyland-paris/"
+        },
+        {
+            "destination_name": "Sacré-Cœur",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Trocadéro → Sacré-Cœur",
+            "lines_used": [
+                "M6",
+                "M2"
+            ],
+            "lines_label": "Ligne 6 + Ligne 2, 1 correspondance à Charles de Gaulle - Étoile",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-trocadero/trocadero-vers-sacre-coeur/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q243",
+            "name": "tour Eiffel",
+            "category": "tour",
+            "description": "La tour Eiffel [tuʁɛfɛl] est une tour autoportante de fer puddlé de 330 m de hauteur située à Paris, à l’extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Eiffel",
+            "latitude": 48.858296,
+            "longitude": 2.294479,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 690,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q857276",
+            "name": "musée d'Art moderne de Paris",
+            "category": "musée",
+            "description": "Le musée d'Art moderne de Paris, ou MAM Paris, situé au 11, avenue du Président-Wilson dans le 16e arrondissement de Paris, est un musée d'art français.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20d%27Art%20moderne%20de%20la%20Ville%20de%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_moderne_de_Paris",
+            "latitude": 48.8643,
+            "longitude": 2.2978,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 707,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q860994",
+            "name": "musée national des Arts asiatiques - Guimet",
+            "category": "musée",
+            "description": "Le musée national des Arts asiatiques, couramment appelé musée Guimet, est un musée d'arts asiatiques situé à Paris, 6, place d'Iéna, dans le 16e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20mus%C3%A9e%20Guimet%20November%2020%2C%202011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_des_Arts_asiatiques_-_Guimet",
+            "latitude": 48.865278,
+            "longitude": 2.293889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 478,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q13360213",
+            "name": "palais de Chaillot",
+            "category": "palais",
+            "description": "Le palais de Chaillot est situé sur la colline de Chaillot à Paris, dans le 16e arrondissement, place du Trocadéro-et-du-11-Novembre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trocadero%20pic1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Chaillot",
+            "latitude": 48.86234,
+            "longitude": 2.28807,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 77,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1535247",
+            "name": "palais de Tokyo",
+            "category": "palais",
+            "description": "Le palais de Tokyo, dont le nom originel est palais des Musées d'art moderne, désigne un bâtiment consacré à l'art moderne et contemporain.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amos%20Gitai%20au%20Palais%20de%20Tokyo%20%285477710814%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Tokyo",
+            "latitude": 48.86408,
+            "longitude": 2.29713,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 654,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q540781",
+            "name": "pont d'Iéna",
+            "category": "pont",
+            "description": "Le pont d'Iéna est un pont parisien franchissant la Seine. Le pont est réservé aux piétons et cyclistes depuis les Jeux olympiques de 2024.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075007%20Port%20de%20Suffren%2020161101%20Pont%20d%27I%C3%A9na.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27I%C3%A9na",
+            "latitude": 48.859722,
+            "longitude": 2.292222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 463,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q670268",
+            "name": "musée de l'Homme",
+            "category": "musée",
+            "description": "Le musée de l'Homme est un musée national français, partie du Muséum national d'histoire naturelle (MNHN), installé depuis 1937 dans les étages du palais de Chaillot à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27homme.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Homme",
+            "latitude": 48.86218,
+            "longitude": 2.28741,
+            "nearest_exit": {
+                "number": "6",
+                "name": "av. Paul Doumer",
+                "distance_m": 30,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1683459",
+            "name": "jardins du Trocadéro",
+            "category": "jardin",
+            "description": "Les jardins du Trocadéro sont situés dans le 16e arrondissement de Paris, face à la Seine. Ils ont une superficie de 93 930 m2.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardins%20du%20Trocad%C3%A9ro%20-%2020150801%2015h24%20%2810619%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardins_du_Trocad%C3%A9ro",
+            "latitude": 48.861392,
+            "longitude": 2.289631,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 203,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2274186",
+            "name": "passerelle Debilly",
+            "category": "pont",
+            "description": "La passerelle Debilly [dəbili] est un pont pour piétons et vélos situé à Paris et traversant la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passerelle%20Debilly%2C%20Paris%209%20July%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Passerelle_Debilly",
+            "latitude": 48.863056,
+            "longitude": 2.296389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q800620",
+            "name": "Champ de Mars - Tour Eiffel",
+            "category": "gare",
+            "description": "La gare du Champ de Mars - Tour Eiffel est une gare ferroviaire française de la ligne des Invalides à Versailles-Rive-Gauche située à la limite du quartier du Gros-Caillou du 7e arrondissement et du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Champs%20de%20Mars%20-%20RER%2027-02-06.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Champ_de_Mars_-_Tour_Eiffel",
+            "latitude": 48.85667,
+            "longitude": 2.28973,
+            "nearest_exit": {
+                "number": "6",
+                "name": "av. Paul Doumer",
+                "distance_m": 636,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1632912",
+            "name": "musée Galliera",
+            "category": "musée",
+            "description": "Situé sur la colline de Chaillot, le palais Galliera, musée de la Mode de la ville de Paris, est un musée français de style néo-Renaissance, situé dans le 16e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Galliera%2C%20Paris%2021%20July%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Galliera,_mus%C3%A9e_de_la_Mode_de_la_ville_de_Paris",
+            "latitude": 48.865556,
+            "longitude": 2.296667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. du Président Wilson",
+                "distance_m": 672,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1759903",
+            "name": "place du Trocadéro-et-du-11-Novembre",
+            "category": "place",
+            "description": "La place du Trocadéro-et-du-11-Novembre est une place du 16e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20du%20Trocad%C3%A9ro-et-du-11-Novembre%20%C3%A0%20Paris%20le%2023%20avril%202015%20-%2024.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_Trocad%C3%A9ro-et-du-11-Novembre",
+            "latitude": 48.863056,
+            "longitude": 2.287222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Kléber",
+                "distance_m": 63,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. du Président Wilson",
+            "address_full": "1 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.863007,
+            "longitude": 2.28834,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. Kléber",
+            "address_full": "4 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.863621,
+            "longitude": 2.287255,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "av. Raymond Poincaré",
+            "address_full": "6 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.863629,
+            "longitude": 2.286996,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "av. Georges Mandel",
+            "address_full": "10 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.863247,
+            "longitude": 2.286265,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Cimetière de Passy",
+            "address_full": "23 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.862349,
+            "longitude": 2.286496,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "av. Paul Doumer",
+            "address_full": "19 Place du Trocadéro et du Onze Novembre 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.8621,
+            "longitude": 2.287017,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique sur l'esplanade et dans les jardins du Trocadéro : vigilance pickpockets accrue, particulièrement aux points de vue Tour Eiffel et autour de la fontaine de Varsovie.",
+            "Soirée tardive : l'esplanade et les jardins peuvent être moins fréquentés à partir de 22h, restez sur les axes principaux pour rejoindre la station.",
+            "Forte affluence les weekends ensoleillés et en saison estivale : prévoir alternatives en transit (RER C station Champ de Mars - Tour Eiffel, ligne 6 station Bir-Hakeim).",
+            "L'esplanade et les jardins peuvent accueillir des événements officiels (cérémonie d'ouverture des Jeux olympiques de Paris 2024, Parc des Champions, fanzone, courses) avec dispositif policier renforcé : vérifier paris.fr en cas de déplacement les jours sensibles."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature touristique du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Eiffel_Tower_seen_from_the_Palais_de_Chaillot_2.jpg/1920px-Eiffel_Tower_seen_from_the_Palais_de_Chaillot_2.jpg",
+        "alt": "Tour Eiffel vue depuis le Palais de Chaillot — Trocadéro",
+        "width": 1920,
+        "height": 802,
+        "credit": {
+            "author": "DiscoA340",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_seen_from_the_Palais_de_Chaillot_2.jpg",
+            "date": "2026-06-03"
+        },
+        "source": "manual",
+        "confidence_score": 21,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/trocadero/trocadero-400.avif",
+                "800": "/assets/img/stations/trocadero/trocadero-800.avif",
+                "1200": "/assets/img/stations/trocadero/trocadero-1200.avif",
+                "1600": "/assets/img/stations/trocadero/trocadero-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/trocadero/trocadero-400.webp",
+                "800": "/assets/img/stations/trocadero/trocadero-800.webp",
+                "1200": "/assets/img/stations/trocadero/trocadero-1200.webp",
+                "1600": "/assets/img/stations/trocadero/trocadero-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/trocadero/trocadero-400.jpg",
+                "800": "/assets/img/stations/trocadero/trocadero-800.jpg",
+                "1200": "/assets/img/stations/trocadero/trocadero-1200.jpg",
+                "1600": "/assets/img/stations/trocadero/trocadero-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1272925",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1272925",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Trocad%C3%A9ro_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

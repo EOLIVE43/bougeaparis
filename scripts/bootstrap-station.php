@@ -237,6 +237,12 @@ if (!$validateOk) $warnings[] = 'validate-station a signalé des erreurs (voir l
 // Récap final
 // ─────────────────────────────────────────────────────────────
 
+// Recharger le JSON depuis le disque : les sous-process exits/pois
+// l'ont modifié hors de la portée PHP en mémoire. Sans ce reload,
+// printSummary affichait 0 exits / 0 pois (friction documentée
+// dans docs/TEMPLATE_GUIDE.md).
+$json = json_decode((string)file_get_contents($jsonPath), true) ?? $json;
+
 printSummary($jsonPath, $json, $warnings);
 exit(count($warnings) > 0 ? 1 : 0);
 
