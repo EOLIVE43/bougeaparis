@@ -610,6 +610,42 @@ function buildSkeleton(string $slug, array $parent, string $nameFull, array $lin
 {
     // Garde-fou merge : préserve les champs non-vides de $existing
     $today = date('Y-m-d');
+
+    // Dispatch des lignes selon type (Fix Backlog Champ de Mars 2026-06-04) :
+    // - 'metro' va dans lines[]
+    // - 'rer'   va dans rer_correspondences[]
+    // - 'tram'  va dans tram_correspondences[]
+    // Convention historique : lines[] est reservee au metro ; les autres modes
+    // sont des "correspondances" depuis le metro. Pour les stations RER pures
+    // (Champ-de-Mars - Tour Eiffel, Saint-Michel - Notre-Dame, etc.) lines[]
+    // est donc legitimement vide.
+    $metroLines = array_values(array_filter($lines, fn($l) => $l['type'] === 'metro'));
+    $rerLines   = array_values(array_filter($lines, fn($l) => $l['type'] === 'rer'));
+    $tramLines  = array_values(array_filter($lines, fn($l) => $l['type'] === 'tram'));
+
+    $rerCorrespondences = $existing['rer_correspondences'] ?? array_map(fn($l) => [
+        'code'            => $l['code'],
+        'color'           => $l['color'],
+        'station_name'    => $parent['stop_name'],
+        'walking_minutes' => 0,
+    ], $rerLines);
+
+    $tramCorrespondences = $existing['tram_correspondences'] ?? array_map(fn($l) => [
+        'code'            => $l['code'],
+        'color'           => $l['color'],
+        'station_name'    => $parent['stop_name'],
+        'walking_minutes' => 0,
+    ], $tramLines);
+
+    // adjacent_stations filtre : conserver uniquement les slugs metro-*
+    // (pattern observe sur stations publiees Chatelet, La Defense, Etoile).
+    $adjacentsFiltered = [];
+    foreach ($adjacents as $slug2 => $adj) {
+        if (str_starts_with($slug2, 'metro-')) {
+            $adjacentsFiltered[$slug2] = $adj;
+        }
+    }
+
     $skel = [
         '_doc' => $existing['_doc'] ?? "Squelette généré par bootstrap-station.php le $today. Sections A+B auto, sections C en stubs à compléter (humain/LLM).",
         '_todo' => $existing['_todo'] ?? ['seo.description', 'hero', 'intro_paragraphs', 'history', 'faq', 'practical_tips', 'trivia', 'popular_itineraries', 'safety', 'accessibility'],
@@ -626,14 +662,23 @@ function buildSkeleton(string $slug, array $parent, string $nameFull, array $lin
         'commune' => $existing['commune'] ?? ($tariffZone === 1 ? 'Paris' : ''),
         'is_major_hub' => $isMajorHub,
         'i18n' => $existing['i18n'] ?? ['en' => '', 'es' => ''],
-        'lines' => $lines,
+        'lines' => $metroLines,
+    ];
+    // rer/tram correspondences inserees conditionnellement, juste apres lines[]
+    if (!empty($rerCorrespondences)) {
+        $skel['rer_correspondences'] = $rerCorrespondences;
+    }
+    if (!empty($tramCorrespondences)) {
+        $skel['tram_correspondences'] = $tramCorrespondences;
+    }
+    $skel += [
         'bus_correspondences' => $existing['bus_correspondences'] ?? [
             'diurne' => [], 'nocturne' => [], 'regional' => [],
             '_note' => 'auto: à compléter via RATP SIRI API en V2',
         ],
         'seo' => $existing['seo'] ?? ['description' => ''],
         'hero' => $existing['hero'] ?? ['tagline' => '', 'description' => ''],
-        'adjacent_stations' => $adjacents,
+        'adjacent_stations' => $adjacentsFiltered,
         'intro_paragraphs' => mergeStubArray($existing['intro_paragraphs'] ?? null, ['', '', '']),
         'history' => $existing['history'] ?? ['title' => '', 'paragraphs' => ['', '', '']],
         'faq' => mergeStubFaq($existing['faq'] ?? null, 8),
