@@ -49,20 +49,30 @@
     ],
     "bus_correspondences": {
         "diurne": [
-            "22",
             "30",
-            "31",
-            "52",
-            "73",
             "92",
             "341"
         ],
         "nocturne": [
             "N11",
             "N24",
-            "N53"
+            "N53",
+            "N151",
+            "N153"
         ],
-        "regional": []
+        "regional": [
+            "22",
+            "31",
+            "52",
+            "73"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 4,
+            "nearby_count": 36
+        }
     },
     "seo": {
         "description": "Station Charles de Gaulle — Étoile (Métro 1, 2, 6, RER A) sous l'Arc de Triomphe : correspondances, sorties, plan, accès Champs-Élysées et 12 avenues rayonnantes."

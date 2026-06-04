@@ -61,11 +61,31 @@
         }
     ],
     "bus_correspondences": {
-        "diurne": [],
-        "nocturne": [],
-        "regional": [],
-        "_note": "auto: à compléter via RATP SIRI API en V2",
-        "_note_visible": "Plusieurs lignes de bus RATP desservent les abords de la place de l'Opéra et les boulevards Haussmann et des Capucines. Liste détaillée à venir."
+        "diurne": [
+            "20",
+            "21",
+            "27",
+            "29",
+            "68"
+        ],
+        "nocturne": [
+            "N15",
+            "N16"
+        ],
+        "regional": [
+            "32",
+            "45",
+            "52",
+            "66",
+            "95"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 4,
+            "nearby_count": 50
+        }
     },
     "seo": {
         "description": "Station Opéra (Métro 3, 7, 8) sous la place de l'Opéra : correspondances, sorties, plan, accès Palais Garnier, Galeries Lafayette, Grands Boulevards."

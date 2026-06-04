@@ -57,7 +57,11 @@
         }
     ],
     "bus_correspondences": {
-        "diurne": [
+        "diurne": [],
+        "nocturne": [
+            "N24"
+        ],
+        "regional": [
             "73",
             "141",
             "144",
@@ -68,13 +72,23 @@
             "275",
             "276",
             "278",
-            "360"
+            "360",
+            "5432",
+            "7820",
+            "7821",
+            "7822",
+            "7823",
+            "7825",
+            "L",
+            "U"
         ],
-        "nocturne": [
-            "N24",
-            "N53"
-        ],
-        "regional": []
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 2,
+            "nearby_count": 33
+        }
     },
     "tariff_zone": 3,
     "tariff_zone_context": "banlieue proche, Puteaux dans les Hauts-de-Seine",

@@ -40,10 +40,28 @@
         }
     ],
     "bus_correspondences": {
-        "diurne": ["20", "29", "69", "76", "87", "91"],
-        "nocturne": [],
+        "diurne": [
+            "29",
+            "69",
+            "76",
+            "86",
+            "87",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N11",
+            "N16"
+        ],
         "regional": [],
-        "_note": "Liste non exhaustive — les statistiques de desserte bus à la Bastille évoluent. Plusieurs autres lignes RATP marquent l'arrêt à proximité immédiate."
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 1,
+            "nearby_count": 29
+        }
     },
     "seo": {
         "description": "Station Bastille (Métro 1, 5, 8) sous la place de la Bastille : correspondances, sorties, plan, accès Opéra Bastille, Port de l'Arsenal, Coulée verte."
@@ -223,8 +241,8 @@
             "address_full": "Rue de Lyon (départ nord), 75012 Paris",
             "postcode": "75012",
             "city": "Paris",
-            "latitude": 48.85240,
-            "longitude": 2.36980,
+            "latitude": 48.8524,
+            "longitude": 2.3698,
             "accessible": false,
             "sector": null
         },
@@ -234,8 +252,8 @@
             "address_full": "Boulevard Henri-IV (départ), 75004 Paris",
             "postcode": "75004",
             "city": "Paris",
-            "latitude": 48.85220,
-            "longitude": 2.36880,
+            "latitude": 48.8522,
+            "longitude": 2.3688,
             "accessible": false,
             "sector": null
         },
@@ -257,7 +275,9 @@
             "destination_name": "Châtelet",
             "destination_slug": "chatelet",
             "destination_full_name": "Bastille → Châtelet",
-            "lines_used": ["1"],
+            "lines_used": [
+                "1"
+            ],
             "lines_label": "Ligne 1 directe",
             "duration_minutes": 5,
             "changes_count": 0,
@@ -268,7 +288,9 @@
             "destination_name": "Gare de Lyon",
             "destination_slug": "gare-de-lyon",
             "destination_full_name": "Bastille → Gare de Lyon",
-            "lines_used": ["1"],
+            "lines_used": [
+                "1"
+            ],
             "lines_label": "Ligne 1 directe",
             "duration_minutes": 2,
             "changes_count": 0,
@@ -279,7 +301,9 @@
             "destination_name": "République",
             "destination_slug": "republique",
             "destination_full_name": "Bastille → République",
-            "lines_used": ["5"],
+            "lines_used": [
+                "5"
+            ],
             "lines_label": "Ligne 5 directe",
             "duration_minutes": 7,
             "changes_count": 0,
@@ -290,7 +314,9 @@
             "destination_name": "Charles de Gaulle — Étoile",
             "destination_slug": "charles-de-gaulle-etoile",
             "destination_full_name": "Bastille → Étoile",
-            "lines_used": ["1"],
+            "lines_used": [
+                "1"
+            ],
             "lines_label": "Ligne 1 directe",
             "duration_minutes": 22,
             "changes_count": 0,
@@ -301,7 +327,9 @@
             "destination_name": "La Défense",
             "destination_slug": "la-defense-grande-arche",
             "destination_full_name": "Bastille → La Défense",
-            "lines_used": ["1"],
+            "lines_used": [
+                "1"
+            ],
             "lines_label": "Ligne 1 directe",
             "duration_minutes": 26,
             "changes_count": 0,
@@ -312,7 +340,10 @@
             "destination_name": "Tour Eiffel (Bir-Hakeim)",
             "destination_slug": "bir-hakeim",
             "destination_full_name": "Bastille → Tour Eiffel",
-            "lines_used": ["8", "6"],
+            "lines_used": [
+                "8",
+                "6"
+            ],
             "lines_label": "Ligne 8 puis Ligne 6 (La Motte-Picquet — Grenelle)",
             "duration_minutes": 25,
             "changes_count": 1,
@@ -323,7 +354,10 @@
             "destination_name": "Aéroport CDG",
             "destination_slug": "aeroport-charles-de-gaulle",
             "destination_full_name": "Bastille → CDG",
-            "lines_used": ["1", "RER B"],
+            "lines_used": [
+                "1",
+                "RER B"
+            ],
             "lines_label": "Ligne 1 puis RER B (Châtelet — Les Halles)",
             "duration_minutes": 50,
             "changes_count": 1,
@@ -334,7 +368,10 @@
             "destination_name": "Disneyland Paris",
             "destination_slug": "disneyland-paris",
             "destination_full_name": "Bastille → Disneyland",
-            "lines_used": ["1", "RER A"],
+            "lines_used": [
+                "1",
+                "RER A"
+            ],
             "lines_label": "Ligne 1 puis RER A (Nation ou Châtelet)",
             "duration_minutes": 50,
             "changes_count": 1,
@@ -428,8 +465,8 @@
                 "wikimedia_file": "Paris port Arsenal.jpg"
             },
             "wikipedia_url": "https://fr.wikipedia.org/wiki/Port_de_l%27Arsenal",
-            "latitude": 48.85100,
-            "longitude": 2.36800,
+            "latitude": 48.851,
+            "longitude": 2.368,
             "nearest_exit": {
                 "number": "4",
                 "name": "Boulevard Bourdon (Port de l'Arsenal)",
@@ -452,7 +489,7 @@
             },
             "wikipedia_url": "https://fr.wikipedia.org/wiki/Coul%C3%A9e_verte_Ren%C3%A9-Dumont",
             "latitude": 48.84957,
-            "longitude": 2.37110,
+            "longitude": 2.3711,
             "access_hint": "Sortie 5 ou 6 · ~4-5 min à pied (370 m)",
             "nearest_exit": {
                 "number": "5",
@@ -469,7 +506,9 @@
             "coverage_detail": "les quais des trois lignes"
         },
         "toilets": {
-            "public_paid": { "available": false },
+            "public_paid": {
+                "available": false
+            },
             "public_free": {
                 "available": true,
                 "location": "le Port de l'Arsenal (sanitaires municipaux) ou la Coulée verte René-Dumont (avenue Daumesnil)",
@@ -536,20 +575,20 @@
         "source": "wikidata_p18_q778784",
         "local_versions": {
             "avif": {
-                "400":  "/assets/img/stations/bastille/bastille-400.avif",
-                "800":  "/assets/img/stations/bastille/bastille-800.avif",
+                "400": "/assets/img/stations/bastille/bastille-400.avif",
+                "800": "/assets/img/stations/bastille/bastille-800.avif",
                 "1200": "/assets/img/stations/bastille/bastille-1200.avif",
                 "1600": "/assets/img/stations/bastille/bastille-1600.avif"
             },
             "webp": {
-                "400":  "/assets/img/stations/bastille/bastille-400.webp",
-                "800":  "/assets/img/stations/bastille/bastille-800.webp",
+                "400": "/assets/img/stations/bastille/bastille-400.webp",
+                "800": "/assets/img/stations/bastille/bastille-800.webp",
                 "1200": "/assets/img/stations/bastille/bastille-1200.webp",
                 "1600": "/assets/img/stations/bastille/bastille-1600.webp"
             },
             "jpg": {
-                "400":  "/assets/img/stations/bastille/bastille-400.jpg",
-                "800":  "/assets/img/stations/bastille/bastille-800.jpg",
+                "400": "/assets/img/stations/bastille/bastille-400.jpg",
+                "800": "/assets/img/stations/bastille/bastille-800.jpg",
                 "1200": "/assets/img/stations/bastille/bastille-1200.jpg",
                 "1600": "/assets/img/stations/bastille/bastille-1600.jpg"
             }

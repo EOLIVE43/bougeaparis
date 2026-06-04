@@ -27,15 +27,22 @@
     ],
     "bus_correspondences": {
         "diurne": [
-            "68",
-            "69",
-            "72"
+            "68"
         ],
         "nocturne": [
             "N11",
             "N24"
         ],
-        "regional": []
+        "regional": [
+            "72"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 1,
+            "nearby_count": 9
+        }
     },
     "seo": {
         "description": "Station Tuileries (Métro 1) au cœur du jardin royal historique : correspondances, sorties, plan, accès Louvre, place Vendôme, musée de l'Orangerie."

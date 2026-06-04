@@ -692,5 +692,44 @@
                 "1600": "/assets/img/stations/chatelet/chatelet-1600.jpg"
             }
         }
+    },
+    "bus_correspondences": {
+        "diurne": [
+            "21",
+            "38",
+            "47",
+            "58",
+            "67",
+            "69",
+            "70",
+            "76",
+            "96"
+        ],
+        "nocturne": [
+            "N11",
+            "N12",
+            "N13",
+            "N14",
+            "N15",
+            "N16",
+            "N21",
+            "N23",
+            "N24",
+            "N122",
+            "N123"
+        ],
+        "regional": [
+            "72",
+            "74",
+            "75",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 3,
+            "nearby_count": 41
+        }
     }
 }

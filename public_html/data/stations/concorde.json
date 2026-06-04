@@ -41,11 +41,6 @@
     ],
     "bus_correspondences": {
         "diurne": [
-            "24",
-            "42",
-            "52",
-            "72",
-            "73",
             "84",
             "94"
         ],
@@ -53,7 +48,19 @@
             "N11",
             "N24"
         ],
-        "regional": []
+        "regional": [
+            "42",
+            "45",
+            "72",
+            "73"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 1,
+            "nearby_count": 24
+        }
     },
     "seo": {
         "description": "Station Concorde (Métro 1, 8, 12) sous la place de la Concorde : correspondances, sorties, plan, accès Champs-Élysées, Tuileries, obélisque de Louxor."
