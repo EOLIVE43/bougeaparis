@@ -1,0 +1,575 @@
+{
+    "_doc": "Squelette généré par bootstrap-station.php le 2026-06-04. Sections A+B auto, sections C en stubs à compléter (humain/LLM).",
+    "_todo": [
+        "seo.description",
+        "hero",
+        "intro_paragraphs",
+        "history",
+        "faq",
+        "practical_tips",
+        "trivia",
+        "popular_itineraries",
+        "safety",
+        "accessibility"
+    ],
+    "published": false,
+    "slug": "champ-de-mars-tour-eiffel",
+    "name": "Champ de Mars Tour Eiffel",
+    "name_full": "Champ de Mars Tour Eiffel (RER C)",
+    "arrondissement": "",
+    "address": "",
+    "latitude": 48.856819821231625,
+    "longitude": 2.2906669645482816,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "rer",
+            "code": "C",
+            "slug": "rer-c",
+            "color": "#FFCC30",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "30",
+            "82"
+        ],
+        "nocturne": [],
+        "regional": [
+            "72"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 1,
+            "nearby_count": 10
+        }
+    },
+    "seo": {
+        "description": "Station Champ de Mars - Tour Eiffel (RER C) au pied de la Tour Eiffel : sorties, jardin du Champ-de-Mars, École militaire, musée du quai Branly."
+    },
+    "hero": {
+        "tagline": "Au pied de la Tour Eiffel — Gare RER C sur le Champ-de-Mars, dans le 7e arrondissement",
+        "description": "Située dans le <strong>7e arrondissement</strong>, sur la <strong>ligne C du RER</strong>, la <strong>gare Champ de Mars - Tour Eiffel</strong> dessert le jardin éponyme de <strong>24,3 hectares</strong>, l'un des plus grands espaces verts de Paris. À ses sorties, le <strong>Champ-de-Mars</strong> s'étend entre la <strong>Tour Eiffel</strong> au nord-ouest et l'<strong>École militaire</strong> au sud-est, conçus par <em>Ange-Jacques Gabriel</em> en <strong>1765</strong>. La <strong>Tour Eiffel</strong> y a été érigée par <strong>Gustave Eiffel</strong> pour l'<em>Exposition universelle de 1889</em>."
+    },
+    "adjacent_stations": {
+        "rer-c": {
+            "previous": {
+                "name": "Javel",
+                "slug": "javel",
+                "direction": "Versailles Château Rive Gauche"
+            },
+            "next": {
+                "name": "Pont de l'Alma",
+                "slug": "pont-de-l-alma",
+                "direction": "Juvisy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>gare Champ de Mars - Tour Eiffel</strong> est la station <strong>RER C</strong> située directement au pied de la <strong>Tour Eiffel</strong>, dans le <strong>7e arrondissement</strong> de Paris. Sur la ligne C, elle s'intercale entre <strong>Pont de l'Alma</strong> au nord-est et <strong>Javel</strong> au sud-ouest. Contrairement à la majorité des stations parisiennes, elle ne dessert <strong>aucune ligne de métro</strong> : la correspondance avec le métro s'effectue à la station voisine <strong>Bir-Hakeim</strong> (ligne 6) via un couloir souterrain. La gare est l'un des points d'accès les plus directs au monument le plus visité de Paris et au jardin du Champ-de-Mars.",
+        "Le <strong>Champ-de-Mars</strong> tire son nom du dieu romain de la guerre. Jusqu'au milieu du <em>XVIIIe siècle</em>, le site faisait partie de la <em>plaine de Grenelle</em>, dédiée à la culture maraîchère. La construction de l'<strong>École militaire</strong> par l'architecte <strong>Ange-Jacques Gabriel</strong>, achevée en <strong>1765</strong>, transforme le site en champ de manœuvre militaire. Le Champ-de-Mars devient ensuite le théâtre de plusieurs <em>Expositions universelles</em> (<strong>1867, 1878, 1889, 1900</strong> et <strong>1937</strong>) : c'est pour celle de <strong>1889</strong>, commémorant le centenaire de la <em>Révolution française</em>, que <strong>Gustave Eiffel</strong> érige la <strong>Tour Eiffel</strong> sur l'esplanade.",
+        "Avec sa <strong>ligne C du RER</strong> et sa position directement au pied de la <strong>Tour Eiffel</strong>, la <strong>gare Champ de Mars - Tour Eiffel</strong> est l'un des points d'entrée tourisme les plus fréquentés de Paris. Le site bénéficie d'un classement <strong>depuis 1956</strong> et fait partie de l'inscription <strong>UNESCO</strong> <em>Paris - Rives de la Seine</em> de <strong>1991</strong>. La station offre une correspondance pratique avec le <strong>métro ligne 6</strong> à la station voisine <strong>Bir-Hakeim</strong> via un couloir souterrain. Le statut PMR détaillé de la gare est à vérifier sur la page station IDFM officielle (audit en cours 2026-06-04)."
+    ],
+    "history": {
+        "title": "De plaine maraîchère à la Tour Eiffel : Champ-de-Mars, théâtre des Expositions universelles",
+        "paragraphs": [
+            "Jusqu'au milieu du <em>XVIIIe siècle</em>, l'emplacement actuel du <strong>Champ-de-Mars</strong> appartenait à la <strong>plaine de Grenelle</strong>, également appelée <em>marais de la Grenouillère</em>, consacrée à la culture maraîchère. La comédienne <strong>Adrienne Lecouvreur</strong> y est enterrée en <strong>1730</strong>. La construction de l'<strong>École militaire</strong> par l'architecte <strong>Ange-Jacques Gabriel</strong>, achevée en <strong>1765</strong>, transforme radicalement le site : l'École, conçue pour former l'élite de l'armée royale, oriente sa façade noble vers le futur Champ-de-Mars, qui devient terrain de manœuvre militaire pouvant accueillir jusqu'à dix mille soldats. Les <strong>avenues de la Bourdonnais et de Suffren</strong> sont tracées en <strong>1770</strong> pour délimiter l'espace.",
+            "Le Champ-de-Mars devient un <strong>cadre majeur de la Révolution française</strong>. Le <strong>14 juillet 1790</strong>, il accueille la <strong>fête de la Fédération</strong>, événement célébrant le premier anniversaire de la prise de la Bastille en présence de <strong>300 000 spectateurs</strong>, du roi <strong>Louis XVI</strong>, de <strong>La Fayette</strong> et de <strong>Charles-Maurice de Talleyrand-Périgord</strong>. Un an plus tard, le <strong>17 juillet 1791</strong>, la <strong>fusillade du Champ-de-Mars</strong> ordonnée par le maire de Paris <strong>Jean Sylvain Bailly</strong> fait <strong>50 morts</strong> et des centaines de blessés parmi une foule rassemblée pour signer une pétition. Le <strong>8 juin 1794</strong>, <strong>Maximilien de Robespierre</strong> y préside la <em>fête de l'Être suprême</em> organisée par <em>Jacques-Louis David</em>.",
+            "Le Champ-de-Mars devient au <em>XIXe siècle</em> le théâtre majeur des <em>Expositions universelles de Paris</em>, qui s'y tiennent en <strong>1867, 1878, 1889, 1900</strong> et <strong>1937</strong>. C'est pour l'<em>Exposition universelle de 1889</em>, organisée pour le centenaire de la <strong>Révolution française</strong>, que <strong>Gustave Eiffel</strong> érige la <strong>Tour Eiffel</strong> sur l'esplanade — destinée à l'origine à être démontée après l'événement. Le site est classé site protégé depuis <strong>1956</strong>, et inscrit en <strong>1991</strong> au <strong>patrimoine mondial de l'Unesco</strong> dans le périmètre <em>Paris - Rives de la Seine</em>. La <strong>gare Champ de Mars - Tour Eiffel</strong> sur la ligne C du RER offre aujourd'hui un accès direct au site, complémentaire des stations métro voisines <em>Bir-Hakeim</em> (M6) et <em>Trocadéro</em> (M6/M9)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la gare Champ de Mars - Tour Eiffel ?",
+            "answer": "La <strong>gare Champ de Mars - Tour Eiffel</strong> est exclusivement desservie par la <strong>ligne C du RER</strong> (direction Versailles Château - Rive Gauche ou Juvisy), entre les stations <strong>Pont de l'Alma</strong> au nord-est et <strong>Javel</strong> au sud-ouest. Contrairement à la majorité des stations parisiennes, elle <strong>n'est desservie par aucune ligne de métro</strong> : la correspondance s'effectue à pied vers la station <strong>Bir-Hakeim</strong> (ligne 6) via un couloir souterrain dédié."
+        },
+        {
+            "question": "Comment rejoindre la Tour Eiffel depuis la gare ?",
+            "answer": "La <strong>Tour Eiffel</strong> se trouve à environ <strong>280 mètres</strong> de la gare, ce qui en fait la station la plus proche du monument parmi toutes les stations métro et RER parisiennes. Depuis la sortie <strong>« av. Suffren / Tour Eiffel »</strong>, la base de la tour est accessible en <strong>3 à 4 minutes à pied</strong>. La <strong>Tour Eiffel</strong>, érigée par <strong>Gustave Eiffel</strong> pour l'<em>Exposition universelle de 1889</em>, culmine à <strong>330 mètres</strong>."
+        },
+        {
+            "question": "Y a-t-il une station de métro à Champ de Mars ?",
+            "answer": "<strong>Non</strong>, il n'existe pas de station de métro nommée Champ de Mars ou Tour Eiffel. La gare <strong>Champ de Mars - Tour Eiffel</strong> est exclusivement une <strong>gare RER</strong>. Les stations de métro les plus proches sont <strong>Bir-Hakeim</strong> (ligne 6, accessible par couloir souterrain depuis la gare), <strong>Trocadéro</strong> (lignes 6 et 9, de l'autre côté de la Seine), et <strong>École Militaire</strong> (ligne 8, au sud du jardin)."
+        },
+        {
+            "question": "La gare est-elle accessible aux PMR ?",
+            "answer": "Le statut PMR détaillé de la gare reste à confirmer via la page station IDFM officielle (audit en cours). Pour un accès PMR garanti vers la Tour Eiffel, la <strong>ligne 14 du métro</strong> est intégralement accessible — consulter le plan PMR officiel RATP pour identifier la correspondance la plus proche selon votre point de départ (audit Wikipédia FR / RATP 2026-06-04)."
+        },
+        {
+            "question": "Quels sont les horaires du premier et du dernier RER C à Champ de Mars ?",
+            "answer": "Le <strong>RER C</strong> circule avec des horaires variables selon la branche (Versailles, Juvisy, Saint-Quentin-en-Yvelines, Pontoise…). En moyenne, le <strong>premier RER</strong> dessert la gare vers <strong>5h30</strong>, le <strong>dernier</strong> vers <strong>0h30 à 1h00 en semaine</strong>. Pour les horaires précis par branche et par jour, consultez l'application <em>SNCF Connect</em> ou la page station officielle Île-de-France Mobilités."
+        },
+        {
+            "question": "Quelle différence entre Champ de Mars - Tour Eiffel, Bir-Hakeim et Trocadéro ?",
+            "answer": "Ces trois stations desservent toutes la <strong>Tour Eiffel</strong> mais avec des angles différents : <strong>Champ de Mars - Tour Eiffel</strong> (RER C) est la <strong>plus proche</strong> (≈280 m, accès direct par le jardin) ; <strong>Bir-Hakeim</strong> (M6) se situe à environ <strong>650 m</strong> sur la rive gauche, au pied du viaduc M6 ; <strong>Trocadéro</strong> (M6 et M9) est de l'autre côté de la Seine sur la rive droite, à environ <strong>1 km</strong>, offrant la perspective la plus photographiée du monument depuis l'esplanade du Palais de Chaillot."
+        },
+        {
+            "question": "Où se trouve l'École militaire depuis la gare ?",
+            "answer": "L'<strong>École militaire</strong> ferme le Champ-de-Mars au sud-est, à environ <strong>800 mètres</strong> de la gare. Conçue par l'architecte <strong>Ange-Jacques Gabriel</strong> et achevée en <strong>1765</strong>, elle borne historiquement l'esplanade et lui a donné sa vocation de champ de manœuvre militaire. Depuis la gare, traversez le Champ-de-Mars en remontant le long des avenues de la Bourdonnais ou de Suffren (10 à 12 minutes à pied) pour rejoindre la façade noble de Gabriel."
+        },
+        {
+            "question": "Quels événements historiques se sont déroulés au Champ-de-Mars ?",
+            "answer": "Le Champ-de-Mars a été le théâtre de moments majeurs de l'histoire de France : la <strong>fête de la Fédération</strong> du <strong>14 juillet 1790</strong> rassemble 300 000 spectateurs autour de <em>Louis XVI</em>, <em>La Fayette</em> et <em>Talleyrand</em>. La <strong>fusillade du Champ-de-Mars</strong> du <strong>17 juillet 1791</strong> fait 50 morts. <strong>Robespierre</strong> y préside la <em>fête de l'Être suprême</em> en <strong>1794</strong>. Le site accueille ensuite les <em>Expositions universelles</em> de <strong>1867, 1878, 1889</strong> (érection de la <strong>Tour Eiffel</strong> par <strong>Gustave Eiffel</strong>), <strong>1900</strong> et <strong>1937</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Privilégiez</strong> la sortie <strong>« av. Suffren / Tour Eiffel »</strong> pour accéder directement au monument en 3-4 minutes à pied.",
+        "<strong>Évitez</strong> les <strong>weekends ensoleillés</strong> et les <strong>fins de journée</strong> sur l'esplanade : forte affluence touristique, particulièrement en saison estivale.",
+        "<strong>Prévoyez</strong> votre billet pour la <strong>Tour Eiffel</strong> en ligne sur le site officiel : les files d'attente sur place peuvent dépasser 2 heures en haute saison.",
+        "<strong>Empruntez</strong> les pelouses centrales du <strong>Champ-de-Mars</strong> pour profiter de la vue sur la Tour Eiffel depuis le sud du jardin (École militaire en arrière-plan) — perspective alternative à la vue Trocadéro.",
+        "<strong>Vigilance pickpockets</strong> autour de la Tour Eiffel et dans le jardin : zone très fréquentée par les touristes, gardez les effets personnels en sûreté.",
+        "<strong>Consultez</strong> les <em>horaires variables</em> du RER C : la ligne combine plusieurs branches (Versailles, Juvisy, Saint-Quentin, Pontoise), vérifiez la direction sur l'application SNCF Connect avant d'embarquer."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "L'École militaire (1765), première raison d'être du Champ-de-Mars",
+            "content": "Le Champ-de-Mars doit son existence à l'<strong>École militaire</strong>, conçue par l'architecte <strong>Ange-Jacques Gabriel</strong> et achevée en <strong>1765</strong>. Initialement prévue au sud de l'École, le champ de manœuvre est finalement aménagé au nord et Gabriel oriente vers lui la façade noble du bâtiment, qui ferme encore aujourd'hui le Champ-de-Mars. Le site, jusqu'alors partie de la <em>plaine de Grenelle</em> consacrée à la culture maraîchère, devient un vaste terrain de manœuvre pouvant accueillir <strong>dix mille soldats</strong> rangés en bataille."
+        },
+        {
+            "icon": "📜",
+            "title": "14 juillet 1790 : la fête de la Fédération devant 300 000 spectateurs",
+            "content": "Le <strong>14 juillet 1790</strong>, le Champ-de-Mars accueille la <strong>fête de la Fédération</strong>, événement célébrant le premier anniversaire de la prise de la Bastille. Devant <strong>300 000 spectateurs</strong>, <strong>Charles-Maurice de Talleyrand-Périgord</strong> y officie, entouré d'une myriade de prêtres et d'une cohorte de soldats. Le roi <strong>Louis XVI</strong> prête serment sur la Constitution et <strong>La Fayette</strong> en fait la lecture publique. La fête est restée dans l'histoire comme l'un des rares moments d'unité nationale de la Révolution."
+        },
+        {
+            "icon": "💎",
+            "title": "1889 : Gustave Eiffel érige sa tour pour le centenaire de la Révolution",
+            "content": "C'est pour l'<em>Exposition universelle de 1889</em>, organisée pour célébrer le <strong>centenaire de la Révolution française</strong>, que <strong>Gustave Eiffel</strong> érige la <strong>Tour Eiffel</strong> sur l'esplanade nord-ouest du Champ-de-Mars. La structure de fer puddlé de <strong>330 mètres</strong> de hauteur devait à l'origine être démontée à la fin de l'Exposition, mais son utilité scientifique (radio, météo) et son succès populaire la sauvent. Le Champ-de-Mars accueillera également les Expositions universelles de <strong>1867, 1878, 1900</strong> et <strong>1937</strong>."
+        },
+        {
+            "icon": "🌆",
+            "title": "1783 : le premier vol en ballon à hydrogène décolle du Champ-de-Mars",
+            "content": "Le <strong>27 août 1783</strong>, après quatre jours de gonflage près de la place des Victoires, le <strong>premier aérostat gonflé à l'hydrogène</strong>, construit par le physicien <strong>Jacques Charles</strong>, s'envole du Champ-de-Mars avant de retomber à Gonesse. L'année suivante, le <strong>2 mars 1784</strong>, la foule rassemblée sur le Champ-de-Mars assiste à l'ascension de l'aérostat de <strong>Jean-Pierre Blanchard</strong> : un « bateau volant » muni d'une hélice et de rames garnies de plumes, qui survole la Seine avant d'atterrir à Billancourt."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tour Eiffel",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Tour Eiffel",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le Champ-de-Mars (~280 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Trocadéro",
+            "destination_slug": "trocadero",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Trocadéro",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le pont d'Iéna et l'esplanade du Trocadéro (~1,3 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-trocadero/"
+        },
+        {
+            "destination_name": "École militaire",
+            "destination_slug": "ecole-militaire",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → École militaire",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le Champ-de-Mars (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-ecole-militaire/"
+        },
+        {
+            "destination_name": "Musée du quai Branly - Jacques-Chirac",
+            "destination_slug": "musee-du-quai-branly-jacques-chirac",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Musée du quai Branly",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai Branly (~700 m)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-musee-du-quai-branly-jacques-chirac/"
+        },
+        {
+            "destination_name": "Musée d'Orsay",
+            "destination_slug": "musee-d-orsay",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Musée d'Orsay",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direction Versailles ou Juvisy, 2 stations (descente Musée d'Orsay)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-musee-d-orsay/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame-de-paris",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Notre-Dame de Paris",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direction Versailles ou Juvisy, descente à Saint-Michel - Notre-Dame",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-notre-dame-de-paris/"
+        },
+        {
+            "destination_name": "Musée du Louvre",
+            "destination_slug": "musee-du-louvre",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Musée du Louvre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai Branly et le pont Royal (~3 km)",
+            "duration_minutes": 25,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-musee-du-louvre/"
+        },
+        {
+            "destination_name": "Aéroport Charles de Gaulle",
+            "destination_slug": "aeroport-charles-de-gaulle",
+            "destination_full_name": "Champ de Mars - Tour Eiffel → Aéroport Charles de Gaulle",
+            "lines_used": [
+                "RER C",
+                "RER B"
+            ],
+            "lines_label": "RER C + RER B direction Aéroport CDG 2 TGV, 1 correspondance à Saint-Michel - Notre-Dame",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-vers-aeroport-charles-de-gaulle/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q243",
+            "name": "tour Eiffel",
+            "category": "tour",
+            "description": "La tour Eiffel [tuʁɛfɛl] est une tour autoportante de fer puddlé de 330 m de hauteur située à Paris, à l’extrémité nord-ouest du parc du Champ-de-Mars en bordure de la Seine dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Eiffel",
+            "latitude": 48.858296,
+            "longitude": 2.294479,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 276,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q217925",
+            "name": "Champ-de-Mars",
+            "category": "site notable",
+            "description": "Le Champ-de-Mars est un vaste jardin public entièrement ouvert, situé à Paris dans le quartier du Gros-Caillou du 7e arrondissement, entre la tour Eiffel au nord-ouest et l'École militaire au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MG-Paris-Champ%20de%20Mars.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Champ-de-Mars_(Paris)",
+            "latitude": 48.85613,
+            "longitude": 2.29803,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 527,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q167863",
+            "name": "musée du quai Branly - Jacques-Chirac",
+            "category": "musée",
+            "description": "Le musée du Quai Branly - Jacques-Chirac, plus communément appelé musée du Quai Branly, anciennement musée des Arts et Civilisations d'Afrique, d'Asie, d'Océanie et des Amériques avant 2016, est un…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20du%20quai%20Branly%20-%2020150801%2016h07%20%2810629%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Quai_Branly_-_Jacques-Chirac",
+            "latitude": 48.860833,
+            "longitude": 2.2975,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q13360213",
+            "name": "palais de Chaillot",
+            "category": "palais",
+            "description": "Le palais de Chaillot est situé sur la colline de Chaillot à Paris, dans le 16e arrondissement, place du Trocadéro-et-du-11-Novembre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trocadero%20pic1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Chaillot",
+            "latitude": 48.86234,
+            "longitude": 2.28807,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 603,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q290355",
+            "name": "pont de Bir-Hakeim",
+            "category": "pont",
+            "description": "Le pont de Bir-Hakeim, anciennement pont de Passy, est un pont parisien franchissant la Seine entre le 15e et le 16e arrondissement, achevé en 1905.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passy%20%28m%C3%A9tro%20Paris%29%20MP73%20n%C2%B06524%20par%20Cramos.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Bir-Hakeim",
+            "latitude": 48.855556,
+            "longitude": 2.287778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Grenelle / Quai Grenelle",
+                "distance_m": 111,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q540781",
+            "name": "pont d'Iéna",
+            "category": "pont",
+            "description": "Le pont d'Iéna est un pont parisien franchissant la Seine. Le pont est réservé aux piétons et cyclistes depuis les Jeux olympiques de 2024.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075007%20Port%20de%20Suffren%2020161101%20Pont%20d%27I%C3%A9na.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27I%C3%A9na",
+            "latitude": 48.859722,
+            "longitude": 2.292222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 285,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q670268",
+            "name": "musée de l'Homme",
+            "category": "musée",
+            "description": "Le musée de l'Homme est un musée national français, partie du Muséum national d'histoire naturelle (MNHN), installé depuis 1937 dans les étages du palais de Chaillot à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27homme.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Homme",
+            "latitude": 48.86218,
+            "longitude": 2.28741,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 606,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1683459",
+            "name": "jardins du Trocadéro",
+            "category": "jardin",
+            "description": "Les jardins du Trocadéro sont situés dans le 16e arrondissement de Paris, face à la Seine. Ils ont une superficie de 93 930 m2.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardins%20du%20Trocad%C3%A9ro%20-%2020150801%2015h24%20%2810619%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardins_du_Trocad%C3%A9ro",
+            "latitude": 48.861392,
+            "longitude": 2.289631,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 469,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q547789",
+            "name": "maison de Balzac",
+            "category": "musée",
+            "description": "La Maison de Balzac est un pavillon abritant un musée consacré à Honoré de Balzac situé dans le 16e arrondissement de Paris. L'écrivain vécut de 1840 à 1847 dans un appartement de ce pavillon.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20de%20Balzac%2C%20Paris%2016e%205.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_Balzac",
+            "latitude": 48.855278,
+            "longitude": 2.280833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Grenelle / Quai Grenelle",
+                "distance_m": 610,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2307584",
+            "name": "pont Rouelle",
+            "category": "pont",
+            "description": "Le pont Rouelle, situé à Paris, enjambe la Seine entre le 15e arrondissement et le 16e arrondissement, en passant par l'île aux Cygnes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Rouelle%20and%20Eiffel%20Tower%2C%20Paris%2019%20October%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Rouelle",
+            "latitude": 48.85227,
+            "longitude": 2.28306,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Grenelle / Quai Grenelle",
+                "distance_m": 550,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q800620",
+            "name": "Champ de Mars - Tour Eiffel",
+            "category": "gare",
+            "description": "La gare du Champ de Mars - Tour Eiffel est une gare ferroviaire française de la ligne des Invalides à Versailles-Rive-Gauche située à la limite du quartier du Gros-Caillou du 7e arrondissement et du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Champs%20de%20Mars%20-%20RER%2027-02-06.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Champ_de_Mars_-_Tour_Eiffel",
+            "latitude": 48.85667,
+            "longitude": 2.28973,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 117,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1759903",
+            "name": "place du Trocadéro-et-du-11-Novembre",
+            "category": "place",
+            "description": "La place du Trocadéro-et-du-11-Novembre est une place du 16e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20du%20Trocad%C3%A9ro-et-du-11-Novembre%20%C3%A0%20Paris%20le%2023%20avril%202015%20-%2024.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_Trocad%C3%A9ro-et-du-11-Novembre",
+            "latitude": 48.863056,
+            "longitude": 2.287222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. Suffren / Tour Eiffel",
+                "distance_m": 701,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Grenelle / Quai Grenelle",
+            "address_full": "101b Quai Jacques Chirac 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.855152,
+            "longitude": 2.28917,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. Suffren / Tour Eiffel",
+            "address_full": "73 Quai Jacques Chirac 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.857276,
+            "longitude": 2.291036,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique au pied de la Tour Eiffel et dans le jardin du Champ-de-Mars : vigilance pickpockets accrue, particulièrement aux sorties de la gare et autour du monument.",
+            "Soirée tardive : les abords de la Tour Eiffel restent fréquentés mais le jardin peut être moins surveillé après 22h, restez sur les axes principaux pour rejoindre la gare.",
+            "Forte affluence les weekends ensoleillés et en saison estivale, ainsi que lors des grands événements (feux d'artifice du 14 juillet, concerts) : prévoir alternatives en transit (M6 Bir-Hakeim, M8 École Militaire).",
+            "La zone autour de la Tour Eiffel peut accueillir des événements officiels (cérémonies républicaines, JO, courses) avec dispositif policier renforcé : vérifier paris.fr en cas de déplacement les jours sensibles."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature touristique du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Eiffel_Tower_%40_Champ_de_Mars_%40_Paris_%2833242975085%29.jpg",
+        "alt": "Tour Eiffel vue depuis le Champ-de-Mars — perspective au sol",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut from Paris, France",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_@_Champ_de_Mars_@_Paris_(33242975085).jpg",
+            "date": "2026-06-04"
+        },
+        "source": "manual",
+        "confidence_score": 21,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-400.avif",
+                "800": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-800.avif",
+                "1200": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1200.avif",
+                "1600": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-400.webp",
+                "800": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-800.webp",
+                "1200": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1200.webp",
+                "1600": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-400.jpg",
+                "800": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-800.jpg",
+                "1200": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1200.jpg",
+                "1600": "/assets/img/stations/champ-de-mars-tour-eiffel/champ-de-mars-tour-eiffel-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    }
+}
