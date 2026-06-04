@@ -1,0 +1,558 @@
+{
+    "published": true,
+    "slug": "saint-michel-notre-dame",
+    "name": "Saint-Michel - Notre-Dame",
+    "name_full": "Saint-Michel - Notre-Dame (Métro 4 + RER B + RER C)",
+    "arrondissement": "5e / 6e (Paris)",
+    "address": "Place Saint-Michel, 75005 / 75006 Paris",
+    "latitude": 48.85323577985779,
+    "longitude": 2.3442552503120875,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Saint-Michel - Notre-Dame station",
+        "es": "Estación Saint-Michel - Notre-Dame"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "B",
+            "color": "#5091CB",
+            "station_name": "Saint-Michel - Notre-Dame",
+            "walking_minutes": 0
+        },
+        {
+            "code": "C",
+            "color": "#FFCC30",
+            "station_name": "Saint-Michel - Notre-Dame",
+            "walking_minutes": 0
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "21",
+            "27",
+            "38",
+            "47",
+            "58",
+            "63",
+            "70",
+            "86",
+            "87",
+            "96"
+        ],
+        "nocturne": [
+            "N12",
+            "N13",
+            "N14",
+            "N15",
+            "N21",
+            "N22",
+            "N122",
+            "N123"
+        ],
+        "regional": [
+            "75"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-04",
+            "same_node_count": 8,
+            "nearby_count": 30
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Michel - Notre-Dame : métro M4 + RER B + RER C au cœur du Quartier latin. Notre-Dame, Sainte-Chapelle et île de la Cité à pied en moins de 5 minutes."
+    },
+    "hero": {
+        "tagline": "Le cœur transport du Quartier latin",
+        "description": "Située sous la <strong>place Saint-Michel</strong> et sa <strong>fontaine de 1860</strong>, la station Saint-Michel - Notre-Dame réunit le <strong>métro M4</strong> (ouvert en <strong>1910</strong>), le <strong>RER B</strong> (quais ouverts en <strong>février 1988</strong>) et le <strong>RER C</strong> (hérité de l'ancienne gare <em>Pont Saint-Michel</em> du <strong>Chemin de fer d'Orléans, 1900</strong>). C'est la porte d'entrée naturelle du <strong>Quartier latin</strong> et de l'<strong>île de la Cité</strong> : <strong>Notre-Dame de Paris</strong> (réouverte le <strong>7 décembre 2024</strong>), <strong>Sainte-Chapelle</strong> et <strong>Conciergerie</strong> sont accessibles à pied en moins de 5 minutes."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Odéon",
+                "slug": "odeon",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Cité",
+                "slug": "cite",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "<strong>Saint-Michel - Notre-Dame</strong> est l'un des <strong>quatre pôles d'échange majeurs</strong> du centre de Paris : c'est l'unique point de la capitale où le <strong>métro M4</strong>, le <strong>RER B</strong> et le <strong>RER C</strong> se croisent en correspondance directe. La station dessert le <strong>5e et le 6e arrondissement</strong>, sous la <strong>place Saint-Michel</strong> dont la célèbre <strong>fontaine inscrite Monuments Historiques en 1926</strong> signale les accès depuis la surface.",
+        "Située sur la <strong>rive gauche</strong>, à <strong>moins de 300 mètres</strong> du parvis de <strong>Notre-Dame de Paris</strong> via le pont Saint-Michel, la station est le point d'arrivée recommandé pour visiter l'<strong>île de la Cité</strong> : la cathédrale a rouvert ses portes le <strong>8 décembre 2024</strong> après l'incendie d'avril 2019, la <strong>Sainte-Chapelle</strong> de Louis IX (consacrée en <strong>1248</strong>) se trouve à 4 minutes à pied, et la <strong>Conciergerie</strong> à 6 minutes.",
+        "Au-delà du tourisme, Saint-Michel - Notre-Dame est aussi <strong>la porte du Quartier latin</strong> : la <strong>Sorbonne</strong>, le <strong>Panthéon</strong>, le <strong>Palais du Luxembourg</strong> et le <strong>jardin du Luxembourg</strong> sont accessibles à pied via le boulevard Saint-Michel. La station a totalisé <strong>6,3 millions d'entrants en 2019</strong>, ce qui la plaçait alors au <strong>55e rang</strong> du réseau métro RATP."
+    ],
+    "history": {
+        "title": "Une station construite en trois vagues, de 1900 à 1988",
+        "paragraphs": [
+            "Le premier quai à voir le jour est celui de l'actuel <strong>RER C</strong>, ouvert dès <strong>1900</strong> sous le nom de <em>Pont Saint-Michel</em>. À l'époque, il s'agit d'une gare du <strong>Chemin de fer d'Orléans</strong>, intégrée plus tard au réseau de banlieue puis au RER. La station conserve aujourd'hui son architecture d'origine, partiellement rénovée d'<strong>août 2022 à avril 2023</strong> avec l'installation de <strong>28 fenêtres anti-inondation</strong>, la modernisation de la ventilation et le remplacement des escalators.",
+            "La station de <strong>métro M4 Saint-Michel</strong> est inaugurée le <strong>9 juillet 1910</strong>, à l'occasion de l'ouverture de la section centrale de la ligne 4. Le franchissement de la Seine fut un défi d'ingénierie majeur : la voûte fut construite par <strong>trois caissons d'acier de 16,5 mètres de large</strong>, enfoncés dans le sol vaseux des rives. Le résultat est une <strong>voûte elliptique culminant à 12,5 mètres de hauteur</strong>, l'une des plus impressionnantes du réseau parisien.",
+            "Les quais du <strong>RER B</strong> sont ouverts en <strong>février 1988</strong>, à l'occasion de l'interconnexion nord-sud du RER B sous la Seine. C'est à ce moment que la station prend son nom actuel de <strong>Saint-Michel - Notre-Dame</strong>, fusionnant le repère du boulevard Saint-Michel et celui de la cathédrale toute proche. En <strong>août-septembre 2020</strong>, des <strong>portes palières</strong> ont été installées sur les quais M4 dans le cadre du programme d'<strong>automatisation de la ligne 4</strong>.",
+            "À la surface, la <strong>place Saint-Michel</strong> et sa <strong>fontaine monumentale</strong> sont le fruit des transformations haussmanniennes du Second Empire. Conçue par l'architecte <strong>Gabriel Davioud</strong>, la fontaine est édifiée entre <strong>juin 1858 et août 1860</strong> au débouché du pont Saint-Michel. Son programme sculpté représente <em>la lutte du Bien contre le Mal</em>, avec l'<strong>archange Michel terrassant le démon</strong> du sculpteur <strong>Francisque Duret</strong>. La fontaine est inscrite au titre des <strong>Monuments Historiques le 16 mars 1926</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Saint-Michel - Notre-Dame ?",
+            "answer": "<strong>Trois lignes ferroviaires</strong> desservent la station en correspondance directe : le <strong>métro M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), le <strong>RER B</strong> (CDG/Mitry ↔ Robinson/Saint-Rémy-lès-Chevreuse) et le <strong>RER C</strong> (Versailles/Pontoise ↔ Massy/Saint-Martin-d'Étampes). C'est le seul point de Paris où ces trois lignes se croisent. Plusieurs <strong>lignes de bus RATP</strong> desservent également la place Saint-Michel."
+        },
+        {
+            "question": "Comment rejoindre Notre-Dame de Paris à pied depuis Saint-Michel ?",
+            "answer": "<strong>Sortie 5 « Hôtel Dieu »</strong> en direction de l'île de la Cité : compter <strong>moins de 5 minutes à pied</strong> (~250 mètres) pour atteindre le parvis de la cathédrale en traversant le pont au Double. Alternative depuis la <strong>sortie 4 « Saint-Michel »</strong> ou la <strong>sortie 3 « Quai Saint-Michel »</strong> : longer la Seine puis emprunter le pont Saint-Michel. La cathédrale a rouvert au public le <strong>8 décembre 2024</strong>."
+        },
+        {
+            "question": "Comment accéder à la Sainte-Chapelle depuis Saint-Michel - Notre-Dame ?",
+            "answer": "Sortie en surface puis franchir le pont Saint-Michel vers l'<strong>île de la Cité</strong> : la <strong>Sainte-Chapelle</strong>, consacrée en <strong>1248</strong> sous Louis IX, se trouve au sein du <strong>Palais de la Cité</strong>, à environ <strong>4 minutes à pied</strong> via le boulevard du Palais. C'est l'un des chefs-d'œuvre du gothique rayonnant, célèbre pour ses <strong>vitraux du XIIIe siècle</strong>."
+        },
+        {
+            "question": "Quelle différence entre les stations Saint-Michel et Cité ?",
+            "answer": "Ce sont <strong>deux stations distinctes</strong> de la ligne 4, séparées d'<strong>environ 500 mètres</strong> (une station). <strong>Saint-Michel - Notre-Dame</strong> est située rive gauche, sous la place Saint-Michel, et propose la correspondance avec le RER B et le RER C. <strong>Cité</strong> est située au cœur de l'<strong>île de la Cité</strong>, à proximité immédiate du marché aux fleurs et de la Conciergerie, mais ne propose <em>aucune correspondance RER</em>. Les deux desservent Notre-Dame mais Cité est légèrement plus proche du chevet."
+        },
+        {
+            "question": "La station Saint-Michel - Notre-Dame est-elle accessible aux personnes à mobilité réduite ?",
+            "answer": "La station de <strong>métro M4</strong> n'est <strong>pas entièrement accessible aux personnes à mobilité réduite</strong> : seul le caisson sud dispose d'ascenseurs en complément des escaliers fixes, tandis que le côté nord est équipé d'escalators et d'escaliers fixes. Pour un trajet 100 % accessible PMR, privilégiez le <strong>RER B et le RER C</strong> dont certains équipements sont en cours d'amélioration. Audit accessibilité complet en cours de finalisation."
+        },
+        {
+            "question": "Quels sont les horaires de la station Saint-Michel - Notre-Dame ?",
+            "answer": "Le <strong>métro M4</strong> fonctionne globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 les vendredis, samedis et veilles de fête</strong>. Le <strong>RER B</strong> circule d'environ <strong>4h45 à 1h00</strong>, et le <strong>RER C</strong> de <strong>5h00 à 0h30</strong> environ. La nuit, le service est assuré par les <strong>Noctilien</strong> N01, N02, N12 et N13 depuis la place Saint-Michel. Horaires précis par direction sur les pages dédiées à chaque ligne."
+        },
+        {
+            "question": "Comment rejoindre la Sorbonne et le Quartier latin depuis Saint-Michel ?",
+            "answer": "Le <strong>Quartier latin</strong> commence à la sortie sud de la station : prendre le <strong>boulevard Saint-Michel</strong> en montant vers le Panthéon. La <strong>Sorbonne</strong> est à <strong>environ 8 minutes à pied</strong> (rue des Écoles), le <strong>Panthéon</strong> à <strong>10 minutes</strong>, le <strong>jardin du Luxembourg</strong> à <strong>10 minutes</strong>. Le quartier concentre les principales universités, grandes écoles et libraires de la rive gauche."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la station ?",
+            "answer": "Les <strong>services en station</strong> (sanitaires, distributeurs, point info RATP) sont en cours d'audit dans le cadre de la rédaction de cette page. À proximité immédiate, plusieurs <strong>cafés, brasseries et boulangeries</strong> autour de la place Saint-Michel offrent toilettes payantes ou clientèles. Le <strong>parvis de Notre-Dame</strong> (à 5 minutes à pied) dispose également d'équipements pour le public touristique."
+        }
+    ],
+    "practical_tips": [
+        "Pour rejoindre <strong>Notre-Dame de Paris</strong> et l'île de la Cité, privilégier la <strong>sortie 5 « Hôtel Dieu »</strong> (côté île) : ~250 mètres jusqu'au parvis.",
+        "La <strong>sortie 4 « Saint-Michel »</strong> ou <strong>4 « Fontaine Saint-Michel »</strong> débouche sur la place et la fontaine : repère touristique principal, point de rendez-vous classique du Quartier latin.",
+        "La <strong>sortie 3 « Quai Saint-Michel »</strong> donne accès aux bouquinistes et au pont Saint-Michel, parfaite pour une promenade en bord de Seine vers Notre-Dame.",
+        "<strong>Correspondance M4 → RER B/C</strong> : les couloirs sont relativement courts mais comportent des escaliers fixes et des escalators ; compter <strong>3 à 5 minutes</strong> entre quais.",
+        "Pour le <strong>Panthéon</strong> et la <strong>Sorbonne</strong>, remonter le boulevard Saint-Michel à pied (10 minutes) : itinéraire plus agréable que la correspondance bus.",
+        "Le <strong>quai du RER C</strong>, ouvert en 1900 sous le nom <em>Pont Saint-Michel</em>, conserve une partie de son atmosphère historique malgré la rénovation 2022-2023 : à apercevoir entre deux trains."
+    ],
+    "trivia": [
+        {
+            "icon": "🏗️",
+            "title": "Une station construite sous la Seine par caissons enfoncés en 1910",
+            "content": "Pour franchir les deux bras de la Seine au niveau de l'île de la Cité, les ingénieurs de la <strong>ligne 4</strong> ont utilisé une technique inédite : <strong>trois caissons d'acier de 16,5 mètres de large</strong> ont été fabriqués en surface, puis <strong>enfoncés dans le sol vaseux</strong> des rives, avant d'être réunis sous la Seine. Le résultat est une <strong>voûte elliptique culminant à 12,5 mètres</strong>, l'une des plus impressionnantes du réseau métropolitain parisien. La station a été inaugurée le <strong>9 juillet 1910</strong>."
+        },
+        {
+            "icon": "⛲",
+            "title": "La Fontaine Saint-Michel (1860) — un manifeste haussmannien",
+            "content": "Conçue par l'architecte <strong>Gabriel Davioud</strong> et inaugurée le <strong>15 août 1860</strong>, la fontaine devait initialement abriter une statue de <strong>Napoléon Ier</strong>. Le programme finalement retenu fut une <em>lutte du Bien contre le Mal</em> avec l'<strong>archange Michel terrassant le démon</strong>, sculpté par <strong>Francisque Duret</strong>. Huit artistes ont collaboré, dont Jean-Auguste Barre, Auguste-Hyacinthe Debay, Élias Robert et Charles Gumery pour les quatre vertus cardinales. La fontaine est inscrite au titre des <strong>Monuments Historiques le 16 mars 1926</strong>."
+        },
+        {
+            "icon": "🚆",
+            "title": "Le quai RER C est plus vieux que la station de métro",
+            "content": "Contre toute attente, le <strong>quai du RER C</strong> est antérieur au métro Saint-Michel : il a ouvert dès <strong>1900</strong> sous le nom de <em>Pont Saint-Michel</em>, comme gare du <strong>Chemin de fer d'Orléans</strong>. Le métro M4 ne l'a rejoint que <strong>dix ans plus tard</strong>, en 1910. Le RER B, lui, n'est arrivé qu'en <strong>février 1988</strong> avec l'interconnexion nord-sud sous la Seine — c'est à ce moment que la station a pris son nom actuel."
+        },
+        {
+            "icon": "🚪",
+            "title": "Portes palières installées en 2020 pour l'automatisation de la M4",
+            "content": "En <strong>août-septembre 2020</strong>, des <strong>portes palières</strong> ont été installées sur les quais du métro M4 à Saint-Michel - Notre-Dame, dans le cadre du programme d'<strong>automatisation intégrale de la ligne 4</strong> (achevée fin 2022). La ligne 4 est ainsi devenue, après les lignes 1 et 14, la <strong>troisième ligne automatisée</strong> du réseau métro parisien."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Cathédrale Notre-Dame",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le pont Saint-Michel et le pont au Double (~280 m)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Sainte-Chapelle",
+            "destination_slug": "sainte-chapelle",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Sainte-Chapelle",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard du Palais (~300 m)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-sainte-chapelle/"
+        },
+        {
+            "destination_name": "Tour Eiffel (via RER C)",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Tour Eiffel via RER C",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direct jusqu'à Champ de Mars - Tour Eiffel",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Disneyland Paris",
+            "lines_used": [
+                "M4",
+                "RER A"
+            ],
+            "lines_label": "M4 jusqu'à Châtelet, puis RER A direction Marne-la-Vallée",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-disneyland/"
+        },
+        {
+            "destination_name": "Aéroport CDG Terminal 2",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Saint-Michel - Notre-Dame → CDG via RER B",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direct (mission CDG)",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-cdg/"
+        },
+        {
+            "destination_name": "Panthéon",
+            "destination_slug": "pantheon",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Panthéon",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Saint-Michel et la rue Soufflot (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-pantheon/"
+        },
+        {
+            "destination_name": "Musée du Louvre",
+            "destination_slug": "louvre",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Musée du Louvre",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (1 station jusqu'à Châtelet, à pied 5 min jusqu'au Louvre)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-louvre/"
+        },
+        {
+            "destination_name": "Sorbonne / Quartier latin",
+            "destination_slug": "sorbonne",
+            "destination_full_name": "Saint-Michel - Notre-Dame → Sorbonne",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Saint-Michel et la rue des Écoles (~500 m)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-michel-notre-dame/saint-michel-notre-dame-vers-sorbonne/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2981",
+            "name": "cathédrale Notre-Dame de Paris",
+            "category": "cathédrale",
+            "description": "La cathédrale Notre-Dame de Paris, communément appelée Notre-Dame, est l'un des monuments les plus emblématiques de Paris et de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris",
+            "latitude": 48.853,
+            "longitude": 2.3498,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Hôtel Dieu",
+                "distance_m": 216,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q193193",
+            "name": "Sainte-Chapelle",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle, dite aussi Sainte-Chapelle du Palais, est une chapelle palatine édifiée sur l'île de la Cité, à Paris, à l'emplacement de la chapelle Saint-Nicolas-du-Palais, à la demande de Louis IX (Saint Louis).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Sainte%20Chapelle%20East%20View%2002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle",
+            "latitude": 48.855369,
+            "longitude": 2.345028,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Quai des Grands Augustins",
+                "distance_m": 172,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q190063",
+            "name": "île de la Cité",
+            "category": "île",
+            "description": "L'île de la Cité est une île située sur la Seine, en plein cœur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre%20Dame%20DSC00732.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_la_Cit%C3%A9",
+            "latitude": 48.854722,
+            "longitude": 2.3475,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Hôtel Dieu",
+                "distance_m": 56,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q214654",
+            "name": "Sorbonne",
+            "category": "site notable",
+            "description": "La Sorbonne est un bâtiment situé rue des Écoles dans le 5e arrondissement de Paris, un des hauts lieux du Quartier latin.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1300735%20Paris%20V%20chapelle%20La%20Sorbonne%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sorbonne",
+            "latitude": 48.84864,
+            "longitude": 2.34356,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl.St-André des Arts",
+                "distance_m": 502,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q188856",
+            "name": "Panthéon",
+            "category": "monument",
+            "description": "Le Panthéon de Paris est un monument situé dans le 5e arrondissement, servant de nécropole nationale où sont inhumées des personnalités ayant marqué l'histoire de la France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panth%C3%A9on%2C%20Paris%2025%20March%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Panth%C3%A9on_(Paris)",
+            "latitude": 48.846198,
+            "longitude": 2.346105,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Xavier Privas",
+                "distance_m": 775,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q329852",
+            "name": "palais du Luxembourg",
+            "category": "palais",
+            "description": "Le palais du Luxembourg, situé dans le 6e arrondissement de Paris dans le nord du jardin du Luxembourg, est le siège du Sénat français.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20-%20Le%20palais%20du%20Luxembourg%2C%20dans%20le%20jardin%20du%20Luxembourg%2C%20Paris%20-%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_du_Luxembourg",
+            "latitude": 48.848333,
+            "longitude": 2.3375,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl.St-André des Arts",
+                "distance_m": 586,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "3",
+            "name": "Fontaine Saint-Michel",
+            "address_full": "9 Place Saint-Michel 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.85325,
+            "longitude": 2.343519,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Quai des Grands Augustins",
+            "address_full": "1 Quai des Grands Augustins 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.853981,
+            "longitude": 2.344001,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Quai Saint-Michel",
+            "address_full": "5 Quai Saint-Michel 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.853221,
+            "longitude": 2.346477,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "Saint-Michel",
+            "address_full": "5 Place Saint-Michel 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.853244,
+            "longitude": 2.344132,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "pl. St-André des Arts",
+            "address_full": "15 Place Saint-André des Arts 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.85311,
+            "longitude": 2.342594,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "Fontaine Saint-Michel",
+            "address_full": "9 Place Saint-Michel 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.853277,
+            "longitude": 2.343614,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Hôtel Dieu",
+            "address_full": "4 Rue de la Cité 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.854216,
+            "longitude": 2.3475,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Xavier Privas",
+            "address_full": "2 Rue Xavier Privas 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.853163,
+            "longitude": 2.345742,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique permanente autour de la place Saint-Michel et du pont vers Notre-Dame : vigilance accrue concernant les pickpockets, en particulier aux sorties 3, 4 et 5.",
+            "Soirée tardive : la place Saint-Michel reste animée et fréquentée, mais les quais de Seine et certaines ruelles du 5e/6e peuvent être moins surveillés après 23h — préférer le boulevard Saint-Michel pour rejoindre la station.",
+            "Lors des grands évènements liturgiques ou patrimoniaux à Notre-Dame (réouverture, messes solennelles, journées du patrimoine), prévoir des temps d'accès rallongés et un dispositif policier renforcé : vérifier paris.fr en amont.",
+            "Manifestations étudiantes ou syndicales possibles sur le boulevard Saint-Michel et place Saint-Michel : suivre les comptes officiels @prefpolice et @RATPgroup en cas de déplacement les jours sensibles."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir du caractère touristique et étudiant du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Fontaine_Saint-Michel_and_nearby_buildings_%28Panorama%29_%2822458952772%29.jpg",
+        "alt": "Place Saint-Michel et fontaine Saint-Michel (1860) au débouché du pont Saint-Michel, accès principal de la station",
+        "width": 6605,
+        "height": 2516,
+        "credit": {
+            "author": "Jorge Láscar",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Fontaine_Saint-Michel_and_nearby_buildings_(Panorama)_(22458952772).jpg",
+            "date": "2026-06-04"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-400.avif",
+                "800": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-800.avif",
+                "1200": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1200.avif",
+                "1600": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-400.webp",
+                "800": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-800.webp",
+                "1200": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1200.webp",
+                "1600": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-400.jpg",
+                "800": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-800.jpg",
+                "1200": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1200.jpg",
+                "1600": "/assets/img/stations/saint-michel-notre-dame/saint-michel-notre-dame-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 3
+        },
+        "details": "Métro M4 : station non accessible PMR (ascenseur partiel côté sud uniquement, escalators et escaliers fixes côté nord). RER B et RER C : audit accessibilité en cours. Audit complet à finaliser avec la RATP et SNCF Transilien."
+    }
+}
