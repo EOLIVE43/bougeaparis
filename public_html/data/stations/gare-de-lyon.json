@@ -1,0 +1,629 @@
+{
+    "published": true,
+    "slug": "gare-de-lyon",
+    "name": "Gare de Lyon",
+    "name_full": "Gare de Lyon (Métro 1 + 14 + RER A + RER D + SNCF TGV)",
+    "arrondissement": "12e (Paris)",
+    "address": "Place Louis-Armand, 75012 Paris",
+    "latitude": 48.84395770884019,
+    "longitude": 2.373737378823213,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Gare de Lyon station",
+        "es": "Estación Gare de Lyon"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFBE00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "A",
+            "color": "#EB2132",
+            "station_name": "Gare de Lyon",
+            "walking_minutes": 0
+        },
+        {
+            "code": "D",
+            "color": "#008B5B",
+            "station_name": "Gare de Lyon",
+            "walking_minutes": 0
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "24",
+            "29",
+            "57",
+            "63",
+            "77",
+            "87",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N11",
+            "N16",
+            "N31",
+            "N32",
+            "N33",
+            "N34",
+            "N35",
+            "N130",
+            "N131",
+            "N132",
+            "N133",
+            "N134",
+            "N137",
+            "N139"
+        ],
+        "regional": [
+            "61",
+            "72",
+            "D",
+            "R"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 5,
+            "nearby_count": 36
+        }
+    },
+    "seo": {
+        "description": "Gare de Lyon : M1 + M14 + RER A + RER D + TGV sud-est (Lyon, Marseille, Nice, Italie). Beffroi 67 m, Le Train Bleu (1901, MH 1972), 12e arr."
+    },
+    "hero": {
+        "tagline": "Le beffroi de la France ferroviaire vers le sud-est",
+        "description": "Inaugurée le <strong>6 avril 1901</strong> par le président <strong>Émile Loubet</strong>, la <strong>Gare de Lyon</strong> est l'une des grandes gares historiques de Paris (12e arrondissement), conçue par l'architecte <strong>Marius Toudoire</strong>. Son <strong>beffroi de 67 mètres</strong> avec ses <strong>quatre cadrans d'horloge de 6,40 m de diamètre</strong> (chiffres romains peints à la main, 1 m de haut) est l'un des repères urbains les plus reconnaissables de Paris. La gare abrite le <strong>restaurant Le Train Bleu</strong>, joyau du style Belle Époque inscrit au titre des <strong>Monuments Historiques depuis le 28 septembre 1972</strong>. Hub TGV majeur vers le <strong>sud-est</strong> : Lyon, Marseille, Nice, la <strong>Suisse</strong> et l'<strong>Italie</strong>."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Bastille",
+                "slug": "bastille",
+                "direction": "La Défense (Grande Arche)"
+            },
+            "next": {
+                "name": "Reuilly - Diderot",
+                "slug": "reuilly-diderot",
+                "direction": "Château de Vincennes"
+            }
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Bercy",
+                "slug": "bercy",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>Gare de Lyon</strong> est la <strong>deuxième gare la plus fréquentée de Paris</strong> et le <strong>hub TGV principal vers le sud-est</strong> de la France et de l'Europe. Située dans le <strong>12e arrondissement</strong>, elle dessert <strong>Lyon</strong> (~2h en TGV), <strong>Marseille</strong> (~3h05), <strong>Nice</strong>, <strong>Avignon</strong>, <strong>Montpellier</strong>, ainsi que les <strong>destinations suisses et italiennes</strong> (Genève, Milan, Turin). Inaugurée le <strong>6 avril 1901</strong> par le président Émile Loubet, elle a été conçue par l'architecte <strong>Marius Toudoire</strong> dans un style éclectique Belle Époque.",
+        "Côté métro, la gare est desservie par le <strong>M1</strong> automatique (La Défense ↔ Château de Vincennes) et la <strong>M14</strong> automatique (Saint-Denis - Pleyel ↔ Aéroport d'Orly). Côté RER, c'est l'une des principales correspondances <strong>RER A</strong> et <strong>RER D</strong>. Côté Transilien, c'est le terminus de la <strong>ligne R</strong> (vers Montargis, Montereau et la grande couronne sud). Les <strong>deux lignes de métro M1 et M14 sont automatiques</strong>, ce qui offre une fréquence très élevée.",
+        "Élément emblématique : le <strong>beffroi de 67 mètres</strong> de la gare avec ses <strong>quatre cadrans d'horloge de 6,40 m de diamètre</strong>, l'un des repères urbains les plus reconnaissables du paysage parisien. À l'étage : le restaurant <strong>Le Train Bleu</strong>, joyau Belle Époque inauguré en <strong>1901</strong> et <strong>seul restaurant de gare français classé Monument Historique</strong> (depuis le <strong>28 septembre 1972</strong>) — fresques, dorures, mobilier d'origine. À 10 minutes à pied : le <strong>Bois de Vincennes</strong>, le <strong>port de l'Arsenal</strong>, l'<strong>Opéra Bastille</strong> et la <strong>Coulée verte René-Dumont</strong> (ancienne voie ferrée aérienne reconvertie en promenade plantée)."
+    ],
+    "history": {
+        "title": "1901 : Beffroi et Train Bleu de Marius Toudoire",
+        "paragraphs": [
+            "L'actuelle Gare de Lyon est inaugurée le <strong>6 avril 1901</strong> par le président de la République <strong>Émile Loubet</strong>, à l'occasion de l'<strong>Exposition universelle de 1900</strong> qui dynamisa l'investissement dans les infrastructures parisiennes. Elle remplace une première gare de 1855 de la <strong>Compagnie du chemin de fer de Paris à Lyon et à la Méditerranée (PLM)</strong>, devenue trop petite pour les besoins croissants du trafic vers le sud-est.",
+            "L'architecte <strong>Marius Toudoire</strong> conçoit un ensemble éclectique <strong>Belle Époque</strong> dominé par un <strong>beffroi de 67 mètres</strong> aux quatre cadrans monumentaux (<strong>6,40 m de diamètre</strong>, chiffres romains peints à la main mesurant <strong>1 mètre de haut</strong>). Le <strong>restaurant Le Train Bleu</strong>, à l'étage du grand hall, est inauguré la même année avec ses <strong>fresques peintes par 28 artistes</strong> représentant les destinations PLM (Côte d'Azur, Provence, Algérie). Il est classé Monument Historique le <strong>28 septembre 1972</strong> — seul restaurant de gare français à bénéficier de ce statut.",
+            "Le <strong>métro M1</strong> arrive à la Gare de Lyon dès <strong>1900</strong> avec l'ouverture de la première ligne du métro parisien (Porte Maillot ↔ Porte de Vincennes). Le <strong>RER A</strong> rejoint la gare en <strong>1977</strong>, puis le <strong>RER D</strong> en <strong>1995</strong>. La <strong>M14</strong> automatique arrive en <strong>1998</strong> avec sa mise en service initiale Madeleine ↔ Bibliothèque François-Mitterrand. La M14 a été prolongée à l'<strong>aéroport d'Orly</strong> en <strong>juin 2024</strong>.",
+            "L'ère TGV débute pour la Gare de Lyon le <strong>27 septembre 1981</strong> avec l'inauguration de la <strong>première ligne à grande vitesse Paris-Lyon</strong> (LGV Sud-Est), première au monde à atteindre les 260 km/h en service commercial. Aujourd'hui, depuis la Gare de Lyon, on rejoint <strong>Lyon en 2h</strong>, <strong>Marseille en 3h05</strong>, <strong>Nice en 5h30</strong>, <strong>Genève en 3h</strong> et <strong>Milan en 7h</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la Gare de Lyon ?",
+            "answer": "<strong>Métro</strong> : M1 (automatique) et M14 (automatique). <strong>RER</strong> : A (ouest-est, La Défense ↔ Marne-la-Vallée) et D (Creil/Orry ↔ Melun). <strong>Transilien R</strong> (terminus, vers Montargis et Montereau). <strong>SNCF grandes lignes</strong> : TGV inOui et Ouigo vers Lyon, Marseille, Nice, Avignon, Montpellier, Suisse (Genève) et Italie (Milan, Turin). <strong>Bus</strong> : 20, 24, 29, 57, 61, 63, 65, 87, 91, plus Noctilien."
+        },
+        {
+            "question": "Comment rejoindre Disneyland Paris depuis la Gare de Lyon ?",
+            "answer": "<strong>RER A direct</strong> vers <strong>Marne-la-Vallée - Chessy</strong> (gare Disneyland) : durée <strong>35-40 minutes</strong> sans changement. Fréquence élevée (toutes les 5-10 min en pointe). Tarif spécial Disney ~7-8 €. C'est le moyen le plus rapide et le moins cher depuis le centre de Paris. Premiers RER A vers 5h30, derniers vers 0h45."
+        },
+        {
+            "question": "Comment rejoindre l'aéroport d'Orly depuis la Gare de Lyon ?",
+            "answer": "<strong>M14 directe</strong> depuis juin 2024 : durée <strong>~25-30 minutes</strong> sans changement. C'est désormais l'itinéraire le plus simple et le moins cher depuis le centre de Paris vers Orly. Alternative historique : RER C vers Pont de Rungis + Orlyval (plus long, plus cher)."
+        },
+        {
+            "question": "Qu'est-ce que Le Train Bleu ?",
+            "answer": "<strong>Le Train Bleu</strong> est le <strong>restaurant historique de la Gare de Lyon</strong>, situé à l'étage du grand hall et inauguré en <strong>1901</strong> en même temps que la gare. Il a été <strong>classé au titre des Monuments Historiques le 28 septembre 1972</strong> — c'est le <strong>seul restaurant de gare français</strong> à bénéficier de ce statut. Décor Belle Époque exceptionnel : <strong>fresques peintes par 28 artistes</strong> représentant les destinations de la Compagnie PLM (Côte d'Azur, Provence, Algérie), dorures, mobilier d'origine. Réservation conseillée. Tarif élevé (menu ~80 €) mais expérience unique."
+        },
+        {
+            "question": "La Gare de Lyon est-elle accessible aux PMR ?",
+            "answer": "<strong>M14 entièrement accessible PMR</strong> (ligne automatique avec ascenseurs aux accès et entre quais). <strong>M1 (automatique) et RER A/D</strong> : accès partiellement accessibles avec ascenseurs sur certains accès. <strong>SNCF grandes lignes / TGV</strong> : ascenseurs et personnel d'assistance disponible — service <strong>SNCF Accès Plus</strong> sur réservation. Pour un trajet PMR vers/depuis la Gare de Lyon, privilégier la M14."
+        },
+        {
+            "question": "Quels sont les horaires de la Gare de Lyon ?",
+            "answer": "<strong>SNCF / TGV</strong> : premiers vers 6h15, derniers vers 23h. <strong>RER A</strong> : ~5h00 à 1h20. <strong>RER D</strong> : ~5h00 à 0h30. <strong>M1 et M14</strong> : ~5h30 à 1h15 en semaine, jusqu'à 2h15 vendredi/samedi/veille de fête. La nuit, <strong>Noctilien</strong> N01, N02, N131, N133, N143."
+        },
+        {
+            "question": "Que voir autour de la Gare de Lyon ?",
+            "answer": "À <strong>10 minutes à pied</strong> : l'<strong>Opéra Bastille</strong>, la <strong>Coulée verte René-Dumont</strong> (ancienne voie ferrée aérienne reconvertie en promenade plantée de 4,7 km, modèle de la High Line de NY), le <strong>Port de l'Arsenal</strong> (bassin entre Bastille et la Seine), la <strong>place de la Bastille</strong>. À 20 min en métro : le <strong>Quartier latin</strong>, l'<strong>île de la Cité</strong>, le <strong>Bois de Vincennes</strong> (M1)."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la Gare de Lyon ?",
+            "answer": "<strong>Sanitaires</strong> : payants au RDC près du hall principal. <strong>Consigne SNCF</strong> : ~7-12 €/jour selon taille. <strong>Restauration</strong> : Le Train Bleu (haut de gamme), brasseries du hall, Paul, Eric Kayser, Starbucks. <strong>Boutiques</strong> : Relay, Pharmacie, Carrefour Express. <strong>WiFi SNCF gratuit</strong> 60 min."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Visiter Le Train Bleu</strong> : même sans manger, on peut entrer voir le décor Belle Époque (~10 min, vigile à l'entrée).",
+        "<strong>TGV pour Lyon, Marseille, Nice</strong> : enregistrement non obligatoire, arrivée 10 min avant départ suffit (sauf TGV inOui Pro Première).",
+        "<strong>Beffroi à photographier</strong> depuis la place Louis-Armand ou le Boulevard Diderot.",
+        "Pour la <strong>Bastille</strong> : 1 station M1 (3 min) ou à pied par la Coulée Verte (15 min, promenade plantée).",
+        "<strong>M14 pour Orly</strong> : 25-30 min direct depuis la gare — beaucoup plus simple que l'Orlyval.",
+        "Vigilance pickpockets : gare très fréquentée, surveiller bagages dans le hall et sur les quais."
+    ],
+    "trivia": [
+        {
+            "icon": "🕰️",
+            "title": "Beffroi 67 m + horloge cadrans de 6,40 m",
+            "content": "Le <strong>beffroi de la Gare de Lyon</strong> culmine à <strong>67 mètres</strong> et est l'un des repères urbains les plus reconnaissables de Paris. Ses <strong>quatre cadrans d'horloge</strong> mesurent <strong>6,40 m de diamètre</strong>, avec des <strong>chiffres romains peints à la main mesurant 1 mètre de haut</strong>. Inspiré du <strong>campanile de Saint-Marc à Venise</strong>, il évoque l'Italie, l'une des destinations de la Compagnie PLM dont la gare était la tête de ligne."
+        },
+        {
+            "icon": "🍽️",
+            "title": "Le Train Bleu : seul restaurant de gare classé MH (1972)",
+            "content": "Inauguré en <strong>1901</strong> en même temps que la gare, le restaurant <strong>Le Train Bleu</strong> est le <strong>seul restaurant de gare français classé Monument Historique</strong>, distinction reçue le <strong>28 septembre 1972</strong>. Décor exceptionnel : <strong>fresques peintes par 28 artistes</strong> représentant les destinations PLM (Côte d'Azur, Provence, Algérie), dorures, lustres, mobilier d'origine. Le nom rend hommage au célèbre <em>Train Bleu</em>, train de luxe de la Côte d'Azur dont la Gare de Lyon était le point de départ."
+        },
+        {
+            "icon": "🚄",
+            "title": "27 septembre 1981 : premier TGV au monde commercialisé",
+            "content": "Le <strong>27 septembre 1981</strong>, la <strong>Gare de Lyon</strong> a été le théâtre de l'inauguration de la <strong>première Ligne à Grande Vitesse au monde commercialisée</strong> : la <strong>LGV Sud-Est Paris-Lyon</strong>. Le TGV atteignait alors <strong>260 km/h en service commercial</strong>, vitesse jamais atteinte ailleurs en ligne régulière. Aujourd'hui, depuis cette gare, on rejoint <strong>Lyon en 2h</strong>, <strong>Marseille en 3h05</strong>, <strong>Nice en 5h30</strong> et <strong>Genève en 3h</strong>."
+        },
+        {
+            "icon": "🌳",
+            "title": "Coulée verte René-Dumont (1993) — modèle de la High Line NY",
+            "content": "La <strong>Coulée verte René-Dumont</strong>, ancienne ligne de chemin de fer aérienne reconvertie en <strong>promenade plantée de 4,7 km</strong>, démarre à 10 min à pied de la Gare de Lyon (Bastille). Inaugurée en <strong>1993</strong>, elle a inspiré la célèbre <strong>High Line de New York</strong> (ouverte en 2009). Idéal pour une promenade dégagée vers la Place de la Bastille et le 12ᵉ arrondissement."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Disneyland Paris via RER A",
+            "destination_slug": "disneyland",
+            "destination_full_name": "Gare de Lyon → Disneyland Paris",
+            "lines_used": [
+                "RER A"
+            ],
+            "lines_label": "RER A direct vers Marne-la-Vallée - Chessy (~40 min)",
+            "duration_minutes": 40,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-disneyland/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Gare de Lyon → Aéroport d'Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct (~25-30 min depuis juin 2024)",
+            "duration_minutes": 28,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-orly/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Gare de Lyon → Aéroport CDG",
+            "lines_used": [
+                "M14",
+                "RER B"
+            ],
+            "lines_label": "M14 jusqu'à Châtelet (2 stations) + RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-cdg/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Gare de Lyon → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis - Pleyel (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-chatelet/"
+        },
+        {
+            "destination_name": "Bastille (Opéra)",
+            "destination_slug": "bastille",
+            "destination_full_name": "Gare de Lyon → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-bastille/"
+        },
+        {
+            "destination_name": "Tour Eiffel via RER C",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Gare de Lyon → Tour Eiffel",
+            "lines_used": [
+                "RER A",
+                "RER C"
+            ],
+            "lines_label": "RER A jusqu'à Charles-de-Gaulle - Étoile + RER C",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Gare de Lyon → Notre-Dame",
+            "lines_used": [
+                "M1",
+                "M4"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet, M4 jusqu'à Cité ou à pied",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Bois de Vincennes / Château",
+            "destination_slug": "vincennes",
+            "destination_full_name": "Gare de Lyon → Château de Vincennes",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château de Vincennes (6 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-de-lyon/gare-de-lyon-vers-vincennes/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q747541",
+            "name": "Paris-Lyon",
+            "category": "gare",
+            "description": "Paris-Gare-de-Lyon est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1210896%20Paris%20XII%20gare%20de%20Lyon%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris-Gare-de-Lyon",
+            "latitude": 48.844722,
+            "longitude": 2.373611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (Place Louis-Armand)",
+                "distance_m": 74,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q734017",
+            "name": "Paris-Austerlitz",
+            "category": "gare",
+            "description": "La gare de Paris-Austerlitz, dite aussi gare d'Austerlitz, anciennement appelée gare d'Orléans, est l'une des six grandes gares terminus de la Société nationale des chemins de fer français (SNCF) à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20d%27Austerlitz%20Fa%C3%A7ade%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Austerlitz",
+            "latitude": 48.842222,
+            "longitude": 2.365833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 625,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q537720",
+            "name": "Palais Omnisports de Paris-Bercy",
+            "category": "palais",
+            "description": "Le palais omnisports de Paris-Bercy, souvent désigné Paris-Bercy ou tout simplement Bercy, et actuellement parrainé sous le nom d'Accor Arena, est une salle polyvalente et modulable située boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Omnisports%20de%20Paris-Bercy%202007.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_omnisports_de_Paris-Bercy",
+            "latitude": 48.8391,
+            "longitude": 2.37949,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 637,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2060889",
+            "name": "coulée verte René-Dumont",
+            "category": "site notable",
+            "description": "La coulée verte René-Dumont, anciennement Promenade plantée, est une voie verte et un parc linéaire du 12e arrondissement de Paris en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Promenade%20plant%C3%A9e%2C%20Paris%20August%202009%20%2810%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Coul%C3%A9e_verte_Ren%C3%A9-Dumont",
+            "latitude": 48.849572,
+            "longitude": 2.3711,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (Place Louis-Armand)",
+                "distance_m": 634,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2307722",
+            "name": "pont d'Austerlitz",
+            "category": "pont",
+            "description": "Le pont d'Austerlitz est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Pont%20d%27Austerlitz%20and%20a%20Bateau%20Mouche%2C%20Paris%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27Austerlitz",
+            "latitude": 48.845,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 606,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2271703",
+            "name": "viaduc d'Austerlitz",
+            "category": "pont",
+            "description": "Le viaduc d'Austerlitz est un pont ferroviaire qui franchit la Seine à Paris (France), réalisé par la Société de construction de Levallois-Perret ; il est emprunté par les rames de la ligne 5 du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20metro%20ligne%205%20Austerlitz%20dsc03829.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_d%27Austerlitz",
+            "latitude": 48.843611,
+            "longitude": 2.367778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 464,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1513866",
+            "name": "pont de Bercy",
+            "category": "pont",
+            "description": "Le pont de Bercy est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20pont%20de%20Bercy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Bercy",
+            "latitude": 48.838056,
+            "longitude": 2.375,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 620,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1196676",
+            "name": "pont Charles-de-Gaulle",
+            "category": "pont",
+            "description": "Le pont Charles-de-Gaulle est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Charles-de-Gaulle%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Charles-de-Gaulle_(Paris)",
+            "latitude": 48.8425,
+            "longitude": 2.36889,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 402,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1102184",
+            "name": "port de l'Arsenal",
+            "category": "site notable",
+            "description": "Le port de l'Arsenal ou bassin de l'Arsenal, est situé à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20port%20Arsenal.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Port_de_l%27Arsenal",
+            "latitude": 48.849475,
+            "longitude": 2.367367,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (Place Louis-Armand)",
+                "distance_m": 772,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q597555",
+            "name": "Arsenal",
+            "category": "site notable",
+            "description": "Arsenal est une des stations abandonnées du métro de Paris, située sur la ligne 5, dans le 4e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20station%20Arsenal%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arsenal_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.849042,
+            "longitude": 2.366642,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (Place Louis-Armand)",
+                "distance_m": 775,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q749491",
+            "name": "viaduc des Arts",
+            "category": "pont",
+            "description": "Le viaduc des Arts est un ensemble de commerces et d'ateliers du « conservatoire parisien des métiers d’art » de style architecture industrielle néo-rétro, agencés sous les arcades d'un ancien viaduc…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20viaduc%20%284738407837%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_des_Arts",
+            "latitude": 48.846667,
+            "longitude": 2.376944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (Place Louis-Armand)",
+                "distance_m": 322,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2974772",
+            "name": "cité de la mode et du design",
+            "category": "commerce",
+            "description": "Les Docks - La Cité de la mode et du design, est un bâtiment situé à l'emplacement des anciens magasins généraux quai d'Austerlitz, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Les%20Docks%20-%20Cit%C3%A9%20de%20la%20Mode%20et%20du%20Design%20%2823192974366%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Les_Docks,_cit%C3%A9_de_la_mode_et_du_design",
+            "latitude": 48.841111,
+            "longitude": 2.369722,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hall Diderot (boulevard Diderot)",
+                "distance_m": 425,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Hall principal (Place Louis-Armand)",
+            "address_full": "Place Louis-Armand 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.8443,
+            "longitude": 2.3744,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Hall Diderot (boulevard Diderot)",
+            "address_full": "20 Boulevard Diderot 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.843605,
+            "longitude": 2.374114,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "WiFi SNCF gratuit dans toute la gare",
+            "coverage_detail": "60 minutes/connexion"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "hall principal",
+                "hall Diderot",
+                "RER"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Hall RER",
+            "services": "Information, vente de billets, échanges"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                "Consigne SNCF (~7-12 €/jour)"
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Hall principal + Le Train Bleu (étage)",
+            "details": "Le Train Bleu (MH 1972, haut de gamme), brasseries, Paul, Eric Kayser, Starbucks, McDonald's.",
+            "secondary": "Quartier des Quinze-Vingts (12e) : restaurants, brasseries."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée : gare très fréquentée, garder valises et sacs sous surveillance constante.",
+            "Forte présence policière et SUGE (sûreté SNCF) dans le hall principal et les quais TGV — environnement globalement sécurisé.",
+            "Soirée tardive : la zone reste fréquentée grâce aux derniers TGV ; éviter les ruelles annexes mal éclairées.",
+            "Lors d'événements (manifs, grèves) : vérifier paris.fr et @prefpolice — la Gare de Lyon est parfois un point de rassemblement."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature de pôle TGV majeur. audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/P1210896_Paris_XII_gare_de_Lyon_rwk.jpg",
+        "alt": "Façade et beffroi de 67 m de la Gare de Lyon (Marius Toudoire, 1901) — quatre cadrans monumentaux de 6,40 m",
+        "width": 2500,
+        "height": 1946,
+        "credit": {
+            "author": "Mbzt",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:P1210896_Paris_XII_gare_de_Lyon_rwk.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/gare-de-lyon/gare-de-lyon-400.avif",
+                "800": "/assets/img/stations/gare-de-lyon/gare-de-lyon-800.avif",
+                "1200": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1200.avif",
+                "1600": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/gare-de-lyon/gare-de-lyon-400.webp",
+                "800": "/assets/img/stations/gare-de-lyon/gare-de-lyon-800.webp",
+                "1200": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1200.webp",
+                "1600": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/gare-de-lyon/gare-de-lyon-400.jpg",
+                "800": "/assets/img/stations/gare-de-lyon/gare-de-lyon-800.jpg",
+                "1200": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1200.jpg",
+                "1600": "/assets/img/stations/gare-de-lyon/gare-de-lyon-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 1,
+            "total_lines": 4
+        },
+        "details": "M14 entièrement accessible PMR (ligne automatique). M1 et RER A/D partiellement accessibles. SNCF grandes lignes : ascenseurs et SNCF Accès Plus sur réservation. Pour un trajet PMR vers/depuis Gare de Lyon, privilégier la M14."
+    }
+}
