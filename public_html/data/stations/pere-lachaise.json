@@ -1,0 +1,587 @@
+{
+    "published": true,
+    "slug": "pere-lachaise",
+    "name": "Père Lachaise",
+    "name_full": "Père Lachaise (Métro 2 + 3)",
+    "arrondissement": "11e / 20e (Paris)",
+    "address": "Boulevard de Ménilmontant, 75011 / 75020 Paris",
+    "latitude": 48.86278516383448,
+    "longitude": 2.3870286795023508,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Père Lachaise station",
+        "es": "Estación Père Lachaise"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#003CA6",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "3",
+            "slug": "metro-3",
+            "color": "#6E6E00",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "69"
+        ],
+        "nocturne": [
+            "N16",
+            "N34"
+        ],
+        "regional": [
+            "61",
+            "71"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 3,
+            "nearby_count": 13
+        }
+    },
+    "seo": {
+        "description": "Station Père Lachaise : M2 + M3. Accès au cimetière le plus visité au monde (1804, 44 ha). Tombes de Wilde, Morrison, Chopin, Piaf, Proust, Balzac."
+    },
+    "hero": {
+        "tagline": "L'entrée du cimetière le plus visité du monde",
+        "description": "Inaugurée sur la <strong>ligne 2</strong> le <strong>25 février 1903</strong> puis rejointe par la <strong>ligne 3</strong> le <strong>19 octobre 1904</strong>, la station Père Lachaise est l'<strong>accès métro de référence au Cimetière du Père-Lachaise</strong>, le <strong>cimetière le plus visité au monde</strong> avec plus de <strong>3,5 millions de visiteurs par an</strong>. Fondé en <strong>1804</strong> sous Napoléon, il couvre <strong>44 hectares</strong> dans le <strong>20e arrondissement</strong> et abrite <strong>plus d'1 million de sépultures</strong> dont celles de <strong>Frédéric Chopin</strong>, <strong>Jim Morrison</strong>, <strong>Oscar Wilde</strong>, <strong>Édith Piaf</strong>, <strong>Marcel Proust</strong>, <strong>Honoré de Balzac</strong>, <strong>Sarah Bernhardt</strong> et <strong>Eugène Delacroix</strong>. Deux édicules Hector Guimard classés Monuments Historiques."
+    },
+    "adjacent_stations": {
+        "metro-2": {
+            "previous": {
+                "name": "Philippe Auguste",
+                "slug": "philippe-auguste",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Ménilmontant",
+                "slug": "menilmontant",
+                "direction": "Porte Dauphine"
+            }
+        },
+        "metro-3": {
+            "previous": {
+                "name": "Gambetta",
+                "slug": "gambetta",
+                "direction": "Gallieni"
+            },
+            "next": {
+                "name": "Rue Saint-Maur",
+                "slug": "rue-saint-maur",
+                "direction": "Pont de Levallois - Bécon"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Père Lachaise</strong> est l'<strong>accès métro de référence au cimetière du Père-Lachaise</strong>, le plus grand cimetière de Paris et le <strong>plus visité au monde</strong> avec plus de <strong>3,5 millions de visiteurs annuels</strong>. Située à la jonction du <strong>11e et du 20e arrondissement</strong>, elle est desservie par deux lignes : <strong>M2</strong> (Porte Dauphine ↔ Nation, ouverte ici le 25 février 1903) et <strong>M3</strong> (Pont de Levallois - Bécon ↔ Gallieni, ouverte ici le 19 octobre 1904).",
+        "Particularité historique : la station Père Lachaise a été la <strong>première du réseau métropolitain à recevoir un escalator</strong>, le <strong>25 février 1909</strong>. Architecturalement, deux <strong>édicules Art nouveau d'Hector Guimard</strong> en surface sont classés au titre des Monuments Historiques (en 1978 puis 2016). Les quais M2 affichent la décoration <strong>« Andreu-Motte » orange</strong>, les quais M3 la décoration <strong>jaune</strong> avec ossature métallique soutenant la voirie en surface. Avec <strong>4,7 millions d'entrants en 2019</strong>, elle se classait au <strong>90e rang</strong> du réseau métro.",
+        "Le <strong>Cimetière du Père-Lachaise</strong> qui borde la station a été fondé en <strong>1804</strong> par Napoléon et conçu par l'architecte <strong>Alexandre-Théodore Brongniart</strong> dans un esprit de <strong>jardin paysager à l'anglaise</strong>. Sur <strong>44 hectares</strong>, il abrite <strong>plus d'1 million de sépultures</strong>. Le cimetière a longtemps été peu fréquenté à ses débuts ; pour le populariser, l'administration y a transféré en <strong>1817</strong> les sépultures de <strong>Jean de La Fontaine</strong> et <strong>Molière</strong>, ce qui a déclenché l'engouement parisien. Aujourd'hui, on y visite les tombes de <strong>Chopin, Jim Morrison, Oscar Wilde, Édith Piaf, Marcel Proust, Honoré de Balzac, Sarah Bernhardt</strong> et <strong>Eugène Delacroix</strong>."
+    ],
+    "history": {
+        "title": "1903-1909 : deux lignes + premier escalator du réseau",
+        "paragraphs": [
+            "La station Père Lachaise est inaugurée sur la <strong>ligne 2</strong> le <strong>25 février 1903</strong>, à l'occasion du prolongement de la M2 vers la station <strong>Anvers</strong>. La <strong>ligne 3</strong> rejoint la station l'année suivante, le <strong>19 octobre 1904</strong>, lors de l'ouverture initiale de la M3 entre Père Lachaise et Villiers. Quatre ans plus tard, le <strong>25 février 1909</strong>, la station Père Lachaise devient la <strong>première du réseau métropolitain à être équipée d'un escalator</strong> — une innovation technique majeure pour l'époque.",
+            "L'accès en surface est signalé par <strong>deux édicules Art nouveau d'Hector Guimard</strong>, classés au titre des <strong>Monuments Historiques</strong> en <strong>1978</strong> puis revus en <strong>2016</strong>. Ces édicules en fonte et verre, caractéristiques du style emblématique du métro parisien, témoignent de la richesse architecturale du début du XXᵉ siècle.",
+            "Le <strong>cimetière du Père-Lachaise</strong> qui borde la station date de <strong>1804</strong> et a été fondé sous Napoléon. Son nom rend hommage au <strong>père François d'Aix de La Chaise</strong> (1624-1709), confesseur de Louis XIV qui possédait une propriété sur ce coteau de Charonne. L'architecte <strong>Alexandre-Théodore Brongniart</strong> conçoit le cimetière dans un esprit de <strong>jardin paysager à l'anglaise</strong>, contrairement aux cimetières urbains classiques.",
+            "Le cimetière est <strong>impopulaire à ses débuts</strong> — trop éloigné du centre, perçu comme trop romantique. Pour le populariser, l'administration y transfère en <strong>1817</strong> les sépultures de <strong>Jean de La Fontaine</strong> et <strong>Molière</strong>. C'est aussi le théâtre d'un événement majeur de l'histoire française : pendant la <strong>Semaine sanglante de mai 1871</strong>, le <strong>Mur des Fédérés</strong> (au sud-est du cimetière) voit l'<strong>exécution de 147 derniers combattants de la Commune de Paris</strong>. Ce mur est devenu un <strong>lieu de mémoire majeur du mouvement ouvrier français</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Père Lachaise ?",
+            "answer": "<strong>Deux lignes de métro</strong> desservent Père Lachaise : la <strong>M2</strong> (Porte Dauphine ↔ Nation, ouverte ici en 1903) et la <strong>M3</strong> (Pont de Levallois - Bécon ↔ Gallieni, ouverte ici en 1904). Aucune correspondance RER directe. Pour le RER A, descendre à <strong>Nation</strong> (3 stations en M2). Bus RATP nombreux desservent les boulevards alentour."
+        },
+        {
+            "question": "Quels sont les tombeaux célèbres au Père Lachaise ?",
+            "answer": "Plus d'1 million de sépultures, dont les célèbres : <strong>Frédéric Chopin</strong> (division 11), <strong>Jim Morrison</strong> des Doors (division 6), <strong>Oscar Wilde</strong> (division 89), <strong>Édith Piaf</strong> (division 97), <strong>Marcel Proust</strong> (division 85), <strong>Honoré de Balzac</strong> (division 48), <strong>Sarah Bernhardt</strong> (division 44), <strong>Eugène Delacroix</strong> (division 49), <strong>Molière et La Fontaine</strong> (division 25, transférés en 1817 pour populariser le cimetière). Plans gratuits à l'entrée principale."
+        },
+        {
+            "question": "Quels sont les horaires du cimetière du Père-Lachaise ?",
+            "answer": "Le <strong>cimetière du Père-Lachaise</strong> est ouvert <strong>tous les jours</strong> : <strong>8h-18h en semaine</strong>, <strong>8h30-18h le samedi</strong>, <strong>9h-18h le dimanche</strong>. En hiver (novembre-mars), fermeture à <strong>17h30</strong>. Entrée gratuite. Plusieurs entrées : entrée principale (boulevard de Ménilmontant), entrée Gambetta (rue des Rondeaux), entrée Sud (rue de la Réunion). Visites guidées payantes proposées."
+        },
+        {
+            "question": "Qu'est-ce que le Mur des Fédérés ?",
+            "answer": "Le <strong>Mur des Fédérés</strong> est un mur d'enceinte au sud-est du cimetière où, pendant la <strong>Semaine sanglante de mai 1871</strong>, les troupes versaillaises ont <strong>fusillé les 147 derniers combattants de la Commune de Paris</strong> qui s'y étaient retranchés. Le mur est devenu un <strong>lieu de mémoire majeur du mouvement ouvrier français</strong>. Chaque année à la fin mai, des commémorations républicaines et socialistes s'y déroulent. À 10 minutes à pied de la sortie."
+        },
+        {
+            "question": "La station Père Lachaise est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station Père Lachaise n'est pas accessible aux PMR</strong> sur les 2 lignes. Pas d'ascenseurs vers les quais (paradoxe : la station a été la première à recevoir un escalator en 1909). Pour un trajet PMR vers le cimetière, descendre à <strong>Gambetta</strong> (M3, accès partiellement accessible) ou utiliser le <strong>bus 61</strong> (accessible) qui dessert l'entrée principale."
+        },
+        {
+            "question": "Quels sont les horaires de la station Père Lachaise ?",
+            "answer": "La station suit les horaires standards des <strong>lignes M2 et M3</strong> : circulation d'environ <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 les vendredis, samedis et veilles de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> N15, N16, N122 depuis les boulevards alentour."
+        },
+        {
+            "question": "Que voir d'autre autour de la station ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : le <strong>Cimetière du Père-Lachaise</strong> (44 ha à explorer), le <strong>Mur des Fédérés</strong>, le quartier <strong>Belleville</strong> (M2 vers l'ouest), le quartier <strong>Ménilmontant</strong> (1 station M2), <strong>Gambetta</strong> et la <strong>Mairie du 20e</strong> (1 station M3). Plus loin via M2 : <strong>Nation</strong> (3 stations), <strong>Pigalle</strong> (8 stations), <strong>Place de Clichy</strong>."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la station ?",
+            "answer": "<strong>Pas de sanitaires publics</strong> en station Père Lachaise (audit en cours pour cette page). À proximité : nombreux <strong>cafés et brasseries</strong> sur le boulevard de Ménilmontant et l'avenue de la République. Le cimetière dispose de <strong>sanitaires publics</strong> près des entrées principales (gratuits)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Édicule Guimard MH</strong> à photographier — sortie 1 « bd de Ménilmontant ».",
+        "Pour le <strong>cimetière du Père-Lachaise</strong> : sortie 1 puis traverser le bd de Ménilmontant — entrée principale à 50 m.",
+        "<strong>Plans gratuits</strong> à l'entrée principale pour localiser les tombes célèbres.",
+        "Pour le <strong>Mur des Fédérés</strong> : sud-est du cimetière, 15 min de marche depuis l'entrée principale.",
+        "Pour <strong>Gambetta</strong> et la rue des Rondeaux (autre entrée du cimetière) : 1 station M3 (3 min).",
+        "<strong>Visites guidées</strong> proposées par la Ville de Paris — thèmes Wilde/Morrison, écrivains, musiciens, Commune."
+    ],
+    "trivia": [
+        {
+            "icon": "🚉",
+            "title": "Première station du réseau avec un escalator (1909)",
+            "content": "Le <strong>25 février 1909</strong>, la station Père Lachaise devient la <strong>première du réseau métropolitain parisien à être équipée d'un escalator</strong>, une innovation technique majeure pour l'époque. Six ans après son ouverture sur la M2, la station bénéficie de cette nouveauté qui sera ensuite généralisée à travers tout le réseau au cours du XXᵉ siècle. Aujourd'hui, paradoxe : la station n'est pas accessible PMR malgré cet héritage technique."
+        },
+        {
+            "icon": "🪦",
+            "title": "Cimetière le plus visité au monde (1804) — 44 ha, +1 M sépultures",
+            "content": "Le <strong>Cimetière du Père-Lachaise</strong>, fondé en <strong>1804</strong> sous Napoléon et conçu par <strong>Alexandre-Théodore Brongniart</strong> en jardin paysager à l'anglaise, est le <strong>cimetière le plus visité au monde</strong> avec plus de <strong>3,5 millions de visiteurs annuels</strong>. Sur ses <strong>44 hectares</strong>, il abrite <strong>plus d'1 million de sépultures</strong>. Pour le populariser, l'administration y transféra en <strong>1817</strong> les restes de <strong>Jean de La Fontaine</strong> et <strong>Molière</strong> — l'engouement parisien s'enclenche alors."
+        },
+        {
+            "icon": "✊",
+            "title": "Mur des Fédérés (1871) — mémoire de la Commune",
+            "content": "Le <strong>Mur des Fédérés</strong>, situé au <strong>sud-est du cimetière</strong>, est le mur contre lequel les troupes versaillaises ont <strong>fusillé 147 des derniers combattants de la Commune de Paris</strong> pendant la <strong>Semaine sanglante de mai 1871</strong>. Ces combattants, retranchés dans le cimetière, étaient les ultimes défenseurs de la Commune avant sa chute. Le mur est devenu un <strong>lieu de mémoire central du mouvement ouvrier français</strong>, où se déroulent chaque année à la fin mai des commémorations républicaines."
+        },
+        {
+            "icon": "🎭",
+            "title": "Tombeaux mythiques : Wilde, Morrison, Chopin, Piaf",
+            "content": "Le Père-Lachaise abrite des tombes mythiques qui attirent des fans du monde entier : <strong>Oscar Wilde</strong> (division 89, monument couvert de rouge à lèvres jusqu'à la pose d'une vitre protectrice en 2011), <strong>Jim Morrison</strong> des Doors (division 6, tombe la plus visitée par les jeunes), <strong>Frédéric Chopin</strong> (division 11), <strong>Édith Piaf</strong> (division 97), <strong>Marcel Proust</strong> (division 85), <strong>Honoré de Balzac</strong> (division 48), <strong>Sarah Bernhardt</strong> (division 44), <strong>Eugène Delacroix</strong> (division 49). Plan gratuit à l'entrée principale."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Cimetière du Père-Lachaise (entrée principale)",
+            "destination_slug": "cimetiere-pere-lachaise",
+            "destination_full_name": "Père Lachaise → Cimetière",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie 1 puis traverser bd de Ménilmontant (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-cimetiere/"
+        },
+        {
+            "destination_name": "Tombe d'Oscar Wilde",
+            "destination_slug": "tombe-wilde",
+            "destination_full_name": "Père Lachaise → Tombe Oscar Wilde",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Cimetière, division 89 (~15 min depuis entrée principale)",
+            "duration_minutes": 17,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-wilde/"
+        },
+        {
+            "destination_name": "Tombe de Jim Morrison",
+            "destination_slug": "tombe-morrison",
+            "destination_full_name": "Père Lachaise → Tombe Jim Morrison",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Cimetière, division 6 (~10 min depuis entrée principale)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-morrison/"
+        },
+        {
+            "destination_name": "Mur des Fédérés",
+            "destination_slug": "mur-federes",
+            "destination_full_name": "Père Lachaise → Mur des Fédérés",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Cimetière sud-est (~15 min depuis entrée principale)",
+            "duration_minutes": 17,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-mur-federes/"
+        },
+        {
+            "destination_name": "Nation (4 lignes)",
+            "destination_slug": "nation",
+            "destination_full_name": "Père Lachaise → Nation",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Nation (3 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-nation/"
+        },
+        {
+            "destination_name": "Belleville",
+            "destination_slug": "belleville",
+            "destination_full_name": "Père Lachaise → Belleville",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Porte Dauphine (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-belleville/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M2 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Père Lachaise → CDG",
+            "lines_used": [
+                "M2",
+                "RER B"
+            ],
+            "lines_label": "M2 jusqu'à Stalingrad, M2 jusqu'à Gare du Nord puis RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-cdg/"
+        },
+        {
+            "destination_name": "République (mega-hub 5 lignes)",
+            "destination_slug": "republique",
+            "destination_full_name": "Père Lachaise → République",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Pont de Levallois (3 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pere-lachaise/pere-lachaise-vers-republique/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q206656",
+            "name": "église Notre-Dame-de-la-Croix de Ménilmontant",
+            "category": "église",
+            "description": "L'église Notre-Dame-de-la-Croix est un édifice catholique qui se trouve dans le quartier de Ménilmontant du 20e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010045%20Paris%20XX%20%C3%89glise%20Notre-Dame-de-la-Croix%20de%20M%C3%A9nilmontant%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Croix_de_M%C3%A9nilmontant",
+            "latitude": 48.86862,
+            "longitude": 2.38748,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. de la République",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1030135",
+            "name": "basilique Notre-Dame-du-Perpétuel-Secours",
+            "category": "basilique",
+            "description": "La basilique Notre-Dame-du-Perpétuel-Secours de Paris est une basilique mineure catholique, l'une des cinq basiliques mineures de Paris, située 55, boulevard de Ménilmontant, dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre-Dame-du-Perp%C3%A9tuel-Secours%20au%C3%9Fen82.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-du-Perp%C3%A9tuel-Secours_de_Paris",
+            "latitude": 48.861694,
+            "longitude": 2.386944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 114,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3055415",
+            "name": "musée Édith-Piaf",
+            "category": "musée",
+            "description": "Le musée Édith-Piaf est un musée privé ouvert au public sur rendez-vous, au 5 rue Camille-Crespin-du-Gast dans le 11e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20%C3%89dith%20Piaf.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_%C3%89dith-Piaf",
+            "latitude": 48.86617,
+            "longitude": 2.38172,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. de la République",
+                "distance_m": 449,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q392352",
+            "name": "tombe de Frédéric Chopin",
+            "category": "site notable",
+            "description": "La tombe de Frédéric Chopin (1810-1849) est un des monuments funéraires remarquables du cimetière du Père-Lachaise à Paris ; c'est une œuvre d'Auguste Clésinger, inaugurée en 1850 et désormais…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chopin%20Grave%20Grab%20Pere%20Lachaise.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tombe_de_Fr%C3%A9d%C3%A9ric_Chopin",
+            "latitude": 48.86,
+            "longitude": 2.392778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 493,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3374828",
+            "name": "pension Belhomme",
+            "category": "site notable",
+            "description": "La pension Belhomme était un ensemble de bâtiments situé au 157-163, rue de Charonne, Paris 11e, d'abord utilisé à la fin du XVIIIe siècle comme maison de santé puis, à la Révolution, comme prison.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4teldeChabanais.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pension_Belhomme",
+            "latitude": 48.8569,
+            "longitude": 2.3892,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 655,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2957470",
+            "name": "chapelle du Père-Lachaise",
+            "category": "chapelle",
+            "description": "La chapelle du Père-Lachaise, située à l'intérieur du cimetière du Père-Lachaise dans le 20e arrondissement de Paris, est un édifice religieux affecté au culte catholique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re%20Lachaise%20Cemetery%20%40%20Paris%20%2831299627462%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_du_P%C3%A8re-Lachaise",
+            "latitude": 48.8612,
+            "longitude": 2.39287,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 432,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3323309",
+            "name": "monument aux morts du Père-Lachaise",
+            "category": "monument",
+            "description": "Le monument aux morts du cimetière du Père-Lachaise est l'œuvre du peintre et sculpteur Paul-Albert Bartholomé, inauguré le 1er novembre 1899, après douze ans de travaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re-Lachaise%20-%20Monument%20aux%20morts%20-%20apr%C3%A8s%20restauration%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Monument_aux_morts_du_P%C3%A8re-Lachaise",
+            "latitude": 48.86092,
+            "longitude": 2.39194,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 385,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3233951",
+            "name": "Les Mots à la bouche",
+            "category": "librairie",
+            "description": "Les Mots à la bouche est une librairie parisienne spécialisée dans les thèmes LGBT. Elle est située 37, rue Saint-Ambroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Les%20Mots%20a%20la%20Bouche.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Les_Mots_%C3%A0_la_bouche",
+            "latitude": 48.86293,
+            "longitude": 2.37887,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. de la République",
+                "distance_m": 512,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3330353",
+            "name": "musée du Fumeur",
+            "category": "musée",
+            "description": "Le Musée du fumeur est un musée privé parisien, fondé en 2001 par Michka Seeliger-Chatelain et Tigrane Hadengue dans le but « d'informer sur l'acte de fumer et sur les plantes fumées ».",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/11e_Arrondissement%2C_Paris%2C_France_-_Open_Street_Map.png/330px-11e_Arrondissement%2C_Paris%2C_France_-_Open_Street_Map.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Fumeur",
+            "latitude": 48.858611,
+            "longitude": 2.382222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. de la République",
+                "distance_m": 574,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3494821",
+            "name": "square Samuel-de-Champlain",
+            "category": "site notable",
+            "description": "Le jardin Samuel-de-Champlain est un espace vert du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Samuel-de-Champlain%202.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Samuel-de-Champlain",
+            "latitude": 48.8638,
+            "longitude": 2.39231,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 380,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3494831",
+            "name": "square du Sergent Aurélie Salel",
+            "category": "site notable",
+            "description": "Le square du Sergent-Aurélie-Salel est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20du%20Sergent%20Aur%C3%A9lie-Salel%20%40%20Paris%20%2835090314641%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Sergent-Aur%C3%A9lie-Salel",
+            "latitude": 48.866944,
+            "longitude": 2.391389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Ménilmontant (cimetière)",
+                "distance_m": 557,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3494984",
+            "name": "jardin Toussaint Louverture",
+            "category": "jardin",
+            "description": "Le jardin Toussaint-Louverture est un espace vert du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20des%20Cendriers%20%28dit%20des%20Amandiers%29%20%40%20Paris%2020%20%2833243571632%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Toussaint-Louverture",
+            "latitude": 48.865833,
+            "longitude": 2.388333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "av. de la République",
+                "distance_m": 346,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de Ménilmontant (cimetière)",
+            "address_full": "67 Boulevard de Ménilmontant 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.862674,
+            "longitude": 2.387401,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. de la République",
+            "address_full": "103 Avenue de la République 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.863187,
+            "longitude": 2.385855,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": true,
+                "location": "Cimetière (près des entrées)",
+                "access": "Gratuit"
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "boulevards alentour"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Bd de Ménilmontant + av. de la République",
+            "details": "Cafés, brasseries, restaurants alentour. Fleuristes près du cimetière.",
+            "secondary": "Le 11e arrondissement abrite de nombreux bars et restaurants tendance."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Cimetière du Père-Lachaise : globalement très sûr en journée, attention aux pickpockets aux tombes les plus visitées (Wilde, Morrison) en haute saison touristique.",
+            "Soirée tardive : le quartier reste vivant grâce aux bars du 11e et de Ménilmontant — environnement plutôt sécurisé.",
+            "Lors des commémorations annuelles au Mur des Fédérés (fin mai) : dispositif renforcé, attendre-vous à des rassemblements importants.",
+            "Cimetière fermé en soirée (18h-18h30 selon saison) : ne pas y rester après l'heure de fermeture."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature patrimoniale et touristique du site. audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Acc%C3%A8s_Station_M%C3%A9tro_P%C3%A8re_Lachaise_All%C3%A9e_Nicole_Girard_Mangin_-_Paris_XI_(FR75)_-_2021-12-20_-_5.jpg",
+        "alt": "Accès à la station Père Lachaise sur l'Allée Nicole Girard-Mangin, près du cimetière (Paris 11e)",
+        "width": 4032,
+        "height": 3024,
+        "credit": {
+            "author": "Chabe01 (Charly Bernard)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_P%C3%A8re_Lachaise_All%C3%A9e_Nicole_Girard_Mangin_-_Paris_XI_(FR75)_-_2021-12-20_-_5.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pere-lachaise/pere-lachaise-400.avif",
+                "800": "/assets/img/stations/pere-lachaise/pere-lachaise-800.avif",
+                "1200": "/assets/img/stations/pere-lachaise/pere-lachaise-1200.avif",
+                "1600": "/assets/img/stations/pere-lachaise/pere-lachaise-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pere-lachaise/pere-lachaise-400.webp",
+                "800": "/assets/img/stations/pere-lachaise/pere-lachaise-800.webp",
+                "1200": "/assets/img/stations/pere-lachaise/pere-lachaise-1200.webp",
+                "1600": "/assets/img/stations/pere-lachaise/pere-lachaise-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pere-lachaise/pere-lachaise-400.jpg",
+                "800": "/assets/img/stations/pere-lachaise/pere-lachaise-800.jpg",
+                "1200": "/assets/img/stations/pere-lachaise/pere-lachaise-1200.jpg",
+                "1600": "/assets/img/stations/pere-lachaise/pere-lachaise-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur les 2 lignes (M2, M3), paradoxalement malgré le fait qu'elle ait été la première du réseau à recevoir un escalator en 1909. Pour un trajet PMR vers le cimetière, descendre à Gambetta (M3) ou utiliser le bus 61 (accessible) qui dessert l'entrée principale."
+    }
+}
