@@ -1,0 +1,574 @@
+{
+    "published": true,
+    "slug": "notre-dame-des-champs",
+    "name": "Notre-Dame-des-Champs",
+    "name_full": "Notre-Dame-des-Champs (Métro 12)",
+    "arrondissement": "6e (Paris)",
+    "address": "Boulevard Raspail, 75006 Paris",
+    "latitude": 48.844916170203646,
+    "longitude": 2.3287510292962232,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Notre-Dame-des-Champs station",
+        "es": "Estación Notre-Dame-des-Champs"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "39",
+            "58",
+            "68",
+            "82",
+            "83",
+            "89",
+            "91",
+            "94",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N12",
+            "N13"
+        ],
+        "regional": [
+            "95"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 7,
+            "nearby_count": 27
+        }
+    },
+    "seo": {
+        "description": "Station Notre-Dame-des-Champs : métro M12 sur Bd Raspail (6e). Jardin du Luxembourg et Sénat à 8 min, sud Quartier latin, proche Montparnasse."
+    },
+    "hero": {
+        "tagline": "Style Nord-Sud à 5 min du Luxembourg",
+        "description": "Inaugurée le <strong>5 novembre 1910</strong> sur l'ancienne <strong>ligne A de la compagnie Nord-Sud</strong>, la station Notre-Dame-des-Champs est implantée sous le <strong>boulevard Raspail</strong> dans le <strong>6e arrondissement</strong>. Elle conserve l'<strong>architecture caractéristique du réseau Nord-Sud</strong> : voûte semi-elliptique et céramiques aux tons bruns. À <strong>moins de 10 minutes à pied</strong> : le <strong>Jardin du Luxembourg</strong>, le <strong>Sénat</strong>, la <strong>rue Notre-Dame-des-Champs</strong> historique des académies d'art (XIXᵉ siècle) et le quartier <strong>Montparnasse</strong> tout proche."
+    },
+    "adjacent_stations": {
+        "metro-12": {
+            "previous": {
+                "name": "Rennes",
+                "slug": "rennes",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Montparnasse - Bienvenüe",
+                "slug": "montparnasse-bienvenue",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Notre-Dame-des-Champs</strong> est une des stations historiques du <strong>6e arrondissement</strong>, exclusivement desservie par le <strong>métro M12</strong> (Mairie d'Aubervilliers ↔ Mairie d'Issy). Inaugurée le <strong>5 novembre 1910</strong> sur l'ancienne <strong>ligne A de la compagnie Nord-Sud</strong> (renumérotée M12 en 1931 après absorption par la CMP), elle se trouve sous le <strong>boulevard Raspail</strong>, à la lisière du <strong>Quartier latin</strong> et de <strong>Montparnasse</strong>.",
+        "L'architecture conserve les <strong>codes esthétiques du réseau Nord-Sud</strong> : <strong>voûte semi-elliptique</strong> distinctive (différente des voûtes elliptiques classiques de la CMP), céramiques aux <strong>tons bruns et motifs Nord-Sud d'origine</strong>, deux quais de <strong>75 mètres</strong> chacun. Un travail de restauration a en partie ramené ces décors historiques. La station a totalisé <strong>1 487 256 entrants en 2021</strong>, soit le <strong>237e rang</strong> du réseau métro RATP — un volume modéré qui reflète son rôle de desserte locale plutôt que de pôle d'échange.",
+        "À <strong>moins de 10 minutes à pied</strong>, la station dessert plusieurs sites majeurs : le <strong>Jardin du Luxembourg</strong> (créé en 1612 par Marie de Médicis), le <strong>Sénat</strong> (Palais du Luxembourg), la <strong>rue Notre-Dame-des-Champs</strong> historique des <strong>académies d'art du XIXᵉ siècle</strong> (Bouguereau, Carolus-Duran, etc.), le <strong>boulevard du Montparnasse</strong>, le <strong>Cimetière du Montparnasse</strong> et la <strong>tour Montparnasse</strong>. La station <strong>Vavin</strong> M4 voisine relie l'autre côté du quartier."
+    ],
+    "history": {
+        "title": "1910 : architecture Nord-Sud sous le boulevard Raspail",
+        "paragraphs": [
+            "La station Notre-Dame-des-Champs est inaugurée le <strong>5 novembre 1910</strong> à l'occasion de la mise en service de la <strong>ligne A de la compagnie Nord-Sud</strong>, concurrente de la CMP. À l'époque, la Nord-Sud cherchait à concurrencer la CMP sur l'axe nord-sud de Paris, en proposant une architecture et un confort différents : <strong>voûtes semi-elliptiques</strong> au lieu d'elliptiques, <strong>céramique brun et beige</strong> au lieu du carrelage blanc biseauté caractéristique de la CMP.",
+            "La station est construite sous le <strong>boulevard Raspail</strong>, axe nord-sud du <strong>6e arrondissement</strong>, à mi-chemin entre Rennes et la future Gare Montparnasse. À cette époque, le quartier de Montparnasse est en plein essor artistique : ateliers d'artistes, académies privées (Académie Julian, Académie Colarossi), cafés littéraires (Le Dôme, La Coupole, La Rotonde). La <strong>rue Notre-Dame-des-Champs</strong>, qui borde la station, concentrait alors les ateliers de peintres pompiers et académiques : <strong>William Bouguereau</strong>, <strong>Carolus-Duran</strong>, et de nombreux autres maîtres du XIXᵉ siècle.",
+            "En <strong>1931</strong>, la compagnie Nord-Sud est absorbée par la CMP (Compagnie du chemin de fer métropolitain). La ligne A devient la <strong>ligne 12</strong>, sans modification architecturale majeure. La station Notre-Dame-des-Champs conserve donc encore aujourd'hui son <strong>identité visuelle Nord-Sud d'origine</strong>, ce qui en fait l'un des témoignages les mieux conservés de cette compagnie historique parisienne.",
+            "Particularité contemporaine : le <strong>16 juillet 2018</strong>, après la victoire de la <strong>France à la Coupe du Monde de football</strong>, la station a reçu des <strong>plaques commémoratives temporaires</strong> la rebaptisant humoristiquement <em>« Notre Didier Deschamps »</em>, en hommage au sélectionneur de l'équipe de France. Cet épisode éphémère a beaucoup amusé les Parisiens et largement circulé sur les réseaux sociaux."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Notre-Dame-des-Champs ?",
+            "answer": "<strong>Une seule ligne</strong> dessert Notre-Dame-des-Champs : le <strong>métro M12</strong> (Mairie d'Aubervilliers ↔ Mairie d'Issy). Aucune correspondance RER directe. Pour le RER B, descendre à <strong>Saint-Michel - Notre-Dame</strong> via M12 + M4 (changement à Sèvres-Babylone). Pour les bus : 58, 68 et 82 desservent le boulevard Raspail."
+        },
+        {
+            "question": "Comment rejoindre le Jardin du Luxembourg depuis Notre-Dame-des-Champs ?",
+            "answer": "<strong>8 minutes à pied</strong> : sortir sur le boulevard Raspail, remonter vers le nord-est par la <strong>rue de Vaugirard</strong> ou la <strong>rue Notre-Dame-des-Champs</strong>. Le <strong>Jardin du Luxembourg</strong>, créé en <strong>1612 par Marie de Médicis</strong> sur l'emplacement d'un hôtel particulier, couvre <strong>23 hectares</strong> et abrite le <strong>Palais du Luxembourg</strong> (Sénat). C'est le plus grand jardin public du centre de Paris."
+        },
+        {
+            "question": "Quelle architecture présente la station Notre-Dame-des-Champs ?",
+            "answer": "La station conserve l'<strong>architecture caractéristique de la compagnie Nord-Sud</strong> : <strong>voûte semi-elliptique</strong> (contrairement aux voûtes elliptiques de la CMP), <strong>céramiques aux tons bruns et beiges</strong>, motifs Nord-Sud d'origine. Les <strong>deux quais font 75 mètres</strong> de long. C'est l'un des témoignages les mieux conservés du réseau Nord-Sud, absorbé par la CMP en 1931."
+        },
+        {
+            "question": "Comment rejoindre Montparnasse depuis Notre-Dame-des-Champs ?",
+            "answer": "<strong>Trajet direct en M12</strong> : prendre la M12 direction <strong>Mairie d'Issy</strong>, descendre à <strong>Montparnasse - Bienvenüe</strong> (1 station, 3 min). Alternative <strong>à pied</strong> en environ <strong>8 minutes</strong> par le boulevard Raspail vers le sud. La gare Montparnasse offre TGV vers Bretagne, Pays de la Loire et Sud-Ouest."
+        },
+        {
+            "question": "La station Notre-Dame-des-Champs est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais. Pour un trajet 100 % PMR vers le Quartier latin, descendre à <strong>Saint-Michel - Notre-Dame</strong> via M12 puis M4 (changement à Sèvres-Babylone), ou utiliser le <strong>bus 58</strong> (accessible) qui dessert le boulevard Raspail."
+        },
+        {
+            "question": "Quels sont les horaires de la station Notre-Dame-des-Champs ?",
+            "answer": "La station Notre-Dame-des-Champs suit les horaires standards de la <strong>ligne 12</strong> : circulation d'environ <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 les vendredis, samedis et veilles de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> à proximité (boulevard Raspail / boulevard du Montparnasse)."
+        },
+        {
+            "question": "Quel est l'intérêt historique de la rue Notre-Dame-des-Champs ?",
+            "answer": "La <strong>rue Notre-Dame-des-Champs</strong> a été l'un des principaux axes d'<strong>ateliers d'artistes du Paris du XIXᵉ siècle</strong>. De nombreux peintres pompiers et académiques y avaient leur atelier : <strong>William Bouguereau</strong> (n° 75), <strong>Carolus-Duran</strong>, <strong>Henner</strong>, etc. La rue abritait également plusieurs <strong>académies privées de peinture</strong> qui formaient les artistes ambitieux refusés ou complémentaires à l'École des Beaux-Arts officielle. Le quartier a vu naître une partie significative de la peinture académique française."
+        },
+        {
+            "question": "Que voir d'autre autour de la station ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : le <strong>Jardin du Luxembourg</strong> et le <strong>Sénat</strong>, le <strong>Musée Zadkine</strong> (atelier du sculpteur), le <strong>Cimetière du Montparnasse</strong> (Baudelaire, Sartre, Beauvoir, Gainsbourg), la <strong>Tour Montparnasse</strong> (panorama 360°), les <strong>Catacombes de Paris</strong>, les <strong>cafés mythiques du Montparnasse</strong> (Le Dôme, La Coupole, La Rotonde, La Closerie des Lilas) et le <strong>boulevard Saint-Michel</strong> vers la Sorbonne."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Deux sorties</strong> sur le boulevard Raspail (sorties 1 numéros 112 et 116) : choisir la sortie la plus proche de votre destination.",
+        "Pour le <strong>Jardin du Luxembourg</strong> : remonter par la rue Notre-Dame-des-Champs (~600 m, 8 min) — itinéraire calme et pittoresque.",
+        "Pour <strong>Montparnasse</strong> : 1 station en M12 vers Montparnasse - Bienvenüe (3 min, plus simple avec valises).",
+        "Pour le <strong>Cimetière Montparnasse</strong> : 8 min à pied par le boulevard Raspail vers le sud.",
+        "L'<strong>architecture Nord-Sud</strong> en céramique brune mérite un regard à l'arrivée sur les quais.",
+        "Quartier <strong>résidentiel haut-de-gamme</strong> et tranquille — calme en semaine, animé les week-ends grâce aux cafés du boulevard du Montparnasse."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Architecture Nord-Sud (1910) en voûte semi-elliptique",
+            "content": "La station conserve l'architecture caractéristique de la <strong>compagnie Nord-Sud</strong>, ouverte le <strong>5 novembre 1910</strong> sur l'ancienne <strong>ligne A</strong>. Spécificités : <strong>voûte semi-elliptique</strong> (au lieu de l'elliptique classique de la CMP), <strong>céramique brun et beige</strong> (au lieu du blanc biseauté), <strong>motifs Nord-Sud</strong> d'origine. La Nord-Sud a été absorbée par la CMP en <strong>1931</strong>, mais Notre-Dame-des-Champs reste l'un des meilleurs témoignages encore conservés de cette compagnie concurrente."
+        },
+        {
+            "icon": "🎨",
+            "title": "La rue des académies d'art parisiennes du XIXᵉ siècle",
+            "content": "La <strong>rue Notre-Dame-des-Champs</strong>, qui longe la station, a été l'un des principaux axes d'<strong>ateliers d'artistes du Paris du XIXᵉ siècle</strong>. Plusieurs maîtres de la peinture académique y avaient leur atelier : <strong>William Bouguereau</strong> au numéro 75, <strong>Carolus-Duran</strong>, <strong>Jean-Jacques Henner</strong>. La rue concentrait également plusieurs <strong>académies privées</strong> complémentaires de l'École des Beaux-Arts officielle, formant les jeunes artistes ambitieux du Salon."
+        },
+        {
+            "icon": "⚽",
+            "title": "« Notre Didier Deschamps » : 16 juillet 2018",
+            "content": "Au lendemain de la victoire de la <strong>France à la Coupe du Monde de football le 15 juillet 2018</strong>, la RATP a installé sur les quais de Notre-Dame-des-Champs des <strong>plaques commémoratives temporaires</strong> rebaptisant la station <em>« Notre Didier Deschamps »</em>, en hommage au sélectionneur de l'équipe de France. L'opération humoristique a beaucoup amusé les Parisiens et touristes, et largement circulé sur les réseaux sociaux pendant plusieurs jours."
+        },
+        {
+            "icon": "🌳",
+            "title": "Jardin du Luxembourg (1612) à 8 min à pied",
+            "content": "Le <strong>Jardin du Luxembourg</strong>, à 8 min à pied de la station, a été créé en <strong>1612 par Marie de Médicis</strong>, régente du royaume après l'assassinat d'Henri IV. Elle souhaitait reconstituer en France l'ambiance des <strong>jardins florentins</strong> de son enfance (jardins Boboli). Le palais du Luxembourg, achevé en 1631, abrite aujourd'hui le <strong>Sénat français</strong>. Le jardin couvre <strong>23 hectares</strong>, c'est le plus grand jardin public du centre de Paris."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Jardin du Luxembourg",
+            "destination_slug": "jardin-luxembourg",
+            "destination_full_name": "Notre-Dame-des-Champs → Jardin du Luxembourg",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Notre-Dame-des-Champs (~600 m)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-luxembourg/"
+        },
+        {
+            "destination_name": "Montparnasse",
+            "destination_slug": "montparnasse",
+            "destination_full_name": "Notre-Dame-des-Champs → Montparnasse",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Issy (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-montparnasse/"
+        },
+        {
+            "destination_name": "Cimetière Montparnasse",
+            "destination_slug": "cimetiere-montparnasse",
+            "destination_full_name": "Notre-Dame-des-Champs → Cimetière Montparnasse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Raspail (~600 m)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-cimetiere/"
+        },
+        {
+            "destination_name": "Tour Montparnasse (panorama)",
+            "destination_slug": "tour-montparnasse",
+            "destination_full_name": "Notre-Dame-des-Champs → Tour Montparnasse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Edgar-Quinet (~700 m)",
+            "duration_minutes": 9,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-tour-montparnasse/"
+        },
+        {
+            "destination_name": "Catacombes de Paris",
+            "destination_slug": "catacombes",
+            "destination_full_name": "Notre-Dame-des-Champs → Catacombes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Raspail puis avenue du Général Leclerc (~1,2 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-catacombes/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Notre-Dame-des-Champs → Saint-Germain-des-Prés",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Notre-Dame-des-Champs et rue de Rennes (~900 m)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-saint-germain/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Notre-Dame-des-Champs → Concorde",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-concorde/"
+        },
+        {
+            "destination_name": "Gare Saint-Lazare",
+            "destination_slug": "gare-saint-lazare",
+            "destination_full_name": "Notre-Dame-des-Champs → Gare Saint-Lazare",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers (7 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-notre-dame-des-champs/notre-dame-des-champs-vers-saint-lazare/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q329852",
+            "name": "palais du Luxembourg",
+            "category": "palais",
+            "description": "Le palais du Luxembourg, situé dans le 6e arrondissement de Paris dans le nord du jardin du Luxembourg, est le siège du Sénat français, qui fut installé en 1799 dans le palais construit au début du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20-%20Le%20palais%20du%20Luxembourg%2C%20dans%20le%20jardin%20du%20Luxembourg%2C%20Paris%20-%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_du_Luxembourg",
+            "latitude": 48.848333,
+            "longitude": 2.3375,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 760,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q309458",
+            "name": "jardin du Luxembourg",
+            "category": "jardin",
+            "description": "Le jardin du Luxembourg est un jardin ouvert au public, situé dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20du%20Luxembourg.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_du_Luxembourg",
+            "latitude": 48.846944,
+            "longitude": 2.337222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Bd Raspail",
+                "distance_m": 671,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "La tour Montparnasse est le plus haut gratte-ciel de Paris intra-muros, situé dans le quartier Necker.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Bd Raspail",
+                "distance_m": 568,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1200698",
+            "name": "Le Bon Marché",
+            "category": "commerce",
+            "description": "Le Bon Marché est un grand magasin français, situé dans un quadrilatère encadré par la rue de Sèvres, la rue de Babylone, la rue du Bac et la rue Velpeau dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Bon%20March%C3%A9%2C%20Paris%2027%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Bon_March%C3%A9",
+            "latitude": 48.851183,
+            "longitude": 2.324395,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 778,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1411180",
+            "name": "musée du Luxembourg",
+            "category": "musée",
+            "description": "Le musée du Luxembourg est un lieu d'exposition d'art installé dans une aile bâtie perpendiculairement à l'orangerie du palais du Luxembourg, rue de Vaugirard, dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Expo%20Louis-Comfort%20Tiffany.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Luxembourg",
+            "latitude": 48.848611,
+            "longitude": 2.334028,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 582,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2715373",
+            "name": "musée Bourdelle",
+            "category": "musée",
+            "description": "Le musée Bourdelle est l'un des quatorze musées de la Ville de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20musee%20bourdelle%20maison.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bourdelle",
+            "latitude": 48.843056,
+            "longitude": 2.318333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 778,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1581237",
+            "name": "Comédie-Italienne",
+            "category": "théâtre",
+            "description": "Les termes Comédie-Italienne et Théâtre-Italien sont des noms qui ont été utilisés pour les pièces de théâtre de langue italienne jouées par de nombreuses troupes en France, notamment à Paris, depuis…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Com%C3%A9die%20Italienne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_italien_de_Paris",
+            "latitude": 48.84016,
+            "longitude": 2.323882,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Bd Raspail",
+                "distance_m": 604,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1515595",
+            "name": "hôtel Lutetia",
+            "category": "site notable",
+            "description": "L'hôtel Lutetia est un hôtel de luxe du 6e arrondissement de Paris, situé au no 45 boulevard Raspail, à l'angle de la rue de Sèvres, dans le quartier de Notre-Dame-des-Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Lutetia%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Lutetia",
+            "latitude": 48.851354,
+            "longitude": 2.327203,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 740,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2735858",
+            "name": "place Saint-Sulpice",
+            "category": "place",
+            "description": "La place Saint-Sulpice est une place du 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020108%20Paris%20VI%20Place%20Saint-Sulpice%20Ex%20s%C3%A9minaire%20de%20Saint-Sulpice%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Saint-Sulpice",
+            "latitude": 48.850833,
+            "longitude": 2.333333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 757,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q769842",
+            "name": "chapelle Notre-Dame-de-la-Médaille-miraculeuse",
+            "category": "chapelle",
+            "description": "La chapelle Notre-Dame-de-la-Médaille-Miraculeuse, ou chapelle de la rue du Bac, est une chapelle située dans le quartier Saint-Thomas-d'Aquin du 7e arrondissement de Paris, au 140, rue du Bac,…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Maison%20des%20Filles%20de%20la%20Charit%C3%A9%20-%20136-140%20rue%20du%20Bac%20-%20005bis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-M%C3%A9daille-Miraculeuse_de_Paris",
+            "latitude": 48.85084,
+            "longitude": 2.32293,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 794,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Le musée du Montparnasse est un musée à Paris, ouvert de 1998 à 2013, villa Marie-Vassilieff.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pierre-Lafue (bd Raspail)",
+                "distance_m": 590,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2613771",
+            "name": "musée Zadkine",
+            "category": "musée",
+            "description": "Le musée Zadkine est un musée parisien consacré au sculpteur d'origine russe Ossip Zadkine (1890-1967) qui s'est établi à Paris en 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Zadkine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Zadkine",
+            "latitude": 48.843056,
+            "longitude": 2.334167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Bd Raspail",
+                "distance_m": 421,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place Pierre-Lafue (bd Raspail)",
+            "address_full": "112 Boulevard Raspail 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.844767,
+            "longitude": 2.328637,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "Bd Raspail",
+            "address_full": "116 Boulevard Raspail 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.844498,
+            "longitude": 2.328845,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Boulevard Raspail + Quartier Montparnasse",
+            "details": "Cafés et restaurants tranquilles sur le boulevard Raspail. À 10 min : cafés mythiques du Montparnasse (Le Dôme, La Coupole, La Rotonde, La Closerie des Lilas).",
+            "secondary": "Quartier résidentiel haut-de-gamme du 6e arrondissement, commerce de proximité."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier résidentiel paisible : globalement très sûr en journée comme en soirée, axes principaux bien éclairés.",
+            "Affluence modérée même aux heures de pointe : vigilance pickpockets standard, pas de zone à risque particulier.",
+            "Soirée tardive : peu d'animation après 22h dans le quartier — préférer la M12 pour les retours.",
+            "Lors de grandes manifestations sur le boulevard Raspail ou autour du Sénat : vérifier paris.fr et @prefpolice."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature résidentielle du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Jardin_du_Luxembourg_-_Panorama.jpg",
+        "alt": "Jardin du Luxembourg (1612, Marie de Médicis) — palais du Luxembourg (Sénat) et bassin central",
+        "width": 11598,
+        "height": 2505,
+        "credit": {
+            "author": "Julien H",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Jardin_du_Luxembourg_-_Panorama.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-400.avif",
+                "800": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-800.avif",
+                "1200": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1200.avif",
+                "1600": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-400.webp",
+                "800": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-800.webp",
+                "1200": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1200.webp",
+                "1600": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-400.jpg",
+                "800": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-800.jpg",
+                "1200": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1200.jpg",
+                "1600": "/assets/img/stations/notre-dame-des-champs/notre-dame-des-champs-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR (pas d'ascenseurs vers les quais). Pour un trajet PMR vers le 6e arrondissement, utiliser le bus 58 ou 68 (accessibles) qui desservent le boulevard Raspail, ou taxi/VTC."
+    }
+}
