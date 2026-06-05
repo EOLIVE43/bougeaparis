@@ -81,22 +81,13 @@ $lineCount = count($lines);
 $rerCodes = !empty($rer) ? ' + RER ' . implode(' ', array_column($rer, 'code')) : '';
 $arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
 
-// Meta description : 1) champ explicite seo.description si défini,
-// 2) sinon hero.description tronqué proprement à ~155 chars,
-// 3) sinon fallback générique.
-$metaDescRaw = $station['seo']['description']
-    ?? $hero['description']
-    ?? ('Tout savoir sur la station ' . $name . ' du métro parisien : lignes desservies, correspondances RER, sorties, plan, horaires et conseils pratiques.');
-$metaDesc = strip_tags((string)$metaDescRaw);
-if (mb_strlen($metaDesc, 'UTF-8') > 158) {
-    // Coupe au dernier espace avant 155 chars pour éviter une coupure mid-mot.
-    $cut = mb_substr($metaDesc, 0, 155, 'UTF-8');
-    $lastSpace = mb_strrpos($cut, ' ', 0, 'UTF-8');
-    if ($lastSpace !== false && $lastSpace > 100) {
-        $cut = mb_substr($cut, 0, $lastSpace, 'UTF-8');
-    }
-    $metaDesc = rtrim($cut, " ,.;:") . '…';
-}
+// Meta description et keywords : patterns adaptatifs au mode dominant
+// (metro pur / mixte / RER pur / tram pur). Voir helpers.php.
+// Le helper construit la chaine deterministe a partir du nom, des codes
+// lignes, de l'arrondissement et des top 3 nearby_pois. Independant du
+// champ seo.description du JSON (qui reste la "lead" editoriale du hero).
+$metaDesc = buildStationMetaDescription($station);
+$metaKw   = buildStationMetaKeywords($station);
 
 // Title SEO calibré sur les volumes Keyword Planner ("{nom} métro" domine).
 // Voir buildStationTitle() dans core/helpers.php. Second parametre false :
@@ -105,6 +96,7 @@ if (mb_strlen($metaDesc, 'UTF-8') > 158) {
 $tpl->seo
     ->setTitle(buildStationTitle($station), false)
     ->setDescription($metaDesc)
+    ->setKeywords($metaKw)
     ->setCanonical($canonical);
 
 // Hero image : og:image (partages sociaux + Discover) + preload LCP

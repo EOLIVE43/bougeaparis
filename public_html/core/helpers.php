@@ -1127,3 +1127,165 @@ if (!function_exists('buildSectionTitleItineraires')) {
         }
     }
 }
+
+if (!function_exists('extractStationCodesLong')) {
+    /**
+     * Renvoie les codes par mode + un joiner conversationnel "A", "A et B",
+     * "A, B et C". Utilise par les helpers meta description / keywords.
+     */
+    function extractStationCodesLong(array $station): array
+    {
+        $metro = [];
+        foreach (($station['lines'] ?? []) as $line) {
+            if (($line['type'] ?? '') === 'metro' && !empty($line['code'])) {
+                $metro[] = (string)$line['code'];
+            }
+        }
+        $rer   = array_values(array_filter(array_column($station['rer_correspondences']     ?? [], 'code')));
+        $tram  = array_values(array_filter(array_column($station['tramway_correspondences'] ?? [], 'code')));
+
+        $join = static function (array $codes): string {
+            $n = count($codes);
+            if ($n === 0) { return ''; }
+            if ($n === 1) { return $codes[0]; }
+            if ($n === 2) { return $codes[0] . ' et ' . $codes[1]; }
+            $last = array_pop($codes);
+            return implode(', ', $codes) . ' et ' . $last;
+        };
+
+        return [
+            'metro'      => $metro,
+            'rer'        => $rer,
+            'tram'       => $tram,
+            'metroJoined'=> $join($metro),
+            'rerJoined'  => $join($rer),
+            'tramJoined' => $join($tram),
+        ];
+    }
+}
+
+if (!function_exists('extractStationArr')) {
+    /**
+     * Extrait le numero d'arrondissement Paris depuis un format "5e (Paris)"
+     * ou "5e / 6e (Paris)" (premier numero retenu). Retourne null si vide
+     * ou non-Parisien.
+     */
+    function extractStationArr(array $station): ?string
+    {
+        $raw = trim((string)($station['arrondissement'] ?? ''));
+        if ($raw === '') { return null; }
+        if (preg_match('/^(\d{1,2})(?:er|e)\b/u', $raw, $m)) {
+            return $m[1] . (($m[1] === '1') ? 'er' : 'e');
+        }
+        return null;
+    }
+}
+
+if (!function_exists('buildStationMetaDescription')) {
+    /**
+     * Meta description SEO (<=160 chars) adaptative au mode dominant :
+     *
+     *   "Station de métro {Nom} à Paris (Métro {codes}) — Xe arr. :
+     *    sorties, horaires, plan, accès POI1, POI2, POI3."
+     *
+     * Variantes mixte / RER pur ("Gare RER ...") / tram pur.
+     * Tronque les POIs si depassement, puis le segment arrondissement,
+     * jamais le nom ni les codes.
+     */
+    function buildStationMetaDescription(array $station): string
+    {
+        $name  = trim((string)($station['name'] ?? ''));
+        $codes = extractStationCodesLong($station);
+        $arr   = extractStationArr($station);
+        $mode  = detectStationMode($station);
+
+        $arrSegment = $arr ? " — {$arr} arr." : '';
+
+        switch ($mode) {
+            case 'mixte':
+                $intro = "Station de métro $name à Paris (Métro {$codes['metroJoined']} + RER {$codes['rerJoined']})";
+                break;
+            case 'rer_pur':
+                $intro = "Gare RER {$codes['rerJoined']} $name à Paris";
+                break;
+            case 'tram_pur':
+                $intro = "Station de tramway $name à Paris (Tram {$codes['tramJoined']})";
+                break;
+            case 'metro_pur':
+            default:
+                $intro = "Station de métro $name à Paris (Métro {$codes['metroJoined']})";
+                break;
+        }
+
+        $pois = array_values(array_filter(array_map(static function ($p) {
+            $n = trim((string)($p['name'] ?? ''));
+            return $n !== '' ? mb_convert_case(mb_substr($n, 0, 1, 'UTF-8'), MB_CASE_UPPER, 'UTF-8') . mb_substr($n, 1, null, 'UTF-8') : '';
+        }, $station['nearby_pois'] ?? [])));
+        $top3 = array_slice($pois, 0, 3);
+
+        $tailBase = ' : sorties, horaires, plan';
+        $accessLabel = $top3 ? ', accès ' . implode(', ', $top3) . '.' : '.';
+
+        $candidate = $intro . $arrSegment . $tailBase . $accessLabel;
+        if (mb_strlen($candidate, 'UTF-8') <= 160) { return $candidate; }
+
+        // Troncature 1 : reduire les POIs (3 → 2 → 1 → 0)
+        for ($k = 2; $k >= 0; $k--) {
+            $kept = array_slice($pois, 0, $k);
+            $accessLabel = $kept ? ', accès ' . implode(', ', $kept) . '.' : '.';
+            $candidate = $intro . $arrSegment . $tailBase . $accessLabel;
+            if (mb_strlen($candidate, 'UTF-8') <= 160) { return $candidate; }
+        }
+        // Troncature 2 : retirer le segment arrondissement
+        $candidate = $intro . $tailBase . '.';
+        if (mb_strlen($candidate, 'UTF-8') <= 160) { return $candidate; }
+        // Troncature 3 : intro seul + point
+        return mb_substr($intro . '.', 0, 160, 'UTF-8');
+    }
+}
+
+if (!function_exists('buildStationMetaKeywords')) {
+    /**
+     * Meta keywords adaptative au mode. Pattern :
+     *   - Metro pur : "métro {Nom}, station de métro {Nom}, Métro X {Nom} Paris, …"
+     *   - Mixte     : ajoute "RER X {Nom} Paris" pour chaque ligne RER
+     *   - RER pur   : "RER {Nom}, gare RER {Nom}, RER X {Nom} Paris"
+     *   - Tram pur  : "tramway {Nom}, station de tramway {Nom}, Tram X {Nom} Paris"
+     *
+     * Note : Google ignore meta keywords depuis 2009, mais conservee pour les
+     * autres crawlers et heritage SEO (Bing, Yandex, DuckDuckGo).
+     */
+    function buildStationMetaKeywords(array $station): string
+    {
+        $name  = trim((string)($station['name'] ?? ''));
+        $codes = extractStationCodesLong($station);
+        $mode  = detectStationMode($station);
+
+        $kw = [];
+        switch ($mode) {
+            case 'rer_pur':
+                $kw[] = "RER $name";
+                $kw[] = "gare RER $name";
+                foreach ($codes['rer'] as $c) { $kw[] = "RER $c $name Paris"; }
+                break;
+            case 'tram_pur':
+                $kw[] = "tramway $name";
+                $kw[] = "station de tramway $name";
+                foreach ($codes['tram'] as $c) { $kw[] = "Tram $c $name Paris"; }
+                break;
+            case 'mixte':
+                $kw[] = "métro $name";
+                $kw[] = "station de métro $name";
+                foreach ($codes['metro'] as $c) { $kw[] = "Métro $c $name Paris"; }
+                foreach ($codes['rer'] as $c)   { $kw[] = "RER $c $name Paris"; }
+                break;
+            case 'metro_pur':
+            default:
+                $kw[] = "métro $name";
+                $kw[] = "station de métro $name";
+                foreach ($codes['metro'] as $c) { $kw[] = "Métro $c $name Paris"; }
+                break;
+        }
+        return implode(', ', $kw);
+    }
+}

@@ -46,6 +46,12 @@ class Seo
         return $this;
     }
 
+    public function setKeywords(string $kw): self
+    {
+        $this->data['keywords'] = $kw;
+        return $this;
+    }
+
     public function setCanonical(string $path): self
     {
         // Si l'argument est deja une URL complete (http/https), on l'utilise tel quel
