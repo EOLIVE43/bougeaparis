@@ -1,0 +1,635 @@
+{
+    "published": true,
+    "slug": "la-motte-picquet-grenelle",
+    "name": "La Motte-Picquet - Grenelle",
+    "name_full": "La Motte-Picquet - Grenelle (Métro 6 + 8 + 10)",
+    "arrondissement": "15e (Paris)",
+    "address": "Carrefour Avenue de La Motte-Picquet / Boulevard de Grenelle, 75015 Paris",
+    "latitude": 48.84880556,
+    "longitude": 2.298587,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "La Motte-Picquet - Grenelle station",
+        "es": "Estación La Motte-Picquet - Grenelle"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "80"
+        ],
+        "nocturne": [
+            "N12",
+            "N61"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 5,
+            "nearby_count": 16
+        }
+    },
+    "seo": {
+        "description": "Station La Motte-Picquet - Grenelle : M6 + M8 + M10 dans le 15e. Tour Eiffel à 10 min via Champ-de-Mars, École Militaire, Esplanade des Invalides à pied."
+    },
+    "hero": {
+        "tagline": "Hub du 15e à 10 min de la Tour Eiffel",
+        "description": "Pôle d'échange majeur du <strong>15e arrondissement</strong>, la station La Motte-Picquet - Grenelle réunit <strong>3 lignes de métro</strong> : <strong>M6</strong> (station aérienne ouverte le <strong>24 avril 1906</strong>), <strong>M8</strong> (souterrain, ouverte le <strong>13 juillet 1913</strong>) et <strong>M10</strong> (ajoutée lors de la restructuration majeure du <strong>26-27 juillet 1937</strong>). La M6 y est <strong>aérienne</strong>, héritage du viaduc de Grenelle de la Petite Ceinture. Le nom rend hommage à <strong>l'amiral Toussaint-Guillaume Picquet de La Motte</strong> (1720-1791) et à l'ancienne commune de <strong>Grenelle</strong>, annexée à Paris en <strong>1860</strong>. À 10 minutes à pied : la <strong>Tour Eiffel</strong> via le Champ-de-Mars, l'<strong>École Militaire</strong>, le <strong>Village Suisse</strong> (antiquaires)."
+    },
+    "adjacent_stations": {
+        "metro-6": {
+            "previous": {
+                "name": "Cambronne",
+                "slug": "cambronne",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Dupleix",
+                "slug": "dupleix",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        },
+        "metro-8": {
+            "previous": {
+                "name": "École Militaire",
+                "slug": "ecole-militaire",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Commerce",
+                "slug": "commerce",
+                "direction": "Pointe du Lac"
+            }
+        },
+        "metro-10": {
+            "previous": {
+                "name": "Avenue Émile Zola",
+                "slug": "avenue-emile-zola",
+                "direction": "Boulogne - Pont de Saint-Cloud"
+            },
+            "next": {
+                "name": "Ségur",
+                "slug": "segur",
+                "direction": "Gare d'Austerlitz"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>La Motte-Picquet - Grenelle</strong> est un <strong>pôle d'échange majeur du 15e arrondissement</strong> de Paris, à la croisée de <strong>trois lignes de métro</strong> : <strong>M6</strong> (Charles-de-Gaulle - Étoile ↔ Nation, station aérienne sur le viaduc de Grenelle), <strong>M8</strong> (Balard ↔ Pointe du Lac, souterraine) et <strong>M10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz, souterraine). Avec <strong>5 117 708 entrants en 2021</strong>, elle se classait au <strong>34e rang</strong> du réseau métro RATP.",
+        "Le nom complet de la station rend hommage à deux figures : l'<strong>amiral Toussaint-Guillaume Picquet de La Motte (1720-1791)</strong>, marin et stratège ayant servi dans la marine royale française pendant la guerre d'indépendance américaine, et à l'ancienne <strong>commune de Grenelle</strong>, qui était un village indépendant <strong>annexé à Paris en 1860</strong> sous Napoléon III. La <strong>ligne 6 est aérienne</strong> sur le boulevard de Grenelle, héritage du <strong>viaduc construit dans les années 1900</strong> pour la traversée de la Petite Ceinture parisienne, offrant aux voyageurs des vues uniques sur Paris et la Tour Eiffel.",
+        "À <strong>10 minutes à pied</strong> de la sortie : la <strong>Tour Eiffel</strong> via l'<strong>avenue de la Bourdonnais</strong> ou en remontant le <strong>Champ-de-Mars</strong>, l'<strong>École Militaire</strong> (1750-1788, Ange-Jacques Gabriel), le <strong>Village Suisse</strong> (centre d'antiquaires fondé en 1900), le <strong>Marché Grenelle</strong> (lundi et jeudi matin sur le boulevard de Grenelle), la <strong>Statue de la Liberté</strong> de l'île aux Cygnes (sur la Seine) et le <strong>siège de la Fédération française de football</strong>. Plus loin : l'<strong>Hôtel des Invalides</strong> (10 min M8 jusqu'à La Tour-Maubourg ou Invalides)."
+    ],
+    "history": {
+        "title": "1906-1937 : trois lignes en trente et un ans",
+        "paragraphs": [
+            "Les premiers quais sont ceux de la <strong>ligne 6</strong>, ouverts le <strong>24 avril 1906</strong> comme <strong>station aérienne</strong> sous le nom <strong>La Motte-Picquet</strong>. La station est construite sur le <strong>viaduc de Grenelle</strong>, qui permet à la M6 de franchir le boulevard de Grenelle en surplomb. Cette configuration aérienne est l'une des particularités de la M6 dans Paris, offrant des panoramas sur la Tour Eiffel et la Seine. La station est rebaptisée <strong>La Motte-Picquet - Grenelle</strong> après l'arrivée des autres lignes.",
+            "La <strong>ligne 8</strong> arrive le <strong>13 juillet 1913</strong>, sept ans après l'inauguration de la M6. Les quais M8 sont souterrains, à l'inverse de la station aérienne M6. La station devient alors un nœud d'échange à deux niveaux distincts. Vingt-quatre ans plus tard, le <strong>26-27 juillet 1937</strong>, la <strong>ligne 10</strong> rejoint la station lors d'une <strong>importante restructuration du réseau dans cette zone</strong>. À cette époque, la M10 dessert l'axe Invalides ↔ Jussieu et sera prolongée plus tard.",
+            "Architecturalement, les trois niveaux de la station offrent des <strong>styles décoratifs variés</strong>, mélangeant les designs d'origine du début du XXᵉ siècle avec les modernisations successives (jusqu'en 2020). Les <strong>5 accès</strong> de la station sont équipés d'escaliers et de signalétique. Particularité d'accessibilité : <strong>seule la ligne 6 (à La Motte-Picquet - Grenelle) est accessible PMR</strong>, grâce à la configuration aérienne du quai qui facilite l'aménagement.",
+            "Le nom de la station rend hommage à deux figures distinctes : l'<strong>amiral Toussaint-Guillaume Picquet de La Motte (1720-1791)</strong>, marin breton ayant commandé des escadres françaises lors de la <strong>guerre d'indépendance américaine</strong> (1778-1783), et à l'ancienne <strong>commune de Grenelle</strong>, devenue un village industriel au XIXᵉ siècle et <strong>annexée à Paris le 1ᵉʳ janvier 1860</strong> sous Napoléon III, en même temps que d'autres communes périphériques (Belleville, La Villette, Montmartre, etc.)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station La Motte-Picquet - Grenelle ?",
+            "answer": "<strong>Trois lignes de métro</strong> : <strong>M6</strong> (Charles-de-Gaulle - Étoile ↔ Nation, station aérienne), <strong>M8</strong> (Balard ↔ Pointe du Lac, souterraine) et <strong>M10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz, souterraine). Aucune correspondance RER directe — pour le RER C, descendre à <strong>Champ de Mars - Tour Eiffel</strong> (3 stations en M6 + à pied) ou utiliser le bus."
+        },
+        {
+            "question": "Comment rejoindre la Tour Eiffel depuis La Motte-Picquet - Grenelle ?",
+            "answer": "<strong>10 minutes à pied</strong> par l'<strong>avenue de la Bourdonnais</strong> ou en traversant le <strong>Champ-de-Mars</strong>. Alternative en métro : <strong>M6 direction Étoile</strong> jusqu'à <strong>Bir-Hakeim</strong> (2 stations, 4 min) puis 5 min à pied. La M6 étant aérienne, vous avez une <strong>vue exceptionnelle sur la Tour Eiffel</strong> depuis le quai et pendant le trajet — un des meilleurs points de vue gratuit de Paris."
+        },
+        {
+            "question": "La M6 est-elle aérienne à La Motte-Picquet - Grenelle ?",
+            "answer": "<strong>Oui</strong>, la <strong>ligne 6 est aérienne</strong> à La Motte-Picquet - Grenelle, construite sur le <strong>viaduc de Grenelle</strong>. Cette configuration aérienne offre une <strong>vue spectaculaire sur la Tour Eiffel et la Seine</strong> depuis les quais. C'est l'une des sections aériennes les plus appréciées du métro parisien (avec Bir-Hakeim, Passy, et le viaduc d'Austerlitz). À ne pas manquer."
+        },
+        {
+            "question": "Qu'est-ce que le Village Suisse ?",
+            "answer": "Le <strong>Village Suisse</strong>, à 5 minutes à pied (78 avenue de Suffren), est un <strong>centre d'antiquaires et de décorateurs</strong> emblématique du 15e arrondissement. Inauguré en <strong>1900</strong> à l'occasion de l'Exposition universelle (pavillons suisses d'origine), il rassemble aujourd'hui une <strong>quarantaine de galeries d'antiquaires</strong> et de marchands d'art spécialisés (XVIIᵉ-XXᵉ). Ouvert mercredi-dimanche. Entrée libre. Plus calme que les marchés aux puces."
+        },
+        {
+            "question": "La station est-elle accessible aux PMR ?",
+            "answer": "<strong>Seule la ligne 6 est accessible PMR</strong> à La Motte-Picquet - Grenelle, grâce à la configuration aérienne du quai. La M8 et la M10 ne sont <strong>pas accessibles PMR</strong> (escaliers fixes uniquement). Pour un trajet 100 % PMR, privilégier la M6 (qui dessert Bir-Hakeim, accessible également)."
+        },
+        {
+            "question": "Quels sont les horaires de la station La Motte-Picquet - Grenelle ?",
+            "answer": "Les <strong>trois lignes</strong> circulent globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> N62, N66, N122 qui desservent le boulevard de Grenelle."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : la <strong>Tour Eiffel</strong> (10 min), le <strong>Champ-de-Mars</strong>, l'<strong>École Militaire</strong> (Ange-Jacques Gabriel, 1750-1788), le <strong>Village Suisse</strong> (antiquaires), le <strong>Marché Grenelle</strong> (lundi/jeudi matin), la <strong>Statue de la Liberté</strong> de l'île aux Cygnes, le <strong>Pont de Bir-Hakeim</strong>. Plus loin : l'<strong>Hôtel des Invalides</strong> (10 min M8), le <strong>Musée du Quai Branly</strong> (15 min à pied)."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la station ?",
+            "answer": "<strong>Pas de sanitaires publics</strong> en station (audit en cours pour cette page). À proximité : nombreux <strong>cafés et brasseries</strong> du boulevard de Grenelle et de l'avenue de La Motte-Picquet. Le <strong>Marché Grenelle</strong> (lundi/jeudi matin) propose des stands de restauration."
+        }
+    ],
+    "practical_tips": [
+        "<strong>M6 aérienne</strong> : profitez de la vue sur la Tour Eiffel depuis le quai et le trajet (côté nord).",
+        "Pour la <strong>Tour Eiffel</strong> : à pied par l'avenue de la Bourdonnais (10 min) ou M6 jusqu'à Bir-Hakeim (4 min).",
+        "Pour le <strong>Village Suisse</strong> (antiquaires) : sortie 5 « av. de Suffren » puis remonter (5 min).",
+        "Pour l'<strong>École Militaire</strong> : sortie 2 « av. de La Motte-Picquet » puis remonter vers l'est (7 min).",
+        "<strong>Marché Grenelle</strong> (lundi + jeudi matin) sur le bd de Grenelle juste devant la sortie 1.",
+        "<strong>M6 seule PMR</strong> ici : pour les autres lignes, prévoir alternative (M14 Châtelet + bus)."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "M6 aérienne sur viaduc — vue Tour Eiffel garantie",
+            "content": "La <strong>ligne 6</strong> est <strong>aérienne</strong> à La Motte-Picquet - Grenelle, construite sur le <strong>viaduc de Grenelle</strong> qui permet à la M6 de franchir le boulevard de Grenelle en surplomb. Cette configuration aérienne offre une <strong>vue spectaculaire sur la Tour Eiffel et la Seine</strong> depuis les quais et pendant le trajet vers Bir-Hakeim. C'est l'une des sections aériennes les plus appréciées du métro parisien, avec un effet d'arrivée sur la Tour Eiffel toujours frappant pour les visiteurs."
+        },
+        {
+            "icon": "⚓",
+            "title": "Hommage à l'amiral Picquet de La Motte (1720-1791)",
+            "content": "Le nom <strong>La Motte-Picquet</strong> rend hommage à l'<strong>amiral Toussaint-Guillaume Picquet de La Motte (1720-1791)</strong>, marin breton et stratège militaire qui a commandé des escadres françaises lors de la <strong>guerre d'indépendance américaine (1778-1783)</strong>. Il s'est illustré aux Antilles et dans l'océan Indien. Son nom est aussi celui d'une avenue parisienne du 7e arrondissement qui débouche sur l'École Militaire — d'où la double connexion avec la station."
+        },
+        {
+            "icon": "🏘️",
+            "title": "Grenelle : ancienne commune annexée à Paris en 1860",
+            "content": "<strong>Grenelle</strong> était une commune indépendante située au sud-ouest de Paris, qui a été <strong>annexée à Paris le 1ᵉʳ janvier 1860</strong> sous Napoléon III, en même temps que d'autres villages périphériques (Belleville, La Villette, Auteuil, Passy, Montmartre, Vaugirard...). Au XIXᵉ siècle, Grenelle était devenu un <strong>village industriel</strong> avec usines, manufactures et population ouvrière. La station rend hommage à cette identité grenelloise toujours présente dans la culture du 15e arrondissement."
+        },
+        {
+            "icon": "🎖️",
+            "title": "École Militaire (1750-1788) à 7 min à pied",
+            "content": "À <strong>7 minutes à pied</strong> de la station se trouve l'<strong>École Militaire</strong>, magnifique ensemble néo-classique conçu par <strong>Ange-Jacques Gabriel</strong> et construit entre <strong>1750 et 1788</strong> sous Louis XV. Sa façade dominante ferme le Champ-de-Mars vers le sud. <strong>Napoléon Bonaparte</strong> y a étudié comme cadet en 1784-1785. Elle abrite aujourd'hui plusieurs écoles militaires d'élite et n'est pas ouverte au public (sauf événements spéciaux)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tour Eiffel",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "La Motte-Picquet - Grenelle → Tour Eiffel",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par avenue de la Bourdonnais et Champ-de-Mars (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Champ de Mars - Tour Eiffel (RER C)",
+            "destination_slug": "champ-de-mars-tour-eiffel",
+            "destination_full_name": "La Motte-Picquet → Champ de Mars - Tour Eiffel",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile (2 stations) + à pied",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-champ-de-mars/"
+        },
+        {
+            "destination_name": "Bir-Hakeim (vue Tour Eiffel)",
+            "destination_slug": "bir-hakeim",
+            "destination_full_name": "La Motte-Picquet → Bir-Hakeim",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile (2 stations) — section aérienne panoramique",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-bir-hakeim/"
+        },
+        {
+            "destination_name": "Esplanade des Invalides",
+            "destination_slug": "invalides",
+            "destination_full_name": "La Motte-Picquet → Esplanade des Invalides",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Pointe du Lac jusqu'à La Tour-Maubourg (2 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-invalides/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "La Motte-Picquet → Concorde",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Pointe du Lac (4 stations)",
+            "duration_minutes": 9,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-concorde/"
+        },
+        {
+            "destination_name": "Village Suisse (antiquaires)",
+            "destination_slug": "village-suisse",
+            "destination_full_name": "La Motte-Picquet → Village Suisse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie 5 av. de Suffren puis remonter (~300 m)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-village-suisse/"
+        },
+        {
+            "destination_name": "Gare d'Austerlitz via M10",
+            "destination_slug": "gare-austerlitz",
+            "destination_full_name": "La Motte-Picquet → Gare d'Austerlitz",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 direction Gare d'Austerlitz (terminus)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-austerlitz/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER C + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "La Motte-Picquet → CDG",
+            "lines_used": [
+                "M6",
+                "RER C",
+                "RER B"
+            ],
+            "lines_label": "M6 jusqu'à Bir-Hakeim, Champ de Mars + RER C/B (complexe)",
+            "duration_minutes": 60,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-la-motte-picquet-grenelle/lmpg-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3279650",
+            "name": "maison de l'UNESCO",
+            "category": "site notable",
+            "description": "La maison de l'UNESCO, aussi appelé palais de l'UNESCO, est l'ensemble des bâtiments qui hébergent le siège de l'Organisation des Nations unies pour l'éducation, la science et la culture (UNESCO) à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20UNESCO%20%2829775501630%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_l%27UNESCO",
+            "latitude": 48.8494,
+            "longitude": 2.30611,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 472,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q843059",
+            "name": "Grande roue de Paris",
+            "category": "site notable",
+            "description": "La grande roue de Paris était une grande roue d'un diamètre annoncé de 100 mètres, construite à l'occasion de l'Exposition universelle de 1900 à Paris, avenue de Suffren, en face de la galerie des…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20grande%20roue%2C%20Paris%2C%20France%2C%20ca.%201890-1900.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_roue_de_Paris_(Exposition_universelle_de_1900)",
+            "latitude": 48.851809,
+            "longitude": 2.299223,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 137,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2687093",
+            "name": "Champ de Mars",
+            "category": "site notable",
+            "description": "Champ de Mars est une station abandonnée de la ligne 8 du métro de Paris, entre les stations La Motte-Picquet - Grenelle et École Militaire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancien%20Acc%C3%A8s%20Station%20M%C3%A9tro%20Champ%20Mars%20Place%20Joffre%20-%20Paris%20VII%20%28FR75%29%20-%202022-01-22%20-%204.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Champ_de_Mars_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.851297,
+            "longitude": 2.301053,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 106,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1596758",
+            "name": "galerie des Machines",
+            "category": "site notable",
+            "description": "La galerie des Machines est un monument parisien, conçu pour l'Exposition universelle de Paris de 1889 par l'ingénieur Victor Contamin et l'architecte Ferdinand Dutert.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CLC%20528%20-%20PARIS%20-%20Galerie%20des%20Machines.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Galerie_des_Machines",
+            "latitude": 48.853589,
+            "longitude": 2.301825,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 352,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3390236",
+            "name": "place de Fontenoy - UNESCO",
+            "category": "place",
+            "description": "La place de Fontenoy - UNESCO est une place du 7e arrondissement de Paris et, plus précisément, du quartier de l'École-Militaire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1120648%20Paris%20VII%20place%20de%20Fontenoy%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_Fontenoy_-_UNESCO",
+            "latitude": 48.850556,
+            "longitude": 2.306389,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 471,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3323344",
+            "name": "monument des Droits de l'Homme",
+            "category": "monument",
+            "description": "Le monument des Droits de l'homme, parfois complété et du citoyen est une sculpture monumentale située dans les jardins du Champ-de-Mars, avenue Charles-Risler, à Paris, en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/France_location_map-Regions_and_departements-2016.svg/langfr-330px-France_location_map-Regions_and_departements-2016.svg.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Monument_des_Droits_de_l%27homme",
+            "latitude": 48.85523,
+            "longitude": 2.301099,
+            "nearest_exit": {
+                "number": "5",
+                "name": "av. de Suffren (Village Suisse)",
+                "distance_m": 514,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1130752",
+            "name": "synagogue Chasseloup-Laubat",
+            "category": "synagogue",
+            "description": "La synagogue Chasseloup-Laubat est une synagogue située du 14 rue Chasseloup-Laubat dans le 15e arrondissement de Paris. Elle est rattachée au Consistoire central israélite de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Synagogue%20Chasseloup-Laubat%202014%20%28Paris%29%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Chasseloup-Laubat",
+            "latitude": 48.847417,
+            "longitude": 2.304861,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de Grenelle",
+                "distance_m": 415,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3022415",
+            "name": "église Saint-Séraphin-de-Sarov",
+            "category": "église",
+            "description": "L'église Saint-Séraphin-de-Sarov est une église orthodoxe de tradition russe situé au 91, rue Lecourbe, dans le 15e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-S%C3%A9raphin-de-Sarov%20%28Paris%29%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-S%C3%A9raphin-de-Sarov_de_Paris",
+            "latitude": 48.8428,
+            "longitude": 2.30389,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de Grenelle",
+                "distance_m": 717,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3492248",
+            "name": "église Saint-Jean-Baptiste de Grenelle",
+            "category": "église",
+            "description": "L’église Saint-Jean-Baptiste de Grenelle est une église du 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Jean-Baptiste%20de%20Grenelle%20%28Paris%29%2019.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-Baptiste_de_Grenelle",
+            "latitude": 48.843194,
+            "longitude": 2.292583,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. du Commerce (Marché Grenelle)",
+                "distance_m": 756,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q68807321",
+            "name": "synagogue Adath Shalom",
+            "category": "synagogue",
+            "description": "La synagogue Adath Shalom est un lieu de culte juif du courant Massorti situé 8 rue Georges-Bernard-Shaw dans le 15e arrondissement de Paris.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Adath_Shalom",
+            "latitude": 48.852192,
+            "longitude": 2.293045,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. de Pondichéry",
+                "distance_m": 481,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3582470",
+            "name": "église Saint-Léon de Paris",
+            "category": "église",
+            "description": "L'église Saint-Léon est une église paroissiale située dans le 15e arrondissement de Paris, place du Cardinal-Amette.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-L%C3%A9on%2C%20Paris%209%20April%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-L%C3%A9on_de_Paris",
+            "latitude": 48.850936,
+            "longitude": 2.296581,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. de Pondichéry",
+                "distance_m": 202,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3585262",
+            "name": "église Sainte-Rita de Paris",
+            "category": "église",
+            "description": "L'église Sainte-Rita de Paris est construite en 1900 dans le 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Sainte-Rita%20de%20Paris%20le%207%20ao%C3%BBt%202016%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Rita_de_Paris",
+            "latitude": 48.8446,
+            "longitude": 2.3063,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de Grenelle",
+                "distance_m": 666,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. du Commerce (Marché Grenelle)",
+            "address_full": "134 Boulevard de Grenelle 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.8489,
+            "longitude": 2.298209,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. de La Motte-Picquet (École Militaire)",
+            "address_full": "65 Avenue de la Motte-Picquet 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.849352,
+            "longitude": 2.298461,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd de Grenelle",
+            "address_full": "148 Boulevard de Grenelle 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.848548,
+            "longitude": 2.299453,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. de Pondichéry",
+            "address_full": "25 Rue de Pondichéry 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.849412,
+            "longitude": 2.298079,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "av. de Suffren (Village Suisse)",
+            "address_full": "5 Rue du Général Baratier 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.850673,
+            "longitude": 2.299956,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "bd de Grenelle",
+                "av. de La Motte-Picquet"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Bd de Grenelle + av. de La Motte-Picquet",
+            "details": "Cafés, brasseries, restaurants alentour. Marché Grenelle (lundi/jeudi matin) sur bd de Grenelle.",
+            "secondary": "Village Suisse (antiquaires) à 5 min, restaurants tendance autour de la Tour Eiffel."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier résidentiel et commercial du 15e arrondissement : globalement très sûr en journée comme en soirée.",
+            "Touristes en route vers la Tour Eiffel : vigilance pickpockets standard sur le trajet et autour du Champ-de-Mars.",
+            "Soirée tardive : le quartier reste calme après 22h sauf autour des cafés ; éviter les ruelles annexes mal éclairées.",
+            "Marché Grenelle (lundi/jeudi matin) : forte affluence locale, bel échantillon du quotidien parisien."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle du quartier. audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg",
+        "alt": "Tour Eiffel vue du Champ-de-Mars — à 10 minutes à pied de La Motte-Picquet - Grenelle",
+        "width": 2900,
+        "height": 5367,
+        "credit": {
+            "author": "Benh LIEU SONG",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-400.avif",
+                "800": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-800.avif",
+                "1200": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1200.avif",
+                "1600": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-400.webp",
+                "800": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-800.webp",
+                "1200": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1200.webp",
+                "1600": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-400.jpg",
+                "800": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-800.jpg",
+                "1200": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1200.jpg",
+                "1600": "/assets/img/stations/la-motte-picquet-grenelle/la-motte-picquet-grenelle-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 1,
+            "total_lines": 3
+        },
+        "details": "Seule la ligne 6 est accessible PMR à La Motte-Picquet - Grenelle (configuration aérienne du quai). M8 et M10 non accessibles (escaliers fixes). Pour un trajet PMR, privilégier la M6."
+    }
+}
