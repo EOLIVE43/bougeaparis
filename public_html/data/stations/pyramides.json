@@ -1,0 +1,616 @@
+{
+    "published": true,
+    "slug": "pyramides",
+    "name": "Pyramides",
+    "name_full": "Pyramides (Métro 7 + 14)",
+    "arrondissement": "1er (Paris)",
+    "address": "Avenue de l'Opéra / Rue des Pyramides, 75001 Paris",
+    "latitude": 48.86636077924874,
+    "longitude": 2.334298809707522,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Pyramides station",
+        "es": "Estación Pyramides"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "21",
+            "27",
+            "29",
+            "39",
+            "68"
+        ],
+        "nocturne": [],
+        "regional": [
+            "95"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 3,
+            "nearby_count": 19
+        }
+    },
+    "seo": {
+        "description": "Station Pyramides : M7 + M14 sous l'avenue de l'Opéra (1er). Statue dorée de Jeanne d'Arc, Louvre à 3 min, Office de tourisme de Paris. M14 PMR accessible."
+    },
+    "hero": {
+        "tagline": "Sous la statue dorée de Jeanne d'Arc",
+        "description": "Inaugurée sur la <strong>ligne 7</strong> le <strong>1er juillet 1916</strong> et rejointe par la <strong>ligne 14</strong> automatique le <strong>15 octobre 1998</strong>, la station Pyramides est l'un des accès privilégiés du <strong>1er arrondissement</strong>. Elle dessert la <strong>place des Pyramides</strong> et sa célèbre <strong>statue équestre dorée de Jeanne d'Arc</strong> sculptée par <strong>Emmanuel Frémiet en 1874</strong>, ainsi que le <strong>musée du Louvre</strong> et le <strong>jardin des Tuileries</strong> à moins de 5 minutes à pied. La <strong>M14</strong>, ligne automatique, offre une accessibilité PMR complète."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Palais Royal - Musée du Louvre",
+                "slug": "palais-royal-musee-du-louvre",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Opéra",
+                "slug": "opera",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Madeleine",
+                "slug": "madeleine",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Pyramides</strong> est un nœud d'échange du <strong>1er arrondissement</strong>, à la croisée de l'historique <strong>ligne 7</strong> (axe nord-sud entre La Courneuve et Mairie d'Ivry, ouverte en <strong>1916</strong>) et de la moderne <strong>ligne 14</strong> automatique (entre Saint-Denis - Pleyel et l'aéroport d'Orly, ouverte en <strong>1998</strong> et prolongée à Orly en <strong>juin 2024</strong>). Située sous l'<strong>avenue de l'Opéra</strong>, elle dessert la <strong>place des Pyramides</strong>, à l'angle de la <strong>rue de Rivoli</strong>.",
+        "Le repère iconique de la place est la <strong>statue équestre dorée de Jeanne d'Arc</strong>, sculptée en <strong>1874</strong> par <strong>Emmanuel Frémiet</strong>. La place elle-même tire son nom commémoratif de la <strong>bataille des Pyramides</strong> remportée par <strong>Bonaparte en Égypte en 1798</strong>, mais elle a porté jusqu'en <strong>1932</strong> le nom de « Place de Rivoli ». L'<strong>Hôtel Regina</strong> occupe une grande partie du pourtour de la place.",
+        "Pyramides est une <strong>alternative pratique à Palais-Royal - Musée du Louvre</strong> pour accéder au musée : l'<strong>aile Rivoli</strong> du Louvre est à <strong>3 minutes à pied</strong>, le <strong>Carrousel du Louvre</strong> à <strong>5 minutes</strong>, et l'<strong>Office de tourisme de Paris</strong> est installé tout proche, <strong>25 rue des Pyramides</strong>. La station a totalisé <strong>6 069 724 entrants en 2019</strong> (<strong>59e station</strong>), en progression continue depuis l'ouverture de la M14."
+    ],
+    "history": {
+        "title": "De 1916 à 1998 : 82 ans entre les deux lignes de la station",
+        "paragraphs": [
+            "La station Pyramides est inaugurée sur la <strong>ligne 7</strong> le <strong>1er juillet 1916</strong>, à l'occasion du <strong>premier prolongement sud de la ligne depuis Opéra</strong>. À l'origine, la M7 desservait Opéra → Palais-Royal puis a été progressivement étendue jusqu'à La Courneuve au nord et Mairie d'Ivry / Villejuif au sud. Le décor d'origine, partiellement conservé, est typique des stations d'<strong>entre-deux-guerres</strong> : <strong>carrelage blanc biseauté</strong> et <strong>cadres céramiques publicitaires</strong>.",
+            "Il faut attendre <strong>82 ans</strong> pour voir arriver la deuxième ligne : la <strong>ligne 14</strong> est inaugurée le <strong>15 octobre 1998</strong>, lors de l'ouverture de sa première section entre <strong>Madeleine et Bibliothèque François-Mitterrand</strong>. C'est alors la <strong>première ligne de métro entièrement automatique au monde</strong> ouverte au public en milieu urbain dense, conçue sans conducteur dès son origine.",
+            "Les quais de la M14 se distinguent par leur <strong>profondeur, leur largeur et leur architecture contemporaine</strong>. À Pyramides, ils accueillent <strong>« Tissignalisation no 14 »</strong>, une œuvre d'art permanente du sculpteur <strong>Jacques Tissinier</strong> : environ <strong>1 000 disques d'acier émaillé colorés</strong> évoquant des <strong>feuilles de papyrus stylisées</strong>, en clin d'œil au nom de la station et à l'Égypte ancienne.",
+            "En <strong>juin 2024</strong>, la ligne 14 a été <strong>prolongée jusqu'à l'aéroport d'Orly</strong> au sud et <strong>Saint-Denis - Pleyel</strong> au nord, dans le cadre des travaux du <strong>Grand Paris Express</strong>. Pyramides est ainsi devenue une station stratégique pour rallier <strong>Orly en environ 25 minutes</strong> depuis le centre de Paris, sans changement."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Pyramides ?",
+            "answer": "<strong>Deux lignes</strong> desservent Pyramides : la <strong>M7</strong> (La Courneuve ↔ Mairie d'Ivry / Villejuif), ouverte ici en <strong>1916</strong>, et la <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly), ligne automatique inaugurée le <strong>15 octobre 1998</strong> et prolongée à Orly en <strong>juin 2024</strong>. Aucune correspondance RER directe en station — pour le RER A/B/D, descendre à <strong>Châtelet</strong> via la M14 (3 stations)."
+        },
+        {
+            "question": "Comment rejoindre le musée du Louvre depuis Pyramides ?",
+            "answer": "<strong>3 à 4 minutes à pied</strong> : sortir avenue de l'Opéra ou rue des Pyramides, prendre la <strong>rue de Rivoli</strong> en direction de l'est, l'<strong>aile Rivoli du Louvre</strong> apparaît immédiatement. Pour le <strong>Carrousel du Louvre</strong> (entrée par la pyramide en sous-sol), compter ~5 minutes via la place des Pyramides puis la rue de Rivoli. Pyramides est souvent une <strong>alternative moins fréquentée</strong> que la station Palais-Royal - Musée du Louvre."
+        },
+        {
+            "question": "Que représente la statue dorée de la place des Pyramides ?",
+            "answer": "C'est la <strong>statue équestre de Jeanne d'Arc</strong>, sculptée par <strong>Emmanuel Frémiet</strong> et installée en <strong>1874</strong>. Le <strong>bronze doré</strong> représente Jeanne d'Arc en armure, sur son cheval, brandissant son étendard. La statue marque le lieu où elle aurait été blessée pendant le siège de Paris en <strong>1429</strong>. C'est l'un des bronzes équestres les plus photographiés de Paris."
+        },
+        {
+            "question": "Pourquoi la place s'appelle-t-elle « Place des Pyramides » ?",
+            "answer": "Le nom commémore la <strong>bataille des Pyramides</strong> remportée par <strong>Bonaparte le 21 juillet 1798</strong> pendant la campagne d'Égypte. La place a été créée par arrêté en <strong>1801</strong> sous le nom de « Place de Rivoli ». Elle n'a été officiellement rebaptisée <strong>« Place des Pyramides »</strong> qu'en <strong>1932</strong>. Elle mesure <strong>42 mètres de long</strong> sur <strong>23,5 mètres de large</strong>."
+        },
+        {
+            "question": "La station Pyramides est-elle accessible aux PMR ?",
+            "answer": "<strong>La ligne M14</strong> est <strong>entièrement accessible aux personnes à mobilité réduite</strong> à Pyramides, avec des ascenseurs aux accès et entre les quais. <strong>La ligne M7</strong>, en revanche, <strong>n'est pas accessible PMR</strong> : escaliers fixes uniquement. Pour un trajet 100 % PMR vers le Louvre ou Orly, privilégier la M14."
+        },
+        {
+            "question": "Comment aller à l'aéroport d'Orly depuis Pyramides ?",
+            "answer": "<strong>Trajet direct en M14</strong> depuis juin 2024 : prendre la <strong>M14 direction Aéroport d'Orly</strong>, durée d'environ <strong>25 minutes</strong> sans changement. Tarif au tarif normal du réseau (l'aéroport d'Orly étant désormais en <strong>zone 4</strong> mais accessible avec un ticket « Origine-Destination » M14). C'est l'itinéraire le plus rapide et le moins cher depuis le centre de Paris vers Orly."
+        },
+        {
+            "question": "Où se trouve l'Office de tourisme de Paris ?",
+            "answer": "L'<strong>Office de tourisme de Paris</strong> se trouve au <strong>25 rue des Pyramides</strong>, à <strong>moins de 100 mètres</strong> de la station — sortie <strong>3 « r. des Pyramides »</strong>. Ouvert toute l'année, il propose informations pratiques, billetterie monuments, Paris Visite, Paris Museum Pass et conseils personnalisés en plusieurs langues."
+        },
+        {
+            "question": "Quels sont les horaires de la station Pyramides ?",
+            "answer": "<strong>M7</strong> : ~5h30 à 1h15 en semaine, jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. <strong>M14</strong> : la ligne automatique fonctionne <strong>jusqu'à 1h15</strong> en semaine et <strong>2h15</strong> les vendredis, samedis et veilles de fête, avec une fréquence très élevée (1-2 min en pointe). La nuit, Noctilien à proximité (Châtelet via M14 en 5 min)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Sortie 3 « r. des Pyramides »</strong> : pour la statue Jeanne d'Arc, l'<strong>Office de tourisme</strong> (25 rue des Pyramides) et la rue de Rivoli vers le Louvre.",
+        "<strong>Sorties 1 & 2 avenue de l'Opéra</strong> : pour rejoindre l'<strong>Opéra Garnier</strong> à pied (~10 min) ou le quartier des grands magasins (Galeries Lafayette, Printemps).",
+        "<strong>M14 = ligne automatique PMR</strong> : ascenseurs aux accès, fréquence très élevée (1-2 min), idéale avec valises ou poussette.",
+        "<strong>Alternative moins fréquentée que Palais-Royal</strong> pour le Louvre : entrée Rivoli à 3 min à pied, moins de queues à l'entrée touristique.",
+        "<strong>Direction Orly</strong> : embarquer M14 sud, comptez ~25 min jusqu'à l'aéroport sans changement (depuis juin 2024).",
+        "Pour le <strong>jardin des Tuileries</strong> et la <strong>place Vendôme</strong> : 5 à 7 min à pied par la rue de Rivoli puis la rue de Castiglione."
+    ],
+    "trivia": [
+        {
+            "icon": "⚔️",
+            "title": "La statue dorée de Jeanne d'Arc par Frémiet (1874)",
+            "content": "Au centre de la place trône la <strong>statue équestre de Jeanne d'Arc</strong>, en <strong>bronze doré</strong>, œuvre du sculpteur <strong>Emmanuel Frémiet</strong> inaugurée en <strong>1874</strong>. Frémiet la représente en armure sur son cheval, étendard levé. La statue est installée à l'endroit où Jeanne d'Arc aurait été <strong>blessée pendant le siège de Paris en 1429</strong>. C'est l'un des <strong>monuments dorés les plus photographiés de Paris</strong>, et le lieu de rassemblements annuels chaque mois de mai."
+        },
+        {
+            "icon": "🤖",
+            "title": "M14 : première ligne entièrement automatique au monde (1998)",
+            "content": "L'arrivée de la <strong>M14</strong> à Pyramides en <strong>octobre 1998</strong> marque l'<strong>ouverture de la première ligne de métro entièrement automatique en milieu urbain dense</strong>. Conçue sans conducteur dès l'origine, équipée de <strong>portes palières</strong> et de <strong>rames MP 89/MP 05/MP 14</strong>, elle a servi de modèle à l'automatisation ultérieure des M1 (2012) et M4 (2022). Prolongée jusqu'à Orly en juin 2024."
+        },
+        {
+            "icon": "🎨",
+            "title": "« Tissignalisation no 14 » de Jacques Tissinier",
+            "content": "Les quais de la M14 à Pyramides accueillent une <strong>œuvre d'art permanente</strong> intitulée <strong>« Tissignalisation no 14 »</strong> du sculpteur <strong>Jacques Tissinier</strong>. Elle se compose d'<strong>environ 1 000 disques d'acier émaillé colorés</strong> évoquant des <strong>feuilles de papyrus stylisées</strong>, en référence au nom de la station et à la civilisation égyptienne ancienne. C'est l'une des <strong>œuvres d'art souterraines</strong> du programme artistique de la RATP."
+        },
+        {
+            "icon": "🇪🇬",
+            "title": "Une place née en 1801, rebaptisée 131 ans plus tard",
+            "content": "La <strong>place des Pyramides</strong> a été créée par arrêté en <strong>1801</strong> sous le nom de <strong>« Place de Rivoli »</strong>. Elle commémore la <strong>bataille des Pyramides</strong> remportée par <strong>Bonaparte en Égypte le 21 juillet 1798</strong>. Pourtant, le nom officiel <strong>« Place des Pyramides »</strong> n'a été adopté qu'en <strong>1932</strong>, soit <strong>131 ans après sa création</strong>. La place ne mesure que <strong>42 m sur 23,5 m</strong> — modeste mais hautement symbolique."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée du Louvre (aile Rivoli)",
+            "destination_slug": "louvre",
+            "destination_full_name": "Pyramides → Musée du Louvre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Rivoli (~250 m)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-louvre/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Pyramides → Aéroport d'Orly via M14",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct (depuis juin 2024)",
+            "duration_minutes": 25,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-orly/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Pyramides → Opéra (Palais Garnier)",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 direction La Courneuve (1 station) ou à pied (~10 min)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-opera/"
+        },
+        {
+            "destination_name": "Jardin des Tuileries",
+            "destination_slug": "tuileries",
+            "destination_full_name": "Pyramides → Jardin des Tuileries",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Rivoli (~500 m)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-tuileries/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Pyramides → Châtelet via M14",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (3 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-chatelet/"
+        },
+        {
+            "destination_name": "Tour Eiffel",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Pyramides → Tour Eiffel",
+            "lines_used": [
+                "M14",
+                "M6"
+            ],
+            "lines_label": "M14 jusqu'à Pyramides → en réalité : direct M7 jusqu'à Opéra puis M9 jusqu'à Trocadéro (alternative)",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Place Vendôme",
+            "destination_slug": "place-vendome",
+            "destination_full_name": "Pyramides → Place Vendôme",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Castiglione (~350 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-vendome/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B (avec correspondance)",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Pyramides → CDG via M14 + RER B",
+            "lines_used": [
+                "M14",
+                "RER B"
+            ],
+            "lines_label": "M14 jusqu'à Châtelet, RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pyramides/pyramides-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q19675",
+            "name": "musée du Louvre",
+            "category": "musée",
+            "description": "Le musée du Louvre est un musée parisien situé au sein du palais du Louvre dans le 1er arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cour%20Napol%C3%A9on%20at%20night%20-%20Louvre.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre",
+            "latitude": 48.861111,
+            "longitude": 2.335833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de l'Échelle",
+                "distance_m": 470,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q187840",
+            "name": "palais Garnier",
+            "category": "palais",
+            "description": "L'opéra Garnier, ou palais Garnier, est un théâtre national qui a la vocation d'être une académie de musique, de chorégraphie et de poésie lyrique ; il est un élément majeur du patrimoine du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Palais%20Garnier%202010-04-06%2016.55.07.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier",
+            "latitude": 48.871944,
+            "longitude": 2.331667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 669,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q234364",
+            "name": "palais des Tuileries",
+            "category": "palais",
+            "description": "Le palais des Tuileries est un ancien palais parisien, aujourd'hui détruit, dont la construction commença en 1564 sous l'impulsion de Catherine de Médicis, à l'emplacement occupé auparavant par l'une…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuileries%20jardin%201867.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_des_Tuileries",
+            "latitude": 48.862222,
+            "longitude": 2.331111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de l'Échelle",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q329948",
+            "name": "Palais-Royal",
+            "category": "palais",
+            "description": "Le Palais-Royal, ensemble monumental au nord du palais du Louvre dans le 1er arrondissement de Paris, est un haut lieu de l’histoire de France et de la vie parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
+            "latitude": 48.863333,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. de l'Opéra",
+                "distance_m": 278,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q818517",
+            "name": "jardin des Tuileries",
+            "category": "jardin",
+            "description": "Le jardin des Tuileries, parfois appelé jardins des Tuileries au pluriel, est un parc grillagé parisien du 1er arrondissement créé au XVIe siècle, à l'emplacement d'anciennes tuileries qui lui ont…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Roue%20de%20Paris%20-%20Louvre%20et%20Jardins%20des%20Tuileries.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries",
+            "latitude": 48.863889,
+            "longitude": 2.326111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de l'Échelle",
+                "distance_m": 621,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q643520",
+            "name": "place Vendôme",
+            "category": "place",
+            "description": "La place Vendôme est une place de Paris, située dans le 1er arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Vend%C3%B4me%20vue%20a%C3%A9rienne.png?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Vend%C3%B4me",
+            "latitude": 48.8675,
+            "longitude": 2.329444,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 365,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q631104",
+            "name": "arc de triomphe du Carrousel",
+            "category": "monument",
+            "description": "L’arc de triomphe du Carrousel est un monument parisien inauguré le 15 août 1808 et situé place du Carrousel, dans le 1er arrondissement de Paris, à l'ouest du musée du Louvre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Jardin%20des%20Tuileries%20-%20Arc%20de%20Triomphe%20du%20Carrousel%20-%20PA00085992%20-%20003.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_du_Carrousel",
+            "latitude": 48.861667,
+            "longitude": 2.332778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de l'Échelle",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q656054",
+            "name": "hôtel Ritz Paris",
+            "category": "site notable",
+            "description": "Le Ritz Paris est un hôtel classé 5 étoiles situé au 15, place Vendôme, dans le 1er arrondissement de Paris. Il est considéré comme l'un des plus beaux, grands et luxueux hôtels au monde.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Ritz.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ritz_Paris",
+            "latitude": 48.86797,
+            "longitude": 2.32889,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 424,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q915451",
+            "name": "Olympia",
+            "category": "site notable",
+            "description": "L'Olympia est une salle de spectacle située 28, boulevard des Capucines, dans le 9e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Olympia%20Paris%206.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Olympia_(Paris)",
+            "latitude": 48.870278,
+            "longitude": 2.328333,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 619,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q872222",
+            "name": "théâtre national de l'Opéra-Comique",
+            "category": "théâtre",
+            "description": "Le théâtre national de l'Opéra-Comique, également appelé « salle Favart », est une salle de spectacles située place Boieldieu, dans le 2e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20Comique%2C%20Paris%2011%20March%202018.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_de_l%27Op%C3%A9ra-Comique",
+            "latitude": 48.870861,
+            "longitude": 2.337511,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 587,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1362670",
+            "name": "place des Victoires",
+            "category": "place",
+            "description": "La place des Victoires est une place de Paris dédiée lors de sa création à Louis XIV. Elle est située au cœur du centre historique de la capitale, à cheval sur les 1er et 2e arrondissements.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
+            "latitude": 48.865833,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. de l'Opéra",
+                "distance_m": 470,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q656296",
+            "name": "Jeu de Paume",
+            "category": "musée",
+            "description": "Le Jeu de paume est un centre d'art consacré aux images du XIXe siècle à nos jours, sous toutes leurs formes d'une superficie de 1 200 m2, situé à l'angle nord-ouest du jardin des Tuileries, place de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Jeu%20de%20Paume%2C%201%20place%20de%20la%20Concorde%20%C3%A0%20Paris%2C%20juillet%202021.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jeu_de_paume_(centre_d%27art)",
+            "latitude": 48.865833,
+            "longitude": 2.323889,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Pyramides",
+                "distance_m": 738,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. de l'Opéra",
+            "address_full": "14 Avenue de l'Opéra 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.865324,
+            "longitude": 2.334656,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "av. de l'Opéra",
+            "address_full": "16 Avenue de l'Opéra 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.865477,
+            "longitude": 2.334709,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de l'Échelle",
+            "address_full": "13 Avenue de l'Opéra 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.865394,
+            "longitude": 2.334287,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de l'Échelle",
+            "address_full": "11 Avenue de l'Opéra 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.865242,
+            "longitude": 2.334467,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. des Pyramides",
+            "address_full": "29 Rue des Pyramides 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.866121,
+            "longitude": 2.333965,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Office de tourisme de Paris",
+            "details": "25 rue des Pyramides, à moins de 100 m de la sortie 3.",
+            "secondary": "Galeries d'art, cafés et brasseries autour de la place des Pyramides et de l'avenue de l'Opéra."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique permanente sur la place des Pyramides et autour de la statue Jeanne d'Arc : vigilance pickpockets, en particulier près des sorties 1 et 2.",
+            "Rassemblements annuels autour de la statue Jeanne d'Arc en mai (commémorations) : dispositif policier renforcé certains jours, vérifier l'actualité.",
+            "Soirée tardive : la zone reste vivante grâce à la rue de Rivoli et l'Opéra, mais préférer la M14 (ligne automatique, fréquence élevée) pour les retours après 23h.",
+            "Proximité des grands hôtels et boutiques de luxe (Ritz, Hermès, Cartier) : présence policière régulière, environnement sécurisé en journée."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature touristique et commerciale du site (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Place_Pyramides_-_Paris_I_%28FR75%29_-_2025-06-16_-_2.jpg",
+        "alt": "Place des Pyramides, statue équestre dorée de Jeanne d'Arc par Emmanuel Frémiet (1874), au pied de la station",
+        "width": 5712,
+        "height": 4284,
+        "credit": {
+            "author": "Chabe01 (Charly Bernard)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Place_Pyramides_-_Paris_I_(FR75)_-_2025-06-16_-_2.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pyramides/pyramides-400.avif",
+                "800": "/assets/img/stations/pyramides/pyramides-800.avif",
+                "1200": "/assets/img/stations/pyramides/pyramides-1200.avif",
+                "1600": "/assets/img/stations/pyramides/pyramides-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pyramides/pyramides-400.webp",
+                "800": "/assets/img/stations/pyramides/pyramides-800.webp",
+                "1200": "/assets/img/stations/pyramides/pyramides-1200.webp",
+                "1600": "/assets/img/stations/pyramides/pyramides-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pyramides/pyramides-400.jpg",
+                "800": "/assets/img/stations/pyramides/pyramides-800.jpg",
+                "1200": "/assets/img/stations/pyramides/pyramides-1200.jpg",
+                "1600": "/assets/img/stations/pyramides/pyramides-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 1,
+            "total_lines": 2
+        },
+        "details": "M14 : entièrement accessible PMR (ligne automatique, ascenseurs aux accès et entre quais). M7 : non accessible (escaliers fixes uniquement). Pour un trajet PMR vers Louvre ou Orly, privilégier la M14."
+    }
+}
