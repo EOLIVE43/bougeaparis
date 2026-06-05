@@ -1,0 +1,655 @@
+{
+    "published": true,
+    "slug": "montparnasse-bienvenue",
+    "name": "Montparnasse - Bienvenüe",
+    "name_full": "Montparnasse - Bienvenüe (Métro 4 + 6 + 12 + 13 + SNCF TGV)",
+    "arrondissement": "14e / 15e (Paris)",
+    "address": "Place Raoul-Dautry / Boulevard de Vaugirard, 75015 Paris",
+    "latitude": 48.84067243107856,
+    "longitude": 2.319342991047202,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Montparnasse-Bienvenüe station",
+        "es": "Estación Montparnasse-Bienvenüe"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "28",
+            "39",
+            "58",
+            "88",
+            "91",
+            "92",
+            "94",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N12",
+            "N13",
+            "N61",
+            "N62",
+            "N63",
+            "N66",
+            "N160",
+            "N161",
+            "N162"
+        ],
+        "regional": [
+            "95",
+            "N"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 1,
+            "nearby_count": 34
+        }
+    },
+    "seo": {
+        "description": "Montparnasse-Bienvenüe : M4 + M6 + M12 + M13 + SNCF TGV (Bretagne, Sud-Ouest). 4e station du réseau (29,9 M voyageurs 2019), Tour Montparnasse 210 m."
+    },
+    "hero": {
+        "tagline": "Hommage à Fulgence Bienvenüe, père du métro parisien",
+        "description": "<strong>Quatrième station la plus fréquentée du métro de Paris</strong> avec environ <strong>29,9 millions de voyageurs en 2019</strong>, Montparnasse - Bienvenüe est un pôle d'échange majeur à la croisée de <strong>quatre lignes</strong> : <strong>M4</strong> (1910), <strong>M6</strong> (1906), <strong>M12</strong> (1910), <strong>M13</strong> (1937). Le sous-titre <strong>« Bienvenüe »</strong> rend hommage à <strong>Fulgence Bienvenüe</strong>, l'ingénieur créateur du métro parisien. La station est directement reliée à la <strong>Gare Montparnasse</strong>, hub TGV vers la <strong>Bretagne, le Sud-Ouest et l'Espagne</strong> (Brest, Rennes, Bordeaux, Toulouse, Hendaye). À 200 m de la sortie : la <strong>Tour Montparnasse</strong> (<strong>210 m</strong>, panorama du <strong>56ᵉ étage</strong>)."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Vavin",
+                "slug": "vavin",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Saint-Placide",
+                "slug": "saint-placide",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-6": {
+            "previous": {
+                "name": "Edgar Quinet",
+                "slug": "edgar-quinet",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Pasteur",
+                "slug": "pasteur",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        },
+        "metro-12": {
+            "previous": {
+                "name": "Notre-Dame-des-Champs",
+                "slug": "notre-dame-des-champs",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Falguière",
+                "slug": "falguiere",
+                "direction": "Mairie d'Issy"
+            }
+        },
+        "metro-13": {
+            "previous": {
+                "name": "Duroc",
+                "slug": "duroc",
+                "direction": "Saint-Denis - Université"
+            },
+            "next": {
+                "name": "Gaîté",
+                "slug": "gaite",
+                "direction": "Châtillon - Montrouge"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "<strong>Montparnasse - Bienvenüe</strong> est l'un des plus grands pôles d'échange du métro de Paris, à la croisée de <strong>quatre lignes</strong> (<strong>M4, M6, M12, M13</strong>) et reliée directement à la <strong>Gare Montparnasse</strong> SNCF. Avec environ <strong>29,9 millions de voyageurs en 2019</strong>, elle se classait au <strong>4e rang</strong> des stations du métro parisien, derrière Saint-Lazare, Gare du Nord et Châtelet. Située à la limite du <strong>14e et du 15e arrondissement</strong> (avec un pied dans le 6e), elle est l'accès métro privilégié à la <strong>Tour Montparnasse</strong>.",
+        "Le sous-titre <strong>« Bienvenüe »</strong> est un hommage à <strong>Fulgence Bienvenüe (1852-1936)</strong>, l'ingénieur créateur du <strong>métro parisien</strong>, qui a supervisé la conception et la construction de la quasi-totalité des premières lignes du réseau. La station regroupe <strong>8 quais et 8 voies</strong>, avec <strong>7 accès</strong> dont un débouchant directement dans la <strong>Gare Montparnasse</strong> SNCF. Un long <strong>couloir de correspondance de 185 mètres</strong> relie les paires de lignes, équipé de <strong>trois tapis roulants</strong> pour faciliter le trajet.",
+        "Côté SNCF, la <strong>Gare Montparnasse</strong> est le hub TGV vers l'<strong>ouest et le sud-ouest</strong> de la France : <strong>Rennes</strong> (~1h30), <strong>Brest</strong> (~3h25), <strong>Bordeaux</strong> (~2h05), <strong>Toulouse</strong> (~4h05), <strong>Hendaye</strong> (~4h05), ainsi que les liaisons vers le <strong>Pays basque espagnol</strong> et le <strong>Portugal</strong>. À 200 mètres de la sortie : la <strong>Tour Montparnasse</strong> (<strong>210 mètres</strong> de haut, inaugurée le <strong>18 juin 1973</strong>) avec son <strong>panorama du 56ᵉ étage</strong> et son terrasse en toit ouverte au public. À 10 minutes à pied : le <strong>Cimetière du Montparnasse</strong> (Baudelaire, Sartre, Beauvoir, Maupassant, Beckett)."
+    ],
+    "history": {
+        "title": "1906-1937 : quatre lignes en trente ans",
+        "paragraphs": [
+            "Les premiers quais sont ceux de la <strong>ligne 6</strong>, ouverts le <strong>24 avril 1906</strong> comme terminus provisoire « Place de Vauboise » (renommée plus tard Bienvenüe). La <strong>ligne 4</strong> arrive le <strong>6 avril 1910</strong> avec l'extension vers le sud de la ligne, suivie par la <strong>ligne 12</strong> (alors A de la compagnie Nord-Sud) le <strong>5 novembre 1910</strong>. Enfin, la <strong>ligne 13</strong> arrive le <strong>21 janvier 1937</strong>, complétant le pôle d'échange à <strong>quatre lignes</strong>.",
+            "Le sous-titre <strong>« Bienvenüe »</strong>, ajouté lors du renommage des stations en 1942, rend hommage à <strong>Fulgence Bienvenüe (1852-1936)</strong>, l'<strong>ingénieur créateur du métro parisien</strong>. Surnommé <em>« le père du métro »</em>, il a supervisé la conception et la construction de presque toutes les premières lignes du réseau (1900-1936). Son nom est resté attaché à cette station comme un hommage permanent à son œuvre, à proximité de la gare où arrivaient les ingénieurs et architectes.",
+            "Sur le plan architectural, la station est <strong>impressionnante par sa taille</strong> : <strong>8 quais et 8 voies</strong> au total, répartis sur deux niveaux selon les lignes. Les <strong>couloirs de correspondance</strong> peuvent atteindre <strong>185 mètres</strong> entre certaines paires de lignes (M4 ↔ M13 par exemple), avec <strong>3 tapis roulants</strong> installés pour faciliter le trajet. Les lignes 4 et 13 sont équipées de <strong>portes palières</strong> depuis leur automatisation respective.",
+            "À la surface, le quartier a connu une transformation radicale dans les années 1960-1970 : démolition de l'ancienne gare et construction du <strong>nouvel ensemble Montparnasse</strong> incluant la <strong>Tour Montparnasse</strong> (inaugurée le <strong>18 juin 1973</strong>, <strong>210 m</strong> de haut, alors le plus haut gratte-ciel d'Europe occidentale). La <strong>Gare Montparnasse</strong> elle-même a été reconstruite en 1969, et est devenue la tête de pont du TGV Atlantique en <strong>septembre 1989</strong> avec l'ouverture de la <strong>LGV Atlantique</strong> vers la Bretagne et le Sud-Ouest."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Montparnasse - Bienvenüe ?",
+            "answer": "<strong>Métro</strong> : M4 (automatique), M6, M12, M13. <strong>SNCF grandes lignes / TGV</strong> : TGV Atlantique vers la Bretagne (Rennes, Brest, Quimper, Saint-Malo), le Sud-Ouest (Bordeaux, Toulouse, Hendaye), le Pays basque, le Portugal. <strong>Transilien N</strong> (Mantes-la-Jolie, Dreux) et <strong>U</strong> (La Défense ↔ La Verrière). <strong>Pas de RER direct</strong> en gare. <strong>Bus</strong> : 28, 39, 58, 89, 91, 92, 94, 95, 96, plus Noctilien."
+        },
+        {
+            "question": "Qui est Fulgence Bienvenüe ?",
+            "answer": "<strong>Fulgence Bienvenüe (1852-1936)</strong> est l'<strong>ingénieur français qui a créé le métro parisien</strong>, surnommé <em>« le père du métro »</em>. Il a supervisé la conception et la construction de la quasi-totalité des premières lignes du réseau, depuis la M1 en 1900 jusqu'à sa retraite en 1932. Polytechnicien et ingénieur des Ponts et Chaussées, il était également surnommé <em>« le Vauban du métro »</em> pour son audace technique. Le sous-titre <strong>« Bienvenüe »</strong> de la station, ajouté en 1942, lui rend hommage."
+        },
+        {
+            "question": "Comment rejoindre la Tour Montparnasse depuis la station ?",
+            "answer": "<strong>2-3 minutes à pied</strong> : sortir côté <strong>Boulevard de Vaugirard</strong> (sortie 1), la Tour Montparnasse est juste en face. Inaugurée le <strong>18 juin 1973</strong>, elle culmine à <strong>210 m</strong> et offre un <strong>panorama exceptionnel sur Paris depuis le 56ᵉ étage</strong> avec terrasse en toit accessible au public. Tarifs ~18 €/adulte. Ouverte tous les jours jusqu'à 22h30 (23h30 vendredi/samedi). Avantage par rapport à la Tour Eiffel : on voit la Tour Eiffel depuis cette terrasse."
+        },
+        {
+            "question": "Comment rejoindre Rennes / Bordeaux depuis Montparnasse ?",
+            "answer": "<strong>TGV Atlantique</strong> directs : <strong>Rennes</strong> (~1h30), <strong>Brest</strong> (~3h25), <strong>Saint-Malo</strong> (~2h45), <strong>Quimper</strong> (~3h50), <strong>Bordeaux</strong> (~2h05), <strong>Toulouse</strong> (~4h05), <strong>Hendaye</strong> (~4h05). Fréquences élevées en pointe. <strong>Premier TGV vers 6h30, dernier vers 21h</strong>. Réservation conseillée week-ends et vacances scolaires."
+        },
+        {
+            "question": "La station Montparnasse - Bienvenüe est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong> sur les 4 lignes de métro. Pas d'ascenseurs vers les quais. Les <strong>lignes M4 et M13</strong> ont des portes palières depuis leur automatisation, mais le réseau de correspondance reste non conforme PMR. <strong>SNCF grandes lignes</strong> : ascenseurs et personnel d'assistance — service <strong>SNCF Accès Plus</strong> sur réservation. Pour un trajet PMR vers le métro, descendre à <strong>Châtelet</strong> (M14 PMR) puis bus 95 accessible vers Montparnasse."
+        },
+        {
+            "question": "Quels sont les horaires de la station Montparnasse - Bienvenüe ?",
+            "answer": "<strong>SNCF TGV</strong> : premiers vers 6h30, derniers vers 21h. <strong>Métro M4, M6, M12, M13</strong> : ~5h30 à 1h15, jusqu'à 2h15 vendredi/samedi/veille de fête. La <strong>M4 automatique</strong> a la fréquence la plus élevée. La nuit, <strong>Noctilien</strong> N62, N66, N122, N144, N145 depuis la gare."
+        },
+        {
+            "question": "Que voir autour de la station Montparnasse - Bienvenüe ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : la <strong>Tour Montparnasse</strong> (panorama 56e étage), le <strong>Cimetière du Montparnasse</strong> (Baudelaire, Sartre, Beauvoir, Maupassant, Beckett, Serge Gainsbourg), les <strong>cafés mythiques du Montparnasse</strong> (Le Dôme, La Coupole, La Rotonde, La Closerie des Lilas) où ont fréquenté Hemingway, Picasso, Modigliani, les <strong>Catacombes de Paris</strong> (15 min à pied via Denfert-Rochereau), le <strong>Musée Bourdelle</strong> et le <strong>Jardin du Luxembourg</strong> (15 min)."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la gare ?",
+            "answer": "<strong>Sanitaires</strong> : payants dans la gare SNCF. <strong>Consigne SNCF</strong> : ~7-12 €/jour selon taille. <strong>Restauration</strong> : nombreuses options dans la gare (Paul, Eric Kayser, brasseries, food court), plus le centre commercial intégré. <strong>Boutiques</strong> : Relay, Carrefour Express, pharmacie, vêtements. <strong>WiFi SNCF gratuit</strong> 60 min."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Couloir 185 m M4 ↔ M13</strong> : prévoir 5-8 minutes pour la correspondance la plus longue.",
+        "Pour la <strong>Tour Montparnasse</strong> : sortie côté Boulevard de Vaugirard, 2-3 min à pied.",
+        "Pour le <strong>Cimetière Montparnasse</strong> : sortie Boulevard Edgar Quinet, 5 min à pied.",
+        "<strong>Tapis roulants</strong> dans les couloirs de correspondance — utiles avec valises.",
+        "<strong>TGV Atlantique</strong> : enregistrement non obligatoire, arrivée 10 min avant départ suffit (sauf TGV inOui Pro Première).",
+        "Pour les <strong>cafés mythiques du Montparnasse</strong> : sortie Boulevard du Montparnasse, à pied vers la place Pablo Picasso."
+    ],
+    "trivia": [
+        {
+            "icon": "👷",
+            "title": "Hommage à Fulgence Bienvenüe (1852-1936), père du métro",
+            "content": "Le sous-titre <strong>« Bienvenüe »</strong>, ajouté en <strong>1942</strong>, rend hommage à <strong>Fulgence Bienvenüe (1852-1936)</strong>, l'<strong>ingénieur français qui a créé le métro parisien</strong>. Polytechnicien et ingénieur des Ponts et Chaussées, il a supervisé la conception et la construction de la quasi-totalité des premières lignes du réseau, de la M1 en 1900 jusqu'à sa retraite en 1932. Il était surnommé <em>« le père du métro »</em> et <em>« le Vauban du métro »</em>."
+        },
+        {
+            "icon": "🏗️",
+            "title": "Tour Montparnasse (1973) : 210 m, alors gratte-ciel le plus haut d'Europe",
+            "content": "Inaugurée le <strong>18 juin 1973</strong>, la <strong>Tour Montparnasse</strong> culmine à <strong>210 mètres</strong> et fut alors le <strong>plus haut gratte-ciel d'Europe occidentale</strong>. Conçue par les architectes <strong>Eugène Beaudouin, Urbain Cassan, Jean Saubot et Louis de Hoÿm de Marien</strong>, elle compte <strong>59 étages</strong> et environ <strong>120 000 m² de bureaux</strong>. Son <strong>panorama du 56ᵉ étage</strong> est l'un des plus prisés de Paris — paradoxalement, l'un des seuls endroits d'où on ne la voit pas (mais d'où on voit la Tour Eiffel)."
+        },
+        {
+            "icon": "🚇",
+            "title": "8 quais, 8 voies et 185 m de couloirs",
+            "content": "Montparnasse - Bienvenüe est l'une des stations les plus grandes du réseau métro parisien : <strong>8 quais et 8 voies</strong> réparties sur deux niveaux selon les lignes. Le <strong>couloir de correspondance le plus long mesure 185 mètres</strong> (entre M4 et M13), équipé de <strong>3 tapis roulants</strong> pour faciliter le trajet. Avec <strong>7 accès</strong> en surface et un débouchant directement dans la Gare Montparnasse, elle est l'un des plus grands pôles d'échange du réseau."
+        },
+        {
+            "icon": "🚄",
+            "title": "Septembre 1989 : LGV Atlantique inaugurée",
+            "content": "La <strong>LGV Atlantique</strong>, mise en service en <strong>septembre 1989</strong>, a fait de la Gare Montparnasse la <strong>tête de pont du TGV vers la Bretagne et le Sud-Ouest</strong>. Aujourd'hui, depuis Montparnasse, on rejoint <strong>Bordeaux en 2h05</strong>, <strong>Rennes en 1h30</strong>, <strong>Brest en 3h25</strong>, <strong>Toulouse en 4h05</strong>, et même <strong>Hendaye en 4h05</strong>. C'était la <strong>deuxième Ligne à Grande Vitesse</strong> ouverte en France, après la LGV Sud-Est de 1981."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tour Montparnasse (panorama)",
+            "destination_slug": "tour-montparnasse",
+            "destination_full_name": "Montparnasse - Bienvenüe → Tour Montparnasse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard de Vaugirard (~150 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-tour/"
+        },
+        {
+            "destination_name": "Bordeaux / Rennes / Brest via TGV",
+            "destination_slug": "tgv-atlantique",
+            "destination_full_name": "Montparnasse → Bordeaux/Rennes/Brest",
+            "lines_used": [
+                "TGV"
+            ],
+            "lines_label": "TGV Atlantique directs Bretagne et Sud-Ouest",
+            "duration_minutes": 90,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-tgv/"
+        },
+        {
+            "destination_name": "Cimetière Montparnasse",
+            "destination_slug": "cimetiere-montparnasse",
+            "destination_full_name": "Montparnasse - Bienvenüe → Cimetière",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Edgar Quinet (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-cimetiere/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Montparnasse - Bienvenüe → Tour Eiffel",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Charles-de-Gaulle - Étoile jusqu'à Bir-Hakeim (4 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Jardin du Luxembourg",
+            "destination_slug": "jardin-luxembourg",
+            "destination_full_name": "Montparnasse - Bienvenüe → Jardin du Luxembourg",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard du Montparnasse (~900 m)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-luxembourg/"
+        },
+        {
+            "destination_name": "Catacombes",
+            "destination_slug": "catacombes",
+            "destination_full_name": "Montparnasse - Bienvenüe → Catacombes",
+            "lines_used": [
+                "M4",
+                "M6"
+            ],
+            "lines_label": "M4 ou M6 jusqu'à Denfert-Rochereau (2-3 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-catacombes/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Montparnasse → CDG",
+            "lines_used": [
+                "M4",
+                "RER B"
+            ],
+            "lines_label": "M4 jusqu'à Châtelet, RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-cdg/"
+        },
+        {
+            "destination_name": "Champs-Élysées",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Montparnasse → Champs-Élysées",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile (12 stations)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-montparnasse-bienvenue/montparnasse-vers-champs-elysees/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "La tour Montparnasse est le plus haut gratte-ciel de Paris intra-muros, situé dans le quartier Necker.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+                "distance_m": 173,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q631114",
+            "name": "Paris-Montparnasse",
+            "category": "gare",
+            "description": "La gare de Paris-Montparnasse, dite aussi gare Montparnasse, anciennement appelée gare de l'Ouest, est l'une des six grandes gares ferroviaires terminus parisiennes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare-Montparnasse-Paris-02-2018.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Montparnasse",
+            "latitude": 48.839333,
+            "longitude": 2.318289,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Boulevard de Vaugirard (Tour Montparnasse)",
+                "distance_m": 162,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2715373",
+            "name": "musée Bourdelle",
+            "category": "musée",
+            "description": "Le musée Bourdelle est l'un des quatorze musées de la Ville de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20musee%20bourdelle%20maison.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bourdelle",
+            "latitude": 48.843056,
+            "longitude": 2.318333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Gare Montparnasse (accès SNCF)",
+                "distance_m": 238,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1581237",
+            "name": "Comédie-Italienne",
+            "category": "théâtre",
+            "description": "Les termes Comédie-Italienne et Théâtre-Italien sont des noms qui ont été utilisés pour les pièces de théâtre de langue italienne jouées par de nombreuses troupes en France, notamment à Paris, depuis…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Com%C3%A9die%20Italienne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_italien_de_Paris",
+            "latitude": 48.84016,
+            "longitude": 2.323882,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+                "distance_m": 89,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2255375",
+            "name": "musée Pasteur",
+            "category": "musée",
+            "description": "Le musée Pasteur est ouvert au public en 1935 dans l'Institut Pasteur au 25, rue du Docteur-Roux, dans le quartier Necker du 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7oise%20Foliot%20-%20Mus%C3%A9e%20Pasteur%20-%20Chambre%20scientifique.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Pasteur",
+            "latitude": 48.84028,
+            "longitude": 2.31139,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Gare Montparnasse (accès SNCF)",
+                "distance_m": 572,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Le musée du Montparnasse est un musée à Paris, ouvert de 1998 à 2013, villa Marie-Vassilieff.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Gare Montparnasse (accès SNCF)",
+                "distance_m": 298,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2445818",
+            "name": "musée de La Poste",
+            "category": "musée",
+            "description": "Le Musée Postal est le musée d'entreprise du Groupe La Poste consacré à l'histoire postale et à la philatélie française.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Logo-musee-postal.png/330px-Logo-musee-postal.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Postal_(Paris)",
+            "latitude": 48.8412,
+            "longitude": 2.31626,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Gare Montparnasse (accès SNCF)",
+                "distance_m": 211,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q888776",
+            "name": "Bobino",
+            "category": "théâtre",
+            "description": "Bobino est, jusqu'à sa destruction en 1985, une salle de spectacles à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20Bobino.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bobino",
+            "latitude": 48.839689,
+            "longitude": 2.323589,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+                "distance_m": 122,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3145188",
+            "name": "hôpital Necker-Enfants malades",
+            "category": "hôpital",
+            "description": "L'hôpital Necker-Enfants malades est un centre hospitalier qui constitue depuis 2011 l'un des 12 groupes hospitaliers de l'Assistance publique - Hôpitaux de Paris (AP-HP).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Necker-Enfants%20malades%20rue%20de%20S%C3%A8vres.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Necker-Enfants_malades",
+            "latitude": 48.845,
+            "longitude": 2.315556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Gare Montparnasse (accès SNCF)",
+                "distance_m": 518,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1263082",
+            "name": "jardin Atlantique",
+            "category": "jardin",
+            "description": "Le jardin Atlantique est un jardin parisien du quartier Necker du 15e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Atlantique%202010-04-23.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Atlantique",
+            "latitude": 48.8399,
+            "longitude": 2.319,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Boulevard de Vaugirard (Tour Montparnasse)",
+                "distance_m": 82,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3329213",
+            "name": "musée Hébert",
+            "category": "musée",
+            "description": "Le musée Hébert de Paris était un musée d'art monographique labellisé Musée de France crée grâce à l'initiative de René Patris-d'Uckermann, fils adoptif de Gabrielle Hébert et héritier en ligne…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20H%C3%A9bert%2C%2085%20rue%20du%20Cherche-Midi%2C%20Paris%206e%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_H%C3%A9bert_(Paris)",
+            "latitude": 48.84736,
+            "longitude": 2.32264,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+                "distance_m": 740,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3527526",
+            "name": "théâtre Montparnasse",
+            "category": "théâtre",
+            "description": "Le théâtre Montparnasse est un théâtre parisien situé 31 rue de la Gaîté, dans le 14e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1030274%20Paris%20XIV%20th%C3%A9atre%20Montparnasse%20rue%20Larochelle%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_Montparnasse",
+            "latitude": 48.8409,
+            "longitude": 2.3245,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+                "distance_m": 111,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Boulevard de Vaugirard (Tour Montparnasse)",
+            "address_full": "Place Raoul-Dautry 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.840574,
+            "longitude": 2.319456,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Gare Montparnasse (accès SNCF)",
+            "address_full": "17 Boulevard de Vaugirard 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.840983,
+            "longitude": 2.319131,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Boulevard Edgar Quinet (Cimetière Montparnasse)",
+            "address_full": "Place Bienvenüe 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.840713,
+            "longitude": 2.323005,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "WiFi SNCF gratuit dans la gare",
+            "coverage_detail": "60 minutes/connexion"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "gare SNCF",
+                "centre commercial Montparnasse"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Niveau métro",
+            "services": "Information, vente de billets"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                "Consigne SNCF (~7-12 €/jour)"
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Gare Montparnasse + centre commercial intégré",
+            "details": "Food court (Paul, Eric Kayser, brasseries, McDonald's), boutiques mode, Relay, Carrefour Express, pharmacie.",
+            "secondary": "Cafés mythiques du Montparnasse à 5 min : Le Dôme, La Coupole, La Rotonde."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets dans les longs couloirs de correspondance — utiliser les tapis roulants permet de garder valises sous surveillance.",
+            "Forte présence police + SUGE (sûreté SNCF) — environnement plutôt sécurisé en transit.",
+            "Soirée tardive : la zone reste très fréquentée grâce aux derniers TGV et au Cinéma Pathé Montparnasse.",
+            "Lors d'événements (départs en vacances, week-end de Toussaint) : forte affluence, prévoir 15-20 min supplémentaires pour la traversée gare métro."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature de pôle 4 lignes + TGV. audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Tour_Montparnasse%2C_Fa%C3%A7ade_sud-est.jpg",
+        "alt": "Tour Montparnasse (1973), 210 m, façade sud-est — point culminant du quartier Montparnasse",
+        "width": 2712,
+        "height": 2030,
+        "credit": {
+            "author": "Annick Bregain (Kalianouk)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Tour_Montparnasse,_Fa%C3%A7ade_sud-est.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-400.avif",
+                "800": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-800.avif",
+                "1200": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1200.avif",
+                "1600": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-400.webp",
+                "800": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-800.webp",
+                "1200": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1200.webp",
+                "1600": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-400.jpg",
+                "800": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-800.jpg",
+                "1200": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1200.jpg",
+                "1600": "/assets/img/stations/montparnasse-bienvenue/montparnasse-bienvenue-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 4
+        },
+        "details": "Station non accessible PMR sur les 4 lignes de métro. SNCF grandes lignes : ascenseurs et SNCF Accès Plus sur réservation. Pour un trajet PMR vers le métro Montparnasse, descendre à Châtelet (M14 PMR) puis bus 95 accessible vers Montparnasse, ou taxi/VTC."
+    }
+}
