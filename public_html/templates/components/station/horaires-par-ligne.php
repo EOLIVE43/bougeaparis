@@ -116,7 +116,7 @@ $lineCodesLabel = $lineCount === 1
 
 <section class="station-section section-horaires" id="horaires" aria-labelledby="horaires-title">
 
-  <h2 id="horaires-title">Horaires des lignes à <?= e($stationName) ?></h2>
+  <h2 id="horaires-title"><?= e($props['sectionTitle'] ?? ('Horaires des lignes à ' . $stationName)) ?></h2>
 
   <p class="section-intro">
     La station <strong><?= e($stationName) ?></strong> est desservie par <?= e($lineCodesLabel) ?> du métro, du lundi au dimanche.

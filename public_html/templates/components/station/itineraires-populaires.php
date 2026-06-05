@@ -35,7 +35,7 @@ $hubActive = $hubUrl ? Routes::exists(rtrim($hubUrl, '/')) : false;
 
 <section class="station-section section-itineraires" id="itineraires-populaires" aria-labelledby="itineraires-title">
 
-  <h2 id="itineraires-title">Itinéraires populaires depuis <?= Template::e($stationName) ?></h2>
+  <h2 id="itineraires-title"><?= Template::e($props['sectionTitle'] ?? ('Itinéraires populaires depuis ' . $stationName)) ?></h2>
 
   <p class="section-intro">
     <?= Template::e($stationName) ?> est un point de départ stratégique pour rejoindre rapidement les principaux pôles de Paris et de la région Île-de-France. Voici les <strong><?= (int)$count ?> destinations</strong> les plus empruntées depuis cette station, avec les lignes utilisées, la durée estimée et le nombre de changements.

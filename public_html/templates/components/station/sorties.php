@@ -118,7 +118,7 @@ $renderItem = function (array $exit): void {
 
 <section class="station-section section-sorties" id="sorties" aria-labelledby="sorties-title">
 
-  <h2 id="sorties-title">Sorties de la station <?= e($stationName) ?></h2>
+  <h2 id="sorties-title"><?= e($props['sectionTitle'] ?? ('Sorties de la station ' . $stationName)) ?></h2>
 
   <p class="section-intro">
     La <strong>station <?= e($stationName) ?></strong> compte

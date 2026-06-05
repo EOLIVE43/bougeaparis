@@ -794,7 +794,7 @@ $tpl->partial('components/breadcrumb', [
   <?php if ($adjacentCount > 0): ?>
     <section class="station-section section-adjacent" id="stations-adjacentes" aria-labelledby="adjacent-title">
 
-      <h2 id="adjacent-title">Stations adjacentes à <?= Template::e($name) ?></h2>
+      <h2 id="adjacent-title"><?= Template::e(buildSectionTitleAdjacent($station)) ?></h2>
 
       <p class="section-intro">
         <?php if ($adjacentCount === 1): ?>
@@ -874,8 +874,9 @@ $tpl->partial('components/breadcrumb', [
        4bis. HORAIRES PAR LIGNE
        ============================================================ -->
   <?php $tpl->partial('components/station/horaires-par-ligne', [
-      'lines'       => $lines,
-      'stationName' => $name,
+      'lines'        => $lines,
+      'stationName'  => $name,
+      'sectionTitle' => buildSectionTitleHoraires($station),
   ]);
   ?>
 
@@ -921,9 +922,10 @@ $tpl->partial('components/breadcrumb', [
        4ter. SORTIES (acces numerotes, eventuellement regroupes par secteurs)
        ============================================================ -->
   <?php $tpl->partial('components/station/sorties', [
-      'exits'       => $station['exits']        ?? [],
-      'exitSectors' => $station['exit_sectors'] ?? null,
-      'stationName' => $name,
+      'exits'        => $station['exits']        ?? [],
+      'exitSectors'  => $station['exit_sectors'] ?? null,
+      'stationName'  => $name,
+      'sectionTitle' => buildSectionTitleSorties($station),
   ]);
   ?>
 
@@ -963,9 +965,10 @@ $tpl->partial('components/breadcrumb', [
                     decouverte (POIs, histoire, FAQ).
        ============================================================ -->
   <?php $tpl->partial('components/station/itineraires-populaires', [
-      'itineraries' => $station['popular_itineraries'] ?? [],
-      'stationName' => $name,
-      'stationSlug' => $station['slug'] ?? null,
+      'itineraries'  => $station['popular_itineraries'] ?? [],
+      'stationName'  => $name,
+      'stationSlug'  => $station['slug'] ?? null,
+      'sectionTitle' => buildSectionTitleItineraires($station),
   ]); ?>
 
   <!-- ============================================================

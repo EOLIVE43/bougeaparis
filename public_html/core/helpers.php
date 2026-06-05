@@ -1035,3 +1035,95 @@ if (!function_exists('buildStationH1')) {
         return $modeIntro . ' ' . $name . ' Paris (' . $codes . ')';
     }
 }
+
+if (!function_exists('detectStationMode')) {
+    /**
+     * Detecte le mode dominant d'une station pour les helpers de titres.
+     *
+     * Retourne un des 4 modes (mirror logic des buildStation*) :
+     *   - 'metro_pur'  : lines[] metro present ET pas de correspondance RER/tram
+     *   - 'mixte'      : lines[] metro present ET au moins une correspondance RER/tram
+     *   - 'rer_pur'    : pas de metro, rer_correspondences[] non vide
+     *   - 'tram_pur'   : pas de metro/RER, tramway_correspondences[] non vide
+     *
+     * Fallback (cas inattendu) : 'metro_pur'.
+     */
+    function detectStationMode(array $station): string
+    {
+        $hasMetro = false;
+        foreach (($station['lines'] ?? []) as $line) {
+            if (($line['type'] ?? '') === 'metro') {
+                $hasMetro = true;
+                break;
+            }
+        }
+        $hasRer  = !empty($station['rer_correspondences']);
+        $hasTram = !empty($station['tramway_correspondences']);
+
+        if ($hasMetro && ($hasRer || $hasTram)) { return 'mixte'; }
+        if ($hasMetro) { return 'metro_pur'; }
+        if ($hasRer)   { return 'rer_pur'; }
+        if ($hasTram)  { return 'tram_pur'; }
+        return 'metro_pur';
+    }
+}
+
+if (!function_exists('buildSectionTitleHoraires')) {
+    /** Titre H2 section Horaires, adaptatif au mode. */
+    function buildSectionTitleHoraires(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+        switch (detectStationMode($station)) {
+            case 'mixte':    return "Horaires des lignes de métro et RER à $name";
+            case 'rer_pur':  return "Horaires des lignes de RER à $name";
+            case 'tram_pur': return "Horaires des lignes de tramway à $name";
+            case 'metro_pur':
+            default:         return "Horaires des lignes de métro à $name";
+        }
+    }
+}
+
+if (!function_exists('buildSectionTitleAdjacent')) {
+    /** Titre H2 section Stations adjacentes, adaptatif au mode. */
+    function buildSectionTitleAdjacent(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+        switch (detectStationMode($station)) {
+            case 'mixte':    return "Stations adjacentes à $name à Paris";
+            case 'rer_pur':  return "Stations adjacentes au RER $name à Paris";
+            case 'tram_pur': return "Stations adjacentes au tramway $name à Paris";
+            case 'metro_pur':
+            default:         return "Stations adjacentes au métro $name à Paris";
+        }
+    }
+}
+
+if (!function_exists('buildSectionTitleSorties')) {
+    /** Titre H2 section Sorties, adaptatif au mode. */
+    function buildSectionTitleSorties(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+        switch (detectStationMode($station)) {
+            case 'mixte':    return "Sorties de la station $name";
+            case 'rer_pur':  return "Sorties de la station de RER $name";
+            case 'tram_pur': return "Sorties de la station de tramway $name";
+            case 'metro_pur':
+            default:         return "Sorties de la station de métro $name";
+        }
+    }
+}
+
+if (!function_exists('buildSectionTitleItineraires')) {
+    /** Titre H2 section Itinéraires populaires, adaptatif au mode. */
+    function buildSectionTitleItineraires(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+        switch (detectStationMode($station)) {
+            case 'mixte':    return "Itinéraires populaires depuis $name à Paris";
+            case 'rer_pur':  return "Itinéraires populaires depuis le RER $name à Paris";
+            case 'tram_pur': return "Itinéraires populaires depuis le tramway $name à Paris";
+            case 'metro_pur':
+            default:         return "Itinéraires populaires depuis le métro $name à Paris";
+        }
+    }
+}
