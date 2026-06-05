@@ -882,6 +882,11 @@ if (!function_exists('buildStationTitle')) {
         $compactTramCodes  = static fn(array $t): string => implode(' ', array_map(static fn($c) => 'T' . $c, $t));
         $compactTransCodes = static fn(array $tr): string => implode(' ', $tr);
 
+        // Signal geo Paris injecte juste apres le nom (avant les codes) en mode
+        // Metro/Tram/Transilien ; en RER pur les codes sont devant le nom donc
+        // " Paris" arrive en fin avant la brand.
+        $nameWithGeo = $name . ' Paris';
+
         if ($modePrefix === 'Métro') {
             // Codes apres le nom : metro d'abord, puis correspondances RER/tram/Transilien
             $tail = [];
@@ -890,46 +895,54 @@ if (!function_exists('buildStationTitle')) {
             if ($tram)  { $tail[] = $compactTramCodes($tram); }
             if ($trans) { $tail[] = $compactTransCodes($trans); }
             $codesAfterName = trim(implode(' ', $tail));
-            $title = trim($modePrefix . ' ' . $name . ($codesAfterName !== '' ? ' ' . $codesAfterName : ''));
+            $title = trim($modePrefix . ' ' . $nameWithGeo . ($codesAfterName !== '' ? ' ' . $codesAfterName : ''));
         } elseif ($modePrefix === 'RER') {
-            // RER pur : "RER {codes} {nom}"
+            // RER pur : "RER {codes} {nom} Paris"
             $codes = implode(' ', $rer);
-            $title = trim($modePrefix . ' ' . $codes . ' ' . $name);
+            $title = trim($modePrefix . ' ' . $codes . ' ' . $nameWithGeo);
         } elseif ($modePrefix === 'Tramway') {
-            // Tram pur : "Tramway {nom} {codes}"
+            // Tram pur : "Tramway {nom} Paris {codes}"
             $codes = $compactTramCodes($tram);
-            $title = trim($modePrefix . ' ' . $name . ($codes !== '' ? ' ' . $codes : ''));
+            $title = trim($modePrefix . ' ' . $nameWithGeo . ($codes !== '' ? ' ' . $codes : ''));
         } elseif ($modePrefix === 'Transilien') {
-            // Transilien pur : "Transilien {nom} {codes}"
+            // Transilien pur : "Transilien {nom} Paris {codes}"
             $codes = $compactTransCodes($trans);
-            $title = trim($modePrefix . ' ' . $name . ($codes !== '' ? ' ' . $codes : ''));
+            $title = trim($modePrefix . ' ' . $nameWithGeo . ($codes !== '' ? ' ' . $codes : ''));
         } else {
             $title = $name;
         }
 
-        // Si depassement (>60 - brand_len), troncature des codes a 3 + "+ autres"
-        // Le nom et le mode sont preserves.
+        // Si depassement (>60 - brand_len), troncature progressive des codes :
+        // de tous les codes vers 0, on garde le sous-ensemble le plus long qui
+        // tient. Le nom + " Paris" + mode sont toujours preserves.
         $brandLen = mb_strlen($brand, 'UTF-8');
         $maxLen   = 60 - $brandLen;
         if (mb_strlen($title, 'UTF-8') > $maxLen) {
-            $all      = array_merge(
+            $all = array_merge(
                 array_map(static fn($c) => 'M' . $c, $metro),
                 $rer ? ['RER ' . implode(' ', $rer)] : [],
                 array_map(static fn($c) => 'T' . $c, $tram),
                 $trans
             );
             $total = count($all);
-            $kept  = array_slice($all, 0, 3);
-            $tail  = implode(' ', $kept) . ($total > 3 ? ' + autres' : '');
+            $best  = '';
+            for ($limit = $total; $limit >= 0; $limit--) {
+                $kept = array_slice($all, 0, $limit);
+                $tail = $limit > 0 ? implode(' ', $kept) : '';
 
-            if ($modePrefix === 'RER') {
-                // En RER pur on garde les codes RER bruts plutot que "M1" etc
-                $rerKept = array_slice($rer, 0, 3);
-                $tail    = implode(' ', $rerKept) . ($total > 3 ? ' + autres' : '');
-                $title   = trim($modePrefix . ' ' . $tail . ' ' . $name);
-            } else {
-                $title = trim(($modePrefix !== '' ? $modePrefix . ' ' : '') . $name . ($tail !== '' ? ' ' . $tail : ''));
+                if ($modePrefix === 'RER') {
+                    $rerKept = array_slice($rer, 0, $limit);
+                    $tail    = $limit > 0 ? implode(' ', $rerKept) : '';
+                    $candidate = trim($modePrefix . ($tail !== '' ? ' ' . $tail : '') . ' ' . $nameWithGeo);
+                } else {
+                    $candidate = trim(($modePrefix !== '' ? $modePrefix . ' ' : '') . $nameWithGeo . ($tail !== '' ? ' ' . $tail : ''));
+                }
+                $best = $candidate;
+                if (mb_strlen($candidate, 'UTF-8') <= $maxLen) {
+                    break;
+                }
             }
+            $title = $best;
         }
 
         return $title . $brand;
@@ -1015,9 +1028,10 @@ if (!function_exists('buildStationH1')) {
             $modeIntro = 'Station de Transilien';
             $codes = $transPart;
         } else {
-            return 'Station ' . $name;
+            return 'Station ' . $name . ' Paris';
         }
 
-        return $modeIntro . ' ' . $name . ' (' . $codes . ')';
+        // Signal geo Paris injecte apres le nom, avant les parentheses de codes.
+        return $modeIntro . ' ' . $name . ' Paris (' . $codes . ')';
     }
 }
