@@ -1,0 +1,625 @@
+{
+    "published": true,
+    "slug": "gare-du-nord",
+    "name": "Gare du Nord",
+    "name_full": "Gare du Nord (Métro 4 + 5 + RER B + RER D + SNCF + Eurostar)",
+    "arrondissement": "10e (Paris)",
+    "address": "18 Rue de Dunkerque, 75010 Paris",
+    "latitude": 48.8809591551807,
+    "longitude": 2.356144204632079,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Gare du Nord station",
+        "es": "Estación Gare du Nord"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "B",
+            "color": "#5091CB",
+            "station_name": "Gare du Nord",
+            "walking_minutes": 0
+        },
+        {
+            "code": "D",
+            "color": "#008B5B",
+            "station_name": "Gare du Nord",
+            "walking_minutes": 0
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "26",
+            "38",
+            "39",
+            "48",
+            "56",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N14",
+            "N43",
+            "N44",
+            "N140",
+            "N143",
+            "N147",
+            "N148"
+        ],
+        "regional": [
+            "31",
+            "35",
+            "43",
+            "45",
+            "54",
+            "302",
+            "B",
+            "D",
+            "H",
+            "K"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 1,
+            "nearby_count": 56
+        }
+    },
+    "seo": {
+        "description": "Gare du Nord : M4 + M5 + RER B + RER D + SNCF grandes lignes + Eurostar + Thalys. La gare la plus fréquentée d'Europe (~292 M voyageurs/an), 10e arr."
+    },
+    "hero": {
+        "tagline": "La gare la plus fréquentée d'Europe",
+        "description": "Conçue par <strong>Jacques Ignace Hittorff entre 1861 et 1865</strong>, la <strong>Gare du Nord</strong> est la <strong>plus fréquentée d'Europe</strong> avec environ <strong>292 millions de voyageurs en 2018</strong> (RER inclus). Façade néoclassique monumentale ornée de <strong>23 statues</strong> représentant les villes-destinations (la plus haute mesurant <strong>5,5 m</strong> et symbolisant Paris, accompagnée des villes internationales : Londres, Berlin, Vienne, Varsovie). La gare connecte le <strong>métro M4 et M5</strong>, le <strong>RER B et D</strong>, le <strong>Transilien H et K</strong>, les <strong>TGV</strong>, l'<strong>Eurostar</strong> et le <strong>Thalys</strong>, avec <strong>32 voies au total</strong> (15 en surface, 4 souterraines). Inscrite au titre des Monuments Historiques en <strong>1975</strong>."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Gare de l'Est",
+                "slug": "gare-de-l-est",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Barbès - Rochechouart",
+                "slug": "barbes-rochechouart",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-5": {
+            "previous": {
+                "name": "Stalingrad",
+                "slug": "stalingrad",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Gare de l'Est",
+                "slug": "gare-de-l-est",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La <strong>Gare du Nord</strong> est la <strong>première gare d'Europe en termes de fréquentation</strong> avec environ <strong>292 millions de voyageurs en 2018</strong> (incluant la fréquentation du RER B), classée par certaines sources comme la troisième gare la plus fréquentée au monde. Construite par l'architecte <strong>Jacques Ignace Hittorff</strong> entre <strong>1861 et 1865</strong>, elle se dresse au cœur du <strong>10e arrondissement</strong>, sous une façade néoclassique monumentale ornée de <strong>23 statues allégoriques</strong> représentant les villes-destinations.",
+        "Côté métro, la gare est desservie par le <strong>M4</strong> automatique (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac) et le <strong>M5</strong> (Bobigny - Pablo Picasso ↔ Place d'Italie). Côté RER, c'est l'<strong>une des principales correspondances RER B et RER D</strong> du nord de Paris. Côté Transilien, partent les lignes <strong>H</strong> (vers Persan-Beaumont et Pontoise) et <strong>K</strong> (vers Crépy-en-Valois). Côté SNCF grandes lignes, la gare accueille les <strong>TGV inOui</strong> vers le nord, l'<strong>Eurostar</strong> vers Londres et le <strong>Thalys</strong> vers Bruxelles, Amsterdam et Cologne.",
+        "La gare totalise <strong>32 voies</strong> (15 en surface pour les grandes lignes, 4 souterraines pour le RER E, et les autres pour Transilien/RER B/D). Elle est <strong>inscrite au titre des Monuments Historiques depuis 1975</strong> pour sa valeur patrimoniale exceptionnelle. Le quartier du <strong>Faubourg-Saint-Denis</strong> qui l'entoure est l'un des plus <strong>multiculturels de Paris</strong>, mêlant communautés indiennes, sri-lankaises, pakistanaises, africaines et nord-africaines avec leurs commerces, restaurants et lieux de culte."
+    ],
+    "history": {
+        "title": "1861-1865 : la façade néoclassique d'Hittorff",
+        "paragraphs": [
+            "L'actuelle Gare du Nord est construite entre <strong>1861 et 1865</strong> par l'architecte <strong>Jacques Ignace Hittorff</strong>, sous le règne de Napoléon III. Elle remplace une première gare de 1846 devenue trop petite pour les besoins croissants du trafic vers le nord et la Belgique. La <strong>façade monumentale</strong>, l'une des plus marquantes de l'architecture ferroviaire du XIXᵉ siècle, est ornée de <strong>23 statues</strong> représentant les villes desservies par la Compagnie des chemins de fer du Nord.",
+            "La <strong>statue centrale, haute de 5,5 mètres</strong>, symbolise <strong>Paris</strong>. Les statues qui l'encadrent au sommet représentent les <strong>villes internationales</strong> reliées à la gare : <strong>Londres, Berlin, Vienne, Varsovie</strong>, Cologne, Amsterdam et autres. Les statues du registre inférieur symbolisent les <strong>villes françaises et belges</strong> du réseau Nord. L'ensemble illustre le rôle européen précoce de cette gare, prélude au réseau Eurostar/Thalys contemporain.",
+            "Les premières lignes de métro arrivent au tournant du XXᵉ siècle : le <strong>M5</strong> en <strong>1907</strong>, puis le <strong>M4</strong> en <strong>1908</strong> (achevée dans son tracé central en 1910). Le <strong>RER B</strong> arrive en <strong>1981</strong> (avec l'interconnexion nord-sud), puis le <strong>RER D</strong> en <strong>1987</strong>. L'<strong>Eurostar</strong> est inauguré le <strong>14 novembre 1994</strong> avec l'ouverture du tunnel sous la Manche, faisant de la Gare du Nord la première gare européenne à vocation internationale.",
+            "La gare a été <strong>inscrite au titre des Monuments Historiques le 15 décembre 1975</strong> pour sa valeur architecturale et patrimoniale exceptionnelle. Plusieurs projets de modernisation ont été lancés dans les années 2010-2020 pour absorber la croissance continue du trafic, notamment le projet « Gare du Nord 2024 » qui prévoyait d'agrandir et de moderniser la gare pour les Jeux Olympiques, finalement remanié et redimensionné en 2021."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la Gare du Nord ?",
+            "answer": "<strong>Métro</strong> : M4 (automatique, Porte de Clignancourt ↔ Bagneux) et M5 (Bobigny ↔ Place d'Italie). <strong>RER</strong> : B (CDG/Mitry ↔ Robinson/Saint-Rémy) et D (Creil/Orry-la-Ville ↔ Melun/Malesherbes). <strong>Transilien</strong> : H (vers Persan-Beaumont/Pontoise) et K (vers Crépy-en-Valois). <strong>SNCF grandes lignes</strong> : TGV inOui (Lille, Calais), Eurostar (Londres), Thalys (Bruxelles, Amsterdam, Cologne). De nombreux <strong>bus RATP</strong> desservent les sorties de la gare."
+        },
+        {
+            "question": "Comment prendre l'Eurostar à la Gare du Nord ?",
+            "answer": "L'<strong>Eurostar</strong> vers <strong>Londres St Pancras</strong> (durée ~2h15) part de la <strong>partie ouest de la gare</strong> (terminal dédié, entrée par le 18 rue de Dunkerque). Procédure : enregistrement et contrôle de passeport (sortie de l'espace Schengen vers le Royaume-Uni) — prévoir <strong>arrivée 60 minutes avant le départ</strong> minimum (90 min en haute saison). Tarifs et horaires sur eurostar.com."
+        },
+        {
+            "question": "Comment prendre le Thalys / Eurostar Red à la Gare du Nord ?",
+            "answer": "Le <strong>Thalys</strong> (rebaptisé <strong>Eurostar Red</strong> en 2024 après la fusion Eurostar/Thalys) part également de la Gare du Nord vers <strong>Bruxelles</strong> (1h30), <strong>Amsterdam</strong> (3h20) et <strong>Cologne</strong> (3h15). Pas de contrôle de passeport (espace Schengen). Embarquement classique : <strong>arrivée 20 minutes avant le départ</strong> suffit. Voies dédiées dans la gare principale."
+        },
+        {
+            "question": "La Gare du Nord est-elle accessible aux PMR ?",
+            "answer": "La <strong>ligne 14</strong> n'arrive pas à Gare du Nord (M14 passe à Saint-Lazare voisin). Le <strong>RER B</strong> et le <strong>RER D</strong> ont des accès partiellement PMR avec ascenseurs. Le <strong>métro M4 (automatique depuis 2022) et M5</strong> ne sont <strong>pas accessibles PMR</strong> à Gare du Nord. <strong>SNCF grandes lignes et Eurostar</strong> : ascenseurs et personnel d'assistance disponible — réservation conseillée 24h à l'avance pour l'Eurostar."
+        },
+        {
+            "question": "Comment rejoindre l'aéroport CDG depuis la Gare du Nord ?",
+            "answer": "<strong>RER B direct</strong> vers <strong>Aéroport CDG 1, 2 et 3</strong> : durée <strong>25-30 minutes</strong> sans changement. Fréquence élevée toute la journée (4-12 min selon les heures). Tarif spécial CDG ~13 €. C'est l'<strong>itinéraire le plus rapide et le moins cher</strong> depuis le centre de Paris vers CDG, hors taxi. Attention : certains trains sont express (gares limitées), d'autres omnibus."
+        },
+        {
+            "question": "Quels sont les horaires de la Gare du Nord ?",
+            "answer": "<strong>SNCF grandes lignes</strong> : premiers TGV vers 6h, derniers vers 23h30 (variable). <strong>Eurostar</strong> : premiers ~6h, derniers ~20h30. <strong>Thalys / Eurostar Red</strong> : ~6h à ~21h. <strong>RER B</strong> : ~4h45 à 1h00. <strong>RER D</strong> : ~5h00 à 0h30. <strong>Métro M4 et M5</strong> : ~5h30 à 1h15 en semaine, jusqu'à 2h15 vendredi/samedi/veille de fête. La nuit, Noctilien N01, N02, N140, N143 depuis les sorties de la gare."
+        },
+        {
+            "question": "Que voir autour de la Gare du Nord ?",
+            "answer": "À <strong>10-15 minutes à pied</strong> : la <strong>Gare de l'Est</strong> voisine (M4/M5/M7), le <strong>Canal Saint-Martin</strong> (15 min à pied vers le sud-est), le quartier multiculturel du <strong>Faubourg-Saint-Denis</strong> (restaurants indiens, sri-lankais, pakistanais), la <strong>Porte Saint-Denis</strong> (arc de triomphe de 1672), la <strong>rue de Paradis</strong> et la <strong>passage Brady</strong> (« Little India »). À 20 min en M2/M12 : <strong>Pigalle</strong>, <strong>Sacré-Cœur</strong>, <strong>Montmartre</strong>."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la Gare du Nord ?",
+            "answer": "<strong>Sanitaires</strong> : payants au niveau RDC près du hall principal (~1 €). <strong>Consigne à bagages</strong> : disponible dans la gare (tarif ~7-12 €/jour selon taille). <strong>Distributeurs</strong> : multiples ATM dans le hall et alentours. <strong>Restauration</strong> : Starbucks, Paul, Eric Kayser, McDonald's, ainsi qu'un food court dans la <strong>Halle de l'Eurostar</strong>. <strong>Boutiques</strong> : Relay, Carrefour Express, pharmacie. <strong>WiFi gratuit</strong> : SNCF WiFi disponible 60 min/connexion."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Arrivée internationale</strong> : sortir par les sorties principales rue de Dunkerque (sud) ; la gare est immense, vérifier les panneaux.",
+        "<strong>Eurostar</strong> : enregistrement 60 min avant départ (90 min en saison) — terminal séparé à l'ouest de la gare.",
+        "<strong>RER B pour CDG</strong> : suivre les panneaux « RER B / CDG » au sous-sol — durée 25-30 min, tarif ~13 €.",
+        "<strong>Métro M4 vs M5</strong> : la M4 (automatique) a des fréquences plus élevées en pointe ; M5 est plus calme.",
+        "Vigilance pickpockets : <strong>une des gares les plus ciblées par les vols</strong> en Europe — garder valises sous surveillance permanente.",
+        "<strong>Sortie nord (rue La Fayette)</strong> : préférable pour rejoindre Pigalle/Sacré-Cœur via la M2."
+    ],
+    "trivia": [
+        {
+            "icon": "🏗️",
+            "title": "Façade Hittorff (1861-1865) avec 23 statues de villes",
+            "content": "La <strong>façade monumentale</strong> de la Gare du Nord, conçue par <strong>Jacques Ignace Hittorff</strong> entre <strong>1861 et 1865</strong>, est ornée de <strong>23 statues allégoriques</strong> représentant les villes desservies. La <strong>statue centrale de 5,5 m</strong> symbolise <strong>Paris</strong>. Les statues du registre supérieur évoquent les capitales européennes : <strong>Londres, Berlin, Vienne, Varsovie</strong>, Cologne, Amsterdam, etc. — prélude au réseau Eurostar contemporain. Inscrite Monuments Historiques le <strong>15 décembre 1975</strong>."
+        },
+        {
+            "icon": "🚆",
+            "title": "Plus de 292 millions de voyageurs en 2018 — record européen",
+            "content": "Avec environ <strong>292 millions de voyageurs en 2018</strong> (RER B inclus) — et plus de <strong>257 M en 2024</strong> côté SNCF seule — la Gare du Nord est la <strong>première gare d'Europe</strong> en termes de fréquentation, et selon certaines sources, l'une des trois premières au monde (avec Shinjuku à Tokyo et Châtelet - Les Halles). Plus de voyageurs y transitent chaque année qu'à Heathrow, JFK ou Atlanta-Hartsfield."
+        },
+        {
+            "icon": "🇬🇧",
+            "title": "Eurostar inauguré le 14 novembre 1994",
+            "content": "L'<strong>Eurostar</strong> a été inauguré à la Gare du Nord le <strong>14 novembre 1994</strong>, six mois après l'ouverture officielle du <strong>tunnel sous la Manche</strong>. Premier service ferroviaire à haute vitesse entre Paris et Londres (<strong>2h15</strong> aujourd'hui), il a transformé la mobilité entre la France et le Royaume-Uni. Depuis 2024, après la fusion Eurostar/Thalys, le réseau s'est élargi à <strong>Eurostar Red</strong> qui dessert également Bruxelles, Amsterdam et Cologne depuis cette même gare."
+        },
+        {
+            "icon": "🌍",
+            "title": "Quartier Faubourg-Saint-Denis — Paris multiculturel",
+            "content": "Le quartier qui entoure la Gare du Nord, autour du <strong>Faubourg-Saint-Denis</strong>, est l'un des plus <strong>multiculturels et cosmopolites de Paris</strong>. Il rassemble d'importantes communautés <strong>indiennes, sri-lankaises, pakistanaises, bangladaises</strong> (avec « Little India » au passage Brady), <strong>africaines et nord-africaines</strong>. Restaurants ethniques, épiceries spécialisées, échoppes traditionnelles : c'est un terrain de découverte gastronomique unique à 5 minutes à pied de la gare."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Gare du Nord → Aéroport CDG",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direct CDG (~25-30 min)",
+            "duration_minutes": 28,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-cdg/"
+        },
+        {
+            "destination_name": "Londres via Eurostar",
+            "destination_slug": "londres",
+            "destination_full_name": "Gare du Nord → Londres via Eurostar",
+            "lines_used": [
+                "Eurostar"
+            ],
+            "lines_label": "Eurostar direct vers London St Pancras (~2h15)",
+            "duration_minutes": 135,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-londres/"
+        },
+        {
+            "destination_name": "Sacré-Cœur Montmartre",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Gare du Nord → Sacré-Cœur",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Porte Dauphine jusqu'à Anvers (2 stations) + funiculaire",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via RER B",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Gare du Nord → Notre-Dame",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direction sud jusqu'à Saint-Michel - Notre-Dame (2 stations) + à pied",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Gare du Nord → Châtelet",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direction sud (2 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-chatelet/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Gare du Nord → Tour Eiffel",
+            "lines_used": [
+                "RER B",
+                "RER C"
+            ],
+            "lines_label": "RER B jusqu'à Saint-Michel, puis RER C direct Champ de Mars",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland",
+            "destination_full_name": "Gare du Nord → Disneyland Paris",
+            "lines_used": [
+                "RER B",
+                "RER A"
+            ],
+            "lines_label": "RER B jusqu'à Châtelet, RER A direct Marne-la-Vallée",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-disneyland/"
+        },
+        {
+            "destination_name": "Bruxelles via Eurostar Red",
+            "destination_slug": "bruxelles",
+            "destination_full_name": "Gare du Nord → Bruxelles",
+            "lines_used": [
+                "Eurostar Red"
+            ],
+            "lines_label": "Eurostar Red (ex-Thalys) direct (~1h30)",
+            "duration_minutes": 90,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-du-nord/gare-du-nord-vers-bruxelles/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q745942",
+            "name": "Paris-Nord",
+            "category": "gare",
+            "description": "La gare de Paris-Nord, dite aussi gare du Nord ou Paris Gare du Nord, est l'une des six grandes gares terminus de la SNCF à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20du%20nord%204%20bis.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Nord",
+            "latitude": 48.881111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (rue de Dunkerque)",
+                "distance_m": 17,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q757180",
+            "name": "Paris-Est",
+            "category": "gare",
+            "description": "La gare de Paris-Est, dite aussi gare de l'Est, est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris-Gare%20de%20l%27Est-2009.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Est",
+            "latitude": 48.876944,
+            "longitude": 2.359167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 457,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1130784",
+            "name": "hôpital Lariboisière",
+            "category": "hôpital",
+            "description": "L’hôpital Lariboisière est un hôpital de l'Assistance Publique - Hôpitaux de Paris situé 2 rue Ambroise-Paré dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pitalLariboisi%C3%A8reChapelle1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Lariboisi%C3%A8re",
+            "latitude": 48.883056,
+            "longitude": 2.353056,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (rue de Dunkerque)",
+                "distance_m": 277,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1710383",
+            "name": "église Saint-Vincent-de-Paul",
+            "category": "église",
+            "description": "L'église Saint-Vincent-de-Paul à Paris, située sur la place Franz-Liszt dans le 10e arrondissement, est dédiée à saint Vincent de Paul.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Vincent-de-Paul%20Fassade%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Vincent-de-Paul_de_Paris",
+            "latitude": 48.878889,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (rue de Dunkerque)",
+                "distance_m": 345,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q608428",
+            "name": "Magenta",
+            "category": "gare",
+            "description": "La gare de Magenta est une gare ferroviaire française souterraine de la ligne E (« Éole ») du réseau express régional d'Île-de-France (RER) ; elle est située à l'est de la gare du Nord, dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER-E-station-Magenta.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Magenta",
+            "latitude": 48.88,
+            "longitude": 2.358056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 162,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1629067",
+            "name": "église Saint-Laurent",
+            "category": "église",
+            "description": "L'église Saint-Laurent est une église du 10e arrondissement de Paris située dans l'ancien enclos Saint-Laurent, 119, rue du Faubourg-Saint-Martin, 68, boulevard de Strasbourg et 68, boulevard de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1300867%20Paris%20X%20eglise%20St-Laurent%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Laurent_de_Paris",
+            "latitude": 48.874847,
+            "longitude": 2.358311,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 649,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3498663",
+            "name": "église Saint-Bernard de la Chapelle",
+            "category": "chapelle",
+            "description": "L’église Saint-Bernard de la Chapelle est une église catholique du XIXe siècle située dans le 18e arrondissement de Paris dans le quartier de la Goutte-d'Or. Elle est consacrée à Bernard de Clairvaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018%20-%20%C3%89glise%20Saint-Bernard%20de%20la%20Chapelle%20-1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Bernard_de_la_Chapelle",
+            "latitude": 48.886111,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (rue de Dunkerque)",
+                "distance_m": 571,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q636136",
+            "name": "jardin Villemin - Mahsa Jîna Amini",
+            "category": "jardin",
+            "description": "Le jardin Villemin - Mahsa Jîna Amini est un jardin public situé dans le quartier de l'hôpital Saint-Louis, dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1040702%20Paris%20X%20rue%20des%20R%C3%A9collets%20jardin%20Villemin%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Villemin_-_Mahsa_J%C3%AEna_Amini",
+            "latitude": 48.875,
+            "longitude": 2.36167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 738,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q744459",
+            "name": "théâtre des Bouffes du Nord",
+            "category": "théâtre",
+            "description": "Le théâtre des Bouffes-du-Nord est une salle de spectacles située au 37 bis, boulevard de la Chapelle, dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Bouffes%20du%20Nord%2001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_des_Bouffes-du-Nord",
+            "latitude": 48.884,
+            "longitude": 2.3588,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hall principal (rue de Dunkerque)",
+                "distance_m": 429,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3098220",
+            "name": "Nord USFRT",
+            "category": "site notable",
+            "description": "Gare du Nord USFRT est le nom donné à l'ancien terminus Gare du Nord de la ligne 5, avant le prolongement vers le nord-est en 1942. Cette station est située dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20du%20Nord%20USFRT%20patrimoine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Nord_USFRT_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.879287,
+            "longitude": 2.354368,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 176,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q72942",
+            "name": "couvent des Récollets de Paris",
+            "category": "site notable",
+            "description": "Situé rue du Faubourg-Saint-Martin à Paris (France), l'ancien couvent des Récollets est un exemple de l'architecture religieuse des XVIIe et XVIIIe siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20R%C3%A9collets%2027.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Couvent_des_R%C3%A9collets_de_Paris",
+            "latitude": 48.875278,
+            "longitude": 2.36,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 649,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1643033",
+            "name": "hôpital Fernand-Widal",
+            "category": "hôpital",
+            "description": "L'hôpital Fernand-Widal est un établissement de l'Assistance publique - hôpitaux de Paris (AP-HP) situé au 200, rue du Faubourg-Saint-Denis dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Fernand-Widal%2C%20fa%C3%A7ade%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Fernand-Widal",
+            "latitude": 48.881667,
+            "longitude": 2.36,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Sortie La Fayette",
+                "distance_m": 324,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Hall principal (rue de Dunkerque)",
+            "address_full": "18 Rue de Dunkerque 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.880981,
+            "longitude": 2.355144,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Sortie La Fayette",
+            "address_full": "188 Rue La Fayette 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.880472,
+            "longitude": 2.355958,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "WiFi SNCF gratuit dans toute la gare",
+            "coverage_detail": "60 minutes/connexion"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "hall principal",
+                "souterrain RER",
+                "abords"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Hall RER",
+            "services": "Information, vente de billets, échanges"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                "Consigne SNCF (~7-12 €/jour)"
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Hall principal + Halle Eurostar",
+            "details": "Starbucks, Paul, Eric Kayser, McDonald's, Relay, Carrefour Express, pharmacie.",
+            "secondary": "Quartier Faubourg-Saint-Denis : restaurants indiens, sri-lankais, pakistanais à 5 min."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets MAXIMALE : la Gare du Nord figure parmi les gares les plus ciblées par les vols à la tire en Europe. Garder valises sous surveillance permanente, sacs fermés et bien tenus.",
+            "Soirée tardive : éviter les ruelles peu éclairées du quartier nord (rue de la Chapelle, rue Ambroise-Paré) — privilégier la sortie La Fayette ou le hall principal sécurisé.",
+            "Manifestations syndicales et politiques fréquentes : le quartier de la Gare du Nord est un point de rassemblement habituel ; vérifier paris.fr et @prefpolice avant un déplacement les jours sensibles.",
+            "Forte présence policière et SUGE (sûreté SNCF) en permanence dans le hall principal et les couloirs Eurostar — environnement sécurisé en transit."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature de pôle d'échange majeur et urbain dense (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Gare_de_Paris-Nord_DSC_0720_%2849644323452%29.jpg",
+        "alt": "Façade néoclassique monumentale de la Gare du Nord (Hittorff, 1861-1865) avec ses 23 statues allégoriques de villes",
+        "width": 6000,
+        "height": 4000,
+        "credit": {
+            "author": "Cheng-en Cheng",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Gare_de_Paris-Nord_DSC_0720_(49644323452).jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/gare-du-nord/gare-du-nord-400.avif",
+                "800": "/assets/img/stations/gare-du-nord/gare-du-nord-800.avif",
+                "1200": "/assets/img/stations/gare-du-nord/gare-du-nord-1200.avif",
+                "1600": "/assets/img/stations/gare-du-nord/gare-du-nord-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/gare-du-nord/gare-du-nord-400.webp",
+                "800": "/assets/img/stations/gare-du-nord/gare-du-nord-800.webp",
+                "1200": "/assets/img/stations/gare-du-nord/gare-du-nord-1200.webp",
+                "1600": "/assets/img/stations/gare-du-nord/gare-du-nord-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/gare-du-nord/gare-du-nord-400.jpg",
+                "800": "/assets/img/stations/gare-du-nord/gare-du-nord-800.jpg",
+                "1200": "/assets/img/stations/gare-du-nord/gare-du-nord-1200.jpg",
+                "1600": "/assets/img/stations/gare-du-nord/gare-du-nord-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 4
+        },
+        "details": "M4 et M5 non accessibles PMR. RER B et D partiellement PMR avec ascenseurs sur certains accès. SNCF grandes lignes et Eurostar : ascenseurs et assistance disponibles (réservation conseillée 24h à l'avance pour Eurostar). Pour un trajet PMR vers/depuis la Gare du Nord, contacter SNCF Accès Plus ou Eurostar Assist."
+    }
+}
