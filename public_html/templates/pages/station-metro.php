@@ -251,6 +251,12 @@ $nearbyPoisNode = SchemaHelpers::stationNearbyPoisAsItemList($station, $canonica
 // 5. ItemList des itinéraires populaires (url conditionnelle Routes::exists)
 $itinerariesNode = SchemaHelpers::stationPopularItinerariesAsItemList($station, $canonicalAbs);
 
+// 6. HowTo par itinéraire populaire (1 HowTo / popular_itinerary).
+//    Complète la ItemList Trip (qui reste un carousel SERP) par des
+//    HowTo détaillés exposant steps + totalTime + estimatedCost à
+//    destination du Knowledge Graph et d'éventuels rich results.
+$howtoNodes = SchemaHelpers::stationItinerariesAsHowToList($station, $canonicalAbs);
+
 // Assemblage @graph
 $graphNodes = [
     [
@@ -265,6 +271,9 @@ if ($nearbyPoisNode !== null) {
 }
 if ($itinerariesNode !== null) {
     $graphNodes[] = $itinerariesNode;
+}
+foreach ($howtoNodes as $howto) {
+    $graphNodes[] = $howto;
 }
 if ($faqNode !== null) {
     $graphNodes[] = $faqNode;

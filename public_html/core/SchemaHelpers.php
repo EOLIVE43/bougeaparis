@@ -337,4 +337,179 @@ class SchemaHelpers
             'itemListElement' => $items,
         ];
     }
+
+    /**
+     * Tableau d'objets HowTo (schema.org), 1 par popular_itinerary.
+     *
+     * Pour chaque itinéraire, génère un HowTo avec :
+     *  - @id     : {station_url}#howto-{destination_slug}
+     *  - name    : "Rejoindre {Dest} depuis {Station} {mode}"
+     *  - totalTime : ISO 8601 PT{duration_minutes}M
+     *  - estimatedCost : 2,15 EUR (ticket t+ Paris) sauf si itin à pied
+     *  - tool    : Ticket t+ ou Navigo (sauf si à pied)
+     *  - step[]  : 1 step par ligne empruntée + correspondance(s) +
+     *              étape finale d'arrivée. Pour itin "à pied" : 1 step
+     *              unique reprenant lines_label.
+     *
+     * T0 strict : aucune invention de nom de station de correspondance ;
+     * les textes utilisent la signalétique RATP/SNCF générique.
+     *
+     * @return array Liste de HowTo (tableau vide si rien à émettre).
+     */
+    public static function stationItinerariesAsHowToList(array $station, string $stationUrl): array
+    {
+        $itineraries = $station['popular_itineraries'] ?? null;
+        if (!is_array($itineraries) || empty($itineraries)) {
+            return [];
+        }
+
+        $stationName = trim((string)($station['name'] ?? 'la station'));
+        $howtos = [];
+
+        foreach ($itineraries as $itin) {
+            if (!is_array($itin)) continue;
+            $destName = $itin['destination_name'] ?? null;
+            if (!is_string($destName) || $destName === '') continue;
+
+            $destSlug   = $itin['destination_slug'] ?? null;
+            $duration   = (int)($itin['duration_minutes'] ?? 0);
+            $changes    = (int)($itin['changes_count'] ?? 0);
+            $linesUsed  = is_array($itin['lines_used'] ?? null) ? $itin['lines_used'] : [];
+            $linesLabel = trim((string)($itin['lines_label'] ?? ''));
+
+            // ID : slug fourni sinon dérivé du nom
+            if (!is_string($destSlug) || $destSlug === '') {
+                $destSlug = strtolower(preg_replace('/[^a-zA-Z0-9-]+/', '-', $destName));
+                $destSlug = trim($destSlug, '-') ?: 'destination';
+            }
+            $id = $stationUrl . '#howto-' . $destSlug;
+
+            $steps = self::buildHowToSteps($stationName, $destName, $linesUsed, $linesLabel, $changes);
+            if (empty($steps)) continue;
+
+            $isWalking = self::isWalkingItin($linesUsed);
+            $travelMode = $isWalking ? 'à pied' : 'en transport en commun';
+
+            $howto = [
+                '@type'       => 'HowTo',
+                '@id'         => $id,
+                'name'        => "Rejoindre {$destName} depuis {$stationName} {$travelMode}",
+                'description' => $linesLabel !== ''
+                    ? "Itinéraire {$stationName} → {$destName} : {$linesLabel}"
+                    : "Itinéraire {$stationName} → {$destName}",
+            ];
+
+            if ($duration > 0) {
+                $howto['totalTime'] = 'PT' . $duration . 'M';
+            }
+
+            if (!$isWalking) {
+                $howto['estimatedCost'] = [
+                    '@type'    => 'MonetaryAmount',
+                    'currency' => 'EUR',
+                    'value'    => '2.15',
+                ];
+                $howto['tool'] = [
+                    ['@type' => 'HowToTool', 'name' => 'Ticket t+ (2,15 €) ou pass Navigo'],
+                ];
+            }
+
+            $howto['step'] = $steps;
+            $howtos[] = $howto;
+        }
+
+        return $howtos;
+    }
+
+    /** Vrai si lines_used ne contient que des étapes "à pied". */
+    private static function isWalkingItin(array $linesUsed): bool
+    {
+        if (empty($linesUsed)) return false;
+        foreach ($linesUsed as $line) {
+            if (stripos((string)$line, 'pied') === false) return false;
+        }
+        return true;
+    }
+
+    /** Convertit un code ligne ("M14", "RER C", "T3a") en libellé naturel. */
+    private static function lineLabelForStep(string $line): string
+    {
+        $line = trim($line);
+        if (stripos($line, 'pied') !== false) return 'à pied';
+        if (preg_match('/^M\s*\d+/i', $line))   return 'le métro ' . $line;
+        if (stripos($line, 'RER') === 0)         return 'le ' . $line;
+        if (preg_match('/^T\s*\d+[a-z]?$/i', $line)) return 'le tramway ' . $line;
+        return 'la ligne ' . $line;
+    }
+
+    /**
+     * Génère les steps HowTo selon lines_used + changes_count :
+     *  - 0 ligne          : 1 step textuel à partir de lines_label
+     *  - itin "à pied"    : 1 step unique de marche
+     *  - 1 ligne, 0 corr. : 1 step de prise + 1 step d'arrivée
+     *  - N lignes         : N steps de prise + (N-1) steps correspondance + arrivée
+     */
+    private static function buildHowToSteps(string $from, string $to, array $linesUsed, string $linesLabel, int $changes): array
+    {
+        if (empty($linesUsed)) {
+            if ($linesLabel === '') return [];
+            return [[
+                '@type'    => 'HowToStep',
+                'name'     => "Itinéraire vers {$to}",
+                'text'     => $linesLabel,
+                'position' => 1,
+            ]];
+        }
+
+        if (self::isWalkingItin($linesUsed)) {
+            return [[
+                '@type'    => 'HowToStep',
+                'name'     => "Rejoignez {$to} à pied",
+                'text'     => $linesLabel !== '' ? $linesLabel : "Suivez l'itinéraire piéton jusqu'à {$to}.",
+                'position' => 1,
+            ]];
+        }
+
+        $steps = [];
+        $position = 1;
+        $count = count($linesUsed);
+        foreach ($linesUsed as $i => $line) {
+            $label = self::lineLabelForStep((string)$line);
+            if ($i === 0) {
+                $stepName = "Depuis {$from}, prenez {$label}";
+                $stepText = "À la station {$from}, descendez sur les quais et empruntez {$label}.";
+            } else {
+                $stepName = "Reprenez {$label}";
+                $stepText = "Effectuez la correspondance vers {$label} en suivant la signalétique RATP / SNCF (aucune station intermédiaire n'est précisée ici).";
+            }
+            $steps[] = [
+                '@type'    => 'HowToStep',
+                'name'     => $stepName,
+                'text'     => $stepText,
+                'position' => $position++,
+            ];
+
+            if ($i < $count - 1) {
+                $next = self::lineLabelForStep((string)$linesUsed[$i + 1]);
+                $steps[] = [
+                    '@type'    => 'HowToStep',
+                    'name'     => "Correspondance vers {$next}",
+                    'text'     => "Suivez les indications de correspondance vers {$next} dans les couloirs balisés.",
+                    'position' => $position++,
+                ];
+            }
+        }
+
+        $arrivalText = $linesLabel !== ''
+            ? "Descendez à la station la plus proche de {$to} et rejoignez votre destination. Référence : {$linesLabel}."
+            : "Descendez à la station la plus proche de {$to} et rejoignez votre destination.";
+        $steps[] = [
+            '@type'    => 'HowToStep',
+            'name'     => "Arrivée à {$to}",
+            'text'     => $arrivalText,
+            'position' => $position,
+        ];
+
+        return $steps;
+    }
 }
