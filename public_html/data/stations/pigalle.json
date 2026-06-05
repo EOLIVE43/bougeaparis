@@ -1,0 +1,593 @@
+{
+    "published": true,
+    "slug": "pigalle",
+    "name": "Pigalle",
+    "name_full": "Pigalle (Métro 2 + 12)",
+    "arrondissement": "9e / 18e (Paris)",
+    "address": "Place Pigalle / Boulevard de Clichy, 75009 / 75018 Paris",
+    "latitude": 48.8822,
+    "longitude": 2.337315,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Pigalle station",
+        "es": "Estación Pigalle"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#003CA6",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "30",
+            "40"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [
+            "54",
+            "74"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 7,
+            "nearby_count": 19
+        }
+    },
+    "seo": {
+        "description": "Station Pigalle : M2 + M12 au pied de Montmartre. Moulin Rouge à 5 min, Place Pigalle, Bd de Clichy, cabarets historiques, quartier rouge."
+    },
+    "hero": {
+        "tagline": "Le quartier rouge historique de Paris",
+        "description": "Inaugurée le <strong>7 octobre 1902</strong> sur la <strong>ligne 2</strong> puis rejointe par la <strong>ligne 12</strong> le <strong>8 avril 1911</strong>, la station Pigalle est l'<strong>accès métro du quartier rouge historique</strong> de Paris. Située sous la <strong>Place Pigalle</strong> au pied du versant sud de Montmartre, elle dessert le <strong>boulevard de Clichy</strong> et ses cabarets emblématiques. À 5 minutes à pied : le <strong>Moulin Rouge</strong> (1889, place Blanche). Les quais de la M12 conservent leur <strong>décor Nord-Sud d'origine</strong> avec céramiques vertes et lettres « NS ». L'entrée principale conserve un <strong>édicule Guimard</strong> Art nouveau classé Monument Historique depuis <strong>1965</strong>. Aujourd'hui : <strong>SoPi</strong> (South Pigalle) mêle cabarets historiques et bars bobos branchés."
+    },
+    "adjacent_stations": {
+        "metro-2": {
+            "previous": {
+                "name": "Anvers",
+                "slug": "anvers",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Blanche",
+                "slug": "blanche",
+                "direction": "Porte Dauphine"
+            }
+        },
+        "metro-12": {
+            "previous": {
+                "name": "Abbesses",
+                "slug": "abbesses",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Saint-Georges",
+                "slug": "saint-georges",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Pigalle</strong> est l'<strong>accès métro de référence au quartier rouge historique de Paris</strong>, célèbre depuis le XIXᵉ siècle pour ses cabarets, music-halls et vie nocturne. Située sous la <strong>Place Pigalle</strong> à la jonction du <strong>9e et du 18e arrondissement</strong>, elle est desservie par deux lignes : <strong>M2</strong> (Porte Dauphine ↔ Nation, ouverte ici le 7 octobre 1902) et <strong>M12</strong> (Mairie d'Aubervilliers ↔ Mairie d'Issy, arrivée le 8 avril 1911).",
+        "Avec <strong>5,6 millions d'entrants en 2019</strong> (71e station), elle est fortement fréquentée par les Parisiens, les touristes et les noctambules. L'<strong>entrée principale, sur la promenade Coccinelle à l'est de la place</strong>, conserve un <strong>édicule Hector Guimard</strong> Art nouveau classé au titre des <strong>Monuments Historiques depuis 1965</strong>. Les quais de la M12 conservent en partie leur <strong>décoration Nord-Sud d'origine</strong> avec <strong>céramiques vertes</strong> à motifs géométriques et lettres <strong>« NS »</strong>, témoignage de l'ancienne compagnie Nord-Sud (absorbée par la CMP en 1931).",
+        "À <strong>5 à 10 minutes à pied</strong> : le célèbre <strong>Moulin Rouge</strong> (Place Blanche, fondé en <strong>1889</strong>) qu'on rejoint par le boulevard de Clichy, les <strong>cabarets et music-halls</strong> du quartier (<strong>La Cigale, Le Divan du Monde, Le Bus Palladium</strong>), le <strong>Musée de la Vie romantique</strong>, la <strong>rue des Martyrs</strong> (commerces de bouche et boutiques tendance) et le <strong>Sacré-Cœur de Montmartre</strong> (via Anvers + funiculaire ou à pied). Le quartier a vu fréquenter <strong>Toulouse-Lautrec</strong>, <strong>Picasso</strong>, <strong>Modigliani</strong> et de nombreux artistes de la Belle Époque."
+    ],
+    "history": {
+        "title": "1902-1911 : la station du Paris festif",
+        "paragraphs": [
+            "La station Pigalle est inaugurée sur la <strong>ligne 2</strong> le <strong>7 octobre 1902</strong>, à l'occasion du prolongement de la M2 vers Anvers (terminus provisoire d'alors). Elle dessert l'un des quartiers les plus festifs de Paris, en plein essor commercial : la <strong>Place Pigalle</strong> est déjà un haut lieu de la vie nocturne parisienne, fréquentée par les artistes, les bohèmes et la classe ouvrière.",
+            "La <strong>ligne 12</strong> arrive le <strong>8 avril 1911</strong>, alors exploitée par la <strong>Société du chemin de fer électrique souterrain Nord-Sud de Paris</strong> (compagnie concurrente de la CMP). Les quais de la M12 conservent encore aujourd'hui leur <strong>identité visuelle Nord-Sud</strong> : <strong>céramiques vertes</strong> à motifs géométriques, lettres <strong>« NS »</strong>, plafonds caractéristiques. La compagnie Nord-Sud est absorbée par la CMP en <strong>1931</strong>, sans modifier l'architecture des stations.",
+            "L'entrée principale, située sur la <strong>promenade Coccinelle à l'est de la place</strong>, conserve un <strong>édicule Hector Guimard</strong> en fonte et verre, dans le style Art nouveau caractéristique du métro parisien. Il a été classé au titre des <strong>Monuments Historiques en 1965</strong>, ce qui en fait l'un des édicules Guimard les plus précocement protégés du réseau.",
+            "Le quartier <strong>Pigalle</strong> est lié à la mémoire artistique de Paris : <strong>Henri de Toulouse-Lautrec</strong> y a vécu et y a peint ses célèbres scènes de cabaret, <strong>Pablo Picasso</strong> y a fréquenté les ateliers du Bateau-Lavoir voisin, <strong>Amedeo Modigliani</strong> y a séjourné, et la <strong>Place Pigalle</strong> elle-même rend hommage au sculpteur <strong>Jean-Baptiste Pigalle</strong> (1714-1785). Aujourd'hui, le quartier connaît une nouvelle vie sous le surnom <strong>« SoPi »</strong> (South Pigalle) : bars à cocktails, boutiques tendance et restaurants tendance se mêlent aux cabarets historiques."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Pigalle ?",
+            "answer": "<strong>Deux lignes de métro</strong> : la <strong>M2</strong> (Porte Dauphine ↔ Nation, ouverte ici en 1902) et la <strong>M12</strong> (Mairie d'Aubervilliers ↔ Mairie d'Issy, arrivée en 1911). Aucune correspondance RER directe — pour le RER A, descendre à <strong>Auber</strong> via M12 (4 stations). De nombreux bus desservent le bd de Clichy et la place Pigalle."
+        },
+        {
+            "question": "Comment rejoindre le Moulin Rouge depuis Pigalle ?",
+            "answer": "<strong>5 minutes à pied</strong> : sortir et prendre le <strong>boulevard de Clichy</strong> vers l'ouest jusqu'à la <strong>Place Blanche</strong>. Le <strong>Moulin Rouge</strong> (fondé en <strong>1889</strong>) trône au 82 boulevard de Clichy. Alternative en métro : <strong>M2 direction Porte Dauphine</strong>, 1 station jusqu'à <strong>Blanche</strong>. Les spectacles ont lieu à 21h et 23h, réservation conseillée."
+        },
+        {
+            "question": "Comment rejoindre le Sacré-Cœur depuis Pigalle ?",
+            "answer": "<strong>Deux options</strong> : 1) <strong>À pied</strong> en 15 min en montant la rue Houdon puis les escaliers ; 2) <strong>M2 direction Nation jusqu'à Anvers</strong> (1 station) puis <strong>Funiculaire de Montmartre</strong> (rue de Steinkerque, 200 m + 1 min de montée). La 2ᵉ option est plus rapide et moins fatigante."
+        },
+        {
+            "question": "Qu'est-ce que le SoPi (South Pigalle) ?",
+            "answer": "<strong>SoPi</strong> est le surnom contemporain du <strong>quartier de South Pigalle</strong>, autour des rues des Martyrs, Frochot, Houdon et Pierre-Fontaine. Depuis les années 2010, le quartier connaît une revitalisation tendance : <strong>bars à cocktails</strong> (Dirty Dick, Lulu White), <strong>boutiques de mode indépendantes</strong>, <strong>restaurants gastronomiques</strong>, tout en coexistant avec les cabarets historiques. C'est devenu l'un des quartiers les plus branchés de Paris pour les jeunes parisiens et expatriés."
+        },
+        {
+            "question": "La station Pigalle est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station Pigalle n'est pas accessible aux PMR</strong> sur les 2 lignes. Pas d'ascenseurs vers les quais. Pour un trajet PMR vers le Moulin Rouge, descendre à <strong>Châtelet</strong> (M14 PMR) puis bus 30 ou 54 accessibles, ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la station Pigalle ?",
+            "answer": "La station Pigalle suit les horaires standards des <strong>lignes M2 et M12</strong> : circulation d'environ <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> N01, N02, N12, N16 qui desservent la place — utile pour les retours nocturnes des cabarets."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier Pigalle ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : le <strong>Moulin Rouge</strong> (1889), les <strong>cabarets La Cigale et Le Divan du Monde</strong>, le <strong>Musée de la Vie romantique</strong>, la <strong>rue des Martyrs</strong> (commerces tendance, boulangerie Sébastien Gaudard), le <strong>Musée de l'Érotisme</strong> (fermé en 2016 mais quartier historique), la <strong>Cité Véron</strong> (impasse pittoresque), et bien sûr <strong>Montmartre</strong> et le <strong>Sacré-Cœur</strong> en remontant."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la station ?",
+            "answer": "<strong>Pas de sanitaires publics</strong> en station Pigalle (audit en cours pour cette page). À proximité immédiate : nombreux <strong>cafés, bars et restaurants</strong> autour de la place et du bd de Clichy. Le quartier est très commerçant et reste animé jusqu'à tard."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Édicule Guimard MH 1965</strong> à photographier — entrée principale, promenade Coccinelle est de la place.",
+        "Pour le <strong>Moulin Rouge</strong> : à pied (~5 min) par le bd de Clichy vers l'ouest, ou M2 vers Blanche (1 station).",
+        "Pour <strong>Montmartre</strong> et le <strong>Sacré-Cœur</strong> : M2 vers Anvers (1 station) + funiculaire (plus rapide qu'à pied).",
+        "<strong>Quais M12 Nord-Sud</strong> : céramiques vertes d'origine à observer entre deux rames.",
+        "<strong>SoPi</strong> : remonter la rue des Martyrs ou la rue Houdon pour boutiques + bars tendance.",
+        "<strong>Soirée tardive</strong> : Noctilien N01, N02 depuis la place — utile après les cabarets."
+    ],
+    "trivia": [
+        {
+            "icon": "🎭",
+            "title": "Place Pigalle — le quartier rouge historique de Paris",
+            "content": "La <strong>Place Pigalle</strong> et le <strong>boulevard de Clichy</strong> qui la traverse sont depuis la <strong>fin du XIXᵉ siècle</strong> le <strong>quartier rouge historique de Paris</strong>, célèbre pour ses <strong>cabarets, music-halls et vie nocturne</strong>. La place rend hommage au sculpteur <strong>Jean-Baptiste Pigalle (1714-1785)</strong>. À 5 minutes à pied : le <strong>Moulin Rouge</strong> (fondé en <strong>1889</strong>) à la Place Blanche. À l'est : les cabarets contemporains <strong>La Cigale</strong> et <strong>Le Divan du Monde</strong>."
+        },
+        {
+            "icon": "🎨",
+            "title": "Toulouse-Lautrec, Picasso, Modigliani y ont fréquenté",
+            "content": "Le quartier Pigalle est intimement lié à la <strong>mémoire artistique de Paris</strong>. <strong>Henri de Toulouse-Lautrec</strong> y vivait et y a peint ses célèbres scènes de cabaret. <strong>Pablo Picasso</strong> fréquentait les ateliers de Montmartre voisin (Bateau-Lavoir). <strong>Amedeo Modigliani</strong> y a séjourné dans les années 1900-1910. Le quartier rassemblait alors la <strong>bohème artistique parisienne</strong>, attirée par les loyers modestes et l'ambiance nocturne unique."
+        },
+        {
+            "icon": "🏗️",
+            "title": "Édicule Guimard classé MH 1965 — l'un des plus tôt protégés",
+            "content": "L'entrée principale de la station Pigalle, sur la <strong>promenade Coccinelle à l'est de la place</strong>, conserve un <strong>édicule Art nouveau d'Hector Guimard</strong> en fonte et verre. Il a été classé au titre des <strong>Monuments Historiques en 1965</strong>, ce qui en fait l'un des <strong>édicules Guimard les plus précocement protégés</strong> du réseau parisien — bien avant la grande vague de protection patrimoniale de 1978."
+        },
+        {
+            "icon": "💚",
+            "title": "Quais M12 — céramiques vertes Nord-Sud d'origine",
+            "content": "Les quais de la <strong>ligne 12</strong> conservent en partie leur <strong>décoration Nord-Sud d'origine</strong> : <strong>céramiques vertes</strong> à motifs géométriques, <strong>lettres « NS »</strong> (initiales de la compagnie Nord-Sud), plafonds caractéristiques de la <strong>Société du chemin de fer électrique souterrain Nord-Sud de Paris</strong>. Cette compagnie concurrente de la CMP a été absorbée en <strong>1931</strong>, mais son identité visuelle reste préservée à Pigalle, un des meilleurs témoignages avec Notre-Dame-des-Champs et Madeleine."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Moulin Rouge",
+            "destination_slug": "moulin-rouge",
+            "destination_full_name": "Pigalle → Moulin Rouge",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard de Clichy (~350 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-moulin-rouge/"
+        },
+        {
+            "destination_name": "Sacré-Cœur Montmartre",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Pigalle → Sacré-Cœur",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 jusqu'à Anvers (1 station) + Funiculaire de Montmartre",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Abbesses (Mur des Je t'aime)",
+            "destination_slug": "abbesses",
+            "destination_full_name": "Pigalle → Abbesses",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-abbesses/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Pigalle → Opéra Garnier",
+            "lines_used": [
+                "à pied",
+                "M12"
+            ],
+            "lines_label": "À pied par la rue des Martyrs (15 min) ou M12 jusqu'à Madeleine + à pied",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-opera/"
+        },
+        {
+            "destination_name": "Châtelet via M12",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Pigalle → Châtelet",
+            "lines_used": [
+                "M12",
+                "M4"
+            ],
+            "lines_label": "M12 jusqu'à Madeleine + M14 jusqu'à Châtelet (ou autre)",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-chatelet/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Pigalle → CDG",
+            "lines_used": [
+                "M2",
+                "RER B"
+            ],
+            "lines_label": "M2 jusqu'à Gare du Nord (3 stations) + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-cdg/"
+        },
+        {
+            "destination_name": "Père Lachaise",
+            "destination_slug": "pere-lachaise",
+            "destination_full_name": "Pigalle → Père Lachaise",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Nation (8 stations)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-pere-lachaise/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M9 + M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Pigalle → Tour Eiffel",
+            "lines_used": [
+                "M12",
+                "M9",
+                "M6"
+            ],
+            "lines_label": "M12 jusqu'à Madeleine, M9 jusqu'à Trocadéro (ou direct)",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pigalle/pigalle-vers-tour-eiffel/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q186115",
+            "name": "Montmartre",
+            "category": "site notable",
+            "description": "Montmartre est un quartier du 18e arrondissement de Paris (France) dominé par la basilique du Sacré-Cœur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
+            "latitude": 48.886944,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pigalle (édicule Guimard)",
+                "distance_m": 568,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris (France), est un édifice…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pigalle (édicule Guimard)",
+                "distance_m": 609,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q151030",
+            "name": "Moulin-Rouge",
+            "category": "site notable",
+            "description": "Le Moulin-Rouge est un cabaret parisien fondé en 1889 par le Catalan Josep Oller et par Charles Zidler, qui possédaient déjà l'Olympia.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Moulin%20Rouge%2C%2017%20April%202011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Moulin-Rouge",
+            "latitude": 48.884167,
+            "longitude": 2.332222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 417,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1138922",
+            "name": "Le Chat noir",
+            "category": "site notable",
+            "description": "Le Chat noir ou Chat-Noir est un célèbre cabaret de Montmartre fondé en novembre 1881 par Rodolphe Salis, qui fut aussi à l'origine de la revue hebdomadaire du même nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Chat%20noir%201929.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Chat_noir",
+            "latitude": 48.88359,
+            "longitude": 2.33413,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 264,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2300245",
+            "name": "église Saint-Pierre de Montmartre",
+            "category": "église",
+            "description": "L’église Saint-Pierre de Montmartre est une église paroissiale catholique romaine située dans le 18e arrondissement de Paris, au sommet de la butte Montmartre, au no 2 rue du Mont-Cenis, à l'ouest de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
+            "latitude": 48.886667,
+            "longitude": 2.341944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Pigalle (édicule Guimard)",
+                "distance_m": 569,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q924480",
+            "name": "moulin de la Galette",
+            "category": "site notable",
+            "description": "Le moulin de la Galette est une expression générique : elle désigne deux moulins dont, actuellement, le seul moulin à vent en état de marche de la butte Montmartre dans le 18e arrondissement de Paris…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018e%20Moulin%20Radet%20220.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Moulin_de_la_Galette",
+            "latitude": 48.887361,
+            "longitude": 2.337083,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 543,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q586142",
+            "name": "église de la Sainte-Trinité de Paris",
+            "category": "église",
+            "description": "L’église de la Sainte-Trinité de Paris est un édifice religieux de culte catholique romain situé place d'Estienne-d'Orves, dans le 9e arrondissement de Paris, au croisement de la rue Blanche, de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20de%20la%20Sainte-Trinit%C3%A9%20-%20Fa%C3%A7ade%20-%20Mars%202026.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_la_Sainte-Trinit%C3%A9_de_Paris",
+            "latitude": 48.877301,
+            "longitude": 2.331408,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 720,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q426974",
+            "name": "Bateau-Lavoir",
+            "category": "quartier",
+            "description": "Le Bateau-Lavoir est une cité d'artistes située dans le 18e arrondissement de Paris (France), au 13 de la place Émile-Goudeau.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bateau-Lavoir%20face%20avant.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bateau-Lavoir",
+            "latitude": 48.886111,
+            "longitude": 2.337611,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 404,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q751317",
+            "name": "Grand Guignol",
+            "category": "site notable",
+            "description": "Le théâtre du Grand Guignol, plus couramment appelé Grand-Guignol, est une ancienne salle de spectacles parisienne qui était située 7, cité Chaptal, dans le 9e arrondissement, active de 1896 à 1963.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand-Guignol-1890.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grand-Guignol",
+            "latitude": 48.8814,
+            "longitude": 2.3331,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 331,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q602107",
+            "name": "place Pigalle",
+            "category": "place",
+            "description": "La place Pigalle est une place située dans le 9e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20pigalle.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Pigalle",
+            "latitude": 48.882167,
+            "longitude": 2.337278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 35,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2296362",
+            "name": "musée Gustave-Moreau",
+            "category": "musée",
+            "description": "Le musée Gustave-Moreau est un musée national situé au 14, rue Catherine-de-La Rochefoucauld, à Paris 9e, dans l’ancien atelier du peintre symboliste Gustave Moreau (1826-1898), légué par l'artiste à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20mus%C3%A9e%20Gustave-Moreau%2C%2019%20mai%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gustave-Moreau",
+            "latitude": 48.878,
+            "longitude": 2.33436,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 543,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1423353",
+            "name": "Au Lapin agile",
+            "category": "site notable",
+            "description": "Au Lapin agile est un cabaret de Paris situé sur la butte Montmartre, au 22 de la rue des Saules, dans le 18e arrondissement, près de la station de métro Lamarck - Caulaincourt.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Gill%20-%20Au%20Lapin%20Agile.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Au_Lapin_agile",
+            "latitude": 48.8886,
+            "longitude": 2.33998,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Pigalle (côté 18e)",
+                "distance_m": 708,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place Pigalle (édicule Guimard)",
+            "address_full": "15 Boulevard de Clichy 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.882286,
+            "longitude": 2.337917,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Place Pigalle (côté 18e)",
+            "address_full": "22 Boulevard de Clichy 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.88248,
+            "longitude": 2.337314,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "Place Pigalle",
+                "bd de Clichy"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Place Pigalle + bd de Clichy + SoPi",
+            "details": "Cabarets historiques (La Cigale, Le Divan du Monde), bars à cocktails branchés (SoPi), restaurants tendance.",
+            "secondary": "Rue des Martyrs : commerces de bouche, boulangerie Sébastien Gaudard."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée sur la place Pigalle et le boulevard de Clichy, particulièrement en soirée et week-ends.",
+            "Soirée tardive : zone très animée jusqu'à 4h grâce aux cabarets et bars — environnement plutôt sécurisé sur les axes principaux mais éviter les ruelles annexes.",
+            "Présence de racolage et prostitution dans certaines rues du quartier (bd de Clichy nord, rue Pigalle) : décliner poliment les sollicitations.",
+            "Touristes ciblés par des techniques d'arnaque (faux billets, arnaque au bracelet) près des cabarets : ne rien accepter d'inconnus dans la rue."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature nocturne du quartier. audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Paris_18e_Moulin_Rouge_586.jpg",
+        "alt": "Moulin Rouge (fondé en 1889) au 82 boulevard de Clichy, Paris 18e — à 5 min à pied de Pigalle",
+        "width": 7685,
+        "height": 5123,
+        "credit": {
+            "author": "GFreihalter",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Paris_18e_Moulin_Rouge_586.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pigalle/pigalle-400.avif",
+                "800": "/assets/img/stations/pigalle/pigalle-800.avif",
+                "1200": "/assets/img/stations/pigalle/pigalle-1200.avif",
+                "1600": "/assets/img/stations/pigalle/pigalle-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pigalle/pigalle-400.webp",
+                "800": "/assets/img/stations/pigalle/pigalle-800.webp",
+                "1200": "/assets/img/stations/pigalle/pigalle-1200.webp",
+                "1600": "/assets/img/stations/pigalle/pigalle-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pigalle/pigalle-400.jpg",
+                "800": "/assets/img/stations/pigalle/pigalle-800.jpg",
+                "1200": "/assets/img/stations/pigalle/pigalle-1200.jpg",
+                "1600": "/assets/img/stations/pigalle/pigalle-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur les 2 lignes (M2, M12). Pas d'ascenseurs vers les quais. Pour un trajet PMR vers Pigalle, descendre à Châtelet (M14 PMR) puis bus 30 ou 54 accessibles, ou taxi/VTC."
+    }
+}
