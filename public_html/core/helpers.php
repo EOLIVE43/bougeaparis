@@ -935,3 +935,89 @@ if (!function_exists('buildStationTitle')) {
         return $title . $brand;
     }
 }
+
+if (!function_exists('buildStationH1')) {
+    /**
+     * Construit le H1 d'une page station, format long et SEO :
+     *
+     *   "Station de {type} {Nom} ({Codes})"
+     *
+     * Patterns par mode dominant :
+     *   - Metro pur       : "Station de métro {Nom} (Métro {liste})"
+     *   - Mixte M + RER   : "Station de métro {Nom} (Métro {liste} + RER {liste})"
+     *   - RER pur         : "Station de RER {Nom} (RER {liste})"
+     *   - Tram pur        : "Station de tramway {Nom} (Tram {liste})"
+     *   - Transilien pur  : "Station de Transilien {Nom} (Transilien {liste})"
+     *
+     * Format codes (LONG, pas compact) :
+     *   - "Métro 6"            (pas "M6")
+     *   - "RER C", "RER B et C"
+     *   - "Tram 2", "Tram 2 et 3a"
+     *
+     * Séparateurs de listes :
+     *   - 1 code   : "X"
+     *   - 2 codes  : "X et Y"
+     *   - 3+ codes : "X, Y et Z"
+     *
+     * Mirror de buildStationTitle() pour la cohérence de détection du mode
+     * dominant. La rendition est en texte brut (pas de HTML) ; l'appelant
+     * doit echo dans un contexte sécurisé (le H1 est statique côté code).
+     *
+     * @param array $station JSON station decode
+     * @return string H1 final (texte brut, ex: "Station de métro Cité (Métro 4)")
+     */
+    function buildStationH1(array $station): string
+    {
+        $name = trim((string)($station['name'] ?? ''));
+
+        // Extraction des codes par mode (memes regles que buildStationTitle)
+        $metro = [];
+        foreach (($station['lines'] ?? []) as $line) {
+            if (($line['type'] ?? '') === 'metro' && !empty($line['code'])) {
+                $metro[] = (string)$line['code'];
+            }
+        }
+        $rer   = array_values(array_filter(array_column($station['rer_correspondences']        ?? [], 'code')));
+        $tram  = array_values(array_filter(array_column($station['tramway_correspondences']    ?? [], 'code')));
+        $trans = array_values(array_filter(array_column($station['transilien_correspondences'] ?? [], 'code')));
+
+        // Joiner conversationnel : "A", "A et B", "A, B et C"
+        $joinCodes = static function (array $codes): string {
+            $n = count($codes);
+            if ($n === 0) { return ''; }
+            if ($n === 1) { return $codes[0]; }
+            if ($n === 2) { return $codes[0] . ' et ' . $codes[1]; }
+            $last = array_pop($codes);
+            return implode(', ', $codes) . ' et ' . $last;
+        };
+
+        $metroPart = $metro ? ('Métro ' . $joinCodes($metro)) : '';
+        $rerPart   = $rer   ? ('RER '   . $joinCodes($rer))   : '';
+        $tramPart  = $tram  ? ('Tram '  . $joinCodes($tram))  : '';
+        $transPart = $trans ? ('Transilien ' . $joinCodes($trans)) : '';
+
+        // Detection du mode dominant + prefixe d'introduction
+        if ($metro) {
+            // CAS 1 ou 2 : metro pur ou metro + correspondances
+            $modeIntro = 'Station de métro';
+            $codesParts = array_filter([$metroPart, $rerPart, $tramPart, $transPart], static fn($s) => $s !== '');
+            $codes = implode(' + ', $codesParts);
+        } elseif ($rer) {
+            // CAS 3 : RER pur
+            $modeIntro = 'Station de RER';
+            $codes = $rerPart;
+        } elseif ($tram) {
+            // CAS 4 : Tram pur
+            $modeIntro = 'Station de tramway';
+            $codes = $tramPart;
+        } elseif ($trans) {
+            // CAS 5 : Transilien pur
+            $modeIntro = 'Station de Transilien';
+            $codes = $transPart;
+        } else {
+            return 'Station ' . $name;
+        }
+
+        return $modeIntro . ' ' . $name . ' (' . $codes . ')';
+    }
+}

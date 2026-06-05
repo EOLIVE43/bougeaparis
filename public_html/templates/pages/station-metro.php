@@ -355,7 +355,7 @@ $tpl->partial('components/breadcrumb', [
 
     <div class="station-hero__content">
       <h1 id="station-hero-title">
-        Station <?= Template::e($nameFull) ?>
+        <?= Template::e(buildStationH1($station)) ?>
       </h1>
 
       <div class="station-hero__badges" aria-label="Lignes desservant la station">
