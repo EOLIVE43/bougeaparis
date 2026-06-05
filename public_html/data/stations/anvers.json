@@ -1,0 +1,559 @@
+{
+    "published": true,
+    "slug": "anvers",
+    "name": "Anvers",
+    "name_full": "Anvers - Sacré-Cœur (Métro 2)",
+    "arrondissement": "9e / 18e (Paris)",
+    "address": "Boulevard Marguerite-de-Rochechouart, 75018 Paris",
+    "latitude": 48.88286845680266,
+    "longitude": 2.344134387443545,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Anvers station (Sacré-Cœur)",
+        "es": "Estación Anvers (Sacré-Cœur)"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#003CA6",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "40"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [
+            "54",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 6,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Anvers - Sacré-Cœur : métro M2 au pied de Montmartre. Funiculaire à 200 m, Sacré-Cœur à 10 min à pied, Place d'Anvers et Bd Rochechouart."
+    },
+    "hero": {
+        "tagline": "Au pied de Montmartre et du Sacré-Cœur",
+        "description": "Inaugurée le <strong>7 octobre 1902</strong> comme terminus provisoire de la <strong>ligne 2 Nord</strong> en provenance d'Étoile, la station Anvers est l'<strong>accès métro de référence au sud de Montmartre</strong>. Située sous le <strong>boulevard Marguerite-de-Rochechouart</strong> à la limite du <strong>9e et du 18e arrondissement</strong>, elle dessert la <strong>Place d'Anvers</strong>, le <strong>Funiculaire de Montmartre</strong> à 200 mètres et la <strong>Basilique du Sacré-Cœur</strong> (1875-1923) accessible à pied en 10 minutes. Son <strong>édicule Hector Guimard</strong> Art nouveau, classé <strong>Monument Historique depuis 1978</strong>, est l'un des derniers visibles à Paris."
+    },
+    "adjacent_stations": {
+        "metro-2": {
+            "previous": {
+                "name": "Barbès - Rochechouart",
+                "slug": "barbes-rochechouart",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Pigalle",
+                "slug": "pigalle",
+                "direction": "Porte Dauphine"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Anvers</strong>, sous-titrée <strong>« Sacré-Cœur »</strong>, est l'<strong>accès métro de référence à Montmartre</strong> par le sud. Située sous le <strong>boulevard Marguerite-de-Rochechouart</strong>, à la limite du <strong>9e et du 18e arrondissement</strong>, elle est exclusivement desservie par le <strong>métro M2</strong> (Nation ↔ Porte Dauphine) entre les stations <strong>Pigalle</strong> et <strong>Barbès - Rochechouart</strong>.",
+        "À 200 mètres de la sortie, la <strong>rue de Steinkerque</strong> conduit au <strong>Funiculaire de Montmartre</strong>, qui dessert directement le sommet de la butte sans effort. La <strong>Basilique du Sacré-Cœur</strong> (construite de <strong>1875 à 1923</strong> par <strong>Paul Abadie</strong> en style <strong>romano-byzantin</strong>) est accessible en moins de <strong>10 minutes à pied</strong> via les escaliers de Steinkerque ou le funiculaire. Le dôme culmine à <strong>83 mètres</strong> et offre l'une des plus belles vues panoramiques sur Paris.",
+        "Avec <strong>3 420 749 entrants en 2021</strong>, Anvers se classait au <strong>85e rang</strong> du réseau métro RATP. La station dispose d'un <strong>édicule Art nouveau</strong> dessiné par <strong>Hector Guimard</strong>, classé au titre des <strong>Monuments Historiques depuis 1978</strong>. La plaque émaillée signée à l'entrée constitue un repère iconique du quartier."
+    ],
+    "history": {
+        "title": "1902 : terminus provisoire de la ligne 2 Nord",
+        "paragraphs": [
+            "La station Anvers est inaugurée le <strong>7 octobre 1902</strong> comme <strong>terminus provisoire</strong> de la <strong>ligne 2 Nord</strong> en provenance d'<strong>Étoile</strong>. À cette époque, le métro parisien est en pleine expansion : la ligne 2 sera complétée jusqu'à Nation en 1903 puis vers Père-Lachaise et Nation à mesure que les travaux progressent. Anvers fait partie des stations historiques du réseau, ouvertes dans la foulée de l'Exposition universelle de 1900.",
+            "Le boulevard de Rochechouart sous lequel passe la station a été rebaptisé <strong>boulevard Marguerite-de-Rochechouart</strong> pour intégrer le prénom féminin de cette abbesse de Montmartre. L'édicule en surface, signé <strong>Hector Guimard</strong>, est l'un des derniers exemplaires Art nouveau encore visibles à Paris. Il a été classé au titre des <strong>Monuments Historiques le 12 février 1978</strong>, en même temps que plusieurs autres édicules Guimard du réseau.",
+            "Le <strong>sous-titre « Sacré-Cœur »</strong> apparaît sur les cartouches de la station en référence à la basilique toute proche. La <strong>Basilique du Sacré-Cœur</strong> a été construite entre <strong>1875 et 1923</strong> par l'architecte <strong>Paul Abadie</strong>, suite à un vœu d'<strong>Alexandre Legentil</strong> en décembre 1870 après la défaite française face à la Prusse. Son <strong>dôme de 83 mètres</strong> est visible depuis tout Paris.",
+            "Le <strong>Funiculaire de Montmartre</strong>, accessible à 200 mètres de la station par la rue de Steinkerque, a été mis en service en <strong>1900</strong> pour permettre l'ascension rapide du sommet de la butte. Initialement à eau, il est aujourd'hui entièrement automatique et fait partie intégrante du réseau RATP — un trajet est inclus avec un ticket métro classique."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Anvers ?",
+            "answer": "<strong>Une seule ligne</strong> dessert Anvers : le <strong>métro M2</strong> (Nation ↔ Porte Dauphine). Aucune correspondance RER directe — pour le RER B/D, descendre à <strong>Gare du Nord</strong> via la M2 (3 stations). Plusieurs <strong>lignes de bus</strong> desservent également le boulevard de Rochechouart : 54 et 85, plus les Noctilien N01 et N02."
+        },
+        {
+            "question": "Comment rejoindre le Sacré-Cœur depuis la station Anvers ?",
+            "answer": "<strong>Deux options</strong> : 1) À pied par la <strong>rue de Steinkerque</strong> puis les <strong>escaliers de Montmartre</strong> (~10 min, sportif) ; 2) Via le <strong>Funiculaire de Montmartre</strong> à 200 m de la station (rue de Steinkerque) : 1 minute de montée sans effort, inclus dans le ticket métro RATP. Le funiculaire fonctionne de 6h à 0h45 environ."
+        },
+        {
+            "question": "Quelle différence entre Anvers et Abbesses pour Montmartre ?",
+            "answer": "<strong>Anvers M2</strong> est au <strong>pied de Montmartre</strong>, sur le boulevard de Rochechouart : c'est l'accès au funiculaire et au sud de la butte. <strong>Abbesses M12</strong> est <strong>sur la butte elle-même</strong>, plus haut (mais 36 m sous terre — la station la plus profonde de Paris). Pour le Sacré-Cœur : Anvers + funiculaire est plus rapide ; Abbesses dessert directement le quartier bohème et le Mur des Je t'aime."
+        },
+        {
+            "question": "La station Anvers est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station Anvers n'est pas accessible aux personnes à mobilité réduite</strong>. Pour un trajet PMR vers Montmartre, descendre à <strong>Lamarck - Caulaincourt</strong> (M12, accès plus facile) puis bus 80 / Montmartrobus, ou taxi/VTC. Le funiculaire est accessible mais nécessite d'abord d'atteindre la rue de Steinkerque."
+        },
+        {
+            "question": "Quels sont les horaires de la station Anvers ?",
+            "answer": "La station Anvers suit les horaires standards de la <strong>ligne 2</strong> : circulation d'environ <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 les vendredis, samedis et veilles de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien N01 et N02</strong> via le boulevard de Rochechouart."
+        },
+        {
+            "question": "Que voir autour de la station Anvers ?",
+            "answer": "À moins de 15 minutes à pied : le <strong>Sacré-Cœur</strong> et la <strong>Place du Tertre</strong> en haut de Montmartre, le <strong>Musée de Montmartre</strong>, le <strong>Marché Saint-Pierre</strong> (tissus et accessoires), la <strong>Halle Saint-Pierre</strong>, les <strong>Folies Bergère</strong> et le quartier <strong>Pigalle</strong>. La station <strong>Pigalle</strong> M2/M12 voisine donne accès à la rue des Martyrs et au Moulin Rouge."
+        },
+        {
+            "question": "Comment fonctionne le Funiculaire de Montmartre ?",
+            "answer": "Le <strong>Funiculaire de Montmartre</strong>, accessible à 200 m de la station par la rue de Steinkerque, fonctionne de <strong>6h à 0h45 environ</strong>. Le trajet est <strong>inclus dans un ticket métro RATP t+</strong> ou un pass Navigo. Deux cabines fonctionnent en alternance, transportant chacune jusqu'à 60 passagers. Le trajet dure <strong>1 minute</strong> entre la base (square Louise-Michel) et le sommet (parvis du Sacré-Cœur)."
+        },
+        {
+            "question": "Y a-t-il des sanitaires et services dans la station ?",
+            "answer": "<strong>Pas de sanitaires publics</strong> en station Anvers (audit en cours pour cette page). À proximité immédiate : nombreux <strong>cafés et brasseries</strong> sur le boulevard de Rochechouart et la rue de Steinkerque qui offrent toilettes clientèle. Le <strong>parvis du Sacré-Cœur</strong> dispose également d'équipements pour le public touristique."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Unique sortie</strong> de la station débouche sur le boulevard Marguerite-de-Rochechouart, en face de la place d'Anvers.",
+        "Pour le <strong>Sacré-Cœur</strong> : prendre la <strong>rue de Steinkerque</strong> jusqu'au <strong>Funiculaire</strong> (200 m, 3 min) puis 1 min de montée — meilleure option avec valises ou enfants.",
+        "Pour les <strong>escaliers</strong> : sportif mais plus pittoresque — montée par les escaliers Foyatier ou la rue Maurice-Utrillo.",
+        "Pour le <strong>Marché Saint-Pierre</strong> (tissus, mercerie) : 2 min à pied par la rue de Steinkerque côté funiculaire.",
+        "<strong>Édicule Guimard</strong> classé Monument Historique 1978 : à photographier de jour, signature émaillée visible côté boulevard.",
+        "Pour <strong>Pigalle</strong> et la rue des Martyrs : 1 station vers l'ouest en M2 ; meilleure option en soirée que la marche directe."
+    ],
+    "trivia": [
+        {
+            "icon": "🎨",
+            "title": "Édicule Hector Guimard classé MH 1978",
+            "content": "L'unique accès en surface conserve un <strong>édicule Art nouveau dessiné par Hector Guimard</strong>, signé d'une plaque émaillée. Il est classé au titre des <strong>Monuments Historiques le 12 février 1978</strong>, en même temps que d'autres édicules Guimard du réseau parisien. C'est l'un des derniers exemplaires de ce style emblématique du métro de Paris (avec Abbesses, Porte Dauphine, et quelques autres) encore visibles aujourd'hui."
+        },
+        {
+            "icon": "⛪",
+            "title": "Sacré-Cœur (1875-1923) : 11 millions de visiteurs par an",
+            "content": "La <strong>Basilique du Sacré-Cœur de Montmartre</strong>, construite entre <strong>1875 et 1923</strong> par l'architecte <strong>Paul Abadie</strong> en style <strong>romano-byzantin</strong>, est le <strong>deuxième monument religieux le plus visité de Paris</strong> après Notre-Dame, avec environ <strong>11 millions de visiteurs et pèlerins par an</strong>. Son <strong>dôme de 83 mètres</strong> est visible depuis presque tout Paris. Elle a été financée par souscription nationale, environ 46 millions de francs récoltés sur 50 ans auprès de 10 millions de donateurs."
+        },
+        {
+            "icon": "🚞",
+            "title": "Funiculaire de Montmartre (1900) — inclus dans le ticket métro",
+            "content": "Le <strong>Funiculaire de Montmartre</strong>, mis en service en <strong>1900</strong> pour l'Exposition universelle, permet d'atteindre le sommet de la butte en <strong>1 minute</strong> sans effort. Initialement à eau, il est aujourd'hui entièrement automatique. Particularité : un trajet est <strong>inclus dans un ticket métro RATP t+</strong> ou un pass Navigo standard, sans surcoût. Il fonctionne de 6h à 0h45 environ."
+        },
+        {
+            "icon": "🚇",
+            "title": "1902 : terminus provisoire de la ligne 2 Nord",
+            "content": "La station Anvers a été ouverte le <strong>7 octobre 1902</strong> comme <strong>terminus provisoire</strong> de la <strong>ligne 2 Nord</strong> en provenance d'Étoile. À cette époque, la ligne 2 n'était pas encore bouclée : il faudra attendre <strong>1903</strong> pour la voir prolongée jusqu'à <strong>Nation</strong>. La station fait donc partie de la première vague historique du réseau métropolitain parisien, conçue dans la foulée de l'Exposition universelle de 1900."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Sacré-Cœur de Montmartre",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Anvers → Sacré-Cœur (via funiculaire)",
+            "lines_used": [
+                "à pied",
+                "Funiculaire"
+            ],
+            "lines_label": "À pied jusqu'au funiculaire (rue de Steinkerque, ~200 m) puis montée 1 min",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-anvers/anvers-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Place du Tertre",
+            "destination_slug": "place-du-tertre",
+            "destination_full_name": "Anvers → Place du Tertre (Montmartre)",
+            "lines_used": [
+                "à pied",
+                "Funiculaire"
+            ],
+            "lines_label": "Funiculaire jusqu'au sommet puis à pied par la rue Saint-Eleuthère",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-anvers/anvers-vers-place-du-tertre/"
+        },
+        {
+            "destination_name": "Pigalle / Moulin Rouge",
+            "destination_slug": "pigalle",
+            "destination_full_name": "Anvers → Pigalle",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Porte Dauphine (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-anvers/anvers-vers-pigalle/"
+        },
+        {
+            "destination_name": "Abbesses (Montmartre alternative)",
+            "destination_slug": "abbesses",
+            "destination_full_name": "Anvers → Abbesses",
+            "lines_used": [
+                "M2",
+                "M12"
+            ],
+            "lines_label": "M2 jusqu'à Pigalle (1 station) puis M12 jusqu'à Abbesses (1 station)",
+            "duration_minutes": 8,
+            "changes_count": 1,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-anvers/anvers-vers-abbesses/"
+        },
+        {
+            "destination_name": "Marché Saint-Pierre (tissus)",
+            "destination_slug": "marche-saint-pierre",
+            "destination_full_name": "Anvers → Marché Saint-Pierre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Steinkerque (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-anvers/anvers-vers-marche-saint-pierre/"
+        },
+        {
+            "destination_name": "Gare du Nord",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Anvers → Gare du Nord",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Nation (3 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-anvers/anvers-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Anvers → CDG via M2 + RER B",
+            "lines_used": [
+                "M2",
+                "RER B"
+            ],
+            "lines_label": "M2 jusqu'à Gare du Nord (3 stations) puis RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-anvers/anvers-vers-cdg/"
+        },
+        {
+            "destination_name": "Folies Bergère",
+            "destination_slug": "folies-bergere",
+            "destination_full_name": "Anvers → Folies Bergère",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Maubeuge (~700 m)",
+            "duration_minutes": 9,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-anvers/anvers-vers-folies-bergere/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q186115",
+            "name": "Montmartre",
+            "category": "site notable",
+            "description": "Montmartre est un quartier du 18e arrondissement de Paris (France) dominé par la basilique du Sacré-Cœur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
+            "latitude": 48.886944,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 500,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris (France), est un édifice…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 428,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1138922",
+            "name": "Le Chat noir",
+            "category": "site notable",
+            "description": "Le Chat noir ou Chat-Noir est un célèbre cabaret de Montmartre fondé en novembre 1881 par Rodolphe Salis, qui fut aussi à l'origine de la revue hebdomadaire du même nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Chat%20noir%201929.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Chat_noir",
+            "latitude": 48.88359,
+            "longitude": 2.33413,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 724,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2300245",
+            "name": "église Saint-Pierre de Montmartre",
+            "category": "église",
+            "description": "L’église Saint-Pierre de Montmartre est une église paroissiale catholique romaine située dans le 18e arrondissement de Paris, au sommet de la butte Montmartre, au no 2 rue du Mont-Cenis, à l'ouest de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
+            "latitude": 48.886667,
+            "longitude": 2.341944,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 448,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q924480",
+            "name": "moulin de la Galette",
+            "category": "site notable",
+            "description": "Le moulin de la Galette est une expression générique : elle désigne deux moulins dont, actuellement, le seul moulin à vent en état de marche de la butte Montmartre dans le 18e arrondissement de Paris…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018e%20Moulin%20Radet%20220.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Moulin_de_la_Galette",
+            "latitude": 48.887361,
+            "longitude": 2.337083,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 710,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q426974",
+            "name": "Bateau-Lavoir",
+            "category": "quartier",
+            "description": "Le Bateau-Lavoir est une cité d'artistes située dans le 18e arrondissement de Paris (France), au 13 de la place Émile-Goudeau.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bateau-Lavoir%20face%20avant.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bateau-Lavoir",
+            "latitude": 48.886111,
+            "longitude": 2.337611,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1130784",
+            "name": "hôpital Lariboisière",
+            "category": "hôpital",
+            "description": "L’hôpital Lariboisière est un hôpital de l'Assistance Publique - Hôpitaux de Paris situé 2 rue Ambroise-Paré dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pitalLariboisi%C3%A8reChapelle1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Lariboisi%C3%A8re",
+            "latitude": 48.883056,
+            "longitude": 2.353056,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 665,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q602107",
+            "name": "place Pigalle",
+            "category": "place",
+            "description": "La place Pigalle est une place située dans le 9e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20pigalle.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Pigalle",
+            "latitude": 48.882167,
+            "longitude": 2.337278,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 495,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1710383",
+            "name": "église Saint-Vincent-de-Paul",
+            "category": "église",
+            "description": "L'église Saint-Vincent-de-Paul à Paris, située sur la place Franz-Liszt dans le 10e arrondissement, est dédiée à saint Vincent de Paul.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Vincent-de-Paul%20Fassade%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Vincent-de-Paul_de_Paris",
+            "latitude": 48.878889,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 716,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1423353",
+            "name": "Au Lapin agile",
+            "category": "site notable",
+            "description": "Au Lapin agile est un cabaret de Paris situé sur la butte Montmartre, au 22 de la rue des Saules, dans le 18e arrondissement, près de la station de métro Lamarck - Caulaincourt.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Gill%20-%20Au%20Lapin%20Agile.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Au_Lapin_agile",
+            "latitude": 48.8886,
+            "longitude": 2.33998,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 702,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q10860702",
+            "name": "Mur des je t'aime",
+            "category": "site notable",
+            "description": "Le Mur des je t'aime est une œuvre murale composée de carreaux émaillés reproduisant l'expression « je t'aime » dans 250 langues et qui occupe un mur du square Jehan-Rictus situé place des Abbesses à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2022-04-12-Le%20mur%20des%20je%20t%27aime-8493.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mur_des_je_t%27aime",
+            "latitude": 48.884625,
+            "longitude": 2.338431,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 450,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q973216",
+            "name": "Dalí Paris",
+            "category": "musée",
+            "description": "Dalí Paris est un lieu d'exposition d'œuvres de Salvador Dalí de la collection Dali Universe, en particulier des sculptures et gravures.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dali%20Paris%20entr%C3%A9e%20.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Dal%C3%AD_Paris",
+            "latitude": 48.886528,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+                "distance_m": 512,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "0",
+            "name": "Bd Marguerite-de-Rochechouart (édicule Guimard)",
+            "address_full": "70 Boulevard Marguerite-de-Rochechouart 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.882859,
+            "longitude": 2.343964,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Rue de Steinkerque + Bd de Rochechouart",
+            "details": "Cafés, brasseries, marchands de souvenirs, Marché Saint-Pierre (tissus) à 200 m.",
+            "secondary": "Funiculaire de Montmartre à 200 m (rue de Steinkerque)."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique permanente autour de la rue de Steinkerque et du funiculaire : vigilance pickpockets renforcée à l'unique sortie et sur le trajet vers Montmartre.",
+            "Présence importante de marchands ambulants insistants au pied des escaliers de Montmartre : décliner poliment et ne rien accepter (techniques d'arnaque au bracelet, à la roulette).",
+            "Soirée tardive : le quartier Pigalle / Anvers reste très animé mais peut être marqué par la prostitution et le racolage ; préférer le boulevard de Rochechouart pour rejoindre la station.",
+            "Lors des fortes affluences (week-ends ensoleillés, été, fêtes de fin d'année), prévoir des temps d'accès rallongés et une attente possible au funiculaire."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir du caractère touristique et nocturne du quartier (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Parvis_du_Sacr%C3%A9-Coeur%2C_Paris_9_April_2007.jpg",
+        "alt": "Parvis du Sacré-Cœur de Montmartre (Paul Abadie, 1875-1923) — basilique romano-byzantine au sommet de la butte",
+        "width": 7500,
+        "height": 3750,
+        "credit": {
+            "author": "Alexandre Duret-Lutz",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Parvis_du_Sacr%C3%A9-Coeur,_Paris_9_April_2007.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/anvers/anvers-400.avif",
+                "800": "/assets/img/stations/anvers/anvers-800.avif",
+                "1200": "/assets/img/stations/anvers/anvers-1200.avif",
+                "1600": "/assets/img/stations/anvers/anvers-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/anvers/anvers-400.webp",
+                "800": "/assets/img/stations/anvers/anvers-800.webp",
+                "1200": "/assets/img/stations/anvers/anvers-1200.webp",
+                "1600": "/assets/img/stations/anvers/anvers-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/anvers/anvers-400.jpg",
+                "800": "/assets/img/stations/anvers/anvers-800.jpg",
+                "1200": "/assets/img/stations/anvers/anvers-1200.jpg",
+                "1600": "/assets/img/stations/anvers/anvers-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR (pas d'ascenseurs). Pour un trajet PMR vers Montmartre, descendre à Lamarck - Caulaincourt (M12) puis bus 80 / Montmartrobus, ou taxi/VTC. Le funiculaire est accessible mais nécessite d'atteindre la rue de Steinkerque."
+    }
+}
