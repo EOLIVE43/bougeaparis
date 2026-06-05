@@ -885,7 +885,7 @@ if (!function_exists('buildStationTitle')) {
         // Signal geo Paris injecte juste apres le nom (avant les codes) en mode
         // Metro/Tram/Transilien ; en RER pur les codes sont devant le nom donc
         // " Paris" arrive en fin avant la brand.
-        $nameWithGeo = $name . ' Paris';
+        $nameWithGeo = $name . ' à Paris';
 
         if ($modePrefix === 'Métro') {
             // Codes apres le nom : metro d'abord, puis correspondances RER/tram/Transilien
@@ -1028,11 +1028,11 @@ if (!function_exists('buildStationH1')) {
             $modeIntro = 'Station de Transilien';
             $codes = $transPart;
         } else {
-            return 'Station ' . $name . ' Paris';
+            return 'Station ' . $name . ' à Paris';
         }
 
         // Signal geo Paris injecte apres le nom, avant les parentheses de codes.
-        return $modeIntro . ' ' . $name . ' Paris (' . $codes . ')';
+        return $modeIntro . ' ' . $name . ' à Paris (' . $codes . ')';
     }
 }
 
