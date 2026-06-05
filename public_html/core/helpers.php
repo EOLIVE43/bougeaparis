@@ -961,10 +961,13 @@ if (!function_exists('buildStationTitle')) {
             $title = $name;
         }
 
-        // Si depassement (>60 - brand_len), troncature progressive des codes :
-        // de tous les codes vers 0, on garde le sous-ensemble le plus long qui
-        // tient. Le nom + " à Paris" + mode sont toujours preserves.
-        if (mb_strlen($title, 'UTF-8') > $maxLen) {
+        // Si depassement strict (> 60 - brand_len) ET compact full > 70 - brand,
+        // troncature progressive des codes. Sinon, on accepte un overflow doux
+        // (jusqu'a ~70 chars total) pour preserver tous les codes — cas des
+        // stations a nom long avec 4+ lignes (Montparnasse, Saint-Michel mixte).
+        // Google clippe visuellement au-dela de 60 mais indexe le title complet.
+        $softCap = 70 - $brandLen;
+        if (mb_strlen($title, 'UTF-8') > $softCap) {
             $all = array_merge(
                 array_map(static fn($c) => 'M' . $c, $metro),
                 $rer ? ['RER ' . implode(' ', $rer)] : [],
@@ -985,7 +988,7 @@ if (!function_exists('buildStationTitle')) {
                     $candidate = trim(($modePrefix !== '' ? $modePrefix . ' ' : '') . $nameWithGeo . ($tail !== '' ? ' ' . $tail : ''));
                 }
                 $best = $candidate;
-                if (mb_strlen($candidate, 'UTF-8') <= $maxLen) {
+                if (mb_strlen($candidate, 'UTF-8') <= $softCap) {
                     break;
                 }
             }
