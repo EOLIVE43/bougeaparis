@@ -818,33 +818,35 @@ if (!function_exists('format_price')) {
 
 if (!function_exists('buildStationTitle')) {
     /**
-     * Construit le <title> SEO d'une page station selon les regles SEO du
-     * brief Priorite 5 (volume Keyword Planner : "{nom} metro" domine).
+     * Construit le <title> SEO d'une page station.
      *
-     * Format cible : "{Nom} métro {lignes compactes} : plan, horaires, sorties"
-     * Limite : 60 caracteres (limite SERP Google, mesuree en mb_strlen UTF-8).
+     * Pattern : "{Mode dominant} {Nom} {codes lignes} | BougeaParis.fr"
      *
-     * Format des lignes (ordre fixe metro -> rer -> tram -> transilien) :
-     *   Metro      : "M1 M4 M7"           (prefixe M, espace entre)
-     *   RER        : "RER A B D"          (prefixe RER unique, lettres separees)
-     *   Tramway    : "T1 T2 T3a"          (prefixe T, espace entre)
-     *   Transilien : "L U"                (lettre seule, pas de prefixe)
+     * Mode dominant (detecte automatiquement) :
+     *   - metro       si lines[] contient au moins 1 entree type=metro
+     *   - RER         sinon si rer_correspondences[] non vide (RER pur)
+     *   - Tramway     sinon si tramway_correspondences[] non vide (tram pur)
+     *   - Transilien  sinon si transilien_correspondences[] non vide
      *
-     * Algorithme :
-     *   1. Title minimal : "{Nom} metro {lignes} : plan"
-     *   2. Cascade : ajouter ", horaires" puis ", sorties" tant que <= 60
-     *   3. Cas limite (minimal > 60) : reduire a 3 lignes + " + autres"
-     *      Le nom_station n'est JAMAIS tronque.
+     * Codes lignes (ordre fixe metro -> RER -> tram -> Transilien) :
+     *   - Metro      : "M1 M4 M7"
+     *   - RER        : "RER A B" (le mot RER est omis si mode dominant = RER pur)
+     *   - Tram       : "T1 T3a"  (idem)
+     *   - Transilien : "L U"     (idem)
      *
-     * Note : l'appelant doit utiliser setTitle($title, false) pour desactiver
-     * le suffixe title_suffix (' - BougeaParis.fr', 15 car) sur ces pages.
+     * Cible : 50-60 chars max. Si depassement, troncature des codes en
+     * priorite (3 codes + "+ autres"), le nom n'est JAMAIS tronque.
+     *
+     * L'appelant doit utiliser setTitle($title, false) pour desactiver le
+     * suffixe title_suffix global ; la brand est integree ici.
      *
      * @param array $station JSON station decode
-     * @return string Title final, pret pour setTitle($title, false)
+     * @return string Title final pret pour setTitle($title, false)
      */
     function buildStationTitle(array $station): string
     {
-        $name = trim((string)($station['name'] ?? ''));
+        $brand = ' | BougeaParis.fr';
+        $name  = trim((string)($station['name'] ?? ''));
 
         // Extraction des codes par mode
         $metro = [];
@@ -857,45 +859,79 @@ if (!function_exists('buildStationTitle')) {
         $tram  = array_values(array_filter(array_column($station['tramway_correspondences']    ?? [], 'code')));
         $trans = array_values(array_filter(array_column($station['transilien_correspondences'] ?? [], 'code')));
 
-        // Compactage selon les regles de format
-        $compact = static function (array $m, array $r, array $t, array $tr): string {
-            $parts = [];
-            if ($m)  { $parts[] = implode(' ', array_map(static fn($c) => 'M' . $c, $m)); }
-            if ($r)  { $parts[] = 'RER ' . implode(' ', $r); }
-            if ($t)  { $parts[] = implode(' ', array_map(static fn($c) => 'T' . $c, $t)); }
-            if ($tr) { $parts[] = implode(' ', $tr); }
-            return implode(' ', $parts);
-        };
-
-        $linesStr = $compact($metro, $rer, $tram, $trans);
-        $title    = $name . ' métro' . ($linesStr !== '' ? ' ' . $linesStr : '') . ' : plan';
-
-        // Cas limite : > 60 car des le minimal -> reduire a 3 lignes + " + autres"
-        if (mb_strlen($title, 'UTF-8') > 60) {
-            $total = count($metro) + count($rer) + count($tram) + count($trans);
-            $kept  = ['m' => [], 'r' => [], 't' => [], 'tr' => []];
-            $taken = 0;
-            foreach (['m' => $metro, 'r' => $rer, 't' => $tram, 'tr' => $trans] as $k => $list) {
-                foreach ($list as $code) {
-                    if ($taken >= 3) { break 2; }
-                    $kept[$k][] = $code;
-                    $taken++;
-                }
-            }
-            $linesStr = $compact($kept['m'], $kept['r'], $kept['t'], $kept['tr']);
-            $autres   = ($total > 3) ? ' + autres' : '';
-            $title    = $name . ' métro' . ($linesStr !== '' ? ' ' . $linesStr : '') . $autres . ' : plan';
+        // Detection du mode dominant + prefixe
+        if ($metro) {
+            $modePrefix = 'Métro';
+        } elseif ($rer) {
+            $modePrefix = 'RER';
+        } elseif ($tram) {
+            $modePrefix = 'Tramway';
+        } elseif ($trans) {
+            $modePrefix = 'Transilien';
+        } else {
+            $modePrefix = '';
         }
 
-        // Cascade des suffixes ", horaires" puis ", sorties"
-        foreach ([', horaires', ', sorties'] as $extra) {
-            if (mb_strlen($title . $extra, 'UTF-8') <= 60) {
-                $title .= $extra;
+        // Compactage des codes selon le mode dominant
+        // - Si mode dominant = metro : nom au milieu, codes apres
+        //   ex : "Métro Saint-Michel M4 RER B C"
+        // - Si mode dominant = RER/Tram/Transilien pur : codes immediatement apres
+        //   le mode prefixe, nom apres ; ex : "RER C Champ de Mars - Tour Eiffel"
+        $compactMetroCodes = static fn(array $m): string => implode(' ', array_map(static fn($c) => 'M' . $c, $m));
+        $compactRerCodes   = static fn(array $r): string => 'RER ' . implode(' ', $r);
+        $compactTramCodes  = static fn(array $t): string => implode(' ', array_map(static fn($c) => 'T' . $c, $t));
+        $compactTransCodes = static fn(array $tr): string => implode(' ', $tr);
+
+        if ($modePrefix === 'Métro') {
+            // Codes apres le nom : metro d'abord, puis correspondances RER/tram/Transilien
+            $tail = [];
+            if ($metro) { $tail[] = $compactMetroCodes($metro); }
+            if ($rer)   { $tail[] = $compactRerCodes($rer); }
+            if ($tram)  { $tail[] = $compactTramCodes($tram); }
+            if ($trans) { $tail[] = $compactTransCodes($trans); }
+            $codesAfterName = trim(implode(' ', $tail));
+            $title = trim($modePrefix . ' ' . $name . ($codesAfterName !== '' ? ' ' . $codesAfterName : ''));
+        } elseif ($modePrefix === 'RER') {
+            // RER pur : "RER {codes} {nom}"
+            $codes = implode(' ', $rer);
+            $title = trim($modePrefix . ' ' . $codes . ' ' . $name);
+        } elseif ($modePrefix === 'Tramway') {
+            // Tram pur : "Tramway {nom} {codes}"
+            $codes = $compactTramCodes($tram);
+            $title = trim($modePrefix . ' ' . $name . ($codes !== '' ? ' ' . $codes : ''));
+        } elseif ($modePrefix === 'Transilien') {
+            // Transilien pur : "Transilien {nom} {codes}"
+            $codes = $compactTransCodes($trans);
+            $title = trim($modePrefix . ' ' . $name . ($codes !== '' ? ' ' . $codes : ''));
+        } else {
+            $title = $name;
+        }
+
+        // Si depassement (>60 - brand_len), troncature des codes a 3 + "+ autres"
+        // Le nom et le mode sont preserves.
+        $brandLen = mb_strlen($brand, 'UTF-8');
+        $maxLen   = 60 - $brandLen;
+        if (mb_strlen($title, 'UTF-8') > $maxLen) {
+            $all      = array_merge(
+                array_map(static fn($c) => 'M' . $c, $metro),
+                $rer ? ['RER ' . implode(' ', $rer)] : [],
+                array_map(static fn($c) => 'T' . $c, $tram),
+                $trans
+            );
+            $total = count($all);
+            $kept  = array_slice($all, 0, 3);
+            $tail  = implode(' ', $kept) . ($total > 3 ? ' + autres' : '');
+
+            if ($modePrefix === 'RER') {
+                // En RER pur on garde les codes RER bruts plutot que "M1" etc
+                $rerKept = array_slice($rer, 0, 3);
+                $tail    = implode(' ', $rerKept) . ($total > 3 ? ' + autres' : '');
+                $title   = trim($modePrefix . ' ' . $tail . ' ' . $name);
             } else {
-                break;
+                $title = trim(($modePrefix !== '' ? $modePrefix . ' ' : '') . $name . ($tail !== '' ? ' ' . $tail : ''));
             }
         }
 
-        return $title;
+        return $title . $brand;
     }
 }
