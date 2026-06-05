@@ -1,0 +1,652 @@
+{
+    "published": true,
+    "slug": "hotel-de-ville",
+    "name": "Hôtel de Ville",
+    "name_full": "Hôtel de Ville (Métro 1 + 11)",
+    "arrondissement": "4e (Paris)",
+    "address": "Place de l'Hôtel-de-Ville, 75004 Paris",
+    "latitude": 48.85662106401539,
+    "longitude": 2.351538406665137,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Hôtel de Ville station",
+        "es": "Estación Hôtel de Ville"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "38",
+            "47",
+            "58",
+            "67",
+            "69",
+            "70",
+            "76",
+            "96"
+        ],
+        "nocturne": [
+            "N11",
+            "N12",
+            "N13",
+            "N14",
+            "N15",
+            "N16",
+            "N21",
+            "N22",
+            "N23",
+            "N24",
+            "N122",
+            "N123"
+        ],
+        "regional": [
+            "72",
+            "75"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-05",
+            "same_node_count": 1,
+            "nearby_count": 39
+        }
+    },
+    "seo": {
+        "description": "Station Hôtel de Ville : M1 + M11 au pied de la mairie de Paris (4e), face au BHV et à 5 min de Notre-Dame, Beaubourg, Tour Saint-Jacques et du Marais."
+    },
+    "hero": {
+        "tagline": "Au pied de la mairie de Paris depuis 1900",
+        "description": "Inaugurée le <strong>19 juillet 1900</strong> sur la <strong>ligne 1</strong> puis rejointe par la <strong>ligne 11</strong> le <strong>28 avril 1935</strong>, la station Hôtel de Ville est l'un des points d'entrée majeurs du <strong>4e arrondissement</strong>. Elle dessert la <strong>mairie de Paris</strong>, siège des institutions municipales depuis <strong>1357</strong>, le <strong>BHV Marais</strong> (fondé en <strong>1856</strong>) face à la place, la <strong>Tour Saint-Jacques</strong> (<strong>1509-1523</strong>) et le quartier du <strong>Marais</strong>. À 5 minutes à pied : <strong>Notre-Dame de Paris</strong>, le <strong>Centre Pompidou</strong> et l'<strong>île de la Cité</strong>."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "La Défense (Grande Arche)"
+            },
+            "next": {
+                "name": "Saint-Paul",
+                "slug": "saint-paul",
+                "direction": "Château de Vincennes"
+            }
+        },
+        "metro-11": {
+            "previous": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "Châtelet"
+            },
+            "next": {
+                "name": "Rambuteau",
+                "slug": "rambuteau",
+                "direction": "Rosny - Bois-Perrier"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Hôtel de Ville</strong> est un nœud important du métro parisien au cœur du <strong>4e arrondissement</strong>, à la croisée des lignes <strong>M1</strong> (axe est-ouest historique) et <strong>M11</strong> (vers Belleville et le nord-est). Elle débouche directement sur la <strong>place de l'Hôtel-de-Ville</strong>, anciennement <strong>place de Grève</strong>, au pied de la <strong>mairie de Paris</strong> reconstruite entre <strong>1874 et 1882</strong> dans un style néo-Renaissance par les architectes <strong>Théodore Ballu et Édouard Deperthes</strong>.",
+        "Avec <strong>7 251 729 entrants en 2021</strong>, Hôtel de Ville se classait au <strong>13e rang</strong> du réseau métro RATP — une fréquentation qui reflète la double vocation touristique et tertiaire du quartier. La station est l'accès privilégié au <strong>BHV Marais</strong>, le grand magasin emblématique du quartier fondé en <strong>1856</strong> par <strong>François-Xavier Ruel</strong>, ainsi qu'à la <strong>Tour Saint-Jacques</strong>, ancien clocher gothique flamboyant de <strong>1509-1523</strong> classé au patrimoine mondial de l'<strong>UNESCO</strong> depuis <strong>1998</strong>.",
+        "À <strong>5 à 10 minutes à pied</strong>, la station Hôtel de Ville dessert également plusieurs sites majeurs : la <strong>cathédrale Notre-Dame de Paris</strong> (rouverte le <strong>8 décembre 2024</strong>) via le pont d'Arcole, le <strong>Centre Pompidou</strong> et le quartier <strong>Beaubourg</strong>, ainsi que le cœur du <strong>Marais</strong> avec ses hôtels particuliers, ses musées (Carnavalet, Picasso, Cognacq-Jay) et la place des Vosges."
+    ],
+    "history": {
+        "title": "1900-1935 : deux lignes pour le pôle municipal de Paris",
+        "paragraphs": [
+            "La station de la <strong>ligne 1</strong> est inaugurée le <strong>19 juillet 1900</strong>, jour d'ouverture de la première ligne du métro parisien à l'occasion de l'Exposition universelle. Le décor d'origine, conservé en partie, présente une <strong>ossature métallique peinte en blanc</strong> caractéristique des stations historiques de la <strong>CMP</strong> (Compagnie du chemin de fer métropolitain). La station a été rénovée plus tard dans le <strong>style Andreu-Motte</strong> avec mobilier d'assise rouge et bleu et carrelage métro classique.",
+            "Les quais de la <strong>ligne 11</strong> sont ouverts le <strong>28 avril 1935</strong> avec l'inauguration de la nouvelle ligne reliant <strong>Châtelet à Porte des Lilas</strong>. Cette extension d'entre-deux-guerres présente une architecture en <strong>béton armé</strong>, une <strong>voûte elliptique</strong> et des <strong>carrelages blancs avec cadres publicitaires miel à motifs botaniques</strong> qui ont conservé une partie du design d'origine de la CMP des années 1930.",
+            "L'accès en surface a longtemps été signalé par un <strong>édicule Art nouveau dessiné par Hector Guimard</strong>. Celui-ci a été <strong>démonté en 1974</strong> et déplacé à la station <strong>Abbesses</strong>, où il est toujours visible. Hôtel de Ville compte aujourd'hui <strong>7 sorties</strong> réparties autour de la place de l'Hôtel-de-Ville, de la rue de Rivoli (devant le BHV) et de la rue du Temple (vers le Marais).",
+            "Plus récemment, dans le cadre de l'<strong>automatisation de la ligne 1</strong> achevée fin <strong>2012</strong>, les <strong>portes palières</strong> ont été installées sur les quais M1 en <strong>2009-2010</strong>. La ligne 1 est ainsi devenue la <strong>deuxième ligne automatique</strong> du réseau parisien, après la ligne 14. La <strong>ligne 11</strong>, elle, a été prolongée jusqu'à <strong>Rosny - Bois-Perrier</strong> en <strong>juin 2024</strong>, augmentant significativement son rayonnement vers l'est."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Hôtel de Ville ?",
+            "answer": "<strong>Deux lignes</strong> desservent Hôtel de Ville en correspondance directe : la <strong>M1</strong> (La Défense ↔ Château de Vincennes), ligne automatique depuis 2012, et la <strong>M11</strong> (Châtelet ↔ Rosny - Bois-Perrier), prolongée à l'est en juin 2024. Aucune correspondance RER directe en station — pour le RER A/B/D, descendre à <strong>Châtelet</strong> (1 station avant)."
+        },
+        {
+            "question": "Comment rejoindre l'Hôtel de Ville de Paris (la mairie) depuis la station ?",
+            "answer": "C'est <strong>immédiat</strong> : la <strong>sortie 5 « Hôtel de Ville »</strong> débouche directement sur la <strong>place de l'Hôtel-de-Ville</strong>, face à la mairie. L'édifice actuel a été reconstruit entre <strong>1874 et 1882</strong> en style néo-Renaissance par <strong>Théodore Ballu et Édouard Deperthes</strong>, après l'incendie de <strong>1871</strong> pendant la Semaine sanglante de la Commune. Façade principale : <strong>143 mètres de large</strong>."
+        },
+        {
+            "question": "Comment accéder au BHV Marais depuis la station ?",
+            "answer": "Le <strong>BHV Marais</strong> (Bazar de l'Hôtel de Ville) se trouve <strong>face à la station</strong>, au <strong>52 rue de Rivoli</strong> : prendre la <strong>sortie 1 « r. de Rivoli »</strong> ou la sortie 3 « r. de la Coutellerie », vous y êtes en moins d'une minute. Fondé en <strong>1856</strong> par <strong>François-Xavier Ruel</strong>, ce grand magasin est célèbre pour son <strong>sous-sol bricolage</strong>, sa <strong>rotonde de 1913</strong> dessinée par l'architecte Auguste Roy et son <strong>jardin sur le toit</strong> de 2 000 m²."
+        },
+        {
+            "question": "Comment rejoindre Notre-Dame de Paris depuis Hôtel de Ville ?",
+            "answer": "<strong>À pied</strong> en environ <strong>5 minutes</strong> (~450 mètres) : sortir côté place, traverser le <strong>pont d'Arcole</strong> jusqu'à l'<strong>île de la Cité</strong>, puis longer l'Hôtel-Dieu jusqu'au parvis. Alternative en métro : <strong>M1 jusqu'à Châtelet</strong> puis correspondance <strong>M4 jusqu'à Cité</strong> (mais plus long que la marche). La cathédrale a rouvert le <strong>8 décembre 2024</strong>."
+        },
+        {
+            "question": "Comment rejoindre le Centre Pompidou depuis Hôtel de Ville ?",
+            "answer": "<strong>4 à 5 minutes à pied</strong> par la <strong>rue du Renard</strong> ou la <strong>rue du Temple</strong> (sortie 7 conseillée). Alternative en métro : <strong>M11 jusqu'à Rambuteau</strong> (1 station, sortie au pied du Centre). Le Centre Pompidou (Beaubourg) abrite le <strong>Musée national d'art moderne</strong>, la <strong>BPI</strong> et l'<strong>IRCAM</strong>."
+        },
+        {
+            "question": "La station Hôtel de Ville est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux personnes à mobilité réduite</strong> sur les lignes M1 et M11 à Hôtel de Ville. Pour un trajet 100 % PMR vers la mairie de Paris, descendre à <strong>Châtelet</strong> (M14 accessible) puis emprunter les transports en surface, ou utiliser un taxi/VTC depuis une station RER PMR comme Gare de Lyon."
+        },
+        {
+            "question": "Pourquoi la place s'appelait-elle « place de Grève » ?",
+            "answer": "Le nom de <strong>place de Grève</strong> vient du terme « grève » au sens de <strong>berge de gravier</strong> où on débarquait les marchandises arrivant par la Seine. C'était aussi un <strong>lieu d'embauche journalière</strong> pour les ouvriers — d'où l'expression française <strong>« faire grève »</strong>. La place fut également un lieu d'<strong>exécutions publiques</strong> sous l'Ancien Régime. Elle est rebaptisée <strong>place de l'Hôtel-de-Ville</strong> au XIXᵉ siècle, en référence à l'édifice qui la domine."
+        },
+        {
+            "question": "Quels sont les horaires de la station Hôtel de Ville ?",
+            "answer": "La station suit les horaires standards des lignes <strong>M1</strong> (~5h30 à 1h15, jusqu'à 2h15 vendredi/samedi/veille de fête) et <strong>M11</strong> (~5h30 à 1h00, jusqu'à 2h00 vendredi/samedi/veille de fête). La nuit, le service est assuré par les <strong>Noctilien</strong> depuis le Châtelet (5 min à pied) — notamment N11, N14, N15, N16."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Sortie 5 « Hôtel de Ville »</strong> : débouche directement sur la place et la mairie de Paris — accès le plus direct à la façade principale.",
+        "<strong>Sortie 1 « r. de Rivoli »</strong> ou sortie 3 : pour le <strong>BHV Marais</strong> en face de la place — moins d'une minute à pied.",
+        "<strong>Sortie 7 « r. du Temple »</strong> : pour rejoindre le <strong>Marais</strong> à pied, le <strong>Centre Pompidou</strong> (5 min) et la <strong>rue des Rosiers</strong> (10 min).",
+        "<strong>Pont d'Arcole</strong> à 200 m : passerelle directe vers l'<strong>île de la Cité</strong>, Notre-Dame et la Conciergerie (5 min à pied).",
+        "Pour les <strong>marchés et boutiques du Marais</strong> : sortie 6 « r. de Lobau » puis remonter la rue François-Miron vers Saint-Paul.",
+        "<strong>M1 automatique</strong> : fréquence très élevée (2-3 min en heure de pointe) — pas besoin de regarder les horaires en journée."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Siège du pouvoir municipal parisien depuis 1357",
+            "content": "C'est sur l'emplacement actuel que la <strong>Ville de Paris</strong> a installé ses institutions municipales <strong>dès 1357</strong>, sous l'impulsion d'<strong>Étienne Marcel</strong>, prévôt des marchands. L'édifice est passé par plusieurs reconstructions, notamment <strong>Renaissance (1533-1628)</strong> sous François Iᵉʳ et Louis XIII. La <strong>place de Grève</strong> a vu se dérouler la <strong>fête de la Fédération</strong>, des révoltes (1789, 1830, 1848, 1871) et la <strong>Libération de Paris en 1944</strong>, avec le discours de Charles de Gaulle depuis le balcon."
+        },
+        {
+            "icon": "🔥",
+            "title": "Incendié par la Commune en 1871, reconstruit à l'identique en 1882",
+            "content": "Le 24 mai <strong>1871</strong>, pendant la <strong>Semaine sanglante</strong>, les Communards mettent le feu à l'Hôtel de Ville pour <strong>empêcher la progression des troupes versaillaises</strong>. L'édifice Renaissance disparaît dans les flammes. La reconstruction, confiée aux architectes <strong>Théodore Ballu et Édouard Deperthes</strong>, dure de <strong>1874 à 1882</strong>. Le nouveau bâtiment respecte le style néo-Renaissance d'origine en l'agrandissant : façade de <strong>143 m</strong>, hauteur <strong>18,80 m</strong>, surface intérieure de <strong>55 000 m²</strong>."
+        },
+        {
+            "icon": "📜",
+            "title": "L'origine de l'expression « faire grève »",
+            "content": "L'ancien nom de la place — <strong>place de Grève</strong> — vient du mot « grève » désignant une <strong>berge de gravier</strong> où on déchargeait les marchandises arrivant par la Seine. C'était aussi un <strong>lieu d'embauche journalière</strong> pour les ouvriers du bâtiment. Les jours sans travail, les hommes attendaient sur la place : ils « <strong>faisaient grève</strong> ». L'expression a pris son sens politique moderne (cessation collective concertée du travail) au cours du XIXᵉ siècle."
+        },
+        {
+            "icon": "🌳",
+            "title": "L'édicule Guimard déplacé à Abbesses en 1974",
+            "content": "Comme plusieurs autres stations historiques, Hôtel de Ville disposait d'un <strong>édicule Art nouveau dessiné par Hector Guimard</strong>. Celui-ci a été <strong>démonté en 1974</strong> pour permettre les travaux d'extension du métro, puis <strong>réinstallé à la station Abbesses</strong> (Montmartre), où il complète le célèbre <strong>édicule original d'Abbesses</strong>. Aujourd'hui, à Hôtel de Ville, les accès sont signalés par des entrées standardisées sans décor Art nouveau."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Hôtel de Ville → Notre-Dame de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le pont d'Arcole (~450 m)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Centre Pompidou",
+            "destination_slug": "centre-pompidou",
+            "destination_full_name": "Hôtel de Ville → Centre Pompidou (Beaubourg)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue du Renard (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-pompidou/"
+        },
+        {
+            "destination_name": "BHV Marais",
+            "destination_slug": "bhv-marais",
+            "destination_full_name": "Hôtel de Ville → BHV Marais (52 rue de Rivoli)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied — face à la station (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-bhv/"
+        },
+        {
+            "destination_name": "Place des Vosges (Marais)",
+            "destination_slug": "place-des-vosges",
+            "destination_full_name": "Hôtel de Ville → Place des Vosges",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 jusqu'à Saint-Paul (1 station) puis à pied (~5 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-place-des-vosges/"
+        },
+        {
+            "destination_name": "Louvre",
+            "destination_slug": "louvre",
+            "destination_full_name": "Hôtel de Ville → Musée du Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense, descendre à Palais-Royal - Musée du Louvre (2 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-louvre/"
+        },
+        {
+            "destination_name": "Disneyland Paris",
+            "destination_slug": "disneyland",
+            "destination_full_name": "Hôtel de Ville → Disneyland Paris",
+            "lines_used": [
+                "M1",
+                "RER A"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet, RER A direct Marne-la-Vallée",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-disneyland/"
+        },
+        {
+            "destination_name": "Tour Saint-Jacques",
+            "destination_slug": "tour-saint-jacques",
+            "destination_full_name": "Hôtel de Ville → Tour Saint-Jacques",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Rivoli (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-tour-saint-jacques/"
+        },
+        {
+            "destination_name": "Belleville (via M11)",
+            "destination_slug": "belleville",
+            "destination_full_name": "Hôtel de Ville → Belleville",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Rosny - Bois-Perrier (4 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "medium",
+            "future_url": "/itineraires/station-hotel-de-ville/hotel-de-ville-vers-belleville/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2981",
+            "name": "cathédrale Notre-Dame de Paris",
+            "category": "cathédrale",
+            "description": "La cathédrale Notre-Dame de Paris, communément appelée Notre-Dame, est l'un des monuments les plus emblématiques de Paris et de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris",
+            "latitude": 48.853,
+            "longitude": 2.3498,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Hôtel de Ville",
+                "distance_m": 477,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q178065",
+            "name": "Centre national d'art et de culture Georges-Pompidou",
+            "category": "musée",
+            "description": "Le Centre national d'art et de culture Georges-Pompidou (CNAC) — communément appelé « centre Pompidou », ou plus familièrement « Beaubourg » — est une institution parisienne qui regroupe le même…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Montmartre%20Blick%20aufs%20Centre%20Georges-Pompidou.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou",
+            "latitude": 48.860642,
+            "longitude": 2.352245,
+            "nearest_exit": {
+                "number": "7",
+                "name": "r. du Temple (Marais)",
+                "distance_m": 284,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q190063",
+            "name": "île de la Cité",
+            "category": "île",
+            "description": "L’île de la Cité est une île située sur la Seine, en plein cœur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre%20Dame%20DSC00732.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_la_Cit%C3%A9",
+            "latitude": 48.854722,
+            "longitude": 2.3475,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. Victoria",
+                "distance_m": 385,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q193193",
+            "name": "Sainte-Chapelle",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle, dite aussi Sainte-Chapelle du Palais, est une chapelle palatine édifiée sur l’île de la Cité, à Paris, à l'emplacement de la chapelle Saint-Nicolas-du-Palais, à la demande de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Sainte%20Chapelle%20East%20View%2002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle",
+            "latitude": 48.855369,
+            "longitude": 2.345028,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 487,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q335277",
+            "name": "pont Neuf",
+            "category": "pont",
+            "description": "Le pont Neuf ou Pont-Neuf est, malgré son nom, actuellement le pont le plus ancien existant à Paris. Il traverse la Seine à la pointe ouest de l'île de la Cité.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20western%20sides%20of%20the%20%C3%8Ele%20de%20la%20Cit%C3%A9%20and%20the%20Pont%20Neuf%2C%2014%20July%202008.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Neuf",
+            "latitude": 48.8575,
+            "longitude": 2.341667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 667,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q640968",
+            "name": "hôtel de ville de Paris",
+            "category": "mairie",
+            "description": "L’hôtel de ville de Paris, communément appelé l’Hôtel de Ville, est le bâtiment qui héberge les institutions municipales de la Ville de Paris depuis 1357.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20ville%20fa%C3%A7ade%20principale%20Paris%2011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Paris",
+            "latitude": 48.856389,
+            "longitude": 2.352222,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Hôtel de Ville",
+                "distance_m": 72,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1583780",
+            "name": "La Samaritaine",
+            "category": "commerce",
+            "description": "La Samaritaine est un grand magasin situé à Paris entre la rue de Rivoli et la Seine, à l'aplomb du pont Neuf dans le 1er arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Magasin%20Samaritaine%20-%20Paris%20I%20%28FR75%29%20-%202025-09-03%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Samaritaine",
+            "latitude": 48.85889,
+            "longitude": 2.34208,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 654,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1431547",
+            "name": "tour Saint-Jacques",
+            "category": "tour",
+            "description": "La tour Saint-Jacques est l'ancien clocher, construit entre 1509 et 1523, de Saint-Jacques-de-la-Boucherie, église dont ce clocher-tour est l'unique vestige.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000625%20Paris%20IV%20Tour%20Saint-Jacques%20resultwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Saint-Jacques",
+            "latitude": 48.857764,
+            "longitude": 2.348778,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 148,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1025693",
+            "name": "café de la Régence",
+            "category": "café",
+            "description": "Le Café de la Régence est un café parisien, ouvert de 1681 à 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27Illustration%2024%20janvier%201851.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_de_la_R%C3%A9gence",
+            "latitude": 48.859863,
+            "longitude": 2.342579,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 653,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1469315",
+            "name": "théâtre du Châtelet",
+            "category": "théâtre",
+            "description": "Le théâtre du Châtelet est un théâtre situé place du Châtelet dans le 1er arrondissement de Paris, inauguré en 1862.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20du%20Ch%C3%A2telet%20Fa%C3%A7ade%20%28cropped%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_du_Ch%C3%A2telet",
+            "latitude": 48.857778,
+            "longitude": 2.346389,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de la Coutellerie",
+                "distance_m": 322,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1294736",
+            "name": "hôtel-Dieu de Paris",
+            "category": "hôpital",
+            "description": "L’Hôtel-Dieu de Paris est un établissement hospitalier édifié vers 650 et reconstruit de 1867 à 1878 sous la conduite des architectes Émile Jacques Gilbert (1793-1874) et Arthur-Stanislas Diet…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel-Dieu%20de%20Paris%20from%20Notre-Dame%20de%20Paris%2C%20April%202011%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel-Dieu_de_Paris",
+            "latitude": 48.854639,
+            "longitude": 2.348806,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. Victoria",
+                "distance_m": 335,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1503157",
+            "name": "Shakespeare and Company",
+            "category": "librairie",
+            "description": "Shakespeare and Company est une librairie anglophone indépendante historique de 1951, située au 37 rue de la Bûcherie du quartier de la Sorbonne dans le 5e arrondissement de Paris, sur les quais de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shakespeare%20and%20Company%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Shakespeare_and_Company",
+            "latitude": 48.8525,
+            "longitude": 2.346944,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. Victoria",
+                "distance_m": 609,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. de Rivoli (BHV)",
+            "address_full": "70 Rue de Rivoli 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857476,
+            "longitude": 2.351685,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. du Renard",
+            "address_full": "1 Rue du Renard 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857672,
+            "longitude": 2.351369,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. de la Coutellerie",
+            "address_full": "33 Rue de Rivoli 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857561,
+            "longitude": 2.350784,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "av. Victoria",
+            "address_full": "9 Place de l'Hôtel-de-Ville - Esplanade de la Libération 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857239,
+            "longitude": 2.351115,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Hôtel de Ville",
+            "address_full": "14 Place de l'Hôtel-de-Ville - Esplanade de la Libération 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857028,
+            "longitude": 2.352031,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. de Lobau",
+            "address_full": "7 Rue de Lobau 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.856838,
+            "longitude": 2.353369,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "r. du Temple (Marais)",
+            "address_full": "12 Rue du Temple 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.858159,
+            "longitude": 2.353162,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "BHV Marais (face à la place)",
+            "details": "Grand magasin BHV, 52 rue de Rivoli — restauration au RDC et au rooftop.",
+            "secondary": "Cafés et brasseries autour de la place de l'Hôtel-de-Ville."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Forte affluence touristique en journée autour de la place de l'Hôtel-de-Ville et du BHV : vigilance pickpockets, en particulier aux sorties 1, 3 et 5.",
+            "Manifestations syndicales et politiques fréquentes sur la place (lieu historique de mobilisation) : vérifier l'actualité avant un déplacement les jours sensibles, suivre @prefpolice et @RATPgroup.",
+            "Soirée tardive : la zone reste fréquentée mais quelques rues du Marais à l'est peuvent être moins surveillées après 23h — préférer la sortie 1 ou 5 vers la place éclairée.",
+            "Événements officiels et cérémonies à l'Hôtel de Ville (vœux, commémorations) : dispositif policier renforcé et accès filtrés ponctuels."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips formulés à partir de la nature institutionnelle et commerciale du site (factuels sans superlatifs). audit_status: pending tant que source officielle non consultée."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Paris_4e_H%C3%B4tel_de_Ville_694.jpg",
+        "alt": "Façade principale néo-Renaissance de l'Hôtel de Ville de Paris (Ballu et Deperthes, 1874-1882) vue depuis la place",
+        "width": 7728,
+        "height": 5152,
+        "credit": {
+            "author": "GFreihalter",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Paris_4e_H%C3%B4tel_de_Ville_694.jpg",
+            "date": "2026-06-05"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/hotel-de-ville/hotel-de-ville-400.avif",
+                "800": "/assets/img/stations/hotel-de-ville/hotel-de-ville-800.avif",
+                "1200": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1200.avif",
+                "1600": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/hotel-de-ville/hotel-de-ville-400.webp",
+                "800": "/assets/img/stations/hotel-de-ville/hotel-de-ville-800.webp",
+                "1200": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1200.webp",
+                "1600": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/hotel-de-ville/hotel-de-ville-400.jpg",
+                "800": "/assets/img/stations/hotel-de-ville/hotel-de-ville-800.jpg",
+                "1200": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1200.jpg",
+                "1600": "/assets/img/stations/hotel-de-ville/hotel-de-ville-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur M1 et M11. Pour un trajet PMR vers la mairie de Paris, descendre à Châtelet (M14 accessible) puis taxi/VTC, ou utiliser les bus accessibles desservant la place de l'Hôtel-de-Ville."
+    }
+}
