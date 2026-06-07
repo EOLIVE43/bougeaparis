@@ -1,0 +1,642 @@
+{
+    "published": true,
+    "slug": "gare-de-l-est",
+    "name": "Gare de l'Est",
+    "name_full": "Gare de l'Est (Métro 4 + 5 + 7 + SNCF TGV est)",
+    "arrondissement": "10e (Paris)",
+    "address": "Place du 11-Novembre-1918, 75010 Paris",
+    "latitude": 48.876366,
+    "longitude": 2.358843,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Gare de l'Est station",
+        "es": "Estación Gare de l'Est"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "38",
+            "39",
+            "46",
+            "56",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N13",
+            "N14",
+            "N41",
+            "N42",
+            "N43",
+            "N44",
+            "N45",
+            "N140",
+            "N141",
+            "N142",
+            "N143",
+            "N146",
+            "N147",
+            "N148"
+        ],
+        "regional": [
+            "31",
+            "32",
+            "54",
+            "B",
+            "E",
+            "H",
+            "P"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-07",
+            "same_node_count": 5,
+            "nearby_count": 46
+        }
+    },
+    "seo": {
+        "description": "Station Gare de l'Est : M4 + M5 + M7 + SNCF TGV est (Strasbourg, Allemagne, Luxembourg). 5e station du réseau métro, façade Cendrier 1849, 10e arr."
+    },
+    "hero": {
+        "tagline": "Hub TGV est et hommage aux Poilus de 14-18",
+        "description": "Inaugurée sur la <strong>ligne 4</strong> le <strong>15 novembre 1907</strong>, suivie de la <strong>M5</strong> puis de la <strong>M7</strong>, la station Gare de l'Est est un <strong>pôle d'échange majeur</strong> du <strong>10e arrondissement</strong>. Avec <strong>15 538 471 entrants en 2021</strong> (5e station du métro parisien), elle dessert la <strong>Gare SNCF de Paris-Est</strong>, construite par <strong>François-Alexis Cendrier</strong> en <strong>1847-1849</strong>, hub TGV vers <strong>Strasbourg</strong> (1h46), <strong>Reims</strong>, <strong>Metz</strong>, <strong>Nancy</strong>, ainsi que vers l'<strong>Allemagne</strong> (Francfort, Munich, Stuttgart) et le <strong>Luxembourg</strong>. La gare abrite le <strong>monumental tableau « Le Départ des Poilus »</strong> d'<strong>Albert Herter</strong> (1926), hommage aux soldats partis au front en 1914."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Château d'Eau",
+                "slug": "chateau-d-eau",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Gare du Nord",
+                "slug": "gare-du-nord",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-5": {
+            "previous": {
+                "name": "Jacques Bonsergent",
+                "slug": "jacques-bonsergent",
+                "direction": "Place d'Italie"
+            },
+            "next": {
+                "name": "Gare du Nord",
+                "slug": "gare-du-nord",
+                "direction": "Bobigny - Pablo Picasso"
+            }
+        },
+        "metro-7": {
+            "previous": {
+                "name": "Château-Landon",
+                "slug": "chateau-landon",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Poissonnière",
+                "slug": "poissonniere",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Gare de l'Est</strong> est l'un des <strong>plus grands pôles d'échange du métro parisien</strong>, à la croisée de <strong>trois lignes</strong> (<strong>M4 automatique</strong>, <strong>M5</strong>, <strong>M7</strong>) reliées directement à la <strong>Gare SNCF de Paris-Est</strong>. Avec <strong>15 538 471 entrants en 2021</strong>, elle se classe au <strong>5e rang</strong> du réseau métro RATP (sur 304 stations), témoignant de l'intense activité ferroviaire et de correspondance du site. La station se trouve dans le <strong>10e arrondissement</strong>, à la <strong>frontière du quartier du Faubourg-Saint-Martin</strong>.",
+        "Côté <strong>SNCF grandes lignes</strong>, la Gare de l'Est est le <strong>hub TGV est</strong> de Paris, desservant <strong>Strasbourg en 1h46</strong>, <strong>Reims en 45 min</strong>, <strong>Nancy en 1h30</strong>, <strong>Metz en 1h22</strong>, ainsi que les liaisons internationales : <strong>Francfort en 3h45</strong>, <strong>Munich en 5h45</strong>, <strong>Stuttgart en 3h20</strong> et <strong>Luxembourg en 2h05</strong>. La gare SNCF a été conçue par l'architecte <strong>François-Alexis Cendrier</strong> et inaugurée en <strong>1849</strong> pour la <strong>Compagnie du chemin de fer de Paris à Strasbourg</strong>. Sa <strong>façade néoclassique</strong> de <strong>120 mètres de long</strong> est ornée de deux <strong>statues allégoriques</strong> représentant Strasbourg et Verdun.",
+        "Dans le hall principal de la gare SNCF est exposé le <strong>monumental tableau « Le Départ des Poilus en août 1914 »</strong>, peint en <strong>1926</strong> par le peintre américain <strong>Albert Herter (1871-1950)</strong> en mémoire de son fils <strong>Everit Herter</strong>, soldat américain tombé en 1918. Cette toile de <strong>5 mètres de haut sur 12 mètres de large</strong>, offerte par l'artiste à la France, représente l'embarquement émouvant des soldats français au front lors de la mobilisation d'août 1914. Côté métro, l'architecture est particulière : la <strong>voûte de la M4 est interrompue dans sa partie centrale</strong> par le passage perpendiculaire des M5 et M7 au-dessus."
+    ],
+    "history": {
+        "title": "1907-1942 : trois lignes en trente-cinq ans",
+        "paragraphs": [
+            "La station Gare de l'Est est inaugurée sur la <strong>ligne 4</strong> le <strong>15 novembre 1907</strong>, à l'occasion du prolongement de la M4 du tronçon central vers le nord (Châtelet ↔ Porte de Clignancourt). Elle dessert alors la <strong>Gare de l'Est SNCF</strong>, construite cinquante-huit ans plus tôt, en pleine expansion grâce au trafic vers l'Alsace-Lorraine et l'Allemagne.",
+            "Les <strong>lignes 5 et 7</strong> rejoignent la station au même endroit dans la décennie suivante (la <strong>M5</strong> en <strong>1907</strong> également pour son tronçon, puis la <strong>M7</strong> en <strong>1910</strong> pour son extension). Architecturalement, cette configuration crée une <strong>particularité unique du réseau</strong> : la <strong>voûte de la M4 est interrompue dans sa partie centrale</strong> par le passage perpendiculaire des M5 et M7 au-dessus, sur une <strong>structure en pont métallique</strong>. Cette particularité est encore visible aujourd'hui sur les quais de la M4.",
+            "La <strong>Gare SNCF de Paris-Est</strong> elle-même date de <strong>1847-1849</strong>, conçue par l'architecte <strong>François-Alexis Cendrier</strong> pour la <strong>Compagnie du chemin de fer de Paris à Strasbourg</strong>. Sa <strong>façade néoclassique de 120 m de long</strong> est ornée de deux <strong>statues allégoriques</strong> — l'une symbolisant <strong>Strasbourg</strong> (côté ouest), l'autre <strong>Verdun</strong> (côté est, ajoutée en 1931). C'est l'une des plus belles façades ferroviaires de Paris, classée Monument Historique.",
+            "Plus récemment, la station métro a été <strong>modernisée de septembre 2006 à juin 2007</strong> pour accueillir l'arrivée du <strong>TGV Est</strong> (LGV inaugurée le <strong>10 juin 2007</strong>) qui a transformé les temps de parcours vers l'Est de la France (Strasbourg : 4h → 1h50). Les <strong>quais M4 ont été surélevés du 26 au 28 août 2016</strong> pour l'installation des <strong>portes palières en mai-juillet 2020</strong>, dans le cadre de l'automatisation intégrale de la ligne 4 (achevée fin 2022). La station n'est pas accessible PMR sur les 3 lignes métro."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Gare de l'Est ?",
+            "answer": "<strong>Trois lignes de métro</strong> : <strong>M4</strong> automatique (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), <strong>M5</strong> (Bobigny - Pablo Picasso ↔ Place d'Italie) et <strong>M7</strong> (La Courneuve - 8 Mai 1945 ↔ Mairie d'Ivry / Villejuif). Aucune correspondance RER directe en station — pour le RER E (vers Magenta, à 50 m), descendre à <strong>Magenta</strong> (souterraine, à 2 min à pied). Bus : 30, 35, 38, 39, 46, 47, 54, 56, 65, 91, plus Noctilien."
+        },
+        {
+            "question": "Comment rejoindre Strasbourg / Reims / Luxembourg depuis Gare de l'Est ?",
+            "answer": "<strong>TGV Est</strong> directs : <strong>Strasbourg en 1h46</strong>, <strong>Reims en 45 min</strong>, <strong>Metz en 1h22</strong>, <strong>Nancy en 1h30</strong>, <strong>Luxembourg en 2h05</strong>. Liaisons internationales : <strong>Francfort en 3h45</strong>, <strong>Munich en 5h45</strong>, <strong>Stuttgart en 3h20</strong>. Premier TGV vers 6h, dernier vers 22h30 environ. Réservation conseillée week-ends et vacances scolaires."
+        },
+        {
+            "question": "Qu'est-ce que « Le Départ des Poilus » d'Albert Herter ?",
+            "answer": "<strong>« Le Départ des Poilus en août 1914 »</strong> est un <strong>tableau monumental</strong> (<strong>5 m × 12 m</strong>) peint en <strong>1926</strong> par le peintre américain <strong>Albert Herter (1871-1950)</strong> en mémoire de son fils <strong>Everit Herter</strong>, soldat américain engagé volontaire dans l'armée française, tué en 1918. Offerte à la France, la toile est exposée dans le <strong>hall principal de la Gare de l'Est SNCF</strong>. Elle représente l'embarquement émouvant des soldats français au front lors de la mobilisation d'août 1914. Inscrite au titre des <strong>Monuments Historiques</strong> en 1979."
+        },
+        {
+            "question": "Quelle est la particularité architecturale du métro Gare de l'Est ?",
+            "answer": "Particularité unique du réseau : la <strong>voûte de la M4 est interrompue dans sa partie centrale</strong> par le passage perpendiculaire des M5 et M7 au-dessus, sur une <strong>structure en pont métallique</strong>. Cette configuration résulte de la nécessité de croiser les trois lignes à des niveaux distincts. À observer sur les quais M4."
+        },
+        {
+            "question": "La station Gare de l'Est est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station métro n'est pas accessible aux PMR</strong> sur les 3 lignes (M4, M5, M7). <strong>SNCF grandes lignes</strong> : ascenseurs et personnel d'assistance — service <strong>SNCF Accès Plus</strong> sur réservation. Le <strong>RER E à Magenta</strong> (à 2 min à pied) est partiellement accessible avec ascenseurs."
+        },
+        {
+            "question": "Comment rejoindre la Gare du Nord à pied depuis Gare de l'Est ?",
+            "answer": "<strong>5 minutes à pied</strong> : sortir vers la <strong>rue La Fayette</strong> et descendre vers l'ouest jusqu'à la Gare du Nord. Distance : environ <strong>400 mètres</strong>. C'est l'une des <strong>plus courtes distances entre deux gares parisiennes</strong>. Alternative : M4 direction Porte de Clignancourt (1 station, 2 min)."
+        },
+        {
+            "question": "Quels sont les horaires de la station ?",
+            "answer": "<strong>SNCF TGV/Intercités</strong> : premiers vers 6h, derniers vers 22h30. <strong>Métro M4, M5, M7</strong> : ~5h30 à 1h15, jusqu'à 2h15 vendredi/samedi/veille de fête. <strong>RER E à Magenta</strong> : ~5h45 à 0h45. La nuit, <strong>Noctilien</strong> N01, N02, N12, N31, N42, N142 depuis la gare."
+        },
+        {
+            "question": "Que voir autour de la station Gare de l'Est ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : la <strong>Gare du Nord</strong> voisine (5 min), le <strong>Canal Saint-Martin</strong> (10 min vers le sud-est), le quartier multiculturel du <strong>Faubourg-Saint-Denis</strong>, la <strong>Porte Saint-Denis</strong> et la <strong>Porte Saint-Martin</strong> (arcs de triomphe du XVIIᵉ siècle, 10 min). Plus loin via M4 : <strong>Châtelet</strong>, <strong>Saint-Michel - Notre-Dame</strong> (île de la Cité)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Tableau Albert Herter</strong> dans le hall SNCF : à voir absolument — 5 × 12 m, hommage aux Poilus.",
+        "Pour rejoindre <strong>Gare du Nord à pied</strong> : 5 min par la rue La Fayette (~400 m).",
+        "Pour le <strong>RER E</strong> : descendre à <strong>Magenta</strong> (souterraine), 2 min à pied depuis la Gare de l'Est.",
+        "Pour <strong>Strasbourg / Reims / Luxembourg</strong> : TGV direct depuis la SNCF — arrivée 10 min avant.",
+        "Quartier <strong>multiculturel et populaire</strong> à l'est de la gare (Faubourg-Saint-Martin) : restaurants africains, turcs, asiatiques.",
+        "<strong>M4 automatique</strong> : fréquence 1-2 min en pointe — pas besoin de regarder les horaires."
+    ],
+    "trivia": [
+        {
+            "icon": "🚆",
+            "title": "5e station du métro parisien (15,5 M entrants en 2021)",
+            "content": "Avec <strong>15 538 471 entrants en 2021</strong>, la station Gare de l'Est se classe au <strong>5e rang du réseau métro RATP</strong> (sur 304 stations), derrière Saint-Lazare, Gare du Nord, Châtelet et Montparnasse-Bienvenüe. Sa fréquentation reflète l'intense trafic ferroviaire de la gare SNCF voisine (hub TGV est), les correspondances entre les 3 lignes métro et la proximité immédiate avec la Gare du Nord."
+        },
+        {
+            "icon": "🎨",
+            "title": "« Le Départ des Poilus » (Albert Herter, 1926)",
+            "content": "Dans le hall principal de la gare SNCF est exposé le <strong>monumental tableau « Le Départ des Poilus en août 1914 »</strong>, peint en <strong>1926</strong> par le peintre américain <strong>Albert Herter (1871-1950)</strong>. La toile de <strong>5 mètres de haut sur 12 mètres de large</strong> a été <strong>offerte à la France</strong> par l'artiste en mémoire de son fils <strong>Everit Herter</strong>, soldat américain engagé volontaire dans l'armée française et tué au combat en 1918. Inscrite Monuments Historiques en 1979."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Façade Cendrier 1849 — statues Strasbourg + Verdun",
+            "content": "La <strong>Gare SNCF de Paris-Est</strong>, conçue par l'architecte <strong>François-Alexis Cendrier (1803-1893)</strong> et inaugurée en <strong>1849</strong>, possède une <strong>façade néoclassique de 120 m de long</strong>. Elle est ornée de <strong>deux statues allégoriques</strong> représentant les villes desservies : <strong>Strasbourg</strong> (côté ouest, sculpture d'origine 1849) et <strong>Verdun</strong> (côté est, ajoutée en 1931 en mémoire de la bataille de 1916). C'est l'une des plus belles façades ferroviaires de Paris."
+        },
+        {
+            "icon": "🌉",
+            "title": "Voûte M4 interrompue par le pont M5/M7 — unique",
+            "content": "Particularité <strong>unique du réseau métro parisien</strong> : la <strong>voûte de la M4 est interrompue dans sa partie centrale</strong> par le passage perpendiculaire des M5 et M7 au-dessus, sur une <strong>structure en pont métallique visible</strong>. Cette configuration architecturale résulte de la nécessité de croiser les trois lignes à des niveaux distincts dans un espace souterrain restreint. À observer sur les quais M4 — l'un des éléments les plus singuliers de l'architecture du métro de Paris."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Strasbourg via TGV est",
+            "destination_slug": "strasbourg",
+            "destination_full_name": "Gare de l'Est → Strasbourg",
+            "lines_used": [
+                "TGV"
+            ],
+            "lines_label": "TGV Est direct (~1h46)",
+            "duration_minutes": 106,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-strasbourg/"
+        },
+        {
+            "destination_name": "Gare du Nord (à pied)",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Gare de l'Est → Gare du Nord",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue La Fayette (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-nord/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Gare de l'Est → CDG",
+            "lines_used": [
+                "à pied",
+                "RER B"
+            ],
+            "lines_label": "À pied jusqu'à Gare du Nord puis RER B direct CDG",
+            "duration_minutes": 35,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-cdg/"
+        },
+        {
+            "destination_name": "Reims via TGV",
+            "destination_slug": "reims",
+            "destination_full_name": "Gare de l'Est → Reims",
+            "lines_used": [
+                "TGV"
+            ],
+            "lines_label": "TGV Est direct (~45 min)",
+            "duration_minutes": 45,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-reims/"
+        },
+        {
+            "destination_name": "Canal Saint-Martin",
+            "destination_slug": "canal-saint-martin",
+            "destination_full_name": "Gare de l'Est → Canal Saint-Martin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue du Faubourg-Saint-Martin (~700 m)",
+            "duration_minutes": 9,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-canal-saint-martin/"
+        },
+        {
+            "destination_name": "Notre-Dame via M4",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Gare de l'Est → Notre-Dame",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux jusqu'à Cité (4 stations) + à pied",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Luxembourg via TGV",
+            "destination_slug": "luxembourg",
+            "destination_full_name": "Gare de l'Est → Luxembourg",
+            "lines_used": [
+                "TGV"
+            ],
+            "lines_label": "TGV Est direct (~2h05)",
+            "duration_minutes": 125,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-luxembourg/"
+        },
+        {
+            "destination_name": "Francfort via ICE/TGV",
+            "destination_slug": "francfort",
+            "destination_full_name": "Gare de l'Est → Francfort",
+            "lines_used": [
+                "TGV/ICE"
+            ],
+            "lines_label": "TGV/ICE direct (~3h45)",
+            "duration_minutes": 225,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-de-l-est/est-vers-francfort/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q745942",
+            "name": "Paris-Nord",
+            "category": "gare",
+            "description": "La gare de Paris-Nord, dite aussi gare du Nord ou Paris Gare du Nord, est l'une des six grandes gares terminus de la SNCF à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20du%20nord%204%20bis.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Nord",
+            "latitude": 48.881111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. d'Alsace",
+                "distance_m": 538,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q757180",
+            "name": "Paris-Est",
+            "category": "gare",
+            "description": "La gare de Paris-Est, dite aussi gare de l'Est, est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris-Gare%20de%20l%27Est-2009.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Est",
+            "latitude": 48.876944,
+            "longitude": 2.359167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Galerie Marchande (r. du Faubourg Saint-Martin)",
+                "distance_m": 26,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1710383",
+            "name": "église Saint-Vincent-de-Paul",
+            "category": "église",
+            "description": "L'église Saint-Vincent-de-Paul à Paris, située sur la place Franz-Liszt dans le 10e arrondissement, est dédiée à saint Vincent de Paul.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Vincent-de-Paul%20Fassade%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Vincent-de-Paul_de_Paris",
+            "latitude": 48.878889,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. d'Alsace",
+                "distance_m": 540,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1569396",
+            "name": "hôpital Saint-Louis",
+            "category": "hôpital",
+            "description": "L’hôpital Saint-Louis est un hôpital de l’Assistance publique - Hôpitaux de Paris (AP-HP) situé dans le 10e arrondissement de Paris, au nord de la rue Bichat, 1, avenue Claude-Vellefaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2011e%20H%C3%B4pital%20Saint-Louis%20Carr%C3%A93.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Saint-Louis",
+            "latitude": 48.874722,
+            "longitude": 2.368333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Galerie Marchande (r. du Faubourg Saint-Martin)",
+                "distance_m": 690,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q608428",
+            "name": "Magenta",
+            "category": "gare",
+            "description": "La gare de Magenta est une gare ferroviaire française souterraine de la ligne E (« Éole ») du réseau express régional d'Île-de-France (RER) ; elle est située à l'est de la gare du Nord, dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER-E-station-Magenta.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Magenta",
+            "latitude": 48.88,
+            "longitude": 2.358056,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. d'Alsace",
+                "distance_m": 370,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1567455",
+            "name": "passage Brady",
+            "category": "site notable",
+            "description": "Le passage Brady est un des deux passages couverts du 10e arrondissement de Paris. Il a été construit en 1828.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passage%20Brady.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Passage_Brady",
+            "latitude": 48.871125,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 617,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1629067",
+            "name": "église Saint-Laurent",
+            "category": "église",
+            "description": "L'église Saint-Laurent est une église du 10e arrondissement de Paris située dans l'ancien enclos Saint-Laurent, 119, rue du Faubourg-Saint-Martin, 68, boulevard de Strasbourg et 68, boulevard de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1300867%20Paris%20X%20eglise%20St-Laurent%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Laurent_de_Paris",
+            "latitude": 48.874847,
+            "longitude": 2.358311,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 150,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3097818",
+            "name": "théâtre Antoine - Simone-Berriau",
+            "category": "théâtre",
+            "description": "Le théâtre Antoine - Simone-Berriau, souvent simplement appelé le théâtre Antoine, est un théâtre situé au 14, boulevard de Strasbourg, dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Th%C3%A9%C3%A2tre%20Antoine%20112.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_Antoine_-_Simone-Berriau",
+            "latitude": 48.8706,
+            "longitude": 2.35537,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 668,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q636136",
+            "name": "jardin Villemin - Mahsa Jîna Amini",
+            "category": "jardin",
+            "description": "Le jardin Villemin - Mahsa Jîna Amini est un jardin public situé dans le quartier de l'hôpital Saint-Louis, dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1040702%20Paris%20X%20rue%20des%20R%C3%A9collets%20jardin%20Villemin%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Villemin_-_Mahsa_J%C3%AEna_Amini",
+            "latitude": 48.875,
+            "longitude": 2.36167,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 237,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q367569",
+            "name": "Le Splendid",
+            "category": "théâtre",
+            "description": "Le Splendid est un café-théâtre fondé en 1974 au numéro 18, passage d'Odessa, dans le quartier du Montparnasse, à Paris 14e, dans l'arrière-salle d'un bistrot faisant face au Vrai Chic parisien où…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1220786%20Paris%20X%20rue%20du%20Fbg-Saint-Martin%20n48%20Le%20Spendid%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Splendid",
+            "latitude": 48.870833,
+            "longitude": 2.356667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 612,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3098220",
+            "name": "Nord USFRT",
+            "category": "site notable",
+            "description": "Gare du Nord USFRT est le nom donné à l'ancien terminus Gare du Nord de la ligne 5, avant le prolongement vers le nord-est en 1942. Cette station est située dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20du%20Nord%20USFRT%20patrimoine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Nord_USFRT_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.879287,
+            "longitude": 2.354368,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. d'Alsace",
+                "distance_m": 405,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1643074",
+            "name": "hôtel Gouthière",
+            "category": "site notable",
+            "description": "L'hôtel Gouthière est un hôtel particulier du 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2010e%20H%C3%B4tel%20Gouthi%C3%A8re%20360.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Gouthi%C3%A8re",
+            "latitude": 48.871702,
+            "longitude": 2.358313,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+                "distance_m": 495,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. d'Alsace",
+            "address_full": "5 Rue d'Alsace 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.876677,
+            "longitude": 2.358236,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Galerie Marchande (r. du Faubourg Saint-Martin)",
+            "address_full": "145 Rue du Faubourg Saint-Martin 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.876791,
+            "longitude": 2.359434,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "pl. du 11-Novembre-1918 (façade SNCF)",
+            "address_full": "5 Rue du 8-Mai-1945 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.876132,
+            "longitude": 2.358924,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "WiFi SNCF gratuit dans la gare",
+            "coverage_detail": "60 min/connexion"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "multiples",
+            "locations": [
+                "hall SNCF",
+                "galerie marchande"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Hall principal",
+            "services": "Information, vente billets"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                "Consigne SNCF (~7-12 €/jour)"
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Hall SNCF + galerie marchande",
+            "details": "Food court (Paul, Eric Kayser, brasseries), Relay, Carrefour Express, pharmacie.",
+            "secondary": "Quartier Faubourg-Saint-Martin : restaurants multiculturels."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée : la Gare de l'Est figure parmi les gares les plus ciblées par les vols à la tire — surveiller bagages.",
+            "Forte présence police + SUGE (sûreté SNCF) en permanence dans le hall principal — environnement sécurisé en transit.",
+            "Soirée tardive : préférer rester dans la zone éclairée de la gare et des grands boulevards alentour.",
+            "Manifestations possibles sur le bd de Magenta et le faubourg Saint-Martin — vérifier paris.fr."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature de hub TGV majeur et urbain dense."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Gare_de_Paris-Est.jpg",
+        "alt": "Façade néoclassique de la Gare de Paris-Est (Cendrier, 1849) — pl. du 11-Novembre-1918",
+        "width": 6000,
+        "height": 4000,
+        "credit": {
+            "author": "Cheng-en Cheng",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Gare_de_Paris-Est.jpg",
+            "date": "2026-06-07"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/gare-de-l-est/gare-de-l-est-400.avif",
+                "800": "/assets/img/stations/gare-de-l-est/gare-de-l-est-800.avif",
+                "1200": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1200.avif",
+                "1600": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/gare-de-l-est/gare-de-l-est-400.webp",
+                "800": "/assets/img/stations/gare-de-l-est/gare-de-l-est-800.webp",
+                "1200": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1200.webp",
+                "1600": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/gare-de-l-est/gare-de-l-est-400.jpg",
+                "800": "/assets/img/stations/gare-de-l-est/gare-de-l-est-800.jpg",
+                "1200": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1200.jpg",
+                "1600": "/assets/img/stations/gare-de-l-est/gare-de-l-est-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 4
+        },
+        "details": "Station métro non accessible PMR sur les 3 lignes (M4, M5, M7). SNCF grandes lignes et RER E (à Magenta) : ascenseurs et SNCF Accès Plus sur réservation."
+    }
+}
