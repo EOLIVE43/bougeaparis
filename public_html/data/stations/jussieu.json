@@ -1,0 +1,588 @@
+{
+    "published": true,
+    "slug": "jussieu",
+    "name": "Jussieu",
+    "name_full": "Jussieu (Métro 7 + 10)",
+    "arrondissement": "5e (Paris)",
+    "address": "Place Jussieu, 75005 Paris",
+    "latitude": 48.846006,
+    "longitude": 2.354744,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Jussieu station",
+        "es": "Estación Jussieu"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "47",
+            "67",
+            "89"
+        ],
+        "nocturne": [
+            "N15",
+            "N22"
+        ],
+        "regional": [
+            "75"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-07",
+            "same_node_count": 9,
+            "nearby_count": 13
+        }
+    },
+    "seo": {
+        "description": "Station Jussieu : M7 + M10 dans le 5e arr. Campus Sorbonne Université, Institut du Monde Arabe (Jean Nouvel), Jardin des Plantes, Ménagerie."
+    },
+    "hero": {
+        "tagline": "Au cœur du campus universitaire et scientifique",
+        "description": "Inaugurée le <strong>26 avril 1931</strong> simultanément sur la <strong>ligne 7</strong> et la <strong>ligne 10</strong> (alors prolongement terminus provisoire), Jussieu est l'<strong>accès métro de référence au campus scientifique parisien</strong>. Située sous la <strong>Place Jussieu</strong> dans le <strong>5e arrondissement</strong> (Quartier latin sud), elle dessert le <strong>campus Pierre-et-Marie-Curie de Sorbonne Université</strong> (anciennement Paris VI), l'<strong>Institut du Monde Arabe</strong> (Jean Nouvel, <strong>1987</strong>) à 5 min, le <strong>Jardin des Plantes</strong> (<strong>1635</strong>) et sa <strong>Ménagerie</strong> (1794, plus ancien zoo de Paris). Le nom honore le <strong>botaniste Antoine-Laurent de Jussieu (1748-1836)</strong>, professeur au Muséum national d'Histoire naturelle."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Place Monge",
+                "slug": "place-monge",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Sully - Morland",
+                "slug": "sully-morland",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        },
+        "metro-10": {
+            "previous": {
+                "name": "Cardinal Lemoine",
+                "slug": "cardinal-lemoine",
+                "direction": "Boulogne - Pont de Saint-Cloud"
+            },
+            "next": {
+                "name": "Gare d'Austerlitz",
+                "slug": "gare-d-austerlitz",
+                "direction": "Gare d'Austerlitz"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Jussieu</strong> est l'<strong>accès métro de référence au pôle scientifique et universitaire</strong> du <strong>Quartier latin sud</strong>. Située sous la <strong>Place Jussieu</strong> dans le <strong>5e arrondissement</strong>, elle est desservie par <strong>deux lignes inaugurées le 26 avril 1931</strong> : la <strong>ligne 7</strong> (La Courneuve - 8 Mai 1945 ↔ Mairie d'Ivry / Villejuif) et la <strong>ligne 10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz, alors terminus provisoire avant prolongement vers Austerlitz le 12 juillet 1939).",
+        "Avec <strong>2 889 642 entrants en 2021</strong> (114e station), Jussieu reflète une fréquentation à la fois étudiante (campus voisin), culturelle (Institut du Monde Arabe, Jardin des Plantes) et résidentielle (5e arrondissement). Le nom honore <strong>Antoine-Laurent de Jussieu (1748-1836)</strong>, botaniste, professeur au <strong>Muséum national d'Histoire naturelle</strong> (établi 1793), et neveu du célèbre <strong>Bernard de Jussieu (1699-1777)</strong>. La station portait initialement le sous-titre <em>« Halle aux Vins »</em>, en référence au marché aux vins historique de Bercy qui occupait alors l'emplacement du campus universitaire actuel.",
+        "À <strong>moins de 10 minutes à pied</strong> : le <strong>Campus Pierre-et-Marie-Curie</strong> (renommé en 2019 en l'honneur de Marie et Pierre Curie) de <strong>Sorbonne Université</strong>, l'<strong>Institut du Monde Arabe</strong> conçu par <strong>Jean Nouvel</strong> et inauguré en <strong>1987</strong> (façade aux <strong>240 panneaux photosensibles inspirés des moucharabiehs</strong>), le <strong>Jardin des Plantes</strong> (créé en <strong>1635</strong> par Guy de La Brosse pour le roi Louis XIII, plus ancien jardin botanique français), la <strong>Ménagerie du Jardin des Plantes</strong> (<strong>1794</strong>, plus ancien zoo de Paris encore en activité) et la <strong>Grande Galerie de l'Évolution</strong> (rouverte en 1994 après restauration)."
+    ],
+    "history": {
+        "title": "1931 : terminus provisoire de la ligne 10 + ouverture M7",
+        "paragraphs": [
+            "Le <strong>26 avril 1931</strong>, la station Jussieu est inaugurée simultanément sur la <strong>ligne 7</strong> (alors étendue depuis Pont Marie) et sur la <strong>ligne 10</strong>, dont elle constitue alors le <strong>terminus est provisoire</strong>. Cette double ouverture s'inscrit dans la grande vague d'extension du réseau parisien des années 1930. La station prend initialement le nom <strong>« Jussieu - Halle aux Vins »</strong>, en référence à l'<strong>ancien marché aux vins</strong> qui s'étendait alors sur l'emplacement actuel du campus universitaire — héritage des vignobles parisiens et des entrepôts du Faubourg-Saint-Bernard.",
+            "Le <strong>12 juillet 1939</strong>, la <strong>ligne 10</strong> est prolongée de Jussieu jusqu'à <strong>Gare d'Austerlitz</strong>, mettant fin au statut de terminus de la station. Le sous-titre <em>« Halle aux Vins »</em> est ensuite supprimé lorsque l'ancien marché aux vins est rasé dans les années 1960 pour construire la <strong>Faculté des Sciences de Paris</strong> (architecte Édouard Albert, 1964-1972), qui deviendra plus tard l'<strong>université Paris VI Pierre-et-Marie-Curie</strong> (1971), puis l'actuelle <strong>Sorbonne Université</strong> (fusion 2018).",
+            "Architecturalement, la station possède <strong>4 quais et 4 voies</strong> sur deux niveaux (M7 + M10), des accès équipés de <strong>balustrades style Dervaux</strong> caractéristiques des stations d'entre-deux-guerres, et un décor classique en carrelage blanc biseauté. La station n'est <strong>pas accessible PMR</strong>. En <strong>2020</strong>, un <strong>deuxième accès équipé d'escalators</strong> a été ouvert dans le cadre du réaménagement de la Place Jussieu, modernisant significativement le confort des voyageurs.",
+            "Le nom <strong>Jussieu</strong> rend hommage à <strong>Antoine-Laurent de Jussieu (1748-1836)</strong>, botaniste de renom, professeur au <strong>Muséum national d'Histoire naturelle</strong> (créé 1793 sur l'ancien Jardin du Roi) et auteur en <strong>1789</strong> de <em>« Genera plantarum »</em>, ouvrage fondateur de la <strong>classification naturelle des plantes</strong>. Il était neveu et élève du botaniste <strong>Bernard de Jussieu (1699-1777)</strong>, lui-même intendant du Jardin du Roi sous Louis XV et inventeur de la classification des plantes à fleurs."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Jussieu ?",
+            "answer": "<strong>Deux lignes de métro</strong> : la <strong>M7</strong> (La Courneuve - 8 Mai 1945 ↔ Mairie d'Ivry / Villejuif) et la <strong>M10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz). Aucune correspondance RER directe — pour le RER C, descendre à <strong>Gare d'Austerlitz</strong> via M10 (1 station). Bus 67, 89 et autres desservent les rues alentour."
+        },
+        {
+            "question": "Comment rejoindre l'Institut du Monde Arabe depuis Jussieu ?",
+            "answer": "<strong>5 minutes à pied</strong> : sortir et descendre la <strong>rue des Fossés-Saint-Bernard</strong> vers la Seine. L'<strong>Institut du Monde Arabe</strong>, conçu par <strong>Jean Nouvel</strong> et inauguré en <strong>1987</strong>, est célèbre pour sa <strong>façade sud aux 240 panneaux photosensibles</strong> inspirés des moucharabiehs traditionnels — l'ouverture automatique des diaphragmes selon la luminosité du jour est l'un des dispositifs architecturaux les plus innovants de l'époque. Tarif ~10 €. Terrasse panoramique au 9e étage gratuite."
+        },
+        {
+            "question": "Comment accéder au Jardin des Plantes depuis Jussieu ?",
+            "answer": "<strong>3 minutes à pied</strong> : sortir et prendre la <strong>rue Linné</strong> ou la <strong>rue Cuvier</strong>. Le <strong>Jardin des Plantes</strong>, créé en <strong>1635</strong> par <strong>Guy de La Brosse</strong> pour le roi Louis XIII, est le <strong>plus ancien jardin botanique français</strong>. Il s'étend sur 28 hectares et abrite la <strong>Grande Galerie de l'Évolution</strong>, la <strong>Galerie de Minéralogie</strong>, la <strong>Galerie de Paléontologie</strong>, plusieurs serres tropicales et la <strong>Ménagerie</strong> (zoo). Entrée libre dans le jardin lui-même."
+        },
+        {
+            "question": "Qu'est-ce que la Ménagerie du Jardin des Plantes ?",
+            "answer": "La <strong>Ménagerie du Jardin des Plantes</strong> est le <strong>plus ancien zoo de Paris</strong> (et l'un des plus anciens du monde encore en activité), fondé en <strong>1794</strong> en pleine Révolution française par <strong>Bernardin de Saint-Pierre</strong>. À l'origine peuplée des animaux de la ménagerie royale de Versailles, elle compte aujourd'hui environ <strong>1 200 animaux de 200 espèces</strong> sur 5,5 hectares. Spécialisée dans les <strong>espèces menacées</strong> (panthères, orangs-outans, pandas roux, gibbons). Tarif ~13 €. Ouvert tous les jours."
+        },
+        {
+            "question": "Qu'est-ce que le campus de Sorbonne Université à Jussieu ?",
+            "answer": "Le <strong>Campus Pierre-et-Marie-Curie</strong>, accessible directement depuis la station, est le principal site scientifique de <strong>Sorbonne Université</strong> (fusion 2018 de Paris IV Sorbonne et Paris VI Pierre-et-Marie-Curie). Construit entre <strong>1964 et 1972</strong> par l'architecte <strong>Édouard Albert</strong> selon un plan en quinconce (grilles de 12 m), le campus abrite les facultés de <strong>sciences et médecine</strong> avec environ <strong>40 000 étudiants</strong>. Il a été <strong>renommé en 2019</strong> en hommage à Marie et Pierre Curie. La <strong>tour Zamansky</strong> (90 m, 1972) est l'un des points de repère du quartier."
+        },
+        {
+            "question": "La station Jussieu est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station Jussieu n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais. Le <strong>deuxième accès équipé d'escalators</strong> ouvert en <strong>2020</strong> facilite la circulation mais ne respecte pas les normes PMR complètes. Pour un trajet PMR vers le campus, utiliser le bus 89 (accessible) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la station Jussieu ?",
+            "answer": "Les <strong>lignes M7 et M10</strong> circulent globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 les vendredis, samedis et veilles de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> qui desservent les boulevards alentour."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : le <strong>Panthéon</strong> (10 min), la <strong>Mosquée de Paris</strong> (1926, à 5 min — l'une des plus grandes d'Europe), les <strong>Arènes de Lutèce</strong> (amphithéâtre gallo-romain du Ier siècle, à 3 min), la <strong>Sorbonne</strong> (10 min via M10), la <strong>Maubert-Mutualité</strong> (10 min à pied), <strong>Notre-Dame</strong> et l'<strong>île de la Cité</strong> (10 min)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>2 accès</strong> en surface depuis 2020 (réaménagement Place Jussieu) — escalators au nouvel accès.",
+        "Pour le <strong>Jardin des Plantes</strong> : rue Linné ou rue Cuvier (3 min) — entrée libre dans le jardin.",
+        "Pour l'<strong>Institut du Monde Arabe</strong> : rue des Fossés-Saint-Bernard (5 min) — terrasse panoramique gratuite au 9e étage.",
+        "Pour la <strong>Ménagerie</strong> (zoo) : à l'intérieur du Jardin des Plantes.",
+        "Pour la <strong>Mosquée de Paris</strong> et son <strong>salon de thé</strong> : 5 min à pied, ambiance unique.",
+        "Pour les <strong>Arènes de Lutèce</strong> : ruines romaines gratuites à 3 min — pause étonnante dans Paris."
+    ],
+    "trivia": [
+        {
+            "icon": "🌿",
+            "title": "Hommage à Antoine-Laurent de Jussieu (1748-1836)",
+            "content": "Le nom <strong>Jussieu</strong> rend hommage à <strong>Antoine-Laurent de Jussieu (1748-1836)</strong>, botaniste de renom et professeur au <strong>Muséum national d'Histoire naturelle</strong>. Auteur en <strong>1789</strong> de <em>« Genera plantarum »</em>, il a fondé la <strong>classification naturelle moderne des plantes</strong>, encore utilisée aujourd'hui (avec adaptations moléculaires). Il était <strong>neveu et élève</strong> du non moins célèbre <strong>Bernard de Jussieu (1699-1777)</strong>, intendant du Jardin du Roi sous Louis XV, qui a inventé la classification des plantes à fleurs au sein du Jardin du Trianon."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Institut du Monde Arabe (1987) — Jean Nouvel et 240 moucharabiehs",
+            "content": "L'<strong>Institut du Monde Arabe</strong>, à 5 min à pied, a été inauguré en <strong>1987</strong> selon les plans de <strong>Jean Nouvel</strong> (futur Prix Pritzker 2008). Sa <strong>façade sud</strong> est célèbre pour ses <strong>240 panneaux photosensibles</strong> inspirés des <strong>moucharabiehs traditionnels</strong> : les diaphragmes mécaniques s'ouvrent et se ferment automatiquement selon la luminosité du jour, créant une <strong>dentelle de lumière</strong> à l'intérieur. Considéré comme l'un des chefs-d'œuvre architecturaux du XXᵉ siècle. <strong>Terrasse panoramique gratuite au 9e étage</strong> — vue exceptionnelle sur Notre-Dame."
+        },
+        {
+            "icon": "🌳",
+            "title": "Jardin des Plantes (1635) — plus ancien jardin botanique français",
+            "content": "Le <strong>Jardin des Plantes</strong>, fondé en <strong>1635</strong> par <strong>Guy de La Brosse</strong> sur ordre de <strong>Louis XIII</strong>, est le <strong>plus ancien jardin botanique français</strong>. Initialement <strong>« Jardin royal des plantes médicinales »</strong>, il a accueilli les grands naturalistes français : <strong>Buffon</strong> (intendant 1739-1788), <strong>Cuvier</strong>, <strong>Lamarck</strong>, <strong>Geoffroy Saint-Hilaire</strong>. Il s'étend sur <strong>28 hectares</strong> et abrite la <strong>Grande Galerie de l'Évolution</strong> (rouverte 1994), la <strong>Ménagerie</strong> (1794, plus ancien zoo de Paris) et plusieurs galeries thématiques. Entrée libre dans le jardin."
+        },
+        {
+            "icon": "🐯",
+            "title": "Ménagerie (1794) — plus ancien zoo de Paris",
+            "content": "La <strong>Ménagerie du Jardin des Plantes</strong>, fondée en <strong>1794</strong> en pleine Révolution française par <strong>Bernardin de Saint-Pierre</strong>, est le <strong>plus ancien zoo de Paris</strong> et l'un des plus anciens encore en activité au monde. Elle a accueilli à l'origine les <strong>animaux de la ménagerie royale de Versailles</strong>, transférés après la chute de la monarchie. Aujourd'hui : <strong>1 200 animaux, 200 espèces</strong>, spécialisée dans les <strong>espèces menacées d'extinction</strong> (panthères, orangs-outans, pandas roux, gibbons, tortues géantes). <strong>5,5 hectares</strong>. Tarif ~13 €."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Institut du Monde Arabe",
+            "destination_slug": "institut-monde-arabe",
+            "destination_full_name": "Jussieu → Institut du Monde Arabe",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue des Fossés-Saint-Bernard (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-ima/"
+        },
+        {
+            "destination_name": "Jardin des Plantes",
+            "destination_slug": "jardin-des-plantes",
+            "destination_full_name": "Jussieu → Jardin des Plantes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Linné (~250 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-jardin-plantes/"
+        },
+        {
+            "destination_name": "Ménagerie (zoo Paris)",
+            "destination_slug": "menagerie",
+            "destination_full_name": "Jussieu → Ménagerie du Jardin des Plantes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Cuvier puis Jardin des Plantes (~500 m)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-menagerie/"
+        },
+        {
+            "destination_name": "Mosquée de Paris",
+            "destination_slug": "mosquee-paris",
+            "destination_full_name": "Jussieu → Mosquée de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Linné (~500 m)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-mosquee/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Jussieu → Notre-Dame de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le pont de Sully ou pont au Double (~900 m)",
+            "duration_minutes": 11,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Panthéon",
+            "destination_slug": "pantheon",
+            "destination_full_name": "Jussieu → Panthéon",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Linné et rue Clovis (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-pantheon/"
+        },
+        {
+            "destination_name": "Gare d'Austerlitz via M10",
+            "destination_slug": "gare-austerlitz",
+            "destination_full_name": "Jussieu → Gare d'Austerlitz",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 direction Gare d'Austerlitz (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-austerlitz/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M7 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Jussieu → CDG",
+            "lines_used": [
+                "M7",
+                "RER B"
+            ],
+            "lines_label": "M7 jusqu'à Châtelet (4 stations) + RER B direct CDG",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-jussieu/jussieu-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q188856",
+            "name": "Panthéon",
+            "category": "monument",
+            "description": "Le Panthéon de Paris est un monument situé dans le 5e arrondissement, servant de nécropole nationale où sont inhumées des personnalités ayant marqué l’histoire de la France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panth%C3%A9on%2C%20Paris%2025%20March%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Panth%C3%A9on_(Paris)",
+            "latitude": 48.846198,
+            "longitude": 2.346105,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 615,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q392564",
+            "name": "grande mosquée de Paris",
+            "category": "mosquée",
+            "description": "La grande mosquée de Paris (GMP) est une mosquée française construite dans le style hispano-mauresque avec un minaret de 33 mètres.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Mosqu%C3%A9e%20de%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Paris",
+            "latitude": 48.841944,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Jussieu (rue Linné)",
+                "distance_m": 438,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q838691",
+            "name": "Muséum national d'histoire naturelle",
+            "category": "musée",
+            "description": "Le Muséum national d'histoire naturelle (MNHN) est un établissement français d'enseignement supérieur, de recherche et de diffusion de la culture scientifique naturaliste, membre de l'alliance…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20galerie%20de%20l%27%C3%A9volution%2C%20Paris%2010%20April%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9um_national_d%27histoire_naturelle",
+            "latitude": 48.842222,
+            "longitude": 2.356111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Jussieu (rue Linné)",
+                "distance_m": 419,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q730948",
+            "name": "jardin des plantes de Paris",
+            "category": "jardin",
+            "description": "Le jardin des plantes de Paris, ou Jardin des plantes, situé dans le 5e arrondissement de Paris, est un parc à la fois botanique, écologique et zoologique, siège et principal site du Muséum national…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075005%20Grande%20Galerie%20de%20l%27Evolution%2020070804.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_plantes_de_Paris",
+            "latitude": 48.843889,
+            "longitude": 2.359722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Jussieu (rue Linné)",
+                "distance_m": 427,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q860166",
+            "name": "Institut du monde arabe",
+            "category": "site notable",
+            "description": "L'Institut du monde arabe (IMA) est un institut culturel français consacré au monde arabe. Il est situé au cœur de Paris, dans le 5e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Institut%20du%20Monde%20Arabe%20au%20bord%20de%20la%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Institut_du_monde_arabe",
+            "latitude": 48.848903,
+            "longitude": 2.357041,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 374,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q641548",
+            "name": "arènes de Lutèce",
+            "category": "théâtre",
+            "description": "Les arènes de Lutèce, construites au IIe siècle, sont un amphithéâtre gallo-romain situé à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20arena%20in%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ar%C3%A8nes_de_Lut%C3%A8ce",
+            "latitude": 48.845,
+            "longitude": 2.35306,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 152,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q583251",
+            "name": "église Saint-Étienne-du-Mont",
+            "category": "église",
+            "description": "L'église Saint-Étienne-du-Mont est une église située sur la montagne Sainte-Geneviève, dans le 5e arrondissement de Paris, à proximité du lycée Henri-IV et du Panthéon.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St-Etienne-du-Mont%20Exterior%2C%20Paris%2C%20France%20-%20Diliff.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89tienne-du-Mont_de_Paris",
+            "latitude": 48.84653,
+            "longitude": 2.34803,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 477,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1140060",
+            "name": "pont Saint-Louis",
+            "category": "pont",
+            "description": "Le pont Saint-Louis est un pont situé à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Saint-Louis%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Saint-Louis",
+            "latitude": 48.852783,
+            "longitude": 2.352788,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 766,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1196688",
+            "name": "pont de Sully",
+            "category": "pont",
+            "description": "Le pont de Sully est le nom donné à l'alignement de deux ponts franchissant deux bras de la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/France%20Paris%20Pont%20de%20Sully.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Sully",
+            "latitude": 48.85,
+            "longitude": 2.35917,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place Jussieu (rue Linné)",
+                "distance_m": 561,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1577630",
+            "name": "église Saint-Nicolas-du-Chardonnet",
+            "category": "église",
+            "description": "L'église Saint-Nicolas-du-Chardonnet, située à Paris au 23 rue des Bernardins, à l'angle de la rue Saint-Victor dans le 5e arrondissement de Paris, dans le quartier Saint-Victor, à côté de la maison…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20Saint-Nicolas-du-Chardonnet%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-du-Chardonnet",
+            "latitude": 48.849167,
+            "longitude": 2.350278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 469,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2073308",
+            "name": "pont de l'Archevêché",
+            "category": "pont",
+            "description": "Le pont de l'Archevêché est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20lArchev%C3%AAch%C3%A9%2C%20Paris%202010.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_l%27Archev%C3%AAch%C3%A9",
+            "latitude": 48.851667,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 664,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q513655",
+            "name": "pont de la Tournelle",
+            "category": "pont",
+            "description": "Le pont de la Tournelle est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20la%20Tournelle%2C%20Paris%203%20April%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_la_Tournelle",
+            "latitude": 48.850664,
+            "longitude": 2.355522,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+                "distance_m": 525,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place Jussieu (rue Linné)",
+            "address_full": "37 Rue Linné 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.845882,
+            "longitude": 2.354731,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Place Jussieu (rue Linné — accès 2020 escalators)",
+            "address_full": "39 Rue Linné 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.845989,
+            "longitude": 2.354498,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "alentours du campus"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Place Jussieu + campus",
+            "details": "Cafés étudiants, restaurants asiatiques, brasseries du Quartier latin.",
+            "secondary": "Mosquée de Paris (salon de thé à 5 min), restaurants Jardin des Plantes."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier universitaire et résidentiel paisible : globalement très sûr en journée comme en soirée.",
+            "Vigilance pickpockets standard sur la place Jussieu et autour du Jardin des Plantes (touristes).",
+            "Manifestations étudiantes possibles autour du campus Sorbonne Université — vérifier paris.fr.",
+            "Soirée tardive : zone calme après 22h hors période universitaire."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels à partir de la nature universitaire et culturelle."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Institut_du_Monde_Arabe_au_bord_de_la_Seine.jpg",
+        "alt": "Institut du Monde Arabe (Jean Nouvel, 1987) au bord de la Seine — à 5 min à pied de la station Jussieu",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Institut_du_Monde_Arabe_au_bord_de_la_Seine.jpg",
+            "date": "2026-06-07"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/jussieu/jussieu-400.avif",
+                "800": "/assets/img/stations/jussieu/jussieu-800.avif",
+                "1200": "/assets/img/stations/jussieu/jussieu-1200.avif",
+                "1600": "/assets/img/stations/jussieu/jussieu-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/jussieu/jussieu-400.webp",
+                "800": "/assets/img/stations/jussieu/jussieu-800.webp",
+                "1200": "/assets/img/stations/jussieu/jussieu-1200.webp",
+                "1600": "/assets/img/stations/jussieu/jussieu-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/jussieu/jussieu-400.jpg",
+                "800": "/assets/img/stations/jussieu/jussieu-800.jpg",
+                "1200": "/assets/img/stations/jussieu/jussieu-1200.jpg",
+                "1600": "/assets/img/stations/jussieu/jussieu-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais. Deuxième accès équipé d'escalators ouvert en 2020 (sans conformité PMR complète). Pour un trajet PMR vers Jussieu, utiliser le bus 89 (accessible) ou taxi/VTC."
+    }
+}
