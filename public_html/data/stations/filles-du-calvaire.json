@@ -1,0 +1,563 @@
+{
+    "published": true,
+    "slug": "filles-du-calvaire",
+    "name": "Filles du Calvaire",
+    "name_full": "Filles du Calvaire (Métro 8)",
+    "arrondissement": "3e / 11e (Paris)",
+    "address": "Boulevard du Temple, 75003 Paris",
+    "latitude": 48.862468,
+    "longitude": 2.366064,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Filles du Calvaire station",
+        "es": "Estación Filles du Calvaire"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#E19BDF",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "91",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-07",
+            "same_node_count": 1,
+            "nearby_count": 21
+        }
+    },
+    "seo": {
+        "description": "Station Filles du Calvaire : M8 entre République et Saint-Sébastien-Froissart. Cirque d'Hiver (1852), boulevard du Temple, Marais nord, 3e/11e arr."
+    },
+    "hero": {
+        "tagline": "Le Cirque d'Hiver et l'entrée nord du Marais",
+        "description": "À la frontière du <strong>3e et du 11e arrondissement</strong>, sur le <strong>boulevard du Temple</strong>, Filles du Calvaire est desservie par la <strong>ligne 8 du métro</strong>, ouverte ici le <strong>5 mai 1931</strong> lors du prolongement de la M8 depuis Richelieu-Drouot vers Porte de Charenton. Le nom provient du <strong>couvent des Filles du Calvaire</strong>, ordre religieux établi rue du Temple au XVIIᵉ siècle (1633), supprimé à la Révolution. La station marque l'<strong>entrée nord du Marais</strong> et se trouve à <strong>50 mètres</strong> du <strong>Cirque d'Hiver Bouglione</strong>, le plus ancien cirque en activité au monde (<strong>1852</strong>), édifice circulaire de l'architecte <strong>Jacques Hittorff</strong>."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Saint-Sébastien - Froissart",
+                "slug": "saint-sebastien-froissart",
+                "direction": "Pointe du Lac"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Filles du Calvaire</strong> est située sur le <strong>boulevard du Temple</strong>, à la frontière du <strong>3e arrondissement (Le Marais nord)</strong> et du <strong>11e arrondissement</strong>. Elle est desservie par la <strong>ligne 8 du métro</strong> (Balard ↔ Pointe du Lac), entre <strong>République</strong> (1 station vers l'ouest, correspondance M3/M5/M9/M11) et <strong>Saint-Sébastien - Froissart</strong> (1 station vers l'est). Ouverte le <strong>5 mai 1931</strong> lors du prolongement de la M8 depuis Richelieu-Drouot vers Porte de Charenton. Avec environ <strong>1,8 million d'entrants en 2021</strong>, elle se classait au <strong>147e rang</strong> du réseau métro RATP.",
+        "Le nom <strong>« Filles du Calvaire »</strong> provient du <strong>couvent des Filles du Calvaire</strong>, ordre religieux féminin fondé en <strong>1617</strong> par <strong>Antoinette d'Orléans-Longueville</strong> et le Père <strong>Joseph du Tremblay</strong> (l'« Éminence grise » de Richelieu). Le couvent parisien fut établi <strong>rue du Temple en 1633</strong>, et le boulevard qui longeait son enclos prit son nom. L'<strong>ordre fut supprimé à la Révolution en 1790</strong> et le couvent démoli. Seul subsiste aujourd'hui le nom du boulevard, de la rue (perpendiculaire) et de la station de métro — précieuse trace urbaine d'un patrimoine religieux disparu.",
+        "À <strong>50 mètres</strong> de la station, sur le boulevard du Temple, se dresse le <strong>Cirque d'Hiver Bouglione</strong>, le <strong>plus ancien cirque en activité au monde</strong>. Inauguré le <strong>11 décembre 1852</strong> sous le nom de <strong>« Cirque Napoléon »</strong> en présence de Napoléon III, il a été dessiné par l'architecte <strong>Jacques Hittorff</strong> (auteur de la Gare du Nord). Édifice <strong>circulaire à coupole en bois</strong>, capacité <strong>1 500 places</strong>, classé <strong>Monument Historique en 1975</strong>. Repris par la famille <strong>Bouglione</strong> en 1934, il accueille encore aujourd'hui des spectacles de cirque traditionnel, des galas et des tournages."
+    ],
+    "history": {
+        "title": "1931 : ouverture de la station, mémoire d'un couvent disparu",
+        "paragraphs": [
+            "La station est inaugurée le <strong>5 mai 1931</strong>, lors du prolongement de la <strong>ligne 8</strong> depuis Richelieu-Drouot vers <strong>Porte de Charenton</strong>. Configuration classique : station souterraine sur deux voies, voûte elliptique standard, sous le boulevard du Temple à proximité immédiate du Cirque d'Hiver. La conception architecturale reprend les codes des stations CMP (Compagnie du chemin de fer Métropolitain de Paris) des années 1930.",
+            "Le nom <strong>« Filles du Calvaire »</strong> fait référence à un couvent religieux disparu. L'<strong>ordre des Filles du Calvaire</strong> est un ordre bénédictin féminin fondé en <strong>1617</strong> par <strong>Antoinette d'Orléans-Longueville</strong> et le Père <strong>Joseph du Tremblay</strong> (futur « Éminence grise » de Richelieu). Leur <strong>couvent parisien</strong> est établi <strong>rue du Temple à partir de 1633</strong>, occupant un grand enclos dans le 3e arrondissement actuel. Le <strong>boulevard qui longeait l'enclos</strong> prit le nom de boulevard des Filles du Calvaire (créé par Louis XIV à la fin du XVIIᵉ siècle lors du démantèlement des fortifications de Charles V).",
+            "À la <strong>Révolution française</strong>, l'ordre est <strong>supprimé en 1790</strong> et le couvent vendu comme bien national. Démoli au début du XIXᵉ siècle, il a laissé son nom au boulevard, à la rue des Filles-du-Calvaire (perpendiculaire) et — par filiation — à la <strong>station de métro</strong> qui y fut creusée en 1931. C'est l'une des nombreuses traces toponymiques du <strong>patrimoine religieux disparu</strong> du Marais (avec les Carmes, les Récollets, les Madelonnettes, etc.).",
+            "À côté de la station, le <strong>boulevard du Temple</strong> est historiquement célèbre pour avoir été surnommé au XIXᵉ siècle le <strong>« Boulevard du Crime »</strong> à cause des nombreux théâtres de mélodrame qui s'y trouvaient. Le <strong>Cirque d'Hiver</strong> y est inauguré le <strong>11 décembre 1852</strong> sous le nom <strong>« Cirque Napoléon »</strong>, en présence de Napoléon III. Bâtiment <strong>circulaire à coupole de bois</strong>, conçu par <strong>Jacques Hittorff</strong> (qui dessinera plus tard la Gare du Nord), capacité de <strong>1 500 places</strong>. Repris en gestion par la <strong>famille Bouglione</strong> en <strong>1934</strong>, <strong>classé Monument Historique en 1975</strong>, il reste aujourd'hui le <strong>plus ancien cirque en activité au monde</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Filles du Calvaire ?",
+            "answer": "<strong>Une seule ligne de métro</strong> : la <strong>ligne 8</strong> (Balard ↔ Pointe du Lac). Les stations adjacentes sont <strong>République</strong> (1 station vers l'ouest, gros pôle d'échange M3/M5/M8/M9/M11) et <strong>Saint-Sébastien - Froissart</strong> (1 station vers l'est). Aucune correspondance RER directe : pour le RER A/D/B, descendre à <strong>Châtelet - Les Halles</strong> via M8 ou M9 depuis Bonne Nouvelle. Bus 20, 65, 75 et autres desservent le boulevard du Temple."
+        },
+        {
+            "question": "D'où vient le nom Filles du Calvaire ?",
+            "answer": "Du <strong>couvent des Filles du Calvaire</strong>, ordre religieux féminin fondé en <strong>1617</strong> par <strong>Antoinette d'Orléans-Longueville</strong> et le Père <strong>Joseph du Tremblay</strong> (l'« Éminence grise » de Richelieu). Leur <strong>couvent parisien</strong> fut établi <strong>rue du Temple en 1633</strong>. Le <strong>boulevard qui longeait l'enclos</strong> a pris ce nom. L'ordre a été <strong>supprimé à la Révolution en 1790</strong> et le couvent démoli, mais le nom subsiste au boulevard, à la rue perpendiculaire et à la station de métro (ouverte en 1931)."
+        },
+        {
+            "question": "Le Cirque d'Hiver est-il vraiment le plus ancien du monde ?",
+            "answer": "<strong>Oui</strong>, le <strong>Cirque d'Hiver Bouglione</strong> est considéré comme le <strong>plus ancien cirque en activité au monde</strong>. Inauguré le <strong>11 décembre 1852</strong> sous le nom <strong>« Cirque Napoléon »</strong> en présence de l'empereur <strong>Napoléon III</strong>, il est aujourd'hui plus que <strong>centenaire et demi</strong>. Conçu par l'architecte <strong>Jacques Hittorff</strong> (auteur de la Gare du Nord), c'est un <strong>édifice circulaire à coupole de bois</strong> de <strong>1 500 places</strong>, <strong>classé Monument Historique en 1975</strong>. Repris en <strong>1934</strong> par la <strong>famille Bouglione</strong>, il accueille toujours des spectacles de cirque traditionnel, galas et tournages."
+        },
+        {
+            "question": "Comment rejoindre le Cirque d'Hiver depuis la station ?",
+            "answer": "<strong>1 minute à pied</strong> : sortir et longer le <strong>boulevard du Temple</strong> vers l'est sur <strong>50 mètres</strong>. Le <strong>Cirque d'Hiver Bouglione</strong> (110 rue Amelot, à l'angle du boulevard) est immédiatement visible. C'est la station métro la plus proche du cirque, devant Saint-Sébastien - Froissart (200 m)."
+        },
+        {
+            "question": "La station Filles du Calvaire est-elle accessible aux PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M8. Pour le Cirque d'Hiver ou le quartier nord du Marais en PMR, utiliser le <strong>bus 20 ou 65</strong> (accessibles, planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la station Filles du Calvaire ?",
+            "answer": "La <strong>M8</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, le service est assuré par les <strong>Noctilien</strong> qui desservent le boulevard du Temple (N02, N11, N12, N16)."
+        },
+        {
+            "question": "Quel arrondissement pour Filles du Calvaire ?",
+            "answer": "La station est située sous le <strong>boulevard du Temple</strong>, à la <strong>frontière du 3e et du 11e arrondissement</strong> (le boulevard sert de limite administrative). Les sorties au sud-ouest donnent sur le 3e (Marais nord), au sud-est sur le 11e."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier ?",
+            "answer": "À <strong>5-15 minutes à pied</strong> : <strong>Place de la République</strong> (5 min vers l'ouest), <strong>Marais</strong> et <strong>Place des Vosges</strong> (10 min vers le sud), <strong>Musée Picasso</strong> (12 min, rue Thorigny), <strong>Musée Carnavalet</strong> (15 min), <strong>Canal Saint-Martin</strong> (15 min vers le nord-est). Plus loin via M8 : <strong>Bastille</strong> (4 min) et <strong>Opéra Bastille</strong>, <strong>Grands Boulevards</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Cirque d'Hiver</strong> à 50 m : station métro idéale pour les spectacles (réserver à l'avance, surtout en saison).",
+        "Pour le <strong>Marais</strong> et la <strong>Place des Vosges</strong> : 10 min à pied vers le sud par la rue des Filles-du-Calvaire.",
+        "Pour <strong>Bastille</strong> : 3 stations M8 vers le sud (direct).",
+        "Pour <strong>République</strong> et ses correspondances : 1 station M8 vers l'ouest.",
+        "Boulevard du Temple historiquement appelé <strong>« Boulevard du Crime »</strong> au XIXᵉ : forte tradition théâtrale (Cirque d'Hiver dernier survivant).",
+        "Vigilance pickpockets standard sur les boulevards aux heures de pointe."
+    ],
+    "trivia": [
+        {
+            "icon": "🎪",
+            "title": "Cirque d'Hiver (1852) — plus ancien cirque en activité au monde",
+            "content": "Le <strong>Cirque d'Hiver Bouglione</strong>, à <strong>50 m</strong> de la station (110 rue Amelot, à l'angle du boulevard du Temple), est le <strong>plus ancien cirque en activité au monde</strong>. Inauguré le <strong>11 décembre 1852</strong> sous le nom <strong>« Cirque Napoléon »</strong> en présence de Napoléon III, conçu par l'architecte <strong>Jacques Hittorff</strong> (auteur de la Gare du Nord). <strong>Édifice circulaire à coupole de bois</strong>, capacité <strong>1 500 places</strong>, classé <strong>Monument Historique en 1975</strong>. Repris en <strong>1934</strong> par la <strong>famille Bouglione</strong>, il accueille encore aujourd'hui spectacles de cirque, galas et tournages (Chaplin, Fellini, Carné y ont tourné)."
+        },
+        {
+            "icon": "⛪",
+            "title": "Couvent des Filles du Calvaire (1633-1790) — patrimoine religieux disparu",
+            "content": "Le <strong>couvent des Filles du Calvaire</strong> était un ordre bénédictin féminin fondé en <strong>1617</strong> par <strong>Antoinette d'Orléans-Longueville</strong> et le Père <strong>Joseph du Tremblay</strong> (futur « Éminence grise » de Richelieu, conseiller secret du cardinal). Leur <strong>couvent parisien</strong> a été établi <strong>rue du Temple en 1633</strong> sur un grand enclos. Supprimé à la <strong>Révolution en 1790</strong>, le couvent a été démoli. Seuls subsistent aujourd'hui le nom du <strong>boulevard</strong>, de la <strong>rue perpendiculaire</strong> et de la <strong>station de métro</strong> ouverte en 1931. Trace toponymique d'un patrimoine religieux effacé."
+        },
+        {
+            "icon": "🎭",
+            "title": "Boulevard du Temple — le « Boulevard du Crime » du XIXᵉ siècle",
+            "content": "Le <strong>boulevard du Temple</strong>, sur lequel se trouve la station, fut surnommé au XIXᵉ siècle le <strong>« Boulevard du Crime »</strong>. Pas de criminalité réelle : cette appellation fait référence aux <strong>nombreux théâtres de mélodrame</strong> qui s'y trouvaient (Théâtre Lyrique, Cirque Olympique, Théâtre des Funambules immortalisé par Marcel Carné dans <em>Les Enfants du Paradis</em>, 1945). La plupart de ces théâtres ont été <strong>démolis sous Napoléon III en 1862</strong> lors des travaux d'Haussmann. Le <strong>Cirque d'Hiver est l'un des très rares survivants</strong> de cette époque dorée du théâtre populaire parisien."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Cirque d'Hiver Bouglione",
+            "destination_slug": "cirque-hiver",
+            "destination_full_name": "Filles du Calvaire → Cirque d'Hiver",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard du Temple (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-cirque-hiver/"
+        },
+        {
+            "destination_name": "Place des Vosges",
+            "destination_slug": "place-des-vosges",
+            "destination_full_name": "Filles du Calvaire → Place des Vosges",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue des Filles-du-Calvaire (~900 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-place-des-vosges/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Filles du Calvaire → République",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Balard (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-republique/"
+        },
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Filles du Calvaire → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Pointe du Lac (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-bastille/"
+        },
+        {
+            "destination_name": "Musée Picasso",
+            "destination_slug": "musee-picasso",
+            "destination_full_name": "Filles du Calvaire → Musée Picasso",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Turenne (~1 km)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-musee-picasso/"
+        },
+        {
+            "destination_name": "Châtelet via M8 + M1",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Filles du Calvaire → Châtelet",
+            "lines_used": [
+                "M8",
+                "M1"
+            ],
+            "lines_label": "M8 jusqu'à Bastille + M1 direction La Défense (3 stations)",
+            "duration_minutes": 12,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-chatelet/"
+        },
+        {
+            "destination_name": "Canal Saint-Martin",
+            "destination_slug": "canal-saint-martin",
+            "destination_full_name": "Filles du Calvaire → Canal Saint-Martin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par République (~1,2 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-canal-saint-martin/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M8 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Filles du Calvaire → CDG",
+            "lines_used": [
+                "M8",
+                "M4",
+                "RER B"
+            ],
+            "lines_label": "M8 jusqu'à Strasbourg-Saint-Denis + M4 jusqu'à Gare du Nord + RER B",
+            "duration_minutes": 45,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-filles-du-calvaire/filles-du-calvaire-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q810700",
+            "name": "Bataclan",
+            "category": "site notable",
+            "description": "Le Bataclan, qui s'appelait à l'origine Le Grand Café Chinois-Théâtre Ba-ta-clan, est une salle de spectacle parisienne édifiée par l'architecte Charles Duval en 1864 et située au 50, boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+            "latitude": 48.863056,
+            "longitude": 2.370833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Amelot",
+                "distance_m": 309,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q898629",
+            "name": "place des Vosges",
+            "category": "place",
+            "description": "La place des Vosges, anciennement place Royale, car initialement dédiée au roi Henri IV et finalement, après l'assassinat du roi par François Ravaillac, dédiée à son fils Louis XIII, est une place de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20PlaceDesVosges%20NordNordEst.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Vosges",
+            "latitude": 48.855556,
+            "longitude": 2.365556,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 855,
+                "walk_minutes": 11
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 484,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q640447",
+            "name": "musée Carnavalet",
+            "category": "musée",
+            "description": "Le musée Carnavalet - Histoire de Paris est le musée municipal parisien consacré à l'histoire de Paris des origines de la ville à nos jours.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnavalet%20Par%C3%ADs%2010.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Carnavalet",
+            "latitude": 48.857375,
+            "longitude": 2.362745,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 703,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q175055",
+            "name": "place de la République",
+            "category": "place",
+            "description": "La place de la République est une place de 3,4 ha située à la limite des 3e, 10e et 11e arrondissements de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%202017-12-01%20-%20Place%20de%20la%20R%C3%A9publique%20-%205517.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Paris)",
+            "latitude": 48.867278,
+            "longitude": 2.364056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Amelot",
+                "distance_m": 472,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q917337",
+            "name": "hôtel de Soubise",
+            "category": "site notable",
+            "description": "L'hôtel de Soubise, anciennement hôtel de Clisson puis hôtel de Guise, est un hôtel particulier parisien situé au coin de l'actuelle rue des Francs-Bourgeois et de la rue des Archives dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Soubise%2C%20Paris%209%20June%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Soubise",
+            "latitude": 48.860556,
+            "longitude": 2.358333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 659,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1067494",
+            "name": "tour du Temple",
+            "category": "palais",
+            "description": "La tour du Temple et son enclos constituaient la maison du Temple, ancienne forteresse parisienne située dans le nord du Marais, au sein du 3e arrondissement de Paris, qui fut détruite en 1808.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoffbauer-Brezet-Temple1734.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_du_Temple",
+            "latitude": 48.86528,
+            "longitude": 2.36222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 380,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1572452",
+            "name": "musée Cognacq-Jay",
+            "category": "musée",
+            "description": "Le musée Cognacq-Jay est un musée municipal de la Ville de Paris présentant une collection d'œuvres et d'objets d'art du XVIIIe siècle issue du legs d'Ernest Cognacq.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Lazare-Rachline%2C%20Paris%209%20June%202017%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Cognacq-Jay",
+            "latitude": 48.858194,
+            "longitude": 2.361389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 668,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1567798",
+            "name": "synagogue Nazareth",
+            "category": "synagogue",
+            "description": "La synagogue Nazareth est une synagogue du 3e arrondissement de Paris. C'est la plus ancienne des grandes synagogues de Paris. Elle est rattachée au Consistoire central israélite de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Syna%20Nazareth.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Nazareth",
+            "latitude": 48.866853,
+            "longitude": 2.360128,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 609,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2626611",
+            "name": "église Saint-Ambroise",
+            "category": "église",
+            "description": "L'église Saint-Ambroise est une église du 11e arrondissement de Paris, nommée en l'honneur de saint Ambroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ambroise%2C%20Square%20des%20Moines%20de%20Tibhirine%2C%20Paris%2021%20January%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ambroise_de_Paris",
+            "latitude": 48.86131,
+            "longitude": 2.37606,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Amelot",
+                "distance_m": 727,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1629790",
+            "name": "église Sainte-Élisabeth-de-Hongrie",
+            "category": "église",
+            "description": "L'église Sainte-Élisabeth-de-Hongrie est un édifice religieux catholique situé à Paris, datant des XVIIe et XIXe siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20%C3%89glise%20Sainte-%C3%89lisabeth-de-Hongrie%20665.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-%C3%89lisabeth-de-Hongrie_de_Paris",
+            "latitude": 48.86611,
+            "longitude": 2.36052,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 535,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q376490",
+            "name": "théâtre du Marais",
+            "category": "théâtre",
+            "description": "Le théâtre du Marais est un nom porté par trois salles de spectacles distinctes du quartier parisien du Marais au cours de l'histoire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1200707%20Paris%20III%20rue%20Volta%20n37%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_du_Marais",
+            "latitude": 48.866389,
+            "longitude": 2.357778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Filles du Calvaire",
+                "distance_m": 720,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd des Filles du Calvaire",
+            "address_full": "3 Boulevard du Temple 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.86323,
+            "longitude": 2.366375,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Amelot",
+            "address_full": "2 Boulevard du Temple 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.863393,
+            "longitude": 2.366646,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "boulevard du Temple"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Boulevard du Temple + rue Amelot",
+            "details": "Cafés et restaurants sur le boulevard du Temple, rue Amelot et alentours du Cirque d'Hiver.",
+            "secondary": "Marais nord (3e arr.) à 10 min pour shopping mode et restaurants tendance."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets standard sur les boulevards aux heures de pointe.",
+            "Soirée tardive : zone fréquentée jusqu'à minuit (cafés, sorties Cirque d'Hiver).",
+            "Lors des spectacles au Cirque d'Hiver : forte affluence en sortie (réserver Uber/taxi à l'avance).",
+            "Quartier sûr globalement (3e/11e résidentiels), surveillance habituelle des transports en commun."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle du quartier et de la proximité du Cirque d'Hiver."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Cirque_dhiver.jpg",
+        "alt": "Cirque d'Hiver Bouglione (Jacques Hittorff, 1852) — plus ancien cirque en activité au monde, à 50 m de la station Filles du Calvaire",
+        "width": 4032,
+        "height": 3024,
+        "credit": {
+            "author": "CarlottaOlmez",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Cirque_dhiver.jpg",
+            "date": "2026-06-07"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-400.avif",
+                "800": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-800.avif",
+                "1200": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1200.avif",
+                "1600": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-400.webp",
+                "800": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-800.webp",
+                "1200": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1200.webp",
+                "1600": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-400.jpg",
+                "800": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-800.jpg",
+                "1200": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1200.jpg",
+                "1600": "/assets/img/stations/filles-du-calvaire/filles-du-calvaire-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M8. Pour un trajet PMR vers le Cirque d'Hiver ou le Marais nord, utiliser les bus 20 ou 65 (planchers bas) ou taxi/VTC."
+    }
+}
