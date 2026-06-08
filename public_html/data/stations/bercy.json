@@ -1,0 +1,611 @@
+{
+    "published": true,
+    "slug": "bercy",
+    "name": "Bercy",
+    "name_full": "Bercy (Métro 6 et 14)",
+    "arrondissement": "12e (Paris)",
+    "address": "Boulevard de Bercy / Place du Bataillon du Pacifique, 75012 Paris",
+    "latitude": 48.840089,
+    "longitude": 2.379447,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Bercy station",
+        "es": "Estación Bercy"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#76C695",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "24",
+            "77",
+            "87",
+            "215"
+        ],
+        "nocturne": [
+            "N32",
+            "N35",
+            "N130"
+        ],
+        "regional": [
+            "71"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 7,
+            "nearby_count": 13
+        }
+    },
+    "seo": {
+        "description": "Station Bercy : M6 + M14 dans le 12e arr., correspondance directe avec la Gare de Bercy (Transilien R, Intercités, OUIGO), à 200 m du Parc de Bercy, Accor Arena et Bercy Village."
+    },
+    "hero": {
+        "tagline": "Parc de Bercy, Accor Arena et Bercy Village",
+        "description": "Station <strong>Bercy</strong> ouverte le <strong>1ᵉʳ mars 1909</strong> avec le prolongement Place d'Italie - Nation de la M6. La station <strong>M14</strong> est ajoutée le <strong>15 octobre 1998</strong> à l'inauguration de la ligne Météor. À <strong>5 min</strong> : la <strong>Gare de Bercy</strong> (correspondance Transilien R Paris ↔ Montargis, Intercités Bercy ↔ Auvergne/Bourgogne, OUIGO classique). À 10 min : le <strong>Parc de Bercy</strong> (14 ha, ouvert 1995, sur les anciens entrepôts viticoles), l'<strong>Accor Arena</strong> (ex-Palais Omnisports Paris-Bercy ou POPB, 1984, 20 000 places) et <strong>Bercy Village</strong> (Cour Saint-Émilion, 22 chais réhabilités 1995)."
+    },
+    "adjacent_stations": {
+        "metro-6": {
+            "previous": {
+                "name": "Dugommier",
+                "slug": "dugommier",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Quai de la Gare",
+                "slug": "quai-de-la-gare",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Gare de Lyon",
+                "slug": "gare-de-lyon",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Cour Saint-Émilion",
+                "slug": "cour-saint-emilion",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Bercy</strong> est située dans le <strong>12e arrondissement de Paris</strong>, sous le <strong>boulevard de Bercy</strong>, à proximité immédiate de la <strong>Gare SNCF de Bercy-Bourgogne-Pays-d'Auvergne</strong>. Elle est desservie par <strong>2 lignes de métro</strong> : <strong>M6</strong> (Charles de Gaulle - Étoile ↔ Nation, viaduc aérien à proximité) et <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly). Correspondance directe par la <strong>Gare de Bercy</strong> : <strong>Transilien R</strong> (Paris ↔ Montereau ↔ Montargis), <strong>Intercités</strong> (Bercy ↔ Auvergne, Bourgogne, Morvan) et <strong>OUIGO classique</strong>. Bus 24, 87.",
+        "La station <strong>M6</strong> ouvre le <strong>1ᵉʳ mars 1909</strong> avec le <strong>prolongement de la M6 (alors M2 Sud) de Place d'Italie à Nation</strong> (par la rive droite de la Seine). Elle est aérienne sur le viaduc à proximité (entre Quai de la Gare et Dugommier). La station <strong>M14</strong> est inaugurée le <strong>15 octobre 1998</strong> avec la <strong>ligne 14 Météor</strong> (première ligne automatique du métro parisien), reliant Madeleine à Bibliothèque François Mitterrand. Bercy devient ainsi correspondance M6 / M14.",
+        "Le quartier de Bercy a connu une <strong>profonde transformation urbaine dans les années 1990</strong>. Anciennement quartier des <strong>entrepôts viticoles de Paris</strong> (XIXe siècle) — c'est ici que le vin de Bourgogne et du Beaujolais arrivait par chemin de fer pour être stocké et embouteillé. Démantèlement progressif à partir des années 1970, et réaménagement complet : <strong>Parc de Bercy</strong> (14 ha, ouvert 1995, conçu par Bernard Huet, Madeleine Ferrand et al.), <strong>Bercy Village</strong> (Cour Saint-Émilion, 22 anciens chais en pierre réhabilités en commerces 1995-1998 par Valode et Pistre), <strong>Accor Arena / Palais Omnisports Paris-Bercy</strong> (1984, conçu par Andrault, Parat et Guvan, 20 000 places, pyramide gazonnée), <strong>Cinémathèque française</strong> (bâtiment de Frank Gehry 1994, ex-American Center)."
+    ],
+    "history": {
+        "title": "1909 : M6, 1998 : M14, et le grand réaménagement des entrepôts viticoles",
+        "paragraphs": [
+            "La station <strong>Bercy</strong> est inaugurée le <strong>1ᵉʳ mars 1909</strong> avec le <strong>prolongement de la M6 (ligne 2 Sud à l'époque)</strong> de Place d'Italie à Nation, par la rive droite. La M6 sera renommée M5 puis M6 lors des réorganisations du réseau. Configuration aérienne sur le viaduc à proximité du boulevard de Bercy. La station offre alors une correspondance avec la <strong>Gare de Bercy</strong> du PLM (Paris-Lyon-Méditerranée), dédiée au trafic marchandises (vin notamment).",
+            "Le <strong>15 octobre 1998</strong>, la <strong>M14 (ligne Météor)</strong> ouvre entre Madeleine et Bibliothèque François Mitterrand, avec une station à Bercy. <strong>Première ligne entièrement automatique du métro parisien</strong>, conçue par la RATP avec Siemens (système SAET puis CBTC). Quais à portes palières, automatisme intégral, trains MP 89 CA puis MP 05 CA puis MP 14 CA. Bercy devient ainsi un <strong>pôle de correspondance M6 / M14 / Gare SNCF</strong>.",
+            "Le quartier de Bercy a une histoire urbanistique singulière. <strong>Quartier des entrepôts viticoles de Paris depuis le XIXe siècle</strong> : c'est ici que le vin de Bourgogne, du Beaujolais et de l'ensemble de la France arrivait par <strong>chemin de fer</strong> (Gare de Bercy marchandises) pour être stocké et embouteillé. <strong>Surface : 51 ha</strong> de chais en pierre, le <strong>plus grand entrepôt de vin du monde au XIXe siècle</strong>. Activité progressivement déclinante à partir des années 1960, abandon dans les années 1970.",
+            "<strong>Réaménagement urbain</strong> à partir des années 1980. <strong>1984</strong> : <strong>Palais Omnisports Paris-Bercy (POPB)</strong> conçu par Michel Andrault, Pierre Parat, Jean Prouvé et Aydin Guvan — <strong>20 000 places</strong>, salle polyvalente (sport, concerts), célèbre pour sa <strong>pyramide gazonnée</strong> recouverte de pelouse sur ses 4 façades. Rebaptisé <strong>Bercy Arena</strong> en 2014, puis <strong>Accor Arena</strong> en 2015. Hôte régulier du Masters de tennis, du Trophée Bompard de figure, des concerts (Beyoncé, Madonna, Stones, Bowie y ont joué).",
+            "<strong>1995</strong> : ouverture du <strong>Parc de Bercy</strong> (<strong>14 hectares</strong>, conçu par Bernard Huet, Madeleine Ferrand, Jean-Pierre Feugas, Bernard Le Roy, Ian Le Caisne, Philippe Raguin). 3 jardins thématiques : prairies, parterres, et jardin romantique. Plus de <strong>400 arbres</strong>, dont plusieurs centenaires conservés des entrepôts. Vestiges des anciens rails et chais visibles dans le sol du parc.",
+            "<strong>1995-1998</strong> : <strong>Bercy Village</strong> (Cour Saint-Émilion) — <strong>22 chais en pierre du XIXe siècle</strong> réhabilités en commerces (restaurants, boutiques, cinéma UGC Ciné Cité Bercy) par les architectes <strong>Valode et Pistre</strong>. Préservation intégrale des bâtiments d'origine. <strong>1994</strong> : <strong>American Center</strong> par <strong>Frank Gehry</strong>, racheté en <strong>2005</strong> par la <strong>Cinémathèque française</strong> (déménagement depuis Chaillot, ouverture 2005).",
+            "Aujourd'hui, <strong>Bercy est un pôle culturel et sportif majeur</strong> : Accor Arena, Cinémathèque, Parc, Bercy Village. Et un <strong>pôle de transport multimodal</strong> : M6, M14, Gare SNCF (Transilien R + Intercités + OUIGO), bus. Le quartier abrite aussi le <strong>Ministère de l'Économie et des Finances</strong> (bâtiment Chemetov-Huidobro 1989, sur pilotis dans la Seine)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Bercy ?",
+            "answer": "<strong>2 lignes de métro</strong> : <strong>M6</strong> (Charles de Gaulle - Étoile ↔ Nation) et <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, automatique). Correspondance directe avec la <strong>Gare SNCF de Bercy</strong> : Transilien R, Intercités Auvergne/Bourgogne/Morvan, OUIGO classique. Bus 24, 87."
+        },
+        {
+            "question": "Comment rejoindre la Gare de Bercy SNCF ?",
+            "answer": "La <strong>Gare de Bercy-Bourgogne-Pays-d'Auvergne</strong> est à <strong>5 min à pied</strong> de la station de métro Bercy. Sortie boulevard de Bercy, traverser. Trains <strong>Transilien R</strong> (Paris ↔ Melun ↔ Montereau ↔ Montargis), <strong>Intercités</strong> (Bercy ↔ Nevers ↔ Clermont-Ferrand, Bercy ↔ Auxerre ↔ Avallon), <strong>OUIGO classique</strong> (Paris-Bercy ↔ Lyon, Lille, Marseille, low cost). Gare moins fréquentée que Gare de Lyon (à 800 m)."
+        },
+        {
+            "question": "Où se trouve l'Accor Arena (ex-Bercy Arena) ?",
+            "answer": "L'<strong>Accor Arena</strong> (ex-Palais Omnisports Paris-Bercy ou POPB) est à <strong>5 min à pied</strong> de la station, sur le boulevard de Bercy. <strong>20 000 places</strong>, conçue en <strong>1984</strong> par Michel Andrault et Pierre Parat. <strong>Pyramide gazonnée</strong> caractéristique (4 façades en pelouse). Hôte du <strong>Masters de tennis de Paris</strong>, concerts internationaux, événements sportifs et culturels."
+        },
+        {
+            "question": "Où se trouve le Parc de Bercy ?",
+            "answer": "Le <strong>Parc de Bercy</strong> est à <strong>10 min à pied</strong> en direction de la Seine. <strong>14 hectares</strong>, ouvert en <strong>1995</strong>. Construit sur les <strong>anciens entrepôts viticoles</strong> du XIXe. <strong>3 jardins thématiques</strong> : prairies, parterres, jardin romantique. Plus de <strong>400 arbres</strong> dont des centenaires conservés. Vestiges des rails et chais visibles dans le sol. Gratuit, ouvert 7j/7."
+        },
+        {
+            "question": "Où se trouve Bercy Village ?",
+            "answer": "<strong>Bercy Village</strong> (Cour Saint-Émilion) est à <strong>15 min à pied</strong> à l'est du Parc de Bercy. Plus rapide en métro : <strong>M14 directe (1 station vers Cour Saint-Émilion)</strong>. <strong>22 chais en pierre du XIXe siècle</strong> réhabilités en commerces (restaurants, boutiques, UGC Ciné Cité) en 1995-1998 par Valode et Pistre."
+        },
+        {
+            "question": "Pourquoi le quartier s'appelle-t-il Bercy ?",
+            "answer": "Du nom de la <strong>seigneurie de Bercy</strong>, propriété de la famille Malon de Bercy au XVIIe siècle. <strong>Commune indépendante</strong> jusqu'en <strong>1860</strong>, où elle est annexée à Paris (avec Belleville, Charonne, Grenelle, etc.) par <strong>Napoléon III</strong>. Quartier dédié au <strong>commerce du vin</strong> depuis le XIXe — exemption d'octroi parisien jusqu'en 1860, ce qui en fit le <strong>plus grand entrepôt viticole du monde</strong>."
+        },
+        {
+            "question": "Est-ce une station accessible PMR ?",
+            "answer": "<strong>Quai M14 entièrement PMR</strong> (ligne automatique 100% accessible). <strong>Quai M6 partiellement</strong> (ascenseurs vers M14 et certaines voiries). La Gare SNCF de Bercy est PMR."
+        },
+        {
+            "question": "Quels sont les horaires de la M6 et M14 à Bercy ?",
+            "answer": "Les deux lignes circulent de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. M14 : fréquence record <strong>85 secondes</strong> en heure de pointe. M6 : ~2-3 min en heure de pointe."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Accor Arena</strong> à 5 min — vérifier programmation concerts/sport.",
+        "<strong>Gare de Bercy SNCF</strong> à 5 min — OUIGO classique low cost Paris ↔ Lyon/Lille/Marseille.",
+        "<strong>Parc de Bercy</strong> à 10 min — gratuit, idéal pour piquenique avec les rails et chais visibles.",
+        "<strong>Bercy Village</strong> par M14 (1 station vers Cour Saint-Émilion) — restaurants, UGC Ciné Cité.",
+        "<strong>Cinémathèque française</strong> à 10 min — Frank Gehry, expositions.",
+        "Pour <strong>Gare de Lyon</strong> : M14 directe (1 station)."
+    ],
+    "trivia": [
+        {
+            "icon": "🍷",
+            "title": "Plus grand entrepôt à vins du monde au XIXe siècle",
+            "content": "Le quartier de Bercy fut historiquement le <strong>plus grand entrepôt à vins du monde au XIXe siècle</strong>. <strong>51 hectares</strong> de chais en pierre destinés au <strong>stockage et embouteillage du vin</strong> arrivant par chemin de fer depuis la Bourgogne, le Beaujolais et l'ensemble de la France. Activité boostée par l'<strong>exemption d'octroi parisien</strong> jusqu'en 1860 (Bercy était commune indépendante). Annexée à Paris en 1860 par Napoléon III. Déclin progressif à partir des années 1960, abandon dans les années 1970. Vestiges encore visibles dans le sol du <strong>Parc de Bercy</strong> (rails, traverses, traces de chais). Les chais survivants ont été <strong>réhabilités en commerces à Bercy Village</strong> en 1995-1998."
+        },
+        {
+            "icon": "🏟️",
+            "title": "Accor Arena (1984) — pyramide gazonnée de Bercy",
+            "content": "L'<strong>Accor Arena</strong> (ex-<strong>Palais Omnisports Paris-Bercy ou POPB</strong>, 1984) est l'<strong>une des plus grandes salles polyvalentes de France</strong>. <strong>20 000 places</strong>, conçue par les architectes <strong>Michel Andrault, Pierre Parat, Jean Prouvé et Aydin Guvan</strong>. Caractéristique architecturale : <strong>pyramide gazonnée</strong> — les 4 façades sont recouvertes de pelouse, formant des pyramides inversées de gazon. Inaugurée le 4 février 1984. Hôte du <strong>Masters de tennis de Paris</strong> (Rolex Paris Masters depuis 1986), du <strong>Trophée Bompard de figure</strong> (jusqu'en 2018), de concerts internationaux (Madonna, Beyoncé, Rolling Stones, Bowie, Daft Punk). Rebaptisée Bercy Arena en 2014, puis <strong>Accor Arena</strong> en 2015 (sponsoring du groupe hôtelier Accor). <strong>JO Paris 2024</strong> : compétitions de basket-ball et gymnastique."
+        },
+        {
+            "icon": "🌳",
+            "title": "Parc de Bercy (1995) — 14 ha sur les anciens chais",
+            "content": "Le <strong>Parc de Bercy</strong> a été ouvert en <strong>1995</strong>. <strong>14 hectares</strong>, le 5e plus grand parc intra-muros de Paris. Conçu par Bernard Huet, Madeleine Ferrand, Jean-Pierre Feugas, Bernard Le Roy, Ian Le Caisne et Philippe Raguin. <strong>3 jardins thématiques</strong> : les Prairies (au sud, espace libre), les Parterres (au centre, jardins botaniques et potager pédagogique), et le Jardin Romantique (au nord, plan d'eau et grottes). Plus de <strong>400 arbres</strong> dont plusieurs centenaires conservés des entrepôts viticoles. <strong>Vestiges des anciens rails et chais visibles dans le sol</strong> (traverses, traces). Maison du Lac (XIXe restauré) et Maison du Jardinage. Gratuit, ouvert 7j/7."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Accor Arena",
+            "destination_slug": "accor-arena",
+            "destination_full_name": "Bercy → Accor Arena",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le bd de Bercy (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-accor-arena/"
+        },
+        {
+            "destination_name": "Gare de Bercy SNCF",
+            "destination_slug": "gare-de-bercy",
+            "destination_full_name": "Bercy → Gare SNCF",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le bd de Bercy (~300 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-gare-sncf/"
+        },
+        {
+            "destination_name": "Parc de Bercy",
+            "destination_slug": "parc-bercy",
+            "destination_full_name": "Bercy → Parc",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Bercy (~700 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-parc/"
+        },
+        {
+            "destination_name": "Bercy Village (Cour Saint-Émilion) via M14",
+            "destination_slug": "bercy-village",
+            "destination_full_name": "Bercy → Bercy Village",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-bercy-village/"
+        },
+        {
+            "destination_name": "Gare de Lyon via M14",
+            "destination_slug": "gare-de-lyon",
+            "destination_full_name": "Bercy → Gare de Lyon",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-gare-lyon/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Bercy → Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct Aéroport d'Orly (depuis 2024)",
+            "duration_minutes": 30,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-orly/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Bercy → Tour Eiffel",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile jusqu'à Bir-Hakeim",
+            "duration_minutes": 25,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Bercy → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (3 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bercy/bercy-vers-chatelet/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q747541",
+            "name": "Paris-Lyon",
+            "category": "gare",
+            "description": "Paris-Gare-de-Lyon est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1210896%20Paris%20XII%20gare%20de%20Lyon%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris-Gare-de-Lyon",
+            "latitude": 48.844722,
+            "longitude": 2.373611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 669,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q537720",
+            "name": "Palais Omnisports de Paris-Bercy",
+            "category": "palais",
+            "description": "Le palais omnisports de Paris-Bercy, souvent désigné Paris-Bercy ou tout simplement Bercy, et actuellement parrainé sous le nom d'Accor Arena, est une salle polyvalente et modulable située boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Omnisports%20de%20Paris-Bercy%202007.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_omnisports_de_Paris-Bercy",
+            "latitude": 48.8391,
+            "longitude": 2.37949,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 110,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q174274",
+            "name": "Cinémathèque française",
+            "category": "musée",
+            "description": "La Cinémathèque française est un organisme privé français cofondé en 1936 par Henri Langlois, et situé depuis 2005 au 51, rue de Bercy, un bâtiment construit en 1994 par Frank Gehry, dans le…",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/24/Cin%C3%A9math%C3%A8que_fran%C3%A7aise_1.jpg/330px-Cin%C3%A9math%C3%A8que_fran%C3%A7aise_1.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cin%C3%A9math%C3%A8que_fran%C3%A7aise",
+            "latitude": 48.836944,
+            "longitude": 2.3825,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Rue Henri Desgrange",
+                "distance_m": 415,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q261320",
+            "name": "Paris-Bercy-Bourgogne-Pays-d'Auvergne",
+            "category": "gare",
+            "description": "La gare de Paris-Bercy-Bourgogne-Pays d'Auvergne, jusqu'à septembre 2016 gare de Paris-Bercy, et couramment appelée gare de Bercy, est une gare ferroviaire française de la Société nationale des…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Paris-Bercy-Bourgogne-Pays%20d%27Auvergne%20II.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Bercy-Bourgogne-Pays_d%27Auvergne",
+            "latitude": 48.839039,
+            "longitude": 2.383081,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 290,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q945251",
+            "name": "parc de Bercy",
+            "category": "jardin",
+            "description": "Le parc de Bercy est un ensemble de trois jardins situés dans le quartier de Bercy du 12e arrondissement de Paris, entre le Palais omnisports de Paris-Bercy et le centre commercial et de restauration…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Prairies%20de%20Bercy1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_Bercy",
+            "latitude": 48.83534,
+            "longitude": 2.3826,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 576,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1513866",
+            "name": "pont de Bercy",
+            "category": "pont",
+            "description": "Le pont de Bercy est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20pont%20de%20Bercy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Bercy",
+            "latitude": 48.838056,
+            "longitude": 2.375,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 396,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2307670",
+            "name": "pont de Tolbiac",
+            "category": "pont",
+            "description": "Le pont de Tolbiac est un pont situé à Paris, construit entre 1879 et 1882.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20Tolbiac%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Tolbiac",
+            "latitude": 48.833333,
+            "longitude": 2.381944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 773,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1853517",
+            "name": "passerelle Simone-de-Beauvoir",
+            "category": "pont",
+            "description": "La passerelle Simone-de-Beauvoir est un pont réservé aux modes de transports dits « doux ».",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passerelle%20Simone-de-Beauvoir.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Passerelle_Simone-de-Beauvoir",
+            "latitude": 48.835281,
+            "longitude": 2.378003,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Rue Henri Desgrange",
+                "distance_m": 545,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q749491",
+            "name": "viaduc des Arts",
+            "category": "pont",
+            "description": "Le viaduc des Arts est un ensemble de commerces et d'ateliers du « conservatoire parisien des métiers d’art » de style architecture industrielle néo-rétro, agencés sous les arcades d'un ancien viaduc…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20viaduc%20%284738407837%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_des_Arts",
+            "latitude": 48.846667,
+            "longitude": 2.376944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 754,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2974772",
+            "name": "cité de la mode et du design",
+            "category": "commerce",
+            "description": "Les Docks - La Cité de la mode et du design, est un bâtiment situé à l'emplacement des anciens magasins généraux quai d'Austerlitz, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Les%20Docks%20-%20Cit%C3%A9%20de%20la%20Mode%20et%20du%20Design%20%2823192974366%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Les_Docks,_cit%C3%A9_de_la_mode_et_du_design",
+            "latitude": 48.841111,
+            "longitude": 2.369722,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Rue Henri Desgrange",
+                "distance_m": 721,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3162463",
+            "name": "jardin de Reuilly-Paul-Pernin",
+            "category": "jardin",
+            "description": "Le jardin de Reuilly devenu le jardin de Reuilly - Paul-Pernin est un espace vert du 12e arrondissement de Paris, en France, dont la conception est l'œuvre des concepteurs Pierre Colboc, architecte…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dausnenil.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_Reuilly_-_Paul-Pernin",
+            "latitude": 48.8422,
+            "longitude": 2.38806,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Rue Henri Desgrange",
+                "distance_m": 673,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3580345",
+            "name": "église Notre-Dame-de-la-Nativité de Bercy",
+            "category": "église",
+            "description": "L'église Notre-Dame-de-la-Nativité de Bercy est une église catholique située dans le 12e arrondissement de Paris, dans le quartier de Bercy, sur la place Lachambeaudie et isolée au milieu des voies…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20%C3%89glise%20Notre-Dame-de-la-Nativit%C3%A9%20de%20Bercy%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Nativit%C3%A9_de_Bercy",
+            "latitude": 48.8362,
+            "longitude": 2.38708,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place du Bataillon du Pacifique",
+                "distance_m": 706,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place du Bataillon du Pacifique",
+            "address_full": "Place du Bataillon du Pacifique 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.840089,
+            "longitude": 2.379447,
+            "accessible": true
+        },
+        {
+            "number": "2",
+            "name": "Boulevard de Bercy",
+            "address_full": "70 Boulevard de Bercy 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.840089,
+            "longitude": 2.379447,
+            "accessible": true
+        },
+        {
+            "number": "3",
+            "name": "Rue Corbineau",
+            "address_full": "Rue Corbineau 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.840089,
+            "longitude": 2.379447,
+            "accessible": true
+        },
+        {
+            "number": "4",
+            "name": "Rue Henri Desgrange",
+            "address_full": "Rue Henri Desgrange 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.840089,
+            "longitude": 2.379447,
+            "accessible": true
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "location": "Gare SNCF Bercy (5 min à pied)"
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "boulevard de Bercy",
+                "Bercy Village (15 min)"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                "Gare SNCF Bercy : Nannybag à proximité"
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Bercy Village (Cour Saint-Émilion via M14, 1 station)",
+            "details": "22 chais réhabilités en commerces (restaurants, boutiques, UGC Ciné Cité Bercy).",
+            "secondary": "Boulevard de Bercy : restaurants, brasseries, commerces locaux."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier institutionnel et culturel — globalement sûr.",
+            "Forte affluence soirs d'événements à l'Accor Arena (concerts, sport).",
+            "Vigilance pickpockets standard à la Gare SNCF Bercy.",
+            "Présence policière régulière (proximité Ministère des Finances)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir du caractère institutionnel + Arena."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Parc_de_Bercy_%40_Paris_%2827667886312%29.jpg",
+        "alt": "Parc de Bercy (14 ha, 1995) construit sur les anciens entrepôts viticoles du XIXe siècle — l'un des plus grands parcs intra-muros de Paris",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Parc_de_Bercy_@_Paris_(27667886312).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/bercy/bercy-400.avif",
+                "800": "/assets/img/stations/bercy/bercy-800.avif",
+                "1200": "/assets/img/stations/bercy/bercy-1200.avif",
+                "1600": "/assets/img/stations/bercy/bercy-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/bercy/bercy-400.webp",
+                "800": "/assets/img/stations/bercy/bercy-800.webp",
+                "1200": "/assets/img/stations/bercy/bercy-1200.webp",
+                "1600": "/assets/img/stations/bercy/bercy-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/bercy/bercy-400.jpg",
+                "800": "/assets/img/stations/bercy/bercy-800.jpg",
+                "1200": "/assets/img/stations/bercy/bercy-1200.jpg",
+                "1600": "/assets/img/stations/bercy/bercy-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 4,
+            "accessible_lines": 1,
+            "total_lines": 2
+        },
+        "details": "Quai M14 entièrement accessible PMR (ligne automatique 100% PMR). Quai M6 partiellement accessible (ascenseurs vers M14 et certaines voiries). Gare SNCF Bercy PMR."
+    }
+}
