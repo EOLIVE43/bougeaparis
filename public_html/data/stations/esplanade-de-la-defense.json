@@ -1,0 +1,587 @@
+{
+    "published": true,
+    "slug": "esplanade-de-la-defense",
+    "name": "Esplanade de la Défense",
+    "name_full": "Esplanade de la Défense (Métro 1)",
+    "arrondissement": "Courbevoie / Puteaux (Hauts-de-Seine)",
+    "address": "Esplanade du Général de Gaulle, 92800 Puteaux / 92400 Courbevoie",
+    "latitude": 48.887445,
+    "longitude": 2.250408,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Courbevoie/Puteaux — zone 1 IDFM",
+    "commune": "Courbevoie / Puteaux",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Esplanade de la Défense station",
+        "es": "Estación Esplanade de la Défense"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N24"
+        ],
+        "regional": [
+            "73",
+            "157",
+            "158",
+            "174",
+            "175",
+            "176",
+            "EOLIEN"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 2,
+            "nearby_count": 20
+        }
+    },
+    "seo": {
+        "description": "Station Esplanade de la Défense : M1 à Courbevoie/Puteaux, esplanade Charles-de-Gaulle (axe historique), sculptures monumentales (Calder, Miró), entrée est La Défense."
+    },
+    "hero": {
+        "tagline": "L'esplanade monumentale et l'entrée est de La Défense",
+        "description": "À <strong>Courbevoie/Puteaux</strong> (Hauts-de-Seine), Esplanade de la Défense ouvre le <strong>1ᵉʳ avril 1992</strong> avec le <strong>prolongement de la M1 à La Défense</strong>. Située au cœur de l'<strong>Esplanade du Général de Gaulle</strong> (anciennement Esplanade Charles-de-Gaulle), c'est l'<strong>entrée est du quartier d'affaires de La Défense</strong>. L'esplanade s'inscrit dans l'<strong>axe historique de Paris</strong> (8 km : Louvre → Arc de Triomphe → Grande Arche). Elle est jalonnée de <strong>sculptures monumentales contemporaines</strong> : <strong>« La Défense »</strong> (Auguste Bartholdi, 1883, dont le quartier tire son nom), <strong>Stabile</strong> d'<strong>Alexander Calder</strong> (rouge, 15 m, 1976), <strong>« Personnages fantastiques »</strong> de <strong>Joan Miró</strong>, <strong>« Le Pouce »</strong> de <strong>César</strong> (1965, bronze 12 m), et <strong>œuvres de Takis</strong>."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "La Défense - Grande Arche",
+                "slug": "la-defense-grande-arche",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Pont de Neuilly",
+                "slug": "pont-de-neuilly",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Esplanade de la Défense</strong> est située à cheval sur les communes de <strong>Courbevoie</strong> et <strong>Puteaux</strong> (Hauts-de-Seine), sous l'<strong>Esplanade du Général de Gaulle</strong> (anciennement <strong>Esplanade Charles-de-Gaulle</strong>). Elle est desservie par la <strong>ligne 1 du métro</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>La Défense - Grande Arche</strong> (1 station vers l'ouest, terminus, pôle multimodal RER A + SNCF + RER E + T2 + tram T1) et <strong>Pont de Neuilly</strong> (1 station vers l'est, retour vers Paris). Aucune correspondance directe à Esplanade. Bus 73, 159, 174 et nombreuses navettes de banlieue desservent l'esplanade.",
+        "Ouverture le <strong>1ᵉʳ avril 1992</strong> avec le <strong>prolongement de la M1 depuis Pont de Neuilly</strong> jusqu'à <strong>La Défense - Grande Arche</strong>. Ce prolongement de 1,9 km ajoute 2 stations : <strong>Esplanade de la Défense</strong> et <strong>La Défense</strong>. Il dessert ainsi le <strong>premier quartier d'affaires d'Europe</strong> (avec Canary Wharf à Londres), où travaillent quotidiennement <strong>180 000 salariés</strong>. La M1 devient l'<strong>épine dorsale</strong> du transport Paris ↔ La Défense (avec le RER A).",
+        "L'<strong>Esplanade du Général de Gaulle</strong> est l'axe central piétonnier du quartier de La Défense — <strong>1,2 km de long, 30 mètres de large</strong>. Elle s'inscrit dans l'<strong>axe historique de Paris</strong> (8 km : Louvre → Tuileries → Champs-Élysées → Arc de Triomphe → Avenue de la Grande Armée → Pont de Neuilly → Esplanade → <strong>Grande Arche</strong>). L'esplanade est <strong>jalonnée de sculptures monumentales contemporaines</strong> qui en font le <strong>plus grand musée à ciel ouvert d'art contemporain de France</strong> (60+ œuvres). Les plus célèbres : <strong>« La Défense »</strong> (Auguste Bartholdi, 1883, sculpture commémorant la défense de Paris en 1870 qui donna son nom au quartier), <strong>Stabile</strong> d'<strong>Alexander Calder</strong> (rouge, 15 m, 1976), <strong>« Personnages fantastiques »</strong> de <strong>Joan Miró</strong>, <strong>« Le Pouce »</strong> de <strong>César</strong> (1965, bronze 12 m), <strong>œuvres de Takis</strong> (cinétiques), <strong>« Slat »</strong> de <strong>Richard Serra</strong>, <strong>« Étoile polaire »</strong> de <strong>Joan Miró</strong>."
+    ],
+    "history": {
+        "title": "1992 : la M1 atteint enfin La Défense, et l'esplanade monumentale",
+        "paragraphs": [
+            "La station <strong>Esplanade de la Défense</strong> est inaugurée le <strong>1ᵉʳ avril 1992</strong> avec le <strong>prolongement de la M1 depuis Pont de Neuilly</strong> (ancien terminus ouest depuis 1937) jusqu'à <strong>La Défense - Grande Arche</strong>. Ce prolongement de <strong>1,9 km</strong> ajoute 2 stations : <strong>Esplanade de la Défense</strong> et <strong>La Défense</strong>. Travaux complexes : passage sous la Seine en aval du Pont de Neuilly, tunnel sous le quartier d'affaires.",
+            "Avant la M1, La Défense était desservie uniquement par le <strong>RER A</strong> depuis <strong>1970</strong>. L'extension de la M1 désengorge le RER A et offre une <strong>alternative directe</strong> depuis Paris intra-muros via la M1 (sans correspondance RER). Aujourd'hui, La Défense est un pôle multimodal majeur : <strong>RER A, M1, T2 tramway, RER E (depuis 2024)</strong>, gare SNCF avec trains régionaux.",
+            "Le <strong>quartier de La Défense</strong> tire son nom de la <strong>sculpture monumentale « La Défense »</strong> d'<strong>Auguste Bartholdi</strong>, inaugurée en <strong>1883</strong>. <strong>Sculpture en bronze de 4 m</strong>, représentant une <strong>Allégorie de la France</strong> protégeant un enfant et un soldat blessé — <strong>commémoration de la défense héroïque de Paris en 1870-1871</strong> contre les Prussiens. La sculpture est <strong>située au rond-point de la Défense</strong> (point d'origine du quartier d'affaires). Bartholdi est aussi l'auteur de la <strong>Statue de la Liberté</strong> (New York, 1886) et du <strong>Lion de Belfort</strong> (Paris-Denfert, 1880).",
+            "Le <strong>quartier d'affaires de La Défense</strong> a été conçu à partir des années <strong>1950-1960</strong>. <strong>Établissement public d'aménagement (EPAD)</strong> créé en <strong>1958</strong> sous De Gaulle. Premier bâtiment : <strong>CNIT (Centre des Nouvelles Industries et Technologies)</strong> en <strong>1958</strong>, par les architectes <strong>Robert Camelot</strong>, <strong>Jean de Mailly</strong> et <strong>Bernard Zehrfuss</strong> — <strong>plus grande voûte autoportante au monde</strong> à l'époque (218 m de portée). Suivent les tours dans les années 1970-2010 : Tour First (1974, 231 m), Tour Total (1985), <strong>Tour Majunga</strong> (2014), <strong>Tour Saint-Gobain</strong> (2020). Aujourd'hui : <strong>3,7 km², 180 000 salariés</strong>, <strong>premier quartier d'affaires d'Europe</strong> (avec Canary Wharf à Londres).",
+            "L'<strong>Esplanade du Général de Gaulle</strong> (renommée en 2002 en hommage au général) est l'<strong>axe central piétonnier</strong> du quartier. <strong>1,2 km × 30 m</strong>, sur dalle au-dessus de l'A14 et des voies ferrées. Elle est <strong>jalonnée de plus de 60 sculptures monumentales contemporaines</strong> commandées par l'EPAD entre 1960 et 2000 — <strong>plus grand musée à ciel ouvert d'art contemporain de France</strong>. Œuvres majeures : <strong>Stabile</strong> d'<strong>Alexander Calder</strong> (rouge, 15 m, 1976), <strong>« Personnages fantastiques »</strong> de <strong>Joan Miró</strong> (1979, 11 m), <strong>« Le Pouce »</strong> de <strong>César</strong> (1965/1995, bronze 12 m), <strong>« Slat »</strong> de <strong>Richard Serra</strong>, <strong>œuvres cinétiques de Takis</strong>, <strong>« Étoile polaire »</strong> de Joan Miró, <strong>fontaine d'Yaacov Agam</strong>.",
+            "Au bout de l'esplanade : la <strong>Grande Arche de La Défense</strong>, conçue par l'architecte danois <strong>Otto von Spreckelsen</strong> (Concours International 1983) et inaugurée le <strong>14 juillet 1989</strong> pour le bicentenaire de la Révolution française. <strong>Cube évidé monumental</strong>, <strong>110 m × 108 m × 112 m</strong>, en <strong>marbre blanc de Carrare</strong>. Surmonte la perspective de l'<strong>axe historique de Paris</strong>. Peut accueillir <strong>Notre-Dame en son centre</strong>. À l'origine : ministère de l'Aménagement du Territoire. Aujourd'hui : <strong>bureaux et belvédère panoramique</strong> au sommet (35e étage, ascenseur extérieur)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Esplanade de la Défense ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>La Défense - Grande Arche</strong> (1 station vers l'ouest, terminus, pôle multimodal majeur) et <strong>Pont de Neuilly</strong> (1 station vers l'est, retour vers Paris/Neuilly). Aucune correspondance directe à Esplanade. Bus 73, 159, 174 et nombreuses navettes desservent l'esplanade."
+        },
+        {
+            "question": "Pourquoi La Défense porte-t-elle ce nom ?",
+            "answer": "Le quartier tire son nom de la <strong>sculpture monumentale « La Défense »</strong> d'<strong>Auguste Bartholdi</strong>, inaugurée en <strong>1883</strong>. <strong>Sculpture en bronze de 4 m</strong>, représentant une <strong>Allégorie de la France</strong> protégeant un enfant et un soldat blessé — <strong>commémoration de la défense héroïque de Paris en 1870-1871</strong> contre les Prussiens. La sculpture est <strong>située au rond-point de la Défense</strong> (point d'origine du quartier d'affaires). Bartholdi est aussi l'auteur de la <strong>Statue de la Liberté</strong> (New York, 1886) et du <strong>Lion de Belfort</strong> (Paris-Denfert, 1880)."
+        },
+        {
+            "question": "Quelles sculptures sont sur l'Esplanade ?",
+            "answer": "L'Esplanade est le <strong>plus grand musée à ciel ouvert d'art contemporain de France</strong> avec <strong>60+ sculptures monumentales</strong>. Œuvres majeures : <strong>Stabile</strong> d'<strong>Alexander Calder</strong> (rouge, 15 m, 1976), <strong>« Personnages fantastiques »</strong> de <strong>Joan Miró</strong> (1979, 11 m), <strong>« Le Pouce »</strong> de <strong>César</strong> (1965/1995, bronze 12 m), <strong>« Slat »</strong> de <strong>Richard Serra</strong>, <strong>œuvres cinétiques de Takis</strong>, <strong>« Étoile polaire »</strong> de Joan Miró, <strong>fontaine d'Yaacov Agam</strong>. Toutes commandées par l'EPAD entre 1960 et 2000."
+        },
+        {
+            "question": "Qu'est-ce que la Grande Arche ?",
+            "answer": "La <strong>Grande Arche de La Défense</strong>, conçue par l'architecte danois <strong>Otto von Spreckelsen</strong> (Concours International 1983) et inaugurée le <strong>14 juillet 1989</strong> pour le bicentenaire de la Révolution française. <strong>Cube évidé monumental</strong>, <strong>110 m × 108 m × 112 m</strong>, en <strong>marbre blanc de Carrare</strong>. Surmonte la perspective de l'<strong>axe historique de Paris</strong>. Peut accueillir <strong>Notre-Dame en son centre</strong>. À l'origine : ministère de l'Aménagement du Territoire. Aujourd'hui : <strong>bureaux et belvédère panoramique</strong> au sommet (35e étage, ascenseur extérieur, vue à 360°)."
+        },
+        {
+            "question": "Qu'est-ce que l'axe historique de Paris ?",
+            "answer": "Le <strong>plus célèbre alignement urbain du monde</strong> : <strong>Cour Carrée du Louvre → Pyramide → Arc du Carrousel → Jardin des Tuileries → Place de la Concorde → Champs-Élysées → Arc de Triomphe → Avenue de la Grande Armée → Porte Maillot → Avenue Charles-de-Gaulle (Neuilly) → Pont de Neuilly → Esplanade du Général de Gaulle → Grande Arche de La Défense</strong>. Soit <strong>8 km de perspective continue</strong>. Conçu progressivement du XVIIᵉ siècle (André Le Nôtre, jardins des Tuileries 1664) au XXᵉ siècle (Spreckelsen, Grande Arche 1989). La station Esplanade de la Défense est sur cet axe."
+        },
+        {
+            "question": "Comment rejoindre la Grande Arche depuis Esplanade ?",
+            "answer": "<strong>10 minutes à pied</strong> vers l'ouest par l'esplanade — promenade en passant par les sculptures monumentales (Calder, Miró, César, Serra). Alternative : 1 station M1 vers l'ouest jusqu'à <strong>La Défense - Grande Arche</strong> (2 min). Belvédère panoramique au 35e étage (ascenseur extérieur, vue à 360° sur Paris)."
+        },
+        {
+            "question": "La station Esplanade de la Défense est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les <strong>bus accessibles</strong> ou taxi/VTC. La <strong>station La Défense - Grande Arche</strong> (1 station vers l'ouest) est <strong>partiellement accessible</strong>."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Esplanade de la Défense ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Promenade des sculptures</strong> : 1,2 km sur l'esplanade avec Calder, Miró, César, Serra, Takis (musée à ciel ouvert).",
+        "<strong>Grande Arche</strong> à 10 min à pied ou 1 station M1 — belvédère 35e étage avec vue à 360°.",
+        "Pour <strong>La Défense - Grande Arche</strong> (pôle multimodal RER A + RER E + T2) : 1 station M1 vers l'ouest.",
+        "<strong>Sculpture de Bartholdi 1883</strong> au rond-point — origine du nom du quartier.",
+        "Pour <strong>Paris</strong> via M1 : Arc de Triomphe (5 stations), Louvre (7 stations).",
+        "Vue spectaculaire sur l'<strong>axe historique 8 km</strong> depuis le bout de l'esplanade."
+    ],
+    "trivia": [
+        {
+            "icon": "🗿",
+            "title": "Sculpture « La Défense » (Bartholdi, 1883) — origine du nom du quartier",
+            "content": "Le quartier <strong>La Défense</strong> tire son nom de la <strong>sculpture monumentale « La Défense »</strong> d'<strong>Auguste Bartholdi</strong>, inaugurée en <strong>1883</strong>. <strong>Sculpture en bronze de 4 m</strong>, représentant une <strong>Allégorie de la France</strong> (femme casquée) protégeant un enfant et un soldat blessé — <strong>commémoration de la défense héroïque de Paris en 1870-1871</strong> contre les Prussiens (le rond-point de la Défense étant le lieu de la dernière sortie tentée par les défenseurs de la capitale assiégée). La sculpture est aujourd'hui <strong>située au rond-point de la Défense</strong> (point d'origine du quartier d'affaires). <strong>Bartholdi</strong> (1834-1904) est aussi l'auteur de la célèbre <strong>Statue de la Liberté</strong> (New York, inaugurée 1886) et du <strong>Lion de Belfort</strong> (Paris-Denfert, 1880)."
+        },
+        {
+            "icon": "🎨",
+            "title": "Musée à ciel ouvert — 60+ sculptures contemporaines",
+            "content": "L'<strong>Esplanade du Général de Gaulle</strong>, axe central piétonnier de La Défense (<strong>1,2 km × 30 m</strong>), est <strong>jalonnée de plus de 60 sculptures monumentales contemporaines</strong> commandées par l'EPAD entre 1960 et 2000 — <strong>plus grand musée à ciel ouvert d'art contemporain de France</strong>. Œuvres majeures : <strong>Stabile</strong> d'<strong>Alexander Calder</strong> (rouge, 15 m, 1976), <strong>« Personnages fantastiques »</strong> de <strong>Joan Miró</strong> (1979, 11 m), <strong>« Le Pouce »</strong> de <strong>César</strong> (1965/1995, bronze 12 m), <strong>« Slat »</strong> de <strong>Richard Serra</strong>, <strong>œuvres cinétiques de Takis</strong>, <strong>« Étoile polaire »</strong> de Joan Miró, <strong>fontaine d'Yaacov Agam</strong>. Promenade artistique unique en France."
+        },
+        {
+            "icon": "🏢",
+            "title": "Grande Arche (1989) — Spreckelsen, 110 m de cube de marbre",
+            "content": "Au bout de l'esplanade : la <strong>Grande Arche de La Défense</strong>, conçue par l'architecte danois <strong>Otto von Spreckelsen</strong> (Concours International 1983, lauréat parmi 423 propositions) et inaugurée le <strong>14 juillet 1989</strong> pour le <strong>bicentenaire de la Révolution française</strong>. <strong>Cube évidé monumental</strong>, <strong>110 m × 108 m × 112 m</strong>, en <strong>marbre blanc de Carrare</strong>. Surmonte la perspective de l'<strong>axe historique de Paris</strong>, à <strong>8 km de l'Arc du Carrousel</strong> du Louvre. Particularité : son <strong>volume intérieur peut accueillir Notre-Dame en son centre</strong>. À l'origine : ministère français de l'Aménagement du Territoire et de l'Équipement. Aujourd'hui : <strong>bureaux + belvédère panoramique</strong> au sommet (35e étage, ascenseur extérieur, vue à 360° sur Paris)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Grande Arche de La Défense",
+            "destination_slug": "grande-arche",
+            "destination_full_name": "Esplanade de la Défense → Grande Arche",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'esplanade (~800 m, musée à ciel ouvert)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-grande-arche/"
+        },
+        {
+            "destination_name": "La Défense - Grande Arche via M1",
+            "destination_slug": "la-defense-grande-arche",
+            "destination_full_name": "Esplanade → La Défense (terminus)",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-la-defense/"
+        },
+        {
+            "destination_name": "Sculpture Calder Stabile",
+            "destination_slug": "calder-stabile",
+            "destination_full_name": "Esplanade → Stabile de Calder",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur l'esplanade (~200 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-calder/"
+        },
+        {
+            "destination_name": "Sculpture « Le Pouce » de César",
+            "destination_slug": "pouce-cesar",
+            "destination_full_name": "Esplanade → Le Pouce de César",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur l'esplanade (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-pouce/"
+        },
+        {
+            "destination_name": "Arc de Triomphe via M1",
+            "destination_slug": "arc-de-triomphe",
+            "destination_full_name": "Esplanade → Arc de Triomphe",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Charles de Gaulle - Étoile (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-arc-triomphe/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Esplanade → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Palais Royal (7 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-louvre/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Esplanade → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (13 stations)",
+            "duration_minutes": 24,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-bastille/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M1 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Esplanade → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet + RER B direct CDG (ou via RER E à La Défense)",
+            "duration_minutes": 60,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-esplanade-de-la-defense/esplanade-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1509747",
+            "name": "tour First",
+            "category": "tour",
+            "description": "La tour First, également appelée tour CB31, est le second plus haut gratte-ciel de France derrière la tour The Link, qui a récemment ouvert en 2026.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tours%20First%20et%20Saint-Gobain%20%2842975144462%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_First",
+            "latitude": 48.8889,
+            "longitude": 2.2517,
+            "nearest_exit": {
+                "number": "4",
+                "name": "quai Paul Doumer",
+                "distance_m": 108,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2349903",
+            "name": "Cœur Défense",
+            "category": "site notable",
+            "description": "Cœur Défense est un complexe de bureaux situé dans le quartier d'affaires de La Défense, en France, sur le territoire de la commune de Courbevoie.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b8/IMG_9141_1.JPG/330px-IMG_9141_1.JPG",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/C%C5%93ur_D%C3%A9fense",
+            "latitude": 48.89095,
+            "longitude": 2.24413,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Courbevoie",
+                "distance_m": 476,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3533127",
+            "name": "Tour Majunga",
+            "category": "tour",
+            "description": "La tour Majunga est un immeuble de bureaux situé dans le quartier d'affaires de La Défense à Puteaux.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/a/a1/Tour_Majunga_Octobre_2022.jpeg/330px-Tour_Majunga_Octobre_2022.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Majunga",
+            "latitude": 48.8888,
+            "longitude": 2.24353,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Puteaux",
+                "distance_m": 419,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3090121",
+            "name": "Tour France",
+            "category": "tour",
+            "description": "La tour France est un gratte-ciel résidentiel situé quai De Dion-Bouton à Puteaux, dans le quartier d'affaires de La Défense, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20France.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_France",
+            "latitude": 48.883056,
+            "longitude": 2.247639,
+            "nearest_exit": {
+                "number": "3",
+                "name": "quai De Dion-Bouton",
+                "distance_m": 544,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q30303011",
+            "name": "The Link",
+            "category": "site notable",
+            "description": "The Link est un gratte-ciel en construction situé à Puteaux dans le quartier d'affaires de La Défense (Hauts-de-Seine).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Link%20-%20Juin%202025.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/The_Link_(gratte-ciel)",
+            "latitude": 48.888094,
+            "longitude": 2.249305,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Puteaux",
+                "distance_m": 20,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3090076",
+            "name": "Tour Ariane",
+            "category": "tour",
+            "description": "La tour Ariane est un gratte-ciel de bureaux situé dans le quartier d'affaires de La Défense, dans la commune de Puteaux en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Tour_Ariane_Novembre_2021.jpeg/330px-Tour_Ariane_Novembre_2021.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Ariane",
+            "latitude": 48.889444,
+            "longitude": 2.243611,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Puteaux",
+                "distance_m": 435,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q995371",
+            "name": "Tour CB21",
+            "category": "tour",
+            "description": "La tour CB21  ancienne tour Gan est un immeuble de bureaux propriété de la société Covivio situé au 16 place de l'Iris à Courbevoie dans le quartier d'affaires de La Défense près de Paris, en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c1/Tour_CB21_Ao%C3%BBt_2021.jpeg/330px-Tour_CB21_Ao%C3%BBt_2021.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_CB21",
+            "latitude": 48.888889,
+            "longitude": 2.249806,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Courbevoie",
+                "distance_m": 55,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2041005",
+            "name": "Tour Carpe Diem",
+            "category": "tour",
+            "description": "La tour Carpe Diem est un gratte-ciel du quartier de La Défense à l'Ouest de Paris, en France, initié par Aviva.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carpe%20Diem%20cot%C3%A9%20esplanade%20de%20la%20d%C3%A9fense.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Carpe_Diem",
+            "latitude": 48.8914,
+            "longitude": 2.24583,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Courbevoie",
+                "distance_m": 419,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q16680551",
+            "name": "Tour Alto",
+            "category": "tour",
+            "description": "La tour Alto, est un gratte-ciel de bureaux situé dans le quartier d'affaires de la Défense sur la commune de Courbevoie, près de Paris.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/5/5c/Tour_Alto_Mars_2022.jpeg/330px-Tour_Alto_Mars_2022.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Alto",
+            "latitude": 48.8894,
+            "longitude": 2.25139,
+            "nearest_exit": {
+                "number": "4",
+                "name": "quai Paul Doumer",
+                "distance_m": 148,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3533093",
+            "name": "Tour Franklin",
+            "category": "tour",
+            "description": "La tour Franklin est un gratte-ciel de bureaux situé dans le quartier d'affaires français de la Défense, à Puteaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Franklin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Franklin_(La_D%C3%A9fense)",
+            "latitude": 48.889167,
+            "longitude": 2.240278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Puteaux",
+                "distance_m": 660,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3490249",
+            "name": "Tour Michelet",
+            "category": "tour",
+            "description": "La tour Michelet est un gratte-ciel de bureaux situé dans le quartier d'affaires français de la Défense.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Puteaux%20et%20La%20D%C3%A9fense%20%282937769752%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Total_(Michelet)",
+            "latitude": 48.8883,
+            "longitude": 2.24514,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Puteaux",
+                "distance_m": 293,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2040985",
+            "name": "Tour D2",
+            "category": "tour",
+            "description": "La tour D2 est un gratte-ciel de bureaux dans le quartier d'affaires de La Défense à Courbevoie. Cette tour est considérée comme un siège selon le découpage effectué.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/8/8a/Tour_D2_Septembre_2022.jpeg/330px-Tour_D2_Septembre_2022.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_D2",
+            "latitude": 48.890278,
+            "longitude": 2.247778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Courbevoie",
+                "distance_m": 235,
+                "walk_minutes": 3
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Courbevoie",
+            "address_full": "3bis Voie Des Bâtisseurs 92400 Courbevoie",
+            "postcode": "92400",
+            "city": "Courbevoie",
+            "latitude": 48.888464,
+            "longitude": 2.249425,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Puteaux",
+            "address_full": "7 Esplanade du Général de Gaulle 92800 Puteaux",
+            "postcode": "92800",
+            "city": "Puteaux",
+            "latitude": 48.887967,
+            "longitude": 2.249118,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "quai De Dion-Bouton",
+            "address_full": "1 Esplanade du Général de Gaulle 92800 Puteaux",
+            "postcode": "92800",
+            "city": "Puteaux",
+            "latitude": 48.887598,
+            "longitude": 2.250419,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "quai Paul Doumer",
+            "address_full": "6 Esplanade Du Général De Gaulle 92400 Courbevoie",
+            "postcode": "92400",
+            "city": "Courbevoie",
+            "latitude": 48.88813,
+            "longitude": 2.250793,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "esplanade du Général de Gaulle"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Esplanade du Général de Gaulle",
+            "details": "Restaurants et brasseries sur l'esplanade. Pôle bureaux La Défense : cantines d'entreprise, food courts (Centre Commercial Westfield Les 4 Temps à 10 min).",
+            "secondary": "Quais De Dion-Bouton et Paul Doumer : restaurants avec terrasses côté Seine."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier d'affaires : très sûr en journée (sécurité Defacto + entreprises).",
+            "Soirée tardive : zone désertée après 22h hors événements, prudence.",
+            "Vigilance pickpockets touristes (sculptures, Grande Arche).",
+            "Présence policière au pôle multimodal La Défense à 1 station."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature du quartier d'affaires."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Esplanade_Charles_de_Gaulle%2C_La_Defense_1.jpg",
+        "alt": "Esplanade Charles-de-Gaulle / Général de Gaulle (1,2 km axe central piétonnier de La Défense, axe historique de Paris vers la Grande Arche) — plus grand musée à ciel ouvert d'art contemporain de France",
+        "width": 4282,
+        "height": 2842,
+        "credit": {
+            "author": "Rog01",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Esplanade_Charles_de_Gaulle,_La_Defense_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-400.avif",
+                "800": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-800.avif",
+                "1200": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1200.avif",
+                "1600": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-400.webp",
+                "800": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-800.webp",
+                "1200": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1200.webp",
+                "1600": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-400.jpg",
+                "800": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-800.jpg",
+                "1200": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1200.jpg",
+                "1600": "/assets/img/stations/esplanade-de-la-defense/esplanade-de-la-defense-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les bus accessibles ou taxi/VTC. La station La Défense - Grande Arche (1 station vers l'ouest) est partiellement accessible."
+    }
+}
