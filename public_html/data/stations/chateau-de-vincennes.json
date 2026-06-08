@@ -1,0 +1,534 @@
+{
+    "published": true,
+    "slug": "chateau-de-vincennes",
+    "name": "Château de Vincennes",
+    "name_full": "Château de Vincennes (Métro 1)",
+    "arrondissement": "Vincennes (Val-de-Marne)",
+    "address": "Place Pierre Sémard / avenue de Paris, 94300 Vincennes",
+    "latitude": 48.844312,
+    "longitude": 2.440356,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Vincennes — zone 1 IDFM (intra Paris pour tarification)",
+    "commune": "Vincennes",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Château de Vincennes station",
+        "es": "Estación Château de Vincennes"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "46",
+            "56",
+            "115",
+            "318",
+            "325"
+        ],
+        "nocturne": [
+            "N11",
+            "N33"
+        ],
+        "regional": [
+            "112",
+            "114",
+            "118",
+            "124",
+            "210"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 9,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Château de Vincennes : terminus est M1, Vincennes (94), Château de Vincennes (XIVe, donjon 52 m), Sainte-Chapelle, Bois de Vincennes (995 ha)."
+    },
+    "hero": {
+        "tagline": "Le terminus est et le Château royal médiéval",
+        "description": "À <strong>Vincennes</strong> (Val-de-Marne), Château de Vincennes est le <strong>terminus est historique de la M1</strong> depuis le <strong>24 mars 1934</strong>. À <strong>5 minutes à pied</strong> : le <strong>Château de Vincennes</strong>, <strong>résidence royale médiévale</strong> du <strong>XIVᵉ siècle</strong>. Son <strong>donjon de 52 mètres</strong> est le <strong>plus haut donjon d'Europe</strong> — résidence des rois de France jusqu'à Louis XIV. À côté : la <strong>Sainte-Chapelle de Vincennes</strong> (gothique flamboyant XIVᵉ-XVIᵉ siècles). Le <strong>Bois de Vincennes</strong> (<strong>995 hectares</strong>) est le <strong>plus grand espace vert de Paris</strong>, avec l'<strong>Hippodrome</strong>, le <strong>Parc Floral</strong>, le <strong>Zoo de Paris</strong>."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Bérault",
+                "slug": "berault",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": null
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Château de Vincennes</strong> est située à <strong>Vincennes</strong> (commune limitrophe est de Paris, Val-de-Marne), sous la <strong>place Pierre Sémard</strong> à l'extrémité de l'<strong>avenue de Paris</strong>. C'est le <strong>terminus est de la ligne 1 du métro</strong> (Château de Vincennes ↔ La Défense - Grande Arche), <strong>la plus ancienne ligne du réseau</strong> (ouverte le 19 juillet 1900 pour l'Exposition universelle). Avant la station : <strong>Bérault</strong> (1 station vers l'ouest). Aucune correspondance directe à Château de Vincennes. <strong>Pôle bus important</strong> avec lignes parisiennes et de banlieue est.",
+        "Ouverte le <strong>24 mars 1934</strong> lors du <strong>prolongement de la M1 depuis Porte de Vincennes vers le Château de Vincennes</strong>. À cette date, Château de Vincennes devient le <strong>terminus est définitif de la M1</strong> et le restera. Configuration : station souterraine sous l'avenue de Paris avec <strong>terminus en boucle</strong> typique des terminus du métro parisien. <strong>12 sorties</strong> donnent sur l'avenue de Paris, l'avenue Aubert et le centre-ville de Vincennes.",
+        "À <strong>5 minutes à pied</strong> au sud de la station se dresse le <strong>Château de Vincennes</strong>, l'une des plus belles forteresses médiévales de France. Édifié principalement au <strong>XIVᵉ siècle</strong> sous <strong>Philippe VI de Valois</strong> et <strong>Charles V</strong>, c'est une <strong>résidence royale</strong> jusqu'à <strong>Louis XIV</strong> (qui lui préfère Versailles). Son célèbre <strong>donjon</strong> mesure <strong>52 mètres de hauteur</strong> — c'est le <strong>plus haut donjon d'Europe</strong>. Murs d'enceinte de <strong>3 hectares</strong> avec <strong>9 tours</strong>, à l'intérieur la <strong>Sainte-Chapelle de Vincennes</strong> (commencée par Charles V en 1379, terminée par Henri II au XVIᵉ siècle — gothique flamboyant + Renaissance). Le château fut transformé en <strong>prison</strong> aux XVIIᵉ-XIXᵉ siècles (Diderot, Mirabeau, Sade y furent enfermés), puis en <strong>caserne militaire</strong>. Aujourd'hui : <strong>Service historique de la Défense</strong>, musée, monument national visitable."
+    ],
+    "history": {
+        "title": "XIVᵉ siècle : forteresse royale, et 1934 : terminus M1",
+        "paragraphs": [
+            "Le <strong>Château de Vincennes</strong> est l'une des plus belles forteresses médiévales de France. À l'origine, simple <strong>relais de chasse royal</strong> au cœur du Bois de Vincennes (XIIᵉ siècle, sous Philippe Auguste). Le château actuel est édifié principalement sous <strong>Philippe VI de Valois</strong> (vers 1340) puis <strong>Charles V</strong> (1361-1380). C'est <strong>Charles V</strong> qui fait construire le <strong>donjon</strong> (achevé en 1369-1380) — <strong>52 mètres de hauteur, plus haut donjon d'Europe</strong>. Le donjon abrite <strong>4 niveaux de salles</strong> et servait de résidence sécurisée pour le roi en cas de danger.",
+            "Le château devient une <strong>résidence royale majeure</strong> du XIVᵉ au XVIIᵉ siècle. <strong>Louis IX (Saint Louis)</strong> y rend déjà la justice sous un chêne au XIIIᵉ siècle (légende). <strong>Henri V d'Angleterre</strong> y meurt en 1422. <strong>Louis XIV</strong>, dans ses jeunes années, y séjourne longuement avec sa mère Anne d'Autriche et le cardinal Mazarin. C'est lui qui fait achever la <strong>Sainte-Chapelle</strong> (commencée par Charles V en 1379, gothique flamboyant + influences Renaissance — comparable en taille à la Sainte-Chapelle de Paris).",
+            "Après <strong>1682</strong> et le <strong>déménagement de la Cour à Versailles</strong>, le château perd sa fonction de résidence. Il est <strong>transformé en prison d'État</strong> aux XVIIᵉ-XVIIIᵉ siècles. Y furent enfermés : <strong>Mirabeau</strong>, <strong>Diderot</strong>, le <strong>marquis de Sade</strong>. Sous le Premier Empire et la Restauration : <strong>caserne militaire</strong>, dépôt d'armes, atelier d'artillerie. Le <strong>Pavillon du Roi</strong> et le <strong>Pavillon de la Reine</strong> sont démolis sous Napoléon Iᵉʳ. Pendant la <strong>Seconde Guerre mondiale</strong>, occupé par les Allemands. Le château est <strong>classé Monument Historique en 1853</strong>. Restauré au XIXᵉ siècle par Viollet-le-Duc puis profondément au XXᵉ-XXIᵉ siècle.",
+            "Le <strong>Bois de Vincennes</strong>, au sud du château, est un <strong>ancien bois royal</strong> donné à la ville de Paris par <strong>Napoléon III en 1860</strong> (avec celui de Boulogne). Aménagé en <strong>parc paysager</strong> par <strong>Adolphe Alphand</strong> (qui a aussi créé les Buttes-Chaumont, le Parc Monceau, le Parc Montsouris). Aujourd'hui : <strong>995 hectares</strong>, <strong>plus grand espace vert de Paris</strong> (devant le Bois de Boulogne, 846 ha). Abrite : <strong>Parc Floral</strong> (1969, expositions horticoles), <strong>Parc Zoologique de Paris / Zoo de Vincennes</strong> (1934, rénové 2014), <strong>Hippodrome de Vincennes</strong> (trotteurs, Prix d'Amérique), <strong>Lac Daumesnil</strong>, <strong>Lac des Minimes</strong>, <strong>arboretum</strong>, <strong>Cartoucherie de Vincennes</strong> (5 théâtres avant-gardistes : Théâtre du Soleil d'Ariane Mnouchkine, etc.).",
+            "La <strong>station de métro Château de Vincennes</strong> est inaugurée le <strong>24 mars 1934</strong>, lors du <strong>prolongement de la M1</strong> depuis Porte de Vincennes. C'est l'aboutissement final de la ligne 1 vers l'est — <strong>terminus définitif</strong> depuis cette date. La M1 elle-même est la <strong>plus ancienne ligne du métro parisien</strong>, inaugurée le <strong>19 juillet 1900</strong> pour l'Exposition universelle (Porte de Vincennes ↔ Porte Maillot). La ligne 1 a été <strong>automatisée intégralement</strong> en <strong>2011-2012</strong> — première ligne historique automatisée du réseau RATP."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Château de Vincennes ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), <strong>terminus est</strong>. C'est la <strong>plus ancienne ligne du métro parisien</strong>, ouverte le 19 juillet 1900 pour l'Exposition universelle. Automatisée intégralement en 2011-2012. Aucune correspondance directe. Pôle bus important avec lignes parisiennes et de banlieue est."
+        },
+        {
+            "question": "Comment rejoindre le Château depuis la station ?",
+            "answer": "<strong>5 minutes à pied</strong> : sortir et marcher 400 m vers le sud par l'<strong>avenue de Paris</strong>. L'entrée du <strong>Château de Vincennes</strong> est immédiatement visible. Visite : tour du donjon, Sainte-Chapelle de Vincennes, cour royale. Tarif plein ~9 €, gratuit moins de 26 ans (UE). Ouvert tous les jours sauf 1ᵉʳ janvier, 1ᵉʳ mai, 25 décembre."
+        },
+        {
+            "question": "Le donjon est-il vraiment le plus haut d'Europe ?",
+            "answer": "<strong>Oui</strong>, avec ses <strong>52 mètres de hauteur</strong>, le <strong>donjon du Château de Vincennes</strong> est le <strong>plus haut donjon médiéval encore debout en Europe</strong>. Construit sous <strong>Charles V</strong> (1361-1380) — achevé en <strong>1369-1380</strong>. <strong>4 niveaux de salles</strong> à l'intérieur, destinés à servir de <strong>résidence sécurisée</strong> au roi en cas de danger. Visite possible — escalier à vis, salles voûtées, vue panoramique au sommet. Restauré par Viollet-le-Duc au XIXᵉ siècle puis profondément aux XXᵉ-XXIᵉ siècles."
+        },
+        {
+            "question": "Qu'est-ce que la Sainte-Chapelle de Vincennes ?",
+            "answer": "Une <strong>chapelle royale gothique flamboyant + Renaissance</strong> dans l'enceinte du Château de Vincennes. <strong>Commencée par Charles V en 1379</strong> (sur le modèle de la Sainte-Chapelle de Paris), elle n'est <strong>achevée qu'en 1552 sous Henri II</strong> (170 ans de construction !). De plus grande taille que la Sainte-Chapelle de l'Île de la Cité, avec des vitraux Renaissance superbes. Destinée à abriter des <strong>reliques de la Passion</strong> (couronne d'épines, fragment de la croix). Classée MH 1853, restaurée au XIXᵉ-XXᵉ siècles."
+        },
+        {
+            "question": "Quels grands prisonniers ont été enfermés au Château ?",
+            "answer": "Le château fut <strong>prison d'État</strong> aux XVIIᵉ-XVIIIᵉ siècles. Y furent enfermés : <strong>Henri de Bourbon-Condé</strong> (le « Grand Condé », 1650-1651, Fronde), <strong>Nicolas Fouquet</strong> (surintendant des Finances, 1665), <strong>Mirabeau</strong> (1777-1780, à la demande de son père), <strong>Denis Diderot</strong> (1749, 5 mois pour son <em>Lettre sur les aveugles</em>), le <strong>marquis de Sade</strong> (1777-1784, transféré ensuite à la Bastille). Plus tard, sous le Premier Empire : prisonniers politiques. Conditions souvent <strong>relativement clémentes</strong> pour la noblesse (chambre, livres, visites)."
+        },
+        {
+            "question": "Comment rejoindre le Bois de Vincennes ?",
+            "answer": "Le <strong>Bois de Vincennes</strong> (995 hectares, plus grand espace vert de Paris) s'étend juste au sud du château. <strong>5-10 minutes à pied</strong> selon les destinations : <strong>Parc Floral</strong> (10 min, route de la Pyramide), <strong>Zoo de Paris</strong> (rénové 2014, 15 min à pied ou bus 46/325), <strong>Hippodrome de Vincennes</strong> (trotteurs, Prix d'Amérique janvier, 20 min ou bus), <strong>Lac Daumesnil</strong> (15 min), <strong>Cartoucherie de Vincennes</strong> (Théâtre du Soleil, 20 min). Idéal pour les promenades, vélo, jogging, pique-nique."
+        },
+        {
+            "question": "La station Château de Vincennes est-elle accessible PMR ?",
+            "answer": "<strong>Oui partiellement</strong>. La ligne 1 a été <strong>automatisée</strong> en 2011-2012 avec rénovation de plusieurs stations, mais Château de Vincennes <strong>n'est pas intégralement accessible PMR</strong> (pas d'ascenseurs depuis tous les niveaux). Pour le Château et le Bois en PMR, utiliser les <strong>bus 46, 56, 112 ou 325</strong> (planchers bas) ou taxi/VTC. Le Château lui-même est <strong>partiellement accessible</strong> (cour, expositions au rez-de-chaussée)."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Château de Vincennes ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1 min en heure de pointe). La nuit, les Noctilien N11, N33, N34 desservent l'avenue de Paris."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Château de Vincennes</strong> à 5 min — donjon 52 m, Sainte-Chapelle, cour royale.",
+        "<strong>Bois de Vincennes</strong> (995 ha) tout proche — plus grand espace vert de Paris.",
+        "Pour <strong>Parc Floral</strong> : 10 min à pied — gratuit, expos horticoles selon saison.",
+        "<strong>Zoo de Paris</strong> (rénové 2014) à 15 min via bus 46 ou 325.",
+        "<strong>Hippodrome de Vincennes</strong> — courses de trotteurs, Prix d'Amérique fin janvier.",
+        "Vincennes commune chic : restaurants gastronomiques avenue de Paris."
+    ],
+    "trivia": [
+        {
+            "icon": "🏰",
+            "title": "Donjon de Vincennes (1369-1380) — plus haut donjon médiéval d'Europe",
+            "content": "Le <strong>donjon du Château de Vincennes</strong>, construit sous <strong>Charles V</strong> et achevé en <strong>1369-1380</strong>, mesure <strong>52 mètres de hauteur</strong> — c'est le <strong>plus haut donjon médiéval encore debout en Europe</strong>. Construit en pierre de taille, il abrite <strong>4 niveaux de salles voûtées</strong>, destinés à servir de <strong>résidence sécurisée</strong> au roi en cas de danger. Escalier à vis, cheminées monumentales, mâchicoulis défensifs. <strong>Restauré par Viollet-le-Duc</strong> au XIXᵉ siècle puis profondément aux XXᵉ-XXIᵉ siècles. Visite possible : montée jusqu'au sommet par escalier (250 marches), vue panoramique sur Paris. Le donjon fut <strong>prison d'État</strong> aux XVIIᵉ-XVIIIᵉ siècles : Mirabeau, Diderot, marquis de Sade."
+        },
+        {
+            "icon": "⛪",
+            "title": "Sainte-Chapelle de Vincennes (1379-1552) — 170 ans de construction",
+            "content": "La <strong>Sainte-Chapelle de Vincennes</strong> est une <strong>chapelle royale gothique flamboyant + Renaissance</strong>, commencée par <strong>Charles V en 1379</strong> sur le modèle de la Sainte-Chapelle de Paris. <strong>Achevée seulement en 1552 sous Henri II</strong> — <strong>170 ans de construction</strong> entre coupée par la guerre de Cent Ans, la Renaissance, les guerres de Religion. De plus grande taille que la Sainte-Chapelle de Paris, avec des <strong>vitraux Renaissance</strong> superbes (XVIᵉ siècle). Destinée à abriter des <strong>reliques de la Passion</strong> (couronne d'épines, fragment de la croix). <strong>Classée Monument Historique en 1853</strong>, restaurée au XIXᵉ-XXIᵉ siècles. Accessible avec le billet du château."
+        },
+        {
+            "icon": "🌳",
+            "title": "Bois de Vincennes (995 ha) — plus grand espace vert de Paris",
+            "content": "Le <strong>Bois de Vincennes</strong>, juste au sud du château, est le <strong>plus grand espace vert de Paris</strong> avec <strong>995 hectares</strong> (devant le Bois de Boulogne, 846 ha). <strong>Ancien bois royal</strong> donné à la ville de Paris par <strong>Napoléon III en 1860</strong>. Aménagé en <strong>parc paysager</strong> par <strong>Adolphe Alphand</strong> (qui a créé les Buttes-Chaumont, Parc Monceau, Parc Montsouris). Aujourd'hui : <strong>Parc Floral</strong> (1969), <strong>Parc Zoologique de Paris</strong> (1934, rénové 2014, 14,5 ha, 2 000 animaux), <strong>Hippodrome de Vincennes</strong> (trotteurs, <strong>Prix d'Amérique</strong> fin janvier), <strong>Lac Daumesnil</strong>, <strong>Lac des Minimes</strong>, <strong>Cartoucherie de Vincennes</strong> (5 théâtres avant-gardistes dont le Théâtre du Soleil d'Ariane Mnouchkine)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Château de Vincennes",
+            "destination_slug": "chateau-de-vincennes-monument",
+            "destination_full_name": "Château de Vincennes (station) → Château (monument)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'avenue de Paris (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-monument/"
+        },
+        {
+            "destination_name": "Bois de Vincennes (Parc Floral)",
+            "destination_slug": "parc-floral",
+            "destination_full_name": "Château de Vincennes → Parc Floral",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la route de la Pyramide (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-parc-floral/"
+        },
+        {
+            "destination_name": "Zoo de Paris (Parc Zoologique)",
+            "destination_slug": "zoo-paris",
+            "destination_full_name": "Château de Vincennes → Zoo de Paris",
+            "lines_used": [
+                "bus"
+            ],
+            "lines_label": "Bus 46 ou 325 jusqu'au Parc Zoologique",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-zoo/"
+        },
+        {
+            "destination_name": "Nation via M1",
+            "destination_slug": "nation",
+            "destination_full_name": "Château de Vincennes → Nation",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-nation/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Château de Vincennes → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (7 stations)",
+            "duration_minutes": 13,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-bastille/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Château de Vincennes → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense jusqu'à Palais Royal (10 stations)",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-louvre/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Château de Vincennes → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (12 stations)",
+            "duration_minutes": 22,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "La Défense via M1",
+            "destination_slug": "la-defense",
+            "destination_full_name": "Château de Vincennes → La Défense",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direct (terminus à terminus, 25 stations)",
+            "duration_minutes": 40,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-chateau-de-vincennes/chateau-vers-la-defense/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q663673",
+            "name": "château de Vincennes",
+            "category": "palais",
+            "description": "Le château de Vincennes, est une forteresse située à Vincennes, dans la banlieue Est de Paris, dont la construction a duré du XIVe au XVIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau%20de%20Vincennes%20Paris%20FRA%20002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Vincennes",
+            "latitude": 48.842778,
+            "longitude": 2.435833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 244,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1726347",
+            "name": "parc floral de Paris",
+            "category": "jardin",
+            "description": "Le parc floral de Paris est un parc urbain et un jardin botanique situé dans le bois de Vincennes, dans le 12e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Floral%20pixinn.net.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_floral_de_Paris",
+            "latitude": 48.838611,
+            "longitude": 2.4425,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 798,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q2562042",
+            "name": "Vincennes",
+            "category": "gare",
+            "description": "La gare de Vincennes est une gare ferroviaire française située dans la commune de Vincennes, dans le Val-de-Marne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20RER%20Vincennes%2035.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Vincennes",
+            "latitude": 48.84722,
+            "longitude": 2.43333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue Aubert",
+                "distance_m": 24,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3464208",
+            "name": "Sainte-Chapelle de Vincennes",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle de Vincennes est une chapelle fondée en 1379 dans l'enceinte du château de Vincennes, à la demande du roi de France Charles V, afin d'y abriter les reliques de la Passion du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stechapvinc.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle_de_Vincennes",
+            "latitude": 48.842333,
+            "longitude": 2.436444,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 280,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3287039",
+            "name": "manufacture de Vincennes",
+            "category": "site notable",
+            "description": "La manufacture de Vincennes est une manufacture de porcelaine tendre créée en 1740 dans l'enceinte du château de Vincennes, qui est transférée en 1756 à Sèvres pour constituer la manufacture de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20de%20la%20Reine%20-%20Chateau%20de%20Vincennes%2001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Manufacture_de_Vincennes",
+            "latitude": 48.841653,
+            "longitude": 2.436742,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 353,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2324947",
+            "name": "donjon de Vincennes",
+            "category": "site notable",
+            "description": "Le donjon de Vincennes est le donjon du château de Vincennes, sur la commune de Vincennes du Val-de-Marne, en bordure du bois et du fort du même nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau%20de%20Vincennes%20Paris%20FRA%20002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Donjon_de_Vincennes",
+            "latitude": 48.8427,
+            "longitude": 2.43464,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 294,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q16677794",
+            "name": "square Carnot",
+            "category": "site notable",
+            "description": "Le square Carnot est un espace vert du 12e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Carnot%20-%20Paris%20XII%20%28FR75%29%20-%202021-01-22%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Carnot",
+            "latitude": 48.839674,
+            "longitude": 2.433446,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 630,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q29819880",
+            "name": "église Notre-Dame de Vincennes",
+            "category": "église",
+            "description": "L'église Notre-Dame est une église catholique située rue Raymond du Temple à Vincennes, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame%20Vincennes%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Vincennes",
+            "latitude": 48.84749,
+            "longitude": 2.43882,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 324,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q77894919",
+            "name": "statue du général Daumesnil",
+            "category": "statue",
+            "description": "La statue du général Daumesnil est un monument commémoratif représentant le général Pierre Daumesnil lors de la défense du château de Vincennes en 1814.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincennes%20-%20Statue%20Daumesnil%20%281%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Statue_du_g%C3%A9n%C3%A9ral_Daumesnil_(Vincennes)",
+            "latitude": 48.84672,
+            "longitude": 2.43955,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue de Paris",
+                "distance_m": 280,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q65126569",
+            "name": "espace Daniel-Sorano",
+            "category": "site notable",
+            "description": "L'Espace Daniel-Sorano ou Espace Sorano est une salle de spectacle inaugurée en 1963 au 16 rue Charles-Pathé à Vincennes (Val-de-Marne).",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Espace_Daniel-Sorano",
+            "latitude": 48.84989,
+            "longitude": 2.43575,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue Aubert",
+                "distance_m": 322,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "avenue de Paris",
+            "address_full": "14 Avenue de Paris 94300 Vincennes",
+            "postcode": "94300",
+            "city": "Vincennes",
+            "latitude": 48.844823,
+            "longitude": 2.437033,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "avenue Aubert",
+            "address_full": "14 Avenue Aubert 94300 Vincennes",
+            "postcode": "94300",
+            "city": "Vincennes",
+            "latitude": 48.847387,
+            "longitude": 2.433544,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue de Paris (Vincennes centre)"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Pôle bus Vincennes",
+            "services": "vente titres, info trafic"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Centre-ville Vincennes + avenue de Paris",
+            "details": "Restaurants gastronomiques avenue de Paris (Vincennes commune chic). Cafés et brasseries autour du château. Marché Vincennes à 5 min.",
+            "secondary": "Bois de Vincennes : aire de pique-nique, cafés au Parc Floral et au lac Daumesnil."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Commune Vincennes : sûre globalement (faible criminalité).",
+            "Vigilance pickpockets élevée aux abords du Château (touristes).",
+            "Soirée tardive : zone calme dans le centre-ville Vincennes.",
+            "Pôle bus très fréquenté : surveillance RATP habituelle."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique modérée et résidentielle aisée de Vincennes."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Donjon_du_Ch%C3%A2teau_de_Vincennes_%2836434%29.jpg",
+        "alt": "Donjon du Château de Vincennes (Charles V, 1369-1380, 52 m de hauteur) — plus haut donjon médiéval d'Europe, à 5 min de la station",
+        "width": 6144,
+        "height": 8160,
+        "credit": {
+            "author": "Schlorby",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Donjon_du_Ch%C3%A2teau_de_Vincennes_(36434).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-400.avif",
+                "800": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-800.avif",
+                "1200": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1200.avif",
+                "1600": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-400.webp",
+                "800": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-800.webp",
+                "1200": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1200.webp",
+                "1600": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-400.jpg",
+                "800": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-800.jpg",
+                "1200": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1200.jpg",
+                "1600": "/assets/img/stations/chateau-de-vincennes/chateau-de-vincennes-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station partiellement accessible PMR. Pas d'ascenseurs depuis tous les niveaux. Pour le Château et le Bois en PMR, utiliser les bus 46, 56, 112 ou 325 (planchers bas) ou taxi/VTC."
+    }
+}
