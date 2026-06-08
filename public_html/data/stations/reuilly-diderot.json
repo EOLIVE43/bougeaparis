@@ -1,0 +1,593 @@
+{
+    "published": true,
+    "slug": "reuilly-diderot",
+    "name": "Reuilly - Diderot",
+    "name_full": "Reuilly - Diderot (Métro 1 + 8)",
+    "arrondissement": "12e (Paris)",
+    "address": "Boulevard Diderot / rue de Reuilly, 75012 Paris",
+    "latitude": 48.847271,
+    "longitude": 2.386233,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Reuilly - Diderot station",
+        "es": "Estación Reuilly - Diderot"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#E19BDF",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "46",
+            "57",
+            "86",
+            "215"
+        ],
+        "nocturne": [
+            "N11"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 4,
+            "nearby_count": 11
+        }
+    },
+    "seo": {
+        "description": "Station Reuilly - Diderot : M1 + M8 dans le 12e arr., boulevard Diderot, quartier Reuilly, ancienne abbaye de Reuilly, gare de Lyon à 5 min."
+    },
+    "hero": {
+        "tagline": "Diderot, Reuilly et le 12e populaire",
+        "description": "Au cœur du <strong>12e arrondissement</strong>, sous le <strong>boulevard Diderot</strong>, Reuilly - Diderot est un <strong>pôle d'échange</strong> entre la <strong>M1</strong> (depuis le <strong>19 juillet 1900</strong>) et la <strong>M8</strong> (depuis le <strong>5 mai 1931</strong>). Le boulevard Diderot rend hommage au <strong>philosophe Denis Diderot</strong> (1713-1784), <strong>encyclopédiste des Lumières</strong>. Le quartier de <strong>Reuilly</strong> tire son nom de l'<strong>ancien manoir et abbaye de Reuilly</strong> (vie IXᵉ siècle), résidence carolingienne. À <strong>5 minutes</strong> à pied : la <strong>Gare de Lyon</strong>, l'une des plus belles gares de Paris."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Gare de Lyon",
+                "slug": "gare-de-lyon",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Nation",
+                "slug": "nation",
+                "direction": "Château de Vincennes"
+            }
+        },
+        "metro-8": {
+            "previous": {
+                "name": "Faidherbe - Chaligny",
+                "slug": "faidherbe-chaligny",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Montgallet",
+                "slug": "montgallet",
+                "direction": "Pointe du Lac"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Reuilly - Diderot</strong> est un <strong>pôle d'échange du 12e arrondissement de Paris</strong>, situé sous le <strong>boulevard Diderot</strong> à l'angle de la <strong>rue de Reuilly</strong>. Elle est desservie par deux lignes : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes) et la <strong>M8</strong> (Balard ↔ Pointe du Lac). Sur la M1, entre <strong>Gare de Lyon</strong> (1 station vers l'ouest, pôle d'échange RER A+D+SNCF TGV) et <strong>Nation</strong> (1 station vers l'est, pôle d'échange majeur). Sur la M8, entre <strong>Faidherbe - Chaligny</strong> et <strong>Montgallet</strong>. Avec environ <strong>5,5 millions d'entrants en 2021</strong>, c'est un pôle moyen-important du 12e.",
+        "Ouvertures échelonnées : la <strong>M1</strong> ouvre dès le <strong>19 juillet 1900</strong> (première ligne du métro parisien, inaugurée pour l'Exposition universelle, alors entre Porte de Vincennes et Porte Maillot). La <strong>M8</strong> arrive le <strong>5 mai 1931</strong> lors du prolongement de la M8 vers Porte de Charenton, faisant de Reuilly - Diderot une correspondance M1/M8. Configuration : station souterraine classique sous le boulevard Diderot.",
+        "Le nom <strong>Reuilly - Diderot</strong> combine deux références. <strong>« Diderot »</strong> rend hommage à <strong>Denis Diderot</strong> (1713-1784), <strong>philosophe et écrivain des Lumières</strong>, principal directeur de l'<strong>Encyclopédie</strong> avec d'Alembert (1751-1772). Le <strong>boulevard Diderot</strong> a été percé sous Haussmann (Second Empire) pour relier Bastille à la gare de Lyon. <strong>« Reuilly »</strong> vient du <strong>quartier de Reuilly</strong>, ancien village médiéval intégré à Paris en 1860 par Napoléon III. Le nom <strong>« Reuilly »</strong> vient de l'<strong>ancien manoir et abbaye de Reuilly</strong>, résidence des rois mérovingiens et carolingiens (VIIᵉ-IXᵉ siècles) — Dagobert Iᵉʳ y aurait été tué en 639. À 5 min à pied : la <strong>Gare de Lyon</strong>, l'une des plus belles gares de Paris (Marius Toudoire, 1900, avec le célèbre restaurant <strong>Train Bleu</strong>)."
+    ],
+    "history": {
+        "title": "1900 et 1931 : M1 puis M8, héritage de Reuilly et Diderot",
+        "paragraphs": [
+            "La station <strong>Reuilly - Diderot</strong> a une histoire en deux temps. Premier temps : ouverture de la <strong>M1</strong> dès le <strong>19 juillet 1900</strong>, <strong>première ligne du métro parisien</strong>, inaugurée pour l'<strong>Exposition universelle</strong>. La ligne 1 relie alors <strong>Porte de Vincennes à Porte Maillot</strong> (axe est-ouest sur les Champs-Élysées historiques). Construite express en moins de 18 mois sous <strong>Fulgence Bienvenüe</strong>. Reuilly - Diderot fait partie du tronçon est de la M1 dès l'origine.",
+            "Deuxième temps : ouverture de la <strong>M8</strong> le <strong>5 mai 1931</strong>, lors du <strong>prolongement de la M8 depuis Richelieu-Drouot vers Porte de Charenton</strong>. Reuilly - Diderot devient une <strong>correspondance M1/M8</strong>. La ligne 8 ouvre la liaison sud-est ↔ ouest de Paris (Balard à Charenton).",
+            "Le nom <strong>Diderot</strong> rend hommage à <strong>Denis Diderot</strong> (1713-1784), philosophe et écrivain majeur des <strong>Lumières françaises</strong>. Avec <strong>Jean Le Rond d'Alembert</strong>, il dirige le projet monumental de l'<strong>Encyclopédie</strong> (1751-1772) — <strong>28 volumes, 71 818 articles, 2 600 planches</strong>. Œuvre fondatrice de la pensée moderne, synthèse des connaissances humaines au XVIIIᵉ siècle. Diderot est aussi auteur de romans (<em>Jacques le Fataliste</em>, <em>Le Neveu de Rameau</em>), de pièces de théâtre, et de la <em>Lettre sur les aveugles</em> (1749) qui lui valut 5 mois de prison au Château de Vincennes. Mort à Paris en 1784, inhumé à l'église Saint-Roch.",
+            "Le <strong>boulevard Diderot</strong> a été percé sous le <strong>Second Empire</strong> par le baron <strong>Haussmann</strong>, dans le cadre de la rénovation du quartier de la Bastille et de la Gare de Lyon. Il relie la <strong>place de la Bastille à la place de la Gare-de-Lyon</strong>. Voie haussmannienne typique : large, alignée, avec immeubles en pierre de taille.",
+            "Le quartier de <strong>Reuilly</strong> a une histoire bien plus ancienne. Le nom vient de l'<strong>ancien manoir et abbaye de Reuilly</strong>, résidence des rois <strong>mérovingiens et carolingiens</strong> au <strong>VIIᵉ-IXᵉ siècle</strong>. <strong>Dagobert Iᵉʳ</strong> (628-639), dernier grand roi mérovingien, y aurait été tué le <strong>19 janvier 639</strong> (en réalité plus probablement mort à l'abbaye de Saint-Denis, mais la tradition locale persiste). L'abbaye médiévale a disparu sans laisser de trace. Le village de Reuilly est resté longtemps rural en bordure est de Paris, avant son <strong>intégration à Paris en 1860</strong> par décret de Napoléon III (création du 12e arrondissement actuel). Aujourd'hui : tissu urbain dense de la <strong>fin XIXᵉ siècle</strong>, populaire et animé. La <strong>caserne de Reuilly</strong> (ancien régiment du génie, reconvertie en logements sociaux dans les années 2010) rappelle l'histoire militaire du quartier.",
+            "À <strong>5 minutes à pied</strong> à l'ouest : la <strong>Gare de Lyon</strong>, l'une des <strong>plus belles gares de Paris</strong>. Construite par l'architecte <strong>Marius Toudoire</strong> pour l'<strong>Exposition universelle de 1900</strong>. <strong>Tour de l'horloge</strong> de 67 m. À l'intérieur : le célèbre restaurant <strong>Le Train Bleu</strong> (1901, décor Belle Époque exubérant, fresques et stucs), <strong>classé Monument Historique en 1972</strong>. La gare est l'une des <strong>plus fréquentées de France</strong> (~100 millions de voyageurs/an avec RER A+D)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Reuilly - Diderot ?",
+            "answer": "Deux lignes : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes) et la <strong>M8</strong> (Balard ↔ Pointe du Lac). Pôle d'échange M1/M8. Aucune correspondance RER directe — pour le RER A/D, descendre à <strong>Gare de Lyon</strong> (1 station M1 vers l'ouest). Bus 29, 57, 86 desservent le boulevard Diderot."
+        },
+        {
+            "question": "Qui est Diderot ?",
+            "answer": "<strong>Denis Diderot</strong> (1713-1784) était un <strong>philosophe, écrivain et critique d'art majeur des Lumières françaises</strong>. Avec <strong>Jean Le Rond d'Alembert</strong>, il dirige le projet monumental de l'<strong>Encyclopédie</strong> (1751-1772) — <strong>28 volumes, 71 818 articles, 2 600 planches</strong>, synthèse des connaissances humaines au XVIIIᵉ siècle. Œuvre fondatrice de la pensée moderne, des sciences et de la critique. Aussi auteur de romans (<em>Jacques le Fataliste</em>, <em>Le Neveu de Rameau</em>) et pièces de théâtre. Sa <em>Lettre sur les aveugles</em> (1749) lui valut <strong>5 mois de prison au Château de Vincennes</strong>. Mort à Paris en 1784."
+        },
+        {
+            "question": "D'où vient le nom Reuilly ?",
+            "answer": "Du <strong>quartier de Reuilly</strong>, ancien village médiéval intégré à Paris en 1860 par Napoléon III. Le nom <strong>« Reuilly »</strong> vient de l'<strong>ancien manoir et abbaye de Reuilly</strong>, résidence des rois <strong>mérovingiens et carolingiens</strong> au <strong>VIIᵉ-IXᵉ siècle</strong>. <strong>Dagobert Iᵉʳ</strong> (628-639), dernier grand roi mérovingien, y aurait été tué en 639 selon la tradition. L'abbaye médiévale a disparu sans laisser de trace. Le village rural devint quartier parisien dense en 1860 (création du 12e arr.)."
+        },
+        {
+            "question": "Comment rejoindre la Gare de Lyon depuis Reuilly - Diderot ?",
+            "answer": "<strong>5 minutes à pied</strong> par le boulevard Diderot vers l'ouest (500 m), ou <strong>1 station M1</strong> (2 min). La <strong>Gare de Lyon</strong> est l'une des <strong>plus belles gares de Paris</strong> (Marius Toudoire, 1900). À l'intérieur : célèbre restaurant <strong>Le Train Bleu</strong> (1901, décor Belle Époque, classé MH 1972). Hub TGV vers Lyon, Marseille, Avignon, Genève, Italie. RER A + RER D."
+        },
+        {
+            "question": "Le boulevard Diderot est-il haussmannien ?",
+            "answer": "<strong>Oui</strong>. Le <strong>boulevard Diderot</strong> a été percé sous le <strong>Second Empire</strong> par le baron <strong>Haussmann</strong>, dans le cadre de la rénovation du quartier de la Bastille et de la Gare de Lyon. Il relie la <strong>place de la Bastille à la place de la Gare-de-Lyon</strong>. Voie haussmannienne typique : large, alignée, immeubles en pierre de taille avec balcons en ferronnerie, toitures en zinc. Long de 1,2 km."
+        },
+        {
+            "question": "Que voir dans le quartier ?",
+            "answer": "À <strong>5-15 min à pied</strong> : <strong>Gare de Lyon</strong> et <strong>Train Bleu</strong> (5 min), <strong>Place de la Bastille</strong> (10 min, Opéra Bastille), <strong>Coulée verte René-Dumont</strong> (ex-promenade plantée sur l'ancienne voie ferrée de la Bastille, 10 min), <strong>Marché d'Aligre</strong> (12 min, marché historique animé), <strong>Bercy Village</strong> (15 min via M1), <strong>Bois de Vincennes</strong> (20 min via M8). Quartier 12e populaire et vivant."
+        },
+        {
+            "question": "La station Reuilly - Diderot est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong> sur les 2 lignes. Pas d'ascenseurs vers les quais. Pour un trajet PMR, utiliser les <strong>bus 29 ou 86</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires à Reuilly - Diderot ?",
+            "answer": "Les <strong>M1 (automatisée 2012) et M8</strong> circulent globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, Noctilien N11, N16, N33, N34 desservent le boulevard Diderot."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Gare de Lyon</strong> et TGV : 1 station M1 vers l'ouest ou 5 min à pied.",
+        "<strong>Le Train Bleu</strong> (Gare de Lyon) — restaurant Belle Époque classé MH 1972, brunch/dîner mythiques.",
+        "<strong>Coulée verte René-Dumont</strong> à 10 min — ex-promenade plantée sur ancienne voie ferrée.",
+        "<strong>Marché d'Aligre</strong> à 12 min — marché alimentaire + brocante historique.",
+        "Quartier populaire vivant : restaurants traditionnels, brasseries.",
+        "Pour <strong>Bois de Vincennes</strong> : 6 stations M1 ou bus 56."
+    ],
+    "trivia": [
+        {
+            "icon": "📚",
+            "title": "Denis Diderot (1713-1784) — directeur de l'Encyclopédie",
+            "content": "<strong>Denis Diderot</strong> (1713-1784) était un <strong>philosophe, écrivain et critique d'art majeur des Lumières françaises</strong>. Avec <strong>Jean Le Rond d'Alembert</strong>, il dirige le projet monumental de l'<strong>Encyclopédie</strong> (1751-1772) — <strong>28 volumes, 71 818 articles, 2 600 planches gravées</strong>, synthèse des <strong>connaissances humaines au XVIIIᵉ siècle</strong>. Œuvre fondatrice de la <strong>pensée moderne</strong>, des sciences, de la critique d'art et de la philosophie. Aussi auteur de romans (<em>Jacques le Fataliste</em>, <em>Le Neveu de Rameau</em>), de pièces de théâtre, et de la <em>Lettre sur les aveugles</em> (1749) qui lui valut <strong>5 mois de prison au Château de Vincennes</strong>. Mort à Paris en 1784, inhumé à l'église Saint-Roch (1ᵉʳ arr.)."
+        },
+        {
+            "icon": "👑",
+            "title": "Reuilly — Dagobert Iᵉʳ mérovingien y serait mort en 639",
+            "content": "Le nom <strong>Reuilly</strong> vient de l'<strong>ancien manoir et abbaye de Reuilly</strong>, résidence des rois <strong>mérovingiens et carolingiens</strong> au <strong>VIIᵉ-IXᵉ siècle</strong>. <strong>Dagobert Iᵉʳ</strong> (628-639), dernier grand roi mérovingien (chanté dans la chanson populaire <em>Le bon roi Dagobert</em>), y serait <strong>tué le 19 janvier 639</strong> selon la tradition locale (en réalité plus probablement mort à l'abbaye de Saint-Denis, qu'il fit construire et dont il fit l'abbaye royale). L'abbaye médiévale de Reuilly a disparu sans laisser de trace. Le village rural devint quartier parisien dense en <strong>1860</strong> avec l'annexion par Napoléon III (création du 12e arr. actuel)."
+        },
+        {
+            "icon": "🚂",
+            "title": "Gare de Lyon (1900) — Toudoire et le Train Bleu",
+            "content": "À <strong>5 min à pied</strong> à l'ouest, la <strong>Gare de Lyon</strong> est l'une des <strong>plus belles gares de Paris</strong>. Construite par l'architecte <strong>Marius Toudoire</strong> pour l'<strong>Exposition universelle de 1900</strong>, en parallèle avec la Gare d'Orsay et le métro. <strong>Tour de l'horloge</strong> de 67 m, devenue icône. À l'intérieur : le célèbre restaurant <strong>Le Train Bleu</strong> (inauguré <strong>1901</strong>, décor Belle Époque exubérant — fresques, stucs, lustres, vitraux, dorures), nommé en hommage au train de luxe Paris-Côte d'Azur. <strong>Classé Monument Historique en 1972</strong>. Encore en activité, restaurant gastronomique. La gare est l'une des <strong>plus fréquentées de France</strong> (~100 millions de voyageurs/an avec RER A+D). Hub TGV : Lyon, Marseille, Avignon, Genève, Italie."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Gare de Lyon via M1",
+            "destination_slug": "gare-de-lyon",
+            "destination_full_name": "Reuilly - Diderot → Gare de Lyon",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-gare-lyon/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Reuilly - Diderot → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-bastille/"
+        },
+        {
+            "destination_name": "Nation via M1",
+            "destination_slug": "nation",
+            "destination_full_name": "Reuilly - Diderot → Nation",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-nation/"
+        },
+        {
+            "destination_name": "Marché d'Aligre",
+            "destination_slug": "marche-aligre",
+            "destination_full_name": "Reuilly - Diderot → Marché d'Aligre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Diderot (~900 m)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-aligre/"
+        },
+        {
+            "destination_name": "Bercy Village via M1",
+            "destination_slug": "bercy-village",
+            "destination_full_name": "Reuilly - Diderot → Bercy Village",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense jusqu'à Saint-Mandé puis correspondance",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-bercy/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Reuilly - Diderot → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense jusqu'à Palais Royal (8 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-louvre/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Reuilly - Diderot → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (10 stations)",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER A + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Reuilly - Diderot → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Gare de Lyon (RER A vers Châtelet) puis RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-reuilly-diderot/reuilly-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1573359",
+            "name": "place de la Nation",
+            "category": "place",
+            "description": "La place de la Nation, ancienne « place du Trône » puis « place du Trône-Renversé », est une place de Paris située à la limite du 11e et du 12e arrondissement de la ville.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20Nation%2C%20Paris%20September%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Nation_(Paris)",
+            "latitude": 48.848333,
+            "longitude": 2.395833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Claude Tillier",
+                "distance_m": 657,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3145207",
+            "name": "hôpital Saint-Antoine",
+            "category": "hôpital",
+            "description": "L'hôpital Saint-Antoine est un hôpital universitaire de l'Assistance publique - Hôpitaux de Paris (AP-HP) situé dans le 12e arrondissement de Paris au 184, rue du Faubourg-Saint-Antoine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20hopital%20saint-Antoine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Saint-Antoine",
+            "latitude": 48.8489,
+            "longitude": 2.38262,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 322,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q749491",
+            "name": "viaduc des Arts",
+            "category": "pont",
+            "description": "Le viaduc des Arts est un ensemble de commerces et d'ateliers du « conservatoire parisien des métiers d’art » de style architecture industrielle néo-rétro, agencés sous les arcades d'un ancien viaduc…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20viaduc%20%284738407837%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_des_Arts",
+            "latitude": 48.846667,
+            "longitude": 2.376944,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 693,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2374251",
+            "name": "église Sainte-Marguerite de Paris",
+            "category": "église",
+            "description": "L'église Sainte-Marguerite est une église de culte catholique romain datant du XVIIe siècle, située 36, rue Saint-Bernard dans la 11e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2011%20-%20Eglise%20Ste%20Marguerite%20%281%29.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Marguerite_de_Paris",
+            "latitude": 48.852938,
+            "longitude": 2.38148,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 715,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3162463",
+            "name": "jardin de Reuilly-Paul-Pernin",
+            "category": "jardin",
+            "description": "Le jardin de Reuilly devenu le jardin de Reuilly - Paul-Pernin est un espace vert du 12e arrondissement de Paris, en France, dont la conception est l'œuvre des concepteurs Pierre Colboc, architecte…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dausnenil.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_Reuilly_-_Paul-Pernin",
+            "latitude": 48.8422,
+            "longitude": 2.38806,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Claude Tillier",
+                "distance_m": 569,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3076204",
+            "name": "fontaine de la Petite-Halle",
+            "category": "fontaine",
+            "description": "La  fontaine de la Petite-Halle ou fontaine de Montreuil est une fontaine du 11e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20B%C3%A9lc%C3%A8re-d%C3%A9cembre%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_de_la_Petite-Halle",
+            "latitude": 48.8504,
+            "longitude": 2.38311,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 412,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3584716",
+            "name": "église Saint-Éloi de Paris",
+            "category": "église",
+            "description": "L'église Saint-Éloi  est une église de culte catholique située place Maurice-de-Fontenay dans le 12e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Eloi%20%40%20Paris%2012%20%2832844367784%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89loi_de_Paris",
+            "latitude": 48.8447,
+            "longitude": 2.38872,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Claude Tillier",
+                "distance_m": 312,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3361052",
+            "name": "palais de la Femme",
+            "category": "palais",
+            "description": "Le palais de la Femme est un immeuble situé au 94, rue de Charonne, à l'angle de la rue Faidherbe, dans le 11e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000850%20Paris%20XI%20Rue%20Faidherbe%20Rue%20de%20Charonne%20Maison%20de%20la%20femme%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_la_Femme",
+            "latitude": 48.8539,
+            "longitude": 2.38268,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 774,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3162485",
+            "name": "jardin de la Folie-Titon",
+            "category": "jardin",
+            "description": "Le jardin de la Folie-Titon est un espace vert du 11e arrondissement de Paris, dans le quartier Sainte-Marguerite.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20de%20la%20Folie-Titon%202.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_la_Folie-Titon",
+            "latitude": 48.8522,
+            "longitude": 2.38556,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 540,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3494687",
+            "name": "square Louis-Majorelle",
+            "category": "site notable",
+            "description": "Le square Louis-Majorelle est un espace vert du 11e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1060541%20Paris%20XI%20square%20Louis-Majorelle%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Louis-Majorelle",
+            "latitude": 48.8522,
+            "longitude": 2.38111,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 660,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3494812",
+            "name": "square Saint-Éloi",
+            "category": "site notable",
+            "description": "Le square Saint-Éloi est un square du 12e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SquareSaintEloiParis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Saint-%C3%89loi",
+            "latitude": 48.845,
+            "longitude": 2.3875,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Claude Tillier",
+                "distance_m": 255,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3074958",
+            "name": "Folie Titon",
+            "category": "site notable",
+            "description": "La folie Titon est une ancienne folie devenue une manufacture de papiers peints tenue par Jean-Baptiste Réveillon, et située dans l’ancien faubourg Saint-Antoine, où décolla la première montgolfière,…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Foliet.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Folie_Titon",
+            "latitude": 48.8505,
+            "longitude": 2.38584,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Reuilly",
+                "distance_m": 350,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "boulevard Diderot",
+            "address_full": "114 Boulevard Diderot 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.847218,
+            "longitude": 2.386479,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue Claude Tillier",
+            "address_full": "118 Boulevard Diderot 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.847266,
+            "longitude": 2.386996,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue de Reuilly",
+            "address_full": "75 Boulevard Diderot 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.84737,
+            "longitude": 2.386354,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "boulevard Diderot"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Boulevard Diderot + rue de Reuilly",
+            "details": "Quartier 12e populaire et animé. Brasseries traditionnelles, restaurants, boutiques de proximité.",
+            "secondary": "Marché d'Aligre à 12 min : marché alimentaire + brocante historique. Bastille à 10 min."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier 12e populaire et animé — peu d'incidents.",
+            "Vigilance pickpockets standard au pôle d'échange M1/M8.",
+            "Présence policière régulière (proximité Gare de Lyon).",
+            "Soirée tardive : zone fréquentée jusqu'à minuit."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature du quartier 12e."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Boulevard_Diderot%2C_Paris%2C_France_2012.jpg",
+        "alt": "Boulevard Diderot (Paris 12e arr.) — axe haussmannien rénové sous Second Empire reliant Bastille à Gare de Lyon — quartier Reuilly",
+        "width": 5184,
+        "height": 3456,
+        "credit": {
+            "author": "Alexander Baxevanis",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Boulevard_Diderot,_Paris,_France_2012.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/reuilly-diderot/reuilly-diderot-400.avif",
+                "800": "/assets/img/stations/reuilly-diderot/reuilly-diderot-800.avif",
+                "1200": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1200.avif",
+                "1600": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/reuilly-diderot/reuilly-diderot-400.webp",
+                "800": "/assets/img/stations/reuilly-diderot/reuilly-diderot-800.webp",
+                "1200": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1200.webp",
+                "1600": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/reuilly-diderot/reuilly-diderot-400.jpg",
+                "800": "/assets/img/stations/reuilly-diderot/reuilly-diderot-800.jpg",
+                "1200": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1200.jpg",
+                "1600": "/assets/img/stations/reuilly-diderot/reuilly-diderot-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur les 2 lignes (M1 et M8). Pas d'ascenseurs vers les quais. Pour un trajet PMR, utiliser les bus 29 ou 86 (planchers bas) ou taxi/VTC."
+    }
+}
