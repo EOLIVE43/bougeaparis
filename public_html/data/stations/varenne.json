@@ -1,0 +1,550 @@
+{
+    "published": true,
+    "slug": "varenne",
+    "name": "Varenne",
+    "name_full": "Varenne (Métro 13)",
+    "arrondissement": "7e (Paris)",
+    "address": "Boulevard des Invalides, 75007 Paris",
+    "latitude": 48.856395,
+    "longitude": 2.315008,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Varenne station",
+        "es": "Estación Varenne"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "69"
+        ],
+        "nocturne": [],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 3,
+            "nearby_count": 3
+        }
+    },
+    "seo": {
+        "description": "Station Varenne : M13 dans le 7e arrondissement, Musée Rodin (Hôtel Biron), répliques du Penseur et Balzac sur les quais, 50 m du musée."
+    },
+    "hero": {
+        "tagline": "Le Musée Rodin et les sculptures sur les quais",
+        "description": "Au cœur du <strong>7e arrondissement</strong>, Varenne ouvre le <strong>30 décembre 1923</strong> sur l'ex-ligne 10. Particularité unique : les <strong>quais accueillent deux répliques de sculptures d'Auguste Rodin</strong> — <strong>Le Penseur</strong> et le <strong>Monument à Balzac</strong> — clin d'œil au <strong>Musée Rodin</strong> situé à <strong>50 mètres</strong> dans l'historique <strong>Hôtel Biron</strong>. Cette station fut <strong>fermée le 2 septembre 1939</strong> au début de la Seconde Guerre mondiale et resta <strong>« station fantôme »</strong> jusqu'à sa <strong>réouverture le 24 décembre 1962</strong>."
+    },
+    "adjacent_stations": {
+        "metro-13": {
+            "previous": {
+                "name": "Invalides",
+                "slug": "invalides",
+                "direction": "Saint-Denis - Université / Asnières-Gennevilliers"
+            },
+            "next": {
+                "name": "Saint-François-Xavier",
+                "slug": "saint-francois-xavier",
+                "direction": "Châtillon - Montrouge"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Varenne</strong> est située dans le <strong>7e arrondissement de Paris</strong>, sous le <strong>boulevard des Invalides</strong> à l'angle de la <strong>rue de Varenne</strong>. Elle est desservie par la <strong>ligne 13 du métro</strong> (Saint-Denis ↔ Châtillon-Montrouge), entre les stations <strong>Invalides</strong> (1 station vers le nord, correspondance M8 + RER C) et <strong>Saint-François-Xavier</strong> (1 station vers le sud). Avec environ <strong>1,2 million d'entrants en 2019</strong>, elle est l'une des stations les <strong>moins fréquentées</strong> du réseau (rang 285 sur 302), trafic essentiellement touristique lié au Musée Rodin.",
+        "Particularité unique du métro parisien : les <strong>quais de Varenne accueillent deux répliques de sculptures d'Auguste Rodin</strong>. Côté direction Châtillon, une réplique du célèbre <strong>« Penseur »</strong> (<em>Le Penseur</em>, originalement modelé en 1880 comme partie de <em>La Porte de l'Enfer</em>). Côté direction Saint-Denis, une réplique du <strong>« Monument à Balzac »</strong> (commande de la Société des Gens de Lettres en 1891, statue scandaleuse rejetée à l'époque, devenue chef-d'œuvre reconnu). Ces répliques sont un <strong>clin d'œil visuel</strong> au <strong>Musée Rodin</strong> situé à 50 mètres seulement.",
+        "À <strong>50 mètres</strong> de la station se trouve le <strong>Musée Rodin</strong>, installé dans le splendide <strong>Hôtel Biron</strong> (77 rue de Varenne, 7e arr.). L'<strong>Hôtel Biron</strong> est un hôtel particulier de style rocaille édifié de <strong>1727 à 1732</strong> pour Abraham Peyrenc de Moras par les architectes <strong>Jean Aubert</strong> et <strong>Jacques Gabriel</strong>. Auguste Rodin (1840-1917) y avait son atelier de 1908 à sa mort en 1917. Le musée ouvre en <strong>1919</strong> grâce à la donation Rodin à l'État (1916). Il abrite la plus grande collection de Rodin au monde, dont <strong>Le Penseur</strong>, <strong>Le Baiser</strong>, <strong>Les Bourgeois de Calais</strong>, <strong>La Porte de l'Enfer</strong>, plus un magnifique <strong>jardin</strong> peuplé de sculptures monumentales en bronze."
+    ],
+    "history": {
+        "title": "1923 : ligne 10, fermeture 1939, réouverture 1962",
+        "paragraphs": [
+            "La station <strong>Varenne</strong> est inaugurée le <strong>30 décembre 1923</strong>, lors de l'ouverture du prolongement de la <strong>ligne 10</strong> (à l'époque) entre <strong>Invalides</strong> et <strong>Croix-Rouge</strong> (cette dernière étant devenue station fantôme en 1939). En <strong>1937</strong>, la ligne est rebaptisée <strong>ligne 14</strong> dans la nomenclature CMP. La station est un <strong>arrêt résidentiel et touristique</strong> sans correspondance.",
+            "Au début de la <strong>Seconde Guerre mondiale</strong>, la station <strong>ferme le 2 septembre 1939</strong> dans le cadre des <strong>réductions de service</strong> imposées par la mobilisation et l'exode des fonctionnaires vers Vichy. Elle reste <strong>« station fantôme »</strong> pendant <strong>23 ans</strong>, alors que les rames continuent de passer sans s'arrêter. Sa réouverture intervient le <strong>24 décembre 1962</strong>, à l'occasion du retour des administrations à Paris et de la reprise du trafic du quartier.",
+            "En <strong>1976</strong>, la <strong>fusion des lignes 13 et 14</strong> intègre Varenne dans la <strong>M13 actuelle</strong> (Saint-Denis ↔ Châtillon-Montrouge), reliant le sud de Paris au nord via Invalides et Champs-Élysées. La ligne 14 « historique » disparaît (le nom est plus tard repris en 1998 par la nouvelle ligne automatique Châtelet → Olympiades).",
+            "Les <strong>répliques de sculptures de Rodin</strong> ont été installées sur les quais en <strong>1980</strong> par la RATP, en <strong>collaboration avec le Musée Rodin</strong>, pour rendre hommage à l'artiste et signaler aux voyageurs la proximité du musée. <strong>Le Penseur</strong> (original 1880) et le <strong>Monument à Balzac</strong> (original 1891-1898) sont les deux statues les plus emblématiques du sculpteur. Ce sont des <strong>moulages en bronze</strong>, fidèles aux originaux conservés au musée et dans son jardin. Aujourd'hui, ces sculptures restent une <strong>particularité unique du métro parisien</strong> — aucune autre station n'expose des œuvres d'art aussi monumentales sur ses quais."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Varenne ?",
+            "answer": "Une seule ligne : la <strong>M13</strong> (Saint-Denis - Université / Asnières-Gennevilliers ↔ Châtillon-Montrouge), entre les stations <strong>Invalides</strong> (1 station au nord, correspondance M8 + RER C) et <strong>Saint-François-Xavier</strong> (1 station au sud). Aucune correspondance RER directe à Varenne. Bus 69, 82, 87, 92 dans les environs."
+        },
+        {
+            "question": "Pourquoi y a-t-il des statues de Rodin sur les quais ?",
+            "answer": "Parce que le <strong>Musée Rodin</strong> se trouve à <strong>50 mètres</strong> de la station ! En <strong>1980</strong>, la RATP, en collaboration avec le Musée Rodin, a installé deux <strong>répliques en bronze</strong> sur les quais : <strong>Le Penseur</strong> (modelé en 1880) côté direction Châtillon, et le <strong>Monument à Balzac</strong> (modelé en 1891-1898) côté direction Saint-Denis. C'est un <strong>clin d'œil unique</strong> du métro parisien à l'artiste, qui annonce aux voyageurs la proximité du musée. Aucune autre station du réseau n'expose des œuvres d'art aussi monumentales."
+        },
+        {
+            "question": "Comment rejoindre le Musée Rodin depuis Varenne ?",
+            "answer": "<strong>1 minute à pied</strong> : sortir et emprunter la <strong>rue de Varenne</strong>. L'entrée principale du musée se trouve au <strong>77 rue de Varenne</strong>. C'est la station la plus proche du Musée Rodin (devant Invalides à 8 min et Saint-François-Xavier à 8 min). Le musée est installé dans le splendide <strong>Hôtel Biron</strong> (1727-1732), où Rodin avait son atelier de 1908 à sa mort en 1917. Réservation en ligne recommandée."
+        },
+        {
+            "question": "Qu'est-ce que l'Hôtel Biron ?",
+            "answer": "Un <strong>hôtel particulier de style rocaille</strong> édifié de <strong>1727 à 1732</strong> pour Abraham Peyrenc de Moras par les architectes <strong>Jean Aubert</strong> et <strong>Jacques Gabriel</strong> (qui travailla aussi pour Louis XV à Versailles). Après plusieurs propriétaires aristocratiques (dont le maréchal de Biron, qui donne son nom à l'hôtel), il devient propriété de l'État en 1905. <strong>Auguste Rodin</strong> y installe son atelier en 1908 et y vit jusqu'à sa mort en 1917. Il <strong>fait don de ses œuvres et de sa collection à l'État</strong> en 1916, à condition que l'Hôtel Biron devienne un musée. Le <strong>Musée Rodin</strong> ouvre le <strong>4 août 1919</strong>."
+        },
+        {
+            "question": "Pourquoi Varenne est-elle une station si peu fréquentée ?",
+            "answer": "Avec environ <strong>1,2 million d'entrants en 2019</strong> (rang 285 sur 302), Varenne est l'une des stations les <strong>moins fréquentées</strong> du métro parisien. Plusieurs raisons : <strong>quartier résidentiel</strong> à faible densité d'habitants (7e arr. = peu peuplé), <strong>une seule ligne</strong> sans correspondance, <strong>stations voisines plus attractives</strong> (Invalides à 1 station = correspondance M8 + RER C + Hôtel des Invalides). Trafic essentiellement <strong>touristique</strong> en direction du Musée Rodin."
+        },
+        {
+            "question": "Pourquoi la station a-t-elle été fermée pendant 23 ans ?",
+            "answer": "Varenne a fermé le <strong>2 septembre 1939</strong>, à l'aube de la <strong>Seconde Guerre mondiale</strong>. Lors de la mobilisation générale, l'<strong>exode des fonctionnaires vers Vichy</strong> et la réduction du trafic du quartier ont rendu la station peu utile. Elle est restée <strong>« station fantôme »</strong> pendant <strong>23 ans</strong> (les rames continuaient de passer sans s'arrêter). <strong>Rouverte le 24 décembre 1962</strong> avec le retour des administrations parisiennes et la reprise économique d'après-guerre."
+        },
+        {
+            "question": "La station Varenne est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M13. Pour un trajet PMR vers le Musée Rodin, utiliser le <strong>bus 69 ou 87</strong> (planchers bas) ou taxi/VTC. Le musée lui-même est partiellement accessible (entrée et jardin)."
+        },
+        {
+            "question": "Quels sont les horaires de la M13 à Varenne ?",
+            "answer": "La <strong>M13</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien desservent le quartier (boulevard des Invalides, rue de Varenne)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Musée Rodin</strong> à 1 min — entrée principale 77 rue de Varenne (Hôtel Biron + jardin).",
+        "<strong>Statues sur les quais</strong> : Le Penseur et Balzac — uniques dans le métro parisien (à observer en attendant le train).",
+        "Pour <strong>Invalides</strong> : 1 station M13 vers le nord (correspondance M8 + RER C).",
+        "Quartier résidentiel calme, peu fréquenté en dehors des heures de pointe.",
+        "Le <strong>jardin du Musée Rodin</strong> peut se visiter séparément (tarif réduit) — magnifique en été.",
+        "Réserver les billets musée en ligne (musee-rodin.fr) pour éviter les files."
+    ],
+    "trivia": [
+        {
+            "icon": "🗿",
+            "title": "Répliques de Rodin sur les quais — unique dans le métro parisien",
+            "content": "Varenne est la <strong>seule station du métro parisien</strong> à exposer des <strong>répliques de sculptures monumentales</strong> sur ses quais. Côté direction Châtillon : réplique du <strong>« Penseur »</strong> d'Auguste Rodin (original modelé en 1880, originalement partie de <em>La Porte de l'Enfer</em>). Côté direction Saint-Denis : réplique du <strong>« Monument à Balzac »</strong> (original 1891-1898, commande de la Société des Gens de Lettres, à l'époque rejeté pour son « scandaleux » modernisme, aujourd'hui chef-d'œuvre). Installation réalisée en <strong>1980</strong> par la RATP en partenariat avec le Musée Rodin (50 m), un clin d'œil visuel aux voyageurs."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Musée Rodin (1919) — Hôtel Biron, atelier du sculpteur",
+            "content": "Le <strong>Musée Rodin</strong>, à 50 m de la station (77 rue de Varenne), est installé dans le splendide <strong>Hôtel Biron</strong>, hôtel particulier de style rocaille édifié de <strong>1727 à 1732</strong> par <strong>Jean Aubert</strong> et <strong>Jacques Gabriel</strong> (architecte de Louis XV). <strong>Auguste Rodin</strong> (1840-1917) y installe son atelier en <strong>1908</strong>. En <strong>1916</strong>, il <strong>fait don de toutes ses œuvres et de sa collection à l'État</strong> à condition que l'Hôtel Biron devienne un musée. Le <strong>Musée Rodin</strong> ouvre le <strong>4 août 1919</strong>. Plus grande collection au monde de Rodin : <em>Le Penseur</em>, <em>Le Baiser</em>, <em>Les Bourgeois de Calais</em>, <em>La Porte de l'Enfer</em>, <em>L'Âge d'airain</em>. Magnifique <strong>jardin</strong> peuplé de sculptures monumentales en bronze."
+        },
+        {
+            "icon": "👻",
+            "title": "Station fantôme 1939-1962 — fermée 23 ans pendant et après la guerre",
+            "content": "Varenne a une <strong>histoire particulière</strong> : <strong>fermée le 2 septembre 1939</strong> à l'aube de la Seconde Guerre mondiale (mobilisation, exode des fonctionnaires vers Vichy), elle reste <strong>« station fantôme »</strong> pendant <strong>23 ans</strong>. Les rames continuent de passer sans s'arrêter, les voyageurs voyant défiler les quais éclairés et silencieux. <strong>Rouverte le 24 décembre 1962</strong>, jour de Noël, avec le retour des administrations parisiennes après-guerre. C'est l'une des plus longues fermetures de l'histoire du métro (à comparer à Croix-Rouge fermée depuis 1939, toujours non rouverte)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée Rodin (Hôtel Biron)",
+            "destination_slug": "musee-rodin",
+            "destination_full_name": "Varenne → Musée Rodin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Varenne (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-musee-rodin/"
+        },
+        {
+            "destination_name": "Hôtel des Invalides via M13",
+            "destination_slug": "invalides-dome",
+            "destination_full_name": "Varenne → Invalides",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Saint-Denis (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-invalides/"
+        },
+        {
+            "destination_name": "Musée d'Orsay via M13 + M12",
+            "destination_slug": "musee-dorsay",
+            "destination_full_name": "Varenne → Musée d'Orsay",
+            "lines_used": [
+                "M13",
+                "M12"
+            ],
+            "lines_label": "M13 jusqu'à Invalides + RER C jusqu'à Musée d'Orsay (1 station)",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-musee-dorsay/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M13 + M8",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Varenne → Tour Eiffel",
+            "lines_used": [
+                "M13",
+                "M8"
+            ],
+            "lines_label": "M13 jusqu'à Invalides + M8 jusqu'à École Militaire + 10 min à pied",
+            "duration_minutes": 18,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M13",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Varenne → Champs-Élysées",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Saint-Denis jusqu'à Champs-Élysées - Clemenceau (2 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Saint-Lazare via M13",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Varenne → Saint-Lazare",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Saint-Denis (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M13 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Varenne → CDG",
+            "lines_used": [
+                "M13",
+                "RER B"
+            ],
+            "lines_label": "M13 jusqu'à Châtelet (avec corresp.) + RER B direct CDG",
+            "duration_minutes": 55,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-cdg/"
+        },
+        {
+            "destination_name": "Versailles via M13 + RER C",
+            "destination_slug": "versailles-chateau",
+            "destination_full_name": "Varenne → Versailles",
+            "lines_used": [
+                "M13",
+                "RER C"
+            ],
+            "lines_label": "M13 jusqu'à Invalides + RER C direct Château de Versailles",
+            "duration_minutes": 40,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-varenne/varenne-vers-versailles/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q936633",
+            "name": "palais Bourbon",
+            "category": "palais",
+            "description": "Le palais Bourbon est le bâtiment qui abrite depuis 1879 l'Assemblée nationale française, situé sur le quai d'Orsay dans le 7e arrondissement de Paris, dans l’enfilade du pont de la Concorde et de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fa%C3%A7ade%20Palais%20Bourbon%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Bourbon",
+            "latitude": 48.862072,
+            "longitude": 2.318681,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 636,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q650519",
+            "name": "musée Rodin",
+            "category": "musée",
+            "description": "Le musée Rodin est un musée assurant depuis 1919 la conservation et la diffusion de l’œuvre d’Auguste Rodin (1840-1917).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27h%C3%B4tel%20Biron%20%28mus%C3%A9e%20Rodin%29%20%C3%A0%20Paris%2C%2013%20juin%202021%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Rodin",
+            "latitude": 48.855356,
+            "longitude": 2.315819,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 172,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q912192",
+            "name": "hôtel de Matignon",
+            "category": "site notable",
+            "description": "L'hôtel de Matignon, ou simplement Matignon, est un hôtel particulier situé au no 57, rue de Varenne, dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20%40%20Jardin%20de%20l%27H%C3%B4tel%20Matignon%20%40%20Paris%20%2834261927513%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Matignon",
+            "latitude": 48.854444,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 493,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1996069",
+            "name": "musée de l'Armée",
+            "category": "musée",
+            "description": "Le musée de l'Armée est un musée national français situé dans l'hôtel national des Invalides dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27Arm%C3%A9e%2C%20Paris%204%20May%202019.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Arm%C3%A9e_(Paris)",
+            "latitude": 48.856944,
+            "longitude": 2.312778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 175,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1514062",
+            "name": "basilique Sainte-Clotilde",
+            "category": "basilique",
+            "description": "La basilique Sainte-Clotilde-Sainte-Valère de Paris est une basilique mineure de l'Église catholique située parvis Maurice-Druon dans le 7e arrondissement de Paris, l'une des cinq basiliques mineures…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Sainte%20Clotilde%20-%20Paris%20VII%20%28FR75%29%20-%202024-08-07%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Sainte-Clotilde_de_Paris",
+            "latitude": 48.858333,
+            "longitude": 2.319167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 336,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q946883",
+            "name": "musée Maillol",
+            "category": "musée",
+            "description": "Le musée Maillol est un musée privé situé au 61 de la rue de Grenelle dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Maillol%20Paris%207e%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Maillol_de_Paris",
+            "latitude": 48.854778,
+            "longitude": 2.324889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 747,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q526293",
+            "name": "église Saint-François-Xavier de Paris",
+            "category": "église",
+            "description": "L'église Saint-François-Xavier est une église inscrite depuis juin 2018 au titre des monuments historiques.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Fran%C3%A7ois%20Xavier%202010.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois-Xavier_de_Paris",
+            "latitude": 48.850556,
+            "longitude": 2.313333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 712,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q4992220",
+            "name": "cathédrale Saint-Louis-des-Invalides",
+            "category": "cathédrale",
+            "description": "La cathédrale Saint-Louis-des-Invalides est le siège de l'évêque du diocèse aux Armées françaises. Elle est accolée à l'hôtel des Invalides.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Dome%20Church%20at%20Les%20Invalides%20-%20July%202006.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Louis-des-Invalides",
+            "latitude": 48.85561,
+            "longitude": 2.31262,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 231,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2915606",
+            "name": "musée des Plans-reliefs",
+            "category": "musée",
+            "description": "Le musée des Plans-reliefs présente une collection unique au monde de plans-reliefs des places fortes qui date, pour l'essentiel, du XVIIe au XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20Mus%C3%A9e%20des%20Plans-Reliefs%20%28Les%20Invalides%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Plans-reliefs",
+            "latitude": 48.856459,
+            "longitude": 2.313239,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 147,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2208443",
+            "name": "Invalides",
+            "category": "gare",
+            "description": "La gare des Invalides est une gare ferroviaire française de la ligne des Invalides située dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/A%C3%A9rogare%20des%20Invalides%2C%20Paris%207e%206.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_des_Invalides",
+            "latitude": 48.862826,
+            "longitude": 2.313837,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 673,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q966399",
+            "name": "hôtel Beauharnais",
+            "category": "site notable",
+            "description": "L’hôtel Beauharnais ou hôtel de Beauharnais est un hôtel particulier situé au no 78 rue de Lille, à Paris (France), qui est la résidence de l'ambassadeur d'Allemagne en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Beauharnais.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Beauharnais",
+            "latitude": 48.8607,
+            "longitude": 2.3223,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 676,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1165249",
+            "name": "hôtel de Lassay",
+            "category": "site notable",
+            "description": "L'hôtel de Lassay est un hôtel particulier situé rue de l'Université, dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel%20de%20lassay%20entree.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Lassay",
+            "latitude": 48.862222,
+            "longitude": 2.317222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "boulevard des Invalides",
+                "distance_m": 617,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "boulevard des Invalides",
+            "address_full": "11 Boulevard des Invalides 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.856841,
+            "longitude": 2.315166,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "boulevard des Invalides"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Rue de Varenne + boulevard des Invalides",
+            "details": "Quartier résidentiel calme. Quelques cafés et restaurants rue de Varenne. Boutique du Musée Rodin (livres, reproductions, bijoux).",
+            "secondary": "Rue Cler à 10 min : marché alimentaire emblématique du 7e arr."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier résidentiel calme du 7e arr. — peu d'incidents historiques.",
+            "Vigilance pickpockets standard surtout aux abords du Musée Rodin (touristes).",
+            "Présence policière régulière (ministères proches).",
+            "Soirée tardive : zone très calme, peu fréquentée."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle du quartier."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Facade_of_Mus%C3%A9e_Rodin%2C_Paris_21_August_2013.jpg",
+        "alt": "Façade de l'Hôtel Biron (1727-1732), siège du Musée Rodin (1919) — à 1 min de la station Varenne",
+        "width": 4272,
+        "height": 2848,
+        "credit": {
+            "author": "Shadowgate",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Facade_of_Mus%C3%A9e_Rodin,_Paris_21_August_2013.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/varenne/varenne-400.avif",
+                "800": "/assets/img/stations/varenne/varenne-800.avif",
+                "1200": "/assets/img/stations/varenne/varenne-1200.avif",
+                "1600": "/assets/img/stations/varenne/varenne-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/varenne/varenne-400.webp",
+                "800": "/assets/img/stations/varenne/varenne-800.webp",
+                "1200": "/assets/img/stations/varenne/varenne-1200.webp",
+                "1600": "/assets/img/stations/varenne/varenne-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/varenne/varenne-400.jpg",
+                "800": "/assets/img/stations/varenne/varenne-800.jpg",
+                "1200": "/assets/img/stations/varenne/varenne-1200.jpg",
+                "1600": "/assets/img/stations/varenne/varenne-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M13. Pour un trajet PMR vers le Musée Rodin, utiliser le bus 69 ou 87 (planchers bas) ou taxi/VTC. Le musée est partiellement accessible."
+    }
+}
