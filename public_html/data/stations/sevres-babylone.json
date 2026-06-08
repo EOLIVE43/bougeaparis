@@ -1,0 +1,605 @@
+{
+    "published": true,
+    "slug": "sevres-babylone",
+    "name": "Sèvres - Babylone",
+    "name_full": "Sèvres - Babylone (Métro 10 + 12)",
+    "arrondissement": "6e / 7e (Paris)",
+    "address": "Carrefour rue de Sèvres / rue de Babylone, 75007 Paris",
+    "latitude": 48.851561,
+    "longitude": 2.326962,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Sèvres - Babylone station",
+        "es": "Estación Sèvres - Babylone"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "39",
+            "63",
+            "68",
+            "70",
+            "83",
+            "84",
+            "86",
+            "94",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N12",
+            "N13"
+        ],
+        "regional": [
+            "95"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 6,
+            "nearby_count": 27
+        }
+    },
+    "seo": {
+        "description": "Station Sèvres - Babylone : M10 + M12 dans le 7e arr., Le Bon Marché (premier grand magasin moderne, 1838), Hôtel Lutetia Art nouveau (1910), Rive gauche chic."
+    },
+    "hero": {
+        "tagline": "Le Bon Marché et l'Hôtel Lutetia",
+        "description": "Au cœur du <strong>7e arrondissement</strong>, à la frontière du <strong>6e</strong>, Sèvres - Babylone est un <strong>pôle d'échange majeur</strong> entre la <strong>M10</strong> et la <strong>M12</strong> (ex-Nord-Sud). À <strong>100 mètres</strong> se dresse le <strong>Bon Marché</strong>, <strong>premier grand magasin moderne au monde</strong> fondé en <strong>1838</strong> par <strong>Aristide Boucicaut</strong> — modèle du roman <em>Au Bonheur des Dames</em> d'<strong>Émile Zola</strong> (1883). À côté, l'<strong>Hôtel Lutetia</strong> (1910), <strong>palace Art nouveau</strong> à la façade de <strong>Louis-Hippolyte Boileau</strong>, célèbre pour son rôle dans l'accueil des <strong>rescapés des camps de concentration en 1945</strong> et pour avoir été le QG de l'Abwehr nazie pendant l'Occupation."
+    },
+    "adjacent_stations": {
+        "metro-10": {
+            "previous": {
+                "name": "Vaneau",
+                "slug": "vaneau",
+                "direction": "Boulogne Pont de Saint-Cloud"
+            },
+            "next": {
+                "name": "Mabillon",
+                "slug": "mabillon",
+                "direction": "Gare d'Austerlitz"
+            }
+        },
+        "metro-12": {
+            "previous": {
+                "name": "Rue du Bac",
+                "slug": "rue-du-bac",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Rennes",
+                "slug": "rennes",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Sèvres - Babylone</strong> est un <strong>pôle d'échange majeur</strong> situé à la frontière du <strong>6e et du 7e arrondissement</strong>, au carrefour de la <strong>rue de Sèvres</strong> et de la <strong>rue de Babylone</strong>. Elle dessert les <strong>lignes 10 et 12 du métro</strong>. La <strong>M10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz) y dessert entre <strong>Vaneau</strong> et <strong>Mabillon</strong>. La <strong>M12</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers) y circule entre <strong>Rue du Bac</strong> et <strong>Rennes</strong>. La <strong>M12 est l'ancienne ligne A Nord-Sud</strong>, devenue M12 en 1931 après absorption par la CMP.",
+        "Particularité historique : la <strong>M12</strong> à Sèvres - Babylone fait partie du <strong>réseau Nord-Sud d'origine</strong> (compagnie privée, 1902-1930). La station conserve certains éléments de son décor d'origine — notamment dans les couloirs de correspondance. Ouverture M12 le <strong>5 novembre 1910</strong>, M10 le <strong>30 décembre 1923</strong>.",
+        "À <strong>100 mètres</strong> au sud de la station se dresse <strong>Le Bon Marché</strong>, considéré comme le <strong>premier grand magasin moderne au monde</strong>. Fondé en <strong>1838</strong> par <strong>Aristide Boucicaut</strong> (1810-1877) et son épouse <strong>Marguerite Boucicaut</strong> (1816-1887), il révolutionne le commerce : <strong>prix fixes affichés</strong>, <strong>libre accès aux marchandises</strong>, <strong>échanges possibles</strong>, <strong>livraison à domicile</strong>, <strong>vente par correspondance</strong>. Le bâtiment monumental actuel est conçu par <strong>Louis-Charles Boileau</strong> et <strong>Gustave Eiffel</strong> (oui, celui de la Tour Eiffel — il a réalisé la structure métallique) entre <strong>1872 et 1887</strong>. Émile Zola s'en est inspiré pour son roman <em>Au Bonheur des Dames</em> (1883). À côté : la <strong>Grande Épicerie de Paris</strong> (1923), annexe gastronomique du Bon Marché. Et l'<strong>Hôtel Lutetia</strong> (1910), <strong>palace Art nouveau</strong>."
+    ],
+    "history": {
+        "title": "1838 : Le Bon Marché révolutionne le commerce, 1910 : la M12 Nord-Sud",
+        "paragraphs": [
+            "L'histoire du quartier est dominée par le <strong>Bon Marché</strong>. En <strong>1838</strong>, un petit magasin de nouveautés ouvre rue du Bac. En <strong>1852</strong>, <strong>Aristide Boucicaut</strong> (1810-1877), normand de modeste origine, en devient associé. Avec son épouse <strong>Marguerite</strong>, il révolutionne le commerce de détail : <strong>prix fixes affichés</strong> (fin du marchandage), <strong>libre accès aux marchandises</strong>, <strong>échanges et remboursements possibles</strong>, <strong>vente par correspondance</strong>, <strong>catalogue illustré</strong>, <strong>livraison à domicile</strong>. C'est l'<strong>invention du grand magasin moderne</strong>. Le succès est foudroyant : chiffre d'affaires passe de 450 000 F en 1852 à <strong>20 millions de francs en 1869</strong>.",
+            "Pour accueillir cet essor, Aristide Boucicaut commande un <strong>nouveau bâtiment monumental</strong>. L'architecte <strong>Louis-Charles Boileau</strong> et l'ingénieur <strong>Gustave Eiffel</strong> (oui, le créateur de la Tour Eiffel) collaborent sur le projet : Eiffel conçoit la <strong>structure métallique</strong> permettant d'immenses verrières et planchers libres. Construction de <strong>1872 à 1887</strong> (achevé après la mort d'Aristide en 1877, par Marguerite). Le bâtiment, agrandi par <strong>Louis-Hippolyte Boileau</strong> (fils) entre 1900 et 1923, occupe tout un îlot. Innovation : <strong>chauffage central</strong>, <strong>verrière monumentale</strong>, <strong>salons de repos</strong>, <strong>bibliothèque pour les clientes</strong>, <strong>service médical</strong>, <strong>cantine pour les employés</strong>.",
+            "Émile Zola s'inspire directement du Bon Marché et de son personnel pour son roman <em><strong>Au Bonheur des Dames</strong></em> (1883), 11e tome des Rougon-Macquart. Zola y dépeint avec précision le <strong>fonctionnement révolutionnaire</strong> du nouveau commerce, la <strong>condition des employées</strong> (le terme « shopgirl » naît à cette époque), et la <strong>séduction du grand magasin</strong> comme « cathédrale du commerce moderne ». L'aile annexe rue de Sèvres devient <strong>La Grande Épicerie de Paris</strong> en <strong>1923</strong> — toujours en activité, l'une des plus prestigieuses épiceries fines au monde.",
+            "À 100 m de la station, l'<strong>Hôtel Lutetia</strong> est inauguré le <strong>28 décembre 1910</strong> par le marquis de Castellane — c'est le <strong>premier palace de la Rive gauche</strong> (jusque-là les palaces étaient sur la Rive droite). Façade <strong>Art nouveau</strong> dessinée par <strong>Louis-Hippolyte Boileau</strong> (le même architecte que pour les extensions du Bon Marché) et <strong>Henri Tauzin</strong>. Décor intérieur Art déco rénové dans les années 1930. Pendant l'<strong>Occupation</strong>, le Lutetia est <strong>réquisitionné par l'Abwehr nazie</strong> (renseignement militaire allemand). À la <strong>Libération</strong>, en <strong>avril-août 1945</strong>, il devient le <strong>centre d'accueil officiel des rescapés des camps de concentration</strong> et des prisonniers de guerre revenant en France — <strong>plus de 18 000 personnes</strong> y passent. Une plaque commémorative rappelle ce rôle. Le Lutetia a été <strong>fréquenté par De Gaulle</strong> (qui y séjourna en lune de miel en 1921), Picasso, James Joyce, Samuel Beckett, Charles de Gaulle.",
+            "La <strong>station de métro</strong> elle-même : la <strong>M12</strong> est inaugurée le <strong>5 novembre 1910</strong> dans le cadre de l'ouverture du <strong>tronçon initial de la ligne A de la compagnie Nord-Sud</strong> (concurrente privée de la CMP). La ligne A devient officiellement la <strong>M12</strong> le <strong>27 mars 1931</strong> après absorption de la Nord-Sud par la CMP. La <strong>M10</strong> arrive le <strong>30 décembre 1923</strong>, transformant Sèvres - Babylone en pôle d'échange à deux lignes."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Sèvres - Babylone ?",
+            "answer": "Deux lignes : la <strong>M10</strong> (Boulogne - Pont de Saint-Cloud ↔ Gare d'Austerlitz) et la <strong>M12</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers). Stations adjacentes : <strong>Vaneau ↔ Mabillon</strong> sur M10, <strong>Rue du Bac ↔ Rennes</strong> sur M12. Aucune correspondance RER directe. Bus 39, 63, 68, 70, 83, 84, 87, 94 desservent les rues alentour."
+        },
+        {
+            "question": "Pourquoi Le Bon Marché est-il célèbre ?",
+            "answer": "Le <strong>Bon Marché</strong> est considéré comme le <strong>premier grand magasin moderne au monde</strong>, fondé en <strong>1838</strong> et révolutionné par <strong>Aristide Boucicaut</strong> à partir de 1852. Il a inventé : <strong>prix fixes affichés</strong> (fin du marchandage), <strong>libre accès aux marchandises</strong>, <strong>échanges et remboursements</strong>, <strong>vente par correspondance</strong>, <strong>livraison à domicile</strong>. Le bâtiment monumental (1872-1887) est conçu par <strong>Louis-Charles Boileau</strong> et l'ingénieur <strong>Gustave Eiffel</strong> (oui, celui de la Tour Eiffel). Émile Zola s'en est inspiré pour <em>Au Bonheur des Dames</em> (1883)."
+        },
+        {
+            "question": "Qu'est-ce que l'Hôtel Lutetia ?",
+            "answer": "L'<strong>Hôtel Lutetia</strong> est le <strong>premier palace de la Rive gauche</strong>, inauguré le <strong>28 décembre 1910</strong>. Façade <strong>Art nouveau</strong> de <strong>Louis-Hippolyte Boileau</strong> et <strong>Henri Tauzin</strong>. Pendant l'Occupation, il fut <strong>QG de l'Abwehr nazie</strong>. À la <strong>Libération en 1945</strong>, il est devenu le <strong>centre d'accueil officiel des rescapés des camps de concentration</strong> — plus de 18 000 personnes y ont été enregistrées et soignées. Une plaque commémorative rappelle ce rôle. A accueilli De Gaulle, Picasso, Joyce, Beckett."
+        },
+        {
+            "question": "Émile Zola s'est-il vraiment inspiré du Bon Marché ?",
+            "answer": "<strong>Oui</strong>, le roman <em>Au Bonheur des Dames</em> (1883) d'Émile Zola, 11e tome des <em>Rougon-Macquart</em>, est <strong>directement inspiré du Bon Marché</strong> et de la <strong>famille Boucicaut</strong>. Zola a mené une enquête approfondie au magasin : il a interviewé des employés, observé les techniques de vente, étudié l'organisation. Il décrit avec précision : la <strong>séduction du grand magasin</strong> (« cathédrale du commerce moderne »), la <strong>condition des shopgirls</strong>, les <strong>innovations commerciales</strong>. Le personnage d'<strong>Octave Mouret</strong> est inspiré d'Aristide Boucicaut."
+        },
+        {
+            "question": "Comment rejoindre le Bon Marché depuis la station ?",
+            "answer": "<strong>2 minutes à pied</strong> : sortir par la <strong>sortie 1 (rue de Sèvres)</strong> et marcher 100 m vers l'ouest. Le <strong>Bon Marché Rive Gauche</strong> (24 rue de Sèvres) et la <strong>Grande Épicerie de Paris</strong> (38 rue de Sèvres) sont à 1-3 min."
+        },
+        {
+            "question": "La station Sèvres - Babylone est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong> sur les 2 lignes (M10 et M12). Pas d'ascenseurs vers les quais. Pour un trajet PMR vers Le Bon Marché ou Lutetia, utiliser les <strong>bus 63, 70, 84 ou 87</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires à Sèvres - Babylone ?",
+            "answer": "Les <strong>M10 et M12</strong> circulent globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien desservent le quartier (rue de Sèvres, boulevard Raspail)."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier ?",
+            "answer": "À <strong>5-15 min à pied</strong> : <strong>Saint-Germain-des-Prés</strong> (10 min), <strong>Musée Rodin</strong> (10 min), <strong>Hôtel des Invalides</strong> (15 min), <strong>Jardin du Luxembourg</strong> (15 min), <strong>Musée Maillol</strong> (5 min, rue de Grenelle). Quartier <strong>Saint-Sulpice</strong> et <strong>Place Saint-Sulpice</strong> (10 min)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Le Bon Marché Rive Gauche</strong> à 2 min : LE plus ancien grand magasin moderne — 24 rue de Sèvres.",
+        "<strong>La Grande Épicerie de Paris</strong> (annexe Bon Marché) : 38 rue de Sèvres — l'une des plus prestigieuses au monde.",
+        "<strong>Hôtel Lutetia</strong> : palace Art nouveau, plaque commémorative 1945 (rescapés des camps).",
+        "Quartier 7e très chic — boutiques de luxe rue de Sèvres et alentours.",
+        "Pour <strong>Saint-Germain-des-Prés</strong> : remonter la rue du Bac (10 min à pied).",
+        "Vigilance pickpockets standard aux abords du Bon Marché (touristes)."
+    ],
+    "trivia": [
+        {
+            "icon": "🛍️",
+            "title": "Le Bon Marché (1838) — premier grand magasin moderne au monde",
+            "content": "Fondé en <strong>1838</strong> et révolutionné par <strong>Aristide Boucicaut</strong> à partir de 1852, <strong>Le Bon Marché</strong> est considéré comme le <strong>premier grand magasin moderne au monde</strong>. Innovations majeures : <strong>prix fixes affichés</strong> (fin du marchandage), <strong>libre accès aux marchandises</strong>, <strong>échanges et remboursements</strong>, <strong>vente par correspondance</strong>, <strong>catalogue illustré</strong>, <strong>livraison à domicile</strong>. Bâtiment monumental conçu par <strong>Louis-Charles Boileau</strong> et l'ingénieur <strong>Gustave Eiffel</strong> (structure métallique) entre 1872 et 1887. Modèle du roman <em>Au Bonheur des Dames</em> (1883) d'Émile Zola. La <strong>Grande Épicerie de Paris</strong>, ouverte en 1923, est l'une des plus prestigieuses au monde."
+        },
+        {
+            "icon": "🏨",
+            "title": "Hôtel Lutetia (1910) — premier palace Rive gauche, mémoire 1945",
+            "content": "Inauguré le <strong>28 décembre 1910</strong>, l'<strong>Hôtel Lutetia</strong> est le <strong>premier palace de la Rive gauche</strong> (les palaces étaient jusque-là Rive droite). Façade <strong>Art nouveau</strong> de <strong>Louis-Hippolyte Boileau</strong> et <strong>Henri Tauzin</strong>, décor intérieur <strong>Art déco</strong> des années 1930. Pendant l'<strong>Occupation 1940-1944</strong>, réquisitionné par l'<strong>Abwehr nazie</strong> (renseignement militaire allemand). À la <strong>Libération en 1945</strong>, devient le <strong>centre d'accueil officiel des rescapés des camps de concentration</strong> — <strong>plus de 18 000 personnes</strong> y sont enregistrées et soignées entre avril et août 1945. Une <strong>plaque commémorative</strong> sur la façade rappelle ce rôle historique. Fréquenté par De Gaulle, Picasso, James Joyce, Samuel Beckett."
+        },
+        {
+            "icon": "🚇",
+            "title": "M12 ex-Nord-Sud — réseau privé concurrent de la CMP (1910)",
+            "content": "La <strong>M12</strong> à Sèvres - Babylone fait partie du <strong>réseau Nord-Sud d'origine</strong>, compagnie privée créée en <strong>1902</strong> pour concurrencer la <strong>CMP</strong> (Compagnie du Chemin de fer Métropolitain). La ligne A Nord-Sud est inaugurée le <strong>5 novembre 1910</strong>. La compagnie Nord-Sud, en difficulté financière, est <strong>absorbée par la CMP en 1930</strong>. La ligne A devient officiellement la <strong>M12</strong> le <strong>27 mars 1931</strong>. Certaines stations de la M12 (Solférino, Concorde) ont conservé leur <strong>décor céramique d'origine Nord-Sud</strong> — Sèvres - Babylone conserve aussi des éléments historiques dans les couloirs."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Le Bon Marché Rive Gauche",
+            "destination_slug": "bon-marche",
+            "destination_full_name": "Sèvres - Babylone → Le Bon Marché",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Sèvres (~100 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-bon-marche/"
+        },
+        {
+            "destination_name": "Hôtel Lutetia",
+            "destination_slug": "hotel-lutetia",
+            "destination_full_name": "Sèvres - Babylone → Hôtel Lutetia",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur le carrefour (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-lutetia/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés via M10",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Sèvres - Babylone → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 direction Gare d'Austerlitz (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-saint-germain/"
+        },
+        {
+            "destination_name": "Musée d'Orsay via M12",
+            "destination_slug": "musee-dorsay",
+            "destination_full_name": "Sèvres - Babylone → Musée d'Orsay",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers jusqu'à Solférino (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-orsay/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M10 + M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Sèvres - Babylone → Tour Eiffel",
+            "lines_used": [
+                "M10",
+                "M6"
+            ],
+            "lines_label": "M10 jusqu'à La Motte-Picquet + M6 jusqu'à Bir-Hakeim",
+            "duration_minutes": 20,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Sacré-Cœur via M12",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Sèvres - Babylone → Sacré-Cœur",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers jusqu'à Abbesses",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Notre-Dame via M10",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Sèvres - Babylone → Notre-Dame",
+            "lines_used": [
+                "M10",
+                "à pied"
+            ],
+            "lines_label": "M10 jusqu'à Cluny - La Sorbonne + 8 min à pied",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M12 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Sèvres - Babylone → CDG",
+            "lines_used": [
+                "M12",
+                "RER B"
+            ],
+            "lines_label": "M12 jusqu'à Gare du Nord (5 stations) + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-sevres-babylone/sevres-babylone-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q273593",
+            "name": "École nationale supérieure des beaux-arts",
+            "category": "site notable",
+            "description": "L’École nationale supérieure des beaux-arts de Paris (ENSBA), communément dénommée Beaux-Arts de Paris, est une école d'art française fondée en 1817.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%206%20-%20ENSBA%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaux-Arts_de_Paris",
+            "latitude": 48.856806,
+            "longitude": 2.333278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 723,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q334186",
+            "name": "abbaye Royale de Saint-Germain-des-Prés",
+            "category": "site notable",
+            "description": "L'abbaye Saint-Germain-des-Prés, qui comprend l'actuelle église Saint-Germain-des-Prés, est une ancienne abbaye bénédictine de Paris (France), située 3 place Saint-Germain-des-Prés dans l'actuel…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20St-Germain-des-Pr%C3%A9s.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Saint-Germain-des-Pr%C3%A9s",
+            "latitude": 48.853889,
+            "longitude": 2.334444,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q295844",
+            "name": "église Saint-Sulpice de Paris",
+            "category": "église",
+            "description": "L’église Saint-Sulpice est une église paroissiale catholique située dans le quartier de l'Odéon, dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Sulpice%20Fassade%204-5%20A.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sulpice_de_Paris",
+            "latitude": 48.851002,
+            "longitude": 2.334923,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 580,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q912192",
+            "name": "hôtel de Matignon",
+            "category": "site notable",
+            "description": "L'hôtel de Matignon, ou simplement Matignon, est un hôtel particulier situé au no 57, rue de Varenne, dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20%40%20Jardin%20de%20l%27H%C3%B4tel%20Matignon%20%40%20Paris%20%2834261927513%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Matignon",
+            "latitude": 48.854444,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Velpeau",
+                "distance_m": 510,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1200698",
+            "name": "Le Bon Marché",
+            "category": "commerce",
+            "description": "Le Bon Marché est un grand magasin français, situé dans un quadrilatère encadré par la rue de Sèvres, la rue de Babylone, la rue du Bac et la rue Velpeau dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Bon%20March%C3%A9%2C%20Paris%2027%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Bon_March%C3%A9",
+            "latitude": 48.851183,
+            "longitude": 2.324395,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Velpeau",
+                "distance_m": 73,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1025686",
+            "name": "café de Flore",
+            "category": "café",
+            "description": "Le Café de Flore est un célèbre café-restaurant parisien du quartier Saint-Germain-des-Prés, dans le 6e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Caf%C3%A9%20de%20Flore%2C%20172%20boulevard%20Saint-Germain%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_de_Flore",
+            "latitude": 48.853889,
+            "longitude": 2.3325,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 463,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1411180",
+            "name": "musée du Luxembourg",
+            "category": "musée",
+            "description": "Le musée du Luxembourg est un lieu d'exposition d'art installé dans une aile bâtie perpendiculairement à l'orangerie du palais du Luxembourg, rue de Vaugirard, dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Expo%20Louis-Comfort%20Tiffany.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Luxembourg",
+            "latitude": 48.848611,
+            "longitude": 2.334028,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 617,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q946883",
+            "name": "musée Maillol",
+            "category": "musée",
+            "description": "Le musée Maillol est un musée privé situé au 61 de la rue de Grenelle dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Maillol%20Paris%207e%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Maillol_de_Paris",
+            "latitude": 48.854778,
+            "longitude": 2.324889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 373,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1782606",
+            "name": "musée national Eugène-Delacroix",
+            "category": "musée",
+            "description": "Le musée national Eugène-Delacroix est un musée fondé à la fin des années 1920 par la Société des Amis d’Eugène Delacroix, devenu musée national en 1971.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Delacroix%2C%20Paris%2029%20May%202017%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_Eug%C3%A8ne-Delacroix",
+            "latitude": 48.8546,
+            "longitude": 2.3354,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 687,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1515595",
+            "name": "hôtel Lutetia",
+            "category": "site notable",
+            "description": "L'hôtel Lutetia est un hôtel de luxe du 6e arrondissement de Paris, situé au no 45 boulevard Raspail, à l'angle de la rue de Sèvres, dans le quartier de Notre-Dame-des-Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Lutetia%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Lutetia",
+            "latitude": 48.851354,
+            "longitude": 2.327203,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 45,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2735858",
+            "name": "place Saint-Sulpice",
+            "category": "place",
+            "description": "La place Saint-Sulpice est une place du 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020108%20Paris%20VI%20Place%20Saint-Sulpice%20Ex%20s%C3%A9minaire%20de%20Saint-Sulpice%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Saint-Sulpice",
+            "latitude": 48.850833,
+            "longitude": 2.333333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de Sèvres (Bon Marché)",
+                "distance_m": 469,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q769842",
+            "name": "chapelle Notre-Dame-de-la-Médaille-miraculeuse",
+            "category": "chapelle",
+            "description": "La chapelle Notre-Dame-de-la-Médaille-Miraculeuse, ou chapelle de la rue du Bac, est une chapelle située dans le quartier Saint-Thomas-d'Aquin du 7e arrondissement de Paris, au 140, rue du Bac,…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Maison%20des%20Filles%20de%20la%20Charit%C3%A9%20-%20136-140%20rue%20du%20Bac%20-%20005bis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-M%C3%A9daille-Miraculeuse_de_Paris",
+            "latitude": 48.85084,
+            "longitude": 2.32293,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Velpeau",
+                "distance_m": 174,
+                "walk_minutes": 2
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue de Sèvres (Bon Marché)",
+            "address_full": "18 Rue de Sèvres 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.851746,
+            "longitude": 2.327075,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue Velpeau",
+            "address_full": "9 Rue Velpeau 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.850918,
+            "longitude": 2.325301,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "boulevard Raspail (place Le Corbusier)",
+            "address_full": "2 Place Le Corbusier 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.8515,
+            "longitude": 2.326506,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "rue de Sèvres",
+                "boulevard Raspail"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Le Bon Marché + La Grande Épicerie + rue de Sèvres",
+            "details": "LE quartier de la Rive gauche chic. Le Bon Marché et La Grande Épicerie de Paris. Boutiques de luxe rue de Sèvres. Cafés et restaurants Hôtel Lutetia.",
+            "secondary": "Rue du Bac à 5 min : antiquaires, galeries. Saint-Germain-des-Prés à 10 min."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier 7e très sûr, peu d'incidents historiques.",
+            "Vigilance pickpockets élevée aux abords du Bon Marché (touristes).",
+            "Présence de gardes privés (Lutetia, Bon Marché).",
+            "Soirée tardive : zone calme, peu d'activité après 22h hors hôtel."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature commerciale de luxe du quartier."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Le_Bon_March%C3%A9%2C_Paris_10_December_2016_01.jpg",
+        "alt": "Façade monumentale du Bon Marché Rive Gauche (Louis-Charles Boileau + Gustave Eiffel, 1872-1887), premier grand magasin moderne au monde — à 2 min de la station Sèvres - Babylone",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Le_Bon_March%C3%A9,_Paris_10_December_2016_01.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/sevres-babylone/sevres-babylone-400.avif",
+                "800": "/assets/img/stations/sevres-babylone/sevres-babylone-800.avif",
+                "1200": "/assets/img/stations/sevres-babylone/sevres-babylone-1200.avif",
+                "1600": "/assets/img/stations/sevres-babylone/sevres-babylone-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/sevres-babylone/sevres-babylone-400.webp",
+                "800": "/assets/img/stations/sevres-babylone/sevres-babylone-800.webp",
+                "1200": "/assets/img/stations/sevres-babylone/sevres-babylone-1200.webp",
+                "1600": "/assets/img/stations/sevres-babylone/sevres-babylone-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/sevres-babylone/sevres-babylone-400.jpg",
+                "800": "/assets/img/stations/sevres-babylone/sevres-babylone-800.jpg",
+                "1200": "/assets/img/stations/sevres-babylone/sevres-babylone-1200.jpg",
+                "1600": "/assets/img/stations/sevres-babylone/sevres-babylone-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur les 2 lignes (M10 et M12). Pas d'ascenseurs vers les quais. Pour un trajet PMR vers Le Bon Marché ou Lutetia, utiliser les bus 63, 70, 84 ou 87 (planchers bas) ou taxi/VTC."
+    }
+}
