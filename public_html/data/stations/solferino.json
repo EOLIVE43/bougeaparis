@@ -1,0 +1,580 @@
+{
+    "published": true,
+    "slug": "solferino",
+    "name": "Solférino",
+    "name_full": "Solférino (Métro 12)",
+    "arrondissement": "7e (Paris)",
+    "address": "Rue de Solférino / Boulevard Saint-Germain, 75007 Paris",
+    "latitude": 48.858681,
+    "longitude": 2.323244,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Solférino station",
+        "es": "Estación Solférino"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "63",
+            "68",
+            "69",
+            "83",
+            "84",
+            "87",
+            "94"
+        ],
+        "nocturne": [
+            "N02"
+        ],
+        "regional": [
+            "73"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 6,
+            "nearby_count": 21
+        }
+    },
+    "seo": {
+        "description": "Station Solférino : M12 dans le 7e arrondissement, gare du Musée d'Orsay (1986), Assemblée nationale, Palais de la Légion d'Honneur, station Nord-Sud d'origine."
+    },
+    "hero": {
+        "tagline": "Le Musée d'Orsay et la rive gauche institutionnelle",
+        "description": "Au cœur du <strong>7e arrondissement</strong>, station emblématique du <strong>réseau Nord-Sud d'origine</strong>, Solférino ouvre le <strong>5 novembre 1910</strong>. Son nom rappelle la <strong>bataille de Solférino (24 juin 1859)</strong>, victoire franco-sarde sur les Autrichiens. À <strong>50 mètres</strong>, le <strong>Musée d'Orsay</strong> — ancienne gare d'Orsay (Victor Laloux, 1900) reconvertie en <strong>musée d'art du XIXᵉ siècle en 1986</strong>, abritant la plus grande collection mondiale d'impressionnisme. Station Nord-Sud unique en M12 ayant conservé son <strong>décor céramique d'origine</strong> intact."
+    },
+    "adjacent_stations": {
+        "metro-12": {
+            "previous": {
+                "name": "Assemblée Nationale",
+                "slug": "assemblee-nationale",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Rue du Bac",
+                "slug": "rue-du-bac",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Solférino</strong> est située dans le <strong>7e arrondissement de Paris</strong>, sous le <strong>boulevard Saint-Germain</strong> à l'angle de la <strong>rue de Solférino</strong>. Elle est desservie par la <strong>ligne 12 du métro</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers), entre <strong>Assemblée Nationale</strong> (1 station vers le sud-ouest) et <strong>Rue du Bac</strong> (1 station vers le nord-est). Ouverte le <strong>5 novembre 1910</strong> par la <strong>Société du Chemin de fer Électrique Souterrain Nord-Sud de Paris</strong> (compagnie Nord-Sud) — la ligne A devient officiellement la ligne 12 le <strong>27 mars 1931</strong> après absorption par la CMP.",
+        "Particularité architecturale notable : Solférino est l'une des <strong>deux seules stations de la ligne 12</strong> à avoir <strong>conservé intégralement son décor céramique d'origine Nord-Sud</strong> (l'autre étant Concorde). Les murs sont recouverts du <strong>carrelage blanc bombé</strong> caractéristique et des <strong>frises décoratives polychromes</strong> avec mosaïques en lettres bleu marine. Ce décor reflète l'identité commerciale propre à la compagnie Nord-Sud, qui voulait se distinguer du décor utilitaire de sa rivale CMP. Depuis <strong>1974</strong>, la station porte le sous-titre <strong>« Musée d'Orsay »</strong>, suite à l'ouverture imminente du musée (initialement « Solférino - Gare d'Orsay »).",
+        "À <strong>50 mètres</strong> de la station se trouve le <strong>Musée d'Orsay</strong>, l'un des <strong>musées les plus visités au monde</strong> (3,2 millions de visiteurs en 2022). Installé dans l'ancienne <strong>gare d'Orsay</strong> construite par <strong>Victor Laloux</strong> pour l'Exposition universelle de 1900, le musée présente la plus grande collection mondiale d'<strong>art impressionniste</strong> et <strong>post-impressionniste</strong> (Monet, Renoir, Van Gogh, Cézanne, Manet, Degas). La gare désaffectée en 1939 fut transformée en musée par <strong>Gae Aulenti</strong> et inaugurée le <strong>1ᵉʳ décembre 1986</strong> par François Mitterrand. Autour de la station : <strong>Assemblée nationale</strong> (Palais Bourbon, 200 m), <strong>Palais de la Légion d'honneur</strong> (100 m), <strong>Basilique Sainte-Clotilde</strong> (300 m)."
+    ],
+    "history": {
+        "title": "1910 : la ligne A Nord-Sud sous le 7e arrondissement",
+        "paragraphs": [
+            "La station <strong>Solférino</strong> est inaugurée le <strong>5 novembre 1910</strong>, lors de l'ouverture du tronçon initial de la <strong>ligne A</strong> de la compagnie <strong>Nord-Sud</strong>, reliant alors <strong>Porte de Versailles</strong> à <strong>Notre-Dame-de-Lorette</strong>. La compagnie Nord-Sud (officiellement <strong>Société du Chemin de fer Électrique Souterrain Nord-Sud de Paris</strong>) est créée en <strong>1902</strong> pour concurrencer la CMP (Compagnie du Chemin de fer Métropolitain) et exploiter des lignes différentes. Solférino fait partie du <strong>premier tronçon Nord-Sud livré</strong>.",
+            "Le <strong>1ᵉʳ janvier 1930</strong>, la compagnie Nord-Sud, en difficulté financière, est <strong>absorbée par la CMP</strong>. La <strong>ligne A devient officiellement la ligne 12</strong> le <strong>27 mars 1931</strong>. Solférino conserve néanmoins son <strong>décor céramique d'origine</strong> — particularité qui en fait aujourd'hui (avec Concorde) l'une des seules stations de la M12 à témoigner du <strong>style Nord-Sud original</strong> : carrelage blanc bombé, frises décoratives polychromes, mosaïques en lettres bleu marine encadrant le nom de la station.",
+            "Le nom <strong>Solférino</strong> vient de la <strong>rue de Solférino</strong> située au-dessus de la station. Cette rue commémore la <strong>bataille de Solférino</strong> livrée le <strong>24 juin 1859</strong> dans le nord de l'Italie (Lombardie) entre l'armée franco-sarde menée par <strong>Napoléon III</strong> et l'armée autrichienne. <strong>Victoire décisive</strong> qui accéléra l'<strong>unification italienne</strong> sous la Maison de Savoie. Le carnage de la bataille (40 000 victimes) inspira au Suisse <strong>Henry Dunant</strong> la fondation de la <strong>Croix-Rouge internationale</strong> en 1863.",
+            "Depuis <strong>1974</strong>, en perspective de l'ouverture du futur musée, la station porte le sous-titre <em>« Solférino - Gare d'Orsay »</em>. Ce sous-titre devient <strong>« Musée d'Orsay »</strong> à partir de <strong>1986</strong>. Le <strong>Musée d'Orsay</strong> est inauguré le <strong>1ᵉʳ décembre 1986</strong> par <strong>François Mitterrand</strong>, après une <strong>reconversion</strong> majeure de l'ancienne gare d'Orsay (architecte Victor Laloux, 1898-1900, inaugurée le 14 juillet 1900 pour l'Exposition universelle). La gare était devenue trop courte pour les trains modernes et avait cessé son service de grandes lignes en 1939. La <strong>reconversion en musée</strong> est confiée à <strong>Gae Aulenti</strong> (architecte italienne, 1980-1986) qui conserve le <strong>grand hall</strong>, la <strong>nef centrale</strong> et la <strong>grande horloge en verre</strong> (devenue icône photographique mondiale)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Solférino ?",
+            "answer": "Une seule ligne : la <strong>M12</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers), entre les stations <strong>Assemblée Nationale</strong> (1 station vers le sud-ouest) et <strong>Rue du Bac</strong> (1 station vers le nord-est). Aucune correspondance RER directe. Pour le RER C (gare Musée d'Orsay), sortir et marcher 200 m vers la Seine. Bus 24, 63, 68, 73, 83, 84, 94 dans les environs."
+        },
+        {
+            "question": "Comment rejoindre le Musée d'Orsay depuis Solférino ?",
+            "answer": "<strong>3 minutes à pied</strong> : sortir par la <strong>sortie 2 (rue de Bellechasse)</strong> et descendre vers la Seine sur 200 mètres. L'entrée principale du musée se trouve <strong>1 rue de la Légion d'Honneur</strong>, à l'angle du quai Anatole-France. Solférino est officiellement la <strong>station métro du Musée d'Orsay</strong> (sous-titre depuis 1986). Conseil : réservez vos billets en ligne — files d'attente importantes."
+        },
+        {
+            "question": "Pourquoi le décor de la station est-il différent des autres ?",
+            "answer": "Parce que Solférino fait partie du <strong>réseau Nord-Sud d'origine</strong> : la compagnie privée Nord-Sud, créée en 1902 pour concurrencer la CMP, voulait se distinguer par un <strong>décor commercial soigné</strong>. Carrelage <strong>blanc bombé</strong>, <strong>frises polychromes</strong> à motifs géométriques, <strong>mosaïques en lettres bleu marine</strong> pour le nom — un style propre à la Nord-Sud. Après l'absorption de la Nord-Sud par la CMP en 1930, la plupart des stations ex-Nord-Sud ont vu leur décor modifié. Solférino et Concorde sont les <strong>deux seules stations M12</strong> à avoir conservé ce décor intact (préservation patrimoniale)."
+        },
+        {
+            "question": "D'où vient le nom Solférino ?",
+            "answer": "De la <strong>rue de Solférino</strong> qui passe au-dessus de la station. Cette rue commémore la <strong>bataille de Solférino</strong> livrée le <strong>24 juin 1859</strong> en Lombardie (Italie du nord) entre l'armée franco-sarde de <strong>Napoléon III</strong> et l'armée autrichienne. Victoire décisive qui accéléra l'<strong>unification italienne</strong>. C'est aussi à la suite des horreurs de cette bataille (40 000 victimes) que le Suisse <strong>Henry Dunant</strong> fonda la <strong>Croix-Rouge internationale</strong> en 1863."
+        },
+        {
+            "question": "Quels autres lieux célèbres autour de Solférino ?",
+            "answer": "Le quartier concentre les <strong>institutions républicaines</strong>. À moins de 5 min à pied : <strong>Assemblée nationale</strong> (Palais Bourbon, siège de l'Assemblée, 200 m), <strong>Palais de la Légion d'honneur</strong> (Hôtel de Salm, 100 m), <strong>Basilique Sainte-Clotilde</strong> (300 m, néogothique 1857), <strong>Hôtel Matignon</strong> (résidence du Premier ministre, à 10 min), <strong>Esplanade des Invalides</strong> (10 min)."
+        },
+        {
+            "question": "La station Solférino est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais. Pour un trajet PMR vers le Musée d'Orsay, utiliser le <strong>bus 24, 63 ou 73</strong> (planchers bas), le <strong>RER C station Musée d'Orsay</strong> ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la M12 à Solférino ?",
+            "answer": "La <strong>M12</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien N02, N12, N13 desservent le quartier (boulevard Saint-Germain)."
+        },
+        {
+            "question": "Combien de personnes utilisent la station Solférino ?",
+            "answer": "Environ <strong>2,9 millions d'entrants en 2021</strong>, soit le <strong>104e rang</strong> du réseau métro RATP. Trafic significatif lié à la fréquentation du Musée d'Orsay et aux administrations du 7e arrondissement (ministères, Assemblée nationale)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Musée d'Orsay</strong> à 3 min — réserver les billets en ligne pour éviter les files (entrée 1 rue de la Légion d'Honneur).",
+        "<strong>Décor Nord-Sud intact</strong> : observer le carrelage blanc bombé et les frises mosaïque au nom de la station.",
+        "Pour l'<strong>Assemblée nationale</strong> : sortie 3 (rue Saint-Dominique) puis 5 min à pied vers le Palais Bourbon.",
+        "Quartier ministériel : sécurité renforcée, vigilance objets oubliés.",
+        "RER C station Musée d'Orsay à 5 min — utile pour Versailles ou Saint-Michel - Notre-Dame.",
+        "Sortie 2 (Bellechasse) la plus directe pour le Musée d'Orsay."
+    ],
+    "trivia": [
+        {
+            "icon": "🎨",
+            "title": "Musée d'Orsay (1986) — gare 1900 reconvertie, impressionnisme mondial",
+            "content": "Le <strong>Musée d'Orsay</strong>, à 50 m de la station, est installé dans l'ancienne <strong>gare d'Orsay</strong> conçue par <strong>Victor Laloux</strong> et inaugurée le <strong>14 juillet 1900</strong> pour l'Exposition universelle. Désaffectée en 1939 (quais trop courts pour les trains modernes), elle fut <strong>reconvertie en musée par Gae Aulenti</strong> (architecte italienne) entre 1980 et 1986. Inauguré le <strong>1ᵉʳ décembre 1986</strong> par François Mitterrand. Abrite la <strong>plus grande collection mondiale d'art impressionniste</strong> et post-impressionniste (Monet, Renoir, Van Gogh, Cézanne, Manet, Degas, Gauguin). <strong>3,2 millions de visiteurs en 2022</strong>. La <strong>grande horloge en verre</strong> du hall central est devenue une icône photographique mondiale."
+        },
+        {
+            "icon": "🚇",
+            "title": "Décor Nord-Sud d'origine conservé — unique sur la M12 (avec Concorde)",
+            "content": "Solférino est l'une des <strong>deux seules stations de la M12</strong> (avec <strong>Concorde</strong>) à avoir conservé son <strong>décor céramique Nord-Sud d'origine</strong> intégralement intact depuis 1910. <strong>Carrelage blanc bombé</strong>, <strong>frises polychromes à motifs géométriques</strong> et <strong>mosaïques en lettres bleu marine</strong> encadrant le nom de la station — style propre à la compagnie Nord-Sud qui voulait se distinguer commercialement de sa rivale CMP. Après l'absorption en 1930, la plupart des stations Nord-Sud ont été modifiées. Préservation patrimoniale unique."
+        },
+        {
+            "icon": "⚔️",
+            "title": "Bataille de Solférino (1859) — origine de la Croix-Rouge",
+            "content": "Le nom de la station vient de la <strong>bataille de Solférino</strong>, livrée le <strong>24 juin 1859</strong> en Lombardie entre l'armée franco-sarde menée par <strong>Napoléon III</strong> et l'armée autrichienne de François-Joseph. <strong>Victoire décisive</strong> qui accéléra l'<strong>unification italienne</strong> sous la Maison de Savoie. <strong>40 000 victimes</strong> (morts et blessés). Le Suisse <strong>Henry Dunant</strong>, témoin du carnage, fonda en <strong>1863</strong> la <strong>Croix-Rouge internationale</strong> pour secourir les blessés de guerre — événement à l'origine du droit humanitaire moderne (Conventions de Genève)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée d'Orsay",
+            "destination_slug": "musee-dorsay",
+            "destination_full_name": "Solférino → Musée d'Orsay",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Bellechasse (~250 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-musee-dorsay/"
+        },
+        {
+            "destination_name": "Assemblée nationale",
+            "destination_slug": "assemblee-nationale",
+            "destination_full_name": "Solférino → Assemblée nationale",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Saint-Dominique (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-assemblee-nationale/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M12 + M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Solférino → Champs-Élysées",
+            "lines_used": [
+                "M12",
+                "M1"
+            ],
+            "lines_label": "M12 jusqu'à Concorde + M1 direction La Défense",
+            "duration_minutes": 12,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M12 + M8",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Solférino → Tour Eiffel",
+            "lines_used": [
+                "M12",
+                "M8"
+            ],
+            "lines_label": "M12 jusqu'à Concorde + M8 jusqu'à École Militaire",
+            "duration_minutes": 18,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Sacré-Cœur Montmartre via M12",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Solférino → Sacré-Cœur",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers jusqu'à Pigalle ou Abbesses",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés via M12",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Solférino → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Issy (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-saint-germain/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M12 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Solférino → CDG",
+            "lines_used": [
+                "M12",
+                "RER B"
+            ],
+            "lines_label": "M12 jusqu'à correspondance Gare du Nord + RER B direct",
+            "duration_minutes": 50,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-cdg/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via RER C",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Solférino → Notre-Dame",
+            "lines_used": [
+                "à pied",
+                "RER C"
+            ],
+            "lines_label": "RER C station Musée d'Orsay jusqu'à Saint-Michel - Notre-Dame",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-solferino/solferino-vers-notre-dame/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q23402",
+            "name": "musée d'Orsay",
+            "category": "musée",
+            "description": "Le musée d'Orsay est un musée parisien situé dans le 7e arrondissement, le long de la rive gauche de la Seine, en surplomb de la promenade Édouard-Glissant.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20d%27Orsay%20%2849570190081%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay",
+            "latitude": 48.859972,
+            "longitude": 2.326527,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Bellechasse (Musée d'Orsay)",
+                "distance_m": 293,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q189503",
+            "name": "place de la Concorde",
+            "category": "place",
+            "description": "La place de la Concorde, qui s’étend sur 7,56 hectares, est la plus grande place de Paris. Elle est située dans le 8e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20Concorde%20from%20the%20Eiffel%20Tower%2C%20Paris%20April%202011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Concorde",
+            "latitude": 48.865633,
+            "longitude": 2.321236,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 767,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q234364",
+            "name": "palais des Tuileries",
+            "category": "palais",
+            "description": "Le palais des Tuileries est un ancien palais parisien, aujourd'hui détruit, dont la construction commença en 1564 sous l'impulsion de Catherine de Médicis, à l'emplacement occupé auparavant par l'une…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuileries%20jardin%201867.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_des_Tuileries",
+            "latitude": 48.862222,
+            "longitude": 2.331111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Bellechasse (Musée d'Orsay)",
+                "distance_m": 709,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q818517",
+            "name": "jardin des Tuileries",
+            "category": "jardin",
+            "description": "Le jardin des Tuileries, parfois appelé jardins des Tuileries au pluriel, est un parc grillagé parisien du 1er arrondissement créé au XVIe siècle, à l'emplacement d'anciennes tuileries qui lui ont…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Roue%20de%20Paris%20-%20Louvre%20et%20Jardins%20des%20Tuileries.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Tuileries",
+            "latitude": 48.863889,
+            "longitude": 2.326111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Bellechasse (Musée d'Orsay)",
+                "distance_m": 618,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q273593",
+            "name": "École nationale supérieure des beaux-arts",
+            "category": "site notable",
+            "description": "L’École nationale supérieure des beaux-arts de Paris (ENSBA), communément dénommée Beaux-Arts de Paris, est une école d'art française fondée en 1817.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%206%20-%20ENSBA%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaux-Arts_de_Paris",
+            "latitude": 48.856806,
+            "longitude": 2.333278,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Saint-Dominique",
+                "distance_m": 742,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q936633",
+            "name": "palais Bourbon",
+            "category": "palais",
+            "description": "Le palais Bourbon est le bâtiment qui abrite depuis 1879 l'Assemblée nationale française, situé sur le quai d'Orsay dans le 7e arrondissement de Paris, dans l’enfilade du pont de la Concorde et de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fa%C3%A7ade%20Palais%20Bourbon%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Bourbon",
+            "latitude": 48.862072,
+            "longitude": 2.318681,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 457,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q631104",
+            "name": "arc de triomphe du Carrousel",
+            "category": "monument",
+            "description": "L’arc de triomphe du Carrousel est un monument parisien inauguré le 15 août 1808 et situé place du Carrousel, dans le 1er arrondissement de Paris, à l'ouest du musée du Louvre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Jardin%20des%20Tuileries%20-%20Arc%20de%20Triomphe%20du%20Carrousel%20-%20PA00085992%20-%20003.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_du_Carrousel",
+            "latitude": 48.861667,
+            "longitude": 2.332778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Bellechasse (Musée d'Orsay)",
+                "distance_m": 786,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q650519",
+            "name": "musée Rodin",
+            "category": "musée",
+            "description": "Le musée Rodin est un musée assurant depuis 1919 la conservation et la diffusion de l’œuvre d’Auguste Rodin (1840-1917).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27h%C3%B4tel%20Biron%20%28mus%C3%A9e%20Rodin%29%20%C3%A0%20Paris%2C%2013%20juin%202021%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Rodin",
+            "latitude": 48.855356,
+            "longitude": 2.315819,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 615,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q726781",
+            "name": "musée de l'Orangerie",
+            "category": "musée",
+            "description": "Le musée de l'Orangerie est un musée national français de peintures impressionnistes et postimpressionnistes, situé à Paris, plus précisément dans le jardin des Tuileries, à l'extrémité occidentale…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011-12-Musee%20de%20lorangerie.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie",
+            "latitude": 48.863845,
+            "longitude": 2.322538,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 563,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q912192",
+            "name": "hôtel de Matignon",
+            "category": "site notable",
+            "description": "L'hôtel de Matignon, ou simplement Matignon, est un hôtel particulier situé au no 57, rue de Varenne, dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20%40%20Jardin%20de%20l%27H%C3%B4tel%20Matignon%20%40%20Paris%20%2834261927513%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Matignon",
+            "latitude": 48.854444,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Saint-Dominique",
+                "distance_m": 434,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1996069",
+            "name": "musée de l'Armée",
+            "category": "musée",
+            "description": "Le musée de l'Armée est un musée national français situé dans l'hôtel national des Invalides dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27Arm%C3%A9e%2C%20Paris%204%20May%202019.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Arm%C3%A9e_(Paris)",
+            "latitude": 48.856944,
+            "longitude": 2.312778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 734,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q644398",
+            "name": "pont de la Concorde",
+            "category": "pont",
+            "description": "Le pont de la Concorde est un pont de Paris qui franchit la Seine entre le quai des Tuileries et le quai d'Orsay.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20la%20Concorde%202009-06-02%20Paris%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_la_Concorde",
+            "latitude": 48.86333,
+            "longitude": 2.31944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jacques Bainville",
+                "distance_m": 551,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "pl. Jacques Bainville",
+            "address_full": "2 Place Jacques Bainville 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.85878,
+            "longitude": 2.322419,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Bellechasse (Musée d'Orsay)",
+            "address_full": "258 Boulevard Saint-Germain 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.85872,
+            "longitude": 2.323005,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Saint-Dominique",
+            "address_full": "5 Rue Saint-Dominique 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.857994,
+            "longitude": 2.323301,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "boulevard Saint-Germain"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Boulevard Saint-Germain + Musée d'Orsay",
+            "details": "Cafés et restaurants sur le boulevard Saint-Germain. Café Campana au musée d'Orsay (étage horloge). Quartier institutionnel.",
+            "secondary": "Rue du Bac et Saint-Germain-des-Prés à 5 min pour cafés littéraires et boutiques."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier institutionnel : sécurité renforcée 24/7 (ministères, Assemblée nationale).",
+            "Vigilance objets oubliés sur les quais et dans les rames (zone surveillée).",
+            "Affluence importante en sortie Musée d'Orsay le week-end.",
+            "Soirée tardive : quartier calme, peu d'incidents historiques."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature institutionnelle du 7e arrondissement."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Front_view_of_the_Mus%C3%A9e_d%27Orsay.jpg",
+        "alt": "Façade principale du Musée d'Orsay (ancienne gare d'Orsay 1900, reconvertie 1986) — à 3 min à pied de la station Solférino",
+        "width": 4000,
+        "height": 3000,
+        "credit": {
+            "author": "DiscoA340",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Front_view_of_the_Mus%C3%A9e_d%27Orsay.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/solferino/solferino-400.avif",
+                "800": "/assets/img/stations/solferino/solferino-800.avif",
+                "1200": "/assets/img/stations/solferino/solferino-1200.avif",
+                "1600": "/assets/img/stations/solferino/solferino-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/solferino/solferino-400.webp",
+                "800": "/assets/img/stations/solferino/solferino-800.webp",
+                "1200": "/assets/img/stations/solferino/solferino-1200.webp",
+                "1600": "/assets/img/stations/solferino/solferino-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/solferino/solferino-400.jpg",
+                "800": "/assets/img/stations/solferino/solferino-800.jpg",
+                "1200": "/assets/img/stations/solferino/solferino-1200.jpg",
+                "1600": "/assets/img/stations/solferino/solferino-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M12. Pour un trajet PMR vers le Musée d'Orsay, utiliser le bus 24/63/73 ou le RER C station Musée d'Orsay (accessible)."
+    }
+}
