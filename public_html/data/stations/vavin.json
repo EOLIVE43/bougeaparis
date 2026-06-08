@@ -1,0 +1,586 @@
+{
+    "published": true,
+    "slug": "vavin",
+    "name": "Vavin",
+    "name_full": "Vavin (Métro 4)",
+    "arrondissement": "6e / 14e (Paris)",
+    "address": "Carrefour Vavin (boulevard du Montparnasse / boulevard Raspail), 75006 Paris",
+    "latitude": 48.841888,
+    "longitude": 2.32926,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Vavin station",
+        "es": "Estación Vavin"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "58",
+            "68",
+            "82",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 8,
+            "nearby_count": 6
+        }
+    },
+    "seo": {
+        "description": "Station Vavin : M4 au carrefour mythique de Montparnasse, cœur du Paris artistique 1920-1930 (La Coupole, Le Dôme, La Rotonde, Le Select), 6e/14e arr."
+    },
+    "hero": {
+        "tagline": "Le carrefour mythique des artistes des années folles",
+        "description": "Au cœur du <strong>Montparnasse historique</strong>, à la frontière du <strong>6e et du 14e arrondissement</strong>, Vavin ouvre le <strong>9 janvier 1910</strong> sur la M4 d'origine. Le <strong>Carrefour Vavin</strong> est <strong>LE haut lieu de l'effervescence artistique des Années folles</strong> (1920-1930) : <strong>Picasso, Modigliani, Hemingway, Foujita, Aragon, Kiki de Montparnasse, Trotski et Lénine</strong> fréquentaient ses <strong>4 cafés mythiques</strong> — <strong>Le Dôme</strong> (1898), <strong>La Rotonde</strong> (1903), <strong>Le Select</strong> (1923) et <strong>La Coupole</strong> (1927, brasserie <strong>Art déco</strong> emblématique). Hommage à <strong>Alexis Vavin</strong> (1792-1863), avocat parisien qui œuvra pour le percement du boulevard."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Raspail",
+                "slug": "raspail",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Gare Montparnasse",
+                "slug": "gare-montparnasse",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Vavin</strong> est située sous le <strong>boulevard du Montparnasse</strong>, à l'angle de la <strong>rue Vavin</strong> et du <strong>boulevard Raspail</strong>, à la frontière du <strong>6e et du 14e arrondissement</strong>. Elle est desservie par la <strong>ligne 4 du métro</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), entre <strong>Raspail</strong> (1 station vers le sud) et <strong>Gare Montparnasse</strong> (1 station vers le nord). Ouverte le <strong>9 janvier 1910</strong> lors de l'inauguration du prolongement de la M4 sous la Seine de Châtelet vers Porte d'Orléans.",
+        "Le <strong>Carrefour Vavin</strong> est l'un des <strong>lieux les plus mythiques de l'histoire artistique parisienne</strong>. Au tournant du XXᵉ siècle, Montparnasse devient le <strong>nouveau quartier des artistes</strong> (après Montmartre), grâce à des loyers plus abordables et à une explosion de brasseries. Picasso s'y installe en 1912, suivi par <strong>Modigliani</strong>, <strong>Soutine</strong>, <strong>Brancusi</strong>, <strong>Foujita</strong>. Les exilés russes de la révolution de 1917 (<strong>Trotski</strong>, <strong>Lénine</strong> au moment de leur passage parisien) fréquentent les cafés. Dans les années 1920, la <strong>« génération perdue »</strong> américaine — <strong>Hemingway</strong>, <strong>Fitzgerald</strong>, <strong>Gertrude Stein</strong>, <strong>Ezra Pound</strong> — s'y mélange aux artistes français : <strong>Aragon</strong>, <strong>Cocteau</strong>, <strong>Breton</strong>.",
+        "Les <strong>4 cafés mythiques du Carrefour Vavin</strong> sont encore tous en activité aujourd'hui : <strong>Le Dôme</strong> (1898, 108 boulevard du Montparnasse — repère de Picasso et Apollinaire), <strong>La Rotonde</strong> (1903, 105 boulevard du Montparnasse — Trotski et Lénine y allaient), <strong>Le Select</strong> (1923, 99 boulevard du Montparnasse — Fitzgerald, Hemingway), et surtout <strong>La Coupole</strong> (inaugurée le 20 décembre 1927, 102 boulevard du Montparnasse). La Coupole est une <strong>brasserie Art déco monumentale</strong> de <strong>1 000 places</strong>, avec ses <strong>32 piliers peints</strong> par des artistes contemporains (Foujita, Léger). Classée Monument Historique en <strong>1988</strong>, elle reste l'un des plus grands restaurants de Paris."
+    ],
+    "history": {
+        "title": "1910 : la M4 sous Montparnasse, et la naissance d'un mythe",
+        "paragraphs": [
+            "La station <strong>Vavin</strong> est inaugurée le <strong>9 janvier 1910</strong>, lors de l'ouverture du prolongement sud de la <strong>ligne 4</strong> sous la Seine, depuis Châtelet jusqu'à <strong>Porte d'Orléans</strong>. La M4 est la <strong>première ligne à traverser la Seine en tunnel</strong> (sous-fluvial), prouesse d'ingénierie inaugurée 5 jours plus tôt entre Châtelet et Raspail. Vavin fait partie du <strong>tronçon initial</strong> dans le 6e arrondissement.",
+            "Le nom <strong>Vavin</strong> rend hommage à <strong>Alexis Vavin</strong> (1792-1863), <strong>avocat parisien</strong> et <strong>adjoint au maire</strong> du 11e arrondissement (ancien découpage). Il fut le principal artisan du <strong>percement du boulevard du Montparnasse</strong> dans les années 1850-1860, voie qui structure aujourd'hui le quartier. La rue Vavin, perpendiculaire au boulevard, porte aussi son nom — d'où le nom de la station.",
+            "Mais c'est le <strong>Carrefour Vavin</strong> qui fait l'identité culturelle du lieu. À partir des années 1900, <strong>Montparnasse remplace Montmartre</strong> comme quartier des artistes. Loyers modestes, atmosphère bohême, intense vie nocturne, et 4 cafés-brasseries au carrefour qui deviennent des QG : <strong>Le Dôme</strong> (1898), <strong>La Rotonde</strong> (1903), <strong>Le Select</strong> (1923) et <strong>La Coupole</strong> (1927). Picasso emménage dans le quartier en 1912 et fréquente Le Dôme. Modigliani peint ses portraits à La Rotonde. Foujita, Soutine, Brancusi sont des piliers du Select et de La Rotonde. Les Russes en exil (Trotski en 1914-1915, Lénine lors de ses séjours parisiens d'avant-guerre) viennent boire un café à La Rotonde — la patronne Madame Rosalie défendait farouchement Modigliani contre les huissiers.",
+            "Les <strong>Années folles</strong> (1920-1929) consacrent Vavin comme <strong>centre mondial de la vie artistique et littéraire</strong>. La « <strong>génération perdue</strong> » américaine débarque : <strong>Ernest Hemingway</strong> (qui décrira ces années dans <em>Paris est une fête</em>), <strong>F. Scott Fitzgerald</strong>, <strong>Gertrude Stein</strong>, <strong>Ezra Pound</strong>, <strong>Henry Miller</strong>. Côté français : <strong>Louis Aragon</strong>, <strong>André Breton</strong>, <strong>Jean Cocteau</strong>, <strong>Paul Éluard</strong>. <strong>Kiki de Montparnasse</strong> (Alice Prin, 1901-1953), modèle et chanteuse, règne sur le quartier — surnommée « la Reine de Montparnasse ». L'inauguration de <strong>La Coupole</strong> le <strong>20 décembre 1927</strong> en présence de tout-Paris artistique est l'événement d'apothéose : la <strong>brasserie Art déco de 1 000 places</strong>, conçue par les architectes <strong>Le Bouc, Barillet, Tessier et Solvet</strong>, devient instantanément un mythe. Ses <strong>32 piliers peints</strong> par des artistes invités (Foujita, Léger, Othon Friesz) sont classés en 1988.",
+            "Après la <strong>crise de 1929</strong> et la <strong>guerre</strong>, Montparnasse perd sa centralité culturelle au profit de Saint-Germain-des-Prés (existentialistes). Les 4 cafés restent ouverts, devenant <strong>lieux de mémoire</strong>. Aujourd'hui encore, le Carrefour Vavin est un <strong>pèlerinage culturel</strong> incontournable pour les amateurs des Années folles, des écrivains de la génération perdue et de l'École de Paris."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Vavin ?",
+            "answer": "Une seule ligne : la <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), entre <strong>Raspail</strong> (1 station au sud) et <strong>Gare Montparnasse</strong> (1 station au nord, correspondances M6/M12/M13). Aucune correspondance RER directe. Bus 58, 68, 82, 91 desservent les boulevards alentour."
+        },
+        {
+            "question": "Pourquoi le Carrefour Vavin est-il célèbre ?",
+            "answer": "C'est <strong>LE haut lieu de l'effervescence artistique des Années folles (1920-1930)</strong>. Au carrefour : <strong>4 cafés mythiques</strong> — <strong>Le Dôme</strong> (1898), <strong>La Rotonde</strong> (1903), <strong>Le Select</strong> (1923) et <strong>La Coupole</strong> (1927) — fréquentés par <strong>Picasso, Modigliani, Hemingway, Fitzgerald, Foujita, Aragon, Cocteau, Breton, Kiki de Montparnasse, Trotski, Lénine</strong>. Montparnasse a remplacé Montmartre comme quartier des artistes au début du XXᵉ siècle."
+        },
+        {
+            "question": "Les 4 cafés mythiques sont-ils toujours ouverts ?",
+            "answer": "<strong>Oui, tous les 4 sont encore en activité</strong> aujourd'hui. <strong>Le Dôme</strong> (108 bd du Montparnasse, restaurant fruits de mer haut de gamme), <strong>La Rotonde</strong> (105 bd du Montparnasse, brasserie classique), <strong>Le Select</strong> (99 bd du Montparnasse, café-bistrot), <strong>La Coupole</strong> (102 bd du Montparnasse, brasserie monumentale Art déco, 1 000 places). Tous sont des <strong>lieux de mémoire</strong> et de tourisme littéraire."
+        },
+        {
+            "question": "Qu'est-ce que La Coupole ?",
+            "answer": "La <strong>brasserie La Coupole</strong>, inaugurée le <strong>20 décembre 1927</strong> au 102 boulevard du Montparnasse, est l'un des chefs-d'œuvre du <strong>style Art déco parisien</strong>. <strong>Salle monumentale de 1 000 places</strong> avec <strong>32 piliers carrés peints</strong> par des artistes invités (Foujita, Léger, Othon Friesz). Conçue par les architectes <strong>Le Bouc, Barillet, Tessier et Solvet</strong> sur le terrain d'un ancien dépôt de charbon. Les piliers et le décor de la salle sont <strong>classés Monument Historique en 1988</strong>. Toujours en activité — l'une des plus grandes brasseries de Paris."
+        },
+        {
+            "question": "Qui est Alexis Vavin ?",
+            "answer": "<strong>Alexis Vavin</strong> (1792-1863) était un <strong>avocat parisien</strong> et <strong>adjoint au maire</strong> du 11e arrondissement (ancien découpage municipal). Principal artisan du <strong>percement du boulevard du Montparnasse</strong> dans les années 1850-1860, voie qui structure aujourd'hui le quartier. La <strong>rue Vavin</strong> (perpendiculaire au boulevard) porte aussi son nom — et de là, la station de métro construite en 1910."
+        },
+        {
+            "question": "Qui était Kiki de Montparnasse ?",
+            "answer": "<strong>Kiki de Montparnasse</strong> (de son vrai nom Alice Prin, 1901-1953) était la <strong>« Reine de Montparnasse »</strong> dans les années 1920. <strong>Modèle</strong> pour Modigliani, Soutine, Foujita, Kisling, Calder, et muse de <strong>Man Ray</strong> (avec qui elle vécut 6 ans). <strong>Chanteuse de cabaret</strong>, écrivaine (<em>Mémoires</em>, préfacés par Hemingway en 1929). Sa silhouette est immortalisée dans <em>Le Violon d'Ingres</em> (1924) de Man Ray. Incarnation absolue de l'esprit Montparnasse."
+        },
+        {
+            "question": "La station Vavin est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M4. Pour un trajet PMR vers le Carrefour Vavin, utiliser les <strong>bus 58 ou 91</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la M4 à Vavin ?",
+            "answer": "La <strong>M4 (automatisée depuis 2022)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe). La nuit, les Noctilien desservent le boulevard du Montparnasse (N01, N12, N13, N22)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>La Coupole</strong> à 1 min : brasserie Art déco 1927 emblématique, 1 000 places — réserver pour le dîner.",
+        "<strong>Le Dôme</strong>, <strong>La Rotonde</strong>, <strong>Le Select</strong> : tous au carrefour Vavin, à découvrir.",
+        "<strong>Musée Bourdelle</strong> (10 min) et <strong>Musée Zadkine</strong> (5 min) — ateliers d'artistes Montparnasse.",
+        "<strong>Cimetière du Montparnasse</strong> à 10 min — tombes de Beauvoir/Sartre, Baudelaire, Gainsbourg, etc.",
+        "Pour <strong>Saint-Germain-des-Prés</strong> : remonter le boulevard Raspail (15 min à pied).",
+        "Vigilance pickpockets standard aux abords des brasseries touristiques."
+    ],
+    "trivia": [
+        {
+            "icon": "🎨",
+            "title": "Carrefour Vavin (1920-1930) — capitale mondiale des artistes",
+            "content": "Au tournant du XXᵉ siècle, <strong>Montparnasse remplace Montmartre</strong> comme quartier des artistes. <strong>Picasso</strong> y emménage en 1912. Dans les années 1920, le <strong>Carrefour Vavin</strong> devient le <strong>centre mondial de la vie artistique et littéraire</strong> : <strong>Modigliani</strong>, <strong>Soutine</strong>, <strong>Brancusi</strong>, <strong>Foujita</strong>, <strong>Kiki de Montparnasse</strong> côtoient les Américains de la <em>génération perdue</em> — <strong>Hemingway</strong>, <strong>Fitzgerald</strong>, <strong>Gertrude Stein</strong>, <strong>Ezra Pound</strong> — et les Français : <strong>Aragon</strong>, <strong>Cocteau</strong>, <strong>Breton</strong>. Les exilés russes (<strong>Trotski</strong>, <strong>Lénine</strong>) y boivent des cafés. C'est l'âge d'or de l'<strong>École de Paris</strong>."
+        },
+        {
+            "icon": "🏛️",
+            "title": "La Coupole (1927) — brasserie Art déco monumentale 1 000 places",
+            "content": "Inaugurée le <strong>20 décembre 1927</strong> au 102 boulevard du Montparnasse, <strong>La Coupole</strong> est l'un des chefs-d'œuvre du <strong>style Art déco parisien</strong>. <strong>Salle monumentale de 1 000 places</strong> avec <strong>32 piliers carrés peints</strong> par des artistes invités (Foujita, Léger, Othon Friesz, Marie Vassilieff). Conçue par les architectes <strong>Le Bouc, Barillet, Tessier et Solvet</strong> sur le terrain d'un ancien dépôt de charbon. L'inauguration en présence de tout-Paris artistique fait événement. Les <strong>piliers peints et le décor de la salle</strong> sont <strong>classés Monument Historique en 1988</strong>. Encore en activité — la plus grande brasserie de Paris encore en service."
+        },
+        {
+            "icon": "☕",
+            "title": "Les 4 cafés mythiques — Le Dôme, La Rotonde, Le Select, La Coupole",
+            "content": "Les 4 cafés du Carrefour Vavin sont tous <strong>encore en activité</strong> aujourd'hui : <strong>Le Dôme</strong> (1898, 108 bd Montparnasse — Picasso, Apollinaire), <strong>La Rotonde</strong> (1903, 105 — Modigliani, Trotski, Lénine, Diego Rivera), <strong>Le Select</strong> (1923, 99 — Fitzgerald, Hemingway, Henry Miller), <strong>La Coupole</strong> (1927, 102 — apothéose Art déco). Chacun avait sa clientèle attitrée : <em>« La Rotonde, c'est pour discuter ; Le Dôme, c'est pour travailler ; Le Select, c'est pour boire »</em>, disait-on à l'époque. Tous restent des <strong>lieux de pèlerinage littéraire</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "La Coupole",
+            "destination_slug": "la-coupole",
+            "destination_full_name": "Vavin → La Coupole",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur le carrefour (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-la-coupole/"
+        },
+        {
+            "destination_name": "Gare Montparnasse via M4",
+            "destination_slug": "gare-montparnasse",
+            "destination_full_name": "Vavin → Gare Montparnasse",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-gare-montparnasse/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés via M4",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Vavin → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-saint-germain/"
+        },
+        {
+            "destination_name": "Cimetière du Montparnasse",
+            "destination_slug": "cimetiere-montparnasse",
+            "destination_full_name": "Vavin → Cimetière du Montparnasse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le boulevard Edgar Quinet (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-cimetiere/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via M4",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Vavin → Notre-Dame",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt jusqu'à Cité (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles via M4",
+            "destination_slug": "chatelet-les-halles",
+            "destination_full_name": "Vavin → Châtelet - Les Halles",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (6 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-chatelet/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M4 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Vavin → CDG",
+            "lines_used": [
+                "M4",
+                "RER B"
+            ],
+            "lines_label": "M4 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-cdg/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M4 + M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Vavin → Tour Eiffel",
+            "lines_used": [
+                "M4",
+                "M6"
+            ],
+            "lines_label": "M4 jusqu'à Montparnasse-Bienvenüe + M6 jusqu'à Bir-Hakeim (5 stations)",
+            "duration_minutes": 18,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-vavin/vavin-vers-tour-eiffel/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "La tour Montparnasse est le plus haut gratte-ciel de Paris intra-muros, situé dans le quartier Necker.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "3",
+                "name": "boulevard du Montparnasse (Le Dôme)",
+                "distance_m": 491,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1581237",
+            "name": "Comédie-Italienne",
+            "category": "théâtre",
+            "description": "Les termes Comédie-Italienne et Théâtre-Italien sont des noms qui ont été utilisés pour les pièces de théâtre de langue italienne jouées par de nombreuses troupes en France, notamment à Paris, depuis…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Com%C3%A9die%20Italienne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_italien_de_Paris",
+            "latitude": 48.84016,
+            "longitude": 2.323882,
+            "nearest_exit": {
+                "number": "3",
+                "name": "boulevard du Montparnasse (Le Dôme)",
+                "distance_m": 414,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2291298",
+            "name": "Port-Royal",
+            "category": "gare",
+            "description": "La gare de Port-Royal est une gare ferroviaire française de la ligne de Sceaux, située dans le 5e arrondissement de Paris, en limite des 6e et 14e arrondissements à proximité de l'ancienne abbaye de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER%20B-PortRoyal1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Port-Royal",
+            "latitude": 48.839444,
+            "longitude": 2.337222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Raspail",
+                "distance_m": 674,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Le musée du Montparnasse est un musée à Paris, ouvert de 1998 à 2013, villa Marie-Vassilieff.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Vavin",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2613771",
+            "name": "musée Zadkine",
+            "category": "musée",
+            "description": "Le musée Zadkine est un musée parisien consacré au sculpteur d'origine russe Ossip Zadkine (1890-1967) qui s'est établi à Paris en 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Zadkine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Zadkine",
+            "latitude": 48.843056,
+            "longitude": 2.334167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Raspail",
+                "distance_m": 384,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3076255",
+            "name": "fontaine des Quatre-Parties-du-Monde",
+            "category": "fontaine",
+            "description": "La fontaine des Quatre-Parties-du-Monde, ou fontaine de l’Observatoire, ou encore fontaine Carpeaux, est un monument parisien situé place Ernest-Denis, dans le jardin des Grands-Explorateurs…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/FontaineQuatrePartiesDuMonde02.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_des_Quatre-Parties-du-Monde",
+            "latitude": 48.841056,
+            "longitude": 2.336806,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Raspail",
+                "distance_m": 582,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q888776",
+            "name": "Bobino",
+            "category": "théâtre",
+            "description": "Bobino est, jusqu'à sa destruction en 1985, une salle de spectacles à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20Bobino.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bobino",
+            "latitude": 48.839689,
+            "longitude": 2.323589,
+            "nearest_exit": {
+                "number": "3",
+                "name": "boulevard du Montparnasse (Le Dôme)",
+                "distance_m": 461,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1441258",
+            "name": "La Closerie des Lilas",
+            "category": "site notable",
+            "description": "La Closerie des Lilas est un restaurant, une brasserie et un bar du quartier Notre-Dame-des-Champs dans le 6e arrondissement de Paris, établi à l'extrémité orientale du boulevard du Montparnasse, au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Closerie%20des%20Lilas%2C%20171%20boulevard%20du%20Montparnasse%2C%20Paris%206e%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Closerie_des_Lilas",
+            "latitude": 48.8401,
+            "longitude": 2.33604,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Raspail",
+                "distance_m": 564,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1263082",
+            "name": "jardin Atlantique",
+            "category": "jardin",
+            "description": "Le jardin Atlantique est un jardin parisien du quartier Necker du 15e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Atlantique%202010-04-23.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Atlantique",
+            "latitude": 48.8399,
+            "longitude": 2.319,
+            "nearest_exit": {
+                "number": "3",
+                "name": "boulevard du Montparnasse (Le Dôme)",
+                "distance_m": 751,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2820659",
+            "name": "abbaye de Port-Royal de Paris",
+            "category": "site notable",
+            "description": "L’abbaye de Port-Royal de Paris a été fondée au XVIIe siècle pour décongestionner la maison-mère située en l'abbaye de Port-Royal des Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cloitre%20de%20Port-Royal%20Paris%2C%20Cochin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Port-Royal_de_Paris",
+            "latitude": 48.838763,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Raspail",
+                "distance_m": 786,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3329213",
+            "name": "musée Hébert",
+            "category": "musée",
+            "description": "Le musée Hébert de Paris était un musée d'art monographique labellisé Musée de France crée grâce à l'initiative de René Patris-d'Uckermann, fils adoptif de Gabrielle Hébert et héritier en ligne…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20H%C3%A9bert%2C%2085%20rue%20du%20Cherche-Midi%2C%20Paris%206e%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_H%C3%A9bert_(Paris)",
+            "latitude": 48.84736,
+            "longitude": 2.32264,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Vavin",
+                "distance_m": 712,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1153474",
+            "name": "église Saint-Joseph-des-Carmes",
+            "category": "église",
+            "description": "L’église Saint-Joseph-des-Carmes est un édifice religieux catholique situé aux nos 70-72 de la rue de Vaugirard, dans le 6e arrondissement de Paris, au sein de l'Institut catholique de Paris et du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Joseph-des-Carmes%20%40%20Paris%20%2832367338804%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Joseph-des-Carmes",
+            "latitude": 48.848492,
+            "longitude": 2.330353,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Vavin",
+                "distance_m": 692,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Raspail",
+            "address_full": "105 Boulevard du Montparnasse 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.842251,
+            "longitude": 2.329065,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue Vavin",
+            "address_full": "101 Boulevard du Montparnasse 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.842366,
+            "longitude": 2.328723,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "boulevard du Montparnasse (Le Dôme)",
+            "address_full": "106 Boulevard du Montparnasse 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.842123,
+            "longitude": 2.328685,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "rue Delambre (La Coupole)",
+            "address_full": "108 Boulevard du Montparnasse 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.842052,
+            "longitude": 2.328849,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "boulevard du Montparnasse",
+                "boulevard Raspail"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Carrefour Vavin (Coupole, Dôme, Rotonde, Select)",
+            "details": "4 brasseries mythiques au carrefour. Restaurants, cafés et bars sur les boulevards. Quartier historique de la vie nocturne artistique.",
+            "secondary": "Rue Bréa, rue Delambre, rue Vavin : boutiques, librairies. Marché Edgar Quinet à 5 min."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée aux abords des brasseries touristiques (Coupole, Dôme).",
+            "Quartier sûr globalement (6e/14e résidentiels), surveillance habituelle des transports.",
+            "Soirée tardive : forte fréquentation des brasseries jusqu'à minuit.",
+            "Sortie 4 (Delambre) : zone calme la nuit."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique du carrefour."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/La_Coupole_-_Paris.JPG",
+        "alt": "Façade Art déco de la brasserie La Coupole (1927) au 102 boulevard du Montparnasse — chef-d'œuvre des Années folles, à 1 min de la station Vavin",
+        "width": 2499,
+        "height": 1874,
+        "credit": {
+            "author": "LPLT",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:La_Coupole_-_Paris.JPG",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/vavin/vavin-400.avif",
+                "800": "/assets/img/stations/vavin/vavin-800.avif",
+                "1200": "/assets/img/stations/vavin/vavin-1200.avif",
+                "1600": "/assets/img/stations/vavin/vavin-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/vavin/vavin-400.webp",
+                "800": "/assets/img/stations/vavin/vavin-800.webp",
+                "1200": "/assets/img/stations/vavin/vavin-1200.webp",
+                "1600": "/assets/img/stations/vavin/vavin-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/vavin/vavin-400.jpg",
+                "800": "/assets/img/stations/vavin/vavin-800.jpg",
+                "1200": "/assets/img/stations/vavin/vavin-1200.jpg",
+                "1600": "/assets/img/stations/vavin/vavin-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M4. Pour un trajet PMR vers le Carrefour Vavin, utiliser les bus 58 ou 91 (planchers bas) ou taxi/VTC."
+    }
+}
