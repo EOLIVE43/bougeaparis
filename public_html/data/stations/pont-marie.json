@@ -1,0 +1,568 @@
+{
+    "published": true,
+    "slug": "pont-marie",
+    "name": "Pont Marie",
+    "name_full": "Pont Marie - Cité des Arts (Métro 7)",
+    "arrondissement": "4e (Paris)",
+    "address": "Quai de l'Hôtel de Ville / rue de l'Hôtel de Ville, 75004 Paris",
+    "latitude": 48.853734,
+    "longitude": 2.356454,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Pont Marie station",
+        "es": "Estación Pont Marie"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "67",
+            "69",
+            "76",
+            "96"
+        ],
+        "nocturne": [
+            "N11",
+            "N16"
+        ],
+        "regional": [
+            "72"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 3,
+            "nearby_count": 10
+        }
+    },
+    "seo": {
+        "description": "Station Pont Marie : M7 dans le 4e arr., Pont Marie 1614-1635 (un des plus anciens ponts parisiens), Île Saint-Louis intacte XVIIe, Hôtel de Sens (1475)."
+    },
+    "hero": {
+        "tagline": "Le Pont Marie et l'Île Saint-Louis",
+        "description": "Sur le <strong>quai de l'Hôtel de Ville</strong> dans le <strong>4e arrondissement</strong>, Pont Marie ouvre le <strong>3 décembre 1930</strong> sur la M7. La station tire son nom du <strong>Pont Marie</strong>, construit de <strong>1614 à 1635</strong> par l'<strong>entrepreneur Christophe Marie</strong> — l'un des <strong>plus anciens ponts parisiens encore debout</strong> dans son état d'origine, classé <strong>Monument Historique en 1887</strong>. Ses <strong>5 arches en plein cintre</strong> mènent à l'<strong>Île Saint-Louis</strong> (à 100 m), <strong>un des seuls quartiers du Paris XVIIᵉ siècle préservés intacts</strong> (hôtels particuliers d'origine, glacier mythique <strong>Berthillon</strong> 1954). À côté : <strong>l'Hôtel de Sens</strong> (1475-1519), l'un des derniers hôtels particuliers <strong>médiévaux</strong> de Paris."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Sully - Morland",
+                "slug": "sully-morland",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Pont Marie</strong> est située dans le <strong>4e arrondissement de Paris</strong>, sous le <strong>quai de l'Hôtel de Ville</strong> à la jonction avec la <strong>rue de l'Hôtel de Ville</strong>. Elle est desservie par la <strong>ligne 7 du métro</strong> (Mairie d'Ivry / Villejuif ↔ La Courneuve - 8 Mai 1945), entre <strong>Sully - Morland</strong> (1 station vers le sud-est) et <strong>Châtelet</strong> (1 station vers le nord-ouest, pôle d'échange RATP/RER). La station est aussi sous-titrée <strong>« Cité des Arts »</strong> en référence à la <strong>Cité internationale des Arts</strong> située à 200 m sur le quai.",
+        "Ouverte le <strong>3 décembre 1930</strong> lors du prolongement de la M7 depuis Palais Royal vers Pont de Sully. Configuration souterraine sous le quai de Seine. Le nom <strong>Pont Marie</strong> vient du <strong>Pont Marie</strong> qui relie le quai de l'Hôtel de Ville à l'<strong>Île Saint-Louis</strong>, à 100 mètres au sud de la station.",
+        "Le <strong>Pont Marie</strong> est l'un des <strong>plus anciens ponts de Paris encore debout</strong>. Construit de <strong>1614 à 1635</strong> par l'<strong>entrepreneur Christophe Marie</strong> (qui lui a donné son nom), il est <strong>contemporain du lotissement de l'Île Saint-Louis</strong>. <strong>5 arches en plein cintre</strong> en pierre de taille, longueur 92 mètres, largeur 22 mètres. Il a été <strong>classé Monument Historique en 1887</strong>. Au cours des siècles, le pont a subi des destructions partielles (crue de 1658 — la moitié emportée et reconstruite) mais conserve son caractère d'origine. C'est aujourd'hui l'un des <strong>5 plus anciens ponts parisiens</strong>, avec le <strong>Pont Neuf</strong> (1607), le <strong>Pont au Change</strong> (1647, reconstruit 1860), le <strong>Pont Royal</strong> (1689) et le <strong>Petit Pont</strong> (origine du XIIᵉ, reconstruit plusieurs fois). À <strong>200 mètres</strong> : l'<strong>Hôtel de Sens</strong> (1475-1519), <strong>l'un des derniers hôtels particuliers médiévaux de Paris</strong>."
+    ],
+    "history": {
+        "title": "1614-1635 : naissance du Pont Marie, et la M7 en 1930",
+        "paragraphs": [
+            "L'histoire du quartier commence avec le <strong>lotissement de l'Île Saint-Louis</strong> au début du <strong>XVIIᵉ siècle</strong>. Jusqu'alors, l'île (réunion de deux îlots, l'<strong>île aux Vaches</strong> et l'<strong>île Notre-Dame</strong>, séparés par un canal comblé en 1614) était une zone marécageuse appartenant à l'Église. En <strong>1614</strong>, <strong>Louis XIII</strong> autorise le <strong>lotissement urbain</strong> par l'<strong>entrepreneur Christophe Marie</strong> (1581-1664), associé aux financiers Lugles Poulletier et François Le Regrattier.",
+            "Christophe Marie obtient en échange le droit de construire <strong>deux ponts</strong> reliant l'île aux deux rives : le <strong>Pont Marie</strong> (Rive droite, achevé en <strong>1635</strong>) et le <strong>Pont de la Tournelle</strong> (Rive gauche, achevé en 1656). Le Pont Marie reçoit son nom de l'entrepreneur — <strong>premier exemple</strong> à Paris d'un pont nommé d'après son constructeur. <strong>5 arches en plein cintre</strong> en pierre de taille, longueur 92 m. À l'origine, le pont supportait <strong>50 maisons d'habitation</strong> (comme tous les ponts parisiens jusqu'au XVIIIᵉ siècle).",
+            "En <strong>1658</strong>, lors de la <strong>grande crue de la Seine</strong>, le pont est <strong>partiellement détruit</strong> (les deux arches centrales et les maisons s'effondrent). Il est reconstruit dans la foulée, mais sans les maisons (interdites par souci de sécurité). En <strong>1769</strong>, par décret royal, <strong>toutes les maisons sur les ponts parisiens sont supprimées</strong> pour des raisons d'hygiène et de circulation. Le Pont Marie prend son aspect actuel : pont entièrement minéral, sans superstructure. <strong>Classé Monument Historique en 1887</strong>.",
+            "À côté, l'<strong>Île Saint-Louis</strong> est l'un des <strong>seuls quartiers du Paris XVIIᵉ siècle préservés intacts</strong>. Le <strong>lotissement de 1614-1664</strong> par Marie / Poulletier / Le Regrattier a créé un <strong>tissu urbain régulier</strong> de <strong>hôtels particuliers</strong> et <strong>maisons bourgeoises</strong> aux façades classiques. Architectes majeurs : <strong>Louis Le Vau</strong> (Hôtel Lambert 1640, Hôtel de Bretonvilliers, Hôtel de Lauzun), <strong>François Le Vau</strong>. L'île a été <strong>épargnée</strong> par les grands travaux haussmanniens du XIXᵉ siècle (au contraire de l'île de la Cité, totalement remaniée). C'est aujourd'hui un <strong>quartier exceptionnel</strong> du Paris du Grand Siècle, classé en grande partie en secteur sauvegardé. Glacier mythique <strong>Berthillon</strong> (1954) au 29-31 rue Saint-Louis-en-l'Île — <strong>l'une des plus célèbres glaces au monde</strong>.",
+            "À <strong>200 mètres</strong> sur le quai des Célestins, l'<strong>Hôtel de Sens</strong> est <strong>l'un des deux derniers hôtels particuliers médiévaux de Paris</strong> (avec l'Hôtel de Cluny). Construit de <strong>1475 à 1519</strong> pour les <strong>archevêques de Sens</strong> (qui possédaient l'autorité spirituelle sur Paris jusqu'en 1622). Style <strong>gothique tardif</strong> avec éléments Renaissance. Façade caractéristique avec <strong>tourelle d'angle</strong>, <strong>toiture pentue</strong>, fenêtres à meneaux. Margot la reine y vécut en exil 1605-1606. Aujourd'hui : <strong>Bibliothèque Forney</strong> (arts décoratifs et beaux-arts). Classé Monument Historique en 1862.",
+            "La <strong>station de métro Pont Marie</strong> est ouverte le <strong>3 décembre 1930</strong> lors du prolongement de la M7 depuis Palais Royal vers Pont de Sully. Sous-titre <strong>« Cité des Arts »</strong> ajouté en référence à la <strong>Cité internationale des Arts</strong>, complexe résidentiel pour artistes du monde entier (300 ateliers) inauguré en <strong>1965</strong> sur le quai à 200 m de la station."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Pont Marie ?",
+            "answer": "Une seule ligne : la <strong>M7</strong> (Mairie d'Ivry / Villejuif ↔ La Courneuve - 8 Mai 1945), entre <strong>Sully - Morland</strong> (1 station vers le sud-est) et <strong>Châtelet</strong> (1 station vers le nord-ouest, pôle RATP/RER). Aucune correspondance directe. Bus 67, 86, 87 desservent le quai."
+        },
+        {
+            "question": "Le Pont Marie est-il vraiment l'un des plus anciens de Paris ?",
+            "answer": "<strong>Oui</strong>. Construit de <strong>1614 à 1635</strong> par l'entrepreneur <strong>Christophe Marie</strong>, le <strong>Pont Marie</strong> est l'un des <strong>5 plus anciens ponts parisiens encore debout</strong> (avec le Pont Neuf 1607, le Pont au Change 1647, le Pont Royal 1689, le Petit Pont aux origines XIIᵉ). <strong>5 arches en plein cintre</strong> en pierre de taille, longueur 92 m, largeur 22 m. <strong>Classé Monument Historique en 1887</strong>. À l'origine il portait <strong>50 maisons d'habitation</strong> (supprimées en 1769). Le pont relie le quai de l'Hôtel de Ville (Rive droite) à l'Île Saint-Louis."
+        },
+        {
+            "question": "Comment rejoindre l'Île Saint-Louis depuis la station ?",
+            "answer": "<strong>2 minutes à pied</strong> : sortir et marcher 100 m vers le sud par la rue de l'Hôtel de Ville jusqu'au quai, puis traverser le <strong>Pont Marie</strong>. Vous arrivez directement <strong>rue des Deux-Ponts</strong>, axe central de l'<strong>Île Saint-Louis</strong>. La rue <strong>Saint-Louis-en-l'Île</strong> (artère principale) est à 50 m. <strong>Berthillon</strong> (le glacier mythique) au 29-31 rue Saint-Louis-en-l'Île."
+        },
+        {
+            "question": "Qu'est-ce que l'Île Saint-Louis ?",
+            "answer": "L'<strong>Île Saint-Louis</strong> est l'une des <strong>deux îles naturelles de Paris sur la Seine</strong> (avec l'île de la Cité). C'est l'un des <strong>seuls quartiers du Paris XVIIᵉ siècle préservés intacts</strong>. Lotie de <strong>1614 à 1664</strong> par Christophe Marie, Lugles Poulletier et François Le Regrattier, elle a conservé son <strong>tissu urbain régulier</strong> avec ses hôtels particuliers et maisons bourgeoises Grand Siècle. Architectes : <strong>Louis Le Vau</strong> (Hôtel Lambert, Hôtel de Lauzun, etc.). <strong>Épargnée par Haussmann</strong> (contrairement à l'île de la Cité, totalement remaniée). Aujourd'hui : quartier résidentiel haut de gamme, glacier <strong>Berthillon</strong> (1954)."
+        },
+        {
+            "question": "Qu'est-ce que l'Hôtel de Sens ?",
+            "answer": "L'<strong>Hôtel de Sens</strong>, à 200 m sur le quai des Célestins, est <strong>l'un des deux derniers hôtels particuliers médiévaux de Paris</strong> (avec l'Hôtel de Cluny). Construit de <strong>1475 à 1519</strong> pour les <strong>archevêques de Sens</strong> (qui avaient l'autorité spirituelle sur Paris jusqu'en 1622). Style <strong>gothique tardif</strong> avec éléments <strong>Renaissance</strong>. Façade caractéristique : <strong>tourelle d'angle</strong>, <strong>toiture pentue</strong>, fenêtres à meneaux. La reine Margot y vécut en exil 1605-1606. Aujourd'hui : <strong>Bibliothèque Forney</strong> (arts décoratifs). Classé Monument Historique en 1862."
+        },
+        {
+            "question": "Pourquoi le sous-titre « Cité des Arts » ?",
+            "answer": "À <strong>200 mètres</strong> sur le quai se trouve la <strong>Cité internationale des Arts</strong>, complexe résidentiel pour artistes du monde entier inauguré en <strong>1965</strong>. <strong>300 ateliers</strong> où les artistes (peintres, sculpteurs, musiciens, écrivains) peuvent séjourner en résidence pendant 1 à 12 mois grâce à des bourses internationales. Une <strong>vitrine majeure</strong> de la création artistique mondiale à Paris. C'est pour cette raison que la station Pont Marie porte le sous-titre « Cité des Arts » depuis les années 1960."
+        },
+        {
+            "question": "La station Pont Marie est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M7. Pour un trajet PMR vers l'Île Saint-Louis ou Berthillon, utiliser les <strong>bus 67 ou 87</strong> (planchers bas) ou taxi/VTC. L'Île Saint-Louis elle-même est <strong>peu adaptée PMR</strong> (rues étroites, pavés)."
+        },
+        {
+            "question": "Quels sont les horaires de la M7 à Pont Marie ?",
+            "answer": "La <strong>M7</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien desservent le quai de l'Hôtel de Ville (N11, N16)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Pont Marie</strong> (1614-1635) à 2 min : photographier les 5 arches depuis le quai.",
+        "<strong>Île Saint-Louis</strong> à 3 min via le Pont Marie — quartier XVIIᵉ préservé.",
+        "<strong>Berthillon</strong> (29-31 rue Saint-Louis-en-l'Île) : le glacier mythique de Paris depuis 1954.",
+        "<strong>Hôtel de Sens</strong> à 5 min (quai des Célestins) — Bibliothèque Forney à l'intérieur.",
+        "<strong>Cité internationale des Arts</strong> à 3 min — expositions ouvertes au public dans certains ateliers.",
+        "Hôtel de Ville à 8 min à pied vers l'ouest (Place de l'Hôtel de Ville)."
+    ],
+    "trivia": [
+        {
+            "icon": "🌉",
+            "title": "Pont Marie (1614-1635) — un des 5 plus anciens ponts de Paris",
+            "content": "Construit de <strong>1614 à 1635</strong> par l'entrepreneur <strong>Christophe Marie</strong> (1581-1664), le <strong>Pont Marie</strong> est l'un des <strong>5 plus anciens ponts parisiens encore debout</strong>. <strong>5 arches en plein cintre</strong> en pierre de taille, 92 m de long, 22 m de large. Premier exemple à Paris d'un pont <strong>nommé d'après son constructeur</strong>. À l'origine il portait <strong>50 maisons d'habitation</strong> sur ses tabliers (supprimées en 1769 par décret royal pour des raisons d'hygiène). Lors de la <strong>grande crue de 1658</strong>, les deux arches centrales s'effondrent et sont reconstruites. <strong>Classé Monument Historique en 1887</strong>. Toujours en service piéton et automobile."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Île Saint-Louis — Paris XVIIᵉ siècle préservé intact",
+            "content": "L'<strong>Île Saint-Louis</strong>, accessible en traversant le Pont Marie, est l'un des <strong>seuls quartiers du Paris XVIIᵉ siècle préservés intacts</strong>. Lotie de <strong>1614 à 1664</strong> par <strong>Christophe Marie</strong>, Lugles Poulletier et François Le Regrattier (qui ont aussi laissé leur nom à des rues). Architecte majeur : <strong>Louis Le Vau</strong> (Hôtel Lambert 1640, Hôtel de Lauzun, Hôtel de Bretonvilliers). Tissu urbain régulier, hôtels particuliers et maisons bourgeoises Grand Siècle. <strong>Épargnée par Haussmann</strong> (l'île de la Cité voisine fut totalement remaniée). Quartier résidentiel haut de gamme. <strong>Berthillon</strong> (29-31 rue Saint-Louis-en-l'Île) : glacier mythique fondé en <strong>1954</strong>, l'une des plus célèbres glaces au monde."
+        },
+        {
+            "icon": "🏰",
+            "title": "Hôtel de Sens (1475-1519) — un des derniers hôtels médiévaux de Paris",
+            "content": "L'<strong>Hôtel de Sens</strong>, à 200 m sur le quai des Célestins, est <strong>l'un des deux derniers hôtels particuliers médiévaux de Paris</strong> encore debout (avec l'Hôtel de Cluny). Construit de <strong>1475 à 1519</strong> pour les <strong>archevêques de Sens</strong>, qui avaient l'<strong>autorité spirituelle sur Paris</strong> jusqu'à la création de l'archevêché de Paris en 1622 (avant cela, Paris dépendait du diocèse de Sens). Style <strong>gothique tardif</strong> avec éléments <strong>Renaissance</strong>. Façade : <strong>tourelle d'angle</strong>, <strong>toiture pentue à hauts pignons</strong>, fenêtres à meneaux. La <strong>reine Margot</strong> (Marguerite de Valois, 1553-1615, première épouse d'Henri IV) y vécut en exil 1605-1606. Aujourd'hui : <strong>Bibliothèque Forney</strong> (arts décoratifs et beaux-arts). Classé MH 1862."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Pont Marie + Île Saint-Louis",
+            "destination_slug": "ile-saint-louis",
+            "destination_full_name": "Pont Marie → Île Saint-Louis",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied via Pont Marie (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-ile-saint-louis/"
+        },
+        {
+            "destination_name": "Berthillon (glacier)",
+            "destination_slug": "berthillon",
+            "destination_full_name": "Pont Marie → Berthillon",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied via Pont Marie + rue des Deux-Ponts (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-berthillon/"
+        },
+        {
+            "destination_name": "Hôtel de Sens (Bibliothèque Forney)",
+            "destination_slug": "hotel-de-sens",
+            "destination_full_name": "Pont Marie → Hôtel de Sens",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai des Célestins (~200 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-hotel-sens/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Pont Marie → Notre-Dame",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'Île Saint-Louis et le Pont Saint-Louis (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Hôtel de Ville de Paris",
+            "destination_slug": "hotel-de-ville",
+            "destination_full_name": "Pont Marie → Hôtel de Ville",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai de l'Hôtel de Ville (~700 m)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-hotel-de-ville/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles via M7",
+            "destination_slug": "chatelet-les-halles",
+            "destination_full_name": "Pont Marie → Châtelet - Les Halles",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 direction La Courneuve (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-chatelet/"
+        },
+        {
+            "destination_name": "Opéra Garnier via M7",
+            "destination_slug": "opera-garnier",
+            "destination_full_name": "Pont Marie → Opéra Garnier",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 direction La Courneuve (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-opera/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M7 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Pont Marie → CDG",
+            "lines_used": [
+                "M7",
+                "RER B"
+            ],
+            "lines_label": "M7 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-marie/pont-marie-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2981",
+            "name": "cathédrale Notre-Dame de Paris",
+            "category": "cathédrale",
+            "description": "La cathédrale Notre-Dame de Paris, communément appelée Notre-Dame, est l'un des monuments les plus emblématiques de Paris et de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Paris%202013-07-24.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Notre-Dame_de_Paris",
+            "latitude": 48.853,
+            "longitude": 2.3498,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 534,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q190063",
+            "name": "île de la Cité",
+            "category": "île",
+            "description": "L’île de la Cité est une île située sur la Seine, en plein cœur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre%20Dame%20DSC00732.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_la_Cit%C3%A9",
+            "latitude": 48.854722,
+            "longitude": 2.3475,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 706,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q898629",
+            "name": "place des Vosges",
+            "category": "place",
+            "description": "La place des Vosges, anciennement place Royale, car initialement dédiée au roi Henri IV et finalement, après l'assassinat du roi par François Ravaillac, dédiée à son fils Louis XIII, est une place de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20PlaceDesVosges%20NordNordEst.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Vosges",
+            "latitude": 48.855556,
+            "longitude": 2.365556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Pont Marie",
+                "distance_m": 645,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Pont Marie",
+                "distance_m": 779,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q640968",
+            "name": "hôtel de ville de Paris",
+            "category": "mairie",
+            "description": "L’hôtel de ville de Paris, communément appelé l’Hôtel de Ville, est le bâtiment qui héberge les institutions municipales de la Ville de Paris depuis 1357.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20ville%20fa%C3%A7ade%20principale%20Paris%2011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Paris",
+            "latitude": 48.856389,
+            "longitude": 2.352222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 462,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q640447",
+            "name": "musée Carnavalet",
+            "category": "musée",
+            "description": "Le musée Carnavalet - Histoire de Paris est le musée municipal parisien consacré à l'histoire de Paris des origines de la ville à nos jours.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnavalet%20Par%C3%ADs%2010.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Carnavalet",
+            "latitude": 48.857375,
+            "longitude": 2.362745,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Pont Marie",
+                "distance_m": 580,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q860166",
+            "name": "Institut du monde arabe",
+            "category": "site notable",
+            "description": "L'Institut du monde arabe (IMA) est un institut culturel français consacré au monde arabe. Il est situé au cœur de Paris, dans le 5e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Institut%20du%20Monde%20Arabe%20au%20bord%20de%20la%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Institut_du_monde_arabe",
+            "latitude": 48.848903,
+            "longitude": 2.357041,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Pont Marie",
+                "distance_m": 524,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1431547",
+            "name": "tour Saint-Jacques",
+            "category": "tour",
+            "description": "La tour Saint-Jacques est l'ancien clocher, construit entre 1509 et 1523, de Saint-Jacques-de-la-Boucherie, église dont ce clocher-tour est l'unique vestige.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000625%20Paris%20IV%20Tour%20Saint-Jacques%20resultwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Saint-Jacques",
+            "latitude": 48.857764,
+            "longitude": 2.348778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 754,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1294736",
+            "name": "hôtel-Dieu de Paris",
+            "category": "hôpital",
+            "description": "L’Hôtel-Dieu de Paris est un établissement hospitalier édifié vers 650 et reconstruit de 1867 à 1878 sous la conduite des architectes Émile Jacques Gilbert (1793-1874) et Arthur-Stanislas Diet…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel-Dieu%20de%20Paris%20from%20Notre-Dame%20de%20Paris%2C%20April%202011%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel-Dieu_de_Paris",
+            "latitude": 48.854639,
+            "longitude": 2.348806,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 610,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1503157",
+            "name": "Shakespeare and Company",
+            "category": "librairie",
+            "description": "Shakespeare and Company est une librairie anglophone indépendante historique de 1951, située au 37 rue de la Bûcherie du quartier de la Sorbonne dans le 5e arrondissement de Paris, sur les quais de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shakespeare%20and%20Company%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Shakespeare_and_Company",
+            "latitude": 48.8525,
+            "longitude": 2.346944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 749,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1422975",
+            "name": "place du Châtelet",
+            "category": "place",
+            "description": "La place du Châtelet est située à cheval sur le 1er et le 4e arrondissement de Paris, au bord de la Seine, à l'entrée du pont au Change.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20du%20Ch%C3%A2telet%20from%20Tour%20Saint-Jacques%2C%2017%20August%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_Ch%C3%A2telet",
+            "latitude": 48.8575,
+            "longitude": 2.347222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 832,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1469337",
+            "name": "place de l'Hôtel-de-Ville",
+            "category": "place",
+            "description": "La place de l'Hôtel-de-Ville - esplanade de la Libération, ancienne place de Grève jusqu'en 1803, est une place de Paris, capitale de la France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Avenue%20Victoria%20and%20Hotel%20de%20Ville%2C%20Paris%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_l%27H%C3%B4tel-de-Ville_-_esplanade_de_la_Lib%C3%A9ration",
+            "latitude": 48.856667,
+            "longitude": 2.351389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "quai de l'Hôtel de Ville",
+                "distance_m": 528,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "quai de l'Hôtel de Ville",
+            "address_full": "18 Rue de l'Hôtel de Ville 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.853692,
+            "longitude": 2.357019,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Pont Marie",
+            "address_full": "16 Rue de l'Hôtel de Ville 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.853612,
+            "longitude": 2.357252,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "rue de Rivoli",
+                "quai de l'Hôtel de Ville"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Île Saint-Louis (Berthillon, glaces) + quai de l'Hôtel de Ville",
+            "details": "Île Saint-Louis : restaurants traditionnels rue Saint-Louis-en-l'Île, Berthillon glacier, boulangeries, salons de thé. Quartier Le Marais à 5 min vers le nord.",
+            "secondary": "Quartier du Marais sud à 5 min : galeries, restaurants, boutiques."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée sur le Pont Marie et l'Île Saint-Louis (zones très touristiques).",
+            "Soirée tardive : Île Saint-Louis très calme, presque déserte après 22h.",
+            "Présence policière régulière sur le quai (préfecture proche).",
+            "Affluence importante l'été et le week-end (file devant Berthillon)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique de l'Île Saint-Louis."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Pont_Marie_%40_%C3%8Ele_Saint-Louis_%40_Paris_%2825287114486%29.jpg",
+        "alt": "Pont Marie (Christophe Marie, 1614-1635) avec ses 5 arches en plein cintre menant à l'Île Saint-Louis — à 2 min de la station Pont Marie",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Pont_Marie_@_%C3%8Ele_Saint-Louis_@_Paris_(25287114486).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pont-marie/pont-marie-400.avif",
+                "800": "/assets/img/stations/pont-marie/pont-marie-800.avif",
+                "1200": "/assets/img/stations/pont-marie/pont-marie-1200.avif",
+                "1600": "/assets/img/stations/pont-marie/pont-marie-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pont-marie/pont-marie-400.webp",
+                "800": "/assets/img/stations/pont-marie/pont-marie-800.webp",
+                "1200": "/assets/img/stations/pont-marie/pont-marie-1200.webp",
+                "1600": "/assets/img/stations/pont-marie/pont-marie-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pont-marie/pont-marie-400.jpg",
+                "800": "/assets/img/stations/pont-marie/pont-marie-800.jpg",
+                "1200": "/assets/img/stations/pont-marie/pont-marie-1200.jpg",
+                "1600": "/assets/img/stations/pont-marie/pont-marie-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M7. Pour un trajet PMR vers l'Île Saint-Louis (peu adaptée PMR elle-même), utiliser les bus 67 ou 87 (planchers bas) ou taxi/VTC."
+    }
+}
