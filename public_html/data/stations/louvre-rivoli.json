@@ -1,0 +1,561 @@
+{
+    "published": true,
+    "slug": "louvre-rivoli",
+    "name": "Louvre - Rivoli",
+    "name_full": "Louvre - Rivoli (Métro 1)",
+    "arrondissement": "1er (Paris)",
+    "address": "Rue de Rivoli, 75001 Paris",
+    "latitude": 48.860896,
+    "longitude": 2.340635,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Louvre - Rivoli station",
+        "es": "Estación Louvre - Rivoli"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "21",
+            "27",
+            "67",
+            "69"
+        ],
+        "nocturne": [
+            "N11",
+            "N15",
+            "N16",
+            "N24"
+        ],
+        "regional": [
+            "72",
+            "74",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 6,
+            "nearby_count": 18
+        }
+    },
+    "seo": {
+        "description": "Station Louvre - Rivoli : M1 dans le 1er arr., quais musée décorés (1968, vitrines copies œuvres du Louvre), rue de Rivoli, ancien nom Musée du Louvre."
+    },
+    "hero": {
+        "tagline": "Quais musée et ancienne porte du Louvre",
+        "description": "Sous la <strong>rue de Rivoli</strong> dans le <strong>1er arrondissement</strong>, Louvre - Rivoli ouvre dès le <strong>13 août 1900</strong>, station originelle de la M1. Particularité unique : les <strong>quais sont décorés en musée</strong> depuis <strong>1968</strong>, avec <strong>vitrines exposant des copies d'œuvres du Louvre</strong> (autrefois les vraies !). Ancien nom officiel du <strong>Musée du Louvre</strong> dans le métro — jusqu'au transfert au <strong>Palais Royal - Musée du Louvre</strong> en <strong>1989</strong> (création entrée Pyramide). Sortie unique sur la <strong>rue de l'Amiral-de-Coligny</strong>, face à l'<strong>aile Sully</strong> du Louvre."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Palais Royal - Musée du Louvre",
+                "slug": "palais-royal-musee-du-louvre",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Louvre - Rivoli</strong> est située sous la <strong>rue de Rivoli</strong> dans le <strong>1er arrondissement de Paris</strong>, face à l'<strong>aile Sully</strong> du <strong>Musée du Louvre</strong>. Elle est desservie par la <strong>ligne 1 du métro</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Palais Royal - Musée du Louvre</strong> (1 station vers l'ouest, accès Pyramide depuis 1989) et <strong>Châtelet</strong> (1 station vers l'est, pôle d'échange majeur RATP/RER). Aucune correspondance directe à Louvre - Rivoli. Sortie unique sur la <strong>rue de l'Amiral-de-Coligny</strong>.",
+        "Ouverture dès le <strong>13 août 1900</strong>, station originelle de la M1 (qui avait été inaugurée le 19 juillet 1900 mais avec ouverture progressive des stations). C'est la <strong>plus ancienne station du métro parisien</strong> à proximité immédiate du Louvre. Configuration : station souterraine sous la rue de Rivoli, deux quais latéraux.",
+        "Particularité ULTRA emblématique : les <strong>quais sont décorés en musée</strong> depuis <strong>1968</strong>. À l'occasion d'un projet de <strong>« stations culturelles »</strong> RATP-musée, l'architecte <strong>André Wogenscky</strong> (collaborateur de Le Corbusier) transforme les quais de Louvre. <strong>Vitrines en verre</strong> intégrées aux murs exposent des <strong>copies d'œuvres du Louvre</strong> : sculptures antiques (Égypte, Grèce, Rome), reproductions de peintures. Pendant des décennies, certaines vitrines contenaient même les <strong>VRAIES œuvres</strong> du musée — situation arrêtée dans les années 1990 pour des raisons de sécurité (œuvres déplacées au musée). Aujourd'hui : <strong>copies fidèles</strong>. Décoration générale : <strong>marbre beige</strong>, <strong>colonnes</strong>, ambiance muséale. <strong>Unique en son genre</strong> dans le métro parisien."
+    ],
+    "history": {
+        "title": "1900 et 1968 : la station origine et le musée souterrain",
+        "paragraphs": [
+            "La station <strong>Louvre - Rivoli</strong> est inaugurée le <strong>13 août 1900</strong>, station originelle de la <strong>M1</strong>, <strong>première ligne du métro parisien</strong>. La M1 elle-même est ouverte le <strong>19 juillet 1900</strong> pour l'<strong>Exposition universelle</strong> (Porte de Vincennes ↔ Porte Maillot), mais les stations sont ouvertes progressivement. Louvre - Rivoli s'appelle alors simplement <strong>« Louvre »</strong> — c'est l'<strong>ancienne entrée principale au Musée du Louvre par le métro</strong>.",
+            "Pendant <strong>68 ans</strong> (de 1900 à 1968), Louvre est une station ordinaire avec décor utilitaire CMP classique (carrelage blanc). Mais en <strong>1968</strong>, la RATP, en partenariat avec le Musée du Louvre, lance un projet ambitieux : la <strong>« station culturelle »</strong>. Première station du métro parisien à recevoir un <strong>traitement muséal</strong>. L'architecte <strong>André Wogenscky</strong> (1916-2004, collaborateur de Le Corbusier de 1936 à 1956, architecte indépendant ensuite) est chargé de la <strong>refonte intégrale des quais</strong>.",
+            "Wogenscky transforme les quais en <strong>antichambres muséales</strong> : <strong>murs en marbre beige</strong>, <strong>colonnes massives</strong>, <strong>vitrines en verre intégrées</strong> exposant des <strong>copies d'œuvres du Louvre</strong> — sculptures antiques (Vénus de Milo, Victoire de Samothrace, sphinx égyptien, Aphrodite), reproductions de peintures, objets archéologiques. <strong>Plafond bas voûté</strong>, <strong>éclairage tamisé</strong>. Atmosphère résolument <strong>élégante et solennelle</strong>, contrastant avec le métro utilitaire d'alors. Première fois que le métro parisien se fait <strong>vitrine culturelle</strong>. Inspiration ultérieure pour d'autres stations « culturelles » : Cluny - La Sorbonne (1988), Concorde (1991), Arts et Métiers (1994), etc.",
+            "Particularité <strong>extraordinaire</strong> : pendant des décennies, certaines vitrines contenaient <strong>les VRAIES œuvres</strong> du Musée du Louvre — pièces archéologiques d'importance secondaire, exposées <strong>directement dans le métro</strong> ! Situation <strong>arrêtée dans les années 1990</strong> pour des raisons de <strong>sécurité</strong> (risques de vol, dégradations). Les œuvres ont été déplacées au musée, remplacées par des <strong>copies fidèles</strong>. Le décor lui-même est conservé tel quel — un témoignage de l'ambition culturelle de la RATP des années 1960-70.",
+            "En <strong>1989</strong>, l'ouverture de la <strong>nouvelle entrée Pyramide</strong> du Louvre (Ieoh Ming Pei, mars 1989) change l'accès au musée. La <strong>station de métro Palais Royal</strong> est <strong>rebaptisée « Palais Royal - Musée du Louvre »</strong> en 1989 — elle devient l'<strong>accès officiel</strong> au musée par le métro (via la cour Napoléon et la Pyramide). La station <strong>Louvre</strong>, à 300 m de l'autre côté, est <strong>renommée « Louvre - Rivoli »</strong> pour éviter la confusion. Elle perd son rôle officiel mais conserve son <strong>décor muséal exceptionnel</strong>.",
+            "La <strong>rue de Rivoli</strong>, au-dessus de la station, est un <strong>axe haussmannien historique</strong>. Commencée sous <strong>Napoléon Iᵉʳ</strong> en <strong>1802</strong> (au nord du Louvre, avec ses fameuses <strong>arcades</strong>), prolongée sous Haussmann jusqu'à la Bastille. Le tronçon devant le Louvre est l'<strong>œuvre originelle de Napoléon</strong> — <strong>arcades sur 1,5 km</strong> avec immeubles uniformes, l'un des plus beaux axes urbains de Paris."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Louvre - Rivoli ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Palais Royal - Musée du Louvre</strong> (1 station vers l'ouest, accès Pyramide du Louvre) et <strong>Châtelet</strong> (1 station vers l'est, pôle d'échange majeur RATP/RER). Aucune correspondance directe à Louvre - Rivoli. Bus 21, 27, 67, 69, 72, 74, 76, 85 desservent la rue de Rivoli."
+        },
+        {
+            "question": "Pourquoi les quais sont-ils décorés en musée ?",
+            "answer": "Parce qu'en <strong>1968</strong>, la RATP en partenariat avec le Musée du Louvre a lancé un projet de <strong>« station culturelle »</strong> — première du métro parisien. L'architecte <strong>André Wogenscky</strong> (collaborateur de Le Corbusier) a transformé les quais : <strong>murs en marbre beige</strong>, <strong>colonnes</strong>, <strong>vitrines en verre exposant des copies d'œuvres du Louvre</strong> (sculptures antiques, reproductions de peintures), ambiance muséale solennelle. Inspiration pour d'autres stations « culturelles » : Cluny - La Sorbonne, Concorde, Arts et Métiers."
+        },
+        {
+            "question": "Y avait-il vraiment de vraies œuvres du Louvre ?",
+            "answer": "<strong>Oui</strong>. Pendant des décennies (1968 → années 1990), certaines vitrines de Louvre - Rivoli contenaient <strong>les VRAIES œuvres</strong> du Musée du Louvre — pièces archéologiques d'importance secondaire, <strong>exposées directement dans le métro</strong> ! Situation <strong>arrêtée dans les années 1990</strong> pour des raisons de <strong>sécurité</strong> (risques de vol et dégradations). Les œuvres ont été déplacées au musée, remplacées par des <strong>copies fidèles</strong>. Le décor lui-même est conservé tel quel."
+        },
+        {
+            "question": "Comment rejoindre le Louvre depuis cette station ?",
+            "answer": "<strong>2 minutes à pied</strong> : sortir par la sortie unique <strong>rue de l'Amiral-de-Coligny</strong> et traverser la rue de Rivoli vers le sud. Vous arrivez face à l'<strong>aile Sully</strong> du Louvre (côté Cour Carrée). L'entrée par la <strong>Pyramide</strong> (Cour Napoléon) est à <strong>5 min à pied</strong> vers l'ouest. Alternative : 1 station M1 jusqu'à <strong>Palais Royal - Musée du Louvre</strong> pour l'accès officiel par la Pyramide."
+        },
+        {
+            "question": "Pourquoi la station s'appelle-t-elle Louvre - Rivoli et plus simplement Louvre ?",
+            "answer": "La station s'appelait simplement <strong>« Louvre »</strong> de 1900 à 1989. En <strong>1989</strong>, à l'occasion de l'ouverture de la <strong>Pyramide du Louvre</strong> (Ieoh Ming Pei, mars 1989, accès officiel au musée), la station <strong>Palais Royal</strong> a été <strong>rebaptisée « Palais Royal - Musée du Louvre »</strong> — elle devenait l'<strong>accès officiel</strong> au musée. La station <strong>Louvre</strong>, à 300 m de l'autre côté, a été <strong>renommée « Louvre - Rivoli »</strong> pour éviter la confusion. Elle perd son rôle officiel d'accès au musée mais conserve son décor muséal exceptionnel."
+        },
+        {
+            "question": "Qu'est-ce que la rue de Rivoli ?",
+            "answer": "Un <strong>axe haussmannien historique</strong> de Paris, l'un des plus longs et beaux de la capitale. Commencée sous <strong>Napoléon Iᵉʳ</strong> en <strong>1802</strong> (au nord du Louvre, avec ses fameuses <strong>arcades</strong> sur 1,5 km), prolongée sous Haussmann jusqu'à la Bastille. Nom en hommage à la <strong>victoire de Rivoli</strong> (14-15 janvier 1797, Napoléon contre les Autrichiens en Italie). Le tronçon devant le Louvre est l'<strong>œuvre originelle de Napoléon</strong> — arcades uniformes, immeubles haussmanniens (avant l'heure). Aujourd'hui : commerces de luxe, hôtels prestigieux, axe touristique majeur."
+        },
+        {
+            "question": "La station Louvre - Rivoli est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M1. Pour rejoindre le Louvre en PMR, utiliser la station <strong>Palais Royal - Musée du Louvre</strong> (M1/M7, partiellement accessible) ou les <strong>bus 21, 27 ou 69</strong> (planchers bas)."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Louvre - Rivoli ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe). La nuit, les Noctilien N11, N15, N16, N24 desservent la rue de Rivoli."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Quais musée Wogenscky 1968</strong> : à observer absolument — vitrines copies œuvres Louvre, ambiance muséale.",
+        "Pour <strong>Louvre Pyramide</strong> (accès officiel) : 1 station M1 vers l'ouest (Palais Royal) ou 5 min à pied.",
+        "<strong>Aile Sully</strong> du Louvre face à la station — Cour Carrée accessible directement.",
+        "Rue de Rivoli avec ses <strong>arcades Napoléon</strong> (1802) — commerces de luxe et touristiques.",
+        "Pour <strong>Notre-Dame</strong> : 10 min à pied via le quai du Louvre.",
+        "Vigilance pickpockets TRÈS élevée (zone touristique majeure Louvre)."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Quais musée Wogenscky (1968) — première « station culturelle » du métro",
+            "content": "En <strong>1968</strong>, la RATP en partenariat avec le Musée du Louvre lance un projet ambitieux : la <strong>« station culturelle »</strong>, première du métro parisien. L'architecte <strong>André Wogenscky</strong> (1916-2004, collaborateur de Le Corbusier de 1936 à 1956) est chargé de la <strong>refonte intégrale des quais</strong> de Louvre. Transformation en <strong>antichambres muséales</strong> : <strong>murs en marbre beige</strong>, <strong>colonnes massives</strong>, <strong>vitrines en verre exposant des copies d'œuvres du Louvre</strong> (Vénus de Milo, Victoire de Samothrace, sphinx égyptien, Aphrodite, reproductions de peintures). <strong>Plafond bas voûté</strong>, <strong>éclairage tamisé</strong>. Atmosphère élégante et solennelle, contrastant avec le métro utilitaire d'alors. <strong>Première fois que le métro parisien se fait vitrine culturelle</strong> — inspiration pour Cluny - La Sorbonne (1988), Concorde (1991), Arts et Métiers (1994)."
+        },
+        {
+            "icon": "💎",
+            "title": "Vraies œuvres du Louvre dans le métro (1968 - années 1990)",
+            "content": "Particularité <strong>extraordinaire</strong> du décor : pendant <strong>plus de 25 ans</strong>, certaines vitrines de Louvre - Rivoli contenaient <strong>les VRAIES œuvres</strong> du Musée du Louvre — pièces archéologiques d'importance secondaire (sphinx, fragments, statuettes), <strong>exposées directement dans le métro</strong>. Situation <strong>arrêtée dans les années 1990</strong> pour des raisons de <strong>sécurité</strong> : risques de vol, de dégradations volontaires ou involontaires, conditions de conservation médiocres (humidité, poussière, vibrations). Les œuvres ont été déplacées au musée, <strong>remplacées par des copies fidèles</strong>. Le <strong>décor de Wogenscky</strong> lui-même est conservé tel quel — témoignage unique de l'ambition culturelle de la RATP des années 1960-70."
+        },
+        {
+            "icon": "🚇",
+            "title": "Renommage 1989 — Louvre devient Louvre - Rivoli avec la Pyramide",
+            "content": "La station s'appelait simplement <strong>« Louvre »</strong> de 1900 à 1989. En <strong>1989</strong>, à l'occasion de l'ouverture de la <strong>Pyramide du Louvre</strong> (<strong>Ieoh Ming Pei</strong>, inaugurée le <strong>30 mars 1989</strong>, accès officiel au musée), la station <strong>Palais Royal</strong> a été <strong>rebaptisée « Palais Royal - Musée du Louvre »</strong> — elle devenait l'<strong>accès officiel</strong> au musée par le métro. La station <strong>Louvre</strong>, à 300 m de l'autre côté, a été <strong>renommée « Louvre - Rivoli »</strong> pour éviter la confusion. Elle perd son rôle officiel d'accès au musée mais conserve son <strong>décor muséal exceptionnel</strong> de Wogenscky 1968. Aujourd'hui : station <strong>culturelle plutôt que utilitaire</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée du Louvre (aile Sully)",
+            "destination_slug": "louvre",
+            "destination_full_name": "Louvre - Rivoli → Louvre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de l'Amiral-de-Coligny (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-louvre/"
+        },
+        {
+            "destination_name": "Pyramide du Louvre via M1",
+            "destination_slug": "pyramide-louvre",
+            "destination_full_name": "Louvre - Rivoli → Pyramide",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 jusqu'à Palais Royal (1 station) + 5 min à pied",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-pyramide/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Louvre - Rivoli → Notre-Dame",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai du Louvre (~900 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Châtelet via M1",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Louvre - Rivoli → Châtelet",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-chatelet/"
+        },
+        {
+            "destination_name": "Tuileries via M1",
+            "destination_slug": "tuileries",
+            "destination_full_name": "Louvre - Rivoli → Tuileries",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (2 stations)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-tuileries/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Louvre - Rivoli → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (5 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Louvre - Rivoli → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-bastille/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Louvre - Rivoli → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 42,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-louvre-rivoli/louvre-rivoli-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q19675",
+            "name": "musée du Louvre",
+            "category": "musée",
+            "description": "Le musée du Louvre est un musée parisien situé au sein du palais du Louvre dans le 1er arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cour%20Napol%C3%A9on%20at%20night%20-%20Louvre.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre",
+            "latitude": 48.861111,
+            "longitude": 2.335833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 366,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q234364",
+            "name": "palais des Tuileries",
+            "category": "palais",
+            "description": "Le palais des Tuileries est un ancien palais parisien, aujourd'hui détruit, dont la construction commença en 1564 sous l'impulsion de Catherine de Médicis, à l'emplacement occupé auparavant par l'une…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuileries%20jardin%201867.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_des_Tuileries",
+            "latitude": 48.862222,
+            "longitude": 2.331111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 729,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q193193",
+            "name": "Sainte-Chapelle",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle, dite aussi Sainte-Chapelle du Palais, est une chapelle palatine édifiée sur l’île de la Cité, à Paris, à l'emplacement de la chapelle Saint-Nicolas-du-Palais, à la demande de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Sainte%20Chapelle%20East%20View%2002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle",
+            "latitude": 48.855369,
+            "longitude": 2.345028,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 667,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q329948",
+            "name": "Palais-Royal",
+            "category": "palais",
+            "description": "Le Palais-Royal, ensemble monumental au nord du palais du Louvre dans le 1er arrondissement de Paris, est un haut lieu de l’histoire de France et de la vie parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
+            "latitude": 48.863333,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 408,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q335277",
+            "name": "pont Neuf",
+            "category": "pont",
+            "description": "Le pont Neuf ou Pont-Neuf est, malgré son nom, actuellement le pont le plus ancien existant à Paris. Il traverse la Seine à la pointe ouest de l'île de la Cité.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20western%20sides%20of%20the%20%C3%8Ele%20de%20la%20Cit%C3%A9%20and%20the%20Pont%20Neuf%2C%2014%20July%202008.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Neuf",
+            "latitude": 48.8575,
+            "longitude": 2.341667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 359,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q273593",
+            "name": "École nationale supérieure des beaux-arts",
+            "category": "site notable",
+            "description": "L’École nationale supérieure des beaux-arts de Paris (ENSBA), communément dénommée Beaux-Arts de Paris, est une école d'art française fondée en 1817.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%206%20-%20ENSBA%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaux-Arts_de_Paris",
+            "latitude": 48.856806,
+            "longitude": 2.333278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 699,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q631104",
+            "name": "arc de triomphe du Carrousel",
+            "category": "monument",
+            "description": "L’arc de triomphe du Carrousel est un monument parisien inauguré le 15 août 1808 et situé place du Carrousel, dans le 1er arrondissement de Paris, à l'ouest du musée du Louvre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Jardin%20des%20Tuileries%20-%20Arc%20de%20Triomphe%20du%20Carrousel%20-%20PA00085992%20-%20003.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_du_Carrousel",
+            "latitude": 48.861667,
+            "longitude": 2.332778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 597,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1329141",
+            "name": "pont des Arts",
+            "category": "pont",
+            "description": "Le pont des Arts, ou passerelle des Arts, est un pont parisien franchissant la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20des%20Arts%20and%20the%20Palais%20du%20Louvre%2C%20Paris%20July%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_des_Arts",
+            "latitude": 48.858333,
+            "longitude": 2.337778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 342,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1338207",
+            "name": "église Saint-Eustache de Paris",
+            "category": "église",
+            "description": "L’église Saint-Eustache est une église paroissiale catholique située 146, rue Rambuteau dans le 1er arrondissement de Paris, au cœur du quartier des Halles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
+            "latitude": 48.863333,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 426,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1583780",
+            "name": "La Samaritaine",
+            "category": "commerce",
+            "description": "La Samaritaine est un grand magasin situé à Paris entre la rue de Rivoli et la Seine, à l'aplomb du pont Neuf dans le 1er arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Magasin%20Samaritaine%20-%20Paris%20I%20%28FR75%29%20-%202025-09-03%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Samaritaine",
+            "latitude": 48.85889,
+            "longitude": 2.34208,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 220,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1431547",
+            "name": "tour Saint-Jacques",
+            "category": "tour",
+            "description": "La tour Saint-Jacques est l'ancien clocher, construit entre 1509 et 1523, de Saint-Jacques-de-la-Boucherie, église dont ce clocher-tour est l'unique vestige.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000625%20Paris%20IV%20Tour%20Saint-Jacques%20resultwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Saint-Jacques",
+            "latitude": 48.857764,
+            "longitude": 2.348778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 668,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1025693",
+            "name": "café de la Régence",
+            "category": "café",
+            "description": "Le Café de la Régence est un café parisien, ouvert de 1681 à 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27Illustration%2024%20janvier%201851.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_de_la_R%C3%A9gence",
+            "latitude": 48.859863,
+            "longitude": 2.342579,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de l'Amiral-de-Coligny (Louvre)",
+                "distance_m": 159,
+                "walk_minutes": 2
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue de l'Amiral-de-Coligny (Louvre)",
+            "address_full": "8 Rue de l'Amiral de Coligny 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.860681,
+            "longitude": 2.340795,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "rue de Rivoli"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Rue de Rivoli (arcades Napoléon)",
+            "details": "Rue de Rivoli avec ses arcades Napoléon (1802) : commerces touristiques, hôtels, cafés. Aile Sully du Louvre face à la station (Cour Carrée).",
+            "secondary": "Quartier touristique du Louvre : restaurants, brasseries, boutiques de luxe (rue Saint-Honoré à 3 min)."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets TRÈS élevée (zone touristique majeure Louvre).",
+            "Présence policière constante (sécurisation Louvre).",
+            "Soirée tardive : zone calme hors événements Louvre.",
+            "Quartier ultra-touristique : sécurité renforcée 24/7."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature ultra-touristique du Louvre."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Station_Louvre_Rivoli_M%C3%A9tro_Paris_-_Paris_I_%28FR75%29_-_2026-01-12_-_9.jpg",
+        "alt": "Quais musée de la station Louvre - Rivoli (décor 1968 par André Wogenscky) avec vitrines exposant des copies d'œuvres du Musée du Louvre — première « station culturelle » du métro parisien",
+        "width": 5712,
+        "height": 4284,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Louvre_Rivoli_M%C3%A9tro_Paris_-_Paris_I_(FR75)_-_2026-01-12_-_9.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/louvre-rivoli/louvre-rivoli-400.avif",
+                "800": "/assets/img/stations/louvre-rivoli/louvre-rivoli-800.avif",
+                "1200": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1200.avif",
+                "1600": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/louvre-rivoli/louvre-rivoli-400.webp",
+                "800": "/assets/img/stations/louvre-rivoli/louvre-rivoli-800.webp",
+                "1200": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1200.webp",
+                "1600": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/louvre-rivoli/louvre-rivoli-400.jpg",
+                "800": "/assets/img/stations/louvre-rivoli/louvre-rivoli-800.jpg",
+                "1200": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1200.jpg",
+                "1600": "/assets/img/stations/louvre-rivoli/louvre-rivoli-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M1. Pour rejoindre le Louvre en PMR, utiliser Palais Royal - Musée du Louvre (partiellement accessible) ou les bus 21, 27 ou 69 (planchers bas)."
+    }
+}
