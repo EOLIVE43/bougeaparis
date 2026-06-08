@@ -1,0 +1,656 @@
+{
+    "published": true,
+    "slug": "arts-et-metiers",
+    "name": "Arts et Métiers",
+    "name_full": "Arts et Métiers (Métro 3 + 11)",
+    "arrondissement": "3e (Paris)",
+    "address": "Rue Beaubourg / rue de Turbigo / rue Réaumur, 75003 Paris",
+    "latitude": 48.865532,
+    "longitude": 2.357132,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Arts et Métiers station",
+        "es": "Estación Arts et Métiers"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3",
+            "slug": "metro-3",
+            "color": "#9F9825",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "38"
+        ],
+        "nocturne": [
+            "N12",
+            "N13",
+            "N14",
+            "N23"
+        ],
+        "regional": [
+            "75"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 7,
+            "nearby_count": 9
+        }
+    },
+    "seo": {
+        "description": "Station Arts et Métiers : M3 + M11 dans le 3e arr., quais M11 cuivre Schuiten 1994 style Nautilus Jules Verne, Musée des Arts et Métiers, CNAM."
+    },
+    "hero": {
+        "tagline": "Les quais en cuivre Jules Verne et le CNAM",
+        "description": "Au cœur du <strong>3e arrondissement</strong>, Arts et Métiers est l'une des <strong>stations les plus iconiques du métro parisien</strong> grâce à ses <strong>quais M11 entièrement habillés de cuivre rivé</strong>. Décor créé en <strong>octobre 1994</strong> par le dessinateur belge <strong>François Schuiten</strong> et l'écrivain français <strong>Benoît Peeters</strong> pour célébrer le <strong>bicentenaire du Conservatoire national des Arts et Métiers</strong> (CNAM). <strong>800 plaques de cuivre rivées</strong> évoquent l'intérieur du <strong>Nautilus</strong> de <strong>Jules Verne</strong> — ambiance <strong>steampunk submarine</strong> unique au monde. M3 ouvre le <strong>19 octobre 1904</strong>, M11 le <strong>28 avril 1935</strong>. Le <strong>Musée des Arts et Métiers</strong> est à 100 m."
+    },
+    "adjacent_stations": {
+        "metro-3": {
+            "previous": {
+                "name": "Temple",
+                "slug": "temple",
+                "direction": "Gallieni"
+            },
+            "next": {
+                "name": "Réaumur - Sébastopol",
+                "slug": "reaumur-sebastopol",
+                "direction": "Pont de Levallois - Bécon"
+            }
+        },
+        "metro-11": {
+            "previous": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Rosny-Bois-Perrier"
+            },
+            "next": {
+                "name": "Rambuteau",
+                "slug": "rambuteau",
+                "direction": "Châtelet"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Arts et Métiers</strong> est un <strong>pôle d'échange important du 3e arrondissement</strong>, situé à l'intersection de la <strong>rue Beaubourg</strong>, de la <strong>rue Réaumur</strong> et de la <strong>rue de Turbigo</strong>. Elle est desservie par deux lignes : la <strong>M3</strong> (Pont de Levallois - Bécon ↔ Gallieni) et la <strong>M11</strong> (Châtelet ↔ Rosny-Bois-Perrier). Avec environ <strong>2,4 millions d'entrants en 2021</strong>, elle se classait au <strong>140e rang</strong> du réseau métro RATP.",
+        "Particularité ULTRA iconique : les <strong>quais de la M11</strong> sont entièrement <strong>habillés de cuivre rivé</strong>. Ce décor unique a été conçu en <strong>octobre 1994</strong> par le dessinateur belge <strong>François Schuiten</strong> (auteur de la BD <em>Les Cités Obscures</em>) et l'écrivain français <strong>Benoît Peeters</strong>, à l'occasion du <strong>bicentenaire du Conservatoire national des Arts et Métiers (CNAM)</strong> fondé en 1794. <strong>800 plaques de cuivre rivées</strong> reproduisent l'esthétique du <strong>Nautilus</strong>, le sous-marin imaginaire de <strong>Jules Verne</strong> dans <em>Vingt mille lieues sous les mers</em> (1869-1870). <strong>Hublots</strong>, <strong>rouages</strong>, <strong>engrenages</strong> et <strong>roues dentées</strong> ajoutent à l'ambiance <strong>steampunk</strong>. La station de la M3 conserve un décor plus classique (carrelage blanc).",
+        "À <strong>100 mètres</strong> au nord de la station se trouve le <strong>Musée des Arts et Métiers</strong>, installé dans l'ancienne <strong>abbaye royale de Saint-Martin-des-Champs</strong> (fondée en 1060). Ce <strong>musée d'histoire des sciences et techniques</strong>, rattaché au <strong>Conservatoire national des Arts et Métiers (CNAM)</strong>, abrite plus de <strong>80 000 objets</strong> : le <strong>pendule de Foucault</strong> original (1851, suspendu dans l'ancienne abbatiale du XIᵉ siècle), le <strong>Fardier de Cugnot</strong> (premier véhicule automobile, 1769), des modèles de <strong>vapeur de Watt</strong>, l'<strong>Avion III de Clément Ader</strong>, le premier <strong>cinématographe Lumière</strong>, etc. Le CNAM lui-même est un <strong>grand établissement d'enseignement supérieur</strong> dédié à la formation continue (~80 000 auditeurs/an)."
+    ],
+    "history": {
+        "title": "1904-1935 : deux lignes, et 1994 : la révolution du décor cuivre",
+        "paragraphs": [
+            "La station <strong>Arts et Métiers</strong> a une histoire en trois temps. Premier temps : ouverture de la <strong>ligne 3</strong> le <strong>19 octobre 1904</strong>, lors de l'inauguration du <strong>tronçon initial</strong> de la M3 reliant <strong>Avenue de Villiers</strong> à <strong>Père Lachaise</strong>. La station devient un point d'échange important du Marais nord. Configuration souterraine classique CMP (Compagnie du Chemin de fer Métropolitain).",
+            "Deuxième temps : ouverture de la <strong>ligne 11</strong> le <strong>28 avril 1935</strong>, lors de l'inauguration du <strong>tronçon initial</strong> de la M11 reliant <strong>Châtelet</strong> à <strong>Porte des Lilas</strong>. Arts et Métiers devient une <strong>correspondance M3/M11</strong>. Décor M11 initial : carrelage blanc CMP standard.",
+            "Troisième temps : <strong>révolution du décor en octobre 1994</strong>. Pour célébrer le <strong>bicentenaire du Conservatoire national des Arts et Métiers (CNAM)</strong>, fondé par la <strong>Convention</strong> le <strong>10 octobre 1794</strong> (loi de l'abbé Henri Grégoire), la RATP commande un <strong>décor exceptionnel</strong> pour les quais M11. Le projet est confié au dessinateur belge <strong>François Schuiten</strong> (né 1956, auteur avec Peeters de la série BD <em>Les Cités Obscures</em>, univers steampunk uchronique) et à l'écrivain français <strong>Benoît Peeters</strong>. Le concept : reproduire l'<strong>intérieur du Nautilus</strong>, sous-marin imaginaire de Jules Verne (<em>Vingt mille lieues sous les mers</em>, 1869-1870).",
+            "Le résultat est <strong>spectaculaire</strong>. Les murs et le plafond des quais M11 sont entièrement <strong>recouverts de 800 plaques de cuivre rivées</strong> (laiton et cuivre). <strong>Hublots</strong> simulés contenant des images de machines et d'instruments scientifiques (en lien avec le Musée des Arts et Métiers à 100 m). <strong>Engrenages</strong>, <strong>roues dentées</strong> et <strong>vis monumentales</strong> dispersés. L'ambiance est celle d'un <strong>sous-marin victorien</strong>, <strong>steampunk</strong> avant la lettre. Les <strong>panneaux directionnels</strong> et le <strong>nom de la station</strong> sont gravés dans le cuivre. Le décor est <strong>devenu emblématique</strong> du métro parisien et est l'un des <strong>shots les plus photographiés du réseau</strong> (avec les édicules Guimard, le moucharabieh de l'IMA). Régulièrement classé parmi les <strong>plus belles stations de métro au monde</strong> (CNN, Lonely Planet, etc.)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Arts et Métiers ?",
+            "answer": "Deux lignes : la <strong>M3</strong> (Pont de Levallois - Bécon ↔ Gallieni) et la <strong>M11</strong> (Châtelet ↔ Rosny-Bois-Perrier). Stations adjacentes : <strong>Temple ↔ Réaumur - Sébastopol</strong> sur M3, <strong>République ↔ Rambuteau</strong> sur M11. Aucune correspondance RER directe à Arts et Métiers. Bus 20, 38, 39, 47, 75 dans les environs."
+        },
+        {
+            "question": "Pourquoi les quais sont-ils en cuivre ?",
+            "answer": "Pour célébrer le <strong>bicentenaire du Conservatoire national des Arts et Métiers (CNAM)</strong>, fondé en <strong>1794</strong>. En <strong>octobre 1994</strong>, la RATP a confié la <strong>refonte totale du décor des quais M11</strong> au dessinateur belge <strong>François Schuiten</strong> et à l'écrivain français <strong>Benoît Peeters</strong>. Le concept : reproduire l'<strong>intérieur du Nautilus</strong>, sous-marin imaginaire de <strong>Jules Verne</strong> (<em>Vingt mille lieues sous les mers</em>, 1870). <strong>800 plaques de cuivre rivées</strong> habillent murs et plafond, avec hublots, engrenages, vis monumentales — ambiance <strong>steampunk</strong> victorienne. Régulièrement classée parmi les <strong>plus belles stations de métro au monde</strong>."
+        },
+        {
+            "question": "Qui sont Schuiten et Peeters ?",
+            "answer": "<strong>François Schuiten</strong> (né en 1956) est un <strong>dessinateur belge</strong>, auteur (avec Benoît Peeters) de la célèbre série de bandes dessinées <em>Les Cités Obscures</em> (à partir de 1983), univers <strong>steampunk uchronique</strong> où l'architecture joue un rôle central. <strong>Benoît Peeters</strong> (né en 1956) est un <strong>écrivain, scénariste et théoricien de la BD français</strong>. Le duo a aussi conçu d'autres projets architecturaux fantastiques et travaillé pour le musée du Louvre. Arts et Métiers est leur <strong>projet d'art urbain le plus connu</strong> avec le public — célébration du croisement entre science, technique et imaginaire."
+        },
+        {
+            "question": "Comment rejoindre le Musée des Arts et Métiers depuis la station ?",
+            "answer": "<strong>2 minutes à pied</strong> : sortir et marcher 100 m vers le nord par la <strong>rue Réaumur</strong>. L'entrée principale du musée se trouve <strong>60 rue Réaumur</strong>, dans l'ancienne <strong>abbaye royale de Saint-Martin-des-Champs</strong> (XIᵉ siècle). Le musée présente plus de <strong>80 000 objets</strong> d'histoire des sciences et techniques : <strong>pendule de Foucault original</strong> (1851), <strong>Fardier de Cugnot</strong> (premier véhicule à vapeur 1769), <strong>Avion III d'Ader</strong>, cinématographe Lumière, instruments de chimie, modèles ferroviaires."
+        },
+        {
+            "question": "Qu'est-ce que le CNAM ?",
+            "answer": "Le <strong>Conservatoire national des Arts et Métiers (CNAM)</strong>, fondé par la <strong>Convention le 10 octobre 1794</strong> (loi de l'abbé <strong>Henri Grégoire</strong>), est l'un des plus anciens <strong>grands établissements d'enseignement supérieur</strong> français. Mission originelle : <strong>« perfectionner l'industrie nationale »</strong>. Aujourd'hui : dispensaire de <strong>formation continue</strong> pour adultes (environ 80 000 auditeurs/an), recherche scientifique, conservation du patrimoine technique (le <strong>Musée des Arts et Métiers</strong>). Établissement situé sur le site de l'<strong>ancienne abbaye royale de Saint-Martin-des-Champs</strong> (fondée 1060), à 100 m de la station."
+        },
+        {
+            "question": "La station Arts et Métiers est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong> sur les 2 lignes (M3 et M11). Pas d'ascenseurs vers les quais. Pour un trajet PMR vers le Musée des Arts et Métiers, utiliser le <strong>bus 20, 38 ou 47</strong> (planchers bas) ou taxi/VTC. Le musée lui-même est partiellement accessible."
+        },
+        {
+            "question": "Quels sont les horaires de la station Arts et Métiers ?",
+            "answer": "Les <strong>M3 et M11</strong> circulent de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien desservent le quartier (rue de Turbigo, boulevard Sébastopol)."
+        },
+        {
+            "question": "Que voir d'autre autour d'Arts et Métiers ?",
+            "answer": "À <strong>5-15 min à pied</strong> : <strong>Centre Pompidou</strong> (10 min vers le sud, ⚠️ fermé 2025-2030 pour rénovation), <strong>Marais</strong> (10 min vers le sud-est), <strong>République</strong> (1 station M11 ou 8 min à pied — gros pôle d'échange), <strong>Square du Temple</strong> (8 min — jardin historique), <strong>Église Saint-Nicolas-des-Champs</strong> (5 min — XIIᵉ siècle, gothique flamboyant). Plus loin via M3 : <strong>Opéra Garnier</strong> et <strong>Saint-Lazare</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Quais M11 cuivre Schuiten</strong> : LE shot incontournable du métro parisien. À photographier en attendant le train.",
+        "Pour le <strong>Musée des Arts et Métiers</strong> : 2 min à pied (entrée 60 rue Réaumur).",
+        "Visiter aussi l'<strong>ancienne abbatiale de Saint-Martin-des-Champs</strong> (au sein du musée) — <strong>pendule de Foucault original 1851</strong>.",
+        "Pour <strong>République</strong> : 1 station M11 vers le nord ou 8 min à pied.",
+        "Quartier mode tech (Sentier proche) — coworkings, startups, restaurants tendance.",
+        "Vigilance pickpockets standard sur les quais (zone touristique majeure depuis 1994)."
+    ],
+    "trivia": [
+        {
+            "icon": "⚙️",
+            "title": "Quais M11 cuivre Schuiten (1994) — ambiance Nautilus de Jules Verne",
+            "content": "Les <strong>quais de la M11</strong> ont été <strong>entièrement habillés de cuivre rivé</strong> en <strong>octobre 1994</strong> pour célébrer le <strong>bicentenaire du Conservatoire national des Arts et Métiers (CNAM)</strong>. Projet conçu par le dessinateur belge <strong>François Schuiten</strong> (auteur avec Peeters de la BD <em>Les Cités Obscures</em>, univers steampunk uchronique) et l'écrivain français <strong>Benoît Peeters</strong>. Concept : reproduire l'<strong>intérieur du Nautilus</strong>, sous-marin imaginaire de <strong>Jules Verne</strong> (<em>Vingt mille lieues sous les mers</em>, 1870). <strong>800 plaques de cuivre et laiton rivées</strong> habillent murs et plafond. <strong>Hublots</strong> contiennent des images de machines scientifiques. <strong>Engrenages</strong>, <strong>roues dentées</strong>, <strong>vis monumentales</strong> = ambiance steampunk victorienne. Régulièrement classée parmi les <strong>plus belles stations de métro au monde</strong> (CNN, Lonely Planet)."
+        },
+        {
+            "icon": "🔬",
+            "title": "Musée des Arts et Métiers — pendule de Foucault, Fardier de Cugnot, Avion d'Ader",
+            "content": "Le <strong>Musée des Arts et Métiers</strong>, à 100 m de la station, est l'un des <strong>plus anciens musées d'histoire des sciences et techniques au monde</strong>. Fondé en <strong>1794</strong> au sein du CNAM, installé dans l'<strong>ancienne abbaye royale de Saint-Martin-des-Champs</strong> (fondée 1060, abbatiale XIᵉ siècle). <strong>Plus de 80 000 objets</strong>. Pièces emblématiques : le <strong>pendule de Foucault original</strong> (1851, suspendu dans l'abbatiale, démonstration de la rotation terrestre), le <strong>Fardier de Cugnot</strong> (1769, premier véhicule automobile à vapeur), modèles de <strong>machine à vapeur de Watt</strong>, l'<strong>Avion III de Clément Ader</strong> (1897, prototype d'aéroplane), le premier <strong>cinématographe Lumière</strong>, des instruments astronomiques et chimiques."
+        },
+        {
+            "icon": "🏛️",
+            "title": "CNAM (1794) — fondé par l'abbé Grégoire pour « perfectionner l'industrie nationale »",
+            "content": "Le <strong>Conservatoire national des Arts et Métiers (CNAM)</strong> a été fondé par la <strong>Convention</strong> le <strong>10 octobre 1794</strong> sur proposition de l'<strong>abbé Henri Grégoire</strong> (1750-1831, figure de la Révolution). Mission originelle : <strong>« perfectionner l'industrie nationale »</strong> en formant les ingénieurs et techniciens et en conservant un <strong>« dépôt de machines, modèles, outils, dessins, descriptions et livres dans tous les genres d'arts et métiers »</strong>. Premier établissement de <strong>formation continue technique</strong> au monde. Aujourd'hui : <strong>~80 000 auditeurs/an</strong>, formation diplômante du Bac+2 au doctorat, recherche scientifique appliquée. Bâtiment principal sur le site de l'ancienne <strong>abbaye royale de Saint-Martin-des-Champs</strong> (fondée 1060)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée des Arts et Métiers",
+            "destination_slug": "musee-arts-metiers",
+            "destination_full_name": "Arts et Métiers → Musée des Arts et Métiers",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Réaumur (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-musee/"
+        },
+        {
+            "destination_name": "République via M11",
+            "destination_slug": "republique",
+            "destination_full_name": "Arts et Métiers → République",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Rosny (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-republique/"
+        },
+        {
+            "destination_name": "Centre Pompidou via M11",
+            "destination_slug": "centre-pompidou",
+            "destination_full_name": "Arts et Métiers → Centre Pompidou",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet jusqu'à Rambuteau (1 station)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-pompidou/"
+        },
+        {
+            "destination_name": "Marais + Place des Vosges",
+            "destination_slug": "place-des-vosges",
+            "destination_full_name": "Arts et Métiers → Place des Vosges",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Turbigo + rue des Francs-Bourgeois (~1,2 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-place-des-vosges/"
+        },
+        {
+            "destination_name": "Opéra Garnier via M3",
+            "destination_slug": "opera-garnier",
+            "destination_full_name": "Arts et Métiers → Opéra Garnier",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Pont de Levallois jusqu'à Opéra (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-opera/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles via M11",
+            "destination_slug": "chatelet-les-halles",
+            "destination_full_name": "Arts et Métiers → Châtelet - Les Halles",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (terminus, 3 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare du Nord via M11 + M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Arts et Métiers → Gare du Nord",
+            "lines_used": [
+                "M11",
+                "M4"
+            ],
+            "lines_label": "M11 jusqu'à Châtelet + M4 direction Porte de Clignancourt (4 stations)",
+            "duration_minutes": 14,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M11 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Arts et Métiers → CDG",
+            "lines_used": [
+                "M11",
+                "RER B"
+            ],
+            "lines_label": "M11 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-arts-et-metiers/arts-et-metiers-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q178065",
+            "name": "Centre national d'art et de culture Georges-Pompidou",
+            "category": "musée",
+            "description": "Le Centre national d'art et de culture Georges-Pompidou (CNAC) — communément appelé « centre Pompidou », ou plus familièrement « Beaubourg » — est une institution parisienne qui regroupe le même…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Montmartre%20Blick%20aufs%20Centre%20Georges-Pompidou.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou",
+            "latitude": 48.860642,
+            "longitude": 2.352245,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue Beaubourg",
+                "distance_m": 557,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1538826",
+            "name": "musée des Arts et Métiers",
+            "category": "musée",
+            "description": "Le Musée des Arts et Métiers, ou MuAM, est un musée des sciences et des technologies, du Conservatoire national des arts et métiers, dans le 3e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Arts%20et%20M%C3%A9tiers%20337.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers",
+            "latitude": 48.866111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "5",
+                "name": "rue de Turbigo",
+                "distance_m": 75,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue des Vertus",
+                "distance_m": 663,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q175055",
+            "name": "place de la République",
+            "category": "place",
+            "description": "La place de la République est une place de 3,4 ha située à la limite des 3e, 10e et 11e arrondissements de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%202017-12-01%20-%20Place%20de%20la%20R%C3%A9publique%20-%205517.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Paris)",
+            "latitude": 48.867278,
+            "longitude": 2.364056,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue des Vertus",
+                "distance_m": 488,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q684594",
+            "name": "porte Saint-Denis",
+            "category": "site notable",
+            "description": "La porte Saint-Denis est un arc de triomphe situé dans l'actuel 10e arrondissement de Paris et construit en 1673, par l'architecte François Blondel, à la gloire de Louis XIV.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint%20Denis%20-%20Paris%20X%20%28FR75%29%20-%202023-06-14%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis",
+            "latitude": 48.869722,
+            "longitude": 2.3525,
+            "nearest_exit": {
+                "number": "4bis",
+                "name": "square Émile Chautemps",
+                "distance_m": 287,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q977732",
+            "name": "musée d'art et d'histoire du judaïsme",
+            "category": "musée",
+            "description": "Le musée d'Art et d'Histoire du judaïsme (mahJ) est installé dans l'hôtel de Saint-Aignan dans le quartier du Marais.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20H%C3%B4tel%20de%20Saint-Aignan%20-%20Muse%C3%A9%20du%20Juda%C3%AFsme.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_et_d%27Histoire_du_juda%C3%AFsme",
+            "latitude": 48.861111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue Beaubourg",
+                "distance_m": 455,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q950217",
+            "name": "porte Saint-Martin",
+            "category": "monument",
+            "description": "La porte Saint-Martin est un monument de Paris, situé à l'emplacement d'une porte de l'ancienne enceinte de Charles V.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint-Martin%2C%20Paris%208%20June%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Martin",
+            "latitude": 48.869171,
+            "longitude": 2.355601,
+            "nearest_exit": {
+                "number": "4bis",
+                "name": "square Émile Chautemps",
+                "distance_m": 285,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q917337",
+            "name": "hôtel de Soubise",
+            "category": "site notable",
+            "description": "L'hôtel de Soubise, anciennement hôtel de Clisson puis hôtel de Guise, est un hôtel particulier parisien situé au coin de l'actuelle rue des Francs-Bourgeois et de la rue des Archives dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Soubise%2C%20Paris%209%20June%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Soubise",
+            "latitude": 48.860556,
+            "longitude": 2.358333,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue des Vertus",
+                "distance_m": 499,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1067494",
+            "name": "tour du Temple",
+            "category": "palais",
+            "description": "La tour du Temple et son enclos constituaient la maison du Temple, ancienne forteresse parisienne située dans le nord du Marais, au sein du 3e arrondissement de Paris, qui fut détruite en 1808.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoffbauer-Brezet-Temple1734.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_du_Temple",
+            "latitude": 48.86528,
+            "longitude": 2.36222,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue des Vertus",
+                "distance_m": 286,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q281309",
+            "name": "fontaine Stravinsky",
+            "category": "fontaine",
+            "description": "La fontaine Stravinsky, ou fontaine des Automates, réalisée en 1983, est l'œuvre conjointe de Jean Tinguely et Niki de Saint Phalle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075004%20Place%20Igor-Stravinsky%20Fountain%2001b.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_Stravinsky",
+            "latitude": 48.859444,
+            "longitude": 2.351389,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue Beaubourg",
+                "distance_m": 705,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1488512",
+            "name": "église Saint-Nicolas-des-Champs",
+            "category": "église",
+            "description": "L'église Saint-Nicolas-des-Champs située à Paris est un édifice religieux catholique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20st%20nicolas%20des%20champs.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-des-Champs_de_Paris",
+            "latitude": 48.86547,
+            "longitude": 2.35425,
+            "nearest_exit": {
+                "number": "5",
+                "name": "rue de Turbigo",
+                "distance_m": 82,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1567798",
+            "name": "synagogue Nazareth",
+            "category": "synagogue",
+            "description": "La synagogue Nazareth est une synagogue du 3e arrondissement de Paris. C'est la plus ancienne des grandes synagogues de Paris. Elle est rattachée au Consistoire central israélite de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Syna%20Nazareth.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Nazareth",
+            "latitude": 48.866853,
+            "longitude": 2.360128,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue des Vertus",
+                "distance_m": 241,
+                "walk_minutes": 3
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue Conté",
+            "address_full": "57 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865678,
+            "longitude": 2.356613,
+            "accessible": null
+        },
+        {
+            "number": "1bis",
+            "name": "boulevard de Sébastopol",
+            "address_full": "103 Boulevard de Sébastopol 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866077,
+            "longitude": 2.352205,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue Réaumur (place Theodor Herzl)",
+            "address_full": "2 Place Theodor Herzl 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865417,
+            "longitude": 2.35667,
+            "accessible": null
+        },
+        {
+            "number": "2bis",
+            "name": "rue Réaumur (rue de Palestro)",
+            "address_full": "31 Rue de Palestro 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866436,
+            "longitude": 2.35205,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue des Vertus",
+            "address_full": "22 Rue Réaumur 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.86504,
+            "longitude": 2.358324,
+            "accessible": null
+        },
+        {
+            "number": "3bis",
+            "name": "rue Saint-Denis",
+            "address_full": "63 Rue Réaumur 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866518,
+            "longitude": 2.350645,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "rue Beaubourg",
+            "address_full": "48 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865204,
+            "longitude": 2.355405,
+            "accessible": null
+        },
+        {
+            "number": "4bis",
+            "name": "square Émile Chautemps",
+            "address_full": "98b Boulevard de Sébastopol 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.867179,
+            "longitude": 2.353145,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "rue de Turbigo",
+            "address_full": "51 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865437,
+            "longitude": 2.355375,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "rue Beaubourg",
+                "rue Réaumur"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Rue de Turbigo + rue Réaumur",
+            "details": "Cafés, brasseries et restaurants nombreux. Quartier mode tech (Sentier proche) — coworkings, startups.",
+            "secondary": "Marais sud à 10 min : galeries, restaurants tendance. Centre Pompidou à 10 min (façade, ⚠️ fermé 2025-2030)."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets standard sur les quais M11 (zone touristique depuis 1994).",
+            "Soirée tardive : zone fréquentée jusqu'à minuit (bars, restaurants Sentier/Marais).",
+            "Présence d'étudiants CNAM en journée (campus proche).",
+            "Quartier sûr globalement, surveillance habituelle des transports."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique du décor 1994."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Station_Arts_M%C3%A9tiers_M%C3%A9tro_Paris_-_Paris_III_%28FR75%29_-_2026-01-03_-_1.jpg",
+        "alt": "Quais M11 de la station Arts et Métiers entièrement habillés de cuivre rivé (Schuiten + Peeters, 1994) — ambiance Nautilus de Jules Verne",
+        "width": 5712,
+        "height": 4284,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Station_Arts_M%C3%A9tiers_M%C3%A9tro_Paris_-_Paris_III_(FR75)_-_2026-01-03_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/arts-et-metiers/arts-et-metiers-400.avif",
+                "800": "/assets/img/stations/arts-et-metiers/arts-et-metiers-800.avif",
+                "1200": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1200.avif",
+                "1600": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/arts-et-metiers/arts-et-metiers-400.webp",
+                "800": "/assets/img/stations/arts-et-metiers/arts-et-metiers-800.webp",
+                "1200": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1200.webp",
+                "1600": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/arts-et-metiers/arts-et-metiers-400.jpg",
+                "800": "/assets/img/stations/arts-et-metiers/arts-et-metiers-800.jpg",
+                "1200": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1200.jpg",
+                "1600": "/assets/img/stations/arts-et-metiers/arts-et-metiers-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": "Station non accessible PMR sur les 2 lignes (M3 et M11). Pas d'ascenseurs vers les quais. Pour un trajet PMR vers le Musée des Arts et Métiers, utiliser le bus 20, 38 ou 47 (planchers bas) ou taxi/VTC."
+    }
+}
