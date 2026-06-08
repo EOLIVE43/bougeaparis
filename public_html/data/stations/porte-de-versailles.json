@@ -1,0 +1,623 @@
+{
+    "published": true,
+    "slug": "porte-de-versailles",
+    "name": "Porte de Versailles",
+    "name_full": "Porte de Versailles (Métro 12 + Tram T2 + T3a)",
+    "arrondissement": "15e (Paris)",
+    "address": "Place de la Porte de Versailles, 75015 Paris",
+    "latitude": 48.832781,
+    "longitude": 2.287799,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Porte de Versailles station",
+        "es": "Estación Porte de Versailles"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "tram_correspondences": [
+        {
+            "type": "tram",
+            "code": "T2",
+            "slug": "tram-2",
+            "color": "#7F94B0",
+            "text_color": "#FFFFFF",
+            "station_name": "Porte de Versailles",
+            "walking_minutes": 0,
+            "note": "Terminus T2 (Pont de Bezons ↔ Porte de Versailles), correspondance directe"
+        },
+        {
+            "type": "tram",
+            "code": "T3a",
+            "slug": "tram-3a",
+            "color": "#FF7E2E",
+            "text_color": "#FFFFFF",
+            "station_name": "Porte de Versailles",
+            "walking_minutes": 0,
+            "note": "T3a (Pont du Garigliano ↔ Porte de Vincennes), correspondance directe"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "12",
+            "39",
+            "80"
+        ],
+        "nocturne": [
+            "N13",
+            "N62",
+            "N161",
+            "N162"
+        ],
+        "regional": [
+            "3754",
+            "Traverse"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 7,
+            "nearby_count": 20
+        }
+    },
+    "seo": {
+        "description": "Station Porte de Versailles : M12 + T2 + T3a dans le 15e arr., Paris Expo (plus grand parc d'expositions de France, 226 000 m²), Foire de Paris, Mondial Auto."
+    },
+    "hero": {
+        "tagline": "Le plus grand parc d'expositions de France",
+        "description": "Au sud-ouest du <strong>15e arrondissement</strong>, Porte de Versailles est un <strong>pôle d'échange majeur</strong> à <strong>3 modes</strong> : <strong>M12</strong>, <strong>tramway T2</strong> (terminus) et <strong>tramway T3a</strong>. M12 ouverte le <strong>5 novembre 1910</strong> (ex-ligne A Nord-Sud). À <strong>100 mètres</strong> : <strong>Paris Expo Porte de Versailles</strong>, <strong>le plus grand parc d'expositions de France</strong> avec <strong>226 000 m² couverts</strong> sur <strong>35 hectares</strong>. Hôte de la <strong>Foire de Paris</strong> (depuis 1904, plus ancienne foire commerciale d'Europe), du <strong>Salon de l'Agriculture</strong> et du <strong>Mondial de l'Auto</strong>. <strong>Plus de 200 événements/an</strong>, <strong>7,5 millions de visiteurs</strong>."
+    },
+    "adjacent_stations": {
+        "metro-12": {
+            "previous": {
+                "name": "Convention",
+                "slug": "convention",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Corentin Celton",
+                "slug": "corentin-celton",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte de Versailles</strong> est un <strong>pôle d'échange majeur</strong> du <strong>15e arrondissement de Paris</strong>, situé à l'extrême sud-ouest. Elle dessert <strong>trois modes</strong> de transport : la <strong>ligne 12 du métro</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers), le <strong>tramway T2</strong> (Pont de Bezons ↔ Porte de Versailles, terminus) et le <strong>tramway T3a</strong> (Pont du Garigliano ↔ Porte de Vincennes). Avec environ <strong>5 millions d'entrants en 2021</strong> (métro seul), c'est l'un des pôles les plus fréquentés du sud-ouest parisien.",
+        "Ouverture de la <strong>M12</strong> le <strong>5 novembre 1910</strong> dans le cadre du <strong>tronçon initial de la ligne A de la compagnie Nord-Sud</strong> — la station marque alors le <strong>terminus sud de la ligne</strong>. Devient officiellement la M12 le <strong>27 mars 1931</strong> après absorption Nord-Sud par CMP. Le <strong>tramway T3a</strong> a été inauguré le <strong>16 décembre 2006</strong> (boucle sud parisienne du tramway des Maréchaux). Le <strong>tramway T2</strong> a été <strong>prolongé jusqu'à Porte de Versailles</strong> le <strong>19 novembre 2009</strong>, faisant de la station un pôle trimodal.",
+        "À <strong>100 mètres</strong> de la station se trouve le <strong>Paris Expo Porte de Versailles</strong>, <strong>le plus grand parc d'expositions de France</strong>. Construit progressivement depuis <strong>1923</strong>, il s'étend aujourd'hui sur <strong>35 hectares</strong> avec <strong>226 000 m² d'espaces couverts</strong> répartis en <strong>8 pavillons</strong>. Il accueille <strong>plus de 200 événements par an</strong> et attire environ <strong>7,5 millions de visiteurs annuels</strong>. Événements emblématiques : <strong>Foire de Paris</strong> (depuis 1904 — <strong>plus ancienne foire commerciale d'Europe</strong>, ~600 000 visiteurs), <strong>Salon International de l'Agriculture</strong> (depuis 1964, ~600 000 visiteurs), <strong>Mondial de l'Auto / Paris Motor Show</strong> (depuis 1898, alterné avec Francfort), <strong>Salon du Livre</strong>, <strong>Maison & Objet</strong>, <strong>VivaTech</strong> (technologies)."
+    ],
+    "history": {
+        "title": "1910 : la M12 Nord-Sud, et 1923 : naissance du Paris Expo",
+        "paragraphs": [
+            "La station <strong>Porte de Versailles</strong> est inaugurée le <strong>5 novembre 1910</strong> dans le cadre du <strong>tronçon initial de la ligne A de la compagnie Nord-Sud</strong> (compagnie privée concurrente de la CMP). La station marque alors le <strong>terminus sud de la ligne</strong>. La compagnie Nord-Sud est <strong>absorbée par la CMP en 1930</strong>, et la ligne A devient officiellement la <strong>M12</strong> le <strong>27 mars 1931</strong>. La M12 est <strong>prolongée à Mairie d'Issy</strong> (en banlieue) le <strong>24 mars 1934</strong> — Porte de Versailles cesse d'être terminus.",
+            "Le <strong>Paris Expo Porte de Versailles</strong> a été créé en <strong>1923</strong> par la <strong>Foire de Paris</strong>. La Foire de Paris elle-même a été <strong>fondée en 1904</strong> par les <strong>commerçants parisiens</strong> pour stimuler l'économie — c'est la <strong>plus ancienne foire commerciale d'Europe</strong>. À l'origine, la Foire se tenait sur les <strong>Champs-Élysées</strong> puis aux <strong>Invalides</strong> — mais l'essor du nombre d'exposants nécessite un site dédié. Le <strong>terrain de la Porte de Versailles</strong>, libéré par la démolition des fortifications de Thiers, est choisi en 1923.",
+            "Le parc d'expositions s'agrandit progressivement au cours du XXᵉ siècle. <strong>Pavillon 1</strong> (1923, le plus ancien), <strong>Pavillon 7</strong> (1976, architecte Pierre Vivien — la fameuse halle à coque suspendue), <strong>Pavillons 5 et 6</strong> (Bernard Zehrfuss années 1960). En <strong>1980-2010</strong>, modernisations successives. <strong>Rénovation profonde 2015-2024</strong> par le groupe <strong>Viparis</strong> (exploitant), avec création d'un <strong>nouveau Pavillon 6</strong> par <strong>Jean-Michel Wilmotte</strong> (2024) et d'un <strong>hôtel-belvédère </strong>(Paris Convention Centre, 2017).",
+            "Le parc accueille aujourd'hui plus de <strong>200 événements par an</strong> et <strong>7,5 millions de visiteurs</strong>. Événements emblématiques : <strong>Foire de Paris</strong> (avril-mai, ~600 000 visiteurs), <strong>Salon International de l'Agriculture</strong> (février-mars depuis 1964, ~600 000 visiteurs — plus grand au monde dans son genre), <strong>Mondial de l'Auto / Paris Motor Show</strong> (octobre tous les 2 ans depuis 1898), <strong>Salon du Livre</strong>, <strong>Maison & Objet</strong> (déco), <strong>VivaTech</strong> (technologies, depuis 2016).",
+            "Le <strong>tramway T3a</strong> est inauguré le <strong>16 décembre 2006</strong>. C'est la <strong>renaissance du tramway à Paris</strong> après sa disparition en 1937 (le précédent tramway parisien fonctionnait sur le réseau des Maréchaux). T3a circule sur le <strong>boulevard des Maréchaux sud</strong> de <strong>Pont du Garigliano</strong> à <strong>Porte d'Ivry</strong> puis <strong>Porte de Vincennes</strong>. Le <strong>tramway T2</strong> (initialement ouvert en 1997 entre La Défense et Issy - Val de Seine sur l'ancienne voie ferrée de la Petite Ceinture rive gauche) est <strong>prolongé à Porte de Versailles</strong> le <strong>19 novembre 2009</strong>, faisant de la station un pôle trimodal."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Porte de Versailles ?",
+            "answer": "<strong>Trois modes</strong> : <strong>M12</strong> (Mairie d'Issy ↔ Mairie d'Aubervilliers), <strong>tramway T2</strong> (Pont de Bezons ↔ Porte de Versailles, terminus) et <strong>tramway T3a</strong> (Pont du Garigliano ↔ Porte de Vincennes). Aucune correspondance RER directe. Bus 39, 42, 80, 89 et nombreuses lignes desservent la place."
+        },
+        {
+            "question": "Qu'est-ce que le Paris Expo ?",
+            "answer": "Le <strong>Paris Expo Porte de Versailles</strong> est <strong>le plus grand parc d'expositions de France</strong>. <strong>35 hectares</strong> dont <strong>226 000 m² d'espaces couverts</strong> répartis en <strong>8 pavillons</strong>. Construit depuis <strong>1923</strong>, modernisé en profondeur (2015-2024 par le groupe Viparis). Accueille <strong>plus de 200 événements par an</strong> et <strong>7,5 millions de visiteurs annuels</strong>. Événements emblématiques : <strong>Foire de Paris</strong> (depuis 1904), <strong>Salon de l'Agriculture</strong> (depuis 1964), <strong>Mondial de l'Auto</strong> (depuis 1898), <strong>Maison & Objet</strong>, <strong>VivaTech</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la Foire de Paris ?",
+            "answer": "La <strong>Foire de Paris</strong>, fondée en <strong>1904</strong>, est la <strong>plus ancienne foire commerciale d'Europe</strong>. Initialement créée par les <strong>commerçants parisiens</strong> pour stimuler l'économie. À l'origine sur les Champs-Élysées puis aux Invalides, elle s'installe à <strong>Porte de Versailles en 1923</strong>. Aujourd'hui : ~<strong>600 000 visiteurs</strong> sur 10 jours en avril-mai. Thématiques : maison/déco, gastronomie, bien-être, artisanat, nouveautés tech grand public. Symbole du commerce et de l'innovation française."
+        },
+        {
+            "question": "Comment rejoindre le Paris Expo depuis la station ?",
+            "answer": "<strong>1 minute à pied</strong> : sortir par la <strong>sortie 1 (avenue Ernest Renan)</strong> ou la <strong>sortie 4 (boulevard Victor)</strong>. L'<strong>entrée principale du parc</strong> (Pavillon 1) se trouve à <strong>1 place de la Porte de Versailles</strong>. Les autres pavillons sont accessibles par leurs entrées respectives autour du parc. Plan du site sur viparis.com."
+        },
+        {
+            "question": "Quelles sont les correspondances tramway ?",
+            "answer": "Deux tramways : <strong>T2</strong> (terminus ici, vers Pont de Bezons en passant par Issy, Suresnes, La Défense — 30 stations) et <strong>T3a</strong> (vers Pont du Garigliano à l'ouest ou vers Porte d'Ivry/Porte de Vincennes à l'est — boucle sud parisienne sur les boulevards des Maréchaux). Très utile pour rejoindre <strong>La Défense</strong> via T2 ou la <strong>ceinture sud</strong> via T3a sans correspondance métro."
+        },
+        {
+            "question": "La station Porte de Versailles est-elle accessible PMR ?",
+            "answer": "<strong>Métro M12 non accessible PMR</strong> (pas d'ascenseur vers les quais). Les <strong>tramways T2 et T3a sont 100% accessibles PMR</strong> (planchers bas, quais surélevés). Le <strong>Paris Expo</strong> est <strong>accessible PMR</strong> (ascenseurs, rampes, sanitaires adaptés). Pour rejoindre Paris Expo en PMR, privilégier les tramways."
+        },
+        {
+            "question": "Quels sont les horaires à Porte de Versailles ?",
+            "answer": "La <strong>M12</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Le <strong>T2</strong> circule de <strong>5h à 1h</strong> environ, le <strong>T3a</strong> de <strong>5h à 0h30</strong>. La nuit, Noctilien N62, N66 desservent la place."
+        },
+        {
+            "question": "Que voir d'autre dans le quartier ?",
+            "answer": "À <strong>5-15 min à pied</strong> : <strong>Parc Suzanne Lenglen</strong> (5 min, vaste parc), <strong>Stade Pierre de Coubertin</strong> (5 min), <strong>Aquaboulevard</strong> (parc aquatique à 10 min via T3a), <strong>Parc des Princes</strong> (PSG, 15 min via T3a vers Porte d'Auteuil). Plus loin via M12 : <strong>Saint-Germain-des-Prés</strong> (15 min) et <strong>Montmartre</strong> (30 min)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Paris Expo</strong> à 1 min : 8 pavillons sur 226 000 m², plus de 200 événements/an.",
+        "<strong>T2</strong> terminus ici — direct vers <strong>La Défense</strong> (~30 min) en passant par Issy et Suresnes.",
+        "<strong>T3a</strong> boucle sud parisienne — utile pour Porte d'Italie, Porte de Vincennes, Pont du Garigliano.",
+        "Pendant la <strong>Foire de Paris</strong> (avril-mai) ou le <strong>Salon de l'Agriculture</strong> (février-mars) : station SURCHARGÉE, prévoir +30 min.",
+        "<strong>Aquaboulevard</strong> à 10 min via T3a (parc aquatique avec piscines, toboggans).",
+        "Pour <strong>La Défense</strong> : T2 direct est souvent plus rapide que le métro avec correspondances."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Paris Expo (1923) — le plus grand parc d'expositions de France",
+            "content": "<strong>Le plus grand parc d'expositions de France</strong> : <strong>35 hectares</strong>, <strong>226 000 m² d'espaces couverts</strong>, <strong>8 pavillons</strong>. Créé en <strong>1923</strong> par la <strong>Foire de Paris</strong> sur le terrain libéré par la démolition des fortifications de Thiers. Plus de <strong>200 événements par an</strong>, <strong>7,5 millions de visiteurs annuels</strong>. Événements emblématiques : <strong>Foire de Paris</strong> (depuis 1904 — plus ancienne foire commerciale d'Europe, ~600 000 visiteurs), <strong>Salon International de l'Agriculture</strong> (depuis 1964, ~600 000 visiteurs — plus grand au monde dans son genre), <strong>Mondial de l'Auto / Paris Motor Show</strong> (depuis 1898, tous les 2 ans), <strong>Maison & Objet</strong>, <strong>VivaTech</strong> (depuis 2016 — plus grand salon tech d'Europe). Rénovation profonde 2015-2024 par <strong>Viparis</strong>, nouveau Pavillon 6 par <strong>Jean-Michel Wilmotte</strong> (2024)."
+        },
+        {
+            "icon": "🚊",
+            "title": "Pôle trimodal — M12 + T2 + T3a, renaissance du tramway parisien",
+            "content": "Porte de Versailles est un <strong>pôle d'échange trimodal</strong>. La <strong>M12</strong> (ex-ligne A Nord-Sud, 5 novembre 1910). Le <strong>tramway T3a</strong>, inauguré le <strong>16 décembre 2006</strong>, marque la <strong>renaissance du tramway à Paris</strong> après sa disparition en <strong>1937</strong> (le précédent réseau parisien). Circule sur les boulevards des Maréchaux sud. Le <strong>tramway T2</strong> (initialement Pont de Sèvres ↔ Issy en 1997) est <strong>prolongé jusqu'à Porte de Versailles</strong> le <strong>19 novembre 2009</strong>. Permet de rejoindre <strong>La Défense</strong> directement en ~30 minutes sans correspondance métro. Tramways 100% accessibles PMR."
+        },
+        {
+            "icon": "🐮",
+            "title": "Salon de l'Agriculture (depuis 1964) — plus grand au monde",
+            "content": "Le <strong>Salon International de l'Agriculture</strong>, organisé depuis <strong>1964</strong> à Paris Expo, est le <strong>plus grand salon agricole au monde</strong> dans son genre. <strong>~600 000 visiteurs</strong> sur 9 jours (février-mars). <strong>1 000 exposants</strong> de tous les secteurs : <strong>élevage</strong> (4 000 animaux exposés : vaches, taureaux, porcs, moutons, chevaux, volailles), <strong>cultures</strong>, <strong>vignerons</strong>, <strong>gastronomie régionale</strong>, <strong>matériel agricole</strong>. <strong>Concours général agricole</strong> de la <strong>vache égérie</strong> (sélection annuelle d'une vache emblématique, traditionnellement de race différente chaque année). <strong>Visite présidentielle</strong> traditionnelle le premier jour (depuis Pompidou en 1971). Vitrine du monde rural français."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Paris Expo (entrée principale Pavillon 1)",
+            "destination_slug": "paris-expo",
+            "destination_full_name": "Porte de Versailles → Paris Expo",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur la place (~100 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-paris-expo/"
+        },
+        {
+            "destination_name": "La Défense via T2",
+            "destination_slug": "la-defense",
+            "destination_full_name": "Porte de Versailles → La Défense",
+            "lines_used": [
+                "T2"
+            ],
+            "lines_label": "T2 direct La Défense (terminus à Pont de Bezons)",
+            "duration_minutes": 30,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-la-defense/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M12 + M8",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Porte de Versailles → Tour Eiffel",
+            "lines_used": [
+                "M12",
+                "M8"
+            ],
+            "lines_label": "M12 jusqu'à Concorde + M8 jusqu'à École Militaire",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés via M12",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Porte de Versailles → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers (8 stations)",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-saint-germain/"
+        },
+        {
+            "destination_name": "Porte d'Orléans via T3a",
+            "destination_slug": "porte-d-orleans",
+            "destination_full_name": "Porte de Versailles → Porte d'Orléans",
+            "lines_used": [
+                "T3a"
+            ],
+            "lines_label": "T3a direction Porte d'Ivry (8 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-porte-orleans/"
+        },
+        {
+            "destination_name": "Parc des Princes (PSG) via T3a",
+            "destination_slug": "parc-des-princes",
+            "destination_full_name": "Porte de Versailles → Parc des Princes",
+            "lines_used": [
+                "T3a"
+            ],
+            "lines_label": "T3a direction Pont du Garigliano + correspondance",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-parc-princes/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M12 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Porte de Versailles → CDG",
+            "lines_used": [
+                "M12",
+                "RER B"
+            ],
+            "lines_label": "M12 jusqu'à correspondance + RER B direct CDG",
+            "duration_minutes": 55,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-cdg/"
+        },
+        {
+            "destination_name": "Sacré-Cœur Montmartre via M12",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Porte de Versailles → Sacré-Cœur",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Aubervilliers jusqu'à Abbesses (15 stations)",
+            "duration_minutes": 30,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-versailles/porte-de-versailles-vers-sacre-coeur/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3533204",
+            "name": "Tour Triangle",
+            "category": "tour",
+            "description": "La tour Triangle est un gratte-ciel en construction au parc des expositions de la porte de Versailles. Les travaux de cet immeuble de grande hauteur ont commencé à la fin de l'année 2021.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Triangle%20-%20Juillet%202025.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Triangle",
+            "latitude": 48.831667,
+            "longitude": 2.285833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Palais des Sports",
+                "distance_m": 114,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1799101",
+            "name": "La Ruche",
+            "category": "quartier",
+            "description": "La Ruche est une cité d'artistes comptant une soixantaine d'ateliers, située au passage de Dantzig, dans le quartier Saint-Lambert du 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20the%20%22La%20Ruche%22%20in%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Ruche_(cit%C3%A9_d%27artistes)",
+            "latitude": 48.8325,
+            "longitude": 2.296944,
+            "nearest_exit": {
+                "number": "5",
+                "name": "boulevard Lefebvre",
+                "distance_m": 593,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2234305",
+            "name": "Palais des sports",
+            "category": "palais",
+            "description": "Le Dôme de Paris - Palais des Sports est une salle de spectacles de grandes dimensions située place de la Porte-de-Versailles dans le 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20des%20Sports%20de%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/D%C3%B4me_de_Paris_-_Palais_des_Sports",
+            "latitude": 48.8325,
+            "longitude": 2.286111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Palais des Sports",
+                "distance_m": 85,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3494454",
+            "name": "église Saint-Antoine-de-Padoue",
+            "category": "église",
+            "description": "L’église catholique Saint-Antoine-de-Padoue, placée sous l’invocation de saint Antoine de Padoue, est située boulevard Lefebvre dans le 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Antoine-de-Padoue%20%28Paris%29%206.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Antoine-de-Padoue_de_Paris",
+            "latitude": 48.8298,
+            "longitude": 2.29439,
+            "nearest_exit": {
+                "number": "5",
+                "name": "boulevard Lefebvre",
+                "distance_m": 484,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3494303",
+            "name": "église Notre-Dame-de-Nazareth",
+            "category": "église",
+            "description": "L'église catholique Notre-Dame-de-Nazareth est située au 349—351 rue Lecourbe dans le 15e arrondissement de Paris. La paroisse est animée par les Religieux de Saint Vincent de Paul.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1070962%20Paris%20XV%20Notre-Dame-de-Nazareth%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-Nazareth_de_Paris",
+            "latitude": 48.836147,
+            "longitude": 2.283898,
+            "nearest_exit": {
+                "number": "4",
+                "name": "boulevard Victor",
+                "distance_m": 484,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q15159745",
+            "name": "Vaugirard-Ceinture",
+            "category": "gare",
+            "description": "La gare de Vaugirard-Ceinture est une gare ferroviaire française désaffectée de la ligne de Petite Ceinture, située dans le 15e arrondissement de Paris, près de la porte de Versailles, en région…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20pte%20ceinture%20vaugirard.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Vaugirard-Ceinture",
+            "latitude": 48.8333,
+            "longitude": 2.2904,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Vaugirard",
+                "distance_m": 153,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3496034",
+            "name": "stade de la Rue Olivier-de-Serres",
+            "category": "site notable",
+            "description": "Le stade de la Légion Saint-Michel, de son premier nom Stade de la rue Olivier-de-Serres, est un ancien stade, se trouvant rue Olivier-de-Serres dans le 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legionsm1921.PNG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Stade_de_la_L%C3%A9gion_Saint-Michel",
+            "latitude": 48.833142,
+            "longitude": 2.293588,
+            "nearest_exit": {
+                "number": "5",
+                "name": "boulevard Lefebvre",
+                "distance_m": 362,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3399102",
+            "name": "porte de Versailles",
+            "category": "site notable",
+            "description": "La porte de Versailles est une porte de Paris, aujourd'hui disparue.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Porte%20de%20Versailles.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Versailles",
+            "latitude": 48.8325,
+            "longitude": 2.28806,
+            "nearest_exit": {
+                "number": "4",
+                "name": "boulevard Victor",
+                "distance_m": 36,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3495014",
+            "name": "square du Cardinal-Verdier",
+            "category": "site notable",
+            "description": "Le square du Cardinal-Verdier est un square du 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20du%20Cardinal%20Verdier%2C%20Paris%2024%20December%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Cardinal-Verdier",
+            "latitude": 48.8297,
+            "longitude": 2.29306,
+            "nearest_exit": {
+                "number": "5",
+                "name": "boulevard Lefebvre",
+                "distance_m": 413,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3145243",
+            "name": "hôpital Vaugirard - Gabriel-Pallez",
+            "category": "hôpital",
+            "description": "L'hôpital Vaugirard est un hôpital gériatrique de 315 lits de l'Assistance publique - hôpitaux de Paris (AP-HP) situé au 10, rue Vaugelas dans le 15e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Vaugirard%20Gabriel-Pallez.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Vaugirard_-_Gabriel-Pallez",
+            "latitude": 48.8345,
+            "longitude": 2.29402,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Vaugirard",
+                "distance_m": 450,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3586111",
+            "name": "église de la Sainte-Trinité de Vanves",
+            "category": "église",
+            "description": "L'église de la Sainte-Trinité-et-des-Nouveaux-Martyrs-de-Russie, ou simplement de la Sainte-Trinité, est une église russe orthodoxe du diocèse de Chersonèse au Patriarcat de Moscou.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A6%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%8C%20%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B9%20%D1%82%D1%80%D0%BE%D0%B8%D1%86%D1%8B%20%D0%B2%D0%BE%20%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8F%20%D0%BC%D0%B5%D1%80%D0%BA%D1%8E%D1%80%20-%20panoramio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_la_Sainte-Trinit%C3%A9_de_Vanves",
+            "latitude": 48.82619,
+            "longitude": 2.29118,
+            "nearest_exit": {
+                "number": "5",
+                "name": "boulevard Lefebvre",
+                "distance_m": 687,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q14912368",
+            "name": "manufacture des tabacs",
+            "category": "monument",
+            "description": "La Manufacture des tabacs d'Issy-les-Moulineaux, construite entre 1900 et 1904, est une ancienne manufacture des tabacs située 17 rue Ernest-Renan à Issy-les-Moulineaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manufacture%20des%20tabacs%20d%27Issy-les-Moulineaux.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Manufacture_des_tabacs_d%27Issy-les-Moulineaux",
+            "latitude": 48.828056,
+            "longitude": 2.283056,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Ernest Renan (Pavillon 1)",
+                "distance_m": 549,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "avenue Ernest Renan (Pavillon 1)",
+            "address_full": "1 Avenue Ernest Renan 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.831992,
+            "longitude": 2.287579,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Palais des Sports",
+            "address_full": "4 Avenue Ernest Renan 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.832188,
+            "longitude": 2.287167,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue de Vaugirard",
+            "address_full": "1 Boulevard Lefebvre 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.832673,
+            "longitude": 2.288537,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "boulevard Victor",
+            "address_full": "75 Boulevard Victor 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.832814,
+            "longitude": 2.288153,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "boulevard Lefebvre",
+            "address_full": "1z Place de la Porte de Versailles 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.83218,
+            "longitude": 2.288857,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "note": "Sanibroyeurs payants à Paris Expo"
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue Ernest Renan",
+                "boulevard Victor"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Pôle bus Porte de Versailles",
+            "services": "vente titres, info trafic"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Paris Expo + Place de la Porte de Versailles",
+            "details": "Pendant les événements Paris Expo : nombreux food trucks et restauration sur place. Brasseries et fast-food autour de la place.",
+            "secondary": "Hôtel Pullman Paris Tour Eiffel à 10 min via T3a vers Pont du Garigliano."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée pendant grands événements Paris Expo (~600 000 visiteurs / event).",
+            "Pôle bus très fréquenté : surveillance habituelle.",
+            "Présence de sécurité Viparis pendant événements (Foire, Salon Agriculture, Mondial Auto).",
+            "Soirée tardive : zone calme hors événements."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature événementielle du pôle."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Parc_des_expositions_de_la_porte_de_Versailles_vu_depuis_le_dernier_%C3%A9tage_du_Paris_Convention_Centre_2022.jpg",
+        "alt": "Vue aérienne du Parc des expositions de la Porte de Versailles depuis le Paris Convention Centre (2022) — le plus grand parc d'expositions de France (35 ha, 226 000 m²)",
+        "width": 4032,
+        "height": 3024,
+        "credit": {
+            "author": "Artvill",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Parc_des_expositions_de_la_porte_de_Versailles_vu_depuis_le_dernier_%C3%A9tage_du_Paris_Convention_Centre_2022.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-de-versailles/porte-de-versailles-400.avif",
+                "800": "/assets/img/stations/porte-de-versailles/porte-de-versailles-800.avif",
+                "1200": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1200.avif",
+                "1600": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-de-versailles/porte-de-versailles-400.webp",
+                "800": "/assets/img/stations/porte-de-versailles/porte-de-versailles-800.webp",
+                "1200": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1200.webp",
+                "1600": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-de-versailles/porte-de-versailles-400.jpg",
+                "800": "/assets/img/stations/porte-de-versailles/porte-de-versailles-800.jpg",
+                "1200": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1200.jpg",
+                "1600": "/assets/img/stations/porte-de-versailles/porte-de-versailles-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 2,
+            "total_lines": 3
+        },
+        "details": "Métro M12 non accessible PMR. Tramways T2 et T3a 100% accessibles PMR (planchers bas). Paris Expo accessible PMR. Pour rejoindre Paris Expo en PMR, privilégier les tramways."
+    }
+}
