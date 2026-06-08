@@ -326,8 +326,8 @@
         "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir du caractère institutionnel + écoquartier."
     },
     "hero_image": {
-        "url": "https://bougeaparis.fr/assets/img/stations/pont-cardinet/staticmap-osm.png",
-        "alt": "Carte de la station Pont Cardinet (M14) — vue OpenStreetMap centrée sur Rue Cardinet / Boulevard Pereire Sud, 75017 Paris (48.886428°N, 2.314617°E), zoom 16",
+        "url": "https://bougeaparis.fr/assets/img/stations/pont-cardinet/source/staticmap-osm.png",
+        "alt": "Carte de la station Pont Cardinet (Métro 14) — vue OpenStreetMap centree sur Rue Cardinet / Boulevard Pereire Sud, 75017 Paris (48.886428°N, 2.314617°E), zoom 16",
         "width": 1200,
         "height": 675,
         "credit": {
@@ -337,29 +337,9 @@
             "source_url": "https://www.openstreetmap.org/?mlat=48.886428&mlon=2.314617&zoom=16",
             "date": "2026-06-08"
         },
-        "source": "osm_staticmap",
+        "source": "osm_staticmap_fallback",
         "confidence_score": 22,
-        "confidence_level": "auto_generated",
-        "local_versions": {
-            "avif": {
-                "400": "/assets/img/stations/pont-cardinet/pont-cardinet-400.avif",
-                "800": "/assets/img/stations/pont-cardinet/pont-cardinet-800.avif",
-                "1200": "/assets/img/stations/pont-cardinet/pont-cardinet-1200.avif",
-                "1600": "/assets/img/stations/pont-cardinet/pont-cardinet-1600.avif"
-            },
-            "webp": {
-                "400": "/assets/img/stations/pont-cardinet/pont-cardinet-400.webp",
-                "800": "/assets/img/stations/pont-cardinet/pont-cardinet-800.webp",
-                "1200": "/assets/img/stations/pont-cardinet/pont-cardinet-1200.webp",
-                "1600": "/assets/img/stations/pont-cardinet/pont-cardinet-1600.webp"
-            },
-            "jpg": {
-                "400": "/assets/img/stations/pont-cardinet/pont-cardinet-400.jpg",
-                "800": "/assets/img/stations/pont-cardinet/pont-cardinet-800.jpg",
-                "1200": "/assets/img/stations/pont-cardinet/pont-cardinet-1200.jpg",
-                "1600": "/assets/img/stations/pont-cardinet/pont-cardinet-1600.jpg"
-            }
-        }
+        "confidence_level": "auto_generated"
     },
     "accessibility": {
         "audit_status": "pending",
