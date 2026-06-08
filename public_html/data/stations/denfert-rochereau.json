@@ -1,0 +1,611 @@
+{
+    "published": true,
+    "slug": "denfert-rochereau",
+    "name": "Denfert-Rochereau",
+    "name_full": "Denfert-Rochereau (Métro 4 + 6 + RER B)",
+    "arrondissement": "14e (Paris)",
+    "address": "Place Denfert-Rochereau, 75014 Paris",
+    "latitude": 48.833894,
+    "longitude": 2.332769,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Denfert-Rochereau station",
+        "es": "Estación Denfert-Rochereau"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "type": "rer",
+            "code": "B",
+            "slug": "rer-b",
+            "color": "#5091CB",
+            "text_color": "#FFFFFF",
+            "station_name": "Denfert-Rochereau",
+            "walking_minutes": 0,
+            "note": "Correspondance directe en gare commune"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "38",
+            "59",
+            "64",
+            "68",
+            "88"
+        ],
+        "nocturne": [
+            "N14",
+            "N21",
+            "N122",
+            "N123"
+        ],
+        "regional": [
+            "216"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 4,
+            "nearby_count": 26
+        }
+    },
+    "seo": {
+        "description": "Station Denfert-Rochereau : M4 + M6 + RER B dans le 14e arr., Catacombes de Paris (entrée à 50 m, 6 M de squelettes), Lion de Belfort (Bartholdi 1880)."
+    },
+    "hero": {
+        "tagline": "Le Lion de Bartholdi et l'entrée des Catacombes",
+        "description": "Au cœur du <strong>14e arrondissement</strong>, Denfert-Rochereau est un <strong>pôle d'échange majeur à 3 modes</strong> : <strong>M4, M6 et RER B</strong>. La station tire son nom de <strong>Pierre Philippe Denfert-Rochereau</strong> (1823-1878), <strong>colonel défenseur de Belfort</strong> en 1870-1871. Au centre de la place : le célèbre <strong>Lion de Belfort</strong>, <strong>sculpture monumentale en cuivre</strong> (11 × 22 mètres) de <strong>Frédéric Auguste Bartholdi</strong> (le sculpteur de la Statue de la Liberté), inaugurée en <strong>1880</strong> — réplique de l'original de Belfort. À <strong>50 mètres</strong>, l'entrée des <strong>Catacombes de Paris</strong> : <strong>ossuaire municipal</strong> contenant les restes de <strong>6 millions de Parisiens</strong> dans 1,5 km de galeries visitables."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Mouton-Duvernet",
+                "slug": "mouton-duvernet",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Raspail",
+                "slug": "raspail",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-6": {
+            "previous": {
+                "name": "Saint-Jacques",
+                "slug": "saint-jacques",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Raspail",
+                "slug": "raspail",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Denfert-Rochereau</strong> est un <strong>pôle d'échange majeur du 14e arrondissement de Paris</strong>, situé sous la <strong>Place Denfert-Rochereau</strong>. Elle dessert <strong>trois modes</strong> de transport : la <strong>ligne 4 du métro</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), la <strong>ligne 6 du métro</strong> (Charles de Gaulle - Étoile ↔ Nation) et le <strong>RER B</strong> (Robinson/Saint-Rémy ↔ CDG/Mitry-Claye). Avec environ <strong>13 millions d'entrants en 2021</strong> (métro seul), c'est l'un des pôles les plus fréquentés du sud de Paris.",
+        "Ouverture <strong>échelonnée</strong> : la <strong>M4</strong> ouvre le <strong>30 octobre 1909</strong>, la <strong>M6</strong> arrive le <strong>1ᵉʳ mars 1909</strong> (alors M2 Sud, renommée M6 en 1907), et le <strong>RER B</strong> intègre la station dans les années 1980 (ligne de Sceaux historique, intégrée au RER B en 1977 puis 1981). La gare RER B est l'ancienne <strong>gare de Sceaux</strong>, terminus historique de la ligne du Paris-Limours (1846).",
+        "Le nom <strong>Denfert-Rochereau</strong> rend hommage à <strong>Pierre Philippe Denfert-Rochereau</strong> (1823-1878), <strong>colonel français</strong> qui s'est illustré comme <strong>défenseur de Belfort</strong> pendant la <strong>guerre franco-prussienne de 1870-1871</strong>. Pendant <strong>103 jours de siège</strong> (3 novembre 1870 - 18 février 1871), il résiste à <strong>40 000 soldats prussiens</strong> avec seulement <strong>17 000 hommes</strong>. La résistance héroïque de Belfort permet à la ville de rester française après le traité de Francfort (10 mai 1871). Au centre de la place, le <strong>Lion de Belfort</strong>, <strong>sculpture monumentale</strong> de <strong>Frédéric Auguste Bartholdi</strong> (auteur de la Statue de la Liberté), inaugurée en <strong>1880</strong>, est une <strong>réplique en cuivre</strong> de l'original en grès rose de Belfort. À <strong>50 mètres</strong>, l'entrée des célèbres <strong>Catacombes de Paris</strong> — <strong>ossuaire municipal</strong> de <strong>6 millions de Parisiens</strong>."
+    ],
+    "history": {
+        "title": "1870 : Belfort résiste, et les Catacombes de Paris",
+        "paragraphs": [
+            "L'histoire de Denfert-Rochereau est dominée par deux mémoires : la <strong>défense de Belfort en 1870-1871</strong> et les <strong>Catacombes</strong>. Pierre Philippe Denfert-Rochereau (1823-1878), <strong>colonel du génie</strong>, défend Belfort pendant la <strong>guerre franco-prussienne</strong>. Du <strong>3 novembre 1870 au 18 février 1871</strong>, soit <strong>103 jours</strong>, il résiste à <strong>40 000 soldats prussiens</strong> avec <strong>17 000 hommes</strong> (dont 2 000 soldats réguliers). Les Prussiens utilisent l'artillerie lourde mais la citadelle tient. Quand l'armistice est signé le 28 janvier 1871, Belfort tient toujours. Denfert-Rochereau ne capitule que sur ordre direct du gouvernement français, le 18 février 1871, et <strong>obtient les honneurs militaires</strong>.",
+            "Cette résistance héroïque permet à la <strong>ville de Belfort de rester française</strong> par le traité de Francfort (10 mai 1871) — alors que l'<strong>Alsace et la Moselle</strong> sont annexées à l'Allemagne. Belfort reste un <strong>symbole national</strong>. Denfert-Rochereau est <strong>élu député</strong> en 1871 et fêté comme un héros national.",
+            "Au centre de la place, le <strong>Lion de Belfort</strong> est inauguré en <strong>1880</strong>. <strong>Sculpture monumentale en cuivre martelé</strong> (technique du repoussé), <strong>11 m de long × 22 m de haut</strong>, conçue par <strong>Frédéric Auguste Bartholdi</strong> (1834-1904) — le sculpteur de la <strong>Statue de la Liberté</strong> à New York (inaugurée 1886). C'est une <strong>réplique au tiers</strong> du <strong>Lion de Belfort original</strong> sculpté directement dans la falaise de grès rose en contrebas de la citadelle de Belfort (1875-1880). Le lion symbolise la <strong>résistance française</strong> face à l'invasion prussienne. La sculpture parisienne est <strong>orientée vers l'est</strong> (vers l'Alsace perdue).",
+            "À <strong>50 mètres</strong> de la station, l'entrée des <strong>Catacombes de Paris</strong> est l'une des attractions touristiques majeures de la capitale. Cet <strong>ossuaire municipal souterrain</strong> a été créé entre <strong>1786 et 1814</strong> pour transférer les restes de <strong>6 millions de Parisiens</strong> depuis les anciens cimetières du centre (notamment le cimetière des Innocents, supprimé en 1786 pour cause d'insalubrité). Les ossements sont placés dans d'anciennes <strong>carrières de pierre calcaire</strong> exploitées depuis l'époque romaine pour bâtir Paris. <strong>1,5 km de galeries</strong> visitables (sur <strong>plus de 300 km au total</strong>). Les ossements sont arrangés en motifs décoratifs (murs de fémurs et crânes). Ouvert au public depuis <strong>1809</strong>, environ <strong>500 000 visiteurs/an</strong>.",
+            "À <strong>500 m</strong>, l'<strong>Observatoire de Paris</strong>, fondé par <strong>Colbert en 1667</strong> sur ordre de <strong>Louis XIV</strong>. Conçu par <strong>Claude Perrault</strong> (architecte de la colonnade du Louvre). Premier directeur : <strong>Giovanni Domenico Cassini</strong> (1625-1712), astronome italien. <strong>Plus ancien observatoire encore en activité au monde</strong>. C'est là qu'a été défini le <strong>méridien de Paris</strong> (utilisé jusqu'à l'adoption de Greenwich en 1884)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Denfert-Rochereau ?",
+            "answer": "<strong>Trois modes</strong> : <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), <strong>M6</strong> (Charles de Gaulle - Étoile ↔ Nation) et <strong>RER B</strong> (Robinson/Saint-Rémy ↔ CDG/Mitry-Claye). Correspondances multimodales en gare commune. Bus 38, 68, 88 desservent la place."
+        },
+        {
+            "question": "Comment rejoindre les Catacombes depuis la station ?",
+            "answer": "<strong>1 minute à pied</strong> : sortir par la <strong>sortie 1 (place Denfert-Rochereau)</strong>. L'entrée des Catacombes est au <strong>1 avenue du Colonel Henri Rol-Tanguy</strong>, juste en face. ⚠️ Conseil important : <strong>réserver son billet à l'avance en ligne</strong> (catacombes.paris.fr) — les files d'attente peuvent dépasser 2-3 heures sans réservation. Visite ~45 min (1,5 km de galeries souterraines, 130 marches à descendre)."
+        },
+        {
+            "question": "Qui est Denfert-Rochereau ?",
+            "answer": "<strong>Pierre Philippe Denfert-Rochereau</strong> (1823-1878), <strong>colonel du génie</strong> de l'armée française. Héros de la <strong>guerre franco-prussienne de 1870-1871</strong> : <strong>défenseur de Belfort</strong> pendant <strong>103 jours</strong> (3 novembre 1870 - 18 février 1871) contre 40 000 Prussiens avec seulement 17 000 hommes. Sa résistance héroïque permet à la <strong>ville de Belfort de rester française</strong> par le traité de Francfort (alors que l'Alsace et la Moselle sont annexées). Élu député en 1871, fêté comme héros national. La place et la station portent son nom."
+        },
+        {
+            "question": "Qu'est-ce que le Lion de Belfort ?",
+            "answer": "Une <strong>sculpture monumentale en cuivre</strong> (11 m × 22 m) inaugurée en <strong>1880</strong> au centre de la place. Œuvre de <strong>Frédéric Auguste Bartholdi</strong> (1834-1904), le sculpteur de la <strong>Statue de la Liberté</strong> à New York. C'est une <strong>réplique au tiers</strong> du <strong>Lion de Belfort original</strong> sculpté directement dans la falaise de grès rose de Belfort (1875-1880). Le lion symbolise la <strong>résistance française</strong> face à l'invasion prussienne de 1870. À Paris, la sculpture est <strong>orientée vers l'est</strong> (vers l'Alsace perdue par le traité de Francfort). Sculpture par technique du <strong>repoussé sur cuivre martelé</strong>."
+        },
+        {
+            "question": "Qu'est-ce que les Catacombes de Paris ?",
+            "answer": "Un <strong>ossuaire municipal souterrain</strong> créé entre <strong>1786 et 1814</strong> pour transférer les restes de <strong>6 millions de Parisiens</strong> depuis les anciens cimetières du centre (notamment cimetière des Innocents, fermé pour insalubrité en 1786). Les ossements sont placés dans d'anciennes <strong>carrières de pierre calcaire</strong> exploitées depuis l'époque romaine pour bâtir Paris. <strong>1,5 km de galeries</strong> visitables (sur 300 km au total). Ossements arrangés en <strong>motifs décoratifs</strong> (murs de fémurs et crânes). Ouvert au public depuis 1809. Environ <strong>500 000 visiteurs/an</strong>. Réservation obligatoire."
+        },
+        {
+            "question": "La station Denfert-Rochereau est-elle accessible PMR ?",
+            "answer": "<strong>Métro non accessible PMR</strong> (M4 et M6, pas d'ascenseurs vers les quais). La <strong>gare RER B Denfert-Rochereau</strong> est <strong>partiellement accessible</strong> (avec ascenseur partiel). Les Catacombes <strong>NE sont PAS accessibles PMR</strong> (130 marches à descendre, galeries étroites). Pour le quartier en PMR, utiliser les bus 38 ou 68 (planchers bas)."
+        },
+        {
+            "question": "Quels sont les horaires à Denfert-Rochereau ?",
+            "answer": "Les <strong>M4 et M6</strong> circulent globalement de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Le <strong>RER B</strong> circule de <strong>4h45 à 1h15</strong> environ (avec fréquence réduite la nuit). La nuit, Noctilien N14, N21, N31, N62, N122, N131 desservent la place."
+        },
+        {
+            "question": "Pourquoi le RER B passe-t-il par Denfert ?",
+            "answer": "Parce que la <strong>gare RER B Denfert-Rochereau</strong> est l'ancienne <strong>gare de Sceaux</strong>, terminus historique de la <strong>ligne ferroviaire de Sceaux</strong> ouverte en <strong>1846</strong> (la première ligne suburbaine au sud de Paris). La ligne de Sceaux a été <strong>intégrée au RER B en 1977</strong> (puis 1981) lors de la création du réseau RER. La gare conserve son <strong>caractère historique</strong> et son <strong>hall d'origine</strong>. C'est une des seules gares RER B au sud à conserver son aspect d'avant la RATP."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Catacombes de Paris</strong> à 1 min : réserver en ligne (catacombes.paris.fr) — file 2-3h sans réservation.",
+        "<strong>Lion de Belfort</strong> : sculpture monumentale au centre de la place — à photographier.",
+        "<strong>RER B</strong> direct vers <strong>CDG en 35 min</strong> (sans changement).",
+        "Pour la <strong>rue Daguerre</strong> et son marché : 1 station M4 vers le sud (Mouton-Duvernet).",
+        "<strong>Observatoire de Paris</strong> à 5 min (plus ancien encore en activité au monde, 1667).",
+        "<strong>Cimetière du Montparnasse</strong> à 10 min — tombes Sartre/Beauvoir, Baudelaire, Gainsbourg."
+    ],
+    "trivia": [
+        {
+            "icon": "🦁",
+            "title": "Lion de Belfort (1880) — Bartholdi, symbole résistance 1870",
+            "content": "Au centre de la place Denfert-Rochereau, le <strong>Lion de Belfort</strong> est une <strong>sculpture monumentale en cuivre martelé</strong> (technique du repoussé), <strong>11 m × 22 m</strong>, inaugurée en <strong>1880</strong>. Œuvre de <strong>Frédéric Auguste Bartholdi</strong> (1834-1904), le célèbre sculpteur de la <strong>Statue de la Liberté</strong> à New York (1886). C'est une <strong>réplique au tiers</strong> du <strong>Lion de Belfort original</strong> sculpté directement dans la falaise de grès rose de Belfort (1875-1880). Le lion symbolise la <strong>résistance française</strong> face à l'invasion prussienne de 1870-1871. À Paris, la sculpture est <strong>orientée vers l'est</strong> (vers l'Alsace perdue par le traité de Francfort)."
+        },
+        {
+            "icon": "💀",
+            "title": "Catacombes de Paris (1786) — ossuaire de 6 millions de Parisiens",
+            "content": "À 50 m de la station, les <strong>Catacombes de Paris</strong> sont un <strong>ossuaire municipal souterrain</strong> créé entre <strong>1786 et 1814</strong> pour transférer les restes de <strong>6 millions de Parisiens</strong> depuis les anciens cimetières du centre (notamment cimetière des Innocents, fermé pour insalubrité en 1786). Les ossements sont placés dans d'anciennes <strong>carrières de pierre calcaire</strong> exploitées depuis l'époque romaine pour bâtir Paris. <strong>1,5 km de galeries</strong> visitables (sur 300 km au total). <strong>Ossements arrangés en motifs décoratifs</strong> : murs de fémurs et crânes, parfois en figures géométriques. Ouvert au public depuis <strong>1809</strong>. Environ <strong>500 000 visiteurs/an</strong> — l'une des plus grandes attractions parisiennes."
+        },
+        {
+            "icon": "⚔️",
+            "title": "Défense de Belfort (1870-1871) — 103 jours de résistance face aux Prussiens",
+            "content": "<strong>Pierre Philippe Denfert-Rochereau</strong> (1823-1878), <strong>colonel du génie</strong>, défend Belfort pendant la <strong>guerre franco-prussienne</strong>. Du <strong>3 novembre 1870 au 18 février 1871</strong>, soit <strong>103 jours</strong>, il résiste à <strong>40 000 soldats prussiens</strong> avec seulement <strong>17 000 hommes</strong>. Quand l'armistice est signé le 28 janvier 1871, Belfort tient toujours. Il ne capitule que sur <strong>ordre direct du gouvernement français</strong>, le 18 février 1871, et <strong>obtient les honneurs militaires</strong>. Cette résistance héroïque permet à la <strong>ville de Belfort de rester française</strong> par le traité de Francfort (alors que l'Alsace et la Moselle sont annexées à l'Allemagne). Élu député en 1871. La place, la station de métro et de nombreuses rues françaises portent son nom."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Catacombes de Paris",
+            "destination_slug": "catacombes",
+            "destination_full_name": "Denfert-Rochereau → Catacombes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied sur la place (~50 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-catacombes/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Denfert-Rochereau → CDG",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direct CDG (35 min)",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-cdg/"
+        },
+        {
+            "destination_name": "Aéroport Orly via RER B",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Denfert-Rochereau → Orly",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B + OrlyVal (~30 min)",
+            "duration_minutes": 30,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-orly/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via M4",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Denfert-Rochereau → Notre-Dame",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 jusqu'à Cité (8 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Denfert-Rochereau → Tour Eiffel",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile jusqu'à Bir-Hakeim (8 stations)",
+            "duration_minutes": 18,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Saint-Michel - Notre-Dame via RER B",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Denfert-Rochereau → Saint-Michel",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direction Nord (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-saint-michel/"
+        },
+        {
+            "destination_name": "Gare du Nord via RER B",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Denfert-Rochereau → Gare du Nord",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "RER B direction Nord (4 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles via M4",
+            "destination_slug": "chatelet-les-halles",
+            "destination_full_name": "Denfert-Rochereau → Châtelet - Les Halles",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (8 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-denfert-rochereau/denfert-vers-chatelet/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q28924",
+            "name": "catacombes de Paris",
+            "category": "site notable",
+            "description": "Les catacombes de Paris, terme utilisé pour nommer l'ossuaire municipal, sont à l'origine une partie des anciennes carrières souterraines situées dans le 14e arrondissement de Paris, reliées entre…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catacumbas%2C%20Par%C3%ADs%2C%20Francia%2C%202022-11-01%2C%20DD%20117-119%20HDR.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Catacombes_de_Paris",
+            "latitude": 48.83397,
+            "longitude": 2.33245,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 48,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q800660",
+            "name": "Denfert-Rochereau",
+            "category": "gare",
+            "description": "La gare de Denfert-Rochereau est une gare ferroviaire française de la ligne de Sceaux, située dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Denfert-Rochereau%20BV%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Denfert-Rochereau",
+            "latitude": 48.833333,
+            "longitude": 2.332778,
+            "nearest_exit": {
+                "number": "3",
+                "name": "avenue du Général Leclerc",
+                "distance_m": 74,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1131080",
+            "name": "hôpital Cochin",
+            "category": "hôpital",
+            "description": "L'hôpital Cochin est un hôpital de l'Assistance publique - hôpitaux de Paris (AP-HP) dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010424%20Paris%20XIV%20Rue%20du%20Faubourg-Saint-Jacques%20H%C3%B4pital%20Cochin%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Cochin",
+            "latitude": 48.836944,
+            "longitude": 2.340278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 689,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2291298",
+            "name": "Port-Royal",
+            "category": "gare",
+            "description": "La gare de Port-Royal est une gare ferroviaire française de la ligne de Sceaux, située dans le 5e arrondissement de Paris, en limite des 6e et 14e arrondissements à proximité de l'ancienne abbaye de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER%20B-PortRoyal1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Port-Royal",
+            "latitude": 48.839444,
+            "longitude": 2.337222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 706,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1537232",
+            "name": "église Saint-Pierre-de-Montrouge",
+            "category": "église",
+            "description": "L'église Saint-Pierre-de-Montrouge est une église paroissiale construite dans la deuxième moitié du XIXe siècle sur les plans d'Émile Vaudremer au 82, avenue du Général-Leclerc dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Pierre%20de%20Montrouge%20%40%20Paris%2014%20%2831699177372%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montrouge",
+            "latitude": 48.828639,
+            "longitude": 2.327028,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Daguerre",
+                "distance_m": 619,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1441258",
+            "name": "La Closerie des Lilas",
+            "category": "site notable",
+            "description": "La Closerie des Lilas est un restaurant, une brasserie et un bar du quartier Notre-Dame-des-Champs dans le 6e arrondissement de Paris, établi à l'extrémité orientale du boulevard du Montparnasse, au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Closerie%20des%20Lilas%2C%20171%20boulevard%20du%20Montparnasse%2C%20Paris%206e%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Closerie_des_Lilas",
+            "latitude": 48.8401,
+            "longitude": 2.33604,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 727,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2820659",
+            "name": "abbaye de Port-Royal de Paris",
+            "category": "site notable",
+            "description": "L’abbaye de Port-Royal de Paris a été fondée au XVIIe siècle pour décongestionner la maison-mère située en l'abbaye de Port-Royal des Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cloitre%20de%20Port-Royal%20Paris%2C%20Cochin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Port-Royal_de_Paris",
+            "latitude": 48.838763,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 700,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q10421187",
+            "name": "Atelier 17",
+            "category": "site notable",
+            "description": "L'Atelier 17 est un atelier de gravure, fondé et animé par le peintre et graveur Stanley William Hayter.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Atelier_17",
+            "latitude": 48.839729,
+            "longitude": 2.332534,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 621,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3220192",
+            "name": "Le Baiser",
+            "category": "site notable",
+            "description": "Le Baiser est une série de quarante sculptures du sculpteur roumain, naturalisé français, Constantin Brâncuși, créées à partir de 1905.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20LCCN93511527.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Baiser_(Br%C3%A2ncu%C8%99i)",
+            "latitude": 48.838223,
+            "longitude": 2.326135,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1092730",
+            "name": "église Saint-Dominique de Paris",
+            "category": "église",
+            "description": "L'église Saint-Dominique est une église catholique située 20 rue de la Tombe-Issoire dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Dominique%20%28Paris%29%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Dominique_de_Paris",
+            "latitude": 48.8321,
+            "longitude": 2.33503,
+            "nearest_exit": {
+                "number": "3",
+                "name": "avenue du Général Leclerc",
+                "distance_m": 280,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q85854194",
+            "name": "musée de la Libération de Paris – musée du Général-Leclerc – musée Jean-Moulin",
+            "category": "musée",
+            "description": "Le musée de la Libération de Paris - musée du Général Leclerc - musée Jean-Moulin est un des quatorze musées de la ville de Paris gérés par l'établissement public administratif Paris Musées.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Barri%C3%A8re%20d%27Enfer%2C%20place%20Denfert-Rochereau%2C%20Paris%2003.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Lib%C3%A9ration_de_Paris_-_mus%C3%A9e_du_G%C3%A9n%C3%A9ral_Leclerc_-_mus%C3%A9e_Jean-Moulin",
+            "latitude": 48.834167,
+            "longitude": 2.331667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Denfert-Rochereau (Catacombes)",
+                "distance_m": 15,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3145173",
+            "name": "hôpital La Rochefoucauld",
+            "category": "hôpital",
+            "description": "L'hôpital La Rochefoucauld est un ancien hôpital de l'Assistance publique - hôpitaux de Paris (AP-HP) situé 15, avenue du Général-Leclerc, dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20La%20Rochefoucauld%20Paris%20facade%20Ren%C3%A9%20Coty.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_La_Rochefoucauld",
+            "latitude": 48.8319,
+            "longitude": 2.33194,
+            "nearest_exit": {
+                "number": "3",
+                "name": "avenue du Général Leclerc",
+                "distance_m": 170,
+                "walk_minutes": 2
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "place Denfert-Rochereau (Catacombes)",
+            "address_full": "2 Avenue du Colonel Henri Rol-Tanguy 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.834164,
+            "longitude": 2.331866,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue Daguerre",
+            "address_full": "4 Avenue du Général Leclerc 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.833406,
+            "longitude": 2.331386,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "avenue du Général Leclerc",
+            "address_full": "1b Avenue du Général Leclerc 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.833426,
+            "longitude": 2.33178,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "note": "Sanibroyeurs payants en gare RER B"
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "place Denfert-Rochereau",
+                "avenue du Général Leclerc"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Gare RER B Denfert-Rochereau",
+            "services": "vente titres, info trafic"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Place Denfert-Rochereau + avenue du Général Leclerc",
+            "details": "Brasseries et cafés sur la place. Boutique du musée des Catacombes. Restaurants traditionnels avenue du Général Leclerc.",
+            "secondary": "Rue Daguerre à 5 min : marché et commerces traditionnels."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets élevée aux abords des Catacombes (touristes).",
+            "Soirée tardive : place fréquentée jusqu'à minuit.",
+            "Présence policière régulière (hub RER + métro).",
+            "Affluence importante en sortie Catacombes (réserver Uber/taxi à l'avance)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique majeure du site."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Paris_-_Lion_de_Belfort_%2839600856065%29.jpg",
+        "alt": "Lion de Belfort (Frédéric Auguste Bartholdi, 1880) — sculpture monumentale en cuivre martelé de 22 m, réplique du Lion de Belfort, place Denfert-Rochereau",
+        "width": 5184,
+        "height": 3456,
+        "credit": {
+            "author": "Fred Romero",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Paris_-_Lion_de_Belfort_(39600856065).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/denfert-rochereau/denfert-rochereau-400.avif",
+                "800": "/assets/img/stations/denfert-rochereau/denfert-rochereau-800.avif",
+                "1200": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1200.avif",
+                "1600": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/denfert-rochereau/denfert-rochereau-400.webp",
+                "800": "/assets/img/stations/denfert-rochereau/denfert-rochereau-800.webp",
+                "1200": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1200.webp",
+                "1600": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/denfert-rochereau/denfert-rochereau-400.jpg",
+                "800": "/assets/img/stations/denfert-rochereau/denfert-rochereau-800.jpg",
+                "1200": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1200.jpg",
+                "1600": "/assets/img/stations/denfert-rochereau/denfert-rochereau-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 1,
+            "total_lines": 3
+        },
+        "details": "Station métro non accessible PMR (M4 et M6). Gare RER B Denfert-Rochereau partiellement accessible (ascenseur partiel). Catacombes NON accessibles PMR (130 marches, galeries étroites). Pour le quartier en PMR, utiliser les bus 38 ou 68 (planchers bas)."
+    }
+}
