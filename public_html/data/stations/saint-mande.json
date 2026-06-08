@@ -1,0 +1,584 @@
+{
+    "published": true,
+    "slug": "saint-mande",
+    "name": "Saint-Mandé",
+    "name_full": "Saint-Mandé (Métro 1)",
+    "arrondissement": "Saint-Mandé (Val-de-Marne)",
+    "address": "Avenue Gallieni / avenue de Paris, 94160 Saint-Mandé",
+    "latitude": 48.846138,
+    "longitude": 2.4188,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Saint-Mandé — zone 1 IDFM (intra Paris pour tarification)",
+    "commune": "Saint-Mandé",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Saint-Mandé station",
+        "es": "Estación Saint-Mandé"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "56",
+            "86",
+            "325"
+        ],
+        "nocturne": [
+            "N11",
+            "N33"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 4,
+            "nearby_count": 10
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Mandé : M1 à Saint-Mandé (94), commune limitrophe est de Paris (l'une des plus aisées de France), Hôtel de Ville, Lac de Saint-Mandé."
+    },
+    "hero": {
+        "tagline": "Saint-Mandé chic et le Bois de Vincennes",
+        "description": "À <strong>Saint-Mandé</strong> (Val-de-Marne), Saint-Mandé ouvre le <strong>24 mars 1934</strong> lors du prolongement de la M1 vers le Château de Vincennes. Renommée <strong>« Saint-Mandé »</strong> en <strong>2017</strong> (auparavant <strong>« Saint-Mandé Tourelle »</strong>). Saint-Mandé est l'une des <strong>communes les plus aisées d'Île-de-France</strong> (28 000 habitants), commune limitrophe est de Paris. À <strong>5 minutes à pied</strong> : <strong>Hôtel de Ville de Saint-Mandé</strong>, <strong>Lac de Saint-Mandé</strong> (dans le Bois de Vincennes), <strong>Cimetière sud de Saint-Mandé</strong> (où repose <strong>Pétain</strong>, transféré en 1973 depuis l'Île d'Yeu). Quartier résidentiel haussmannien + art déco."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Porte de Vincennes",
+                "slug": "porte-de-vincennes",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Bérault",
+                "slug": "berault",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Mandé</strong> est située à <strong>Saint-Mandé</strong> (commune limitrophe est de Paris, Val-de-Marne, 28 000 habitants), à l'angle de l'<strong>avenue Gallieni</strong> et de l'<strong>avenue de Paris</strong>. Elle est desservie par la <strong>ligne 1 du métro</strong> (Château de Vincennes ↔ La Défense - Grande Arche), entre <strong>Porte de Vincennes</strong> (1 station vers l'ouest, dans Paris) et <strong>Bérault</strong> (1 station vers l'est, Vincennes). Aucune correspondance directe. <strong>5 sorties</strong> sur les avenues Gallieni, du Général de Gaulle, Foch, et la rue du Parc.",
+        "Ouverte le <strong>24 mars 1934</strong>, lors du prolongement de la M1 de Porte de Vincennes au Château de Vincennes. Elle s'appelle initialement <strong>« Saint-Mandé Tourelle »</strong> en référence à la <strong>« tourelle » de l'octroi</strong> qui se trouvait à proximité (édicule fiscal d'entrée dans Paris, démoli au début du XXᵉ siècle). Renommée simplement <strong>« Saint-Mandé »</strong> le <strong>21 décembre 2017</strong> par décision de la RATP, pour simplifier le nom.",
+        "Saint-Mandé est l'une des <strong>communes les plus aisées d'Île-de-France</strong>. <strong>28 000 habitants</strong> sur <strong>92 hectares</strong> (avec le Bois de Vincennes : 920 ha), soit une des <strong>densités urbaines les plus élevées de France</strong> (8 000 hab/km² hors bois). Tissu urbain dense d'<strong>immeubles haussmanniens, art nouveau et art déco</strong> des années 1900-1930. À 5 min à pied : <strong>Hôtel de Ville de Saint-Mandé</strong> (style classique), <strong>Lac de Saint-Mandé</strong> (dans le Bois de Vincennes, 3 ha), <strong>Cimetière sud</strong> (où repose <strong>le maréchal Pétain</strong>, transféré en 1973). La station est un point d'entrée pratique au <strong>Bois de Vincennes</strong> (300 m vers le sud)."
+    ],
+    "history": {
+        "title": "1934 : ouverture, et 2017 : renommage Saint-Mandé",
+        "paragraphs": [
+            "La station <strong>Saint-Mandé</strong> est inaugurée le <strong>24 mars 1934</strong>, lors du <strong>prolongement de la ligne 1</strong> depuis Porte de Vincennes jusqu'au Château de Vincennes. Elle s'appelle initialement <strong>« Saint-Mandé Tourelle »</strong>. Le nom <strong>« Tourelle »</strong> rappelle la <strong>tourelle de l'octroi</strong>, édicule fiscal qui marquait l'entrée dans Paris sur l'avenue de Paris au XIXᵉ siècle (les fortifications de Thiers délimitaient Paris jusqu'en 1929). La tourelle a été démolie au début du XXᵉ siècle avec les fortifications.",
+            "Le <strong>21 décembre 2017</strong>, la RATP <strong>renomme la station « Saint-Mandé »</strong> tout court, supprimant la mention « Tourelle » (jugée obscure). Décision dans le cadre d'une <strong>simplification générale</strong> des noms de stations RATP (concomitante à d'autres renommages : « Charles de Gaulle - Étoile » devenue « Étoile » dans la signalétique, etc., — bien que ces autres aient été partiellement annulés). Pour Saint-Mandé, le renommage est définitif.",
+            "Saint-Mandé est une <strong>commune limitrophe est de Paris</strong>, dans le Val-de-Marne. Son histoire remonte au Moyen Âge — village de Saint-Mandé attesté dès le <strong>VIIᵉ siècle</strong> (autour d'une abbaye fondée par Saint Mandé, moine du VIIᵉ siècle, disciple de Saint Colomban). Au cours des siècles, Saint-Mandé reste un village rural au bord du Bois royal de Vincennes. <strong>Essor démographique au XIXᵉ siècle</strong> : la population passe de <strong>2 000 habitants en 1840 à 17 000 en 1900</strong> avec l'arrivée du chemin de fer (gare 1859) et l'industrialisation.",
+            "Aujourd'hui, Saint-Mandé est l'une des <strong>communes les plus aisées d'Île-de-France</strong> (revenu médian parmi les plus élevés du Val-de-Marne). <strong>28 000 habitants</strong> sur 92 hectares (920 ha avec Bois de Vincennes), <strong>densité urbaine très élevée</strong> (8 000 hab/km² hors bois). Tissu urbain dense : <strong>immeubles haussmanniens, art nouveau et art déco</strong> des années 1900-1930, peu de maisons individuelles. À 5 min à pied de la station : <strong>Hôtel de Ville de Saint-Mandé</strong> (style classique, fin XIXᵉ), <strong>Lac de Saint-Mandé</strong> (dans le Bois de Vincennes, 3 hectares, créé sous Napoléon III en 1860), <strong>Cimetière sud de Saint-Mandé</strong> — où repose le <strong>maréchal Philippe Pétain</strong>, transféré en <strong>1973</strong> depuis sa prison de l'<strong>Île d'Yeu</strong> (avait été condamné à mort puis enfermé à perpétuité après 1945).",
+            "Personnalités liées à Saint-Mandé : <strong>Daniel Cohn-Bendit</strong> (maire adjoint dans les années 1980), <strong>Patrick Beaudouin</strong> (maire 2001-2014), <strong>Daniel Cohn-Bendit</strong> (de nouveau)... Plus historiquement : <strong>Maurice Genevoix</strong>, <strong>Pierre Larousse</strong> (lexicographe), <strong>Auguste Comte</strong> (philosophe positiviste, y vécut), tous y vécurent. Architecture remarquable : <strong>Hôtel de Ville</strong>, <strong>Marie Saint-Joseph</strong> (église néogothique 1880), nombreux immeubles signés des grands architectes du début XXᵉ."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Saint-Mandé ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Porte de Vincennes</strong> (1 station vers l'ouest, dans Paris 12e/20e) et <strong>Bérault</strong> (1 station vers l'est, Vincennes). Aucune correspondance directe. Bus 56, 86, 112, 215, 318, 325 desservent les avenues alentour."
+        },
+        {
+            "question": "Saint-Mandé est-elle dans Paris ?",
+            "answer": "<strong>Non</strong>, Saint-Mandé est une <strong>commune limitrophe est de Paris</strong>, dans le Val-de-Marne (94). Cependant elle est en <strong>zone 1 IDFM</strong> pour la tarification. Frontière administrative avec Paris à 500 m vers l'ouest. C'est l'une des <strong>communes les plus aisées d'Île-de-France</strong> (28 000 habitants, densité 8 000 hab/km² hors bois)."
+        },
+        {
+            "question": "Pourquoi la station a-t-elle été renommée ?",
+            "answer": "La station s'appelait initialement <strong>« Saint-Mandé Tourelle »</strong> à son ouverture en 1934. Le nom <strong>« Tourelle »</strong> rappelait la <strong>tourelle de l'octroi</strong>, édicule fiscal d'entrée dans Paris démoli au début du XXᵉ siècle. La RATP a <strong>renommé la station « Saint-Mandé »</strong> tout court le <strong>21 décembre 2017</strong>, supprimant la mention « Tourelle » jugée obscure. Décision dans le cadre d'une simplification générale des noms de stations."
+        },
+        {
+            "question": "Qui est Saint Mandé ?",
+            "answer": "<strong>Saint Mandé</strong> était un <strong>moine du VIIᵉ siècle</strong>, disciple de <strong>Saint Colomban</strong> (irlandais évangélisateur de la Gaule). Il fonda une <strong>abbaye</strong> au lieu-dit qui porte aujourd'hui son nom. Le village de Saint-Mandé est attesté dès le VIIᵉ siècle autour de cette abbaye, sur les terres du Bois royal de Vincennes. Aujourd'hui aucune trace de l'abbaye médiévale ne subsiste."
+        },
+        {
+            "question": "Où repose le maréchal Pétain ?",
+            "answer": "<strong>Au cimetière sud de Saint-Mandé</strong> (à 10 min à pied de la station). <strong>Philippe Pétain</strong> (1856-1951), maréchal de France et chef du régime de Vichy 1940-1944, fut <strong>condamné à mort en 1945</strong> (peine commuée en prison à vie par De Gaulle). Mort en 1951 à l'<strong>Île d'Yeu</strong> où il était emprisonné. Inhumé d'abord dans le cimetière de Port-Joinville (Île d'Yeu). <strong>Transféré en 1973</strong> au cimetière sud de Saint-Mandé pour rejoindre sa femme. Tombe régulièrement vandalisée."
+        },
+        {
+            "question": "Comment rejoindre le Bois de Vincennes depuis Saint-Mandé ?",
+            "answer": "<strong>5 minutes à pied</strong> : descendre vers le sud par la <strong>rue du Parc</strong> ou la <strong>rue Plisson</strong>. Le <strong>Bois de Vincennes</strong> et le <strong>Lac de Saint-Mandé</strong> (3 hectares) sont à 300 m. Le <strong>Parc Zoologique de Paris / Zoo de Vincennes</strong> à 15 min à pied. Alternative : prendre la M1 jusqu'à <strong>Château de Vincennes</strong> (2 stations) pour l'accès au Parc Floral et au Château."
+        },
+        {
+            "question": "La station Saint-Mandé est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas intégralement accessible PMR</strong>. Pas d'ascenseurs vers tous les niveaux. Pour un trajet PMR, utiliser les <strong>bus 56, 86 ou 318</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Saint-Mandé ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe). La nuit, les Noctilien N11, N33, N34 desservent l'avenue de Paris."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Lac de Saint-Mandé</strong> (Bois de Vincennes) à 5 min à pied — sympa pour promenade.",
+        "<strong>Hôtel de Ville Saint-Mandé</strong> à 5 min — architecture classique fin XIXᵉ.",
+        "Pour <strong>Château de Vincennes</strong> et <strong>Parc Floral</strong> : 2 stations M1 vers l'est.",
+        "Pour <strong>Zoo de Paris</strong> : 15 min à pied vers le sud-est ou bus 86.",
+        "Quartier résidentiel chic — immeubles haussmanniens, restaurants gastronomiques.",
+        "Frontière Paris (12e arr.) à 500 m vers l'ouest (Porte de Vincennes)."
+    ],
+    "trivia": [
+        {
+            "icon": "🏰",
+            "title": "Saint Mandé (VIIᵉ siècle) — moine fondateur du village",
+            "content": "<strong>Saint Mandé</strong> était un <strong>moine du VIIᵉ siècle</strong>, disciple de <strong>Saint Colomban</strong> (moine irlandais évangélisateur de la Gaule mérovingienne). Il fonda une <strong>abbaye</strong> au lieu-dit qui porte aujourd'hui son nom. Le village de Saint-Mandé est attesté dès le VIIᵉ siècle autour de cette abbaye, sur les terres du Bois royal de Vincennes. L'abbaye médiévale a disparu sans laisser de trace. Le nom de la commune perpétue sa mémoire. Particularité : Saint-Mandé est un <strong>saint mineur</strong>, peu connu en dehors du Val-de-Marne. Son nom signifie probablement « le doux » en celtique."
+        },
+        {
+            "icon": "🚇",
+            "title": "Renommage 2017 — « Saint-Mandé Tourelle » devient « Saint-Mandé »",
+            "content": "La station s'appelait initialement <strong>« Saint-Mandé Tourelle »</strong> à son ouverture en 1934. Le nom <strong>« Tourelle »</strong> rappelait la <strong>tourelle de l'octroi</strong>, édicule fiscal qui marquait l'entrée dans Paris sur l'avenue de Paris au XIXᵉ siècle. L'octroi était une taxe perçue sur les marchandises entrant dans Paris (existant jusqu'en 1948). La tourelle, démolie au début du XXᵉ siècle avec les fortifications de Thiers, ne laissait plus de trace visible. La RATP a <strong>renommé la station « Saint-Mandé »</strong> tout court le <strong>21 décembre 2017</strong>, pour clarifier."
+        },
+        {
+            "icon": "⚔️",
+            "title": "Cimetière sud — tombe controversée du maréchal Pétain (depuis 1973)",
+            "content": "Le <strong>cimetière sud de Saint-Mandé</strong>, à 10 min à pied, abrite la <strong>tombe du maréchal Philippe Pétain</strong> (1856-1951). Maréchal de France héros de la Première Guerre mondiale (Verdun 1916), il devint chef du <strong>régime de Vichy 1940-1944</strong> collaborant avec l'Allemagne nazie. <strong>Condamné à mort en 1945</strong> par la Haute Cour de justice, peine <strong>commuée en prison à vie</strong> par le général de Gaulle (en raison de son grand âge et des Verdun). Mort en 1951 à l'<strong>Île d'Yeu</strong> où il était emprisonné. <strong>Transféré en 1973</strong> au cimetière sud de Saint-Mandé pour rejoindre sa femme (qui y était déjà inhumée). Tombe régulièrement <strong>vandalisée</strong> et fait l'objet de polémiques récurrentes."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Lac de Saint-Mandé (Bois de Vincennes)",
+            "destination_slug": "lac-saint-mande",
+            "destination_full_name": "Saint-Mandé → Lac de Saint-Mandé",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue du Parc (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-lac/"
+        },
+        {
+            "destination_name": "Château de Vincennes via M1",
+            "destination_slug": "chateau-de-vincennes",
+            "destination_full_name": "Saint-Mandé → Château",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-chateau/"
+        },
+        {
+            "destination_name": "Parc Zoologique de Paris",
+            "destination_slug": "zoo-paris",
+            "destination_full_name": "Saint-Mandé → Zoo de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied vers le sud-est (~1,2 km)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-zoo/"
+        },
+        {
+            "destination_name": "Nation via M1",
+            "destination_slug": "nation",
+            "destination_full_name": "Saint-Mandé → Nation",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-nation/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Saint-Mandé → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-bastille/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Saint-Mandé → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense jusqu'à Palais Royal",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-louvre/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Saint-Mandé → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (10 stations)",
+            "duration_minutes": 19,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M1 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Saint-Mandé → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-saint-mande/saint-mande-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3399110",
+            "name": "porte de Vincennes",
+            "category": "site notable",
+            "description": "La porte de Vincennes est une porte de Paris en France située dans le quartier du Bel-Air à l'intersection de l'avenue de la Porte-de-Vincennes et du boulevard Carnot au niveau de l'échangeur avec le…",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/P1160645_Paris_XX_ligne_T3b_cours_de_Vincennes_rwk.jpg/330px-P1160645_Paris_XX_ligne_T3b_cours_de_Vincennes_rwk.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Vincennes",
+            "latitude": 48.847222,
+            "longitude": 2.411111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Joffre",
+                "distance_m": 446,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2375542",
+            "name": "synagogue de Vincennes",
+            "category": "synagogue",
+            "description": "La synagogue de Vincennes fait partie des huit synagogues qui ont été totalement ou en partie financées par le banquier mécène Daniel Iffla, dit Osiris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincennes%20Synagogue79.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_Vincennes",
+            "latitude": 48.84768,
+            "longitude": 2.419558,
+            "nearest_exit": {
+                "number": "3",
+                "name": "avenue Foch",
+                "distance_m": 171,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q16507977",
+            "name": "l'avenue de Vincennes",
+            "category": "gare",
+            "description": "La gare de l'avenue de Vincennes est une gare ferroviaire française désaffectée de la ligne de Petite Ceinture, située dans le 20e arrondissement de Paris, près de la porte de Vincennes, en région…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Avenue%20de%20Vincennes.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_l%27avenue_de_Vincennes",
+            "latitude": 48.8479,
+            "longitude": 2.4096,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Joffre",
+                "distance_m": 570,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q21512207",
+            "name": "Charonne-Marchandises",
+            "category": "gare",
+            "description": "La gare de Charonne-Marchandises est une ancienne gare française aux marchandises, disparue, de la ligne de Petite Ceinture à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Charonne-Marchandises.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Charonne-Marchandises",
+            "latitude": 48.8498,
+            "longitude": 2.41,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Joffre",
+                "distance_m": 630,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3145267",
+            "name": "hôpital d'instruction des armées Bégin",
+            "category": "hôpital",
+            "description": "L'hôpital d'instruction des armées (HIA) Bégin est un hôpital militaire situé au 69, avenue de Paris à Saint-Mandé dans le Val-de-Marne, près de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20B%C3%A9gin%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_d%27instruction_des_arm%C3%A9es_B%C3%A9gin",
+            "latitude": 48.8436,
+            "longitude": 2.42656,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Parc (Lac de Saint-Mandé)",
+                "distance_m": 562,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q88211333",
+            "name": "Saint-Mandé",
+            "category": "gare",
+            "description": "La gare de Saint-Mandé est une ancienne gare ferroviaire française située sur la ligne de Paris-Bastille à Marles-en-Brie, dite ligne de Vincennes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Mande%20-%20La%20gare.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Mand%C3%A9",
+            "latitude": 48.84398,
+            "longitude": 2.4196,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Parc (Lac de Saint-Mandé)",
+                "distance_m": 240,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3399085",
+            "name": "porte de Saint-Mandé",
+            "category": "site notable",
+            "description": "La porte de Saint-Mandé est une des portes de Paris. Située dans le quartier du Bel-Air (Paris), elle donne accès à la commune de Saint-Mandé au-delà de l'avenue Courteline.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20de%20Saint-Mand%C3%A9.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Saint-Mand%C3%A9",
+            "latitude": 48.8443,
+            "longitude": 2.41027,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue du Général de Gaulle",
+                "distance_m": 554,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3162446",
+            "name": "jardin d'immeubles de la Porte de Vincennes",
+            "category": "jardin",
+            "description": "Le jardin d'immeubles de la Porte-de-Vincennes est un espace vert du 20e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20d%27Immeubles%20HLM%20Vincennes%2C%20Paris%2011%20March%202017%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_d%27immeubles_de_la_Porte-de-Vincennes",
+            "latitude": 48.8497,
+            "longitude": 2.41376,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Joffre",
+                "distance_m": 421,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3162592",
+            "name": "jardin Marguerite-Huré",
+            "category": "jardin",
+            "description": "Le jardin Marguerite-Huré est un espace vert du 12e arrondissement de Paris, dans le quartier du Bel-Air.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1050311%20Paris%20XII%20boulevard%20Carnot%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Marguerite-Hur%C3%A9",
+            "latitude": 48.8459,
+            "longitude": 2.41312,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue du Général de Gaulle",
+                "distance_m": 302,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3494952",
+            "name": "square de la Paix",
+            "category": "site notable",
+            "description": "Le square de la Paix est un square du 20e arrondissement de Paris dans le quartier de Charonne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Paix%20-%20Paris%20XX%20%28FR75%29%20-%202021-05-21%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_de_la_Paix",
+            "latitude": 48.848739,
+            "longitude": 2.415815,
+            "nearest_exit": {
+                "number": "1",
+                "name": "avenue Joffre",
+                "distance_m": 253,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3495093",
+            "name": "square Émile-Cohl",
+            "category": "site notable",
+            "description": "Le square Émile-Cohl est un espace vert situé dans le quartier du Bel-Air du 12e arrondissement de Paris",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20%C3%89mile-Cohl%202.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_%C3%89mile-Cohl",
+            "latitude": 48.8421,
+            "longitude": 2.41017,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue du Général de Gaulle",
+                "distance_m": 696,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q20882469",
+            "name": "église Notre-Dame de Saint-Mandé",
+            "category": "église",
+            "description": "L'église Notre-Dame de Saint-Mandé est une église de style néo-roman située au 84, avenue du Général de Gaulle, à Saint-Mandé dans le Val-de-Marne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20de%20Saint-Mand%C3%A9.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Saint-Mand%C3%A9",
+            "latitude": 48.839545,
+            "longitude": 2.417175,
+            "nearest_exit": {
+                "number": "3",
+                "name": "avenue Foch",
+                "distance_m": 753,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "avenue Joffre",
+            "address_full": "178 Avenue Gallieni 94160 Saint-Mandé",
+            "postcode": "94160",
+            "city": "Saint-Mandé",
+            "latitude": 48.846643,
+            "longitude": 2.417146,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "avenue du Général de Gaulle",
+            "address_full": "127 Avenue Gallieni 94160 Saint-Mandé",
+            "postcode": "94160",
+            "city": "Saint-Mandé",
+            "latitude": 48.846329,
+            "longitude": 2.41719,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "avenue Foch",
+            "address_full": "125bis Avenue de Paris 94160 Saint-Mandé",
+            "postcode": "94160",
+            "city": "Saint-Mandé",
+            "latitude": 48.846237,
+            "longitude": 2.418731,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "rue du Parc (Lac de Saint-Mandé)",
+            "address_full": "117 Avenue de Paris 94160 Saint-Mandé",
+            "postcode": "94160",
+            "city": "Saint-Mandé",
+            "latitude": 48.846126,
+            "longitude": 2.419904,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue Gallieni",
+                "avenue de Paris"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue Gallieni + avenue de Paris (Saint-Mandé)",
+            "details": "Commerces de proximité sur les avenues. Restaurants gastronomiques (Saint-Mandé commune chic). Marché de Saint-Mandé (mercredis et samedis matin, avenue du Général de Gaulle).",
+            "secondary": "Centre Saint-Mandé (Hôtel de Ville) à 5 min : commerces, brasseries traditionnelles."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Saint-Mandé commune très sûre (faible criminalité, l'une des plus aisées d'Île-de-France).",
+            "Quartier résidentiel calme — peu d'incidents historiques.",
+            "Vigilance pickpockets standard.",
+            "Soirée tardive : zone très calme après 22h."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle aisée de Saint-Mandé."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/H%C3%B4tel_Ville_-_Saint-Mand%C3%A9_%28FR94%29_-_2022-01-28_-_1.jpg",
+        "alt": "Hôtel de Ville de Saint-Mandé (style classique fin XIXᵉ siècle), commune limitrophe est de Paris l'une des plus aisées d'Île-de-France — à 5 min de la station",
+        "width": 4032,
+        "height": 3024,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Ville_-_Saint-Mand%C3%A9_(FR94)_-_2022-01-28_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-mande/saint-mande-400.avif",
+                "800": "/assets/img/stations/saint-mande/saint-mande-800.avif",
+                "1200": "/assets/img/stations/saint-mande/saint-mande-1200.avif",
+                "1600": "/assets/img/stations/saint-mande/saint-mande-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-mande/saint-mande-400.webp",
+                "800": "/assets/img/stations/saint-mande/saint-mande-800.webp",
+                "1200": "/assets/img/stations/saint-mande/saint-mande-1200.webp",
+                "1600": "/assets/img/stations/saint-mande/saint-mande-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-mande/saint-mande-400.jpg",
+                "800": "/assets/img/stations/saint-mande/saint-mande-800.jpg",
+                "1200": "/assets/img/stations/saint-mande/saint-mande-1200.jpg",
+                "1600": "/assets/img/stations/saint-mande/saint-mande-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non intégralement accessible PMR. Pas d'ascenseurs vers tous les niveaux. Pour un trajet PMR, utiliser les bus 56, 86 ou 318 (planchers bas) ou taxi/VTC."
+    }
+}
