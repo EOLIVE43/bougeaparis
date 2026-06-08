@@ -1,0 +1,581 @@
+{
+    "published": true,
+    "slug": "pont-de-neuilly",
+    "name": "Pont de Neuilly",
+    "name_full": "Pont de Neuilly (Métro 1)",
+    "arrondissement": "Neuilly-sur-Seine (Hauts-de-Seine)",
+    "address": "Avenue Charles de Gaulle, 92200 Neuilly-sur-Seine",
+    "latitude": 48.884282,
+    "longitude": 2.259529,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Neuilly-sur-Seine — zone 1 IDFM",
+    "commune": "Neuilly-sur-Seine",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Pont de Neuilly station",
+        "es": "Estación Pont de Neuilly"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "82"
+        ],
+        "nocturne": [
+            "N11",
+            "N24",
+            "N153"
+        ],
+        "regional": [
+            "43",
+            "73",
+            "93",
+            "157",
+            "158",
+            "174",
+            "176"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 2,
+            "nearby_count": 20
+        }
+    },
+    "seo": {
+        "description": "Station Pont de Neuilly : M1 à Neuilly-sur-Seine, Pont de Neuilly franchissant la Seine, ancien terminus ouest M1 (1937-1992), Île de la Jatte."
+    },
+    "hero": {
+        "tagline": "Le Pont de Neuilly et l'Île de la Jatte",
+        "description": "À <strong>Neuilly-sur-Seine</strong>, juste avant la Seine, Pont de Neuilly ouvre le <strong>29 avril 1937</strong> comme <strong>terminus ouest historique</strong> de la M1 (jusqu'en 1992). À <strong>100 mètres</strong> : le <strong>Pont de Neuilly</strong>, ancien pont reconstruit en <strong>1956</strong>, qui franchit la Seine sur l'<strong>axe historique de Paris</strong> (Louvre → La Défense). À côté : l'<strong>Île de la Jatte</strong>, île de Seine résidentielle chic (origine du <strong>tableau de Seurat « Un dimanche après-midi à l'Île de la Grande Jatte »</strong>, 1884-1886). Quartier huppé Neuilly entre Bois de Boulogne et La Défense."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Esplanade de la Défense",
+                "slug": "esplanade-de-la-defense",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Les Sablons",
+                "slug": "les-sablons",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Pont de Neuilly</strong> est située à <strong>Neuilly-sur-Seine</strong> (Hauts-de-Seine), sous l'<strong>avenue Charles de Gaulle</strong>, juste avant la <strong>Seine</strong>. Elle est desservie par la <strong>ligne 1 du métro</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Esplanade de la Défense</strong> (1 station vers l'ouest, en banlieue) et <strong>Les Sablons</strong> (1 station vers l'est, Jardin d'Acclimatation). Aucune correspondance directe à Pont de Neuilly. Bus 43, 73, 82, 174 desservent l'avenue.",
+        "Ouverte le <strong>29 avril 1937</strong> comme <strong>terminus ouest de la M1</strong>, lors du prolongement depuis Porte Maillot. Reste <strong>terminus ouest pendant 55 ans</strong>, jusqu'au <strong>1ᵉʳ avril 1992</strong> et le <strong>prolongement à La Défense</strong> (Grande Arche). Avant la M1 atteigne La Défense, Pont de Neuilly était la <strong>porte d'entrée par métro à l'ouest parisien</strong> pour les voyageurs vers Neuilly et au-delà.",
+        "À <strong>100 mètres</strong> de la station, le <strong>Pont de Neuilly</strong> franchit la <strong>Seine</strong> dans l'<strong>axe historique de Paris</strong> (Louvre → Arc de Triomphe → La Défense). Le pont actuel a été <strong>reconstruit en 1956</strong> par les architectes <strong>Jean Camelot</strong> et <strong>Jean de Mailly</strong>, suite à la destruction du pont précédent (construit 1772 par <strong>Jean-Rodolphe Perronet</strong>, fondateur de l'École des Ponts et Chaussées). Le pont Perronet (1772) était un <strong>chef-d'œuvre de l'ingénierie du XVIIIᵉ siècle</strong> mais inadapté au trafic moderne — élargi et modifié plusieurs fois avant sa <strong>démolition en 1942-1956</strong>. Le pont actuel est <strong>large de 35 m</strong>, permet le passage de la M1 sous la Seine. À côté : l'<strong>Île de la Jatte</strong> (et l'<strong>île Saint-Germain</strong>), îles de Seine résidentielles chic."
+    ],
+    "history": {
+        "title": "1937-1992 : terminus ouest M1, et le Pont Perronet du XVIIIᵉ",
+        "paragraphs": [
+            "La station <strong>Pont de Neuilly</strong> est inaugurée le <strong>29 avril 1937</strong> comme <strong>terminus ouest de la M1</strong>, lors du <strong>prolongement depuis Porte Maillot</strong> (3 stations ajoutées : Les Sablons, Pont de Neuilly + 1 en boucle). C'est la <strong>première extension hors-Paris à l'ouest</strong> du métro parisien. Pont de Neuilly est terminus <strong>pendant 55 ans</strong>, jusqu'au <strong>1ᵉʳ avril 1992</strong> et le <strong>prolongement à La Défense - Grande Arche</strong> (3 stations supplémentaires : Esplanade de la Défense + Pont de Neuilly devient station de passage + La Défense).",
+            "À côté de la station, le <strong>Pont de Neuilly</strong> franchit la <strong>Seine</strong> dans l'<strong>axe historique de Paris</strong>. Le pont a une <strong>longue histoire</strong>. Premier pont en pierre construit en <strong>1772 par Jean-Rodolphe Perronet</strong> (1708-1794), <strong>fondateur de l'École des Ponts et Chaussées</strong> (1747) et <strong>premier ingénieur français du XVIIIᵉ siècle</strong>. Pont de <strong>219 m de long, 13,5 m de large</strong>, à <strong>5 arches</strong> de proportions élégantes. C'était un <strong>chef-d'œuvre de l'ingénierie</strong> de son temps, modèle pour de nombreux ponts à travers le monde.",
+            "Le pont Perronet est <strong>élargi successivement</strong> aux XIXᵉ-XXᵉ siècles pour s'adapter au trafic croissant. <strong>Démoli en 1942-1956</strong> (devenu inadapté au trafic moderne et à la création de la voie rapide RN13 vers la Normandie). <strong>Reconstruit en 1956</strong> par les architectes <strong>Jean Camelot</strong> et <strong>Jean de Mailly</strong> (qui réaliseront aussi le CNIT de La Défense, 1958). Pont en <strong>béton armé</strong>, <strong>35 m de large</strong>, conçu pour accueillir voitures, métro M1, piétons. Plus utilitaire qu'élégant — l'élégance du pont Perronet est perdue.",
+            "Particularité : la <strong>M1 passe sous la Seine</strong> grâce à un <strong>tunnel</strong> sous le pont, à <strong>10 m sous le niveau du fleuve</strong>. C'est l'<strong>une des trois fois</strong> où la M1 passe sous la Seine ou un cours d'eau (avec le passage à Châtelet sous l'ancien lit, et un autre passage). Travaux complexes en 1937 et lors du prolongement vers La Défense en 1992.",
+            "À côté du pont, l'<strong>Île de la Jatte</strong> est une <strong>île de Seine résidentielle</strong>. À l'origine, deux îles distinctes (<strong>île de la Grande Jatte</strong> au sud et <strong>île de la Petite Jatte</strong> au nord), réunies par remblai au XIXᵉ siècle. Aujourd'hui : <strong>quartier résidentiel chic de Neuilly</strong> et de Levallois-Perret, avec maisons individuelles, péniches habitées, espaces verts. L'île est <strong>immortalisée</strong> par le tableau de <strong>Georges Seurat</strong> <em>« Un dimanche après-midi à l'Île de la Grande Jatte »</em> (1884-1886, Art Institute of Chicago), <strong>chef-d'œuvre du pointillisme</strong>. Seurat y représente bourgeois et ouvriers en promenade dominicale. <strong>2 mètres × 3 mètres</strong>, considéré comme l'un des tableaux les plus importants du XIXᵉ siècle français.",
+            "Le quartier autour de la station est <strong>résidentiel chic</strong> typique de Neuilly : immeubles haussmanniens début XXᵉ, hôtels particuliers, restaurants gastronomiques. L'<strong>avenue Charles de Gaulle</strong> (ancienne <strong>avenue de Neuilly</strong>) est l'<strong>axe historique de Paris</strong> traversant Neuilly d'est en ouest, prolongement direct des Champs-Élysées vers La Défense."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Pont de Neuilly ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Esplanade de la Défense</strong> (1 station vers l'ouest, banlieue) et <strong>Les Sablons</strong> (1 station vers l'est, Jardin d'Acclimatation). Aucune correspondance directe. Bus 43, 73, 82, 174 desservent l'avenue."
+        },
+        {
+            "question": "Pourquoi le Pont de Neuilly est-il important ?",
+            "answer": "Parce qu'il franchit la <strong>Seine</strong> dans l'<strong>axe historique de Paris</strong> (Louvre → Arc de Triomphe → La Défense). Premier pont en pierre construit en <strong>1772 par Jean-Rodolphe Perronet</strong> (fondateur École des Ponts et Chaussées, premier ingénieur français du XVIIIᵉ siècle) : <strong>chef-d'œuvre d'ingénierie</strong>, modèle pour de nombreux ponts à travers le monde. <strong>Démoli en 1942-1956</strong> (inadapté au trafic moderne). <strong>Reconstruit en 1956</strong> par Jean Camelot + Jean de Mailly (auteurs du CNIT de La Défense). Pont actuel en béton armé, 35 m de large, accueille voitures, métro M1, piétons."
+        },
+        {
+            "question": "La M1 passe-t-elle sous la Seine ?",
+            "answer": "<strong>Oui</strong>. La <strong>M1 traverse la Seine sous le Pont de Neuilly</strong> grâce à un <strong>tunnel à 10 m sous le niveau du fleuve</strong>. Travaux complexes en 1937 (ouverture station Pont de Neuilly) puis en 1992 (prolongement à La Défense). C'est l'un des passages sous fleuve du métro parisien (avec celui sous la Seine pour la M4 à Châtelet/Saint-Michel, et autres)."
+        },
+        {
+            "question": "Qu'est-ce que l'Île de la Jatte ?",
+            "answer": "Une <strong>île de Seine résidentielle</strong> à 200 m de la station. À l'origine, deux îles distinctes (île de la Grande Jatte au sud + île de la Petite Jatte au nord) réunies par remblai au XIXᵉ siècle. Aujourd'hui : <strong>quartier résidentiel chic</strong> de Neuilly et Levallois-Perret. <strong>Immortalisée</strong> par le tableau de <strong>Georges Seurat</strong> <em>« Un dimanche après-midi à l'Île de la Grande Jatte »</em> (1884-1886, Art Institute of Chicago), <strong>chef-d'œuvre du pointillisme</strong> et l'un des tableaux les plus importants du XIXᵉ siècle français."
+        },
+        {
+            "question": "Pont de Neuilly était-il terminus de la M1 ?",
+            "answer": "<strong>Oui, pendant 55 ans</strong>. Pont de Neuilly a été <strong>terminus ouest de la M1</strong> à son ouverture le <strong>29 avril 1937</strong> (prolongement depuis Porte Maillot, première extension hors-Paris à l'ouest) jusqu'au <strong>1ᵉʳ avril 1992</strong>, date du <strong>prolongement à La Défense - Grande Arche</strong>. Pendant tout cet intervalle, c'était la <strong>porte d'entrée par métro à l'ouest parisien</strong> pour les habitants de Neuilly et de la banlieue ouest."
+        },
+        {
+            "question": "Comment rejoindre La Défense ?",
+            "answer": "<strong>2 stations M1</strong> vers l'ouest jusqu'à <strong>La Défense - Grande Arche</strong> (4 min). Alternative : 15-20 min à pied par l'avenue Charles de Gaulle qui franchit le pont et l'esplanade. Pour une vue panoramique : prendre les escaliers du pont et regarder la <strong>Grande Arche</strong> à l'ouest, l'<strong>Arc de Triomphe</strong> à l'est — alignement parfait de 8 km."
+        },
+        {
+            "question": "La station Pont de Neuilly est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les <strong>bus 43, 73 ou 174</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Pont de Neuilly ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Pont de Neuilly</strong> à 100 m : vue sur la Seine, alignement Arc de Triomphe → Grande Arche.",
+        "<strong>Île de la Jatte</strong> à 5 min — quartier résidentiel chic, célèbre par Seurat (1884-1886).",
+        "Pour <strong>La Défense</strong> : 2 stations M1 (4 min) ou marche pittoresque par le pont.",
+        "Pour <strong>Bois de Boulogne</strong> : 1 station M1 vers l'est (Les Sablons).",
+        "Quartier Neuilly chic : restaurants gastronomiques avenue Charles de Gaulle.",
+        "Vue sur l'<strong>axe historique 8 km</strong> depuis le pont (Arc de Triomphe + Grande Arche)."
+    ],
+    "trivia": [
+        {
+            "icon": "🌉",
+            "title": "Pont de Neuilly (1772 Perronet → 1956 Camelot) — chef-d'œuvre du XVIIIᵉ",
+            "content": "Le <strong>Pont de Neuilly</strong>, à 100 m de la station, franchit la <strong>Seine</strong> dans l'<strong>axe historique de Paris</strong>. Premier pont en pierre construit en <strong>1772 par Jean-Rodolphe Perronet</strong> (1708-1794), <strong>fondateur de l'École des Ponts et Chaussées</strong> (1747) et <strong>premier ingénieur français du XVIIIᵉ siècle</strong>. Pont de <strong>219 m × 13,5 m</strong>, à <strong>5 arches</strong> de proportions élégantes — <strong>chef-d'œuvre d'ingénierie</strong>, modèle pour de nombreux ponts à travers le monde. <strong>Démoli en 1942-1956</strong> (devenu inadapté au trafic moderne et à la voie rapide RN13). <strong>Reconstruit en 1956</strong> par les architectes <strong>Jean Camelot</strong> et <strong>Jean de Mailly</strong> (qui réaliseront aussi le CNIT de La Défense 1958). Pont actuel en béton armé, 35 m de large, accueille voitures + métro M1 + piétons."
+        },
+        {
+            "icon": "🎨",
+            "title": "Île de la Jatte — Seurat 1884-1886, chef-d'œuvre du pointillisme",
+            "content": "L'<strong>Île de la Jatte</strong>, à 200 m de la station, est une <strong>île de Seine résidentielle</strong> immortalisée par le tableau de <strong>Georges Seurat</strong> (1859-1891) <em>« <strong>Un dimanche après-midi à l'Île de la Grande Jatte</strong> »</em>. Peint en <strong>1884-1886</strong>, conservé à l'<strong>Art Institute of Chicago</strong>. <strong>2 mètres × 3 mètres</strong>, technique du <strong>pointillisme</strong> (qui en est l'œuvre fondatrice). Seurat y représente bourgeois et ouvriers en promenade dominicale sur les berges, dans une composition rigoureuse à base de petits points de couleur juxtaposés. <strong>Chef-d'œuvre du néo-impressionnisme</strong>, considéré comme l'un des tableaux les plus importants du XIXᵉ siècle français. Aujourd'hui, l'île est un <strong>quartier résidentiel chic</strong> de Neuilly et Levallois-Perret."
+        },
+        {
+            "icon": "🚇",
+            "title": "Terminus ouest M1 pendant 55 ans (1937-1992)",
+            "content": "Pont de Neuilly a été <strong>terminus ouest de la M1</strong> à son ouverture le <strong>29 avril 1937</strong> (prolongement depuis Porte Maillot, <strong>première extension hors-Paris à l'ouest</strong> du métro parisien). Reste terminus ouest <strong>pendant 55 ans</strong>, jusqu'au <strong>1ᵉʳ avril 1992</strong> et le <strong>prolongement à La Défense - Grande Arche</strong> (avec construction des stations Esplanade de la Défense + La Défense). Pendant tout cet intervalle, c'était la <strong>porte d'entrée par métro à l'ouest parisien</strong> pour les habitants de Neuilly, Puteaux, Courbevoie et au-delà. La <strong>M1 traverse la Seine sous le pont</strong> grâce à un <strong>tunnel à 10 m sous le niveau du fleuve</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Pont de Neuilly (Seine)",
+            "destination_slug": "pont-neuilly",
+            "destination_full_name": "Pont de Neuilly (station) → Pont (monument)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'avenue Charles de Gaulle (~100 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-pont/"
+        },
+        {
+            "destination_name": "Île de la Jatte",
+            "destination_slug": "ile-de-la-jatte",
+            "destination_full_name": "Pont de Neuilly → Île de la Jatte",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le Pont de Neuilly + sentier (~500 m)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-jatte/"
+        },
+        {
+            "destination_name": "La Défense via M1",
+            "destination_slug": "la-defense",
+            "destination_full_name": "Pont de Neuilly → La Défense",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-la-defense/"
+        },
+        {
+            "destination_name": "Jardin d'Acclimatation via M1",
+            "destination_slug": "jardin-acclimatation",
+            "destination_full_name": "Pont de Neuilly → Jardin d'Acclimatation",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Les Sablons (1 station)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-jardin/"
+        },
+        {
+            "destination_name": "Arc de Triomphe via M1",
+            "destination_slug": "arc-de-triomphe",
+            "destination_full_name": "Pont de Neuilly → Arc de Triomphe",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Charles de Gaulle - Étoile (4 stations)",
+            "duration_minutes": 9,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-arc-triomphe/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Pont de Neuilly → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Palais Royal (6 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-louvre/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Pont de Neuilly → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (12 stations)",
+            "duration_minutes": 22,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-bastille/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M1 + RER E",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Pont de Neuilly → CDG",
+            "lines_used": [
+                "M1",
+                "RER E"
+            ],
+            "lines_label": "M1 jusqu'à Porte Maillot + RER E direct, ou M1 jusqu'à Châtelet + RER B",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-de-neuilly/pont-neuilly-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1509747",
+            "name": "tour First",
+            "category": "tour",
+            "description": "La tour First, également appelée tour CB31, est le second plus haut gratte-ciel de France derrière la tour The Link, qui a récemment ouvert en 2026.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tours%20First%20et%20Saint-Gobain%20%2842975144462%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_First",
+            "latitude": 48.8889,
+            "longitude": 2.2517,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 699,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3090513",
+            "name": "jardin d'acclimatation",
+            "category": "jardin",
+            "description": "Le Jardin d'acclimatation est un parc de loisirs et d'agrément du 16e arrondissement de Paris, le long du bois de Boulogne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20d%27acclimatation%20-%20Fondation%20Louis%20Vuitton.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_d%27acclimatation_(Paris)",
+            "latitude": 48.8775,
+            "longitude": 2.263056,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de l'Église",
+                "distance_m": 783,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q105516029",
+            "name": "Tour Eria",
+            "category": "tour",
+            "description": "La tour Eria est un gratte-ciel de bureaux, de commerces et autres activités situé dans le quartier d'affaires de La Défense près de Paris, en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/0b/Tour_Eria_Juillet_2022.jpeg/330px-Tour_Eria_Juillet_2022.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Eria",
+            "latitude": 48.886379,
+            "longitude": 2.249848,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 712,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3090101",
+            "name": "Tour Initiale",
+            "category": "tour",
+            "description": "La tour Initiale est une tour de bureaux situé à Puteaux, dans le quartier d'affaires de la Défense, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parvis%20%40%20La%20D%C3%A9fense%20%40%20Paris%20%2835022105962%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Initiale",
+            "latitude": 48.886944,
+            "longitude": 2.251389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 618,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1573266",
+            "name": "pont de Neuilly",
+            "category": "pont",
+            "description": "Le pont de Neuilly est un pont routier et ferroviaire qui traverse la Seine entre Neuilly-sur-Seine, Courbevoie et Puteaux, dans le département français des Hauts-de-Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20Neuilly%20002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Neuilly",
+            "latitude": 48.886667,
+            "longitude": 2.254722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 380,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2976302",
+            "name": "Hermitage Plaza",
+            "category": "site notable",
+            "description": "Hermitage Plaza est un projet de deux tours jumelles de 320 mètres, situées à Courbevoie dans le quartier d'affaires de La Défense.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Hermitage_Plaza",
+            "latitude": 48.888947,
+            "longitude": 2.253639,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 594,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1568469",
+            "name": "synagogue de Neuilly",
+            "category": "synagogue",
+            "description": "La synagogue de Neuilly, lieu de culte juif situé 12 rue Ancelle à Neuilly-sur-Seine datant de 1878, est la plus vieille synagogue de la banlieue parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20synagogue%20neuilly%20bis.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_Neuilly",
+            "latitude": 48.880801,
+            "longitude": 2.268352,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de l'Église",
+                "distance_m": 634,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3533139",
+            "name": "Tour Neptune",
+            "category": "tour",
+            "description": "La tour Neptune est un gratte-ciel de bureaux situé dans le quartier d'affaires de La Défense, en France. Elle est l'œuvre de l'architecte Michel Folliasson.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/de/Tour_Neptune_Octobre_2022.jpeg/330px-Tour_Neptune_Octobre_2022.jpeg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Neptune",
+            "latitude": 48.8895,
+            "longitude": 2.25417,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 614,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3280340",
+            "name": "maisons Jaoul",
+            "category": "site notable",
+            "description": "Les maisons Jaoul « A » et « B » ont été construites de 1953 à 1955 sur un terrain de mille mètres carrés au 81 bis, rue de Longchamp, à Neuilly-sur-Seine, par l'architecte Charles-Édouard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maisons%20Jaoul.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maisons_Jaoul",
+            "latitude": 48.88,
+            "longitude": 2.254,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de Madrid",
+                "distance_m": 678,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q105996005",
+            "name": "Hôtel Meliá Paris La Défense",
+            "category": "site notable",
+            "description": "L'Hôtel Meliá Paris La Défense est un gratte-ciel hôtelier situé dans le quartier d'affaires de La Défense près de Paris, en France. Inaugurée le 16 février 2015, la tour mesure 82,70 mètres de haut.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/View_from_Skyline_Paris_Lounge_%26_Bar_at_the_h%C3%B4tel_Meli%C3%A1_Paris_La_D%C3%A9fense_-_2021-10-30.jpg/330px-View_from_Skyline_Paris_Lounge_%26_Bar_at_the_h%C3%B4tel_Meli%C3%A1_Paris_La_D%C3%A9fense_-_2021-10-30.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Meli%C3%A1_Paris_La_D%C3%A9fense",
+            "latitude": 48.888443,
+            "longitude": 2.250731,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 731,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q785590",
+            "name": "château de Neuilly",
+            "category": "palais",
+            "description": "Le château de Neuilly est un ancien château français construit en 1751 et situé dans l'actuelle commune de Neuilly-sur-Seine, à proximité de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue%20du%20ch%C3%A2teau%20de%20Neuilly-sur-Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Neuilly",
+            "latitude": 48.89,
+            "longitude": 2.2627,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Château",
+                "distance_m": 586,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q21041860",
+            "name": "église Saint-Jean-Baptiste de Neuilly-sur-Seine",
+            "category": "église",
+            "description": "L'église Saint-Jean-Baptiste de Neuilly-sur-Seine est un édifice religieux catholique situé au no 156, avenue Charles-de-Gaulle à Neuilly-sur-Seine, dans le département français des Hauts-de-Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Jean-Baptiste%20de%20Neuilly.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-Baptiste_de_Neuilly-sur-Seine",
+            "latitude": 48.88477,
+            "longitude": 2.26241,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de l'Église",
+                "distance_m": 59,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue du Château",
+            "address_full": "172 Avenue Charles de Gaulle 92200 Neuilly-sur-Seine",
+            "postcode": "92200",
+            "city": "Neuilly-sur-Seine",
+            "latitude": 48.885189,
+            "longitude": 2.259413,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "avenue de Madrid",
+            "address_full": "205 Avenue Charles de Gaulle 92200 Neuilly-sur-Seine",
+            "postcode": "92200",
+            "city": "Neuilly-sur-Seine",
+            "latitude": 48.884751,
+            "longitude": 2.259815,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue de l'Église",
+            "address_full": "158 Avenue Charles de Gaulle 92200 Neuilly-sur-Seine",
+            "postcode": "92200",
+            "city": "Neuilly-sur-Seine",
+            "latitude": 48.884484,
+            "longitude": 2.261728,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue Charles de Gaulle"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue Charles de Gaulle (Neuilly)",
+            "details": "Neuilly chic : restaurants gastronomiques, boutiques de luxe, brasseries traditionnelles.",
+            "secondary": "Île de la Jatte : restaurants avec terrasses côté Seine."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Neuilly commune la plus aisée d'Île-de-France : très sûre.",
+            "Vigilance pickpockets standard.",
+            "Soirée tardive : zone calme.",
+            "Présence policière régulière (commune protégée)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle aisée de Neuilly."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Pont_de_Neuilly_002.JPG",
+        "alt": "Pont de Neuilly franchissant la Seine (reconstruit en 1956 par Camelot + de Mailly sur l'emplacement du Pont Perronet 1772) sur l'axe historique Paris → La Défense — à 100 m de la station",
+        "width": 4288,
+        "height": 2848,
+        "credit": {
+            "author": "Moonik",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Pont_de_Neuilly_002.JPG",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-400.avif",
+                "800": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-800.avif",
+                "1200": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1200.avif",
+                "1600": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-400.webp",
+                "800": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-800.webp",
+                "1200": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1200.webp",
+                "1600": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-400.jpg",
+                "800": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-800.jpg",
+                "1200": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1200.jpg",
+                "1600": "/assets/img/stations/pont-de-neuilly/pont-de-neuilly-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les bus 43, 73 ou 174 (planchers bas) ou taxi/VTC."
+    }
+}
