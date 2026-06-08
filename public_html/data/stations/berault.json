@@ -1,0 +1,584 @@
+{
+    "published": true,
+    "slug": "berault",
+    "name": "Bérault",
+    "name_full": "Bérault (Métro 1)",
+    "arrondissement": "Vincennes / Saint-Mandé (Val-de-Marne)",
+    "address": "Avenue de Paris, 94300 Vincennes",
+    "latitude": 48.845523,
+    "longitude": 2.428243,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Vincennes — zone 1 IDFM (intra Paris pour tarification)",
+    "commune": "Vincennes",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Bérault station",
+        "es": "Estación Bérault"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "56",
+            "215",
+            "318",
+            "325"
+        ],
+        "nocturne": [
+            "N11",
+            "N33"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 4,
+            "nearby_count": 12
+        }
+    },
+    "seo": {
+        "description": "Station Bérault : M1 à Vincennes (94), avenue de Paris, quartier résidentiel limitrophe Paris, hommage Pierre Bérault, accès rapide Bois de Vincennes."
+    },
+    "hero": {
+        "tagline": "Vincennes résidentiel et l'avenue de Paris",
+        "description": "À <strong>Vincennes</strong> (Val-de-Marne), sous l'<strong>avenue de Paris</strong>, Bérault ouvre le <strong>24 mars 1934</strong> lors du prolongement de la M1 vers le <strong>Château de Vincennes</strong>. Station du <strong>quartier résidentiel limitrophe est de Paris</strong>, à mi-chemin entre Saint-Mandé et le Château. Nom en hommage à <strong>Pierre Bérault</strong>, conseiller municipal et adjoint au maire de Vincennes au XIXᵉ siècle. À <strong>10 minutes à pied</strong> du <strong>Bois de Vincennes</strong> et du <strong>Lac Daumesnil</strong>. Quartier au bâti haussmannien typique du début XXᵉ siècle."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Saint-Mandé",
+                "slug": "saint-mande",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Château de Vincennes",
+                "slug": "chateau-de-vincennes",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Bérault</strong> est située à <strong>Vincennes</strong> (commune limitrophe est de Paris, Val-de-Marne), sous l'<strong>avenue de Paris</strong>. Elle est desservie par la <strong>ligne 1 du métro</strong> (Château de Vincennes ↔ La Défense - Grande Arche), entre <strong>Saint-Mandé</strong> (1 station vers l'ouest) et <strong>Château de Vincennes</strong> (1 station vers l'est, terminus). Aucune correspondance directe. La station est <strong>au cœur du quartier résidentiel de Vincennes</strong>, l'une des communes les plus aisées d'Île-de-France.",
+        "Ouverte le <strong>24 mars 1934</strong>, lors du <strong>prolongement de la M1</strong> depuis Porte de Vincennes jusqu'au Château de Vincennes (4 stations ajoutées : Porte de Vincennes était l'ancien terminus). Configuration : station souterraine classique sous l'avenue de Paris, deux quais latéraux, <strong>4 sorties</strong> donnant sur l'avenue de Paris, la rue Segond, la rue des Vignerons et la place Bérault.",
+        "Le nom <strong>Bérault</strong> rend hommage à <strong>Pierre Bérault</strong>, <strong>conseiller municipal</strong> et <strong>adjoint au maire</strong> de Vincennes au <strong>XIXᵉ siècle</strong>. Il s'est illustré dans le développement urbain de Vincennes au moment où la commune se peuplait fortement (essor démographique lié à l'arrivée du chemin de fer en 1859 et à la création du parc paysager du Bois de Vincennes par Napoléon III en 1860). La <strong>place Bérault</strong> proche de la station porte aussi son nom. Le quartier autour de la station est un <strong>tissu urbain résidentiel</strong> typique du début du XXᵉ siècle, avec immeubles haussmanniens et petites maisons individuelles."
+    ],
+    "history": {
+        "title": "1934 : la M1 prolongée à Château de Vincennes",
+        "paragraphs": [
+            "La station <strong>Bérault</strong> est inaugurée le <strong>24 mars 1934</strong>, lors du <strong>prolongement de la ligne 1</strong> depuis <strong>Porte de Vincennes</strong> (ancien terminus est) jusqu'au <strong>Château de Vincennes</strong>. Ce prolongement ajoute 4 stations à la M1 : <strong>Saint-Mandé Tourelle</strong> (rebaptisée Saint-Mandé en 2017), <strong>Bérault</strong>, et le terminus Château de Vincennes. Il étend la M1 dans la commune de Vincennes pour la première fois — la première fois aussi que le métro parisien sort des limites administratives de Paris à l'est.",
+            "Le contexte historique est important : Vincennes est alors une commune en <strong>plein essor démographique</strong>. Initialement village rural au Moyen Âge autour du Château royal, Vincennes voit sa population multipliée au XIXᵉ siècle grâce à l'<strong>arrivée du chemin de fer en 1859</strong> et à la <strong>création du parc paysager du Bois de Vincennes par Napoléon III en 1860</strong>. La commune accueille de plus en plus d'habitants travaillant à Paris. Le prolongement de la M1 répond à un besoin croissant de transport rapide vers la capitale.",
+            "Le nom <strong>Bérault</strong> rend hommage à <strong>Pierre Bérault</strong>, <strong>conseiller municipal</strong> et <strong>adjoint au maire</strong> de Vincennes au XIXᵉ siècle. Il s'est illustré dans le développement urbain de la commune. La <strong>place Bérault</strong> à proximité (intersection avenue de Paris / rues Segond et des Vignerons) porte aussi son nom.",
+            "La <strong>M1 elle-même</strong> est la <strong>plus ancienne ligne du métro parisien</strong>, inaugurée le <strong>19 juillet 1900</strong> pour l'Exposition universelle (initialement Porte de Vincennes ↔ Porte Maillot). Conçue pour relier les terminus est et ouest des Champs-Élysées historiques. <strong>Automatisée intégralement en 2011-2012</strong> — première ligne historique automatisée du réseau RATP. Devient un <strong>laboratoire technique</strong> pour l'automatisation des autres lignes (M4 en 2022).",
+            "Le quartier autour de Bérault est typiquement <strong>résidentiel bourgeois</strong> : immeubles haussmanniens du début du XXᵉ siècle (notamment avenue de Paris), petites maisons individuelles avec jardins (à 5 min à pied), peu de commerces — la vie commerciale se concentre vers le centre-ville de Vincennes (5 min à pied vers l'est) ou la place Carnot. Au sud, le <strong>Bois de Vincennes</strong> est à 10 min à pied, avec le <strong>Lac Daumesnil</strong> et ses paquebots-jeux pour enfants."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Bérault ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Saint-Mandé</strong> (1 station vers l'ouest, Paris/Saint-Mandé) et <strong>Château de Vincennes</strong> (1 station vers l'est, terminus). Aucune correspondance directe. Bus 56, 112, 318 desservent l'avenue de Paris."
+        },
+        {
+            "question": "Bérault est-elle dans Paris ?",
+            "answer": "<strong>Non</strong>, Bérault est située dans la commune de <strong>Vincennes</strong> (Val-de-Marne, 94), commune limitrophe est de Paris. Cependant, elle est en <strong>zone 1 IDFM</strong> pour la tarification (comme intra-muros). La frontière administrative avec Paris (12e arrondissement) est à 500 m vers l'ouest. La station fait partie de la <strong>première extension hors-Paris</strong> du métro parisien à l'est (1934)."
+        },
+        {
+            "question": "Qui est Pierre Bérault ?",
+            "answer": "<strong>Pierre Bérault</strong> était un <strong>conseiller municipal</strong> et <strong>adjoint au maire</strong> de Vincennes au <strong>XIXᵉ siècle</strong>. Il s'est illustré dans le développement urbain de la commune au moment de son essor démographique (lié à l'arrivée du chemin de fer en 1859 et au parc paysager du Bois de Vincennes en 1860). Une <strong>place Bérault</strong> proche de la station porte aussi son nom. Personnage local de l'histoire vincennoise."
+        },
+        {
+            "question": "Comment rejoindre le Bois de Vincennes ?",
+            "answer": "<strong>10 minutes à pied</strong> : descendre vers le sud par la <strong>rue Segond</strong> ou la <strong>rue des Vignerons</strong>. Le <strong>Bois de Vincennes</strong> et le <strong>Lac Daumesnil</strong> sont à 800 m. Alternative : prendre la M1 vers l'est jusqu'à <strong>Château de Vincennes</strong> (1 station) pour l'accès au château et au Parc Floral."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Bérault ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe, 4-5 min creuses). La nuit, les Noctilien N11, N33, N34 desservent l'avenue de Paris."
+        },
+        {
+            "question": "La station Bérault est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas intégralement accessible PMR</strong>. La ligne 1 a été modernisée lors de l'automatisation 2011-2012 mais Bérault, comme d'autres stations historiques, n'a pas reçu d'ascenseurs vers tous les niveaux. Pour un trajet PMR, utiliser les <strong>bus 56, 112 ou 318</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Comment rejoindre Paris depuis Bérault ?",
+            "answer": "<strong>M1 directe</strong> : <strong>Nation</strong> (4 min, 3 stations), <strong>Bastille</strong> (8 min, 6 stations), <strong>Hôtel de Ville</strong> (12 min, 9 stations), <strong>Louvre - Rivoli</strong> (15 min, 10 stations), <strong>Champs-Élysées</strong> (18 min, 12 stations), <strong>La Défense</strong> (35 min, 25 stations, terminus). Très fréquente — 1-2 min d'attente en pointe."
+        },
+        {
+            "question": "Que voir dans le quartier ?",
+            "answer": "Quartier <strong>résidentiel bourgeois</strong> avec architecture haussmannienne début XXᵉ siècle. À 5-15 min à pied : <strong>centre-ville Vincennes</strong> (commerces, marché Carnot), <strong>Château de Vincennes</strong> (1 station M1 ou 15 min à pied), <strong>Bois de Vincennes</strong> et <strong>Lac Daumesnil</strong> (10 min vers le sud), <strong>Parc Floral</strong> (15 min). Restaurants gastronomiques sur l'avenue de Paris (Vincennes commune chic)."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Château de Vincennes</strong> : 1 station M1 vers l'est (1-2 min).",
+        "Pour <strong>Bois de Vincennes</strong> et <strong>Lac Daumesnil</strong> : 10 min à pied vers le sud.",
+        "Centre-ville Vincennes (commerces, marché Carnot) à 5 min à pied.",
+        "Quartier résidentiel calme — peu d'affluence touristique.",
+        "Restaurants gastronomiques avenue de Paris (commune Vincennes chic).",
+        "Frontière Paris (12e arr.) à 500 m vers l'ouest (Porte de Vincennes)."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "1934 — première extension hors-Paris à l'est du métro",
+            "content": "La station <strong>Bérault</strong>, inaugurée le <strong>24 mars 1934</strong>, fait partie du <strong>prolongement de la M1 depuis Porte de Vincennes jusqu'au Château de Vincennes</strong> — la <strong>première fois que le métro parisien sort des limites administratives de Paris à l'est</strong>. Ce prolongement ajoute 4 stations : Saint-Mandé, Bérault et le terminus Château de Vincennes. Il répond à un besoin croissant de transport rapide vers la capitale pour les habitants de Vincennes, commune en plein essor démographique au début du XXᵉ siècle (arrivée du chemin de fer en 1859, création du parc du Bois de Vincennes par Napoléon III en 1860)."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Pierre Bérault — adjoint au maire de Vincennes XIXᵉ",
+            "content": "Le nom <strong>Bérault</strong> rend hommage à <strong>Pierre Bérault</strong>, <strong>conseiller municipal</strong> et <strong>adjoint au maire</strong> de Vincennes au <strong>XIXᵉ siècle</strong>. Il s'est illustré dans le développement urbain de la commune au moment de son essor démographique. La <strong>place Bérault</strong> à proximité (intersection avenue de Paris / rues Segond et des Vignerons) porte aussi son nom. Le quartier autour est typiquement résidentiel bourgeois (immeubles haussmanniens du début XXᵉ siècle)."
+        },
+        {
+            "icon": "🤖",
+            "title": "M1 — première ligne historique automatisée (2011-2012)",
+            "content": "La <strong>M1</strong>, plus ancienne ligne du métro parisien (ouverte le <strong>19 juillet 1900</strong> pour l'Exposition universelle), a été <strong>automatisée intégralement en 2011-2012</strong> — <strong>première ligne historique automatisée du réseau RATP</strong> (la M14 était déjà automatique depuis 1998, mais conçue ainsi dès l'origine). Travaux titanesques : remplacement progressif des rames, modernisation des stations, installation de portes palières sur tous les quais. La M1 devient un <strong>laboratoire technique</strong> pour l'automatisation des autres lignes (M4 en 2022). Fréquence améliorée : 1-2 min en heure de pointe. Suppression des conducteurs."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Château de Vincennes (monument)",
+            "destination_slug": "chateau-de-vincennes-monument",
+            "destination_full_name": "Bérault → Château de Vincennes",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château de Vincennes (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-chateau/"
+        },
+        {
+            "destination_name": "Bois de Vincennes (Lac Daumesnil)",
+            "destination_slug": "bois-de-vincennes",
+            "destination_full_name": "Bérault → Bois de Vincennes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue Segond (~800 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-berault/berault-vers-bois-vincennes/"
+        },
+        {
+            "destination_name": "Centre-ville Vincennes",
+            "destination_slug": "centre-vincennes",
+            "destination_full_name": "Bérault → Centre Vincennes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'avenue de Paris (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-berault/berault-vers-centre/"
+        },
+        {
+            "destination_name": "Nation via M1",
+            "destination_slug": "nation",
+            "destination_full_name": "Bérault → Nation",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-nation/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Bérault → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (6 stations)",
+            "duration_minutes": 11,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-bastille/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Bérault → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense jusqu'à Palais Royal",
+            "duration_minutes": 17,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-louvre/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Bérault → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (11 stations)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M1 + RER A + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Bérault → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 55,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-berault/berault-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q663673",
+            "name": "château de Vincennes",
+            "category": "palais",
+            "description": "Le château de Vincennes, est une forteresse située à Vincennes, dans la banlieue Est de Paris, dont la construction a duré du XIVe au XVIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau%20de%20Vincennes%20Paris%20FRA%20002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Vincennes",
+            "latitude": 48.842778,
+            "longitude": 2.435833,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 462,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2562042",
+            "name": "Vincennes",
+            "category": "gare",
+            "description": "La gare de Vincennes est une gare ferroviaire française située dans la commune de Vincennes, dans le Val-de-Marne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20RER%20Vincennes%2035.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Vincennes",
+            "latitude": 48.84722,
+            "longitude": 2.43333,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 296,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3464208",
+            "name": "Sainte-Chapelle de Vincennes",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle de Vincennes est une chapelle fondée en 1379 dans l'enceinte du château de Vincennes, à la demande du roi de France Charles V, afin d'y abriter les reliques de la Passion du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stechapvinc.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle_de_Vincennes",
+            "latitude": 48.842333,
+            "longitude": 2.436444,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 527,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3287039",
+            "name": "manufacture de Vincennes",
+            "category": "site notable",
+            "description": "La manufacture de Vincennes est une manufacture de porcelaine tendre créée en 1740 dans l'enceinte du château de Vincennes, qui est transférée en 1756 à Sèvres pour constituer la manufacture de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20de%20la%20Reine%20-%20Chateau%20de%20Vincennes%2001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Manufacture_de_Vincennes",
+            "latitude": 48.841653,
+            "longitude": 2.436742,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 592,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2375542",
+            "name": "synagogue de Vincennes",
+            "category": "synagogue",
+            "description": "La synagogue de Vincennes fait partie des huit synagogues qui ont été totalement ou en partie financées par le banquier mécène Daniel Iffla, dit Osiris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincennes%20Synagogue79.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_Vincennes",
+            "latitude": 48.84768,
+            "longitude": 2.419558,
+            "nearest_exit": {
+                "number": "2",
+                "name": "place Bérault",
+                "distance_m": 652,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3145267",
+            "name": "hôpital d'instruction des armées Bégin",
+            "category": "hôpital",
+            "description": "L'hôpital d'instruction des armées (HIA) Bégin est un hôpital militaire situé au 69, avenue de Paris à Saint-Mandé dans le Val-de-Marne, près de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20B%C3%A9gin%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_d%27instruction_des_arm%C3%A9es_B%C3%A9gin",
+            "latitude": 48.8436,
+            "longitude": 2.42656,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hôpital Bégin",
+                "distance_m": 224,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2324947",
+            "name": "donjon de Vincennes",
+            "category": "site notable",
+            "description": "Le donjon de Vincennes est le donjon du château de Vincennes, sur la commune de Vincennes du Val-de-Marne, en bordure du bois et du fort du même nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau%20de%20Vincennes%20Paris%20FRA%20002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Donjon_de_Vincennes",
+            "latitude": 48.8427,
+            "longitude": 2.43464,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 400,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q88211333",
+            "name": "Saint-Mandé",
+            "category": "gare",
+            "description": "La gare de Saint-Mandé est une ancienne gare ferroviaire française située sur la ligne de Paris-Bastille à Marles-en-Brie, dite ligne de Vincennes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Mande%20-%20La%20gare.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Mand%C3%A9",
+            "latitude": 48.84398,
+            "longitude": 2.4196,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hôpital Bégin",
+                "distance_m": 625,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q63105689",
+            "name": "place Bérault",
+            "category": "place",
+            "description": "La place Bérault est une voie de communication de Vincennes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincennes.Place%20Berault.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_B%C3%A9rault",
+            "latitude": 48.846111,
+            "longitude": 2.428608,
+            "nearest_exit": {
+                "number": "2",
+                "name": "place Bérault",
+                "distance_m": 73,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q96621135",
+            "name": "place du Général-Leclerc",
+            "category": "place",
+            "description": "La place du Général-Leclerc est une voie de communication de Saint-Mandé.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20G%C3%A9n%C3%A9ral%20Leclerc%20-%20Saint-Mand%C3%A9%20%28FR94%29%20-%202021-01-23%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_G%C3%A9n%C3%A9ral-Leclerc_(Saint-Mand%C3%A9)",
+            "latitude": 48.846581,
+            "longitude": 2.4181,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hôpital Bégin",
+                "distance_m": 725,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q16677794",
+            "name": "square Carnot",
+            "category": "site notable",
+            "description": "Le square Carnot est un espace vert du 12e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Carnot%20-%20Paris%20XII%20%28FR75%29%20-%202021-01-22%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Carnot",
+            "latitude": 48.839674,
+            "longitude": 2.433446,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue des Vignerons",
+                "distance_m": 646,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3399173",
+            "name": "porte du Bel-Air",
+            "category": "site notable",
+            "description": "La porte du Bel-Air est située dans le 12e arrondissement de Paris et plus précisément dans le quartier administratif du Bel-Air.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Bel%20Air%20-%20Paris%20XII%20%28FR75%29%20-%202021-01-23%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_du_Bel-Air",
+            "latitude": 48.8433,
+            "longitude": 2.42,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Hôpital Bégin",
+                "distance_m": 622,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Hôpital Bégin",
+            "address_full": "63 Avenue de Paris 94160 Saint-Mandé",
+            "postcode": "94160",
+            "city": "Saint-Mandé",
+            "latitude": 48.845427,
+            "longitude": 2.427856,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "place Bérault",
+            "address_full": "98 Avenue de Paris 94300 Vincennes",
+            "postcode": "94300",
+            "city": "Vincennes",
+            "latitude": 48.845643,
+            "longitude": 2.427908,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue Segond",
+            "address_full": "70 Avenue de Paris 94300 Vincennes",
+            "postcode": "94300",
+            "city": "Vincennes",
+            "latitude": 48.84542,
+            "longitude": 2.430213,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "rue des Vignerons",
+            "address_full": "31 Avenue de Paris 94300 Vincennes",
+            "postcode": "94300",
+            "city": "Vincennes",
+            "latitude": 48.845197,
+            "longitude": 2.430706,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "quelques-uns",
+            "locations": [
+                "avenue de Paris"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue de Paris (Vincennes)",
+            "details": "Quartier résidentiel calme. Quelques cafés et commerces sur l'avenue de Paris. Vincennes commune chic, restaurants gastronomiques.",
+            "secondary": "Centre-ville Vincennes à 5 min : marché Carnot, boutiques, restaurants traditionnels."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vincennes commune sûre globalement (faible criminalité).",
+            "Quartier résidentiel calme — peu d'incidents.",
+            "Vigilance pickpockets standard.",
+            "Soirée tardive : zone très calme."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature résidentielle de Vincennes."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Entr%C3%A9e_Station_M%C3%A9tro_B%C3%A9rault_Vincennes_1.jpg",
+        "alt": "Entrée de la station de métro Bérault (M1, ouverte 24 mars 1934) sur l'avenue de Paris à Vincennes — quartier résidentiel limitrophe est de Paris",
+        "width": 4032,
+        "height": 3024,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_Station_M%C3%A9tro_B%C3%A9rault_Vincennes_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/berault/berault-400.avif",
+                "800": "/assets/img/stations/berault/berault-800.avif",
+                "1200": "/assets/img/stations/berault/berault-1200.avif",
+                "1600": "/assets/img/stations/berault/berault-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/berault/berault-400.webp",
+                "800": "/assets/img/stations/berault/berault-800.webp",
+                "1200": "/assets/img/stations/berault/berault-1200.webp",
+                "1600": "/assets/img/stations/berault/berault-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/berault/berault-400.jpg",
+                "800": "/assets/img/stations/berault/berault-800.jpg",
+                "1200": "/assets/img/stations/berault/berault-1200.jpg",
+                "1600": "/assets/img/stations/berault/berault-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non intégralement accessible PMR. Pas d'ascenseurs vers tous les niveaux. Pour un trajet PMR, utiliser les bus 56, 112 ou 318 (planchers bas) ou taxi/VTC."
+    }
+}
