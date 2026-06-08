@@ -1,0 +1,584 @@
+{
+    "published": true,
+    "slug": "pont-neuf",
+    "name": "Pont Neuf",
+    "name_full": "Pont Neuf - La Monnaie (Métro 7)",
+    "arrondissement": "1er (Paris)",
+    "address": "Quai du Louvre / rue de la Monnaie, 75001 Paris",
+    "latitude": 48.858999,
+    "longitude": 2.343269,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Pont Neuf station",
+        "es": "Estación Pont Neuf"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "21",
+            "27",
+            "58",
+            "67",
+            "69",
+            "70"
+        ],
+        "nocturne": [
+            "N11",
+            "N15",
+            "N16",
+            "N24"
+        ],
+        "regional": [
+            "72",
+            "74",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 1,
+            "nearby_count": 26
+        }
+    },
+    "seo": {
+        "description": "Station Pont Neuf : M7 dans le 1er arr., Pont Neuf 1578-1607 (plus ancien pont de Paris), statue équestre Henri IV, Square du Vert-Galant, La Samaritaine."
+    },
+    "hero": {
+        "tagline": "Le plus ancien pont de Paris et la pointe de l'Île de la Cité",
+        "description": "Sur le <strong>quai du Louvre</strong> dans le <strong>1er arrondissement</strong>, Pont Neuf ouvre le <strong>16 avril 1926</strong> sur la M7. La station tire son nom du <strong>Pont Neuf</strong>, paradoxalement le <strong>plus ancien pont de Paris encore debout</strong>. Construit de <strong>1578 à 1607</strong> sous <strong>Henri III</strong> puis <strong>Henri IV</strong>, c'est le <strong>premier pont parisien sans maisons</strong> (innovation révolutionnaire à l'époque), classé <strong>Monument Historique en 1889</strong>. Au milieu : la <strong>statue équestre d'Henri IV</strong> (1818, copie de l'originale de 1614 fondue à la Révolution). À la pointe ouest de l'<strong>Île de la Cité</strong> : le <strong>Square du Vert-Galant</strong>, l'un des plus beaux points de vue de Paris. À 100 m : <strong>La Samaritaine</strong> (1869, rénovée par LVMH en 2021)."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Châtelet",
+                "slug": "chatelet",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Palais Royal - Musée du Louvre",
+                "slug": "palais-royal-musee-du-louvre",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Pont Neuf</strong> est située dans le <strong>1er arrondissement de Paris</strong>, sous le <strong>quai du Louvre</strong> à l'angle de la <strong>rue de la Monnaie</strong>. Elle est desservie par la <strong>ligne 7 du métro</strong> (Mairie d'Ivry / Villejuif ↔ La Courneuve - 8 Mai 1945), entre <strong>Châtelet</strong> (1 station vers l'est, pôle d'échange majeur RATP/RER) et <strong>Palais Royal - Musée du Louvre</strong> (1 station vers le nord-ouest, correspondance M1). Sous-titre <strong>« La Monnaie »</strong> en référence à la <strong>Monnaie de Paris</strong> située à 100 m sur la rive opposée (quai de Conti).",
+        "Ouverte le <strong>16 avril 1926</strong> lors du prolongement de la M7 depuis Palais Royal. Configuration souterraine sous le quai de Seine. Le nom <strong>Pont Neuf</strong> vient du célèbre <strong>Pont Neuf</strong> qui enjambe la Seine à 100 mètres de la station — l'un des monuments emblématiques de Paris.",
+        "Le <strong>Pont Neuf</strong>, malgré son nom, est paradoxalement le <strong>plus ancien pont de Paris encore debout</strong>. Sa construction est lancée par <strong>Henri III</strong> en <strong>1578</strong> et achevée par <strong>Henri IV</strong> en <strong>1607</strong>. Conception par les architectes <strong>Baptiste Androuet du Cerceau</strong> et <strong>Guillaume Marchand</strong>. Innovation majeure pour son époque : c'est le <strong>premier pont parisien construit SANS MAISONS</strong> sur ses tabliers. Cette décision révolutionnaire d'Henri III, motivée par le désir d'<strong>ouvrir une vue dégagée sur la Seine</strong>, marque un tournant dans l'urbanisme parisien. Longueur 232 m, largeur 22 m, <strong>12 arches</strong> au total (7 côté Rive droite + 5 côté Rive gauche, séparées par l'Île de la Cité). Le pont est <strong>classé Monument Historique en 1889</strong> — l'un des premiers monuments parisiens à l'être."
+    ],
+    "history": {
+        "title": "1578-1607 : la révolution urbaine du Pont Neuf",
+        "paragraphs": [
+            "L'histoire du <strong>Pont Neuf</strong> est l'une des plus emblématiques de Paris. En <strong>1578</strong>, le roi <strong>Henri III</strong> pose la première pierre d'un nouveau pont entre le quai du Louvre et la pointe ouest de l'<strong>Île de la Cité</strong> (puis vers la Rive gauche). Conception par les architectes <strong>Baptiste Androuet du Cerceau</strong> et <strong>Guillaume Marchand</strong>. Mais la construction est interrompue par les <strong>guerres de Religion</strong> et l'assassinat d'Henri III en 1589.",
+            "C'est <strong>Henri IV</strong> qui reprend le projet en <strong>1599</strong>, après avoir mis fin aux troubles religieux par l'<strong>Édit de Nantes</strong> (1598). Le pont est <strong>achevé en 1607</strong> et <strong>inauguré officiellement en 1607</strong>. Innovation révolutionnaire : c'est le <strong>premier pont parisien sans maisons</strong>. Henri IV impose cette décision contre l'avis des marchands (qui louaient traditionnellement les emplacements sur les ponts) pour <strong>« avoir une belle vue sur la rivière »</strong> et améliorer la circulation. Trottoirs séparés de la chaussée — première fois à Paris. Le pont devient immédiatement un <strong>lieu de promenade</strong> très populaire, où se mélangent toutes les classes sociales.",
+            "Au <strong>XVIIᵉ siècle</strong>, le Pont Neuf est le <strong>cœur de la vie parisienne</strong> : marchands ambulants, montreurs d'ours et de marionnettes, charlatans, écrivains publics, arracheurs de dents — un <strong>« théâtre permanent »</strong>. Les <strong>scènes du Pont Neuf</strong> deviennent un genre artistique (peintures, gravures). C'est aussi un point d'observation idéal des entrées royales dans Paris.",
+            "Au milieu du pont, à la pointe ouest de l'Île de la Cité, est érigée en <strong>1614</strong> la <strong>première statue équestre d'Henri IV</strong>, modelée par <strong>Pietro Tacca</strong> et inaugurée par <strong>Louis XIII</strong>. C'est la <strong>première statue équestre dans l'espace public parisien</strong>. À la <strong>Révolution française</strong>, en <strong>1792</strong>, la statue est <strong>fondue pour fabriquer des canons</strong>. Sous la <strong>Restauration</strong>, en <strong>1818</strong>, une <strong>nouvelle statue équestre</strong> est inaugurée — fondue par <strong>François-Frédéric Lemot</strong>, c'est la statue actuelle, copie fidèle de l'originale. <strong>Anecdote célèbre</strong> : Lemot, ardent bonapartiste, aurait caché dans la statue d'Henri IV des <strong>statuettes de Napoléon</strong> et des écrits anti-royalistes — vérifié lors d'une restauration en 2004 (statuettes et papiers retrouvés !).",
+            "À la <strong>pointe ouest</strong> de l'Île de la Cité, sous la statue équestre, se trouve le <strong>Square du Vert-Galant</strong>, l'un des plus beaux points de vue de Paris (sur la Seine, le Louvre, l'Institut de France). Le nom <strong>« Vert-Galant »</strong> rend hommage à <strong>Henri IV</strong>, surnommé ainsi pour ses <strong>nombreuses aventures galantes</strong>. Le square, aménagé en 1884, est à <strong>7 mètres sous le niveau actuel</strong> de l'île — il correspond au niveau du sol au XVIᵉ siècle, avant les remblaiements.",
+            "À <strong>100 mètres</strong> au nord de la station se dresse <strong>La Samaritaine</strong>, ancien grand magasin fondé en <strong>1869</strong> par <strong>Ernest Cognacq</strong> et <strong>Marie-Louise Jay</strong>. Les bâtiments actuels (1905-1928) sont des chefs-d'œuvre <strong>Art nouveau</strong> (architecte Frantz Jourdain) et <strong>Art déco</strong> (Henri Sauvage). Fermé en <strong>2005</strong> pour mise aux normes, le bâtiment a été <strong>racheté par LVMH</strong> et <strong>rénové par les architectes SANAA</strong> (Pritzker 2010) — <strong>réouverture le 23 juin 2021</strong>. Aujourd'hui : <strong>boutiques de luxe</strong>, <strong>hôtel Cheval Blanc Paris</strong> (palace), <strong>restaurants</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Pont Neuf ?",
+            "answer": "Une seule ligne : la <strong>M7</strong> (Mairie d'Ivry / Villejuif ↔ La Courneuve - 8 Mai 1945), entre <strong>Châtelet</strong> (1 station vers l'est, pôle RATP/RER) et <strong>Palais Royal - Musée du Louvre</strong> (1 station vers le nord-ouest, correspondance M1). Aucune correspondance RER directe. Bus 27, 58, 67, 69, 70, 72, 74 desservent les quais."
+        },
+        {
+            "question": "Pourquoi le Pont Neuf s'appelle-t-il « Neuf » alors qu'il est le plus ancien ?",
+            "answer": "Parce qu'à l'époque de sa construction (<strong>1578-1607</strong>), c'était <strong>effectivement le pont le plus récent</strong> de Paris ! Les autres ponts d'alors (Pont au Change, Petit Pont, Pont Notre-Dame, etc.) étaient bien plus anciens. Mais ces ponts antérieurs ont été <strong>détruits et reconstruits</strong> à plusieurs reprises (crues, incendies), tandis que le Pont Neuf, plus solide et entretenu, est resté intact. Paradoxe historique : le pont qui a gardé son nom de « Neuf » est devenu <strong>le plus ancien</strong> par disparition de ses concurrents."
+        },
+        {
+            "question": "Quelle est l'innovation révolutionnaire du Pont Neuf ?",
+            "answer": "C'est le <strong>premier pont parisien construit SANS MAISONS sur ses tabliers</strong>. Jusque-là (et même après pendant plus d'un siècle), TOUS les ponts parisiens portaient des maisons d'habitation et des boutiques. Henri IV impose en 1599 un pont « <strong>nu</strong> » avec trottoirs séparés de la chaussée — pour <strong>« avoir une belle vue sur la rivière »</strong>. Décision révolutionnaire qui ouvre une perspective dégagée sur la Seine. Le Pont Neuf devient un <strong>lieu de promenade</strong> populaire — c'est le <strong>cœur de la vie parisienne</strong> au XVIIᵉ siècle (marchands ambulants, montreurs d'ours, écrivains publics, charlatans : un « théâtre permanent »)."
+        },
+        {
+            "question": "Qu'est-ce que la statue équestre d'Henri IV ?",
+            "answer": "Une <strong>statue équestre monumentale</strong> au milieu du Pont Neuf, sur la pointe ouest de l'Île de la Cité. La <strong>première version</strong> est érigée en <strong>1614</strong> (modelée par <strong>Pietro Tacca</strong>) — <strong>première statue équestre dans l'espace public parisien</strong>. Fondue en 1792 pendant la Révolution (pour des canons). La <strong>statue actuelle</strong> est de <strong>1818</strong>, fondue par <strong>François-Frédéric Lemot</strong> sous la Restauration. <strong>Anecdote</strong> : Lemot, ardent bonapartiste, aurait caché dans la statue des <strong>statuettes de Napoléon</strong> et des écrits anti-royalistes. Vérifié lors d'une restauration en 2004 (statuettes effectivement retrouvées !)."
+        },
+        {
+            "question": "Qu'est-ce que le Square du Vert-Galant ?",
+            "answer": "Le <strong>Square du Vert-Galant</strong>, à la <strong>pointe ouest de l'Île de la Cité</strong> (sous la statue équestre d'Henri IV), est l'un des <strong>plus beaux points de vue de Paris</strong> : vue sur la Seine, le Louvre, l'Institut de France. Aménagé en <strong>1884</strong>. Il est <strong>à 7 mètres sous le niveau actuel</strong> de l'île — il correspond au niveau du sol au XVIᵉ siècle, avant les remblaiements. Le nom <strong>« Vert-Galant »</strong> rend hommage à <strong>Henri IV</strong>, surnommé ainsi pour ses nombreuses aventures galantes (et son tempérament resté vert malgré son âge)."
+        },
+        {
+            "question": "Qu'est-ce que La Samaritaine ?",
+            "answer": "Un ancien <strong>grand magasin</strong> fondé en <strong>1869</strong> par <strong>Ernest Cognacq</strong> et <strong>Marie-Louise Jay</strong>. Bâtiments actuels (1905-1928) : chefs-d'œuvre <strong>Art nouveau</strong> (architecte <strong>Frantz Jourdain</strong>) et <strong>Art déco</strong> (Henri Sauvage). <strong>Fermé en 2005</strong> pour mise aux normes. <strong>Racheté par LVMH</strong> et <strong>rénové par les architectes SANAA</strong> (Pritzker 2010). <strong>Réouvert le 23 juin 2021</strong>. Aujourd'hui : <strong>boutiques de luxe</strong>, <strong>hôtel Cheval Blanc Paris</strong> (palace 6 étoiles), <strong>restaurants</strong>."
+        },
+        {
+            "question": "La station Pont Neuf est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M7. Pour un trajet PMR vers le Pont Neuf ou La Samaritaine, utiliser les <strong>bus 27, 69 ou 72</strong> (planchers bas) ou taxi/VTC."
+        },
+        {
+            "question": "Quels sont les horaires de la M7 à Pont Neuf ?",
+            "answer": "La <strong>M7</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. La nuit, les Noctilien desservent le quai du Louvre (N11, N16, N22)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Pont Neuf</strong> à 1 min : marcher sur le pont, observer la statue d'Henri IV au milieu.",
+        "<strong>Square du Vert-Galant</strong> à 3 min : descendre les escaliers à la pointe — vue panoramique exceptionnelle.",
+        "<strong>La Samaritaine</strong> à 2 min — Art nouveau/Art déco rénové LVMH 2021.",
+        "<strong>Pont des Arts</strong> à 5 min — pont piéton avec vue sur le Louvre et l'Institut de France.",
+        "<strong>Conciergerie</strong> et <strong>Sainte-Chapelle</strong> à 5 min sur l'Île de la Cité (rive est).",
+        "Vigilance pickpockets très élevée sur le Pont Neuf (touristes)."
+    ],
+    "trivia": [
+        {
+            "icon": "🌉",
+            "title": "Pont Neuf (1578-1607) — paradoxalement le plus ancien pont de Paris",
+            "content": "Lancé par <strong>Henri III</strong> en <strong>1578</strong> et achevé par <strong>Henri IV</strong> en <strong>1607</strong>, le <strong>Pont Neuf</strong> est paradoxalement le <strong>plus ancien pont de Paris encore debout</strong>. <strong>Conception</strong> par les architectes <strong>Baptiste Androuet du Cerceau</strong> et <strong>Guillaume Marchand</strong>. Longueur <strong>232 m</strong>, largeur <strong>22 m</strong>, <strong>12 arches</strong> au total (7 + 5, séparées par l'Île de la Cité). <strong>Innovation révolutionnaire</strong> : <strong>premier pont parisien sans maisons</strong> sur les tabliers. Henri IV l'impose pour <strong>« avoir une belle vue sur la rivière »</strong> et améliorer la circulation. Trottoirs séparés de la chaussée — première fois à Paris. <strong>Classé Monument Historique en 1889</strong>, l'un des premiers monuments parisiens classés."
+        },
+        {
+            "icon": "🐎",
+            "title": "Statue équestre d'Henri IV (1614/1818) — première statue équestre publique de Paris",
+            "content": "La <strong>statue équestre d'Henri IV</strong>, au milieu du Pont Neuf, est érigée en <strong>1614</strong> sous Louis XIII : <strong>première statue équestre dans l'espace public parisien</strong>, modelée par <strong>Pietro Tacca</strong> (élève de Giambologna). <strong>Fondue en 1792</strong> pendant la Révolution pour fabriquer des canons. La <strong>statue actuelle</strong> est inaugurée en <strong>1818</strong> sous la Restauration, fondue par <strong>François-Frédéric Lemot</strong>. <strong>Anecdote célèbre</strong> : Lemot, ardent <strong>bonapartiste</strong>, aurait caché dans la statue d'Henri IV des <strong>statuettes miniatures de Napoléon</strong> et des <strong>écrits anti-royalistes</strong>. Vérifié lors d'une restauration en 2004 : statuettes et papiers effectivement retrouvés ! Acte de résistance artistique sous la Restauration."
+        },
+        {
+            "icon": "🏬",
+            "title": "La Samaritaine (1869) — rénovée par LVMH/SANAA 2021",
+            "content": "Ancien grand magasin fondé en <strong>1869</strong> par <strong>Ernest Cognacq</strong> et <strong>Marie-Louise Jay</strong>. Bâtiments actuels (1905-1928) : chefs-d'œuvre <strong>Art nouveau</strong> par <strong>Frantz Jourdain</strong> et <strong>Art déco</strong> par <strong>Henri Sauvage</strong>. Façade Pont-Neuf en mosaïques Art nouveau, structure métallique apparente. <strong>Fermé en 2005</strong> pour mise aux normes. <strong>Racheté par LVMH</strong> et <strong>rénové par les architectes SANAA</strong> (Pritzker 2010) — création d'une nouvelle façade ondulée rue de Rivoli. <strong>Réouvert le 23 juin 2021</strong> après <strong>16 ans de travaux</strong>. Aujourd'hui : 20 000 m² de boutiques de luxe, <strong>hôtel Cheval Blanc Paris</strong> (palace 6 étoiles avec 72 suites), restaurants gastronomiques."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Pont Neuf + Statue Henri IV",
+            "destination_slug": "pont-neuf",
+            "destination_full_name": "Pont Neuf (station) → Pont Neuf (monument)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par le quai du Louvre (~100 m)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-pont-neuf-pont/"
+        },
+        {
+            "destination_name": "Square du Vert-Galant",
+            "destination_slug": "vert-galant",
+            "destination_full_name": "Pont Neuf → Square du Vert-Galant",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied via Pont Neuf + escaliers (~200 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-vert-galant/"
+        },
+        {
+            "destination_name": "La Samaritaine",
+            "destination_slug": "samaritaine",
+            "destination_full_name": "Pont Neuf → La Samaritaine",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de la Monnaie (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-samaritaine/"
+        },
+        {
+            "destination_name": "Musée du Louvre via M7",
+            "destination_slug": "louvre",
+            "destination_full_name": "Pont Neuf → Louvre",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 direction La Courneuve jusqu'à Palais Royal - Musée du Louvre (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-louvre/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Pont Neuf → Notre-Dame",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'Île de la Cité (~700 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Sainte-Chapelle / Conciergerie",
+            "destination_slug": "sainte-chapelle",
+            "destination_full_name": "Pont Neuf → Sainte-Chapelle",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'Île de la Cité (~500 m)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-sainte-chapelle/"
+        },
+        {
+            "destination_name": "Châtelet - Les Halles via M7",
+            "destination_slug": "chatelet-les-halles",
+            "destination_full_name": "Pont Neuf → Châtelet",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 direction Mairie d'Ivry (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-chatelet/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M7 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Pont Neuf → CDG",
+            "lines_used": [
+                "M7",
+                "RER B"
+            ],
+            "lines_label": "M7 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-pont-neuf/pont-neuf-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q19675",
+            "name": "musée du Louvre",
+            "category": "musée",
+            "description": "Le musée du Louvre est un musée parisien situé au sein du palais du Louvre dans le 1er arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cour%20Napol%C3%A9on%20at%20night%20-%20Louvre.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Louvre",
+            "latitude": 48.861111,
+            "longitude": 2.335833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "quai du Louvre",
+                "distance_m": 536,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q178065",
+            "name": "Centre national d'art et de culture Georges-Pompidou",
+            "category": "musée",
+            "description": "Le Centre national d'art et de culture Georges-Pompidou (CNAC) — communément appelé « centre Pompidou », ou plus familièrement « Beaubourg » — est une institution parisienne qui regroupe le même…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Montmartre%20Blick%20aufs%20Centre%20Georges-Pompidou.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou",
+            "latitude": 48.860642,
+            "longitude": 2.352245,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de la Monnaie",
+                "distance_m": 768,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q190063",
+            "name": "île de la Cité",
+            "category": "île",
+            "description": "L’île de la Cité est une île située sur la Seine, en plein cœur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre%20Dame%20DSC00732.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_la_Cit%C3%A9",
+            "latitude": 48.854722,
+            "longitude": 2.3475,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Pont Neuf",
+                "distance_m": 567,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q193193",
+            "name": "Sainte-Chapelle",
+            "category": "chapelle",
+            "description": "La Sainte-Chapelle, dite aussi Sainte-Chapelle du Palais, est une chapelle palatine édifiée sur l’île de la Cité, à Paris, à l'emplacement de la chapelle Saint-Nicolas-du-Palais, à la demande de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Sainte%20Chapelle%20East%20View%2002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle",
+            "latitude": 48.855369,
+            "longitude": 2.345028,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Pont Neuf",
+                "distance_m": 397,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q329948",
+            "name": "Palais-Royal",
+            "category": "palais",
+            "description": "Le Palais-Royal, ensemble monumental au nord du palais du Louvre dans le 1er arrondissement de Paris, est un haut lieu de l’histoire de France et de la vie parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
+            "latitude": 48.863333,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de la Monnaie",
+                "distance_m": 648,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q335277",
+            "name": "pont Neuf",
+            "category": "pont",
+            "description": "Le pont Neuf ou Pont-Neuf est, malgré son nom, actuellement le pont le plus ancien existant à Paris. Il traverse la Seine à la pointe ouest de l'île de la Cité.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20western%20sides%20of%20the%20%C3%8Ele%20de%20la%20Cit%C3%A9%20and%20the%20Pont%20Neuf%2C%2014%20July%202008.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Neuf",
+            "latitude": 48.8575,
+            "longitude": 2.341667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Pont Neuf",
+                "distance_m": 101,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q273593",
+            "name": "École nationale supérieure des beaux-arts",
+            "category": "site notable",
+            "description": "L’École nationale supérieure des beaux-arts de Paris (ENSBA), communément dénommée Beaux-Arts de Paris, est une école d'art française fondée en 1817.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%206%20-%20ENSBA%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaux-Arts_de_Paris",
+            "latitude": 48.856806,
+            "longitude": 2.333278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "quai du Louvre",
+                "distance_m": 661,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q640968",
+            "name": "hôtel de ville de Paris",
+            "category": "mairie",
+            "description": "L’hôtel de ville de Paris, communément appelé l’Hôtel de Ville, est le bâtiment qui héberge les institutions municipales de la Ville de Paris depuis 1357.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20ville%20fa%C3%A7ade%20principale%20Paris%2011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Paris",
+            "latitude": 48.856389,
+            "longitude": 2.352222,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Pont Neuf",
+                "distance_m": 774,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1329141",
+            "name": "pont des Arts",
+            "category": "pont",
+            "description": "Le pont des Arts, ou passerelle des Arts, est un pont parisien franchissant la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20des%20Arts%20and%20the%20Palais%20du%20Louvre%2C%20Paris%20July%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_des_Arts",
+            "latitude": 48.858333,
+            "longitude": 2.337778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "quai du Louvre",
+                "distance_m": 306,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1338207",
+            "name": "église Saint-Eustache de Paris",
+            "category": "église",
+            "description": "L’église Saint-Eustache est une église paroissiale catholique située 146, rue Rambuteau dans le 1er arrondissement de Paris, au cœur du quartier des Halles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
+            "latitude": 48.863333,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de la Monnaie",
+                "distance_m": 561,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1583780",
+            "name": "La Samaritaine",
+            "category": "commerce",
+            "description": "La Samaritaine est un grand magasin situé à Paris entre la rue de Rivoli et la Seine, à l'aplomb du pont Neuf dans le 1er arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Magasin%20Samaritaine%20-%20Paris%20I%20%28FR75%29%20-%202025-09-03%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Samaritaine",
+            "latitude": 48.85889,
+            "longitude": 2.34208,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de la Monnaie",
+                "distance_m": 29,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1431547",
+            "name": "tour Saint-Jacques",
+            "category": "tour",
+            "description": "La tour Saint-Jacques est l'ancien clocher, construit entre 1509 et 1523, de Saint-Jacques-de-la-Boucherie, église dont ce clocher-tour est l'unique vestige.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000625%20Paris%20IV%20Tour%20Saint-Jacques%20resultwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Saint-Jacques",
+            "latitude": 48.857764,
+            "longitude": 2.348778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue de la Monnaie",
+                "distance_m": 491,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue de la Monnaie",
+            "address_full": "4 Quai du Louvre 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.858639,
+            "longitude": 2.342197,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "quai du Louvre",
+            "address_full": "6 Quai du Louvre 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.858457,
+            "longitude": 2.341954,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Pont Neuf",
+            "address_full": "4 Quai du Louvre 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.858368,
+            "longitude": 2.342078,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": true,
+                "location": "Square du Vert-Galant",
+                "access": "publics ouverts en journée"
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "rue de Rivoli",
+                "rue de la Monnaie"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "La Samaritaine + rue de Rivoli + quai du Louvre",
+            "details": "La Samaritaine (rouverte 2021, boutiques de luxe). Rue de Rivoli avec ses arcades commerçantes. Restaurants quai du Louvre. Quartier Les Halles à 10 min.",
+            "secondary": "Île de la Cité à 5 min : restaurants traditionnels rue de Lutèce."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Vigilance pickpockets TRÈS élevée sur le Pont Neuf (très touristique).",
+            "Soirée tardive : Pont Neuf bien fréquenté mais isolé après 1h.",
+            "Présence policière régulière (Préfecture toute proche sur l'Île de la Cité).",
+            "Affluence majeure en sortie Samaritaine (rouverte 2021)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique majeure du Pont Neuf."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Statue_%C3%A9questre_Henri_IV_Pont_Neuf_Paris_17.jpg",
+        "alt": "Statue équestre d'Henri IV (1818, copie de l'originale 1614 fondue à la Révolution) sur le Pont Neuf — à 1 min de la station Pont Neuf",
+        "width": 5184,
+        "height": 3456,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Statue_%C3%A9questre_Henri_IV_Pont_Neuf_Paris_17.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/pont-neuf/pont-neuf-400.avif",
+                "800": "/assets/img/stations/pont-neuf/pont-neuf-800.avif",
+                "1200": "/assets/img/stations/pont-neuf/pont-neuf-1200.avif",
+                "1600": "/assets/img/stations/pont-neuf/pont-neuf-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/pont-neuf/pont-neuf-400.webp",
+                "800": "/assets/img/stations/pont-neuf/pont-neuf-800.webp",
+                "1200": "/assets/img/stations/pont-neuf/pont-neuf-1200.webp",
+                "1600": "/assets/img/stations/pont-neuf/pont-neuf-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/pont-neuf/pont-neuf-400.jpg",
+                "800": "/assets/img/stations/pont-neuf/pont-neuf-800.jpg",
+                "1200": "/assets/img/stations/pont-neuf/pont-neuf-1200.jpg",
+                "1600": "/assets/img/stations/pont-neuf/pont-neuf-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M7. Pour un trajet PMR vers le Pont Neuf ou La Samaritaine, utiliser les bus 27, 69 ou 72 (planchers bas) ou taxi/VTC."
+    }
+}
