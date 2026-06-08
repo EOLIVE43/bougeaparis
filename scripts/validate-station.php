@@ -90,6 +90,10 @@ $required_published  = ['address', 'arrondissement'];
 
 foreach ($required_strict as $field) {
     if (empty($station[$field])) {
+        // Exception : gare RER pure (sans métro) — lines[] vide mais rer_correspondences présent
+        if ($field === 'lines' && !empty($station['rer_correspondences'])) {
+            continue;
+        }
         $errors[] = "Champ manquant ou vide : $field";
     }
 }
