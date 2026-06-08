@@ -1,0 +1,585 @@
+{
+    "published": true,
+    "slug": "olympiades",
+    "name": "Olympiades",
+    "name_full": "Olympiades (Métro 14)",
+    "arrondissement": "13e (Paris)",
+    "address": "Rue de Tolbiac, 75013 Paris",
+    "latitude": 48.826933,
+    "longitude": 2.367518,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Olympiades station",
+        "es": "Estación Olympiades"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "27",
+            "62",
+            "64",
+            "83"
+        ],
+        "nocturne": [
+            "N31"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 5,
+            "nearby_count": 18
+        }
+    },
+    "seo": {
+        "description": "Station Olympiades : M14 dans le 13e arr., dalle des Olympiades 1970s (28 tours), Chinatown parisien (avenue d'Ivry), ancien terminus sud M14 jusqu'en 2024."
+    },
+    "hero": {
+        "tagline": "La dalle des Olympiades et le Chinatown parisien",
+        "description": "Dans le <strong>13e arrondissement</strong>, Olympiades ouvre le <strong>26 juin 2007</strong> comme prolongement de la M14 depuis Bibliothèque François Mitterrand. <strong>Terminus sud de la M14 pendant 17 ans</strong>, jusqu'au <strong>24 juin 2024</strong> et le <strong>prolongement à Aéroport d'Orly</strong> pour les JO. À 100 m : la <strong>dalle des Olympiades</strong>, complexe urbain emblématique des années 1970 conçu par <strong>Michel Holley</strong> (1969-1977) : <strong>28 tours de 30-33 étages</strong> sur dalle piétonnière, nommées d'après les villes olympiques (Tour Athènes, Cortina, Helsinki, Mexico, Rome, Sapporo, Squaw Valley, Tokyo). Cœur du <strong>Chinatown parisien</strong> (le plus grand d'Europe) avec ses restaurants asiatiques de l'<strong>avenue d'Ivry</strong>."
+    },
+    "adjacent_stations": {
+        "metro-14": {
+            "previous": {
+                "name": "Bibliothèque François Mitterrand",
+                "slug": "bibliotheque-francois-mitterrand",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Maison Blanche",
+                "slug": "maison-blanche",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Olympiades</strong> est située dans le <strong>13e arrondissement de Paris</strong>, sous la <strong>rue de Tolbiac</strong> à l'angle de la rue Nationale. Elle est desservie par la <strong>ligne 14 du métro</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly), entre <strong>Bibliothèque François Mitterrand</strong> (1 station vers le nord, RER C) et <strong>Maison Blanche</strong> (1 station vers le sud, prolongement Orly 2024). Aucune correspondance directe. Bus 27, 47, 62, 64, 67, 83 desservent la rue de Tolbiac.",
+        "Ouverte le <strong>26 juin 2007</strong> comme <strong>terminus sud du prolongement de la M14</strong> depuis Bibliothèque François Mitterrand (1 station ajoutée). Reste <strong>terminus sud pendant 17 ans</strong>, jusqu'au <strong>24 juin 2024</strong> et le <strong>prolongement vers Aéroport d'Orly</strong> (7 stations ajoutées) pour les <strong>JO de Paris 2024</strong>. Configuration souterraine moderne : quais larges, portes palières, accessibilité PMR totale, voie de service pour retournements automatiques.",
+        "À <strong>100 mètres</strong> de la station, la <strong>dalle des Olympiades</strong> est l'un des <strong>ensembles urbains les plus emblématiques de l'architecture des années 1970 à Paris</strong>. Construite entre <strong>1969 et 1977</strong> par l'architecte <strong>Michel Holley</strong>, elle s'étend sur <strong>9 hectares</strong>, surélevée à <strong>10 mètres</strong> au-dessus du sol (sur dalle piétonnière). <strong>28 tours d'habitation de 30 à 33 étages</strong>, nommées d'après les <strong>villes olympiques</strong> : Tour Athènes, Tour Cortina d'Ampezzo, Tour Helsinki, Tour Mexico, Tour Rome, Tour Sapporo, Tour Squaw Valley, Tour Tokyo. <strong>9 000 habitants</strong> sur la dalle. L'ensemble illustre l'<strong>urbanisme moderniste</strong> de la fin des Trente Glorieuses : séparation piétons/voitures, équipements collectifs, espaces verts surélevés."
+    ],
+    "history": {
+        "title": "1969-1977 : la dalle Olympiades, 2007 : la M14 prolongée",
+        "paragraphs": [
+            "La station <strong>Olympiades</strong> est inaugurée le <strong>26 juin 2007</strong>, comme <strong>terminus sud du prolongement de la M14</strong> depuis Bibliothèque François Mitterrand (terminus depuis 1998). Première extension d'une ligne automatique en France. La M14 reste alors une ligne courte : 9 stations de Saint-Lazare à Olympiades (Saint-Lazare ouverte en 2003 dans le prolongement nord). Configuration moderne identique à toutes les stations M14.",
+            "Olympiades est <strong>terminus sud pendant 17 ans</strong>, jusqu'au <strong>24 juin 2024</strong>. À cette date, dans le cadre des <strong>JO de Paris 2024</strong>, la M14 est prolongée vers le sud jusqu'à l'<strong>Aéroport d'Orly</strong> (7 stations ajoutées : Maison Blanche, Hôpital Bicêtre, Villejuif - Gustave Roussy, Chevilly Trois Communes, L'Haÿ-les-Roses, Aéroport d'Orly). Et simultanément vers le nord jusqu'à <strong>Saint-Denis - Pleyel</strong> (mai 2024). La M14 devient ainsi l'<strong>épine dorsale nord-sud du métro parisien</strong>, et la première liaison directe métro vers les deux aéroports (Orly seul ; CDG via RER B encore).",
+            "À 100 m de la station, la <strong>dalle des Olympiades</strong> a une histoire urbanistique singulière. Construite entre <strong>1969 et 1977</strong> par l'architecte <strong>Michel Holley</strong> sur une <strong>ancienne gare de marchandises</strong> (la gare des Gobelins, désaffectée dans les années 1960). <strong>9 hectares</strong> de dalle piétonnière surélevée à <strong>10 m</strong> au-dessus du sol, sous laquelle passent voiries et stationnements. Programme : <strong>28 tours d'habitation de 30 à 33 étages</strong>, <strong>9 000 habitants</strong>, <strong>centre commercial</strong> (galerie marchande sur la dalle), <strong>équipements</strong> (école, gymnase, théâtre).",
+            "Les <strong>tours sont nommées d'après les villes ayant accueilli les Jeux olympiques</strong> avant 1968 (date d'attribution des Jeux à Mexico) : <strong>Tour Athènes</strong> (1896), <strong>Tour Cortina d'Ampezzo</strong> (1956 hiver), <strong>Tour Helsinki</strong> (1952), <strong>Tour Mexico</strong> (1968), <strong>Tour Rome</strong> (1960), <strong>Tour Sapporo</strong> (1972 hiver), <strong>Tour Squaw Valley</strong> (1960 hiver), <strong>Tour Tokyo</strong> (1964). D'où le nom <strong>« dalle des Olympiades »</strong>. C'est l'un des plus grands ensembles modernistes des années 1970 à Paris.",
+            "Le quartier devient progressivement le <strong>Chinatown parisien</strong> à partir des années <strong>1975-1980</strong> avec l'<strong>arrivée massive de réfugiés du Sud-Est asiatique</strong> (Vietnam, Cambodge, Laos), fuyant les régimes communistes après la chute de Saigon (1975) et le génocide cambodgien (1975-1979). Les réfugiés s'installent dans le quartier en raison des loyers abordables des tours et de la disponibilité de commerces vacants. Aujourd'hui, l'<strong>avenue d'Ivry</strong> et la <strong>avenue de Choisy</strong> abritent le <strong>plus grand Chinatown d'Europe</strong> : restaurants chinois, vietnamiens, cambodgiens, laotiens, supermarchés asiatiques (Tang Frères, Big Store), temples bouddhistes (Temple Khanh-Anh, Temple Vietnamien, Temple Kwan-Yin sur la dalle).",
+            "Architecturalement, la dalle des Olympiades fait l'objet de <strong>débats récurrents</strong> : appréciée comme <strong>témoignage de l'urbanisme moderne français</strong>, critiquée pour son <strong>manque de mixité</strong> et son <strong>vieillissement</strong>. <strong>Programme de rénovation</strong> en cours depuis les années 2010 (espaces publics, isolation, façades). Reste un <strong>quartier vivant</strong> grâce à sa communauté asiatique et sa proximité avec le centre."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Olympiades ?",
+            "answer": "Une seule ligne : la <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, ligne automatique), entre <strong>Bibliothèque François Mitterrand</strong> (1 station vers le nord, RER C) et <strong>Maison Blanche</strong> (1 station vers le sud, prolongement Orly 2024). Aucune correspondance directe. Bus 27, 47, 62, 64, 67, 83 desservent le quartier."
+        },
+        {
+            "question": "Pourquoi le nom Olympiades ?",
+            "answer": "De la <strong>dalle des Olympiades</strong> à 100 m, construite entre <strong>1969 et 1977</strong> par l'architecte <strong>Michel Holley</strong>. <strong>28 tours d'habitation de 30 à 33 étages</strong>, nommées d'après les <strong>villes olympiques</strong> : Tour Athènes (1896), Tour Helsinki (1952), Tour Cortina (1956), Tour Mexico (1968), Tour Rome (1960), Tour Sapporo (1972 hiver), Tour Squaw Valley (1960 hiver), Tour Tokyo (1964). D'où le nom de la dalle, du quartier, et de la station de métro."
+        },
+        {
+            "question": "Est-ce le Chinatown de Paris ?",
+            "answer": "<strong>Oui</strong>. Le quartier autour de la station, notamment l'<strong>avenue d'Ivry</strong> et l'<strong>avenue de Choisy</strong>, abrite le <strong>plus grand Chinatown d'Europe</strong>. Devenu progressivement à partir des années <strong>1975-1980</strong> avec l'<strong>arrivée massive de réfugiés du Sud-Est asiatique</strong> (Vietnam, Cambodge, Laos), fuyant la chute de Saigon (1975) et le génocide cambodgien. Aujourd'hui : restaurants chinois/vietnamiens/cambodgiens/laotiens, supermarchés asiatiques (<strong>Tang Frères</strong>, <strong>Big Store</strong>), <strong>temples bouddhistes</strong> (Temple Khanh-Anh, Temple Kwan-Yin sur la dalle)."
+        },
+        {
+            "question": "Olympiades était-elle terminus M14 ?",
+            "answer": "<strong>Oui, pendant 17 ans</strong>. Olympiades a été <strong>terminus sud de la M14</strong> à son ouverture le <strong>26 juin 2007</strong> (prolongement depuis BnF) jusqu'au <strong>24 juin 2024</strong> et le <strong>prolongement vers Aéroport d'Orly</strong> (7 stations ajoutées) pour les <strong>JO de Paris 2024</strong>. Olympiades devient station de passage."
+        },
+        {
+            "question": "Comment rejoindre l'Aéroport d'Orly depuis Olympiades ?",
+            "answer": "<strong>M14 directe</strong> (depuis le 24 juin 2024) : ~<strong>30 minutes</strong> jusqu'à <strong>Aéroport d'Orly</strong> (terminus, 6 stations vers le sud). Première liaison directe métro entre le centre de Paris et un aéroport. Avant 2024 : il fallait passer par OrlyVal (RER B + OrlyVal)."
+        },
+        {
+            "question": "Que voir dans le quartier ?",
+            "answer": "À <strong>5-15 min à pied</strong> : <strong>Dalle des Olympiades</strong> (architecture moderniste 1970s, 28 tours), <strong>Avenue d'Ivry</strong> et <strong>Avenue de Choisy</strong> (Chinatown, restaurants asiatiques), <strong>Place d'Italie</strong> (10 min, gros pôle d'échange M5/M6/M7), <strong>Temples bouddhistes</strong> (Temple Khanh-Anh, Temple Kwan-Yin sur la dalle). Plus loin via M14 : <strong>BnF</strong> et <strong>Bercy Village</strong>."
+        },
+        {
+            "question": "La station Olympiades est-elle accessible PMR ?",
+            "answer": "<strong>Oui, entièrement accessible PMR</strong>. Ascenseurs vers tous les niveaux. La M14 a été conçue dès l'origine 100% accessible PMR."
+        },
+        {
+            "question": "Quels sont les horaires de la M14 à Olympiades ?",
+            "answer": "La <strong>M14 (automatique)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence record : <strong>85 secondes en heure de pointe</strong> (plus court intervalle du réseau RATP)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Dalle des Olympiades</strong> à 5 min — visite urbaine architecture moderniste 1970s.",
+        "<strong>Chinatown</strong> : avenue d'Ivry + avenue de Choisy — meilleurs restaurants vietnamiens/cambodgiens/laotiens de Paris.",
+        "<strong>Tang Frères</strong> et <strong>Big Store</strong> : supermarchés asiatiques mythiques.",
+        "<strong>Temples bouddhistes</strong> sur la dalle — visite culturelle.",
+        "Pour <strong>Aéroport d'Orly</strong> : M14 directe (~30 min, depuis 2024).",
+        "Pour <strong>Place d'Italie</strong> (correspondance M5/M6/M7) : 10 min à pied vers l'ouest."
+    ],
+    "trivia": [
+        {
+            "icon": "🏗️",
+            "title": "Dalle des Olympiades (1969-1977) — Michel Holley, 28 tours olympiques",
+            "content": "La <strong>dalle des Olympiades</strong>, à 100 m de la station, est l'un des <strong>ensembles urbains les plus emblématiques de l'architecture des années 1970 à Paris</strong>. Construite entre <strong>1969 et 1977</strong> par l'architecte <strong>Michel Holley</strong> sur une ancienne gare de marchandises (gare des Gobelins). <strong>9 hectares</strong>, dalle piétonnière surélevée à <strong>10 m</strong>. <strong>28 tours d'habitation de 30 à 33 étages</strong>, <strong>9 000 habitants</strong>. Tours nommées d'après les <strong>villes olympiques</strong> : <strong>Tour Athènes</strong> (1896), <strong>Tour Helsinki</strong> (1952), <strong>Tour Cortina d'Ampezzo</strong> (1956 hiver), <strong>Tour Mexico</strong> (1968), <strong>Tour Rome</strong> (1960), <strong>Tour Sapporo</strong> (1972 hiver), <strong>Tour Squaw Valley</strong> (1960 hiver), <strong>Tour Tokyo</strong> (1964). Illustre l'<strong>urbanisme moderniste</strong> de la fin des Trente Glorieuses. Programme rénovation en cours depuis les années 2010."
+        },
+        {
+            "icon": "🥢",
+            "title": "Chinatown parisien — plus grand d'Europe",
+            "content": "Le quartier autour est le <strong>Chinatown parisien</strong>, le <strong>plus grand d'Europe</strong>. Devenu progressivement à partir de <strong>1975-1980</strong> avec l'<strong>arrivée massive de réfugiés du Sud-Est asiatique</strong> (Vietnam, Cambodge, Laos), fuyant la <strong>chute de Saigon (avril 1975)</strong> et le <strong>génocide cambodgien (1975-1979, Khmers Rouges)</strong>. Les réfugiés s'installent dans le quartier en raison des loyers abordables des tours et de commerces vacants. Aujourd'hui : <strong>avenue d'Ivry</strong> et <strong>avenue de Choisy</strong> avec restaurants chinois/vietnamiens/cambodgiens/laotiens, supermarchés asiatiques (<strong>Tang Frères</strong>, <strong>Big Store</strong>), <strong>temples bouddhistes</strong> (Temple Khanh-Anh, Temple Vietnamien, Temple Kwan-Yin sur la dalle). Quartier <strong>vivant et coloré</strong>, destination gastronomique majeure de Paris."
+        },
+        {
+            "icon": "🚇",
+            "title": "Terminus sud M14 pendant 17 ans (2007-2024)",
+            "content": "Olympiades a été <strong>terminus sud de la M14</strong> à son ouverture le <strong>26 juin 2007</strong> (prolongement depuis BnF) jusqu'au <strong>24 juin 2024</strong> et le <strong>prolongement vers Aéroport d'Orly</strong> (7 stations ajoutées : Maison Blanche, Hôpital Bicêtre, Villejuif - Gustave Roussy, Chevilly Trois Communes, L'Haÿ-les-Roses, Aéroport d'Orly). Prolongement réalisé pour les <strong>JO de Paris 2024</strong> — première liaison directe métro vers un aéroport parisien. La M14 devient ainsi l'<strong>épine dorsale nord-sud automatique du métro parisien</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Chinatown (avenue d'Ivry)",
+            "destination_slug": "chinatown-paris",
+            "destination_full_name": "Olympiades → Chinatown",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Tolbiac (~200 m)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-chinatown/"
+        },
+        {
+            "destination_name": "Place d'Italie via M14 + M6/M7",
+            "destination_slug": "place-italie",
+            "destination_full_name": "Olympiades → Place d'Italie",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par la rue de Tolbiac (~900 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-place-italie/"
+        },
+        {
+            "destination_name": "BnF via M14",
+            "destination_slug": "bnf-francois-mitterrand",
+            "destination_full_name": "Olympiades → BnF",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-bnf/"
+        },
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Olympiades → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (4 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare Saint-Lazare via M14",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Olympiades → Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (6 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Olympiades → Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct Aéroport d'Orly (6 stations, depuis 2024)",
+            "duration_minutes": 30,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-orly/"
+        },
+        {
+            "destination_name": "Bercy Village via M14",
+            "destination_slug": "cour-saint-emilion",
+            "destination_full_name": "Olympiades → Bercy Village",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis jusqu'à Cour Saint-Émilion (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-bercy/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M14 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Olympiades → CDG",
+            "lines_used": [
+                "M14",
+                "RER B"
+            ],
+            "lines_label": "M14 jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-olympiades/olympiades-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2856214",
+            "name": "Bibliothèque François-Mitterrand",
+            "category": "gare",
+            "description": "La gare de la Bibliothèque François-Mitterrand est une gare ferroviaire française de la ligne de Paris-Austerlitz à Bordeaux-Saint-Jean, située dans le 13e arrondissement de Paris, en région…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Biblioth%C3%A8que%20SNCF.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_la_Biblioth%C3%A8que_Fran%C3%A7ois-Mitterrand",
+            "latitude": 48.82981,
+            "longitude": 2.37682,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Château des Rentiers",
+                "distance_m": 705,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3364132",
+            "name": "parc de Choisy",
+            "category": "jardin",
+            "description": "Le parc de Choisy, également nommé square de Choisy, est un jardin public situé dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20de%20Choisy.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_Choisy",
+            "latitude": 48.8278,
+            "longitude": 2.36,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Baudricourt",
+                "distance_m": 406,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3278943",
+            "name": "maison Planeix",
+            "category": "site notable",
+            "description": "La maison Planeix est une maison-atelier d'artiste située aux numéros 24bis à 26bis du boulevard Masséna, dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Planeix%20IMG%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_Planeix",
+            "latitude": 48.823333,
+            "longitude": 2.373889,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Château des Rentiers",
+                "distance_m": 622,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q10453586",
+            "name": "cité de Refuge",
+            "category": "quartier",
+            "description": "La Cité de Refuge est un immeuble situé au 12 rue Cantagrel, dans le 13e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Rue%20du%20Chevaleret%20Arm%C3%A9e%20du%20salut%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cit%C3%A9_de_Refuge",
+            "latitude": 48.826667,
+            "longitude": 2.376667,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Château des Rentiers",
+                "distance_m": 642,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1076198",
+            "name": "église Notre-Dame-de-Chine",
+            "category": "église",
+            "description": "L'église Notre-Dame-de-Chine est une église de culte catholique située à Paris dans le 13e arrondissement de Paris, consacrée le 18 décembre 2005 par l'archevêque émérite de Paris, le cardinal André…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame%20de%20Chine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-Chine_de_Paris",
+            "latitude": 48.821493,
+            "longitude": 2.362644,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Baudricourt",
+                "distance_m": 618,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3097251",
+            "name": "Paris-Gobelins",
+            "category": "gare",
+            "description": "La gare de Paris-Gobelins, plus communément appelée gare des Olympiades, est une ancienne gare ferroviaire de marchandises située dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare-des-gobelins.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Gobelins",
+            "latitude": 48.825,
+            "longitude": 2.366,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Baudricourt",
+                "distance_m": 202,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3580742",
+            "name": "église Notre-Dame de la Gare",
+            "category": "église",
+            "description": "L'église Notre-Dame de la Gare est une église paroissiale située sur la place Jeanne-d'Arc dans le 13e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NDG%20Biais.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Gare_de_Paris",
+            "latitude": 48.8297,
+            "longitude": 2.36833,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Château des Rentiers",
+                "distance_m": 264,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3582061",
+            "name": "église Saint-Jean-des-Deux-Moulins",
+            "category": "église",
+            "description": "L’église Saint-Jean-des-Deux-Moulins est un édifice religieux catholique situé au 185-187, rue du Château-des-Rentiers dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2013e%20-%20%C3%89glise%20Saint-%20Jean-des-Deux-Moulins%202.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-des-Deux-Moulins",
+            "latitude": 48.831,
+            "longitude": 2.36083,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Tolbiac",
+                "distance_m": 562,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3399010",
+            "name": "porte d'Ivry",
+            "category": "site notable",
+            "description": "La porte d’Ivry est l'une des portes de Paris, en France, située dans le quartier de la Gare du 13e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metro%207%20Porte%20d%20Ivry%20tramway.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_d%27Ivry",
+            "latitude": 48.8217,
+            "longitude": 2.36917,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue Nationale",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3399030",
+            "name": "porte de Choisy",
+            "category": "site notable",
+            "description": "La porte de Choisy est l'une des 17 portes percées dans l'enceinte de Thiers au milieu du XIXe siècle pour protéger Paris, en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Station_Porte_Choisy_Tramway_IdF_Ligne_9_-_Paris_XIII_%28FR75%29_-_2024-06-11_-_2.jpg/330px-Station_Porte_Choisy_Tramway_IdF_Ligne_9_-_Paris_XIII_%28FR75%29_-_2024-06-11_-_2.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Choisy",
+            "latitude": 48.82,
+            "longitude": 2.36472,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue Baudricourt",
+                "distance_m": 753,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3556628",
+            "name": "viaduc de Tolbiac",
+            "category": "pont",
+            "description": "Le viaduc de Tolbiac était un viaduc parisien, construit en 1895.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CPA%20Viaduc%20de%20Tolbiac.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_de_Tolbiac",
+            "latitude": 48.830316,
+            "longitude": 2.376246,
+            "nearest_exit": {
+                "number": "4",
+                "name": "rue du Château des Rentiers",
+                "distance_m": 691,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2944853",
+            "name": "centre Pierre-Mendès-France",
+            "category": "site notable",
+            "description": "Le centre Pierre-Mendès-France, surnommé « Tolbiac », est une annexe de l'université Paris-1 Panthéon-Sorbonne hébergée dans un immeuble de grande hauteur inauguré en 1973 et situé rue de Tolbiac…",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/4/42/CentrePMF_Paris1.jpg/330px-CentrePMF_Paris1.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_Pierre-Mend%C3%A8s-France",
+            "latitude": 48.8272,
+            "longitude": 2.3647,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue de Tolbiac",
+                "distance_m": 63,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue Nationale",
+            "address_full": "93 Rue de Tolbiac 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.826877,
+            "longitude": 2.366177,
+            "accessible": true
+        },
+        {
+            "number": "2",
+            "name": "rue Baudricourt",
+            "address_full": "101 Rue de Tolbiac 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.826764,
+            "longitude": 2.36532,
+            "accessible": true
+        },
+        {
+            "number": "3",
+            "name": "rue de Tolbiac",
+            "address_full": "84 Rue de Tolbiac 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.82699,
+            "longitude": 2.365494,
+            "accessible": true
+        },
+        {
+            "number": "4",
+            "name": "rue du Château des Rentiers",
+            "address_full": "66 Rue de Tolbiac 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.827336,
+            "longitude": 2.367956,
+            "accessible": true
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "rue de Tolbiac",
+                "avenue d'Ivry"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue d'Ivry + Avenue de Choisy (Chinatown)",
+            "details": "Plus grand Chinatown d'Europe : restaurants chinois, vietnamiens, cambodgiens, laotiens. Supermarchés asiatiques Tang Frères et Big Store.",
+            "secondary": "Centre commercial sur la dalle des Olympiades : galerie marchande."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier 13e populaire et animé — globalement sûr.",
+            "Vigilance pickpockets standard avenue d'Ivry (commerces, restaurants).",
+            "Soirée tardive : zone fréquentée jusqu'à minuit (restaurants asiatiques).",
+            "Présence policière régulière sur la dalle."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature du Chinatown."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Les_Olympiades_-_Building_in_Paris_13e_arrondissement_%2828410839972%29.jpg",
+        "alt": "Tours de la dalle des Olympiades (Michel Holley, 1969-1977) — ensemble urbain moderniste de 28 tours d'habitation nommées d'après les villes olympiques (Athènes, Helsinki, Mexico, Rome, Tokyo...)",
+        "width": 5472,
+        "height": 3648,
+        "credit": {
+            "author": "Guilhem Vellut",
+            "license": "CC BY 2.0",
+            "license_url": "https://creativecommons.org/licenses/by/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Les_Olympiades_-_Building_in_Paris_13e_arrondissement_(28410839972).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/olympiades/olympiades-400.avif",
+                "800": "/assets/img/stations/olympiades/olympiades-800.avif",
+                "1200": "/assets/img/stations/olympiades/olympiades-1200.avif",
+                "1600": "/assets/img/stations/olympiades/olympiades-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/olympiades/olympiades-400.webp",
+                "800": "/assets/img/stations/olympiades/olympiades-800.webp",
+                "1200": "/assets/img/stations/olympiades/olympiades-1200.webp",
+                "1600": "/assets/img/stations/olympiades/olympiades-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/olympiades/olympiades-400.jpg",
+                "800": "/assets/img/stations/olympiades/olympiades-800.jpg",
+                "1200": "/assets/img/stations/olympiades/olympiades-1200.jpg",
+                "1600": "/assets/img/stations/olympiades/olympiades-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 4,
+            "accessible_lines": 1,
+            "total_lines": 1
+        },
+        "details": "Station entièrement accessible PMR. Ascenseurs vers tous les niveaux. M14 conçue dès l'origine 100% accessible PMR."
+    }
+}
