@@ -1,0 +1,616 @@
+{
+    "published": true,
+    "slug": "invalides",
+    "name": "Invalides",
+    "name_full": "Invalides (Métro 8 + 13 + RER C)",
+    "arrondissement": "7e (Paris)",
+    "address": "Esplanade des Invalides, 75007 Paris",
+    "latitude": 48.861465,
+    "longitude": 2.313776,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Invalides station",
+        "es": "Estación Invalides"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#E19BDF",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "type": "rer",
+            "code": "C",
+            "slug": "rer-c",
+            "color": "#FFCD00",
+            "text_color": "#000000",
+            "station_name": "Invalides",
+            "walking_minutes": 0,
+            "note": "Gare des Invalides : correspondance directe en gare commune"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "28",
+            "63",
+            "69",
+            "83",
+            "87"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [
+            "93"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 1,
+            "nearby_count": 26
+        }
+    },
+    "seo": {
+        "description": "Station Invalides : M8 + M13 + RER C dans le 7e arrondissement, Hôtel des Invalides (Louis XIV 1670), Dôme tombeau de Napoléon, Musée de l'Armée, Esplanade."
+    },
+    "hero": {
+        "tagline": "L'Hôtel des Invalides et le tombeau de Napoléon",
+        "description": "Sous l'<strong>Esplanade des Invalides</strong> dans le <strong>7e arrondissement</strong>, Invalides est un <strong>pôle d'échange majeur</strong> à <strong>3 modes</strong> : <strong>M8</strong> (24 décembre 1913), <strong>M13</strong> (30 décembre 1923, ex-M10) et <strong>RER C</strong> (gare des Invalides). À <strong>200 mètres</strong>, l'<strong>Hôtel des Invalides</strong>, monument fondé par <strong>Louis XIV en 1670</strong> pour les vétérans, abrite le célèbre <strong>Dôme des Invalides</strong> (Jules Hardouin-Mansart, 1706, 107 m de haut) qui renferme le <strong>tombeau de Napoléon Bonaparte</strong> depuis 1840, et le <strong>Musée de l'Armée</strong> (un des plus grands musées militaires au monde). <strong>3,5 millions d'entrants en 2021</strong>."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "La Tour-Maubourg",
+                "slug": "la-tour-maubourg",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Concorde",
+                "slug": "concorde",
+                "direction": "Pointe du Lac"
+            }
+        },
+        "metro-13": {
+            "previous": {
+                "name": "Champs-Élysées - Clemenceau",
+                "slug": "champs-elysees-clemenceau",
+                "direction": "Saint-Denis - Université / Asnières-Gennevilliers"
+            },
+            "next": {
+                "name": "Varenne",
+                "slug": "varenne",
+                "direction": "Châtillon - Montrouge"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Invalides</strong> est un <strong>pôle d'échange majeur</strong> du <strong>7e arrondissement de Paris</strong>, situé sous l'<strong>Esplanade des Invalides</strong>. Elle dessert <strong>trois modes</strong> de transport : la <strong>ligne 8 du métro</strong> (Balard ↔ Pointe du Lac), la <strong>ligne 13 du métro</strong> (Saint-Denis ↔ Châtillon-Montrouge) et le <strong>RER C</strong> (gare des Invalides, terminus côté Versailles-Massy). Avec environ <strong>3,5 millions d'entrants en 2021</strong>, elle se classait au <strong>79e rang</strong> du réseau métro RATP.",
+        "Ouvertures échelonnées : la <strong>M8 ouvre le 24 décembre 1913</strong> lors du prolongement vers Opéra. La <strong>M13</strong> (à l'origine M10) ouvre le <strong>30 décembre 1923</strong>. La <strong>fusion des lignes 13 et 14 en 1976</strong> transforme Invalides d'<strong>ancien terminus</strong> en <strong>station de passage</strong>. Particularité : la station comporte une <strong>demi-station fantôme</strong>, vestige d'un projet abandonné de ligne circulaire qui n'a jamais été réalisé — visible depuis certains quais en regardant attentivement.",
+        "À <strong>200 mètres</strong> au sud se dresse l'<strong>Hôtel national des Invalides</strong>, ensemble monumental fondé par <strong>Louis XIV</strong> en <strong>1670</strong> pour héberger les <strong>soldats vétérans et invalides</strong> de ses armées. Architectes : <strong>Libéral Bruand</strong> (1671) puis <strong>Jules Hardouin-Mansart</strong> (1676-1706). Le <strong>Dôme des Invalides</strong> (Hardouin-Mansart, achevé en 1706, hauteur 107 m, recouvert de feuilles d'or véritables) est l'un des plus beaux dômes baroques d'Europe. Il abrite depuis le <strong>15 décembre 1840</strong> le <strong>tombeau de Napoléon Iᵉʳ</strong> (sarcophage de quartzite rouge sur socle de granit vert), suite au retour des cendres depuis Sainte-Hélène. L'ensemble accueille aussi le <strong>Musée de l'Armée</strong> (l'un des plus grands musées militaires au monde), la <strong>cathédrale Saint-Louis-des-Invalides</strong> et le <strong>Musée de l'Ordre de la Libération</strong>."
+    ],
+    "history": {
+        "title": "1913-1976 : trois ouvertures et la fusion M13/M14",
+        "paragraphs": [
+            "La station <strong>Invalides</strong> a une histoire à trois temps. Premier temps : ouverture de la <strong>M8</strong> le <strong>24 décembre 1913</strong>, à la veille de Noël, lors du prolongement de la ligne 8 depuis Beaugrenelle (actuel Charles Michels) vers Opéra. La station est construite sous l'Esplanade des Invalides, configuration souterraine standard.",
+            "Deuxième temps : ouverture de la <strong>ligne 10</strong> (future M13) le <strong>30 décembre 1923</strong> avec Invalides comme <strong>terminus est</strong>. La ligne 10 était alors une ligne courte et excentrée. En <strong>1937</strong>, elle est rebaptisée <strong>ligne 14</strong> dans la nomenclature CMP. Puis, en <strong>1976</strong>, la <strong>fusion des lignes 13 et 14</strong> intègre Invalides dans la M13 actuelle (Saint-Denis ↔ Châtillon-Montrouge), transformant la station d'<strong>ancien terminus</strong> en <strong>station de passage</strong>.",
+            "Troisième temps : intégration du <strong>RER C</strong> dans les années 1980 — la <strong>gare des Invalides</strong> (initialement gare ferroviaire 1900 pour l'Exposition universelle) devient gare RER C reliant Versailles et Saint-Quentin-en-Yvelines. La gare des Invalides en RER conserve sa <strong>marquise vitrée d'origine</strong> et son hall de 1900.",
+            "Au-dessus de la station, l'<strong>Hôtel des Invalides</strong> est l'un des plus grands ensembles monumentaux de Paris. Fondé par <strong>Louis XIV</strong> par édit royal du <strong>24 février 1670</strong> pour <strong>héberger les soldats vétérans, blessés et invalides</strong> de ses armées (jusque-là sans aucun statut social), il fut conçu pour accueillir <strong>4 000 hommes</strong>. Premier architecte <strong>Libéral Bruand</strong> (corps de bâtiment, 1671-1676). <strong>Jules Hardouin-Mansart</strong> achève l'ensemble : <strong>chapelle royale des soldats</strong> (Saint-Louis-des-Invalides) puis le <strong>Dôme</strong> (1677-1706). Le <strong>Dôme des Invalides</strong>, achevé en <strong>1706</strong>, mesure <strong>107 m</strong> de hauteur et est recouvert de <strong>plus de 12 kg de feuilles d'or</strong> (redoré la dernière fois en 1989 pour le bicentenaire de la Révolution).",
+            "Le <strong>15 décembre 1840</strong>, le <strong>retour des cendres de Napoléon Iᵉʳ</strong> depuis <strong>Sainte-Hélène</strong> (décédé en exil le 5 mai 1821) culmine avec leur inhumation au <strong>centre du Dôme</strong> dans un sarcophage monumental de quartzite rouge de Russie sur socle de granit vert des Vosges, conçu par l'architecte <strong>Louis Visconti</strong>. La cérémonie, organisée sous Louis-Philippe, draine des centaines de milliers de Parisiens. Le tombeau, ouvert au public, est aujourd'hui visité par environ <strong>1,2 million de personnes par an</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Invalides ?",
+            "answer": "<strong>Trois modes</strong> : la <strong>M8</strong> (Balard ↔ Pointe du Lac), la <strong>M13</strong> (Saint-Denis ↔ Châtillon-Montrouge) et le <strong>RER C</strong> (gare des Invalides, vers Versailles/Massy). Correspondances multimodales en gare commune. Bus 28, 63, 69, 72, 83, 93 desservent le quartier."
+        },
+        {
+            "question": "Comment rejoindre l'Hôtel des Invalides et le tombeau de Napoléon ?",
+            "answer": "<strong>5 minutes à pied</strong> : sortir et traverser l'<strong>Esplanade des Invalides</strong> vers le sud. L'entrée principale du <strong>Dôme et du Musée de l'Armée</strong> se trouve <strong>129 rue de Grenelle</strong> (ou place Vauban côté sud). Le <strong>tombeau de Napoléon Iᵉʳ</strong> est au centre du Dôme, descente vers la crypte par l'escalier circulaire. Réservation en ligne recommandée (file d'attente)."
+        },
+        {
+            "question": "Quel est le tombeau de Napoléon ?",
+            "answer": "Le tombeau de <strong>Napoléon Iᵉʳ</strong> est un <strong>sarcophage monumental de quartzite rouge de Russie</strong> sur socle de granit vert des Vosges, placé au <strong>centre du Dôme des Invalides</strong>, sous la coupole de Hardouin-Mansart. Conçu par l'architecte <strong>Louis Visconti</strong> et inauguré le <strong>2 avril 1861</strong>. Le sarcophage contient les <strong>restes de Napoléon</strong> rapatriés de <strong>Sainte-Hélène</strong> le <strong>15 décembre 1840</strong> lors du « retour des cendres », 19 ans après la mort de l'empereur (5 mai 1821). Autour du tombeau : statues allégoriques et bas-reliefs représentant les victoires impériales."
+        },
+        {
+            "question": "Qu'est-ce que la demi-station fantôme à Invalides ?",
+            "answer": "Une <strong>partie de la station construite mais jamais mise en service</strong>, vestige d'un projet abandonné de <strong>ligne circulaire</strong> autour de Paris au début du XXᵉ siècle. Cette ligne, jamais réalisée, devait passer par Invalides en correspondance. La structure construite pour ses futurs quais est visible aujourd'hui dans certains couloirs et depuis les quais de la M13 (regarder attentivement). Ce type de station fantôme est rare dans le métro parisien (avec Croix-Rouge sur M10 et la station Haxo sur M3bis/M7bis)."
+        },
+        {
+            "question": "Quel est l'horaire de visite du Dôme et du tombeau ?",
+            "answer": "Le <strong>Musée de l'Armée</strong> et le <strong>Dôme</strong> sont ouverts tous les jours sauf le 1ᵉʳ janvier, 1ᵉʳ mai et 25 décembre, généralement de <strong>10h à 18h</strong> (parfois jusqu'à 21h le mardi en été). Tarif plein <strong>~14 €</strong>, gratuit moins de 18 ans, demandeurs d'emploi, militaires. Réservation en ligne sur musee-armee.fr conseillée."
+        },
+        {
+            "question": "La station Invalides est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station métro n'est pas accessible aux PMR</strong> (M8 et M13). En revanche, la <strong>gare RER C des Invalides</strong> est <strong>partiellement accessible</strong> (avec ascenseur vers la salle des billets). Pour l'Hôtel des Invalides, accès PMR par la place Vauban (côté sud, entrée Dôme adaptée)."
+        },
+        {
+            "question": "Combien de personnes utilisent la station Invalides ?",
+            "answer": "Environ <strong>3,5 millions d'entrants en 2021</strong> côté métro (M8+M13), soit le <strong>79e rang</strong> du réseau métro RATP. À cela s'ajoute le trafic du <strong>RER C</strong>. Trafic touristique majeur lié à l'Hôtel des Invalides + trafic pendulaire (ministères 7e arr.)."
+        },
+        {
+            "question": "Quels autres lieux célèbres autour d'Invalides ?",
+            "answer": "À 5-10 min à pied : <strong>Musée Rodin</strong> (12 min, à Varenne), <strong>Pont Alexandre III</strong> (10 min, plus orné de Paris, 1900), <strong>Grand Palais</strong> et <strong>Petit Palais</strong> (15 min, sur l'autre rive), <strong>Palais Bourbon (Assemblée nationale)</strong> (15 min), <strong>Place de la Concorde</strong> (15 min via Pont Alexandre III). Plus loin via M8 : <strong>Tour Eiffel</strong> (4 stations, École Militaire) et <strong>Bastille</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Hôtel des Invalides + Dôme + Musée de l'Armée</strong> à 5 min — entrée principale 129 rue de Grenelle ou place Vauban.",
+        "<strong>Tombeau de Napoléon</strong> au centre du Dôme — escalier circulaire descend vers la crypte.",
+        "<strong>RER C station Invalides</strong> : utile pour Versailles (Château de Versailles - Rive Gauche, ~35 min) et Saint-Michel - Notre-Dame.",
+        "Demi-station fantôme : projet abandonné de ligne circulaire, visible depuis certains quais M13.",
+        "<strong>Pont Alexandre III</strong> (1900) à 10 min : le plus orné de Paris (anges, lions, nymphes).",
+        "Esplanade des Invalides : superbe perspective alignée avec le Pont Alexandre III et le Grand Palais."
+    ],
+    "trivia": [
+        {
+            "icon": "👑",
+            "title": "Hôtel des Invalides (1670) — fondé par Louis XIV pour ses vétérans",
+            "content": "L'<strong>Hôtel national des Invalides</strong>, à 200 m de la station, est fondé par <strong>Louis XIV</strong> par édit royal du <strong>24 février 1670</strong> pour <strong>héberger les soldats vétérans, blessés et invalides</strong> de ses armées (jusque-là abandonnés sans statut). Conçu pour accueillir <strong>4 000 hommes</strong>. Premier architecte <strong>Libéral Bruand</strong> (corps de bâtiment principal, 1671-1676), puis <strong>Jules Hardouin-Mansart</strong> (chapelle Saint-Louis-des-Invalides + Dôme, 1677-1706). L'ensemble couvre <strong>13 hectares</strong> et reste l'un des plus grands monuments de Paris. Encore aujourd'hui, c'est un <strong>établissement militaire actif</strong> : pensionnaires de l'<strong>Institution nationale des Invalides</strong>."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Dôme des Invalides (1706) — tombeau de Napoléon depuis 1840",
+            "content": "Le <strong>Dôme des Invalides</strong>, achevé en <strong>1706</strong> par <strong>Jules Hardouin-Mansart</strong>, est l'un des plus beaux dômes baroques d'Europe. <strong>Hauteur 107 m</strong>, recouvert de <strong>plus de 12 kg de feuilles d'or véritables</strong> (redoré pour la dernière fois en <strong>1989</strong>, bicentenaire Révolution). Il abrite depuis le <strong>15 décembre 1840</strong> le <strong>tombeau de Napoléon Iᵉʳ</strong> : sarcophage monumental de <strong>quartzite rouge de Russie</strong> sur socle de granit vert des Vosges (architecte Louis Visconti, inauguré 2 avril 1861). Les restes de Napoléon ont été rapatriés de Sainte-Hélène 19 ans après sa mort (5 mai 1821) lors du « retour des cendres » organisé par Louis-Philippe."
+        },
+        {
+            "icon": "👻",
+            "title": "Demi-station fantôme — projet de ligne circulaire abandonné",
+            "content": "À Invalides, il existe une <strong>demi-station fantôme</strong>, vestige d'un <strong>projet abandonné de ligne circulaire</strong> au début du XXᵉ siècle. Cette ligne, jamais réalisée, devait faire le tour de Paris en correspondance avec les lignes radiales. Une <strong>partie des quais a été construite</strong> mais jamais mise en service. Aujourd'hui, ces espaces sont visibles depuis certains couloirs et quais de la M13 (regarder attentivement le tunnel à un endroit précis). Le métro parisien compte une <strong>quinzaine de stations fantômes</strong> au total (Croix-Rouge M10, Haxo M3bis/7bis, Saint-Martin M8/M9, etc.) — Invalides est un cas hybride : <strong>active</strong> sur 2 lignes + <strong>demi-fantôme</strong> sur le projet circulaire."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Hôtel des Invalides + Dôme + Tombeau de Napoléon",
+            "destination_slug": "invalides-dome",
+            "destination_full_name": "Invalides → Dôme + Tombeau de Napoléon",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'Esplanade des Invalides (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-dome-napoleon/"
+        },
+        {
+            "destination_name": "Musée de l'Armée",
+            "destination_slug": "musee-armee",
+            "destination_full_name": "Invalides → Musée de l'Armée",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'Esplanade (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-musee-armee/"
+        },
+        {
+            "destination_name": "Musée Rodin via M13",
+            "destination_slug": "musee-rodin",
+            "destination_full_name": "Invalides → Musée Rodin",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Châtillon (1 station vers Varenne)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-musee-rodin/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M8",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Invalides → Tour Eiffel",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Balard jusqu'à École Militaire (2 stations) + 10 min à pied",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M8",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Invalides → Champs-Élysées",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 jusqu'à Concorde (1 station) + remontée à pied",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Château de Versailles via RER C",
+            "destination_slug": "versailles-chateau",
+            "destination_full_name": "Invalides → Château de Versailles",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direct jusqu'à Versailles - Château - Rive Gauche",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-versailles/"
+        },
+        {
+            "destination_name": "Aéroport CDG via M8 + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Invalides → CDG",
+            "lines_used": [
+                "M8",
+                "RER B"
+            ],
+            "lines_label": "M8 jusqu'à correspondance + RER B direct CDG",
+            "duration_minutes": 50,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-cdg/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via RER C",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "Invalides → Notre-Dame",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C jusqu'à Saint-Michel - Notre-Dame (1 station)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-invalides/invalides-vers-notre-dame/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q189503",
+            "name": "place de la Concorde",
+            "category": "place",
+            "description": "La place de la Concorde, qui s’étend sur 7,56 hectares, est la plus grande place de Paris. Elle est située dans le 8e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20la%20Concorde%20from%20the%20Eiffel%20Tower%2C%20Paris%20April%202011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Concorde",
+            "latitude": 48.865633,
+            "longitude": 2.321236,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 586,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q820892",
+            "name": "Petit Palais",
+            "category": "palais",
+            "description": "Le Petit Palais, construit à l'occasion de l'Exposition universelle de 1900 par l'architecte Charles Girault, abrite le musée des Beaux-Arts de la ville de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petit%20Palais%20Paris%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Petit_Palais",
+            "latitude": 48.866028,
+            "longitude": 2.314556,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 390,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q390418",
+            "name": "pont Alexandre-III",
+            "category": "pont",
+            "description": "Le pont Alexandre-III est un pont franchissant la Seine entre le 7e et le 8e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Alexandre%20III%20from%20pont%20de%20la%20Concorde%2C%20Paris%2017%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Alexandre-III",
+            "latitude": 48.86361,
+            "longitude": 2.31361,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 148,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q936633",
+            "name": "palais Bourbon",
+            "category": "palais",
+            "description": "Le palais Bourbon est le bâtiment qui abrite depuis 1879 l'Assemblée nationale française, situé sur le quai d'Orsay dans le 7e arrondissement de Paris, dans l’enfilade du pont de la Concorde et de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fa%C3%A7ade%20Palais%20Bourbon%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Bourbon",
+            "latitude": 48.862072,
+            "longitude": 2.318681,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 290,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q650519",
+            "name": "musée Rodin",
+            "category": "musée",
+            "description": "Le musée Rodin est un musée assurant depuis 1919 la conservation et la diffusion de l’œuvre d’Auguste Rodin (1840-1917).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27h%C3%B4tel%20Biron%20%28mus%C3%A9e%20Rodin%29%20%C3%A0%20Paris%2C%2013%20juin%202021%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Rodin",
+            "latitude": 48.855356,
+            "longitude": 2.315819,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue de Constantine",
+                "distance_m": 625,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q726781",
+            "name": "musée de l'Orangerie",
+            "category": "musée",
+            "description": "Le musée de l'Orangerie est un musée national français de peintures impressionnistes et postimpressionnistes, situé à Paris, plus précisément dans le jardin des Tuileries, à l'extrémité occidentale…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2011-12-Musee%20de%20lorangerie.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie",
+            "latitude": 48.863845,
+            "longitude": 2.322538,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 586,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1996069",
+            "name": "musée de l'Armée",
+            "category": "musée",
+            "description": "Le musée de l'Armée est un musée national français situé dans l'hôtel national des Invalides dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27Arm%C3%A9e%2C%20Paris%204%20May%202019.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Arm%C3%A9e_(Paris)",
+            "latitude": 48.856944,
+            "longitude": 2.312778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue de Constantine",
+                "distance_m": 456,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q644398",
+            "name": "pont de la Concorde",
+            "category": "pont",
+            "description": "Le pont de la Concorde est un pont de Paris qui franchit la Seine entre le quai des Tuileries et le quai d'Orsay.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20la%20Concorde%202009-06-02%20Paris%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_la_Concorde",
+            "latitude": 48.86333,
+            "longitude": 2.31944,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 353,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1514062",
+            "name": "basilique Sainte-Clotilde",
+            "category": "basilique",
+            "description": "La basilique Sainte-Clotilde-Sainte-Valère de Paris est une basilique mineure de l'Église catholique située parvis Maurice-Druon dans le 7e arrondissement de Paris, l'une des cinq basiliques mineures…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Sainte%20Clotilde%20-%20Paris%20VII%20%28FR75%29%20-%202024-08-07%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Sainte-Clotilde_de_Paris",
+            "latitude": 48.858333,
+            "longitude": 2.319167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue de Constantine",
+                "distance_m": 449,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1073098",
+            "name": "pont des Invalides",
+            "category": "pont",
+            "description": "Le pont des Invalides est le plus bas pont situé à Paris et traversant la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20des%20Invalides%20%2834471766401%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_des_Invalides",
+            "latitude": 48.863791,
+            "longitude": 2.310361,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 352,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q614450",
+            "name": "Palais de la découverte",
+            "category": "palais",
+            "description": "Le Palais de la découverte est un musée scientifique parisien installé depuis 1937 dans l'aile ouest du Grand Palais, dans le 8e arrondissement et ayant pour missions de présenter, au moyen de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20de%20la%20d%C3%A9couverte%2C%20avenue%20Franklin-Delano-Roosevelt%2C%20Paris%208e%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_la_d%C3%A9couverte",
+            "latitude": 48.866111,
+            "longitude": 2.310833,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Robert Esnault-Pelterie (Nord)",
+                "distance_m": 492,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1229917",
+            "name": "palais de la Légion d'honneur",
+            "category": "palais",
+            "description": "Le palais de la Légion d'honneur, ou hôtel de Salm, est un ancien hôtel particulier situé sur la rive gauche de la Seine, dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel-de-Salm-Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_la_L%C3%A9gion_d%27honneur",
+            "latitude": 48.860361,
+            "longitude": 2.324444,
+            "nearest_exit": {
+                "number": "2",
+                "name": "rue de Constantine",
+                "distance_m": 735,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Esplanade des Invalides (Est)",
+            "address_full": "6 Rue Robert Esnault-Pelterie 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.861992,
+            "longitude": 2.314662,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue de Constantine",
+            "address_full": "3 Rue de Constantine 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.860902,
+            "longitude": 2.314431,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue Robert Esnault-Pelterie (Nord)",
+            "address_full": "2 Rue Robert Esnault-Pelterie 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.862523,
+            "longitude": 2.314777,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "note": "Sanibroyeurs payants en gare RER C Invalides"
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "Esplanade des Invalides",
+                "place Vauban"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Gare RER C Invalides — Guichets SNCF + boutique RATP",
+            "services": "vente titres, info trafic"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": [
+                {
+                    "name": "Bagagerie Hôtel des Invalides",
+                    "location": "129 rue de Grenelle",
+                    "note": "Casiers sur place pour visiteurs (taille limitée)"
+                }
+            ]
+        },
+        "shopping_dining": {
+            "main_location": "Esplanade des Invalides + boulevard de la Tour-Maubourg",
+            "details": "Cafés et brasseries sur l'Esplanade et le boulevard. Boutique du Musée de l'Armée (souvenirs militaires, livres).",
+            "secondary": "Rue Cler à 10 min : marché alimentaire emblématique du 7e arr."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier ministériel : sécurité renforcée 24/7 (ministère des Armées proche).",
+            "Vigilance pickpockets standard aux abords du musée et de la gare RER C.",
+            "Forte affluence touristique en sortie Hôtel des Invalides (week-ends, vacances scolaires).",
+            "Cérémonies militaires régulières sur l'Esplanade — restrictions de circulation ponctuelles."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature touristique + militaire du site."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/H%C3%B4tel_des_Invalides_20150801.jpg",
+        "alt": "Hôtel national des Invalides (Bruand + Hardouin-Mansart, 1670-1706) avec le Dôme doré (107 m) abritant le tombeau de Napoléon — à 5 min de la station",
+        "width": 5184,
+        "height": 3456,
+        "credit": {
+            "author": "Suicasmo",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_des_Invalides_20150801.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/invalides/invalides-400.avif",
+                "800": "/assets/img/stations/invalides/invalides-800.avif",
+                "1200": "/assets/img/stations/invalides/invalides-1200.avif",
+                "1600": "/assets/img/stations/invalides/invalides-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/invalides/invalides-400.webp",
+                "800": "/assets/img/stations/invalides/invalides-800.webp",
+                "1200": "/assets/img/stations/invalides/invalides-1200.webp",
+                "1600": "/assets/img/stations/invalides/invalides-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/invalides/invalides-400.jpg",
+                "800": "/assets/img/stations/invalides/invalides-800.jpg",
+                "1200": "/assets/img/stations/invalides/invalides-1200.jpg",
+                "1600": "/assets/img/stations/invalides/invalides-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 1,
+            "total_lines": 3
+        },
+        "details": "Station métro non accessible PMR (M8 et M13). Gare RER C Invalides partiellement accessible (ascenseur vers la salle des billets). Pour l'Hôtel des Invalides en PMR : accès par la place Vauban côté sud (entrée Dôme adaptée)."
+    }
+}
