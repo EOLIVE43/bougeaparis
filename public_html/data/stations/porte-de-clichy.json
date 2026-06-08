@@ -1,0 +1,630 @@
+{
+    "published": true,
+    "slug": "porte-de-clichy",
+    "name": "Porte de Clichy",
+    "name_full": "Porte de Clichy (Métro 13, Métro 14, RER C, Tramway T3b)",
+    "arrondissement": "17e (Paris)",
+    "address": "Place de la Porte de Clichy / Avenue de la Porte de Clichy, 75017 Paris",
+    "latitude": 48.894133,
+    "longitude": 2.314997,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Porte de Clichy station",
+        "es": "Estación Porte de Clichy"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#82C8E6",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "type": "rer",
+            "code": "C",
+            "slug": "rer-c",
+            "color": "#F3A4BA",
+            "text_color": "#000000",
+            "walking_minutes": 5,
+            "station_name": "Porte de Clichy"
+        }
+    ],
+    "tram_correspondences": [
+        {
+            "type": "tram",
+            "code": "3b",
+            "slug": "tram-3b",
+            "color": "#7BC242",
+            "text_color": "#FFFFFF",
+            "walking_minutes": 2,
+            "station_name": "Porte de Clichy"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "13",
+            "28"
+        ],
+        "nocturne": [
+            "N15",
+            "N51"
+        ],
+        "regional": [
+            "54",
+            "74",
+            "163",
+            "173"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 2,
+            "nearby_count": 25
+        }
+    },
+    "seo": {
+        "description": "Station Porte de Clichy : pôle multimodal du 17e arr. — M13 + M14 + RER C + Tramway T3b, à proximité du Tribunal de Paris (Renzo Piano 2018, 160 m, plus haute tour judiciaire d'Europe)."
+    },
+    "hero": {
+        "tagline": "Pôle multimodal 4 modes : M13 + M14 + RER C + T3b",
+        "description": "Pôle multimodal majeur du <strong>17ᵉ arrondissement</strong> et du nord-ouest parisien. Combine <strong>4 modes de transport</strong> : <strong>M13</strong> (Châtillon - Montrouge ↔ Saint-Denis - Université / Asnières - Gennevilliers, ouverte 1980), <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, depuis le <strong>14 décembre 2020</strong>), <strong>RER C</strong> (Pontoise / Versailles ↔ Massy / Versailles, gare Porte de Clichy ouverte 1988) et <strong>Tramway T3b</strong> (Porte de Vincennes ↔ Porte d'Asnières, depuis novembre 2018). À <strong>5 min</strong> : le <strong>Tribunal de Paris</strong> de <strong>Renzo Piano</strong> (160 m, 2018, plus haute tour judiciaire d'Europe)."
+    },
+    "adjacent_stations": {
+        "metro-13": {
+            "previous": {
+                "name": "Mairie de Clichy",
+                "slug": "mairie-de-clichy",
+                "direction": "Asnières - Gennevilliers / Saint-Denis"
+            },
+            "next": {
+                "name": "Brochant",
+                "slug": "brochant",
+                "direction": "Châtillon - Montrouge"
+            }
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Saint-Ouen",
+                "slug": "saint-ouen",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Pont Cardinet",
+                "slug": "pont-cardinet",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte de Clichy</strong> est située dans le <strong>17e arrondissement de Paris</strong>, sous la <strong>Place de la Porte de Clichy</strong>, à la limite avec la commune de Clichy. C'est l'un des <strong>pôles multimodaux les plus complets de la périphérie nord-ouest parisienne</strong>, combinant <strong>4 modes de transport</strong> : <strong>M13</strong> (Châtillon - Montrouge ↔ Saint-Denis - Université / Asnières - Gennevilliers), <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly), <strong>RER C</strong> (Pontoise / Versailles ↔ Massy / Versailles) et <strong>Tramway T3b</strong> (Porte de Vincennes ↔ Porte d'Asnières, depuis novembre 2018). Bus 54, 138, 173.",
+        "La station <strong>M13</strong> ouvre le <strong>9 mai 1980</strong> avec le prolongement de la M13 vers Gabriel Péri (Asnières-Gennevilliers). La <strong>gare RER C</strong> ouvre en <strong>1988</strong> sur la ligne de la Petite Ceinture réactivée. La station <strong>M14</strong> est inaugurée le <strong>14 décembre 2020</strong> avec le prolongement nord vers Mairie de Saint-Ouen. Le <strong>Tramway T3b</strong> est prolongé jusqu'à Porte d'Asnières le <strong>24 novembre 2018</strong> (depuis Porte de la Chapelle), avec arrêt à Porte de Clichy.",
+        "À <strong>5 min</strong> de la station : le <strong>Tribunal de Paris</strong>, tour de <strong>160 mètres</strong> conçue par <strong>Renzo Piano</strong>, inaugurée le <strong>16 avril 2018</strong>. <strong>Plus haute tour judiciaire d'Europe</strong>, regroupant le <strong>Tribunal judiciaire de Paris</strong> (ex-TGI de l'Île de la Cité), le <strong>Tribunal de commerce</strong> et les <strong>Tribunaux d'instance</strong>. <strong>~9 000 personnes</strong> y travaillent. À côté : le <strong>Parc Clichy-Batignolles – Martin-Luther-King</strong> (<strong>10 hectares</strong>, écoquartier ZAC Clichy-Batignolles) et le <strong>Boulevard Berthier</strong> (boulevard des Maréchaux)."
+    ],
+    "history": {
+        "title": "1980 → 2020 : la transformation en pôle multimodal 4 modes",
+        "paragraphs": [
+            "La <strong>Porte de Clichy</strong> est l'une des <strong>portes de Paris</strong>, vestige de l'<strong>enceinte de Thiers</strong> (1840-1860, démantelée 1919-1929). Située à la limite du 17ᵉ arrondissement et de la commune de Clichy, sur le tracé des <strong>boulevards des Maréchaux</strong> (boulevard Berthier, boulevard Bessières). Au XIXᵉ siècle : zone de garnison, postes d'octroi, faubourgs ouvriers.",
+            "La station <strong>M13</strong> ouvre le <strong>9 mai 1980</strong> avec le <strong>prolongement de la M13 de Porte de Clichy à Gabriel Péri (Asnières - Gennevilliers)</strong>. La M13 devient ainsi la ligne du nord-ouest parisien et de la banlieue Asnières / Clichy / Gennevilliers / Saint-Denis. Quais classiques en voûte.",
+            "<strong>1988</strong> : ouverture de la <strong>gare RER C Porte de Clichy</strong> sur la <strong>ligne de la Petite Ceinture</strong> réactivée pour la M2 (puis RER C dans les années 1980-1990 — prolongement vers Pontoise via Saint-Ouen). La gare se trouve en tranchée le long du boulevard Berthier. <strong>RER C</strong> : longue ligne en Y (Pontoise / Versailles - Chantiers ↔ Massy / Versailles - Château / Saint-Quentin-en-Yvelines / Pontoise / Argenteuil), la <strong>plus longue ligne RER d'Île-de-France</strong> (~187 km).",
+            "Le <strong>24 novembre 2018</strong> : ouverture du <strong>prolongement Tramway T3b</strong> de Porte de la Chapelle à Porte d'Asnières (4 stations ajoutées : Porte de Clichy, Porte de Saint-Ouen, Honoré de Balzac, Porte d'Asnières). Le T3b prend la suite du T3a sur les boulevards des Maréchaux nord. Désormais : <strong>Porte de Vincennes ↔ Porte d'Asnières</strong>, soit <strong>~50% de la rocade extérieure de Paris</strong> en tramway.",
+            "<strong>14 décembre 2020</strong> : inauguration de la <strong>station M14</strong> avec le <strong>prolongement nord de la M14</strong> de Saint-Lazare à Mairie de Saint-Ouen (4 stations ajoutées). Porte de Clichy devient ainsi un <strong>pôle multimodal majeur</strong> combinant <strong>4 modes</strong> : M13 + M14 + RER C + T3b. Objectif : <strong>désengorger la M13</strong> (l'une des lignes les plus saturées du réseau) et <strong>desservir le nouveau Tribunal de Paris</strong>.",
+            "Le <strong>Tribunal de Paris</strong> est conçu par <strong>Renzo Piano</strong> (Atelier Piano, déjà auteur du Centre Pompidou avec Richard Rogers en 1977), inauguré le <strong>16 avril 2018</strong> par <strong>Emmanuel Macron</strong>. <strong>160 mètres de hauteur</strong>, <strong>38 étages</strong> + 6 sous-sols. <strong>Plus haute tour judiciaire d'Europe</strong>. <strong>3 volumes superposés en escalier</strong>, façades vitrées, jardins suspendus aux 3 ruptures de volumes. Regroupe le <strong>Tribunal judiciaire de Paris</strong> (ex-TGI de l'Île de la Cité), le <strong>Tribunal de commerce</strong> et les <strong>Tribunaux d'instance</strong>. ~9 000 personnes y travaillent.",
+            "Aujourd'hui, Porte de Clichy est l'un des <strong>plus grands pôles multimodaux périphériques de Paris</strong> avec 4 modes de transport, et un <strong>pôle judiciaire majeur</strong>. Affluence professionnelle massive en semaine (Tribunal de Paris, bureaux ZAC Clichy-Batignolles)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Porte de Clichy ?",
+            "answer": "<strong>4 modes de transport</strong> : <strong>M13</strong> (Châtillon-Montrouge ↔ Asnières-Gennevilliers / Saint-Denis), <strong>M14</strong> (Saint-Denis-Pleyel ↔ Aéroport d'Orly, automatique), <strong>RER C</strong> (Pontoise/Versailles ↔ Massy/Versailles) et <strong>Tramway T3b</strong> (Porte de Vincennes ↔ Porte d'Asnières). Bus 54, 138, 173. C'est l'un des <strong>plus complets pôles multimodaux périphériques de Paris</strong>."
+        },
+        {
+            "question": "Comment rejoindre le Tribunal de Paris ?",
+            "answer": "Le <strong>Tribunal de Paris</strong> est à <strong>5 min à pied</strong> de la station. Sortir côté <strong>boulevard Berthier</strong>. Tour <strong>Renzo Piano</strong> de <strong>160 mètres</strong>, inaugurée en <strong>2018</strong>. <strong>Plus haute tour judiciaire d'Europe</strong>. Regroupe le Tribunal judiciaire (ex-TGI Île de la Cité), le Tribunal de commerce et les Tribunaux d'instance. Entrée publique sur le parvis."
+        },
+        {
+            "question": "Quand la station M14 a-t-elle ouvert ?",
+            "answer": "La station <strong>M14</strong> a ouvert le <strong>14 décembre 2020</strong> avec le <strong>prolongement nord de la M14</strong> de Saint-Lazare à Mairie de Saint-Ouen. 4 stations ajoutées : Pont Cardinet, Porte de Clichy, Clichy - Saint-Ouen, Mairie de Saint-Ouen. Objectif : <strong>désengorger la M13</strong>."
+        },
+        {
+            "question": "Comment rejoindre Versailles depuis Porte de Clichy ?",
+            "answer": "<strong>RER C directe</strong> : <strong>~45 minutes</strong> jusqu'à <strong>Versailles Château - Rive Gauche</strong> (Château de Versailles). La gare RER C Porte de Clichy est à 5 min à pied de la station métro. Vérifier l'arborescence du RER C (le Y rive gauche/rive droite peut être complexe — préférer un train pour Versailles Château)."
+        },
+        {
+            "question": "Comment rejoindre Pontoise depuis Porte de Clichy ?",
+            "answer": "<strong>RER C directe</strong> nord : <strong>~50 minutes</strong> jusqu'à <strong>Pontoise</strong> (terminus nord d'une des branches). Train via Saint-Ouen et la vallée de l'Oise."
+        },
+        {
+            "question": "Le Tramway T3b s'arrête-t-il à Porte de Clichy ?",
+            "answer": "<strong>Oui</strong>. Le <strong>T3b</strong> (Porte de Vincennes ↔ Porte d'Asnières) s'arrête à <strong>Porte de Clichy</strong> sur les boulevards des Maréchaux. Prolongement jusqu'à Porte d'Asnières effectué le <strong>24 novembre 2018</strong>. Utile pour rejoindre la rocade extérieure de Paris en surface."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Stations M14, RER C et T3b entièrement PMR</strong>. Station <strong>M13 partiellement accessible</strong> (ascenseurs vers M14 et certaines voiries). La M14 est conçue 100% accessible PMR dès l'origine."
+        },
+        {
+            "question": "Quels sont les horaires des lignes à Porte de Clichy ?",
+            "answer": "<strong>M13 et M14</strong> : 5h30 à 1h15 (2h15 vendredi/samedi/veille de fête). <strong>RER C</strong> : ~5h à minuit. <strong>T3b</strong> : ~5h30 à 0h30. M14 : fréquence record <strong>85 secondes</strong> en heure de pointe."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Pôle multimodal 4 modes</strong> — l'un des plus complets en périphérie de Paris.",
+        "<strong>Tribunal de Paris</strong> à 5 min — Renzo Piano, plus haute tour judiciaire d'Europe.",
+        "<strong>Parc Martin Luther King</strong> à 10 min — gratuit, écoquartier ZAC Clichy-Batignolles.",
+        "Pour <strong>Saint-Lazare</strong> : M14 directe (2 stations).",
+        "Pour <strong>Versailles Château</strong> : RER C directe (~45 min).",
+        "Pour <strong>Aéroport d'Orly</strong> : M14 directe (depuis 2024)."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "Pôle multimodal 4 modes — l'un des plus complets de Paris",
+            "content": "Porte de Clichy est l'un des <strong>plus complets pôles multimodaux périphériques de Paris</strong> : <strong>4 modes de transport</strong>. <strong>M13</strong> (ouverte 1980), <strong>RER C</strong> (1988), <strong>T3b</strong> (depuis novembre 2018), <strong>M14</strong> (depuis le 14 décembre 2020). Construction progressive sur 40 ans. Compte parmi les rares pôles parisiens à combiner métro classique + métro automatique + RER + tramway. Comparable à Bibliothèque François Mitterrand (M14 + RER C), La Défense (M1 + RER A + Transilien + T2), Châtelet-Les Halles (M1/4/7/11/14 + RER A/B/D), ou Nation (M1/2/6/9 + RER A). Pôle stratégique pour le <strong>nord-ouest parisien</strong> et le <strong>désengorgement de la M13</strong>."
+        },
+        {
+            "icon": "⚖️",
+            "title": "Tribunal de Paris — Renzo Piano (2018), 160 m",
+            "content": "Le <strong>Tribunal de Paris</strong> à 5 min de la station est la <strong>plus haute tour judiciaire d'Europe</strong>. Conçu par l'architecte italien <strong>Renzo Piano</strong> (Atelier Piano, déjà auteur du <strong>Centre Pompidou</strong> à Paris avec Richard Rogers en 1977), inauguré le <strong>16 avril 2018</strong> par <strong>Emmanuel Macron</strong>. <strong>160 mètres de hauteur</strong>, <strong>38 étages</strong> + 6 sous-sols. <strong>3 volumes superposés en escalier</strong> (effet de gradation), façades vitrées, <strong>jardins suspendus</strong> aux 3 ruptures de volumes. Regroupe le <strong>Tribunal judiciaire de Paris</strong> (ex-TGI de l'Île de la Cité), le <strong>Tribunal de commerce</strong>, et les <strong>Tribunaux d'instance</strong>. <strong>~9 000 personnes</strong> y travaillent. Coût : ~880 M€."
+        },
+        {
+            "icon": "🚃",
+            "title": "Tramway T3b — boulevards des Maréchaux nord (2018)",
+            "content": "Le <strong>Tramway T3b</strong> arrive à Porte de Clichy le <strong>24 novembre 2018</strong> avec le <strong>prolongement T3b de Porte de la Chapelle à Porte d'Asnières</strong> (4 stations ajoutées : Porte de Clichy, Porte de Saint-Ouen, Honoré de Balzac, Porte d'Asnières). Le T3b prend la suite du T3a sur les <strong>boulevards des Maréchaux</strong> nord. <strong>Itinéraire complet T3a + T3b</strong> : Pont du Garigliano ↔ Porte de Vincennes ↔ Porte d'Asnières — soit <strong>~50% de la rocade extérieure de Paris</strong> en tramway. Le T3a (rive gauche) existe depuis 2006, le T3b (rive droite) a été ouvert progressivement de 2012 (Porte d'Ivry → Porte de la Chapelle) à 2018 (→ Porte d'Asnières)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Tribunal de Paris",
+            "destination_slug": "tribunal-paris",
+            "destination_full_name": "Porte de Clichy → Tribunal",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par boulevard Berthier (~400 m)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-tribunal/"
+        },
+        {
+            "destination_name": "Versailles Château via RER C",
+            "destination_slug": "versailles-chateau",
+            "destination_full_name": "Porte de Clichy → Versailles",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direct Versailles Château - Rive Gauche",
+            "duration_minutes": 45,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-versailles/"
+        },
+        {
+            "destination_name": "Saint-Lazare via M14",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Porte de Clichy → Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Porte de Clichy → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (4 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-chatelet/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Porte de Clichy → Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct Aéroport d'Orly (depuis 2024)",
+            "duration_minutes": 40,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-orly/"
+        },
+        {
+            "destination_name": "Saint-Denis - Pleyel via M14",
+            "destination_slug": "saint-denis-pleyel",
+            "destination_full_name": "Porte de Clichy → Pleyel",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-pleyel/"
+        },
+        {
+            "destination_name": "Pontoise via RER C",
+            "destination_slug": "pontoise",
+            "destination_full_name": "Porte de Clichy → Pontoise",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direct nord",
+            "duration_minutes": 50,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-pontoise/"
+        },
+        {
+            "destination_name": "Porte d'Asnières via T3b",
+            "destination_slug": "porte-asnieres",
+            "destination_full_name": "Porte de Clichy → Porte d'Asnières",
+            "lines_used": [
+                "T3b"
+            ],
+            "lines_label": "T3b direction Porte d'Asnières (1 station)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-clichy/porte-de-clichy-vers-porte-asnieres/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q623260",
+            "name": "square des Batignolles",
+            "category": "jardin",
+            "description": "Le square des Batignolles est un espace vert situé dans le 17e arrondissement à Paris dans le quartier des Batignolles non loin du nouveau parc Martin-Luther-King.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20des%20Batignolles%2020060815%2005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_des_Batignolles",
+            "latitude": 48.8875,
+            "longitude": 2.316389,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 745,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2298114",
+            "name": "Pont Cardinet",
+            "category": "gare",
+            "description": "La gare de Pont-Cardinet est une gare ferroviaire française, située dans le quartier des Batignolles, faisant partie du 17e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont-Cardinet%20ext%C3%A9rieur.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Pont-Cardinet",
+            "latitude": 48.8878,
+            "longitude": 2.3141,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place de la Porte de Clichy",
+                "distance_m": 707,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2974817",
+            "name": "Tribunal de Paris",
+            "category": "site notable",
+            "description": "Le Tribunal de Paris est un palais de justice situé porte de Clichy dans le 17e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rue%20du%20Bastion%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tribunal_de_Paris",
+            "latitude": 48.89465,
+            "longitude": 2.31066,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place de la Porte de Clichy",
+                "distance_m": 322,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2739499",
+            "name": "parc Clichy-Batignolles - Martin Luther King",
+            "category": "jardin",
+            "description": "Le parc Martin-Luther-King ou parc Clichy-Batignolles – Martin-Luther-King est un espace vert public de 10 hectares à Paris dans le quartier des Batignolles, non loin du square des Batignolles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cerisiers%20en%20fleur%20au%20Parc%20Martin%20Luther%20King%20%28Clichy-Batignolles%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Martin-Luther-King",
+            "latitude": 48.890833,
+            "longitude": 2.315278,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 368,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3098139",
+            "name": "Porte de Clichy",
+            "category": "gare",
+            "description": "La gare de la Porte de Clichy est une gare ferroviaire française de la ligne d'Ermont - Eaubonne à Champ-de-Mars (VMI), située dans le 17e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER%20Porte%20de%20Clichy%20quais.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_la_Porte_de_Clichy",
+            "latitude": 48.8941,
+            "longitude": 2.315,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 4,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3582134",
+            "name": "église Saint-Joseph-des-Épinettes",
+            "category": "église",
+            "description": "L'église catholique Saint-Joseph-des-Épinettes  est une église située 40 rue Pouchet dans le quartier des Épinettes, quartier dont elle porte le nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Joseph-des-%C3%89pinettes%20%28Paris%29%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Joseph-des-%C3%89pinettes",
+            "latitude": 48.8936,
+            "longitude": 2.32056,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 411,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3533028",
+            "name": "tour Bois-le-Prêtre",
+            "category": "tour",
+            "description": "La tour Bois-le-Prêtre est un immeuble de grande hauteur parisien situé 6, rue Pierre-Rebière et 5-9, boulevard du Bois-le-Prêtre, dans le 17e arrondissement de Paris, porte Pouchet dominant le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulevard%20du%20Bois-le-Pr%C3%AAtre%20%28Paris%29%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Bois-le-Pr%C3%AAtre",
+            "latitude": 48.8989,
+            "longitude": 2.32056,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place de la Porte de Clichy",
+                "distance_m": 668,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3280045",
+            "name": "maison du Peuple de Clichy",
+            "category": "site notable",
+            "description": "La Maison du Peuple de Clichy, classée aux monuments historiques depuis 1983, est un bâtiment construit de 1935 à 1939 sur la commune de Clichy dans les Hauts-de-Seine en Île-de-France par les…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Maison%20du%20Peuple%2C%20Clichy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_du_Peuple_de_Clichy",
+            "latitude": 48.901335,
+            "longitude": 2.314649,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place de la Porte de Clichy",
+                "distance_m": 801,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q102306225",
+            "name": "jardin Hans-et-Sophie-Scholl",
+            "category": "jardin",
+            "description": "Le jardin Hans-et-Sophie-Scholl est un espace vert municipal du 17e arrondissement de Paris, situé au 20, boulevard du Bois-le-Prêtre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Hans%20et%20Sophie%20Scholl.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Hans-et-Sophie-Scholl",
+            "latitude": 48.89986,
+            "longitude": 2.32086,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 768,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3399028",
+            "name": "porte de Clichy",
+            "category": "site notable",
+            "description": "La porte de Clichy est l'une des dix-sept portes percées dans l’enceinte de Thiers au milieu du XIXe siècle pour protéger Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1230709%20Paris%20XVII%20porte%20de%20Clichy%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Clichy",
+            "latitude": 48.8944,
+            "longitude": 2.31361,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 106,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2868890",
+            "name": "ateliers Berthier",
+            "category": "théâtre",
+            "description": "Les Ateliers Berthier sont un ensemble de bâtiments abritant la seconde salle de l'Odéon-Théâtre de l'Europe.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ateliers%20Berthier%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ateliers_Berthier",
+            "latitude": 48.89339,
+            "longitude": 2.310078,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Boulevard Bessières",
+                "distance_m": 369,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3535932",
+            "name": "Tower-Flower",
+            "category": "site notable",
+            "description": "La « Tower-Flower », que l’on peut traduire par « Tour de Fleurs », de l’architecte Édouard François, est un projet qui a été réalisé pour l’Office Public d'Aménagement et de Construction de Paris.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tower-Flower",
+            "latitude": 48.892361,
+            "longitude": 2.304583,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Place de la Porte de Clichy",
+                "distance_m": 786,
+                "walk_minutes": 10
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Place de la Porte de Clichy",
+            "address_full": "Place de la Porte de Clichy 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.894133,
+            "longitude": 2.314997,
+            "accessible": true
+        },
+        {
+            "number": "2",
+            "name": "Avenue de la Porte de Clichy",
+            "address_full": "Avenue de la Porte de Clichy 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.894133,
+            "longitude": 2.314997,
+            "accessible": true
+        },
+        {
+            "number": "3",
+            "name": "Boulevard Berthier (Tribunal de Paris)",
+            "address_full": "Boulevard Berthier 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.894133,
+            "longitude": 2.314997,
+            "accessible": true
+        },
+        {
+            "number": "4",
+            "name": "Boulevard Bessières",
+            "address_full": "Boulevard Bessières 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.894133,
+            "longitude": 2.314997,
+            "accessible": true
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue de la Porte de Clichy",
+                "boulevard Berthier (proximité Tribunal)"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue de la Porte de Clichy et bd Berthier",
+            "details": "Quartier en mutation autour du Tribunal et de la ZAC Clichy-Batignolles. Brasseries, sandwicheries, services.",
+            "secondary": "Plus de choix en direction de Saint-Lazare (2 stations M14) ou de Clichy centre."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Pôle multimodal majeur — affluence forte heures de pointe.",
+            "Présence policière permanente autour du Tribunal de Paris.",
+            "Vigilance pickpockets standard pôle multimodal.",
+            "Soirée tardive : zone moins animée, préférer M14 (rapide) pour rentrer."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir du caractère pôle multimodal + Tribunal."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tribunal_de_Paris_%2842805331940%29.jpg",
+        "alt": "Tribunal de Paris à Porte de Clichy — tour de 160 m conçue par Renzo Piano, inaugurée 2018, plus haute tour judiciaire d'Europe — 3 volumes superposés en escalier, façades vitrées",
+        "width": 2848,
+        "height": 4272,
+        "credit": {
+            "author": "Arthur Weidmann",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Tribunal_de_Paris_(42805331940).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-de-clichy/porte-de-clichy-400.avif",
+                "800": "/assets/img/stations/porte-de-clichy/porte-de-clichy-800.avif",
+                "1200": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1200.avif",
+                "1600": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-de-clichy/porte-de-clichy-400.webp",
+                "800": "/assets/img/stations/porte-de-clichy/porte-de-clichy-800.webp",
+                "1200": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1200.webp",
+                "1600": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-de-clichy/porte-de-clichy-400.jpg",
+                "800": "/assets/img/stations/porte-de-clichy/porte-de-clichy-800.jpg",
+                "1200": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1200.jpg",
+                "1600": "/assets/img/stations/porte-de-clichy/porte-de-clichy-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 6,
+            "accessible_lines": 3,
+            "total_lines": 4
+        },
+        "details": "Stations M14, RER C et T3b entièrement accessibles PMR. Station M13 partiellement accessible (ascenseurs vers M14 et certaines voiries). La M14 est conçue 100% accessible PMR dès l'origine."
+    }
+}
