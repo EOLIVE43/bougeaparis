@@ -1,0 +1,369 @@
+{
+    "published": true,
+    "slug": "argentine",
+    "name": "Argentine",
+    "name_full": "Argentine (Métro 1)",
+    "arrondissement": "16e / 17e (Paris)",
+    "address": "Avenue de la Grande Armée, 75017 Paris",
+    "latitude": 48.875613,
+    "longitude": 2.289402,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "Argentine station",
+        "es": "Estación Argentine"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "1",
+            "slug": "metro-1",
+            "color": "#FFCD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N11",
+            "N24"
+        ],
+        "regional": [
+            "73"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 4,
+            "nearby_count": 3
+        }
+    },
+    "seo": {
+        "description": "Station Argentine : M1 dans le 16e/17e arr., avenue de la Grande Armée vers l'Arc de Triomphe (500 m), anciennement « Obligado » renommée 1948 hommage Argentine."
+    },
+    "hero": {
+        "tagline": "L'avenue de la Grande Armée et la République argentine",
+        "description": "Sous la prestigieuse <strong>avenue de la Grande Armée</strong>, à la frontière du <strong>16e et du 17e arrondissement</strong>, Argentine ouvre dès le <strong>1ᵉʳ septembre 1900</strong> sous le nom <strong>« Obligado »</strong> (en hommage à la <strong>victoire navale franco-britannique d'Obligado</strong> contre l'Argentine en 1845). <strong>Renommée « Argentine » le 25 mai 1948</strong> en hommage à la <strong>République argentine</strong> à la demande de l'<strong>ambassade argentine</strong> (la station étant proche de leur ambassade). À <strong>500 mètres</strong> de l'<strong>Arc de Triomphe</strong> via Étoile. Avenue tracée par <strong>Napoléon Iᵉʳ</strong> entre la place de l'Étoile et la Porte Maillot, dans l'<strong>axe historique de Paris</strong>."
+    },
+    "adjacent_stations": {
+        "metro-1": {
+            "previous": {
+                "name": "Neuilly - Porte Maillot",
+                "slug": "porte-maillot",
+                "direction": "La Défense - Grande Arche"
+            },
+            "next": {
+                "name": "Charles de Gaulle - Étoile",
+                "slug": "charles-de-gaulle-etoile",
+                "direction": "Château de Vincennes"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Argentine</strong> est située sous la prestigieuse <strong>avenue de la Grande Armée</strong>, à la frontière du <strong>16e et du 17e arrondissement</strong> de Paris. Elle est desservie par la <strong>ligne 1 du métro</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Neuilly - Porte Maillot</strong> (1 station vers l'ouest, correspondance RER E + RER C) et <strong>Charles de Gaulle - Étoile</strong> (1 station vers l'est, pôle d'échange majeur M2 + M6 + RER A + Arc de Triomphe). Aucune correspondance directe à Argentine. Bus 73, 92 desservent l'avenue.",
+        "Ouverture dès le <strong>1ᵉʳ septembre 1900</strong>, station originelle de la <strong>M1</strong>, <strong>première ligne du métro parisien</strong> (inaugurée le 19 juillet 1900 pour l'Exposition universelle, ouverture progressive des stations). La station s'appelle alors <strong>« Obligado »</strong>, en hommage à la <strong>bataille d'Obligado</strong> (20 novembre 1845), <strong>victoire navale franco-britannique</strong> contre la flotte argentine du dictateur Juan Manuel de Rosas. La bataille permit aux puissances européennes de forcer le blocus du fleuve Paraná et d'imposer le libre commerce. Le nom « Obligado » est un curieux choix patriotique — célébrer une victoire CONTRE l'Argentine.",
+        "Le <strong>25 mai 1948</strong>, dans un geste diplomatique, la station est <strong>renommée « Argentine »</strong> par <strong>décret de la RATP</strong> à la demande de l'<strong>ambassade d'Argentine</strong> à Paris (qui jugeait peu amène d'avoir une station de métro nommée d'après une défaite argentine). La date du 25 mai 1948 correspond au <strong>jour de la fête nationale argentine</strong> (commémorant la Révolution de Mai 1810). C'est l'un des <strong>renommages diplomatiques les plus rares</strong> du métro parisien. Au-dessus de la station, l'<strong>avenue de la Grande Armée</strong> a été <strong>tracée par Napoléon Iᵉʳ</strong> en <strong>1806</strong> dans le prolongement des Champs-Élysées, comme partie de l'<strong>axe historique de Paris</strong> (Louvre → Tuileries → Champs-Élysées → Étoile → Grande Armée → Porte Maillot → Avenue de Neuilly → Grande Arche de La Défense). C'est aujourd'hui un grand axe commercial avec hôtels de prestige et boutiques."
+    ],
+    "history": {
+        "title": "1900 et 1948 : Obligado puis Argentine, hommage diplomatique",
+        "paragraphs": [
+            "La station <strong>Argentine</strong> est inaugurée le <strong>1ᵉʳ septembre 1900</strong> sous le nom <strong>« Obligado »</strong>, station originelle de la <strong>M1</strong>, <strong>première ligne du métro parisien</strong>. La M1 elle-même ouverte le <strong>19 juillet 1900</strong> pour l'<strong>Exposition universelle</strong>, avec ouverture progressive des stations. Obligado fait partie du tronçon ouest. Configuration souterraine classique sous l'avenue de la Grande Armée.",
+            "Le nom <strong>« Obligado »</strong> rend hommage à la <strong>bataille d'Obligado</strong> (20 novembre 1845), <strong>victoire navale franco-britannique</strong> remportée sur la <strong>Vuelta de Obligado</strong> dans le fleuve <strong>Paraná</strong>, contre la flotte de la <strong>Confédération argentine</strong> menée par le dictateur <strong>Juan Manuel de Rosas</strong>. La bataille s'inscrit dans le contexte de l'<strong>intervention anglo-française dans le Río de la Plata</strong> (1845-1850) : Rosas avait fermé le fleuve Paraná à la navigation étrangère pour préserver le monopole commercial argentin. Les flottes française (Tréhouart) et britannique (Inglefield) forcent le blocus en novembre 1845, permettant ainsi le libre commerce vers l'intérieur (Paraguay, Mato Grosso brésilien). Le nom « Obligado » est un <strong>choix curieux</strong> pour une station parisienne — célébrer une victoire CONTRE un pays étranger n'est pas dans l'usage du métro.",
+            "Le <strong>25 mai 1948</strong>, la station est <strong>renommée « Argentine »</strong> par <strong>décret de la RATP</strong>, à la demande directe de l'<strong>ambassade d'Argentine à Paris</strong> et du président argentin <strong>Juan Perón</strong> (alors au pouvoir depuis 1946). L'ambassade jugeait peu amène d'avoir une station de métro parisienne nommée d'après une défaite militaire de leur pays — dans un contexte de relations diplomatiques relativement tendues mais en amélioration. La RATP accepte le renommage pour des raisons diplomatiques. La date du <strong>25 mai 1948</strong> n'est pas anodine : c'est le <strong>jour de la fête nationale argentine</strong>, commémorant la <strong>Révolution de Mai 1810</strong> (déclaration d'indépendance vis-à-vis de l'Empire espagnol). Geste diplomatique fort. C'est l'un des <strong>renommages diplomatiques les plus rares</strong> du métro parisien, avec Stalingrad (renommage 1946).",
+            "Au-dessus de la station, l'<strong>avenue de la Grande Armée</strong> a été <strong>tracée par Napoléon Iᵉʳ</strong> en <strong>1806</strong> dans le prolongement des Champs-Élysées (au-delà de la place de l'Étoile actuelle). Faisait partie du projet <strong>« Voie triomphale »</strong> reliant le Louvre à l'enceinte de Paris (puis au-delà). Nom en hommage à la <strong>Grande Armée napoléonienne</strong> qui venait de remporter d'éclatantes victoires à <strong>Austerlitz (2 décembre 1805)</strong>, <strong>Iéna (14 octobre 1806)</strong>, etc. L'avenue est <strong>1,2 km de long, 70 m de large</strong>. Aujourd'hui : <strong>grand axe commercial</strong> avec hôtels de prestige (<strong>Renaissance Paris Le Parc Trocadéro</strong>, etc.), boutiques de luxe, sièges sociaux d'entreprises. Vue spectaculaire vers l'<strong>Arc de Triomphe</strong> (Chalgrin, 1806-1836, inauguré pour le mariage de Napoléon III).",
+            "L'<strong>axe historique de Paris</strong>, dans lequel s'inscrit l'avenue de la Grande Armée, est le <strong>plus célèbre alignement urbain du monde</strong> : <strong>Cour Carrée du Louvre → Pyramide → Arc du Carrousel → Jardin des Tuileries → Place de la Concorde → Champs-Élysées → Arc de Triomphe (Place de l'Étoile) → Avenue de la Grande Armée → Porte Maillot → Avenue Charles-de-Gaulle (Neuilly) → Pont de Neuilly → Esplanade Charles-de-Gaulle (La Défense) → Grande Arche de La Défense</strong>. Soit <strong>8 km de perspective continue</strong>, avec un dénivelé maîtrisé pour garder l'alignement. Conçu progressivement du XVIIᵉ siècle (le Nôtre) au XXᵉ siècle (Spreckelsen Grande Arche 1989). La station Argentine est sur cet axe, à <strong>500 m de l'Arc de Triomphe</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert la station Argentine ?",
+            "answer": "Une seule ligne : la <strong>M1</strong> (La Défense - Grande Arche ↔ Château de Vincennes), entre <strong>Neuilly - Porte Maillot</strong> (1 station vers l'ouest, correspondance RER E + RER C) et <strong>Charles de Gaulle - Étoile</strong> (1 station vers l'est, pôle d'échange majeur M2 + M6 + RER A + Arc de Triomphe). Aucune correspondance directe à Argentine. Bus 73, 92 desservent l'avenue."
+        },
+        {
+            "question": "Pourquoi la station s'appelle-t-elle Argentine ?",
+            "answer": "C'est un <strong>geste diplomatique unique</strong>. La station s'appelait <strong>« Obligado »</strong> de 1900 à 1948, en hommage à la <strong>bataille d'Obligado</strong> (20 novembre 1845), <strong>victoire navale franco-britannique</strong> sur la flotte argentine du dictateur Juan Manuel de Rosas (intervention anglo-française dans le Río de la Plata 1845-1850). En <strong>1948</strong>, l'ambassade d'Argentine demande à la RATP de <strong>renommer la station</strong> — jugeant peu amène d'avoir une station parisienne nommée d'après une défaite militaire argentine. La RATP accepte. La station est <strong>renommée « Argentine » le 25 mai 1948</strong>, jour de la fête nationale argentine (Révolution de Mai 1810). C'est l'un des <strong>renommages diplomatiques les plus rares</strong> du métro parisien (avec Stalingrad 1946)."
+        },
+        {
+            "question": "Comment rejoindre l'Arc de Triomphe ?",
+            "answer": "<strong>5 minutes à pied</strong> par l'<strong>avenue de la Grande Armée</strong> vers l'est. L'<strong>Arc de Triomphe</strong> est à 500 m. Alternative : 1 station M1 vers l'est jusqu'à <strong>Charles de Gaulle - Étoile</strong> (3 min). Pour monter au sommet de l'Arc : entrée par escalier sous la place de l'Étoile (chacun des 12 trottoirs d'avenue débouchent sur la place, mais accès souterrain obligatoire pour des raisons de sécurité)."
+        },
+        {
+            "question": "Qu'est-ce que l'avenue de la Grande Armée ?",
+            "answer": "Une <strong>avenue prestigieuse</strong> tracée par <strong>Napoléon Iᵉʳ</strong> en <strong>1806</strong> dans le prolongement des Champs-Élysées (au-delà de l'Arc de Triomphe). <strong>1,2 km de long, 70 m de large</strong>. Nom en hommage à la <strong>Grande Armée napoléonienne</strong> (victoires Austerlitz 1805, Iéna 1806). Fait partie de l'<strong>axe historique de Paris</strong> reliant le Louvre à la Grande Arche de La Défense (<strong>8 km de perspective continue</strong>). Aujourd'hui : <strong>grand axe commercial</strong> avec hôtels prestige, boutiques de luxe, sièges sociaux."
+        },
+        {
+            "question": "Qu'est-ce que la bataille d'Obligado ?",
+            "answer": "La <strong>bataille d'Obligado</strong> (20 novembre 1845) est une <strong>victoire navale franco-britannique</strong> sur la <strong>Vuelta de Obligado</strong> dans le fleuve <strong>Paraná</strong> (Argentine), contre la flotte de la <strong>Confédération argentine</strong> menée par le dictateur <strong>Juan Manuel de Rosas</strong>. Contexte : l'<strong>intervention anglo-française dans le Río de la Plata</strong> (1845-1850). Rosas avait fermé le fleuve Paraná à la navigation étrangère. Les flottes française (Tréhouart) et britannique (Inglefield) forcent le blocus en novembre 1845, permettant le libre commerce vers l'intérieur (Paraguay). Aujourd'hui, le 20 novembre est <strong>Jour de la Souveraineté Nationale</strong> en Argentine (commémorant la résistance contre les Européens)."
+        },
+        {
+            "question": "Qu'est-ce que l'axe historique de Paris ?",
+            "answer": "Le <strong>plus célèbre alignement urbain du monde</strong> : <strong>Cour Carrée du Louvre → Pyramide → Arc du Carrousel → Jardin des Tuileries → Place de la Concorde → Champs-Élysées → Arc de Triomphe → Avenue de la Grande Armée → Porte Maillot → Avenue Charles-de-Gaulle (Neuilly) → Pont de Neuilly → Esplanade Charles-de-Gaulle (La Défense) → Grande Arche de La Défense</strong>. Soit <strong>8 km de perspective continue</strong>, avec un dénivelé maîtrisé. Conçu progressivement du XVIIᵉ siècle (André Le Nôtre, jardins des Tuileries 1664) au XXᵉ siècle (Otto von Spreckelsen, Grande Arche 1989). La station Argentine est sur cet axe."
+        },
+        {
+            "question": "La station Argentine est-elle accessible PMR ?",
+            "answer": "<strong>Non, la station n'est pas accessible aux PMR</strong>. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les <strong>bus 73 ou 92</strong> (planchers bas) ou taxi/VTC. La M1 a été automatisée 2011-2012 mais sans rénovation d'accessibilité pour Argentine."
+        },
+        {
+            "question": "Quels sont les horaires de la M1 à Argentine ?",
+            "answer": "La <strong>M1 (automatisée depuis 2012)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence très élevée (1-2 min en heure de pointe). La nuit, les Noctilien desservent l'avenue de la Grande Armée."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Arc de Triomphe</strong> : 1 station M1 vers l'est (Charles de Gaulle - Étoile) ou 5 min à pied.",
+        "<strong>Avenue de la Grande Armée</strong> : grand axe commercial avec hôtels et boutiques de luxe.",
+        "Axe historique de Paris (Louvre → Grande Arche) — vue spectaculaire vers Arc de Triomphe.",
+        "Pour <strong>Bois de Boulogne</strong> : 1 station M1 vers l'ouest jusqu'à Neuilly - Porte Maillot.",
+        "Quartier huppé 16e/17e : restaurants gastronomiques, commerces de luxe.",
+        "<strong>Ambassade d'Argentine</strong> à proximité (rappel du renommage de 1948)."
+    ],
+    "trivia": [
+        {
+            "icon": "🇦🇷",
+            "title": "Renommage 25 mai 1948 — Obligado devient Argentine",
+            "content": "La station s'appelait <strong>« Obligado »</strong> de 1900 à 1948, en hommage à la <strong>bataille d'Obligado</strong> (20 novembre 1845), <strong>victoire navale franco-britannique</strong> sur la flotte argentine du dictateur Juan Manuel de Rosas. Choix curieux — célébrer une victoire CONTRE l'Argentine. En <strong>1948</strong>, l'<strong>ambassade d'Argentine à Paris</strong> et le président <strong>Juan Perón</strong> demandent à la RATP de <strong>renommer la station</strong> — jugeant peu amène cette dénomination. La RATP accepte. La station est <strong>renommée « Argentine » le 25 mai 1948</strong>, jour de la <strong>fête nationale argentine</strong> (Révolution de Mai 1810). Geste diplomatique unique — l'un des <strong>renommages diplomatiques les plus rares</strong> du métro parisien (avec Stalingrad renommage 1946)."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Axe historique de Paris (8 km) — Louvre → Grande Arche",
+            "content": "L'<strong>axe historique de Paris</strong> est le <strong>plus célèbre alignement urbain du monde</strong> : <strong>Cour Carrée du Louvre → Pyramide → Arc du Carrousel → Jardin des Tuileries → Place de la Concorde → Champs-Élysées → Arc de Triomphe (Place de l'Étoile) → Avenue de la Grande Armée → Porte Maillot → Avenue Charles-de-Gaulle (Neuilly) → Pont de Neuilly → Esplanade Charles-de-Gaulle (La Défense) → Grande Arche de La Défense</strong>. Soit <strong>8 km de perspective continue</strong>, avec un dénivelé maîtrisé. Conçu progressivement du XVIIᵉ siècle (<strong>André Le Nôtre</strong>, jardins des Tuileries 1664) au XXᵉ siècle (<strong>Otto von Spreckelsen</strong>, Grande Arche 1989). La station Argentine est sur cet axe, à 500 m de l'Arc de Triomphe."
+        },
+        {
+            "icon": "🎖️",
+            "title": "Avenue de la Grande Armée (1806) — Napoléon Iᵉʳ et la Grande Armée",
+            "content": "L'<strong>avenue de la Grande Armée</strong>, au-dessus de la station, a été <strong>tracée par Napoléon Iᵉʳ</strong> en <strong>1806</strong> dans le prolongement des Champs-Élysées (au-delà de l'Arc de Triomphe). Faisait partie du projet <strong>« Voie triomphale »</strong> reliant le Louvre à l'enceinte de Paris. Nom en hommage à la <strong>Grande Armée napoléonienne</strong> qui venait de remporter d'éclatantes victoires : <strong>Austerlitz (2 décembre 1805)</strong> contre l'Autriche et la Russie, <strong>Iéna et Auerstaedt (14 octobre 1806)</strong> contre la Prusse, etc. L'avenue est <strong>1,2 km de long, 70 m de large</strong>. Aujourd'hui grand axe commercial avec hôtels de prestige et boutiques de luxe."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Arc de Triomphe via M1",
+            "destination_slug": "arc-de-triomphe",
+            "destination_full_name": "Argentine → Arc de Triomphe",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Charles de Gaulle - Étoile (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-arc-triomphe/"
+        },
+        {
+            "destination_name": "Champs-Élysées via M1",
+            "destination_slug": "champs-elysees",
+            "destination_full_name": "Argentine → Champs-Élysées",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (1-2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-champs-elysees/"
+        },
+        {
+            "destination_name": "Bois de Boulogne (Porte Maillot)",
+            "destination_slug": "bois-de-boulogne",
+            "destination_full_name": "Argentine → Bois de Boulogne",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (1 station + à pied)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-bois-boulogne/"
+        },
+        {
+            "destination_name": "La Défense via M1",
+            "destination_slug": "la-defense",
+            "destination_full_name": "Argentine → La Défense",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction La Défense (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-la-defense/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M1 + M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Argentine → Tour Eiffel",
+            "lines_used": [
+                "M1",
+                "M6"
+            ],
+            "lines_label": "M1 jusqu'à Charles de Gaulle - Étoile + M6 jusqu'à Bir-Hakeim (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 1,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Louvre via M1",
+            "destination_slug": "louvre",
+            "destination_full_name": "Argentine → Louvre",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château jusqu'à Palais Royal (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-louvre/"
+        },
+        {
+            "destination_name": "Bastille via M1",
+            "destination_slug": "bastille",
+            "destination_full_name": "Argentine → Bastille",
+            "lines_used": [
+                "M1"
+            ],
+            "lines_label": "M1 direction Château (8 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-bastille/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER A + RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Argentine → CDG",
+            "lines_used": [
+                "M1",
+                "RER B"
+            ],
+            "lines_label": "M1 jusqu'à Étoile + RER A jusqu'à Châtelet + RER B direct CDG",
+            "duration_minutes": 45,
+            "changes_count": 2,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-argentine/argentine-vers-cdg/"
+        }
+    ],
+    "nearby_pois": [],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue des Acacias",
+            "address_full": "2 Place Yvon et Claire Morandat 75017 Paris",
+            "postcode": "75017",
+            "city": "Paris",
+            "latitude": 48.875756,
+            "longitude": 2.289243,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "avenue de la Grande Armée",
+            "address_full": "41 Avenue de la Grande Armée 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.875396,
+            "longitude": 2.289235,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue de la Grande Armée"
+            ]
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue de la Grande Armée + rue des Acacias",
+            "details": "Avenue commerciale prestigieuse : hôtels haut de gamme, boutiques de luxe, sièges sociaux. Restaurants gastronomiques.",
+            "secondary": "Quartier 16e/17e huppé : commerces de proximité, brasseries traditionnelles."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier huppé 16e/17e : très sûr globalement.",
+            "Vigilance pickpockets aux abords de l'avenue (touristes proches Étoile).",
+            "Soirée tardive : zone calme, peu d'incidents historiques.",
+            "Présence policière régulière (proximité Élysée et Étoile)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature huppée du quartier."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Avenue_de_la_Grande-Arm%C3%A9e_from_the_Arc_de_Triomphe%2C_Paris_2_August_2015.jpg",
+        "alt": "Avenue de la Grande Armée vue depuis l'Arc de Triomphe (Napoléon Iᵉʳ, 1806) — axe historique de Paris vers la Porte Maillot et La Défense, à 500 m de la station Argentine",
+        "width": 5760,
+        "height": 3840,
+        "credit": {
+            "author": "Norio NAKAYAMA",
+            "license": "CC BY-SA 2.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_de_la_Grande-Arm%C3%A9e_from_the_Arc_de_Triomphe,_Paris_2_August_2015.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/argentine/argentine-400.avif",
+                "800": "/assets/img/stations/argentine/argentine-800.avif",
+                "1200": "/assets/img/stations/argentine/argentine-1200.avif",
+                "1600": "/assets/img/stations/argentine/argentine-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/argentine/argentine-400.webp",
+                "800": "/assets/img/stations/argentine/argentine-800.webp",
+                "1200": "/assets/img/stations/argentine/argentine-1200.webp",
+                "1600": "/assets/img/stations/argentine/argentine-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/argentine/argentine-400.jpg",
+                "800": "/assets/img/stations/argentine/argentine-800.jpg",
+                "1200": "/assets/img/stations/argentine/argentine-1200.jpg",
+                "1600": "/assets/img/stations/argentine/argentine-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": "Station non accessible PMR. Pas d'ascenseurs vers les quais M1. Pour un trajet PMR, utiliser les bus 73 ou 92 (planchers bas) ou taxi/VTC."
+    }
+}
