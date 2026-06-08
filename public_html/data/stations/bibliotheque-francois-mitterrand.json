@@ -1,0 +1,603 @@
+{
+    "published": true,
+    "slug": "bibliotheque-francois-mitterrand",
+    "name": "Bibliothèque François Mitterrand",
+    "name_full": "Bibliothèque François Mitterrand (Métro 14 + RER C)",
+    "arrondissement": "13e (Paris)",
+    "address": "Avenue de France, 75013 Paris",
+    "latitude": 48.829761,
+    "longitude": 2.376726,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "Bibliothèque François Mitterrand station",
+        "es": "Estación Bibliothèque François Mitterrand"
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "type": "rer",
+            "code": "C",
+            "slug": "rer-c",
+            "color": "#FFCD00",
+            "text_color": "#000000",
+            "station_name": "Bibliothèque François Mitterrand",
+            "walking_minutes": 0,
+            "note": "Correspondance directe en gare commune"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "25",
+            "62",
+            "64",
+            "89",
+            "132",
+            "325"
+        ],
+        "nocturne": [
+            "N131",
+            "N133"
+        ],
+        "regional": [
+            "71",
+            "C"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-08",
+            "same_node_count": 5,
+            "nearby_count": 21
+        }
+    },
+    "seo": {
+        "description": "Station Bibliothèque François Mitterrand : M14 + RER C dans le 13e arr., BnF site Tolbiac (Dominique Perrault 1995, 4 tours en équerre, 80 km de rayons)."
+    },
+    "hero": {
+        "tagline": "La BnF et le Paris Rive Gauche contemporain",
+        "description": "Dans le <strong>13e arrondissement</strong>, Bibliothèque François Mitterrand ouvre le <strong>15 octobre 1998</strong> avec l'inauguration de la <strong>M14</strong> (Madeleine ↔ Bibliothèque, première ligne automatique du métro parisien). À <strong>50 mètres</strong>, la <strong>Bibliothèque nationale de France site François-Mitterrand</strong>, chef-d'œuvre de l'architecte <strong>Dominique Perrault</strong> (Prix Mies van der Rohe 1996), inaugurée le <strong>30 mars 1995</strong>. <strong>4 tours en équerre</strong> de <strong>79 m de hauteur</strong> (en forme de <strong>livres ouverts</strong>) entourent un jardin intérieur de pins. <strong>80 km de rayonnages</strong>, <strong>14 millions de documents</strong>. Classée <strong>Monument Historique en 2010</strong>. Cœur du quartier <strong>Paris Rive Gauche</strong>, le plus grand chantier d'urbanisme contemporain parisien."
+    },
+    "adjacent_stations": {
+        "metro-14": {
+            "previous": {
+                "name": "Cour Saint-Émilion",
+                "slug": "cour-saint-emilion",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Olympiades",
+                "slug": "olympiades",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Bibliothèque François Mitterrand</strong> est un <strong>pôle d'échange du 13e arrondissement de Paris</strong>, située sous l'<strong>avenue de France</strong>. Elle est desservie par la <strong>ligne 14 du métro</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly) et le <strong>RER C</strong> (Pontoise ↔ Versailles/Massy/Saint-Quentin), en gare commune avec correspondance directe. Sur la M14, entre <strong>Cour Saint-Émilion</strong> (1 station vers le nord, Bercy Village) et <strong>Olympiades</strong> (1 station vers le sud, ancien terminus M14).",
+        "Ouverte le <strong>15 octobre 1998</strong> comme <strong>terminus sud d'origine de la M14</strong> — <strong>première ligne automatique intégrale du métro parisien</strong>. Reste terminus sud pendant <strong>9 ans</strong> jusqu'au <strong>26 juin 2007</strong> et le <strong>prolongement à Olympiades</strong>. Configuration souterraine moderne avec quais larges, portes palières (premières du réseau), accessibilité PMR totale. La M14 a été <strong>conçue dès l'origine comme automatique</strong> (pas de conducteur), modèle pour les futures lignes automatisées (M1 en 2012, M4 en 2022).",
+        "À <strong>50 mètres</strong> de la station, la <strong>Bibliothèque nationale de France site François-Mitterrand</strong> est un <strong>chef-d'œuvre architectural</strong>. Conçue par <strong>Dominique Perrault</strong> (architecte français, Prix Mies van der Rohe 1996), inaugurée le <strong>30 mars 1995</strong> par <strong>François Mitterrand</strong> (qui en avait fait son <strong>« grand projet » culturel majeur</strong>). <strong>4 tours en équerre</strong> de <strong>79 m de hauteur (24 étages)</strong>, en forme de <strong>livres ouverts</strong>, entourent une <strong>esplanade en bois</strong> avec un <strong>jardin intérieur de 1,2 hectare</strong> (planté de 250 pins sylvestres). <strong>80 km de rayonnages</strong>, <strong>14 millions de documents</strong> (livres, revues, manuscrits, cartes, photos, partitions, sons, vidéos). <strong>Classée Monument Historique en 2010</strong>. Le bâtiment a été critique controversée à l'ouverture (livres exposés à la lumière des tours, problèmes climatiques résolus depuis). Au cœur du <strong>quartier Paris Rive Gauche</strong>, <strong>plus grand chantier d'urbanisme contemporain parisien</strong> (130 hectares ZAC Rive Gauche depuis 1991)."
+    ],
+    "history": {
+        "title": "1998 : la M14 automatique, 1995 : la BnF François-Mitterrand",
+        "paragraphs": [
+            "La station <strong>Bibliothèque François Mitterrand</strong> est inaugurée le <strong>15 octobre 1998</strong> comme <strong>terminus sud d'origine de la M14</strong>, <strong>première ligne automatique intégrale du métro parisien</strong>. La M14 reliait initialement <strong>Madeleine à Bibliothèque François Mitterrand</strong>. Elle est <strong>la première ligne du métro parisien à fonctionner SANS CONDUCTEUR</strong> depuis l'origine, avec portes palières sur tous les quais — technologie révolutionnaire pour l'époque. Conçue par la <strong>RATP</strong> avec l'industriel <strong>Siemens</strong> (système de contrôle automatique).",
+            "Le concept M14 (initialement nommée « <strong>Météor</strong> » — METro Est-Ouest Rapide) a été imaginé dès les années 1980 pour <strong>désengorger le RER A</strong>. Études lancées <strong>1989</strong>. Travaux : <strong>1991-1998</strong>. Coût : ~<strong>1,4 milliard d'euros</strong>. Innovations : <strong>automatisation totale</strong>, <strong>quais à portes palières</strong> (sécurité, vitesse, fluidité), <strong>fréquence en heure de pointe inégalée</strong> (85 secondes en 2024 ! le plus court du réseau RATP). Reste <strong>terminus sud pendant 9 ans</strong>, jusqu'au <strong>prolongement à Olympiades le 26 juin 2007</strong>.",
+            "La station est nommée d'après la <strong>Bibliothèque nationale de France site François-Mitterrand</strong>, située à 50 m. La BnF site François-Mitterrand est l'aboutissement du projet de <strong>nouvelle bibliothèque nationale</strong> lancé par <strong>François Mitterrand</strong> en <strong>1988</strong>, dans la lignée de ses <strong>« grands travaux »</strong> (Pyramide du Louvre, Arche de La Défense, Opéra Bastille, etc.). Mitterrand voulait une bibliothèque <strong>« d'un type entièrement nouveau »</strong>, ouverte au plus grand nombre, regroupant fonds anciens et numérique naissant.",
+            "Concours international d'architecture lancé en <strong>1989</strong>. Lauréat : <strong>Dominique Perrault</strong>, alors <strong>jeune architecte de 36 ans</strong> (relativement inconnu), parmi <strong>244 propositions</strong>. Projet caractérisé par les <strong>4 tours d'angle en forme de livres ouverts</strong> de <strong>79 m de hauteur</strong> (24 étages), entourant une <strong>esplanade monumentale en bois</strong> et un <strong>jardin intérieur</strong>. Construction <strong>1991-1995</strong>. Inauguration le <strong>30 mars 1995</strong> par François Mitterrand (qui meurt 9 mois plus tard en janvier 1996). Ouverture au public le <strong>20 décembre 1996</strong>. Coût total : ~<strong>1,2 milliard d'euros</strong>.",
+            "Caractéristiques techniques : <strong>4 tours d'angle en équerre</strong> de 79 m, <strong>14 millions de documents</strong>, <strong>80 km de rayonnages</strong> (sur 11 niveaux dont 7 souterrains), <strong>3 700 places de lecture</strong>, <strong>esplanade de 35 000 m² en bois de teck</strong>, <strong>jardin intérieur de 1,2 ha</strong> (planté de <strong>250 pins sylvestres</strong> du Bois de Bord). <strong>Classée Monument Historique en 2010</strong> — l'une des plus récentes constructions classées (15 ans après inauguration). Dominique Perrault a remporté le <strong>Prix Mies van der Rohe</strong> en 1996 pour cette œuvre.",
+            "Critiques à l'ouverture : les <strong>tours vitrées exposaient les livres à la lumière</strong> (problème de conservation). Solution : <strong>volets en bois</strong> ajoutés derrière les vitrages, climatisation ajustée. Aujourd'hui : la BnF est un haut lieu intellectuel et touristique de Paris, accueille <strong>~1,2 million de visiteurs/an</strong>, expositions, salles de lecture publiques (Haut-de-Jardin) et chercheurs (Rez-de-Jardin).",
+            "Le quartier autour est la <strong>ZAC Paris Rive Gauche</strong>, le <strong>plus grand chantier d'urbanisme contemporain parisien</strong>. <strong>130 hectares</strong> créés sur d'anciennes <strong>friches ferroviaires SNCF</strong> (gare d'Austerlitz). Lancé en <strong>1991</strong>, en cours jusque dans les années 2030. Plus de <strong>5 000 logements</strong> livrés, bureaux (sièges Le Monde, Le Figaro), équipements (BnF, Université Paris Cité, Université Paris Diderot installées 2007). Architectes prestigieux : Christian de Portzamparc, Jean Nouvel, Frédéric Borel, etc."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent la station Bibliothèque François Mitterrand ?",
+            "answer": "<strong>Deux modes</strong> : la <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, ligne automatique) et le <strong>RER C</strong> (Pontoise ↔ Versailles/Massy/Saint-Quentin), en gare commune avec correspondance directe. Sur la M14, entre <strong>Cour Saint-Émilion</strong> (Bercy Village) et <strong>Olympiades</strong> (ancien terminus M14). Bus 62, 89, 132, 325 desservent l'avenue de France."
+        },
+        {
+            "question": "Pourquoi le nom Bibliothèque François Mitterrand ?",
+            "answer": "Parce que la station dessert la <strong>Bibliothèque nationale de France site François-Mitterrand</strong> à 50 m. Construite à l'initiative du président <strong>François Mitterrand</strong> dans la lignée de ses <strong>« grands travaux »</strong> (Pyramide du Louvre, Arche de La Défense, Opéra Bastille). Inaugurée le <strong>30 mars 1995</strong> par Mitterrand (qui meurt 9 mois plus tard). Le site porte son nom officiellement depuis 2002 (auparavant nommé « BnF site Tolbiac »)."
+        },
+        {
+            "question": "Qu'est-ce que la BnF site François-Mitterrand ?",
+            "answer": "Un <strong>chef-d'œuvre architectural contemporain</strong> conçu par <strong>Dominique Perrault</strong> (Prix Mies van der Rohe 1996). <strong>4 tours d'angle de 79 m</strong> en forme de <strong>livres ouverts</strong>, entourant une <strong>esplanade monumentale en bois de teck</strong> et un <strong>jardin intérieur</strong> de 1,2 ha planté de 250 pins sylvestres. <strong>14 millions de documents</strong>, <strong>80 km de rayonnages</strong> sur 11 niveaux (dont 7 souterrains). <strong>3 700 places de lecture</strong>. <strong>Classée Monument Historique en 2010</strong>. ~1,2 million de visiteurs/an."
+        },
+        {
+            "question": "Qu'est-ce que la ligne 14 (Météor) ?",
+            "answer": "La <strong>M14</strong> est la <strong>plus moderne du métro parisien</strong>. Inaugurée le <strong>15 octobre 1998</strong> (Madeleine ↔ BnF), nom de code initial <strong>« Météor »</strong> (METro Est-Ouest Rapide). <strong>Première ligne automatique intégrale du métro parisien</strong> — fonctionne sans conducteur depuis l'origine. <strong>Quais à portes palières</strong> sur tous les quais (premières du réseau). <strong>Fréquence ULTRA-élevée</strong> : <strong>85 secondes en heure de pointe</strong> (record du réseau RATP). Coût construction : ~1,4 milliard €. Modèle pour M1 (auto 2012), M4 (2022)."
+        },
+        {
+            "question": "Comment rejoindre la BnF depuis la station ?",
+            "answer": "<strong>2 minutes à pied</strong> : sortir par la sortie 2 (avenue de France) et marcher 100 m vers l'est jusqu'à l'esplanade de la BnF. Plusieurs entrées : entrée Ouest (avenue de France), entrée Est (quai François-Mauriac, côté Seine). Salles de lecture publiques <strong>Haut-de-Jardin</strong> (entrée libre, lecture sur place). Salles de recherche <strong>Rez-de-Jardin</strong> (accréditation requise). Expositions temporaires."
+        },
+        {
+            "question": "Qu'est-ce que Paris Rive Gauche ?",
+            "answer": "Le <strong>plus grand chantier d'urbanisme contemporain parisien</strong>. <strong>130 hectares</strong> créés sur d'anciennes <strong>friches ferroviaires SNCF</strong> de la gare d'Austerlitz. <strong>ZAC Paris Rive Gauche</strong> lancée en <strong>1991</strong>, en cours jusque dans les années 2030. Plus de <strong>5 000 logements</strong>, bureaux (sièges Le Monde, Le Figaro), équipements (BnF, Université Paris Cité installée 2007). Architectes prestigieux : Christian de Portzamparc, Jean Nouvel, Frédéric Borel. Le quartier est l'un des plus dynamiques de Paris."
+        },
+        {
+            "question": "La station Bibliothèque François Mitterrand est-elle accessible PMR ?",
+            "answer": "<strong>Oui, entièrement accessible PMR</strong> (M14 + RER C). Ascenseurs vers tous les niveaux. La M14 a été conçue dès l'origine 100% accessible PMR. La BnF est aussi <strong>entièrement accessible PMR</strong> (ascenseurs, salles de lecture adaptées)."
+        },
+        {
+            "question": "Quels sont les horaires à Bibliothèque François Mitterrand ?",
+            "answer": "La <strong>M14 (automatique)</strong> circule de <strong>5h30 à 1h15</strong> en semaine et jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence record : <strong>85 secondes en heure de pointe</strong>. Le <strong>RER C</strong> circule de <strong>5h à 0h30</strong> environ (fréquences variables selon branches)."
+        }
+    ],
+    "practical_tips": [
+        "<strong>BnF François-Mitterrand</strong> à 2 min — esplanade en bois + jardin intérieur de pins sylvestres.",
+        "Salles de lecture Haut-de-Jardin <strong>entrée libre</strong> (lecture sur place) — 1 700 places.",
+        "<strong>Expositions BnF</strong> : programmation riche, billets sur bnf.fr.",
+        "<strong>M14 automatique</strong> : fréquence record 85 secondes en heure de pointe.",
+        "Pour <strong>Châtelet</strong> : 3 stations M14 (8 min).",
+        "Pour <strong>Aéroport d'Orly</strong> : M14 directe (~35 min, depuis 2024)."
+    ],
+    "trivia": [
+        {
+            "icon": "📚",
+            "title": "BnF site François-Mitterrand (1995) — 4 tours en livres ouverts, MH 2010",
+            "content": "La <strong>BnF site François-Mitterrand</strong>, à 50 m de la station, est un <strong>chef-d'œuvre architectural contemporain</strong> conçu par <strong>Dominique Perrault</strong> (alors jeune architecte de 36 ans, retenu parmi 244 propositions). <strong>4 tours d'angle de 79 m</strong> (24 étages) en forme de <strong>livres ouverts</strong>, entourant une <strong>esplanade monumentale en bois de teck</strong> et un <strong>jardin intérieur de 1,2 hectare</strong> planté de <strong>250 pins sylvestres</strong>. Construction 1991-1995, inauguration le <strong>30 mars 1995</strong> par François Mitterrand. <strong>14 millions de documents</strong>, <strong>80 km de rayonnages</strong>, <strong>3 700 places de lecture</strong>. <strong>Classée Monument Historique en 2010</strong> — l'une des plus récentes constructions classées (15 ans après inauguration). Dominique Perrault a remporté le <strong>Prix Mies van der Rohe</strong> en 1996. ~1,2 million de visiteurs/an."
+        },
+        {
+            "icon": "🚇",
+            "title": "M14 (15 octobre 1998) — première ligne automatique du métro parisien",
+            "content": "La station Bibliothèque François Mitterrand est inaugurée le <strong>15 octobre 1998</strong> comme <strong>terminus sud d'origine de la M14</strong>, <strong>première ligne automatique intégrale du métro parisien</strong>. Nom de code initial <strong>« Météor »</strong> (METro Est-Ouest Rapide). Conçue par RATP + Siemens. <strong>Fonctionne sans conducteur depuis l'origine</strong>, avec <strong>portes palières sur tous les quais</strong> (premières du réseau). <strong>Fréquence ULTRA-élevée</strong> : <strong>85 secondes en heure de pointe</strong> (record du réseau RATP). Coût construction : ~<strong>1,4 milliard d'euros</strong>. Modèle pour M1 (automatisée 2011-2012), M4 (2022). Reste terminus sud pendant 9 ans, jusqu'au prolongement à Olympiades le 26 juin 2007."
+        },
+        {
+            "icon": "🏗️",
+            "title": "Paris Rive Gauche (depuis 1991) — plus grand chantier urbanisme parisien",
+            "content": "Le quartier autour est la <strong>ZAC Paris Rive Gauche</strong>, le <strong>plus grand chantier d'urbanisme contemporain parisien</strong>. <strong>130 hectares</strong> créés sur d'anciennes <strong>friches ferroviaires SNCF</strong> de la gare d'Austerlitz. Lancé en <strong>1991</strong>, en cours jusque dans les années 2030. Plus de <strong>5 000 logements</strong>, bureaux (sièges <strong>Le Monde</strong>, <strong>Le Figaro</strong>), équipements (BnF, <strong>Université Paris Cité</strong> + <strong>Université Paris Diderot</strong> installées 2007). Architectes prestigieux : <strong>Christian de Portzamparc</strong>, <strong>Jean Nouvel</strong>, <strong>Frédéric Borel</strong>. Quartier en pleine évolution."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "BnF François-Mitterrand",
+            "destination_slug": "bnf-francois-mitterrand",
+            "destination_full_name": "Bibliothèque François Mitterrand → BnF",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied par l'avenue de France (~100 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-bnf/"
+        },
+        {
+            "destination_name": "Cour Saint-Émilion (Bercy Village) via M14",
+            "destination_slug": "cour-saint-emilion",
+            "destination_full_name": "BnF → Cour Saint-Émilion",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-cour-saint-emilion/"
+        },
+        {
+            "destination_name": "Olympiades (Chinatown) via M14",
+            "destination_slug": "olympiades",
+            "destination_full_name": "BnF → Olympiades",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-olympiades/"
+        },
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "BnF → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (3 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare Saint-Lazare via M14",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "BnF → Gare Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis (5 stations)",
+            "duration_minutes": 13,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "BnF → Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direct Aéroport d'Orly (depuis juin 2024)",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-orly/"
+        },
+        {
+            "destination_name": "Notre-Dame de Paris via RER C",
+            "destination_slug": "notre-dame",
+            "destination_full_name": "BnF → Notre-Dame (Saint-Michel)",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direction nord jusqu'à Saint-Michel (3 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-notre-dame/"
+        },
+        {
+            "destination_name": "Château de Versailles via RER C",
+            "destination_slug": "versailles-chateau",
+            "destination_full_name": "BnF → Versailles",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direct Versailles - Château - Rive Gauche",
+            "duration_minutes": 45,
+            "changes_count": 0,
+            "search_volume_estimate": "very_high",
+            "future_url": "/itineraires/station-bibliotheque-francois-mitterrand/bnf-vers-versailles/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q945251",
+            "name": "parc de Bercy",
+            "category": "jardin",
+            "description": "Le parc de Bercy est un ensemble de trois jardins situés dans le quartier de Bercy du 12e arrondissement de Paris, entre le Palais omnisports de Paris-Bercy et le centre commercial et de restauration…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Prairies%20de%20Bercy1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_Bercy",
+            "latitude": 48.83534,
+            "longitude": 2.3826,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 678,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3533060",
+            "name": "Tours Duo",
+            "category": "site notable",
+            "description": "Les tours Duo sont deux gratte-ciel du 13e arrondissement de Paris (France), livrés en 2021.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Les_tours_Duo_c%C3%B4t%C3%A9_Seine.jpg/330px-Les_tours_Duo_c%C3%B4t%C3%A9_Seine.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tours_Duo",
+            "latitude": 48.8248,
+            "longitude": 2.38296,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Goscinny",
+                "distance_m": 657,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2307670",
+            "name": "pont de Tolbiac",
+            "category": "pont",
+            "description": "Le pont de Tolbiac est un pont situé à Paris, construit entre 1879 et 1882.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20Tolbiac%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Tolbiac",
+            "latitude": 48.833333,
+            "longitude": 2.381944,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 480,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2307685",
+            "name": "pont National",
+            "category": "pont",
+            "description": "Le pont National est un pont routier et ferroviaire franchissant la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20National%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_National_(Paris)",
+            "latitude": 48.82806,
+            "longitude": 2.38694,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Goscinny",
+                "distance_m": 688,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1853517",
+            "name": "passerelle Simone-de-Beauvoir",
+            "category": "pont",
+            "description": "La passerelle Simone-de-Beauvoir est un pont réservé aux modes de transports dits « doux ».",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passerelle%20Simone-de-Beauvoir.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Passerelle_Simone-de-Beauvoir",
+            "latitude": 48.835281,
+            "longitude": 2.378003,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 541,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2856214",
+            "name": "Bibliothèque François-Mitterrand",
+            "category": "gare",
+            "description": "La gare de la Bibliothèque François-Mitterrand est une gare ferroviaire française de la ligne de Paris-Austerlitz à Bordeaux-Saint-Jean, située dans le 13e arrondissement de Paris, en région…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Biblioth%C3%A8que%20SNCF.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_la_Biblioth%C3%A8que_Fran%C3%A7ois-Mitterrand",
+            "latitude": 48.82981,
+            "longitude": 2.37682,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 74,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3278943",
+            "name": "maison Planeix",
+            "category": "site notable",
+            "description": "La maison Planeix est une maison-atelier d'artiste située aux numéros 24bis à 26bis du boulevard Masséna, dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Planeix%20IMG%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_Planeix",
+            "latitude": 48.823333,
+            "longitude": 2.373889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Chevaleret",
+                "distance_m": 722,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q10453586",
+            "name": "cité de Refuge",
+            "category": "quartier",
+            "description": "La Cité de Refuge est un immeuble situé au 12 rue Cantagrel, dans le 13e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Rue%20du%20Chevaleret%20Arm%C3%A9e%20du%20salut%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cit%C3%A9_de_Refuge",
+            "latitude": 48.826667,
+            "longitude": 2.376667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "rue du Chevaleret",
+                "distance_m": 343,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3055287",
+            "name": "entrepôt de Bercy",
+            "category": "site notable",
+            "description": "Les entrepôts de Bercy étaient un ensemble réservé aux négociants en vin situé dans le quartier de Bercy en périphérie du 12e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/01%20Bercy%201908%20Gondry%20%C3%A9diteur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Entrep%C3%B4ts_de_Bercy",
+            "latitude": 48.833333,
+            "longitude": 2.386111,
+            "nearest_exit": {
+                "number": "3",
+                "name": "rue Goscinny",
+                "distance_m": 729,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1820520",
+            "name": "Les Frigos",
+            "category": "site notable",
+            "description": "Les Frigos est un site de création et de production artistique situé, dans le bâtiment principal de l'ancienne gare frigorifique de Paris-Ivry, 19, rue des Frigos, dans le quartier de la Gare du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Frigos%2C%20Paris%2031%20December%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Les_Frigos",
+            "latitude": 48.831389,
+            "longitude": 2.378889,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 169,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2365441",
+            "name": "Batofar",
+            "category": "site notable",
+            "description": "Le Batofar (ex-Osprey) est une salle de spectacle maintenant située à Paris, créée en 1999 dans un ancien bateau-feu amarré au port de la Gare, en bordure de Seine, dans le 13e arrondissement de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Batofar%20-%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Batofar",
+            "latitude": 48.833378,
+            "longitude": 2.379253,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 362,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2956625",
+            "name": "chapelle Notre-Dame-de-la-Sagesse",
+            "category": "chapelle",
+            "description": "La chapelle Notre-Dame-de-la-Sagesse est une église située dans l'opération d'aménagement Paris Rive Gauche, dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2013e%20-%20Notre-Dame-de-la-Sagesse%20-%20ext%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-Sagesse",
+            "latitude": 48.8357,
+            "longitude": 2.37347,
+            "nearest_exit": {
+                "number": "2",
+                "name": "avenue de France (BnF)",
+                "distance_m": 639,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "rue du Chevaleret",
+            "address_full": "58 Rue du Chevaleret 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.829697,
+            "longitude": 2.375814,
+            "accessible": true
+        },
+        {
+            "number": "2",
+            "name": "avenue de France (BnF)",
+            "address_full": "112 Avenue de France 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.830459,
+            "longitude": 2.377059,
+            "accessible": true
+        },
+        {
+            "number": "3",
+            "name": "rue Goscinny",
+            "address_full": "98 Avenue de France 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.829663,
+            "longitude": 2.377858,
+            "accessible": true
+        },
+        {
+            "number": "4",
+            "name": "pont de Tolbiac",
+            "address_full": "60 Rue du Chevaleret 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.829814,
+            "longitude": 2.375704,
+            "accessible": true
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": true,
+            "location_detail": "Gare RER C + M14",
+            "coverage_detail": "Wifi gratuit SNCF + RATP"
+        },
+        "toilets": {
+            "public_paid": {
+                "available": true,
+                "note": "Sanibroyeurs payants en gare"
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": true,
+            "banks_count_estimate": "plusieurs",
+            "locations": [
+                "avenue de France"
+            ]
+        },
+        "ratp_office": {
+            "available": true,
+            "location": "Gare RER C niveau -1",
+            "services": "vente titres, info trafic, billetterie SNCF"
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "Avenue de France + BnF esplanade",
+            "details": "Cafés et restaurants modernes sur l'avenue de France. BnF : restaurant gastronomique 7e étage tour Nord (Le Petit Salon). Bibliothèque ouverte au public.",
+            "secondary": "Bercy Village à 1 station M14 (Cour Saint-Émilion) : nombreux restaurants."
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Quartier Paris Rive Gauche moderne — globalement sûr.",
+            "Vigilance pickpockets standard en gare RER (forte affluence).",
+            "Présence policière régulière (BnF + gare).",
+            "Soirée tardive : zone calme, peu fréquentée hors événements."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. 4 tips factuels formulés à partir de la nature du quartier."
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Biblioth%C3%A8que_Fran%C3%A7ois-Mitterrand%2C_Paris_XIII%2C_G.52900.jpg",
+        "alt": "Bibliothèque nationale de France site François-Mitterrand (Dominique Perrault, 1995) — 4 tours en équerre de 79 m en forme de livres ouverts, classée MH 2010",
+        "width": 6785,
+        "height": 8977,
+        "credit": {
+            "author": "Bouyer, Caroline",
+            "license": "CC0",
+            "license_url": "https://creativecommons.org/publicdomain/zero/1.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_Fran%C3%A7ois-Mitterrand,_Paris_XIII,_G.52900.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "manual",
+        "confidence_score": 22,
+        "confidence_level": "manual_validated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-400.avif",
+                "800": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-800.avif",
+                "1200": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1200.avif",
+                "1600": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-400.webp",
+                "800": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-800.webp",
+                "1200": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1200.webp",
+                "1600": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-400.jpg",
+                "800": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-800.jpg",
+                "1200": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1200.jpg",
+                "1600": "/assets/img/stations/bibliotheque-francois-mitterrand/bibliotheque-francois-mitterrand-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 8,
+            "accessible_lines": 2,
+            "total_lines": 2
+        },
+        "details": "Station entièrement accessible PMR (M14 + RER C). Ascenseurs vers tous les niveaux. M14 conçue dès l'origine 100% accessible PMR. La BnF est aussi entièrement accessible PMR."
+    }
+}
