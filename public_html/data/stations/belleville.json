@@ -1,0 +1,613 @@
+{
+    "published": true,
+    "slug": "belleville",
+    "name": "Belleville",
+    "name_full": "Belleville (Métro 2, 11)",
+    "arrondissement": "11e/19e/20e (Paris)",
+    "address": "Bd de Belleville / rue de Belleville, 75011/75019/75020 Paris",
+    "latitude": 48.87214473966535,
+    "longitude": 2.377125834393433,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#0055C8",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20"
+        ],
+        "nocturne": [
+            "N12",
+            "N23"
+        ],
+        "regional": [
+            "71"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 11,
+            "nearby_count": 10
+        }
+    },
+    "seo": {
+        "description": "Station Belleville : M2 + M11 à la jonction 11e/19e/20e arr. Quartier multi-ethnique emblématique, Chinatown nord, Parc de Belleville (vue panoramique sur Paris)."
+    },
+    "hero": {
+        "tagline": "M2 + M11 — quartier multi-ethnique de Belleville",
+        "description": "Station <strong>Belleville</strong> à la <strong>jonction des 11e, 19e et 20e arrondissements</strong>. Desservie par <strong>M2</strong> (ouverte 31 janvier 1903) et <strong>M11</strong> (ouverte 28 avril 1935). Cœur du <strong>quartier multi-ethnique de Belleville</strong>, l'un des plus diversifiés de Paris. Présence du <strong>Chinatown nord</strong> et du <strong>Parc de Belleville</strong> (vue panoramique sur Paris depuis 108 m)."
+    },
+    "adjacent_stations": {
+        "metro-2": {
+            "previous": {
+                "name": "Couronnes",
+                "slug": "couronnes",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Colonel Fabien",
+                "slug": "colonel-fabien",
+                "direction": "Porte Dauphine"
+            }
+        },
+        "metro-11": {
+            "previous": {
+                "name": "Pyrénées",
+                "slug": "pyrenees",
+                "direction": "Rosny-Bois-Perrier"
+            },
+            "next": {
+                "name": "Goncourt",
+                "slug": "goncourt",
+                "direction": "Châtelet"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Belleville</strong> est située à la <strong>jonction des 11e, 19e et 20e arrondissements</strong>, sur le <strong>boulevard de Belleville</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M2</strong> (Porte Dauphine ↔ Nation) et <strong>M11</strong> (Châtelet ↔ Rosny - Bois-Perrier). Bus 26, 75.",
+        "La station <strong>M2</strong> ouvre le <strong>31 janvier 1903</strong> avec le tronçon Villiers ↔ Bagnolet. La station <strong>M11</strong> est ajoutée le <strong>28 avril 1935</strong>.",
+        "Belleville est l'un des <strong>quartiers les plus multi-ethniques de Paris</strong>. <strong>Ancien village vigneron</strong> annexé en 1860. À partir du XXe siècle : vagues d'immigration <strong>juive ashkénaze</strong>, <strong>arménienne</strong>, <strong>maghrébine</strong>, puis <strong>asiatique</strong> (Chinatown nord depuis 1980s — chinois, vietnamiens, cambodgiens, laotiens). À <strong>5 min</strong> : le <strong>Parc de Belleville</strong> (4,5 ha, 108 m d'altitude), <strong>vue panoramique sur Paris</strong>."
+    ],
+    "history": {
+        "title": "1903 : M2, 1935 : M11, et Belleville multi-ethnique",
+        "paragraphs": [
+            "La station <strong>M2</strong> ouvre le <strong>31 janvier 1903</strong>. La station <strong>M11</strong> est ajoutée le <strong>28 avril 1935</strong>.",
+            "<strong>Belleville</strong> était un <strong>village indépendant vigneron</strong> jusqu'au XIXe siècle, <strong>annexé à Paris en 1860</strong> par Napoléon III. Au XIXe : quartier <strong>ouvrier populaire</strong>, refuge des Communards en 1871 (le mur des Fédérés est dans le Père-Lachaise voisin).",
+            "Au XXe siècle, Belleville accueille successivement plusieurs vagues d'immigration :\n- <strong>Juifs ashkénazes</strong> (avant 1939, Pologne, Russie)\n- <strong>Arméniens</strong> (rescapés du génocide 1915)\n- <strong>Maghrébins</strong> (1950s-60s, Algérie, Tunisie, Maroc)\n- <strong>Asiatiques</strong> (1980s+, réfugiés du Sud-Est asiatique : Chine du Sud, Vietnam, Cambodge, Laos)",
+            "Aujourd'hui, le <strong>Chinatown nord de Paris</strong> (avenue de Belleville) abrite la deuxième concentration asiatique de Paris (après le 13e arr.). Restaurants asiatiques, supermarchés, salons de coiffure.",
+            "À 5 min à pied : le <strong>Parc de Belleville</strong> (4,5 ha, créé en 1988 par Paul Brichet), <strong>108 m d'altitude</strong>, <strong>vue panoramique exceptionnelle sur Paris</strong> (Tour Eiffel, Sacré-Cœur visibles). <strong>Pavillon du Bouddha</strong> au sommet."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Belleville ?",
+            "answer": "<strong>M2</strong> (1903) et <strong>M11</strong> (1935). Bus 26, 75."
+        },
+        {
+            "question": "Qu'est-ce que Belleville ?",
+            "answer": "Quartier multi-ethnique de Paris à la jonction des 11e, 19e et 20e arrondissements. Ancien village vigneron, annexé en 1860. Vagues d'immigration juive, arménienne, maghrébine, asiatique. <strong>Chinatown nord</strong> de Paris."
+        },
+        {
+            "question": "Où est le Parc de Belleville ?",
+            "answer": "<strong>5 min à pied</strong> direction nord. <strong>4,5 ha</strong>, <strong>108 m d'altitude</strong> — <strong>vue panoramique exceptionnelle sur Paris</strong>."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M11 directe</strong> : ~14 min (7 stations) OU <strong>M2 vers République + M11</strong>."
+        },
+        {
+            "question": "Comment aller au Père-Lachaise ?",
+            "answer": "<strong>M2 directe</strong> : ~6 min (2 stations vers Nation)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1903/1935."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Parc de Belleville</strong> à 5 min — vue panoramique sur Paris.",
+        "<strong>Chinatown nord</strong> avenue de Belleville — restaurants asiatiques.",
+        "<strong>Marché de Belleville</strong> (mardi/vendredi) — l'un des plus authentiques de Paris.",
+        "Pour <strong>Père-Lachaise</strong> : M2 directe (~6 min).",
+        "Pour <strong>République</strong> : M11 directe (~5 min)."
+    ],
+    "trivia": [
+        {
+            "icon": "🍷",
+            "title": "Ancien village vigneron annexé en 1860",
+            "content": "<strong>Belleville</strong> était un <strong>village indépendant vigneron</strong> jusqu'au XIXe siècle, situé sur une colline au nord-est de Paris. <strong>Vignes</strong> et <strong>guinguettes</strong> attiraient les Parisiens. <strong>Annexé à Paris en 1860</strong> par Napoléon III (avec Charonne, Grenelle, etc.). Au XIXe : devient quartier <strong>ouvrier populaire</strong>, refuge des Communards en 1871. Aujourd'hui : l'un des quartiers les plus multi-ethniques de Paris (juif, arménien, maghrébin, asiatique)."
+        },
+        {
+            "icon": "🌏",
+            "title": "Chinatown nord — 2e concentration asiatique de Paris",
+            "content": "Le <strong>Chinatown nord de Paris</strong> (avenue de Belleville) est la <strong>2e concentration asiatique de Paris</strong> après le 13e arr. (Olympiades). Présence depuis les <strong>années 1980</strong> avec les réfugiés du Sud-Est asiatique : <strong>Chinois du Sud</strong>, <strong>Vietnamiens</strong>, <strong>Cambodgiens</strong>, <strong>Laotiens</strong>. <strong>Restaurants asiatiques</strong>, <strong>supermarchés</strong>, <strong>salons de coiffure</strong>, <strong>boulangeries asiatiques</strong>. Plus authentique et populaire que le Chinatown sud (qui est plus touristique)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Parc de Belleville",
+            "destination_slug": "parc-belleville",
+            "destination_full_name": "Belleville → Parc de Belleville",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-parc-belleville/"
+        },
+        {
+            "destination_name": "Père-Lachaise via M2",
+            "destination_slug": "pere-lachaise",
+            "destination_full_name": "Belleville → Père-Lachaise",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Nation (2 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-pere-lachaise/"
+        },
+        {
+            "destination_name": "République via M11",
+            "destination_slug": "republique",
+            "destination_full_name": "Belleville → République",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-republique/"
+        },
+        {
+            "destination_name": "Châtelet via M11",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Belleville → Châtelet",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (7 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-chatelet/"
+        },
+        {
+            "destination_name": "Chinatown nord (av. Belleville)",
+            "destination_slug": "chinatown-nord",
+            "destination_full_name": "Belleville → Chinatown nord (av. Belleville)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-chinatown-nord/"
+        },
+        {
+            "destination_name": "Place des Fêtes via M11",
+            "destination_slug": "place-des-fetes",
+            "destination_full_name": "Belleville → Place des Fêtes",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Rosny (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-belleville/belleville-vers-place-des-fetes/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q950446",
+            "name": "parc de Belleville",
+            "category": "jardin",
+            "description": "Le parc de Belleville, aussi appelé jardin Belleville - Julien-Lacroix, est l'un des parcs et jardins du 20e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010851%20Paris%20XX%20Parc%20de%20Belleville%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_Belleville",
+            "latitude": 48.87083,
+            "longitude": 2.38472,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Belleville",
+                "distance_m": 564,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3210514",
+            "name": "stade Bergeyre",
+            "category": "site notable",
+            "description": "Le stade Bergeyre est un ancien stade du 19e arrondissement de Paris, nommé en hommage à Robert Bergeyre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stade%20Bergeyre.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Stade_Bergeyre",
+            "latitude": 48.8772,
+            "longitude": 2.37694,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de la Villette",
+                "distance_m": 523,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1569396",
+            "name": "hôpital Saint-Louis",
+            "category": "hôpital",
+            "description": "L’hôpital Saint-Louis est un hôpital de l’Assistance publique - Hôpitaux de Paris (AP-HP) situé dans le 10e arrondissement de Paris, au nord de la rue Bichat, 1, avenue Claude-Vellefaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2011e%20H%C3%B4pital%20Saint-Louis%20Carr%C3%A93.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Saint-Louis",
+            "latitude": 48.874722,
+            "longitude": 2.368333,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 626,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3055415",
+            "name": "musée Édith-Piaf",
+            "category": "musée",
+            "description": "Le musée Édith-Piaf est un musée privé ouvert au public sur rendez-vous, au 5 rue Camille-Crespin-du-Gast dans le 11e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20%C3%89dith%20Piaf.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_%C3%89dith-Piaf",
+            "latitude": 48.86617,
+            "longitude": 2.38172,
+            "nearest_exit": {
+                "number": "8",
+                "name": "r. de l'Orillon",
+                "distance_m": 692,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q496060",
+            "name": "siège du Parti communiste français",
+            "category": "site notable",
+            "description": "Le siège du Parti communiste français (PCF) est situé à Paris, depuis 1971 au 2, place du Colonel-Fabien, dans le 19e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Communist%20Party%20HQ%2C%20Place%20du%20Colonel%20Fabien%2C%20Paris%20July%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_du_Parti_communiste_fran%C3%A7ais",
+            "latitude": 48.877778,
+            "longitude": 2.371667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de la Villette",
+                "distance_m": 690,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3361114",
+            "name": "Palais des glaces",
+            "category": "palais",
+            "description": "Le Palais des glaces est une salle de spectacle parisienne édifiée en 1876 au 37 rue du Faubourg-du-Temple, dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20FaubTemple-PalaisDesGlaces.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_des_glaces_(Paris)",
+            "latitude": 48.8692,
+            "longitude": 2.36825,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 584,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3582132",
+            "name": "église Saint-Joseph-des-Nations",
+            "category": "église",
+            "description": "L'église Saint-Joseph-des-Nations est un édifice religieux catholique situé au 161 rue Saint-Maur dans le 11e arrondissement de Paris (France).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1310659%20Paris%20XI%20eglise%20St-Joseph-Nations%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Joseph-des-Nations",
+            "latitude": 48.869,
+            "longitude": 2.37342,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 317,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1802602",
+            "name": "synagogue de Belleville",
+            "category": "synagogue",
+            "description": "La synagogue ou temple israélite de Belleville, localisé au 75 rue Julien-Lacroix et au 49 rue de Pali-Kao, dans le quartier de Belleville du 20e arrondissement de Paris, est construite de 1925 à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Synagogue%20Belleville%20%28Paris%20%29%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_Belleville",
+            "latitude": 48.87125,
+            "longitude": 2.382917,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Belleville",
+                "distance_m": 425,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3067780",
+            "name": "faïencerie Loebnitz",
+            "category": "site notable",
+            "description": "La Faïencerie Loebnitz est une ancienne faïencerie construite en 1884 par l'architecte Paul Sédille.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancienne%20fa%C3%AFencerie%20Loebnitz.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fa%C3%AFencerie_Loebnitz",
+            "latitude": 48.8665,
+            "longitude": 2.3712,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 639,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3162331",
+            "name": "jardin Jules-Verne",
+            "category": "jardin",
+            "description": "Le square Jules-Verne est un square du 11e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1310629%20Paris%20XI%20square%20Jules-Verne%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Jules-Verne",
+            "latitude": 48.87,
+            "longitude": 2.375,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 174,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3162359",
+            "name": "jardin de l'Îlot Rébeval",
+            "category": "jardin",
+            "description": "Le jardin de l'Îlot-Rébeval est un espace vert du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilot%20R%C3%A9beval%2C%20Paris%2011%20March%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_l%27%C3%8Elot-R%C3%A9beval",
+            "latitude": 48.8733,
+            "longitude": 2.37695,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd de la Villette",
+                "distance_m": 92,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3494663",
+            "name": "square Juliette-Dodu",
+            "category": "site notable",
+            "description": "Le square Juliette-Dodu est un espace vert du 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Juliette%20Dodu%20%40%20Paris%20%2833114023843%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Juliette-Dodu",
+            "latitude": 48.875556,
+            "longitude": 2.369444,
+            "nearest_exit": {
+                "number": "9",
+                "name": "Cr. de la Grâce de Dieu",
+                "distance_m": 623,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de Belleville",
+            "address_full": "132 Boulevard de Belleville 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.871956,
+            "longitude": 2.377203,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Belleville",
+            "address_full": "1z Boulevard de la Villette 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.872269,
+            "longitude": 2.376886,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd de la Villette",
+            "address_full": "4 Boulevard de la Villette 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.872502,
+            "longitude": 2.376624,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "terre-plein central / du bd de la Villette",
+            "address_full": "1 Boulevard de la Villette 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.87217,
+            "longitude": 2.376723,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. du Fbg du Temple",
+            "address_full": "1 Boulevard de la Villette 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.872061,
+            "longitude": 2.376547,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Louis Bonnet",
+            "address_full": "124 Rue du Faubourg du Temple 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.871801,
+            "longitude": 2.37666,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "r. de la Présentation",
+            "address_full": "10 Rue de la Présentation 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.871609,
+            "longitude": 2.376076,
+            "accessible": null
+        },
+        {
+            "number": "8",
+            "name": "r. de l'Orillon",
+            "address_full": "6b Rue de la Présentation 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.871332,
+            "longitude": 2.376447,
+            "accessible": null
+        },
+        {
+            "number": "9",
+            "name": "Cr. de la Grâce de Dieu",
+            "address_full": "127 Rue du Faubourg du Temple 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.871542,
+            "longitude": 2.375395,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/belleville/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Belleville (Métro 2, 11) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Belleville_M%C3%A9tro_Paris_Boulevard_Belleville_-_Paris_XX_(FR75)_-_2025-11-05_-_6.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/belleville/belleville-400.avif",
+                "800": "/assets/img/stations/belleville/belleville-800.avif",
+                "1200": "/assets/img/stations/belleville/belleville-1200.avif",
+                "1600": "/assets/img/stations/belleville/belleville-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/belleville/belleville-400.webp",
+                "800": "/assets/img/stations/belleville/belleville-800.webp",
+                "1200": "/assets/img/stations/belleville/belleville-1200.webp",
+                "1600": "/assets/img/stations/belleville/belleville-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/belleville/belleville-400.jpg",
+                "800": "/assets/img/stations/belleville/belleville-800.jpg",
+                "1200": "/assets/img/stations/belleville/belleville-1200.jpg",
+                "1600": "/assets/img/stations/belleville/belleville-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q815946",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q815946",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Belleville_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
