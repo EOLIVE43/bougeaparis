@@ -21,14 +21,13 @@ error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
  * Sortie JSON sur stdout pour permettre agregation/log par le caller.
  */
 
-const RADII_M        = [50, 100, 200]; // escalade adaptative
-const MIN_YEAR       = 2018;           // filtre captured_at
+const RADII_M        = [50, 100]; // escalade adaptative (abandon 200m apres v3)
+const MIN_YEAR       = 2018;      // filtre captured_at
 const HERO_WIDTHS    = [400, 800, 1200, 1600];
-const FALLBACK_W     = 1200;
-const FALLBACK_H     = 675;
-const ESRI_ZOOM      = 17;
 const HERO_RATIO_W   = 16;
 const HERO_RATIO_H   = 9;
+const WIKIMEDIA_MIN_W = 1200;     // largeur min image Wikimedia POI
+const WIKIMEDIA_MAX_POI_TRIES = 5;
 
 const ROOT_DIR       = __DIR__ . '/..';
 const STATIONS_DIR   = ROOT_DIR . '/public_html/data/stations';
@@ -187,70 +186,92 @@ function find_mapillary_adaptive(string $token, float $lat, float $lon): array {
 }
 
 // ------------------------------------------------------------------
-// ESRI World Imagery satellite (fallback) — mosaique de tiles XYZ
+// Wikimedia Commons fallback via nearby_pois[].image_url
 // ------------------------------------------------------------------
 
-function lonlat_to_pixel(float $lon, float $lat, int $zoom): array {
-    $n  = pow(2, $zoom);
-    $px = (($lon + 180) / 360) * $n * 256;
-    $lat_rad = deg2rad($lat);
-    $py = (1 - log(tan($lat_rad) + 1 / cos($lat_rad)) / M_PI) / 2 * $n * 256;
-    return [$px, $py];
+/**
+ * Extrait le nom de fichier (sans Wikimedia path/prefix) depuis une image_url POI.
+ * Supporte 2 formats observes :
+ *  - https://commons.wikimedia.org/wiki/Special:FilePath/{filename}?width=N
+ *  - https://upload.wikimedia.org/wikipedia/commons/thumb/.../{filename}/{N}px-{filename}
+ */
+function extract_wikimedia_filename(string $url): ?string {
+    if (preg_match('~/Special:FilePath/([^?]+)~', $url, $m)) {
+        return rawurldecode($m[1]);
+    }
+    if (preg_match('~/wikipedia/commons/(?:thumb/)?[^/]+/[^/]+/([^/]+)~', $url, $m)) {
+        $f = rawurldecode($m[1]);
+        // Si format thumb /Npx-{filename}, retirer "Npx-"
+        if (preg_match('/^\d+px-(.+)$/', $f, $m2)) $f = $m2[1];
+        return $f;
+    }
+    return null;
 }
 
 /**
- * Compose un canvas FALLBACK_W x FALLBACK_H centre sur (lat, lon) en mosaiquant
- * des tiles 256x256 ESRI World Imagery (Web Mercator XYZ).
- * Retourne le nombre de tiles fetched.
+ * Query Wikimedia Commons API pour obtenir url, size, license, author d'un fichier.
  */
-function fetch_esri_satellite(float $lat, float $lon, string $dest): int {
-    $w = FALLBACK_W; $h = FALLBACK_H; $z = ESRI_ZOOM;
-    [$cx, $cy] = lonlat_to_pixel($lon, $lat, $z);
-    $left   = $cx - $w / 2;
-    $top    = $cy - $h / 2;
-    $right  = $left + $w;
-    $bottom = $top + $h;
-    $tile_x_start = (int) floor($left   / 256);
-    $tile_y_start = (int) floor($top    / 256);
-    $tile_x_end   = (int) floor(($right  - 1) / 256);
-    $tile_y_end   = (int) floor(($bottom - 1) / 256);
-
-    $canvas = imagecreatetruecolor($w, $h);
-    $fetched = 0;
-    for ($tx = $tile_x_start; $tx <= $tile_x_end; $tx++) {
-        for ($ty = $tile_y_start; $ty <= $tile_y_end; $ty++) {
-            $url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/$z/$ty/$tx";
-            $tmp = tempnam(sys_get_temp_dir(), 'esri_') . '.jpg';
-            if (!http_download($url, $tmp)) { @unlink($tmp); continue; }
-            $tile = @imagecreatefromjpeg($tmp);
-            @unlink($tmp);
-            if (!$tile) continue;
-            $dst_x = (int) round($tx * 256 - $left);
-            $dst_y = (int) round($ty * 256 - $top);
-            imagecopy($canvas, $tile, $dst_x, $dst_y, 0, 0, 256, 256);
-            $fetched++;
-        }
+function wikimedia_imageinfo(string $filename): ?array {
+    $title = 'File:' . str_replace(' ', '_', $filename);
+    $url = 'https://commons.wikimedia.org/w/api.php?' . http_build_query([
+        'action' => 'query',
+        'titles' => $title,
+        'prop'   => 'imageinfo',
+        'iiprop' => 'url|size|extmetadata',
+        'format' => 'json',
+    ]);
+    [$code, $body] = http_get($url);
+    if ($code !== 200) return null;
+    $d = json_decode($body, true);
+    $pages = $d['query']['pages'] ?? [];
+    foreach ($pages as $p) {
+        if (isset($p['missing'])) return null;
+        $ii = $p['imageinfo'][0] ?? null;
+        if (!$ii) return null;
+        $m = $ii['extmetadata'] ?? [];
+        return [
+            'url'         => $ii['url'] ?? '',
+            'width'       => (int)($ii['width'] ?? 0),
+            'height'      => (int)($ii['height'] ?? 0),
+            'mime'        => $ii['mime'] ?? '',
+            'artist'      => trim(strip_tags($m['Artist']['value'] ?? '')),
+            'license'     => $m['LicenseShortName']['value'] ?? '',
+            'license_url' => $m['LicenseUrl']['value'] ?? '',
+            'desc_url'    => $ii['descriptionurl'] ?? '',
+        ];
     }
-    imagepng($canvas, $dest, 6);
-    return $fetched;
+    return null;
 }
 
-function add_marker_to_png(string $path): void {
-    $img = imagecreatefrompng($path);
-    if (!$img) return;
-    // Si l'image vient d'une source palette (ex: PNG colormap), passer en truecolor
-    imagepalettetotruecolor($img);
-    $cx = (int) (FALLBACK_W / 2); $cy = (int) (FALLBACK_H / 2);
-    $red   = imagecolorallocate($img, 220, 30, 30);
-    $white = imagecolorallocate($img, 255, 255, 255);
-    $black = imagecolorallocate($img, 0, 0, 0);
-    imagefilledellipse($img, $cx, $cy - 8, 22, 22, $red);
-    imagefilledellipse($img, $cx, $cy - 8, 8, 8, $white);
-    imageellipse($img, $cx, $cy - 8, 22, 22, $black);
-    $tri = [$cx - 6, $cy + 1, $cx + 6, $cy + 1, $cx, $cy + 12];
-    imagefilledpolygon($img, $tri, $red);
-    imagepolygon($img, $tri, $black);
-    imagepng($img, $path, 6);
+function license_is_cc_compatible(string $license): bool {
+    $l = strtolower($license);
+    return $l === 'cc0' || $l === 'public domain' || str_starts_with($l, 'cc by');
+}
+
+/**
+ * Tente le fallback Wikimedia : itere sur nearby_pois, prend le 1er POI dont
+ * l'image satisfait : >=WIKIMEDIA_MIN_W de large + license CC compatible.
+ * Retourne [poi, imageinfo] ou null.
+ */
+function find_wikimedia_fallback(array $station): ?array {
+    $pois = $station['nearby_pois'] ?? [];
+    $tried = 0;
+    foreach ($pois as $poi) {
+        if ($tried >= WIKIMEDIA_MAX_POI_TRIES) break;
+        $imgUrl = $poi['image_url'] ?? '';
+        if (!$imgUrl) continue;
+        $filename = extract_wikimedia_filename($imgUrl);
+        if (!$filename) continue;
+        $tried++;
+        $info = wikimedia_imageinfo($filename);
+        if (!$info) continue;
+        if ($info['width'] < WIKIMEDIA_MIN_W) continue;
+        if (!license_is_cc_compatible($info['license'])) continue;
+        // Filtre mime : photo (pas SVG, pas PDF)
+        if (!in_array($info['mime'], ['image/jpeg', 'image/png'], true)) continue;
+        return ['poi' => $poi, 'info' => $info];
+    }
+    return null;
 }
 
 // ------------------------------------------------------------------
@@ -333,27 +354,26 @@ function set_hero_mapillary(array &$station, string $slug, array $img): void {
     ];
 }
 
-function set_hero_esri(array &$station, string $slug, int $tilesFetched): void {
-    $lat = (float)$station['latitude'];
-    $lon = (float)$station['longitude'];
-    $address = $station['address'] ?? '';
+function set_hero_wikimedia(array &$station, string $slug, array $poi, array $info, int $finalW, int $finalH): void {
     $lineLabel = $station['name_full'] ?? $station['name'];
+    $poiName = $poi['name'] ?? '?';
+    $poiDist = (int)($poi['nearest_exit']['distance_m'] ?? 0);
     $station['hero_image'] = [
-        'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/satellite-esri.png",
+        'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/wikimedia.jpg",
         'alt'    => sprintf(
-            "Vue satellite ESRI World Imagery centrée sur la station %s — %s (%.6f°N, %.6f°E), zoom %d (mosaïque %d tiles)",
-            $lineLabel, $address, $lat, $lon, ESRI_ZOOM, $tilesFetched
+            "Vue Wikimedia Commons de %s (POI proche de la station %s, à %d m) — photo %s",
+            $poiName, $lineLabel, $poiDist, $info['license']
         ),
-        'width'  => FALLBACK_W,
-        'height' => FALLBACK_H,
+        'width'  => $finalW,
+        'height' => $finalH,
         'credit' => [
-            'author'      => 'ESRI World Imagery contributors',
-            'license'     => 'ESRI Master License Agreement',
-            'license_url' => 'https://www.esri.com/en-us/legal/terms/master-agreement',
-            'source_url'  => sprintf('https://www.arcgis.com/apps/mapviewer/index.html?center=%.6f,%.6f&level=%d&basemap=satellite', $lon, $lat, ESRI_ZOOM),
+            'author'      => $info['artist'] ?: 'Wikimedia Commons contributors',
+            'license'     => $info['license'] ?: 'CC BY-SA 4.0',
+            'license_url' => $info['license_url'] ?: 'https://creativecommons.org/licenses/by-sa/4.0',
+            'source_url'  => $info['desc_url'] ?: '',
             'date'        => TODAY,
         ],
-        'source'           => 'esri_satellite_fallback',
+        'source'           => 'wikimedia_poi_fallback',
         'confidence_score' => 22,
         'confidence_level' => 'auto_generated',
     ];
@@ -431,34 +451,70 @@ function process_station(string $slug, string $token): array {
         // Si crop/download fail : on tombe en fallback
     }
 
-    // 2. Fallback ESRI satellite
+    // 2. Fallback Wikimedia (via nearby_pois)
     $reason = $total === 0
         ? 'mapillary_zero_results_all_radii'
-        : ($best === null ? 'mapillary_no_valid_candidate_in_200m' : 'mapillary_download_or_crop_failed');
+        : ($best === null ? 'mapillary_no_valid_candidate_in_100m' : 'mapillary_download_or_crop_failed');
 
-    $esriSrc = "$srcDir/satellite-esri.png";
-    $tilesFetched = fetch_esri_satellite($lat, $lon, $esriSrc);
-    if ($tilesFetched === 0) {
-        fail("$slug : ESRI satellite fallback failed (0 tiles fetched)");
+    $wkFallback = find_wikimedia_fallback($station);
+    if ($wkFallback === null) {
+        return [
+            'slug'            => $slug,
+            'source'          => 'no_fallback_available',
+            'total'           => $total,
+            'image_id'        => null,
+            'creator'         => null,
+            'date'            => null,
+            'dist_m'          => null,
+            'compass'         => null,
+            'matched_radius_m'=> null,
+            'attempts'        => $attempts,
+            'variants'        => 0,
+            'wikimedia_poi'   => null,
+            'reason'          => $reason . '+wikimedia_no_valid_poi (kept previous hero)',
+        ];
     }
-    add_marker_to_png($esriSrc);
-    $n = generate_variants($esriSrc, $slug, $outDir);
-    set_hero_esri($station, $slug, $tilesFetched);
+    $poi = $wkFallback['poi'];
+    $info = $wkFallback['info'];
+    $wkSrc = "$srcDir/wikimedia.jpg";
+    if (!http_download($info['url'], $wkSrc)) {
+        fail("$slug : Wikimedia download failed for {$info['url']}");
+    }
+    $cropped = "$srcDir/wikimedia-crop.jpg";
+    if (!central_crop_16_9($wkSrc, $cropped)) {
+        @copy($wkSrc, $cropped);
+    }
+    @unlink($wkSrc);
+    rename($cropped, $wkSrc);
+    // Read final dimensions after crop
+    $finalInfo = shell_exec(escapeshellcmd(SIPS) . ' -g pixelWidth -g pixelHeight ' . escapeshellarg($wkSrc));
+    preg_match('/pixelWidth:\s*(\d+).*pixelHeight:\s*(\d+)/s', (string)$finalInfo, $m2);
+    $finalW = (int)($m2[1] ?? $info['width']);
+    $finalH = (int)($m2[2] ?? $info['height']);
+    $n = generate_variants($wkSrc, $slug, $outDir);
+    set_hero_wikimedia($station, $slug, $poi, $info, $finalW, $finalH);
     save_station($slug, $station);
     return [
         'slug'            => $slug,
-        'source'          => 'esri_satellite_fallback',
+        'source'          => 'wikimedia_poi_fallback',
         'total'           => $total,
         'image_id'        => null,
-        'creator'         => null,
+        'creator'         => $info['artist'],
         'date'            => null,
-        'dist_m'          => null,
+        'dist_m'          => (int)($poi['nearest_exit']['distance_m'] ?? 0),
         'compass'         => null,
         'matched_radius_m'=> null,
         'attempts'        => $attempts,
         'variants'        => $n,
-        'tiles'           => $tilesFetched,
-        'reason'          => $reason,
+        'wikimedia_poi'   => [
+            'name'     => $poi['name'] ?? '?',
+            'category' => $poi['category'] ?? '?',
+            'license'  => $info['license'],
+            'src_w'    => $info['width'],
+            'src_h'    => $info['height'],
+            'desc_url' => $info['desc_url'],
+        ],
+        'reason'          => $reason . '+wikimedia_match',
     ];
 }
 
