@@ -38,10 +38,14 @@ ini_set('memory_limit', '512M');
 const ROOT          = __DIR__ . '/..';
 const STATIONS_DIR  = ROOT . '/public_html/data/stations';
 const POI_CACHE     = __DIR__ . '/cache-gtfs/wikidata-pois-cache.json';
+const SECRETS_PHP   = ROOT . '/public_html/config/secrets.php';
 
 const SPARQL_URL    = 'https://query.wikidata.org/sparql';
 const WP_SUMMARY_URL = 'https://fr.wikipedia.org/api/rest_v1/page/summary/';
 const COMMONS_FILE   = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+const WD_ENTITY_URL  = 'https://www.wikidata.org/wiki/Special:EntityData/';
+const ANTHROPIC_URL  = 'https://api.anthropic.com/v1/messages';
+const ANTHROPIC_MODEL = 'claude-haiku-4-5-20251001';
 
 const SEARCH_RADIUS_KM    = 0.8;        // rayon SPARQL
 const TOP_N               = 12;         // top retenu par station
@@ -61,6 +65,8 @@ const NOISE_DESC_REGEX = '/(station du m[ée]tro|ligne du m[ée]tro|station de m
 $opts = parse_cli_args($argv);
 $onlyStation = $opts['station'] ?? null;
 $preview     = (bool)($opts['preview'] ?? false);
+// v2 : --paraphrase active le post-traitement Claude API sur les descriptions POI
+$paraphrase  = (bool)($opts['paraphrase'] ?? false) || in_array('--paraphrase', $argv, true);
 
 // ============================================================================
 // HELPERS
@@ -218,6 +224,204 @@ SPARQL;
 }
 
 /** Fetch summary FR depuis Wikipedia REST API par titre. */
+/** Charge la cle ANTHROPIC_API_KEY depuis secrets.php. */
+function load_anthropic_key(): string {
+    if (!is_file(SECRETS_PHP)) {
+        fwrite(STDERR, "[ERREUR] secrets.php absent : " . SECRETS_PHP . "\n");
+        exit(2);
+    }
+    $secrets = require SECRETS_PHP;
+    $key = $secrets['ANTHROPIC_API_KEY'] ?? null;
+    if (!$key || str_starts_with($key, 'sk-ant-api03-COLLER')) {
+        fwrite(STDERR, "[ERREUR] ANTHROPIC_API_KEY manquant dans secrets.php\n");
+        exit(2);
+    }
+    return $key;
+}
+
+/**
+ * Wikidata Entities API : recupere quelques claims utiles pour enrichir
+ * la description d'un POI (architect P84, inception P571, instance of P31,
+ * heritage status P1435, height P2048, area P2046).
+ * Retourne un tableau text-friendly de faits.
+ */
+function fetch_wikidata_facts(string $qid): array {
+    $url = WD_ENTITY_URL . $qid . '.json';
+    $resp = http_get($url, 10);
+    if ($resp === null) return [];
+    $d = json_decode($resp, true);
+    $entity = $d['entities'][$qid] ?? null;
+    if (!$entity) return [];
+    $claims = $entity['claims'] ?? [];
+    $facts = [];
+
+    // P31 instance of (label si dispo en FR)
+    $p31_labels = wd_resolve_qids_to_labels(wd_claim_qids($claims, 'P31'));
+    if ($p31_labels) $facts['type'] = implode(', ', array_slice($p31_labels, 0, 3));
+
+    // P571 inception (date de creation)
+    $p571 = wd_claim_time($claims, 'P571');
+    if ($p571) $facts['inception'] = $p571;
+
+    // P84 architect (label)
+    $p84_labels = wd_resolve_qids_to_labels(wd_claim_qids($claims, 'P84'));
+    if ($p84_labels) $facts['architect'] = implode(', ', array_slice($p84_labels, 0, 3));
+
+    // P170 creator
+    $p170_labels = wd_resolve_qids_to_labels(wd_claim_qids($claims, 'P170'));
+    if ($p170_labels) $facts['creator'] = implode(', ', array_slice($p170_labels, 0, 2));
+
+    // P1435 heritage status (Monument Historique etc.)
+    $p1435_labels = wd_resolve_qids_to_labels(wd_claim_qids($claims, 'P1435'));
+    if ($p1435_labels) $facts['heritage'] = implode(', ', array_slice($p1435_labels, 0, 2));
+
+    // P2048 height (Q-units, on garde l'amount)
+    $p2048 = wd_claim_quantity($claims, 'P2048');
+    if ($p2048) $facts['height'] = $p2048;
+
+    // P2046 area
+    $p2046 = wd_claim_quantity($claims, 'P2046');
+    if ($p2046) $facts['area'] = $p2046;
+
+    return $facts;
+}
+
+/** Extrait les QIDs d'une claim donnee (ex P84 -> [Q123, Q456]). */
+function wd_claim_qids(array $claims, string $prop): array {
+    $qids = [];
+    foreach ($claims[$prop] ?? [] as $c) {
+        $id = $c['mainsnak']['datavalue']['value']['id'] ?? null;
+        if ($id) $qids[] = $id;
+    }
+    return $qids;
+}
+
+/** Extrait une date d'une claim (P571 inception, time format Wikidata). */
+function wd_claim_time(array $claims, string $prop): ?string {
+    foreach ($claims[$prop] ?? [] as $c) {
+        $time = $c['mainsnak']['datavalue']['value']['time'] ?? null;
+        if ($time) {
+            // Format +YYYY-MM-DDTHH:MM:SSZ -> on garde l'annee
+            if (preg_match('/^[+\-](\d{1,4})/', $time, $m)) {
+                return $m[1];
+            }
+        }
+    }
+    return null;
+}
+
+/** Extrait une quantite (P2048 height, P2046 area). */
+function wd_claim_quantity(array $claims, string $prop): ?string {
+    foreach ($claims[$prop] ?? [] as $c) {
+        $val = $c['mainsnak']['datavalue']['value'] ?? null;
+        if (isset($val['amount'])) {
+            $amount = ltrim($val['amount'], '+');
+            return $amount;
+        }
+    }
+    return null;
+}
+
+/** Resout des QIDs en labels FR via SPARQL (batch jusqu'a 20 QIDs). */
+function wd_resolve_qids_to_labels(array $qids): array {
+    if (empty($qids)) return [];
+    $qids = array_slice(array_unique($qids), 0, 20);
+    $values = implode(' ', array_map(fn($q) => "wd:$q", $qids));
+    $query = "SELECT ?id ?label WHERE { VALUES ?id { $values } ?id rdfs:label ?label . FILTER(LANG(?label) = \"fr\") }";
+    $url = SPARQL_URL . '?query=' . urlencode($query) . '&format=json';
+    $resp = http_get($url, 10);
+    usleep(SPARQL_SLEEP_US);
+    if ($resp === null) return [];
+    $d = json_decode($resp, true);
+    $out = [];
+    foreach ($d['results']['bindings'] ?? [] as $b) {
+        $label = $b['label']['value'] ?? null;
+        if ($label) $out[] = $label;
+    }
+    return $out;
+}
+
+/**
+ * Appelle l'API Anthropic Messages pour paraphraser un POI.
+ * Retourne la description originale (50-80 mots) ou null si erreur.
+ */
+function call_anthropic_paraphrase(string $apiKey, string $poiName, ?string $wikipediaExtract, array $wdFacts, string $stationName, ?int $distanceM): ?string {
+    $factsLines = [];
+    foreach ($wdFacts as $k => $v) $factsLines[] = "- $k : $v";
+    $factsBlock = $factsLines ? implode("\n", $factsLines) : "(aucun fait Wikidata structuré disponible)";
+    $extractBlock = $wikipediaExtract ?: '(pas d\'extrait Wikipedia disponible)';
+    $distanceTxt = $distanceM ? "Distance station : ~{$distanceM} m" : "";
+
+    $prompt = <<<PROMPT
+Tu rédiges des descriptions de POI pour un guide transport parisien (bougeaparis.fr).
+
+POI à décrire : **{$poiName}**
+Station de référence : {$stationName}
+{$distanceTxt}
+
+EXTRAIT WIKIPEDIA FR (source factuelle — NE PAS RECOPIER) :
+{$extractBlock}
+
+FAITS WIKIDATA STRUCTURÉS :
+{$factsBlock}
+
+CONSIGNES STRICTES :
+1. Rédige 2 phrases originales, 40-70 mots au total.
+2. INTERDIT : reprendre verbatim plus de 4 mots consécutifs de l'extrait Wikipedia.
+3. Zéro invention : tout fait doit être sourcé ci-dessus.
+4. Croiser au moins 2 angles (date + créateur, type + dimensions, etc.) si possible.
+5. Ton informatif sobre, pas de superlatif gratuit ("incroyable", "magnifique").
+6. Ne commence PAS par "C'est un/une X" (formule scolaire).
+7. Pas de référence explicite à Wikipedia ni à la station ("à proximité de la station…" interdit).
+
+RÉPONDS UNIQUEMENT avec le texte de la description, sans préambule, sans guillemets.
+PROMPT;
+
+    $payload = [
+        'model'      => ANTHROPIC_MODEL,
+        'max_tokens' => 300,
+        'messages'   => [
+            ['role' => 'user', 'content' => $prompt],
+        ],
+    ];
+
+    $ch = curl_init(ANTHROPIC_URL);
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_POSTFIELDS     => json_encode($payload),
+        CURLOPT_HTTPHEADER     => [
+            'Content-Type: application/json',
+            'x-api-key: ' . $apiKey,
+            'anthropic-version: 2023-06-01',
+        ],
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 30,
+        CURLOPT_USERAGENT      => USER_AGENT,
+    ]);
+    $resp = curl_exec($ch);
+    $code = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($code !== 200) {
+        log_info("    Anthropic HTTP $code");
+        return null;
+    }
+    $d = json_decode($resp, true);
+    $content = $d['content'][0]['text'] ?? null;
+    if (!$content) return null;
+    $content = trim($content);
+    // Nettoyage : retirer eventuels guillemets autour
+    $content = trim($content, "\"'« »");
+    // Trace usage tokens si dispo
+    $usage = $d['usage'] ?? null;
+    if ($usage) {
+        $GLOBALS['CLAUDE_INPUT_TOKENS']  = ($GLOBALS['CLAUDE_INPUT_TOKENS']  ?? 0) + ($usage['input_tokens']  ?? 0);
+        $GLOBALS['CLAUDE_OUTPUT_TOKENS'] = ($GLOBALS['CLAUDE_OUTPUT_TOKENS'] ?? 0) + ($usage['output_tokens'] ?? 0);
+        $GLOBALS['CLAUDE_CALLS']         = ($GLOBALS['CLAUDE_CALLS']         ?? 0) + 1;
+    }
+    return $content;
+}
+
 function wikipedia_summary(string $title): ?array {
     $url = WP_SUMMARY_URL . rawurlencode($title);
     $resp = http_get($url, 10);
@@ -361,6 +565,41 @@ function enrich_poi(array $b, array &$cache, int &$apiCalls): array {
     return $entry;
 }
 
+/**
+ * v2 : pour un POI (entry cache), appelle Claude pour paraphraser le wikipedia_extract.
+ * Stocke le resultat dans $entry['description_paraphrased'] + cache.
+ * Si deja fait, retourne tel quel (idempotent).
+ * Retourne $entry mis a jour.
+ */
+function paraphrase_poi(array $entry, string $apiKey, string $stationName, ?int $distanceM, array &$cache): array {
+    $id = $entry['wikidata_id'] ?? null;
+    if (!$id) return $entry;
+
+    // Cache hit
+    if (!empty($entry['description_paraphrased'])) return $entry;
+
+    $extract = $entry['wikipedia_extract'] ?? null;
+    if (!$extract) return $entry; // pas d'extract = on garde la description Wikidata courte (deja non verbatim)
+
+    // Fetch Wikidata facts (P31, P571, P84, etc.)
+    $wdFacts = fetch_wikidata_facts($id);
+    usleep(SPARQL_SLEEP_US);
+
+    // Appel Claude
+    $name = $entry['name'] ?? '?';
+    $paraphrase = call_anthropic_paraphrase($apiKey, $name, $extract, $wdFacts, $stationName, $distanceM);
+    if (!$paraphrase) {
+        log_info("    Claude paraphrase failed pour $name ($id) — skip");
+        return $entry;
+    }
+
+    $entry['description_paraphrased'] = $paraphrase;
+    $entry['wikidata_facts']          = $wdFacts;
+    $entry['paraphrased_at']          = date('c');
+    $cache[$id] = $entry;
+    return $entry;
+}
+
 /** Tronque un extract Wikipedia a ~150 chars sur une frontiere de phrase si possible. */
 function truncate_extract(?string $extract, int $maxChars = 200): ?string {
     if ($extract === null) return null;
@@ -383,11 +622,12 @@ function truncate_extract(?string $extract, int $maxChars = 200): ?string {
 // CONSTRUCTION DU NEARBY_POIS POUR UNE STATION
 // ============================================================================
 
-function build_nearby_pois(array $stationJson, array &$cache, int &$apiCalls): array {
+function build_nearby_pois(array $stationJson, array &$cache, int &$apiCalls, ?string $apiKey = null, bool $paraphrase = false): array {
     $info = ['count' => 0, 'pois' => []];
     $lat = $stationJson['latitude']  ?? null;
     $lon = $stationJson['longitude'] ?? null;
     $exits = $stationJson['exits']    ?? [];
+    $stationName = $stationJson['name_full'] ?? $stationJson['name'] ?? '?';
     if ($lat === null || $lon === null) {
         log_info("  station sans lat/lon, skip");
         return $info;
@@ -414,12 +654,20 @@ function build_nearby_pois(array $stationJson, array &$cache, int &$apiCalls): a
     foreach ($top as $b) {
         $entry = enrich_poi($b, $cache, $apiCalls);
         $nearestExit = find_nearest_exit($entry['latitude'], $entry['longitude'], $exits);
+        $distanceM = $nearestExit['distance_m'] ?? null;
+        // v2 : paraphrase Claude si flag actif
+        if ($paraphrase && $apiKey) {
+            $entry = paraphrase_poi($entry, $apiKey, $stationName, $distanceM, $cache);
+        }
+        // Priorite : description_paraphrased > truncate_extract > Wikidata desc courte
+        $description = $entry['description_paraphrased']
+            ?? truncate_extract($entry['wikipedia_extract'])
+            ?? $entry['description'];
         $pois[] = [
             'wikidata_id'   => $entry['wikidata_id'],
             'name'          => $entry['name'],
             'category'      => $entry['category'],
-            'description'   => truncate_extract($entry['wikipedia_extract'])
-                                ?? $entry['description'],
+            'description'   => $description,
             'image_url'     => $entry['image_url'],
             'wikipedia_url' => $entry['wikipedia_url'],
             'latitude'      => $entry['latitude'],
@@ -441,6 +689,13 @@ $cache = load_cache();
 log_info(sprintf('  %d POIs deja en cache', count($cache)));
 $apiCalls = 0;
 
+// v2 : charger la cle Anthropic si paraphrase actif
+$apiKey = null;
+if ($paraphrase) {
+    $apiKey = load_anthropic_key();
+    log_info('  Mode --paraphrase active : Claude API ' . ANTHROPIC_MODEL);
+}
+
 log_info('Phase 2: iteration data/stations/*.json');
 $files = glob(STATIONS_DIR . '/*.json');
 if ($onlyStation) {
@@ -458,7 +713,7 @@ foreach ($files as $path) {
     if (!is_array($json)) { log_info("  $slug : JSON invalide, skip"); $skipCount++; continue; }
 
     log_info("  $slug : SPARQL en cours...");
-    $info = build_nearby_pois($json, $cache, $apiCalls);
+    $info = build_nearby_pois($json, $cache, $apiCalls, $apiKey ?? null, $paraphrase);
 
     if ($preview) {
         echo "\n############################################################\n";
@@ -530,6 +785,17 @@ foreach ($files as $path) {
 save_cache($cache);
 log_info(sprintf('Cache POIs sauvegarde : %d entrees totales (%d nouveaux fetchs Wikipedia cette run)',
     count($cache), $apiCalls));
+
+// v2 : recap usage Claude
+if ($paraphrase) {
+    $calls = $GLOBALS['CLAUDE_CALLS'] ?? 0;
+    $inT   = $GLOBALS['CLAUDE_INPUT_TOKENS'] ?? 0;
+    $outT  = $GLOBALS['CLAUDE_OUTPUT_TOKENS'] ?? 0;
+    // Pricing Haiku 4.5 : input ~$1/M, output ~$5/M (Anthropic console)
+    $cost  = ($inT * 1.0 + $outT * 5.0) / 1_000_000;
+    log_info(sprintf('Claude API : %d appels, %d input tokens, %d output tokens, ~$%.4f total',
+        $calls, $inT, $outT, $cost));
+}
 
 if ($preview) {
     log_info('Preview terminee. Aucun fichier ecrit.');
