@@ -1,0 +1,617 @@
+{
+    "published": true,
+    "slug": "reaumur-sebastopol",
+    "name": "Réaumur - Sébastopol",
+    "name_full": "Réaumur - Sébastopol (Métro 3, 4)",
+    "arrondissement": "2e (Paris)",
+    "address": "Bd de Sébastopol / rue Réaumur, 75002 Paris",
+    "latitude": 48.866092916070166,
+    "longitude": 2.351856718715776,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3",
+            "slug": "metro-3",
+            "color": "#6E6E00",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "29",
+            "38",
+            "39"
+        ],
+        "nocturne": [
+            "N12",
+            "N13",
+            "N14",
+            "N23"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 6,
+            "nearby_count": 12
+        }
+    },
+    "seo": {
+        "description": "Station Réaumur - Sébastopol : M3 + M4 dans le 2e arr., cœur du Sentier (quartier mode et tech). Croisement historique des grands axes parisiens."
+    },
+    "hero": {
+        "tagline": "M3 + M4 — Sentier, quartier mode et tech",
+        "description": "Station <strong>Réaumur - Sébastopol</strong> dans le <strong>2e arrondissement</strong>, à l'intersection de la <strong>rue Réaumur</strong> et du <strong>boulevard de Sébastopol</strong>. Desservie par <strong>M3</strong> (ouverte 19 octobre 1904) et <strong>M4</strong> (ouverte 21 avril 1908). Cœur du <strong>quartier du Sentier</strong>, historiquement <strong>capitale française du textile et de la mode</strong>, aujourd'hui également pôle <strong>tech parisien</strong> (start-ups)."
+    },
+    "adjacent_stations": {
+        "metro-3": {
+            "previous": {
+                "name": "Arts et Métiers",
+                "slug": "arts-et-metiers",
+                "direction": "Gallieni"
+            },
+            "next": {
+                "name": "Sentier",
+                "slug": "sentier",
+                "direction": "Pont de Levallois - Bécon"
+            }
+        },
+        "metro-4": {
+            "previous": {
+                "name": "Etienne Marcel",
+                "slug": "etienne-marcel",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Strasbourg - Saint-Denis",
+                "slug": "strasbourg-saint-denis",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Réaumur - Sébastopol</strong> est située dans le <strong>2e arrondissement de Paris</strong>, à l'intersection de la <strong>rue Réaumur</strong> et du <strong>boulevard de Sébastopol</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M3</strong> (Pont de Levallois ↔ Gallieni) et <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac). Bus 20, 38, 39, 47.",
+        "La station <strong>M3</strong> ouvre le <strong>19 octobre 1904</strong> avec le tronçon Père Lachaise ↔ Villiers de la M3. La station <strong>M4</strong> est ajoutée le <strong>21 avril 1908</strong> avec le tronçon originel de la M4. Cas particulier : la station se nommait initialement <strong>« Rue Saint-Denis »</strong> sur la M3, renommée en 1907.",
+        "Au cœur du <strong>quartier du Sentier</strong>, historiquement <strong>capitale française du textile et de la mode</strong> depuis le XIXᵉ siècle. Ateliers de confection, grossistes en tissus, boutiques de prêt-à-porter. Au XXIᵉ, le Sentier s'est diversifié vers le <strong>tech</strong> (start-ups internet, agences digitales, espaces de coworking). Surnommé <strong>« Silicon Sentier »</strong>."
+    ],
+    "history": {
+        "title": "1904 : M3, 1908 : M4, et le Sentier mode/tech",
+        "paragraphs": [
+            "La station <strong>M3</strong> ouvre le <strong>19 octobre 1904</strong> avec le tronçon Père Lachaise ↔ Villiers. Initialement nommée <strong>« Rue Saint-Denis »</strong>, renommée <strong>« Réaumur - Sébastopol »</strong> en 1907.",
+            "La station <strong>M4</strong> est ajoutée le <strong>21 avril 1908</strong> avec le tronçon originel de la M4 (Porte de Clignancourt ↔ Châtelet).",
+            "Les noms : <strong>René-Antoine Ferchault de Réaumur</strong> (1683-1757), savant et naturaliste français, inventeur du thermomètre Réaumur. Le <strong>boulevard de Sébastopol</strong> commémore la <strong>bataille de Sébastopol</strong> (1854-1855) durant la guerre de Crimée — l'une des victoires de Napoléon III.",
+            "Le quartier autour est le <strong>Sentier</strong>, historiquement <strong>capitale française du textile et de la mode</strong> depuis le XIXᵉ siècle. Concentration unique d'ateliers de confection, grossistes en tissus, boutiques de prêt-à-porter. Origine de nombreuses marques françaises : Tati, Mango, Etam, etc.",
+            "Au XXIᵉ siècle, le Sentier se diversifie vers le <strong>tech parisien</strong>. Surnommé <strong>« Silicon Sentier »</strong> dans les années 2000 (Free, Deezer, Vente-Privée, Sarenza, BlaBlaCar) ont leurs sièges historiques dans le quartier ou à proximité. Le <strong>Numa</strong>, premier espace de coworking français (2008), était installé rue du Caire."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Réaumur - Sébastopol ?",
+            "answer": "<strong>M3</strong> (1904) et <strong>M4</strong> (1908). Bus 20, 38, 39, 47."
+        },
+        {
+            "question": "Pourquoi le nom Réaumur ?",
+            "answer": "De <strong>René-Antoine Ferchault de Réaumur</strong> (1683-1757), savant français, naturaliste et physicien, <strong>inventeur du thermomètre Réaumur</strong>. La rue Réaumur a été ouverte à la fin du XIXᵉ siècle."
+        },
+        {
+            "question": "Qu'est-ce que le Sentier ?",
+            "answer": "Quartier du 2e arrondissement, historiquement <strong>capitale française du textile et de la mode</strong> depuis le XIXᵉ siècle. Au XXIᵉ : également pôle <strong>tech parisien</strong> (« Silicon Sentier ») avec Free, Deezer, Vente-Privée, BlaBlaCar."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M4 directe</strong> : ~4 min (2 stations vers le sud)."
+        },
+        {
+            "question": "Comment aller à Opéra ?",
+            "answer": "<strong>M3 directe</strong> : ~5 min (3 stations vers Pont de Levallois)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1904/1908."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Sentier (quartier mode)</strong> à pied — explorer les ateliers et grossistes.",
+        "Pour <strong>Opéra</strong> : M3 directe (~5 min).",
+        "Pour <strong>Châtelet</strong> : M4 directe (~4 min).",
+        "Pour <strong>République</strong> : M3 directe (~7 min).",
+        "Quartier dense en boutiques de prêt-à-porter et textile."
+    ],
+    "trivia": [
+        {
+            "icon": "🌡️",
+            "title": "René-Antoine de Réaumur — inventeur du thermomètre Réaumur",
+            "content": "Le nom <strong>Réaumur</strong> vient de <strong>René-Antoine Ferchault de Réaumur</strong> (1683-1757), savant français polymorphe : <strong>physicien, naturaliste, métallurgiste</strong>. <strong>Inventeur du thermomètre Réaumur</strong> (échelle thermométrique 0-80°, où 0°R = 0°C = congélation eau et 80°R = 100°C = ébullition eau). Étudie aussi l'<strong>acier</strong>, les <strong>insectes</strong> (6 volumes de <em>Mémoires pour servir à l'histoire des insectes</em>). Membre de l'Académie des sciences. La rue Réaumur a été ouverte à la fin du XIXᵉ siècle."
+        },
+        {
+            "icon": "💻",
+            "title": "Silicon Sentier — pôle tech parisien",
+            "content": "Le quartier du <strong>Sentier</strong>, capitale historique du textile, est devenu au XXIᵉ siècle un <strong>pôle tech parisien</strong>, surnommé <strong>« Silicon Sentier »</strong>. Sièges historiques de start-ups françaises : <strong>Free</strong> (Xavier Niel), <strong>Deezer</strong>, <strong>Vente-Privée</strong> (Veepee), <strong>Sarenza</strong>, <strong>BlaBlaCar</strong>. Le <strong>Numa</strong>, premier espace de coworking français (2008), était installé rue du Caire. Symbole de l'<strong>écosystème tech parisien</strong> émergent au cœur d'un quartier historiquement industriel."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Réaumur - Sébastopol → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-chatelet/"
+        },
+        {
+            "destination_name": "Opéra via M3",
+            "destination_slug": "opera",
+            "destination_full_name": "Réaumur - Sébastopol → Opéra",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Pont de Levallois",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-opera/"
+        },
+        {
+            "destination_name": "République via M3",
+            "destination_slug": "republique",
+            "destination_full_name": "Réaumur - Sébastopol → République",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Gallieni",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-republique/"
+        },
+        {
+            "destination_name": "Gare du Nord via M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Réaumur - Sébastopol → Gare du Nord",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Sentier (quartier mode)",
+            "destination_slug": "sentier",
+            "destination_full_name": "Réaumur - Sébastopol → Sentier (quartier mode)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-sentier/"
+        },
+        {
+            "destination_name": "Saint-Michel via M4",
+            "destination_slug": "saint-michel",
+            "destination_full_name": "Réaumur - Sébastopol → Saint-Michel",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-reaumur-sebastopol/reaumur-sebastopol-vers-saint-michel/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q178065",
+            "name": "Centre national d'art et de culture Georges-Pompidou",
+            "category": "musée",
+            "description": "Le Centre national d'art et de culture Georges-Pompidou (CNAC) — communément appelé « centre Pompidou », ou plus familièrement « Beaubourg » — est une institution parisienne qui regroupe le même…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Montmartre%20Blick%20aufs%20Centre%20Georges-Pompidou.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou",
+            "latitude": 48.860642,
+            "longitude": 2.352245,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. Beaubourg",
+                "distance_m": 557,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1538826",
+            "name": "musée des Arts et Métiers",
+            "category": "musée",
+            "description": "Le Musée des Arts et Métiers, ou MuAM, est un musée des sciences et des technologies, du Conservatoire national des arts et métiers, dans le 3e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Arts%20et%20M%C3%A9tiers%20337.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers",
+            "latitude": 48.866111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. de Turbigo",
+                "distance_m": 75,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1338207",
+            "name": "église Saint-Eustache de Paris",
+            "category": "église",
+            "description": "L’église Saint-Eustache est une église paroissiale catholique située 146, rue Rambuteau dans le 1er arrondissement de Paris, au cœur du quartier des Halles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
+            "latitude": 48.863333,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Saint-Denis",
+                "distance_m": 544,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q684594",
+            "name": "porte Saint-Denis",
+            "category": "site notable",
+            "description": "La porte Saint-Denis est un arc de triomphe situé dans l'actuel 10e arrondissement de Paris et construit en 1673, par l'architecte François Blondel, à la gloire de Louis XIV.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint%20Denis%20-%20Paris%20X%20%28FR75%29%20-%202023-06-14%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis",
+            "latitude": 48.869722,
+            "longitude": 2.3525,
+            "nearest_exit": {
+                "number": "4",
+                "name": "sq. Émile Chautemps",
+                "distance_m": 287,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1362670",
+            "name": "place des Victoires",
+            "category": "place",
+            "description": "La place des Victoires est une place de Paris dédiée lors de sa création à Louis XIV. Elle est située au cœur du centre historique de la capitale, à cheval sur les 1er et 2e arrondissements.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
+            "latitude": 48.865833,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Saint-Denis",
+                "distance_m": 702,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q977732",
+            "name": "musée d'art et d'histoire du judaïsme",
+            "category": "musée",
+            "description": "Le musée d'Art et d'Histoire du judaïsme (mahJ) est installé dans l'hôtel de Saint-Aignan dans le quartier du Marais.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20H%C3%B4tel%20de%20Saint-Aignan%20-%20Muse%C3%A9%20du%20Juda%C3%AFsme.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_et_d%27Histoire_du_juda%C3%AFsme",
+            "latitude": 48.861111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. Beaubourg",
+                "distance_m": 455,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q800627",
+            "name": "Châtelet - Les Halles",
+            "category": "gare",
+            "description": "La gare de Châtelet - Les Halles est une gare ferroviaire française située dans le 1er arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chatelet-Les-Halles%20aCRW%201557.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Ch%C3%A2telet_-_Les_Halles",
+            "latitude": 48.861389,
+            "longitude": 2.346667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Saint-Denis",
+                "distance_m": 640,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q525891",
+            "name": "église Saint-Merri",
+            "category": "église",
+            "description": "L’église Saint-Merry, communément appelée Saint-Merry, est une église catholique située sur l’actuelle rue Saint Martin au 78 et sur la rue de la Verrerie, avec au 76 le siège de la paroisse, dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GraphyArchy%20-%20Wiki00006.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Merri",
+            "latitude": 48.85906,
+            "longitude": 2.35083,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. Beaubourg",
+                "distance_m": 761,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q950217",
+            "name": "porte Saint-Martin",
+            "category": "monument",
+            "description": "La porte Saint-Martin est un monument de Paris, situé à l'emplacement d'une porte de l'ancienne enceinte de Charles V.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint-Martin%2C%20Paris%208%20June%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Martin",
+            "latitude": 48.869171,
+            "longitude": 2.355601,
+            "nearest_exit": {
+                "number": "4",
+                "name": "sq. Émile Chautemps",
+                "distance_m": 285,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1067494",
+            "name": "tour du Temple",
+            "category": "palais",
+            "description": "La tour du Temple et son enclos constituaient la maison du Temple, ancienne forteresse parisienne située dans le nord du Marais, au sein du 3e arrondissement de Paris, qui fut détruite en 1808.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoffbauer-Brezet-Temple1734.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_du_Temple",
+            "latitude": 48.86528,
+            "longitude": 2.36222,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Vertus",
+                "distance_m": 286,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q917337",
+            "name": "hôtel de Soubise",
+            "category": "site notable",
+            "description": "L'hôtel de Soubise, anciennement hôtel de Clisson puis hôtel de Guise, est un hôtel particulier parisien situé au coin de l'actuelle rue des Francs-Bourgeois et de la rue des Archives dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Soubise%2C%20Paris%209%20June%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Soubise",
+            "latitude": 48.860556,
+            "longitude": 2.358333,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. des Vertus",
+                "distance_m": 499,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1092104",
+            "name": "cimetière des Innocents",
+            "category": "site notable",
+            "description": "Le cimetière des Innocents, ou cimetière des Saints-Innocents, est un cimetière aujourd'hui disparu, situé dans le quartier des Halles de Paris, à l'emplacement de l'actuelle place Joachim-du-Bellay…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cimetiere%20des%20Innocents.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_des_Innocents",
+            "latitude": 48.860556,
+            "longitude": 2.347778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Sébastopol",
+                "distance_m": 694,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de Sébastopol",
+            "address_full": "103 Boulevard de Sébastopol 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866077,
+            "longitude": 2.352205,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. Conté",
+            "address_full": "57 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865678,
+            "longitude": 2.356613,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Réaumur",
+            "address_full": "31 Rue de Palestro 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866436,
+            "longitude": 2.35205,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Réaumur",
+            "address_full": "2 Place Theodor Herzl 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865417,
+            "longitude": 2.35667,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Saint-Denis",
+            "address_full": "63 Rue Réaumur 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.866518,
+            "longitude": 2.350645,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. des Vertus",
+            "address_full": "22 Rue Réaumur 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.86504,
+            "longitude": 2.358324,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "sq. Émile Chautemps",
+            "address_full": "98b Boulevard de Sébastopol 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.867179,
+            "longitude": 2.353145,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. Beaubourg",
+            "address_full": "48 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865204,
+            "longitude": 2.355405,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. de Turbigo",
+            "address_full": "51 Rue de Turbigo 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.865437,
+            "longitude": 2.355375,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/reaumur-sebastopol/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 30 m de la station Réaumur - Sébastopol (Métro 3, 4) — perspective rue captée le 2018-01-08 par patman (compass -1°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "patman (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=779270249443325",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-400.avif",
+                "800": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-800.avif",
+                "1200": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1200.avif",
+                "1600": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-400.webp",
+                "800": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-800.webp",
+                "1200": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1200.webp",
+                "1600": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-400.jpg",
+                "800": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-800.jpg",
+                "1200": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1200.jpg",
+                "1600": "/assets/img/stations/reaumur-sebastopol/reaumur-sebastopol-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q669850",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q669850",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/R%C3%A9aumur_-_S%C3%A9bastopol_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

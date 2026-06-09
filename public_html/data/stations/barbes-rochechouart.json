@@ -1,0 +1,588 @@
+{
+    "published": true,
+    "slug": "barbes-rochechouart",
+    "name": "Barbès - Rochechouart",
+    "name_full": "Barbès - Rochechouart (Métro 2, 4)",
+    "arrondissement": "18e (Paris)",
+    "address": "Bd Barbès / bd de la Chapelle, 75018 Paris",
+    "latitude": 48.88378944954332,
+    "longitude": 2.349754642627376,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "2",
+            "slug": "metro-2",
+            "color": "#0055C8",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "56"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "31",
+            "54",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 6,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Barbès - Rochechouart : M2 + M4 dans le 10e/18e arr. Station mythique parisienne, aérienne sur le viaduc M2. Tati Barbès historique."
+    },
+    "hero": {
+        "tagline": "M2 + M4 — station aérienne mythique du nord parisien",
+        "description": "Station <strong>Barbès - Rochechouart</strong> à la jonction <strong>10e, 18e</strong> et limite 9e arrondissements. Desservie par <strong>M2</strong> (ouverte 21 avril 1903, aérienne sur viaduc) et <strong>M4</strong> (ouverte 21 avril 1908, souterraine). Station <strong>mythique parisienne</strong> : l'une des rares à voir circuler le métro en surface dans Paris intra-muros, sur le <strong>viaduc M2</strong>. Quartier emblématique de la diversité du nord parisien."
+    },
+    "adjacent_stations": {
+        "metro-2": {
+            "previous": {
+                "name": "La Chapelle",
+                "slug": "la-chapelle",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Anvers",
+                "slug": "anvers",
+                "direction": "Porte Dauphine"
+            }
+        },
+        "metro-4": {
+            "previous": {
+                "name": "Gare du Nord",
+                "slug": "gare-du-nord",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Château Rouge",
+                "slug": "chateau-rouge",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Barbès - Rochechouart</strong> est située à la <strong>jonction des 9e, 10e et 18e arrondissements</strong>, sous (et au-dessus de) le boulevard Barbès et le boulevard de la Chapelle. Elle est desservie par <strong>2 lignes</strong> : <strong>M2</strong> (Porte Dauphine ↔ Nation, aérienne sur viaduc) et <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux, souterraine). Bus 30, 31, 38, 56, 65, 350.",
+        "La station <strong>M2</strong> ouvre le <strong>21 avril 1903</strong> avec le viaduc aérien de la M2. La station <strong>M4</strong> est ajoutée le <strong>21 avril 1908</strong> avec le tronçon originel de la M4. <strong>Coïncidence historique notable : les 2 lignes ont ouvert le même jour de mois et même mois, à 5 ans d'écart.</strong>",
+        "La station est <strong>mythique du paysage parisien</strong> : l'une des rares où le métro circule <strong>en surface dans Paris intra-muros</strong>, sur le viaduc aérien de la M2 (entre Anvers et La Chapelle). Quartier emblématique du nord populaire et multiculturel parisien. À proximité : <strong>marché Barbès</strong> (textile), <strong>Tati Barbès</strong> (historique, magasins discount fermés en 2021), <strong>boulevard Rochechouart</strong>."
+    ],
+    "history": {
+        "title": "Une station aérienne mythique (M2 1903, M4 1908)",
+        "paragraphs": [
+            "La station <strong>M2</strong> ouvre le <strong>21 avril 1903</strong> avec le <strong>viaduc aérien</strong> de la M2 entre Anvers et La Chapelle. La M2 était conçue pour relier les portes ouest et est de Paris, en passant par le nord. Le viaduc aérien permet de franchir la déclivité de Montmartre.",
+            "La station <strong>M4</strong> est ajoutée le <strong>21 avril 1908</strong> avec le tronçon originel de la M4 (Porte de Clignancourt ↔ Châtelet). Coïncidence historique : <strong>même date d'ouverture (21 avril)</strong> pour les 2 lignes, à 5 ans d'écart.",
+            "Le quartier <strong>Barbès</strong> est emblématique du <strong>Paris populaire et multiculturel</strong>. Au XIXᵉ siècle : quartier ouvrier. Au XXᵉ : vagues d'immigration italienne, espagnole, maghrébine, africaine. Le <strong>marché Barbès</strong> (textile et alimentaire) est l'un des plus fréquentés de Paris.",
+            "<strong>Tati Barbès</strong> (1948-2021) : célèbre chaîne de magasins discount populaires français, dont le <strong>magasin historique</strong> était situé à 100 m de la station. Logo rose et blanc carrelé. Fermé en 2021 après faillite de la marque. Lieu emblématique du commerce populaire parisien.",
+            "Station <strong>aérienne sur viaduc M2</strong> : configuration rare dans Paris intra-muros. La voûte du viaduc est en métallerie rivetée, témoin de l'<strong>architecture industrielle du XIXᵉ siècle</strong>. Fréquentation : ~10 millions/an."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Barbès - Rochechouart ?",
+            "answer": "<strong>M2</strong> (1903, aérienne sur viaduc) et <strong>M4</strong> (1908, souterraine). Bus 30, 31, 38, 56, 65, 350."
+        },
+        {
+            "question": "Pourquoi la station est-elle aérienne ?",
+            "answer": "Seule la <strong>M2 est aérienne sur viaduc</strong> entre Anvers et La Chapelle, pour franchir la déclivité de Montmartre. La M4 reste souterraine. Configuration rare dans Paris intra-muros."
+        },
+        {
+            "question": "Qu'est-ce que Tati Barbès ?",
+            "answer": "Célèbre chaîne de magasins discount populaires français (1948-2021), dont le <strong>magasin historique</strong> était à 100 m de la station. Logo rose et blanc carrelé iconique. <strong>Fermé en 2021</strong> après faillite. Lieu emblématique du commerce populaire parisien."
+        },
+        {
+            "question": "Comment aller au Sacré-Cœur ?",
+            "answer": "<strong>10 min à pied</strong> direction nord (boulevard Rochechouart → Anvers). Plus rapide : <strong>M2 vers Anvers</strong> (1 station) + 7 min à pied + funiculaire."
+        },
+        {
+            "question": "Comment aller à Gare du Nord ?",
+            "answer": "<strong>M4 directe</strong> : 1 station vers le sud (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. M2 aérienne 1903 et M4 1908 : accessibilité PMR partielle ou en cours d'aménagement."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Vue aérienne</strong> depuis le quai M2 — rare dans Paris intra-muros.",
+        "Pour <strong>Sacré-Cœur</strong> : M2 vers Anvers (1 station) + funiculaire.",
+        "Pour <strong>Gare du Nord</strong> : M4 directe (1 station).",
+        "Marché Barbès (textile) à 5 min.",
+        "Vigilance pickpockets élevée quartier dense."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "Station aérienne — rare dans Paris intra-muros",
+            "content": "Seule la <strong>M2 à Barbès - Rochechouart est aérienne sur viaduc</strong>, configuration rare dans Paris intra-muros (les autres viaducs M2/M6 sont à la périphérie). Le viaduc franchit la déclivité de Montmartre entre Anvers et La Chapelle. Voûte en <strong>métallerie rivetée</strong> du XIXᵉ siècle. Ouverte le <strong>21 avril 1903</strong>."
+        },
+        {
+            "icon": "🛍️",
+            "title": "Tati Barbès (1948-2021) — empire du discount populaire",
+            "content": "À <strong>100 m</strong> de la station, le <strong>magasin historique Tati Barbès</strong> (1948-2021) était l'un des plus emblématiques du commerce populaire parisien. Fondé par <strong>Jules Ouaki</strong> en 1948. Logo <strong>rose et blanc carrelé</strong> iconique, repris dans le design graphique et la mode. Apogée années 1980-1990 : ~100 magasins en France. <strong>Fermé en 2021</strong> après faillite de la marque (concurrence du e-commerce et des Primark)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Gare du Nord via M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Barbès - Rochechouart → Gare du Nord",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Sacré-Cœur via M2",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Barbès - Rochechouart → Sacré-Cœur",
+            "lines_used": [
+                "M2 + funiculaire"
+            ],
+            "lines_label": "M2 jusqu'à Anvers + 7 min + funiculaire",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Barbès - Rochechouart → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-chatelet/"
+        },
+        {
+            "destination_name": "Nation via M2",
+            "destination_slug": "nation",
+            "destination_full_name": "Barbès - Rochechouart → Nation",
+            "lines_used": [
+                "M2"
+            ],
+            "lines_label": "M2 direction Nation",
+            "duration_minutes": 25,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-nation/"
+        },
+        {
+            "destination_name": "Marché Barbès",
+            "destination_slug": "marche-barbes",
+            "destination_full_name": "Barbès - Rochechouart → Marché Barbès",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min sortie directe",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-marche-barbes/"
+        },
+        {
+            "destination_name": "Saint-Michel via M4",
+            "destination_slug": "saint-michel",
+            "destination_full_name": "Barbès - Rochechouart → Saint-Michel",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (7 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-barbes-rochechouart/barbes-rochechouart-vers-saint-michel/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q186115",
+            "name": "Montmartre",
+            "category": "site notable",
+            "description": "Montmartre est un quartier du 18e arrondissement de Paris (France) dominé par la basilique du Sacré-Cœur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
+            "latitude": 48.886944,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 680,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris (France), est un édifice…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 550,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q745942",
+            "name": "Paris-Nord",
+            "category": "gare",
+            "description": "La gare de Paris-Nord, dite aussi gare du Nord ou Paris Gare du Nord, est l'une des six grandes gares terminus de la SNCF à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20du%20nord%204%20bis.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Nord",
+            "latitude": 48.881111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Guy Patin",
+                "distance_m": 436,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2300245",
+            "name": "église Saint-Pierre de Montmartre",
+            "category": "église",
+            "description": "L’église Saint-Pierre de Montmartre est une église paroissiale catholique romaine située dans le 18e arrondissement de Paris, au sommet de la butte Montmartre, au no 2 rue du Mont-Cenis, à l'ouest de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
+            "latitude": 48.886667,
+            "longitude": 2.341944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 612,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1130784",
+            "name": "hôpital Lariboisière",
+            "category": "hôpital",
+            "description": "L’hôpital Lariboisière est un hôpital de l'Assistance Publique - Hôpitaux de Paris situé 2 rue Ambroise-Paré dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pitalLariboisi%C3%A8reChapelle1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Lariboisi%C3%A8re",
+            "latitude": 48.883056,
+            "longitude": 2.353056,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Guy Patin",
+                "distance_m": 174,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1710383",
+            "name": "église Saint-Vincent-de-Paul",
+            "category": "église",
+            "description": "L'église Saint-Vincent-de-Paul à Paris, située sur la place Franz-Liszt dans le 10e arrondissement, est dédiée à saint Vincent de Paul.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Vincent-de-Paul%20Fassade%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Vincent-de-Paul_de_Paris",
+            "latitude": 48.878889,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Guy Patin",
+                "distance_m": 552,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q973216",
+            "name": "Dalí Paris",
+            "category": "musée",
+            "description": "Dalí Paris est un lieu d'exposition d'œuvres de Salvador Dalí de la collection Dali Universe, en particulier des sculptures et gravures.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dali%20Paris%20entr%C3%A9e%20.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Dal%C3%AD_Paris",
+            "latitude": 48.886528,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 748,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2919066",
+            "name": "musée de Montmartre",
+            "category": "musée",
+            "description": "Le musée de Montmartre est un musée d'art français du quartier de Montmartre, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20Montmartre%20-%20maison%20du%20Bel%20Air.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Montmartre",
+            "latitude": 48.8877,
+            "longitude": 2.3406,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 758,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q608428",
+            "name": "Magenta",
+            "category": "gare",
+            "description": "La gare de Magenta est une gare ferroviaire française souterraine de la ligne E (« Éole ») du réseau express régional d'Île-de-France (RER) ; elle est située à l'est de la gare du Nord, dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER-E-station-Magenta.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Magenta",
+            "latitude": 48.88,
+            "longitude": 2.358056,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Guy Patin",
+                "distance_m": 670,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2381141",
+            "name": "Le Trianon",
+            "category": "théâtre",
+            "description": "Le Trianon est un théâtre parisien situé au 80, boulevard Marguerite-de-Rochechouart dans le 18e arrondissement de Paris (France), au pied de la butte Montmartre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Trianon%2C%2080%20boulevard%20de%20Rochechouart%2C%20Paris%2018e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Trianon_(Paris)",
+            "latitude": 48.882839,
+            "longitude": 2.343059,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 447,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3498663",
+            "name": "église Saint-Bernard de la Chapelle",
+            "category": "chapelle",
+            "description": "L’église Saint-Bernard de la Chapelle est une église catholique du XIXe siècle située dans le 18e arrondissement de Paris dans le quartier de la Goutte-d'Or. Elle est consacrée à Bernard de Clairvaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018%20-%20%C3%89glise%20Saint-Bernard%20de%20la%20Chapelle%20-1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Bernard_de_la_Chapelle",
+            "latitude": 48.886111,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Guy Patin",
+                "distance_m": 388,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3527666",
+            "name": "théâtre de l'Atelier",
+            "category": "théâtre",
+            "description": "Le théâtre de l'Atelier est un théâtre privé situé à Montmartre, 1, place Charles-Dullin dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20de%20l%27Atelier%20%28mars%202010%29.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_l%27Atelier",
+            "latitude": 48.8834,
+            "longitude": 2.34236,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Rochechouart",
+                "distance_m": 489,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "0",
+            "name": "Entrée",
+            "address_full": "53 Boulevard de la Chapelle 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.883709,
+            "longitude": 2.349858,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "bd de Rochechouart",
+            "address_full": "4 Boulevard Marguerite de Rochechouart 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.883732,
+            "longitude": 2.349026,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd de Magenta",
+            "address_full": "3 Boulevard Marguerite de Rochechouart 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.883588,
+            "longitude": 2.349069,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Barbès",
+            "address_full": "126 Boulevard de la Chapelle 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.88378,
+            "longitude": 2.349734,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd de la Chappelle",
+            "address_full": "126 Boulevard de la Chapelle 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.883726,
+            "longitude": 2.349667,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Guy Patin",
+            "address_full": "45 Boulevard de la Chapelle 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.883832,
+            "longitude": 2.350988,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/barbes-rochechouart/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 13 m de la station Barbès - Rochechouart (Métro 2, 4) — perspective rue captée le 2025-06-17 par jakecopp (compass 7°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "jakecopp (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=1136240465202431",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-400.avif",
+                "800": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-800.avif",
+                "1200": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1200.avif",
+                "1600": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-400.webp",
+                "800": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-800.webp",
+                "1200": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1200.webp",
+                "1600": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-400.jpg",
+                "800": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-800.jpg",
+                "1200": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1200.jpg",
+                "1600": "/assets/img/stations/barbes-rochechouart/barbes-rochechouart-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q807893",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q807893",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Barb%C3%A8s_-_Rochechouart_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

@@ -1,0 +1,529 @@
+{
+    "published": true,
+    "slug": "simplon",
+    "name": "Simplon / Albert Kahn",
+    "name_full": "Simplon / Albert Kahn (Métro 4)",
+    "arrondissement": "18e (Paris)",
+    "address": "Av. de la Porte de Clignancourt / rue du Simplon, 75018 Paris",
+    "latitude": 48.895001279132465,
+    "longitude": 2.346770797229445,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "40",
+            "56",
+            "80"
+        ],
+        "nocturne": [
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 12
+        }
+    },
+    "seo": {
+        "description": "Station Simplon : M4 dans le 18e arrondissement de Paris, ouverte en 1908 avec la ligne 4 originelle. Entre Porte de Clignancourt et Marcadet-Poissonniers."
+    },
+    "hero": {
+        "tagline": "M4 — porte d'entrée du 18e",
+        "description": "Station ouverte le <strong>21 avril 1908</strong> avec la mise en service de la ligne 4 originelle (Porte de Clignancourt ↔ Châtelet). Nom inspiré du <strong>col du Simplon</strong> (Alpes suisses), via la rue du Simplon dans le 18e. À proximité : la <strong>Goutte d'Or</strong> et le <strong>boulevard Ney</strong> (boulevard des Maréchaux)."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Marcadet - Poissonniers / Eugène Sue",
+                "slug": "marcadet-poissonniers-eugene-sue",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Porte de Clignancourt",
+                "slug": "porte-de-clignancourt",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Simplon</strong> est située dans le <strong>18e arrondissement de Paris</strong>, sous la <strong>rue du Simplon</strong> près du boulevard Ney. Elle est desservie uniquement par la <strong>ligne 4 du métro</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), entre <strong>Porte de Clignancourt</strong> (1 station vers le nord, terminus) et <strong>Marcadet-Poissonniers</strong> (1 station vers le sud, correspondance M12). Bus 60, 85.",
+        "Ouverte le <strong>21 avril 1908</strong>, la station fait partie du tronçon historique originel de la M4 (Porte de Clignancourt ↔ Châtelet). Le nom <strong>Simplon</strong> est inspiré du <strong>col du Simplon</strong> (2 005 m d'altitude) reliant la Suisse à l'Italie, dont une rue voisine porte le nom — usage courant au XIXᵉ siècle de baptiser les rues du nord parisien d'après les cols alpins.",
+        "Le quartier autour est résidentiel et populaire. À proximité : le <strong>square de Clignancourt</strong>, le <strong>boulevard Ney</strong> (boulevard des Maréchaux, jalon avant la Petite Ceinture historique), et l'extrémité nord de la <strong>Goutte d'Or</strong>. Affluence quotidienne modérée."
+    ],
+    "history": {
+        "title": "Une station de 1908 sur l'axe nord-sud historique",
+        "paragraphs": [
+            "La station <strong>Simplon</strong> est inaugurée le <strong>21 avril 1908</strong> avec la mise en service de la <strong>ligne 4 originelle</strong> (Porte de Clignancourt ↔ Châtelet, 9 stations). La M4 fait partie des <strong>premières lignes du métro parisien</strong> (après les M1 1900, M2 1903, M3 1904).",
+            "Le tronçon nord (Porte de Clignancourt ↔ Châtelet) ouvre en 1908. La <strong>traversée sous la Seine</strong> (Châtelet ↔ Cité ↔ Saint-Michel) est réalisée en 1910 par une <strong>technique d'immersion de caissons</strong> sous-fluviaux — première mondiale à l'époque. La ligne atteint Porte d'Orléans en 1910, puis Mairie de Montrouge en 2013 et Bagneux - Lucie Aubrac en 2022.",
+            "Configuration classique : <strong>2 quais latéraux</strong> sous voûte en pierre meulière, longueur 75 m, 2 voies. Décoration originelle conservée (céramique blanche biseautée). Pas de correspondance autre que la M4. Fréquentation : ~3,5 millions/an (rang ~150)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Simplon ?",
+            "answer": "Uniquement la <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac). Bus 60, 85."
+        },
+        {
+            "question": "Pourquoi le nom Simplon ?",
+            "answer": "De la <strong>rue du Simplon</strong>, elle-même nommée d'après le <strong>col du Simplon</strong> (2 005 m d'altitude), col alpin reliant la Suisse à l'Italie. Usage courant au XIXᵉ siècle de baptiser les rues nord parisiennes d'après les cols alpins."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>21 avril 1908</strong>, avec le tronçon originel de la M4 (Porte de Clignancourt ↔ Châtelet)."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M4 directe</strong> : ~10 min (6 stations vers le sud)."
+        },
+        {
+            "question": "Comment rejoindre les Puces de Saint-Ouen ?",
+            "answer": "<strong>M4 vers Porte de Clignancourt</strong> (1 station, terminus nord) + 5 min à pied vers le marché aux Puces."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. M4 historique 1908 : accessibilité PMR partielle ou en cours d'aménagement."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Puces de Saint-Ouen</strong> : M4 vers Porte de Clignancourt + 5 min à pied.",
+        "Pour <strong>Marcadet-Poissonniers</strong> (correspondance M12) : M4 directe (1 station).",
+        "Pour <strong>Gare du Nord</strong> : M4 directe (4 stations vers le sud).",
+        "Quartier résidentiel — peu de commerces immédiats sortie métro.",
+        "Boulevard Ney à 2 min — vue sur les Maréchaux."
+    ],
+    "trivia": [
+        {
+            "icon": "🏔️",
+            "title": "Col du Simplon — origine du nom",
+            "content": "Le nom <strong>Simplon</strong> vient du <strong>col du Simplon</strong> (2 005 m d'altitude), col alpin reliant la <strong>Suisse à l'Italie</strong>. Usage courant à Paris au XIXᵉ siècle de baptiser les rues d'après les cols alpins (Mont-Cenis, Petit-Saint-Bernard, etc.). La rue du Simplon a transmis son nom à la station de métro M4 en 1908."
+        },
+        {
+            "icon": "🚇",
+            "title": "Ligne 4 originelle (1908)",
+            "content": "La station fait partie du <strong>tronçon originel de la ligne 4</strong>, mise en service le <strong>21 avril 1908</strong> entre Porte de Clignancourt et Châtelet (9 stations). La M4 est la <strong>première ligne nord-sud</strong> du réseau parisien et fut prolongée sous la Seine en 1910 par une technique d'immersion de caissons sous-fluviaux (première mondiale)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Simplon / Albert Kahn → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (6 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-chatelet/"
+        },
+        {
+            "destination_name": "Porte de Clignancourt via M4",
+            "destination_slug": "porte-de-clignancourt",
+            "destination_full_name": "Simplon / Albert Kahn → Porte de Clignancourt",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-porte-de-clignancourt/"
+        },
+        {
+            "destination_name": "Marcadet-Poissonniers via M4",
+            "destination_slug": "marcadet-poissonniers",
+            "destination_full_name": "Simplon / Albert Kahn → Marcadet-Poissonniers",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-marcadet-poissonniers/"
+        },
+        {
+            "destination_name": "Gare du Nord via M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Simplon / Albert Kahn → Gare du Nord",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Saint-Michel via M4",
+            "destination_slug": "saint-michel",
+            "destination_full_name": "Simplon / Albert Kahn → Saint-Michel",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (8 stations)",
+            "duration_minutes": 17,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-saint-michel/"
+        },
+        {
+            "destination_name": "Montparnasse via M4",
+            "destination_slug": "montparnasse-bienvenue",
+            "destination_full_name": "Simplon / Albert Kahn → Montparnasse",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (12 stations)",
+            "duration_minutes": 25,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-simplon/simplon-vers-montparnasse-bienvenue/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1285196",
+            "name": "église Saint-Sava",
+            "category": "église",
+            "description": "L'église Saint-Sava est un édifice religieux située 23, rue du Simplon, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Saint%20Sava%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Paris",
+            "latitude": 48.8937,
+            "longitude": 2.35,
+            "nearest_exit": {
+                "number": "0",
+                "name": "Entrée / Sortie",
+                "distance_m": 151,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3491901",
+            "name": "église Notre-Dame de Clignancourt",
+            "category": "église",
+            "description": "Notre-Dame-de-Clignancourt est une église catholique parisienne située dans le 18e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NotreDameDeClignancourtExt%C3%A9rieur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Clignancourt",
+            "latitude": 48.893056,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 203,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1589139",
+            "name": "synagogue Montmartre",
+            "category": "synagogue",
+            "description": "La synagogue de la rue Saint-Isaure est située au 13-15 rue Sainte-Isaure, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rue%20Sainte%20Isaure%2C%20Synagogue%20Montmartre%2C%20Paris%202015.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_la_rue_Sainte-Isaure",
+            "latitude": 48.893649,
+            "longitude": 2.344004,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 255,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3287044",
+            "name": "manufacture de porcelaine de Clignancourt",
+            "category": "site notable",
+            "description": "La Manufacture de porcelaine de Clignancourt est une fabrique qui produisit de la porcelaine à la fin du XVIIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manufacture%20de%20porcelaine%20de%20Clignancourt.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Manufacture_de_porcelaine_de_Clignancourt",
+            "latitude": 48.891111,
+            "longitude": 2.343611,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 419,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3389916",
+            "name": "place Jules-Joffrin",
+            "category": "place",
+            "description": "La place Jules-Joffrin est une place située dans le 18e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Jules%20Joffrin%20-%20Paris%20XVIII%20%28FR75%29%20-%202021-08-04%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Jules-Joffrin",
+            "latitude": 48.8925,
+            "longitude": 2.34465,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 258,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q16507976",
+            "name": "l'avenue de Saint-Ouen",
+            "category": "gare",
+            "description": "La gare de l'avenue de Saint-Ouen est une gare désaffectée de la ligne de Petite Ceinture à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1130987%20Paris%20XVIII%20station%20av%20St%20Ouen%20Petite%20ceinture%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_l%27avenue_de_Saint-Ouen",
+            "latitude": 48.8976,
+            "longitude": 2.3441,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 480,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q16507999",
+            "name": "La Chapelle-Saint-Denis",
+            "category": "chapelle",
+            "description": "La gare de La Chapelle-Saint-Denis est une gare de la ligne de Petite Ceinture à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20La%20Chapelle-Saint-Denis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_La_Chapelle-Saint-Denis",
+            "latitude": 48.8982,
+            "longitude": 2.3554,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Ornano",
+                "distance_m": 730,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3278492",
+            "name": "mairie du 18e arrondissement de Paris",
+            "category": "mairie",
+            "description": "La mairie du 18e arrondissement de Paris est le bâtiment qui héberge les services municipaux du 18e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mairie%20XVIIIe%20Arrondissement%20-%20Paris%20XVIII%20%28FR75%29%20-%202022-01-29%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mairie_du_18e_arrondissement_de_Paris",
+            "latitude": 48.8919,
+            "longitude": 2.34483,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 294,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3399039",
+            "name": "porte de Clignancourt",
+            "category": "site notable",
+            "description": "La porte de Clignancourt, parfois appelée porte Ornano, est l'une des 17 portes percées dans l'enceinte de Thiers, une fortification édifiée au milieu du XIXe siècle pour protéger Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1310770%20Paris%20XVIII%20porte%20de%20Clignancourt%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Clignancourt",
+            "latitude": 48.8981,
+            "longitude": 2.34417,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 526,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3389684",
+            "name": "place Albert-Kahn",
+            "category": "place",
+            "description": "La place Albert-Kahn est une voie située dans le quartier de Clignancourt du 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1310753%20Paris%20XVIII%20place%20Albert-Kahn%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Albert-Kahn",
+            "latitude": 48.8958,
+            "longitude": 2.34617,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 232,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3580407",
+            "name": "église Notre-Dame-du-Bon-Conseil",
+            "category": "église",
+            "description": "L'église catholique Notre-Dame-du-Bon-Conseil est située au 140 rue de Clignancourt dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-du-Bon-Conseil%20%28Paris%29%206.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-du-Bon-Conseil_de_Paris",
+            "latitude": 48.89506,
+            "longitude": 2.35009,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Ornano",
+                "distance_m": 209,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q60850005",
+            "name": "Funambule Montmartre",
+            "category": "théâtre",
+            "description": "Le Funambule Montmartre est un théâtre parisien privé comportant 120 places, situé 53 rue des Saules dans le 18e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1260974%20Paris%20XVIII%20rue%20des%20Saules%20n53%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Funambule_Montmartre",
+            "latitude": 48.890833,
+            "longitude": 2.340278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Joseph Dijon",
+                "distance_m": 626,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "0",
+            "name": "Entrée / Sortie",
+            "address_full": "34 Boulevard Ornano 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.893762,
+            "longitude": 2.347932,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "bd Ornano",
+            "address_full": "36 Boulevard Ornano 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.89395,
+            "longitude": 2.34778,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Joseph Dijon",
+            "address_full": "27 Boulevard Ornano 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.893894,
+            "longitude": 2.347467,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/simplon/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 29 m de la station Simplon / Albert Kahn (Métro 4) — perspective rue captée le 2021-01-07 par nlehuby (compass 200°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "nlehuby (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=135718048599918",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/simplon/simplon-400.avif",
+                "800": "/assets/img/stations/simplon/simplon-800.avif",
+                "1200": "/assets/img/stations/simplon/simplon-1200.avif",
+                "1600": "/assets/img/stations/simplon/simplon-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/simplon/simplon-400.webp",
+                "800": "/assets/img/stations/simplon/simplon-800.webp",
+                "1200": "/assets/img/stations/simplon/simplon-1200.webp",
+                "1600": "/assets/img/stations/simplon/simplon-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/simplon/simplon-400.jpg",
+                "800": "/assets/img/stations/simplon/simplon-800.jpg",
+                "1200": "/assets/img/stations/simplon/simplon-1200.jpg",
+                "1600": "/assets/img/stations/simplon/simplon-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    }
+}

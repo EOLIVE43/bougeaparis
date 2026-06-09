@@ -1,0 +1,535 @@
+{
+    "published": true,
+    "slug": "chateau-rouge",
+    "name": "Château Rouge",
+    "name_full": "Château Rouge (Métro 4)",
+    "arrondissement": "18e (Paris)",
+    "address": "Place du Château-Rouge, 75018 Paris",
+    "latitude": 48.88747990351188,
+    "longitude": 2.3495176272228218,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "56"
+        ],
+        "nocturne": [
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "31",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 7,
+            "nearby_count": 10
+        }
+    },
+    "seo": {
+        "description": "Station Château Rouge : M4 dans le 18e arr., cœur de la Goutte d'Or et du quartier africain de Paris. Marché Dejean iconique, l'un des plus diversifiés de Paris."
+    },
+    "hero": {
+        "tagline": "M4 — cœur de la Goutte d'Or et de l'Afrique parisienne",
+        "description": "Station <strong>Château Rouge</strong> ouverte le <strong>21 avril 1908</strong> avec la M4 originelle. Située dans le <strong>18e arrondissement</strong>, au cœur de la <strong>Goutte d'Or</strong>, quartier multiculturel d'origine africaine subsaharienne et maghrébine. À la sortie : le <strong>marché Dejean</strong>, l'un des marchés alimentaires les plus diversifiés de Paris (Afrique de l'Ouest, Antilles, Maghreb)."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Barbès - Rochechouart",
+                "slug": "barbes-rochechouart",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Marcadet - Poissonniers / Eugène Sue",
+                "slug": "marcadet-poissonniers-eugene-sue",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Château Rouge</strong> est située dans le <strong>18e arrondissement de Paris</strong>, sur la <strong>place du Château-Rouge</strong>. Elle est desservie uniquement par la <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux - Lucie Aubrac), entre <strong>Marcadet-Poissonniers</strong> (1 station nord, correspondance M12) et <strong>Barbès - Rochechouart</strong> (1 station sud, correspondance M2). Bus 31, 56.",
+        "Ouverte le <strong>21 avril 1908</strong> avec le tronçon originel de la M4 (Porte de Clignancourt ↔ Châtelet). Le nom <strong>« Château Rouge »</strong> vient d'une ancienne <strong>guinguette du XVIIIᵉ siècle</strong> qui occupait l'emplacement, dénommée « Le Château Rouge » à cause de la couleur de sa façade.",
+        "À la sortie : le <strong>marché Dejean</strong>, l'un des <strong>marchés alimentaires les plus diversifiés de Paris</strong>. Spécialités : <strong>Afrique de l'Ouest</strong> (Sénégal, Mali, Côte d'Ivoire), <strong>Antilles</strong>, <strong>Maghreb</strong>. Au cœur de la <strong>Goutte d'Or</strong>, quartier emblématique de la diversité parisienne, immortalisé par Émile Zola dans <em>L'Assommoir</em> (1877)."
+    ],
+    "history": {
+        "title": "Une guinguette du XVIIIᵉ et la Goutte d'Or multiculturelle",
+        "paragraphs": [
+            "Le nom <strong>« Château Rouge »</strong> vient d'une ancienne <strong>guinguette parisienne du XVIIIᵉ siècle</strong> qui occupait l'emplacement actuel de la place. La guinguette était baptisée d'après la <strong>couleur rouge de sa façade</strong>. Lieu de fête populaire jusqu'au XIXᵉ siècle, puis disparu lors de la transformation haussmannienne.",
+            "La station <strong>M4</strong> est inaugurée le <strong>21 avril 1908</strong> avec le tronçon originel (Porte de Clignancourt ↔ Châtelet).",
+            "Le quartier de la <strong>Goutte d'Or</strong> a une histoire singulière. Au XIXᵉ siècle, quartier populaire ouvrier (carriers, blanchisseuses, marchands ambulants), immortalisé par <strong>Émile Zola</strong> dans <em>L'Assommoir</em> (1877). Au XXᵉ siècle, accueille successivement des vagues d'immigration : <strong>italiens, polonais, espagnols (avant 1939)</strong>, puis <strong>maghrébins (1960-70s)</strong>, puis <strong>africains subsahariens (1980s+)</strong>. Aujourd'hui : quartier le plus diversifié de Paris en termes d'origines.",
+            "À la sortie : le <strong>marché Dejean</strong>, marché alimentaire ouvert tous les jours sauf lundi. Spécialités africaines : <strong>légumes-feuilles</strong> (ngalakh, gombos, baobabs), <strong>poissons d'eau douce africains</strong>, <strong>épices</strong>, <strong>tissus wax</strong>. Cœur économique de la <strong>diaspora africaine parisienne</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Château Rouge ?",
+            "answer": "Uniquement la <strong>M4</strong>. Bus 31, 56."
+        },
+        {
+            "question": "Pourquoi le nom Château Rouge ?",
+            "answer": "D'une ancienne <strong>guinguette du XVIIIᵉ siècle</strong> baptisée « Le Château Rouge » à cause de la <strong>couleur rouge de sa façade</strong>. La guinguette a disparu au XIXᵉ siècle avec la transformation haussmannienne."
+        },
+        {
+            "question": "Qu'est-ce que le marché Dejean ?",
+            "answer": "L'un des <strong>marchés alimentaires les plus diversifiés de Paris</strong>, à la sortie de la station. Spécialités <strong>Afrique de l'Ouest</strong> (Sénégal, Mali, Côte d'Ivoire), <strong>Antilles</strong>, <strong>Maghreb</strong>. Ouvert mardi-dimanche."
+        },
+        {
+            "question": "Qu'est-ce que la Goutte d'Or ?",
+            "answer": "Quartier multiculturel du 18e arr. parisien. Au XIXᵉ : populaire ouvrier (Zola, L'Assommoir 1877). Au XXᵉ : vagues d'immigration italienne, polonaise, espagnole, maghrébine, africaine. Aujourd'hui : quartier le plus diversifié de Paris."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M4 directe</strong> : ~10 min (5 stations vers le sud)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. M4 historique 1908."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Marché Dejean</strong> à la sortie — meilleur marché africain de Paris.",
+        "<strong>Goutte d'Or</strong> en flânant — quartier vivant et coloré.",
+        "Pour <strong>Sacré-Cœur</strong> : 15 min à pied direction nord-ouest.",
+        "Pour <strong>Châtelet</strong> : M4 directe (~10 min).",
+        "Vigilance pickpockets standard quartier dense."
+    ],
+    "trivia": [
+        {
+            "icon": "🏰",
+            "title": "Une guinguette du XVIIIᵉ siècle",
+            "content": "Le nom <strong>« Château Rouge »</strong> vient d'une ancienne <strong>guinguette parisienne du XVIIIᵉ siècle</strong>. À l'époque, les guinguettes étaient des établissements en périphérie de Paris où l'on buvait et dansait pour <strong>échapper à l'octroi parisien</strong> (taxe sur les boissons). « Le Château Rouge » devait sa couleur à un <strong>enduit rouge sur sa façade</strong>. Lieu de fête populaire jusqu'au XIXᵉ. Disparu avec la transformation haussmannienne."
+        },
+        {
+            "icon": "🌍",
+            "title": "Marché Dejean — cœur africain de Paris",
+            "content": "À la sortie de la station, le <strong>marché Dejean</strong> est l'un des <strong>marchés alimentaires les plus diversifiés de Paris</strong>. Spécialités : <strong>Afrique de l'Ouest</strong> (Sénégal, Mali, Côte d'Ivoire), <strong>Antilles</strong>, <strong>Maghreb</strong>. Produits emblématiques : feuilles de manioc, gombos, poissons d'eau douce africains (capitaine, mâchoiron), épices, tissus wax. Cœur économique de la <strong>diaspora africaine parisienne</strong>. Ouvert mardi-dimanche."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Marché Dejean",
+            "destination_slug": "marche-dejean",
+            "destination_full_name": "Château Rouge → Marché Dejean",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-marche-dejean/"
+        },
+        {
+            "destination_name": "Sacré-Cœur Montmartre",
+            "destination_slug": "sacre-coeur",
+            "destination_full_name": "Château Rouge → Sacré-Cœur Montmartre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "15 min direction nord-ouest",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-sacre-coeur/"
+        },
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Château Rouge → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare du Nord via M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Château Rouge → Gare du Nord",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Barbès via M4",
+            "destination_slug": "barbes-rochechouart",
+            "destination_full_name": "Château Rouge → Barbès",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-barbes-rochechouart/"
+        },
+        {
+            "destination_name": "Saint-Michel via M4",
+            "destination_slug": "saint-michel",
+            "destination_full_name": "Château Rouge → Saint-Michel",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (8 stations)",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chateau-rouge/chateau-rouge-vers-saint-michel/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q186115",
+            "name": "Montmartre",
+            "category": "site notable",
+            "description": "Montmartre est un quartier du 18e arrondissement de Paris (France) dominé par la basilique du Sacré-Cœur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
+            "latitude": 48.886944,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 596,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris (France), est un édifice…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 466,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2300245",
+            "name": "église Saint-Pierre de Montmartre",
+            "category": "église",
+            "description": "L’église Saint-Pierre de Montmartre est une église paroissiale catholique romaine située dans le 18e arrondissement de Paris, au sommet de la butte Montmartre, au no 2 rue du Mont-Cenis, à l'ouest de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
+            "latitude": 48.886667,
+            "longitude": 2.341944,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 538,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1130784",
+            "name": "hôpital Lariboisière",
+            "category": "hôpital",
+            "description": "L’hôpital Lariboisière est un hôpital de l'Assistance Publique - Hôpitaux de Paris situé 2 rue Ambroise-Paré dans le 10e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pitalLariboisi%C3%A8reChapelle1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Lariboisi%C3%A8re",
+            "latitude": 48.883056,
+            "longitude": 2.353056,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Barbès",
+                "distance_m": 497,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1423353",
+            "name": "Au Lapin agile",
+            "category": "site notable",
+            "description": "Au Lapin agile est un cabaret de Paris situé sur la butte Montmartre, au 22 de la rue des Saules, dans le 18e arrondissement, près de la station de métro Lamarck - Caulaincourt.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Gill%20-%20Au%20Lapin%20Agile.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Au_Lapin_agile",
+            "latitude": 48.8886,
+            "longitude": 2.33998,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 692,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q973216",
+            "name": "Dalí Paris",
+            "category": "musée",
+            "description": "Dalí Paris est un lieu d'exposition d'œuvres de Salvador Dalí de la collection Dali Universe, en particulier des sculptures et gravures.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dali%20Paris%20entr%C3%A9e%20.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Dal%C3%AD_Paris",
+            "latitude": 48.886528,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 701,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2919066",
+            "name": "musée de Montmartre",
+            "category": "musée",
+            "description": "Le musée de Montmartre est un musée d'art français du quartier de Montmartre, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20Montmartre%20-%20maison%20du%20Bel%20Air.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Montmartre",
+            "latitude": 48.8877,
+            "longitude": 2.3406,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 633,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1285196",
+            "name": "église Saint-Sava",
+            "category": "église",
+            "description": "L'église Saint-Sava est un édifice religieux située 23, rue du Simplon, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Saint%20Sava%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Paris",
+            "latitude": 48.8937,
+            "longitude": 2.35,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Dejean",
+                "distance_m": 707,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2381141",
+            "name": "Le Trianon",
+            "category": "théâtre",
+            "description": "Le Trianon est un théâtre parisien situé au 80, boulevard Marguerite-de-Rochechouart dans le 18e arrondissement de Paris (France), au pied de la butte Montmartre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Trianon%2C%2080%20boulevard%20de%20Rochechouart%2C%20Paris%2018e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Trianon_(Paris)",
+            "latitude": 48.882839,
+            "longitude": 2.343059,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Barbès",
+                "distance_m": 661,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3491901",
+            "name": "église Notre-Dame de Clignancourt",
+            "category": "église",
+            "description": "Notre-Dame-de-Clignancourt est une église catholique parisienne située dans le 18e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NotreDameDeClignancourtExt%C3%A9rieur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Clignancourt",
+            "latitude": 48.893056,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Custine",
+                "distance_m": 711,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3498663",
+            "name": "église Saint-Bernard de la Chapelle",
+            "category": "chapelle",
+            "description": "L’église Saint-Bernard de la Chapelle est une église catholique du XIXe siècle située dans le 18e arrondissement de Paris dans le quartier de la Goutte-d'Or. Elle est consacrée à Bernard de Clairvaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018%20-%20%C3%89glise%20Saint-Bernard%20de%20la%20Chapelle%20-1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Bernard_de_la_Chapelle",
+            "latitude": 48.886111,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Barbès",
+                "distance_m": 403,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3527666",
+            "name": "théâtre de l'Atelier",
+            "category": "théâtre",
+            "description": "Le théâtre de l'Atelier est un théâtre privé situé à Montmartre, 1, place Charles-Dullin dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20de%20l%27Atelier%20%28mars%202010%29.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_l%27Atelier",
+            "latitude": 48.8834,
+            "longitude": 2.34236,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Barbès",
+                "distance_m": 660,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. Dejean",
+            "address_full": "46 Place du Château Rouge 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.887342,
+            "longitude": 2.349703,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Custine",
+            "address_full": "1 Rue Custine 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.887303,
+            "longitude": 2.34924,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Barbès",
+            "address_full": "42 Boulevard Barbès 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.886918,
+            "longitude": 2.349627,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/chateau-rouge/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 15 m de la station Château Rouge (Métro 4) — perspective rue captée le 2025-06-17 par jakecopp (compass 4°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "jakecopp (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=1206392327890450",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/chateau-rouge/chateau-rouge-400.avif",
+                "800": "/assets/img/stations/chateau-rouge/chateau-rouge-800.avif",
+                "1200": "/assets/img/stations/chateau-rouge/chateau-rouge-1200.avif",
+                "1600": "/assets/img/stations/chateau-rouge/chateau-rouge-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/chateau-rouge/chateau-rouge-400.webp",
+                "800": "/assets/img/stations/chateau-rouge/chateau-rouge-800.webp",
+                "1200": "/assets/img/stations/chateau-rouge/chateau-rouge-1200.webp",
+                "1600": "/assets/img/stations/chateau-rouge/chateau-rouge-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/chateau-rouge/chateau-rouge-400.jpg",
+                "800": "/assets/img/stations/chateau-rouge/chateau-rouge-800.jpg",
+                "1200": "/assets/img/stations/chateau-rouge/chateau-rouge-1200.jpg",
+                "1600": "/assets/img/stations/chateau-rouge/chateau-rouge-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q957172",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q957172",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_Rouge_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

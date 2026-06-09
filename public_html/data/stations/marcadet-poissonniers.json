@@ -1,0 +1,569 @@
+{
+    "published": true,
+    "slug": "marcadet-poissonniers",
+    "name": "Marcadet - Poissonniers / Eugène Sue",
+    "name_full": "Marcadet - Poissonniers / Eugène Sue (Métro 4, 12)",
+    "arrondissement": "18e (Paris)",
+    "address": "Bd Barbès / rue Marcadet, 75018 Paris",
+    "latitude": 48.89138257895435,
+    "longitude": 2.3502735372703913,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "56",
+            "60"
+        ],
+        "nocturne": [
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "31",
+            "85",
+            "302"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 6,
+            "nearby_count": 12
+        }
+    },
+    "seo": {
+        "description": "Station Marcadet-Poissonniers : M4 + M12 dans le 18e arr., correspondance majeure nord parisien. À 10 min de Montmartre et du Sacré-Cœur."
+    },
+    "hero": {
+        "tagline": "M4 + M12 — accès Goutte d'Or et Montmartre",
+        "description": "Station <strong>Marcadet-Poissonniers</strong> dans le <strong>18e arrondissement</strong>, à l'intersection du boulevard Barbès et de la rue Marcadet. Desservie par <strong>M4</strong> (ouverte 21 avril 1908) et <strong>M12</strong> (ouverte 5 novembre 1912). À <strong>10 min</strong> : <strong>Montmartre</strong> (Sacré-Cœur, place du Tertre) et la <strong>Goutte d'Or</strong> (quartier multiculturel africain)."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Château Rouge",
+                "slug": "chateau-rouge",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Simplon / Albert Kahn",
+                "slug": "simplon-albert-kahn",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-12": {
+            "previous": {
+                "name": "Marx Dormoy",
+                "slug": "marx-dormoy",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Jules Joffrin",
+                "slug": "jules-joffrin",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Marcadet-Poissonniers</strong> est située dans le <strong>18e arrondissement de Paris</strong>, à l'intersection du <strong>boulevard Barbès</strong> et de la <strong>rue Marcadet</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux) et <strong>M12</strong> (Aubervilliers - Front populaire ↔ Mairie d'Issy). Bus 31, 56, 60, 85.",
+        "La station <strong>M4</strong> ouvre le <strong>21 avril 1908</strong> avec le tronçon originel (Porte de Clignancourt ↔ Châtelet). La station <strong>M12</strong> est ajoutée le <strong>5 novembre 1912</strong> avec la mise en service de la ligne A de la <strong>Nord-Sud</strong> (compagnie privée concurrente de la CMP), reliant Porte de Versailles à Pigalle. La M12 est intégrée à la RATP en 1930.",
+        "À <strong>10 min à pied</strong> : la <strong>colline de Montmartre</strong>, avec la <strong>basilique du Sacré-Cœur</strong> (1875-1914), la <strong>place du Tertre</strong> (peintres en plein air) et l'<strong>Espace Dalí</strong>. À <strong>5 min</strong> : la <strong>Goutte d'Or</strong>, quartier multiculturel d'origine maghrébine et africaine, avec le <strong>Marché Barbès</strong> (textile) et la <strong>rue de la Goutte d'Or</strong> (mosquée Al-Fath)."
+    ],
+    "history": {
+        "title": "1908 : M4, 1912 : Nord-Sud (M12), correspondance historique",
+        "paragraphs": [
+            "La station <strong>M4</strong> ouvre le <strong>21 avril 1908</strong> avec le tronçon originel de la M4 (Porte de Clignancourt ↔ Châtelet, 9 stations).",
+            "Le <strong>5 novembre 1912</strong>, la <strong>Compagnie Nord-Sud</strong> ouvre la ligne A (futur M12) entre <strong>Porte de Versailles et Notre-Dame de Lorette</strong>, prolongée à Pigalle puis Jules Joffrin (1916). Marcadet-Poissonniers devient alors un <strong>point de correspondance majeur du nord parisien</strong>. La Nord-Sud était une compagnie privée concurrente de la CMP, intégrée à la <strong>RATP en 1930</strong> sous la nationalisation.",
+            "La station permet de relier rapidement les axes nord-sud (M12 vers Pigalle/Madeleine) et nord-est (M4 vers Châtelet/Saint-Michel). Fréquentation : ~6 millions/an. À 10 min à pied : <strong>Montmartre</strong> et le <strong>Sacré-Cœur</strong>, l'un des sites les plus visités de Paris (~10 millions/an). Affluence touristique modérée à la station elle-même."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Marcadet-Poissonniers ?",
+            "answer": "<strong>M4</strong> (1908) et <strong>M12</strong> (1912, ex-Nord-Sud). Bus 31, 56, 60, 85."
+        },
+        {
+            "question": "Comment aller à Montmartre / Sacré-Cœur ?",
+            "answer": "<strong>10 min à pied</strong> en direction du nord-ouest (rue Custine → Lamarck → escaliers). Plus rapide : M12 jusqu'à <strong>Jules Joffrin</strong> + 8 min à pied."
+        },
+        {
+            "question": "Qu'est-ce que la Nord-Sud ?",
+            "answer": "La <strong>Compagnie du chemin de fer électrique souterrain Nord-Sud de Paris</strong>, compagnie privée concurrente de la CMP. Ouvre la ligne A (futur M12) en 1912. Intégrée à la <strong>RATP en 1930</strong>. Le préfixe « Nord-Sud » désigne aujourd'hui les lignes 12 et 13."
+        },
+        {
+            "question": "Comment rejoindre la Goutte d'Or ?",
+            "answer": "<strong>5 min à pied</strong> en direction du sud-est. Quartier multiculturel maghrébin/africain avec marché Barbès, mosquée Al-Fath."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M4 directe</strong> : ~12 min (7 stations vers le sud)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1908/1912 : accessibilité PMR partielle."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Montmartre/Sacré-Cœur</strong> : M12 vers Jules Joffrin + 8 min à pied.",
+        "Pour <strong>Goutte d'Or</strong> : 5 min à pied sud-est.",
+        "Pour <strong>Châtelet</strong> : M4 directe (~12 min).",
+        "Pour <strong>Madeleine</strong> : M12 directe (~15 min).",
+        "Marché Barbès (textile) à 5 min — produits multiculturels."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "Nord-Sud — compagnie privée concurrente (1912)",
+            "content": "La M12, à Marcadet-Poissonniers depuis le <strong>5 novembre 1912</strong>, fut construite par la <strong>Compagnie Nord-Sud</strong>, société privée concurrente de la CMP (Compagnie du Métropolitain de Paris). La Nord-Sud distinguait visuellement ses stations par des <strong>céramiques colorées</strong> (vert/turquoise) au lieu du blanc CMP. Intégrée à la <strong>RATP en 1930</strong> sous la nationalisation. Le « N » de Nord-Sud apparaît encore sur certains éléments d'origine."
+        },
+        {
+            "icon": "⛪",
+            "title": "Sacré-Cœur de Montmartre à 10 min",
+            "content": "À <strong>10 min à pied</strong>, la <strong>basilique du Sacré-Cœur de Montmartre</strong> (1875-1914, architecte Paul Abadie), monument emblématique du sommet de la <strong>colline de Montmartre</strong> (130 m). Style romano-byzantin. <strong>~10 millions de visiteurs/an</strong>, l'un des sites les plus visités de France après la Tour Eiffel."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Montmartre via M12",
+            "destination_slug": "montmartre",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Montmartre",
+            "lines_used": [
+                "M12 + à pied"
+            ],
+            "lines_label": "M12 jusqu'à Jules Joffrin (2 stations) + 8 min",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-montmartre/"
+        },
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (7 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-chatelet/"
+        },
+        {
+            "destination_name": "Goutte d'Or",
+            "destination_slug": "goutte-or",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Goutte d'Or",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min sud-est",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-goutte-or/"
+        },
+        {
+            "destination_name": "Madeleine via M12",
+            "destination_slug": "madeleine",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Madeleine",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 direction Mairie d'Issy",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-madeleine/"
+        },
+        {
+            "destination_name": "Gare du Nord via M4",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Gare du Nord",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Bagneux - Lucie Aubrac via M4",
+            "destination_slug": "bagneux-lucie-aubrac",
+            "destination_full_name": "Marcadet - Poissonniers / Eugène Sue → Bagneux - Lucie Aubrac",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 terminus sud",
+            "duration_minutes": 35,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-marcadet-poissonniers/marcadet-poissonniers-vers-bagneux-lucie-aubrac/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "La basilique du Sacré-Cœur de Montmartre, dite du Vœu national, située au sommet de la butte Montmartre, dans le quartier de Clignancourt du 18e arrondissement de Paris (France), est un édifice…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Labat",
+                "distance_m": 608,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1285196",
+            "name": "église Saint-Sava",
+            "category": "église",
+            "description": "L'église Saint-Sava est un édifice religieux située 23, rue du Simplon, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Saint%20Sava%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Paris",
+            "latitude": 48.8937,
+            "longitude": 2.35,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. des Poissonniers",
+                "distance_m": 305,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2887076",
+            "name": "basilique Sainte-Jeanne-d'Arc",
+            "category": "basilique",
+            "description": "La basilique Sainte-Jeanne-d'Arc est une église de culte catholique, mitoyenne de l'église Saint-Denys de la Chapelle, située 18 rue de la Chapelle au niveau du col de la Chapelle, dans le quartier…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20st%20denys%20la%20chapelle.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Sainte-Jeanne-d%27Arc_de_Paris",
+            "latitude": 48.891551,
+            "longitude": 2.360543,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Ordener",
+                "distance_m": 628,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3491901",
+            "name": "église Notre-Dame de Clignancourt",
+            "category": "église",
+            "description": "Notre-Dame-de-Clignancourt est une église catholique parisienne située dans le 18e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NotreDameDeClignancourtExt%C3%A9rieur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Clignancourt",
+            "latitude": 48.893056,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Barbès",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3498663",
+            "name": "église Saint-Bernard de la Chapelle",
+            "category": "chapelle",
+            "description": "L’église Saint-Bernard de la Chapelle est une église catholique du XIXe siècle située dans le 18e arrondissement de Paris dans le quartier de la Goutte-d'Or. Elle est consacrée à Bernard de Clairvaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2018%20-%20%C3%89glise%20Saint-Bernard%20de%20la%20Chapelle%20-1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Bernard_de_la_Chapelle",
+            "latitude": 48.886111,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Labat",
+                "distance_m": 573,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1589139",
+            "name": "synagogue Montmartre",
+            "category": "synagogue",
+            "description": "La synagogue de la rue Saint-Isaure est située au 13-15 rue Sainte-Isaure, dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rue%20Sainte%20Isaure%2C%20Synagogue%20Montmartre%2C%20Paris%202015.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_la_rue_Sainte-Isaure",
+            "latitude": 48.893649,
+            "longitude": 2.344004,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Barbès",
+                "distance_m": 514,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2039210",
+            "name": "Pont-Marcadet",
+            "category": "gare",
+            "description": "La gare de Pont-Marcadet est une ancienne gare ferroviaire française de la ligne de Paris-Nord à Lille, située dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Marcadet%2C%201%20Jan%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Pont-Marcadet",
+            "latitude": 48.89079,
+            "longitude": 2.35648,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Ordener",
+                "distance_m": 332,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3287044",
+            "name": "manufacture de porcelaine de Clignancourt",
+            "category": "site notable",
+            "description": "La Manufacture de porcelaine de Clignancourt est une fabrique qui produisit de la porcelaine à la fin du XVIIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Manufacture%20de%20porcelaine%20de%20Clignancourt.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Manufacture_de_porcelaine_de_Clignancourt",
+            "latitude": 48.891111,
+            "longitude": 2.343611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Barbès",
+                "distance_m": 422,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1543030",
+            "name": "Grands Magasins Dufayel",
+            "category": "commerce",
+            "description": "Les Grands Magasins Dufayel sont un ancien grand magasin ouvert en 1856 rue de Clignancourt à Paris par Jacques François Crespin (1824-1888) sous l'enseigne Palais de la Nouveauté.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grands%20Magasins%20Dufayel%20-%20Paris%20XVIII%20%28FR75%29%20-%202022-02-12%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grands_Magasins_Dufayel",
+            "latitude": 48.885726,
+            "longitude": 2.347742,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Labat",
+                "distance_m": 482,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3278492",
+            "name": "mairie du 18e arrondissement de Paris",
+            "category": "mairie",
+            "description": "La mairie du 18e arrondissement de Paris est le bâtiment qui héberge les services municipaux du 18e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mairie%20XVIIIe%20Arrondissement%20-%20Paris%20XVIII%20%28FR75%29%20-%202022-01-29%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mairie_du_18e_arrondissement_de_Paris",
+            "latitude": 48.8919,
+            "longitude": 2.34483,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Barbès",
+                "distance_m": 358,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q38941403",
+            "name": "carmel de Montmartre",
+            "category": "site notable",
+            "description": "Situé au pied du campanile de la basilique du Sacré-Cœur de Montmartre à Paris (France), au 34 rue du Chevalier-de-la-Barre, le carmel de Montmartre est une communauté de moniales de l'Église…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carmel%20du%20Sacre-C%C5%93ur%20de%20Montmartre%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Carmel_de_Montmartre",
+            "latitude": 48.88736,
+            "longitude": 2.34279,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Labat",
+                "distance_m": 575,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3329020",
+            "name": "musée-Placard d'Erik Satie",
+            "category": "musée",
+            "description": "Le Musée-Placard d'Erik Satie était un petit musée consacré au compositeur Erik Satie (1866-1925), situé au 6 rue Cortot dans le 18e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/6%20Rue%20Cortot.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e-Placard_d%27Erik_Satie",
+            "latitude": 48.887694,
+            "longitude": 2.341167,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Labat",
+                "distance_m": 667,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Barbès",
+            "address_full": "69 Boulevard Barbès 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.890631,
+            "longitude": 2.349335,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Marcadet",
+            "address_full": "88 Boulevard Barbès 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.890642,
+            "longitude": 2.349676,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Labat",
+            "address_full": "78 Boulevard Barbès 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.889877,
+            "longitude": 2.349658,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. des Poissonniers",
+            "address_full": "78 Rue des Poissonniers 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.891202,
+            "longitude": 2.351728,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Ordener",
+            "address_full": "26q Rue Ordener 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.891149,
+            "longitude": 2.351974,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/marcadet-poissonniers/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 38 m de la station Marcadet - Poissonniers / Eugène Sue (Métro 4, 12) — perspective rue captée le 2025-06-17 par jakecopp (compass 347°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "jakecopp (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=1237614537803609",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-400.avif",
+                "800": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-800.avif",
+                "1200": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1200.avif",
+                "1600": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-400.webp",
+                "800": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-800.webp",
+                "1200": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1200.webp",
+                "1600": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-400.jpg",
+                "800": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-800.jpg",
+                "1200": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1200.jpg",
+                "1600": "/assets/img/stations/marcadet-poissonniers/marcadet-poissonniers-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    }
+}

@@ -1,0 +1,625 @@
+{
+    "published": true,
+    "slug": "strasbourg-saint-denis",
+    "name": "Strasbourg - Saint-Denis",
+    "name_full": "Strasbourg - Saint-Denis (Métro 4, 8, 9)",
+    "arrondissement": "10e (Paris)",
+    "address": "Bd Saint-Denis / bd de Strasbourg, 75010 Paris",
+    "latitude": 48.869242395613824,
+    "longitude": 2.3530172012436292,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "38",
+            "39"
+        ],
+        "nocturne": [
+            "N13",
+            "N14"
+        ],
+        "regional": [
+            "32"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 24
+        }
+    },
+    "seo": {
+        "description": "Station Strasbourg - Saint-Denis : M4 + M8 + M9 dans le 10e arr. À côté des Portes Saint-Denis et Saint-Martin (arcs triomphaux de Louis XIV). Hub central des grands boulevards."
+    },
+    "hero": {
+        "tagline": "M4 + M8 + M9 — Portes triomphales Louis XIV",
+        "description": "Station <strong>Strasbourg - Saint-Denis</strong> dans le <strong>10e arrondissement</strong>, à l'intersection des boulevards Saint-Denis, Saint-Martin et Sébastopol. Desservie par <strong>3 lignes</strong> : <strong>M4</strong> (1908), <strong>M8</strong> (1931) et <strong>M9</strong> (1933). À 100 m : la <strong>Porte Saint-Denis</strong> (1672, arc triomphal de François Blondel pour Louis XIV) et la <strong>Porte Saint-Martin</strong> (1674, Pierre Bullet). Hub central des grands boulevards."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Réaumur - Sébastopol",
+                "slug": "reaumur-sebastopol",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Château d'Eau",
+                "slug": "chateau-d-eau",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-8": {
+            "previous": {
+                "name": "Bonne Nouvelle",
+                "slug": "bonne-nouvelle",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Pointe du Lac"
+            }
+        },
+        "metro-9": {
+            "previous": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Bonne Nouvelle",
+                "slug": "bonne-nouvelle",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Strasbourg - Saint-Denis</strong> est située dans le <strong>10e arrondissement de Paris</strong>, à l'intersection des <strong>boulevards Saint-Denis, Saint-Martin et de Sébastopol</strong>. Elle est desservie par <strong>3 lignes</strong> : <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux), <strong>M8</strong> (Balard ↔ Pointe du Lac), <strong>M9</strong> (Pont de Sèvres ↔ Mairie de Montreuil). Bus 20, 38, 39, 47.",
+        "La station <strong>M4</strong> ouvre le <strong>21 avril 1908</strong> avec le tronçon originel. La <strong>M8</strong> est ajoutée le <strong>5 mai 1931</strong>, la <strong>M9</strong> le <strong>10 décembre 1933</strong>. Hub central commercial et de transit, au cœur des grands boulevards parisiens.",
+        "À <strong>100 m</strong> : la <strong>Porte Saint-Denis</strong> (1672), arc triomphal commandé par <strong>Louis XIV</strong> à l'architecte <strong>François Blondel</strong> pour célébrer ses victoires sur le Rhin et en Hollande. À 200 m : la <strong>Porte Saint-Martin</strong> (1674), commandée à <strong>Pierre Bullet</strong> pour célébrer la prise de Besançon et la victoire de Cassel. Les 2 portes sont des <strong>vestiges des fortifications de Charles V</strong> (XIVᵉ), reconverties par Louis XIV en arcs de triomphe."
+    ],
+    "history": {
+        "title": "1672/1674 : 2 arcs triomphaux de Louis XIV, 1908-1933 : 3 lignes métro",
+        "paragraphs": [
+            "À <strong>100 m</strong> de la station : la <strong>Porte Saint-Denis</strong>, arc triomphal érigé en <strong>1672</strong> par <strong>François Blondel</strong> pour célébrer les <strong>victoires de Louis XIV sur le Rhin</strong>. Hauteur : 24,65 m. Inscription : <em>« LUDOVICO MAGNO »</em> (« au grand Louis »). Premier monument érigé à Paris pour Louis XIV.",
+            "À <strong>200 m</strong> : la <strong>Porte Saint-Martin</strong>, arc triomphal érigé en <strong>1674</strong> par <strong>Pierre Bullet</strong> pour célébrer la <strong>prise de Besançon et la victoire de Cassel</strong>. Hauteur : 18 m. Bas-reliefs : <em>« LUDOVICO MAGNO VESONTIONE SEQUANIS BIS CAPTIS »</em>. Plus petite et plus délicate que la Porte Saint-Denis.",
+            "Les <strong>2 portes</strong> sont des <strong>vestiges des fortifications de Charles V</strong> (XIVᵉ siècle, enceinte fortifiée). Reconverties par Louis XIV en <strong>arcs de triomphe</strong> dans le cadre de sa politique d'embellissement de Paris (avec les Tuileries, les Champs-Élysées, etc.).",
+            "Le métro arrive en <strong>3 étapes</strong> : <strong>M4 en 1908</strong> (tronçon originel), <strong>M8 en 1931</strong>, <strong>M9 en 1933</strong>. La station devient ainsi un <strong>hub central majeur du métro parisien</strong>, au cœur du quartier commercial des grands boulevards.",
+            "Aujourd'hui, le quartier reste un <strong>pôle commercial actif</strong> : grands boulevards (Saint-Denis, Saint-Martin), passages couverts (passage Brady, passage du Prado), restaurants, théâtres. Affluence touristique modérée pour les portes triomphales et les passages couverts."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Strasbourg - Saint-Denis ?",
+            "answer": "<strong>M4</strong> (1908), <strong>M8</strong> (1931), <strong>M9</strong> (1933). Bus 20, 38, 39, 47."
+        },
+        {
+            "question": "Où sont les Portes Saint-Denis et Saint-Martin ?",
+            "answer": "<strong>Porte Saint-Denis</strong> à 100 m sur le boulevard Saint-Denis (1672, François Blondel). <strong>Porte Saint-Martin</strong> à 200 m sur le boulevard Saint-Martin (1674, Pierre Bullet). Vestiges des fortifications de Charles V reconvertis par Louis XIV en arcs triomphaux."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M4 directe</strong> : ~6 min (3 stations vers le sud)."
+        },
+        {
+            "question": "Comment aller à République ?",
+            "answer": "<strong>M9 directe</strong> : 1 station (2 min) OR à pied 5 min."
+        },
+        {
+            "question": "Quels sont les passages couverts proches ?",
+            "answer": "<strong>Passage Brady</strong> (1828, restaurants indiens) à 5 min. <strong>Passage du Prado</strong> (1925) à 5 min. <strong>Galerie Vivienne</strong> (1823) à 15 min."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1908-1933 : accessibilité PMR partielle."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Porte Saint-Denis et Saint-Martin</strong> à 100-200 m — arcs triomphaux Louis XIV.",
+        "<strong>Passage Brady</strong> à 5 min — restaurants indiens.",
+        "Pour <strong>République</strong> : M9 directe (1 station) ou 5 min à pied.",
+        "Pour <strong>Châtelet</strong> : M4 directe (~6 min).",
+        "Hub commercial — affluence forte heures de pointe."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Porte Saint-Denis (1672) — premier monument Louis XIV à Paris",
+            "content": "À <strong>100 m</strong>, la <strong>Porte Saint-Denis</strong> est un <strong>arc triomphal</strong> érigé en <strong>1672</strong> par l'architecte <strong>François Blondel</strong> pour célébrer les <strong>victoires de Louis XIV sur le Rhin et en Hollande</strong>. Hauteur : <strong>24,65 m</strong>. Inscription : <em>« LUDOVICO MAGNO »</em> (« au grand Louis »). <strong>Premier monument érigé à Paris pour Louis XIV</strong>. Reconverti depuis un ancien vestige des fortifications de Charles V (XIVᵉ siècle)."
+        },
+        {
+            "icon": "🚇",
+            "title": "Hub 3 lignes — M4 (1908), M8 (1931), M9 (1933)",
+            "content": "Strasbourg - Saint-Denis est l'un des <strong>hubs centraux du métro parisien</strong> avec <strong>3 lignes</strong> : <strong>M4</strong> (1908, tronçon originel Porte de Clignancourt ↔ Châtelet), <strong>M8</strong> (1931, Opéra ↔ Porte de Charenton), <strong>M9</strong> (1933, Trocadéro ↔ Porte de Saint-Cloud). Construction en 3 étapes sur 25 ans. Au cœur du quartier commercial des grands boulevards."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Porte Saint-Denis",
+            "destination_slug": "porte-saint-denis",
+            "destination_full_name": "Strasbourg - Saint-Denis → Porte Saint-Denis",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "100 m direct",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-porte-saint-denis/"
+        },
+        {
+            "destination_name": "Porte Saint-Martin",
+            "destination_slug": "porte-saint-martin",
+            "destination_full_name": "Strasbourg - Saint-Denis → Porte Saint-Martin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "200 m direct",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-porte-saint-martin/"
+        },
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Strasbourg - Saint-Denis → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-chatelet/"
+        },
+        {
+            "destination_name": "République via M9",
+            "destination_slug": "republique",
+            "destination_full_name": "Strasbourg - Saint-Denis → République",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 direction Mairie de Montreuil (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-republique/"
+        },
+        {
+            "destination_name": "Passage Brady (restos indiens)",
+            "destination_slug": "passage-brady",
+            "destination_full_name": "Strasbourg - Saint-Denis → Passage Brady (restos indiens)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-passage-brady/"
+        },
+        {
+            "destination_name": "Bastille via M8",
+            "destination_slug": "bastille",
+            "destination_full_name": "Strasbourg - Saint-Denis → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 direction Pointe du Lac",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-strasbourg-saint-denis/strasbourg-saint-denis-vers-bastille/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1538826",
+            "name": "musée des Arts et Métiers",
+            "category": "musée",
+            "description": "Le Musée des Arts et Métiers, ou MuAM, est un musée des sciences et des technologies, du Conservatoire national des arts et métiers, dans le 3e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Arts%20et%20M%C3%A9tiers%20337.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers",
+            "latitude": 48.866111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Saint-Martin",
+                "distance_m": 341,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q684594",
+            "name": "porte Saint-Denis",
+            "category": "site notable",
+            "description": "La porte Saint-Denis est un arc de triomphe situé dans l'actuel 10e arrondissement de Paris et construit en 1673, par l'architecte François Blondel, à la gloire de Louis XIV.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint%20Denis%20-%20Paris%20X%20%28FR75%29%20-%202023-06-14%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis",
+            "latitude": 48.869722,
+            "longitude": 2.3525,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Saint-Denis",
+                "distance_m": 30,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q950217",
+            "name": "porte Saint-Martin",
+            "category": "monument",
+            "description": "La porte Saint-Martin est un monument de Paris, situé à l'emplacement d'une porte de l'ancienne enceinte de Charles V.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint-Martin%2C%20Paris%208%20June%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Martin",
+            "latitude": 48.869171,
+            "longitude": 2.355601,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Porte Saint-Martin",
+                "distance_m": 80,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1488512",
+            "name": "église Saint-Nicolas-des-Champs",
+            "category": "église",
+            "description": "L'église Saint-Nicolas-des-Champs située à Paris est un édifice religieux catholique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20st%20nicolas%20des%20champs.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-des-Champs_de_Paris",
+            "latitude": 48.86547,
+            "longitude": 2.35425,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Saint-Martin",
+                "distance_m": 407,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1567798",
+            "name": "synagogue Nazareth",
+            "category": "synagogue",
+            "description": "La synagogue Nazareth est une synagogue du 3e arrondissement de Paris. C'est la plus ancienne des grandes synagogues de Paris. Elle est rattachée au Consistoire central israélite de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Syna%20Nazareth.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Nazareth",
+            "latitude": 48.866853,
+            "longitude": 2.360128,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Saint-Martin",
+                "distance_m": 486,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q279151",
+            "name": "église Notre-Dame-de-Bonne-Nouvelle",
+            "category": "église",
+            "description": "L'église Notre-Dame-de-Bonne-Nouvelle, située au 25, rue de la Lune, dans le 2e arrondissement de Paris, est une église paroissiale catholique construite de 1823 à 1830.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-de-Bonne-Nouvelle%2C%20vue%20g%C3%A9n%C3%A9rale.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-Bonne-Nouvelle_de_Paris",
+            "latitude": 48.86954,
+            "longitude": 2.34999,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd de Bonne Nouvelle",
+                "distance_m": 152,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1575733",
+            "name": "église Saint-Eugène-Sainte-Cécile",
+            "category": "église",
+            "description": "L’église Saint-Eugène-Sainte-Cécile, appelée couramment église Saint-Eugène, est une église catholique située au 6, rue Sainte-Cécile, dans le 9e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1030987%20Paris%20IX%20%C3%A9glise%20Saint-Eug%C3%A8ne-Sainte-C%C3%A9cile%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eug%C3%A8ne-Sainte-C%C3%A9cile_de_Paris",
+            "latitude": 48.873333,
+            "longitude": 2.347139,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd de Bonne Nouvelle",
+                "distance_m": 522,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1629790",
+            "name": "église Sainte-Élisabeth-de-Hongrie",
+            "category": "église",
+            "description": "L'église Sainte-Élisabeth-de-Hongrie est un édifice religieux catholique situé à Paris, datant des XVIIe et XIXe siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20%C3%89glise%20Sainte-%C3%89lisabeth-de-Hongrie%20665.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-%C3%89lisabeth-de-Hongrie_de_Paris",
+            "latitude": 48.86611,
+            "longitude": 2.36052,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Saint-Martin",
+                "distance_m": 556,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1643111",
+            "name": "hôtel de Bourgogne",
+            "category": "théâtre",
+            "description": "L’hôtel de Bourgogne, ou hôtel d'Artois, a été jusqu'au XVIe siècle la résidence des ducs de la seconde maison capétienne de Bourgogne à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Bourgogne%2C%20si%C3%A8ge%20de%20la%20Com%C3%A9die%20Italienne%20-%20Parouty%201998%20p14.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Bourgogne_(Paris)",
+            "latitude": 48.864332,
+            "longitude": 2.348055,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Saint-Denis",
+                "distance_m": 673,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1629670",
+            "name": "église Saint-Leu-Saint-Gilles",
+            "category": "église",
+            "description": "L'église Saint-Leu-Saint-Gilles est une église du XIIIe siècle de culte catholique située au no 92 rue Saint-Denis dans le 1er arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Leu-Saint-Gilles%20%28Paris%29%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Leu-Saint-Gilles_de_Paris",
+            "latitude": 48.86288,
+            "longitude": 2.35008,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de Sébastopol",
+                "distance_m": 762,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q376490",
+            "name": "théâtre du Marais",
+            "category": "théâtre",
+            "description": "Le théâtre du Marais est un nom porté par trois salles de spectacles distinctes du quartier parisien du Marais au cours de l'histoire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1200707%20Paris%20III%20rue%20Volta%20n37%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_du_Marais",
+            "latitude": 48.866389,
+            "longitude": 2.357778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Saint-Martin",
+                "distance_m": 390,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q609842",
+            "name": "théâtre de la Porte-Saint-Martin",
+            "category": "théâtre",
+            "description": "Le théâtre de la Porte Saint-Martin est une salle de spectacle située au 18, boulevard Saint-Martin dans le 10e arrondissement de Paris, ouvert en 1781.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20de%20la%20Porte%20Saint-Martin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_la_Porte-Saint-Martin",
+            "latitude": 48.869028,
+            "longitude": 2.356667,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Porte Saint-Martin",
+                "distance_m": 159,
+                "walk_minutes": 2
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de Sébastopol",
+            "address_full": "15 Boulevard Saint-Denis 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.869331,
+            "longitude": 2.353582,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "bd de Sébastopol",
+            "address_full": "11 Boulevard Saint-Denis 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.869297,
+            "longitude": 2.353896,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Saint-Martin",
+            "address_full": "9 Boulevard Saint-Denis 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.869129,
+            "longitude": 2.354457,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Porte Saint-Martin",
+            "address_full": "10 Boulevard Saint-Denis 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.869327,
+            "longitude": 2.354536,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd de Bonne Nouvelle",
+            "address_full": "10 Boulevard de Bonne Nouvelle 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.869889,
+            "longitude": 2.351994,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Saint-Denis",
+            "address_full": "19 Boulevard Saint-Denis 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.869524,
+            "longitude": 2.352775,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "bd de Strasbourg",
+            "address_full": "16 Boulevard Saint-Denis 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.869476,
+            "longitude": 2.35388,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "pass. du Prado",
+            "address_full": "18 Boulevard Saint-Denis 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.869529,
+            "longitude": 2.353661,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/strasbourg-saint-denis/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 56 m de la station Strasbourg - Saint-Denis (Métro 4, 8, 9) — perspective rue captée le 2018-07-23 par svr123456789 (compass 284°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "svr123456789 (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=3981157861967630",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-400.avif",
+                "800": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-800.avif",
+                "1200": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1200.avif",
+                "1600": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-400.webp",
+                "800": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-800.webp",
+                "1200": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1200.webp",
+                "1600": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-400.jpg",
+                "800": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-800.jpg",
+                "1200": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1200.jpg",
+                "1600": "/assets/img/stations/strasbourg-saint-denis/strasbourg-saint-denis-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 3
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1403165",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1403165",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Strasbourg_-_Saint-Denis_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

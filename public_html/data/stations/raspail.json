@@ -1,0 +1,544 @@
+{
+    "published": true,
+    "slug": "raspail",
+    "name": "Raspail",
+    "name_full": "Raspail (Métro 4, 6)",
+    "arrondissement": "14e (Paris)",
+    "address": "Bd Raspail / bd du Montparnasse, 75014 Paris",
+    "latitude": 48.83878398756392,
+    "longitude": 2.3306216485570057,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "6",
+            "slug": "metro-6",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "68",
+            "82",
+            "91"
+        ],
+        "nocturne": [
+            "N01"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 9,
+            "nearby_count": 1
+        }
+    },
+    "seo": {
+        "description": "Station Raspail : M4 + M6 dans le 14e arr. Boulevard Raspail, Cimetière Montparnasse, fondation Cartier pour l'art contemporain."
+    },
+    "hero": {
+        "tagline": "M4 + M6 — Cimetière Montparnasse, fondation Cartier",
+        "description": "Station <strong>Raspail</strong> dans le <strong>14e arrondissement</strong>, à l'intersection du boulevard Raspail et du boulevard du Montparnasse. Desservie par <strong>M4</strong> (ouverte 30 octobre 1909) et <strong>M6</strong> (ouverte 24 avril 1906 sur le viaduc aérien). À proximité : le <strong>Cimetière du Montparnasse</strong> (~36 000 sépultures, Sartre, Beauvoir, Baudelaire), la <strong>Fondation Cartier pour l'art contemporain</strong> (Jean Nouvel 1994), et le <strong>boulevard Raspail</strong>."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Denfert-Rochereau",
+                "slug": "denfert-rochereau",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Vavin",
+                "slug": "vavin",
+                "direction": "Porte de Clignancourt"
+            }
+        },
+        "metro-6": {
+            "previous": {
+                "name": "Denfert-Rochereau",
+                "slug": "denfert-rochereau",
+                "direction": "Nation"
+            },
+            "next": {
+                "name": "Edgar Quinet",
+                "slug": "edgar-quinet",
+                "direction": "Charles de Gaulle - Étoile"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Raspail</strong> est située dans le <strong>14e arrondissement de Paris</strong>, à l'intersection du <strong>boulevard Raspail</strong> et du <strong>boulevard du Montparnasse</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M4</strong> (Porte de Clignancourt ↔ Bagneux) et <strong>M6</strong> (Charles de Gaulle - Étoile ↔ Nation, aérienne sur viaduc à proximité). Bus 38, 68, 82, 91.",
+        "La station <strong>M6</strong> ouvre le <strong>24 avril 1906</strong> avec le tronçon Place d'Italie ↔ Étoile (au-dessus du sol, sur viaduc aérien). La station <strong>M4</strong> est ajoutée le <strong>30 octobre 1909</strong> avec le prolongement de la M4 vers Porte d'Orléans.",
+        "À proximité (5-10 min à pied) : le <strong>Cimetière du Montparnasse</strong> (1824, ~19 hectares, 36 000 sépultures), où reposent <strong>Sartre et Beauvoir</strong> (même tombe), <strong>Baudelaire</strong>, <strong>Maupassant</strong>, <strong>Susan Sontag</strong>. Et la <strong>Fondation Cartier pour l'art contemporain</strong> (1994, architecte <strong>Jean Nouvel</strong>) — bâtiment iconique en verre et acier, expositions d'art contemporain renommées."
+    ],
+    "history": {
+        "title": "1906 : M6, 1909 : M4, et le Cimetière Montparnasse",
+        "paragraphs": [
+            "Le nom <strong>Raspail</strong> commémore <strong>François-Vincent Raspail</strong> (1794-1878), <strong>chimiste, médecin et homme politique français</strong>. Pionnier de l'<strong>histologie cellulaire</strong> et de la <strong>microscopie</strong>. Député républicain, candidat à la présidentielle de 1848. Le boulevard Raspail a été ouvert en 1907.",
+            "La station <strong>M6</strong> ouvre le <strong>24 avril 1906</strong> avec le tronçon <strong>Place d'Italie ↔ Étoile</strong> de la M6 (aérienne sur viaduc). À cette date, Raspail est une station de la M2 Sud (renommée M6 plus tard).",
+            "La station <strong>M4</strong> est ajoutée le <strong>30 octobre 1909</strong> avec le prolongement de la M4 vers Porte d'Orléans.",
+            "À <strong>5 min à pied</strong> : le <strong>Cimetière du Montparnasse</strong>, créé en <strong>1824</strong>, l'un des plus grands de Paris (~19 hectares, ~36 000 sépultures). Sépultures célèbres : <strong>Charles Baudelaire</strong> (1867), <strong>Guy de Maupassant</strong> (1893), <strong>Jean-Paul Sartre et Simone de Beauvoir</strong> (même tombe), <strong>Susan Sontag</strong>, <strong>Samuel Beckett</strong>, <strong>Serge Gainsbourg</strong>, <strong>Marguerite Duras</strong>, <strong>Émile Durkheim</strong>.",
+            "À <strong>10 min à pied</strong> : la <strong>Fondation Cartier pour l'art contemporain</strong>, fondée en <strong>1984</strong> par Cartier, installée en <strong>1994</strong> dans son bâtiment actuel boulevard Raspail. Architecte : <strong>Jean Nouvel</strong>. <strong>Bâtiment iconique en verre et acier</strong> qui semble flotter parmi les arbres préservés du jardin de Théodore Vibert. Expositions d'art contemporain renommées.",
+            "Le quartier est partagé entre le <strong>Montparnasse historique</strong> (cafés artistes années 1920 — La Coupole, Le Dôme — à proximité Vavin) et la <strong>rive gauche bourgeoise</strong> du boulevard Raspail."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Raspail ?",
+            "answer": "<strong>M4</strong> (1909) et <strong>M6</strong> (1906, aérienne sur viaduc à proximité). Bus 38, 68, 82, 91."
+        },
+        {
+            "question": "Où est le Cimetière du Montparnasse ?",
+            "answer": "<strong>5 min à pied</strong>. Créé en 1824, ~19 ha, ~36 000 sépultures. Sépultures célèbres : <strong>Sartre et Beauvoir</strong> (même tombe), <strong>Baudelaire</strong>, <strong>Maupassant</strong>, <strong>Beckett</strong>, <strong>Gainsbourg</strong>, <strong>Duras</strong>."
+        },
+        {
+            "question": "Où est la Fondation Cartier ?",
+            "answer": "<strong>10 min à pied</strong> au sud sur le boulevard Raspail. <strong>Fondation Cartier pour l'art contemporain</strong> (1984), installée 1994 dans son bâtiment actuel par <strong>Jean Nouvel</strong>. Bâtiment iconique verre+acier."
+        },
+        {
+            "question": "Qui est Raspail ?",
+            "answer": "<strong>François-Vincent Raspail</strong> (1794-1878), <strong>chimiste, médecin et homme politique français</strong>. Pionnier de l'<strong>histologie cellulaire</strong> et de la <strong>microscopie</strong>. Député républicain, candidat à la présidentielle 1848."
+        },
+        {
+            "question": "Comment aller à Montparnasse ?",
+            "answer": "<strong>M4 directe</strong> : 1 station vers le nord (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1906/1909."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Cimetière du Montparnasse</strong> à 5 min — sépultures Sartre, Beauvoir, Baudelaire.",
+        "<strong>Fondation Cartier</strong> (Jean Nouvel) à 10 min — art contemporain.",
+        "Pour <strong>Montparnasse (gare TGV)</strong> : M4 directe (1 station).",
+        "Pour <strong>Tour Eiffel</strong> via M6 : ~15 min (terminus Bir-Hakeim).",
+        "Pour <strong>Vavin</strong> (cafés artistes Montparnasse) : 5 min à pied."
+    ],
+    "trivia": [
+        {
+            "icon": "⚱️",
+            "title": "Cimetière du Montparnasse — Sartre, Beauvoir, Baudelaire",
+            "content": "À <strong>5 min à pied</strong>, le <strong>Cimetière du Montparnasse</strong> (1824) est l'un des plus grands cimetières de Paris (~19 ha, ~36 000 sépultures). <strong>Sépultures célèbres</strong> : <strong>Jean-Paul Sartre et Simone de Beauvoir</strong> (même tombe, division 20), <strong>Charles Baudelaire</strong> (1867, division 6), <strong>Guy de Maupassant</strong>, <strong>Samuel Beckett</strong>, <strong>Serge Gainsbourg</strong> (division 1), <strong>Marguerite Duras</strong>, <strong>Susan Sontag</strong>, <strong>Émile Durkheim</strong>, <strong>Tristan Tzara</strong>, <strong>Camille Saint-Saëns</strong>. Lieu de pèlerinage littéraire et philosophique."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Fondation Cartier (Jean Nouvel 1994)",
+            "content": "À <strong>10 min à pied</strong> au sud, la <strong>Fondation Cartier pour l'art contemporain</strong> est installée depuis <strong>1994</strong> dans un bâtiment iconique de <strong>Jean Nouvel</strong>. Concept : <strong>architecture transparente</strong> en verre et acier qui semble flotter parmi les <strong>arbres préservés</strong> du jardin de Théodore Vibert (botaniste XIXᵉ). Fondation créée en <strong>1984</strong> par Cartier. Expositions d'art contemporain renommées (Jean-Michel Othoniel, Cai Guo-Qiang, Patti Smith, Jean-Michel Alberola)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Cimetière du Montparnasse",
+            "destination_slug": "cimetiere-montparnasse",
+            "destination_full_name": "Raspail → Cimetière du Montparnasse",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-cimetiere-montparnasse/"
+        },
+        {
+            "destination_name": "Fondation Cartier",
+            "destination_slug": "fondation-cartier",
+            "destination_full_name": "Raspail → Fondation Cartier",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min sud bd Raspail",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-fondation-cartier/"
+        },
+        {
+            "destination_name": "Montparnasse via M4",
+            "destination_slug": "montparnasse-bienvenue",
+            "destination_full_name": "Raspail → Montparnasse",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-montparnasse-bienvenue/"
+        },
+        {
+            "destination_name": "Tour Eiffel via M6",
+            "destination_slug": "tour-eiffel",
+            "destination_full_name": "Raspail → Tour Eiffel",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Étoile jusqu'à Bir-Hakeim",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-tour-eiffel/"
+        },
+        {
+            "destination_name": "Vavin (cafés artistes)",
+            "destination_slug": "vavin",
+            "destination_full_name": "Raspail → Vavin (cafés artistes)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min nord",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-vavin/"
+        },
+        {
+            "destination_name": "Place d'Italie via M6",
+            "destination_slug": "place-italie",
+            "destination_full_name": "Raspail → Place d'Italie",
+            "lines_used": [
+                "M6"
+            ],
+            "lines_label": "M6 direction Nation",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-raspail/raspail-vers-place-italie/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "La tour Montparnasse est le plus haut gratte-ciel de Paris intra-muros, situé dans le quartier Necker.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Edgar Quinet",
+                "distance_m": 713,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q28924",
+            "name": "catacombes de Paris",
+            "category": "site notable",
+            "description": "Les catacombes de Paris, terme utilisé pour nommer l'ossuaire municipal, sont à l'origine une partie des anciennes carrières souterraines situées dans le 14e arrondissement de Paris, reliées entre…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Catacumbas%2C%20Par%C3%ADs%2C%20Francia%2C%202022-11-01%2C%20DD%20117-119%20HDR.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Catacombes_de_Paris",
+            "latitude": 48.83397,
+            "longitude": 2.33245,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 572,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1581237",
+            "name": "Comédie-Italienne",
+            "category": "théâtre",
+            "description": "Les termes Comédie-Italienne et Théâtre-Italien sont des noms qui ont été utilisés pour les pièces de théâtre de langue italienne jouées par de nombreuses troupes en France, notamment à Paris, depuis…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Com%C3%A9die%20Italienne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_italien_de_Paris",
+            "latitude": 48.84016,
+            "longitude": 2.323882,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Edgar Quinet",
+                "distance_m": 500,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q800660",
+            "name": "Denfert-Rochereau",
+            "category": "gare",
+            "description": "La gare de Denfert-Rochereau est une gare ferroviaire française de la ligne de Sceaux, située dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Denfert-Rochereau%20BV%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Denfert-Rochereau",
+            "latitude": 48.833333,
+            "longitude": 2.332778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Edgar Quinet",
+                "distance_m": 646,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1131080",
+            "name": "hôpital Cochin",
+            "category": "hôpital",
+            "description": "L'hôpital Cochin est un hôpital de l'Assistance publique - hôpitaux de Paris (AP-HP) dans le 14e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010424%20Paris%20XIV%20Rue%20du%20Faubourg-Saint-Jacques%20H%C3%B4pital%20Cochin%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Cochin",
+            "latitude": 48.836944,
+            "longitude": 2.340278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 731,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2291298",
+            "name": "Port-Royal",
+            "category": "gare",
+            "description": "La gare de Port-Royal est une gare ferroviaire française de la ligne de Sceaux, située dans le 5e arrondissement de Paris, en limite des 6e et 14e arrondissements à proximité de l'ancienne abbaye de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER%20B-PortRoyal1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Port-Royal",
+            "latitude": 48.839444,
+            "longitude": 2.337222,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 473,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2613771",
+            "name": "musée Zadkine",
+            "category": "musée",
+            "description": "Le musée Zadkine est un musée parisien consacré au sculpteur d'origine russe Ossip Zadkine (1890-1967) qui s'est établi à Paris en 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Zadkine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Zadkine",
+            "latitude": 48.843056,
+            "longitude": 2.334167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 514,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3076255",
+            "name": "fontaine des Quatre-Parties-du-Monde",
+            "category": "fontaine",
+            "description": "La fontaine des Quatre-Parties-du-Monde, ou fontaine de l’Observatoire, ou encore fontaine Carpeaux, est un monument parisien situé place Ernest-Denis, dans le jardin des Grands-Explorateurs…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/FontaineQuatrePartiesDuMonde02.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_des_Quatre-Parties-du-Monde",
+            "latitude": 48.841056,
+            "longitude": 2.336806,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 496,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q888776",
+            "name": "Bobino",
+            "category": "théâtre",
+            "description": "Bobino est, jusqu'à sa destruction en 1985, une salle de spectacles à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20Bobino.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bobino",
+            "latitude": 48.839689,
+            "longitude": 2.323589,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Edgar Quinet",
+                "distance_m": 509,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1441258",
+            "name": "La Closerie des Lilas",
+            "category": "site notable",
+            "description": "La Closerie des Lilas est un restaurant, une brasserie et un bar du quartier Notre-Dame-des-Champs dans le 6e arrondissement de Paris, établi à l'extrémité orientale du boulevard du Montparnasse, au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Closerie%20des%20Lilas%2C%20171%20boulevard%20du%20Montparnasse%2C%20Paris%206e%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Closerie_des_Lilas",
+            "latitude": 48.8401,
+            "longitude": 2.33604,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 403,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2820659",
+            "name": "abbaye de Port-Royal de Paris",
+            "category": "site notable",
+            "description": "L’abbaye de Port-Royal de Paris a été fondée au XVIIe siècle pour décongestionner la maison-mère située en l'abbaye de Port-Royal des Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cloitre%20de%20Port-Royal%20Paris%2C%20Cochin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Port-Royal_de_Paris",
+            "latitude": 48.838763,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Campagne Première",
+                "distance_m": 557,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3527526",
+            "name": "théâtre Montparnasse",
+            "category": "théâtre",
+            "description": "Le théâtre Montparnasse est un théâtre parisien situé 31 rue de la Gaîté, dans le 14e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1030274%20Paris%20XIV%20th%C3%A9atre%20Montparnasse%20rue%20Larochelle%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_Montparnasse",
+            "latitude": 48.8409,
+            "longitude": 2.3245,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Edgar Quinet",
+                "distance_m": 487,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Edgar Quinet",
+            "address_full": "236 Boulevard Raspail 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.83894,
+            "longitude": 2.330456,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Campagne Première",
+            "address_full": "241 Boulevard Raspail 75014 Paris",
+            "postcode": "75014",
+            "city": "Paris",
+            "latitude": 48.838996,
+            "longitude": 2.330796,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/raspail/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 8 m de la station Raspail (Métro 4, 6) — perspective rue captée le 2019-11-13 par htonchia (compass 166°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "htonchia (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=2860341210847269",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/raspail/raspail-400.avif",
+                "800": "/assets/img/stations/raspail/raspail-800.avif",
+                "1200": "/assets/img/stations/raspail/raspail-1200.avif",
+                "1600": "/assets/img/stations/raspail/raspail-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/raspail/raspail-400.webp",
+                "800": "/assets/img/stations/raspail/raspail-800.webp",
+                "1200": "/assets/img/stations/raspail/raspail-1200.webp",
+                "1600": "/assets/img/stations/raspail/raspail-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/raspail/raspail-400.jpg",
+                "800": "/assets/img/stations/raspail/raspail-800.jpg",
+                "1200": "/assets/img/stations/raspail/raspail-1200.jpg",
+                "1600": "/assets/img/stations/raspail/raspail-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1578058",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1578058",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Raspail_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

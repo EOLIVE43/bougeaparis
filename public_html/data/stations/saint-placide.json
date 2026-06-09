@@ -1,0 +1,535 @@
+{
+    "published": true,
+    "slug": "saint-placide",
+    "name": "Saint-Placide",
+    "name_full": "Saint-Placide (Métro 4)",
+    "arrondissement": "6e (Paris)",
+    "address": "Rue de Rennes / rue Saint-Placide, 75006 Paris",
+    "latitude": 48.846707430514385,
+    "longitude": 2.3266226225384568,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "4",
+            "slug": "metro-4",
+            "color": "#A0006E",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "39",
+            "58",
+            "68",
+            "82",
+            "83",
+            "89",
+            "94",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N12",
+            "N13"
+        ],
+        "regional": [
+            "95"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 6,
+            "nearby_count": 27
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Placide : M4 dans le 6e arr., Le Bon Marché (1er grand magasin moderne au monde, 1852). Quartier prisé rive gauche."
+    },
+    "hero": {
+        "tagline": "M4 — Le Bon Marché (1er grand magasin moderne 1852)",
+        "description": "Station <strong>Saint-Placide</strong> ouverte le <strong>9 janvier 1910</strong> avec le prolongement M4. Située dans le <strong>6e arrondissement</strong>, sous la <strong>rue de Rennes</strong>. À <strong>5 min</strong> : <strong>Le Bon Marché Rive Gauche</strong> (1852), <strong>premier grand magasin moderne au monde</strong>, créé par Aristide Boucicaut. Quartier rive gauche prisé."
+    },
+    "adjacent_stations": {
+        "metro-4": {
+            "previous": {
+                "name": "Gare Montparnasse",
+                "slug": "gare-montparnasse",
+                "direction": "Bagneux - Lucie Aubrac"
+            },
+            "next": {
+                "name": "Saint-Sulpice",
+                "slug": "saint-sulpice",
+                "direction": "Porte de Clignancourt"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Placide</strong> est située dans le <strong>6e arrondissement de Paris</strong>, sous la <strong>rue de Rennes</strong> à proximité de la rue Saint-Placide. Elle est desservie uniquement par la <strong>M4</strong>, entre <strong>Saint-Sulpice</strong> (1 station nord) et <strong>Montparnasse-Bienvenüe</strong> (1 station sud, hub M6+M12+M13+TGV Gare Montparnasse). Bus 39, 70, 96.",
+        "Ouverte le <strong>9 janvier 1910</strong> avec le prolongement de la M4 sous la Seine (Châtelet ↔ Vavin).",
+        "À <strong>5 min à pied</strong> : <strong>Le Bon Marché Rive Gauche</strong>, le <strong>premier grand magasin moderne au monde</strong>. Fondé en <strong>1852</strong> par <strong>Aristide Boucicaut</strong> à partir d'un petit magasin de nouveautés. Innovation révolutionnaire : <strong>prix fixés et affichés</strong> (vs. marchandage), <strong>retour des marchandises possible</strong>, <strong>entrée libre sans obligation d'achat</strong>, <strong>livraison à domicile</strong>. Modèle copié dans le monde entier. Aujourd'hui propriété <strong>LVMH</strong>, dédié au luxe et à la mode."
+    ],
+    "history": {
+        "title": "Le Bon Marché (1852) — révolution du commerce moderne",
+        "paragraphs": [
+            "La station <strong>M4</strong> ouvre le <strong>9 janvier 1910</strong> avec le prolongement de la M4 sous la Seine (Châtelet ↔ Vavin).",
+            "Le nom <strong>Saint-Placide</strong> vient de la <strong>rue Saint-Placide</strong> elle-même nommée d'après <strong>saint Placide</strong> (515-565), moine bénédictin italien, disciple de saint Benoît, missionnaire en Sicile. Rue ouverte au XVIIᵉ siècle.",
+            "Le <strong>Bon Marché Rive Gauche</strong>, à 5 min de la station, est le <strong>premier grand magasin moderne au monde</strong>. Fondé en <strong>1852</strong> par <strong>Aristide Boucicaut</strong> (1810-1877) et sa femme <strong>Marguerite Boucicaut</strong> (1816-1887) à partir d'un petit magasin de nouveautés acheté en 1838.",
+            "<strong>Révolution commerciale</strong> : Boucicaut introduit des innovations qui changeront le commerce mondial. <strong>Prix fixés et affichés</strong> (vs. marchandage traditionnel), <strong>retour des marchandises possible si insatisfaction</strong>, <strong>entrée libre sans obligation d'achat</strong>, <strong>livraison à domicile</strong>, <strong>catalogues postaux</strong>, <strong>soldes saisonnières</strong>. Concept de <em>« grand magasin »</em> exporté dans le monde entier.",
+            "Bâtiment actuel : architecture de <strong>Louis-Charles Boileau et Gustave Eiffel</strong> (1869-1887). <strong>Verrière monumentale</strong>, structure métallique typique. <strong>Émile Zola</strong> s'en inspire pour son roman <em>« Au Bonheur des Dames »</em> (1883).",
+            "Aujourd'hui, le Bon Marché est propriété de <strong>LVMH</strong> (Bernard Arnault, depuis 1984). Spécialisé dans le <strong>luxe et la mode haut de gamme</strong>. Adjacent : <strong>La Grande Épicerie de Paris</strong>, l'une des plus prestigieuses épiceries fines du monde."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Saint-Placide ?",
+            "answer": "Uniquement la <strong>M4</strong>. Bus 39, 70, 96."
+        },
+        {
+            "question": "Où est le Bon Marché ?",
+            "answer": "<strong>5 min à pied</strong> de la station. <strong>Le Bon Marché Rive Gauche</strong>, premier grand magasin moderne au monde (1852, Aristide Boucicaut). Aujourd'hui propriété LVMH, dédié au luxe."
+        },
+        {
+            "question": "Pourquoi le Bon Marché est-il historique ?",
+            "answer": "Fondé en <strong>1852</strong> par <strong>Aristide Boucicaut</strong>, le Bon Marché est le <strong>premier grand magasin moderne au monde</strong>. Innovations révolutionnaires : prix fixés et affichés, retour possible, entrée libre, livraison à domicile, catalogues. Modèle exporté mondialement."
+        },
+        {
+            "question": "Émile Zola a-t-il écrit sur le Bon Marché ?",
+            "answer": "<strong>Oui</strong>. Le roman <em>« Au Bonheur des Dames »</em> (1883) d'<strong>Émile Zola</strong> est directement inspiré du Bon Marché et d'Aristide Boucicaut. Décrit la révolution commerciale et sociale du grand magasin parisien."
+        },
+        {
+            "question": "Comment aller à Montparnasse ?",
+            "answer": "<strong>M4 directe</strong> : 1 station vers le sud (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. M4 historique 1910."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Le Bon Marché Rive Gauche</strong> à 5 min — premier grand magasin moderne.",
+        "<strong>La Grande Épicerie de Paris</strong> adjacente au Bon Marché.",
+        "Pour <strong>Montparnasse</strong> (gare TGV + M6/M12/M13) : M4 directe (1 station).",
+        "Pour <strong>Saint-Germain-des-Prés</strong> : M4 directe (2 stations).",
+        "Rue de Rennes — boutiques mode haut de gamme."
+    ],
+    "trivia": [
+        {
+            "icon": "🛍️",
+            "title": "Le Bon Marché (1852) — 1er grand magasin moderne au monde",
+            "content": "À <strong>5 min à pied</strong>, <strong>Le Bon Marché Rive Gauche</strong> est le <strong>premier grand magasin moderne au monde</strong>. Fondé en <strong>1852</strong> par <strong>Aristide Boucicaut</strong> (1810-1877) et sa femme Marguerite. <strong>Innovations révolutionnaires</strong> : prix fixés et affichés (vs marchandage), retour des marchandises possible, entrée libre sans obligation d'achat, livraison à domicile, catalogues postaux, soldes. Modèle copié mondialement (Harrods Londres 1849, Macy's NY 1858, Wertheim Berlin 1875). Architecture <strong>Louis-Charles Boileau + Gustave Eiffel</strong> (1869-1887)."
+        },
+        {
+            "icon": "📚",
+            "title": "« Au Bonheur des Dames » — Zola s'inspire du Bon Marché",
+            "content": "Le roman <em>« Au Bonheur des Dames »</em> (1883) d'<strong>Émile Zola</strong>, 11e volume de la série <em>Les Rougon-Macquart</em>, est <strong>directement inspiré du Bon Marché et d'Aristide Boucicaut</strong>. Zola décrit la révolution commerciale et sociale du grand magasin parisien : prix bas, attraction client, conditions de travail des employés, déclin des petits commerces traditionnels. Roman emblématique du naturalisme français."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Le Bon Marché Rive Gauche",
+            "destination_slug": "bon-marche",
+            "destination_full_name": "Saint-Placide → Le Bon Marché Rive Gauche",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direction nord-est",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-bon-marche/"
+        },
+        {
+            "destination_name": "La Grande Épicerie de Paris",
+            "destination_slug": "grande-epicerie",
+            "destination_full_name": "Saint-Placide → La Grande Épicerie de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-grande-epicerie/"
+        },
+        {
+            "destination_name": "Saint-Sulpice via M4",
+            "destination_slug": "saint-sulpice",
+            "destination_full_name": "Saint-Placide → Saint-Sulpice",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-saint-sulpice/"
+        },
+        {
+            "destination_name": "Montparnasse via M4",
+            "destination_slug": "montparnasse-bienvenue",
+            "destination_full_name": "Saint-Placide → Montparnasse",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Bagneux (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-montparnasse-bienvenue/"
+        },
+        {
+            "destination_name": "Châtelet via M4",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Saint-Placide → Châtelet",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-chatelet/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés via M4",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Saint-Placide → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M4"
+            ],
+            "lines_label": "M4 direction Porte de Clignancourt (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-placide/saint-placide-vers-saint-germain-des-pres/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q309458",
+            "name": "jardin du Luxembourg",
+            "category": "jardin",
+            "description": "Le jardin du Luxembourg est un jardin ouvert au public, situé dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20du%20Luxembourg.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_du_Luxembourg",
+            "latitude": 48.846944,
+            "longitude": 2.337222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 759,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "La tour Montparnasse est le plus haut gratte-ciel de Paris intra-muros, situé dans le quartier Necker.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 630,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q295844",
+            "name": "église Saint-Sulpice de Paris",
+            "category": "église",
+            "description": "L’église Saint-Sulpice est une église paroissiale catholique située dans le quartier de l'Odéon, dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Sulpice%20Fassade%204-5%20A.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sulpice_de_Paris",
+            "latitude": 48.851002,
+            "longitude": 2.334923,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 732,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1200698",
+            "name": "Le Bon Marché",
+            "category": "commerce",
+            "description": "Le Bon Marché est un grand magasin français, situé dans un quadrilatère encadré par la rue de Sèvres, la rue de Babylone, la rue du Bac et la rue Velpeau dans le 7e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Bon%20March%C3%A9%2C%20Paris%2027%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Bon_March%C3%A9",
+            "latitude": 48.851183,
+            "longitude": 2.324395,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 481,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1411180",
+            "name": "musée du Luxembourg",
+            "category": "musée",
+            "description": "Le musée du Luxembourg est un lieu d'exposition d'art installé dans une aile bâtie perpendiculairement à l'orangerie du palais du Luxembourg, rue de Vaugirard, dans le 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Expo%20Louis-Comfort%20Tiffany.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Luxembourg",
+            "latitude": 48.848611,
+            "longitude": 2.334028,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 553,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2715373",
+            "name": "musée Bourdelle",
+            "category": "musée",
+            "description": "Le musée Bourdelle est l'un des quatorze musées de la Ville de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20musee%20bourdelle%20maison.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bourdelle",
+            "latitude": 48.843056,
+            "longitude": 2.318333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 749,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1581237",
+            "name": "Comédie-Italienne",
+            "category": "théâtre",
+            "description": "Les termes Comédie-Italienne et Théâtre-Italien sont des noms qui ont été utilisés pour les pièces de théâtre de langue italienne jouées par de nombreuses troupes en France, notamment à Paris, depuis…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Com%C3%A9die%20Italienne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_italien_de_Paris",
+            "latitude": 48.84016,
+            "longitude": 2.323882,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 768,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1515595",
+            "name": "hôtel Lutetia",
+            "category": "site notable",
+            "description": "L'hôtel Lutetia est un hôtel de luxe du 6e arrondissement de Paris, situé au no 45 boulevard Raspail, à l'angle de la rue de Sèvres, dans le quartier de Notre-Dame-des-Champs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Lutetia%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Lutetia",
+            "latitude": 48.851354,
+            "longitude": 2.327203,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 468,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2735858",
+            "name": "place Saint-Sulpice",
+            "category": "place",
+            "description": "La place Saint-Sulpice est une place du 6e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020108%20Paris%20VI%20Place%20Saint-Sulpice%20Ex%20s%C3%A9minaire%20de%20Saint-Sulpice%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Saint-Sulpice",
+            "latitude": 48.850833,
+            "longitude": 2.333333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 629,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q769842",
+            "name": "chapelle Notre-Dame-de-la-Médaille-miraculeuse",
+            "category": "chapelle",
+            "description": "La chapelle Notre-Dame-de-la-Médaille-Miraculeuse, ou chapelle de la rue du Bac, est une chapelle située dans le quartier Saint-Thomas-d'Aquin du 7e arrondissement de Paris, au 140, rue du Bac,…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Maison%20des%20Filles%20de%20la%20Charit%C3%A9%20-%20136-140%20rue%20du%20Bac%20-%20005bis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-M%C3%A9daille-Miraculeuse_de_Paris",
+            "latitude": 48.85084,
+            "longitude": 2.32293,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Rennes",
+                "distance_m": 498,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Le musée du Montparnasse est un musée à Paris, ouvert de 1998 à 2013, villa Marie-Vassilieff.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 578,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2613771",
+            "name": "musée Zadkine",
+            "category": "musée",
+            "description": "Le musée Zadkine est un musée parisien consacré au sculpteur d'origine russe Ossip Zadkine (1890-1967) qui s'est établi à Paris en 1910.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Zadkine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Zadkine",
+            "latitude": 48.843056,
+            "longitude": 2.334167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Notre-Dame des Champs",
+                "distance_m": 677,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. Notre-Dame des Champs",
+            "address_full": "127 Rue de Rennes 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.846781,
+            "longitude": 2.326853,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Rennes",
+            "address_full": "120 Rue de Rennes 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.847158,
+            "longitude": 2.326794,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe.",
+            "Présence agents IDFM intermittente."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/saint-placide/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 56 m de la station Saint-Placide (Métro 4) — perspective rue captée le 2024-03-03 par aerandir14 (compass 32°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "aerandir14 (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=1479368106124585",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-placide/saint-placide-400.avif",
+                "800": "/assets/img/stations/saint-placide/saint-placide-800.avif",
+                "1200": "/assets/img/stations/saint-placide/saint-placide-1200.avif",
+                "1600": "/assets/img/stations/saint-placide/saint-placide-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-placide/saint-placide-400.webp",
+                "800": "/assets/img/stations/saint-placide/saint-placide-800.webp",
+                "1200": "/assets/img/stations/saint-placide/saint-placide-1200.webp",
+                "1600": "/assets/img/stations/saint-placide/saint-placide-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-placide/saint-placide-400.jpg",
+                "800": "/assets/img/stations/saint-placide/saint-placide-800.jpg",
+                "1200": "/assets/img/stations/saint-placide/saint-placide-1200.jpg",
+                "1600": "/assets/img/stations/saint-placide/saint-placide-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q763411",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q763411",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Placide_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
