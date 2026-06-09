@@ -71,6 +71,19 @@ jobs:
           php-version: '8.1'
           extensions: json, mbstring
 
+      # Sitemap.xml régénéré à chaque deploy depuis l'état réel du repo
+      # (lines.json + data/stations/*.json filtrés published=true). Évite la
+      # dérive entre stations publiées et URLs annoncées à Google.
+      # Pas de commit auto — le fichier généré part directement via FTP.
+      - name: Generate sitemap.xml
+        run: |
+          set -e
+          php scripts/generate-sitemap.php
+          echo "Verification :"
+          echo "  Total URLs : $(grep -c '<loc>' public_html/sitemap.xml)"
+          echo "  Stations : $(grep -c '/metro/station/' public_html/sitemap.xml)"
+          echo "  Lignes : $(grep -c '/metro/ligne-' public_html/sitemap.xml)"
+
       - name: Extract critical CSS (homepage + template station + tarifs)
         run: |
           set -e
