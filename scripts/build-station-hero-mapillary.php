@@ -102,24 +102,33 @@ function http_get(string $url, string $accept = 'application/json'): array {
 }
 
 function http_download(string $url, string $dest): bool {
-    $fp = fopen($dest, 'w');
-    if (!$fp) return false;
-    $ch = curl_init($url);
-    curl_setopt_array($ch, [
-        CURLOPT_FILE           => $fp,
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_TIMEOUT        => 60,
-        CURLOPT_USERAGENT      => USER_AGENT,
-    ]);
-    $ok = curl_exec($ch);
-    $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-    fclose($fp);
-    if (!$ok || $code !== 200 || !is_file($dest) || filesize($dest) < 1024) {
+    // v6 : retry 429 (Wikimedia rate-limit aggressive sur originaux 4K+)
+    $attempts = 3;
+    for ($i = 0; $i < $attempts; $i++) {
+        $fp = fopen($dest, 'w');
+        if (!$fp) return false;
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_FILE           => $fp,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_TIMEOUT        => 60,
+            CURLOPT_USERAGENT      => USER_AGENT,
+        ]);
+        $ok = curl_exec($ch);
+        $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+        fclose($fp);
+        if ($ok && $code === 200 && is_file($dest) && filesize($dest) >= 1024) {
+            return true;
+        }
         @unlink($dest);
-        return false;
+        if ($code === 429 && $i < $attempts - 1) {
+            sleep(15 * ($i + 1));
+            continue;
+        }
+        break;
     }
-    return true;
+    return false;
 }
 
 // ------------------------------------------------------------------
@@ -217,7 +226,8 @@ function wikimedia_imageinfo(string $filename): ?array {
         'action' => 'query',
         'titles' => $title,
         'prop'   => 'imageinfo',
-        'iiprop' => 'url|size|extmetadata',
+        // v6 : ajout 'mime' pour permettre le filtre image/jpeg|png
+        'iiprop' => 'url|size|mime|extmetadata',
         'format' => 'json',
     ]);
     [$code, $body] = http_get($url);
@@ -249,59 +259,133 @@ function license_is_cc_compatible(string $license): bool {
 }
 
 /**
- * PRIORITE 1 : recherche d'une photo Wikimedia de la station elle-meme
- * dans les categories standard Wikimedia Commons :
- *   - "Entrances to {nom} metro station"  (entree, edicule)
- *   - "{nom} (Paris Metro)"                (general gare)
+ * PRIORITE 1 (v6) : recherche d'une photo Wikimedia de la station elle-meme.
  *
- * Le nom de la station est construit a partir de $station['name'] (ex:
- * "Saint-Denis - Pleyel", "Villejuif - Gustave Roussy"). On normalise
- * en remplacant "-" / espaces selon ce qui marche.
+ * Tests successifs (apprentissages M4 batch :
+ *  9/15 matches en T2 "Accès Station X Métro Paris" — pattern Chabe01) :
+ *   T1 — Cat:Entrances to {nom} metro station       (entree, le top)
+ *   T2 — Fulltext "Accès Station {nom} Métro Paris" (Chabe01 pattern)
+ *   T3 — Fulltext "Station {nom} Métro Paris"       (général)
+ *   T4 — Cat:{nom} (Paris Metro)                    (general gare, files root)
+ *   T5 — Cat:{nom} (Paris Metro line N)             (par ligne)
+ *   T6 — Cat:{nom} (Métro de Paris)                 (variante française)
  *
- * Filtres : license CC + dims >= WIKIMEDIA_MIN_W + mime image/jpeg|png.
- * Retourne ['filename' => str, 'info' => imageinfo, 'category' => str]
- * ou null.
+ * Filtres : license CC + dims >= WIKIMEDIA_MIN_W + mime image/jpeg|png +
+ *           exclusion .pdf/.gif/.svg/.tiff dans le nom de fichier.
+ *
+ * Retourne ['filename' => str, 'info' => imageinfo, 'source' => str, 'query' => str]
+ * ou null. 'source' = identifiant du test qui a matché.
  */
+function wm_files_in_cat(string $cat): array {
+    $url = 'https://commons.wikimedia.org/w/api.php?' . http_build_query([
+        'action'      => 'query',
+        'list'        => 'categorymembers',
+        'cmtitle'     => "Category:$cat",
+        'cmnamespace' => 6,
+        'cmlimit'     => 30,
+        'format'      => 'json',
+    ]);
+    [$code, $body] = http_get($url);
+    if ($code !== 200) return [];
+    $d = json_decode($body, true);
+    $members = $d['query']['categorymembers'] ?? [];
+    $out = [];
+    foreach ($members as $m) {
+        $t = $m['title'] ?? '';
+        if (str_starts_with($t, 'File:')) $out[] = substr($t, 5);
+    }
+    return $out;
+}
+
+function wm_files_in_search(string $query): array {
+    $url = 'https://commons.wikimedia.org/w/api.php?' . http_build_query([
+        'action'    => 'query',
+        'list'      => 'search',
+        'srsearch'  => $query,
+        'srnamespace' => 6,
+        'srlimit'   => 15,
+        'format'    => 'json',
+    ]);
+    [$code, $body] = http_get($url);
+    if ($code !== 200) return [];
+    $d = json_decode($body, true);
+    $hits = $d['query']['search'] ?? [];
+    $out = [];
+    foreach ($hits as $h) {
+        $t = $h['title'] ?? '';
+        if (str_starts_with($t, 'File:')) $out[] = substr($t, 5);
+    }
+    return $out;
+}
+
+function wm_is_excluded_filename(string $filename): bool {
+    $lower = strtolower($filename);
+    foreach (['.pdf', '.gif', '.svg', '.tiff', '.tif', '.webm', '.ogv', '.ogg', '.wav', '.mp4'] as $ext) {
+        if (str_ends_with($lower, $ext)) return true;
+    }
+    foreach (['chantier', 'travaux', 'construction', '_construction_', ' construction '] as $bad) {
+        if (str_contains($lower, $bad)) return true;
+    }
+    return false;
+}
+
+function wm_validate_file(string $filename): ?array {
+    if (wm_is_excluded_filename($filename)) return null;
+    $info = wikimedia_imageinfo($filename);
+    if (!$info) return null;
+    if ($info['width'] < WIKIMEDIA_MIN_W) return null;
+    if (!license_is_cc_compatible($info['license'])) return null;
+    if (!in_array($info['mime'], ['image/jpeg', 'image/png'], true)) return null;
+    return $info;
+}
+
 function find_wikimedia_station(array $station): ?array {
     $name = $station['name'] ?? '';
     if ($name === '') return null;
-    // Categories candidates dans l'ordre de priorite
-    $categories = [
-        "Entrances to $name metro station",      // entree (le top)
-        "$name (Paris Metro)",                    // general gare
-        "$name (Paris Metro line " . ($station['lines'][0]['code'] ?? '') . ")",
+    $lineCode = $station['lines'][0]['code'] ?? '';
+
+    $tests = [
+        ['T1-Cat:Entrances',     fn() => wm_files_in_cat("Entrances to $name metro station")],
+        ['T2-Search:AccesStation', fn() => wm_files_in_search("Accès Station $name Métro Paris")],
+        ['T3-Search:Station',    fn() => wm_files_in_search("Station $name Métro Paris")],
+        ['T4-Cat:ParisMetro',    fn() => wm_files_in_cat("$name (Paris Metro)")],
+        ['T5-Cat:ParisMetroLine',fn() => wm_files_in_cat("$name (Paris Metro line $lineCode)")],
+        ['T6-Cat:MetroDeParis',  fn() => wm_files_in_cat("$name (Métro de Paris)")],
     ];
-    foreach ($categories as $cat) {
-        $url = 'https://commons.wikimedia.org/w/api.php?' . http_build_query([
-            'action'      => 'query',
-            'list'        => 'categorymembers',
-            'cmtitle'     => "Category:$cat",
-            'cmnamespace' => 6,
-            'cmlimit'     => 30,
-            'format'      => 'json',
-        ]);
-        [$code, $body] = http_get($url);
-        if ($code !== 200) continue;
-        $d = json_decode($body, true);
-        $members = $d['query']['categorymembers'] ?? [];
-        if (empty($members)) continue;
-        // Pour chaque membre, query imageinfo et valide. Prend le 1er valide.
+
+    foreach ($tests as [$label, $fn]) {
+        $files = $fn();
+        if (empty($files)) continue;
         $tried = 0;
-        foreach ($members as $member) {
+        foreach ($files as $filename) {
             if ($tried >= WIKIMEDIA_MAX_POI_TRIES) break;
-            $title = $member['title'] ?? '';
-            if (!str_starts_with($title, 'File:')) continue;
-            $filename = substr($title, 5);
             $tried++;
-            $info = wikimedia_imageinfo($filename);
+            $info = wm_validate_file($filename);
             if (!$info) continue;
-            if ($info['width'] < WIKIMEDIA_MIN_W) continue;
-            if (!license_is_cc_compatible($info['license'])) continue;
-            if (!in_array($info['mime'], ['image/jpeg', 'image/png'], true)) continue;
-            return ['filename' => $filename, 'info' => $info, 'category' => $cat];
+            return [
+                'filename' => $filename,
+                'info'     => $info,
+                'source'   => $label,
+                'query'    => $label,
+            ];
         }
     }
     return null;
+}
+
+/**
+ * Helper : déduit le type de sujet depuis le nom du fichier Wikimedia.
+ * Permet de construire un alt text plus précis.
+ */
+function wikimedia_subject_from_filename(string $filename): string {
+    $lower = strtolower($filename);
+    if (preg_match('/(accès|access|entrée|edicule|édicule)/u', $lower)) return "Entrée extérieure";
+    if (preg_match('/(couloir|hall|souterrain|passage)/u', $lower))      return "Couloir intérieur";
+    if (preg_match('/(quai|plateforme|platform)/u', $lower))             return "Quai";
+    if (preg_match('/(rame|train)/u', $lower))                            return "Train à quai";
+    if (preg_match('/(aérien|aerien|viaduc)/u', $lower))                  return "Vue aérienne";
+    if (preg_match('/(panneau|totem)/u', $lower))                         return "Signalétique extérieure";
+    return "Vue de la station";
 }
 
 /**
@@ -459,8 +543,10 @@ function process_station(string $slug, string $token): array {
     if ($lat === 0.0 || $lon === 0.0) fail("$slug : pas de coords");
 
     // Flag keep_hero : preserve les heros monument iconique manuellement curates
+    // Dry-run bypass : utile pour tester find_wikimedia_station sans ecraser
     $heroExisting = $station['hero_image'] ?? [];
-    if (($heroExisting['source'] ?? '') === 'manual'
+    if (empty($GLOBALS['BP_DRY_RUN'])
+        && ($heroExisting['source'] ?? '') === 'manual'
         && ($heroExisting['keep_hero'] ?? false) === true) {
         return [
             'slug'     => $slug,
@@ -484,20 +570,43 @@ function process_station(string $slug, string $token): array {
     // PRIORITE 1 : Wikimedia station (photo edicule/entree/hall de LA gare)
     $wkStation = find_wikimedia_station($station);
     if ($wkStation !== null) {
+        // Dry-run : log et exit sans modifier
+        if (!empty($GLOBALS['BP_DRY_RUN'])) {
+            return [
+                'slug'   => $slug,
+                'source' => 'wikimedia_station',
+                'dry_run' => true,
+                'test_matched' => $wkStation['source'],
+                'filename' => $wkStation['filename'],
+                'creator'  => $wkStation['info']['artist'],
+                'license'  => $wkStation['info']['license'],
+                'dims'     => $wkStation['info']['width'] . 'x' . $wkStation['info']['height'],
+            ];
+        }
         $info = $wkStation['info'];
         $wkSrc = "$srcDir/wikimedia-station.jpg";
-        if (http_download($info['url'], $wkSrc)) {
+        // v6 : Special:FilePath?width=2400 (thumbnail, evite 429 sur originals 4K+)
+        $thumbUrl = 'https://commons.wikimedia.org/wiki/Special:FilePath/' . rawurlencode($wkStation['filename']) . '?width=2400';
+        $dlOk = http_download($thumbUrl, $wkSrc);
+        if (!$dlOk) {
+            // Fallback sur l'original si thumb echoue
+            $dlOk = http_download($info['url'], $wkSrc);
+        }
+        if ($dlOk) {
             $cropped = "$srcDir/wikimedia-station-crop.jpg";
             if (!central_crop_16_9($wkSrc, $cropped)) @copy($wkSrc, $cropped);
             @unlink($wkSrc);
             rename($cropped, $wkSrc);
             $n = generate_variants($wkSrc, $slug, $outDir);
             $stationName = $station['name_full'] ?? $station['name'];
+            $subject = wikimedia_subject_from_filename($wkStation['filename']);
             $station['hero_image'] = [
                 'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/wikimedia-station.jpg",
                 'alt'    => sprintf(
-                    "Vue de la station %s — photo Wikimedia Commons (categorie %s)",
-                    $stationName, $wkStation['category']
+                    "%s de la station %s — photo Wikimedia Commons par %s (%s)",
+                    $subject, $stationName,
+                    $info['artist'] ?: 'contributeur Wikimedia',
+                    $wkStation['source']
                 ),
                 'width'  => 1200,
                 'height' => 675,
@@ -527,7 +636,9 @@ function process_station(string $slug, string $token): array {
                 'attempts'         => [],
                 'variants'         => $n,
                 'tiles'            => null,
-                'wikimedia_category' => $wkStation['category'],
+                'wikimedia_test'   => $wkStation['source'],
+                'wikimedia_filename' => $wkStation['filename'],
+                'subject'          => $subject,
                 'reason'           => null,
             ];
         }
@@ -540,6 +651,24 @@ function process_station(string $slug, string $token): array {
     $attempts = $adaptive['attempts'];
     // Total : utiliser le total du dernier essai (le plus grand bbox)
     $total = end($attempts)['total'] ?? 0;
+
+    // Dry-run : log et exit sans modifier
+    if (!empty($GLOBALS['BP_DRY_RUN'])) {
+        return [
+            'slug'    => $slug,
+            'source'  => $best !== null ? 'mapillary_streetview' : 'no_fallback_available',
+            'dry_run' => true,
+            'test_matched' => $best !== null
+                ? "Mapillary-r{$matchedRadius}m"
+                : 'no_match',
+            'mapillary_attempts' => $attempts,
+            'mapillary_best' => $best !== null ? [
+                'creator' => $best['creator']['username'] ?? '?',
+                'date' => date('Y-m-d', (int)(($best['captured_at'] ?? 0) / 1000)),
+                'dist_m' => (int)round($best['_dist_m'] ?? 0),
+            ] : null,
+        ];
+    }
 
     if ($best !== null) {
         $mapillarySrc = "$srcDir/mapillary.jpg";
@@ -645,7 +774,8 @@ function process_station(string $slug, string $token): array {
 
 $args = parse_args($argv);
 $slug = $args['station'] ?? null;
-if (!$slug) fail('Usage : --station=<slug>');
+if (!$slug) fail('Usage : --station=<slug> [--dry-run]');
+$GLOBALS['BP_DRY_RUN'] = isset($args['dry-run']) || in_array('--dry-run', $argv, true);
 
 $secrets = load_secrets();
 $token = $secrets['MAPILLARY_API_KEY'] ?? null;
