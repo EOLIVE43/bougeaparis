@@ -1,0 +1,582 @@
+{
+    "published": true,
+    "slug": "mairie-de-saint-ouen",
+    "name": "Mairie de Saint-Ouen",
+    "name_full": "Mairie de Saint-Ouen (Métro 13, 14)",
+    "arrondissement": "Saint-Ouen-sur-Seine (93)",
+    "address": "Place de la République, 93400 Saint-Ouen-sur-Seine",
+    "latitude": 48.91252311011162,
+    "longitude": 2.334284945557004,
+    "tariff_zone": 3,
+    "tariff_zone_context": "Hors Paris intra-muros",
+    "commune": "",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "85",
+            "137",
+            "140",
+            "166",
+            "173",
+            "237",
+            "274",
+            "AUDONIE"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 18
+        }
+    },
+    "seo": {
+        "description": "Station Mairie de Saint-Ouen : M13 + M14 à Saint-Ouen-sur-Seine (93). Hôtel de Ville Saint-Ouen, quartier des Docks réaménagé, siège Région Île-de-France."
+    },
+    "hero": {
+        "tagline": "M13 + M14 — seule station hors Paris desservie par 2 lignes métro",
+        "description": "Station <strong>Mairie de Saint-Ouen</strong> à <strong>Saint-Ouen-sur-Seine</strong> (Seine-Saint-Denis, 93). Desservie par <strong>M13</strong> (ouverte 30 juin 1952) et <strong>M14</strong> (ouverte 14 décembre 2020). <strong>Seule station de métro hors Paris desservie par 2 lignes</strong>. À proximité : l'<strong>Hôtel de Ville de Saint-Ouen-sur-Seine</strong>, le <strong>siège du Conseil régional d'Île-de-France</strong> (200 m), <strong>Alstom Transport</strong> (siège), et le <strong>quartier des Docks</strong> en plein réaménagement urbain."
+    },
+    "adjacent_stations": {
+        "metro-13": {
+            "previous": {
+                "name": "Carrefour Pleyel",
+                "slug": "carrefour-pleyel",
+                "direction": "Saint-Denis - Université"
+            },
+            "next": {
+                "name": "Garibaldi",
+                "slug": "garibaldi",
+                "direction": "Châtillon - Montrouge"
+            }
+        },
+        "metro-14": {
+            "previous": {
+                "name": "Saint-Denis - Pleyel",
+                "slug": "saint-denis-pleyel",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Saint-Ouen",
+                "slug": "saint-ouen",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Mairie de Saint-Ouen</strong> est située à <strong>Saint-Ouen-sur-Seine</strong> (Seine-Saint-Denis, 93), sous la <strong>Place de la République</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M13</strong> (Châtillon-Montrouge ↔ Saint-Denis / Asnières-Gennevilliers) et <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, automatique). Bus 173, 274, 274bis, 312, 341. <strong>Seule station de métro hors Paris à être desservie par 2 lignes métro</strong> depuis décembre 2020.",
+        "La station <strong>M13</strong> ouvre le <strong>30 juin 1952</strong>, avec le prolongement de la M13 vers Carrefour Pleyel. La station <strong>M14</strong> est inaugurée le <strong>14 décembre 2020</strong> avec le prolongement nord de la M14 de Saint-Lazare à Mairie de Saint-Ouen (4 stations ajoutées). Mairie de Saint-Ouen devient alors un <strong>pôle de correspondance majeur</strong> au nord du réseau parisien.",
+        "À <strong>quelques minutes à pied</strong> : l'<strong>Hôtel de Ville de Saint-Ouen-sur-Seine</strong>, le <strong>siège du Conseil régional d'Île-de-France</strong> (200 m, conçu en 2018 dans l'ancien immeuble Alstom), le <strong>siège d'Alstom Transport</strong>. À 10 min : le <strong>quartier des Docks de Saint-Ouen</strong> (75 ha, en réaménagement depuis 2009), l'un des plus grands projets urbains de la métropole parisienne."
+    ],
+    "history": {
+        "title": "1952 : M13, 2020 : M14 — bi-modale unique hors Paris",
+        "paragraphs": [
+            "La station <strong>Mairie de Saint-Ouen</strong> ouvre la <strong>M13</strong> le <strong>30 juin 1952</strong>, avec le prolongement de la M13 (alors M14 selon ancienne nomenclature) de Porte de Saint-Ouen à Carrefour Pleyel. Saint-Ouen-sur-Seine était l'une des premières communes de la petite couronne desservies par le métro parisien.",
+            "Le <strong>14 décembre 2020</strong>, la station accueille la <strong>M14</strong> avec le prolongement nord de Saint-Lazare à Mairie de Saint-Ouen (4 stations ajoutées : Pont Cardinet, Porte de Clichy, Clichy-Saint-Ouen, Mairie de Saint-Ouen). Objectif : <strong>désengorger la M13</strong>, l'une des lignes les plus saturées du réseau. Effet observé : ~25% de baisse de fréquentation M13 sur sa branche nord.",
+            "La station devient alors <strong>la seule station de métro située hors Paris à être desservie par 2 lignes métro</strong>. Configuration : quais M13 en voûte classique, quais M14 modernes (portes palières, accessibilité PMR totale).",
+            "À proximité immédiate : l'<strong>Hôtel de Ville</strong> conçu au début du XXe siècle (style néo-Renaissance), le <strong>siège du Conseil régional d'Île-de-France</strong> (installé en 2018 dans l'ancien immeuble Alstom, après le déménagement de Paris vers Saint-Ouen sous la présidence de Valérie Pécresse), et le <strong>siège d'Alstom Transport</strong> (constructeur ferroviaire emblématique).",
+            "À 10 min : le <strong>quartier des Docks de Saint-Ouen</strong>, projet de <strong>réaménagement urbain de 75 hectares</strong> initié en 2009. Anciennes friches industrielles transformées en quartier mixte : <strong>~4 000 logements</strong>, bureaux, équipements (cinéma, écoles), parc Grand Mail-Garibaldi (12 ha). L'un des plus grands projets ANRU du Grand Paris."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Mairie de Saint-Ouen ?",
+            "answer": "<strong>M13</strong> (Châtillon-Montrouge ↔ Saint-Denis / Asnières-Gennevilliers, ouverte 1952) et <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, automatique, ouverte 2020). Bus 173, 274, 274bis, 312, 341. <strong>Unique : seule station métro hors Paris desservie par 2 lignes</strong>."
+        },
+        {
+            "question": "Quand la station a-t-elle ouvert ?",
+            "answer": "<strong>M13</strong> : <strong>30 juin 1952</strong>. <strong>M14</strong> : <strong>14 décembre 2020</strong> (prolongement nord M14 pour désengorger la M13). Mairie de Saint-Ouen est alors devenue unique : seule station métro hors Paris à 2 lignes."
+        },
+        {
+            "question": "Où est l'Hôtel de Ville de Saint-Ouen ?",
+            "answer": "<strong>À 2 min à pied</strong> de la station, sur la Place de la République. Bâtiment néo-Renaissance du début XXe siècle. Mairie de la commune de Saint-Ouen-sur-Seine (~50 000 habitants), commune de Seine-Saint-Denis (93)."
+        },
+        {
+            "question": "Le siège de la Région Île-de-France est-il proche ?",
+            "answer": "<strong>Oui, à 200 m</strong> de la station. Le Conseil régional d'Île-de-France a déménagé de Paris à Saint-Ouen-sur-Seine en <strong>2018</strong>, sous la présidence de Valérie Pécresse, dans l'ancien immeuble d'Alstom (réhabilité). Symbole du décentrement vers la petite couronne."
+        },
+        {
+            "question": "Comment aller à Paris depuis Mairie de Saint-Ouen ?",
+            "answer": "<strong>M14 directe</strong> : 6 stations jusqu'à Châtelet (~12 min), 4 stations jusqu'à Saint-Lazare (~8 min). <strong>M13 directe</strong> : 7 stations jusqu'à Saint-Lazare (~15 min), 11 stations jusqu'à Châtelet via Champs-Élysées-Clemenceau. La M14 est plus rapide."
+        },
+        {
+            "question": "Où est le quartier des Docks ?",
+            "answer": "<strong>10 min à pied</strong> en direction de la Seine. Projet de <strong>75 hectares</strong> (initié 2009) sur des anciennes friches industrielles : <strong>4 000 logements</strong>, bureaux, écoles, cinéma, parc Grand Mail-Garibaldi (12 ha). L'un des plus grands réaménagements urbains du Grand Paris."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Quai M14 entièrement accessible PMR</strong> (ligne automatique 100% PMR). <strong>Quai M13 partiellement accessible</strong> (correspondance via ascenseurs M14 + voirie)."
+        },
+        {
+            "question": "Quels sont les horaires ?",
+            "answer": "Les deux lignes circulent de <strong>5h30 à 1h15</strong> en semaine, jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. M14 fréquence record : ~85 s en heure de pointe. M13 : ~2-3 min en heure de pointe."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Hôtel de Ville Saint-Ouen</strong> à 2 min — bâtiment néo-Renaissance.",
+        "<strong>Siège Région Île-de-France</strong> à 200 m — visite institutionnelle possible.",
+        "<strong>Quartier des Docks</strong> à 10 min — promenade urbaine.",
+        "Pour <strong>Saint-Denis - Pleyel</strong> : M14 directe (1 station).",
+        "Pour <strong>Châtelet</strong> : M14 directe (~12 min, plus rapide que M13).",
+        "Pour <strong>Puces de Saint-Ouen</strong> : 15 min à pied OU M13 jusqu'à Garibaldi puis 5 min."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Seule station hors Paris desservie par 2 lignes métro",
+            "content": "Depuis le <strong>14 décembre 2020</strong>, Mairie de Saint-Ouen est <strong>la seule station de métro située hors Paris à être desservie par 2 lignes métro</strong> (M13 et M14). Toutes les autres stations de la petite couronne (Saint-Denis Basilique, Pont de Sèvres, Châtillon-Montrouge, etc.) sont mono-ligne. Cas unique du réseau."
+        },
+        {
+            "icon": "🏢",
+            "title": "Siège du Conseil régional d'Île-de-France (2018)",
+            "content": "À <strong>200 m</strong> de la station, le <strong>Conseil régional d'Île-de-France</strong> a quitté son ancien siège parisien (rue de Babylone, 7e) pour s'installer en <strong>2018</strong> à Saint-Ouen-sur-Seine, sous la présidence de <strong>Valérie Pécresse</strong>. Bâtiment : ancien siège d'Alstom (Pyramide Alstom, années 1990), réhabilité. Symbole politique fort : décentrement institutionnel vers la petite couronne."
+        },
+        {
+            "icon": "🚧",
+            "title": "Quartier des Docks — 75 ha en mutation depuis 2009",
+            "content": "À <strong>10 min</strong> en direction de la Seine, le <strong>quartier des Docks de Saint-Ouen</strong> est l'un des plus grands réaménagements urbains du Grand Paris. <strong>75 hectares</strong> d'anciennes friches industrielles transformées depuis <strong>2009</strong> : <strong>4 000 logements</strong>, bureaux, équipements publics (cinéma, écoles, gymnases), <strong>parc Grand Mail-Garibaldi (12 ha)</strong>. Plus de 25 ans de chantier prévus."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Mairie de Saint-Ouen → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-chatelet/"
+        },
+        {
+            "destination_name": "Saint-Lazare via M14",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Mairie de Saint-Ouen → Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Saint-Lazare via M13",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Mairie de Saint-Ouen → Saint-Lazare",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Châtillon (~7 stations)",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Saint-Denis Pleyel via M14",
+            "destination_slug": "saint-denis-pleyel",
+            "destination_full_name": "Mairie de Saint-Ouen → Saint-Denis Pleyel",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis Pleyel (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-saint-denis-pleyel/"
+        },
+        {
+            "destination_name": "Hôtel de Ville Saint-Ouen",
+            "destination_slug": "hotel-de-ville-saint-ouen",
+            "destination_full_name": "Mairie de Saint-Ouen → Hôtel de Ville Saint-Ouen",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied direct Place République (~150 m)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-hotel-de-ville-saint-ouen/"
+        },
+        {
+            "destination_name": "Puces de Saint-Ouen via M13",
+            "destination_slug": "puces-saint-ouen",
+            "destination_full_name": "Mairie de Saint-Ouen → Puces de Saint-Ouen",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 direction Saint-Denis jusqu'à Garibaldi",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-puces-saint-ouen/"
+        },
+        {
+            "destination_name": "Quartier des Docks",
+            "destination_slug": "quartier-docks-saint-ouen",
+            "destination_full_name": "Mairie de Saint-Ouen → Quartier des Docks",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "À pied direction Seine (~700 m)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-quartier-docks-saint-ouen/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Mairie de Saint-Ouen → Aéroport d'Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 directe terminus sud (depuis 2024)",
+            "duration_minutes": 48,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-mairie-de-saint-ouen/mairie-de-saint-ouen-vers-orly-aeroport/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3583444",
+            "name": "église Saint-Ouen-le-Vieux",
+            "category": "église",
+            "description": "L’église Saint-Ouen-le-Vieux, située à Saint-Ouen-sur-Seine, est une église catholique dédiée à saint Ouen. Elle est desservie par les Fils de la Charité. La messe dominicale est célébrée à 11 heures.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Ouen%20%28Seine-Saint-Denis%29%20%C3%A9glise%20du%20Vieux-Saint-Ouen%20fa%C3%A7ade.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ouen-le-Vieux",
+            "latitude": 48.9189,
+            "longitude": 2.33156,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Albert Dhalenne",
+                "distance_m": 678,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q22915915",
+            "name": "château de Saint-Ouen",
+            "category": "palais",
+            "description": "Le château de Saint-Ouen est une demeure située à Saint-Ouen-sur-Seine, en Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20saint%20ouen.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Saint-Ouen_(Saint-Ouen-sur-Seine)",
+            "latitude": 48.916528,
+            "longitude": 2.329477,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Albert Dhalenne",
+                "distance_m": 528,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q16964687",
+            "name": "Grand Parc des Docks de Saint-Ouen",
+            "category": "jardin",
+            "description": "Le Grand Parc des Docks de Saint-Ouen est un espace vert public de 12 hectares à Saint-Ouen-sur-Seine, ouvert dans sa totalité le 7 décembre 2013.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20des%20Docks%20de%20Saint-Ouen.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grand_Parc_des_Docks_de_Saint-Ouen",
+            "latitude": 48.9156,
+            "longitude": 2.33048,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Albert Dhalenne",
+                "distance_m": 403,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q60851506",
+            "name": "place de la République",
+            "category": "place",
+            "description": "La place de la République est une place de Saint-Ouen-sur-Seine, dans le département de la Seine-Saint-Denis.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20R%C3%A9publique%20-%20Saint-Ouen-sur-Seine%20%28FR93%29%20-%202022-01-09%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Saint-Ouen-sur-Seine)",
+            "latitude": 48.91201,
+            "longitude": 2.3339,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie de Saint-Ouen",
+                "distance_m": 23,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q20083834",
+            "name": "église Notre-Dame-du-Rosaire de Saint-Ouen-sur-Seine",
+            "category": "église",
+            "description": "L’église Notre-Dame-du-Rosaire est une église catholique située au lieu-dit La Croix-Blanche, 65 avenue Gabriel-Péri à Saint-Ouen-sur-Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20vieux%20St%20Ouen%2093.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-du-Rosaire_de_Saint-Ouen",
+            "latitude": 48.90671,
+            "longitude": 2.3329,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Gabriel Péri",
+                "distance_m": 564,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q28922840",
+            "name": "Saint-Ouen-sur-Seine",
+            "category": "gare",
+            "description": "La gare de Saint-Ouen-sur-Seine est une gare ferroviaire, fermée, de la ligne de La Plaine à Ermont - Eaubonne, située dans la commune de Saint-Ouen-sur-Seine, dans le département de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancienne%20gare%20de%20Saint-Ouen-sur-Seine%202017%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Ouen-sur-Seine",
+            "latitude": 48.909864,
+            "longitude": 2.342247,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie de Saint-Ouen",
+                "distance_m": 636,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3397125",
+            "name": "pont de Saint-Ouen-les-Docks",
+            "category": "pont",
+            "description": "Le pont de Saint-Ouen-les-Docks, appelé plus communément pont de Saint-Ouen-sur-Seine, part du quai du Moulin-de-Cage et du quai des Grésillons à Gennevilliers, dans l'alignement de l'avenue…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20de%20Saint-Ouen-les-Docks%20-%20Aout%202013%20%281%29.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Saint-Ouen-les-Docks",
+            "latitude": 48.918704,
+            "longitude": 2.328777,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Albert Dhalenne",
+                "distance_m": 749,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q60846000",
+            "name": "Saint-Ouen-Garibaldi",
+            "category": "gare",
+            "description": "La gare de Saint-Ouen-Garibaldi est une ancienne gare ferroviaire française de la ligne de La Plaine à Ermont - Eaubonne, située dans la commune de Saint-Ouen-sur-Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gennevillers%20line%20Saint-Ouen-Garibaldi%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Ouen-Garibaldi",
+            "latitude": 48.9075,
+            "longitude": 2.3318,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Victor Hugo",
+                "distance_m": 494,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q28495725",
+            "name": "hôpital Grand Paris Nord",
+            "category": "hôpital",
+            "description": "Le projet d'hôpital Grand Paris Nord est un projet de l'Assistance publique - Hôpitaux de Paris (AP-HP) et de l'université Paris-Cité visant à réunir à Saint-Ouen-sur-Seine (Seine-Saint-Denis) à…",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Grand_Paris_Nord",
+            "latitude": 48.9067,
+            "longitude": 2.329,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Victor Hugo",
+                "distance_m": 650,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Mairie de Saint-Ouen",
+            "address_full": "5 Place de la République 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.912051,
+            "longitude": 2.334209,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "av. Gabriel Péri",
+            "address_full": "2 Avenue Gabriel Péri 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.911734,
+            "longitude": 2.333968,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Victor Hugo",
+            "address_full": "10 Place de la République 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.911847,
+            "longitude": 2.333216,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Jean Jaurès",
+            "address_full": "4 Place de la République 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.912309,
+            "longitude": 2.333824,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "esplanade Jean Moulin",
+            "address_full": "74 Boulevard Jean Jaurès 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.912662,
+            "longitude": 2.33416,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Albert Dhalenne",
+            "address_full": "81 Rue Albert Dhalenne 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.913113,
+            "longitude": 2.334496,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station banlieue M14 récente — globalement sûre.",
+            "Vigilance pickpockets standard heures de pointe.",
+            "Présence agents IDFM intermittente.",
+            "Affluence variable selon proximité POI (hôpital, parc, aéroport, etc.)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. Tips factuels banlieue."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/mairie-de-saint-ouen/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 24 m de la station Mairie de Saint-Ouen (Métro 13, 14) — perspective rue captée le 2020-02-12 par sogefi (compass 71°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "sogefi (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=249162070197465",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-400.avif",
+                "800": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-800.avif",
+                "1200": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1200.avif",
+                "1600": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-400.webp",
+                "800": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-800.webp",
+                "1200": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1200.webp",
+                "1600": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-400.jpg",
+                "800": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-800.jpg",
+                "1200": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1200.jpg",
+                "1600": "/assets/img/stations/mairie-de-saint-ouen/mairie-de-saint-ouen-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1885854",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1885854",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Mairie_de_Saint-Ouen_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

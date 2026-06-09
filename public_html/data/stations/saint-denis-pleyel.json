@@ -1,0 +1,545 @@
+{
+    "published": true,
+    "slug": "saint-denis-pleyel",
+    "name": "Saint-Denis - Pleyel",
+    "name_full": "Saint-Denis - Pleyel (Métro 14)",
+    "arrondissement": "Saint-Denis (93)",
+    "address": "Place des Droits de l'Homme, 93200 Saint-Denis",
+    "latitude": 48.917825211955325,
+    "longitude": 2.3450174243970885,
+    "tariff_zone": 3,
+    "tariff_zone_context": "Hors Paris intra-muros",
+    "commune": "",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N44"
+        ],
+        "regional": [
+            "139",
+            "255",
+            "274",
+            "9517"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 1,
+            "nearby_count": 20
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Denis - Pleyel : terminus nord M14 (ouverture 24 juin 2024, JO Paris 2024), futur hub Grand Paris Express (M15, M16, M17). Architecture Kengo Kuma à Saint-Denis (93)."
+    },
+    "hero": {
+        "tagline": "Terminus nord M14 — hub Grand Paris Express, architecture Kengo Kuma",
+        "description": "Station ouverte le <strong>24 juin 2024</strong> pour les <strong>JO de Paris 2024</strong>, comme <strong>terminus nord du prolongement M14</strong> depuis Mairie de Saint-Ouen. Future <strong>plus grande gare du Grand Paris Express</strong> avec l'arrivée des <strong>M15, M16 et M17</strong>. Architecture par <strong>Kengo Kuma</strong> — voile blanc ondulant, intégration paysagère dans la <strong>ZAC Pleyel-Confluence</strong> à <strong>Saint-Denis (93)</strong>. À proximité : le <strong>Stade de France</strong>, la <strong>Cité du Cinéma</strong> (Luc Besson), et la gare RER B/D Stade de France - Saint-Denis."
+    },
+    "adjacent_stations": {
+        "metro-14": {
+            "previous": null,
+            "next": {
+                "name": "Mairie de Saint-Ouen",
+                "slug": "mairie-de-saint-ouen",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Denis - Pleyel</strong> est située à <strong>Saint-Denis</strong> (Seine-Saint-Denis, 93), dans la <strong>ZAC Pleyel-Confluence</strong>. Ouverte le <strong>24 juin 2024</strong> pour les <strong>JO de Paris 2024</strong>, elle constitue le <strong>terminus nord de la ligne 14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly). Bus 153, 173, 254, 274.",
+        "Conçue par l'architecte japonais <strong>Kengo Kuma</strong> (auteur de la rénovation du stade national de Tokyo), la gare présente un <strong>voile blanc ondulant</strong> en lamelles de bois et acier, fortement reconnaissable. Elle préfigure le <strong>plus grand pôle multimodal du Grand Paris Express</strong> : à terme, l'arrivée des <strong>lignes 15, 16 et 17</strong> du métro automatique fera de Saint-Denis - Pleyel l'une des gares les plus fréquentées d'Île-de-France.",
+        "À <strong>5 min à pied</strong> : la gare RER B/D et Transilien H <strong>Stade de France - Saint-Denis</strong>, qui dessert <strong>aéroport CDG via RER B</strong> et <strong>Paris-Gare du Nord</strong>. À <strong>10 min</strong> : le <strong>Stade de France</strong> (80 000 places, ouvert 1998, finale Coupe du monde 1998) et la <strong>Cité du Cinéma</strong> de Luc Besson (2012, anciennes usines EDF reconverties en studios)."
+    ],
+    "history": {
+        "title": "Une gare-symbole du Grand Paris (Kengo Kuma, 2024)",
+        "paragraphs": [
+            "La station <strong>Saint-Denis - Pleyel</strong> est inaugurée le <strong>24 juin 2024</strong> avec le <strong>prolongement nord de la M14</strong> de Mairie de Saint-Ouen à Saint-Denis - Pleyel (1 station ajoutée). Le prolongement total nord depuis Saint-Lazare s'est fait en 2 phases (Saint-Lazare → Mairie de Saint-Ouen en décembre 2020, puis Mairie de Saint-Ouen → Saint-Denis Pleyel en juin 2024 pour les JO).",
+            "La gare est <strong>conçue par l'architecte japonais Kengo Kuma</strong> (né 1954, École des beaux-arts de Tokyo), connu pour le stade national du Japon des JO Tokyo 2020 et le V&A Dundee. Son architecture caractéristique : <strong>voile blanc ondulant</strong> en lamelles de bois et acier inox, qui couvre la halle d'accueil et signale la gare depuis l'extérieur. Coût total : ~485 M€.",
+            "<strong>Future plus grande gare du Grand Paris Express</strong> : avec les arrivées prévues des <strong>M15 Sud</strong> (à terme 2025-2026), <strong>M16</strong> (~2026-2027) et <strong>M17</strong> (~2027), Saint-Denis - Pleyel deviendra l'un des principaux pôles d'échange métropolitains d'Île-de-France. Estimation : ~250 000 voyageurs/jour à terme.",
+            "Située dans la <strong>ZAC Pleyel-Confluence</strong> (75 ha en mutation), la station accompagne la <strong>requalification urbaine de Saint-Denis</strong> (logements, bureaux, équipements). Proximité d'institutions emblématiques : <strong>Stade de France</strong> (1998, 80 000 places, Mondial 98 finale France-Brésil), <strong>Cité du Cinéma</strong> (2012, Luc Besson, anciennes usines EDF reconverties)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Saint-Denis - Pleyel ?",
+            "answer": "Actuellement <strong>M14 uniquement</strong> (terminus nord, Saint-Denis - Pleyel ↔ Aéroport d'Orly). À terme : <strong>M15 Sud</strong> (~2025-2026), <strong>M16</strong> et <strong>M17</strong> (~2027) du Grand Paris Express. Bus 153, 173, 254, 274. La gare RER B/D + Transilien H <strong>Stade de France - Saint-Denis</strong> est à <strong>5 min à pied</strong>."
+        },
+        {
+            "question": "Quand la station a-t-elle ouvert ?",
+            "answer": "Le <strong>24 juin 2024</strong>, avec le <strong>prolongement nord de la M14</strong> de Mairie de Saint-Ouen à Saint-Denis - Pleyel, en prévision des <strong>JO de Paris 2024</strong>. La station faisait partie des infrastructures clés pour le transport des athlètes et spectateurs au Stade de France."
+        },
+        {
+            "question": "Comment rejoindre le Stade de France ?",
+            "answer": "<strong>10 min à pied</strong> en direction du nord-est, via la passerelle piétonne. Plus rapide : RER B/D depuis Stade de France - Saint-Denis (1 arrêt direct). Le Stade de France (80 000 places, conçu par Macary, Zublena, Regembal, Costantini, ouvert 1998) accueille football (équipe de France), rugby, concerts internationaux."
+        },
+        {
+            "question": "Comment aller à Paris depuis Saint-Denis - Pleyel ?",
+            "answer": "<strong>M14 directe</strong> : ~20 min jusqu'à Châtelet (cœur de Paris), ~25 min jusqu'à Saint-Lazare. La M14 automatique offre la fréquence record du réseau (~85s en heure de pointe). Pour Gare du Nord : 1 changement à Châtelet sur RER B."
+        },
+        {
+            "question": "Qui est l'architecte de la gare ?",
+            "answer": "L'architecte japonais <strong>Kengo Kuma</strong> (né 1954), également auteur du <strong>stade national du Japon pour les JO Tokyo 2020</strong> et du V&A Dundee. Sa signature : un <strong>voile blanc ondulant</strong> en lamelles de bois et acier, qui couvre la halle d'accueil et marque visuellement la gare dans le paysage."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Oui, entièrement accessible PMR</strong>. La M14 est conçue 100% accessible PMR dès l'origine (portes palières, ascenseurs, parcours guidé)."
+        },
+        {
+            "question": "Quels sont les horaires de la M14 ?",
+            "answer": "<strong>5h30 à 1h15</strong> en semaine, jusqu'à <strong>2h15 vendredi/samedi/veille de fête</strong>. Fréquence record : <strong>85 secondes en heure de pointe</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la ZAC Pleyel ?",
+            "answer": "La <strong>ZAC Pleyel-Confluence</strong> est une <strong>Zone d'Aménagement Concerté de 75 hectares</strong> à Saint-Denis, en pleine mutation urbaine : logements neufs, bureaux (~300 000 m²), équipements publics. La gare Saint-Denis - Pleyel est le <strong>cœur de cette transformation</strong>, intégrée à la stratégie Grand Paris."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Architecture Kengo Kuma</strong> à voir — voile blanc ondulant emblématique.",
+        "<strong>Stade de France</strong> à 10 min — événements sportifs et concerts majeurs.",
+        "<strong>Cité du Cinéma</strong> (Luc Besson) à 15 min — visites guidées possibles.",
+        "Pour <strong>Paris-Châtelet</strong> : M14 directe (~20 min).",
+        "Pour <strong>aéroport CDG</strong> : 5 min à pied jusqu'à Stade de France-Saint-Denis + RER B (~35 min).",
+        "Pôle multimodal en évolution — l'arrivée M15/M16/M17 entre 2025-2027 fera évoluer la fréquentation."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Kengo Kuma — architecte vedette des JO Tokyo 2020",
+            "content": "L'architecte japonais <strong>Kengo Kuma</strong> (né 1954) est l'auteur du <strong>stade national du Japon pour les JO Tokyo 2020</strong> et du <strong>V&A Dundee</strong> en Écosse. Pour Saint-Denis - Pleyel, il conçoit un <strong>voile blanc ondulant en lamelles de bois et acier inox</strong> qui couvre la halle d'accueil — signature visuelle reconnaissable depuis la voirie. Coût total de la gare : ~485 M€."
+        },
+        {
+            "icon": "🏟️",
+            "title": "Futur plus grand pôle Grand Paris Express",
+            "content": "À terme avec les <strong>M15 Sud (2025-2026), M16 (2026-2027) et M17 (2027)</strong>, Saint-Denis - Pleyel sera <strong>l'une des principales gares du Grand Paris Express</strong>. Estimation : <strong>~250 000 voyageurs/jour</strong>. Son ouverture en juin 2024 a précédé l'arrivée des autres lignes pour servir le Stade de France pendant les JO de Paris 2024."
+        },
+        {
+            "icon": "⚽",
+            "title": "Proximité Stade de France (1998, 80 000 places)",
+            "content": "À <strong>10 min à pied</strong> : le <strong>Stade de France</strong> (Macary, Zublena, Regembal, Costantini, 1998), <strong>80 000 places</strong>. Hôte des grands événements du sport français : <strong>finale Coupe du monde 1998</strong> (France 3-0 Brésil), matchs équipe de France de football et de rugby, <strong>Tournoi des Six Nations</strong>, concerts (Stones, Beyoncé, Madonna). JO Paris 2024 : athlétisme + cérémonie de clôture."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Saint-Denis - Pleyel → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (8 stations)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare Saint-Lazare",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Saint-Denis - Pleyel → Gare Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (5 stations)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Stade de France via RER B/D (gare Stade de France-Saint-Denis)",
+            "destination_slug": "stade-de-france",
+            "destination_full_name": "Saint-Denis - Pleyel → Stade de France",
+            "lines_used": [
+                "à pied + RER"
+            ],
+            "lines_label": "5 min à pied + RER B/D direct",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-stade-de-france/"
+        },
+        {
+            "destination_name": "Aéroport CDG via RER B",
+            "destination_slug": "cdg-aeroport",
+            "destination_full_name": "Saint-Denis - Pleyel → Aéroport CDG",
+            "lines_used": [
+                "RER B"
+            ],
+            "lines_label": "5 min à pied + RER B direct CDG",
+            "duration_minutes": 40,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-cdg-aeroport/"
+        },
+        {
+            "destination_name": "Gare du Nord via M14 + RER B",
+            "destination_slug": "gare-du-nord",
+            "destination_full_name": "Saint-Denis - Pleyel → Gare du Nord",
+            "lines_used": [
+                "M14 + RER B"
+            ],
+            "lines_label": "M14 jusqu'à Châtelet + RER B Gare du Nord",
+            "duration_minutes": 25,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-gare-du-nord/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Saint-Denis - Pleyel → Aéroport d'Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 directe terminus sud (depuis 2024)",
+            "duration_minutes": 50,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-orly-aeroport/"
+        },
+        {
+            "destination_name": "Cité du Cinéma (Luc Besson)",
+            "destination_slug": "cite-cinema",
+            "destination_full_name": "Saint-Denis - Pleyel → Cité du Cinéma (Luc Besson)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "15 min à pied via ZAC Pleyel",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-cite-cinema/"
+        },
+        {
+            "destination_name": "Mairie de Saint-Ouen via M14",
+            "destination_slug": "mairie-de-saint-ouen",
+            "destination_full_name": "Saint-Denis - Pleyel → Mairie de Saint-Ouen",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-denis-pleyel/saint-denis-pleyel-vers-mairie-de-saint-ouen/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2678290",
+            "name": "Le Stade de France - Saint-Denis",
+            "category": "gare",
+            "description": "La gare du Stade de France - Saint-Denis est une gare ferroviaire française de la ligne de Paris-Nord à Lille, située sur le territoire de la commune de Saint-Denis, dans le département de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/SdF%20stdenis%20gare.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Stade_de_France_-_Saint-Denis",
+            "latitude": 48.9175,
+            "longitude": 2.35028,
+            "nearest_exit": {
+                "number": "",
+                "name": "pl. aux Etoiles",
+                "distance_m": 80,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3090112",
+            "name": "tour Pleyel",
+            "category": "tour",
+            "description": "La tour Pleyel est un gratte-ciel situé à Saint-Denis (Île-de-France), et construit en 1973.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/20240516_190025_-_Copie.jpg/330px-20240516_190025_-_Copie.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Pleyel",
+            "latitude": 48.92,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Ornano",
+                "distance_m": 96,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q55599934",
+            "name": "square des Acrobates",
+            "category": "site notable",
+            "description": "Le square des Acrobates, est un espace vert situé à Saint-Denis.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Denis.Square%20des%20Acrobates.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_des_Acrobates",
+            "latitude": 48.91678,
+            "longitude": 2.35366,
+            "nearest_exit": {
+                "number": "",
+                "name": "pl. aux Etoiles",
+                "distance_m": 206,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3397508",
+            "name": "pont du boulevard de la Libération",
+            "category": "pont",
+            "description": "Le pont du boulevard de la Libération est un pont autoroutier français de Saint-Denis dans le département de la Seine-Saint-Denis et la région Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20du%20boulevard%20de%20la%20Lib%C3%A9ration%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_du_boulevard_de_la_Lib%C3%A9ration",
+            "latitude": 48.9235,
+            "longitude": 2.34292,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Cap Ampère",
+                "distance_m": 414,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q55596985",
+            "name": "franchissement Pleyel",
+            "category": "pont",
+            "description": "Le franchissement urbain Pleyel est un pont traversant la partie nord du faisceau ferroviaire à Saint-Denis (Seine-Saint-Denis) en reliant les quartiers séparés par les voies de chemin de fer et en…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Franchissement%20Pleyel%20-%20Saint-Denis%20%28FR93%29%20-%202024-06-27%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Franchissement_urbain_Pleyel",
+            "latitude": 48.9147,
+            "longitude": 2.3495,
+            "nearest_exit": {
+                "number": "4",
+                "name": "place des Etoiles",
+                "distance_m": 330,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q48751507",
+            "name": "technicentre du Landy",
+            "category": "site notable",
+            "description": "Le Technicentre du Landy, aussi appelé Le Landy, est un Technicentre de la Société nationale des chemins de fer français (SNCF) qui assure la maintenance de tous les trains au départ de la gare de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Technicentre%20Le%20Landy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Technicentre_du_Landy",
+            "latitude": 48.92072,
+            "longitude": 2.34758,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Ornano",
+                "distance_m": 301,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q110724972",
+            "name": "Centre national d'exploitation du système",
+            "category": "site notable",
+            "description": "Le Centre national d'exploitation du système ou CNES est un équipement de l'entreprise RTE.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/France_location_map-Regions_and_departements-2016.svg/langfr-330px-France_location_map-Regions_and_departements-2016.svg.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27exploitation_du_syst%C3%A8me",
+            "latitude": 48.919604,
+            "longitude": 2.339977,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. des Pianos",
+                "distance_m": 211,
+                "walk_minutes": 3
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Ornano",
+            "address_full": "17 Rue Pleyel 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.917885,
+            "longitude": 2.346825,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "pl. des Pianos",
+            "address_full": "182bis Boulevard Anatole France 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.919572,
+            "longitude": 2.34286,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "rue F. Poulbot",
+            "address_full": "12 Rue Francisque Poulbot 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.917255,
+            "longitude": 2.346792,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Cap Ampère",
+            "address_full": "11 Place des Pianos 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.91978,
+            "longitude": 2.343089,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "rue du Landy",
+            "address_full": "12 Rue Francisque Poulbot 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.917436,
+            "longitude": 2.347035,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Anatole France",
+            "address_full": "182bis Boulevard Anatole France 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.919429,
+            "longitude": 2.343121,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "place des Etoiles",
+            "address_full": "12 Rue Francisque Poulbot 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.917275,
+            "longitude": 2.347242,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd Ornano",
+            "address_full": "161 Boulevard Anatole France 93200 Saint-Denis",
+            "postcode": "93200",
+            "city": "Saint-Denis",
+            "latitude": 48.919613,
+            "longitude": 2.343828,
+            "accessible": null
+        },
+        {
+            "number": "",
+            "name": "pl. aux Etoiles",
+            "address_full": "1 Place aux Étoiles 93210 Saint-Denis",
+            "postcode": "93210",
+            "city": "Saint-Denis",
+            "latitude": 48.917774,
+            "longitude": 2.351288,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station banlieue M14 récente — globalement sûre.",
+            "Vigilance pickpockets standard heures de pointe.",
+            "Présence agents IDFM intermittente.",
+            "Affluence variable selon proximité POI (hôpital, parc, aéroport, etc.)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. Tips factuels banlieue."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/saint-denis-pleyel/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 34 m de la station Saint-Denis - Pleyel (Métro 14) — perspective rue captée le 2018-08-01 par sogefi (compass 91°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "sogefi (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=454117085681546",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-400.avif",
+                "800": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-800.avif",
+                "1200": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1200.avif",
+                "1600": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-400.webp",
+                "800": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-800.webp",
+                "1200": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1200.webp",
+                "1600": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-400.jpg",
+                "800": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-800.jpg",
+                "1200": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1200.jpg",
+                "1600": "/assets/img/stations/saint-denis-pleyel/saint-denis-pleyel-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    }
+}

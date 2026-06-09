@@ -1,0 +1,631 @@
+{
+    "published": true,
+    "slug": "saint-ouen",
+    "name": "Saint-Ouen",
+    "name_full": "Saint-Ouen (Métro 14 + RER C)",
+    "arrondissement": "Saint-Ouen-sur-Seine (93) / Clichy (92)",
+    "address": "Limite Saint-Ouen-sur-Seine / Clichy, 93400 / 92110",
+    "latitude": 48.90410555313069,
+    "longitude": 2.32066896856528,
+    "tariff_zone": 3,
+    "tariff_zone_context": "Hors Paris intra-muros",
+    "commune": "",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "14",
+            "slug": "metro-14",
+            "color": "#62259D",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "C",
+            "color": "#FFCC30",
+            "station_name": "Saint-Ouen",
+            "walking_minutes": 0
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "341"
+        ],
+        "nocturne": [],
+        "regional": [
+            "66",
+            "138",
+            "173",
+            "174",
+            "274",
+            "TUC"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 2,
+            "nearby_count": 29
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Ouen : M13 + M14 + RER C à Saint-Ouen-sur-Seine (93). À 15 min des Puces de Saint-Ouen (marché aux puces mondial). Profondeur 18,3 m."
+    },
+    "hero": {
+        "tagline": "M13 + M14 + RER C — pôle multimodal nord, profondeur 18,3 m",
+        "description": "Station <strong>Saint-Ouen</strong> à la limite Saint-Ouen-sur-Seine / Clichy. Desservie par <strong>M13</strong> (ouverte 20 mai 1952), <strong>M14</strong> (ouverte 14 décembre 2020), et <strong>RER C</strong> (gare adjacente). <strong>Profondeur 18,3 m</strong> (l'une des stations M14 les plus profondes). À 15 min : les <strong>Puces de Saint-Ouen</strong>, l'un des plus grands <strong>marchés aux puces du monde</strong> (~7 ha, 7 marchés, 2 000 stands d'antiquaires)."
+    },
+    "adjacent_stations": {
+        "metro-14": {
+            "previous": {
+                "name": "Mairie de Saint-Ouen",
+                "slug": "mairie-de-saint-ouen",
+                "direction": "Saint-Denis - Pleyel"
+            },
+            "next": {
+                "name": "Porte de Clichy",
+                "slug": "porte-de-clichy",
+                "direction": "Aéroport d'Orly"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Ouen</strong> est située à la <strong>limite entre Saint-Ouen-sur-Seine et Clichy</strong> (Seine-Saint-Denis 93 / Hauts-de-Seine 92). Elle est desservie par <strong>3 modes</strong> : <strong>M13</strong> (Châtillon-Montrouge ↔ Saint-Denis / Asnières-Gennevilliers), <strong>M14</strong> (Saint-Denis - Pleyel ↔ Aéroport d'Orly, automatique), et <strong>RER C</strong> (gare Saint-Ouen, en correspondance via passage piéton). Bus 66, 138, 173, 174, 274, 341.",
+        "La station <strong>M13</strong> ouvre le <strong>20 mai 1952</strong>. La station <strong>M14</strong> est inaugurée le <strong>14 décembre 2020</strong> avec le prolongement nord de la M14 de Saint-Lazare à Mairie de Saint-Ouen. La M14 ici est l'une des <strong>plus profondes du réseau parisien</strong> : <strong>18,3 m</strong> sous le niveau du sol, avec un tunnel de connexion de 26 m à la gare RER C creusé par <strong>congélation des sols</strong> (technique innovante en milieu urbain dense).",
+        "À <strong>15 min à pied</strong> en direction du nord : les <strong>Puces de Saint-Ouen</strong>, l'un des <strong>plus grands marchés aux puces du monde</strong>. <strong>7 hectares</strong>, <strong>7 marchés</strong> (Vernaison, Biron, Paul Bert-Serpette, Dauphine, Malassis, Antica, Cambo), <strong>2 000 stands</strong> d'antiquaires et brocanteurs. Ouvert depuis le <strong>début du XXe siècle</strong> (origine : marché de chiffonniers de Saint-Ouen). Affluence record : ~5 millions de visiteurs/an, dont nombreux touristes internationaux."
+    ],
+    "history": {
+        "title": "1952 : M13, 2020 : M14, technique de congélation des sols",
+        "paragraphs": [
+            "La station <strong>M13</strong> ouvre le <strong>20 mai 1952</strong> avec le prolongement de la M13 (alors M14 selon ancienne nomenclature) de Porte de Saint-Ouen à Carrefour Pleyel. Saint-Ouen-sur-Seine était l'une des premières communes desservies par le métro parisien.",
+            "Le <strong>14 décembre 2020</strong>, la M14 arrive à la station avec le prolongement nord de Saint-Lazare à Mairie de Saint-Ouen. La station M14 est inhabituellement profonde : <strong>18,3 m</strong> sous le sol — l'une des plus profondes M14, et même du réseau parisien.",
+            "Innovation technique majeure : le <strong>tunnel de correspondance M14 ↔ RER C de 26 m</strong> a été creusé en utilisant la <strong>technique de congélation des sols</strong>. Le terrain (alluvions instables de la Seine) a été préalablement congelé via des sondes pour permettre l'excavation sécurisée. Première utilisation à cette échelle en milieu urbain dense français.",
+            "La station <strong>M14</strong> arbore des <strong>carreaux blancs plats ornés de cercles concentriques</strong> — design moderne typique du prolongement nord M14.",
+            "À proximité : <strong>commerces de bureau</strong> (Samsung, EDF, Danone), <strong>centre commercial Espace Clichy</strong>, <strong>Parc François-Mitterrand</strong>. Et surtout, à 15 min à pied, les <strong>Puces de Saint-Ouen</strong>, marché aux puces le plus célèbre du monde."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Saint-Ouen ?",
+            "answer": "<strong>M13</strong> (1952), <strong>M14</strong> (2020), <strong>RER C</strong> (correspondance gare adjacente). Bus 66, 138, 173, 174, 274, 341. <strong>Pôle multimodal majeur</strong> du nord parisien."
+        },
+        {
+            "question": "Comment aller aux Puces de Saint-Ouen ?",
+            "answer": "<strong>15 min à pied</strong> en direction du nord (vers Porte de Clignancourt). Plus rapide : M13 jusqu'à <strong>Porte de Clignancourt</strong> (terminus M4) puis 5 min à pied. <strong>Marché ouvert vendredi/samedi/dimanche/lundi</strong> selon les zones. <strong>5 millions de visiteurs/an</strong>."
+        },
+        {
+            "question": "Pourquoi la station M14 est-elle si profonde ?",
+            "answer": "<strong>18,3 m sous le sol</strong> : contraintes techniques. La M14 passe sous la Seine à proximité, et les alluvions instables (sols anciens du fleuve) imposaient des techniques de génie civil innovantes. Pour le tunnel de connexion à la gare RER C (26 m), on a utilisé la <strong>congélation des sols</strong> — première utilisation à cette échelle en milieu urbain dense français."
+        },
+        {
+            "question": "Quelle est la correspondance avec le RER C ?",
+            "answer": "<strong>5 min à pied</strong> via passage piéton couvert. La gare RER C <strong>Saint-Ouen</strong> est à 100 m. Permet d'accéder à <strong>Versailles Château - Rive Gauche</strong>, <strong>Pontoise</strong>, et le sud parisien."
+        },
+        {
+            "question": "La station est-elle en zone tarifaire 2 ?",
+            "answer": "<strong>Oui, zone 2</strong>. Saint-Ouen-sur-Seine est hors Paris intra-muros (zone 1) mais en première couronne. Tarification standard Île-de-France Mobilités."
+        },
+        {
+            "question": "Comment aller à Paris depuis Saint-Ouen ?",
+            "answer": "<strong>M14 directe</strong> : Châtelet en ~14 min (7 stations), Saint-Lazare en ~10 min (5 stations). <strong>M13 directe</strong> : Saint-Lazare en ~12 min."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>M14 entièrement accessible PMR</strong>. M13 partiellement (ascenseurs M14 disponibles). RER C : voir l'état de la gare adjacente."
+        },
+        {
+            "question": "Quelle est la fréquentation ?",
+            "answer": "<strong>~3,4 millions de voyageurs/an</strong> (2021, juste après l'ouverture de la M14). 84e station du réseau métro parisien en fréquentation."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Puces de Saint-Ouen</strong> à 15 min — sortir vendredi/samedi/dimanche/lundi.",
+        "<strong>Correspondance RER C</strong> par passage piéton couvert (5 min).",
+        "Pour <strong>Versailles Château</strong> : RER C directe (~50 min).",
+        "Pour <strong>Châtelet</strong> : M14 directe (~14 min).",
+        "<strong>Espace Clichy</strong> commerces à 5 min.",
+        "<strong>Parc François-Mitterrand</strong> à 5 min — espace vert local."
+    ],
+    "trivia": [
+        {
+            "icon": "🛍️",
+            "title": "Puces de Saint-Ouen — l'un des plus grands marchés aux puces du monde",
+            "content": "À <strong>15 min à pied</strong>, les <strong>Puces de Saint-Ouen</strong> (officiellement <strong>Marché aux puces de Saint-Ouen</strong>) sont l'un des <strong>plus grands marchés aux puces du monde</strong>. <strong>7 hectares</strong>, <strong>7 marchés distincts</strong> (Vernaison fondé 1885 — le plus ancien, Biron, Paul Bert-Serpette, Dauphine, Malassis, Antica, Cambo), <strong>2 000 stands</strong> d'antiquaires et brocanteurs. <strong>~5 millions de visiteurs/an</strong>. Origine : marché des chiffonniers de la zone d'octroi parisienne du XIXe siècle, qui revendaient des objets récupérés. Aujourd'hui : antiquités haut de gamme, mode vintage, design XXe."
+        },
+        {
+            "icon": "🧊",
+            "title": "Congélation des sols — innovation technique 2020",
+            "content": "Le <strong>tunnel de correspondance M14 ↔ RER C de 26 m</strong> a été creusé via la <strong>technique de congélation des sols</strong>, première utilisation à cette échelle en milieu urbain dense français. Les alluvions instables (sols anciens de la Seine, riches en eau) ont été préalablement <strong>congelés via 600 sondes verticales</strong> avant excavation. Une fois le tunnel maçonné, les sols sont décongelés. Coût : ~12 M€ pour cette portion. Technique japonaise/allemande adaptée aux contraintes parisiennes."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet via M14",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Saint-Ouen → Châtelet",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (7 stations)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-chatelet/"
+        },
+        {
+            "destination_name": "Saint-Lazare via M14",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Saint-Ouen → Saint-Lazare",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Aéroport d'Orly (5 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Puces de Saint-Ouen",
+            "destination_slug": "puces-saint-ouen",
+            "destination_full_name": "Saint-Ouen → Puces de Saint-Ouen",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "15 min à pied vers le nord",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-puces-saint-ouen/"
+        },
+        {
+            "destination_name": "Saint-Denis Pleyel via M14",
+            "destination_slug": "saint-denis-pleyel",
+            "destination_full_name": "Saint-Ouen → Saint-Denis Pleyel",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis Pleyel (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-saint-denis-pleyel/"
+        },
+        {
+            "destination_name": "Versailles Château via RER C",
+            "destination_slug": "versailles-chateau",
+            "destination_full_name": "Saint-Ouen → Versailles Château",
+            "lines_used": [
+                "à pied + RER C"
+            ],
+            "lines_label": "5 min + RER C direct (~45 min)",
+            "duration_minutes": 50,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-versailles-chateau/"
+        },
+        {
+            "destination_name": "Mairie de Saint-Ouen via M14",
+            "destination_slug": "mairie-de-saint-ouen",
+            "destination_full_name": "Saint-Ouen → Mairie de Saint-Ouen",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 direction Saint-Denis Pleyel (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-mairie-de-saint-ouen/"
+        },
+        {
+            "destination_name": "Pontoise via RER C",
+            "destination_slug": "pontoise",
+            "destination_full_name": "Saint-Ouen → Pontoise",
+            "lines_used": [
+                "à pied + RER C"
+            ],
+            "lines_label": "5 min + RER C direct",
+            "duration_minutes": 45,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-pontoise/"
+        },
+        {
+            "destination_name": "Aéroport d'Orly via M14",
+            "destination_slug": "orly-aeroport",
+            "destination_full_name": "Saint-Ouen → Aéroport d'Orly",
+            "lines_used": [
+                "M14"
+            ],
+            "lines_label": "M14 directe terminus sud (depuis 2024)",
+            "duration_minutes": 46,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-ouen/saint-ouen-vers-orly-aeroport/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q2544311",
+            "name": "Saint-Ouen",
+            "category": "gare",
+            "description": "La gare de Saint-Ouen est une gare ferroviaire française de la ligne d'Ermont - Eaubonne à Champ-de-Mars (VMI), située sur le territoire de la commune de Saint-Ouen-sur-Seine, à proximité de la…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quais%20gare%20Saint-Ouen.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Ouen",
+            "latitude": 48.90556,
+            "longitude": 2.32222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Dora Maar",
+                "distance_m": 7,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3533028",
+            "name": "tour Bois-le-Prêtre",
+            "category": "tour",
+            "description": "La tour Bois-le-Prêtre est un immeuble de grande hauteur parisien situé 6, rue Pierre-Rebière et 5-9, boulevard du Bois-le-Prêtre, dans le 17e arrondissement de Paris, porte Pouchet dominant le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulevard%20du%20Bois-le-Pr%C3%AAtre%20%28Paris%29%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Bois-le-Pr%C3%AAtre",
+            "latitude": 48.8989,
+            "longitude": 2.32056,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 518,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3280045",
+            "name": "maison du Peuple de Clichy",
+            "category": "site notable",
+            "description": "La Maison du Peuple de Clichy, classée aux monuments historiques depuis 1983, est un bâtiment construit de 1935 à 1939 sur la commune de Clichy dans les Hauts-de-Seine en Île-de-France par les…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20Maison%20du%20Peuple%2C%20Clichy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_du_Peuple_de_Clichy",
+            "latitude": 48.901335,
+            "longitude": 2.314649,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 462,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q65158951",
+            "name": "parc Roger-Salengro",
+            "category": "jardin",
+            "description": "Le parc Roger-Salengro est un espace vert de la ville de Clichy.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Roger%20Salengro%2C%20Portail%20-%20Clichy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Roger-Salengro_(Clichy)",
+            "latitude": 48.90474,
+            "longitude": 2.31225,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r.Mme de Sanzillon",
+                "distance_m": 578,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q102306225",
+            "name": "jardin Hans-et-Sophie-Scholl",
+            "category": "jardin",
+            "description": "Le jardin Hans-et-Sophie-Scholl est un espace vert municipal du 17e arrondissement de Paris, situé au 20, boulevard du Bois-le-Prêtre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Hans%20et%20Sophie%20Scholl.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Hans-et-Sophie-Scholl",
+            "latitude": 48.89986,
+            "longitude": 2.32086,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 414,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q22924379",
+            "name": "entrepôts du Printemps",
+            "category": "site notable",
+            "description": "Les Entrepôts du Printemps sont des bâtiments logistiques d'entreposage créés à partir de 1905 pour et à l'effigie des Grands Magasins du Printemps.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Magasins%20printemps.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Entrep%C3%B4ts_du_Printemps",
+            "latitude": 48.904555,
+            "longitude": 2.310691,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r.Mme de Sanzillon",
+                "distance_m": 688,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3389709",
+            "name": "place Arnault-Tzanck",
+            "category": "place",
+            "description": "La place Arnault-Tzanck est une voie située dans le quartier des Épinettes du 17e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Arnault%20Tzanck%20-%20Paris%20XVII%20%28FR75%29%20-%202021-08-20%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Arnault-Tzanck",
+            "latitude": 48.8988,
+            "longitude": 2.32318,
+            "nearest_exit": {
+                "number": "7",
+                "name": "r. Arago / Sortie par les quais du RER C",
+                "distance_m": 508,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q14629336",
+            "name": "place Blanche-Lefebvre",
+            "category": "place",
+            "description": "La place Blanche-Lefebvre est une place du 17e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Blanche%20Lefebvre%20-%20Paris%20XVII%20%28FR75%29%20-%202021-08-20%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Blanche-Lefebvre",
+            "latitude": 48.8973,
+            "longitude": 2.31762,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 716,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q18380103",
+            "name": "place de la République-François-Mitterrand",
+            "category": "place",
+            "description": "La place de la République-François-Mitterrand est une place circulaire située à Clichy (Hauts-de-Seine) à 600 mètres de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20R%C3%A9publique%20Fran%C3%A7ois%20Mitterrand%20-%20Clichy%20%28FR92%29%20-%202023-07-08%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique-Fran%C3%A7ois-Mitterrand",
+            "latitude": 48.9032,
+            "longitude": 2.3129,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 521,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q60853024",
+            "name": "parc François-Mitterrand",
+            "category": "jardin",
+            "description": "Le parc François-Mitterrand est un espace vert public de 2 hectares à Saint-Ouen-sur-Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abords%20gare%20Saint-Ouen.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Fran%C3%A7ois-Mitterrand",
+            "latitude": 48.90291,
+            "longitude": 2.32291,
+            "nearest_exit": {
+                "number": "7",
+                "name": "r. Arago / Sortie par les quais du RER C",
+                "distance_m": 50,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3145159",
+            "name": "hôpital Goüin",
+            "category": "hôpital",
+            "description": "L’hôpital Goüin est un établissement de santé privé à but non lucratif situé à Clichy, commune du département des Hauts-de-Seine au nord-ouest de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Go%C3%BCin%20Clichy%20Garenne%204.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Go%C3%BCin",
+            "latitude": 48.901935,
+            "longitude": 2.310807,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Touzet",
+                "distance_m": 696,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3552616",
+            "name": "usine PSA de Saint-Ouen-sur-Seine",
+            "category": "site notable",
+            "description": "L'usine PSA de Saint-Ouen est une ancienne usine du Groupe PSA, située à Saint-Ouen-sur-Seine dans le département de la Seine-Saint-Denis fermée en mars 2021.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Usine_Citro%C3%ABn_de_Saint-Ouen.jpg/330px-Usine_Citro%C3%ABn_de_Saint-Ouen.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Usine_PSA_de_Saint-Ouen",
+            "latitude": 48.9053,
+            "longitude": 2.32812,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Emmy Noether",
+                "distance_m": 399,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. Dora Maar",
+            "address_full": "132b Boulevard Victor Hugo 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.905509,
+            "longitude": 2.322424,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. Dora Maar",
+            "address_full": "7 Rue Dora Maar 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.905508,
+            "longitude": 2.322179,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Victor Hugo",
+            "address_full": "8 Rue Nadia Guendouz 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.905158,
+            "longitude": 2.322306,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Pierre Dreyfus",
+            "address_full": "171 Boulevard Victor Hugo 92110 Clichy",
+            "postcode": "92110",
+            "city": "Clichy",
+            "latitude": 48.904151,
+            "longitude": 2.320832,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r.Mme de Sanzillon",
+            "address_full": "63 Rue Madame de Sanzillon 92110 Clichy",
+            "postcode": "92110",
+            "city": "Clichy",
+            "latitude": 48.903841,
+            "longitude": 2.320045,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Touzet",
+            "address_full": "157 Boulevard Victor Hugo 92110 Clichy",
+            "postcode": "92110",
+            "city": "Clichy",
+            "latitude": 48.903544,
+            "longitude": 2.320008,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Emmy Noether",
+            "address_full": "10 Rue Madeleine Rebérioux 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.904711,
+            "longitude": 2.322735,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "r. Arago / Sortie par les quais du RER C",
+            "address_full": "22 Rue Emmy Noether 93400 Saint-Ouen-sur-Seine",
+            "postcode": "93400",
+            "city": "Saint-Ouen-sur-Seine",
+            "latitude": 48.903363,
+            "longitude": 2.322916,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station banlieue M14 récente — globalement sûre.",
+            "Vigilance pickpockets standard heures de pointe.",
+            "Présence agents IDFM intermittente.",
+            "Affluence variable selon proximité POI (hôpital, parc, aéroport, etc.)."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible. Tips factuels banlieue."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/saint-ouen/source/mapillary.jpg",
+        "alt": "Vue street-level Mapillary à 48 m de la station Saint-Ouen (Métro 14 + RER C) — perspective rue captée le 2019-05-15 par sogefi (compass 290°)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "sogefi (Mapillary)",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=818894339006865",
+            "date": "2026-06-08"
+        },
+        "source": "mapillary_streetview",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-ouen/saint-ouen-400.avif",
+                "800": "/assets/img/stations/saint-ouen/saint-ouen-800.avif",
+                "1200": "/assets/img/stations/saint-ouen/saint-ouen-1200.avif",
+                "1600": "/assets/img/stations/saint-ouen/saint-ouen-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-ouen/saint-ouen-400.webp",
+                "800": "/assets/img/stations/saint-ouen/saint-ouen-800.webp",
+                "1200": "/assets/img/stations/saint-ouen/saint-ouen-1200.webp",
+                "1600": "/assets/img/stations/saint-ouen/saint-ouen-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-ouen/saint-ouen-400.jpg",
+                "800": "/assets/img/stations/saint-ouen/saint-ouen-800.jpg",
+                "1200": "/assets/img/stations/saint-ouen/saint-ouen-1200.jpg",
+                "1600": "/assets/img/stations/saint-ouen/saint-ouen-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q2979015",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q2979015",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Ouen_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
