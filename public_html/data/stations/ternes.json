@@ -1,0 +1,533 @@
+{
+  "published": true,
+  "slug": "ternes",
+  "name": "Ternes",
+  "name_full": "Ternes (Métro 2)",
+  "arrondissement": "17e arrondissement (Paris)",
+  "address": "Place des Ternes, 75017 Paris",
+  "latitude": 48.878250372427516,
+  "longitude": 2.29814025359363,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "2",
+      "slug": "metro-2",
+      "color": "#0055C8",
+      "text_color": "#FFFFFF"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "30",
+      "92",
+      "341"
+    ],
+    "nocturne": [],
+    "regional": [
+      "31",
+      "43"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 5,
+      "nearby_count": 12
+    }
+  },
+  "seo": {
+    "description": "Station Ternes (M2) place des Ternes dans le 17e arrondissement. Quartier résidentiel chic du 17e, proche de la Salle Pleyel et du parc Monceau."
+  },
+  "hero": {
+    "tagline": "M2 — place des Ternes, quartier 17e chic",
+    "description": "Station <strong>Ternes</strong> sur la <strong>place des Ternes</strong> dans le <strong>17e arrondissement</strong>. Desservie par la <strong>ligne 2 du métro</strong>, ouverte le <strong>7 octobre 1902</strong>. Située au croisement de l'<strong>avenue de Wagram</strong> et du <strong>boulevard de Courcelles</strong>. Quartier résidentiel chic du <strong>17e</strong>, proche de la <strong>salle Pleyel</strong>."
+  },
+  "adjacent_stations": {
+    "metro-2": {
+      "previous": {
+        "name": "Courcelles",
+        "slug": "courcelles",
+        "direction": "Nation"
+      },
+      "next": {
+        "name": "Charles de Gaulle - Étoile",
+        "slug": "charles-de-gaulle-etoile",
+        "direction": "Porte Dauphine"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Ternes</strong> est implantée sur la <strong>place des Ternes</strong> dans le <strong>17e arrondissement</strong>. Elle est desservie par la <strong>ligne 2 du métro parisien</strong>, entre <strong>Charles de Gaulle - Étoile</strong> (1 station) et <strong>Courcelles</strong> (1 station). Bus 30, 31, 43, 93 en correspondance.",
+    "Ouverte le <strong>7 octobre 1902</strong> avec le tronçon <strong>Étoile ↔ Anvers</strong> de la ligne 2 Nord (devenue ligne 2). Particularité historique : un <strong>train R</strong> y a déraillé en <strong>1903</strong> (catastrophe ferroviaire de Couronnes).",
+    "Le nom <strong>Ternes</strong> vient de l'ancien <strong>village des Ternes</strong>, rattaché à Paris en <strong>1860</strong>. Quartier résidentiel chic du <strong>17e arrondissement</strong>, proche de la <strong>salle Pleyel</strong> (salle de concerts), du <strong>parc Monceau</strong> et de l'<strong>Arc de Triomphe</strong>."
+  ],
+  "history": {
+    "title": "1902 : Ternes et le village rattaché à Paris",
+    "paragraphs": [
+      "La station Ternes est <strong>inaugurée le 7 octobre 1902</strong> avec le tronçon <strong>Étoile ↔ Anvers</strong> de la <strong>ligne 2 Nord</strong> (devenue ligne 2 en 1907). Le tronçon faisait partie du second souffle d'expansion du métropolitain après le succès de l'<strong>Exposition universelle de 1900</strong>.",
+      "Le nom <strong>Ternes</strong> vient de l'ancien <strong>village des Ternes</strong>, rattaché à Paris en <strong>1860</strong> avec d'autres communes périphériques (annexion par Haussmann). L'<strong>étymologie</strong> est incertaine : du latin <em>villa externa</em> (« domaine extérieur ») selon une hypothèse, ou plus vraisemblablement du toponyme franco-celtique <em>Ternae</em>.",
+      "Le quartier est aujourd'hui résidentiel chic du <strong>17e arrondissement</strong>. La <strong>place des Ternes</strong> accueille un marché aux fleurs et héberge l'entrée du <strong>marché des Ternes</strong>. À proximité : la <strong>salle Pleyel</strong> (salle de concerts inaugurée en 1927, rénovée en 2006), le <strong>parc Monceau</strong> et l'<strong>Arc de Triomphe</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Ternes ?",
+      "answer": "Uniquement la <strong>ligne 2 du métro</strong>. Bus 30, 31, 43, 93."
+    },
+    {
+      "question": "Quand la station a-t-elle ouvert ?",
+      "answer": "Le <strong>7 octobre 1902</strong>."
+    },
+    {
+      "question": "D'où vient le nom Ternes ?",
+      "answer": "De l'ancien <strong>village des Ternes</strong>, rattaché à Paris en <strong>1860</strong>."
+    },
+    {
+      "question": "Pour la salle Pleyel ?",
+      "answer": "<strong>~5 min à pied</strong> via la rue du Faubourg-Saint-Honoré."
+    },
+    {
+      "question": "Pour les Champs-Élysées ?",
+      "answer": "<strong>M2 + M1</strong> via Charles de Gaulle - Étoile (~10 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "<strong>Salle Pleyel</strong> à 5 min à pied (concerts).",
+    "<strong>Marché des Ternes</strong> sur la place : marché couvert ouvert tous les jours sauf lundi.",
+    "Pour <strong>Charles de Gaulle - Étoile</strong> : <strong>M2 directe</strong> (1 station).",
+    "Pour <strong>Parc Monceau</strong> : <strong>M2 vers Monceau</strong> (2 stations) ou à pied (12 min).",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🎵",
+      "title": "Salle Pleyel, temple de la musique classique",
+      "content": "La <strong>salle Pleyel</strong>, à 5 min à pied de Ternes, est l'une des <strong>plus prestigieuses salles de concerts</strong> de Paris. Inaugurée en <strong>1927</strong> au 252 rue du Faubourg-Saint-Honoré, conçue par les architectes <strong>Aubertin, Granet et Mathon</strong>. <strong>1900 places</strong>. Acoustique exceptionnelle. Rénovée en <strong>2006</strong> après cinq ans de travaux. Accueille concerts classiques, jazz, variétés."
+    },
+    {
+      "icon": "🏘️",
+      "title": "Ancien village des Ternes",
+      "content": "Le <strong>village des Ternes</strong>, ancien territoire rural à l'ouest de Paris, est <strong>rattaché à la capitale en 1860</strong> avec d'autres communes (Auteuil, Passy, Batignolles, Montmartre, Belleville). Cette <strong>annexion par Haussmann</strong> fait passer Paris de 12 à 20 arrondissements. Les Ternes deviennent une partie du nouveau <strong>17e arrondissement</strong>. Le quartier conserve une identité villageoise autour de la <strong>place des Ternes</strong>."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Charles de Gaulle - Étoile",
+      "destination_slug": "charles-de-gaulle-etoile",
+      "destination_full_name": "Ternes → Charles de Gaulle - Étoile",
+      "lines_used": [
+        "M2"
+      ],
+      "lines_label": "M2 directe (1 station)",
+      "duration_minutes": 3,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-charles-de-gaulle-etoile/"
+    },
+    {
+      "destination_name": "Champs-Élysées",
+      "destination_slug": "george-v",
+      "destination_full_name": "Ternes → Champs-Élysées",
+      "lines_used": [
+        "M2 + M1"
+      ],
+      "lines_label": "M2 → Étoile + M1",
+      "duration_minutes": 8,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-george-v/"
+    },
+    {
+      "destination_name": "Salle Pleyel",
+      "destination_slug": "ternes",
+      "destination_full_name": "Ternes → Salle Pleyel",
+      "lines_used": [
+        "à pied"
+      ],
+      "lines_label": "Faubourg Saint-Honoré (5 min)",
+      "duration_minutes": 5,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-ternes/"
+    },
+    {
+      "destination_name": "Parc Monceau",
+      "destination_slug": "monceau",
+      "destination_full_name": "Ternes → Parc Monceau",
+      "lines_used": [
+        "M2"
+      ],
+      "lines_label": "M2 directe (2 stations)",
+      "duration_minutes": 5,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-monceau/"
+    },
+    {
+      "destination_name": "Saint-Lazare",
+      "destination_slug": "saint-lazare",
+      "destination_full_name": "Ternes → Saint-Lazare",
+      "lines_used": [
+        "M2 + M3"
+      ],
+      "lines_label": "M2 → Villiers + M3",
+      "duration_minutes": 13,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-saint-lazare/"
+    },
+    {
+      "destination_name": "Opéra",
+      "destination_slug": "opera",
+      "destination_full_name": "Ternes → Opéra",
+      "lines_used": [
+        "M2 + M3"
+      ],
+      "lines_label": "M2 → Villiers + M3",
+      "duration_minutes": 18,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-ternes/ternes-vers-opera/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q64436",
+      "name": "arc de triomphe de l'Étoile",
+      "category": "site notable",
+      "description": "Édifice emblématique de 49 mètres de hauteur, ce monument fut commandé par Napoléon en 1806 et achevé trois décennies plus tard sous Louis-Philippe. Conçu par les architectes Chalgrin, Blouet et Huyot, il trône au carrefour des 8e, 16e et 17e arrondissements, dominant l'axe reliant le Louvre à la Défense.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arc%20de%20Triomphe%2C%20Paris%2021%20October%202010.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27%C3%89toile",
+      "latitude": 48.87378,
+      "longitude": 2.29504,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. des Ternes",
+        "distance_m": 519,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1493222",
+      "name": "cathédrale Saint-Alexandre-Nevsky",
+      "category": "cathédrale",
+      "description": "Édifiée en 1847 par l'architecte Roman Kouzmine, cette église orthodoxe incarne un patrimoine religieux et architectural singulier dans le 8e arrondissement. Classée au titre des monuments historiques, elle se distingue par son appartenance à la tradition russe et constitue un témoignage de la présence culturelle slave à Paris.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Nevsky%20Cathedral%2C%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Saint-Alexandre-Nevsky_de_Paris",
+      "latitude": 48.877558,
+      "longitude": 2.301992,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 246,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q1810868",
+      "name": "Lido",
+      "category": "site notable",
+      "description": "Fondé en 1946 par les frères Clerico, le Lido s'est imposé comme un haut lieu de divertissement sur les Champs-Élysées. Ce théâtre accueille depuis ses origines des spectacles mêlant danse, chant et performances artistiques variées, perpétuant une tradition de cabaret parisien réinventé.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Lido.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lido_(cabaret)",
+      "latitude": 48.872361,
+      "longitude": 2.300561,
+      "nearest_exit": {
+        "number": "2",
+        "name": "pl. des Ternes",
+        "distance_m": 652,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q1649419",
+      "name": "salle Pleyel",
+      "category": "site notable",
+      "description": "Fondée en 1839 par les architectes Granet, Lyon et Mathon, cette salle de concert du 8e arrondissement conjugue patrimoine historique et modernité. Après sa rénovation en 2015, elle accueille jusqu'à 2 503 spectateurs et demeure un haut lieu de la vie musicale parisienne.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salle-Pleyel-P1000321.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Salle_Pleyel",
+      "latitude": 48.876994,
+      "longitude": 2.301036,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 220,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q1961971",
+      "name": "Pereire - Levallois",
+      "category": "gare",
+      "description": "Depuis 1854, Pereire - Levallois accueille les voyageurs sur la ligne historique reliant Ermont-Eaubonne à Champ-de-Mars. Accessible en souterrain dans le 17e arrondissement, cette gare ferroviaire demeure un point de passage majeur du réseau de transport parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Courcelles-Levallois.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Pereire_-_Levallois",
+      "latitude": 48.88528,
+      "longitude": 2.29778,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 773,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q2915167",
+      "name": "hôtel Napoléon",
+      "category": "site notable",
+      "description": "Établissement datant de 1928, cet hôtel se distingue par son aménagement d'époque Directoire. Situé avenue de Friedland dans le 8e arrondissement, il bénéficie d'une localisation privilégiée près de l'Arc de triomphe.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Napoleon%20Hotel%20Outside%20building.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Napol%C3%A9on",
+      "latitude": 48.874364,
+      "longitude": 2.298122,
+      "nearest_exit": {
+        "number": "2",
+        "name": "pl. des Ternes",
+        "distance_m": 406,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q3145766",
+      "name": "hôtel de Breteuil",
+      "category": "site notable",
+      "description": "Édifié en 1892 par l'architecte Ernest Sanson, cet hôtel particulier témoigne du savoir-faire parisien de la Belle Époque. Situé près de la place Charles-de-Gaulle dans le 16e arrondissement, il incarne l'architecture résidentielle de prestige de cette époque.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel%20de%20breteuil76.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Breteuil",
+      "latitude": 48.874,
+      "longitude": 2.29147,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. des Ternes",
+        "distance_m": 638,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q3492194",
+      "name": "église Saint-Ferdinand-des-Ternes",
+      "category": "église",
+      "description": "Édifiée en 1957 dans le 17e arrondissement, cette église incarne l'architecture contemporaine remarquable de l'après-guerre. Reconnue au titre du patrimoine du XXe siècle, elle témoigne des renouvellements stylistiques de la période.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ferdinand%20Ternes%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ferdinand-des-Ternes",
+      "latitude": 48.87862,
+      "longitude": 2.29083,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. des Ternes",
+        "distance_m": 488,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q3390541",
+      "name": "place des Ternes",
+      "category": "place",
+      "description": "Aménagée en 1893, cette place s'étend entre les 8e et 17e arrondissements parisiens. Elle offre un carrefour urbain où se concentrent commerces et vie locale du secteur des Ternes.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20place%20des%20ternes2.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Ternes",
+      "latitude": 48.878056,
+      "longitude": 2.298056,
+      "nearest_exit": {
+        "number": "2",
+        "name": "pl. des Ternes",
+        "distance_m": 11,
+        "walk_minutes": 1
+      }
+    },
+    {
+      "wikidata_id": "Q3145671",
+      "name": "hôtel Salomon de Rothschild",
+      "category": "site notable",
+      "description": "Dessiné par l'architecte Léon Ohnet, ce bâtiment de la rue Berryer témoigne du savoir-faire des demeures aristocratiques du 8e arrondissement. Classé au titre de monument historique, l'hôtel particulier Salomon de Rothschild conserve les caractéristiques de l'architecture résidentielle parisienne du XIXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Salomon%20de%20Rothschild%2C%20fa%C3%A7ade%20c%C3%B4t%C3%A9%20jardin.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Salomon_de_Rothschild",
+      "latitude": 48.875278,
+      "longitude": 2.303056,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 461,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q3469893",
+      "name": "salle Wagram",
+      "category": "site notable",
+      "description": "Depuis 1865, cette salle de spectacle du 17e arrondissement perpétue la tradition des lieux de divertissement parisiens du XIXe siècle. Centre des arts de la scène situé près de l'Arc de triomphe, elle demeure un témoignage architectural des salles de bal qui ont marqué la vie culturelle de la capitale.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Salle%20Wagram.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Salle_Wagram",
+      "latitude": 48.876667,
+      "longitude": 2.296944,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. des Ternes",
+        "distance_m": 171,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q3145634",
+      "name": "hôtel Potocki",
+      "category": "site notable",
+      "description": "Édifié entre 1878 et 1884 par l'architecte Jules Reboul pour le comte polonais Mikołaj Szczęsny Potocki, cet hôtel particulier incarne l'élégance du classicisme français du XIXe siècle. Longtemps siège de la chambre de commerce et d'industrie régionale, le bâtiment situé avenue de Friedland connaît actuellement une transformation majeure destinée à accueillir des entreprises.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/CCI%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Potocki",
+      "latitude": 48.8741,
+      "longitude": 2.30144,
+      "nearest_exit": {
+        "number": "2",
+        "name": "pl. des Ternes",
+        "distance_m": 496,
+        "walk_minutes": 6
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "av. des Ternes",
+      "address_full": "1 Place des Ternes 75017 Paris",
+      "postcode": "75017",
+      "city": "Paris",
+      "latitude": 48.878161,
+      "longitude": 2.297473,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "pl. des Ternes",
+      "address_full": "2 Place des Ternes 75008 Paris",
+      "postcode": "75008",
+      "city": "Paris",
+      "latitude": 48.878012,
+      "longitude": 2.298184,
+      "accessible": null
+    },
+    {
+      "number": "3",
+      "name": "bd de Courcelles",
+      "address_full": "130 Boulevard de Courcelles 75017 Paris",
+      "postcode": "75017",
+      "city": "Paris",
+      "latitude": 48.878367,
+      "longitude": 2.298861,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/ternes/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Ternes (Métro 2) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Ternes_M%C3%A9tro_Paris_Place_Ternes_-_Paris_XVII_(FR75)_-_2026-02-24_-_5.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/ternes/ternes-400.avif",
+        "800": "/assets/img/stations/ternes/ternes-800.avif",
+        "1200": "/assets/img/stations/ternes/ternes-1200.avif",
+        "1600": "/assets/img/stations/ternes/ternes-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/ternes/ternes-400.webp",
+        "800": "/assets/img/stations/ternes/ternes-800.webp",
+        "1200": "/assets/img/stations/ternes/ternes-1200.webp",
+        "1600": "/assets/img/stations/ternes/ternes-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/ternes/ternes-400.jpg",
+        "800": "/assets/img/stations/ternes/ternes-800.jpg",
+        "1200": "/assets/img/stations/ternes/ternes-1200.jpg",
+        "1600": "/assets/img/stations/ternes/ternes-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q635744",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q635744",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Ternes_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}

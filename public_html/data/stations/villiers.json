@@ -1,0 +1,553 @@
+{
+  "published": true,
+  "slug": "villiers",
+  "name": "Villiers",
+  "name_full": "Villiers (Métro 2, 3)",
+  "arrondissement": "17e arrondissement (Paris)",
+  "address": "Boulevard de Courcelles, 75008 Paris",
+  "latitude": 48.88152153069055,
+  "longitude": 2.3155842101583417,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "2",
+      "slug": "metro-2",
+      "color": "#0055C8",
+      "text_color": "#FFFFFF"
+    },
+    {
+      "type": "metro",
+      "code": "3",
+      "slug": "metro-3",
+      "color": "#6E6E00",
+      "text_color": "#FFFFFF"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "20",
+      "30"
+    ],
+    "nocturne": [
+      "N16",
+      "N52"
+    ],
+    "regional": [
+      "93"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 5,
+      "nearby_count": 11
+    }
+  },
+  "seo": {
+    "description": "Station Villiers (M2+M3) place de Villiers. Hub des 17e/8e arrondissements. Proche du parc Monceau et du musée Cernuschi."
+  },
+  "hero": {
+    "tagline": "M2 + M3 — place de Villiers, hub 17e/8e",
+    "description": "Station <strong>Villiers</strong>, hub <strong>M2 + M3</strong>, <strong>place de Villiers</strong>, à la limite des <strong>17e et 8e arrondissements</strong>. Quais <strong>M2</strong> ouverts le <strong>7 octobre 1902</strong>, quais <strong>M3</strong> le <strong>19 octobre 1904</strong>. Proche du <strong>parc Monceau</strong> et du <strong>musée Cernuschi</strong>."
+  },
+  "adjacent_stations": {
+    "metro-2": {
+      "previous": {
+        "name": "Rome",
+        "slug": "rome",
+        "direction": "Nation"
+      },
+      "next": {
+        "name": "Monceau",
+        "slug": "monceau",
+        "direction": "Porte Dauphine"
+      }
+    },
+    "metro-3": {
+      "previous": {
+        "name": "Europe",
+        "slug": "europe",
+        "direction": "Gallieni"
+      },
+      "next": {
+        "name": "Malesherbes",
+        "slug": "malesherbes",
+        "direction": "Pont de Levallois - Bécon"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Villiers</strong> est implantée <strong>place de Villiers</strong>, à la jonction des <strong>17e et 8e arrondissements</strong>. Elle est desservie par les <strong>lignes 2 et 3</strong> du métro parisien, formant un <strong>hub de correspondance</strong>. Bus 30, 53, 94 en correspondance.",
+    "Quais <strong>ligne 2</strong> ouverts le <strong>7 octobre 1902</strong> (tronçon Étoile ↔ Anvers), quais <strong>ligne 3</strong> ouverts le <strong>19 octobre 1904</strong> (tronçon Père Lachaise ↔ Villiers, devenu plus tard Champerret).",
+    "Le nom <strong>Villiers</strong> vient de la <strong>place de Villiers</strong>, qui rappelle l'ancien <strong>village de Villiers</strong>, intégré aux <strong>Batignolles</strong>, commune rattachée à Paris en <strong>1860</strong>. À proximité : <strong>parc Monceau</strong>, <strong>musée Cernuschi</strong>, <strong>musée Nissim de Camondo</strong>."
+  ],
+  "history": {
+    "title": "1902-1904 : hub M2/M3 et ancien village",
+    "paragraphs": [
+      "Les quais <strong>ligne 2</strong> sont <strong>inaugurés le 7 octobre 1902</strong> avec le tronçon <strong>Étoile ↔ Anvers</strong>. Les quais <strong>ligne 3</strong> ouvrent le <strong>19 octobre 1904</strong> avec le tronçon <strong>Père Lachaise ↔ Villiers</strong> (initial terminus ouest, prolongé ensuite vers Pereire et Pont de Levallois).",
+      "Le nom <strong>Villiers</strong> vient de la <strong>place de Villiers</strong>, qui rappelle l'ancien <strong>hameau de Villiers</strong>, intégré aux <strong>Batignolles</strong>, commune rattachée à Paris en <strong>1860</strong>. <strong>Étymologie</strong> : <em>villare</em> (latin), « petit domaine ».",
+      "La station est un <strong>hub de correspondance</strong> stratégique entre les <strong>16e/17e (M2)</strong> et le <strong>réseau M3</strong> qui rejoint Saint-Lazare, Opéra, République et Père Lachaise. À proximité : <strong>parc Monceau</strong>, <strong>musée Cernuschi</strong> (arts asiatiques), <strong>musée Nissim de Camondo</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelles lignes desservent Villiers ?",
+      "answer": "<strong>M2</strong> (1902) et <strong>M3</strong> (1904). Bus 30, 53, 94. Hub à la limite 17e/8e."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Quais M2 : <strong>7 octobre 1902</strong>. Quais M3 : <strong>19 octobre 1904</strong>."
+    },
+    {
+      "question": "Pour le parc Monceau ?",
+      "answer": "<strong>~5 min à pied</strong> via le boulevard de Courcelles."
+    },
+    {
+      "question": "Pour Saint-Lazare ?",
+      "answer": "<strong>M3 directe</strong> (3 stations, ~7 min)."
+    },
+    {
+      "question": "Pour Opéra ?",
+      "answer": "<strong>M3 directe</strong> (4 stations, ~9 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "Hub <strong>M2 + M3</strong> stratégique 17e/8e.",
+    "<strong>Parc Monceau</strong> à 5 min à pied.",
+    "Pour <strong>Saint-Lazare</strong> : <strong>M3 directe</strong> (~7 min).",
+    "Pour <strong>Opéra</strong> : <strong>M3 directe</strong> (~9 min).",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🏘️",
+      "title": "Ancien hameau de Villiers",
+      "content": "<strong>Villiers</strong> tire son nom d'un <strong>ancien hameau</strong> de la commune des <strong>Batignolles</strong>, rattachée à Paris en <strong>1860</strong>. L'<strong>étymologie</strong> vient du latin <em>villare</em> (« petit domaine »), désignant une petite exploitation agricole. La <strong>place de Villiers</strong> conserve la mémoire de ce hameau."
+    },
+    {
+      "icon": "🏛️",
+      "title": "Musée Cernuschi, arts asiatiques",
+      "content": "Le <strong>musée Cernuschi</strong>, à 5 min à pied de Villiers (7 avenue Vélasquez), abrite la <strong>collection d'arts asiatiques</strong> de <strong>Henri Cernuschi</strong> (1821-1896), banquier italien réfugié à Paris. Installé dans son <strong>hôtel particulier</strong> construit pour abriter ses collections rapportées d'un voyage en Asie (1871-1873). <strong>15 000 œuvres</strong> de Chine, Japon, Corée, Vietnam."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Parc Monceau",
+      "destination_slug": "monceau",
+      "destination_full_name": "Villiers → Parc Monceau",
+      "lines_used": [
+        "M2"
+      ],
+      "lines_label": "M2 directe (1 station)",
+      "duration_minutes": 3,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-monceau/"
+    },
+    {
+      "destination_name": "Saint-Lazare",
+      "destination_slug": "saint-lazare",
+      "destination_full_name": "Villiers → Saint-Lazare",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (3 stations)",
+      "duration_minutes": 7,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-saint-lazare/"
+    },
+    {
+      "destination_name": "Opéra Garnier",
+      "destination_slug": "opera",
+      "destination_full_name": "Villiers → Opéra Garnier",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (4 stations)",
+      "duration_minutes": 9,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-opera/"
+    },
+    {
+      "destination_name": "République",
+      "destination_slug": "republique",
+      "destination_full_name": "Villiers → République",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (7 stations)",
+      "duration_minutes": 14,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-republique/"
+    },
+    {
+      "destination_name": "Père Lachaise",
+      "destination_slug": "pere-lachaise",
+      "destination_full_name": "Villiers → Père Lachaise",
+      "lines_used": [
+        "M2 ou M3"
+      ],
+      "lines_label": "M2 ou M3 directes",
+      "duration_minutes": 18,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-pere-lachaise/"
+    },
+    {
+      "destination_name": "Charles de Gaulle - Étoile",
+      "destination_slug": "charles-de-gaulle-etoile",
+      "destination_full_name": "Villiers → Charles de Gaulle - Étoile",
+      "lines_used": [
+        "M2"
+      ],
+      "lines_label": "M2 directe (4 stations)",
+      "duration_minutes": 9,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-villiers/villiers-vers-charles-de-gaulle-etoile/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q1414059",
+      "name": "parc Monceau",
+      "category": "jardin",
+      "description": "Aménagé en 1852, ce jardin à l'anglaise s'étend sur 8,25 hectares dans le 8e arrondissement. Classé au titre des monuments historiques, le parc Monceau offre une promenade paysagère typique du 19e siècle parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Monceau%2020060812%2035.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Monceau",
+      "latitude": 48.8794,
+      "longitude": 2.30923,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 387,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q1165526",
+      "name": "musée Jacquemart-André",
+      "category": "musée",
+      "description": "Installé boulevard Haussmann depuis 1913, ce musée conjugue beaux-arts et arts décoratifs au sein d'une demeure parisienne historique. Géré par Culturespaces, il offre une immersion dans les collections d'un patrimoine artistique du 8e arrondissement.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Jacquemart%20Andr%C3%A9%202007%20-%20Recoura.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Jacquemart-Andr%C3%A9",
+      "latitude": 48.87543,
+      "longitude": 2.31051,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 659,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q550157",
+      "name": "église Saint-Augustin de Paris",
+      "category": "église",
+      "description": "Édifiée par l'architecte Victor Baltard au cœur du 8e arrondissement, cette église s'élève à 80 mètres de hauteur. Inaugurée en 1871 après plus d'une décennie de travaux, elle figure au patrimoine des monuments historiques classés.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Augustin%20Church%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Augustin_de_Paris",
+      "latitude": 48.876221,
+      "longitude": 2.318917,
+      "nearest_exit": {
+        "number": "2",
+        "name": "bd des Batignolles",
+        "distance_m": 585,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q273482",
+      "name": "école normale de musique de Paris",
+      "category": "site notable",
+      "description": "Fondée en 1919 par le pianiste Alfred Cortot, cette institution forme depuis plus d'un siècle les futurs concertistes et musiciens enseignants. Établie dans le 17e arrondissement, l'école bénéficie d'une reconnaissance patrimoniale comme monument historique du XXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/EcoleNormaledeMusiquedeParis.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89cole_normale_de_musique_de_Paris",
+      "latitude": 48.88389,
+      "longitude": 2.30889,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 501,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1954498",
+      "name": "musée Nissim-de-Camondo",
+      "category": "musée",
+      "description": "Ouvert en 1936 par la famille Camondo, ce musée occupe un hôtel particulier néo-classique édifié entre 1911 et 1914 par l'architecte René Sergent. Ses galeries présentent une remarquable collection d'ameublement et d'objets d'art français du XVIIIe siècle, conservés dans le décor d'origine de la demeure.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20%2875008%29%20H%C3%B4tel%20Mo%C3%AFse%20de%20Camondo%2005.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Nissim-de-Camondo",
+      "latitude": 48.878889,
+      "longitude": 2.312778,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 240,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q1667022",
+      "name": "musée Cernuschi",
+      "category": "musée",
+      "description": "Fondé en 1898, ce musée parisien rassemble des collections majeures d'art chinois, japonais, coréen et vietnamien. L'édifice, conçu par l'architecte William Bouwens van der Boijen, constitue le second pôle français dédié aux civilisations asiatiques et figure parmi les cinq principaux musées européens consacrés à la peinture et sculpture chinoises.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monceau%20Cernuschi.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Cernuschi",
+      "latitude": 48.88,
+      "longitude": 2.311944,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 180,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q3268614",
+      "name": "lycée Carnot",
+      "category": "site notable",
+      "description": "Fondé en 1869, ce lycée parisien accueille environ 2 000 élèves répartis entre collège, lycée et classes préparatoires. Depuis sa création, l'établissement a formé des écrivains, scientifiques et personnalités politiques de premier plan.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20lyc%C3%A9e%20Carnot.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lyc%C3%A9e_Carnot_(Paris)",
+      "latitude": 48.884477,
+      "longitude": 2.307843,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 602,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q623260",
+      "name": "square des Batignolles",
+      "category": "jardin",
+      "description": "Créé en 1862, ce jardin public du 17e arrondissement offre une pause verdoyante au cœur du quartier des Batignolles. Voisin du parc Martin-Luther-King, il constitue un espace de détente accessible facilement depuis la station Pont Cardinet.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20des%20Batignolles%2020060815%2005.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_des_Batignolles",
+      "latitude": 48.8875,
+      "longitude": 2.316389,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Villiers",
+        "distance_m": 689,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q2298114",
+      "name": "Pont Cardinet",
+      "category": "gare",
+      "description": "Édifiée par l'architecte Julien Polti, cette gare ferroviaire du quartier des Batignolles accueille les usagers de la ligne L du Transilien. Reconnue comme patrimoine d'intérêt régional, elle demeure une infrastructure de transport en surface reliant efficacement le 17e arrondissement.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont-Cardinet%20ext%C3%A9rieur.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Pont-Cardinet",
+      "latitude": 48.8878,
+      "longitude": 2.3141,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Villiers",
+        "distance_m": 722,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3527480",
+      "name": "théâtre Hébertot",
+      "category": "théâtre",
+      "description": "Fondé en 1838 sur le boulevard des Batignolles, ce théâtre du 17e arrondissement accueille des spectacles variés depuis près de deux siècles. Inscrit au patrimoine historique, il demeure un lieu culturel établi du quartier des Batignolles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20H%C3%A9bertot%20-%20Paris%20XVII%20%28FR75%29%20-%202021-08-22%20-%202.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_H%C3%A9bertot",
+      "latitude": 48.882083,
+      "longitude": 2.318889,
+      "nearest_exit": {
+        "number": "2",
+        "name": "bd des Batignolles",
+        "distance_m": 233,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q1955698",
+      "name": "musée national Jean-Jacques-Henner",
+      "category": "musée",
+      "description": "Fondé en 1924 à partir d'une donation généreuse, ce musée national célèbre l'héritage pictural de Jean-Jacques Henner. Installé dans un élégant hôtel particulier du XIXe siècle au cœur du 17e arrondissement, il préserve et valorise l'œuvre de ce peintre français.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Henner%20museum%20facade.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_Jean-Jacques-Henner",
+      "latitude": 48.883031,
+      "longitude": 2.3077,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 519,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1643072",
+      "name": "hôtel Gaillard",
+      "category": "site notable",
+      "description": "Édifié entre 1878 et 1882 par l'architecte Jules Février pour le banquier Émile Gaillard, cet hôtel particulier du 17e arrondissement figure au patrimoine des monuments historiques classés. Depuis 2019, il accueille la Cité de l'Économie et demeure un témoignage remarquable de l'architecture parisienne du XIXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1060415%20Paris%20XVII%20h%C3%B4tel%20Gaillard%20rwk.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Gaillard",
+      "latitude": 48.881944,
+      "longitude": 2.310417,
+      "nearest_exit": {
+        "number": "3",
+        "name": "bd de Courcelles",
+        "distance_m": 287,
+        "walk_minutes": 4
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "av. de Villiers",
+      "address_full": "1 Avenue de Villiers 75017 Paris",
+      "postcode": "75017",
+      "city": "Paris",
+      "latitude": 48.881349,
+      "longitude": 2.315239,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "bd des Batignolles",
+      "address_full": "9 Boulevard de Courcelles 75008 Paris",
+      "postcode": "75008",
+      "city": "Paris",
+      "latitude": 48.881128,
+      "longitude": 2.316046,
+      "accessible": null
+    },
+    {
+      "number": "3",
+      "name": "bd de Courcelles",
+      "address_full": "27 Boulevard de Courcelles 75008 Paris",
+      "postcode": "75008",
+      "city": "Paris",
+      "latitude": 48.880892,
+      "longitude": 2.314004,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/villiers/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Villiers (Métro 2, 3) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Villiers_M%C3%A9tro_Paris_Boulevard_Courcelles_-_Paris_VIII_(FR75)_-_2026-01-29_-_1.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/villiers/villiers-400.avif",
+        "800": "/assets/img/stations/villiers/villiers-800.avif",
+        "1200": "/assets/img/stations/villiers/villiers-1200.avif",
+        "1600": "/assets/img/stations/villiers/villiers-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/villiers/villiers-400.webp",
+        "800": "/assets/img/stations/villiers/villiers-800.webp",
+        "1200": "/assets/img/stations/villiers/villiers-1200.webp",
+        "1600": "/assets/img/stations/villiers/villiers-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/villiers/villiers-400.jpg",
+        "800": "/assets/img/stations/villiers/villiers-800.jpg",
+        "1200": "/assets/img/stations/villiers/villiers-1200.jpg",
+        "1600": "/assets/img/stations/villiers/villiers-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 2
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q1511335",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1511335",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Villiers_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}
