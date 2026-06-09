@@ -21,7 +21,8 @@ error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
  * Sortie JSON sur stdout pour permettre agregation/log par le caller.
  */
 
-const RADIUS_M       = 300;
+const RADII_M        = [50, 100, 200]; // escalade adaptative
+const MIN_YEAR       = 2018;           // filtre captured_at
 const HERO_WIDTHS    = [400, 800, 1200, 1600];
 const FALLBACK_W     = 1200;
 const FALLBACK_H     = 675;
@@ -152,6 +153,12 @@ function pick_best_mapillary(array $images, float $lat, float $lon): ?array {
         if (empty($img['thumb_2048_url'])) continue;
         $geom = $img['geometry'] ?? null;
         if (!$geom || empty($geom['coordinates'])) continue;
+        // Filtre annee : captured_at est un timestamp ms
+        $cap = (int)($img['captured_at'] ?? 0);
+        if ($cap > 0) {
+            $year = (int)date('Y', (int)($cap / 1000));
+            if ($year < MIN_YEAR) continue;
+        }
         [$glon, $glat] = $geom['coordinates'];
         $img['_dist_m'] = distance_m($lat, $lon, (float)$glat, (float)$glon);
         $candidates[] = $img;
@@ -159,6 +166,24 @@ function pick_best_mapillary(array $images, float $lat, float $lon): ?array {
     if (!$candidates) return null;
     usort($candidates, fn($a, $b) => $a['_dist_m'] <=> $b['_dist_m']);
     return $candidates[0];
+}
+
+/**
+ * Rayon adaptatif : tente RADII_M dans l'ordre croissant. Retourne le premier
+ * match valide trouve avec son rayon de declenchement, OU null.
+ */
+function find_mapillary_adaptive(string $token, float $lat, float $lon): array {
+    $attempts = [];
+    foreach (RADII_M as $r) {
+        $imgs = query_mapillary($token, $lat, $lon, $r);
+        $total = count($imgs);
+        $best = pick_best_mapillary($imgs, $lat, $lon);
+        $attempts[] = ['radius_m' => $r, 'total' => $total, 'match' => $best !== null];
+        if ($best !== null) {
+            return ['best' => $best, 'matched_radius_m' => $r, 'attempts' => $attempts];
+        }
+    }
+    return ['best' => null, 'matched_radius_m' => null, 'attempts' => $attempts];
 }
 
 // ------------------------------------------------------------------
@@ -367,10 +392,13 @@ function process_station(string $slug, string $token): array {
     $srcDir = "$outDir/source";
     if (!is_dir($srcDir)) @mkdir($srcDir, 0755, true);
 
-    // 1. Tentative Mapillary
-    $imgs = query_mapillary($token, $lat, $lon, RADIUS_M);
-    $total = count($imgs);
-    $best = pick_best_mapillary($imgs, $lat, $lon);
+    // 1. Tentative Mapillary avec rayon adaptatif (50 -> 100 -> 200m)
+    $adaptive = find_mapillary_adaptive($token, $lat, $lon);
+    $best = $adaptive['best'];
+    $matchedRadius = $adaptive['matched_radius_m'];
+    $attempts = $adaptive['attempts'];
+    // Total : utiliser le total du dernier essai (le plus grand bbox)
+    $total = end($attempts)['total'] ?? 0;
 
     if ($best !== null) {
         $mapillarySrc = "$srcDir/mapillary.jpg";
@@ -384,17 +412,19 @@ function process_station(string $slug, string $token): array {
                 set_hero_mapillary($station, $slug, $best);
                 save_station($slug, $station);
                 return [
-                    'slug'     => $slug,
-                    'source'   => 'mapillary_streetview',
-                    'total'    => $total,
-                    'image_id' => $best['id'] ?? '',
-                    'creator'  => $best['creator']['username'] ?? '?',
-                    'date'     => date('Y-m-d', (int)(($best['captured_at'] ?? 0) / 1000)),
-                    'dist_m'   => (int)round($best['_dist_m'] ?? 0),
-                    'compass'  => (int)round((float)($best['compass_angle'] ?? 0)),
-                    'variants' => $n,
-                    'tiles'    => null,
-                    'reason'   => null,
+                    'slug'            => $slug,
+                    'source'          => 'mapillary_streetview',
+                    'total'           => $total,
+                    'image_id'        => $best['id'] ?? '',
+                    'creator'         => $best['creator']['username'] ?? '?',
+                    'date'            => date('Y-m-d', (int)(($best['captured_at'] ?? 0) / 1000)),
+                    'dist_m'          => (int)round($best['_dist_m'] ?? 0),
+                    'compass'         => (int)round((float)($best['compass_angle'] ?? 0)),
+                    'matched_radius_m'=> $matchedRadius,
+                    'attempts'        => $attempts,
+                    'variants'        => $n,
+                    'tiles'           => null,
+                    'reason'          => null,
                 ];
             }
         }
@@ -403,8 +433,8 @@ function process_station(string $slug, string $token): array {
 
     // 2. Fallback ESRI satellite
     $reason = $total === 0
-        ? 'mapillary_zero_results'
-        : ($best === null ? 'mapillary_no_non_pano' : 'mapillary_download_or_crop_failed');
+        ? 'mapillary_zero_results_all_radii'
+        : ($best === null ? 'mapillary_no_valid_candidate_in_200m' : 'mapillary_download_or_crop_failed');
 
     $esriSrc = "$srcDir/satellite-esri.png";
     $tilesFetched = fetch_esri_satellite($lat, $lon, $esriSrc);
@@ -416,17 +446,19 @@ function process_station(string $slug, string $token): array {
     set_hero_esri($station, $slug, $tilesFetched);
     save_station($slug, $station);
     return [
-        'slug'     => $slug,
-        'source'   => 'esri_satellite_fallback',
-        'total'    => $total,
-        'image_id' => null,
-        'creator'  => null,
-        'date'     => null,
-        'dist_m'   => null,
-        'compass'  => null,
-        'variants' => $n,
-        'tiles'    => $tilesFetched,
-        'reason'   => $reason,
+        'slug'            => $slug,
+        'source'          => 'esri_satellite_fallback',
+        'total'           => $total,
+        'image_id'        => null,
+        'creator'         => null,
+        'date'            => null,
+        'dist_m'          => null,
+        'compass'         => null,
+        'matched_radius_m'=> null,
+        'attempts'        => $attempts,
+        'variants'        => $n,
+        'tiles'           => $tilesFetched,
+        'reason'          => $reason,
     ];
 }
 
