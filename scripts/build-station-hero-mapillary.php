@@ -320,13 +320,73 @@ function wm_files_in_search(string $query): array {
 
 function wm_is_excluded_filename(string $filename): bool {
     $lower = strtolower($filename);
+    // Extensions non-photo
     foreach (['.pdf', '.gif', '.svg', '.tiff', '.tif', '.webm', '.ogv', '.ogg', '.wav', '.mp4'] as $ext) {
         if (str_ends_with($lower, $ext)) return true;
     }
+    // v7 : filtre etendu sujet medioce (apprentissages M3bis+M7bis : 36% echec qualite)
+    // Chantier/travaux exclus en absolute (jamais utilisable)
     foreach (['chantier', 'travaux', 'construction', '_construction_', ' construction '] as $bad) {
         if (str_contains($lower, $bad)) return true;
     }
+    // Detail/macro/palissade/clôture/mur — sujet non identifiable comme station
+    foreach (['détail ', 'detail ', 'macro', 'palissade', 'clôture', 'cloture'] as $bad) {
+        if (str_contains($lower, $bad)) return true;
+    }
+    // Tunnel/voie/rame/wagon/train — sujet ferroviaire pas station
+    foreach (['tunnel ', 'voie ', 'voies ', 'rame ', 'rames ', 'wagon', 'train à quai'] as $bad) {
+        if (str_contains($lower, $bad)) return true;
+    }
+    // Note : 'couloir', 'intérieur', 'quai', 'panneau', 'plaque', 'plateforme'
+    // ne sont PAS exclus absolument car parfois acceptables (CAS B).
+    // Ils sont penalises dans wm_score_filename() au lieu d'etre exclus.
     return false;
+}
+
+/**
+ * v7 : scoring qualite sur le nom de fichier (et dimensions).
+ * Score > 0 souhaitable. Plus c'est haut, mieux c'est.
+ * Permet de departager plusieurs candidats matchant un meme test.
+ */
+function wm_score_filename(string $filename, array $info): int {
+    $lower = strtolower($filename);
+    $score = 0;
+    // Preferences positives : vue exterieure / acces / edicule
+    if (str_contains($lower, 'accès ') || str_contains($lower, 'acces '))   $score += 10;
+    if (str_contains($lower, 'edicule') || str_contains($lower, 'édicule')) $score += 10;
+    if (str_contains($lower, 'façade ') || str_contains($lower, 'facade ')) $score += 8;
+    if (str_contains($lower, 'entrée ') || str_contains($lower, 'entree ')) $score += 8;
+    if (str_contains($lower, 'sortie '))                                     $score += 5;
+    if (str_contains($lower, 'vue exterieure') || str_contains($lower, 'vue extérieure')) $score += 10;
+    // Nom contient "station" + identifiant (lieu) : signal positif
+    if (preg_match('/(station|métro|metro)/u', $lower) && preg_match('/(rue|avenue|boulevard|place|av\.|bd\.|bd |av )/u', $lower)) {
+        $score += 5;
+    }
+    // Penalites : sujet interieur / detail
+    if (str_contains($lower, 'couloir'))   $score -= 8;
+    if (str_contains($lower, 'intérieur') || str_contains($lower, 'interieur')) $score -= 8;
+    if (str_contains($lower, 'détail') || str_contains($lower, 'detail')) $score -= 10;
+    if (str_contains($lower, 'macro'))     $score -= 10;
+    if (str_contains($lower, 'quai '))     $score -= 5;
+    if (str_contains($lower, 'panneau'))   $score -= 3;
+    if (str_contains($lower, 'totem'))     $score -= 3;
+    if (str_contains($lower, 'plaque'))    $score -= 3;
+    if (str_contains($lower, 'fantôme') || str_contains($lower, 'fantome')) $score -= 5;
+    // Date >= 2020 : signal positif (style Chabe01 pattern recent)
+    if (preg_match('/\b(2020|2021|2022|2023|2024|2025|2026)\b/', $filename)) $score += 5;
+    // Date < 2015 : signal negatif (vieilles photos parfois bas)
+    if (preg_match('/\b(20[01][0-4])\b/', $filename)) $score -= 2;
+    // Dimensions : paysage > portrait > carre
+    $w = (int)($info['width'] ?? 0);
+    $h = (int)($info['height'] ?? 0);
+    if ($h > 0) {
+        $ratio = $w / $h;
+        if ($ratio > 1.2)  $score += 5;
+        elseif ($ratio < 0.85) $score -= 3;
+    }
+    // Resolution >= 2400 : meilleur pour AVIF 1600 sans pixelisation
+    if ($w >= 2400) $score += 3;
+    return $score;
 }
 
 function wm_validate_file(string $filename): ?array {
@@ -356,19 +416,35 @@ function find_wikimedia_station(array $station): ?array {
     foreach ($tests as [$label, $fn]) {
         $files = $fn();
         if (empty($files)) continue;
+        // v7 : on score TOUS les candidats valides du test puis on prend le meilleur
+        // (au lieu de prendre le 1er qui valide en v6).
+        $candidates = [];
         $tried = 0;
         foreach ($files as $filename) {
-            if ($tried >= WIKIMEDIA_MAX_POI_TRIES) break;
+            // v7 max 8 essais par test (vs 5 en v6) — plus de chances de trouver bonne photo
+            if ($tried >= 8) break;
             $tried++;
             $info = wm_validate_file($filename);
             if (!$info) continue;
-            return [
+            $score = wm_score_filename($filename, $info);
+            $candidates[] = [
                 'filename' => $filename,
                 'info'     => $info,
-                'source'   => $label,
-                'query'    => $label,
+                'score'    => $score,
             ];
         }
+        if (empty($candidates)) continue;
+        // Tri par score decroissant (le mieux d'abord)
+        usort($candidates, fn($a, $b) => $b['score'] <=> $a['score']);
+        $best = $candidates[0];
+        return [
+            'filename' => $best['filename'],
+            'info'     => $best['info'],
+            'source'   => $label,
+            'query'    => $label,
+            'score'    => $best['score'],
+            'tried'    => count($candidates),
+        ];
     }
     return null;
 }
@@ -379,13 +455,16 @@ function find_wikimedia_station(array $station): ?array {
  */
 function wikimedia_subject_from_filename(string $filename): string {
     $lower = strtolower($filename);
-    if (preg_match('/(accès|access|entrée|edicule|édicule)/u', $lower)) return "Entrée extérieure";
+    // v7 : categorisation plus fine
+    if (preg_match('/(façade|facade)/u', $lower))                        return "Façade";
+    if (preg_match('/(accès|acces|entrée|entree|edicule|édicule|sortie)/u', $lower)) return "Entrée extérieure";
+    if (preg_match('/vue ext[éeè]rieure/u', $lower))                     return "Vue d'ensemble extérieure";
     if (preg_match('/(couloir|hall|souterrain|passage)/u', $lower))      return "Couloir intérieur";
     if (preg_match('/(quai|plateforme|platform)/u', $lower))             return "Quai";
     if (preg_match('/(rame|train)/u', $lower))                            return "Train à quai";
     if (preg_match('/(aérien|aerien|viaduc)/u', $lower))                  return "Vue aérienne";
-    if (preg_match('/(panneau|totem)/u', $lower))                         return "Signalétique extérieure";
-    return "Vue de la station";
+    if (preg_match('/(panneau|totem|plaque)/u', $lower))                  return "Signalétique extérieure";
+    return "Vue extérieure";
 }
 
 /**
@@ -581,6 +660,9 @@ function process_station(string $slug, string $token): array {
                 'creator'  => $wkStation['info']['artist'],
                 'license'  => $wkStation['info']['license'],
                 'dims'     => $wkStation['info']['width'] . 'x' . $wkStation['info']['height'],
+                'score'    => $wkStation['score'] ?? null,
+                'subject'  => wikimedia_subject_from_filename($wkStation['filename']),
+                'candidates_tried' => $wkStation['tried'] ?? null,
             ];
         }
         $info = $wkStation['info'];
