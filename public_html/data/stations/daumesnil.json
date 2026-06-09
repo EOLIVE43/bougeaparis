@@ -1,0 +1,563 @@
+{
+  "published": true,
+  "slug": "daumesnil",
+  "name": "Daumesnil",
+  "name_full": "Daumesnil (Métro 6, 8)",
+  "arrondissement": "12e arrondissement (Paris)",
+  "address": "Place Félix-Éboué, 75012 Paris",
+  "latitude": 48.839472309769995,
+  "longitude": 2.395719004371989,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "6",
+      "slug": "metro-6",
+      "color": "#6ECA97",
+      "text_color": "#000000"
+    },
+    {
+      "type": "metro",
+      "code": "8",
+      "slug": "metro-8",
+      "color": "#D282BE",
+      "text_color": "#000000"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "29",
+      "46",
+      "64"
+    ],
+    "nocturne": [
+      "N33"
+    ],
+    "regional": [
+      "71"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 7,
+      "nearby_count": 19
+    }
+  },
+  "seo": {
+    "description": "Station Daumesnil (M6 + M8) place Félix-Éboué dans le 12e arrondissement. Hub majeur. Nommée d'après le général Pierre Daumesnil (1776-1832, défenseur de Vincennes)."
+  },
+  "hero": {
+    "tagline": "M6 + M8 — général Daumesnil (défenseur de Vincennes)",
+    "description": "Station <strong>Daumesnil</strong>, hub <strong>M6 + M8</strong>, place Félix-Éboué dans le <strong>12e arrondissement</strong>. Nommée d'après <strong>Pierre Daumesnil</strong> (<strong>1776-1832</strong>), <strong>général de l'Empire</strong> et <strong>défenseur du château de Vincennes</strong> en 1814 et 1815. Ouverte en <strong>1909</strong> (M6) et <strong>1931</strong> (M8). Quartier résidentiel du <strong>12e</strong>."
+  },
+  "adjacent_stations": {
+    "metro-6": {
+      "previous": {
+        "name": "Bel-Air",
+        "slug": "bel-air",
+        "direction": "Nation"
+      },
+      "next": {
+        "name": "Dugommier",
+        "slug": "dugommier",
+        "direction": "Charles de Gaulle - Étoile"
+      }
+    },
+    "metro-8": {
+      "previous": {
+        "name": "Montgallet",
+        "slug": "montgallet",
+        "direction": "Balard"
+      },
+      "next": {
+        "name": "Michel Bizot",
+        "slug": "michel-bizot",
+        "direction": "Pointe du Lac"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Daumesnil</strong> est implantée <strong>place Félix-Éboué</strong> dans le <strong>12e arrondissement</strong>. Elle est desservie par les <strong>lignes 6 et 8</strong> du métro parisien, formant un <strong>nœud de correspondance</strong>. Bus 29, 46 et 87 en correspondance.",
+    "Quais <strong>M6</strong> ouverts le <strong>1er mars 1909</strong> (avec le prolongement Place d'Italie ↔ Nation). Quais <strong>M8</strong> ouverts le <strong>5 mai 1931</strong> (prolongement de la M8 vers Charenton). Hub majeur du 12e.",
+    "Le nom <strong>Daumesnil</strong> rend hommage au <strong>général Pierre Daumesnil</strong> (<strong>1776-1832</strong>), <strong>général d'Empire</strong>, surnommé <strong>« la Jambe de Bois »</strong> (il perdit sa jambe à <strong>Wagram</strong> en 1809). <strong>Défenseur du château de Vincennes</strong> en 1814 et 1815, il refusa de livrer la forteresse aux Alliés avec sa célèbre formule : <em>« Rendez-moi ma jambe, et je vous rendrai Vincennes ! »</em>"
+  ],
+  "history": {
+    "title": "1909-1931 : hub M6/M8 et Daumesnil « la Jambe de Bois »",
+    "paragraphs": [
+      "Les quais <strong>ligne 6</strong> sont <strong>inaugurés le 1er mars 1909</strong> avec le prolongement Place d'Italie ↔ Nation. Les quais <strong>ligne 8</strong> ouvrent le <strong>5 mai 1931</strong> avec le prolongement de la M8 de la Porte de Charenton vers Daumesnil.",
+      "Le nom <strong>Daumesnil</strong> commémore <strong>Pierre Yrieix Daumesnil</strong> (<strong>14 juillet 1776 - 17 août 1832</strong>), <strong>général d'Empire</strong> né à Périgueux. Engagé volontaire en 1793, il sert dans les campagnes de la Révolution puis de l'Empire. <strong>Officier des Grenadiers à pied de la Garde impériale</strong>.",
+      "À la <strong>bataille de Wagram</strong> (5-6 juillet 1809), il <strong>perd sa jambe</strong> emportée par un boulet, ce qui lui vaut le surnom de <strong>« la Jambe de Bois »</strong>. <strong>Gouverneur du château de Vincennes</strong> à partir de 1812, il en assure la <strong>défense en 1814 et 1815</strong> face aux Alliés. Sommé de se rendre, il répond par sa formule restée célèbre : <em>« Rendez-moi ma jambe, et je vous rendrai Vincennes ! »</em>. La <strong>place Félix-Éboué</strong> (rebaptisée en 1947) accueille en son centre la <strong>fontaine aux Lions</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelles lignes desservent Daumesnil ?",
+      "answer": "<strong>M6</strong> (ouverte 1909) et <strong>M8</strong> (ouverte 1931). Bus 29, 46 et 87. Hub du 12e."
+    },
+    {
+      "question": "Qui est le général Daumesnil ?",
+      "answer": "<strong>Pierre Daumesnil</strong> (1776-1832), <strong>général d'Empire</strong> surnommé <strong>« la Jambe de Bois »</strong>. <strong>Défenseur du château de Vincennes</strong> en 1814-1815."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Quais M6 : <strong>1er mars 1909</strong>. Quais M8 : <strong>5 mai 1931</strong>."
+    },
+    {
+      "question": "Comment aller à Bastille ?",
+      "answer": "<strong>M8 directe</strong> (~10 min)."
+    },
+    {
+      "question": "Pour Bois de Vincennes ?",
+      "answer": "<strong>M8 directe</strong> jusqu'à Porte Dorée, ou <strong>M6 → Nation</strong>."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Partiellement</strong>. Ascenseurs côté ligne 8 récemment installés."
+    }
+  ],
+  "practical_tips": [
+    "<strong>Fontaine aux Lions</strong> au centre de la place Félix-Éboué.",
+    "Pour <strong>Bastille</strong> : <strong>M8 directe</strong> (~10 min).",
+    "Pour le <strong>Bois de Vincennes</strong> et le <strong>château de Vincennes</strong> : <strong>M8 → Porte Dorée</strong> ou <strong>M6 → Nation</strong>.",
+    "Pour <strong>Bercy</strong> : <strong>M6 directe</strong> (2 stations).",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🦿",
+      "title": "Daumesnil « la Jambe de Bois » défend Vincennes",
+      "content": "<strong>Pierre Daumesnil</strong> (1776-1832), surnommé <strong>« la Jambe de Bois »</strong> après avoir perdu sa jambe à <strong>Wagram</strong> (1809). <strong>Gouverneur du château de Vincennes</strong> à partir de 1812, il refuse de livrer la forteresse aux Alliés en 1814 et 1815. Sa formule restée célèbre : <em>« Rendez-moi ma jambe, et je vous rendrai Vincennes ! »</em>. Le château fut épargné grâce à sa résistance. Une <strong>statue</strong> lui rend hommage au château de Vincennes."
+    },
+    {
+      "icon": "⛲",
+      "title": "Fontaine aux Lions, place Félix-Éboué",
+      "content": "La <strong>place Félix-Éboué</strong> (rebaptisée en 1947 en hommage à <strong>Félix Éboué</strong>, gouverneur du Tchad rallié à de Gaulle en 1940) accueille en son centre la <strong>fontaine aux Lions</strong>. Cette fontaine monumentale, ornée de <strong>quatre lions en bronze</strong>, fut installée en <strong>1880</strong>. Elle est l'une des plus belles fontaines parisiennes du <strong>Second Empire</strong>."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Bercy",
+      "destination_slug": "bercy",
+      "destination_full_name": "Daumesnil → Bercy",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 directe (2 stations)",
+      "duration_minutes": 4,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-bercy/"
+    },
+    {
+      "destination_name": "Bastille",
+      "destination_slug": "bastille",
+      "destination_full_name": "Daumesnil → Bastille",
+      "lines_used": [
+        "M8"
+      ],
+      "lines_label": "M8 directe (5 stations)",
+      "duration_minutes": 10,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-bastille/"
+    },
+    {
+      "destination_name": "Bois de Vincennes",
+      "destination_slug": "porte-doree",
+      "destination_full_name": "Daumesnil → Bois de Vincennes",
+      "lines_used": [
+        "M8"
+      ],
+      "lines_label": "M8 directe vers Porte Dorée",
+      "duration_minutes": 8,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-porte-doree/"
+    },
+    {
+      "destination_name": "Nation",
+      "destination_slug": "nation",
+      "destination_full_name": "Daumesnil → Nation",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 directe (2 stations)",
+      "duration_minutes": 4,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-nation/"
+    },
+    {
+      "destination_name": "Opéra",
+      "destination_slug": "opera",
+      "destination_full_name": "Daumesnil → Opéra",
+      "lines_used": [
+        "M8"
+      ],
+      "lines_label": "M8 directe (10 stations)",
+      "duration_minutes": 22,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-opera/"
+    },
+    {
+      "destination_name": "République",
+      "destination_slug": "republique",
+      "destination_full_name": "Daumesnil → République",
+      "lines_used": [
+        "M8 + M5"
+      ],
+      "lines_label": "M8 → Bastille + M5",
+      "duration_minutes": 14,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-daumesnil/daumesnil-vers-republique/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q13408",
+      "name": "église du Saint-Esprit",
+      "category": "église",
+      "description": "Édifiée en 1935 par l'architecte Paul Tournon, cette église catholique du 12e arrondissement s'impose par sa silhouette verticale de 85 mètres. Son statut de monument historique classé témoigne de l'intérêt architectural de cette construction du XXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20avenue%20Daumesnil%2C%20Paris%20mai%202014.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_du_Saint-Esprit_de_Paris",
+      "latitude": 48.8381,
+      "longitude": 2.3976,
+      "nearest_exit": {
+        "number": "3",
+        "name": "av. Daumesnil",
+        "distance_m": 166,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q3145133",
+      "name": "hôpital Armand-Trousseau",
+      "category": "hôpital",
+      "description": "Fondé en 1901, cet établissement du 12e arrondissement fait partie de l'Assistance publique - hôpitaux de Paris et dépend du Groupe Hospitalier Sorbonne Université. Localisé avenue du Docteur-Arnold-Netter, il constitue un équipement médical majeur du secteur Est parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20h%C3%B4pital%20Trousseau.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Armand-Trousseau",
+      "latitude": 48.842798,
+      "longitude": 2.405302,
+      "nearest_exit": {
+        "number": "3",
+        "name": "av. Daumesnil",
+        "distance_m": 750,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q1460618",
+      "name": "hôpital des Quinze-Vingts",
+      "category": "hôpital",
+      "description": "Fondé pour soigner les affections oculaires, cet établissement spécialisé occupe le 28, rue de Charenton depuis plusieurs siècles. Son rayonnement médical a marqué le 12e arrondissement au point de donner son nom au quartier environnant.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Quinze%20Vingts%20-%20Paris%20XII%20%28FR75%29%20-%202021-06-05%20-%202.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_des_Quinze-Vingts",
+      "latitude": 48.835621,
+      "longitude": 2.394399,
+      "nearest_exit": {
+        "number": "2",
+        "name": "r. Claude Decaen",
+        "distance_m": 412,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q1643036",
+      "name": "hôpital Rothschild",
+      "category": "hôpital",
+      "description": "Fondé en 1852, l'hôpital Rothschild appartient au réseau de l'AP-HP et occupe le 12e arrondissement. Depuis 2010, cet établissement se concentre sur la gériatrie, la médecine physique et l'odontologie spécialisée, combinant mission clinique, recherche et formation médicale.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/H%C3%B4pital_Rothschild_rue_Santerre.JPG/330px-H%C3%B4pital_Rothschild_rue_Santerre.JPG",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Rothschild",
+      "latitude": 48.843464,
+      "longitude": 2.401114,
+      "nearest_exit": {
+        "number": "3",
+        "name": "av. Daumesnil",
+        "distance_m": 567,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q3580345",
+      "name": "église Notre-Dame-de-la-Nativité de Bercy",
+      "category": "église",
+      "description": "Édifiée en 1870 dans le quartier de Bercy, cette église catholique bénéficie du statut de monument historique inscrit. Implantée sur la place Lachambeaudie, elle demeure un repère architectural du 12e arrondissement malgré son environnement urbain dense.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20%C3%89glise%20Notre-Dame-de-la-Nativit%C3%A9%20de%20Bercy%202.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Nativit%C3%A9_de_Bercy",
+      "latitude": 48.8362,
+      "longitude": 2.38708,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. Félix Éboué",
+        "distance_m": 704,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3162463",
+      "name": "jardin de Reuilly-Paul-Pernin",
+      "category": "jardin",
+      "description": "Aménagé en 1992 dans le 12e arrondissement, ce parc de 1,5 hectare porte le nom de Paul-Pernin et résulte de la vision commune d'architectes et de paysagistes parisiens. L'espace conjugue design urbain contemporain et promenade végétale, offrant une pause verte au cœur de la capitale.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dausnenil.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_Reuilly_-_Paul-Pernin",
+      "latitude": 48.8422,
+      "longitude": 2.38806,
+      "nearest_exit": {
+        "number": "4",
+        "name": "r. de Reuilly",
+        "distance_m": 542,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q3076264",
+      "name": "fontaine du Château d'eau",
+      "category": "palais",
+      "description": "Cette composition ornementale signée Gabriel Davioud et Henri-Alfred Jacquemart trône au cœur de la place Félix-Éboué, dans le 12e arrondissement. Fontaine et sculpture mêlées, elle constitue un élément remarquable du mobilier urbain parisien du XIXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20du%20Ch%C3%A2teau%20d%27eau%20%28Gabriel%20Davioud%29%2C%202010-04-18%2072.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_du_Ch%C3%A2teau_d%27eau_(Gabriel_Davioud)",
+      "latitude": 48.8396,
+      "longitude": 2.39576,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. Félix Éboué",
+        "distance_m": 39,
+        "walk_minutes": 1
+      }
+    },
+    {
+      "wikidata_id": "Q3097399",
+      "name": "Reuilly",
+      "category": "gare",
+      "description": "Ancien terminus ferroviaire fermé en 1985, le bâtiment de Reuilly a connu une nouvelle vie depuis 2003 en devenant maison des associations du 12e arrondissement. Cette transformation reflète l'évolution des usages urbains dans le secteur de l'avenue Daumesnil.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Reuilly%20%28Paris%29.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Reuilly_(Paris)",
+      "latitude": 48.840695,
+      "longitude": 2.392365,
+      "nearest_exit": {
+        "number": "4",
+        "name": "r. de Reuilly",
+        "distance_m": 187,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q2956622",
+      "name": "chapelle Notre-Dame-de-la-Paix de Picpus",
+      "category": "chapelle",
+      "description": "Édifice religieux du 12e arrondissement, la chapelle Notre-Dame-de-la-Paix se distingue par son vocable dédié à la paix. Implantée rue de Picpus au cœur du quartier éponyme, elle offre un lieu de culte catholique dans ce secteur parisien traditionnel.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame-de-la-Paix%2C%20Paris.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-Paix_de_Picpus",
+      "latitude": 48.8443,
+      "longitude": 2.3973,
+      "nearest_exit": {
+        "number": "4",
+        "name": "r. de Reuilly",
+        "distance_m": 500,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q3584716",
+      "name": "église Saint-Éloi de Paris",
+      "category": "église",
+      "description": "Édifiée en 1966 par l'architecte Marc Leboucher, cette église du 12e arrondissement incarne l'architecture contemporaine remarquable de l'après-guerre. Reconnue pour son intérêt patrimonial au titre du XXe siècle, elle demeure un témoignage du renouveau religieux parisien d'après 1945.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Eloi%20%40%20Paris%2012%20%2832844367784%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-%C3%89loi_de_Paris",
+      "latitude": 48.8447,
+      "longitude": 2.38872,
+      "nearest_exit": {
+        "number": "4",
+        "name": "r. de Reuilly",
+        "distance_m": 674,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q16507979",
+      "name": "la rue Claude-Decaen",
+      "category": "gare",
+      "description": "Vestige de la Petite Ceinture, cette ancienne gare ferroviaire du 12e arrondissement témoigne du réseau historique qui ceinturait Paris. Désaffectée depuis longtemps, elle conserve les traces d'une époque où le transport ferroviaire structurait différemment la capitale.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petite%20ceinture%2012e.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_la_rue_Claude-Decaen",
+      "latitude": 48.834,
+      "longitude": 2.4009,
+      "nearest_exit": {
+        "number": "2",
+        "name": "r. Claude Decaen",
+        "distance_m": 680,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q3162323",
+      "name": "jardin Ilan-Halimi",
+      "category": "jardin",
+      "description": "Créé en 1975, ce parc du 12e arrondissement offre un havre de verdure aux résidents du quartier. Aménagé initialement sous un autre nom, il porte désormais le nom d'Ilan-Halimi et demeure un espace de détente accessible à tous.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%2054%20rue%20de%20F%C3%A9camp.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Ilan-Halimi",
+      "latitude": 48.8361,
+      "longitude": 2.40139,
+      "nearest_exit": {
+        "number": "3",
+        "name": "av. Daumesnil",
+        "distance_m": 514,
+        "walk_minutes": 6
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "pl. Félix Éboué",
+      "address_full": "4b Place Félix Eboué 75012 Paris",
+      "postcode": "75012",
+      "city": "Paris",
+      "latitude": 48.839314,
+      "longitude": 2.395455,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "r. Claude Decaen",
+      "address_full": "105 Rue Claude Decaen 75012 Paris",
+      "postcode": "75012",
+      "city": "Paris",
+      "latitude": 48.839181,
+      "longitude": 2.395974,
+      "accessible": null
+    },
+    {
+      "number": "3",
+      "name": "av. Daumesnil",
+      "address_full": "19 Place Félix Eboué 75012 Paris",
+      "postcode": "75012",
+      "city": "Paris",
+      "latitude": 48.839391,
+      "longitude": 2.396463,
+      "accessible": null
+    },
+    {
+      "number": "4",
+      "name": "r. de Reuilly",
+      "address_full": "118 Rue de Reuilly 75012 Paris",
+      "postcode": "75012",
+      "city": "Paris",
+      "latitude": 48.840129,
+      "longitude": 2.394764,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/daumesnil/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Daumesnil (Métro 6, 8) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Daumesnil_M%C3%A9tro_Paris_Rue_Reuilly_-_Paris_XII_(FR75)_-_2025-10-31_-_3.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/daumesnil/daumesnil-400.avif",
+        "800": "/assets/img/stations/daumesnil/daumesnil-800.avif",
+        "1200": "/assets/img/stations/daumesnil/daumesnil-1200.avif",
+        "1600": "/assets/img/stations/daumesnil/daumesnil-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/daumesnil/daumesnil-400.webp",
+        "800": "/assets/img/stations/daumesnil/daumesnil-800.webp",
+        "1200": "/assets/img/stations/daumesnil/daumesnil-1200.webp",
+        "1600": "/assets/img/stations/daumesnil/daumesnil-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/daumesnil/daumesnil-400.jpg",
+        "800": "/assets/img/stations/daumesnil/daumesnil-800.jpg",
+        "1200": "/assets/img/stations/daumesnil/daumesnil-1200.jpg",
+        "1600": "/assets/img/stations/daumesnil/daumesnil-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 2
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q1172977",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1172977",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Daumesnil_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}

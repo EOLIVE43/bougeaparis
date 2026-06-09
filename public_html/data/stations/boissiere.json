@@ -1,0 +1,513 @@
+{
+  "published": true,
+  "slug": "boissiere",
+  "name": "Boissière",
+  "name_full": "Boissière (Métro 6)",
+  "arrondissement": "16e arrondissement (Paris)",
+  "address": "Avenue Kléber, 75116 Paris",
+  "latitude": 48.867105405198515,
+  "longitude": 2.290158839553604,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "6",
+      "slug": "metro-6",
+      "color": "#6ECA97",
+      "text_color": "#000000"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "30",
+      "82"
+    ],
+    "nocturne": [
+      "N53"
+    ],
+    "regional": [
+      "22"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 6,
+      "nearby_count": 10
+    }
+  },
+  "seo": {
+    "description": "Station Boissière (M6) avenue Kléber dans le 16e arrondissement. Nommée d'après la rue Boissière. Proche Palais de Tokyo et musée Guimet."
+  },
+  "hero": {
+    "tagline": "M6 — entre Kléber et Trocadéro, 16e arrondissement",
+    "description": "Station <strong>Boissière</strong> sur l'<strong>avenue Kléber</strong> dans le <strong>16e arrondissement</strong>, desservie par la <strong>ligne 6 du métro</strong>. Ouverte le <strong>2 octobre 1900</strong> avec le premier tronçon Étoile ↔ Trocadéro de la ligne. Nommée d'après la <strong>rue Boissière</strong> toute proche. À courte distance du <strong>musée Guimet</strong> et du <strong>Palais de Tokyo</strong>."
+  },
+  "adjacent_stations": {
+    "metro-6": {
+      "previous": {
+        "name": "Trocadéro",
+        "slug": "trocadero",
+        "direction": "Nation"
+      },
+      "next": {
+        "name": "Kléber",
+        "slug": "kleber",
+        "direction": "Charles de Gaulle - Étoile"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Boissière</strong> est implantée sur l'<strong>avenue Kléber</strong> dans le <strong>16e arrondissement</strong>, à proximité de la <strong>rue Boissière</strong> qui lui donne son nom. Elle est desservie par la <strong>ligne 6 du métro parisien</strong>, entre <strong>Kléber</strong> (1 station) et <strong>Trocadéro</strong> (1 station). Bus 30 et 32 en correspondance.",
+    "Ouverte le <strong>2 octobre 1900</strong>, elle fait partie du premier tronçon Étoile ↔ Trocadéro de la ligne 6, mis en service pour l'<strong>Exposition universelle de 1900</strong>.",
+    "Le quartier est marqué par les <strong>musées des arts asiatiques</strong> : le <strong>musée Guimet</strong> à proximité (place d'Iéna, 10 min à pied), et le <strong>Palais de Tokyo</strong> (avenue du Président-Wilson). Quartier résidentiel haussmannien chic du <strong>16e</strong>."
+  ],
+  "history": {
+    "title": "1900 : Exposition universelle et avenue Kléber",
+    "paragraphs": [
+      "La station Boissière est <strong>inaugurée le 2 octobre 1900</strong> avec le premier tronçon Étoile ↔ Trocadéro de la <strong>ligne 6</strong>, en service pour l'<strong>Exposition universelle de 1900</strong>.",
+      "Son nom vient de la <strong>rue Boissière</strong> proche, dont l'étymologie évoque les bois (forêts) qui couvraient autrefois le secteur avant son urbanisation au XIXe siècle. Le percement de l'<strong>avenue Kléber</strong> sous Napoléon III a redessiné le quartier en axe haussmannien.",
+      "Le quartier accueille plusieurs <strong>musées d'art majeurs</strong> : <strong>musée Guimet</strong> (national des arts asiatiques), <strong>Palais de Tokyo</strong> (art contemporain), <strong>musée d'Art moderne de la Ville de Paris</strong>. Il regroupe également de nombreuses <strong>ambassades</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Boissière ?",
+      "answer": "Uniquement la <strong>ligne 6 du métro</strong>. Bus 30 et 32."
+    },
+    {
+      "question": "Quand la station a-t-elle ouvert ?",
+      "answer": "Le <strong>2 octobre 1900</strong>, avec le premier tronçon de la ligne 6 (Étoile ↔ Trocadéro) construit pour l'<strong>Exposition universelle de 1900</strong>."
+    },
+    {
+      "question": "D'où vient le nom Boissière ?",
+      "answer": "De la <strong>rue Boissière</strong> proche. Étymologie évoquant les bois qui couvraient le secteur avant urbanisation."
+    },
+    {
+      "question": "Comment aller au musée Guimet ?",
+      "answer": "Descendre la rue Boissière vers la <strong>place d'Iéna</strong> (~10 min à pied)."
+    },
+    {
+      "question": "Comment aller au Palais de Tokyo ?",
+      "answer": "À pied via l'avenue du Président-Wilson (~12 min), ou <strong>M6 jusqu'à Trocadéro</strong> puis descendre."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Station ancienne (1900), pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "Pour le <strong>musée Guimet</strong> : descendre la rue Boissière vers la place d'Iéna (~10 min).",
+    "Pour le <strong>Palais de Tokyo</strong> et le <strong>musée d'Art moderne</strong> : ~12 min à pied via avenue du Président-Wilson.",
+    "Quartier résidentiel haussmannien chic du 16e arrondissement.",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros.",
+    "Pour la <strong>Tour Eiffel</strong> : <strong>M6 directe</strong> vers Trocadéro (1 station, vue panoramique recommandée)."
+  ],
+  "trivia": [
+    {
+      "icon": "🏛️",
+      "title": "Musée Guimet, arts asiatiques",
+      "content": "Le <strong>musée national des arts asiatiques - Guimet</strong> est l'un des plus importants musées d'arts asiatiques d'Europe. Fondé en <strong>1879 à Lyon par Émile Guimet</strong>, il s'installe à Paris en <strong>1889 place d'Iéna</strong>. Plus de <strong>60 000 œuvres</strong> couvrant l'<strong>Inde, Asie du Sud-Est, Chine, Japon, Corée, Tibet</strong>. À 10 min à pied de la station Boissière."
+    },
+    {
+      "icon": "🎨",
+      "title": "Palais de Tokyo et art contemporain",
+      "content": "Le <strong>Palais de Tokyo</strong>, construit pour l'<strong>Exposition internationale de 1937</strong>, abrite aujourd'hui un <strong>centre d'art contemporain majeur</strong> (l'aile ouest) et le <strong>musée d'Art moderne de la Ville de Paris</strong> (l'aile est). Programmation expérimentale."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Musée Guimet",
+      "destination_slug": "iena",
+      "destination_full_name": "Boissière → Musée Guimet",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 ou ~10 min à pied via rue Boissière",
+      "duration_minutes": 10,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-iena/"
+    },
+    {
+      "destination_name": "Trocadéro et Tour Eiffel",
+      "destination_slug": "trocadero",
+      "destination_full_name": "Boissière → Trocadéro et Tour Eiffel",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 direct (1 station)",
+      "duration_minutes": 3,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-trocadero/"
+    },
+    {
+      "destination_name": "Arc de Triomphe",
+      "destination_slug": "charles-de-gaulle-etoile",
+      "destination_full_name": "Boissière → Arc de Triomphe",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 vers Étoile (2 stations)",
+      "duration_minutes": 5,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-charles-de-gaulle-etoile/"
+    },
+    {
+      "destination_name": "Palais de Tokyo et MAM",
+      "destination_slug": "alma-marceau",
+      "destination_full_name": "Boissière → Palais de Tokyo et MAM",
+      "lines_used": [
+        "M6 + M9"
+      ],
+      "lines_label": "À pied via avenue Président-Wilson",
+      "duration_minutes": 12,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-alma-marceau/"
+    },
+    {
+      "destination_name": "Champs-Élysées",
+      "destination_slug": "george-v",
+      "destination_full_name": "Boissière → Champs-Élysées",
+      "lines_used": [
+        "M6 + M1"
+      ],
+      "lines_label": "M6 → Étoile + M1",
+      "duration_minutes": 10,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-george-v/"
+    },
+    {
+      "destination_name": "Opéra Garnier",
+      "destination_slug": "opera",
+      "destination_full_name": "Boissière → Opéra Garnier",
+      "lines_used": [
+        "M6 + M3"
+      ],
+      "lines_label": "M6 → Étoile + M3",
+      "duration_minutes": 20,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-boissiere/boissiere-vers-opera/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q857276",
+      "name": "musée d'Art moderne de Paris",
+      "category": "musée",
+      "description": "Fondé en 1935 dans le 16e arrondissement, ce musée consacré aux créations contemporaines et modernes occupe l'avenue du Président-Wilson. Il propose une collection d'art français et international couvrant plus d'un siècle d'histoire artistique.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20d%27Art%20moderne%20de%20la%20Ville%20de%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_moderne_de_Paris",
+      "latitude": 48.8643,
+      "longitude": 2.2978,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 633,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q860994",
+      "name": "musée national des Arts asiatiques - Guimet",
+      "category": "musée",
+      "description": "Fondé en 1889 par l'architecte Jules Chatron, ce musée national occupe 4 005 m² dédiés aux arts asiatiques. Institution monumentale inscrite au patrimoine historique, il propose une exploration des cultures et civilisations du continent asiatique à travers ses collections.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20mus%C3%A9e%20Guimet%20November%2020%2C%202011.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_des_Arts_asiatiques_-_Guimet",
+      "latitude": 48.865278,
+      "longitude": 2.293889,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 331,
+        "walk_minutes": 4
+      }
+    },
+    {
+      "wikidata_id": "Q13360213",
+      "name": "palais de Chaillot",
+      "category": "palais",
+      "description": "Édifice emblématique du 16e arrondissement, le palais de Chaillot a été construit en 1937 par trois architectes primés, Léon Azéma, Jacques Carlu et Louis-Hippolyte Boileau, pour l'Exposition universelle. Cette institution culturelle et monument historique classé occupe la place du Trocadéro-et-du-11-Novembre, dominant majestueusement le quartier.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trocadero%20pic1.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Chaillot",
+      "latitude": 48.86234,
+      "longitude": 2.28807,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 532,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q1535247",
+      "name": "palais de Tokyo",
+      "category": "palais",
+      "description": "Inauguré en 2000, le palais de Tokyo accueille les créations d'art moderne et contemporain dans un bâtiment au revêtement marmoréen conçu par l'architecte Jean-Philippe Vassal. Situé avenue du Président-Wilson dans le 16e arrondissement, ce musée se distingue par une architecture épurée qui s'inscrit harmonieusement dans le paysage riverain parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Amos%20Gitai%20au%20Palais%20de%20Tokyo%20%285477710814%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Tokyo",
+      "latitude": 48.86408,
+      "longitude": 2.29713,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 602,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q670268",
+      "name": "musée de l'Homme",
+      "category": "musée",
+      "description": "Installé depuis 1937 au palais de Chaillot, ce musée national explore la diversité humaine sous ses angles anthropologiques, historiques et culturels. Rattaché au Muséum national d'histoire naturelle, il relève d'une double tutelle ministérielle conjuguant recherche et écologie.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27homme.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Homme",
+      "latitude": 48.86218,
+      "longitude": 2.28741,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 564,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q1683459",
+      "name": "jardins du Trocadéro",
+      "category": "jardin",
+      "description": "Aménagés en 1937 dans le 16e arrondissement, ces jardins s'étendent sur près de 94 000 m². Dominant la Seine, cet espace public offre une perspective remarquable sur le paysage parisien et constitue un lieu de promenade apprécié des visiteurs.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardins%20du%20Trocad%C3%A9ro%20-%2020150801%2015h24%20%2810619%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardins_du_Trocad%C3%A9ro",
+      "latitude": 48.861392,
+      "longitude": 2.289631,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 617,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q2274186",
+      "name": "passerelle Debilly",
+      "category": "pont",
+      "description": "Conçue par l'architecte Amédée Alby, cette passerelle en arc enjambe la Seine sur 15 mètres de hauteur. Ouverte aux piétons et cyclistes, elle est inscrite au titre de monument historique et offre une traversée pittoresque de la rivière en cœur de Paris.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passerelle%20Debilly%2C%20Paris%209%20July%202016.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Passerelle_Debilly",
+      "latitude": 48.863056,
+      "longitude": 2.296389,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 629,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q1632912",
+      "name": "musée Galliera",
+      "category": "musée",
+      "description": "Fondé en 1895, le palais Galliera accueille les collections du musée de la Mode dans une architecture néo-Renaissance du 16e arrondissement. Ce musée parisien explore l'histoire du vêtement et des accessoires à travers des expositions temporaires et permanentes.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Galliera%2C%20Paris%2021%20July%202017.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Galliera,_mus%C3%A9e_de_la_Mode_de_la_ville_de_Paris",
+      "latitude": 48.865556,
+      "longitude": 2.296667,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 502,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1759903",
+      "name": "place du Trocadéro-et-du-11-Novembre",
+      "category": "place",
+      "description": "Aménagée en 1869 dans le 16e arrondissement, cette place marque le paysage urbain parisien depuis le Second Empire. Son nom double honore à la fois un site historique et une date mémorielle, reflétant l'identité de ce secteur prestigieux.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20du%20Trocad%C3%A9ro-et-du-11-Novembre%20%C3%A0%20Paris%20le%2023%20avril%202015%20-%2024.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_Trocad%C3%A9ro-et-du-11-Novembre",
+      "latitude": 48.863056,
+      "longitude": 2.287222,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 480,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1889428",
+      "name": "musée des Monuments français",
+      "category": "musée",
+      "description": "Fondé en 1879 par Eugène Viollet-le-Duc, ce département de la Cité de l'architecture et du patrimoine présente des reproductions grandeur nature du patrimoine français. Ses collections de moulages et de maquettes couvrent principalement l'architecture médiévale et renaissante, enrichies par des œuvres des XXe et XXIe siècles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cit%C3%A9%20de%20lArchitecture%20et%20du%20Patrimoine%208%2C%20Paris%202012.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Monuments_fran%C3%A7ais_(1879)",
+      "latitude": 48.863333,
+      "longitude": 2.289722,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 401,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q2407691",
+      "name": "cathédrale américaine de Paris",
+      "category": "cathédrale",
+      "description": "Édifiée en 1881 par l'architecte George Edmund Street, cette cathédrale anglicane s'élève à 85 mètres dans le 8e arrondissement. Monument historique inscrit, elle demeure le siège de la Convocation des Églises épiscopalienne en Europe, accueillant les fidèles du culte anglican au cœur des Champs-Élysées.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Trinity%20American%20Episcopal%20Cathedral%2C%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_am%C3%A9ricaine_de_Paris",
+      "latitude": 48.8675,
+      "longitude": 2.300833,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 786,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q217708",
+      "name": "Hôtel George-V",
+      "category": "site notable",
+      "description": "Inauguré en 1928, cet établissement de prestige fut imaginé par l'architecte Georges Wybo dans le quartier des Champs-Élysées. Aujourd'hui géré par le groupe Four Seasons, il demeure l'une des adresses de référence du 8e arrondissement pour l'hôtellerie de luxe.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20George-V%2025%2008%202007%20n3.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_George-V",
+      "latitude": 48.86879,
+      "longitude": 2.300725,
+      "nearest_exit": {
+        "number": "1",
+        "name": "avenue Kléber",
+        "distance_m": 802,
+        "walk_minutes": 10
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "avenue Kléber",
+      "address_full": "57 Avenue Kléber 75016 Paris",
+      "postcode": "75016",
+      "city": "Paris",
+      "latitude": 48.86693,
+      "longitude": 2.290127,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/boissiere/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Boissière (Métro 6) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Boissi%C3%A8re_M%C3%A9tro_Paris_Avenue_Kl%C3%A9ber_-_Paris_XVI_(FR75)_-_2024-07-27_-_1.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/boissiere/boissiere-400.avif",
+        "800": "/assets/img/stations/boissiere/boissiere-800.avif",
+        "1200": "/assets/img/stations/boissiere/boissiere-1200.avif",
+        "1600": "/assets/img/stations/boissiere/boissiere-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/boissiere/boissiere-400.webp",
+        "800": "/assets/img/stations/boissiere/boissiere-800.webp",
+        "1200": "/assets/img/stations/boissiere/boissiere-1200.webp",
+        "1600": "/assets/img/stations/boissiere/boissiere-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/boissiere/boissiere-400.jpg",
+        "800": "/assets/img/stations/boissiere/boissiere-800.jpg",
+        "1200": "/assets/img/stations/boissiere/boissiere-1200.jpg",
+        "1600": "/assets/img/stations/boissiere/boissiere-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q891105",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q891105",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Boissi%C3%A8re_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}

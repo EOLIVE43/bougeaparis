@@ -1,0 +1,519 @@
+{
+  "published": true,
+  "slug": "passy",
+  "name": "Passy",
+  "name_full": "Passy (Métro 6)",
+  "arrondissement": "16e arrondissement (Paris)",
+  "address": "Place de Costa Rica, 75116 Paris",
+  "latitude": 48.857867542087384,
+  "longitude": 2.285371349647822,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "6",
+      "slug": "metro-6",
+      "color": "#6ECA97",
+      "text_color": "#000000"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [],
+    "nocturne": [],
+    "regional": [
+      "32",
+      "72"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 4,
+      "nearby_count": 8
+    }
+  },
+  "seo": {
+    "description": "Station Passy (M6) place de Costa Rica dans le 16e arrondissement. Station aérienne offrant une vue sur la Tour Eiffel. Proche maison de Balzac."
+  },
+  "hero": {
+    "tagline": "M6 — aérienne, vue Tour Eiffel, quartier Passy",
+    "description": "Station <strong>Passy</strong>, <strong>aérienne</strong>, place de Costa Rica dans le <strong>16e arrondissement</strong>. Desservie par la <strong>ligne 6 du métro</strong>, ouverte le <strong>24 avril 1903</strong>. <strong>Vue panoramique sur la Tour Eiffel</strong> et la Seine depuis le quai aérien. Cœur du <strong>quartier de Passy</strong> résidentiel chic. Proche de la <strong>maison de Balzac</strong> (musée)."
+  },
+  "adjacent_stations": {
+    "metro-6": {
+      "previous": {
+        "name": "Bir-Hakeim",
+        "slug": "bir-hakeim",
+        "direction": "Nation"
+      },
+      "next": {
+        "name": "Trocadéro",
+        "slug": "trocadero",
+        "direction": "Charles de Gaulle - Étoile"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Passy</strong> est implantée <strong>place de Costa Rica</strong> dans le <strong>16e arrondissement</strong>, au cœur du <strong>quartier historique de Passy</strong>. Elle est desservie par la <strong>ligne 6 du métro parisien</strong>, entre <strong>Trocadéro</strong> (1 station) et <strong>Bir-Hakeim</strong> (1 station). Bus 32, 70 et 72 en correspondance.",
+    "Station <strong>aérienne</strong> située sur le <strong>viaduc de Passy</strong>, elle offre depuis ses quais une <strong>vue panoramique sur la Tour Eiffel</strong> et la <strong>Seine</strong>. Ouverte le <strong>24 avril 1903</strong> avec le prolongement de la ligne 6 (anciennement ligne 2 Sud) jusqu'à Place d'Italie.",
+    "Le <strong>quartier de Passy</strong>, ancien village rattaché à Paris en <strong>1860</strong>, est aujourd'hui un quartier résidentiel chic du <strong>16e arrondissement</strong>. Il abrite la <strong>maison de Balzac</strong> (musée littéraire où vécut Honoré de Balzac de 1840 à 1847) et le <strong>cimetière de Passy</strong>."
+  ],
+  "history": {
+    "title": "1903 : Passy, ancien village résidentiel chic",
+    "paragraphs": [
+      "La station Passy est <strong>inaugurée le 24 avril 1903</strong> avec la mise en service du tronçon <strong>Trocadéro ↔ Place d'Italie</strong> de l'ancienne ligne 2 Sud (devenue ligne 6 en 1907 puis 1942). Elle dessert l'ancien <strong>village de Passy</strong>, rattaché à Paris en <strong>1860</strong> avec d'autres communes périphériques.",
+      "<strong>Passy</strong> était au XIXe siècle un village paisible de la périphérie parisienne, connu pour ses <strong>sources d'eaux ferrugineuses</strong>. Il accueillit de nombreuses personnalités : <strong>Honoré de Balzac</strong> y vécut <strong>de 1840 à 1847</strong> dans un pavillon (aujourd'hui musée maison de Balzac), <strong>Marie Curie</strong>, <strong>Marcel Proust</strong>, <strong>Claude Debussy</strong>.",
+      "La station bénéficie d'une <strong>position aérienne unique</strong> : depuis ses quais sur le viaduc de Passy, on aperçoit la <strong>Tour Eiffel</strong> et la <strong>Seine</strong>. Le quartier conserve une atmosphère résidentielle chic, avec ses villas, ses jardins privés et le <strong>cimetière de Passy</strong> (où reposent Manet, Debussy, Berthe Morisot)."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Passy ?",
+      "answer": "Uniquement la <strong>ligne 6 du métro</strong>. Bus 32, 70 et 72."
+    },
+    {
+      "question": "Passy est-elle une station aérienne ?",
+      "answer": "<strong>Oui</strong>. Elle se situe sur le <strong>viaduc de Passy</strong>, offrant une <strong>vue panoramique sur la Tour Eiffel</strong> et la Seine."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Le <strong>24 avril 1903</strong>, avec le prolongement Trocadéro ↔ Place d'Italie (ancienne ligne 2 Sud, devenue ligne 6)."
+    },
+    {
+      "question": "Comment aller à la maison de Balzac ?",
+      "answer": "<strong>~7 min à pied</strong> via la rue Raynouard. Musée littéraire, anciennement domicile de <strong>Balzac (1840-1847)</strong>."
+    },
+    {
+      "question": "Comment aller à la Tour Eiffel ?",
+      "answer": "<strong>M6 directe</strong> jusqu'à Bir-Hakeim ou Trocadéro (~5 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Station ancienne aérienne (1903), pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "<strong>Vue iconique sur la Tour Eiffel</strong> depuis le quai aérien — l'une des plus belles vues du métro parisien.",
+    "<strong>Maison de Balzac</strong> à 7 min à pied via rue Raynouard. Musée littéraire gratuit (collections permanentes).",
+    "Quartier <strong>Passy</strong> résidentiel chic du 16e, atmosphère de village.",
+    "<strong>Cimetière de Passy</strong> : tombeaux de Manet, Debussy, Berthe Morisot.",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🏠",
+      "title": "Maison de Balzac, où vécut l'écrivain",
+      "content": "La <strong>maison de Balzac</strong>, rue Raynouard, est l'<strong>unique demeure parisienne préservée</strong> d'Honoré de Balzac. L'écrivain y résida de <strong>1840 à 1847</strong> sous un faux nom (Monsieur de Brugnol) pour échapper à ses créanciers. Il y rédigea ou corrigea <em>La Cousine Bette</em>, <em>Le Cousin Pons</em>, <em>Splendeurs et misères des courtisanes</em>. Musée littéraire municipal depuis 1949."
+    },
+    {
+      "icon": "🎵",
+      "title": "Passy, refuge des artistes et compositeurs",
+      "content": "Le quartier de Passy attira de nombreux artistes : <strong>Claude Debussy</strong> y composa <em>La Mer</em> et <em>Pelléas et Mélisande</em>, <strong>Marcel Proust</strong> y résida un temps, <strong>Marie Curie</strong> y vécut. Le <strong>cimetière de Passy</strong> abrite les tombes d'Édouard Manet, Berthe Morisot, Claude Debussy."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Tour Eiffel via Bir-Hakeim",
+      "destination_slug": "bir-hakeim",
+      "destination_full_name": "Passy → Tour Eiffel",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 directe (1 station)",
+      "duration_minutes": 4,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-bir-hakeim/"
+    },
+    {
+      "destination_name": "Trocadéro",
+      "destination_slug": "trocadero",
+      "destination_full_name": "Passy → Trocadéro",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 directe (1 station)",
+      "duration_minutes": 3,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-trocadero/"
+    },
+    {
+      "destination_name": "Maison de Balzac",
+      "destination_slug": "passy",
+      "destination_full_name": "Passy → Maison de Balzac",
+      "lines_used": [
+        "à pied"
+      ],
+      "lines_label": "Rue Raynouard (7 min)",
+      "duration_minutes": 7,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-passy/"
+    },
+    {
+      "destination_name": "Arc de Triomphe",
+      "destination_slug": "charles-de-gaulle-etoile",
+      "destination_full_name": "Passy → Arc de Triomphe",
+      "lines_used": [
+        "M6"
+      ],
+      "lines_label": "M6 vers Étoile (4 stations)",
+      "duration_minutes": 10,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-charles-de-gaulle-etoile/"
+    },
+    {
+      "destination_name": "Champs-Élysées",
+      "destination_slug": "george-v",
+      "destination_full_name": "Passy → Champs-Élysées",
+      "lines_used": [
+        "M6 + M1"
+      ],
+      "lines_label": "M6 → Étoile + M1",
+      "duration_minutes": 14,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-george-v/"
+    },
+    {
+      "destination_name": "Concorde",
+      "destination_slug": "concorde",
+      "destination_full_name": "Passy → Concorde",
+      "lines_used": [
+        "M6 + M1"
+      ],
+      "lines_label": "M6 → Étoile + M1 ou M8",
+      "duration_minutes": 18,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-passy/passy-vers-concorde/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q243",
+      "name": "tour Eiffel",
+      "category": "tour",
+      "description": "Édifiée en 1887 par l'architecte Stéphen Sauvestre, cette structure métallique de 324 mètres domine le Champ-de-Mars dans le 7e arrondissement. Monument historique et site d'observation emblématique, elle se dresse en bordure de Seine, accessible à pied depuis Bir-Hakeim en environ 10 minutes.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20Wikimedia%20Commons.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Eiffel",
+      "latitude": 48.858296,
+      "longitude": 2.294479,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 640,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q13360213",
+      "name": "palais de Chaillot",
+      "category": "palais",
+      "description": "Édifice emblématique du 16e arrondissement, le palais de Chaillot a été construit en 1937 par trois architectes primés, Léon Azéma, Jacques Carlu et Louis-Hippolyte Boileau, pour l'Exposition universelle. Cette institution culturelle et monument historique classé occupe la place du Trocadéro-et-du-11-Novembre, dominant majestueusement le quartier.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Trocadero%20pic1.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_de_Chaillot",
+      "latitude": 48.86234,
+      "longitude": 2.28807,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 552,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q290355",
+      "name": "pont de Bir-Hakeim",
+      "category": "pont",
+      "description": "Édifié en 1905 par les architectes Formigé et Biette, ce pont métallique relie les 15e et 16e arrondissements en enjambant la Seine. Inscrit au titre des monuments historiques, il succède à une passerelle du XIXe siècle et demeure un témoin de l'ingénierie parisienne de Belle Époque.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Passy%20%28m%C3%A9tro%20Paris%29%20MP73%20n%C2%B06524%20par%20Cramos.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Bir-Hakeim",
+      "latitude": 48.855556,
+      "longitude": 2.287778,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. du Pdt Kennedy",
+        "distance_m": 270,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q540781",
+      "name": "pont d'Iéna",
+      "category": "pont",
+      "description": "Édifié en 1814 par l'architecte Corneille Lamandé, ce pont en arc de maçonnerie enjambe la Seine et figure au titre des monuments historiques. Depuis 2024, il accueille exclusivement piétons et cyclistes, offrant une traversée apaisée entre les rives.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075007%20Port%20de%20Suffren%2020161101%20Pont%20d%27I%C3%A9na.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27I%C3%A9na",
+      "latitude": 48.859722,
+      "longitude": 2.292222,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 526,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q670268",
+      "name": "musée de l'Homme",
+      "category": "musée",
+      "description": "Installé depuis 1937 au palais de Chaillot, ce musée national explore la diversité humaine sous ses angles anthropologiques, historiques et culturels. Rattaché au Muséum national d'histoire naturelle, il relève d'une double tutelle ministérielle conjuguant recherche et écologie.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20l%27homme.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Homme",
+      "latitude": 48.86218,
+      "longitude": 2.28741,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 522,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q1683459",
+      "name": "jardins du Trocadéro",
+      "category": "jardin",
+      "description": "Aménagés en 1937 dans le 16e arrondissement, ces jardins s'étendent sur près de 94 000 m². Dominant la Seine, cet espace public offre une perspective remarquable sur le paysage parisien et constitue un lieu de promenade apprécié des visiteurs.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardins%20du%20Trocad%C3%A9ro%20-%2020150801%2015h24%20%2810619%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardins_du_Trocad%C3%A9ro",
+      "latitude": 48.861392,
+      "longitude": 2.289631,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 506,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q547789",
+      "name": "maison de Balzac",
+      "category": "musée",
+      "description": "Installé dans le 16e arrondissement, ce musée occupe le pavillon où Honoré de Balzac résida de 1840 à 1847. Créé en 1949 et classé au titre des monuments historiques, le lieu reconstitue l'univers de l'écrivain à travers ses collections et archives personnelles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20de%20Balzac%2C%20Paris%2016e%205.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_Balzac",
+      "latitude": 48.855278,
+      "longitude": 2.280833,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. du Pdt Kennedy",
+        "distance_m": 430,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q2307584",
+      "name": "pont Rouelle",
+      "category": "pont",
+      "description": "Ouvrage ferroviaire reliant les 15e et 16e arrondissements, le pont Rouelle traverse la Seine via l'île aux Cygnes. Il supporte la branche Vallée de Montmorency - Invalides de la ligne C du RER, assurant une connexion essentielle du réseau régional parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Rouelle%20and%20Eiffel%20Tower%2C%20Paris%2019%20October%202017.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Rouelle",
+      "latitude": 48.85227,
+      "longitude": 2.28306,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. du Pdt Kennedy",
+        "distance_m": 613,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q800620",
+      "name": "Champ de Mars - Tour Eiffel",
+      "category": "gare",
+      "description": "Inaugurée en 1979, cette gare ferroviaire remplace plusieurs installations historiques exploitées depuis 1867 par la Compagnie des chemins de fer de l'Ouest. Desservie par les trains du RER ligne C, elle connecte le 7e et le 15e arrondissements, marquant la frontière entre les quartiers du Gros-Caillou et de Grenelle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Champs%20de%20Mars%20-%20RER%2027-02-06.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_Champ_de_Mars_-_Tour_Eiffel",
+      "latitude": 48.85667,
+      "longitude": 2.28973,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 306,
+        "walk_minutes": 4
+      }
+    },
+    {
+      "wikidata_id": "Q1759903",
+      "name": "place du Trocadéro-et-du-11-Novembre",
+      "category": "place",
+      "description": "Aménagée en 1869 dans le 16e arrondissement, cette place marque le paysage urbain parisien depuis le Second Empire. Son nom double honore à la fois un site historique et une date mémorielle, reflétant l'identité de ce secteur prestigieux.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20du%20Trocad%C3%A9ro-et-du-11-Novembre%20%C3%A0%20Paris%20le%2023%20avril%202015%20-%2024.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_du_Trocad%C3%A9ro-et-du-11-Novembre",
+      "latitude": 48.863056,
+      "longitude": 2.287222,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 615,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q579087",
+      "name": "maison de la Radio et de la Musique",
+      "category": "site notable",
+      "description": "Emblématique bâtiment circulaire conçu par Henry Bernard et inauguré en 1963, la Maison de la Radio et de la Musique demeure un monument inscrit au patrimoine. Dotée d'une couronne de 700 mètres et d'une tour centrale de 68 mètres, elle accueille 63 studios et 1 000 bureaux, constituant un pôle majeur de production audiovisuelle française.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GD-FR-Paris-Maison%20de%20la%20Radio.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_la_Radio_et_de_la_Musique",
+      "latitude": 48.852556,
+      "longitude": 2.278028,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. du Pdt Kennedy",
+        "distance_m": 783,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q1889428",
+      "name": "musée des Monuments français",
+      "category": "musée",
+      "description": "Fondé en 1879 par Eugène Viollet-le-Duc, ce département de la Cité de l'architecture et du patrimoine présente des reproductions grandeur nature du patrimoine français. Ses collections de moulages et de maquettes couvrent principalement l'architecture médiévale et renaissante, enrichies par des œuvres des XXe et XXIe siècles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cit%C3%A9%20de%20lArchitecture%20et%20du%20Patrimoine%208%2C%20Paris%202012.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Monuments_fran%C3%A7ais_(1879)",
+      "latitude": 48.863333,
+      "longitude": 2.289722,
+      "nearest_exit": {
+        "number": "1",
+        "name": "pl. du Costa Rica",
+        "distance_m": 699,
+        "walk_minutes": 9
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "pl. du Costa Rica",
+      "address_full": "4b Rue Marietta Alboni 75016 Paris",
+      "postcode": "75016",
+      "city": "Paris",
+      "latitude": 48.857605,
+      "longitude": 2.285797,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "av. du Pdt Kennedy",
+      "address_full": "4b Rue Marietta Alboni 75016 Paris",
+      "postcode": "75016",
+      "city": "Paris",
+      "latitude": 48.857523,
+      "longitude": 2.285621,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/passy/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Passy (Métro 6) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Passy_Rue_Marietta_Alboni_-_Paris_XVI_(FR75)_-_2022-01-23_-_3.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/passy/passy-400.avif",
+        "800": "/assets/img/stations/passy/passy-800.avif",
+        "1200": "/assets/img/stations/passy/passy-1200.avif",
+        "1600": "/assets/img/stations/passy/passy-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/passy/passy-400.webp",
+        "800": "/assets/img/stations/passy/passy-800.webp",
+        "1200": "/assets/img/stations/passy/passy-1200.webp",
+        "1600": "/assets/img/stations/passy/passy-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/passy/passy-400.jpg",
+        "800": "/assets/img/stations/passy/passy-800.jpg",
+        "1200": "/assets/img/stations/passy/passy-1200.jpg",
+        "1600": "/assets/img/stations/passy/passy-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q1576609",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1576609",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Passy_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}
