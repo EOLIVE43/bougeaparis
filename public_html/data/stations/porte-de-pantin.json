@@ -1,0 +1,545 @@
+{
+    "published": true,
+    "slug": "porte-de-pantin",
+    "name": "Porte de Pantin",
+    "name_full": "Porte de Pantin (Métro 5)",
+    "arrondissement": "19e (Paris)",
+    "address": "Av. Jean Jaurès, 75019 Paris",
+    "latitude": 48.88885882641063,
+    "longitude": 2.39410259923119,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N13",
+            "N41",
+            "N45"
+        ],
+        "regional": [
+            "75",
+            "151",
+            "170"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 1,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Porte de Pantin : M5 dans le 19e arr. Parc de la Villette, Cité de la Musique - Philharmonie de Paris, Grande Halle de la Villette, Géode."
+    },
+    "hero": {
+        "tagline": "M5 — Parc de la Villette, Philharmonie de Paris",
+        "description": "Station <strong>Porte de Pantin</strong> ouverte le <strong>12 octobre 1942</strong> avec le prolongement M5. Située à la <strong>limite du 19e arrondissement</strong> et de Pantin. Dessert le <strong>Parc de la Villette</strong> (55 ha, le plus grand parc culturel de Paris), la <strong>Cité de la Musique - Philharmonie de Paris</strong>, la <strong>Grande Halle de la Villette</strong> et la <strong>Géode</strong> (cinéma IMAX)."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Hoche",
+                "slug": "hoche",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Ourcq",
+                "slug": "ourcq",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte de Pantin</strong> est située à la <strong>limite du 19e arrondissement de Paris</strong> et de la commune de Pantin. Elle est desservie par la <strong>M5</strong>, entre <strong>Hoche</strong> (1 station nord) et <strong>Ourcq</strong> (1 station sud). Bus 75, 151, 170, Tramway T3b.",
+        "Ouverte le <strong>12 octobre 1942</strong> avec le prolongement M5 vers Église de Pantin.",
+        "À la sortie : le <strong>Parc de la Villette</strong>, <strong>55 hectares</strong>, conçu par l'architecte <strong>Bernard Tschumi</strong> (1982-1991). <strong>Plus grand parc culturel de Paris</strong>. Composantes : <strong>Cité des Sciences et de l'Industrie</strong>, <strong>Cité de la Musique - Philharmonie de Paris</strong> (Jean Nouvel 2015), <strong>Grande Halle de la Villette</strong> (Halle de Baltard 1867 réhabilitée), <strong>Géode</strong> (cinéma IMAX sphérique 1985), <strong>Zénith de Paris</strong>."
+    ],
+    "history": {
+        "title": "Anciens abattoirs (1867) → Parc de la Villette (1991)",
+        "paragraphs": [
+            "La station <strong>Porte de Pantin</strong> est inaugurée le <strong>12 octobre 1942</strong> avec le prolongement de la M5 vers Église de Pantin.",
+            "Le site du <strong>Parc de la Villette</strong> était occupé par les <strong>anciens abattoirs et marché aux bestiaux de la Villette</strong>, créés en <strong>1867</strong> par Napoléon III pour <strong>centraliser l'abattage à Paris</strong>. <strong>Plus grand marché aux bestiaux du monde</strong> à l'époque. <strong>Fermeture en 1974</strong>, abattoirs transférés à Rungis et autres villes.",
+            "<strong>Réaménagement 1979-1991</strong> en parc paysager. Concours international remporté en <strong>1982</strong> par l'architecte suisse <strong>Bernard Tschumi</strong> (déconstructivisme). Inauguration progressive : <strong>Cité des Sciences 1986</strong>, <strong>Géode 1985</strong>, <strong>Cité de la Musique 1995</strong>, <strong>Philharmonie de Paris 2015</strong> (Jean Nouvel, après 8 ans de retard et controverses budgétaires).",
+            "<strong>55 hectares</strong>, le <strong>plus grand parc culturel de Paris</strong>. <strong>Folies</strong> rouges (35 pavillons-sculptures de Tschumi), <strong>jardins thématiques</strong>, <strong>canal de l'Ourcq</strong> traversant le parc. <strong>~10 millions de visiteurs/an</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Porte de Pantin ?",
+            "answer": "<strong>M5</strong> + <strong>Tramway T3b</strong> (boulevards des Maréchaux). Bus 75, 151, 170."
+        },
+        {
+            "question": "Qu'est-ce que le Parc de la Villette ?",
+            "answer": "<strong>55 hectares</strong>, <strong>plus grand parc culturel de Paris</strong>. Conçu par <strong>Bernard Tschumi</strong> (1982-1991). Inclut : Cité des Sciences, Philharmonie de Paris, Grande Halle, Géode, Zénith. <strong>~10 millions de visiteurs/an</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la Philharmonie de Paris ?",
+            "answer": "<strong>Salle de concert</strong> conçue par <strong>Jean Nouvel</strong>, inaugurée en <strong>2015</strong>. <strong>2 400 places</strong>. Résidence de l'Orchestre de Paris. Architecture iconique (façade en mosaïque d'oiseaux)."
+        },
+        {
+            "question": "Qu'est-ce que la Géode ?",
+            "answer": "<strong>Cinéma IMAX sphérique</strong> en miroir poli, ouverte en <strong>1985</strong>. <strong>36 m de diamètre</strong>. Conçue par Adrien Fainsilber. Icône architecturale."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M5 directe vers République + M11/M14</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1942."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Parc de la Villette</strong> à la sortie — 55 ha.",
+        "<strong>Philharmonie de Paris</strong> (Jean Nouvel 2015) — concerts.",
+        "<strong>Cité des Sciences</strong> à 10 min — musée scientifique.",
+        "<strong>Géode</strong> à 10 min — cinéma IMAX sphérique.",
+        "<strong>Grande Halle</strong> (Baltard 1867) — expositions, festivals.",
+        "Pour <strong>République</strong> : M5 directe (~12 min)."
+    ],
+    "trivia": [
+        {
+            "icon": "🎭",
+            "title": "Parc de la Villette (1991) — plus grand parc culturel de Paris",
+            "content": "Le <strong>Parc de la Villette</strong> à la sortie de la station est le <strong>plus grand parc culturel de Paris</strong>. <strong>55 hectares</strong>, conçu par l'architecte suisse <strong>Bernard Tschumi</strong> (déconstructivisme), inauguré progressivement entre <strong>1982 et 1991</strong>. <strong>35 folies rouges</strong> (pavillons-sculptures) ponctuent le parc. Inclut : <strong>Cité des Sciences et de l'Industrie</strong> (1986), <strong>Géode</strong> (1985, cinéma IMAX sphérique), <strong>Cité de la Musique</strong> (1995), <strong>Philharmonie de Paris</strong> (2015, Jean Nouvel, 2 400 places), <strong>Grande Halle de la Villette</strong> (Baltard 1867, réhabilitée), <strong>Zénith de Paris</strong> (1984, 6 000 places concerts). <strong>~10 millions de visiteurs/an</strong>."
+        },
+        {
+            "icon": "🐄",
+            "title": "Anciens abattoirs (1867-1974) — plus grand marché aux bestiaux du monde",
+            "content": "Le site du Parc de la Villette était occupé par les <strong>anciens abattoirs et marché aux bestiaux de la Villette</strong>, créés en <strong>1867</strong> par <strong>Napoléon III</strong> pour <strong>centraliser l'abattage à Paris</strong>. <strong>Plus grand marché aux bestiaux du monde</strong> à l'époque. <strong>~30 000 animaux abattus/jour</strong> au pic. <strong>Fermeture en 1974</strong>, abattoirs transférés à Rungis et autres villes. Reconversion exemplaire en <strong>parc culturel</strong> à partir de 1979."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Parc de la Villette",
+            "destination_slug": "parc-villette",
+            "destination_full_name": "Porte de Pantin → Parc de la Villette",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-parc-villette/"
+        },
+        {
+            "destination_name": "Philharmonie de Paris",
+            "destination_slug": "philharmonie-paris",
+            "destination_full_name": "Porte de Pantin → Philharmonie de Paris",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-philharmonie-paris/"
+        },
+        {
+            "destination_name": "Cité des Sciences",
+            "destination_slug": "cite-sciences",
+            "destination_full_name": "Porte de Pantin → Cité des Sciences",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-cite-sciences/"
+        },
+        {
+            "destination_name": "Géode",
+            "destination_slug": "geode",
+            "destination_full_name": "Porte de Pantin → Géode",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-geode/"
+        },
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Porte de Pantin → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-republique/"
+        },
+        {
+            "destination_name": "Place d'Italie via M5",
+            "destination_slug": "place-d-italie",
+            "destination_full_name": "Porte de Pantin → Place d'Italie",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 32,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-pantin/porte-de-pantin-vers-place-d-italie/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q246448",
+            "name": "parc de la Villette",
+            "category": "jardin",
+            "description": "Le parc de la Villette est un parc public situé dans le 19e arrondissement de Paris, un secteur nord-est de Paris, en région française Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carousel%20in%20the%20Parc%20de%20la%20Villette%2C%20Paris%208%20September%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_la_Villette",
+            "latitude": 48.89306,
+            "longitude": 2.39056,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 479,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q247566",
+            "name": "Zénith Paris",
+            "category": "site notable",
+            "description": "Le Zénith Paris - La Villette est une salle de concerts parisienne, située dans le parc de la Villette, dans le 19e arrondissement, sur le bord du canal de l'Ourcq.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Z%C3%A9nith%20de%20Paris%20-%20meeting%20Lutte%20Ouvri%C3%A8re%2015-04-2012%20-%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Z%C3%A9nith_Paris_-_La_Villette",
+            "latitude": 48.894167,
+            "longitude": 2.393333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1094302",
+            "name": "musée de la Musique",
+            "category": "musée",
+            "description": "Le musée de la Musique de la Philharmonie de Paris est un musée français situé à Paris, inauguré en 1997.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cit%C3%A9%20de%20la%20musique%20%28121%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Musique_(Paris)",
+            "latitude": 48.88972,
+            "longitude": 2.39389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 146,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2010697",
+            "name": "grande halle de la Villette",
+            "category": "site notable",
+            "description": "La grande halle de la Villette, pouvant éventuellement être abrégée en « Grande Halle », est un bâtiment des anciens abattoirs composé de structures en charpente métalliques construit dans le…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1080895%20Paris%20XIX%20grande%20halle%20de%20la%20Villette%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_halle_de_la_Villette",
+            "latitude": 48.890833,
+            "longitude": 2.390833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 239,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3076267",
+            "name": "fontaine du Château d'eau",
+            "category": "palais",
+            "description": "La fontaine du Château d'eau, fontaine de Bondy, ou fontaine aux Lions de Nubie est une fontaine ornementale située place de la Fontaine-aux-Lions dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20du%20Ch%C3%A2teau%20d%27eau%20%28Pierre-Simon%20Girard%29%2C%202010-05-18%2005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_du_Ch%C3%A2teau_d%27eau_(Pierre-Simon_Girard)",
+            "latitude": 48.889556,
+            "longitude": 2.392278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 71,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q2105022",
+            "name": "porte de Pantin",
+            "category": "site notable",
+            "description": "La porte de Pantin est, aujourd'hui, une très importante porte de Paris, en France, située dans le quartier de la Villette dans le 19e arrondissement de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20de%20Pantin%20y%20peripherique.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Pantin",
+            "latitude": 48.8897,
+            "longitude": 2.39611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 291,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2064737",
+            "name": "pavillon de Paris",
+            "category": "site notable",
+            "description": "Le Pavillon de Paris est une ancienne grande salle de concert désormais disparue du 19e arrondissement de Paris, installée près du métro de la Porte de Pantin sur le site des anciens abattoirs de la…",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_de_Paris",
+            "latitude": 48.892889,
+            "longitude": 2.393003,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 445,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3494865",
+            "name": "promenade Amalia-Rodrigues",
+            "category": "site notable",
+            "description": "La promenade Amalia-Rodrigues est le plus grand square du 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Promenade%20Amelia%20Rodrigues%20%40%20Paris%20%2833773667942%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Promenade_Amalia-Rodrigues",
+            "latitude": 48.883,
+            "longitude": 2.39966,
+            "nearest_exit": {
+                "number": "2",
+                "name": "sente des Dorées",
+                "distance_m": 818,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3527530",
+            "name": "théâtre Paris-Villette",
+            "category": "théâtre",
+            "description": "Le Théâtre Paris-Villette est un théâtre créé en 1986, dans le parc de la Villette, à Paris . Il est dirigé depuis 2013 par Valérie Dassonville et Adrien de Van.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1080901%20Paris%20XIX%20theatre%20Paris-Villette%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_Paris-Villette",
+            "latitude": 48.8896,
+            "longitude": 2.39095,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 126,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3584959",
+            "name": "église Sainte-Claire de Paris",
+            "category": "église",
+            "description": "L'église Sainte-Claire  est une église catholique située au 179 boulevard Sérurier, dans le quartier de la Villette - porte de Pantin, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sainte-Claire%20Pantin.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Claire_de_Paris",
+            "latitude": 48.8888,
+            "longitude": 2.39511,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 205,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3584965",
+            "name": "église Sainte-Colette des Buttes-Chaumont",
+            "category": "église",
+            "description": "L’église Sainte-Colette des Buttes-Chaumont est une église paroissiale de l’Église catholique située allée Darius-Milhaud dans le 19e arrondissement de Paris en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Sainte-Colette-des-Buttes-Chaumont%20December%202%2C%202012%20n2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Colette_des_Buttes-Chaumont",
+            "latitude": 48.8839,
+            "longitude": 2.38656,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Adolphe Mille",
+                "distance_m": 580,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q21294369",
+            "name": "Paris-Bestiaux",
+            "category": "gare",
+            "description": "La gare de Paris-Bestiaux parfois appelée gare de La Villette, est une ancienne gare ferroviaire désaffectée à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abattoirs%20de%20la%20Villette%20-%20Train.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Bestiaux",
+            "latitude": 48.890651,
+            "longitude": 2.394464,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 249,
+                "walk_minutes": 3
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. Jean Jaurès",
+            "address_full": "211 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.888914,
+            "longitude": 2.392315,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "sente des Dorées",
+            "address_full": "200 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.888419,
+            "longitude": 2.392103,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Adolphe Mille",
+            "address_full": "197 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.888313,
+            "longitude": 2.390795,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. Eugène Jumin",
+            "address_full": "192 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.888208,
+            "longitude": 2.391314,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/porte-de-pantin/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Porte de Pantin (Métro 5) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Porte_Pantin_Avenue_Jean_Jaur%C3%A8s_-_Paris_XIX_(FR75)_-_2022-01-07_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-de-pantin/porte-de-pantin-400.avif",
+                "800": "/assets/img/stations/porte-de-pantin/porte-de-pantin-800.avif",
+                "1200": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1200.avif",
+                "1600": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-de-pantin/porte-de-pantin-400.webp",
+                "800": "/assets/img/stations/porte-de-pantin/porte-de-pantin-800.webp",
+                "1200": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1200.webp",
+                "1600": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-de-pantin/porte-de-pantin-400.jpg",
+                "800": "/assets/img/stations/porte-de-pantin/porte-de-pantin-800.jpg",
+                "1200": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1200.jpg",
+                "1600": "/assets/img/stations/porte-de-pantin/porte-de-pantin-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1785048",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1785048",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Pantin_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

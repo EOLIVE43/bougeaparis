@@ -1,0 +1,622 @@
+{
+    "published": true,
+    "slug": "gare-d-austerlitz",
+    "name": "Gare d'Austerlitz",
+    "name_full": "Gare d'Austerlitz (Métro 5, 10 + RER C)",
+    "arrondissement": "13e (Paris)",
+    "address": "Bd de l'Hôpital, 75013 Paris",
+    "latitude": 48.84235421610177,
+    "longitude": 2.3668334950792076,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#000000"
+        }
+    ],
+    "rer_correspondences": [
+        {
+            "code": "C",
+            "color": "#FFCC30",
+            "station_name": "Gare d'Austerlitz",
+            "walking_minutes": 0
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "24",
+            "57",
+            "63",
+            "89",
+            "91",
+            "215"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N31",
+            "N131",
+            "N133"
+        ],
+        "regional": [
+            "61",
+            "72",
+            "C"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 2,
+            "nearby_count": 41
+        }
+    },
+    "seo": {
+        "description": "Station Gare d'Austerlitz : M5 + M10 + RER C + gare SNCF dans le 13e arr. Trains vers le sud-ouest de la France (Toulouse, Bordeaux). Jardin des Plantes proche."
+    },
+    "hero": {
+        "tagline": "M5 + M10 + RER C — gare SNCF Austerlitz, Jardin des Plantes",
+        "description": "Station <strong>Gare d'Austerlitz</strong> dans le <strong>13e arrondissement</strong>, sur le boulevard de l'Hôpital. Desservie par <strong>M5</strong>, <strong>M10</strong>, <strong>RER C</strong> et la <strong>gare SNCF Austerlitz</strong>. Trains vers le <strong>sud-ouest de la France</strong> (Toulouse, Bordeaux, Cahors, Limoges). À proximité : le <strong>Jardin des Plantes</strong> (Muséum national d'Histoire naturelle)."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Quai de la Rapée",
+                "slug": "quai-de-la-rapee",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Saint-Marcel",
+                "slug": "saint-marcel",
+                "direction": "Place d'Italie"
+            }
+        },
+        "metro-10": {
+            "previous": {
+                "name": "Jussieu",
+                "slug": "jussieu",
+                "direction": "Boulogne Pont de Saint-Cloud"
+            },
+            "next": null
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Gare d'Austerlitz</strong> est située dans le <strong>13e arrondissement de Paris</strong>, sur le boulevard de l'Hôpital. Elle est desservie par <strong>3 modes</strong> : <strong>M5</strong> (Bobigny ↔ Place d'Italie), <strong>M10</strong> (Boulogne ↔ Gare d'Austerlitz, terminus est) et <strong>RER C</strong>. Correspondance directe avec la <strong>gare SNCF Paris-Austerlitz</strong>. Bus 24, 57, 61, 63, 89, 91.",
+        "La <strong>gare SNCF Austerlitz</strong> est l'une des <strong>6 grandes gares parisiennes</strong>. Trains vers le <strong>sud-ouest de la France</strong> : <strong>Toulouse</strong>, <strong>Bordeaux</strong> (avant 2017, transféré vers Montparnasse pour LGV), <strong>Cahors</strong>, <strong>Limoges</strong>, <strong>Châteauroux</strong>. Trains de nuit Intercités (Latour-de-Carol, Rodez, Cerbère).",
+        "À <strong>10 min</strong> : le <strong>Jardin des Plantes</strong> (Muséum national d'Histoire naturelle, <strong>23 ha</strong>, créé en 1635 sous Louis XIII). <strong>Grande Galerie de l'Évolution</strong>, <strong>ménagerie</strong>, <strong>serres tropicales</strong>."
+    ],
+    "history": {
+        "title": "1840 : gare, 1907 : M5, 1924 : M10",
+        "paragraphs": [
+            "La <strong>gare SNCF Paris-Austerlitz</strong> est inaugurée en <strong>1840</strong> comme terminus de la <strong>Compagnie du Paris-Orléans</strong>. <strong>L'une des plus anciennes gares de Paris</strong>. Façade actuelle de 1865 (architecte Pierre-Louis Renaud).",
+            "La station <strong>M5</strong> ouvre le <strong>17 décembre 1907</strong>. La station <strong>M10</strong> arrive le <strong>26 avril 1939</strong> (Gare d'Austerlitz est terminus est M10). La <strong>gare RER C</strong> ouvre en <strong>1981</strong> avec l'extension du RER C.",
+            "La gare SNCF a longtemps été le <strong>terminus pour le sud-ouest de la France</strong> : trains vers Bordeaux, Toulouse, Limoges. Avec l'ouverture de la <strong>LGV Sud Europe Atlantique en 2017</strong>, les trains vers Bordeaux ont été <strong>transférés à Montparnasse</strong>. Austerlitz conserve les trains <strong>Intercités</strong> et <strong>Trains de nuit</strong> (Latour-de-Carol, Rodez, Cerbère, Briançon).",
+            "À <strong>10 min</strong> : le <strong>Jardin des Plantes</strong>, créé en <strong>1635 sous Louis XIII</strong> par Guy de La Brosse comme <strong>Jardin du Roi</strong>. Devenu <strong>Muséum national d'Histoire naturelle</strong> en 1793. <strong>23 hectares</strong>. Lieu emblématique : <strong>Grande Galerie de l'Évolution</strong>, <strong>ménagerie</strong> (1793, plus ancienne ménagerie en activité au monde), <strong>serres tropicales</strong>, <strong>jardin alpin</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Gare d'Austerlitz ?",
+            "answer": "<strong>M5</strong>, <strong>M10</strong> (terminus est), <strong>RER C</strong>, et la <strong>gare SNCF</strong>. Bus 24, 57, 61, 63, 89, 91."
+        },
+        {
+            "question": "Quels trains partent d'Austerlitz ?",
+            "answer": "Trains vers le <strong>sud-ouest de la France</strong> : <strong>Toulouse</strong>, <strong>Cahors</strong>, <strong>Limoges</strong>, <strong>Châteauroux</strong>. <strong>Trains de nuit Intercités</strong> (Latour-de-Carol, Rodez, Cerbère, Briançon). Bordeaux transféré à Montparnasse depuis 2017 (LGV)."
+        },
+        {
+            "question": "Où est le Jardin des Plantes ?",
+            "answer": "<strong>10 min à pied</strong>. <strong>Muséum national d'Histoire naturelle</strong>, créé en <strong>1635 sous Louis XIII</strong>. 23 hectares. Grande Galerie de l'Évolution, ménagerie, serres tropicales."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M10 directe</strong> ne va pas à Châtelet. <strong>M5 vers Bastille + M1 vers Châtelet</strong> : ~10 min. Ou <strong>RER C jusqu'à Saint-Michel</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Partiellement</strong>. Gare SNCF PMR, quais M5/M10 historiques partiels."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Jardin des Plantes</strong> à 10 min — Muséum d'Histoire naturelle.",
+        "<strong>Grande Galerie de l'Évolution</strong> à voir.",
+        "Trains nuit Intercités : <strong>Latour-de-Carol</strong>, <strong>Rodez</strong>, <strong>Cerbère</strong>.",
+        "Pour <strong>Place d'Italie</strong> : M5 directe (2 stations).",
+        "Pour <strong>Saint-Michel</strong> : RER C directe (1 station)."
+    ],
+    "trivia": [
+        {
+            "icon": "🚆",
+            "title": "Gare Paris-Austerlitz (1840) — l'une des plus anciennes",
+            "content": "La <strong>gare SNCF Paris-Austerlitz</strong> est inaugurée en <strong>1840</strong> comme terminus de la <strong>Compagnie du Paris-Orléans</strong>. <strong>L'une des plus anciennes gares de Paris</strong>. Façade actuelle de <strong>1865</strong>. Historiquement terminus pour le <strong>sud-ouest de la France</strong> (Bordeaux, Toulouse, Limoges). Avec l'ouverture de la <strong>LGV Sud Europe Atlantique en 2017</strong>, les trains vers Bordeaux ont été transférés à Montparnasse. Austerlitz conserve les <strong>Intercités</strong> et <strong>trains de nuit</strong> (Latour-de-Carol, Rodez, Cerbère, Briançon)."
+        },
+        {
+            "icon": "🌿",
+            "title": "Jardin des Plantes (1635) — Muséum Histoire naturelle",
+            "content": "Le <strong>Jardin des Plantes</strong> à 10 min de la station est l'un des plus emblématiques jardins parisiens. Créé en <strong>1635 sous Louis XIII</strong> par <strong>Guy de La Brosse</strong> comme <strong>Jardin du Roi</strong>. Devenu <strong>Muséum national d'Histoire naturelle</strong> en <strong>1793</strong> (Révolution). <strong>23 hectares</strong>. <strong>Grande Galerie de l'Évolution</strong> (1994, rénovation spectaculaire). <strong>Ménagerie</strong> (1793, plus ancienne ménagerie en activité au monde). <strong>Serres tropicales</strong> (1830s, classés MH). <strong>Jardin alpin</strong>. Sont également au sein : galeries de Minéralogie, de Paléontologie, etc."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Gare SNCF Austerlitz",
+            "destination_slug": "gare-austerlitz-sncf",
+            "destination_full_name": "Gare d'Austerlitz → Gare SNCF Austerlitz",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-gare-austerlitz-sncf/"
+        },
+        {
+            "destination_name": "Jardin des Plantes",
+            "destination_slug": "jardin-plantes",
+            "destination_full_name": "Gare d'Austerlitz → Jardin des Plantes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-jardin-plantes/"
+        },
+        {
+            "destination_name": "Place d'Italie via M5",
+            "destination_slug": "place-d-italie",
+            "destination_full_name": "Gare d'Austerlitz → Place d'Italie",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-place-d-italie/"
+        },
+        {
+            "destination_name": "Châtelet via M5 + M1",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Gare d'Austerlitz → Châtelet",
+            "lines_used": [
+                "M5 + M1"
+            ],
+            "lines_label": "M5 jusqu'à Bastille + M1",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-chatelet/"
+        },
+        {
+            "destination_name": "Saint-Michel via RER C",
+            "destination_slug": "saint-michel-notre-dame",
+            "destination_full_name": "Gare d'Austerlitz → Saint-Michel",
+            "lines_used": [
+                "RER C"
+            ],
+            "lines_label": "RER C direction Saint-Michel (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-saint-michel-notre-dame/"
+        },
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Gare d'Austerlitz → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gare-d-austerlitz/gare-d-austerlitz-vers-bastille/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q838691",
+            "name": "Muséum national d'histoire naturelle",
+            "category": "musée",
+            "description": "Le Muséum national d'histoire naturelle (MNHN) est un établissement français d'enseignement supérieur, de recherche et de diffusion de la culture scientifique naturaliste, membre de l'alliance…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20galerie%20de%20l%27%C3%A9volution%2C%20Paris%2010%20April%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9um_national_d%27histoire_naturelle",
+            "latitude": 48.842222,
+            "longitude": 2.356111,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Nicolas Houël",
+                "distance_m": 553,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q747541",
+            "name": "Paris-Lyon",
+            "category": "gare",
+            "description": "Paris-Gare-de-Lyon est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1210896%20Paris%20XII%20gare%20de%20Lyon%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris-Gare-de-Lyon",
+            "latitude": 48.844722,
+            "longitude": 2.373611,
+            "nearest_exit": {
+                "number": "",
+                "name": "Hall Seine (accès RER C)",
+                "distance_m": 596,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q730948",
+            "name": "jardin des plantes de Paris",
+            "category": "jardin",
+            "description": "Le jardin des plantes de Paris, ou Jardin des plantes, situé dans le 5e arrondissement de Paris, est un parc à la fois botanique, écologique et zoologique, siège et principal site du Muséum national…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075005%20Grande%20Galerie%20de%20l%27Evolution%2020070804.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_plantes_de_Paris",
+            "latitude": 48.843889,
+            "longitude": 2.359722,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Nicolas Houël",
+                "distance_m": 312,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q734017",
+            "name": "Paris-Austerlitz",
+            "category": "gare",
+            "description": "La gare de Paris-Austerlitz, dite aussi gare d'Austerlitz, anciennement appelée gare d'Orléans, est l'une des six grandes gares terminus de la Société nationale des chemins de fer français (SNCF) à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20d%27Austerlitz%20Fa%C3%A7ade%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Austerlitz",
+            "latitude": 48.842222,
+            "longitude": 2.365833,
+            "nearest_exit": {
+                "number": "5",
+                "name": "quai d'Austerlitz",
+                "distance_m": 38,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q939883",
+            "name": "hôpital de la Salpêtrière",
+            "category": "hôpital",
+            "description": "L'hôpital de la Pitié-Salpêtrière est un hôpital de l'Assistance publique - Hôpitaux de Paris (AP-HP) situé 47-83, boulevard de l'Hôpital dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000513%20Paris%20XIII%20Salpetri%C3%A8re%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_de_la_Salp%C3%AAtri%C3%A8re",
+            "latitude": 48.837,
+            "longitude": 2.365,
+            "nearest_exit": {
+                "number": "",
+                "name": "Hall Muséum (accès RER C)",
+                "distance_m": 509,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2307722",
+            "name": "pont d'Austerlitz",
+            "category": "pont",
+            "description": "Le pont d'Austerlitz est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Pont%20d%27Austerlitz%20and%20a%20Bateau%20Mouche%2C%20Paris%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27Austerlitz",
+            "latitude": 48.845,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 273,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2271703",
+            "name": "viaduc d'Austerlitz",
+            "category": "pont",
+            "description": "Le viaduc d'Austerlitz est un pont ferroviaire qui franchit la Seine à Paris (France), réalisé par la Société de construction de Levallois-Perret ; il est emprunté par les rames de la ligne 5 du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20metro%20ligne%205%20Austerlitz%20dsc03829.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_d%27Austerlitz",
+            "latitude": 48.843611,
+            "longitude": 2.367778,
+            "nearest_exit": {
+                "number": "5",
+                "name": "quai d'Austerlitz",
+                "distance_m": 176,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1513866",
+            "name": "pont de Bercy",
+            "category": "pont",
+            "description": "Le pont de Bercy est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20pont%20de%20Bercy.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Bercy",
+            "latitude": 48.838056,
+            "longitude": 2.375,
+            "nearest_exit": {
+                "number": "2",
+                "name": "pont de Bercy",
+                "distance_m": 152,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1196676",
+            "name": "pont Charles-de-Gaulle",
+            "category": "pont",
+            "description": "Le pont Charles-de-Gaulle est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Charles-de-Gaulle%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Charles-de-Gaulle_(Paris)",
+            "latitude": 48.8425,
+            "longitude": 2.36889,
+            "nearest_exit": {
+                "number": "",
+                "name": "Hall Seine (accès RER C)",
+                "distance_m": 178,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1102184",
+            "name": "port de l'Arsenal",
+            "category": "site notable",
+            "description": "Le port de l'Arsenal ou bassin de l'Arsenal, est situé à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20port%20Arsenal.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Port_de_l%27Arsenal",
+            "latitude": 48.849475,
+            "longitude": 2.367367,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 767,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1957702",
+            "name": "ménagerie du Jardin des plantes",
+            "category": "jardin",
+            "description": "La ménagerie du Jardin des plantes est un parc zoologique public du Muséum national d'histoire naturelle, situé à Paris dans le 5e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herpeto5.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/M%C3%A9nagerie_du_Jardin_des_plantes",
+            "latitude": 48.845446,
+            "longitude": 2.360325,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Buffon",
+                "distance_m": 375,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q597555",
+            "name": "Arsenal",
+            "category": "site notable",
+            "description": "Arsenal est une des stations abandonnées du métro de Paris, située sur la ligne 5, dans le 4e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entr%C3%A9e%20station%20Arsenal%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Arsenal_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.849042,
+            "longitude": 2.366642,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 706,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de l'Hôpital",
+            "address_full": "3 Boulevard de l'Hôpital 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.842911,
+            "longitude": 2.364156,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "av. de France",
+            "address_full": "12 Boulevard Vincent Auriol 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.837011,
+            "longitude": 2.372716,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Buffon",
+            "address_full": "2 Boulevard de l'Hôpital 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.842954,
+            "longitude": 2.363774,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "pont de Bercy",
+            "address_full": "4 Boulevard Vincent Auriol 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.837329,
+            "longitude": 2.373243,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Nicolas Houël",
+            "address_full": "6 Boulevard de l'Hôpital 75005 Paris",
+            "postcode": "75005",
+            "city": "Paris",
+            "latitude": 48.842764,
+            "longitude": 2.363626,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "Muséum",
+            "address_full": "87a Quai d'Austerlitz 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.842123,
+            "longitude": 2.364874,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "quai d'Austerlitz",
+            "address_full": "79 Quai d'Austerlitz 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.842543,
+            "longitude": 2.366,
+            "accessible": null
+        },
+        {
+            "number": "",
+            "name": "Hall Muséum (accès RER C)",
+            "address_full": "87a Quai d'Austerlitz 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.841568,
+            "longitude": 2.365453,
+            "accessible": null
+        },
+        {
+            "number": "",
+            "name": "Hall Seine (accès RER C)",
+            "address_full": "79p Quai d'Austerlitz 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.842015,
+            "longitude": 2.366579,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/gare-d-austerlitz/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Gare d'Austerlitz (Métro 5, 10 + RER C) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Gare_Austerlitz_M%C3%A9tro_Paris_Boulevard_H%C3%B4pital_-_Paris_V_(FR75)_-_2025-10-27_-_5.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-400.avif",
+                "800": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-800.avif",
+                "1200": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1200.avif",
+                "1600": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-400.webp",
+                "800": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-800.webp",
+                "1200": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1200.webp",
+                "1600": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-400.jpg",
+                "800": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-800.jpg",
+                "1200": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1200.jpg",
+                "1600": "/assets/img/stations/gare-d-austerlitz/gare-d-austerlitz-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 3
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1494179",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1494179",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_d%27Austerlitz_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

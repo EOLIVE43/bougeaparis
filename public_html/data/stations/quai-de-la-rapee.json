@@ -1,0 +1,524 @@
+{
+    "published": true,
+    "slug": "quai-de-la-rapee",
+    "name": "Quai de la Rapée",
+    "name_full": "Quai de la Rapée (Métro 5)",
+    "arrondissement": "12e (Paris)",
+    "address": "Quai de la Rapée, 75012 Paris",
+    "latitude": 48.845892913210584,
+    "longitude": 2.3677171032066013,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "24",
+            "57",
+            "63",
+            "77",
+            "87",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N31",
+            "N33",
+            "N34",
+            "N35"
+        ],
+        "regional": [
+            "61",
+            "72"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 2,
+            "nearby_count": 13
+        }
+    },
+    "seo": {
+        "description": "Station Quai de la Rapée : M5 dans le 12e arr., AÉRIENNE au-dessus de la Seine (pont d'Austerlitz). Vue spectaculaire. Institut Médico-Légal à proximité."
+    },
+    "hero": {
+        "tagline": "M5 — station aérienne sur la Seine (pont d'Austerlitz)",
+        "description": "Station <strong>Quai de la Rapée</strong> dans le <strong>12e arrondissement</strong>, sur le <strong>quai de la Rapée</strong>. Desservie par la <strong>M5</strong>, ouverte le <strong>17 décembre 1907</strong>. <strong>Station aérienne</strong> au-dessus de la Seine, sur le <strong>pont d'Austerlitz</strong>. <strong>Vue spectaculaire</strong> sur la Seine et les bords. À proximité : l'<strong>Institut Médico-Légal</strong> (morgue de Paris)."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Bastille",
+                "slug": "bastille",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Gare d'Austerlitz",
+                "slug": "gare-d-austerlitz",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Quai de la Rapée</strong> est située dans le <strong>12e arrondissement de Paris</strong>, sur le <strong>quai de la Rapée</strong>. Elle est desservie par la <strong>M5</strong>, entre <strong>Bastille</strong> (1 station nord) et <strong>Gare d'Austerlitz</strong> (1 station sud, M5+M10+RER C+gare). Bus 24, 87.",
+        "Ouverte le <strong>17 décembre 1907</strong> avec la M5 originelle.",
+        "<strong>Station aérienne</strong> au-dessus de la <strong>Seine</strong> sur le <strong>pont d'Austerlitz</strong>. <strong>Vue spectaculaire</strong> sur la Seine, les <strong>Voies sur berges</strong>, le <strong>port de l'Arsenal</strong>, l'<strong>île Louviers</strong> (disparue mais souvenir). À <strong>2 min</strong> : l'<strong>Institut Médico-Légal</strong> (morgue de Paris)."
+    ],
+    "history": {
+        "title": "1907 : M5 aérienne sur la Seine",
+        "paragraphs": [
+            "La station <strong>Quai de la Rapée</strong> ouvre le <strong>17 décembre 1907</strong> avec la M5 originelle (Gare du Nord ↔ Place Mazas).",
+            "<strong>Configuration unique</strong> : <strong>station aérienne</strong> au-dessus de la <strong>Seine</strong>, sur le <strong>pont d'Austerlitz</strong>. Construite sur le pont métallique de la Seine. <strong>Vue spectaculaire</strong> sur la Seine et les bords.",
+            "Le <strong>pont d'Austerlitz</strong> a été construit entre <strong>1801 et 1807</strong> en commémoration de la <strong>bataille d'Austerlitz</strong> (2 décembre 1805) — victoire majeure de Napoléon contre les Autrichiens et Russes.",
+            "À proximité : l'<strong>Institut Médico-Légal</strong> (IML), <strong>morgue de Paris</strong>, où sont effectuées les autopsies médico-légales. Bâtiment de 1923. À côté : la <strong>place Mazas</strong> (anciennement terminus de la M5 jusqu'en 1942).",
+            "Le quai de la Rapée tire son nom du <strong>Sieur de la Rapée</strong>, propriétaire des terrains au XVIIe siècle. <strong>Anciens entrepôts</strong> de bois pour le chauffage parisien."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Quai de la Rapée ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "La station est-elle aérienne ?",
+            "answer": "<strong>Oui</strong>. <strong>Station aérienne au-dessus de la Seine</strong>, sur le <strong>pont d'Austerlitz</strong>. <strong>Vue spectaculaire</strong> sur la Seine."
+        },
+        {
+            "question": "Qu'est-ce que l'Institut Médico-Légal ?",
+            "answer": "L'<strong>IML</strong> est la <strong>morgue de Paris</strong>, où sont effectuées les autopsies médico-légales. Bâtiment de 1923. À 2 min de la station."
+        },
+        {
+            "question": "Pourquoi le nom Quai de la Rapée ?",
+            "answer": "Du <strong>Sieur de la Rapée</strong>, propriétaire des terrains au XVIIe siècle. <strong>Anciens entrepôts</strong> de bois pour le chauffage parisien."
+        },
+        {
+            "question": "Comment aller à Bastille ?",
+            "answer": "<strong>M5 directe</strong> : 1 station (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1907."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Vue aérienne sur la Seine</strong> depuis les quais — unique.",
+        "Pour <strong>Bastille</strong> : M5 directe (1 station).",
+        "Pour <strong>Gare d'Austerlitz</strong> (gare + M10 + RER C) : M5 directe (1 station).",
+        "<strong>Voies sur berges</strong> à côté.",
+        "<strong>Port de l'Arsenal</strong> à 5 min."
+    ],
+    "trivia": [
+        {
+            "icon": "🌉",
+            "title": "Station aérienne sur la Seine (pont d'Austerlitz 1807)",
+            "content": "La station <strong>Quai de la Rapée</strong> est l'une des <strong>rares stations aériennes au-dessus de la Seine</strong> du métro parisien (avec Quai de la Gare M6, Bercy M6, Cité M4 partiellement). Construite sur le <strong>pont d'Austerlitz</strong> (1801-1807, en commémoration de la <strong>bataille d'Austerlitz</strong> du 2 décembre 1805 — victoire majeure de Napoléon contre les Autrichiens et Russes). <strong>Vue spectaculaire</strong> depuis les quais : Seine, Voies sur berges, port de l'Arsenal."
+        },
+        {
+            "icon": "⚖️",
+            "title": "Institut Médico-Légal — morgue de Paris (1923)",
+            "content": "À <strong>2 min</strong> de la station, l'<strong>Institut Médico-Légal</strong> (IML) est la <strong>morgue de Paris</strong>, où sont effectuées les <strong>autopsies médico-légales</strong> en cas de mort suspecte ou non identifiée. Bâtiment de <strong>1923</strong>, conçu par Albert Tournaire. <strong>Successeur de l'ancienne morgue de l'Île de la Cité</strong> (XIXe siècle), célèbre pour ses expositions publiques des corps non identifiés (pratique abandonnée 1907)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Quai de la Rapée → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-bastille/"
+        },
+        {
+            "destination_name": "Gare d'Austerlitz via M5",
+            "destination_slug": "gare-d-austerlitz",
+            "destination_full_name": "Quai de la Rapée → Gare d'Austerlitz",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-gare-d-austerlitz/"
+        },
+        {
+            "destination_name": "Voies sur berges (rive droite)",
+            "destination_slug": "voies-sur-berges",
+            "destination_full_name": "Quai de la Rapée → Voies sur berges (rive droite)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-voies-sur-berges/"
+        },
+        {
+            "destination_name": "Port de l'Arsenal",
+            "destination_slug": "port-arsenal",
+            "destination_full_name": "Quai de la Rapée → Port de l'Arsenal",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min nord",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-port-arsenal/"
+        },
+        {
+            "destination_name": "Institut Médico-Légal",
+            "destination_slug": "institut-medico-legal",
+            "destination_full_name": "Quai de la Rapée → Institut Médico-Légal",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "2 min",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-institut-medico-legal/"
+        },
+        {
+            "destination_name": "Place d'Italie via M5",
+            "destination_slug": "place-d-italie",
+            "destination_full_name": "Quai de la Rapée → Place d'Italie",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-quai-de-la-rapee/quai-de-la-rapee-vers-place-d-italie/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q638423",
+            "name": "opéra Bastille",
+            "category": "théâtre",
+            "description": "L'opéra Bastille est une salle d'opéra moderne située sur la place de la Bastille à Paris.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Bastille",
+            "latitude": 48.851944,
+            "longitude": 2.370556,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 718,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q747541",
+            "name": "Paris-Lyon",
+            "category": "gare",
+            "description": "Paris-Gare-de-Lyon est l'une des six grandes gares terminus du réseau de la Société nationale des chemins de fer français (SNCF) à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1210896%20Paris%20XII%20gare%20de%20Lyon%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris-Gare-de-Lyon",
+            "latitude": 48.844722,
+            "longitude": 2.373611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 549,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q730948",
+            "name": "jardin des plantes de Paris",
+            "category": "jardin",
+            "description": "Le jardin des plantes de Paris, ou Jardin des plantes, situé dans le 5e arrondissement de Paris, est un parc à la fois botanique, écologique et zoologique, siège et principal site du Muséum national…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075005%20Grande%20Galerie%20de%20l%27Evolution%2020070804.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_plantes_de_Paris",
+            "latitude": 48.843889,
+            "longitude": 2.359722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 547,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q734017",
+            "name": "Paris-Austerlitz",
+            "category": "gare",
+            "description": "La gare de Paris-Austerlitz, dite aussi gare d'Austerlitz, anciennement appelée gare d'Orléans, est l'une des six grandes gares terminus de la Société nationale des chemins de fer français (SNCF) à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20d%27Austerlitz%20Fa%C3%A7ade%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Austerlitz",
+            "latitude": 48.842222,
+            "longitude": 2.365833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 433,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2060889",
+            "name": "coulée verte René-Dumont",
+            "category": "site notable",
+            "description": "La coulée verte René-Dumont, anciennement Promenade plantée, est une voie verte et un parc linéaire du 12e arrondissement de Paris en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Promenade%20plant%C3%A9e%2C%20Paris%20August%202009%20%2810%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Coul%C3%A9e_verte_Ren%C3%A9-Dumont",
+            "latitude": 48.849572,
+            "longitude": 2.3711,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 517,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2307722",
+            "name": "pont d'Austerlitz",
+            "category": "pont",
+            "description": "Le pont d'Austerlitz est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Pont%20d%27Austerlitz%20and%20a%20Bateau%20Mouche%2C%20Paris%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27Austerlitz",
+            "latitude": 48.845,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 124,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1196688",
+            "name": "pont de Sully",
+            "category": "pont",
+            "description": "Le pont de Sully est le nom donné à l'alignement de deux ponts franchissant deux bras de la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/France%20Paris%20Pont%20de%20Sully.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_de_Sully",
+            "latitude": 48.85,
+            "longitude": 2.35917,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 685,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2271703",
+            "name": "viaduc d'Austerlitz",
+            "category": "pont",
+            "description": "Le viaduc d'Austerlitz est un pont ferroviaire qui franchit la Seine à Paris (France), réalisé par la Société de construction de Levallois-Perret ; il est emprunté par les rames de la ligne 5 du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20metro%20ligne%205%20Austerlitz%20dsc03829.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_d%27Austerlitz",
+            "latitude": 48.843611,
+            "longitude": 2.367778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 294,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1196676",
+            "name": "pont Charles-de-Gaulle",
+            "category": "pont",
+            "description": "Le pont Charles-de-Gaulle est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Charles-de-Gaulle%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Charles-de-Gaulle_(Paris)",
+            "latitude": 48.8425,
+            "longitude": 2.36889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 439,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1102184",
+            "name": "port de l'Arsenal",
+            "category": "site notable",
+            "description": "Le port de l'Arsenal ou bassin de l'Arsenal, est situé à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20port%20Arsenal.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Port_de_l%27Arsenal",
+            "latitude": 48.849475,
+            "longitude": 2.367367,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 382,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1957702",
+            "name": "ménagerie du Jardin des plantes",
+            "category": "jardin",
+            "description": "La ménagerie du Jardin des plantes est un parc zoologique public du Muséum national d'histoire naturelle, situé à Paris dans le 5e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herpeto5.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/M%C3%A9nagerie_du_Jardin_des_plantes",
+            "latitude": 48.845446,
+            "longitude": 2.360325,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 451,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2000339",
+            "name": "pavillon de l'Arsenal",
+            "category": "site notable",
+            "description": "Le Pavillon de l’Arsenal est le « Centre d'information, de documentation et d'exposition d'urbanisme et d'architecture de Paris et de la métropole parisienne ».",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20Arsenal%20-%20Paris%20IV%20%28FR75%29%20-%202022-10-08%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_de_l%27Arsenal",
+            "latitude": 48.850556,
+            "longitude": 2.362222,
+            "nearest_exit": {
+                "number": "1",
+                "name": "place Mazas",
+                "distance_m": 583,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "place Mazas",
+            "address_full": "1 Place Mazas 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.846097,
+            "longitude": 2.366406,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/quai-de-la-rapee/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Quai de la Rapée (Métro 5) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Quai_Rap%C3%A9e_Place_Mazas_-_Paris_XII_(FR75)_-_2022-01-15_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-400.avif",
+                "800": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-800.avif",
+                "1200": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1200.avif",
+                "1600": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-400.webp",
+                "800": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-800.webp",
+                "1200": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1200.webp",
+                "1600": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-400.jpg",
+                "800": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-800.jpg",
+                "1200": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1200.jpg",
+                "1600": "/assets/img/stations/quai-de-la-rapee/quai-de-la-rapee-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1969501",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1969501",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Quai_de_la_Rap%C3%A9e_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

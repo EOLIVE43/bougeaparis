@@ -1,0 +1,518 @@
+{
+    "published": true,
+    "slug": "richard-lenoir",
+    "name": "Richard-Lenoir",
+    "name_full": "Richard-Lenoir (Métro 5)",
+    "arrondissement": "11e (Paris)",
+    "address": "Bd Richard Lenoir, 75011 Paris",
+    "latitude": 48.858908984464044,
+    "longitude": 2.37159359304854,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "69"
+        ],
+        "nocturne": [],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 2,
+            "nearby_count": 6
+        }
+    },
+    "seo": {
+        "description": "Station Richard-Lenoir : M5 dans le 11e arr., boulevard Richard-Lenoir. François Richard-Lenoir industriel cotonnier. Marché Bastille à proximité."
+    },
+    "hero": {
+        "tagline": "M5 — boulevard Richard-Lenoir, Marché Bastille",
+        "description": "Station <strong>Richard-Lenoir</strong> dans le <strong>11e arrondissement</strong>, sur le <strong>boulevard Richard-Lenoir</strong>. Desservie par la <strong>M5</strong>, ouverte le <strong>17 décembre 1907</strong>. Nommée d'après <strong>François Richard-Lenoir</strong> (1765-1839), <strong>industriel cotonnier français</strong>. À proximité : le célèbre <strong>Marché Bastille</strong> (jeudis et dimanches)."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Oberkampf",
+                "slug": "oberkampf",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Bréguet-Sabin",
+                "slug": "breguet-sabin",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Richard-Lenoir</strong> est située dans le <strong>11e arrondissement de Paris</strong>, sur le <strong>boulevard Richard-Lenoir</strong>. Elle est desservie par la <strong>M5</strong>, entre <strong>Oberkampf</strong> (1 station nord, M5+M9) et <strong>Bréguet-Sabin</strong> (1 station sud). Bus 56, 91.",
+        "Ouverte le <strong>17 décembre 1907</strong> avec la M5 originelle.",
+        "Le nom <strong>Richard-Lenoir</strong> commémore <strong>François Richard-Lenoir</strong> (1765-1839), <strong>industriel cotonnier français</strong>, propriétaire de plusieurs manufactures de coton. À proximité : le célèbre <strong>Marché Bastille</strong> (jeudis et dimanches), l'un des plus animés de Paris."
+    ],
+    "history": {
+        "title": "1907 : M5, Richard-Lenoir industriel cotonnier",
+        "paragraphs": [
+            "La station <strong>Richard-Lenoir</strong> ouvre le <strong>17 décembre 1907</strong> avec la M5 originelle (Gare du Nord ↔ Place Mazas).",
+            "Le nom commémore <strong>François Richard-Lenoir</strong> (1765-1839), <strong>industriel cotonnier français</strong>. Né dans une famille modeste, monta une <strong>importante entreprise de manufactures cotonnières</strong> au début du XIXe siècle. <strong>Ennobli</strong> par Napoléon.",
+            "Le <strong>boulevard Richard-Lenoir</strong> a été <strong>aménagé en 1859-1861</strong> sur l'emplacement de l'ancien <strong>canal Saint-Martin couvert</strong> entre la rotonde de la Villette et le port de l'Arsenal. Boulevard caractéristique du <strong>plan Haussmann</strong>, large et ombragé.",
+            "À proximité : le <strong>Marché Bastille</strong>, ouvert les <strong>jeudis et dimanches matin</strong> sur le boulevard. <strong>L'un des marchés alimentaires les plus animés de Paris</strong>. Produits frais, fromages, vins, fleurs."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Richard-Lenoir ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "Qui est Richard-Lenoir ?",
+            "answer": "<strong>François Richard-Lenoir</strong> (1765-1839), <strong>industriel cotonnier français</strong>. Propriétaire de manufactures de coton au début du XIXe. <strong>Ennobli par Napoléon</strong>."
+        },
+        {
+            "question": "Le boulevard a-t-il toujours été là ?",
+            "answer": "Non, le <strong>boulevard Richard-Lenoir</strong> a été <strong>aménagé en 1859-1861</strong> sur l'emplacement de l'<strong>ancien canal Saint-Martin couvert</strong> (entre rotonde de la Villette et port de l'Arsenal). Plan Haussmann."
+        },
+        {
+            "question": "Qu'est-ce que le Marché Bastille ?",
+            "answer": "<strong>L'un des marchés alimentaires les plus animés de Paris</strong>, ouvert les <strong>jeudis et dimanches matin</strong> sur le boulevard. Produits frais, fromages, vins."
+        },
+        {
+            "question": "Comment aller à Bastille ?",
+            "answer": "<strong>M5 directe</strong> : ~3 min (2 stations vers le sud)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1907."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Marché Bastille</strong> jeudis/dimanches matin — l'un des plus animés.",
+        "Pour <strong>Bastille</strong> : M5 directe (2 stations).",
+        "Pour <strong>République</strong> : M5 directe (3 stations).",
+        "Pour <strong>Oberkampf</strong> (vie nocturne) : M5 directe (1 station).",
+        "Boulevard ombragé — promenade agréable."
+    ],
+    "trivia": [
+        {
+            "icon": "🌳",
+            "title": "Boulevard Richard-Lenoir — sur l'ancien canal Saint-Martin (1859)",
+            "content": "Le <strong>boulevard Richard-Lenoir</strong> a été <strong>aménagé en 1859-1861</strong> sur l'emplacement de l'<strong>ancien canal Saint-Martin couvert</strong> entre la rotonde de la Villette et le port de l'Arsenal. <strong>Plan Haussmann</strong>. Caractéristique des grands boulevards haussmanniens : <strong>large (~70 m)</strong>, <strong>ombragé</strong> par 4 rangées de platanes. Le canal Saint-Martin reste visible aux extrémités (Villette nord, Bastille sud) et a été <strong>renouvelé en lieu emblématique du Paris bohème</strong> depuis les années 2000. Tronçon central couvert toujours en service navigation souterraine."
+        },
+        {
+            "icon": "🥖",
+            "title": "Marché Bastille — l'un des plus animés de Paris",
+            "content": "Le <strong>Marché Bastille</strong> à proximité de la station est <strong>l'un des marchés alimentaires les plus animés de Paris</strong>. Ouvert les <strong>jeudis et dimanches matin</strong> sur le boulevard Richard-Lenoir, entre la Bastille et la rue Saint-Ambroise. <strong>~100 commerçants</strong>. Produits frais : <strong>fromages, charcuteries, vins, poissons, fruits/légumes, fleurs</strong>. Quartier populaire et bourgeois mixte. Affluence record le dimanche matin."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Marché Bastille (jeudis/dimanches)",
+            "destination_slug": "marche-bastille",
+            "destination_full_name": "Richard-Lenoir → Marché Bastille (jeudis/dimanches)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-marche-bastille/"
+        },
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Richard-Lenoir → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-bastille/"
+        },
+        {
+            "destination_name": "Oberkampf via M5",
+            "destination_slug": "oberkampf",
+            "destination_full_name": "Richard-Lenoir → Oberkampf",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-oberkampf/"
+        },
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Richard-Lenoir → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-republique/"
+        },
+        {
+            "destination_name": "Canal Saint-Martin",
+            "destination_slug": "canal-saint-martin",
+            "destination_full_name": "Richard-Lenoir → Canal Saint-Martin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min nord",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-canal-saint-martin/"
+        },
+        {
+            "destination_name": "Père-Lachaise via M5 + M2 ou M9",
+            "destination_slug": "pere-lachaise",
+            "destination_full_name": "Richard-Lenoir → Père-Lachaise",
+            "lines_used": [
+                "M5 + M2/M9"
+            ],
+            "lines_label": "M5 → Oberkampf + M9",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richard-lenoir/richard-lenoir-vers-pere-lachaise/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1865480",
+            "name": "Bastille",
+            "category": "site notable",
+            "description": "La bastille Saint-Antoine, souvent appelée simplement la Bastille, et anciennement les fort et bastide Saint-Anthoine lez Paris, est une forteresse construite au XIVe siècle, à l'emplacement du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bastille%20Exterior%201790%20or%201791.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bastille",
+            "latitude": 48.853333,
+            "longitude": 2.369167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 688,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q810700",
+            "name": "Bataclan",
+            "category": "site notable",
+            "description": "Le Bataclan, qui s'appelait à l'origine Le Grand Café Chinois-Théâtre Ba-ta-clan, est une salle de spectacle parisienne édifiée par l'architecte Charles Duval en 1864 et située au 50, boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+            "latitude": 48.863056,
+            "longitude": 2.370833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 327,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q638423",
+            "name": "opéra Bastille",
+            "category": "théâtre",
+            "description": "L'opéra Bastille est une salle d'opéra moderne située sur la place de la Bastille à Paris.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Bastille",
+            "latitude": 48.851944,
+            "longitude": 2.370556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 822,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q898629",
+            "name": "place des Vosges",
+            "category": "place",
+            "description": "La place des Vosges, anciennement place Royale, car initialement dédiée au roi Henri IV et finalement, après l'assassinat du roi par François Ravaillac, dédiée à son fils Louis XIII, est une place de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20PlaceDesVosges%20NordNordEst.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Vosges",
+            "latitude": 48.855556,
+            "longitude": 2.365556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 610,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 675,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q640447",
+            "name": "musée Carnavalet",
+            "category": "musée",
+            "description": "Le musée Carnavalet - Histoire de Paris est le musée municipal parisien consacré à l'histoire de Paris des origines de la ville à nos jours.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnavalet%20Par%C3%ADs%2010.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Carnavalet",
+            "latitude": 48.857375,
+            "longitude": 2.362745,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 685,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1643144",
+            "name": "hôtel de Sully",
+            "category": "site notable",
+            "description": "L'hôtel de Sully est un hôtel particulier entre cour et jardin de style Louis XIII, situé dans le quartier du Marais, dans le 4e arrondissement de Paris, au 62 rue Saint-Antoine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Sully%2007-2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Sully",
+            "latitude": 48.854583,
+            "longitude": 2.363778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 779,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q2599177",
+            "name": "maison de Victor Hugo",
+            "category": "musée",
+            "description": "Maisons de Victor Hugo est un musée monographique parisien, situé au 6, place des Vosges, dans le 4e arrondissement, qui préserve l’ancien hôtel de Rohan-Guémené où Victor Hugo loua l'appartement au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PARIS%20Place%20des%20Vosges%2C%20Maison%20de%20Victor%20Hugo%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_Victor_Hugo",
+            "latitude": 48.854722,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 650,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1572452",
+            "name": "musée Cognacq-Jay",
+            "category": "musée",
+            "description": "Le musée Cognacq-Jay est un musée municipal de la Ville de Paris présentant une collection d'œuvres et d'objets d'art du XVIIIe siècle issue du legs d'Ernest Cognacq.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Lazare-Rachline%2C%20Paris%209%20June%202017%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Cognacq-Jay",
+            "latitude": 48.858194,
+            "longitude": 2.361389,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 760,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q2626611",
+            "name": "église Saint-Ambroise",
+            "category": "église",
+            "description": "L'église Saint-Ambroise est une église du 11e arrondissement de Paris, nommée en l'honneur de saint Ambroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ambroise%2C%20Square%20des%20Moines%20de%20Tibhirine%2C%20Paris%2021%20January%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ambroise_de_Paris",
+            "latitude": 48.86131,
+            "longitude": 2.37606,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 317,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1383413",
+            "name": "temple protestant du Marais",
+            "category": "église",
+            "description": "L'Église protestante du Marais ou Église Sainte-Marie est une paroisse membre de l'Église protestante unie de France. Son temple est situé 17 rue Saint-Antoine, dans le quartier du Marais, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20Sainte-Marie%20du%20Marais%20%C3%A0%20Paris%2075004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_protestante_du_Marais",
+            "latitude": 48.85333,
+            "longitude": 2.36625,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Chemin Vert",
+                "distance_m": 772,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1093108",
+            "name": "cirque d'Hiver",
+            "category": "site notable",
+            "description": "Le cirque d'hiver de Paris, souvent appelé simplement le Cirque d'Hiver, ou encore le Cirque d'hiver Bouglione depuis son achat par la famille Bouglione en 1934, est une salle de spectacle située 110…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020056%20Paris%20XI%20Cirque%20d%27Hiver%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cirque_d%27Hiver_(Paris)",
+            "latitude": 48.863369,
+            "longitude": 2.367531,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 481,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Voltaire",
+            "address_full": "65 Boulevard Richard Lenoir 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.860229,
+            "longitude": 2.372055,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. du Chemin Vert",
+            "address_full": "55 Boulevard Richard Lenoir 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.8593,
+            "longitude": 2.371643,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/richard-lenoir/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Richard-Lenoir (Métro 5) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Richard_Lenoir_Boulevard_Richard_Lenoir_-_Paris_XI_(FR75)_-_2022-01-15_-_2.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/richard-lenoir/richard-lenoir-400.avif",
+                "800": "/assets/img/stations/richard-lenoir/richard-lenoir-800.avif",
+                "1200": "/assets/img/stations/richard-lenoir/richard-lenoir-1200.avif",
+                "1600": "/assets/img/stations/richard-lenoir/richard-lenoir-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/richard-lenoir/richard-lenoir-400.webp",
+                "800": "/assets/img/stations/richard-lenoir/richard-lenoir-800.webp",
+                "1200": "/assets/img/stations/richard-lenoir/richard-lenoir-1200.webp",
+                "1600": "/assets/img/stations/richard-lenoir/richard-lenoir-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/richard-lenoir/richard-lenoir-400.jpg",
+                "800": "/assets/img/stations/richard-lenoir/richard-lenoir-800.jpg",
+                "1200": "/assets/img/stations/richard-lenoir/richard-lenoir-1200.jpg",
+                "1600": "/assets/img/stations/richard-lenoir/richard-lenoir-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1789070",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1789070",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Richard-Lenoir_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

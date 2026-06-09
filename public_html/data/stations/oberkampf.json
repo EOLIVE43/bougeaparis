@@ -1,0 +1,563 @@
+{
+    "published": true,
+    "slug": "oberkampf",
+    "name": "Oberkampf",
+    "name_full": "Oberkampf (Métro 5, 9)",
+    "arrondissement": "11e (Paris)",
+    "address": "Bd Voltaire / rue Oberkampf, 75011 Paris",
+    "latitude": 48.8642283660879,
+    "longitude": 2.3695528985943537,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "56",
+            "91",
+            "96"
+        ],
+        "nocturne": [
+            "N12",
+            "N23"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 2,
+            "nearby_count": 23
+        }
+    },
+    "seo": {
+        "description": "Station Oberkampf : M5 + M9 dans le 11e arr. Christophe-Philippe Oberkampf (1738-1815), industriel allemand, fondateur Toile de Jouy. Quartier festif."
+    },
+    "hero": {
+        "tagline": "M5 + M9 — Oberkampf, quartier festif du 11e",
+        "description": "Station <strong>Oberkampf</strong> dans le <strong>11e arrondissement</strong>, à l'intersection du boulevard Voltaire et de la rue Oberkampf. Desservie par <strong>M5</strong> (ouverte 17 décembre 1907) et <strong>M9</strong> (ouverte 10 décembre 1933). Nommée d'après <strong>Christophe-Philippe Oberkampf</strong> (1738-1815), industriel allemand fondateur de la <strong>Toile de Jouy</strong>. <strong>Quartier festif</strong> emblématique de Paris."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Richard-Lenoir",
+                "slug": "richard-lenoir",
+                "direction": "Place d'Italie"
+            }
+        },
+        "metro-9": {
+            "previous": {
+                "name": "Saint-Ambroise",
+                "slug": "saint-ambroise",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "République",
+                "slug": "republique",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Oberkampf</strong> est située dans le <strong>11e arrondissement de Paris</strong>, à l'intersection du <strong>boulevard Voltaire</strong> et de la <strong>rue Oberkampf</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M5</strong> (Bobigny ↔ Place d'Italie) et <strong>M9</strong> (Pont de Sèvres ↔ Mairie de Montreuil). Bus 56, 96.",
+        "La station <strong>M5</strong> ouvre le <strong>17 décembre 1907</strong>. La station <strong>M9</strong> est ajoutée le <strong>10 décembre 1933</strong>.",
+        "Le nom <strong>Oberkampf</strong> commémore <strong>Christophe-Philippe Oberkampf</strong> (1738-1815), <strong>industriel français d'origine allemande (Bavière)</strong>. <strong>Fondateur de la manufacture de Jouy-en-Josas</strong> (1760), célèbre pour sa <strong>Toile de Jouy</strong>. La <strong>rue Oberkampf</strong> est un des hauts lieux de la <strong>vie nocturne parisienne</strong>."
+    ],
+    "history": {
+        "title": "Oberkampf et la Toile de Jouy (1760)",
+        "paragraphs": [
+            "La station <strong>M5</strong> ouvre le <strong>17 décembre 1907</strong>. La station <strong>M9</strong> est ajoutée le <strong>10 décembre 1933</strong>.",
+            "Le nom commémore <strong>Christophe-Philippe Oberkampf</strong> (1738-1815), <strong>industriel français d'origine allemande (Bavière)</strong>. <strong>Fondateur de la manufacture de Jouy-en-Josas</strong> en <strong>1760</strong>.",
+            "<strong>Toile de Jouy</strong> : tissu imprimé orné de <strong>scènes pastorales en monochrome</strong> (rouge, bleu, vert). Innovation technique : <strong>impression sur cuivre</strong> permettant des motifs très fins. La manufacture employait jusqu'à <strong>1 300 ouvriers</strong>. <strong>Anobli par Louis XVI</strong> en 1787 et par Napoléon en 1810.",
+            "La <strong>rue Oberkampf</strong> (et environs : rue Saint-Maur, rue Jean-Pierre Timbaud) est l'un des <strong>hauts lieux de la vie nocturne parisienne</strong> depuis les années 1990. Bars, restaurants, salles de concert. Quartier festif et alternatif emblématique du 11e."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Oberkampf ?",
+            "answer": "<strong>M5</strong> (1907) et <strong>M9</strong> (1933). Bus 56, 96."
+        },
+        {
+            "question": "Qui est Oberkampf ?",
+            "answer": "<strong>Christophe-Philippe Oberkampf</strong> (1738-1815), <strong>industriel français d'origine allemande</strong>. <strong>Fondateur de la manufacture de Jouy-en-Josas</strong> (1760), célèbre pour sa <strong>Toile de Jouy</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la Toile de Jouy ?",
+            "answer": "<strong>Tissu imprimé orné de scènes pastorales en monochrome</strong> (rouge, bleu, vert). Innovation : <strong>impression sur cuivre</strong> pour motifs très fins. Manufacture de Jouy-en-Josas (1760)."
+        },
+        {
+            "question": "Pourquoi le quartier est-il festif ?",
+            "answer": "La <strong>rue Oberkampf</strong> est l'un des hauts lieux de la <strong>vie nocturne parisienne</strong> depuis les années 1990. Bars, restaurants, salles de concert."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M5 vers République + M11</strong> : ~8 min."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1907/1933."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Rue Oberkampf</strong> — vie nocturne du 11e.",
+        "Pour <strong>République</strong> : M5 directe (2 stations).",
+        "Pour <strong>Bastille</strong> : M5 directe (2 stations).",
+        "Pour <strong>Père-Lachaise</strong> : M9 directe.",
+        "Quartier festif jeune."
+    ],
+    "trivia": [
+        {
+            "icon": "👔",
+            "title": "Oberkampf et la Toile de Jouy (1760)",
+            "content": "<strong>Christophe-Philippe Oberkampf</strong> (1738-1815), <strong>industriel français d'origine allemande (Bavière)</strong>. <strong>Fondateur de la manufacture de Jouy-en-Josas</strong> en <strong>1760</strong>, célèbre pour sa <strong>Toile de Jouy</strong>. Tissu imprimé orné de <strong>scènes pastorales en monochrome</strong> (rouge, bleu, vert). Innovation technique : <strong>impression sur cuivre</strong> permettant des motifs très fins. La manufacture employait jusqu'à <strong>1 300 ouvriers</strong>. <strong>Anobli par Louis XVI en 1787</strong> et par Napoléon en 1810. La Toile de Jouy reste un classique du textile d'ameublement français."
+        },
+        {
+            "icon": "🌃",
+            "title": "Rue Oberkampf — vie nocturne emblématique du 11e",
+            "content": "La <strong>rue Oberkampf</strong> (et les rues voisines : Saint-Maur, Jean-Pierre Timbaud, Saint-Sébastien) est l'un des <strong>hauts lieux de la vie nocturne parisienne</strong> depuis les années 1990. <strong>Bars</strong>, <strong>restaurants</strong>, <strong>salles de concert</strong>. <strong>Café Charbon</strong>, <strong>Le Nouveau Casino</strong>, <strong>Les Trois Mailletz</strong>. Devient le <strong>cœur de la scène alternative</strong> et indé parisienne. Aujourd'hui : quartier festif jeune, gentrification progressive."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Oberkampf → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-republique/"
+        },
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Oberkampf → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-bastille/"
+        },
+        {
+            "destination_name": "Père-Lachaise via M9",
+            "destination_slug": "pere-lachaise",
+            "destination_full_name": "Oberkampf → Père-Lachaise",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 direction Mairie de Montreuil",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-pere-lachaise/"
+        },
+        {
+            "destination_name": "Châtelet via M5 + M11",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Oberkampf → Châtelet",
+            "lines_used": [
+                "M5 + M11"
+            ],
+            "lines_label": "M5 → République + M11",
+            "duration_minutes": 8,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-chatelet/"
+        },
+        {
+            "destination_name": "Stalingrad via M5",
+            "destination_slug": "stalingrad",
+            "destination_full_name": "Oberkampf → Stalingrad",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-stalingrad/"
+        },
+        {
+            "destination_name": "Rue Oberkampf (vie nocturne)",
+            "destination_slug": "rue-oberkampf",
+            "destination_full_name": "Oberkampf → Rue Oberkampf (vie nocturne)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-oberkampf/oberkampf-vers-rue-oberkampf/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q810700",
+            "name": "Bataclan",
+            "category": "site notable",
+            "description": "Le Bataclan, qui s'appelait à l'origine Le Grand Café Chinois-Théâtre Ba-ta-clan, est une salle de spectacle parisienne édifiée par l'architecte Charles Duval en 1864 et située au 50, boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+            "latitude": 48.863056,
+            "longitude": 2.370833,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. Oberkampf",
+                "distance_m": 120,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 692,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q175055",
+            "name": "place de la République",
+            "category": "place",
+            "description": "La place de la République est une place de 3,4 ha située à la limite des 3e, 10e et 11e arrondissements de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%202017-12-01%20-%20Place%20de%20la%20R%C3%A9publique%20-%205517.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Paris)",
+            "latitude": 48.867278,
+            "longitude": 2.364056,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 311,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1067494",
+            "name": "tour du Temple",
+            "category": "palais",
+            "description": "La tour du Temple et son enclos constituaient la maison du Temple, ancienne forteresse parisienne située dans le nord du Marais, au sein du 3e arrondissement de Paris, qui fut détruite en 1808.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoffbauer-Brezet-Temple1734.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_du_Temple",
+            "latitude": 48.86528,
+            "longitude": 2.36222,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 359,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1567798",
+            "name": "synagogue Nazareth",
+            "category": "synagogue",
+            "description": "La synagogue Nazareth est une synagogue du 3e arrondissement de Paris. C'est la plus ancienne des grandes synagogues de Paris. Elle est rattachée au Consistoire central israélite de France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Syna%20Nazareth.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Nazareth",
+            "latitude": 48.866853,
+            "longitude": 2.360128,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 539,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2626611",
+            "name": "église Saint-Ambroise",
+            "category": "église",
+            "description": "L'église Saint-Ambroise est une église du 11e arrondissement de Paris, nommée en l'honneur de saint Ambroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ambroise%2C%20Square%20des%20Moines%20de%20Tibhirine%2C%20Paris%2021%20January%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ambroise_de_Paris",
+            "latitude": 48.86131,
+            "longitude": 2.37606,
+            "nearest_exit": {
+                "number": "4",
+                "name": "r. Oberkampf",
+                "distance_m": 538,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1629790",
+            "name": "église Sainte-Élisabeth-de-Hongrie",
+            "category": "église",
+            "description": "L'église Sainte-Élisabeth-de-Hongrie est un édifice religieux catholique situé à Paris, datant des XVIIe et XIXe siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20%C3%89glise%20Sainte-%C3%89lisabeth-de-Hongrie%20665.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-%C3%89lisabeth-de-Hongrie_de_Paris",
+            "latitude": 48.86611,
+            "longitude": 2.36052,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 491,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1093108",
+            "name": "cirque d'Hiver",
+            "category": "site notable",
+            "description": "Le cirque d'hiver de Paris, souvent appelé simplement le Cirque d'Hiver, ou encore le Cirque d'hiver Bouglione depuis son achat par la famille Bouglione en 1934, est une salle de spectacle située 110…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020056%20Paris%20XI%20Cirque%20d%27Hiver%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cirque_d%27Hiver_(Paris)",
+            "latitude": 48.863369,
+            "longitude": 2.367531,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 144,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q648708",
+            "name": "théâtre des Funambules",
+            "category": "théâtre",
+            "description": "Le théâtre des Funambules est une ancienne salle de spectacles parisienne située sur l’ancien boulevard du Temple, surnommé le « boulevard du crime ».",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TheatreFunambulesAdolpheMartialPotemont.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_des_Funambules",
+            "latitude": 48.867,
+            "longitude": 2.36474,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 254,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2942475",
+            "name": "cathédrale Sainte-Croix-Saint-Jean-des-Arméniens",
+            "category": "cathédrale",
+            "description": "La cathédrale Sainte-Croix de Paris des Arméniens, ancienne église Saint-Jean-Saint-François, est une cathédrale de culte catholique arménien située 13-15 rue du Perche, dans le 3e arrondissement de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cath%C3%A9drale%20Sainte-Croix%2C%20Paris%20-%20Front%20View.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Sainte-Croix_de_Paris_des_Arm%C3%A9niens",
+            "latitude": 48.860833,
+            "longitude": 2.360417,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 701,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1328599",
+            "name": "église Saint-Denys-du-Saint-Sacrement",
+            "category": "église",
+            "description": "L'église Saint-Denys-du-Saint-Sacrement est située au 68 ter, rue de Turenne, dans le 3e arrondissement de Paris. L’architecture néoclassique et la décoration en sont typiques du début du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint%20Denis%20Saint%20Sacrement%20-%20Paris%20III%20%28FR75%29%20-%202021-06-16%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Denys-du-Saint-Sacrement",
+            "latitude": 48.85997,
+            "longitude": 2.36523,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Voltaire",
+                "distance_m": 556,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3495070",
+            "name": "square du Temple - Elie Wiesel",
+            "category": "site notable",
+            "description": "Le square du Temple - Elie-Wiesel est un jardin parisien du 3e arrondissement, créé en 1857.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20du%20Temple%20%40%20Paris%20%2834253102842%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Temple_-_Elie-Wiesel",
+            "latitude": 48.8645,
+            "longitude": 2.36078,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Amelot",
+                "distance_m": 474,
+                "walk_minutes": 6
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Voltaire",
+            "address_full": "19 Rue de Malte 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.864465,
+            "longitude": 2.368569,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Jean-Pierre Timbaud",
+            "address_full": "19 Boulevard Voltaire 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.865447,
+            "longitude": 2.367343,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Amelot",
+            "address_full": "18 Boulevard Voltaire 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.865338,
+            "longitude": 2.367127,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. Oberkampf",
+            "address_full": "43 Boulevard Voltaire 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.863941,
+            "longitude": 2.369884,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/oberkampf/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Oberkampf (Métro 5, 9) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Oberkampf_Boulevard_Voltaire_-_Paris_XI_(FR75)_-_2022-01-15_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/oberkampf/oberkampf-400.avif",
+                "800": "/assets/img/stations/oberkampf/oberkampf-800.avif",
+                "1200": "/assets/img/stations/oberkampf/oberkampf-1200.avif",
+                "1600": "/assets/img/stations/oberkampf/oberkampf-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/oberkampf/oberkampf-400.webp",
+                "800": "/assets/img/stations/oberkampf/oberkampf-800.webp",
+                "1200": "/assets/img/stations/oberkampf/oberkampf-1200.webp",
+                "1600": "/assets/img/stations/oberkampf/oberkampf-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/oberkampf/oberkampf-400.jpg",
+                "800": "/assets/img/stations/oberkampf/oberkampf-800.jpg",
+                "1200": "/assets/img/stations/oberkampf/oberkampf-1200.jpg",
+                "1600": "/assets/img/stations/oberkampf/oberkampf-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1578030",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1578030",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Oberkampf_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

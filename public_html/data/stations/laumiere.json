@@ -1,0 +1,552 @@
+{
+    "published": true,
+    "slug": "laumiere",
+    "name": "Laumière",
+    "name_full": "Laumière (Métro 5)",
+    "arrondissement": "19e (Paris)",
+    "address": "Av. de Laumière, 75019 Paris",
+    "latitude": 48.88483086655546,
+    "longitude": 2.3796895517120946,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "60"
+        ],
+        "nocturne": [
+            "N13",
+            "N41",
+            "N45"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 7,
+            "nearby_count": 4
+        }
+    },
+    "seo": {
+        "description": "Station Laumière : M5 dans le 19e arr., avenue de Laumière. Général Boudet de Laumière (1814-1863). Quartier résidentiel."
+    },
+    "hero": {
+        "tagline": "M5 — Général Boudet de Laumière",
+        "description": "Station <strong>Laumière</strong> ouverte le <strong>12 octobre 1942</strong> avec le prolongement M5. Située dans le <strong>19e arrondissement</strong>, sur l'<strong>avenue de Laumière</strong>. Nommée d'après le <strong>général Boudet de Laumière</strong> (1814-1863), mort à la guerre du Mexique."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Ourcq",
+                "slug": "ourcq",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Jaurès",
+                "slug": "jaures",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Laumière</strong> est située dans le <strong>19e arrondissement de Paris</strong>, sur l'<strong>avenue de Laumière</strong>. Elle est desservie par la <strong>M5</strong>, entre <strong>Ourcq</strong> (1 station nord) et <strong>Jaurès</strong> (1 station sud, M2+M5+M7bis). Bus 60.",
+        "Ouverte le <strong>12 octobre 1942</strong> avec le prolongement de la M5.",
+        "Le nom <strong>Laumière</strong> commémore le <strong>général François Pierre Boudet de Laumière</strong> (1814-1863), général français mort à la <strong>guerre du Mexique</strong> (1862-1867, intervention de Napoléon III). Quartier résidentiel calme du 19e."
+    ],
+    "history": {
+        "title": "1942 : M5, et le général de Laumière (Mexique 1863)",
+        "paragraphs": [
+            "La station est inaugurée le <strong>12 octobre 1942</strong> avec le prolongement M5.",
+            "Le nom commémore le <strong>général François Pierre Boudet de Laumière</strong> (1814-1863). <strong>Général français</strong>, <strong>mort à la guerre du Mexique</strong> le 5 mai 1863 lors de la <strong>bataille de Camerone</strong>.",
+            "La <strong>guerre du Mexique</strong> (1862-1867) était une <strong>intervention militaire française</strong> sous <strong>Napoléon III</strong> pour soutenir l'<strong>empire mexicain de Maximilien Ier</strong> (frère de François-Joseph d'Autriche) contre les républicains de Benito Juárez. Échec total : Maximilien fusillé en 1867. La <strong>bataille de Camerone</strong> (30 avril 1863) est devenue une <strong>fête tradition de la Légion étrangère</strong>.",
+            "Quartier résidentiel calme du 19e. Tour Pyramides à proximité."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Laumière ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "Qui est Laumière ?",
+            "answer": "<strong>Général François Pierre Boudet de Laumière</strong> (1814-1863), <strong>général français mort à la guerre du Mexique</strong> le 5 mai 1863. Intervention française sous Napoléon III."
+        },
+        {
+            "question": "Comment aller à République ?",
+            "answer": "<strong>M5 directe</strong> : ~8 min."
+        },
+        {
+            "question": "Comment aller à Jaurès (canal Ourcq) ?",
+            "answer": "<strong>M5 directe</strong> : 1 station vers le sud."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1942."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Jaurès</strong> (canal Ourcq + M2+M7bis) : M5 directe (1 station).",
+        "Pour <strong>République</strong> : M5 directe (~8 min).",
+        "Pour <strong>Parc de la Villette</strong> : M5 directe (2 stations).",
+        "Quartier résidentiel calme — commerces locaux."
+    ],
+    "trivia": [
+        {
+            "icon": "⚔️",
+            "title": "Général Boudet de Laumière — mort à Camerone (1863)",
+            "content": "<strong>Général François Pierre Boudet de Laumière</strong> (1814-1863), <strong>général français mort à la guerre du Mexique</strong> le 5 mai 1863, en lien avec la célèbre <strong>bataille de Camerone</strong> (30 avril 1863). La <strong>guerre du Mexique</strong> (1862-1867) était une <strong>intervention militaire française</strong> sous <strong>Napoléon III</strong> pour soutenir l'<strong>empire mexicain de Maximilien Ier</strong>. Échec total : Maximilien fusillé en 1867. La <strong>bataille de Camerone</strong> est devenue une <strong>fête tradition de la Légion étrangère</strong> (62 légionnaires contre 2 000 Mexicains)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Jaurès via M5",
+            "destination_slug": "jaures",
+            "destination_full_name": "Laumière → Jaurès",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-jaures/"
+        },
+        {
+            "destination_name": "Ourcq via M5",
+            "destination_slug": "ourcq",
+            "destination_full_name": "Laumière → Ourcq",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-ourcq/"
+        },
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Laumière → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-republique/"
+        },
+        {
+            "destination_name": "Parc de la Villette via M5",
+            "destination_slug": "porte-de-pantin",
+            "destination_full_name": "Laumière → Parc de la Villette",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-porte-de-pantin/"
+        },
+        {
+            "destination_name": "Stalingrad via M5",
+            "destination_slug": "stalingrad",
+            "destination_full_name": "Laumière → Stalingrad",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-stalingrad/"
+        },
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Laumière → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-laumiere/laumiere-vers-bastille/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q532113",
+            "name": "parc des Buttes-Chaumont",
+            "category": "jardin",
+            "description": "Le parc des Buttes-Chaumont est un jardin public situé dans le 19e arrondissement de Paris, un secteur nord-est de Paris, en région française Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/070922%20Parce%20des%20Buttes%20Chaumont%20005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_des_Buttes-Chaumont",
+            "latitude": 48.880278,
+            "longitude": 2.382778,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 574,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2577891",
+            "name": "place de la Bataille-de-Stalingrad",
+            "category": "place",
+            "description": "La place de la Bataille-de-Stalingrad est une place située dans les 10e et 19e arrondissements de Paris, dans les quartiers de l'Hôpital-Saint-Louis et de la Villette.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rotonde%20de%20la%20Villette%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_Bataille-de-Stalingrad",
+            "latitude": 48.88367,
+            "longitude": 2.3697,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 717,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2972592",
+            "name": "cimetière des Juifs Portugais de Paris",
+            "category": "site notable",
+            "description": "Le cimetière des Juifs portugais de Paris ou cimetière israélite de la Villette est un ancien cimetière israélite, situé dans le quartier de la Villette, dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cimeti%C3%A8re%20juif%20portugais%20de%20la%20Villette%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cimeti%C3%A8re_des_Juifs_portugais_de_Paris",
+            "latitude": 48.8867,
+            "longitude": 2.37306,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 495,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q16507940",
+            "name": "Belleville-Villette",
+            "category": "gare",
+            "description": "La gare de Belleville-Villette est une gare ferroviaire française disparue de la ligne de Petite Ceinture de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/EV%20-%20PARIS%20XIX%20-%20Station%20de%20Belleville-Villette.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Belleville-Villette",
+            "latitude": 48.8842,
+            "longitude": 2.38509,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de l'Ourcq",
+                "distance_m": 340,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3581825",
+            "name": "église Saint-Jacques-Saint-Christophe de la Villette",
+            "category": "église",
+            "description": "L'église Saint-Jacques-Saint-Christophe de la Villette, située 6, place de Bitche, entre le square Serge-Reggiani et la place de Joinville, dans le 19e arrondissement de Paris, est une église…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Jacques-et-Saint-Christophe%20de%20la%20Villette%2C%20fa%C3%A7ade%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jacques-Saint-Christophe_de_la_Villette",
+            "latitude": 48.8892,
+            "longitude": 2.37964,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 430,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3397562",
+            "name": "pont levant de la rue de Crimée",
+            "category": "pont",
+            "description": "Le pont levant de la rue de Crimée est un pont levant situé à l'intersection du bassin de la Villette et du canal de l'Ourcq, dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20levant%20de%20la%20rue%20de%20Crim%C3%A9e%202008.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_levant_de_la_rue_de_Crim%C3%A9e",
+            "latitude": 48.8883,
+            "longitude": 2.37944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 330,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3507993",
+            "name": "synagogue Michkenot Israël",
+            "category": "synagogue",
+            "description": "La synagogue Michkenot Israël, située 6 rue Jean-Nohain dans le 19e arrondissement de Paris, est une synagogue consistoriale de rite sfard.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/fe/Syna_Jean-Nohain-exterieur.JPG/330px-Syna_Jean-Nohain-exterieur.JPG",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Michkenot_Isra%C3%ABl",
+            "latitude": 48.8825,
+            "longitude": 2.373333,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 514,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3126067",
+            "name": "halle Secrétan",
+            "category": "site notable",
+            "description": "La halle Secrétan, appelé aussi marché Secrétan, est un marché couvert situé dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9%20Secr%C3%A9tan%2C%20Paris%20-%20Corner%20of%20Rue%20de%20Meaux%20et%20Rue%20Secr%C3%A9tan.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Halle_Secr%C3%A9tan",
+            "latitude": 48.881353,
+            "longitude": 2.373868,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 562,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3580253",
+            "name": "église Notre-Dame-de-l'Assomption-des-Buttes-Chaumont",
+            "category": "église",
+            "description": "L'église Notre-Dame-de-l'Assomption des Buttes-Chaumont est une église située rue de Meaux dans le 19e arrondissement de Paris, à proximité des Buttes-Chaumont. Elle dispose d'environ 600 places.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2019e%20%C3%89glise%20ND%20Assomption%20Buttes-Chaumont.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-l%27Assomption_des_Buttes-Chaumont",
+            "latitude": 48.884,
+            "longitude": 2.37833,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 125,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3580373",
+            "name": "église Notre-Dame-des-Foyers",
+            "category": "église",
+            "description": "L'église Notre-Dame-des-Foyers est une église catholique située rue de Tanger dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-des-Foyers.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-des-Foyers",
+            "latitude": 48.8869,
+            "longitude": 2.36984,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. Jean Jaurès",
+                "distance_m": 727,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3581610",
+            "name": "église Saint-Georges de la Villette",
+            "category": "église",
+            "description": "L’église Saint-Georges de la Villette est une église catholique située 112-114 avenue Simon-Bolivar dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Georges%20de%20la%20Villette.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Georges_de_la_Villette",
+            "latitude": 48.8795,
+            "longitude": 2.37475,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Meaux",
+                "distance_m": 689,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3584965",
+            "name": "église Sainte-Colette des Buttes-Chaumont",
+            "category": "église",
+            "description": "L’église Sainte-Colette des Buttes-Chaumont est une église paroissiale de l’Église catholique située allée Darius-Milhaud dans le 19e arrondissement de Paris en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Sainte-Colette-des-Buttes-Chaumont%20December%202%2C%202012%20n2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Colette_des_Buttes-Chaumont",
+            "latitude": 48.8839,
+            "longitude": 2.38656,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Lunéville",
+                "distance_m": 350,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. Jean Jaurès",
+            "address_full": "89 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.885332,
+            "longitude": 2.379498,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. de Lunéville",
+            "address_full": "146 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.887043,
+            "longitude": 2.386814,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. de Laumière",
+            "address_full": "34 Avenue de Laumière 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.885018,
+            "longitude": 2.379529,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de l'Ourcq",
+            "address_full": "157b Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.887131,
+            "longitude": 2.386404,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. de Meaux",
+            "address_full": "41 Avenue de Laumière 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.884918,
+            "longitude": 2.379325,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Adolphe Mille",
+            "address_full": "161 Avenue Jean Jaurès 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.88725,
+            "longitude": 2.386839,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/laumiere/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Laumière (Métro 5) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Laumi%C3%A8re_M%C3%A9tro_Paris_Avenue_Laumi%C3%A8re_-_Paris_XIX_(FR75)_-_2025-10-15_-_4.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/laumiere/laumiere-400.avif",
+                "800": "/assets/img/stations/laumiere/laumiere-800.avif",
+                "1200": "/assets/img/stations/laumiere/laumiere-1200.avif",
+                "1600": "/assets/img/stations/laumiere/laumiere-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/laumiere/laumiere-400.webp",
+                "800": "/assets/img/stations/laumiere/laumiere-800.webp",
+                "1200": "/assets/img/stations/laumiere/laumiere-1200.webp",
+                "1600": "/assets/img/stations/laumiere/laumiere-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/laumiere/laumiere-400.jpg",
+                "800": "/assets/img/stations/laumiere/laumiere-800.jpg",
+                "1200": "/assets/img/stations/laumiere/laumiere-1200.jpg",
+                "1600": "/assets/img/stations/laumiere/laumiere-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1572249",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1572249",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Laumi%C3%A8re_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

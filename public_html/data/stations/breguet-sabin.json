@@ -1,0 +1,513 @@
+{
+    "published": true,
+    "slug": "breguet-sabin",
+    "name": "Bréguet-Sabin",
+    "name_full": "Bréguet-Sabin (Métro 5)",
+    "arrondissement": "11e (Paris)",
+    "address": "Bd Richard Lenoir / rue Bréguet, 75011 Paris",
+    "latitude": 48.856230444283455,
+    "longitude": 2.3702647985546683,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "29",
+            "69",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 4,
+            "nearby_count": 19
+        }
+    },
+    "seo": {
+        "description": "Station Bréguet - Sabin : M5 dans le 11e arr. Abraham Louis Breguet horloger genevois et Joseph Sabin avocat. Quartier Bastille."
+    },
+    "hero": {
+        "tagline": "M5 — Bréguet horloger et Sabin avocat",
+        "description": "Station <strong>Bréguet - Sabin</strong> dans le <strong>11e arrondissement</strong>, sur le boulevard Richard-Lenoir. Desservie par la <strong>M5</strong>, ouverte le <strong>17 décembre 1907</strong>. Nommée d'après <strong>Abraham Louis Breguet</strong> (1747-1823), <strong>horloger genevois</strong> mondialement célèbre, et <strong>Joseph Sabin</strong>, avocat parisien."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Richard-Lenoir",
+                "slug": "richard-lenoir",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Bastille",
+                "slug": "bastille",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Bréguet - Sabin</strong> est située dans le <strong>11e arrondissement de Paris</strong>, sur le <strong>boulevard Richard-Lenoir</strong> à l'intersection avec la rue Bréguet. Elle est desservie par la <strong>M5</strong>, entre <strong>Richard-Lenoir</strong> (1 station nord) et <strong>Bastille</strong> (1 station sud). Bus 56, 91.",
+        "Ouverte le <strong>17 décembre 1907</strong> avec la M5 originelle.",
+        "Le nom <strong>Bréguet</strong> commémore <strong>Abraham Louis Breguet</strong> (1747-1823), <strong>horloger genevois</strong> mondialement célèbre, installé à Paris. <strong>Inventeur de plusieurs mécanismes horlogers majeurs</strong>. <strong>Sabin</strong> commémore <strong>Joseph Sabin</strong>, avocat parisien."
+    ],
+    "history": {
+        "title": "1907 : M5, Bréguet horloger mythique",
+        "paragraphs": [
+            "La station <strong>Bréguet - Sabin</strong> ouvre le <strong>17 décembre 1907</strong> avec la M5 originelle (Gare du Nord ↔ Place Mazas).",
+            "<strong>Abraham Louis Breguet</strong> (1747-1823), <strong>horloger genevois</strong>, est l'un des <strong>plus grands horlogers de l'histoire</strong>. <strong>Né à Neuchâtel (Suisse)</strong>, installé à Paris dès 1762.",
+            "<strong>Inventions majeures</strong> : <strong>tourbillon</strong> (1801, brevet) — mécanisme compensant la gravité ; <strong>spiral plat</strong> ; <strong>échappement à chronomètre</strong> ; <strong>répétitions minutes</strong> à gong ; <strong>aiguilles Breguet</strong> (style spécifique). <strong>Horloger officiel</strong> de la <strong>famille royale de France</strong> sous Louis XVI, puis de <strong>Napoléon</strong>, puis des Bourbons.",
+            "<strong>Maison Breguet</strong> fondée en 1775, encore active aujourd'hui (propriété du <strong>groupe Swatch</strong> depuis 1999). <strong>Marque de référence</strong> de la haute horlogerie suisse mondiale.",
+            "<strong>Joseph Sabin</strong> (1830-1881), <strong>avocat parisien</strong>. Spécialisé dans la défense des prévenus politiques sous le Second Empire."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Bréguet - Sabin ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "Qui est Bréguet ?",
+            "answer": "<strong>Abraham Louis Breguet</strong> (1747-1823), <strong>horloger genevois mondialement célèbre</strong>. Installé à Paris dès 1762. <strong>Inventions</strong> : tourbillon (1801), spiral plat, échappement chronomètre. <strong>Horloger officiel de la famille royale de France</strong>, puis de <strong>Napoléon</strong>."
+        },
+        {
+            "question": "Qui est Sabin ?",
+            "answer": "<strong>Joseph Sabin</strong> (1830-1881), <strong>avocat parisien</strong>. Spécialisé dans la défense des prévenus politiques sous le Second Empire."
+        },
+        {
+            "question": "La Maison Breguet existe-t-elle encore ?",
+            "answer": "<strong>Oui</strong>. <strong>Fondée en 1775</strong>, encore active aujourd'hui. Propriété du <strong>groupe Swatch</strong> depuis 1999. Marque de référence de la haute horlogerie suisse."
+        },
+        {
+            "question": "Comment aller à Bastille ?",
+            "answer": "<strong>M5 directe</strong> : 1 station (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1907."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Bastille</strong> : M5 directe (1 station).",
+        "Pour <strong>République</strong> : M5 directe (4 stations).",
+        "Pour <strong>Marché Bastille</strong> (Richard-Lenoir) : M5 directe (1 station).",
+        "Pour <strong>Oberkampf</strong> (vie nocturne) : M5 directe (2 stations).",
+        "Quartier 11e proche Bastille."
+    ],
+    "trivia": [
+        {
+            "icon": "⌚",
+            "title": "Abraham Louis Breguet — inventeur du tourbillon (1801)",
+            "content": "<strong>Abraham Louis Breguet</strong> (1747-1823), <strong>horloger genevois mondialement célèbre</strong>, est l'un des <strong>plus grands horlogers de l'histoire</strong>. <strong>Né à Neuchâtel (Suisse)</strong>, installé à Paris dès 1762. <strong>Inventions majeures</strong> : <strong>tourbillon</strong> (1801, brevet) — mécanisme compensant la gravité dans les montres ; <strong>spiral plat</strong> ; <strong>échappement à chronomètre</strong> ; <strong>répétitions minutes</strong> à gong ; <strong>aiguilles Breguet</strong> (style caractéristique). <strong>Horloger officiel</strong> de la <strong>famille royale de France</strong> sous Louis XVI, puis de <strong>Napoléon</strong>, puis des Bourbons. <strong>Maison Breguet</strong> fondée en 1775, encore active aujourd'hui (Swatch Group depuis 1999)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Bréguet-Sabin → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-bastille/"
+        },
+        {
+            "destination_name": "Richard-Lenoir via M5",
+            "destination_slug": "richard-lenoir",
+            "destination_full_name": "Bréguet-Sabin → Richard-Lenoir",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-richard-lenoir/"
+        },
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Bréguet-Sabin → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (4 stations)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-republique/"
+        },
+        {
+            "destination_name": "Oberkampf via M5",
+            "destination_slug": "oberkampf",
+            "destination_full_name": "Bréguet-Sabin → Oberkampf",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-oberkampf/"
+        },
+        {
+            "destination_name": "Quai de la Rapée via M5",
+            "destination_slug": "quai-de-la-rapee",
+            "destination_full_name": "Bréguet-Sabin → Quai de la Rapée",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-quai-de-la-rapee/"
+        },
+        {
+            "destination_name": "Marché Bastille (jeudis/dimanches)",
+            "destination_slug": "marche-bastille",
+            "destination_full_name": "Bréguet-Sabin → Marché Bastille (jeudis/dimanches)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-breguet-sabin/breguet-sabin-vers-marche-bastille/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1865480",
+            "name": "Bastille",
+            "category": "site notable",
+            "description": "La bastille Saint-Antoine, souvent appelée simplement la Bastille, et anciennement les fort et bastide Saint-Anthoine lez Paris, est une forteresse construite au XIVe siècle, à l'emplacement du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bastille%20Exterior%201790%20or%201791.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bastille",
+            "latitude": 48.853333,
+            "longitude": 2.369167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 262,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q810700",
+            "name": "Bataclan",
+            "category": "site notable",
+            "description": "Le Bataclan, qui s'appelait à l'origine Le Grand Café Chinois-Théâtre Ba-ta-clan, est une salle de spectacle parisienne édifiée par l'architecte Charles Duval en 1864 et située au 50, boulevard…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+            "latitude": 48.863056,
+            "longitude": 2.370833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Saint-Sabin",
+                "distance_m": 722,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q638423",
+            "name": "opéra Bastille",
+            "category": "théâtre",
+            "description": "L'opéra Bastille est une salle d'opéra moderne située sur la place de la Bastille à Paris.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Bastille",
+            "latitude": 48.851944,
+            "longitude": 2.370556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 412,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q898629",
+            "name": "place des Vosges",
+            "category": "place",
+            "description": "La place des Vosges, anciennement place Royale, car initialement dédiée au roi Henri IV et finalement, après l'assassinat du roi par François Ravaillac, dédiée à son fils Louis XIII, est une place de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20PlaceDesVosges%20NordNordEst.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Vosges",
+            "latitude": 48.855556,
+            "longitude": 2.365556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 323,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Le musée Picasso est le musée national français consacré à la vie et à l'œuvre de Pablo Picasso ainsi qu'aux artistes qui lui furent liés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Saint-Sabin",
+                "distance_m": 679,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q640447",
+            "name": "musée Carnavalet",
+            "category": "musée",
+            "description": "Le musée Carnavalet - Histoire de Paris est le musée municipal parisien consacré à l'histoire de Paris des origines de la ville à nos jours.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnavalet%20Par%C3%ADs%2010.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Carnavalet",
+            "latitude": 48.857375,
+            "longitude": 2.362745,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 563,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2060889",
+            "name": "coulée verte René-Dumont",
+            "category": "site notable",
+            "description": "La coulée verte René-Dumont, anciennement Promenade plantée, est une voie verte et un parc linéaire du 12e arrondissement de Paris en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Promenade%20plant%C3%A9e%2C%20Paris%20August%202009%20%2810%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Coul%C3%A9e_verte_Ren%C3%A9-Dumont",
+            "latitude": 48.849572,
+            "longitude": 2.3711,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 679,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1643144",
+            "name": "hôtel de Sully",
+            "category": "site notable",
+            "description": "L'hôtel de Sully est un hôtel particulier entre cour et jardin de style Louis XIII, situé dans le quartier du Marais, dans le 4e arrondissement de Paris, au 62 rue Saint-Antoine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Sully%2007-2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Sully",
+            "latitude": 48.854583,
+            "longitude": 2.363778,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 468,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2599177",
+            "name": "maison de Victor Hugo",
+            "category": "musée",
+            "description": "Maisons de Victor Hugo est un musée monographique parisien, situé au 6, place des Vosges, dans le 4e arrondissement, qui préserve l’ancien hôtel de Rohan-Guémené où Victor Hugo loua l'appartement au…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PARIS%20Place%20des%20Vosges%2C%20Maison%20de%20Victor%20Hugo%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_Victor_Hugo",
+            "latitude": 48.854722,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 300,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1572452",
+            "name": "musée Cognacq-Jay",
+            "category": "musée",
+            "description": "Le musée Cognacq-Jay est un musée municipal de la Ville de Paris présentant une collection d'œuvres et d'objets d'art du XVIIIe siècle issue du legs d'Ernest Cognacq.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Lazare-Rachline%2C%20Paris%209%20June%202017%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Cognacq-Jay",
+            "latitude": 48.858194,
+            "longitude": 2.361389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Saint-Sabin",
+                "distance_m": 682,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1247969",
+            "name": "église Saint-Paul-Saint-Louis de Paris",
+            "category": "église",
+            "description": "L'église Saint-Paul-Saint-Louis, précédemment appelée église Saint-Louis-des-Jésuites, située dans le quartier du Marais à Paris, est une église catholique construite au XVIIe siècle par les…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Paul-Saint-Louis%202023-04-04.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Paul-Saint-Louis",
+            "latitude": 48.854672,
+            "longitude": 2.361558,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. du Pasteur Wagner",
+                "distance_m": 625,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2626611",
+            "name": "église Saint-Ambroise",
+            "category": "église",
+            "description": "L'église Saint-Ambroise est une église du 11e arrondissement de Paris, nommée en l'honneur de saint Ambroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ambroise%2C%20Square%20des%20Moines%20de%20Tibhirine%2C%20Paris%2021%20January%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ambroise_de_Paris",
+            "latitude": 48.86131,
+            "longitude": 2.37606,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Saint-Sabin",
+                "distance_m": 671,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. Saint-Sabin",
+            "address_full": "21 Boulevard Richard Lenoir 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.856569,
+            "longitude": 2.370382,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. du Pasteur Wagner",
+            "address_full": "9 Boulevard Richard Lenoir 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.855631,
+            "longitude": 2.36997,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/breguet-sabin/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Bréguet-Sabin (Métro 5) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Br%C3%A9guet_Sabin_M%C3%A9tro_Paris_Boulevard_Richard_Lenoir_-_Paris_XI_(FR75)_-_2025-10-31_-_8.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/breguet-sabin/breguet-sabin-400.avif",
+                "800": "/assets/img/stations/breguet-sabin/breguet-sabin-800.avif",
+                "1200": "/assets/img/stations/breguet-sabin/breguet-sabin-1200.avif",
+                "1600": "/assets/img/stations/breguet-sabin/breguet-sabin-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/breguet-sabin/breguet-sabin-400.webp",
+                "800": "/assets/img/stations/breguet-sabin/breguet-sabin-800.webp",
+                "1200": "/assets/img/stations/breguet-sabin/breguet-sabin-1200.webp",
+                "1600": "/assets/img/stations/breguet-sabin/breguet-sabin-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/breguet-sabin/breguet-sabin-400.jpg",
+                "800": "/assets/img/stations/breguet-sabin/breguet-sabin-800.jpg",
+                "1200": "/assets/img/stations/breguet-sabin/breguet-sabin-1200.jpg",
+                "1600": "/assets/img/stations/breguet-sabin/breguet-sabin-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    }
+}

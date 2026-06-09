@@ -1,0 +1,527 @@
+{
+    "published": true,
+    "slug": "hoche",
+    "name": "Hoche",
+    "name_full": "Hoche (Métro 5)",
+    "arrondissement": "Pantin (93)",
+    "address": "Av. Édouard-Vaillant, 93500 Pantin",
+    "latitude": 48.89132806364068,
+    "longitude": 2.401949999647263,
+    "tariff_zone": 2,
+    "tariff_zone_context": "Seine-Saint-Denis (93), zone tarifaire 2",
+    "commune": "Pantin",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N13",
+            "N41",
+            "N45"
+        ],
+        "regional": [
+            "75",
+            "151",
+            "170",
+            "330",
+            "P'TIT BUS"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 4,
+            "nearby_count": 14
+        }
+    },
+    "seo": {
+        "description": "Station Hoche : M5 à Pantin (93). Nommée d'après le général Lazare Hoche (1768-1797), général de la Révolution française."
+    },
+    "hero": {
+        "tagline": "M5 — Général Hoche (1768-1797)",
+        "description": "Station <strong>Hoche</strong> à <strong>Pantin</strong> (Seine-Saint-Denis, 93), ouverte le <strong>12 octobre 1942</strong> avec le prolongement M5. Nommée d'après <strong>Lazare Hoche</strong> (1768-1797), <strong>général de la Révolution française</strong>, l'un des plus brillants commandants militaires de son époque."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Église de Pantin",
+                "slug": "eglise-de-pantin",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Porte de Pantin",
+                "slug": "porte-de-pantin",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Hoche</strong> est située à <strong>Pantin</strong> (Seine-Saint-Denis, 93), sur l'avenue Édouard-Vaillant. Elle est desservie par la <strong>M5</strong>, entre <strong>Église de Pantin</strong> (1 station nord) et <strong>Porte de Pantin</strong> (1 station sud).",
+        "Ouverte le <strong>12 octobre 1942</strong> avec le prolongement de la M5 vers Église de Pantin.",
+        "Le nom <strong>Hoche</strong> commémore <strong>Lazare Hoche</strong> (1768-1797), <strong>général de la Révolution française</strong>. <strong>Né dans une famille modeste</strong>, monté du rang grâce à la Révolution. <strong>Mort prématurément à 29 ans</strong> en 1797. Considéré comme l'un des <strong>plus brillants commandants militaires</strong> de son époque."
+    ],
+    "history": {
+        "title": "1942 : M5, et le général Hoche",
+        "paragraphs": [
+            "La station est inaugurée le <strong>12 octobre 1942</strong> avec le prolongement de la M5 vers Église de Pantin.",
+            "Le nom commémore <strong>Louis Lazare Hoche</strong> (1768-1797), <strong>général de la Révolution française</strong>. <strong>Né dans une famille modeste</strong> à Versailles. <strong>Soldat puis sergent</strong> avant la Révolution, monté au grade de <strong>général de division à 24 ans</strong> en 1793.",
+            "<strong>Succès militaires</strong> : <strong>pacification de la Vendée</strong> (1795-1796, fin de la guerre civile), <strong>campagne du Rhin</strong>, opérations en Irlande (échec lié à la tempête). <strong>Mort à 29 ans en 1797</strong>, probablement d'une <strong>tuberculose ou d'un empoisonnement</strong> (incertitude historique).",
+            "Considéré comme l'un des <strong>plus brillants commandants militaires</strong> de son époque, avant l'ascension de Bonaparte. <strong>Statue à Quiberon</strong> (Bretagne). Son nom est gravé sous l'<strong>Arc de Triomphe à Paris</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Hoche ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "Qui est Hoche ?",
+            "answer": "<strong>Louis Lazare Hoche</strong> (1768-1797), <strong>général de la Révolution française</strong>. Né dans une famille modeste, général à 24 ans. <strong>Pacificateur de la Vendée</strong>. Mort à 29 ans en 1797."
+        },
+        {
+            "question": "Pourquoi mort si jeune ?",
+            "answer": "À <strong>29 ans en 1797</strong>, probablement de <strong>tuberculose ou empoisonnement</strong> (incertitude historique). Considéré comme l'un des plus brillants généraux de son époque."
+        },
+        {
+            "question": "Comment aller à République ?",
+            "answer": "<strong>M5 directe</strong> : ~14 min."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1942."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>République</strong> : M5 directe (~14 min).",
+        "Pour <strong>Porte de Pantin</strong> (Parc de la Villette) : M5 directe (1 station).",
+        "Pour <strong>Bobigny - Pablo Picasso</strong> (terminus + T1) : M5 directe (3 stations).",
+        "Pour <strong>Bastille</strong> : M5 directe.",
+        "Zone tarifaire 2."
+    ],
+    "trivia": [
+        {
+            "icon": "⚔️",
+            "title": "Général Hoche — pacificateur de la Vendée à 29 ans",
+            "content": "<strong>Louis Lazare Hoche</strong> (1768-1797), <strong>général de la Révolution française</strong>. <strong>Né dans une famille modeste</strong> à Versailles. <strong>Soldat puis sergent</strong> avant la Révolution, monté au grade de <strong>général de division à 24 ans</strong> en 1793. <strong>Succès militaires</strong> : <strong>pacification de la Vendée</strong> (1795-1796, fin de la guerre civile), <strong>campagne du Rhin</strong>, opérations en Irlande. <strong>Mort à 29 ans en 1797</strong>, probablement de <strong>tuberculose ou d'un empoisonnement</strong>. Son nom est gravé sous l'<strong>Arc de Triomphe à Paris</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Porte de Pantin via M5",
+            "destination_slug": "porte-de-pantin",
+            "destination_full_name": "Hoche → Porte de Pantin",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-porte-de-pantin/"
+        },
+        {
+            "destination_name": "Église de Pantin via M5",
+            "destination_slug": "eglise-de-pantin",
+            "destination_full_name": "Hoche → Église de Pantin",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-eglise-de-pantin/"
+        },
+        {
+            "destination_name": "République via M5",
+            "destination_slug": "republique",
+            "destination_full_name": "Hoche → République",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-republique/"
+        },
+        {
+            "destination_name": "Bobigny - Pablo Picasso via M5",
+            "destination_slug": "bobigny-pablo-picasso",
+            "destination_full_name": "Hoche → Bobigny - Pablo Picasso",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 terminus nord",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-bobigny-pablo-picasso/"
+        },
+        {
+            "destination_name": "Place d'Italie via M5",
+            "destination_slug": "place-d-italie",
+            "destination_full_name": "Hoche → Place d'Italie",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 34,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-place-d-italie/"
+        },
+        {
+            "destination_name": "Stalingrad via M5",
+            "destination_slug": "stalingrad",
+            "destination_full_name": "Hoche → Stalingrad",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-hoche/hoche-vers-stalingrad/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q247566",
+            "name": "Zénith Paris",
+            "category": "site notable",
+            "description": "Le Zénith Paris - La Villette est une salle de concerts parisienne, située dans le parc de la Villette, dans le 19e arrondissement, sur le bord du canal de l'Ourcq.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Z%C3%A9nith%20de%20Paris%20-%20meeting%20Lutte%20Ouvri%C3%A8re%2015-04-2012%20-%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Z%C3%A9nith_Paris_-_La_Villette",
+            "latitude": 48.894167,
+            "longitude": 2.393333,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 699,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1094302",
+            "name": "musée de la Musique",
+            "category": "musée",
+            "description": "Le musée de la Musique de la Philharmonie de Paris est un musée français situé à Paris, inauguré en 1997.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cit%C3%A9%20de%20la%20musique%20%28121%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Musique_(Paris)",
+            "latitude": 48.88972,
+            "longitude": 2.39389,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 571,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q389716",
+            "name": "Pantin",
+            "category": "gare",
+            "description": "La gare de Pantin est une gare ferroviaire française de la ligne de Paris-Est à Mulhouse-Ville, située sur le territoire de la commune de Pantin, dans le département de la Seine-Saint-Denis, en…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20Pantin%20-%20Pantin%20%28FR93%29%20-%202021-04-25%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Pantin",
+            "latitude": 48.897778,
+            "longitude": 2.4,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Hoche",
+                "distance_m": 742,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3076267",
+            "name": "fontaine du Château d'eau",
+            "category": "palais",
+            "description": "La fontaine du Château d'eau, fontaine de Bondy, ou fontaine aux Lions de Nubie est une fontaine ornementale située place de la Fontaine-aux-Lions dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20du%20Ch%C3%A2teau%20d%27eau%20%28Pierre-Simon%20Girard%29%2C%202010-05-18%2005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_du_Ch%C3%A2teau_d%27eau_(Pierre-Simon_Girard)",
+            "latitude": 48.889556,
+            "longitude": 2.392278,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 690,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2105022",
+            "name": "porte de Pantin",
+            "category": "site notable",
+            "description": "La porte de Pantin est, aujourd'hui, une très importante porte de Paris, en France, située dans le quartier de la Villette dans le 19e arrondissement de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20de%20Pantin%20y%20peripherique.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Pantin",
+            "latitude": 48.8897,
+            "longitude": 2.39611,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2064737",
+            "name": "pavillon de Paris",
+            "category": "site notable",
+            "description": "Le Pavillon de Paris est une ancienne grande salle de concert désormais disparue du 19e arrondissement de Paris, installée près du métro de la Porte de Pantin sur le site des anciens abattoirs de la…",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_de_Paris",
+            "latitude": 48.892889,
+            "longitude": 2.393003,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 659,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3584959",
+            "name": "église Sainte-Claire de Paris",
+            "category": "église",
+            "description": "L'église Sainte-Claire  est une église catholique située au 179 boulevard Sérurier, dans le quartier de la Villette - porte de Pantin, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sainte-Claire%20Pantin.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Claire_de_Paris",
+            "latitude": 48.8888,
+            "longitude": 2.39511,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 522,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q21294369",
+            "name": "Paris-Bestiaux",
+            "category": "gare",
+            "description": "La gare de Paris-Bestiaux parfois appelée gare de La Villette, est une ancienne gare ferroviaire désaffectée à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abattoirs%20de%20la%20Villette%20-%20Train.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Bestiaux",
+            "latitude": 48.890651,
+            "longitude": 2.394464,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 515,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3398903",
+            "name": "porte Chaumont",
+            "category": "site notable",
+            "description": "La porte Chaumont est une porte de Paris, en France, située dans le quartier d'Amérique dans le 19e arrondissement de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1320893%20Paris%20XIX%20porte%20Chaumont%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Chaumont",
+            "latitude": 48.8864,
+            "longitude": 2.39415,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 734,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3162447",
+            "name": "jardin d'immeubles de la rue de la Marseillaise",
+            "category": "jardin",
+            "description": "Le jardin d'immeubles de la Rue-de-la-Marseillaise est un espace vert du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Immeubles%20Grenade%20Marseillaise%20Cheminet%20-%20Paris%20XIX%20%28FR75%29%20-%202025-04-24%20-%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_d%27immeubles_de_la_Rue-de-la-Marseillaise",
+            "latitude": 48.888,
+            "longitude": 2.39811,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 406,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3494947",
+            "name": "square de la Marseillaise",
+            "category": "site notable",
+            "description": "Le square de la Marseillaise est un square du 19e arrondissement de Paris dans le quartier d'Amérique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20de%20La%20Marseillaise%20%40%20Paris%20%2833548966030%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_de_la_Marseillaise",
+            "latitude": 48.8874,
+            "longitude": 2.39751,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Charles Nodier",
+                "distance_m": 486,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3397507",
+            "name": "pont du canal de l'Ourcq",
+            "category": "pont",
+            "description": "Le pont du canal de l'Ourcq est un pont franchissant le canal de l'Ourcq, à Paris. Il permet le passage de la ligne 3b du tramway d'Île-de-France (T3b).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tramway-line-T3B-in-Paris-near-canal-de-l%27Ourcq-DSC%200048.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_du_canal_de_l%27Ourcq",
+            "latitude": 48.896,
+            "longitude": 2.3968,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Hoche",
+                "distance_m": 660,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. Hoche",
+            "address_full": "55 Avenue Jean Lolive 93500 Pantin",
+            "postcode": "93500",
+            "city": "Pantin",
+            "latitude": 48.891276,
+            "longitude": 2.402271,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. du Pré-Saint-Gervais",
+            "address_full": "58 Avenue Jean Lolive 93500 Pantin",
+            "postcode": "93500",
+            "city": "Pantin",
+            "latitude": 48.891096,
+            "longitude": 2.402382,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Charles Nodier",
+            "address_full": "82 Rue Charles Nodier 93500 Pantin",
+            "postcode": "93500",
+            "city": "Pantin",
+            "latitude": 48.890894,
+            "longitude": 2.401498,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/hoche/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Hoche (Métro 5) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Hoche_M%C3%A9tro_Paris_Avenue_Jean_Lolive_-_Pantin_(FR93)_-_2025-10-15_-_3.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/hoche/hoche-400.avif",
+                "800": "/assets/img/stations/hoche/hoche-800.avif",
+                "1200": "/assets/img/stations/hoche/hoche-1200.avif",
+                "1600": "/assets/img/stations/hoche/hoche-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/hoche/hoche-400.webp",
+                "800": "/assets/img/stations/hoche/hoche-800.webp",
+                "1200": "/assets/img/stations/hoche/hoche-1200.webp",
+                "1600": "/assets/img/stations/hoche/hoche-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/hoche/hoche-400.jpg",
+                "800": "/assets/img/stations/hoche/hoche-800.jpg",
+                "1200": "/assets/img/stations/hoche/hoche-1200.jpg",
+                "1600": "/assets/img/stations/hoche/hoche-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q585712",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q585712",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Hoche_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

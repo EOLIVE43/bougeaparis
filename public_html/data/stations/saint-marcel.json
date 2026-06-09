@@ -1,0 +1,521 @@
+{
+    "published": true,
+    "slug": "saint-marcel",
+    "name": "Saint-Marcel",
+    "name_full": "Saint-Marcel (Métro 5)",
+    "arrondissement": "13e (Paris)",
+    "address": "Bd Saint-Marcel, 75013 Paris",
+    "latitude": 48.83907575035707,
+    "longitude": 2.3609465709574886,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "5",
+            "slug": "metro-5",
+            "color": "#FF7E2E",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "24",
+            "57",
+            "67",
+            "91"
+        ],
+        "nocturne": [
+            "N01",
+            "N02",
+            "N31"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 7
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Marcel : M5 dans le 13e arr., boulevard Saint-Marcel. Hôpital de la Pitié-Salpêtrière à 10 min. Quartier résidentiel 13e."
+    },
+    "hero": {
+        "tagline": "M5 — Pitié-Salpêtrière proche",
+        "description": "Station <strong>Saint-Marcel</strong> dans le <strong>13e arrondissement</strong>, sur le <strong>boulevard Saint-Marcel</strong>. Desservie par la <strong>M5</strong>, ouverte le <strong>17 décembre 1907</strong>. À <strong>10 min</strong> : l'<strong>hôpital de la Pitié-Salpêtrière</strong> (l'un des plus grands hôpitaux d'Europe)."
+    },
+    "adjacent_stations": {
+        "metro-5": {
+            "previous": {
+                "name": "Gare d'Austerlitz",
+                "slug": "gare-d-austerlitz",
+                "direction": "Bobigny - Pablo Picasso"
+            },
+            "next": {
+                "name": "Campo-Formio",
+                "slug": "campo-formio",
+                "direction": "Place d'Italie"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Marcel</strong> est située dans le <strong>13e arrondissement de Paris</strong>, sur le <strong>boulevard Saint-Marcel</strong>. Elle est desservie par la <strong>M5</strong>, entre <strong>Gare d'Austerlitz</strong> (1 station nord, M5+M10+RER C) et <strong>Campo-Formio</strong> (1 station sud). Bus 27, 47.",
+        "Ouverte le <strong>17 décembre 1907</strong> avec la M5 originelle.",
+        "Le nom <strong>Saint-Marcel</strong> commémore <strong>saint Marcel de Paris</strong> (IVe siècle), <strong>9e évêque de Paris</strong>. À <strong>10 min</strong> : l'<strong>hôpital de la Pitié-Salpêtrière</strong>, l'un des plus grands hôpitaux d'Europe (1656)."
+    ],
+    "history": {
+        "title": "1907 : M5, et la Pitié-Salpêtrière",
+        "paragraphs": [
+            "La station <strong>Saint-Marcel</strong> ouvre le <strong>17 décembre 1907</strong> avec la M5 originelle (Gare du Nord ↔ Place Mazas).",
+            "Le nom commémore <strong>saint Marcel de Paris</strong> (IVe siècle), <strong>9e évêque de Paris</strong>. <strong>Mort en 436</strong>. Patron secondaire de Paris (après sainte Geneviève).",
+            "À <strong>10 min à pied</strong> : l'<strong>hôpital de la Pitié-Salpêtrière</strong>, l'un des <strong>plus grands hôpitaux d'Europe</strong>. <strong>~85 000 m²</strong>, ~3 500 lits, ~12 000 personnels. <strong>Fondé en 1656</strong> par Louis XIV comme <strong>asile de la Pitié et de la Salpêtrière</strong> (réunissant 2 institutions distinctes en 1964).",
+            "<strong>Spécialités</strong> : neurologie (Charcot, Pinel), psychiatrie, gérontologie, transplantations. Hôpital universitaire (faculté de médecine Sorbonne Université). <strong>Pinel y libérera les aliénés de leurs chaînes en 1795</strong>. <strong>Charcot</strong> y enseigne la neurologie (1880s).",
+            "Le quartier autour est <strong>résidentiel populaire</strong> du 13e."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Saint-Marcel ?",
+            "answer": "Uniquement la <strong>M5</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la Pitié-Salpêtrière ?",
+            "answer": "L'<strong>un des plus grands hôpitaux d'Europe</strong>, à 10 min. <strong>Fondé en 1656</strong> par Louis XIV. <strong>~85 000 m², 3 500 lits, 12 000 personnels</strong>. Spécialités : neurologie, psychiatrie, transplantations."
+        },
+        {
+            "question": "Qui est saint Marcel ?",
+            "answer": "<strong>Saint Marcel de Paris</strong> (IVe siècle), <strong>9e évêque de Paris</strong>. Mort en 436. Patron secondaire de Paris."
+        },
+        {
+            "question": "Comment aller à Place d'Italie ?",
+            "answer": "<strong>M5 directe</strong> : 2 stations vers le sud (~4 min)."
+        },
+        {
+            "question": "Comment aller à Gare d'Austerlitz ?",
+            "answer": "<strong>M5 directe</strong> : 1 station (~2 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station 1907."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Hôpital de la Pitié-Salpêtrière</strong> à 10 min.",
+        "Pour <strong>Gare d'Austerlitz</strong> (gare SNCF) : M5 directe (1 station).",
+        "Pour <strong>Place d'Italie</strong> : M5 directe (2 stations).",
+        "Pour <strong>Jardin des Plantes</strong> : M5 jusqu'à Gare d'Austerlitz + à pied.",
+        "Quartier résidentiel populaire du 13e."
+    ],
+    "trivia": [
+        {
+            "icon": "🏥",
+            "title": "Hôpital Pitié-Salpêtrière (1656) — plus grand hôpital d'Europe",
+            "content": "À <strong>10 min</strong> de la station, l'<strong>hôpital de la Pitié-Salpêtrière</strong> est l'un des <strong>plus grands hôpitaux d'Europe</strong>. <strong>Fondé en 1656</strong> par <strong>Louis XIV</strong> comme <strong>asile de la Pitié</strong> et <strong>Salpêtrière</strong> (2 institutions réunies en 1964). <strong>~85 000 m²</strong>, <strong>~3 500 lits</strong>, <strong>~12 000 personnels</strong>. <strong>Spécialités</strong> : neurologie, psychiatrie, gérontologie, transplantations. Hôpital universitaire (Sorbonne Université). <strong>Pinel y libère les aliénés de leurs chaînes en 1795</strong> — événement fondateur de la psychiatrie. <strong>Charcot</strong> y enseigne la neurologie (1880s, hystérie, sclérose en plaques). <strong>Princesse Diana</strong> y meurt en 1997."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Pitié-Salpêtrière",
+            "destination_slug": "pitie-salpetriere",
+            "destination_full_name": "Saint-Marcel → Pitié-Salpêtrière",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-pitie-salpetriere/"
+        },
+        {
+            "destination_name": "Gare d'Austerlitz via M5",
+            "destination_slug": "gare-d-austerlitz",
+            "destination_full_name": "Saint-Marcel → Gare d'Austerlitz",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-gare-d-austerlitz/"
+        },
+        {
+            "destination_name": "Place d'Italie via M5",
+            "destination_slug": "place-d-italie",
+            "destination_full_name": "Saint-Marcel → Place d'Italie",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-place-d-italie/"
+        },
+        {
+            "destination_name": "Jardin des Plantes via M5 + à pied",
+            "destination_slug": "jardin-plantes",
+            "destination_full_name": "Saint-Marcel → Jardin des Plantes",
+            "lines_used": [
+                "M5 + à pied"
+            ],
+            "lines_label": "M5 → Austerlitz + 10 min",
+            "duration_minutes": 14,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-jardin-plantes/"
+        },
+        {
+            "destination_name": "Bastille via M5",
+            "destination_slug": "bastille",
+            "destination_full_name": "Saint-Marcel → Bastille",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Bobigny (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-bastille/"
+        },
+        {
+            "destination_name": "Campo-Formio via M5",
+            "destination_slug": "campo-formio",
+            "destination_full_name": "Saint-Marcel → Campo-Formio",
+            "lines_used": [
+                "M5"
+            ],
+            "lines_label": "M5 direction Place d'Italie (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-marcel/saint-marcel-vers-campo-formio/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q392564",
+            "name": "grande mosquée de Paris",
+            "category": "mosquée",
+            "description": "La grande mosquée de Paris (GMP) est une mosquée française construite dans le style hispano-mauresque avec un minaret de 33 mètres.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20Mosqu%C3%A9e%20de%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_mosqu%C3%A9e_de_Paris",
+            "latitude": 48.841944,
+            "longitude": 2.355,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 552,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q838691",
+            "name": "Muséum national d'histoire naturelle",
+            "category": "musée",
+            "description": "Le Muséum national d'histoire naturelle (MNHN) est un établissement français d'enseignement supérieur, de recherche et de diffusion de la culture scientifique naturaliste, membre de l'alliance…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grande%20galerie%20de%20l%27%C3%A9volution%2C%20Paris%2010%20April%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9um_national_d%27histoire_naturelle",
+            "latitude": 48.842222,
+            "longitude": 2.356111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 520,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q730948",
+            "name": "jardin des plantes de Paris",
+            "category": "jardin",
+            "description": "Le jardin des plantes de Paris, ou Jardin des plantes, situé dans le 5e arrondissement de Paris, est un parc à la fois botanique, écologique et zoologique, siège et principal site du Muséum national…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2075005%20Grande%20Galerie%20de%20l%27Evolution%2020070804.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_plantes_de_Paris",
+            "latitude": 48.843889,
+            "longitude": 2.359722,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 599,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q734017",
+            "name": "Paris-Austerlitz",
+            "category": "gare",
+            "description": "La gare de Paris-Austerlitz, dite aussi gare d'Austerlitz, anciennement appelée gare d'Orléans, est l'une des six grandes gares terminus de la Société nationale des chemins de fer français (SNCF) à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20d%27Austerlitz%20Fa%C3%A7ade%20Seine.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Austerlitz",
+            "latitude": 48.842222,
+            "longitude": 2.365833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 561,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q939883",
+            "name": "hôpital de la Salpêtrière",
+            "category": "hôpital",
+            "description": "L'hôpital de la Pitié-Salpêtrière est un hôpital de l'Assistance publique - Hôpitaux de Paris (AP-HP) situé 47-83, boulevard de l'Hôpital dans le 13e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000513%20Paris%20XIII%20Salpetri%C3%A8re%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_de_la_Salp%C3%AAtri%C3%A8re",
+            "latitude": 48.837,
+            "longitude": 2.365,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 349,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2307722",
+            "name": "pont d'Austerlitz",
+            "category": "pont",
+            "description": "Le pont d'Austerlitz est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Pont%20d%27Austerlitz%20and%20a%20Bateau%20Mouche%2C%20Paris%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_d%27Austerlitz",
+            "latitude": 48.845,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 828,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q2271703",
+            "name": "viaduc d'Austerlitz",
+            "category": "pont",
+            "description": "Le viaduc d'Austerlitz est un pont ferroviaire qui franchit la Seine à Paris (France), réalisé par la Société de construction de Levallois-Perret ; il est emprunté par les rames de la ligne 5 du…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20metro%20ligne%205%20Austerlitz%20dsc03829.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Viaduc_d%27Austerlitz",
+            "latitude": 48.843611,
+            "longitude": 2.367778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 771,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1196676",
+            "name": "pont Charles-de-Gaulle",
+            "category": "pont",
+            "description": "Le pont Charles-de-Gaulle est un pont franchissant la Seine à Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Charles-de-Gaulle%20Paris%20FRA%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Charles-de-Gaulle_(Paris)",
+            "latitude": 48.8425,
+            "longitude": 2.36889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 747,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q574970",
+            "name": "église Saint-Médard",
+            "category": "église",
+            "description": "L'église Saint-Médard est située au no 141 rue Mouffetard à Paris dans le 5e arrondissement, sur la rive gauche de la Seine, au sud-est de la montagne Sainte-Geneviève.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2010%20%C3%89glise%20Saint-M%C3%A9dard%20%28Paris%29%20%281%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-M%C3%A9dard_de_Paris",
+            "latitude": 48.83992,
+            "longitude": 2.350484,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 747,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1957702",
+            "name": "ménagerie du Jardin des plantes",
+            "category": "jardin",
+            "description": "La ménagerie du Jardin des plantes est un parc zoologique public du Muséum national d'histoire naturelle, situé à Paris dans le 5e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Herpeto5.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/M%C3%A9nagerie_du_Jardin_des_plantes",
+            "latitude": 48.845446,
+            "longitude": 2.360325,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 769,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1457391",
+            "name": "galerie de Paléontologie et d'Anatomie comparée",
+            "category": "musée",
+            "description": "La galerie de Paléontologie et d'Anatomie comparée, au pluriel galeries d'Anatomie comparée et de Paléontologie, est l'une des galeries du Muséum national d'histoire naturelle (MNHN).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris-Jardin%20des%20Plantes-102-Museum%20national%20d%27histoire%20naturelle-2017-gje.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Galerie_de_Pal%C3%A9ontologie_et_d%27Anatomie_compar%C3%A9e",
+            "latitude": 48.841086,
+            "longitude": 2.356012,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. des Wallons",
+                "distance_m": 433,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2974772",
+            "name": "cité de la mode et du design",
+            "category": "commerce",
+            "description": "Les Docks - La Cité de la mode et du design, est un bâtiment situé à l'emplacement des anciens magasins généraux quai d'Austerlitz, à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Les%20Docks%20-%20Cit%C3%A9%20de%20la%20Mode%20et%20du%20Design%20%2823192974366%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Les_Docks,_cit%C3%A9_de_la_mode_et_du_design",
+            "latitude": 48.841111,
+            "longitude": 2.369722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd de l'Hôpital",
+                "distance_m": 720,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd de l'Hôpital",
+            "address_full": "85 Boulevard de l'Hôpital 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.838441,
+            "longitude": 2.360764,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. des Wallons",
+            "address_full": "54 Boulevard de l'Hôpital 75013 Paris",
+            "postcode": "75013",
+            "city": "Paris",
+            "latitude": 48.838529,
+            "longitude": 2.360476,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/saint-marcel/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Saint-Marcel (Métro 5) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Saint_Marcel_Boulevard_H%C3%B4pital_-_Paris_XIII_(FR75)_-_2022-01-15_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-marcel/saint-marcel-400.avif",
+                "800": "/assets/img/stations/saint-marcel/saint-marcel-800.avif",
+                "1200": "/assets/img/stations/saint-marcel/saint-marcel-1200.avif",
+                "1600": "/assets/img/stations/saint-marcel/saint-marcel-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-marcel/saint-marcel-400.webp",
+                "800": "/assets/img/stations/saint-marcel/saint-marcel-800.webp",
+                "1200": "/assets/img/stations/saint-marcel/saint-marcel-1200.webp",
+                "1600": "/assets/img/stations/saint-marcel/saint-marcel-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-marcel/saint-marcel-400.jpg",
+                "800": "/assets/img/stations/saint-marcel/saint-marcel-800.jpg",
+                "1200": "/assets/img/stations/saint-marcel/saint-marcel-1200.jpg",
+                "1600": "/assets/img/stations/saint-marcel/saint-marcel-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q587093",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q587093",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Marcel_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
