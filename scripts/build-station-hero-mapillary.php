@@ -21,11 +21,11 @@ error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
  * Sortie JSON sur stdout pour permettre agregation/log par le caller.
  */
 
-const RADIUS_M       = 100;
+const RADIUS_M       = 300;
 const HERO_WIDTHS    = [400, 800, 1200, 1600];
-const OSM_W          = 1200;
-const OSM_H          = 675;
-const OSM_ZOOM       = 16;
+const FALLBACK_W     = 1200;
+const FALLBACK_H     = 675;
+const ESRI_ZOOM      = 17;
 const HERO_RATIO_W   = 16;
 const HERO_RATIO_H   = 9;
 
@@ -162,21 +162,60 @@ function pick_best_mapillary(array $images, float $lat, float $lon): ?array {
 }
 
 // ------------------------------------------------------------------
-// OSM Wikimedia Maps staticmap (fallback)
+// ESRI World Imagery satellite (fallback) — mosaique de tiles XYZ
 // ------------------------------------------------------------------
 
-function fetch_osm_staticmap(float $lat, float $lon, string $dest): bool {
-    $url = sprintf('https://maps.wikimedia.org/img/osm-intl,%d,%.6f,%.6f,%dx%d.png?lang=fr',
-        OSM_ZOOM, $lat, $lon, OSM_W, OSM_H);
-    return http_download($url, $dest);
+function lonlat_to_pixel(float $lon, float $lat, int $zoom): array {
+    $n  = pow(2, $zoom);
+    $px = (($lon + 180) / 360) * $n * 256;
+    $lat_rad = deg2rad($lat);
+    $py = (1 - log(tan($lat_rad) + 1 / cos($lat_rad)) / M_PI) / 2 * $n * 256;
+    return [$px, $py];
+}
+
+/**
+ * Compose un canvas FALLBACK_W x FALLBACK_H centre sur (lat, lon) en mosaiquant
+ * des tiles 256x256 ESRI World Imagery (Web Mercator XYZ).
+ * Retourne le nombre de tiles fetched.
+ */
+function fetch_esri_satellite(float $lat, float $lon, string $dest): int {
+    $w = FALLBACK_W; $h = FALLBACK_H; $z = ESRI_ZOOM;
+    [$cx, $cy] = lonlat_to_pixel($lon, $lat, $z);
+    $left   = $cx - $w / 2;
+    $top    = $cy - $h / 2;
+    $right  = $left + $w;
+    $bottom = $top + $h;
+    $tile_x_start = (int) floor($left   / 256);
+    $tile_y_start = (int) floor($top    / 256);
+    $tile_x_end   = (int) floor(($right  - 1) / 256);
+    $tile_y_end   = (int) floor(($bottom - 1) / 256);
+
+    $canvas = imagecreatetruecolor($w, $h);
+    $fetched = 0;
+    for ($tx = $tile_x_start; $tx <= $tile_x_end; $tx++) {
+        for ($ty = $tile_y_start; $ty <= $tile_y_end; $ty++) {
+            $url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/$z/$ty/$tx";
+            $tmp = tempnam(sys_get_temp_dir(), 'esri_') . '.jpg';
+            if (!http_download($url, $tmp)) { @unlink($tmp); continue; }
+            $tile = @imagecreatefromjpeg($tmp);
+            @unlink($tmp);
+            if (!$tile) continue;
+            $dst_x = (int) round($tx * 256 - $left);
+            $dst_y = (int) round($ty * 256 - $top);
+            imagecopy($canvas, $tile, $dst_x, $dst_y, 0, 0, 256, 256);
+            $fetched++;
+        }
+    }
+    imagepng($canvas, $dest, 6);
+    return $fetched;
 }
 
 function add_marker_to_png(string $path): void {
     $img = imagecreatefrompng($path);
     if (!$img) return;
-    // PNG OSM Wikimedia = 8-bit palette ; convertir en truecolor pour permettre l'allocation de nouvelles couleurs
+    // Si l'image vient d'une source palette (ex: PNG colormap), passer en truecolor
     imagepalettetotruecolor($img);
-    $cx = (int)(OSM_W / 2); $cy = (int)(OSM_H / 2);
+    $cx = (int) (FALLBACK_W / 2); $cy = (int) (FALLBACK_H / 2);
     $red   = imagecolorallocate($img, 220, 30, 30);
     $white = imagecolorallocate($img, 255, 255, 255);
     $black = imagecolorallocate($img, 0, 0, 0);
@@ -269,27 +308,27 @@ function set_hero_mapillary(array &$station, string $slug, array $img): void {
     ];
 }
 
-function set_hero_osm(array &$station, string $slug): void {
+function set_hero_esri(array &$station, string $slug, int $tilesFetched): void {
     $lat = (float)$station['latitude'];
     $lon = (float)$station['longitude'];
     $address = $station['address'] ?? '';
     $lineLabel = $station['name_full'] ?? $station['name'];
     $station['hero_image'] = [
-        'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/staticmap-osm.png",
+        'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/satellite-esri.png",
         'alt'    => sprintf(
-            "Carte de la station %s — vue OpenStreetMap centree sur %s (%.6f°N, %.6f°E), zoom %d",
-            $lineLabel, $address, $lat, $lon, OSM_ZOOM
+            "Vue satellite ESRI World Imagery centrée sur la station %s — %s (%.6f°N, %.6f°E), zoom %d (mosaïque %d tiles)",
+            $lineLabel, $address, $lat, $lon, ESRI_ZOOM, $tilesFetched
         ),
-        'width'  => OSM_W,
-        'height' => OSM_H,
+        'width'  => FALLBACK_W,
+        'height' => FALLBACK_H,
         'credit' => [
-            'author'      => 'OpenStreetMap contributors',
-            'license'     => 'ODbL 1.0',
-            'license_url' => 'https://opendatacommons.org/licenses/odbl/1-0/',
-            'source_url'  => sprintf('https://www.openstreetmap.org/?mlat=%.6f&mlon=%.6f&zoom=%d', $lat, $lon, OSM_ZOOM),
+            'author'      => 'ESRI World Imagery contributors',
+            'license'     => 'ESRI Master License Agreement',
+            'license_url' => 'https://www.esri.com/en-us/legal/terms/master-agreement',
+            'source_url'  => sprintf('https://www.arcgis.com/apps/mapviewer/index.html?center=%.6f,%.6f&level=%d&basemap=satellite', $lon, $lat, ESRI_ZOOM),
             'date'        => TODAY,
         ],
-        'source'           => 'osm_staticmap_fallback',
+        'source'           => 'esri_satellite_fallback',
         'confidence_score' => 22,
         'confidence_level' => 'auto_generated',
     ];
@@ -304,6 +343,25 @@ function process_station(string $slug, string $token): array {
     $lat = (float)($station['latitude'] ?? 0);
     $lon = (float)($station['longitude'] ?? 0);
     if ($lat === 0.0 || $lon === 0.0) fail("$slug : pas de coords");
+
+    // Flag keep_hero : preserve les heros monument iconique manuellement curates
+    $heroExisting = $station['hero_image'] ?? [];
+    if (($heroExisting['source'] ?? '') === 'manual'
+        && ($heroExisting['keep_hero'] ?? false) === true) {
+        return [
+            'slug'     => $slug,
+            'source'   => 'skipped_keep_hero',
+            'total'    => null,
+            'image_id' => null,
+            'creator'  => null,
+            'date'     => null,
+            'dist_m'   => null,
+            'compass'  => null,
+            'variants' => 0,
+            'tiles'    => null,
+            'reason'   => 'keep_hero_flag_true',
+        ];
+    }
 
     $outDir = IMG_DIR . "/$slug";
     $srcDir = "$outDir/source";
@@ -335,6 +393,7 @@ function process_station(string $slug, string $token): array {
                     'dist_m'   => (int)round($best['_dist_m'] ?? 0),
                     'compass'  => (int)round((float)($best['compass_angle'] ?? 0)),
                     'variants' => $n,
+                    'tiles'    => null,
                     'reason'   => null,
                 ];
             }
@@ -342,22 +401,23 @@ function process_station(string $slug, string $token): array {
         // Si crop/download fail : on tombe en fallback
     }
 
-    // 2. Fallback OSM
+    // 2. Fallback ESRI satellite
     $reason = $total === 0
         ? 'mapillary_zero_results'
         : ($best === null ? 'mapillary_no_non_pano' : 'mapillary_download_or_crop_failed');
 
-    $osmSrc = "$srcDir/staticmap-osm.png";
-    if (!fetch_osm_staticmap($lat, $lon, $osmSrc)) {
-        fail("$slug : OSM fallback failed");
+    $esriSrc = "$srcDir/satellite-esri.png";
+    $tilesFetched = fetch_esri_satellite($lat, $lon, $esriSrc);
+    if ($tilesFetched === 0) {
+        fail("$slug : ESRI satellite fallback failed (0 tiles fetched)");
     }
-    add_marker_to_png($osmSrc);
-    $n = generate_variants($osmSrc, $slug, $outDir);
-    set_hero_osm($station, $slug);
+    add_marker_to_png($esriSrc);
+    $n = generate_variants($esriSrc, $slug, $outDir);
+    set_hero_esri($station, $slug, $tilesFetched);
     save_station($slug, $station);
     return [
         'slug'     => $slug,
-        'source'   => 'osm_staticmap_fallback',
+        'source'   => 'esri_satellite_fallback',
         'total'    => $total,
         'image_id' => null,
         'creator'  => null,
@@ -365,6 +425,7 @@ function process_station(string $slug, string $token): array {
         'dist_m'   => null,
         'compass'  => null,
         'variants' => $n,
+        'tiles'    => $tilesFetched,
         'reason'   => $reason,
     ];
 }
