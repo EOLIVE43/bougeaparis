@@ -1,0 +1,519 @@
+{
+  "published": true,
+  "slug": "temple",
+  "name": "Temple",
+  "name_full": "Temple (Métro 3)",
+  "arrondissement": "3e arrondissement (Paris)",
+  "address": "Rue du Temple, 75003 Paris",
+  "latitude": 48.86645395133275,
+  "longitude": 2.3612991224545006,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "3",
+      "slug": "metro-3",
+      "color": "#6E6E00",
+      "text_color": "#FFFFFF"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "20",
+      "56",
+      "91"
+    ],
+    "nocturne": [
+      "N01",
+      "N02",
+      "N12",
+      "N23",
+      "N141",
+      "N142"
+    ],
+    "regional": [
+      "75"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 6,
+      "nearby_count": 34
+    }
+  },
+  "seo": {
+    "description": "Station Temple (M3) rue du Temple dans le 3e (Marais). Square du Temple, ancien quartier de l'ordre des Templiers. Mairie du 3e."
+  },
+  "hero": {
+    "tagline": "M3 — quartier du Temple, ordre des Templiers",
+    "description": "Station <strong>Temple</strong> sur la <strong>rue du Temple</strong> dans le <strong>3e arrondissement</strong> (Marais). Desservie par la <strong>M3</strong>, ouverte le <strong>19 octobre 1904</strong>. Au cœur du <strong>quartier du Temple</strong>, ancien <strong>siège de l'ordre des Templiers</strong> en France (XIIe-XIVe siècles). <strong>Mairie du 3e arrondissement</strong> à proximité."
+  },
+  "adjacent_stations": {
+    "metro-3": {
+      "previous": {
+        "name": "République",
+        "slug": "republique",
+        "direction": "Gallieni"
+      },
+      "next": {
+        "name": "Arts et Métiers",
+        "slug": "arts-et-metiers",
+        "direction": "Pont de Levallois - Bécon"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Temple</strong> est implantée sur la <strong>rue du Temple</strong> dans le <strong>3e arrondissement</strong> (Marais). Elle est desservie par la <strong>ligne 3 du métro parisien</strong>, entre <strong>Arts et Métiers</strong> (1 station) et <strong>République</strong> (1 station). Bus 75 en correspondance.",
+    "Ouverte le <strong>19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la ligne 3.",
+    "Le nom <strong>Temple</strong> rappelle l'<strong>ordre des Templiers</strong>, ordre religieux et militaire fondé en <strong>1129</strong>. Le <strong>quartier du Temple</strong> abritait au Moyen Âge la <strong>commanderie du Temple</strong>, siège français de l'ordre. Aujourd'hui : <strong>square du Temple</strong> (1857), <strong>mairie du 3e arrondissement</strong>, <strong>Carreau du Temple</strong> (halle de marché transformée en centre culturel)."
+  ],
+  "history": {
+    "title": "1904 : Temple, mémoire des Templiers",
+    "paragraphs": [
+      "La station Temple est <strong>inaugurée le 19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la <strong>ligne 3</strong>.",
+      "Le nom <strong>Temple</strong> rappelle l'<strong>ordre des Templiers</strong> (<strong>Pauvres Chevaliers du Christ et du Temple de Salomon</strong>), <strong>ordre religieux et militaire chrétien</strong> fondé en <strong>1129</strong> pour protéger les pèlerins en Terre sainte. Le <strong>quartier du Temple</strong> abritait au Moyen Âge la <strong>commanderie du Temple de Paris</strong>, <strong>siège français de l'ordre</strong>. Vaste enclos avec <strong>donjon</strong>, <strong>église ronde</strong>, <strong>résidences</strong>.",
+      "L'<strong>ordre est dissous</strong> par Philippe IV le Bel en <strong>1312</strong>. Le grand maître <strong>Jacques de Molay</strong> est <strong>brûlé vif</strong> sur l'<strong>île de la Cité</strong> en <strong>1314</strong>. La <strong>tour du Temple</strong> (donjon des Templiers) sera convertie en <strong>prison royale</strong>. <strong>Louis XVI, Marie-Antoinette et le dauphin</strong> y sont emprisonnés en <strong>1792-1793</strong> avant leur exécution. La <strong>tour est démolie par Napoléon</strong> en 1808. Aujourd'hui : <strong>square du Temple</strong> (1857) et <strong>Carreau du Temple</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Temple ?",
+      "answer": "Uniquement la <strong>M3</strong>. Bus 75."
+    },
+    {
+      "question": "Qu'est-ce que l'ordre du Temple ?",
+      "answer": "<strong>Ordre religieux et militaire chrétien</strong> fondé en <strong>1129</strong>, dissous par <strong>Philippe IV le Bel</strong> en <strong>1312</strong>. Sa <strong>commanderie française</strong> était dans le quartier."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Le <strong>19 octobre 1904</strong>."
+    },
+    {
+      "question": "Où ont été emprisonnés Louis XVI et Marie-Antoinette ?",
+      "answer": "Dans la <strong>tour du Temple</strong> (donjon des Templiers), <strong>1792-1793</strong>, avant leur exécution. <strong>Démolie par Napoléon</strong> en 1808."
+    },
+    {
+      "question": "Pour la mairie du 3e ?",
+      "answer": "<strong>~3 min à pied</strong>."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "<strong>Square du Temple</strong> (1857) à proximité : jardin paisible, mémoire de l'enclos médiéval.",
+    "<strong>Carreau du Temple</strong> : ancienne halle de marché transformée en centre culturel.",
+    "<strong>Mairie du 3e arrondissement</strong> à 3 min.",
+    "Pour <strong>Arts et Métiers</strong> (musée) : <strong>M3 directe</strong> (1 station).",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "⚔️",
+      "title": "Ordre des Templiers (1129-1312)",
+      "content": "L'<strong>ordre des Templiers</strong>, ou <strong>Pauvres Chevaliers du Christ et du Temple de Salomon</strong>, est un <strong>ordre religieux et militaire chrétien</strong> fondé en <strong>1129</strong> pour protéger les pèlerins en Terre sainte. Très puissant et riche au XIIIe siècle. <strong>Dissous brutalement par Philippe IV le Bel</strong> en <strong>1312</strong> qui convoitait leurs richesses. Le grand maître <strong>Jacques de Molay</strong> est <strong>brûlé vif</strong> à Paris (île de la Cité) le <strong>18 mars 1314</strong>. Sa célèbre malédiction sur Philippe le Bel et le pape entre dans la légende."
+    },
+    {
+      "icon": "👑",
+      "title": "Tour du Temple, prison de Louis XVI",
+      "content": "La <strong>tour du Temple</strong> (donjon des Templiers, XIIe siècle), devenue <strong>prison royale</strong>, accueille en <strong>1792-1793</strong> les <strong>derniers prisonniers royaux</strong> : <strong>Louis XVI</strong>, <strong>Marie-Antoinette</strong>, <strong>le dauphin Louis XVII</strong> et <strong>Madame Élisabeth</strong>. Louis XVI y reste enfermé du 13 août 1792 au 21 janvier 1793 (exécution). Le petit <strong>Louis XVII</strong> y meurt en captivité (8 juin 1795). La <strong>tour est démolie par Napoléon</strong> en <strong>1808</strong> pour effacer le souvenir."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Square du Temple",
+      "destination_slug": "temple",
+      "destination_full_name": "Temple → Square du Temple",
+      "lines_used": [
+        "à pied"
+      ],
+      "lines_label": "Sortie (1 min)",
+      "duration_minutes": 1,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-temple/"
+    },
+    {
+      "destination_name": "Carreau du Temple",
+      "destination_slug": "temple",
+      "destination_full_name": "Temple → Carreau du Temple",
+      "lines_used": [
+        "à pied"
+      ],
+      "lines_label": "À proximité (3 min)",
+      "duration_minutes": 3,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-temple/"
+    },
+    {
+      "destination_name": "Arts et Métiers (musée)",
+      "destination_slug": "arts-et-metiers",
+      "destination_full_name": "Temple → Arts et Métiers (musée)",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-arts-et-metiers/"
+    },
+    {
+      "destination_name": "République",
+      "destination_slug": "republique",
+      "destination_full_name": "Temple → République",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-republique/"
+    },
+    {
+      "destination_name": "Marais (Saint-Paul)",
+      "destination_slug": "saint-paul",
+      "destination_full_name": "Temple → Marais (Saint-Paul)",
+      "lines_used": [
+        "M3 + M1 ou à pied"
+      ],
+      "lines_label": "À pied via rue Vieille-du-Temple (10 min)",
+      "duration_minutes": 10,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-saint-paul/"
+    },
+    {
+      "destination_name": "Châtelet",
+      "destination_slug": "chatelet",
+      "destination_full_name": "Temple → Châtelet",
+      "lines_used": [
+        "M3 + M4"
+      ],
+      "lines_label": "M3 → Réaumur + M4",
+      "duration_minutes": 8,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-temple/temple-vers-chatelet/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q1538826",
+      "name": "musée des Arts et Métiers",
+      "category": "musée",
+      "description": "Fondé en 1794 par initiative de l'abbé Grégoire, ce musée d'État conserve machines, modèles et dessins accumulés depuis deux siècles. Institution scientifique et technique du Conservatoire national des arts et métiers, il enrichit régulièrement ses collections en documentant le patrimoine technologique contemporain.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Arts%20et%20M%C3%A9tiers%20337.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers",
+      "latitude": 48.866111,
+      "longitude": 2.355278,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 452,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q810700",
+      "name": "Bataclan",
+      "category": "site notable",
+      "description": "Édifiée en 1864 par l'architecte Charles Duval, cette salle de spectacle du boulevard Voltaire conjugue histoire patrimoniale et programmation musicale contemporaine. Inscrite au titre de monument historique, elle accueille concerts et événements culturels depuis ses origines en tant que théâtre parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+      "latitude": 48.863056,
+      "longitude": 2.370833,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 792,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q743206",
+      "name": "musée Picasso",
+      "category": "musée",
+      "description": "Fondé en 1985, ce musée national présente l'œuvre majeure de Picasso et les artistes avec lesquels il a dialogué. L'architecte Jean-François Bodin a conçu son bâtiment, situé à environ 10 minutes à pied d'Arts et Métiers (lignes 3 et 11).",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+      "latitude": 48.859731,
+      "longitude": 2.362439,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 765,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q175055",
+      "name": "place de la République",
+      "category": "place",
+      "description": "Inaugurée en 1883, cette vaste esplanade de 3,4 hectares s'étend à la jonction des 3e, 10e et 11e arrondissements. Espace public polyvalent, elle accueille aussi bien promeneurs que pratiquants de skate, offrant une respiration urbaine au cœur du quartier.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%202017-12-01%20-%20Place%20de%20la%20R%C3%A9publique%20-%205517.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Paris)",
+      "latitude": 48.867278,
+      "longitude": 2.364056,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 208,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q684594",
+      "name": "porte Saint-Denis",
+      "category": "site notable",
+      "description": "Édifié en 1672 par l'architecte François Blondel, ce monument de 24,65 mètres célèbre la gloire de Louis XIV. Classé au titre des monuments historiques, l'arc trône au 10e arrondissement, héritier des anciennes portes défensives médiévales.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint%20Denis%20-%20Paris%20X%20%28FR75%29%20-%202023-06-14%20-%202.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis",
+      "latitude": 48.869722,
+      "longitude": 2.3525,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 740,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q977732",
+      "name": "musée d'art et d'histoire du judaïsme",
+      "category": "musée",
+      "description": "Ouvert en 1988, ce musée conjugue collections d'art et archives historiques consacrées au judaïsme. Installé dans un hôtel particulier du Marais, il propose une exploration des patrimoines culturels et artistiques traversant les siècles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20H%C3%B4tel%20de%20Saint-Aignan%20-%20Muse%C3%A9%20du%20Juda%C3%AFsme.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_et_d%27Histoire_du_juda%C3%AFsme",
+      "latitude": 48.861111,
+      "longitude": 2.355278,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 755,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q950217",
+      "name": "porte Saint-Martin",
+      "category": "monument",
+      "description": "Édifiée en 1674 par Pierre Bullet, cette porte triomphale perpétue la mémoire des conquêtes royales du Rhin et de Franche-Comté. Monument historique classé, elle marque l'ancien tracé fortifié de la capitale, témoignant du prestige de l'architecture parisienne du Grand Siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint-Martin%2C%20Paris%208%20June%202014.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Martin",
+      "latitude": 48.869171,
+      "longitude": 2.355601,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 514,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q917337",
+      "name": "hôtel de Soubise",
+      "category": "site notable",
+      "description": "Édifié en 1705 par l'architecte Pierre-Alexis Delamair, cet hôtel particulier du 3e arrondissement témoigne du raffinement du style classique parisien. Devenu siège des Archives nationales, il conserve son statut de monument historique et accueille le musée des Archives nationales.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Soubise%2C%20Paris%209%20June%202017.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Soubise",
+      "latitude": 48.860556,
+      "longitude": 2.358333,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 706,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q1067494",
+      "name": "tour du Temple",
+      "category": "palais",
+      "description": "Ancienne forteresse médiévale du Marais, la tour du Temple dominait un vaste enclos fortifié jusqu'à sa démolition au début du XIXe siècle. Ce château fort constituait un édifice majeur du 3e arrondissement avant de disparaître en 1808, ne laissant subsister que des traces historiques dans la topographie parisienne.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoffbauer-Brezet-Temple1734.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_du_Temple",
+      "latitude": 48.86528,
+      "longitude": 2.36222,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 156,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q1567798",
+      "name": "synagogue Nazareth",
+      "category": "synagogue",
+      "description": "Fondée en 1852, cette synagogue du 3e arrondissement incarne un patrimoine religieux remarquable. Protégée au titre des monuments historiques, elle demeure un édifice majeur du culte israélite parisien, rattaché au Consistoire central.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Syna%20Nazareth.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_Nazareth",
+      "latitude": 48.866853,
+      "longitude": 2.360128,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 99,
+        "walk_minutes": 1
+      }
+    },
+    {
+      "wikidata_id": "Q1488512",
+      "name": "église Saint-Nicolas-des-Champs",
+      "category": "église",
+      "description": "Édifice religieux catholique classé au titre de monument historique, Saint-Nicolas-des-Champs témoigne du patrimoine parisien. Cette église propose une halte spirituelle à quelques pas du quartier Arts et Métiers, accessible facilement par les lignes 3 et 11.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20st%20nicolas%20des%20champs.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-des-Champs_de_Paris",
+      "latitude": 48.86547,
+      "longitude": 2.35425,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 538,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q1629790",
+      "name": "église Sainte-Élisabeth-de-Hongrie",
+      "category": "église",
+      "description": "Fondée en 1628 comme chapelle franciscaine, cette église du quartier du Temple a progressivement acquis son statut de lieu de culte paroissial. Classée au titre de monument historique, elle demeure depuis le XIXe siècle le siège des célébrations de l'ordre de Malte à Paris.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20%C3%89glise%20Sainte-%C3%89lisabeth-de-Hongrie%20665.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-%C3%89lisabeth-de-Hongrie_de_Paris",
+      "latitude": 48.86611,
+      "longitude": 2.36052,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Entrée / Sortie",
+        "distance_m": 83,
+        "walk_minutes": 1
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "Entrée / Sortie",
+      "address_full": "87 Rue de Turbigo 75003 Paris",
+      "postcode": "75003",
+      "city": "Paris",
+      "latitude": 48.866576,
+      "longitude": 2.361413,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/temple/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Temple (Métro 3) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Temple_Place_%C3%89lisabeth_Dmitrieff_-_Paris_III_(FR75)_-_2022-01-28_-_1.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/temple/temple-400.avif",
+        "800": "/assets/img/stations/temple/temple-800.avif",
+        "1200": "/assets/img/stations/temple/temple-1200.avif",
+        "1600": "/assets/img/stations/temple/temple-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/temple/temple-400.webp",
+        "800": "/assets/img/stations/temple/temple-800.webp",
+        "1200": "/assets/img/stations/temple/temple-1200.webp",
+        "1600": "/assets/img/stations/temple/temple-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/temple/temple-400.jpg",
+        "800": "/assets/img/stations/temple/temple-800.jpg",
+        "1200": "/assets/img/stations/temple/temple-1200.jpg",
+        "1600": "/assets/img/stations/temple/temple-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q1431071",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1431071",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Temple_(m%C3%A9tro_de_Londres)",
+    "osm_relation_id": null
+  }
+}

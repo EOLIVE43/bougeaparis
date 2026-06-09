@@ -1,0 +1,513 @@
+{
+  "published": true,
+  "slug": "parmentier",
+  "name": "Parmentier",
+  "name_full": "Parmentier (Métro 3)",
+  "arrondissement": "11e arrondissement (Paris)",
+  "address": "Avenue Parmentier, 75011 Paris",
+  "latitude": 48.86563334660995,
+  "longitude": 2.374504790575915,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "3",
+      "slug": "metro-3",
+      "color": "#6E6E00",
+      "text_color": "#FFFFFF"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "20",
+      "46",
+      "96"
+    ],
+    "nocturne": [
+      "N12",
+      "N23"
+    ],
+    "regional": [],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-09",
+      "same_node_count": 3,
+      "nearby_count": 8
+    }
+  },
+  "seo": {
+    "description": "Station Parmentier (M3) avenue Parmentier dans le 11e. Nommée d'après Antoine Parmentier (1737-1813), promoteur de la pomme de terre en France."
+  },
+  "hero": {
+    "tagline": "M3 — Antoine Parmentier, popularisateur de la pomme de terre",
+    "description": "Station <strong>Parmentier</strong> sur l'<strong>avenue Parmentier</strong> dans le <strong>11e arrondissement</strong>. Desservie par la <strong>M3</strong>, ouverte le <strong>19 octobre 1904</strong>. Nommée d'après <strong>Antoine Augustin Parmentier</strong> (<strong>1737-1813</strong>), <strong>pharmacien militaire et agronome</strong> qui <strong>popularisa la pomme de terre en France</strong>."
+  },
+  "adjacent_stations": {
+    "metro-3": {
+      "previous": {
+        "name": "Rue Saint-Maur",
+        "slug": "rue-saint-maur",
+        "direction": "Gallieni"
+      },
+      "next": {
+        "name": "République",
+        "slug": "republique",
+        "direction": "Pont de Levallois - Bécon"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Parmentier</strong> est implantée sur l'<strong>avenue Parmentier</strong> dans le <strong>11e arrondissement</strong>. Elle est desservie par la <strong>ligne 3 du métro parisien</strong>, entre <strong>République</strong> (1 station) et <strong>Rue Saint-Maur</strong> (1 station). Bus 46 et 75 en correspondance.",
+    "Ouverte le <strong>19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la ligne 3.",
+    "Le nom <strong>Parmentier</strong> rend hommage à <strong>Antoine Augustin Parmentier</strong> (<strong>1737-1813</strong>), <strong>pharmacien militaire, agronome et nutritionniste français</strong>. Il <strong>popularisa la pomme de terre</strong> en France comme aliment de base, malgré la méfiance initiale (on croyait alors que le tubercule était toxique ou cause de la lèpre)."
+  ],
+  "history": {
+    "title": "1904 : Parmentier et la pomme de terre",
+    "paragraphs": [
+      "La station Parmentier est <strong>inaugurée le 19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la <strong>ligne 3</strong>.",
+      "Le nom <strong>Parmentier</strong> commémore <strong>Antoine Augustin Parmentier</strong> (<strong>12 août 1737 - 17 décembre 1813</strong>), <strong>pharmacien militaire, agronome et nutritionniste français</strong>. Né à Montdidier (Somme). Prisonnier de guerre en Prusse pendant la <strong>guerre de Sept Ans</strong> (1756-1763), il y découvrit la <strong>pomme de terre</strong> comme aliment de base.",
+      "À son retour en France, il œuvra pour <strong>populariser la pomme de terre</strong> comme <strong>solution à la famine</strong>. Le tubercule était alors méprisé et même <strong>interdit en France</strong> (1748) car suspecté de provoquer la <strong>lèpre</strong>. Parmentier organisa des <strong>banquets prestigieux</strong> où il servit la pomme de terre sous toutes ses formes, présents au roi <strong>Louis XVI</strong> et à la reine. Il fit même <strong>garder ses champs de pommes de terre à Neuilly</strong> par des soldats le jour... et laisser ouverts la nuit pour que les paysans en volent. <strong>Stratagème efficace</strong>. La <strong>levée de l'interdiction</strong> intervient en <strong>1772</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Parmentier ?",
+      "answer": "Uniquement la <strong>M3</strong>. Bus 46 et 75."
+    },
+    {
+      "question": "Qui est Parmentier ?",
+      "answer": "<strong>Antoine Augustin Parmentier</strong> (1737-1813), <strong>pharmacien militaire et agronome</strong> qui a <strong>popularisé la pomme de terre en France</strong>."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Le <strong>19 octobre 1904</strong>."
+    },
+    {
+      "question": "Pourquoi populariser la pomme de terre ?",
+      "answer": "Le tubercule était <strong>méprisé et interdit en France</strong> (suspecté de provoquer la lèpre). Parmentier organisa des <strong>banquets prestigieux</strong> et fit garder ses champs par des soldats — stratagème pour exciter la curiosité."
+    },
+    {
+      "question": "Pour République ?",
+      "answer": "<strong>M3 directe</strong> (1 station, ~2 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>. Pas d'ascenseur."
+    }
+  ],
+  "practical_tips": [
+    "Pour <strong>République</strong> et son hub multilignes : <strong>M3 directe</strong> (1 station).",
+    "Quartier <strong>11e résidentiel</strong> et animé.",
+    "Pour <strong>Père Lachaise</strong> : <strong>M3 directe</strong> (4 stations).",
+    "<strong>Hachis Parmentier</strong> : plat traditionnel français portant son nom.",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🥔",
+      "title": "Parmentier, sauveur de la pomme de terre",
+      "content": "<strong>Antoine Augustin Parmentier</strong> (1737-1813), <strong>pharmacien militaire</strong>. Prisonnier en <strong>Prusse</strong> pendant la <strong>guerre de Sept Ans</strong>, il découvre la <strong>pomme de terre</strong>. De retour en France, il <strong>popularise le tubercule</strong> malgré le <strong>scepticisme</strong>. Banquets de prestige avec pomme de terre servie à Louis XVI et Marie-Antoinette (qui porta des fleurs de pomme de terre à son corsage). <strong>Champs gardés à Neuilly</strong> par soldats le jour — laissés sans surveillance la nuit pour que les paysans volent. <strong>Levée de l'interdiction</strong> en 1772. Plat <strong>hachis Parmentier</strong> en son honneur."
+    },
+    {
+      "icon": "🏛️",
+      "title": "Académie des sciences et postérité",
+      "content": "<strong>Antoine Parmentier</strong> a été <strong>membre de l'Académie des sciences</strong>. Il a écrit de nombreux ouvrages d'<strong>agronomie et nutrition</strong>. Outre la pomme de terre, il a aussi étudié le <strong>maïs</strong>, la <strong>vigne</strong>, la <strong>conservation des grains</strong>. Inhumé au <strong>cimetière du Père Lachaise</strong> (4 stations de M3 depuis Parmentier). Sa <strong>tombe</strong> y est ornée de <strong>plants de pommes de terre</strong> entretenus en permanence par des fidèles."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "République",
+      "destination_slug": "republique",
+      "destination_full_name": "Parmentier → République",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-republique/"
+    },
+    {
+      "destination_name": "Père Lachaise",
+      "destination_slug": "pere-lachaise",
+      "destination_full_name": "Parmentier → Père Lachaise",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (4 stations)",
+      "duration_minutes": 9,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-pere-lachaise/"
+    },
+    {
+      "destination_name": "Rue Saint-Maur",
+      "destination_slug": "saint-maur",
+      "destination_full_name": "Parmentier → Rue Saint-Maur",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-saint-maur/"
+    },
+    {
+      "destination_name": "Opéra Garnier",
+      "destination_slug": "opera",
+      "destination_full_name": "Parmentier → Opéra Garnier",
+      "lines_used": [
+        "M3"
+      ],
+      "lines_label": "M3 directe (7 stations)",
+      "duration_minutes": 15,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-opera/"
+    },
+    {
+      "destination_name": "Châtelet",
+      "destination_slug": "chatelet",
+      "destination_full_name": "Parmentier → Châtelet",
+      "lines_used": [
+        "M3 + M11"
+      ],
+      "lines_label": "M3 → République + M11",
+      "duration_minutes": 8,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-chatelet/"
+    },
+    {
+      "destination_name": "Bastille",
+      "destination_slug": "bastille",
+      "destination_full_name": "Parmentier → Bastille",
+      "lines_used": [
+        "M3 + M5"
+      ],
+      "lines_label": "M3 → République + M5",
+      "duration_minutes": 10,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-parmentier/parmentier-vers-bastille/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q810700",
+      "name": "Bataclan",
+      "category": "site notable",
+      "description": "Édifiée en 1864 par l'architecte Charles Duval, cette salle de spectacle du boulevard Voltaire conjugue histoire patrimoniale et programmation musicale contemporaine. Inscrite au titre de monument historique, elle accueille concerts et événements culturels depuis ses origines en tant que théâtre parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+      "latitude": 48.863056,
+      "longitude": 2.370833,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 375,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q175055",
+      "name": "place de la République",
+      "category": "place",
+      "description": "Inaugurée en 1883, cette vaste esplanade de 3,4 hectares s'étend à la jonction des 3e, 10e et 11e arrondissements. Espace public polyvalent, elle accueille aussi bien promeneurs que pratiquants de skate, offrant une respiration urbaine au cœur du quartier.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%202017-12-01%20-%20Place%20de%20la%20R%C3%A9publique%20-%205517.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Paris)",
+      "latitude": 48.867278,
+      "longitude": 2.364056,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 790,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q2626611",
+      "name": "église Saint-Ambroise",
+      "category": "église",
+      "description": "Édifiée en 1910 par l'architecte Théodore Ballu, cette église du 11e arrondissement culmine à 68 mètres de hauteur. Monument historique inscrit, elle porte le nom de saint Ambroise et constitue un témoignage architectural du début du XXe siècle parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Saint-Ambroise%2C%20Square%20des%20Moines%20de%20Tibhirine%2C%20Paris%2021%20January%202017.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Ambroise_de_Paris",
+      "latitude": 48.86131,
+      "longitude": 2.37606,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 471,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1093108",
+      "name": "cirque d'Hiver",
+      "category": "site notable",
+      "description": "Édifice emblématique du spectacle parisien, ce bâtiment date de 1852 et porte la signature de l'architecte Jacques Hittorff. Classé au titre des monuments historiques, il accueille depuis près de deux siècles des représentations circassiennes et des événements culturels au cœur du 11e arrondissement.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020056%20Paris%20XI%20Cirque%20d%27Hiver%20reductwk.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cirque_d%27Hiver_(Paris)",
+      "latitude": 48.863369,
+      "longitude": 2.367531,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 558,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q3055415",
+      "name": "musée Édith-Piaf",
+      "category": "musée",
+      "description": "Fondé en 1977, ce musée privé dédié à Édith Piaf propose une visite sur rendez-vous. Installé rue Camille-Crespin-du-Gast dans le 11e arrondissement, il conserve des archives et objets personnels de la célèbre chanteuse française.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20%C3%89dith%20Piaf.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_%C3%89dith-Piaf",
+      "latitude": 48.86617,
+      "longitude": 2.38172,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 536,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q648708",
+      "name": "théâtre des Funambules",
+      "category": "théâtre",
+      "description": "Fondé en 1816, ce théâtre occupait une place emblématique sur l'ancien boulevard du Temple, haut lieu du spectacle parisien du XIXe siècle. Disparu aujourd'hui, il incarne un chapitre fascinant de l'histoire culturelle de la capitale, avant les transformations urbaines de l'époque.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/TheatreFunambulesAdolpheMartialPotemont.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_des_Funambules",
+      "latitude": 48.867,
+      "longitude": 2.36474,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 734,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3361114",
+      "name": "Palais des glaces",
+      "category": "palais",
+      "description": "Fondé en 1876, le Palais des glaces propose depuis plus d'un siècle spectacles et projections cinématographiques au cœur du 10e arrondissement. Cette salle historique du Faubourg-du-Temple conserve son rôle de lieu de divertissement pour les Parisiens.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20FaubTemple-PalaisDesGlaces.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_des_glaces_(Paris)",
+      "latitude": 48.8692,
+      "longitude": 2.36825,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 620,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q3527454",
+      "name": "théâtre Déjazet",
+      "category": "théâtre",
+      "description": "Fondé en 1851, le théâtre Déjazet occupe le boulevard du Temple depuis plus d'un siècle et demi. Cette salle de spectacle et de concert bénéficie du statut de monument historique inscrit, témoignant de son importance dans le patrimoine culturel parisien du 3e arrondissement.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plafond%20Th%C3%A9%C3%A2tre%20Dejazet.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_D%C3%A9jazet",
+      "latitude": 48.8661,
+      "longitude": 2.36444,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 739,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3076001",
+      "name": "fontaine Boucherat",
+      "category": "fontaine",
+      "description": "Édifiée par l'architecte Jean Beausire, cette fontaine du 3e arrondissement figure parmi les monuments historiques inscrits de Paris. Son design reflète le savoir-faire des créateurs d'ouvrages d'eau urbains du XIXe siècle.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1210163%20Paris%20III%20fontaine%20Boucherat%20rwk.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_Boucherat",
+      "latitude": 48.8644,
+      "longitude": 2.36444,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 744,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3582132",
+      "name": "église Saint-Joseph-des-Nations",
+      "category": "église",
+      "description": "Édifiée en 1867 rue Saint-Maur, cette église du 11e arrondissement porte la signature architecturale de Théodore Ballu. Son imposante structure culmine à 60 mètres de hauteur, marquant le skyline du quartier depuis le Second Empire.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1310659%20Paris%20XI%20eglise%20St-Joseph-Nations%20rwk.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Joseph-des-Nations",
+      "latitude": 48.869,
+      "longitude": 2.37342,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 405,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q3076013",
+      "name": "fontaine Dejean",
+      "category": "fontaine",
+      "description": "Conçue par l'architecte Jean Camille Formigé en collaboration avec Charles-Louis Malric, cette fontaine publique orne le square de la place Pasdeloup. Elle se dresse à proximité du Cirque d'hiver, dans le 11e arrondissement, offrant un point d'eau caractéristique du patrimoine parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20Dejean.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine_Dejean",
+      "latitude": 48.8629,
+      "longitude": 2.36702,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 614,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q4724424",
+      "name": "Alhambra",
+      "category": "site notable",
+      "description": "Inauguré en 1904, l'Alhambra Maurice-Chevalier fut un haut lieu du music-hall parisien situé rue de Malte dans le 11e arrondissement. Cette salle de concert, disparue en 1967, incarne une page du divertissement spectaculaire de la Belle Époque parisienne.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20de%20l%27Alhambra-1925.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Alhambra_(Paris)",
+      "latitude": 48.8671,
+      "longitude": 2.3667,
+      "nearest_exit": {
+        "number": "1",
+        "name": "Avenue Parmentier",
+        "distance_m": 599,
+        "walk_minutes": 7
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "Avenue Parmentier",
+      "address_full": "88b Avenue Parmentier 75011 Paris",
+      "postcode": "75011",
+      "city": "Paris",
+      "latitude": 48.865422,
+      "longitude": 2.374487,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/parmentier/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Parmentier (Métro 3) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Parmentier_Avenue_Parmentier_-_Paris_XI_(FR75)_-_2021-12-20_-_1.jpg",
+      "date": "2026-06-08"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/parmentier/parmentier-400.avif",
+        "800": "/assets/img/stations/parmentier/parmentier-800.avif",
+        "1200": "/assets/img/stations/parmentier/parmentier-1200.avif",
+        "1600": "/assets/img/stations/parmentier/parmentier-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/parmentier/parmentier-400.webp",
+        "800": "/assets/img/stations/parmentier/parmentier-800.webp",
+        "1200": "/assets/img/stations/parmentier/parmentier-1200.webp",
+        "1600": "/assets/img/stations/parmentier/parmentier-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/parmentier/parmentier-400.jpg",
+        "800": "/assets/img/stations/parmentier/parmentier-800.jpg",
+        "1200": "/assets/img/stations/parmentier/parmentier-1200.jpg",
+        "1600": "/assets/img/stations/parmentier/parmentier-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q1970334",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q1970334",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Parmentier_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}
