@@ -326,6 +326,17 @@ function generate_variants(string $srcCropped, string $slug, string $outDir): in
 // JSON hero updates
 // ------------------------------------------------------------------
 
+function build_local_versions(string $slug): array {
+    // URLs RELATIVES (sans domaine) attendues par le template <picture>+srcset
+    $versions = ['avif' => [], 'webp' => [], 'jpg' => []];
+    foreach (HERO_WIDTHS as $w) {
+        $versions['avif'][$w] = "/assets/img/stations/$slug/$slug-$w.avif";
+        $versions['webp'][$w] = "/assets/img/stations/$slug/$slug-$w.webp";
+        $versions['jpg'][$w]  = "/assets/img/stations/$slug/$slug-$w.jpg";
+    }
+    return $versions;
+}
+
 function set_hero_mapillary(array &$station, string $slug, array $img): void {
     $cap = (int)($img['captured_at'] ?? 0);
     $date = $cap > 0 ? date('Y-m-d', (int)($cap / 1000)) : '?';
@@ -351,6 +362,7 @@ function set_hero_mapillary(array &$station, string $slug, array $img): void {
         'source'           => 'mapillary_streetview',
         'confidence_score' => 22,
         'confidence_level' => 'auto_generated',
+        'local_versions'   => build_local_versions($slug),
     ];
 }
 
@@ -376,6 +388,7 @@ function set_hero_wikimedia(array &$station, string $slug, array $poi, array $in
         'source'           => 'wikimedia_poi_fallback',
         'confidence_score' => 22,
         'confidence_level' => 'auto_generated',
+        'local_versions'   => build_local_versions($slug),
     ];
 }
 
