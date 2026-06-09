@@ -1,0 +1,544 @@
+{
+    "published": true,
+    "slug": "place-des-fetes",
+    "name": "Place des Fêtes",
+    "name_full": "Place des Fêtes (Métro 7B, 11)",
+    "arrondissement": "19e (Paris)",
+    "address": "Place des Fêtes, 75019 Paris",
+    "latitude": 48.87714718636618,
+    "longitude": 2.393304868362139,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7B",
+            "slug": "metro-7bis",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "7B",
+            "20",
+            "48",
+            "60"
+        ],
+        "nocturne": [
+            "N12",
+            "N23"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 5,
+            "nearby_count": 14
+        }
+    },
+    "seo": {
+        "description": "Station Place des Fêtes : M7bis + M11 dans le 19e arr. Place des Fêtes (tours d'habitation années 70). Marché alimentaire animé. Quartier populaire du 19e."
+    },
+    "hero": {
+        "tagline": "M7bis + M11 — Place des Fêtes du 19e",
+        "description": "Station <strong>Place des Fêtes</strong> dans le <strong>19e arrondissement</strong>, sous la <strong>Place des Fêtes</strong>. Desservie par <strong>M7bis</strong> (ouverte 18 janvier 1911) et <strong>M11</strong> (ouverte 28 avril 1935). À la sortie : la <strong>Place des Fêtes</strong> elle-même, entourée de <strong>tours d'habitation des années 1970</strong>. <strong>Marché alimentaire</strong> animé 3 jours/semaine. Quartier populaire et multi-culturel du 19e."
+    },
+    "adjacent_stations": {
+        "metro-7bis": {
+            "previous": {
+                "name": "Botzaris",
+                "slug": "botzaris",
+                "direction": "Louis Blanc"
+            },
+            "next": {
+                "name": "Pré-Saint-Gervais",
+                "slug": "pre-saint-gervais",
+                "direction": "Pré-Saint-Gervais"
+            }
+        },
+        "metro-11": {
+            "previous": {
+                "name": "Télégraphe",
+                "slug": "telegraphe",
+                "direction": "Rosny-Bois-Perrier"
+            },
+            "next": {
+                "name": "Jourdain",
+                "slug": "jourdain",
+                "direction": "Châtelet"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Place des Fêtes</strong> est située dans le <strong>19e arrondissement de Paris</strong>, sous la <strong>Place des Fêtes</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M7bis</strong> (boucle Louis Blanc ↔ Pré Saint-Gervais) et <strong>M11</strong> (Châtelet ↔ Rosny - Bois-Perrier). Bus 48, 60, 96.",
+        "La station <strong>M7bis</strong> ouvre le <strong>18 janvier 1911</strong> avec la branche M7bis (devenue ligne autonome en 1967). La station <strong>M11</strong> est ajoutée le <strong>28 avril 1935</strong> avec l'ouverture de la M11 originelle (Châtelet ↔ Porte des Lilas).",
+        "À la sortie : la <strong>Place des Fêtes</strong> elle-même, place rectangulaire bordée de <strong>tours d'habitation des années 1970</strong> (reconstruction urbanistique brutaliste typique). <strong>Marché alimentaire</strong> animé le mardi, vendredi et dimanche. Quartier populaire et <strong>multi-culturel du 19e</strong>, avec présence des communautés magrébine, africaine et asiatique."
+    ],
+    "history": {
+        "title": "1911 : M7bis, 1935 : M11, et reconstruction années 70",
+        "paragraphs": [
+            "La <strong>Place des Fêtes</strong> a une histoire singulière. Au <strong>XIXe siècle</strong>, c'était le <strong>cœur du village rural de Belleville</strong>, place où se tenaient les <strong>fêtes patronales et marchés</strong> (d'où le nom). Annexée à Paris en <strong>1860</strong>.",
+            "La station <strong>M7bis</strong> ouvre le <strong>18 janvier 1911</strong> avec la branche annexe M7bis. La station <strong>M11</strong> est ajoutée le <strong>28 avril 1935</strong> avec la M11 originelle.",
+            "Dans les <strong>années 1960-1970</strong>, la Place des Fêtes subit une <strong>profonde transformation urbanistique</strong>. Le quartier ancien, jugé insalubre, est <strong>partiellement démoli</strong> et reconstruit en <strong>tours d'habitation</strong> selon les principes urbanistiques modernistes. <strong>~3 500 logements</strong> construits, dont plusieurs tours de 25 étages. Cas typique des <strong>Grands Ensembles parisiens</strong> intra-muros, contemporains des quartiers des Olympiades (13e) et de la Goutte d'Or (18e).",
+            "Aujourd'hui, le quartier est <strong>populaire et multi-culturel</strong> : présence des communautés <strong>magrébine, africaine et asiatique</strong>, commerces ethniques, restaurants. <strong>Marché alimentaire</strong> animé sur la place (mardi, vendredi, dimanche). Quartier en mutation lente vers la gentrification.",
+            "À 5 min à pied : le <strong>Parc des Buttes-Chaumont</strong> (entrée nord-est)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Place des Fêtes ?",
+            "answer": "<strong>M7bis</strong> et <strong>M11</strong>. Bus 48, 60, 96."
+        },
+        {
+            "question": "Qu'est-ce que la Place des Fêtes ?",
+            "answer": "Place rectangulaire bordée de <strong>tours d'habitation des années 1970</strong> (reconstruction urbanistique brutaliste). <strong>Marché alimentaire</strong> animé 3 jours/semaine (mardi, vendredi, dimanche). Quartier populaire et multi-culturel."
+        },
+        {
+            "question": "Pourquoi le nom Place des Fêtes ?",
+            "answer": "Au XIXe siècle, c'était la <strong>place centrale du village rural de Belleville</strong>, où se tenaient les <strong>fêtes patronales et marchés</strong>. Annexée à Paris en 1860."
+        },
+        {
+            "question": "Comment aller aux Buttes-Chaumont ?",
+            "answer": "<strong>5 min à pied</strong> direction sud-ouest — entrée nord-est du parc. Plus rapide : M7bis (2 stations)."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M11 directe</strong> : ~16 min (5 stations vers l'ouest)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1911/1935."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Marché alimentaire</strong> mardi/vendredi/dimanche.",
+        "<strong>Buttes-Chaumont</strong> à 5 min à pied OU M7bis (2 stations).",
+        "Pour <strong>Châtelet</strong> : M11 directe (~16 min).",
+        "Pour <strong>République</strong> : M11 directe (~10 min).",
+        "Quartier multi-culturel — restaurants ethniques."
+    ],
+    "trivia": [
+        {
+            "icon": "🎪",
+            "title": "Origine villageoise — fêtes patronales de Belleville",
+            "content": "Au <strong>XIXe siècle</strong>, la <strong>Place des Fêtes</strong> était le <strong>cœur du village rural de Belleville</strong>, place où se tenaient les <strong>fêtes patronales et marchés hebdomadaires</strong> (d'où le nom). Belleville était alors une <strong>commune indépendante de Paris</strong>, viticole et populaire. <strong>Annexée à Paris en 1860</strong> par Napoléon III (avec Charonne, Belleville, Grenelle, etc.). Le caractère villageois disparaît progressivement avec l'urbanisation haussmannienne, puis avec la reconstruction des années 1970."
+        },
+        {
+            "icon": "🏢",
+            "title": "Tours années 1970 — reconstruction urbanistique brutaliste",
+            "content": "Dans les <strong>années 1960-1970</strong>, le quartier ancien autour de la Place des Fêtes est <strong>partiellement démoli</strong> et reconstruit selon les <strong>principes urbanistiques modernistes</strong>. <strong>~3 500 logements</strong> construits, dont plusieurs <strong>tours de 25 étages</strong>. <strong>Architecture brutaliste typique</strong> des Grands Ensembles parisiens intra-muros. Contemporain et similaire au quartier des Olympiades (13e) et à la Goutte d'Or (18e). <strong>Patrimoine urbanistique controversé</strong> : apprécié pour son audace, critiqué pour sa déshumanisation. Programme de rénovation partielle en cours."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Buttes-Chaumont via M7bis",
+            "destination_slug": "buttes-chaumont",
+            "destination_full_name": "Place des Fêtes → Buttes-Chaumont",
+            "lines_used": [
+                "M7bis"
+            ],
+            "lines_label": "M7bis (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-buttes-chaumont/"
+        },
+        {
+            "destination_name": "Châtelet via M11",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Place des Fêtes → Châtelet",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (5 stations)",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-chatelet/"
+        },
+        {
+            "destination_name": "République via M11",
+            "destination_slug": "republique",
+            "destination_full_name": "Place des Fêtes → République",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (3 stations)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-republique/"
+        },
+        {
+            "destination_name": "Pré Saint-Gervais via M7bis",
+            "destination_slug": "pre-saint-gervais",
+            "destination_full_name": "Place des Fêtes → Pré Saint-Gervais",
+            "lines_used": [
+                "M7bis"
+            ],
+            "lines_label": "M7bis (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-pre-saint-gervais/"
+        },
+        {
+            "destination_name": "Porte des Lilas via M11",
+            "destination_slug": "porte-des-lilas",
+            "destination_full_name": "Place des Fêtes → Porte des Lilas",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Porte des Lilas (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-porte-des-lilas/"
+        },
+        {
+            "destination_name": "Marché Place des Fêtes",
+            "destination_slug": "marche-place-fetes",
+            "destination_full_name": "Place des Fêtes → Marché Place des Fêtes",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe (mar/ven/dim)",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-place-des-fetes/place-des-fetes-vers-marche-place-fetes/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1591802",
+            "name": "Haxo",
+            "category": "site notable",
+            "description": "Haxo est une station du métro parisien jamais ouverte située sous le boulevard Sérurier dans le 19e arrondissement de Paris, sur la voie de raccordement entre les lignes 3 bis, à la station Porte des…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haxo%20station%20fantome.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Haxo_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.878611,
+            "longitude": 2.401667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 637,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3581916",
+            "name": "église Saint-Jean-Baptiste de Belleville",
+            "category": "église",
+            "description": "L’église Saint-Jean-Baptiste de Belleville est une des premières églises d'architecture néogothique construites à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Jean-Baptiste%20de%20Belleville1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-Baptiste_de_Belleville",
+            "latitude": 48.8757,
+            "longitude": 2.3893,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Crimée",
+                "distance_m": 271,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3364196",
+            "name": "parc de la Butte du Chapeau-Rouge",
+            "category": "jardin",
+            "description": "Le parc de la Butte-du-Chapeau-Rouge est un jardin public situé dans le quartier d'Amérique du 19e arrondissement de Paris, près du boulevard périphérique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20parc%20chapeau%20rouge6.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_la_Butte-du-Chapeau-Rouge",
+            "latitude": 48.8814,
+            "longitude": 2.39722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 584,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3145204",
+            "name": "hôpital Robert-Debré",
+            "category": "hôpital",
+            "description": "L’hôpital universitaire Robert-Debré est un hôpital pédiatrique de l’Assistance publique - Hôpitaux de Paris (AP-HP) situé dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hopital%20Robert%20Debre.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Robert-Debr%C3%A9",
+            "latitude": 48.8794,
+            "longitude": 2.40278,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 745,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3580388",
+            "name": "église Notre-Dame-des-Otages",
+            "category": "église",
+            "description": "L'église Notre-Dame-des-Otages  est une église paroissiale catholique située au no 81, rue Haxo dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-des-Otages%20%28Paris%29%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-des-Otages_de_Paris",
+            "latitude": 48.8742,
+            "longitude": 2.40305,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 761,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3581461",
+            "name": "église Saint-François-d'Assise",
+            "category": "église",
+            "description": "L'église catholique Saint-François-d'Assise  est située rue de Mouzaïa dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Fran%C3%A7ois-d%27Assise%20%28Paris%29%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois-d%27Assise_de_Paris",
+            "latitude": 48.8803,
+            "longitude": 2.39153,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 415,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2881586",
+            "name": "square Belleville - Télégraphe",
+            "category": "site notable",
+            "description": "Le square Belleville - Télégraphe est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20square%20belleville%20telegraphe.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Belleville_-_T%C3%A9l%C3%A9graphe",
+            "latitude": 48.8754,
+            "longitude": 2.3995,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 471,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3501091",
+            "name": "Studios des Buttes Chaumont",
+            "category": "site notable",
+            "description": "Les studios des Buttes-Chaumont, baptisés « Centre René-Barthélemy » le 15 avril 1956, étaient des studios de cinéma puis de télévision situés entre la rue Carducci et la rue des Alouettes au sud du…",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Studios_des_Buttes-Chaumont",
+            "latitude": 48.8781,
+            "longitude": 2.387,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Crimée",
+                "distance_m": 456,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q20871090",
+            "name": "église Notre-Dame-des-Coptes",
+            "category": "église",
+            "description": "L'église Notre-Dame-des-Coptes est située au 22, rue de l'Est, dans le 20e arrondissement de Paris. L'église, achevée en 2012, était auparavant un poste électrique d'EDF.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-des-Coptes%202019%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-des-Coptes",
+            "latitude": 48.8712,
+            "longitude": 2.39376,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Crimée",
+                "distance_m": 599,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3494499",
+            "name": "square Bolivar",
+            "category": "site notable",
+            "description": "Le square Bolivar est une voie du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Bolivar%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Bolivar",
+            "latitude": 48.8756,
+            "longitude": 2.38306,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Crimée",
+                "distance_m": 718,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3495036",
+            "name": "square du Laonnais",
+            "category": "site notable",
+            "description": "Le square du Laonnais est une voie du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Laonnais%20-%20Paris%20XIX%20%28FR75%29%20-%202021-07-22%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Laonnais",
+            "latitude": 48.8807,
+            "longitude": 2.39827,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 562,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q48748171",
+            "name": "square du Vexin",
+            "category": "site notable",
+            "description": "Le square du Vexin est une voie du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Vexin%20-%20Paris%20XIX%20%28FR75%29%20-%202021-07-22%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Vexin",
+            "latitude": 48.881768,
+            "longitude": 2.396808,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl.des Fêtes",
+                "distance_m": 608,
+                "walk_minutes": 8
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "pl.des Fêtes",
+            "address_full": "16 Rue Augustin Thierry 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.876779,
+            "longitude": 2.393411,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Crimée",
+            "address_full": "3 Rue Petitot 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.876551,
+            "longitude": 2.392773,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station historique du métro parisien — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/place-des-fetes/source/wikimedia-station.jpg",
+        "alt": "Vue de la station de la station Place des Fêtes (Métro 7B, 11) — photo Wikimedia Commons par Métroën (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Métroën",
+            "license": "CC0",
+            "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Place_des_F%C3%AAtes_-_2025_-_Issue_de_secours_(1).jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/place-des-fetes/place-des-fetes-400.avif",
+                "800": "/assets/img/stations/place-des-fetes/place-des-fetes-800.avif",
+                "1200": "/assets/img/stations/place-des-fetes/place-des-fetes-1200.avif",
+                "1600": "/assets/img/stations/place-des-fetes/place-des-fetes-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/place-des-fetes/place-des-fetes-400.webp",
+                "800": "/assets/img/stations/place-des-fetes/place-des-fetes-800.webp",
+                "1200": "/assets/img/stations/place-des-fetes/place-des-fetes-1200.webp",
+                "1600": "/assets/img/stations/place-des-fetes/place-des-fetes-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/place-des-fetes/place-des-fetes-400.jpg",
+                "800": "/assets/img/stations/place-des-fetes/place-des-fetes-800.jpg",
+                "1200": "/assets/img/stations/place-des-fetes/place-des-fetes-1200.jpg",
+                "1600": "/assets/img/stations/place-des-fetes/place-des-fetes-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1789135",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1789135",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_F%C3%AAtes_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

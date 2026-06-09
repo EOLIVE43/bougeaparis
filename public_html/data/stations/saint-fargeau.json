@@ -1,0 +1,511 @@
+{
+    "published": true,
+    "slug": "saint-fargeau",
+    "name": "Saint-Fargeau",
+    "name_full": "Saint-Fargeau (Métro 3B)",
+    "arrondissement": "20e (Paris)",
+    "address": "Avenue Gambetta / rue Pelleport, 75020 Paris",
+    "latitude": 48.87184742776555,
+    "longitude": 2.404409520802737,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3B",
+            "slug": "metro-3bis",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "64",
+            "96"
+        ],
+        "nocturne": [],
+        "regional": [
+            "61"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 5,
+            "nearby_count": 6
+        }
+    },
+    "seo": {
+        "description": "Station Saint-Fargeau : M3bis pure dans le 20e arr., quartier Pelleport. Petite station résidentielle entre Gambetta et Pelleport (futur arrêt à venir)."
+    },
+    "hero": {
+        "tagline": "M3bis — quartier résidentiel Pelleport",
+        "description": "Station <strong>Saint-Fargeau</strong> sur la M3bis, ouverte le <strong>27 novembre 1921</strong>. Située dans le <strong>20e arrondissement</strong>, sous l'<strong>avenue Gambetta</strong> à proximité de la <strong>rue Pelleport</strong>. Petite station résidentielle de la ligne annexe M3bis (4 stations au total). Nom du <strong>square Saint-Fargeau</strong> proche."
+    },
+    "adjacent_stations": {
+        "metro-3bis": {
+            "previous": {
+                "name": "Pelleport",
+                "slug": "pelleport",
+                "direction": "Gambetta"
+            },
+            "next": {
+                "name": "Porte des Lilas",
+                "slug": "porte-des-lilas",
+                "direction": "Porte des Lilas"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Saint-Fargeau</strong> est située dans le <strong>20e arrondissement de Paris</strong>, sous l'<strong>avenue Gambetta</strong> à proximité de la <strong>rue Pelleport</strong>. Elle est desservie uniquement par la <strong>M3bis</strong> (Gambetta ↔ Porte des Lilas), entre <strong>Pelleport</strong> (1 station nord) et <strong>Gambetta</strong> (1 station sud). Bus 60, 64, 102.",
+        "Ouverte le <strong>27 novembre 1921</strong> avec la branche Gambetta ↔ Porte des Lilas de la M3 (devenue M3bis en 1971).",
+        "Le nom <strong>Saint-Fargeau</strong> vient du <strong>square Saint-Fargeau</strong> à proximité, lui-même nommé d'après <strong>Louis-Michel Lepeletier de Saint-Fargeau</strong> (1760-1793), homme politique français, conventionnel, président de l'Assemblée constituante, assassiné lors de la Révolution française. Quartier résidentiel et tranquille du 20e."
+    ],
+    "history": {
+        "title": "1921 : branche M3 vers Porte des Lilas",
+        "paragraphs": [
+            "La station <strong>Saint-Fargeau</strong> est inaugurée le <strong>27 novembre 1921</strong> avec la <strong>branche est de la M3</strong> (Gambetta ↔ Porte des Lilas, 4 stations). Configuration souterraine simple, 2 voies / 2 quais latéraux.",
+            "Le <strong>27 mars 1971</strong>, cette branche devient une <strong>ligne autonome</strong> appelée <strong>M3bis</strong>. Saint-Fargeau est l'une des 4 stations de la M3bis (avec Gambetta, Pelleport, Porte des Lilas).",
+            "Le nom vient du <strong>square Saint-Fargeau</strong> à proximité, baptisé d'après <strong>Louis-Michel Lepeletier de Saint-Fargeau</strong> (1760-1793), homme politique français, <strong>conventionnel</strong>, <strong>président de l'Assemblée constituante</strong>. Vota la <strong>mort de Louis XVI</strong> (21 janvier 1793). <strong>Assassiné le lendemain</strong> par un garde du corps royaliste (Philippe Nicolas Marie de Pâris). Considéré comme l'un des <strong>premiers martyrs républicains</strong>.",
+            "Le quartier autour est <strong>résidentiel et tranquille</strong>, peu connu des touristes. Commerces de proximité, peu d'attractions majeures. Fréquentation très faible (la M3bis a la plus basse fréquentation du réseau parisien, ~1,5 millions/an pour les 4 stations cumulées)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Saint-Fargeau ?",
+            "answer": "Uniquement la <strong>M3bis</strong>. Bus 60, 64, 102."
+        },
+        {
+            "question": "Pourquoi le nom Saint-Fargeau ?",
+            "answer": "Du <strong>square Saint-Fargeau</strong> à proximité, nommé d'après <strong>Louis-Michel Lepeletier de Saint-Fargeau</strong> (1760-1793), conventionnel républicain, assassiné le 21 janvier 1793 pour avoir voté la mort de Louis XVI."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M3bis vers Gambetta + M3</strong> : ~25 min total."
+        },
+        {
+            "question": "Comment aller à Père-Lachaise ?",
+            "answer": "<strong>M3bis vers Gambetta</strong> + à pied : ~10 min."
+        },
+        {
+            "question": "Comment aller à Porte des Lilas ?",
+            "answer": "<strong>M3bis directe</strong> : 2 stations (~4 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station historique 1921."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Square Saint-Fargeau</strong> à proximité — espace vert local.",
+        "Pour <strong>Gambetta</strong> : M3bis directe (1 station).",
+        "Pour <strong>Père-Lachaise</strong> : M3bis vers Gambetta + à pied (~10 min total).",
+        "Quartier résidentiel — peu de commerces touristiques.",
+        "M3bis : ligne la plus courte et la moins fréquentée du métro parisien."
+    ],
+    "trivia": [
+        {
+            "icon": "⚖️",
+            "title": "Louis-Michel Lepeletier de Saint-Fargeau (1760-1793)",
+            "content": "Le nom <strong>Saint-Fargeau</strong> vient de <strong>Louis-Michel Lepeletier de Saint-Fargeau</strong> (1760-1793), <strong>homme politique français</strong> de la Révolution. <strong>Conventionnel</strong>, <strong>président de l'Assemblée constituante</strong>. Vota la <strong>mort de Louis XVI</strong> (21 janvier 1793). <strong>Assassiné le lendemain</strong> dans un restaurant du Palais-Royal par un <strong>garde du corps royaliste</strong> (Philippe Nicolas Marie de Pâris). Considéré comme l'un des <strong>premiers martyrs républicains</strong>. <strong>Inhumé au Panthéon</strong> (transféré 1793, retiré 1795 lors de la Restauration). Statue à la Convention."
+        },
+        {
+            "icon": "🚇",
+            "title": "M3bis — ligne la plus courte et la moins fréquentée",
+            "content": "La <strong>M3bis</strong>, sur laquelle se trouve Saint-Fargeau, est la <strong>plus courte ligne du métro parisien</strong> (1,3 km, 4 stations). C'est aussi la <strong>moins fréquentée</strong> (~1,5 millions de voyageurs/an cumulés sur les 4 stations, soit ~3 fois moins que la station moyenne du réseau). Statut de ligne « annexe ». Service par <strong>navette automatique</strong> aux heures creuses. À l'étude : prolongement vers <strong>Place des Fêtes</strong> pour interconnecter M3bis et M7bis, mais projet non concrétisé."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Gambetta via M3bis",
+            "destination_slug": "gambetta",
+            "destination_full_name": "Saint-Fargeau → Gambetta",
+            "lines_used": [
+                "M3bis"
+            ],
+            "lines_label": "M3bis terminus sud (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-gambetta/"
+        },
+        {
+            "destination_name": "Porte des Lilas via M3bis",
+            "destination_slug": "porte-des-lilas",
+            "destination_full_name": "Saint-Fargeau → Porte des Lilas",
+            "lines_used": [
+                "M3bis"
+            ],
+            "lines_label": "M3bis terminus nord (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-porte-des-lilas/"
+        },
+        {
+            "destination_name": "Pelleport via M3bis",
+            "destination_slug": "pelleport",
+            "destination_full_name": "Saint-Fargeau → Pelleport",
+            "lines_used": [
+                "M3bis"
+            ],
+            "lines_label": "M3bis direction Porte des Lilas (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-pelleport/"
+        },
+        {
+            "destination_name": "Père-Lachaise (Cimetière)",
+            "destination_slug": "pere-lachaise-cimetiere",
+            "destination_full_name": "Saint-Fargeau → Père-Lachaise (Cimetière)",
+            "lines_used": [
+                "M3bis + à pied"
+            ],
+            "lines_label": "M3bis → Gambetta + 10 min à pied",
+            "duration_minutes": 16,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-pere-lachaise-cimetiere/"
+        },
+        {
+            "destination_name": "Châtelet via M3bis + M3",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Saint-Fargeau → Châtelet",
+            "lines_used": [
+                "M3bis + M3"
+            ],
+            "lines_label": "M3bis → Gambetta + M3 direction Pont de Levallois",
+            "duration_minutes": 27,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-chatelet/"
+        },
+        {
+            "destination_name": "Opéra via M3bis + M3",
+            "destination_slug": "opera",
+            "destination_full_name": "Saint-Fargeau → Opéra",
+            "lines_used": [
+                "M3bis + M3"
+            ],
+            "lines_label": "M3bis → Gambetta + M3",
+            "duration_minutes": 19,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-saint-fargeau/saint-fargeau-vers-opera/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1591802",
+            "name": "Haxo",
+            "category": "site notable",
+            "description": "Haxo est une station du métro parisien jamais ouverte située sous le boulevard Sérurier dans le 19e arrondissement de Paris, sur la voie de raccordement entre les lignes 3 bis, à la station Porte des…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haxo%20station%20fantome.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Haxo_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.878611,
+            "longitude": 2.401667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 802,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3145241",
+            "name": "hôpital Tenon",
+            "category": "hôpital",
+            "description": "L'hôpital Tenon est un hôpital situé 4, rue de la Chine, dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Tenon.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Tenon",
+            "latitude": 48.8661,
+            "longitude": 2.40167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 633,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3390729",
+            "name": "place Édith-Piaf",
+            "category": "place",
+            "description": "La place Édith-Piaf est une voie située dans le quartier Saint-Fargeau du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010047%20Paris%20XX%20Place%20E.Piaf%20metro%20porte%20de%20Bagnolet%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_%C3%89dith-Piaf",
+            "latitude": 48.8648,
+            "longitude": 2.40514,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 757,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2881586",
+            "name": "square Belleville - Télégraphe",
+            "category": "site notable",
+            "description": "Le square Belleville - Télégraphe est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20square%20belleville%20telegraphe.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Belleville_-_T%C3%A9l%C3%A9graphe",
+            "latitude": 48.8754,
+            "longitude": 2.3995,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 541,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3580388",
+            "name": "église Notre-Dame-des-Otages",
+            "category": "église",
+            "description": "L'église Notre-Dame-des-Otages  est une église paroissiale catholique située au no 81, rue Haxo dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-des-Otages%20%28Paris%29%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-des-Otages_de_Paris",
+            "latitude": 48.8742,
+            "longitude": 2.40305,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 302,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q19944967",
+            "name": "caserne des Tourelles",
+            "category": "site notable",
+            "description": "La caserne des Tourelles est une ancienne caserne militaire située 133-161 boulevard Mortier dans le 20e arrondissement de Paris, qui fut un camp d'internement pendant la Seconde Guerre mondiale,…",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boulevard_Mortier%2C_141.jpg/330px-Boulevard_Mortier%2C_141.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caserne_des_Tourelles",
+            "latitude": 48.874528,
+            "longitude": 2.406667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 380,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q427551",
+            "name": "square Léon-Frapié",
+            "category": "site notable",
+            "description": "Le square Léon-Frapié est un square du 20e arrondissement de Paris, dans le quartier Saint-Fargeau.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20L%C3%A9on%20Frapi%C3%A8%20%40%20Paris%20%2834375881524%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_L%C3%A9on-Frapi%C3%A9",
+            "latitude": 48.8728,
+            "longitude": 2.41194,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 592,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q530553",
+            "name": "square Édouard-Vaillant",
+            "category": "jardin",
+            "description": "Le square Édouard-Vaillant est un jardin public du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Edouard%20Vaillant%20%40%20Paris%20%2831446188135%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_%C3%89douard-Vaillant",
+            "latitude": 48.8656,
+            "longitude": 2.4002,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 722,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3162315",
+            "name": "jardin Emmi-Pickler",
+            "category": "jardin",
+            "description": "Le jardin Emmi-Pikler, anciennement jardin Olivier-Métra, est un espace vert du 20e arrondissement de Paris, dans le quartier de Belleville.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1090146%20Paris%20XX%20square%20Emmi-Pickler%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Emmi-Pikler",
+            "latitude": 48.8715,
+            "longitude": 2.3956,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 619,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3373018",
+            "name": "pavillon Carré de Baudouin",
+            "category": "site notable",
+            "description": "Le Pavillon Carré de Baudouin est un édifice du XVIIIe siècle situé rue de Ménilmontant dans le 20e arrondissement de Paris, qui a été converti en un espace culturel ouvert au public en juin 2007.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20Carr%C3%A9%20de%20Baudouin.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_Carr%C3%A9_de_Baudouin",
+            "latitude": 48.87,
+            "longitude": 2.39389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 764,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3494563",
+            "name": "square Emmanuel-Fleury",
+            "category": "site notable",
+            "description": "Le square Emmanuel-Fleury  est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20square%20emmanuel%20fleury2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Emmanuel-Fleury",
+            "latitude": 48.8703,
+            "longitude": 2.41181,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 584,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3495030",
+            "name": "square du Docteur-Variot",
+            "category": "site notable",
+            "description": "Le square du Docteur-Variot est un square situé près de la porte des Lilas, dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Docteur%20Variot%20Paris%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Docteur-Variot",
+            "latitude": 48.8764,
+            "longitude": 2.40667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Saint-Fargeau",
+                "distance_m": 570,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "pl. Saint-Fargeau",
+            "address_full": "4 Place Saint-Fargeau 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.871571,
+            "longitude": 2.404065,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station historique du métro parisien — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/saint-fargeau/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Saint-Fargeau (Métro 3B) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Saint_Fargeau_Place_Saint_Fargeau_-_Paris_XX_(FR75)_-_2022-01-07_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/saint-fargeau/saint-fargeau-400.avif",
+                "800": "/assets/img/stations/saint-fargeau/saint-fargeau-800.avif",
+                "1200": "/assets/img/stations/saint-fargeau/saint-fargeau-1200.avif",
+                "1600": "/assets/img/stations/saint-fargeau/saint-fargeau-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/saint-fargeau/saint-fargeau-400.webp",
+                "800": "/assets/img/stations/saint-fargeau/saint-fargeau-800.webp",
+                "1200": "/assets/img/stations/saint-fargeau/saint-fargeau-1200.webp",
+                "1600": "/assets/img/stations/saint-fargeau/saint-fargeau-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/saint-fargeau/saint-fargeau-400.jpg",
+                "800": "/assets/img/stations/saint-fargeau/saint-fargeau-800.jpg",
+                "1200": "/assets/img/stations/saint-fargeau/saint-fargeau-1200.jpg",
+                "1600": "/assets/img/stations/saint-fargeau/saint-fargeau-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1576198",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1576198",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Fargeau_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

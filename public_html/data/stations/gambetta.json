@@ -1,0 +1,575 @@
+{
+    "published": true,
+    "slug": "gambetta",
+    "name": "Gambetta",
+    "name_full": "Gambetta (Métro 3, 3B)",
+    "arrondissement": "20e (Paris)",
+    "address": "Place Gambetta, 75020 Paris",
+    "latitude": 48.865055765835464,
+    "longitude": 2.3986801681736405,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3",
+            "slug": "metro-3",
+            "color": "#6E6E00",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "metro",
+            "code": "3B",
+            "slug": "metro-3bis",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "3",
+            "26",
+            "60",
+            "64",
+            "69",
+            "102",
+            "CHARONNE"
+        ],
+        "nocturne": [
+            "N16",
+            "N34"
+        ],
+        "regional": [
+            "61"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 5,
+            "nearby_count": 22
+        }
+    },
+    "seo": {
+        "description": "Station Gambetta : terminus est M3 et terminus sud M3bis dans le 20e arr., place Gambetta avec Mairie du 20e, accès Cimetière du Père-Lachaise et hôpital Tenon."
+    },
+    "hero": {
+        "tagline": "M3 + M3bis — terminus est M3 et sud M3bis, Mairie du 20e",
+        "description": "Station <strong>Gambetta</strong> sur la <strong>place Gambetta</strong> dans le <strong>20e arrondissement</strong>. Terminus est de la <strong>M3</strong> (ouverte 25 janvier 1905) et <strong>terminus sud de la M3bis</strong> (ouverte 27 mars 1971, originellement branche M3 vers Porte des Lilas, séparée en ligne autonome). À la sortie : la <strong>Mairie du 20e arrondissement</strong> et un accès rapproché au <strong>Cimetière du Père-Lachaise</strong>."
+    },
+    "adjacent_stations": {
+        "metro-3": {
+            "previous": {
+                "name": "Porte de Bagnolet",
+                "slug": "porte-de-bagnolet",
+                "direction": "Gallieni"
+            },
+            "next": {
+                "name": "Père Lachaise",
+                "slug": "pere-lachaise",
+                "direction": "Pont de Levallois - Bécon"
+            }
+        },
+        "metro-3bis": {
+            "previous": null,
+            "next": {
+                "name": "Pelleport",
+                "slug": "pelleport",
+                "direction": "Porte des Lilas"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Gambetta</strong> est située dans le <strong>20e arrondissement de Paris</strong>, sur la <strong>place Gambetta</strong>. Elle est desservie par <strong>2 lignes</strong> : <strong>M3</strong> (terminus est, Pont de Levallois ↔ Gambetta) et <strong>M3bis</strong> (terminus sud, Gambetta ↔ Porte des Lilas). Bus 26, 60, 61, 64, 69, 96.",
+        "La station <strong>M3</strong> est inaugurée le <strong>25 janvier 1905</strong> avec le tronçon Père Lachaise ↔ Villiers. Elle deviendra terminus est de la M3 en 1921. La <strong>M3bis</strong> est créée le <strong>27 mars 1971</strong> par <strong>séparation de la branche Porte des Lilas ↔ Gambetta de la M3 historique</strong> — devient ligne autonome.",
+        "À <strong>5 min à pied</strong> : la <strong>Mairie du 20e arrondissement</strong> (1865-1877, architecte Claude Naissant, style éclectique néo-Renaissance). À <strong>10 min</strong> : l'entrée principale du <strong>Cimetière du Père-Lachaise</strong> (1804, ~70 ha, ~1 million de sépultures, monument funéraire le plus visité au monde — Chopin, Wilde, Morrison, Piaf, etc.). À <strong>5 min</strong> : <strong>hôpital Tenon</strong> (AP-HP)."
+    ],
+    "history": {
+        "title": "1905 : M3, 1971 : création M3bis (séparation branche)",
+        "paragraphs": [
+            "La station <strong>Gambetta</strong> est inaugurée le <strong>25 janvier 1905</strong> avec le tronçon Père Lachaise ↔ Villiers de la M3. Devient <strong>terminus est de la M3</strong> en 1921.",
+            "Le <strong>27 mars 1971</strong>, la <strong>M3bis est créée par séparation</strong> : la <strong>branche Gambetta ↔ Porte des Lilas</strong> de la M3 historique devient une <strong>ligne autonome courte</strong> (4 stations). Cas unique du réseau parisien : ligne créée non par construction nouvelle mais par <strong>scission administrative</strong>. La M3 perd sa branche est et s'arrête désormais à Gambetta.",
+            "Le nom <strong>Gambetta</strong> commémore <strong>Léon Gambetta</strong> (1838-1882), <strong>homme politique français</strong>, leader de la <strong>défense nationale en 1870-1871</strong> (gouvernement de défense de Paris pendant le siège prussien), <strong>fondateur de la IIIe République</strong>. <strong>Symbole de la République</strong>. Statue équestre place Gambetta.",
+            "À 5 min : la <strong>Mairie du 20e arrondissement</strong>, construite entre <strong>1865 et 1877</strong> par <strong>Claude Naissant</strong>. Style éclectique néo-Renaissance. Lieu institutionnel du 20e (~ 200 000 habitants, l'un des arrondissements les plus peuplés et populaires de Paris).",
+            "À 10 min : l'<strong>entrée principale du Cimetière du Père-Lachaise</strong>, créé en <strong>1804</strong> par Napoléon. <strong>~70 hectares</strong>, <strong>~1 million de sépultures</strong>. <strong>Monument funéraire le plus visité au monde</strong> (~3,5 millions de visiteurs/an)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Gambetta ?",
+            "answer": "<strong>M3</strong> (terminus est) et <strong>M3bis</strong> (terminus sud)."
+        },
+        {
+            "question": "Pourquoi le nom Gambetta ?",
+            "answer": "De <strong>Léon Gambetta</strong> (1838-1882), homme politique français, leader de la défense nationale en 1870-1871 et fondateur de la <strong>IIIe République</strong>."
+        },
+        {
+            "question": "Qu'est-ce que la M3bis ?",
+            "answer": "Ligne autonome courte (4 stations) créée le <strong>27 mars 1971</strong> par <strong>séparation de la branche Gambetta ↔ Porte des Lilas de la M3</strong> historique. Cas unique du réseau parisien."
+        },
+        {
+            "question": "Où est le Père-Lachaise ?",
+            "answer": "<strong>10 min à pied</strong> direction sud. Entrée principale boulevard de Ménilmontant. <strong>1804</strong>, ~70 ha, ~1 million de sépultures, monument funéraire le plus visité au monde."
+        },
+        {
+            "question": "Comment aller au centre de Paris ?",
+            "answer": "<strong>M3 directe</strong> : ~15 min jusqu'à Opéra (10 stations vers l'ouest)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1905/1971."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Mairie du 20e</strong> à 5 min — bâtiment historique 1865-1877.",
+        "<strong>Père-Lachaise</strong> à 10 min — monument funéraire le plus visité au monde.",
+        "<strong>Hôpital Tenon</strong> à 5 min.",
+        "Pour <strong>Opéra</strong> : M3 directe (~15 min).",
+        "Pour <strong>Porte des Lilas</strong> : M3bis directe (~6 min)."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "M3bis (1971) — cas unique de scission de ligne",
+            "content": "La <strong>M3bis</strong> est créée le <strong>27 mars 1971</strong> par <strong>séparation</strong> de la branche est de la M3 (Gambetta ↔ Porte des Lilas, 4 stations) — <strong>cas unique du réseau parisien</strong> de ligne créée par <strong>scission administrative</strong> et non par construction nouvelle. La M3 historique avait initialement une branche en Y à Gambetta : un tronçon principal vers Père-Lachaise / Opéra / Levallois, et une branche annexe vers Porte des Lilas. La séparation en 1971 simplifie l'exploitation, mais crée une ligne très courte (1,3 km) à faible fréquentation."
+        },
+        {
+            "icon": "🇫🇷",
+            "title": "Léon Gambetta — fondateur de la IIIe République",
+            "content": "<strong>Léon Gambetta</strong> (1838-1882), <strong>homme politique français</strong>, leader de la <strong>défense nationale française pendant la guerre franco-prussienne 1870-1871</strong> (gouvernement de défense de Paris pendant le siège prussien). Évacué de Paris en <strong>ballon le 7 octobre 1870</strong>, célèbre épisode. Considéré comme l'un des <strong>fondateurs de la IIIe République</strong>. Mort prématurément à 44 ans (accident d'arme à feu, gangrène). Statue équestre place Gambetta. Panthéonisé en 1920."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Mairie du 20e",
+            "destination_slug": "mairie-20e",
+            "destination_full_name": "Gambetta → Mairie du 20e",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-mairie-20e/"
+        },
+        {
+            "destination_name": "Père-Lachaise (entrée principale)",
+            "destination_slug": "pere-lachaise-cimetiere",
+            "destination_full_name": "Gambetta → Père-Lachaise (entrée principale)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min sud",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-pere-lachaise-cimetiere/"
+        },
+        {
+            "destination_name": "Opéra via M3",
+            "destination_slug": "opera",
+            "destination_full_name": "Gambetta → Opéra",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Pont de Levallois",
+            "duration_minutes": 15,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-opera/"
+        },
+        {
+            "destination_name": "Porte des Lilas via M3bis",
+            "destination_slug": "porte-des-lilas",
+            "destination_full_name": "Gambetta → Porte des Lilas",
+            "lines_used": [
+                "M3bis"
+            ],
+            "lines_label": "M3bis terminus nord",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-porte-des-lilas/"
+        },
+        {
+            "destination_name": "République via M3",
+            "destination_slug": "republique",
+            "destination_full_name": "Gambetta → République",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 direction Pont de Levallois",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-republique/"
+        },
+        {
+            "destination_name": "Hôpital Tenon",
+            "destination_slug": "hopital-tenon",
+            "destination_full_name": "Gambetta → Hôpital Tenon",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min direct",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-gambetta/gambetta-vers-hopital-tenon/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q910923",
+            "name": "mur des Fédérés",
+            "category": "monument",
+            "description": "Le mur des Fédérés est une partie de l'enceinte du cimetière du Père-Lachaise, dans le 20e arrondissement de Paris, devant laquelle 147 fédérés, combattants de la Commune, ont été fusillés par…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Commune2011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mur_des_F%C3%A9d%C3%A9r%C3%A9s",
+            "latitude": 48.859667,
+            "longitude": 2.400059,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Père Lachaise",
+                "distance_m": 559,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q12432989",
+            "name": "tombe d'Oscar Wilde",
+            "category": "site notable",
+            "description": "La tombe d'Oscar Wilde, intitulée Flying Demon Angel, est un monument funéraire situé à Paris au cimetière du Père-Lachaise.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Tombe_d%27Oscar_Wilde.jpg/330px-Tombe_d%27Oscar_Wilde.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tombe_d%27Oscar_Wilde",
+            "latitude": 48.861889,
+            "longitude": 2.398139,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Père Lachaise",
+                "distance_m": 299,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3145241",
+            "name": "hôpital Tenon",
+            "category": "hôpital",
+            "description": "L'hôpital Tenon est un hôpital situé 4, rue de la Chine, dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Tenon.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Tenon",
+            "latitude": 48.8661,
+            "longitude": 2.40167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie du 20e",
+                "distance_m": 239,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q392352",
+            "name": "tombe de Frédéric Chopin",
+            "category": "site notable",
+            "description": "La tombe de Frédéric Chopin (1810-1849) est un des monuments funéraires remarquables du cimetière du Père-Lachaise à Paris ; c'est une œuvre d'Auguste Clésinger, inaugurée en 1850 et désormais…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chopin%20Grave%20Grab%20Pere%20Lachaise.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tombe_de_Fr%C3%A9d%C3%A9ric_Chopin",
+            "latitude": 48.86,
+            "longitude": 2.392778,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl. Martin Nadaud",
+                "distance_m": 565,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2968411",
+            "name": "château de Bagnolet",
+            "category": "palais",
+            "description": "Le château de Bagnolet est un ancien château situé sur les territoires des communes de Charonne et de Bagnolet, dans ce qui est aujourd'hui le territoire du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20ermitage.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Bagnolet_(Paris)",
+            "latitude": 48.861944,
+            "longitude": 2.40625,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie du 20e",
+                "distance_m": 633,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1410649",
+            "name": "église Saint-Germain de Charonne",
+            "category": "église",
+            "description": "L'église Saint-Germain de Charonne un édifice religieux catholique du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20St%20Germain%20de%20Charonne%20Paris%2001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Germain_de_Charonne",
+            "latitude": 48.860482,
+            "longitude": 2.404016,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Père Lachaise",
+                "distance_m": 615,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3390729",
+            "name": "place Édith-Piaf",
+            "category": "place",
+            "description": "La place Édith-Piaf est une voie située dans le quartier Saint-Fargeau du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1010047%20Paris%20XX%20Place%20E.Piaf%20metro%20porte%20de%20Bagnolet%20reductwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_%C3%89dith-Piaf",
+            "latitude": 48.8648,
+            "longitude": 2.40514,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie du 20e",
+                "distance_m": 456,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2957470",
+            "name": "chapelle du Père-Lachaise",
+            "category": "chapelle",
+            "description": "La chapelle du Père-Lachaise, située à l'intérieur du cimetière du Père-Lachaise dans le 20e arrondissement de Paris, est un édifice religieux affecté au culte catholique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re%20Lachaise%20Cemetery%20%40%20Paris%20%2831299627462%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_du_P%C3%A8re-Lachaise",
+            "latitude": 48.8612,
+            "longitude": 2.39287,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl. Martin Nadaud",
+                "distance_m": 436,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3162617",
+            "name": "jardin naturel Pierre-Emmanuel",
+            "category": "jardin",
+            "description": "Le jardin naturel Pierre-Emmanuel est un jardin public du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Naturel%20Pierre%20Emmanuel%20-%20Paris%20XX%20%28FR75%29%20-%202021-10-18%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_naturel_Pierre-Emmanuel_(Paris)",
+            "latitude": 48.8586,
+            "longitude": 2.39889,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Père Lachaise",
+                "distance_m": 665,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3323309",
+            "name": "monument aux morts du Père-Lachaise",
+            "category": "monument",
+            "description": "Le monument aux morts du cimetière du Père-Lachaise est l'œuvre du peintre et sculpteur Paul-Albert Bartholomé, inauguré le 1er novembre 1899, après douze ans de travaux.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re-Lachaise%20-%20Monument%20aux%20morts%20-%20apr%C3%A8s%20restauration%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Monument_aux_morts_du_P%C3%A8re-Lachaise",
+            "latitude": 48.86092,
+            "longitude": 2.39194,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl. Martin Nadaud",
+                "distance_m": 491,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q16507997",
+            "name": "Charonne",
+            "category": "gare",
+            "description": "La gare de Charonne est une gare ferroviaire française désaffectée de la ligne de Petite Ceinture, située dans le 20e arrondissement de Paris, en région Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Charonne.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Charonne",
+            "latitude": 48.8594,
+            "longitude": 2.403,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Père Lachaise",
+                "distance_m": 668,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3389828",
+            "name": "place Gambetta",
+            "category": "place",
+            "description": "La place Gambetta est une voie située dans le quartier du Père-Lachaise du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1060503%20Paris%20XX%20place%20Gambetta%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Gambetta_(Paris)",
+            "latitude": 48.8649,
+            "longitude": 2.39847,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Mairie du 20e",
+                "distance_m": 32,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Mairie du 20e",
+            "address_full": "6 Place Gambetta 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.864953,
+            "longitude": 2.398906,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "pl. Gambetta",
+            "address_full": "10 Place Gambetta 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.865194,
+            "longitude": 2.398426,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Père Lachaise",
+            "address_full": "3 Place Gambetta 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.864573,
+            "longitude": 2.398365,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "pl. Martin Nadaud",
+            "address_full": "2 Place Martin Nadaud 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.864879,
+            "longitude": 2.394927,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Orfila",
+            "address_full": "4 Place Martin Nadaud 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.865077,
+            "longitude": 2.394802,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station historique du métro parisien — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/gambetta/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Gambetta (Métro 3, 3B) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Gambetta_M%C3%A9tro_Paris_Place_Gambetta_-_Paris_XX_(FR75)_-_2025-10-24_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/gambetta/gambetta-400.avif",
+                "800": "/assets/img/stations/gambetta/gambetta-800.avif",
+                "1200": "/assets/img/stations/gambetta/gambetta-1200.avif",
+                "1600": "/assets/img/stations/gambetta/gambetta-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/gambetta/gambetta-400.webp",
+                "800": "/assets/img/stations/gambetta/gambetta-800.webp",
+                "1200": "/assets/img/stations/gambetta/gambetta-1200.webp",
+                "1600": "/assets/img/stations/gambetta/gambetta-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/gambetta/gambetta-400.jpg",
+                "800": "/assets/img/stations/gambetta/gambetta-800.jpg",
+                "1200": "/assets/img/stations/gambetta/gambetta-1200.jpg",
+                "1600": "/assets/img/stations/gambetta/gambetta-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q946826",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q946826",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Gambetta_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

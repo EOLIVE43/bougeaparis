@@ -1,0 +1,586 @@
+{
+    "published": true,
+    "slug": "porte-des-lilas",
+    "name": "Porte des Lilas",
+    "name_full": "Porte des Lilas (Métro 3B, 11)",
+    "arrondissement": "19e (Paris)",
+    "address": "Place du Maquis du Vercors, 75019 Paris",
+    "latitude": 48.87707350075588,
+    "longitude": 2.408228800387185,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3B",
+            "slug": "metro-3bis",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "11",
+            "slug": "metro-11",
+            "color": "#704B1C",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "48",
+            "64",
+            "96",
+            "115"
+        ],
+        "nocturne": [
+            "N12",
+            "N23"
+        ],
+        "regional": [
+            "61",
+            "105",
+            "170",
+            "249"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 7,
+            "nearby_count": 26
+        }
+    },
+    "seo": {
+        "description": "Station Porte des Lilas : terminus M3bis + M11 dans le 19e arr. (à la limite de la commune des Lilas, 93). Cimetière des Lilas, Stade Nautique de Paris."
+    },
+    "hero": {
+        "tagline": "M3bis + M11 — double terminus du nord-est parisien",
+        "description": "Station <strong>Porte des Lilas</strong> à la <strong>limite du 19e arrondissement</strong> et de la commune des <strong>Lilas</strong> (Seine-Saint-Denis, 93). Desservie par <strong>M3bis</strong> (terminus nord, ouverte 27 novembre 1921) et <strong>M11</strong> (terminus est jusqu'au prolongement Rosny-sous-Bois prévu en 2024-2025, ouverte 28 avril 1935). <strong>Double terminus</strong> rare du réseau parisien."
+    },
+    "adjacent_stations": {
+        "metro-3bis": {
+            "previous": {
+                "name": "Saint-Fargeau",
+                "slug": "saint-fargeau",
+                "direction": "Gambetta"
+            },
+            "next": null
+        },
+        "metro-11": {
+            "previous": {
+                "name": "Mairie des Lilas",
+                "slug": "mairie-des-lilas",
+                "direction": "Rosny-Bois-Perrier"
+            },
+            "next": {
+                "name": "Télégraphe",
+                "slug": "telegraphe",
+                "direction": "Châtelet"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte des Lilas</strong> est située à la <strong>limite du 19e arrondissement de Paris</strong> et de la commune des <strong>Lilas</strong> (Seine-Saint-Denis, 93). Elle est desservie par <strong>2 lignes</strong> : <strong>M3bis</strong> (terminus nord, Gambetta ↔ Porte des Lilas) et <strong>M11</strong> (Châtelet ↔ Rosny - Bois-Perrier, terminus est avant prolongement 2024-2025). Bus 48, 61, 64, 96, 105, 115, 129, 170.",
+        "La station <strong>M11</strong> ouvre le <strong>28 avril 1935</strong> avec la M11 originelle (Châtelet ↔ Porte des Lilas). La station <strong>M3bis</strong> existait depuis le <strong>27 novembre 1921</strong> (à l'époque branche de la M3, séparée en M3bis en 1971). <strong>Double terminus</strong>, rare configuration du réseau parisien.",
+        "À <strong>5 min à pied</strong> : la commune des <strong>Lilas</strong> (~22 000 habitants, Seine-Saint-Denis). À <strong>10 min</strong> : le <strong>Cimetière des Lilas</strong> et le futur <strong>Stade Nautique de Paris</strong> (prévu pour les Olympiades urbaines)."
+    ],
+    "history": {
+        "title": "1921 : M3bis (branche M3), 1935 : M11, double terminus",
+        "paragraphs": [
+            "La station <strong>Porte des Lilas</strong> ouvre le <strong>27 novembre 1921</strong> avec la <strong>branche est de la M3</strong> (Gambetta ↔ Porte des Lilas, 4 stations). En <strong>1971</strong>, cette branche devient une ligne autonome appelée <strong>M3bis</strong> (cas unique de scission de ligne).",
+            "La station <strong>M11</strong> est ajoutée le <strong>28 avril 1935</strong> avec l'ouverture de la M11 originelle (Châtelet ↔ Porte des Lilas, 9 stations). Configuration : <strong>terminus est de la M11</strong>, avec voies de retournement et garage. La M11 sera prolongée vers <strong>Rosny - Bois-Perrier (Grand Paris Express)</strong> en 2024-2025.",
+            "<strong>Double terminus</strong> M3bis + M11, configuration rare et unique du réseau parisien. La station accueille aussi historiquement des <strong>quais déclassés</strong> non utilisés par les voyageurs (vestiges de configurations passées).",
+            "La <strong>commune des Lilas</strong> à 5 min est l'une des plus petites communes de la première couronne (~22 000 habitants). Nom inspiré des <strong>lilas qui parfumaient l'ancien village rural</strong> au XIXe siècle. Quartier résidentiel.",
+            "Futur : le <strong>Stade Nautique de Paris</strong>, prévu à proximité pour accueillir activités aquatiques liées aux Olympiades urbaines."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Porte des Lilas ?",
+            "answer": "<strong>M3bis</strong> (terminus nord) et <strong>M11</strong> (terminus est avant prolongement Rosny 2024-2025). Bus 48, 61, 64, 96, 105, 115, 129, 170."
+        },
+        {
+            "question": "C'est où Les Lilas ?",
+            "answer": "Commune des <strong>Hauts-de-Seine</strong>... <strong>Non, des Seine-Saint-Denis (93)</strong>. ~22 000 habitants. Nom inspiré des <strong>lilas qui parfumaient l'ancien village rural</strong> au XIXe siècle."
+        },
+        {
+            "question": "Pourquoi un double terminus ?",
+            "answer": "<strong>M3bis et M11 se terminent toutes deux ici</strong>. Configuration rare et historique. M3bis : terminus depuis 1921. M11 : terminus est jusqu'au prolongement vers Rosny - Bois-Perrier (Grand Paris Express, 2024-2025)."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M11 directe</strong> : ~20 min (8 stations vers l'ouest)."
+        },
+        {
+            "question": "Comment aller à Gambetta ?",
+            "answer": "<strong>M3bis directe</strong> : ~6 min (3 stations vers le sud)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Stations historiques 1921/1935."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Commune des Lilas</strong> à 5 min — village historique 93.",
+        "Pour <strong>Châtelet</strong> : M11 directe (~20 min).",
+        "Pour <strong>Gambetta</strong> : M3bis directe (~6 min).",
+        "Pour <strong>République</strong> : M11 directe.",
+        "Quartier limite Paris/banlieue — différents tarifs si on traverse."
+    ],
+    "trivia": [
+        {
+            "icon": "🚇",
+            "title": "Double terminus M3bis + M11 — rare configuration",
+            "content": "Porte des Lilas est l'une des <strong>rares stations à double terminus</strong> du métro parisien : la <strong>M3bis</strong> y termine au nord, et la <strong>M11</strong> y termine à l'est. Configuration unique pour 2 lignes différentes. La M11 sera prolongée à <strong>Rosny - Bois-Perrier</strong> dans le cadre du <strong>Grand Paris Express</strong> en 2024-2025, ce qui mettra fin au statut de terminus est de la M11."
+        },
+        {
+            "icon": "🌸",
+            "title": "Les Lilas — origine du nom rurale (XIXe)",
+            "content": "La <strong>commune des Lilas</strong> à 5 min de la station tire son nom des <strong>lilas qui parfumaient l'ancien village rural</strong> au XIXe siècle. Avant l'annexion de la zone par Paris et la construction des fortifications de Thiers (1841-1844), le territoire était occupé par des <strong>vergers et plantations de lilas</strong>, fournissant le marché parisien en fleurs et fruits. <strong>Annexée à Paris</strong> en 1860 (en partie), reste commune indépendante. ~22 000 habitants aujourd'hui."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Châtelet via M11",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Porte des Lilas → Châtelet",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (8 stations)",
+            "duration_minutes": 20,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gambetta via M3bis",
+            "destination_slug": "gambetta",
+            "destination_full_name": "Porte des Lilas → Gambetta",
+            "lines_used": [
+                "M3bis"
+            ],
+            "lines_label": "M3bis terminus sud (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-gambetta/"
+        },
+        {
+            "destination_name": "République via M11",
+            "destination_slug": "republique",
+            "destination_full_name": "Porte des Lilas → République",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-republique/"
+        },
+        {
+            "destination_name": "Les Lilas centre",
+            "destination_slug": "les-lilas-centre",
+            "destination_full_name": "Porte des Lilas → Les Lilas centre",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min sortie nord",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-les-lilas-centre/"
+        },
+        {
+            "destination_name": "Cimetière des Lilas",
+            "destination_slug": "cimetiere-lilas",
+            "destination_full_name": "Porte des Lilas → Cimetière des Lilas",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min direction nord",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-cimetiere-lilas/"
+        },
+        {
+            "destination_name": "Hôtel de Ville via M11",
+            "destination_slug": "hotel-de-ville",
+            "destination_full_name": "Porte des Lilas → Hôtel de Ville",
+            "lines_used": [
+                "M11"
+            ],
+            "lines_label": "M11 direction Châtelet (10 stations)",
+            "duration_minutes": 22,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-des-lilas/porte-des-lilas-vers-hotel-de-ville/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1591802",
+            "name": "Haxo",
+            "category": "site notable",
+            "description": "Haxo est une station du métro parisien jamais ouverte située sous le boulevard Sérurier dans le 19e arrondissement de Paris, sur la voie de raccordement entre les lignes 3 bis, à la station Porte des…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haxo%20station%20fantome.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Haxo_(m%C3%A9tro_de_Paris)",
+            "latitude": 48.878611,
+            "longitude": 2.401667,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Sérurier",
+                "distance_m": 369,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3495170",
+            "name": "église de Marie-Médiatrice-de-Toutes-les-Grâces",
+            "category": "église",
+            "description": "L’église de Marie-Médiatrice-de-Toutes-les-Grâces, ou église de Marie-Médiatrice ou église Notre-Dame-de-Fatima est une église catholique du 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20de%20Marie-M%C3%A9diatrice-de-Toutes-les-Gr%C3%A2ces%20001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_Marie-M%C3%A9diatrice-de-Toutes-les-Gr%C3%A2ces",
+            "latitude": 48.8792,
+            "longitude": 2.4025,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Sérurier",
+                "distance_m": 350,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q2881586",
+            "name": "square Belleville - Télégraphe",
+            "category": "site notable",
+            "description": "Le square Belleville - Télégraphe est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20square%20belleville%20telegraphe.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Belleville_-_T%C3%A9l%C3%A9graphe",
+            "latitude": 48.8754,
+            "longitude": 2.3995,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Belleville",
+                "distance_m": 514,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3580388",
+            "name": "église Notre-Dame-des-Otages",
+            "category": "église",
+            "description": "L'église Notre-Dame-des-Otages  est une église paroissiale catholique située au no 81, rue Haxo dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-des-Otages%20%28Paris%29%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-des-Otages_de_Paris",
+            "latitude": 48.8742,
+            "longitude": 2.40305,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 369,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q19944967",
+            "name": "caserne des Tourelles",
+            "category": "site notable",
+            "description": "La caserne des Tourelles est une ancienne caserne militaire située 133-161 boulevard Mortier dans le 20e arrondissement de Paris, qui fut un camp d'internement pendant la Seconde Guerre mondiale,…",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boulevard_Mortier%2C_141.jpg/330px-Boulevard_Mortier%2C_141.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caserne_des_Tourelles",
+            "latitude": 48.874528,
+            "longitude": 2.406667,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 213,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q427551",
+            "name": "square Léon-Frapié",
+            "category": "site notable",
+            "description": "Le square Léon-Frapié est un square du 20e arrondissement de Paris, dans le quartier Saint-Fargeau.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20L%C3%A9on%20Frapi%C3%A8%20%40%20Paris%20%2834375881524%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_L%C3%A9on-Frapi%C3%A9",
+            "latitude": 48.8728,
+            "longitude": 2.41194,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 554,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3162362",
+            "name": "jardin Serge-Gainsbourg",
+            "category": "jardin",
+            "description": "Le jardin Serge-Gainsbourg est un jardin public du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Serge%20Gainsbourg%2001.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Serge-Gainsbourg",
+            "latitude": 48.8789,
+            "longitude": 2.40861,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. des Glaïeuls",
+                "distance_m": 178,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3494563",
+            "name": "square Emmanuel-Fleury",
+            "category": "site notable",
+            "description": "Le square Emmanuel-Fleury  est un square du 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20square%20emmanuel%20fleury2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Emmanuel-Fleury",
+            "latitude": 48.8703,
+            "longitude": 2.41181,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 776,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3495030",
+            "name": "square du Docteur-Variot",
+            "category": "site notable",
+            "description": "Le square du Docteur-Variot est un square situé près de la porte des Lilas, dans le 20e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Docteur%20Variot%20Paris%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_du_Docteur-Variot",
+            "latitude": 48.8764,
+            "longitude": 2.40667,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 8,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q118518848",
+            "name": "Lac de Saint-Fargeau",
+            "category": "site notable",
+            "description": "Le Lac de Saint-Fargeau est un parc de loisirs du 20e arrondissement de Paris aujourd'hui disparu.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lac%20de%20Saint-Fargeau%204.png?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Lac_de_Saint-Fargeau",
+            "latitude": 48.876362,
+            "longitude": 2.404302,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. de Belleville",
+                "distance_m": 147,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3399063",
+            "name": "porte de Ménilmontant",
+            "category": "site notable",
+            "description": "La porte de Ménilmontant est une porte de Paris en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Boulevard_Mortier_-_Paris_XX_%28FR75%29_-_2021-06-02_-_1.jpg/330px-Boulevard_Mortier_-_Paris_XX_%28FR75%29_-_2021-06-02_-_1.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_M%C3%A9nilmontant",
+            "latitude": 48.8708,
+            "longitude": 2.40861,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Sq. du Docteur Variot",
+                "distance_m": 642,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3399160",
+            "name": "porte des Lilas",
+            "category": "site notable",
+            "description": "La porte des Lilas, également appelée porte de Romainville, est l'une des dix-sept portes percées dans l'enceinte de Thiers au milieu du XIXe siècle pour protéger Paris, en France.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rue_Charles_Cros_-_Paris_XX_%28FR75%29_-_2021-06-02_-_2.jpg/330px-Rue_Charles_Cros_-_Paris_XX_%28FR75%29_-_2021-06-02_-_2.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_des_Lilas",
+            "latitude": 48.8772,
+            "longitude": 2.40667,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Sérurier",
+                "distance_m": 30,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. Gambetta",
+            "address_full": "259 Avenue Gambetta 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.8767,
+            "longitude": 2.40642,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Mortier",
+            "address_full": "259 Avenue Gambetta 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.87662,
+            "longitude": 2.406543,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. de Belleville",
+            "address_full": "328 Rue de Belleville 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.876897,
+            "longitude": 2.406145,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd Sérurier",
+            "address_full": "1 Boulevard Sérurier 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.877266,
+            "longitude": 2.406277,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Sq. du Docteur Variot",
+            "address_full": "164 Boulevard Mortier 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.876441,
+            "longitude": 2.406763,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. des Glaïeuls",
+            "address_full": "10 Avenue de la Porte des Lilas 75020 Paris",
+            "postcode": "75020",
+            "city": "Paris",
+            "latitude": 48.877373,
+            "longitude": 2.407885,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station historique du métro parisien — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/porte-des-lilas/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Porte des Lilas (Métro 3B, 11) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Totem_M%C3%A9tro_Acc%C3%A8s_Station_Porte_Lilas_M%C3%A9tro_Paris_Avenue_Porte_Lilas_-_Paris_XX_(FR75)_-_2025-10-21_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-des-lilas/porte-des-lilas-400.avif",
+                "800": "/assets/img/stations/porte-des-lilas/porte-des-lilas-800.avif",
+                "1200": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1200.avif",
+                "1600": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-des-lilas/porte-des-lilas-400.webp",
+                "800": "/assets/img/stations/porte-des-lilas/porte-des-lilas-800.webp",
+                "1200": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1200.webp",
+                "1600": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-des-lilas/porte-des-lilas-400.jpg",
+                "800": "/assets/img/stations/porte-des-lilas/porte-des-lilas-800.jpg",
+                "1200": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1200.jpg",
+                "1600": "/assets/img/stations/porte-des-lilas/porte-des-lilas-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q606164",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q606164",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_des_Lilas_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

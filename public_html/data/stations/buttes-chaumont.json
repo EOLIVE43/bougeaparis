@@ -1,0 +1,513 @@
+{
+    "published": true,
+    "slug": "buttes-chaumont",
+    "name": "Buttes Chaumont",
+    "name_full": "Buttes Chaumont (Métro 7B)",
+    "arrondissement": "19e (Paris)",
+    "address": "Av. Simón Bolívar / Av. Mathurin Moreau, 75019 Paris",
+    "latitude": 48.878369925764666,
+    "longitude": 2.38180998777039,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7B",
+            "slug": "metro-7bis",
+            "color": "#6ECA97",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "7B",
+            "26"
+        ],
+        "nocturne": [],
+        "regional": [
+            "71",
+            "75"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 5,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Buttes-Chaumont : M7bis pure dans le 19e arr., accès direct au Parc des Buttes-Chaumont (5e plus grand parc parisien, Haussmann/Alphand 1867, Temple de la Sibylle)."
+    },
+    "hero": {
+        "tagline": "M7bis — Parc des Buttes-Chaumont (Haussmann 1867)",
+        "description": "Station <strong>Buttes-Chaumont</strong> ouverte le <strong>18 janvier 1911</strong> avec la M7bis. Située dans le <strong>19e arrondissement</strong>, dessert le <strong>Parc des Buttes-Chaumont</strong> à la sortie, <strong>5e plus grand parc intra-muros de Paris</strong> (25 hectares). Créé en <strong>1867</strong> par <strong>Haussmann et le paysagiste Alphand</strong>. Caractéristiques : <strong>lac artificiel</strong>, <strong>île avec falaise de 30 m</strong>, <strong>Temple de la Sibylle</strong> au sommet."
+    },
+    "adjacent_stations": {
+        "metro-7bis": {
+            "previous": {
+                "name": "Bolivar",
+                "slug": "bolivar",
+                "direction": "Louis Blanc"
+            },
+            "next": {
+                "name": "Botzaris",
+                "slug": "botzaris",
+                "direction": "Pré-Saint-Gervais"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Buttes-Chaumont</strong> est située dans le <strong>19e arrondissement de Paris</strong>, à l'entrée sud du <strong>Parc des Buttes-Chaumont</strong>. Elle est desservie uniquement par la <strong>M7bis</strong>, entre <strong>Bolívar</strong> (1 station sud) et <strong>Botzaris</strong> (1 station nord-est). Bus 26, 75.",
+        "Ouverte le <strong>18 janvier 1911</strong> avec la branche M7bis (devenue ligne autonome en 1967).",
+        "À la sortie : le <strong>Parc des Buttes-Chaumont</strong>, l'un des <strong>plus beaux parcs de Paris</strong>. <strong>25 hectares</strong>, créé entre <strong>1864 et 1867</strong> sous <strong>Haussmann</strong> par le paysagiste <strong>Jean-Charles Alphand</strong>. Caractéristiques uniques : <strong>lac artificiel</strong> (~1,5 ha), <strong>île centrale avec falaise de 30 m</strong>, <strong>Temple de la Sibylle</strong> (copie réduite du temple de Tivoli) au sommet de l'île, <strong>cascade artificielle</strong>, <strong>pont suspendu</strong>. Aménagé sur une ancienne carrière de gypse et décharge."
+    ],
+    "history": {
+        "title": "1864-1867 : Haussmann/Alphand sur une ancienne carrière",
+        "paragraphs": [
+            "La station <strong>Buttes-Chaumont</strong> ouvre le <strong>18 janvier 1911</strong> avec la branche M7bis (Louis Blanc ↔ Pré Saint-Gervais). M7bis devient ligne autonome en 1967.",
+            "Le <strong>Parc des Buttes-Chaumont</strong> est l'un des <strong>parcs les plus emblématiques de Paris</strong>. <strong>25 hectares</strong>, créé entre <strong>1864 et 1867</strong> sous <strong>Haussmann</strong> dans le cadre des grands aménagements parisiens de Napoléon III, par le paysagiste <strong>Jean-Charles Alphand</strong> (1817-1891, ingénieur en chef des promenades de Paris).",
+            "<strong>Tour de force technique</strong> : aménagé sur une <strong>ancienne carrière de gypse</strong> (XVIIe-XIXe) et une <strong>décharge</strong>. Le site, autrefois lugubre et qualifié de <em>« mont chauve »</em> (d'où Chaumont), est transformé en parc paysager spectaculaire.",
+            "Éléments caractéristiques : <strong>lac artificiel</strong> (~1,5 ha) creusé par Alphand, <strong>île centrale avec falaise rocheuse de 30 m</strong>, <strong>Temple de la Sibylle</strong> (1867) au sommet de l'île — copie réduite du <strong>temple de Vesta à Tivoli (Italie)</strong>, <strong>cascade artificielle</strong> alimentée par le canal de l'Ourcq, <strong>pont suspendu</strong>, <strong>pont des Suicidés</strong> (filets de sécurité installés au XXe).",
+            "Inauguré le <strong>1er avril 1867</strong> pour l'<strong>Exposition universelle</strong> de Paris. <strong>5e plus grand parc intra-muros de Paris</strong> (après les Bois de Boulogne et Vincennes périphériques, puis Tuileries et Luxembourg pour les jardins centraux historiques). Très fréquenté par les habitants du 19e et touristes parisiens."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Buttes-Chaumont ?",
+            "answer": "Uniquement la <strong>M7bis</strong>. Bus 26, 75."
+        },
+        {
+            "question": "Qu'est-ce que les Buttes-Chaumont ?",
+            "answer": "<strong>Parc paysager de 25 hectares</strong> dans le 19e arrondissement de Paris. Créé entre <strong>1864 et 1867</strong> sous Haussmann par le paysagiste <strong>Alphand</strong>. <strong>Tour de force technique</strong> : aménagé sur une ancienne carrière de gypse et décharge."
+        },
+        {
+            "question": "Qu'est-ce que le Temple de la Sibylle ?",
+            "answer": "<strong>Temple antique</strong> situé au sommet de l'île du lac. <strong>Copie réduite du temple de Vesta à Tivoli (Italie)</strong>. Construit en 1867 pour l'Exposition universelle. Lieu romantique emblématique."
+        },
+        {
+            "question": "Comment accéder au parc ?",
+            "answer": "Sortie directe de la station — entrée sud du parc. Le parc a 5 entrées au total. Ouvert tous les jours, gratuit. Horaires variables selon saison."
+        },
+        {
+            "question": "Comment aller à Châtelet ?",
+            "answer": "<strong>M7bis vers Louis Blanc + M7</strong> : ~14 min."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non, pas entièrement</strong>. Station historique 1911."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Parc des Buttes-Chaumont</strong> à la sortie — l'un des plus beaux parcs de Paris.",
+        "<strong>Temple de la Sibylle</strong> au sommet de l'île — montée 10 min, vue panoramique.",
+        "<strong>Cascade artificielle</strong> et grotte aménagée à visiter.",
+        "Pour <strong>Châtelet</strong> : M7bis → Louis Blanc + M7.",
+        "Pour <strong>Stalingrad</strong> : M7bis → Jaurès + M2."
+    ],
+    "trivia": [
+        {
+            "icon": "🌳",
+            "title": "Parc des Buttes-Chaumont — sur une ancienne carrière (1867)",
+            "content": "Le <strong>Parc des Buttes-Chaumont</strong> à la sortie de la station est l'un des <strong>plus emblématiques de Paris</strong>. <strong>25 hectares</strong>, créé entre <strong>1864 et 1867</strong> sous <strong>Haussmann</strong> par le paysagiste <strong>Jean-Charles Alphand</strong>. <strong>Tour de force technique</strong> : aménagé sur une <strong>ancienne carrière de gypse</strong> et une <strong>décharge</strong>. Le site, autrefois lugubre (« mont chauve », d'où Chaumont), est transformé en parc paysager spectaculaire. <strong>Inauguré le 1er avril 1867 pour l'Exposition universelle</strong> de Paris. Lac artificiel de 1,5 ha, île avec falaise de 30 m, Temple de la Sibylle au sommet, cascade artificielle."
+        },
+        {
+            "icon": "🏛️",
+            "title": "Temple de la Sibylle (1867) — copie de Tivoli",
+            "content": "Au sommet de l'île centrale du lac, le <strong>Temple de la Sibylle</strong> est l'un des éléments les plus reconnaissables du parc. <strong>Copie réduite du temple de Vesta à Tivoli</strong> (près de Rome, Italie). Construit en <strong>1867</strong> pour l'<strong>Exposition universelle</strong>. <strong>10 colonnes corinthiennes</strong> en pierre artificielle. Sommet à <strong>30 m au-dessus du lac</strong>. Vue panoramique sur le parc, le 19e arrondissement et l'est parisien. Lieu romantique emblématique des promenades parisiennes."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Parc des Buttes-Chaumont (entrée sud)",
+            "destination_slug": "parc-buttes-chaumont",
+            "destination_full_name": "Buttes Chaumont → Parc des Buttes-Chaumont (entrée sud)",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-parc-buttes-chaumont/"
+        },
+        {
+            "destination_name": "Temple de la Sibylle",
+            "destination_slug": "temple-sibylle",
+            "destination_full_name": "Buttes Chaumont → Temple de la Sibylle",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Au sommet de l'île (10 min depuis entrée)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-temple-sibylle/"
+        },
+        {
+            "destination_name": "Châtelet via M7bis + M7",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Buttes Chaumont → Châtelet",
+            "lines_used": [
+                "M7bis + M7"
+            ],
+            "lines_label": "M7bis → Louis Blanc + M7",
+            "duration_minutes": 14,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-chatelet/"
+        },
+        {
+            "destination_name": "Jaurès via M7bis",
+            "destination_slug": "jaures",
+            "destination_full_name": "Buttes Chaumont → Jaurès",
+            "lines_used": [
+                "M7bis"
+            ],
+            "lines_label": "M7bis (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-jaures/"
+        },
+        {
+            "destination_name": "Place des Fêtes via M7bis",
+            "destination_slug": "place-des-fetes",
+            "destination_full_name": "Buttes Chaumont → Place des Fêtes",
+            "lines_used": [
+                "M7bis"
+            ],
+            "lines_label": "M7bis (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-place-des-fetes/"
+        },
+        {
+            "destination_name": "Botzaris via M7bis",
+            "destination_slug": "botzaris",
+            "destination_full_name": "Buttes Chaumont → Botzaris",
+            "lines_used": [
+                "M7bis"
+            ],
+            "lines_label": "M7bis (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-buttes-chaumont/buttes-chaumont-vers-botzaris/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q532113",
+            "name": "parc des Buttes-Chaumont",
+            "category": "jardin",
+            "description": "Le parc des Buttes-Chaumont est un jardin public situé dans le 19e arrondissement de Paris, un secteur nord-est de Paris, en région française Île-de-France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/070922%20Parce%20des%20Buttes%20Chaumont%20005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_des_Buttes-Chaumont",
+            "latitude": 48.880278,
+            "longitude": 2.382778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 269,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3210514",
+            "name": "stade Bergeyre",
+            "category": "site notable",
+            "description": "Le stade Bergeyre est un ancien stade du 19e arrondissement de Paris, nommé en hommage à Robert Bergeyre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stade%20Bergeyre.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Stade_Bergeyre",
+            "latitude": 48.8772,
+            "longitude": 2.37694,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 327,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q496060",
+            "name": "siège du Parti communiste français",
+            "category": "site notable",
+            "description": "Le siège du Parti communiste français (PCF) est situé à Paris, depuis 1971 au 2, place du Colonel-Fabien, dans le 19e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Communist%20Party%20HQ%2C%20Place%20du%20Colonel%20Fabien%2C%20Paris%20July%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Si%C3%A8ge_du_Parti_communiste_fran%C3%A7ais",
+            "latitude": 48.877778,
+            "longitude": 2.371667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 699,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3581916",
+            "name": "église Saint-Jean-Baptiste de Belleville",
+            "category": "église",
+            "description": "L’église Saint-Jean-Baptiste de Belleville est une des premières églises d'architecture néogothique construites à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Jean-Baptiste%20de%20Belleville1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-Baptiste_de_Belleville",
+            "latitude": 48.8757,
+            "longitude": 2.3893,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 649,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q16507940",
+            "name": "Belleville-Villette",
+            "category": "gare",
+            "description": "La gare de Belleville-Villette est une gare ferroviaire française disparue de la ligne de Petite Ceinture de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/EV%20-%20PARIS%20XIX%20-%20Station%20de%20Belleville-Villette.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Belleville-Villette",
+            "latitude": 48.8842,
+            "longitude": 2.38509,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 736,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3501091",
+            "name": "Studios des Buttes Chaumont",
+            "category": "site notable",
+            "description": "Les studios des Buttes-Chaumont, baptisés « Centre René-Barthélemy » le 15 avril 1956, étaient des studios de cinéma puis de télévision situés entre la rue Carducci et la rue des Alouettes au sud du…",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Studios_des_Buttes-Chaumont",
+            "latitude": 48.8781,
+            "longitude": 2.387,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 424,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1802602",
+            "name": "synagogue de Belleville",
+            "category": "synagogue",
+            "description": "La synagogue ou temple israélite de Belleville, localisé au 75 rue Julien-Lacroix et au 49 rue de Pali-Kao, dans le quartier de Belleville du 20e arrondissement de Paris, est construite de 1925 à…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Synagogue%20Belleville%20%28Paris%20%29%2002.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_Belleville",
+            "latitude": 48.87125,
+            "longitude": 2.382917,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 771,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3581461",
+            "name": "église Saint-François-d'Assise",
+            "category": "église",
+            "description": "L'église catholique Saint-François-d'Assise  est située rue de Mouzaïa dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Fran%C3%A7ois-d%27Assise%20%28Paris%29%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois-d%27Assise_de_Paris",
+            "latitude": 48.8803,
+            "longitude": 2.39153,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 794,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3494499",
+            "name": "square Bolivar",
+            "category": "site notable",
+            "description": "Le square Bolivar est une voie du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Bolivar%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Bolivar",
+            "latitude": 48.8756,
+            "longitude": 2.38306,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 309,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3126067",
+            "name": "halle Secrétan",
+            "category": "site notable",
+            "description": "La halle Secrétan, appelé aussi marché Secrétan, est un marché couvert situé dans le 19e arrondissement de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9%20Secr%C3%A9tan%2C%20Paris%20-%20Corner%20of%20Rue%20de%20Meaux%20et%20Rue%20Secr%C3%A9tan.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Halle_Secr%C3%A9tan",
+            "latitude": 48.881353,
+            "longitude": 2.373868,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 648,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3162359",
+            "name": "jardin de l'Îlot Rébeval",
+            "category": "jardin",
+            "description": "Le jardin de l'Îlot-Rébeval est un espace vert du 19e arrondissement de Paris, en France.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilot%20R%C3%A9beval%2C%20Paris%2011%20March%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_de_l%27%C3%8Elot-R%C3%A9beval",
+            "latitude": 48.8733,
+            "longitude": 2.37695,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 617,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q65123892",
+            "name": "Villa Zilveli",
+            "category": "site notable",
+            "description": "Construite en 1933 par l'architecte Jean Welz et démolie en 2022 à l’initiative de l’artiste Jean-Paul Goude, son dernier propriétaire, la villa Zilveli était un bâtiment caractéristique de…",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Villa%20Zilvelli.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Villa_Zilveli",
+            "latitude": 48.877606,
+            "longitude": 2.375679,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Rue Botzaris",
+                "distance_m": 408,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Rue Botzaris",
+            "address_full": "3 Rue Botzaris 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.878093,
+            "longitude": 2.381207,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station historique du métro parisien — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/buttes-chaumont/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Buttes Chaumont (Métro 7B) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Buttes_Chaumont_M%C3%A9tro_Paris_Rue_Botzaris_-_Paris_XIX_(FR75)_-_2025-10-15_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/buttes-chaumont/buttes-chaumont-400.avif",
+                "800": "/assets/img/stations/buttes-chaumont/buttes-chaumont-800.avif",
+                "1200": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1200.avif",
+                "1600": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/buttes-chaumont/buttes-chaumont-400.webp",
+                "800": "/assets/img/stations/buttes-chaumont/buttes-chaumont-800.webp",
+                "1200": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1200.webp",
+                "1600": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/buttes-chaumont/buttes-chaumont-400.jpg",
+                "800": "/assets/img/stations/buttes-chaumont/buttes-chaumont-800.jpg",
+                "1200": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1200.jpg",
+                "1600": "/assets/img/stations/buttes-chaumont/buttes-chaumont-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1018164",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1018164",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Buttes_Chaumont_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
