@@ -249,6 +249,62 @@ function license_is_cc_compatible(string $license): bool {
 }
 
 /**
+ * PRIORITE 1 : recherche d'une photo Wikimedia de la station elle-meme
+ * dans les categories standard Wikimedia Commons :
+ *   - "Entrances to {nom} metro station"  (entree, edicule)
+ *   - "{nom} (Paris Metro)"                (general gare)
+ *
+ * Le nom de la station est construit a partir de $station['name'] (ex:
+ * "Saint-Denis - Pleyel", "Villejuif - Gustave Roussy"). On normalise
+ * en remplacant "-" / espaces selon ce qui marche.
+ *
+ * Filtres : license CC + dims >= WIKIMEDIA_MIN_W + mime image/jpeg|png.
+ * Retourne ['filename' => str, 'info' => imageinfo, 'category' => str]
+ * ou null.
+ */
+function find_wikimedia_station(array $station): ?array {
+    $name = $station['name'] ?? '';
+    if ($name === '') return null;
+    // Categories candidates dans l'ordre de priorite
+    $categories = [
+        "Entrances to $name metro station",      // entree (le top)
+        "$name (Paris Metro)",                    // general gare
+        "$name (Paris Metro line " . ($station['lines'][0]['code'] ?? '') . ")",
+    ];
+    foreach ($categories as $cat) {
+        $url = 'https://commons.wikimedia.org/w/api.php?' . http_build_query([
+            'action'      => 'query',
+            'list'        => 'categorymembers',
+            'cmtitle'     => "Category:$cat",
+            'cmnamespace' => 6,
+            'cmlimit'     => 30,
+            'format'      => 'json',
+        ]);
+        [$code, $body] = http_get($url);
+        if ($code !== 200) continue;
+        $d = json_decode($body, true);
+        $members = $d['query']['categorymembers'] ?? [];
+        if (empty($members)) continue;
+        // Pour chaque membre, query imageinfo et valide. Prend le 1er valide.
+        $tried = 0;
+        foreach ($members as $member) {
+            if ($tried >= WIKIMEDIA_MAX_POI_TRIES) break;
+            $title = $member['title'] ?? '';
+            if (!str_starts_with($title, 'File:')) continue;
+            $filename = substr($title, 5);
+            $tried++;
+            $info = wikimedia_imageinfo($filename);
+            if (!$info) continue;
+            if ($info['width'] < WIKIMEDIA_MIN_W) continue;
+            if (!license_is_cc_compatible($info['license'])) continue;
+            if (!in_array($info['mime'], ['image/jpeg', 'image/png'], true)) continue;
+            return ['filename' => $filename, 'info' => $info, 'category' => $cat];
+        }
+    }
+    return null;
+}
+
+/**
  * Tente le fallback Wikimedia : itere sur nearby_pois, prend le 1er POI dont
  * l'image satisfait : >=WIKIMEDIA_MIN_W de large + license CC compatible.
  * Retourne [poi, imageinfo] ou null.
@@ -425,7 +481,59 @@ function process_station(string $slug, string $token): array {
     $srcDir = "$outDir/source";
     if (!is_dir($srcDir)) @mkdir($srcDir, 0755, true);
 
-    // 1. Tentative Mapillary avec rayon adaptatif (50 -> 100 -> 200m)
+    // PRIORITE 1 : Wikimedia station (photo edicule/entree/hall de LA gare)
+    $wkStation = find_wikimedia_station($station);
+    if ($wkStation !== null) {
+        $info = $wkStation['info'];
+        $wkSrc = "$srcDir/wikimedia-station.jpg";
+        if (http_download($info['url'], $wkSrc)) {
+            $cropped = "$srcDir/wikimedia-station-crop.jpg";
+            if (!central_crop_16_9($wkSrc, $cropped)) @copy($wkSrc, $cropped);
+            @unlink($wkSrc);
+            rename($cropped, $wkSrc);
+            $n = generate_variants($wkSrc, $slug, $outDir);
+            $stationName = $station['name_full'] ?? $station['name'];
+            $station['hero_image'] = [
+                'url'    => "https://bougeaparis.fr/assets/img/stations/$slug/source/wikimedia-station.jpg",
+                'alt'    => sprintf(
+                    "Vue de la station %s — photo Wikimedia Commons (categorie %s)",
+                    $stationName, $wkStation['category']
+                ),
+                'width'  => 1200,
+                'height' => 675,
+                'credit' => [
+                    'author'      => $info['artist'] ?: 'Wikimedia Commons contributors',
+                    'license'     => $info['license'] ?: 'CC BY-SA 4.0',
+                    'license_url' => $info['license_url'] ?: 'https://creativecommons.org/licenses/by-sa/4.0',
+                    'source_url'  => $info['desc_url'] ?: '',
+                    'date'        => TODAY,
+                ],
+                'source'           => 'wikimedia_station',
+                'confidence_score' => 22,
+                'confidence_level' => 'auto_generated',
+                'local_versions'   => build_local_versions($slug),
+            ];
+            save_station($slug, $station);
+            return [
+                'slug'             => $slug,
+                'source'           => 'wikimedia_station',
+                'total'            => null,
+                'image_id'         => null,
+                'creator'          => $info['artist'],
+                'date'             => null,
+                'dist_m'           => null,
+                'compass'          => null,
+                'matched_radius_m' => null,
+                'attempts'         => [],
+                'variants'         => $n,
+                'tiles'            => null,
+                'wikimedia_category' => $wkStation['category'],
+                'reason'           => null,
+            ];
+        }
+    }
+
+    // 2. Tentative Mapillary avec rayon adaptatif (50 -> 100 -> 200m)
     $adaptive = find_mapillary_adaptive($token, $lat, $lon);
     $best = $adaptive['best'];
     $matchedRadius = $adaptive['matched_radius_m'];
