@@ -1,0 +1,525 @@
+{
+  "published": true,
+  "slug": "la-fourche",
+  "name": "La Fourche",
+  "name_full": "La Fourche (Métro 13)",
+  "arrondissement": "17e arrondissement (Paris)",
+  "address": "Avenue de Saint-Ouen, 75017 Paris",
+  "latitude": 48.88751282465547,
+  "longitude": 2.325399430830626,
+  "tariff_zone": 1,
+  "tariff_zone_context": "Paris intra-muros",
+  "commune": "Paris",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "13",
+      "slug": "metro-13",
+      "color": "#6EC4E8",
+      "text_color": "#000000"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [
+      "21",
+      "BATIGNO"
+    ],
+    "nocturne": [
+      "N15",
+      "N51"
+    ],
+    "regional": [
+      "54",
+      "74"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-10",
+      "same_node_count": 6,
+      "nearby_count": 10
+    }
+  },
+  "seo": {
+    "description": "Station La Fourche (M13) avenue de Saint-Ouen dans le 17e. Point de fourche unique de la M13 (branches Asnières et Saint-Denis)."
+  },
+  "hero": {
+    "tagline": "M13 — point de fourche, séparation des 2 branches",
+    "description": "Station <strong>La Fourche</strong> sur l'<strong>avenue de Saint-Ouen</strong> dans le <strong>17e arrondissement</strong>. Desservie par la <strong>M13</strong>, ouverte le <strong>26 février 1911</strong>. <strong>Point unique de la fourche M13</strong> où la ligne se sépare en <strong>2 branches</strong> : <strong>Asnières-Gennevilliers</strong> (ouest) et <strong>Saint-Denis</strong> (nord)."
+  },
+  "adjacent_stations": {
+    "metro-13": {
+      "previous": {
+        "name": "Guy Môquet",
+        "slug": "guy-moquet",
+        "direction": "Saint-Denis - Université"
+      },
+      "next": {
+        "name": "Place de Clichy",
+        "slug": "place-de-clichy",
+        "direction": "Châtillon - Montrouge"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>La Fourche</strong> est implantée sur l'<strong>avenue de Saint-Ouen</strong> dans le <strong>17e arrondissement</strong>. Elle est desservie par la <strong>M13</strong>, entre <strong>Guy Môquet</strong> (1 station, côté sud) et <strong>Brochant / Porte de Saint-Ouen</strong> (1 station selon branche). Bus 31, 54, 66, 74.",
+    "Ouverte le <strong>26 février 1911</strong> sur la <strong>ligne B du Nord-Sud</strong>. <strong>Point unique de fourche</strong> de la M13.",
+    "À cette station, la M13 se <strong>scinde en 2 branches</strong> : la <strong>branche Asnières-Gennevilliers</strong> (vers l'ouest, terminus Asnières - Gennevilliers - Les Courtilles) et la <strong>branche Saint-Denis</strong> (vers le nord-est, terminus Saint-Denis - Université). Les rames alternent automatiquement entre les 2 branches."
+  ],
+  "history": {
+    "title": "1911 : Nord-Sud et point de fourche unique",
+    "paragraphs": [
+      "La station La Fourche est <strong>inaugurée le 26 février 1911</strong> sur la <strong>ligne B du Nord-Sud</strong> (compagnie privée fusionnée avec la CMP en 1930, ligne devenue M13 en 1942).",
+      "Le nom <strong>La Fourche</strong> fait référence à la <strong>configuration unique</strong> de la station : elle est le <strong>point de fourche de la M13</strong>, où la ligne se sépare en <strong>2 branches distinctes</strong>. <strong>Particularité architecturale</strong> : la station a une <strong>plateforme inférieure</strong> pour les trains de la branche Saint-Denis et une <strong>plateforme supérieure</strong> pour la branche Asnières-Gennevilliers.",
+      "<strong>Système d'alternance automatique</strong> : les rames alternent entre les 2 branches selon la fréquentation. Cette configuration de <strong>fourche M13</strong> est <strong>unique sur le réseau métro parisien</strong> (seule autre fourche : ligne 7 entre Maison Blanche et ses 2 terminus sud, et brièvement ligne 7bis)."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert La Fourche ?",
+      "answer": "Uniquement la <strong>M13</strong>. Bus 31, 54, 66, 74."
+    },
+    {
+      "question": "Qu'est-ce que la fourche M13 ?",
+      "answer": "Le <strong>point unique de séparation</strong> où la M13 se scinde en <strong>2 branches</strong> : <strong>Asnières-Gennevilliers</strong> (ouest) et <strong>Saint-Denis</strong> (nord-est)."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Le <strong>26 février 1911</strong>."
+    },
+    {
+      "question": "Comment fonctionne l'alternance ?",
+      "answer": "Les rames <strong>alternent automatiquement</strong> entre les 2 branches. Vérifiez la destination du train sur les panneaux d'affichage."
+    },
+    {
+      "question": "Pour Saint-Lazare ?",
+      "answer": "<strong>M13 directe</strong> (~8 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>."
+    }
+  ],
+  "practical_tips": [
+    "<strong>Point de fourche M13</strong> : <strong>vérifiez la destination</strong> du train.",
+    "Vers <strong>Saint-Denis</strong> : trains marqués « Saint-Denis - Université ».",
+    "Vers <strong>Asnières</strong> : trains marqués « Asnières - Gennevilliers - Les Courtilles ».",
+    "Pour <strong>Saint-Lazare</strong> : <strong>M13 directe</strong> (les deux branches).",
+    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+  ],
+  "trivia": [
+    {
+      "icon": "🚇",
+      "title": "Fourche M13, configuration unique",
+      "content": "La <strong>fourche M13</strong> à La Fourche est <strong>unique dans le métro parisien</strong> par son ampleur. La ligne se <strong>scinde en 2 branches</strong> : <strong>Asnières-Gennevilliers</strong> (ouest) et <strong>Saint-Denis</strong> (nord-est). Les <strong>rames alternent automatiquement</strong> entre les 2 branches selon le service. Cela permet de <strong>desservir 2 axes simultanément</strong> mais réduit la <strong>fréquence sur chaque branche</strong>."
+    },
+    {
+      "icon": "🏛️",
+      "title": "Architecture à 2 niveaux",
+      "content": "La station <strong>La Fourche</strong> présente une <strong>architecture particulière à 2 niveaux</strong> : une <strong>plateforme supérieure</strong> pour la branche Asnières-Gennevilliers et une <strong>plateforme inférieure</strong> pour la branche Saint-Denis. Cette configuration permet de gérer le <strong>croisement complexe des voies</strong> sans interruption."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Saint-Lazare",
+      "destination_slug": "saint-lazare",
+      "destination_full_name": "La Fourche → Saint-Lazare",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (~8 min)",
+      "duration_minutes": 8,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-saint-lazare/"
+    },
+    {
+      "destination_name": "Place de Clichy",
+      "destination_slug": "place-de-clichy",
+      "destination_full_name": "La Fourche → Place de Clichy",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (2 stations)",
+      "duration_minutes": 4,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-place-de-clichy/"
+    },
+    {
+      "destination_name": "Châtelet",
+      "destination_slug": "chatelet",
+      "destination_full_name": "La Fourche → Châtelet",
+      "lines_used": [
+        "M13 + M14"
+      ],
+      "lines_label": "M13 → Saint-Lazare + M14",
+      "duration_minutes": 12,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-chatelet/"
+    },
+    {
+      "destination_name": "Champs-Élysées",
+      "destination_slug": "champs-elysees-clemenceau",
+      "destination_full_name": "La Fourche → Champs-Élysées",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (~10 min)",
+      "duration_minutes": 10,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-champs-elysees-clemenceau/"
+    },
+    {
+      "destination_name": "Mairie de Saint-Ouen",
+      "destination_slug": "mairie-de-saint-ouen",
+      "destination_full_name": "La Fourche → Mairie de Saint-Ouen",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 branche Saint-Denis (3 stations)",
+      "duration_minutes": 6,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-mairie-de-saint-ouen/"
+    },
+    {
+      "destination_name": "La Défense",
+      "destination_slug": "la-defense",
+      "destination_full_name": "La Fourche → La Défense",
+      "lines_used": [
+        "M13 + M1"
+      ],
+      "lines_label": "Via Champs-Élysées + M1",
+      "duration_minutes": 18,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-la-fourche/la-fourche-vers-la-defense/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q151030",
+      "name": "Moulin-Rouge",
+      "category": "site notable",
+      "description": "Fondé en 1889 par Josep Oller et Charles Zidler, ce cabaret historique du boulevard de Clichy conjugue spectacles de concert et tradition parisienne depuis plus d'un siècle. Implanté à Pigalle au pied de Montmartre, le Moulin-Rouge conserve l'architecture pensée par Adolphe Léon Willette, incarnant le patrimoine culturel du 18e arrondissement.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Moulin%20Rouge%2C%2017%20April%202011.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Moulin-Rouge",
+      "latitude": 48.884167,
+      "longitude": 2.332222,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. de Saint-Ouen",
+        "distance_m": 635,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q1138922",
+      "name": "Le Chat noir",
+      "category": "site notable",
+      "description": "Fondé en 1881 par Rodolphe Salis, ce lieu emblématique de Montmartre conjuguait cabaret, théâtre et art des marionnettes. La revue hebdomadaire du même nom, lancée par son créateur, en fit un foyer culturel majeur de la Belle Époque parisienne.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Chat%20noir%201929.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Chat_noir",
+      "latitude": 48.88359,
+      "longitude": 2.33413,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. de Saint-Ouen",
+        "distance_m": 785,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q1810764",
+      "name": "place de Clichy",
+      "category": "place",
+      "description": "Créée en 1789, la place de Clichy occupe une position stratégique dans le secteur nord-ouest parisien. Cette place historique constitue un carrefour urbain majeur, à environ 480 mètres de la station Rome.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20place%20de%20clichy.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_Clichy",
+      "latitude": 48.883519,
+      "longitude": 2.327394,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 490,
+        "walk_minutes": 6
+      }
+    },
+    {
+      "wikidata_id": "Q1025611",
+      "name": "café Guerbois",
+      "category": "café",
+      "description": "Fondé par François-Auguste Guerbois au XIXe siècle, ce café de la Grande Rue des Batignolles a marqué l'histoire artistique parisienne en accueillant peintres, écrivains et collectionneurs. Le lieu servait de point de ralliement aux figures du mouvement impressionniste, notamment à Édouard Manet qui y retrouvait ses pairs.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20At%20the%20Caf%C3%A9%20Guerbois.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_Guerbois",
+      "latitude": 48.884458,
+      "longitude": 2.326773,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 377,
+        "walk_minutes": 5
+      }
+    },
+    {
+      "wikidata_id": "Q623260",
+      "name": "square des Batignolles",
+      "category": "jardin",
+      "description": "Créé en 1862, ce jardin public du 17e arrondissement offre une pause verdoyante au cœur du quartier des Batignolles. Voisin du parc Martin-Luther-King, il constitue un espace de détente accessible facilement depuis la station Pont Cardinet.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20des%20Batignolles%2020060815%2005.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_des_Batignolles",
+      "latitude": 48.8875,
+      "longitude": 2.316389,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 647,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q2593762",
+      "name": "café des 2 Moulins",
+      "category": "café",
+      "description": "Établissement emblématique du quartier Montmartre, ce café-brasserie du 18e arrondissement a acquis une notoriété particulière suite à sa présence dans le film Le Fabuleux Destin d'Amélie Poulain. Son ambiance authentique en fait une halte appréciée des visiteurs explorant les ruelles du quartier.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cafe%20des%202%20Moulins%2C%20Paris%2024%20August%202019.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_des_2_Moulins",
+      "latitude": 48.884931,
+      "longitude": 2.333611,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. de Saint-Ouen",
+        "distance_m": 673,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q3527480",
+      "name": "théâtre Hébertot",
+      "category": "théâtre",
+      "description": "Fondé en 1838 sur le boulevard des Batignolles, ce théâtre du 17e arrondissement accueille des spectacles variés depuis près de deux siècles. Inscrit au patrimoine historique, il demeure un lieu culturel établi du quartier des Batignolles.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20H%C3%A9bertot%20-%20Paris%20XVII%20%28FR75%29%20-%202021-08-22%20-%202.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_H%C3%A9bertot",
+      "latitude": 48.882083,
+      "longitude": 2.318889,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 777,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q2292251",
+      "name": "théâtre de l'Œuvre",
+      "category": "théâtre",
+      "description": "Fondé en 1893, ce théâtre du 9e arrondissement occupe la cité Monthiers, non loin de la rue de Clichy. Aujourd'hui exploité par le groupe CANAL+, il propose une programmation variée de spectacles et représentations théâtrales.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20de%20l%27%C5%92uvre%2C%20Paris.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_de_l%27%C5%92uvre",
+      "latitude": 48.881,
+      "longitude": 2.3285,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. de Saint-Ouen",
+        "distance_m": 782,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q2957132",
+      "name": "chapelle Sainte-Rita",
+      "category": "chapelle",
+      "description": "Édifice religieux implanté boulevard de Clichy dans le 9e arrondissement, la chapelle Sainte-Rita accueille les fidèles catholiques du quartier. Ce lieu de culte offre un point de repère spirituel accessible à quelques minutes de marche depuis le nord de Montmartre.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chapelle%20Sainte-Rita.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Sainte-Rita_de_Paris",
+      "latitude": 48.883889,
+      "longitude": 2.331667,
+      "nearest_exit": {
+        "number": "2",
+        "name": "av. de Saint-Ouen",
+        "distance_m": 624,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q624219",
+      "name": "église Sainte-Marie des Batignolles",
+      "category": "église",
+      "description": "Édifiée en 1851 par les architectes Paul-Eugène Lequeux et Auguste Molinos, cette église du 17e arrondissement témoigne du développement urbain du quartier des Batignolles au XIXe siècle. Inscrite au titre de monument historique, elle demeure un repère architectural notable de ce secteur parisien.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1160969%20Paris%20XVII%20eglise%20ste-Marie%20des%20Batignolles%20rwk.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Marie_des_Batignolles",
+      "latitude": 48.88679,
+      "longitude": 2.31786,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 548,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q14629277",
+      "name": "place de Dublin",
+      "category": "place",
+      "description": "Située dans le quartier de l'Europe au 8e arrondissement, la place de Dublin porte le nom de la capitale irlandaise. Cette voie du secteur parisien offre une halte urbaine dans une zone caractérisée par son architecture haussmannienne et son patrimoine historique.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20de%20Dublin%20depuis%20la%20rue%20de%20Moscou.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_Dublin",
+      "latitude": 48.8807,
+      "longitude": 2.32475,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 778,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q3583239",
+      "name": "église Saint-Michel des Batignolles",
+      "category": "église",
+      "description": "Édifiée entre 1913 et 1938 par l'architecte Bernard Haubold, cette église incarne l'architecture religieuse du XXᵉ siècle. Implantée place Saint-Jean dans le 17ᵉ arrondissement, elle figure au patrimoine architectural protégé de la ville.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/EgliseSaintMicheldesBatignollesClocherEntier1.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Michel_des_Batignolles",
+      "latitude": 48.889,
+      "longitude": 2.3245,
+      "nearest_exit": {
+        "number": "1",
+        "name": "av. de Clichy",
+        "distance_m": 155,
+        "walk_minutes": 2
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "av. de Clichy",
+      "address_full": "66 Avenue de Clichy 75017 Paris",
+      "postcode": "75017",
+      "city": "Paris",
+      "latitude": 48.887692,
+      "longitude": 2.325233,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "av. de Saint-Ouen",
+      "address_full": "1 Avenue de Saint-Ouen 75017 Paris",
+      "postcode": "75017",
+      "city": "Paris",
+      "latitude": 48.887738,
+      "longitude": 2.325451,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/la-fourche/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station La Fourche (Métro 13) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Fourche_M%C3%A9tro_Paris_Avenue_Clichy_-_Paris_XVII_(FR75)_-_2025-02-01_-_1.jpg",
+      "date": "2026-06-10"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/la-fourche/la-fourche-400.avif",
+        "800": "/assets/img/stations/la-fourche/la-fourche-800.avif",
+        "1200": "/assets/img/stations/la-fourche/la-fourche-1200.avif",
+        "1600": "/assets/img/stations/la-fourche/la-fourche-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/la-fourche/la-fourche-400.webp",
+        "800": "/assets/img/stations/la-fourche/la-fourche-800.webp",
+        "1200": "/assets/img/stations/la-fourche/la-fourche-1200.webp",
+        "1600": "/assets/img/stations/la-fourche/la-fourche-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/la-fourche/la-fourche-400.jpg",
+        "800": "/assets/img/stations/la-fourche/la-fourche-800.jpg",
+        "1200": "/assets/img/stations/la-fourche/la-fourche-1200.jpg",
+        "1600": "/assets/img/stations/la-fourche/la-fourche-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q780625",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q780625",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Fourche_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "published": true,
+  "slug": "garibaldi",
+  "name": "Garibaldi",
+  "name_full": "Garibaldi (Métro 13)",
+  "arrondissement": "Saint-Ouen-sur-Seine (93)",
+  "address": "Avenue Gabriel-Péri, 93400 Saint-Ouen-sur-Seine",
+  "latitude": 48.90615188592337,
+  "longitude": 2.331931277870809,
+  "tariff_zone": 3,
+  "tariff_zone_context": "Seine-Saint-Denis (93), zone tarifaire 3",
+  "commune": "Saint-Ouen-sur-Seine",
+  "is_major_hub": false,
+  "i18n": {
+    "en": "",
+    "es": ""
+  },
+  "lines": [
+    {
+      "type": "metro",
+      "code": "13",
+      "slug": "metro-13",
+      "color": "#6EC4E8",
+      "text_color": "#000000"
+    }
+  ],
+  "bus_correspondences": {
+    "diurne": [],
+    "nocturne": [
+      "N14",
+      "N44"
+    ],
+    "regional": [
+      "85",
+      "137",
+      "237",
+      "AUDONIE"
+    ],
+    "_audit": {
+      "source": "gtfs-idfm",
+      "buffer_radius_m": 300,
+      "audit_date": "2026-06-10",
+      "same_node_count": 7,
+      "nearby_count": 9
+    }
+  },
+  "seo": {
+    "description": "Station Garibaldi (M13) à Saint-Ouen-sur-Seine (93). Hommage à Giuseppe Garibaldi, héros italien du Risorgimento."
+  },
+  "hero": {
+    "tagline": "M13 — Garibaldi, unificateur de l'Italie",
+    "description": "Station <strong>Garibaldi</strong> à <strong>Saint-Ouen-sur-Seine</strong> (Seine-Saint-Denis, 93). Desservie par la <strong>M13</strong>, ouverte le <strong>20 juin 1976</strong>. Hommage à <strong>Giuseppe Garibaldi</strong> (<strong>1807-1882</strong>), <strong>général italien</strong>, figure majeure du <strong>Risorgimento</strong> et de l'<strong>unification de l'Italie</strong>."
+  },
+  "adjacent_stations": {
+    "metro-13": {
+      "previous": {
+        "name": "Mairie de Saint-Ouen",
+        "slug": "mairie-de-saint-ouen",
+        "direction": "Saint-Denis - Université"
+      },
+      "next": {
+        "name": "Porte de Saint-Ouen",
+        "slug": "porte-de-saint-ouen",
+        "direction": "Châtillon - Montrouge"
+      }
+    }
+  },
+  "intro_paragraphs": [
+    "La station <strong>Garibaldi</strong> est implantée à <strong>Saint-Ouen-sur-Seine</strong> (Seine-Saint-Denis, 93). Elle est desservie par la <strong>M13</strong>, entre <strong>Mairie de Saint-Ouen</strong> (1 station) et <strong>Porte de Saint-Ouen</strong> (1 station). Bus 137, 173, 274.",
+    "Ouverte le <strong>20 juin 1976</strong> avec le <strong>prolongement de la M13</strong> de <strong>Porte de Saint-Ouen à Carrefour Pleyel</strong>.",
+    "Le nom <strong>Garibaldi</strong> rend hommage à <strong>Giuseppe Garibaldi</strong> (<strong>1807-1882</strong>), <strong>général italien</strong>, figure majeure du <strong>Risorgimento</strong> et de l'<strong>unification de l'Italie</strong> au XIXe siècle."
+  ],
+  "history": {
+    "title": "1976 : Garibaldi et Risorgimento",
+    "paragraphs": [
+      "La station Garibaldi est <strong>inaugurée le 20 juin 1976</strong> avec le <strong>prolongement de la M13</strong> de <strong>Porte de Saint-Ouen à Carrefour Pleyel</strong>.",
+      "Le nom <strong>Garibaldi</strong> rend hommage à <strong>Giuseppe Garibaldi</strong> (<strong>4 juillet 1807 - 2 juin 1882</strong>), <strong>général italien</strong>, figure majeure du <strong>Risorgimento</strong>. <strong>Acteur majeur de l'unification de l'Italie</strong> (1860 : célèbre <strong>expédition des Mille</strong> en Sicile).",
+      "Garibaldi combattit également pour la France lors de la <strong>guerre franco-prussienne de 1870-1871</strong>, à la tête de l'<strong>armée des Vosges</strong>. <strong>Élu député</strong> à l'Assemblée nationale française en 1871. Surnommé le <strong>« héros des deux mondes »</strong>."
+    ]
+  },
+  "faq": [
+    {
+      "question": "Quelle ligne dessert Garibaldi ?",
+      "answer": "Uniquement la <strong>M13</strong>. Bus 137, 173, 274."
+    },
+    {
+      "question": "Qui est Garibaldi ?",
+      "answer": "<strong>Giuseppe Garibaldi</strong> (1807-1882), <strong>général italien</strong>, artisan de l'<strong>unification de l'Italie</strong>."
+    },
+    {
+      "question": "Quand a-t-elle ouvert ?",
+      "answer": "Le <strong>20 juin 1976</strong>."
+    },
+    {
+      "question": "Pour le centre Saint-Ouen ?",
+      "answer": "<strong>M13 directe</strong> vers <strong>Mairie de Saint-Ouen</strong> (1 station)."
+    },
+    {
+      "question": "Pour le centre de Paris ?",
+      "answer": "<strong>M13 directe</strong> vers <strong>Saint-Lazare</strong> (~14 min)."
+    },
+    {
+      "question": "La station est-elle accessible PMR ?",
+      "answer": "<strong>Non</strong>."
+    }
+  ],
+  "practical_tips": [
+    "Quartier <strong>Saint-Ouen</strong> résidentiel et commerçant.",
+    "Pour <strong>Marché aux Puces de Saint-Ouen</strong> : <strong>M13 → Porte de Clignancourt M4</strong>.",
+    "Pour <strong>Mairie de Saint-Ouen</strong> (hub M13+M14) : <strong>M13 directe</strong>.",
+    "Pour <strong>Saint-Lazare</strong> : <strong>M13 directe</strong>.",
+    "Zone tarifaire <strong>3</strong>, Seine-Saint-Denis."
+  ],
+  "trivia": [
+    {
+      "icon": "🇮🇹",
+      "title": "Garibaldi et l'unification de l'Italie",
+      "content": "<strong>Giuseppe Garibaldi</strong> (1807-1882), <strong>général italien</strong>, figure majeure du <strong>Risorgimento</strong> (mouvement d'unification italienne). <strong>Expédition des Mille</strong> en Sicile (1860) : conquête du <strong>royaume des Deux-Siciles</strong> avec seulement <strong>1 000 volontaires</strong>. Acteur clé de l'<strong>unification italienne</strong> proclamée en 1861. Combattit aussi pour la France lors de la <strong>guerre franco-prussienne</strong> (1870-1871). Surnommé le <strong>« héros des deux mondes »</strong>."
+    },
+    {
+      "icon": "🏛️",
+      "title": "Saint-Ouen, ancienne ville industrielle",
+      "content": "<strong>Saint-Ouen-sur-Seine</strong>, ~50 000 habitants, est l'une des communes de la <strong>Seine-Saint-Denis</strong>. Ancienne <strong>ville industrielle</strong> aux XIXe-XXe siècles. Elle abrite le célèbre <strong>marché aux Puces de Saint-Ouen</strong>, l'un des <strong>plus grands marchés d'antiquités au monde</strong> (~7 hectares, ~2 500 marchands). Quartier en transformation depuis les années 2010."
+    }
+  ],
+  "popular_itineraries": [
+    {
+      "destination_name": "Mairie de Saint-Ouen",
+      "destination_slug": "mairie-de-saint-ouen",
+      "destination_full_name": "Garibaldi → Mairie de Saint-Ouen",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-mairie-de-saint-ouen/"
+    },
+    {
+      "destination_name": "Porte de Saint-Ouen",
+      "destination_slug": "porte-de-saint-ouen",
+      "destination_full_name": "Garibaldi → Porte de Saint-Ouen",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (1 station)",
+      "duration_minutes": 2,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-porte-de-saint-ouen/"
+    },
+    {
+      "destination_name": "Saint-Lazare",
+      "destination_slug": "saint-lazare",
+      "destination_full_name": "Garibaldi → Saint-Lazare",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (~14 min)",
+      "duration_minutes": 14,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-saint-lazare/"
+    },
+    {
+      "destination_name": "Marché aux Puces",
+      "destination_slug": "porte-de-clignancourt",
+      "destination_full_name": "Garibaldi → Marché aux Puces",
+      "lines_used": [
+        "M13 + M4"
+      ],
+      "lines_label": "M13 → Porte de Saint-Ouen + bus",
+      "duration_minutes": 12,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-porte-de-clignancourt/"
+    },
+    {
+      "destination_name": "Châtelet",
+      "destination_slug": "chatelet",
+      "destination_full_name": "Garibaldi → Châtelet",
+      "lines_used": [
+        "M13 + M14"
+      ],
+      "lines_label": "M13 → Saint-Lazare + M14",
+      "duration_minutes": 18,
+      "changes_count": 1,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-chatelet/"
+    },
+    {
+      "destination_name": "Champs-Élysées",
+      "destination_slug": "champs-elysees-clemenceau",
+      "destination_full_name": "Garibaldi → Champs-Élysées",
+      "lines_used": [
+        "M13"
+      ],
+      "lines_label": "M13 directe (~16 min)",
+      "duration_minutes": 16,
+      "changes_count": 0,
+      "search_volume_estimate": "high",
+      "future_url": "/itineraires/station-garibaldi/garibaldi-vers-champs-elysees-clemenceau/"
+    }
+  ],
+  "nearby_pois": [
+    {
+      "wikidata_id": "Q1320249",
+      "name": "stade Bauer",
+      "category": "site notable",
+      "description": "Depuis 1909, le stade Bauer accueille les matchs du Red Star FC dans le quartier de Saint-Ouen-sur-Seine. Ce terrain de football, longtemps appelé stade de Paris, demeure un équipement emblématique de la banlieue nord, où se côtoient supporters et résidents du secteur.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Redstar-bordeauxb.JPG?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Stade_Bauer",
+      "latitude": 48.9061,
+      "longitude": 2.34105,
+      "nearest_exit": {
+        "number": "3",
+        "name": "r. Charles Schmidt",
+        "distance_m": 658,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q2544311",
+      "name": "Saint-Ouen",
+      "category": "gare",
+      "description": "Gare souterraine majeure du réseau francilien, Saint-Ouen dessert la ligne d'Ermont-Eaubonne à Champ-de-Mars (VMI) depuis le cœur de Saint-Ouen-sur-Seine. Elle constitue un point d'échange stratégique entre les transports régionaux et urbains de la banlieue nord parisienne.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quais%20gare%20Saint-Ouen.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Ouen",
+      "latitude": 48.90556,
+      "longitude": 2.32222,
+      "nearest_exit": {
+        "number": "1",
+        "name": "r. Garibaldi",
+        "distance_m": 686,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q56309501",
+      "name": "marché aux puces de Saint-Ouen",
+      "category": "site notable",
+      "description": "Fondé en 1885, ce marché aux puces s'étend sur 7 hectares et réunit quelque 2 000 vendeurs spécialisés dans l'antiquité, les vêtements et les articles de brocante. Principal pôle mondial de l'art et de l'antiquité, il accueille environ 5 millions de visiteurs chaque année.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marche%20Malassis4.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/March%C3%A9_aux_puces_de_Saint-Ouen",
+      "latitude": 48.9023,
+      "longitude": 2.3394,
+      "nearest_exit": {
+        "number": "3",
+        "name": "r. Charles Schmidt",
+        "distance_m": 690,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3494623",
+      "name": "square de la rue Henri-Huchard",
+      "category": "site notable",
+      "description": "Aménagé dans le quartier des Grandes-Carrières, ce jardin public offre un espace de détente au cœur du 18e arrondissement. Ce petit parc permet de s'échapper quelques instants de l'agitation urbaine et constitue un lieu de promenade apprécié des habitants du secteur.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Henri%20Huchard%20%40%20Paris%2018%20%2832598264190%29.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_de_la_Rue-Henri-Huchard",
+      "latitude": 48.8998,
+      "longitude": 2.3309,
+      "nearest_exit": {
+        "number": "1",
+        "name": "r. Garibaldi",
+        "distance_m": 692,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q3552616",
+      "name": "usine PSA de Saint-Ouen-sur-Seine",
+      "category": "site notable",
+      "description": "Ancien site de production du Groupe PSA, cette usine a marqué l'histoire industrielle de Saint-Ouen-sur-Seine jusqu'à sa fermeture en 2021. Le lieu témoigne de l'évolution du secteur automobile en Île-de-France et de la transformation urbaine du territoire.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Usine_Citro%C3%ABn_de_Saint-Ouen.jpg/330px-Usine_Citro%C3%ABn_de_Saint-Ouen.jpg",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Usine_PSA_de_Saint-Ouen",
+      "latitude": 48.9053,
+      "longitude": 2.32812,
+      "nearest_exit": {
+        "number": "1",
+        "name": "r. Garibaldi",
+        "distance_m": 265,
+        "walk_minutes": 3
+      }
+    },
+    {
+      "wikidata_id": "Q20083834",
+      "name": "église Notre-Dame-du-Rosaire de Saint-Ouen-sur-Seine",
+      "category": "église",
+      "description": "Construite à la fin du XIXe siècle, cette église catholique témoigne de l'architecture religieuse de Saint-Ouen. Implantée avenue Gabriel-Péri au quartier de La Croix-Blanche, elle accueille les fidèles depuis 1898 et constitue un repère architectural du secteur.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20vieux%20St%20Ouen%2093.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-du-Rosaire_de_Saint-Ouen",
+      "latitude": 48.90671,
+      "longitude": 2.3329,
+      "nearest_exit": {
+        "number": "3",
+        "name": "r. Charles Schmidt",
+        "distance_m": 84,
+        "walk_minutes": 1
+      }
+    },
+    {
+      "wikidata_id": "Q60853741",
+      "name": "Boulevard Victor-Hugo",
+      "category": "gare",
+      "description": "Ancienne infrastructure ferroviaire française, le boulevard Victor-Hugo desservait autrefois la ligne reliant La Plaine à Ermont-Eaubonne. Implantée à Saint-Ouen-sur-Seine, cette gare témoigne du réseau de transport régional du XIXe siècle, aujourd'hui fermée au trafic voyageurs.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20du%20boulevard%20Victor%20Hugo.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_boulevard_Victor-Hugo",
+      "latitude": 48.906837,
+      "longitude": 2.324298,
+      "nearest_exit": {
+        "number": "1",
+        "name": "r. Garibaldi",
+        "distance_m": 540,
+        "walk_minutes": 7
+      }
+    },
+    {
+      "wikidata_id": "Q48751429",
+      "name": "place Françoise-Dorléac",
+      "category": "place",
+      "description": "Située dans le 18e arrondissement, cette place porte le nom de Françoise Dorléac, figure marquante du cinéma français. Cet espace public offre un point de repère dans le quartier, accessible à environ 770 mètres de la station Garibaldi.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Fran%C3%A7oise%20Dorl%C3%A9ac%20-%20Paris%20XVIII%20%28FR75%29%20-%202021-08-04%20-%201.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Fran%C3%A7oise-Dorl%C3%A9ac",
+      "latitude": 48.90007,
+      "longitude": 2.337279,
+      "nearest_exit": {
+        "number": "3",
+        "name": "r. Charles Schmidt",
+        "distance_m": 772,
+        "walk_minutes": 10
+      }
+    },
+    {
+      "wikidata_id": "Q60851506",
+      "name": "place de la République",
+      "category": "place",
+      "description": "Espace public structurant de Saint-Ouen-sur-Seine, la place de la République accueille habitants et visiteurs en Seine-Saint-Denis. À quelques mètres de la station Mairie de Saint-Ouen, elle constitue un point de passage central du secteur.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20R%C3%A9publique%20-%20Saint-Ouen-sur-Seine%20%28FR93%29%20-%202022-01-09%20-%201.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_de_la_R%C3%A9publique_(Saint-Ouen-sur-Seine)",
+      "latitude": 48.91201,
+      "longitude": 2.3339,
+      "nearest_exit": {
+        "number": "2",
+        "name": "r. Farcot",
+        "distance_m": 655,
+        "walk_minutes": 8
+      }
+    },
+    {
+      "wikidata_id": "Q60853024",
+      "name": "parc François-Mitterrand",
+      "category": "jardin",
+      "description": "Implanté à Saint-Ouen-sur-Seine, ce parc s'étend sur 2 hectares et offre un espace de détente aux habitants du nord parisien. Les allées ombragées et espaces verts constituent une halte bienvenue pour les promeneurs et cyclistes de passage.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abords%20gare%20Saint-Ouen.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Fran%C3%A7ois-Mitterrand",
+      "latitude": 48.90291,
+      "longitude": 2.32291,
+      "nearest_exit": {
+        "number": "1",
+        "name": "r. Garibaldi",
+        "distance_m": 722,
+        "walk_minutes": 9
+      }
+    },
+    {
+      "wikidata_id": "Q60846000",
+      "name": "Saint-Ouen-Garibaldi",
+      "category": "gare",
+      "description": "Ancien point de passage de la ligne de La Plaine à Ermont-Eaubonne, cette gare ferroviaire témoigne de l'histoire du réseau francilien du XIXe siècle. Bien que désaffectée, elle reste un vestige architectural du développement des transports en commun à Saint-Ouen-sur-Seine.",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gennevillers%20line%20Saint-Ouen-Garibaldi%201.jpg?width=400",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Saint-Ouen-Garibaldi",
+      "latitude": 48.9075,
+      "longitude": 2.3318,
+      "nearest_exit": {
+        "number": "2",
+        "name": "r. Farcot",
+        "distance_m": 134,
+        "walk_minutes": 2
+      }
+    },
+    {
+      "wikidata_id": "Q122642753",
+      "name": "marché Cambo",
+      "category": "site notable",
+      "description": "Depuis 1970, cette halle couverte s'inscrit au cœur du vaste marché aux puces de Saint-Ouen. Installée rue des Rosiers, elle propose une sélection d'objets et de mobilier d'occasion dans un cadre abrité.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Paris_department_land_cover_location_map.jpg/330px-Paris_department_land_cover_location_map.jpg",
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/March%C3%A9_Cambo",
+      "latitude": 48.903889,
+      "longitude": 2.340833,
+      "nearest_exit": {
+        "number": "3",
+        "name": "r. Charles Schmidt",
+        "distance_m": 692,
+        "walk_minutes": 9
+      }
+    }
+  ],
+  "exits": [
+    {
+      "number": "1",
+      "name": "r. Garibaldi",
+      "address_full": "82 Avenue Gabriel Péri 93400 Saint-Ouen-sur-Seine",
+      "postcode": "93400",
+      "city": "Saint-Ouen-sur-Seine",
+      "latitude": 48.906011,
+      "longitude": 2.331585,
+      "accessible": null
+    },
+    {
+      "number": "2",
+      "name": "r. Farcot",
+      "address_full": "76 Avenue Gabriel Péri 93400 Saint-Ouen-sur-Seine",
+      "postcode": "93400",
+      "city": "Saint-Ouen-sur-Seine",
+      "latitude": 48.906299,
+      "longitude": 2.331691,
+      "accessible": null
+    },
+    {
+      "number": "3",
+      "name": "r. Charles Schmidt",
+      "address_full": "65bis Avenue Gabriel Péri 93400 Saint-Ouen-sur-Seine",
+      "postcode": "93400",
+      "city": "Saint-Ouen-sur-Seine",
+      "latitude": 48.90603,
+      "longitude": 2.331858,
+      "accessible": null
+    },
+    {
+      "number": "3",
+      "name": "r. Charles Schmidt",
+      "address_full": "11 Rue Charles Schmidt 93400 Saint-Ouen-sur-Seine",
+      "postcode": "93400",
+      "city": "Saint-Ouen-sur-Seine",
+      "latitude": 48.906211,
+      "longitude": 2.332046,
+      "accessible": null
+    }
+  ],
+  "services": {
+    "wifi": {
+      "available": false,
+      "location_detail": "",
+      "coverage_detail": ""
+    },
+    "toilets": {
+      "public_paid": {
+        "available": false
+      },
+      "public_free": {
+        "available": false,
+        "location": "",
+        "access": ""
+      }
+    },
+    "atm": {
+      "available": false,
+      "banks_count_estimate": "",
+      "locations": []
+    },
+    "ratp_office": {
+      "available": false,
+      "location": "",
+      "services": ""
+    },
+    "left_luggage": {
+      "ratp_available": false,
+      "third_party": []
+    },
+    "shopping_dining": {
+      "main_location": "",
+      "details": "",
+      "secondary": ""
+    }
+  },
+  "safety": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "agents": null,
+    "police": null,
+    "tips": [
+      "Station métro Paris — vigilance pickpockets standard.",
+      "Affluence variable selon heures de pointe."
+    ],
+    "notes": "Audit RATP/IDFM spécifique non disponible."
+  },
+  "hero_image": {
+    "url": "https://bougeaparis.fr/assets/img/stations/garibaldi/source/wikimedia-station.jpg",
+    "alt": "Entrée extérieure de la station Garibaldi (Métro 13) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+    "width": 1200,
+    "height": 675,
+    "credit": {
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Garibaldi_M%C3%A9tro_Paris_Avenue_Gabriel_P%C3%A9ri_-_Saint-Ouen-sur-Seine_(FR93)_-_2026-01-20_-_1.jpg",
+      "date": "2026-06-10"
+    },
+    "source": "wikimedia_station",
+    "confidence_score": 22,
+    "confidence_level": "auto_generated",
+    "local_versions": {
+      "avif": {
+        "400": "/assets/img/stations/garibaldi/garibaldi-400.avif",
+        "800": "/assets/img/stations/garibaldi/garibaldi-800.avif",
+        "1200": "/assets/img/stations/garibaldi/garibaldi-1200.avif",
+        "1600": "/assets/img/stations/garibaldi/garibaldi-1600.avif"
+      },
+      "webp": {
+        "400": "/assets/img/stations/garibaldi/garibaldi-400.webp",
+        "800": "/assets/img/stations/garibaldi/garibaldi-800.webp",
+        "1200": "/assets/img/stations/garibaldi/garibaldi-1200.webp",
+        "1600": "/assets/img/stations/garibaldi/garibaldi-1600.webp"
+      },
+      "jpg": {
+        "400": "/assets/img/stations/garibaldi/garibaldi-400.jpg",
+        "800": "/assets/img/stations/garibaldi/garibaldi-800.jpg",
+        "1200": "/assets/img/stations/garibaldi/garibaldi-1200.jpg",
+        "1600": "/assets/img/stations/garibaldi/garibaldi-1600.jpg"
+      }
+    },
+    "keep_hero": true
+  },
+  "accessibility": {
+    "audit_status": "pending",
+    "audit_date": null,
+    "level": "",
+    "stats": {
+      "elevators_count": 0,
+      "accessible_lines": 0,
+      "total_lines": 1
+    },
+    "details": ""
+  },
+  "wikidata": {
+    "qid": "Q586851",
+    "wikidata_url": "https://www.wikidata.org/wiki/Q586851",
+    "wikipedia_url": "https://fr.wikipedia.org/wiki/Garibaldi_(m%C3%A9tro_de_Paris)",
+    "osm_relation_id": null
+  }
+}
