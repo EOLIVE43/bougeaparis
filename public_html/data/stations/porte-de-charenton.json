@@ -1,0 +1,603 @@
+{
+    "published": true,
+    "slug": "porte-de-charenton",
+    "name": "Porte de Charenton",
+    "name_full": "Porte de Charenton (Métro 8)",
+    "arrondissement": "12e arrondissement (Paris)",
+    "address": "Avenue Daumesnil, 75012 Paris",
+    "latitude": 48.83243838714378,
+    "longitude": 2.400180321945436,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "77",
+            "87"
+        ],
+        "nocturne": [
+            "N35"
+        ],
+        "regional": [
+            "111"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 1,
+            "nearby_count": 14
+        }
+    },
+    "seo": {
+        "description": "Station Porte de Charenton (M8) avenue Daumesnil dans le 12e. Boulevard Périphérique. Bois de Vincennes proche."
+    },
+    "hero": {
+        "tagline": "M8 — Porte de Charenton, limite Paris",
+        "description": "Station <strong>Porte de Charenton</strong> sur l'<strong>avenue Daumesnil</strong> dans le <strong>12e arrondissement</strong>. Desservie par la <strong>M8</strong>, ouverte le <strong>5 mai 1931</strong>. À la <strong>limite sud-est de Paris</strong>, à proximité du <strong>boulevard Périphérique</strong> et du <strong>Bois de Vincennes</strong>."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "Porte Dorée",
+                "slug": "porte-doree",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Liberté",
+                "slug": "liberte",
+                "direction": "Pointe du Lac"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte de Charenton</strong> est implantée sur l'<strong>avenue Daumesnil</strong> dans le <strong>12e arrondissement</strong>, à la <strong>limite sud-est de Paris</strong>. Elle est desservie par la <strong>M8</strong>, entre <strong>Porte Dorée</strong> (1 station) et <strong>Liberté</strong> (1 station, banlieue). Bus 46, 109, 111, 325.",
+        "Ouverte le <strong>5 mai 1931</strong>.",
+        "À proximité : le <strong>boulevard Périphérique</strong> et la <strong>commune de Charenton-le-Pont</strong> (Val-de-Marne). Le <strong>Bois de Vincennes</strong> à courte distance."
+    ],
+    "history": {
+        "title": "1931 : porte sud-est et Charenton",
+        "paragraphs": [
+            "La station Porte de Charenton est <strong>inaugurée le 5 mai 1931</strong>.",
+            "Le nom <strong>Porte de Charenton</strong> rappelle l'<strong>ancienne porte de l'enceinte de Thiers</strong> (1844-1929), qui marquait la <strong>sortie de Paris vers Charenton-le-Pont</strong>.",
+            "<strong>Charenton-le-Pont</strong> (~30 000 habitants), commune du <strong>Val-de-Marne</strong>. <strong>Étymologie</strong> : du latin <em>Carentum</em>, peut-être nom d'un domaine gallo-romain. Connue pour l'<strong>asile de Charenton</strong> (ancien hôpital psychiatrique, fondé en 1641, où fut interné le <strong>marquis de Sade</strong>). Aujourd'hui, ville résidentielle."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Porte de Charenton ?",
+            "answer": "Uniquement la <strong>M8</strong>. Bus 46, 109, 111, 325."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>5 mai 1931</strong>."
+        },
+        {
+            "question": "Pour Charenton-le-Pont ?",
+            "answer": "<strong>M8 directe</strong> (1 station vers Liberté)."
+        },
+        {
+            "question": "Pour le Bois de Vincennes ?",
+            "answer": "<strong>M8 → Porte Dorée</strong> + à pied."
+        },
+        {
+            "question": "Pour Bastille ?",
+            "answer": "<strong>M8 directe</strong> (~14 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Charenton-le-Pont</strong> : <strong>M8 directe</strong>.",
+        "Pour <strong>Bois de Vincennes</strong> : <strong>M8 → Porte Dorée</strong>.",
+        "Pour <strong>Palais de la Porte Dorée</strong> : <strong>M8 directe</strong> (1 station).",
+        "Pour <strong>Bastille</strong> : <strong>M8 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🏘️",
+            "title": "Charenton-le-Pont, commune historique",
+            "content": "<strong>Charenton-le-Pont</strong> (~30 000 habitants), commune du <strong>Val-de-Marne</strong>. <strong>Étymologie</strong> : du latin <em>Carentum</em> (domaine gallo-romain). Connue pour l'<strong>ancien asile de Charenton</strong> (fondé en 1641 par les frères de Saint-Jean-de-Dieu), <strong>premier asile psychiatrique de France</strong>. Le <strong>marquis de Sade</strong> y fut interné de <strong>1801 à 1814</strong>. Aujourd'hui, ville résidentielle dynamique."
+        },
+        {
+            "icon": "🚇",
+            "title": "Enceinte de Thiers et portes parisiennes",
+            "content": "L'<strong>enceinte de Thiers</strong>, construite de <strong>1841 à 1844</strong>, était le <strong>dernier mur d'enceinte de Paris</strong>. <strong>33 km de long</strong>, <strong>61 portes</strong>. Démolie de <strong>1919 à 1929</strong>. Les <strong>noms des portes</strong> survivent dans les stations métro : <strong>Porte de Charenton, Porte Dorée, Porte de Vincennes, Porte d'Italie, etc.</strong>"
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Liberté (Charenton)",
+            "destination_slug": "liberte",
+            "destination_full_name": "Porte de Charenton → Liberté (Charenton)",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-liberte/"
+        },
+        {
+            "destination_name": "Palais Porte Dorée",
+            "destination_slug": "porte-doree",
+            "destination_full_name": "Porte de Charenton → Palais Porte Dorée",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-porte-doree/"
+        },
+        {
+            "destination_name": "Bois de Vincennes",
+            "destination_slug": "porte-doree",
+            "destination_full_name": "Porte de Charenton → Bois de Vincennes",
+            "lines_used": [
+                "M8 + à pied"
+            ],
+            "lines_label": "M8 → Porte Dorée + à pied",
+            "duration_minutes": 7,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-porte-doree/"
+        },
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Porte de Charenton → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (~14 min)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-bastille/"
+        },
+        {
+            "destination_name": "Nation",
+            "destination_slug": "nation",
+            "destination_full_name": "Porte de Charenton → Nation",
+            "lines_used": [
+                "M8 + M2"
+            ],
+            "lines_label": "M8 → Reuilly + M2",
+            "duration_minutes": 16,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-nation/"
+        },
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Porte de Charenton → Châtelet",
+            "lines_used": [
+                "M8 + M1"
+            ],
+            "lines_label": "M8 → Bastille + M1",
+            "duration_minutes": 20,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-charenton/porte-de-charenton-vers-chatelet/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1094332",
+            "name": "musée de l'histoire de l'immigration",
+            "category": "musée",
+            "description": "Installé au palais de la Porte-Dorée depuis 2007, ce musée national explore les trajectoires et cultures des populations migrantes en France. Ses collections documentent les récits d'immigration à travers des expositions permanentes et temporaires dans le 12e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27exposition%20permanente%20de%20la%20CNHI.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Histoire_de_l%27immigration",
+            "latitude": 48.835278,
+            "longitude": 2.409444,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Édouard Renard",
+                "distance_m": 226,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q13408",
+            "name": "église du Saint-Esprit",
+            "category": "église",
+            "description": "Édifiée en 1935 par l'architecte Paul Tournon, cette église catholique du 12e arrondissement s'impose par sa silhouette verticale de 85 mètres. Son statut de monument historique classé témoigne de l'intérêt architectural de cette construction du XXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20avenue%20Daumesnil%2C%20Paris%20mai%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_du_Saint-Esprit_de_Paris",
+            "latitude": 48.8381,
+            "longitude": 2.3976,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Claude Decaen",
+                "distance_m": 607,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1460618",
+            "name": "hôpital des Quinze-Vingts",
+            "category": "hôpital",
+            "description": "Fondé pour soigner les affections oculaires, cet établissement spécialisé occupe le 28, rue de Charenton depuis plusieurs siècles. Son rayonnement médical a marqué le 12e arrondissement au point de donner son nom au quartier environnant.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Quinze%20Vingts%20-%20Paris%20XII%20%28FR75%29%20-%202021-06-05%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_des_Quinze-Vingts",
+            "latitude": 48.835621,
+            "longitude": 2.394399,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Poniatowski",
+                "distance_m": 486,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q2473730",
+            "name": "château de Bercy",
+            "category": "palais",
+            "description": "Édifié au XVIIe siècle par l'architecte François Le Vau, ce château fort de Bercy a été démoli en 1861. Deux pavillons de communs ont survécu et demeurent inscrits au titre de monuments historiques, témoignant de l'architecture d'époque.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bercy%2C%20ch%C3%A2teau%20de.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Bercy",
+            "latitude": 48.82628,
+            "longitude": 2.40007,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. de la Pte de Charenton",
+                "distance_m": 641,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q16507979",
+            "name": "la rue Claude-Decaen",
+            "category": "gare",
+            "description": "Vestige de la Petite Ceinture, cette ancienne gare ferroviaire du 12e arrondissement témoigne du réseau historique qui ceinturait Paris. Désaffectée depuis longtemps, elle conserve les traces d'une époque où le transport ferroviaire structurait différemment la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Petite%20ceinture%2012e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_la_rue_Claude-Decaen",
+            "latitude": 48.834,
+            "longitude": 2.4009,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Claude Decaen",
+                "distance_m": 91,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q106610302",
+            "name": "MMA Factory",
+            "category": "site notable",
+            "description": "Située dans le 12e arrondissement, cette salle propose un enseignement complet en arts martiaux mixtes. Elle accueille sportifs de tous niveaux autour de disciplines variées et encadrement professionnel.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/MMA_Factory",
+            "latitude": 48.83419,
+            "longitude": 2.40357,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. de Picpus",
+                "distance_m": 23,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3162323",
+            "name": "jardin Ilan-Halimi",
+            "category": "jardin",
+            "description": "Créé en 1975, ce parc du 12e arrondissement offre un havre de verdure aux résidents du quartier. Aménagé initialement sous un autre nom, il porte désormais le nom d'Ilan-Halimi et demeure un espace de détente accessible à tous.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%2054%20rue%20de%20F%C3%A9camp.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Ilan-Halimi",
+            "latitude": 48.8361,
+            "longitude": 2.40139,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. de Picpus",
+                "distance_m": 282,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q21426977",
+            "name": "Bercy-Ceinture",
+            "category": "gare",
+            "description": "Ancien arrêt ferroviaire du réseau reliant Paris à Marseille, Bercy-Ceinture témoigne de l'histoire des transports franciliens. Cette halte historique, située à 130 mètres de Porte de Charenton, rappelle l'importance des connexions ferroviaires de la capitale au XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gare%20de%20Bercy-Ceinture%20-%20Novembre%202015.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Bercy-Ceinture",
+            "latitude": 48.83202,
+            "longitude": 2.39705,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. de la Pte de Charenton",
+                "distance_m": 130,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q2085027",
+            "name": "porte de Charenton",
+            "category": "site notable",
+            "description": "Élément majeur du système défensif parisien, cette porte occupe le 12e arrondissement depuis plusieurs siècles. Vestige de l'ancienne fortification urbaine, elle témoigne de l'architecture militaire caractéristique des entrées de ville de son époque.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/P1170274_Paris_XII_porte_de_Charenton_rwk.jpg/330px-P1170274_Paris_XII_porte_de_Charenton_rwk.jpg",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Charenton",
+            "latitude": 48.8298,
+            "longitude": 2.40148,
+            "nearest_exit": {
+                "number": "1",
+                "name": "av. de la Pte de Charenton",
+                "distance_m": 311,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3399081",
+            "name": "porte de Reuilly",
+            "category": "site notable",
+            "description": "Vestige de l'ancien système défensif parisien, cette porte de ville marque l'entrée historique du quartier de Bercy. Localisée dans le 12e arrondissement, elle témoigne de l'architecture urbaine du XIXe siècle et demeure un repère géographique significatif du secteur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1250314%20Paris%20XII%20porte%20de%20Reuilly%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Reuilly",
+            "latitude": 48.8333,
+            "longitude": 2.40222,
+            "nearest_exit": {
+                "number": "4",
+                "name": "pl. du Cardinal Lavigerie",
+                "distance_m": 47,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q3374545",
+            "name": "pelouse de Reuilly",
+            "category": "site notable",
+            "description": "Cette vaste clairière de 25 hectares marque l'entrée occidentale du bois de Vincennes, offrant une respiration verte dans le 12e arrondissement. Gérée par la municipalité parisienne, elle constitue un espace de détente accessible à pied depuis Porte de Charenton.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pelouse%20Reuilly%20-%20Paris%20XII%20%28FR75%29%20-%202021-06-04%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pelouse_de_Reuilly",
+            "latitude": 48.83,
+            "longitude": 2.40689,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Joseph Chailley",
+                "distance_m": 485,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3494846",
+            "name": "square Van Vollenhoven",
+            "category": "site notable",
+            "description": "Aménagé en 1937 dans le quartier du Bel-Air, ce jardin public offre une pause verdoyante au cœur du 12e arrondissement. Le square Van-Vollenhoven invite à la détente avec ses espaces de promenade et ses zones ombragées, idéal pour une pause entre deux trajets.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Van%20Vollenhoven.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Van-Vollenhoven",
+            "latitude": 48.8346,
+            "longitude": 2.40675,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Édouard Renard",
+                "distance_m": 69,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. de la Pte de Charenton",
+            "address_full": "1 Rue Ferdinand de Béhagle 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.831983,
+            "longitude": 2.398823,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "pl. Édouard Renard",
+            "address_full": "104 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.835168,
+            "longitude": 2.406361,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Poniatowski",
+            "address_full": "25 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.832424,
+            "longitude": 2.398927,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "av. Daumesnil",
+            "address_full": "277 Avenue Daumesnil 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.835716,
+            "longitude": 2.406246,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Claude Decaen",
+            "address_full": "61 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.833237,
+            "longitude": 2.401356,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Poniatowski",
+            "address_full": "117b Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.835346,
+            "longitude": 2.405964,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "pl. du Cardinal Lavigerie",
+            "address_full": "61 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.833067,
+            "longitude": 2.401685,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. Ernest Lacoste",
+            "address_full": "107 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.834838,
+            "longitude": 2.405125,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. de Picpus",
+            "address_full": "93 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.834167,
+            "longitude": 2.40388,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Joseph Chailley",
+            "address_full": "92 Boulevard Poniatowski 75012 Paris",
+            "postcode": "75012",
+            "city": "Paris",
+            "latitude": 48.833952,
+            "longitude": 2.404073,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/porte-de-charenton/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Porte de Charenton (Métro 8) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Porte_Charenton_Boulevard_Poniatowski_-_Paris_XII_(FR75)_-_2021-12-30_-_1.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-de-charenton/porte-de-charenton-400.avif",
+                "800": "/assets/img/stations/porte-de-charenton/porte-de-charenton-800.avif",
+                "1200": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1200.avif",
+                "1600": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-de-charenton/porte-de-charenton-400.webp",
+                "800": "/assets/img/stations/porte-de-charenton/porte-de-charenton-800.webp",
+                "1200": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1200.webp",
+                "1600": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-de-charenton/porte-de-charenton-400.jpg",
+                "800": "/assets/img/stations/porte-de-charenton/porte-de-charenton-800.jpg",
+                "1200": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1200.jpg",
+                "1600": "/assets/img/stations/porte-de-charenton/porte-de-charenton-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1666283",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1666283",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_Charenton_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

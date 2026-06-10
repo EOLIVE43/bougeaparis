@@ -1,0 +1,617 @@
+{
+    "published": true,
+    "slug": "richelieu-drouot",
+    "name": "Richelieu - Drouot",
+    "name_full": "Richelieu - Drouot (Métro 8, 9)",
+    "arrondissement": "9e arrondissement (Paris)",
+    "address": "Boulevard Haussmann, 75009 Paris",
+    "latitude": 48.872034751145655,
+    "longitude": 2.3390083233469814,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "39",
+            "40"
+        ],
+        "nocturne": [
+            "N15",
+            "N16"
+        ],
+        "regional": [
+            "32",
+            "45",
+            "74",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 10,
+            "nearby_count": 23
+        }
+    },
+    "seo": {
+        "description": "Station Richelieu - Drouot (M8+M9) boulevard Haussmann dans le 9e. Hôtel Drouot, ventes aux enchères depuis 1852. Cardinal de Richelieu."
+    },
+    "hero": {
+        "tagline": "M8 + M9 — Hôtel Drouot, ventes aux enchères",
+        "description": "Station <strong>Richelieu - Drouot</strong>, hub <strong>M8 + M9</strong>, sur le <strong>boulevard Haussmann</strong> dans le <strong>9e arrondissement</strong>. Quais <strong>M8</strong> ouverts en <strong>1913</strong>, quais <strong>M9</strong> en <strong>1933</strong>. À proximité de l'<strong>Hôtel Drouot</strong> (1852), célèbre <strong>maison de ventes aux enchères</strong>."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "Opéra",
+                "slug": "opera",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Grands Boulevards",
+                "slug": "grands-boulevards",
+                "direction": "Pointe du Lac"
+            }
+        },
+        "metro-9": {
+            "previous": {
+                "name": "Grands Boulevards",
+                "slug": "grands-boulevards",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Chaussée d'Antin - La Fayette",
+                "slug": "chaussee-d-antin-la-fayette",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Richelieu - Drouot</strong> est implantée sur le <strong>boulevard Haussmann</strong> dans le <strong>9e arrondissement</strong>. Elle est desservie par les <strong>lignes 8 et 9</strong>, formant un <strong>hub de correspondance</strong>. Bus 20, 32, 39, 67, 74, 85.",
+        "Quais <strong>M8</strong> ouverts le <strong>13 juillet 1913</strong> avec le tronçon initial. Quais <strong>M9</strong> ouverts le <strong>10 décembre 1933</strong> avec le prolongement de la M9.",
+        "Les noms <strong>Richelieu</strong> et <strong>Drouot</strong> rendent hommage : <strong>Richelieu</strong> au <strong>Cardinal de Richelieu</strong> (<strong>1585-1642</strong>), <strong>ministre de Louis XIII</strong> ; <strong>Drouot</strong> à <strong>Antoine Drouot</strong> (<strong>1774-1847</strong>), <strong>général d'Empire</strong>. L'<strong>Hôtel Drouot</strong>, célèbre <strong>maison de ventes aux enchères</strong>, est à proximité."
+    ],
+    "history": {
+        "title": "1913-1933 : hub M8/M9 et Hôtel Drouot",
+        "paragraphs": [
+            "Les quais <strong>M8</strong> sont <strong>inaugurés le 13 juillet 1913</strong>. Les quais <strong>M9</strong> ouvrent le <strong>10 décembre 1933</strong>.",
+            "Le nom <strong>Richelieu</strong> rend hommage à <strong>Armand Jean du Plessis, cardinal de Richelieu</strong> (<strong>1585-1642</strong>), <strong>ministre de Louis XIII</strong> de <strong>1624 à 1642</strong>. <strong>Renforce l'absolutisme royal</strong>. <strong>Fondateur de l'Académie française</strong> (1635). Inspiration du personnage de Richelieu dans <em>Les Trois Mousquetaires</em> d'Alexandre Dumas.",
+            "L'<strong>Hôtel Drouot</strong>, à proximité (9 rue Drouot), est <strong>fondé en 1852</strong> comme <strong>hôtel des ventes mobilières</strong>. <strong>Principale maison de ventes aux enchères</strong> de France. <strong>~500 000 objets vendus par an</strong>. <strong>Reconstruit en 1976</strong> dans son architecture actuelle. <strong>Antiquités, mobilier, peintures, sculptures, livres anciens, bijoux</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Richelieu - Drouot ?",
+            "answer": "<strong>M8</strong> et <strong>M9</strong>. Hub du 9e."
+        },
+        {
+            "question": "Qui est Richelieu ?",
+            "answer": "<strong>Cardinal de Richelieu</strong> (1585-1642), <strong>ministre de Louis XIII</strong>. <strong>Fondateur de l'Académie française</strong>."
+        },
+        {
+            "question": "Qu'est-ce que l'Hôtel Drouot ?",
+            "answer": "<strong>Principale maison de ventes aux enchères</strong> de France, <strong>fondée en 1852</strong>. ~500 000 objets vendus/an."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Quais M8 : <strong>13 juillet 1913</strong>. Quais M9 : <strong>10 décembre 1933</strong>."
+        },
+        {
+            "question": "Pour l'Hôtel Drouot ?",
+            "answer": "<strong>~3 min à pied</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Hôtel Drouot</strong> à 3 min : ventes aux enchères ouvertes au public.",
+        "Hub <strong>M8 + M9</strong> du 9e.",
+        "Pour <strong>Galeries Lafayette</strong> : <strong>M9 directe</strong> (1 station).",
+        "Pour <strong>Opéra Garnier</strong> : <strong>M8 directe</strong> (1 station).",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Cardinal de Richelieu, ministre de Louis XIII",
+            "content": "<strong>Armand Jean du Plessis, cardinal de Richelieu</strong> (<strong>1585-1642</strong>), <strong>ministre de Louis XIII</strong> de <strong>1624 à 1642</strong>. <strong>Renforce l'absolutisme royal</strong> contre les grands seigneurs et les protestants (<strong>siège de La Rochelle</strong> 1627-1628). <strong>Fondateur de l'Académie française</strong> en <strong>1635</strong>. Politique étrangère : entrée dans la <strong>guerre de Trente Ans</strong> aux côtés des protestants. <strong>Modèle de l'État centralisé</strong> à la française. Inspiration du <strong>personnage de Richelieu</strong> dans <em>Les Trois Mousquetaires</em> d'<strong>Alexandre Dumas</strong>."
+        },
+        {
+            "icon": "🔨",
+            "title": "Hôtel Drouot, ventes aux enchères depuis 1852",
+            "content": "L'<strong>Hôtel Drouot</strong>, à 3 min à pied (9 rue Drouot), est <strong>fondé le 1er juin 1852</strong> comme <strong>hôtel des ventes mobilières</strong>. <strong>Principale maison de ventes aux enchères de France</strong>. <strong>~500 000 objets vendus par an</strong>, <strong>~150 000 lots</strong>. <strong>Reconstruit en 1976</strong> dans son architecture moderne. <strong>Ventes publiques</strong> ouvertes à tous (sans réservation), <strong>~3 000 lots/semaine</strong>. <strong>Antiquités, mobilier, peintures, sculptures, livres anciens, bijoux, instruments</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Hôtel Drouot",
+            "destination_slug": "richelieu-drouot",
+            "destination_full_name": "Richelieu - Drouot → Hôtel Drouot",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Rue Drouot (3 min)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-richelieu-drouot/"
+        },
+        {
+            "destination_name": "Galeries Lafayette",
+            "destination_slug": "chaussee-d-antin-la-fayette",
+            "destination_full_name": "Richelieu - Drouot → Galeries Lafayette",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-chaussee-d-antin-la-fayette/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Richelieu - Drouot → Opéra Garnier",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-opera/"
+        },
+        {
+            "destination_name": "Grands Boulevards",
+            "destination_slug": "grands-boulevards",
+            "destination_full_name": "Richelieu - Drouot → Grands Boulevards",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-grands-boulevards/"
+        },
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Richelieu - Drouot → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (~14 min)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-bastille/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Richelieu - Drouot → Concorde",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (~6 min)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-richelieu-drouot/richelieu-drouot-vers-concorde/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q187840",
+            "name": "palais Garnier",
+            "category": "palais",
+            "description": "Édifice emblématique du 9e arrondissement, le palais Garnier a été conçu par l'architecte Charles Garnier et inauguré en 1861. Ce théâtre national, classé au titre des monuments historiques, demeure le siège de l'Opéra de Paris et accueille ballets, concerts et spectacles lyriques sur la prestigieuse place de l'Opéra.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Palais%20Garnier%202010-04-06%2016.55.07.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier",
+            "latitude": 48.871944,
+            "longitude": 2.331667,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Taitbout",
+                "distance_m": 428,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q330375",
+            "name": "Folies Bergère",
+            "category": "théâtre",
+            "description": "Inauguré en 1869, ce théâtre du 9e arrondissement demeure une référence des salles de spectacles parisiennes. Inscrit au titre de monument historique, il perpétue une longue tradition de programmations artistiques depuis le Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folies%20Berg%C3%A8re%2C%20Paris%206%20February%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Folies_Berg%C3%A8re",
+            "latitude": 48.874167,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Montmartre",
+                "distance_m": 448,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q218613",
+            "name": "Galeries Lafayette Haussmann",
+            "category": "commerce",
+            "description": "Fondée en 1894, cette institution commerciale du 9e arrondissement doit sa conception aux architectes Georges Chedanne et Pierre Patout, associés au designer Louis Majorelle. Le bâtiment incarne une belle synthèse entre innovation architecturale et retail de prestige, marquant durablement le paysage urbain parisien.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Galeries%20Lafayette%20Haussmann%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Galeries_Lafayette_Haussmann",
+            "latitude": 48.87363,
+            "longitude": 2.33215,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Laffitte",
+                "distance_m": 446,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q872222",
+            "name": "théâtre national de l'Opéra-Comique",
+            "category": "théâtre",
+            "description": "Fondé en 1715, ce théâtre lyrique occupe la place Boieldieu au cœur du 2e arrondissement. La salle Favart propose une programmation d'opéras-comiques et de spectacles musicaux dans un cadre historique singulier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20Comique%2C%20Paris%2011%20March%202018.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_de_l%27Op%C3%A9ra-Comique",
+            "latitude": 48.870861,
+            "longitude": 2.337511,
+            "nearest_exit": {
+                "number": "7",
+                "name": "r. Marivaux",
+                "distance_m": 72,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1265070",
+            "name": "musée Grévin",
+            "category": "musée",
+            "description": "Fondé en 1882 par Arthur Meyer, ce musée rassemble des figurines en cire représentant des personnalités de tous les domaines. Installé au cœur du 9e arrondissement, il propose une galerie de portraits sculptés des figures publiques les plus marquantes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Gr%C3%A9vin%2C%20Paris%2030%20July%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gr%C3%A9vin",
+            "latitude": 48.87183,
+            "longitude": 2.3421,
+            "nearest_exit": {
+                "number": "3",
+                "name": "bd Montmartre",
+                "distance_m": 174,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q1362670",
+            "name": "place des Victoires",
+            "category": "place",
+            "description": "Édifiée en 1685, cette place du 1er arrondissement honore Louis XIV à travers son architecture classique. Classée au titre des monuments historiques, elle constitue un point de repère majeur du centre parisien, traversant les limites entre deux arrondissements.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
+            "latitude": 48.865833,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Richelieu",
+                "distance_m": 671,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1854102",
+            "name": "palais Brongniart",
+            "category": "palais",
+            "description": "Édifice de style néoclassique achevé en 1825, le palais Brongniart a été conçu par Alexandre-Théodore Brongniart puis complété par son successeur Éloi Labarre. Construit sur ordre de Napoléon Ier pour accueillir la Bourse de Paris, ce monument historique inscrit demeure un témoignage architectural du début du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Brongniart%20Facade.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Brongniart",
+            "latitude": 48.869169,
+            "longitude": 2.340828,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Richelieu",
+                "distance_m": 307,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q549143",
+            "name": "Cabinet des médailles",
+            "category": "musée",
+            "description": "Fondé en 1560, ce département de la Bibliothèque nationale de France rassemble des collections exceptionnelles de numismatique et d'antiquités. Il conserve et valorise des pièces historiques offrant un aperçu unique du patrimoine monétaire et archéologique français.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabinet%20des%20Medailles%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_des_Monnaies,_m%C3%A9dailles_et_antiques_de_la_Biblioth%C3%A8que_nationale_de_France",
+            "latitude": 48.8678,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "7",
+                "name": "r. Marivaux",
+                "distance_m": 412,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2296362",
+            "name": "musée Gustave-Moreau",
+            "category": "musée",
+            "description": "Installé dans l'ancien atelier du peintre symboliste Gustave Moreau, ce musée national offre une plongée dans l'univers artistique de l'artiste du XIXe siècle. Ouvert en 1903, il conserve l'œuvre léguée à l'État et figure parmi les Maisons des Illustres de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20mus%C3%A9e%20Gustave-Moreau%2C%2019%20mai%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gustave-Moreau",
+            "latitude": 48.878,
+            "longitude": 2.33436,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Laffitte",
+                "distance_m": 696,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q800416",
+            "name": "Auber",
+            "category": "gare",
+            "description": "Implantée sous la rue Auber au cœur du 9e arrondissement, cette gare souterraine dessert la ligne A du RER. Elle constitue un point d'accès majeur au réseau ferroviaire régional depuis le centre parisien, particulièrement utile pour les trajets vers la Défense et l'ouest francilien.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Auber-RER-Paris-2005-Platform-1.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_d%27Auber",
+            "latitude": 48.873,
+            "longitude": 2.329,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Taitbout",
+                "distance_m": 640,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1358886",
+            "name": "grande synagogue de Paris",
+            "category": "synagogue",
+            "description": "Édifiée en 1867 par l'architecte Alfred-Philibert Aldrophe, cette synagogue du 9e arrondissement accueille le grand rabbin de Paris. Classée au titre de monument historique, elle constitue un édifice majeur du patrimoine religieux européen.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20Synagogue%20Victoire%20Paris%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_synagogue_de_Paris",
+            "latitude": 48.8756,
+            "longitude": 2.33639,
+            "nearest_exit": {
+                "number": "5",
+                "name": "r. Laffitte",
+                "distance_m": 395,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q782969",
+            "name": "basilique Notre-Dame-des-Victoires",
+            "category": "basilique",
+            "description": "Édifiée à partir de 1629 par l'architecte Pierre Le Muet, cette basilique mineure du 2e arrondissement a nécessité plus d'un siècle avant son achèvement en 1740. Classée au titre de monument historique, elle occupe la place des Petits-Pères et constitue l'unique témoin subsistant du couvent des Augustins déchaussés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Notre%20Dame%20Victoires%20-%20Paris%20II%20%28FR75%29%20-%202021-06-16%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-des-Victoires_de_Paris",
+            "latitude": 48.866667,
+            "longitude": 2.340833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Richelieu",
+                "distance_m": 576,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Haussmann",
+            "address_full": "2 Boulevard des Italiens 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871967,
+            "longitude": 2.338948,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Richelieu",
+            "address_full": "Passage des Princes 75002 Paris,Paris 2e Arrondissement",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.871772,
+            "longitude": 2.339414,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Richelieu",
+            "address_full": "3 Boulevard des Italiens 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.871753,
+            "longitude": 2.339305,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "bd Montmartre",
+            "address_full": "2 Boulevard Haussmann 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.872097,
+            "longitude": 2.339751,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. Chauchat",
+            "address_full": "6 Boulevard Haussmann 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.872219,
+            "longitude": 2.338931,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Laffitte",
+            "address_full": "5 Boulevard Haussmann 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.872177,
+            "longitude": 2.337841,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Taitbout",
+            "address_full": "18 Boulevard des Italiens 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871653,
+            "longitude": 2.337507,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "r. Marivaux",
+            "address_full": "6 Rue de Marivaux 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.871484,
+            "longitude": 2.337768,
+            "accessible": null
+        },
+        {
+            "number": "8",
+            "name": "bd des Italiens",
+            "address_full": "2 Boulevard des Italiens 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871839,
+            "longitude": 2.33854,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/richelieu-drouot/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Richelieu - Drouot (Métro 8, 9) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Richelieu_Drouot_M%C3%A9tro_Paris_Boulevard_Haussmann_-_Paris_IX_(FR75)_-_2026-01-21_-_1.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/richelieu-drouot/richelieu-drouot-400.avif",
+                "800": "/assets/img/stations/richelieu-drouot/richelieu-drouot-800.avif",
+                "1200": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1200.avif",
+                "1600": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/richelieu-drouot/richelieu-drouot-400.webp",
+                "800": "/assets/img/stations/richelieu-drouot/richelieu-drouot-800.webp",
+                "1200": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1200.webp",
+                "1600": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/richelieu-drouot/richelieu-drouot-400.jpg",
+                "800": "/assets/img/stations/richelieu-drouot/richelieu-drouot-800.jpg",
+                "1200": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1200.jpg",
+                "1600": "/assets/img/stations/richelieu-drouot/richelieu-drouot-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1412692",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1412692",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Richelieu_-_Drouot_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

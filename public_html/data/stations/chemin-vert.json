@@ -1,0 +1,524 @@
+{
+    "published": true,
+    "slug": "chemin-vert",
+    "name": "Chemin Vert",
+    "name_full": "Chemin Vert (Métro 8)",
+    "arrondissement": "11e arrondissement (Paris)",
+    "address": "Boulevard Beaumarchais, 75011 Paris",
+    "latitude": 48.857383615830855,
+    "longitude": 2.3679933601043524,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "29",
+            "69",
+            "91",
+            "96"
+        ],
+        "nocturne": [
+            "N01",
+            "N02"
+        ],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 7,
+            "nearby_count": 14
+        }
+    },
+    "seo": {
+        "description": "Station Chemin Vert (M8) boulevard Beaumarchais dans le 11e. Quartier Bastille/Marais."
+    },
+    "hero": {
+        "tagline": "M8 — Chemin-Vert, 11e Bastille",
+        "description": "Station <strong>Chemin Vert</strong> sur le <strong>boulevard Beaumarchais</strong> dans le <strong>11e arrondissement</strong>. Desservie par la <strong>M8</strong>, ouverte le <strong>5 mai 1931</strong>. Quartier <strong>Bastille / Marais</strong>."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "Saint-Sébastien - Froissart",
+                "slug": "saint-sebastien-froissart",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Bastille",
+                "slug": "bastille",
+                "direction": "Pointe du Lac"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Chemin Vert</strong> est implantée sur le <strong>boulevard Beaumarchais</strong> dans le <strong>11e arrondissement</strong>. Elle est desservie par la <strong>M8</strong>, entre <strong>Saint-Sébastien - Froissart</strong> (1 station) et <strong>Bastille</strong> (1 station). Bus 20, 65, 96.",
+        "Ouverte le <strong>5 mai 1931</strong> avec le <strong>prolongement de la M8</strong>.",
+        "Le nom <strong>Chemin Vert</strong> rappelle la <strong>rue du Chemin-Vert</strong> à proximité. Étymologie évoquant un <strong>ancien chemin de verdure</strong> traversant l'<strong>ancien territoire rural</strong> du XIIIe siècle, avant l'urbanisation du quartier."
+    ],
+    "history": {
+        "title": "1931 : Chemin-Vert et Bastille",
+        "paragraphs": [
+            "La station Chemin Vert est <strong>inaugurée le 5 mai 1931</strong> avec le <strong>prolongement de la M8</strong> de Richelieu-Drouot vers Porte de Charenton.",
+            "La <strong>rue du Chemin-Vert</strong>, qui donne son nom à la station, est tracée au <strong>XVIIIe siècle</strong>. Son nom évoque un <strong>ancien chemin de verdure</strong> traversant le <strong>territoire rural</strong> du nord-est parisien, avant l'urbanisation du quartier.",
+            "Le quartier autour de la station fait partie du <strong>11e arrondissement</strong>, à proximité de <strong>Bastille</strong> et du <strong>Marais</strong>. <strong>Boulevard Beaumarchais</strong> tracé sous Haussmann. À courte distance : la <strong>Cirque d'Hiver Bouglione</strong> (1852) à Filles du Calvaire."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Chemin Vert ?",
+            "answer": "Uniquement la <strong>M8</strong>. Bus 20, 65, 96."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>5 mai 1931</strong>."
+        },
+        {
+            "question": "D'où vient le nom Chemin-Vert ?",
+            "answer": "D'un <strong>ancien chemin de verdure</strong> du XVIIIe siècle traversant le territoire rural du quartier."
+        },
+        {
+            "question": "Pour Bastille ?",
+            "answer": "<strong>M8 directe</strong> (1 station)."
+        },
+        {
+            "question": "Pour le Marais ?",
+            "answer": "<strong>~5 min à pied</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>."
+        }
+    ],
+    "practical_tips": [
+        "Pour <strong>Bastille</strong> : <strong>M8 directe</strong> (1 station).",
+        "<strong>Quartier du Marais</strong> à 5 min à pied.",
+        "<strong>Cirque d'Hiver Bouglione</strong> (1852) à 5 min à pied.",
+        "Pour <strong>République</strong> : <strong>~8 min à pied</strong> ou bus.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🎪",
+            "title": "Cirque d'Hiver Bouglione (1852)",
+            "content": "Le <strong>Cirque d'Hiver Bouglione</strong>, à 5 min à pied, est le <strong>plus ancien cirque permanent du monde</strong> encore en activité. <strong>Construit en 1852</strong> par l'architecte <strong>Jacques-Ignace Hittorff</strong>. <strong>Inauguré par Napoléon III</strong> sous le nom <strong>« Cirque Napoléon »</strong>. <strong>Bâtiment en forme de polygone à 20 côtés</strong>. <strong>Famille Bouglione</strong> propriétaire depuis <strong>1934</strong>. <strong>Classé monument historique en 1975</strong>. <strong>~30 spectacles/an</strong>."
+        },
+        {
+            "icon": "🏘️",
+            "title": "11e, du faubourg ouvrier au quartier tendance",
+            "content": "Le <strong>11e arrondissement</strong> (~150 000 habitants) est historiquement un <strong>quartier populaire et ouvrier</strong>. <strong>Faubourg Saint-Antoine</strong>, ancien quartier des <strong>artisans du meuble</strong>. À partir des années 1990, <strong>gentrification</strong> avec installation de <strong>bars, restaurants tendance</strong> autour des rues <strong>Oberkampf, Jean-Pierre Timbaud, Saint-Maur</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Chemin Vert → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-bastille/"
+        },
+        {
+            "destination_name": "Marais (Place des Vosges)",
+            "destination_slug": "saint-paul",
+            "destination_full_name": "Chemin Vert → Marais (Place des Vosges)",
+            "lines_used": [
+                "M8 + M1"
+            ],
+            "lines_label": "M8 → Bastille + M1",
+            "duration_minutes": 6,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-saint-paul/"
+        },
+        {
+            "destination_name": "Cirque d'Hiver Bouglione",
+            "destination_slug": "filles-du-calvaire",
+            "destination_full_name": "Chemin Vert → Cirque d'Hiver Bouglione",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "5 min à pied",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-filles-du-calvaire/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Chemin Vert → République",
+            "lines_used": [
+                "à pied + bus"
+            ],
+            "lines_label": "8 min à pied",
+            "duration_minutes": 8,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-republique/"
+        },
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Chemin Vert → Châtelet",
+            "lines_used": [
+                "M8 + M1"
+            ],
+            "lines_label": "M8 → Bastille + M1",
+            "duration_minutes": 8,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-chatelet/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Chemin Vert → Concorde",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (~10 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-chemin-vert/chemin-vert-vers-concorde/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1865480",
+            "name": "Bastille",
+            "category": "site notable",
+            "description": "Édifiée en 1370, la forteresse Saint-Antoine dominait l'extrémité de la rue du même nom. Transformée en prison d'État, elle devint le symbole de l'autorité royale avant d'être rasée en 1789, marquant un tournant décisif de la Révolution française.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bastille%20Exterior%201790%20or%201791.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bastille",
+            "latitude": 48.853333,
+            "longitude": 2.369167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Beaumarchais",
+                "distance_m": 456,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q810700",
+            "name": "Bataclan",
+            "category": "site notable",
+            "description": "Édifiée en 1864 par l'architecte Charles Duval, cette salle de spectacle du boulevard Voltaire conjugue histoire patrimoniale et programmation musicale contemporaine. Inscrite au titre de monument historique, elle accueille concerts et événements culturels depuis ses origines en tant que théâtre parisien.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bataclan%20-%20Paris%20%283448973995%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Bataclan",
+            "latitude": 48.863056,
+            "longitude": 2.370833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Beaumarchais",
+                "distance_m": 661,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q638423",
+            "name": "opéra Bastille",
+            "category": "théâtre",
+            "description": "Inaugurée en 1989 par l'architecte Carlos Ott, cette salle lyrique incarne l'architecture contemporaine des années 1980. Elle complète l'Opéra Garnier au sein de l'institution parisienne, accueillant ballets et opéras de haut niveau artistique.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Bastille",
+            "latitude": 48.851944,
+            "longitude": 2.370556,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Beaumarchais",
+                "distance_m": 629,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q898629",
+            "name": "place des Vosges",
+            "category": "place",
+            "description": "Fondée en 1605 dans le Marais, cette place historique conjugue architecture classique et espace vert. Monument protégé depuis longtemps, elle demeure un lieu de promenade central aux 3e et 4e arrondissements parisiens.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20PlaceDesVosges%20NordNordEst.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Vosges",
+            "latitude": 48.855556,
+            "longitude": 2.365556,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 267,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q743206",
+            "name": "musée Picasso",
+            "category": "musée",
+            "description": "Fondé en 1985, ce musée national présente l'œuvre majeure de Picasso et les artistes avec lesquels il a dialogué. L'architecte Jean-François Bodin a conçu son bâtiment, situé à environ 10 minutes à pied d'Arts et Métiers (lignes 3 et 11).",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%203e%20H%C3%B4tel%20Sal%C3%A9%20640.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Picasso_(Paris)",
+            "latitude": 48.859731,
+            "longitude": 2.362439,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 468,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q640447",
+            "name": "musée Carnavalet",
+            "category": "musée",
+            "description": "Fondé en 1880, ce musée municipal raconte Paris depuis ses origines à travers des collections variées : mobilier et décors d'époque, souvenirs révolutionnaires, sculptures et estampes. Installé au cœur du Marais sur 10 000 m², il offre une plongée dans l'histoire urbaine et artistique de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carnavalet%20Par%C3%ADs%2010.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Carnavalet",
+            "latitude": 48.857375,
+            "longitude": 2.362745,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 371,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q917337",
+            "name": "hôtel de Soubise",
+            "category": "site notable",
+            "description": "Édifié en 1705 par l'architecte Pierre-Alexis Delamair, cet hôtel particulier du 3e arrondissement témoigne du raffinement du style classique parisien. Devenu siège des Archives nationales, il conserve son statut de monument historique et accueille le musée des Archives nationales.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Soubise%2C%20Paris%209%20June%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Soubise",
+            "latitude": 48.860556,
+            "longitude": 2.358333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 775,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1643144",
+            "name": "hôtel de Sully",
+            "category": "site notable",
+            "description": "Édifié en 1630 par l'architecte Jean Androuet du Cerceau, ce hôtel particulier du Marais illustre l'élégance de l'architecture Louis XIII. Classé au titre de monument historique, il accueille depuis 1967 le Centre des monuments nationaux et demeure un témoignage remarquable du patrimoine parisien du XVIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Sully%2007-2.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Sully",
+            "latitude": 48.854583,
+            "longitude": 2.363778,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 434,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q2599177",
+            "name": "maison de Victor Hugo",
+            "category": "musée",
+            "description": "Établi en 1903, ce musée littéraire occupe l'ancien hôtel de Rohan-Guémené où l'écrivain résida seize ans au cœur de la place des Vosges. Les appartements du deuxième étage conservent les traces de sa vie créative entre 1832 et 1848.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PARIS%20Place%20des%20Vosges%2C%20Maison%20de%20Victor%20Hugo%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_Victor_Hugo",
+            "latitude": 48.854722,
+            "longitude": 2.366111,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 327,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1374604",
+            "name": "hôtel des archevêques de Sens",
+            "category": "site notable",
+            "description": "Édifié au XVe siècle, cet hôtel particulier du Marais conjugue architecture médiévale et fonction contemporaine. Protégé au titre des monuments historiques, il accueille désormais la bibliothèque Forney, institution spécialisée dans les collections d'affiches et de design graphique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20de%20Sens%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_des_archev%C3%AAques_de_Sens",
+            "latitude": 48.853333,
+            "longitude": 2.359167,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 780,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q1572452",
+            "name": "musée Cognacq-Jay",
+            "category": "musée",
+            "description": "Fondé en 1929 par le legs d'Ernest Cognacq, ce musée municipal présente une remarquable collection d'art et d'objets du siècle des Lumières. Le parcours invite à redécouvrir les raffinements de l'époque à travers mobilier, peintures et arts décoratifs du XVIIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Lazare-Rachline%2C%20Paris%209%20June%202017%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Cognacq-Jay",
+            "latitude": 48.858194,
+            "longitude": 2.361389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 477,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1247969",
+            "name": "église Saint-Paul-Saint-Louis de Paris",
+            "category": "église",
+            "description": "Édifiée en 1641 par les architectes jésuites Étienne Martellange et François Derand, cette église du Marais témoigne du projet architectural lancé sous Louis XIII. Classée au titre des monuments historiques, elle demeure un ensemble remarquable du patrimoine parisien du XVIIe siècle, établi rue Saint-Antoine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Paul-Saint-Louis%202023-04-04.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Paul-Saint-Louis",
+            "latitude": 48.854672,
+            "longitude": 2.361558,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd Beaumarchais",
+                "distance_m": 552,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd Beaumarchais",
+            "address_full": "59 Boulevard Beaumarchais 75003 Paris",
+            "postcode": "75003",
+            "city": "Paris",
+            "latitude": 48.857446,
+            "longitude": 2.367809,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Beaumarchais",
+            "address_full": "52 Boulevard Beaumarchais 75011 Paris",
+            "postcode": "75011",
+            "city": "Paris",
+            "latitude": 48.857376,
+            "longitude": 2.368164,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/chemin-vert/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Chemin Vert (Métro 8) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Chemin_Vert_M%C3%A9tro_Paris_Boulevard_Beaumarchais_-_Paris_III_(FR75)_-_2025-11-05_-_2.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/chemin-vert/chemin-vert-400.avif",
+                "800": "/assets/img/stations/chemin-vert/chemin-vert-800.avif",
+                "1200": "/assets/img/stations/chemin-vert/chemin-vert-1200.avif",
+                "1600": "/assets/img/stations/chemin-vert/chemin-vert-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/chemin-vert/chemin-vert-400.webp",
+                "800": "/assets/img/stations/chemin-vert/chemin-vert-800.webp",
+                "1200": "/assets/img/stations/chemin-vert/chemin-vert-1200.webp",
+                "1600": "/assets/img/stations/chemin-vert/chemin-vert-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/chemin-vert/chemin-vert-400.jpg",
+                "800": "/assets/img/stations/chemin-vert/chemin-vert-800.jpg",
+                "1200": "/assets/img/stations/chemin-vert/chemin-vert-1200.jpg",
+                "1600": "/assets/img/stations/chemin-vert/chemin-vert-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q524191",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q524191",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Chemin_Vert_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

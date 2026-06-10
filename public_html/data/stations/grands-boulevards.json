@@ -1,0 +1,605 @@
+{
+    "published": true,
+    "slug": "grands-boulevards",
+    "name": "Grands Boulevards",
+    "name_full": "Grands Boulevards (Métro 8, 9)",
+    "arrondissement": "9e arrondissement (Paris)",
+    "address": "Boulevard Poissonnière, 75009 Paris",
+    "latitude": 48.871142917705654,
+    "longitude": 2.343641272682872,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "8",
+            "slug": "metro-8",
+            "color": "#D282BE",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "39"
+        ],
+        "nocturne": [
+            "N15",
+            "N16"
+        ],
+        "regional": [
+            "32",
+            "74",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 5,
+            "nearby_count": 21
+        }
+    },
+    "seo": {
+        "description": "Station Grands Boulevards (M8+M9) boulevard Poissonnière dans le 9e. Musée Grévin, Théâtre des Variétés, passages couverts."
+    },
+    "hero": {
+        "tagline": "M8 + M9 — Grands Boulevards, Musée Grévin",
+        "description": "Station <strong>Grands Boulevards</strong>, hub <strong>M8 + M9</strong>, sur le <strong>boulevard Poissonnière</strong> dans le <strong>9e arrondissement</strong>. À proximité du <strong>Musée Grévin</strong>, du <strong>Théâtre des Variétés</strong> et des <strong>passages couverts</strong> historiques."
+    },
+    "adjacent_stations": {
+        "metro-8": {
+            "previous": {
+                "name": "Richelieu - Drouot",
+                "slug": "richelieu-drouot",
+                "direction": "Balard"
+            },
+            "next": {
+                "name": "Bonne Nouvelle",
+                "slug": "bonne-nouvelle",
+                "direction": "Pointe du Lac"
+            }
+        },
+        "metro-9": {
+            "previous": {
+                "name": "Bonne Nouvelle",
+                "slug": "bonne-nouvelle",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Richelieu - Drouot",
+                "slug": "richelieu-drouot",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Grands Boulevards</strong> est implantée sur le <strong>boulevard Poissonnière</strong> dans le <strong>9e arrondissement</strong>. Elle est desservie par les <strong>lignes 8 et 9</strong>, formant un <strong>hub de correspondance</strong>. Bus 20, 39, 48, 67, 74, 85.",
+        "Quais <strong>M8</strong> ouverts le <strong>13 juillet 1913</strong>. Quais <strong>M9</strong> ouverts le <strong>10 décembre 1933</strong>. Renommée <strong>« Grands Boulevards »</strong> en <strong>1998</strong> (anciennement « Rue Montmartre »).",
+        "À proximité : le <strong>Musée Grévin</strong> (1882), <strong>musée de cire</strong>, le <strong>Théâtre des Variétés</strong> (1807), les <strong>passages Jouffroy et Verdeau</strong>. Cœur des <strong>Grands Boulevards</strong> de Paris."
+    ],
+    "history": {
+        "title": "1913 : Grands Boulevards de Louis XIV",
+        "paragraphs": [
+            "Les quais <strong>M8</strong> sont <strong>inaugurés le 13 juillet 1913</strong>. Les quais <strong>M9</strong> ouvrent le <strong>10 décembre 1933</strong>. <strong>Renommée « Grands Boulevards »</strong> en <strong>1998</strong> (auparavant « Rue Montmartre »).",
+            "Les <strong>Grands Boulevards</strong>, qui donnent leur nom à la station, sont une <strong>série d'axes haussmanniens</strong> tracés à partir de <strong>1670</strong> sous <strong>Louis XIV</strong> sur l'emplacement de l'<strong>ancienne enceinte de Charles V</strong> (XIVe siècle). Étendus et embellis sous <strong>Haussmann</strong> au XIXe siècle.",
+            "Hauts lieux de la <strong>vie parisienne</strong> depuis le <strong>XVIIIe siècle</strong>, ils sont marqués par les <strong>théâtres</strong> (Théâtre des Variétés 1807, Théâtre de la Renaissance, Théâtre du Gymnase), les <strong>cafés</strong> (Café Frascati, Café Cardinal), les <strong>passages couverts</strong> (Jouffroy 1846, Verdeau 1847, Panoramas 1799). Le <strong>Musée Grévin</strong>, à proximité (10 boulevard Montmartre), est <strong>fondé en 1882</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Grands Boulevards ?",
+            "answer": "<strong>M8</strong> et <strong>M9</strong>. Hub du 9e."
+        },
+        {
+            "question": "Quel était l'ancien nom ?",
+            "answer": "<strong>« Rue Montmartre »</strong> (1913-1998)."
+        },
+        {
+            "question": "Pour le Musée Grévin ?",
+            "answer": "<strong>~2 min à pied</strong> (10 boulevard Montmartre)."
+        },
+        {
+            "question": "Pour le Théâtre des Variétés ?",
+            "answer": "<strong>~3 min à pied</strong>."
+        },
+        {
+            "question": "Pour les passages couverts ?",
+            "answer": "<strong>Passage Jouffroy</strong> et <strong>Verdeau</strong> à proximité immédiate."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Musée Grévin</strong> à 2 min : musée de cire fondé en 1882.",
+        "<strong>Passages Jouffroy et Verdeau</strong> à proximité : passages couverts XIXe.",
+        "<strong>Théâtre des Variétés</strong> (1807) à 3 min.",
+        "Pour <strong>Opéra Garnier</strong> : <strong>M8 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🕯️",
+            "title": "Musée Grévin (1882), musée de cire",
+            "content": "Le <strong>Musée Grévin</strong>, à 2 min à pied (10 boulevard Montmartre), est <strong>fondé en 1882</strong> par <strong>Arthur Meyer</strong> (journaliste) et <strong>Alfred Grévin</strong> (caricaturiste). <strong>Musée de cire</strong> à l'image du Madame Tussauds londonien. <strong>~250 personnages</strong> historiques et contemporains : <strong>Napoléon, Louis XIV, Picasso, De Gaulle, Brigitte Bardot, Elvis Presley</strong>. <strong>Décors historiques</strong> (Versailles, Hollywood). <strong>~700 000 visiteurs/an</strong>."
+        },
+        {
+            "icon": "🎭",
+            "title": "Passages Jouffroy et Verdeau",
+            "content": "Les <strong>passages Jouffroy</strong> (1846) et <strong>Verdeau</strong> (1847), à proximité immédiate, sont parmi les <strong>plus beaux passages couverts</strong> de Paris. <strong>Verrières</strong>, <strong>mosaïques au sol</strong>, <strong>devantures boutiques XIXe</strong>. <strong>Premier passage chauffé</strong> à Paris (Jouffroy). <strong>Librairies anciennes, antiquaires, salons de thé, boutiques curieuses</strong>. <strong>Patrimoine emblématique</strong> du <strong>Paris du XIXe siècle</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée Grévin",
+            "destination_slug": "grands-boulevards",
+            "destination_full_name": "Grands Boulevards → Musée Grévin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Boulevard Montmartre (2 min)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-grands-boulevards/"
+        },
+        {
+            "destination_name": "Passage Jouffroy",
+            "destination_slug": "grands-boulevards",
+            "destination_full_name": "Grands Boulevards → Passage Jouffroy",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-grands-boulevards/"
+        },
+        {
+            "destination_name": "Théâtre des Variétés",
+            "destination_slug": "grands-boulevards",
+            "destination_full_name": "Grands Boulevards → Théâtre des Variétés",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Boulevard Montmartre (3 min)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-grands-boulevards/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Grands Boulevards → Opéra Garnier",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-opera/"
+        },
+        {
+            "destination_name": "Bastille",
+            "destination_slug": "bastille",
+            "destination_full_name": "Grands Boulevards → Bastille",
+            "lines_used": [
+                "M8"
+            ],
+            "lines_label": "M8 directe (~12 min)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-bastille/"
+        },
+        {
+            "destination_name": "Galeries Lafayette",
+            "destination_slug": "chaussee-d-antin-la-fayette",
+            "destination_full_name": "Grands Boulevards → Galeries Lafayette",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-grands-boulevards/grands-boulevards-vers-chaussee-d-antin-la-fayette/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q330375",
+            "name": "Folies Bergère",
+            "category": "théâtre",
+            "description": "Inauguré en 1869, ce théâtre du 9e arrondissement demeure une référence des salles de spectacles parisiennes. Inscrit au titre de monument historique, il perpétue une longue tradition de programmations artistiques depuis le Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folies%20Berg%C3%A8re%2C%20Paris%206%20February%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Folies_Berg%C3%A8re",
+            "latitude": 48.874167,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. du Fbg Montmartre",
+                "distance_m": 317,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q872222",
+            "name": "théâtre national de l'Opéra-Comique",
+            "category": "théâtre",
+            "description": "Fondé en 1715, ce théâtre lyrique occupe la place Boieldieu au cœur du 2e arrondissement. La salle Favart propose une programmation d'opéras-comiques et de spectacles musicaux dans un cadre historique singulier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20Comique%2C%20Paris%2011%20March%202018.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_de_l%27Op%C3%A9ra-Comique",
+            "latitude": 48.870861,
+            "longitude": 2.337511,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Montmartre",
+                "distance_m": 373,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q1265070",
+            "name": "musée Grévin",
+            "category": "musée",
+            "description": "Fondé en 1882 par Arthur Meyer, ce musée rassemble des figurines en cire représentant des personnalités de tous les domaines. Installé au cœur du 9e arrondissement, il propose une galerie de portraits sculptés des figures publiques les plus marquantes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Gr%C3%A9vin%2C%20Paris%2030%20July%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gr%C3%A9vin",
+            "latitude": 48.87183,
+            "longitude": 2.3421,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Montmartre",
+                "distance_m": 46,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q684594",
+            "name": "porte Saint-Denis",
+            "category": "site notable",
+            "description": "Édifié en 1672 par l'architecte François Blondel, ce monument de 24,65 mètres célèbre la gloire de Louis XIV. Classé au titre des monuments historiques, l'arc trône au 10e arrondissement, héritier des anciennes portes défensives médiévales.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porte%20Saint%20Denis%20-%20Paris%20X%20%28FR75%29%20-%202023-06-14%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_Saint-Denis",
+            "latitude": 48.869722,
+            "longitude": 2.3525,
+            "nearest_exit": {
+                "number": "6",
+                "name": "r. Rougemont",
+                "distance_m": 507,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1362670",
+            "name": "place des Victoires",
+            "category": "place",
+            "description": "Édifiée en 1685, cette place du 1er arrondissement honore Louis XIV à travers son architecture classique. Classée au titre des monuments historiques, elle constitue un point de repère majeur du centre parisien, traversant les limites entre deux arrondissements.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
+            "latitude": 48.865833,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd Poissonnière",
+                "distance_m": 631,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1854102",
+            "name": "palais Brongniart",
+            "category": "palais",
+            "description": "Édifice de style néoclassique achevé en 1825, le palais Brongniart a été conçu par Alexandre-Théodore Brongniart puis complété par son successeur Éloi Labarre. Construit sur ordre de Napoléon Ier pour accueillir la Bourse de Paris, ce monument historique inscrit demeure un témoignage architectural du début du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Brongniart%20Facade.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Brongniart",
+            "latitude": 48.869169,
+            "longitude": 2.340828,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Montmartre",
+                "distance_m": 281,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q549143",
+            "name": "Cabinet des médailles",
+            "category": "musée",
+            "description": "Fondé en 1560, ce département de la Bibliothèque nationale de France rassemble des collections exceptionnelles de numismatique et d'antiquités. Il conserve et valorise des pièces historiques offrant un aperçu unique du patrimoine monétaire et archéologique français.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabinet%20des%20Medailles%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_des_Monnaies,_m%C3%A9dailles_et_antiques_de_la_Biblioth%C3%A8que_nationale_de_France",
+            "latitude": 48.8678,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Montmartre",
+                "distance_m": 505,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1358886",
+            "name": "grande synagogue de Paris",
+            "category": "synagogue",
+            "description": "Édifiée en 1867 par l'architecte Alfred-Philibert Aldrophe, cette synagogue du 9e arrondissement accueille le grand rabbin de Paris. Classée au titre de monument historique, elle constitue un édifice majeur du patrimoine religieux européen.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20Synagogue%20Victoire%20Paris%202014.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Grande_synagogue_de_Paris",
+            "latitude": 48.8756,
+            "longitude": 2.33639,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Montmartre",
+                "distance_m": 636,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q782969",
+            "name": "basilique Notre-Dame-des-Victoires",
+            "category": "basilique",
+            "description": "Édifiée à partir de 1629 par l'architecte Pierre Le Muet, cette basilique mineure du 2e arrondissement a nécessité plus d'un siècle avant son achèvement en 1740. Classée au titre de monument historique, elle occupe la place des Petits-Pères et constitue l'unique témoin subsistant du couvent des Augustins déchaussés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Notre%20Dame%20Victoires%20-%20Paris%20II%20%28FR75%29%20-%202021-06-16%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-des-Victoires_de_Paris",
+            "latitude": 48.866667,
+            "longitude": 2.340833,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Montmartre",
+                "distance_m": 544,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1710369",
+            "name": "Notre-Dame-de-Lorette",
+            "category": "église",
+            "description": "Édifiée en 1836 par l'architecte Hippolyte Le Bas, cette église du 9e arrondissement témoigne du courant néoclassique du XIXe siècle. Monument historique classé, elle perpétue le culte de Notre-Dame de Lorette à travers son architecture épurée et ses proportions harmonieuses.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame-de-Lorette-Paris-DSC%206121.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-Lorette_de_Paris",
+            "latitude": 48.876389,
+            "longitude": 2.338889,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Montmartre",
+                "distance_m": 596,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1314020",
+            "name": "galerie Vivienne",
+            "category": "site notable",
+            "description": "Édifiée en 1823, la galerie Vivienne est un passage commercial couvert du 2e arrondissement, représentatif de l'architecture commerciale parisienne du XIXe siècle. Inscrite au titre de monument historique, cette galerie témoigne du patrimoine architectural des passages parisiens.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1040471%20Paris%20II%20galerie%20Vivienne%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Galerie_Vivienne",
+            "latitude": 48.866667,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Montmartre",
+                "distance_m": 568,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2597719",
+            "name": "musée de la franc-maçonnerie",
+            "category": "musée",
+            "description": "Fondé en 1889, ce musée explore l'histoire et les pratiques de la franc-maçonnerie française à travers ses collections. Installé au sein du siège du Grand Orient de France, rue Cadet dans le 9e, il propose une approche documentée de cette institution et de ses évolutions.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GODF%20rue%20Cadet%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Franc-ma%C3%A7onnerie",
+            "latitude": 48.874722,
+            "longitude": 2.343056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Montmartre",
+                "distance_m": 345,
+                "walk_minutes": 4
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. du Fbg Montmartre",
+            "address_full": "32 Boulevard Poissonnière 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871462,
+            "longitude": 2.34363,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Montmartre",
+            "address_full": "4 Boulevard Montmartre 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871628,
+            "longitude": 2.342647,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Montmartre",
+            "address_full": "3 Boulevard Montmartre 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.871429,
+            "longitude": 2.34254,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd Poissonnière",
+            "address_full": "29 Boulevard Poissonnière 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.871308,
+            "longitude": 2.343373,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Saint-Fiacre",
+            "address_full": "15 Boulevard Poissonnière 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.870968,
+            "longitude": 2.345354,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "r. Saint-Fiacre",
+            "address_full": "11 Boulevard Poissonnière 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.870934,
+            "longitude": 2.345791,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Rougemont",
+            "address_full": "20 Boulevard Poissonnière 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871166,
+            "longitude": 2.345434,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "r. Rougemont",
+            "address_full": "16 Boulevard Poissonnière 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.871124,
+            "longitude": 2.345911,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/grands-boulevards/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Grands Boulevards (Métro 8, 9) — photo Wikimedia Commons par Idris2000 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Idris2000",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Grands_Boulevards_2019.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/grands-boulevards/grands-boulevards-400.avif",
+                "800": "/assets/img/stations/grands-boulevards/grands-boulevards-800.avif",
+                "1200": "/assets/img/stations/grands-boulevards/grands-boulevards-1200.avif",
+                "1600": "/assets/img/stations/grands-boulevards/grands-boulevards-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/grands-boulevards/grands-boulevards-400.webp",
+                "800": "/assets/img/stations/grands-boulevards/grands-boulevards-800.webp",
+                "1200": "/assets/img/stations/grands-boulevards/grands-boulevards-1200.webp",
+                "1600": "/assets/img/stations/grands-boulevards/grands-boulevards-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/grands-boulevards/grands-boulevards-400.jpg",
+                "800": "/assets/img/stations/grands-boulevards/grands-boulevards-800.jpg",
+                "1200": "/assets/img/stations/grands-boulevards/grands-boulevards-1200.jpg",
+                "1600": "/assets/img/stations/grands-boulevards/grands-boulevards-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1543053",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1543053",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Grands_Boulevards_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
