@@ -1,0 +1,562 @@
+{
+    "published": true,
+    "slug": "duroc",
+    "name": "Duroc",
+    "name_full": "Duroc (Métro 10, 13)",
+    "arrondissement": "7e arrondissement (Paris)",
+    "address": "Boulevard des Invalides, 75007 Paris",
+    "latitude": 48.847222336748466,
+    "longitude": 2.3159256625249243,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "13",
+            "slug": "metro-13",
+            "color": "#6EC4E8",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "28",
+            "70",
+            "82",
+            "86",
+            "89",
+            "92"
+        ],
+        "nocturne": [],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 17
+        }
+    },
+    "seo": {
+        "description": "Station Duroc (M10+M13) boulevard des Invalides. Hub M10 et M13. Hommage au maréchal Duroc, proche des Invalides et du Bon Marché."
+    },
+    "hero": {
+        "tagline": "M10 + M13 — Duroc, grand maréchal du palais",
+        "description": "Station <strong>Duroc</strong>, hub <strong>M10 + M13</strong>, sur le <strong>boulevard des Invalides</strong> dans le <strong>7e arrondissement</strong>. Quais <strong>M10</strong> ouverts le <strong>30 décembre 1923</strong>, quais <strong>M13</strong> le <strong>20 février 1973</strong>. Hommage au <strong>maréchal Duroc</strong> (<strong>1772-1813</strong>), <strong>grand maréchal du palais</strong> de Napoléon."
+    },
+    "adjacent_stations": {
+        "metro-10": {
+            "previous": {
+                "name": "Ségur",
+                "slug": "segur",
+                "direction": "Boulogne Pont de Saint-Cloud"
+            },
+            "next": {
+                "name": "Vaneau",
+                "slug": "vaneau",
+                "direction": "Gare d'Austerlitz"
+            }
+        },
+        "metro-13": {
+            "previous": {
+                "name": "Saint-François-Xavier",
+                "slug": "saint-francois-xavier",
+                "direction": "Saint-Denis - Université"
+            },
+            "next": {
+                "name": "Gare Montparnasse",
+                "slug": "gare-montparnasse",
+                "direction": "Châtillon - Montrouge"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Duroc</strong> est implantée sur le <strong>boulevard des Invalides</strong> dans le <strong>7e arrondissement</strong>. Elle est desservie par les <strong>lignes 10 et 13</strong> du métro parisien, formant un <strong>hub de correspondance</strong>. Bus 28, 39, 70, 87, 92 en correspondance.",
+        "Quais <strong>ligne 10</strong> ouverts le <strong>30 décembre 1923</strong> avec le tronçon initial de la M10. Quais <strong>ligne 13</strong> ouverts le <strong>20 février 1973</strong> avec le prolongement de la M13 vers le sud.",
+        "Le nom <strong>Duroc</strong> rend hommage à <strong>Géraud Christophe Michel Duroc, duc de Frioul</strong> (<strong>1772-1813</strong>), <strong>général d'Empire</strong> et <strong>grand maréchal du palais</strong> de Napoléon. À proximité : le <strong>Bon Marché</strong> (premier grand magasin parisien, 1838) et les <strong>Invalides</strong> (hôtel des Invalides, tombeau de Napoléon)."
+    ],
+    "history": {
+        "title": "1923-1973 : hub M10/M13 et maréchal Duroc",
+        "paragraphs": [
+            "Les quais <strong>ligne 10</strong> sont <strong>inaugurés le 30 décembre 1923</strong> avec le tronçon initial de la M10. Les quais <strong>ligne 13</strong> ouvrent le <strong>20 février 1973</strong> avec le prolongement de la M13 entre <strong>Miromesnil et Champs-Élysées - Clemenceau</strong> puis vers le sud.",
+            "Le nom <strong>Duroc</strong> rend hommage à <strong>Géraud Christophe Michel Duroc, duc de Frioul</strong> (<strong>25 octobre 1772 - 23 mai 1813</strong>), <strong>général d'Empire</strong> et <strong>grand maréchal du palais</strong> de Napoléon Ier. Né à Pont-à-Mousson (Meurthe-et-Moselle).",
+            "<strong>Ami intime de Napoléon</strong> depuis le <strong>siège de Toulon</strong> (1793), il devient <strong>aide de camp</strong> puis <strong>grand maréchal du palais</strong> (organisation de la cour impériale). Diplomate, il négocie plusieurs traités. <strong>Mort au combat</strong> à la <strong>bataille de Bautzen</strong> (Saxe) le <strong>23 mai 1813</strong>. Napoléon, présent, fut bouleversé : <em>« Adieu, mon ami. Reposez en paix ! »</em>. Inhumé aux <strong>Invalides</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Duroc ?",
+            "answer": "<strong>M10</strong> et <strong>M13</strong>. Hub. Bus 28, 39, 70, 87, 92."
+        },
+        {
+            "question": "Qui est Duroc ?",
+            "answer": "<strong>Géraud Duroc</strong> (1772-1813), <strong>grand maréchal du palais</strong> de Napoléon. Ami intime de l'Empereur. Inhumé aux <strong>Invalides</strong>."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Quais M10 : <strong>30 décembre 1923</strong>. Quais M13 : <strong>20 février 1973</strong>."
+        },
+        {
+            "question": "Pour les Invalides ?",
+            "answer": "<strong>~10 min à pied</strong> ou <strong>M13 → Varenne</strong>."
+        },
+        {
+            "question": "Pour Le Bon Marché ?",
+            "answer": "<strong>~5 min à pied</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Le Bon Marché</strong> à 5 min à pied : premier grand magasin parisien (1838).",
+        "<strong>Invalides</strong> et <strong>tombeau de Napoléon</strong> à 10 min à pied.",
+        "Hub <strong>M10 + M13</strong> du 7e arrondissement.",
+        "Pour <strong>Saint-Germain-des-Prés</strong> : <strong>M10 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🎖️",
+            "title": "Duroc, ami intime de Napoléon",
+            "content": "<strong>Géraud Duroc</strong> (1772-1813), <strong>grand maréchal du palais</strong> de Napoléon. Né à Pont-à-Mousson. <strong>Ami intime de Napoléon</strong> depuis le <strong>siège de Toulon</strong> (1793). <strong>Aide de camp</strong>, puis <strong>grand maréchal du palais</strong> (organise la cour impériale, dirige la maison de l'Empereur). Diplomate négociant plusieurs traités. <strong>Mort au combat</strong> à la <strong>bataille de Bautzen</strong> (Saxe) le <strong>23 mai 1813</strong>. Napoléon, présent à ses côtés, fut bouleversé. <strong>Inhumé aux Invalides</strong>."
+        },
+        {
+            "icon": "🛍️",
+            "title": "Le Bon Marché, premier grand magasin",
+            "content": "<strong>Le Bon Marché</strong>, à 5 min à pied, est le <strong>premier grand magasin</strong> du genre dans le monde. Fondé en <strong>1838</strong> par les frères <strong>Videau</strong>, repris en <strong>1852</strong> par <strong>Aristide Boucicaut</strong>, qui révolutionne le commerce de détail : <strong>prix fixes</strong>, <strong>libre entrée</strong>, <strong>livraisons à domicile</strong>, <strong>soldes</strong>, <strong>catalogue de vente par correspondance</strong>. Inspire Émile Zola pour son roman <em>Au Bonheur des Dames</em> (1883)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Le Bon Marché",
+            "destination_slug": "sevres-babylone",
+            "destination_full_name": "Duroc → Le Bon Marché",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (1 station)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-sevres-babylone/"
+        },
+        {
+            "destination_name": "Invalides et tombeau de Napoléon",
+            "destination_slug": "invalides",
+            "destination_full_name": "Duroc → Invalides et tombeau de Napoléon",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 directe",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-invalides/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Duroc → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M10 + M4"
+            ],
+            "lines_label": "M10 → Sèvres-Babylone + M12 ou via Mabillon",
+            "duration_minutes": 8,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-saint-germain-des-pres/"
+        },
+        {
+            "destination_name": "Montparnasse",
+            "destination_slug": "montparnasse-bienvenue",
+            "destination_full_name": "Duroc → Montparnasse",
+            "lines_used": [
+                "M13"
+            ],
+            "lines_label": "M13 directe (3 stations)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-montparnasse-bienvenue/"
+        },
+        {
+            "destination_name": "Tour Eiffel via Champ-de-Mars",
+            "destination_slug": "champ-de-mars-tour-eiffel",
+            "destination_full_name": "Duroc → Tour Eiffel",
+            "lines_used": [
+                "M10 + RER C"
+            ],
+            "lines_label": "M10 → Ségur + à pied",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-champ-de-mars-tour-eiffel/"
+        },
+        {
+            "destination_name": "Quartier Latin",
+            "destination_slug": "cluny-la-sorbonne",
+            "destination_full_name": "Duroc → Quartier Latin",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (~8 min)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-duroc/duroc-vers-cluny-la-sorbonne/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "Inaugurée en 1973 par les architectes Beaudouin, De Hoÿm de Marien et Cassan, cette tour de 209 mètres domine le quartier Necker. Immeuble de bureaux et destination touristique, elle a longtemps été la plus haute structure de France avant l'émergence de la tour First en 2011.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd du Montparnasse",
+                "distance_m": 639,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1200698",
+            "name": "Le Bon Marché",
+            "category": "commerce",
+            "description": "Fondé en 1838, le Bon Marché demeure un établissement commercial majeur du 7e arrondissement, occupant un vaste quadrilatère délimité par les rues de Sèvres, de Babylone, du Bac et Velpeau. Ce grand magasin historique, rebaptisé en 1989 après 151 années sous son nom originel, propose une offre variée de mode et de décoration intérieure.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Bon%20March%C3%A9%2C%20Paris%2027%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Bon_March%C3%A9",
+            "latitude": 48.851183,
+            "longitude": 2.324395,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Sèvres",
+                "distance_m": 722,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3279650",
+            "name": "maison de l'UNESCO",
+            "category": "site notable",
+            "description": "Inauguré en 1958, le siège de l'UNESCO s'étend sur deux sites distincts du 7e et du 15e arrondissements, conçus par les architectes Nervi, Zehrfuss et Breuer. Cette réalisation majeure de l'architecture contemporaine couvre 135 000 m² et rayonne comme centre mondial de coordination pour l'éducation, la science et la culture.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20UNESCO%20%2829775501630%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_l%27UNESCO",
+            "latitude": 48.8494,
+            "longitude": 2.30611,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Invalides",
+                "distance_m": 784,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q2715373",
+            "name": "musée Bourdelle",
+            "category": "musée",
+            "description": "Installé dans l'ancien atelier parisien du sculpteur Antoine Bourdelle, ce musée ouvert en 1949 conserve l'intégralité de son œuvre. Situé au 15e arrondissement, il offre une plongée dans l'univers créatif d'un artiste majeur du XXe siècle, présenté dans les lieux mêmes où il a façonné ses créations.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20musee%20bourdelle%20maison.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bourdelle",
+            "latitude": 48.843056,
+            "longitude": 2.318333,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd du Montparnasse",
+                "distance_m": 417,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q526293",
+            "name": "église Saint-François-Xavier de Paris",
+            "category": "église",
+            "description": "Édifiée en 1873 par l'architecte Adrien-Louis Lusson, cette église du 7e arrondissement accueille la paroisse des Missions-Étrangères. Inscrite au patrimoine depuis 2018, elle témoigne du renouveau architectural parisien du Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Fran%C3%A7ois%20Xavier%202010.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois-Xavier_de_Paris",
+            "latitude": 48.850556,
+            "longitude": 2.313333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Invalides",
+                "distance_m": 446,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q769842",
+            "name": "chapelle Notre-Dame-de-la-Médaille-miraculeuse",
+            "category": "chapelle",
+            "description": "Lieu de pèlerinage inscrit au patrimoine historique, cette chapelle du 7e arrondissement accueille les visiteurs au 140, rue du Bac. Desservant la Maison des Filles de la Charité, elle demeure un site de spiritualité reconnu pour son importance religieuse et architecturale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Maison%20des%20Filles%20de%20la%20Charit%C3%A9%20-%20136-140%20rue%20du%20Bac%20-%20005bis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-M%C3%A9daille-Miraculeuse_de_Paris",
+            "latitude": 48.85084,
+            "longitude": 2.32293,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Sèvres",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2445818",
+            "name": "musée de La Poste",
+            "category": "musée",
+            "description": "Fondé en 1946, ce musée d'entreprise du Groupe La Poste explore l'histoire de la correspondance et la philatélie françaises. Entièrement restructuré et rouvert en 2019, il accueille depuis 1973 ses collections labellisées de France au cœur de Montparnasse.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Logo-musee-postal.png/330px-Logo-musee-postal.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Postal_(Paris)",
+            "latitude": 48.8412,
+            "longitude": 2.31626,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd du Montparnasse",
+                "distance_m": 604,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Fondé en 1998, ce musée d'art s'installe dans la villa Marie-Vassilieff, une impasse historique du 15e arrondissement. Niché au cœur du quartier Montparnasse, il documente l'héritage artistique d'un lieu emblématique de la création parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. Léon-Paul Fargue",
+                "distance_m": 472,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3145188",
+            "name": "hôpital Necker-Enfants malades",
+            "category": "hôpital",
+            "description": "Fondé en 1778, cet établissement universitaire s'affirme comme un centre spécialisé en pédiatrie au cœur du 15e arrondissement. Reconnu au titre du patrimoine, l'hôpital fonctionne depuis 2011 comme entité unique du groupe hospitalier de l'Assistance publique parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Necker-Enfants%20malades%20rue%20de%20S%C3%A8vres.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Necker-Enfants_malades",
+            "latitude": 48.845,
+            "longitude": 2.315556,
+            "nearest_exit": {
+                "number": "4",
+                "name": "bd du Montparnasse",
+                "distance_m": 196,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3329213",
+            "name": "musée Hébert",
+            "category": "musée",
+            "description": "Installé depuis 1984 dans un hôtel particulier du 6e arrondissement, ce musée national consacré au peintre Ernest Hébert (1817-1908) a été créé par donation de la famille de l'artiste. Fermé depuis 2004 et géré par le musée d'Orsay, il conservait sur 2000 m² ses œuvres et objets personnels.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20H%C3%A9bert%2C%2085%20rue%20du%20Cherche-Midi%2C%20Paris%206e%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_H%C3%A9bert_(Paris)",
+            "latitude": 48.84736,
+            "longitude": 2.32264,
+            "nearest_exit": {
+                "number": "3",
+                "name": "pl. Léon-Paul Fargue",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3162304",
+            "name": "jardin Catherine-Labouré",
+            "category": "jardin",
+            "description": "Inauguré en 1977 dans le 7e arrondissement, ce jardin public s'inscrit entre les quartiers des Invalides et de Saint-Thomas-d'Aquin. Reconnu au titre de l'Inventaire général du patrimoine culturel, il offre un espace de détente aux riverains du secteur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin%20Catherine-Labour%C3%A9%2C%20Paris%207e%2017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Catherine-Labour%C3%A9",
+            "latitude": 48.851667,
+            "longitude": 2.320278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Sèvres",
+                "distance_m": 574,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q632845",
+            "name": "hôtel de Mademoiselle de Condé",
+            "category": "site notable",
+            "description": "Édifié en 1782 par l'architecte Alexandre-Théodore Brongniart, cet hôtel particulier figure au patrimoine des monuments historiques classés. Résidence aristocratique devenue propriété royale depuis 2008, il témoigne de l'architecture parisienne du XVIIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20hotel%20bourbon%20conde%20jardin.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Bourbon-Cond%C3%A9",
+            "latitude": 48.850869,
+            "longitude": 2.315739,
+            "nearest_exit": {
+                "number": "1",
+                "name": "bd des Invalides",
+                "distance_m": 430,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "bd des Invalides",
+            "address_full": "88b Rue de Sèvres 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.847017,
+            "longitude": 2.316194,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Sèvres",
+            "address_full": "4 Place Léon-Paul Fargue 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.847047,
+            "longitude": 2.316793,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "pl. Léon-Paul Fargue",
+            "address_full": "1 Place Léon-Paul Fargue 75006 Paris",
+            "postcode": "75006",
+            "city": "Paris",
+            "latitude": 48.846842,
+            "longitude": 2.317014,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "bd du Montparnasse",
+            "address_full": "2 Boulevard du Montparnasse 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.846624,
+            "longitude": 2.316581,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/duroc/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Duroc (Métro 10, 13) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Duroc_M%C3%A9tro_Paris_Boulevard_Invalides_-_Paris_VII_(FR75)_-_2026-02-14_-_5.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/duroc/duroc-400.avif",
+                "800": "/assets/img/stations/duroc/duroc-800.avif",
+                "1200": "/assets/img/stations/duroc/duroc-1200.avif",
+                "1600": "/assets/img/stations/duroc/duroc-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/duroc/duroc-400.webp",
+                "800": "/assets/img/stations/duroc/duroc-800.webp",
+                "1200": "/assets/img/stations/duroc/duroc-1200.webp",
+                "1600": "/assets/img/stations/duroc/duroc-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/duroc/duroc-400.jpg",
+                "800": "/assets/img/stations/duroc/duroc-800.jpg",
+                "1200": "/assets/img/stations/duroc/duroc-1200.jpg",
+                "1600": "/assets/img/stations/duroc/duroc-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1267446",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1267446",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Duroc_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

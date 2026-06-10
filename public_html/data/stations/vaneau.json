@@ -1,0 +1,509 @@
+{
+    "published": true,
+    "slug": "vaneau",
+    "name": "Vaneau",
+    "name_full": "Vaneau (Métro 10)",
+    "arrondissement": "7e arrondissement (Paris)",
+    "address": "Rue de Sèvres, 75007 Paris",
+    "latitude": 48.848903815089436,
+    "longitude": 2.3213954108247927,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "70",
+            "86"
+        ],
+        "nocturne": [],
+        "regional": [],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 4,
+            "nearby_count": 4
+        }
+    },
+    "seo": {
+        "description": "Station Vaneau (M10) rue de Sèvres dans le 7e. Quartier institutionnel proche du Bon Marché, de Sciences Po et de la rue du Bac."
+    },
+    "hero": {
+        "tagline": "M10 — rue Vaneau, quartier 7e",
+        "description": "Station <strong>Vaneau</strong> sur la <strong>rue de Sèvres</strong> dans le <strong>7e arrondissement</strong>. Desservie par la <strong>M10</strong>, ouverte le <strong>30 décembre 1923</strong>. Quartier institutionnel du <strong>7e</strong>, proche du <strong>Bon Marché</strong>, de la <strong>rue du Bac</strong> et de plusieurs <strong>ministères</strong>."
+    },
+    "adjacent_stations": {
+        "metro-10": {
+            "previous": {
+                "name": "Duroc",
+                "slug": "duroc",
+                "direction": "Boulogne Pont de Saint-Cloud"
+            },
+            "next": {
+                "name": "Sèvres - Babylone",
+                "slug": "sevres-babylone",
+                "direction": "Gare d'Austerlitz"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Vaneau</strong> est implantée sur la <strong>rue de Sèvres</strong> dans le <strong>7e arrondissement</strong>. Elle est desservie par la <strong>ligne 10 du métro</strong>, entre <strong>Duroc</strong> (1 station) et <strong>Sèvres - Babylone</strong> (1 station). Bus 39, 70, 87.",
+        "Ouverte le <strong>30 décembre 1923</strong> avec le tronçon initial de la <strong>ligne 10</strong>.",
+        "Le nom <strong>Vaneau</strong> rappelle la <strong>rue Vaneau</strong> à proximité. Quartier institutionnel et résidentiel du <strong>7e arrondissement</strong>, à proximité du <strong>Bon Marché</strong>, de plusieurs <strong>ministères</strong> (Affaires étrangères, Défense, Outre-Mer), de la <strong>rue du Bac</strong> et de l'<strong>hôtel Matignon</strong> (Premier ministre)."
+    ],
+    "history": {
+        "title": "1923 : ligne 10 et 7e institutionnel",
+        "paragraphs": [
+            "La station Vaneau est <strong>inaugurée le 30 décembre 1923</strong> avec le tronçon initial de la <strong>ligne 10</strong>.",
+            "La <strong>rue Vaneau</strong>, qui donne son nom à la station, est une voie du <strong>7e arrondissement</strong>. Le nom rend hommage à <strong>Louis Vaneau</strong>, jeune étudiant en pharmacie engagé dans les <strong>Trois Glorieuses</strong> (Révolution de juillet 1830).",
+            "Le quartier est aujourd'hui <strong>institutionnel et résidentiel</strong> : à proximité du <strong>Bon Marché</strong> (1838), de la <strong>rue du Bac</strong> (commerces, antiquaires, librairies), de plusieurs <strong>ministères</strong> du <strong>7e</strong>. <strong>Sciences Po</strong> (Institut d'études politiques de Paris) à proximité (rue Saint-Guillaume)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Vaneau ?",
+            "answer": "Uniquement la <strong>M10</strong>. Bus 39, 70, 87."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>30 décembre 1923</strong>."
+        },
+        {
+            "question": "Pour le Bon Marché ?",
+            "answer": "<strong>~3 min à pied</strong>."
+        },
+        {
+            "question": "Pour Sciences Po ?",
+            "answer": "<strong>~10 min à pied</strong>."
+        },
+        {
+            "question": "Pour le musée d'Orsay ?",
+            "answer": "<strong>~15 min à pied</strong>."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Le Bon Marché</strong> à 3 min : premier grand magasin (1838).",
+        "<strong>Rue du Bac</strong> à proximité : commerces, antiquaires, librairies.",
+        "<strong>Sciences Po</strong> à 10 min à pied.",
+        "Quartier institutionnel et résidentiel du <strong>7e</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Quartier institutionnel du 7e",
+            "content": "Le <strong>7e arrondissement</strong>, autour de la station Vaneau, est l'un des <strong>plus institutionnels de Paris</strong>. Concentre plusieurs <strong>ministères</strong> : <strong>ministère des Affaires étrangères</strong> (Quai d'Orsay), <strong>ministère de la Défense</strong> (Hôtel de Brienne), <strong>ministère de l'Outre-mer</strong>. <strong>Hôtel Matignon</strong> (Premier ministre) à proximité. <strong>Assemblée nationale</strong> au <strong>Palais Bourbon</strong>. Quartier d'<strong>ambassades</strong> et d'<strong>hôtels particuliers</strong>."
+        },
+        {
+            "icon": "🛍️",
+            "title": "Rue du Bac, art de vivre parisien",
+            "content": "La <strong>rue du Bac</strong>, à proximité, est l'une des <strong>plus prestigieuses rues du 7e</strong>. Long de 1,2 km, elle concentre <strong>antiquaires</strong>, <strong>librairies anciennes</strong>, <strong>galeries d'art</strong>, <strong>fleuristes</strong>, <strong>fromageries</strong> et <strong>chocolateries de luxe</strong>. <strong>Marché de la rue de Sèvres</strong> à proximité. Quartier d'<strong>art de vivre parisien</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Le Bon Marché",
+            "destination_slug": "sevres-babylone",
+            "destination_full_name": "Vaneau → Le Bon Marché",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (1 station) ou à pied (3 min)",
+            "duration_minutes": 3,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-sevres-babylone/"
+        },
+        {
+            "destination_name": "Rue du Bac",
+            "destination_slug": "rue-du-bac",
+            "destination_full_name": "Vaneau → Rue du Bac",
+            "lines_used": [
+                "M10 + M12"
+            ],
+            "lines_label": "M10 → Sèvres-Babylone + M12",
+            "duration_minutes": 6,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-rue-du-bac/"
+        },
+        {
+            "destination_name": "Sciences Po",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Vaneau → Sciences Po",
+            "lines_used": [
+                "M10 + M4"
+            ],
+            "lines_label": "À pied (10 min)",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-saint-germain-des-pres/"
+        },
+        {
+            "destination_name": "Musée d'Orsay",
+            "destination_slug": "musee-d-orsay",
+            "destination_full_name": "Vaneau → Musée d'Orsay",
+            "lines_used": [
+                "M10 + RER C"
+            ],
+            "lines_label": "M10 → Sèvres-Babylone + M12",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-musee-d-orsay/"
+        },
+        {
+            "destination_name": "Quartier Latin",
+            "destination_slug": "cluny-la-sorbonne",
+            "destination_full_name": "Vaneau → Quartier Latin",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (~7 min)",
+            "duration_minutes": 7,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-cluny-la-sorbonne/"
+        },
+        {
+            "destination_name": "Saint-Germain-des-Prés",
+            "destination_slug": "saint-germain-des-pres",
+            "destination_full_name": "Vaneau → Saint-Germain-des-Prés",
+            "lines_used": [
+                "M10 + M4"
+            ],
+            "lines_label": "M10 → Mabillon + à pied",
+            "duration_minutes": 7,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-vaneau/vaneau-vers-saint-germain-des-pres/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q323767",
+            "name": "Tour Montparnasse",
+            "category": "tour",
+            "description": "Inaugurée en 1973 par les architectes Beaudouin, De Hoÿm de Marien et Cassan, cette tour de 209 mètres domine le quartier Necker. Immeuble de bureaux et destination touristique, elle a longtemps été la plus haute structure de France avant l'émergence de la tour First en 2011.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20view%20of%20the%20Tour%20Montparnasse%20%26%20Eiffel%20Tower%20in%202005.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Montparnasse",
+            "latitude": 48.84211,
+            "longitude": 2.32198,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 751,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q912192",
+            "name": "hôtel de Matignon",
+            "category": "site notable",
+            "description": "Édifié en 1722 par les architectes Antoine Mazin et Jean Courtourne, cet hôtel particulier du 7e arrondissement incarne l'architecture résidentielle aristocratique du XVIIIe siècle. Classé au titre de monument historique, il demeure l'une des demeures les plus prestigieuses du quartier Saint-Germain-des-Prés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20%40%20Jardin%20de%20l%27H%C3%B4tel%20Matignon%20%40%20Paris%20%2834261927513%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_Matignon",
+            "latitude": 48.854444,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 624,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1200698",
+            "name": "Le Bon Marché",
+            "category": "commerce",
+            "description": "Fondé en 1838, le Bon Marché demeure un établissement commercial majeur du 7e arrondissement, occupant un vaste quadrilatère délimité par les rues de Sèvres, de Babylone, du Bac et Velpeau. Ce grand magasin historique, rebaptisé en 1989 après 151 années sous son nom originel, propose une offre variée de mode et de décoration intérieure.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Bon%20March%C3%A9%2C%20Paris%2027%20May%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Bon_March%C3%A9",
+            "latitude": 48.851183,
+            "longitude": 2.324395,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 360,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q946883",
+            "name": "musée Maillol",
+            "category": "musée",
+            "description": "Fondé en 1995, ce musée d'art privé occupe un bâtiment du 7e arrondissement dédié aux collections de sculpture et de peinture. Installé rue de Grenelle, il propose une approche intimiste de l'histoire de l'art moderne et contemporain.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Maillol%20Paris%207e%20001.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Maillol_de_Paris",
+            "latitude": 48.854778,
+            "longitude": 2.324889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 719,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2715373",
+            "name": "musée Bourdelle",
+            "category": "musée",
+            "description": "Installé dans l'ancien atelier parisien du sculpteur Antoine Bourdelle, ce musée ouvert en 1949 conserve l'intégralité de son œuvre. Situé au 15e arrondissement, il offre une plongée dans l'univers créatif d'un artiste majeur du XXe siècle, présenté dans les lieux mêmes où il a façonné ses créations.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20musee%20bourdelle%20maison.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bourdelle",
+            "latitude": 48.843056,
+            "longitude": 2.318333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 672,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q526293",
+            "name": "église Saint-François-Xavier de Paris",
+            "category": "église",
+            "description": "Édifiée en 1873 par l'architecte Adrien-Louis Lusson, cette église du 7e arrondissement accueille la paroisse des Missions-Étrangères. Inscrite au patrimoine depuis 2018, elle témoigne du renouveau architectural parisien du Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Fran%C3%A7ois%20Xavier%202010.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois-Xavier_de_Paris",
+            "latitude": 48.850556,
+            "longitude": 2.313333,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 593,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1515595",
+            "name": "hôtel Lutetia",
+            "category": "site notable",
+            "description": "Édifice emblématique du 6e arrondissement depuis 1910, le Lutetia conjugue architecture Belle Époque et prestige hôtelier. Réalisé par Boileau, Tauzin et Wilmotte, ce palace de 19 000 m² trône boulevard Raspail, inscrit au patrimoine parisien pour ses qualités architecturales d'exception.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Lutetia%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Lutetia",
+            "latitude": 48.851354,
+            "longitude": 2.327203,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 533,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q769842",
+            "name": "chapelle Notre-Dame-de-la-Médaille-miraculeuse",
+            "category": "chapelle",
+            "description": "Lieu de pèlerinage inscrit au patrimoine historique, cette chapelle du 7e arrondissement accueille les visiteurs au 140, rue du Bac. Desservant la Maison des Filles de la Charité, elle demeure un site de spiritualité reconnu pour son importance religieuse et architecturale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20Maison%20des%20Filles%20de%20la%20Charit%C3%A9%20-%20136-140%20rue%20du%20Bac%20-%20005bis.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Notre-Dame-de-la-M%C3%A9daille-Miraculeuse_de_Paris",
+            "latitude": 48.85084,
+            "longitude": 2.32293,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 264,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1758416",
+            "name": "musée du Montparnasse",
+            "category": "musée",
+            "description": "Fondé en 1998, ce musée d'art s'installe dans la villa Marie-Vassilieff, une impasse historique du 15e arrondissement. Niché au cœur du quartier Montparnasse, il documente l'héritage artistique d'un lieu emblématique de la création parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20VStudio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_du_Montparnasse",
+            "latitude": 48.843417,
+            "longitude": 2.320833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 602,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2711343",
+            "name": "théâtre du Vieux-Colombier",
+            "category": "théâtre",
+            "description": "Fondé en 1913 par l'architecte Francis Jourdain, ce théâtre du 6e arrondissement conjugue histoire culturelle et patrimoine préservé. Inscrit au titre des monuments historiques, il demeure un lieu de programmation dramatique dans le cœur de Saint-Germain.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Th%C3%A9%C3%A2tre%20du%20Vieux-Colombier%2C%2021%20rue%20du%20Vieux-Colombier%2C%20Paris%206e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_du_Vieux-Colombier",
+            "latitude": 48.851797,
+            "longitude": 2.330294,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 755,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3145188",
+            "name": "hôpital Necker-Enfants malades",
+            "category": "hôpital",
+            "description": "Fondé en 1778, cet établissement universitaire s'affirme comme un centre spécialisé en pédiatrie au cœur du 15e arrondissement. Reconnu au titre du patrimoine, l'hôpital fonctionne depuis 2011 comme entité unique du groupe hospitalier de l'Assistance publique parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Necker-Enfants%20malades%20rue%20de%20S%C3%A8vres.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Necker-Enfants_malades",
+            "latitude": 48.845,
+            "longitude": 2.315556,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 584,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q839251",
+            "name": "maison de verre",
+            "category": "site notable",
+            "description": "Réalisée entre 1928 et 1931 par Pierre Chareau et Bernard Bijvoet, cette demeure du 7e arrondissement conjugue architecture novatrice et artisanat raffiné, avec des ferronneries signées Louis Dalbet. Classée au titre de monument historique, elle témoigne d'une vision moderniste de l'habitat résidentiel du début du XXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20de%20verre%20Chareau.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_de_verre_(Pierre_Chareau)",
+            "latitude": 48.85391,
+            "longitude": 2.32799,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de Sèvres",
+                "distance_m": 761,
+                "walk_minutes": 10
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. de Sèvres",
+            "address_full": "42t Rue de Sèvres 75007 Paris",
+            "postcode": "75007",
+            "city": "Paris",
+            "latitude": 48.848834,
+            "longitude": 2.321008,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/vaneau/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Vaneau (Métro 10) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_M%C3%A9tro_Vaneau_Rue_S%C3%A8vres_-_Paris_VII_(FR75)_-_2022-01-22_-_2.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/vaneau/vaneau-400.avif",
+                "800": "/assets/img/stations/vaneau/vaneau-800.avif",
+                "1200": "/assets/img/stations/vaneau/vaneau-1200.avif",
+                "1600": "/assets/img/stations/vaneau/vaneau-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/vaneau/vaneau-400.webp",
+                "800": "/assets/img/stations/vaneau/vaneau-800.webp",
+                "1200": "/assets/img/stations/vaneau/vaneau-1200.webp",
+                "1600": "/assets/img/stations/vaneau/vaneau-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/vaneau/vaneau-400.jpg",
+                "800": "/assets/img/stations/vaneau/vaneau-800.jpg",
+                "1200": "/assets/img/stations/vaneau/vaneau-1200.jpg",
+                "1600": "/assets/img/stations/vaneau/vaneau-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q1511414",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q1511414",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Vaneau_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

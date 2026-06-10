@@ -1,0 +1,579 @@
+{
+    "published": true,
+    "slug": "michel-ange-auteuil",
+    "name": "Michel-Ange - Auteuil",
+    "name_full": "Michel-Ange - Auteuil (Métro 9, 10)",
+    "arrondissement": "16e arrondissement (Paris)",
+    "address": "Avenue de Versailles, 75016 Paris",
+    "latitude": 48.848127947151525,
+    "longitude": 2.264672147983602,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        },
+        {
+            "type": "metro",
+            "code": "10",
+            "slug": "metro-10",
+            "color": "#C9910D",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "62"
+        ],
+        "nocturne": [],
+        "regional": [
+            "52"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 3,
+            "nearby_count": 8
+        }
+    },
+    "seo": {
+        "description": "Station Michel-Ange - Auteuil (M9+M10) avenue de Versailles dans le 16e. Hub 9 et 10. Quartier d'Auteuil résidentiel chic, proche musée Marmottan."
+    },
+    "hero": {
+        "tagline": "M9 + M10 — quartier d'Auteuil et Avenue Mozart",
+        "description": "Station <strong>Michel-Ange - Auteuil</strong>, hub <strong>M9 + M10</strong>, sur l'<strong>avenue de Versailles</strong> dans le <strong>16e arrondissement</strong>. Quais <strong>M9</strong> ouverts le <strong>27 mai 1923</strong>, quais <strong>M10</strong> intégrés en <strong>1937</strong>. <strong>Quartier d'Auteuil</strong>, résidentiel chic du <strong>16e</strong>."
+    },
+    "adjacent_stations": {
+        "metro-9": {
+            "previous": {
+                "name": "Jasmin",
+                "slug": "jasmin",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Michel-Ange - Molitor",
+                "slug": "michel-ange-molitor",
+                "direction": "Pont de Sèvres"
+            }
+        },
+        "metro-10": {
+            "previous": {
+                "name": "Église d'Auteuil",
+                "slug": "eglise-d-auteuil",
+                "direction": "Gare d'Austerlitz"
+            },
+            "next": {
+                "name": "Porte d'Auteuil",
+                "slug": "porte-d-auteuil",
+                "direction": "Boulogne Pont de Saint-Cloud"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Michel-Ange - Auteuil</strong> est implantée sur l'<strong>avenue de Versailles</strong> dans le <strong>16e arrondissement</strong>. Elle est desservie par les <strong>lignes 9 et 10</strong> du métro parisien, formant un <strong>hub de correspondance</strong>. Bus 22, 52, 62, 70 en correspondance.",
+        "Quais <strong>ligne 9</strong> ouverts le <strong>27 mai 1923</strong> avec le tronçon Trocadéro ↔ Exelmans. Quais <strong>ligne 10</strong> intégrés en <strong>1937</strong> lors du remaniement du réseau.",
+        "Le quartier d'<strong>Auteuil</strong>, ancien village rattaché à Paris en <strong>1860</strong>, est aujourd'hui un quartier <strong>résidentiel chic</strong> du <strong>16e arrondissement</strong>. À proximité : le <strong>musée Marmottan Monet</strong> (Claude Monet) et l'<strong>avenue Mozart</strong>, axe principal du quartier."
+    ],
+    "history": {
+        "title": "1923-1937 : hub M9/M10 et village d'Auteuil",
+        "paragraphs": [
+            "Les quais <strong>ligne 9</strong> sont <strong>inaugurés le 27 mai 1923</strong> avec le tronçon <strong>Trocadéro ↔ Exelmans</strong>. Les quais <strong>ligne 10</strong> sont intégrés en <strong>1937</strong>.",
+            "Le quartier d'<strong>Auteuil</strong>, ancien <strong>village rattaché à Paris en 1860</strong>, conserve une atmosphère résidentielle chic. Connu pour ses <strong>villas</strong>, ses <strong>hôtels particuliers</strong> et ses <strong>jardins privés</strong>. De nombreux artistes et écrivains y ont vécu : <strong>Léon Daudet</strong>, <strong>Marcel Proust</strong>, <strong>Léon Bloy</strong>.",
+            "Le <strong>musée Marmottan Monet</strong>, à proximité (2 rue Louis-Boilly), abrite la <strong>plus grande collection au monde d'œuvres de Claude Monet</strong>. <strong>Inauguré en 1934</strong>, légué à l'Académie des Beaux-Arts par <strong>Paul Marmottan</strong>. Le tableau <em>« Impression, soleil levant »</em> (1872), à l'origine du nom <strong>« impressionnisme »</strong>, y est conservé."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelles lignes desservent Michel-Ange - Auteuil ?",
+            "answer": "<strong>M9</strong> et <strong>M10</strong>. Hub du 16e. Bus 22, 52, 62, 70."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Quais M9 : <strong>27 mai 1923</strong>. Quais M10 : intégrés en <strong>1937</strong>."
+        },
+        {
+            "question": "Pour le musée Marmottan Monet ?",
+            "answer": "<strong>~10 min à pied</strong>. Plus grande collection de Monet au monde."
+        },
+        {
+            "question": "Pour Roland-Garros ?",
+            "answer": "<strong>M10 → Porte d'Auteuil</strong> (2 stations)."
+        },
+        {
+            "question": "Pour Trocadéro et Tour Eiffel ?",
+            "answer": "<strong>M9 directe</strong> vers Trocadéro (~10 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Musée Marmottan Monet</strong> à 10 min à pied : plus grande collection Monet au monde.",
+        "<strong>Avenue Mozart</strong> : axe principal d'Auteuil.",
+        "Quartier <strong>Auteuil</strong> résidentiel chic du 16e.",
+        "Pour <strong>Trocadéro</strong> et <strong>Tour Eiffel</strong> : <strong>M9 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🎨",
+            "title": "Musée Marmottan Monet et Impressionnisme",
+            "content": "Le <strong>musée Marmottan Monet</strong>, à 10 min à pied, abrite la <strong>plus grande collection d'œuvres de Claude Monet au monde</strong>. <strong>Inauguré en 1934</strong>, légué à l'<strong>Académie des Beaux-Arts</strong> par <strong>Paul Marmottan</strong>. <strong>Don de Michel Monet</strong> (fils du peintre) en <strong>1966</strong> : 165 œuvres, dont les célèbres <strong>« Nymphéas »</strong>. Le tableau <em>« Impression, soleil levant »</em> (1872), <strong>œuvre fondatrice de l'impressionnisme</strong>, y est conservé."
+        },
+        {
+            "icon": "🏘️",
+            "title": "Village d'Auteuil",
+            "content": "Le <strong>village d'Auteuil</strong>, ancien <strong>village rattaché à Paris en 1860</strong>, conserve une atmosphère résidentielle chic dans le <strong>16e arrondissement</strong>. De nombreux <strong>artistes et écrivains</strong> y ont vécu : <strong>Marcel Proust</strong>, <strong>Léon Daudet</strong>, <strong>Léon Bloy</strong>, le compositeur <strong>Charles Gounod</strong>. <strong>Église Notre-Dame d'Auteuil</strong> (1880), <strong>Villa Montmorency</strong> (lotissement luxueux fondé en 1853)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Musée Marmottan Monet",
+            "destination_slug": "michel-ange-auteuil",
+            "destination_full_name": "Michel-Ange - Auteuil → Musée Marmottan Monet",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Rue Louis-Boilly (10 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-michel-ange-auteuil/"
+        },
+        {
+            "destination_name": "Roland-Garros",
+            "destination_slug": "porte-d-auteuil",
+            "destination_full_name": "Michel-Ange - Auteuil → Roland-Garros",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (2 stations)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-porte-d-auteuil/"
+        },
+        {
+            "destination_name": "Trocadéro et Tour Eiffel",
+            "destination_slug": "trocadero",
+            "destination_full_name": "Michel-Ange - Auteuil → Trocadéro et Tour Eiffel",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (~10 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-trocadero/"
+        },
+        {
+            "destination_name": "Michel-Ange - Molitor",
+            "destination_slug": "michel-ange-molitor",
+            "destination_full_name": "Michel-Ange - Auteuil → Michel-Ange - Molitor",
+            "lines_used": [
+                "M9 + M10"
+            ],
+            "lines_label": "M9 ou M10 directes",
+            "duration_minutes": 2,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-michel-ange-molitor/"
+        },
+        {
+            "destination_name": "Église d'Auteuil",
+            "destination_slug": "eglise-d-auteuil",
+            "destination_full_name": "Michel-Ange - Auteuil → Église d'Auteuil",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-eglise-d-auteuil/"
+        },
+        {
+            "destination_name": "Quartier Latin",
+            "destination_slug": "cluny-la-sorbonne",
+            "destination_full_name": "Michel-Ange - Auteuil → Quartier Latin",
+            "lines_used": [
+                "M10"
+            ],
+            "lines_label": "M10 directe (~16 min)",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-michel-ange-auteuil/michel-ange-auteuil-vers-cluny-la-sorbonne/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3145225",
+            "name": "hôpital Sainte-Périne AP-HP",
+            "category": "hôpital",
+            "description": "Fondé en 1807, cet établissement de l'AP-HP se consacre à la prise en charge des personnes âgées. Situé dans le 16e arrondissement, l'hôpital Sainte-Périne bénéficie d'un partenariat avec l'université de Versailles-Saint-Quentin-en-Yvelines pour l'enseignement et la recherche gériatrique.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20-%20H%C3%B4pital%20Sainte-P%C3%A9rine%20-%202020-06-02%20%2834%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Sainte-P%C3%A9rine_-_Rossini_-_Chardon-Lagache",
+            "latitude": 48.8447,
+            "longitude": 2.26698,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Molitor",
+                "distance_m": 399,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3278824",
+            "name": "maison La Roche",
+            "category": "site notable",
+            "description": "Édifiée entre 1923 et 1925 par Le Corbusier et Pierre Jeanneret, cette villa constitue un jalon majeur de l'architecture moderne française. Classée au titre de monument historique, elle manifeste les principes novateurs de ses créateurs et leur conception de l'espace architectural comme expérience de parcours.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/61/Paris_16_-_Villa_La_Roche_-1.JPG/330px-Paris_16_-_Villa_La_Roche_-1.JPG",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_La_Roche",
+            "latitude": 48.8519,
+            "longitude": 2.2653,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 455,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1550337",
+            "name": "église Notre-Dame d'Auteuil",
+            "category": "église",
+            "description": "Édifiée en 1892 par l'architecte Émile Vaudremer, cette église du 16e arrondissement témoigne de l'architecture religieuse de la Belle Époque. Inscrite au titre des monuments historiques, elle occupe un emplacement remarquable sur la colline d'Auteuil, place de l'Église-d'Auteuil.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1240150%20Paris%20XVI%20eglise%20ND%20auteuil%20v2%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-d%27Auteuil",
+            "latitude": 48.847222,
+            "longitude": 2.269444,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 388,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3471001",
+            "name": "pavillon de l'eau",
+            "category": "site notable",
+            "description": "Ouvert en 2007, ce bâtiment inscrit au titre des monuments historiques accueille des expositions permanentes et temporaires dédiées au cycle de l'eau parisienne. Eau de Paris y propose animations pédagogiques et rencontres thématiques pour découvrir l'alimentation hydrique de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavillon%20de%20l%27eau3.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_de_l%27eau",
+            "latitude": 48.846382,
+            "longitude": 2.273136,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 672,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3162555",
+            "name": "jardin des Poètes",
+            "category": "jardin",
+            "description": "Aménagé en 1954, ce jardin public du 16e arrondissement borde les célèbres serres d'Auteuil. Son cadre verdoyant offre une pause agréable dans ce secteur riche en espaces botaniques parisiens.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20des%20Po%C3%A8tes%20%40%20Paris%2016%20%2832995476251%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_des_Po%C3%A8tes",
+            "latitude": 48.8475,
+            "longitude": 2.25583,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Hippodrome",
+                "distance_m": 123,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3329098",
+            "name": "musée Bouchard",
+            "category": "musée",
+            "description": "Fondé en 1962, ce musée occupait l'ancien atelier du sculpteur Henri Bouchard dans le 16e arrondissement. L'espace conjuguait conservation d'œuvres d'art et témoignage sur la pratique de l'atelier, avant sa fermeture.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Bouchard%2C%2025%20rue%20de%20l%27Yvette%2C%20Paris%2016e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Bouchard",
+            "latitude": 48.853472,
+            "longitude": 2.265833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 634,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2820478",
+            "name": "abbaye Sainte-Marie de Paris",
+            "category": "site notable",
+            "description": "Fondée en 1893, cette ancienne abbaye bénédictine du 16e arrondissement témoigne de l'engagement monastique du XIXe siècle parisien. Affiliée à la congrégation de Solesmes, elle illustre l'architecture et la spiritualité des communautés religieuses de cette époque.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye%20Sainte-Marie%20de%20Paris%2C%203-5%20rue%20de%20la%20Source%2C%20Paris%2016e%206.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_Sainte-Marie_de_Paris",
+            "latitude": 48.851299,
+            "longitude": 2.268833,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 509,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3145517",
+            "name": "hôtel Guimard",
+            "category": "site notable",
+            "description": "Édifié en 1912 au 122, avenue Mozart, cet hôtel particulier porte la signature d'Hector Guimard, figure centrale du courant Art nouveau français. Le bâtiment, classé au titre des monuments historiques, incarne les principes esthétiques novateurs de son architecte.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotel%20Guimard.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Guimard",
+            "latitude": 48.8498,
+            "longitude": 2.26652,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 272,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3363907",
+            "name": "parc Sainte-Périne",
+            "category": "jardin",
+            "description": "Inauguré en 1977, ce jardin public du 16e arrondissement s'étend sur près de 60 000 m² dans le quartier d'Auteuil. Son relief naturellement vallonné offre un cadre verdoyant où quelque 40 000 m² sont accessibles aux visiteurs.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Saint%C3%A9-P%C3%A9rine%2C%20Paris%2016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Sainte-P%C3%A9rine",
+            "latitude": 48.8453,
+            "longitude": 2.26889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 444,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q54002491",
+            "name": "chapelle Sainte-Bernadette de Paris",
+            "category": "chapelle",
+            "description": "Édifiée en 1937, cette chapelle catholique du 16e arrondissement porte la signature architecturale de Raymond Busse et Paul Hulot. Implantée rue d'Auteuil, elle témoigne d'une dévotion parisienne du XXe siècle aux figures spirituelles mariales.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chapelle%20Sainte%20Bernadette%20%40%20Paris%20%2831206650560%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_Sainte-Bernadette_de_Paris",
+            "latitude": 48.847819,
+            "longitude": 2.268773,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 332,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3145598",
+            "name": "hôtel Mezzara",
+            "category": "site notable",
+            "description": "Hector Guimard a conçu cette demeure Art nouveau en 1910-1911 pour Paul Mezzara, industriel spécialisé dans la création de dentelles. Inscrit et classé au titre des monuments historiques, cet hôtel particulier témoigne du raffinement architectural de l'époque Belle Époque.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Mezzara.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_Mezzara",
+            "latitude": 48.8507,
+            "longitude": 2.27075,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jean Lorrain",
+                "distance_m": 571,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3581465",
+            "name": "église Saint-François-de-Molitor",
+            "category": "église",
+            "description": "Édifice religieux du 16e arrondissement conçu par l'architecte Jean-Marie Duthilleul, cette église accueille les fidèles de la paroisse Saint-François-de-Molitor. Unique lieu de culte catholique desservant cette communauté paroissiale, elle constitue un repère spirituel du quartier Molitor.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Fran%C3%A7ois_de_Molitor",
+            "latitude": 48.8454,
+            "longitude": 2.26003,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. Molitor",
+                "distance_m": 116,
+                "walk_minutes": 1
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "pl. Jean Lorrain",
+            "address_full": "53b Rue d'Auteuil 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.847869,
+            "longitude": 2.264236,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "bd Murat",
+            "address_full": "1 Place de la Porte d'Auteuil 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.847559,
+            "longitude": 2.257795,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. Molitor",
+            "address_full": "37 Rue Molitor 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.845127,
+            "longitude": 2.261563,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. d'Auteuil",
+            "address_full": "55 Rue d'Auteuil 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.847919,
+            "longitude": 2.263636,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Hippodrome",
+            "address_full": "4 Route d'Auteuil aux Lacs 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.848372,
+            "longitude": 2.256857,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. d'Auteuil",
+            "address_full": "78 Rue d'Auteuil 75016 Paris",
+            "postcode": "75016",
+            "city": "Paris",
+            "latitude": 48.848058,
+            "longitude": 2.259955,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/michel-ange-auteuil/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Michel-Ange - Auteuil (Métro 9, 10) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Michel_Ange_Auteuil_M%C3%A9tro_Paris_Rue_Auteuil_-_Paris_XVI_(FR75)_-_2026-02-21_-_1.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-400.avif",
+                "800": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-800.avif",
+                "1200": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1200.avif",
+                "1600": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-400.webp",
+                "800": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-800.webp",
+                "1200": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1200.webp",
+                "1600": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-400.jpg",
+                "800": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-800.jpg",
+                "1200": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1200.jpg",
+                "1600": "/assets/img/stations/michel-ange-auteuil/michel-ange-auteuil-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 2
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q995228",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q995228",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Michel-Ange_-_Auteuil_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
