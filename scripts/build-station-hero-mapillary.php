@@ -815,9 +815,14 @@ function process_station(string $slug, string $token): array {
                 $vRes = validate_hero_with_vision($wkSrc, $stationName, $GLOBALS['BP_VISION_KEY']);
                 vision_log($slug, $wkStation['filename'], $vRes);
                 if (!$vRes['valid'] || !$vRes['identifies']) {
-                    @unlink($wkSrc);
-                    $wkStation = null; // signale rejet → tombe vers Mapillary
-                    goto try_mapillary;
+                    // v9.1 : on tombe vers Mapillary uniquement si --vision-strict.
+                    // Sinon on conserve cette candidate Wikimedia (préférence
+                    // utilisateur : photo imparfaite > placeholder).
+                    if (!empty($GLOBALS['BP_VISION_STRICT'])) {
+                        @unlink($wkSrc);
+                        $wkStation = null;
+                        goto try_mapillary;
+                    }
                 }
             }
             $n = generate_variants($wkSrc, $slug, $outDir);
@@ -908,9 +913,12 @@ function process_station(string $slug, string $token): array {
                     $vRes = validate_hero_with_vision($mapillarySrc, $stationName, $GLOBALS['BP_VISION_KEY']);
                     vision_log($slug, 'mapillary_' . ($best['id'] ?? 'unknown'), $vRes);
                     if (!$vRes['valid'] || !$vRes['identifies']) {
-                        @unlink($mapillarySrc);
-                        $best = null; // tombe vers fallback POI puis placeholder
-                        goto vision_fallback;
+                        // v9.1 : on conserve quand même Mapillary sauf --vision-strict
+                        if (!empty($GLOBALS['BP_VISION_STRICT'])) {
+                            @unlink($mapillarySrc);
+                            $best = null;
+                            goto vision_fallback;
+                        }
                     }
                 }
                 $n = generate_variants($mapillarySrc, $slug, $outDir);
@@ -944,8 +952,8 @@ function process_station(string $slug, string $token): array {
 
     $wkFallback = find_wikimedia_fallback($station);
     if ($wkFallback === null) {
-        // v9 : si --vision actif, bascule en design_placeholder
-        if (!empty($GLOBALS['BP_VISION'])) {
+        // v9.1 : design_placeholder uniquement si --vision-strict
+        if (!empty($GLOBALS['BP_VISION_STRICT'])) {
             $station['hero_image'] = [
                 'url'      => '',
                 'alt'      => sprintf("Station %s — visuel illustratif", $station['name_full'] ?? $station['name']),
@@ -993,14 +1001,14 @@ function process_station(string $slug, string $token): array {
     }
     @unlink($wkSrc);
     rename($cropped, $wkSrc);
-    // v9 : validation Claude Vision sur POI fallback
+    // v9.1 : validation Claude Vision sur POI fallback (log only, pas de
+    // bascule placeholder sauf si --vision-strict)
     if (!empty($GLOBALS['BP_VISION'])) {
         $stationName = $station['name_full'] ?? $station['name'];
         $vRes = validate_hero_with_vision($wkSrc, $stationName, $GLOBALS['BP_VISION_KEY']);
         vision_log($slug, 'poi_' . ($poi['name'] ?? 'unknown'), $vRes);
-        if (!$vRes['valid'] || !$vRes['identifies']) {
+        if ((!$vRes['valid'] || !$vRes['identifies']) && !empty($GLOBALS['BP_VISION_STRICT'])) {
             @unlink($wkSrc);
-            // Bascule en design_placeholder
             $station['hero_image'] = [
                 'url'      => '',
                 'alt'      => sprintf("Station %s — visuel illustratif", $station['name_full'] ?? $station['name']),
@@ -1069,6 +1077,11 @@ $GLOBALS['BP_SKIP_WIKIMEDIA'] = isset($args['skip-wikimedia']) || in_array('--sk
 // Si une candidate Wikimedia ou Mapillary échoue la validation, on essaie
 // la suivante. Si toutes échouent, design_placeholder coloré ligne métro.
 $GLOBALS['BP_VISION'] = isset($args['vision']) || in_array('--vision', $argv, true);
+// v9.1 : --vision-strict bascule en design_placeholder si toutes candidates
+// échouent. Sans ce flag, on conserve la dernière candidate téléchargée même
+// si Vision la rejette (préférence utilisateur 2026-06-10 : photo imparfaite
+// > placeholder générique).
+$GLOBALS['BP_VISION_STRICT'] = isset($args['vision-strict']) || in_array('--vision-strict', $argv, true);
 if ($GLOBALS['BP_VISION']) {
     $GLOBALS['BP_VISION_KEY'] = (function_exists('load_secrets') ? load_secrets() : require SECRETS_PHP)['ANTHROPIC_API_KEY'] ?? null;
     if (!$GLOBALS['BP_VISION_KEY']) fail('--vision requiert ANTHROPIC_API_KEY dans secrets.php');
