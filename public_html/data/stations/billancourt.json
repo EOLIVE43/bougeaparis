@@ -1,0 +1,564 @@
+{
+    "published": true,
+    "slug": "billancourt",
+    "name": "Billancourt",
+    "name_full": "Billancourt (Métro 9)",
+    "arrondissement": "Boulogne-Billancourt (92)",
+    "address": "Rue Marcel-Bontemps, 92100 Boulogne-Billancourt",
+    "latitude": 48.832038826816394,
+    "longitude": 2.238194520131341,
+    "tariff_zone": 2,
+    "tariff_zone_context": "Hauts-de-Seine (92), zone tarifaire 2",
+    "commune": "Boulogne-Billancourt",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "9",
+            "slug": "metro-9",
+            "color": "#B6BD00",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "260"
+        ],
+        "nocturne": [
+            "N12",
+            "N61"
+        ],
+        "regional": [
+            "389",
+            "SUBB S"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 9,
+            "nearby_count": 8
+        }
+    },
+    "seo": {
+        "description": "Station Billancourt (M9) à Boulogne-Billancourt (92). Quartier industriel reconverti. Île Seguin proche."
+    },
+    "hero": {
+        "tagline": "M9 — Billancourt, ancien quartier industriel",
+        "description": "Station <strong>Billancourt</strong> à <strong>Boulogne-Billancourt</strong> (Hauts-de-Seine, 92). Desservie par la <strong>M9</strong>, ouverte le <strong>3 octobre 1934</strong>. Ancien <strong>quartier industriel</strong> reconverti."
+    },
+    "adjacent_stations": {
+        "metro-9": {
+            "previous": {
+                "name": "Marcel Sembat",
+                "slug": "marcel-sembat",
+                "direction": "Mairie de Montreuil"
+            },
+            "next": {
+                "name": "Pont de Sèvres",
+                "slug": "pont-de-sevres",
+                "direction": "Pont de Sèvres"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Billancourt</strong> est implantée à <strong>Boulogne-Billancourt</strong> (Hauts-de-Seine, 92). Elle est desservie par la <strong>M9</strong>, entre <strong>Pont de Sèvres</strong> (1 station) et <strong>Marcel Sembat</strong> (1 station). Bus 52, 175, 179, 279, 389.",
+        "Ouverte le <strong>3 octobre 1934</strong> avec le <strong>prolongement de la M9</strong>.",
+        "Le nom <strong>Billancourt</strong> rappelle l'<strong>ancien village de Billancourt</strong>, fusionné avec <strong>Boulogne-sur-Seine</strong> en <strong>1924</strong> pour former <strong>Boulogne-Billancourt</strong>. Quartier marqué par l'<strong>industrie automobile</strong> (usines Renault de l'Île Seguin)."
+    ],
+    "history": {
+        "title": "1934 : ancien village de Billancourt",
+        "paragraphs": [
+            "La station Billancourt est <strong>inaugurée le 3 octobre 1934</strong> avec le <strong>prolongement de la M9</strong>.",
+            "Le nom <strong>Billancourt</strong> rappelle l'<strong>ancien village de Billancourt</strong>, fusionné avec <strong>Boulogne-sur-Seine</strong> en <strong>1924</strong> pour former <strong>Boulogne-Billancourt</strong>. Étymologie : du latin <em>Bilenni curtis</em>, « domaine de Bilenne ».",
+            "Quartier marqué au <strong>XXe siècle</strong> par l'<strong>industrie automobile</strong> avec les <strong>usines Renault</strong> de l'<strong>Île Seguin</strong> (1929-1992). <strong>Reconversion progressive</strong> en <strong>quartier résidentiel et tertiaire</strong> depuis les années 1990."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Billancourt ?",
+            "answer": "Uniquement la <strong>M9</strong>. Bus 52, 175, 179, 279, 389."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>3 octobre 1934</strong>."
+        },
+        {
+            "question": "Pour l'Île Seguin ?",
+            "answer": "<strong>~10 min à pied</strong>."
+        },
+        {
+            "question": "Pour la Seine Musicale ?",
+            "answer": "<strong>~12 min à pied</strong>."
+        },
+        {
+            "question": "Pour Trocadéro et Tour Eiffel ?",
+            "answer": "<strong>M9 directe</strong> (~14 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Partiellement</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Île Seguin</strong> à 10 min à pied : ancien fief Renault.",
+        "<strong>La Seine Musicale</strong> à 12 min à pied.",
+        "Pour <strong>Trocadéro et Tour Eiffel</strong> : <strong>M9 directe</strong>.",
+        "Pour <strong>République</strong> : <strong>M9 directe</strong>.",
+        "Zone tarifaire <strong>2</strong>, Hauts-de-Seine."
+    ],
+    "trivia": [
+        {
+            "icon": "🏭",
+            "title": "Boulogne-Billancourt, fusion 1924",
+            "content": "<strong>Boulogne-Billancourt</strong>, ~120 000 habitants, est née de la <strong>fusion en 1924</strong> des communes de <strong>Boulogne-sur-Seine</strong> et de <strong>Billancourt</strong>. <strong>Plus grande commune des Hauts-de-Seine</strong> par sa population. Au <strong>XXe siècle</strong>, ville industrielle célèbre pour les <strong>usines Renault</strong> sur l'<strong>île Seguin</strong>. Aujourd'hui, ~120 000 habitants, l'une des plus importantes communes d'Île-de-France."
+        },
+        {
+            "icon": "🎬",
+            "title": "Billancourt et cinéma",
+            "content": "<strong>Boulogne-Billancourt</strong> a longtemps été un <strong>haut lieu du cinéma français</strong>. <strong>Studios de Billancourt</strong> (1924-1992), où furent tournés de nombreux films de <strong>Jean Renoir</strong>, <strong>Marcel Carné</strong>, <strong>Jean-Luc Godard</strong>. <strong>Studios désaffectés en 1992</strong>, remplacés par des <strong>logements et bureaux</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Île Seguin",
+            "destination_slug": "pont-de-sevres",
+            "destination_full_name": "Billancourt → Île Seguin",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "10 min à pied",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-pont-de-sevres/"
+        },
+        {
+            "destination_name": "La Seine Musicale",
+            "destination_slug": "pont-de-sevres",
+            "destination_full_name": "Billancourt → La Seine Musicale",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "12 min à pied",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-pont-de-sevres/"
+        },
+        {
+            "destination_name": "Pont de Sèvres (terminus)",
+            "destination_slug": "pont-de-sevres",
+            "destination_full_name": "Billancourt → Pont de Sèvres (terminus)",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-pont-de-sevres/"
+        },
+        {
+            "destination_name": "Marcel Sembat",
+            "destination_slug": "marcel-sembat",
+            "destination_full_name": "Billancourt → Marcel Sembat",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-marcel-sembat/"
+        },
+        {
+            "destination_name": "Trocadéro et Tour Eiffel",
+            "destination_slug": "trocadero",
+            "destination_full_name": "Billancourt → Trocadéro et Tour Eiffel",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (~14 min)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-trocadero/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Billancourt → République",
+            "lines_used": [
+                "M9"
+            ],
+            "lines_label": "M9 directe (~28 min)",
+            "duration_minutes": 28,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-billancourt/billancourt-vers-republique/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q3330124",
+            "name": "musée des Années Trente",
+            "category": "musée",
+            "description": "Fondé en 1939 à Boulogne-Billancourt, ce musée municipal se consacre aux arts et objets de la décennie 1930. Les collections mettent l'accent sur l'Art déco, mouvement esthétique dominant de cette période créative de l'entre-deux-guerres.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parigi%2C%20museo%20degli%20anni%2030%2C%20nel%20centro%20landowski.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Ann%C3%A9es_Trente",
+            "latitude": 48.836111,
+            "longitude": 2.239167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Billancourt",
+                "distance_m": 432,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3146134",
+            "name": "hôtel de ville de Boulogne-Billancourt",
+            "category": "mairie",
+            "description": "Édifié au XXe siècle, cet hôtel de ville porte la signature architecturale de Tony Garnier. Le bâtiment bénéficie d'une reconnaissance patrimoniale en tant que monument historique inscrit, témoignant de l'importance de son design moderniste dans le paysage urbain de Boulogne-Billancourt.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20Ville%20Boulogne%20Billancourt%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Boulogne-Billancourt",
+            "latitude": 48.8359,
+            "longitude": 2.24043,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Billancourt",
+                "distance_m": 430,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q13362478",
+            "name": "tours Citylights",
+            "category": "site notable",
+            "description": "Cet ensemble immobilier de trois tours date de 1975 et marque le paysage urbain de Boulogne-Billancourt. Anciennement désignées sous le nom de tours du Pont-de-Sèvres, les Citylights constituent une réalisation significative de l'architecture résidentielle parisienne de cette époque.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tours%20Citylights.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tours_Citylights",
+            "latitude": 48.828749,
+            "longitude": 2.231806,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Castéja",
+                "distance_m": 430,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q60041895",
+            "name": "Maison Saint-François-de-Sales",
+            "category": "chapelle",
+            "description": "Établie en 2014, cette maison d'accueil du diocèse de Nanterre propose deux espaces distincts : l'un dédié au renforcement des liens familiaux et de l'entraide parentale, l'autre consacré aux initiatives interreligieuses et interculturelle. Elle accueille résidents, étudiants et visiteurs en quête de dialogue et de réflexion commune.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Saint%20Fran%C3%A7ois%20de%20Sales4.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Maison_Saint-Fran%C3%A7ois-de-Sales",
+            "latitude": 48.82583,
+            "longitude": 2.24,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Castéja",
+                "distance_m": 655,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q29861570",
+            "name": "église Sainte-Thérèse-de-l'Enfant-Jésus de Boulogne-Billancourt",
+            "category": "église",
+            "description": "Édifiée en 1911, cette église dédiée à sainte Thérèse de l'Enfant-Jésus résulte de la collaboration entre les architectes Henri Vidal et Charles Bourdery, sous la maîtrise d'ouvrage d'Auguste Labouret. Classée au titre du patrimoine du XXe siècle, elle constitue un témoignage de l'architecture religieuse de l'entre-deux-guerres du diocèse de Nanterre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulogne-Billancourt%20-%20%C3%89glise%20Sante-Th%C3%A9r%C3%A8se%20de%20l%27Enfant%20J%C3%A9sus%20-%202.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Sainte-Th%C3%A9r%C3%A8se-de-l%27Enfant-J%C3%A9sus_de_Boulogne-Billancourt",
+            "latitude": 48.83725,
+            "longitude": 2.23379,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Billancourt",
+                "distance_m": 655,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q29861576",
+            "name": "église de l'Immaculée-Conception de Boulogne-Billancourt",
+            "category": "église",
+            "description": "Édifiée en 1965, cette église paroissiale dessert la communauté catholique de Boulogne-Billancourt et s'inscrit dans le patrimoine local comme bien inventorié. Rattachée au diocèse de Nanterre, elle administre également la chapelle Saint-Pierre et constitue un repère religieux aux portes de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20Immacul%C3%A9e%20Boulogne.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_de_l%27Immacul%C3%A9e-Conception_de_Boulogne-Billancourt",
+            "latitude": 48.83151,
+            "longitude": 2.2482,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Ferme",
+                "distance_m": 701,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q60290461",
+            "name": "église Saint-Nicolas-le-Thaumaturge de Boulogne-Billancourt",
+            "category": "église",
+            "description": "Édifiée en 1927, cette église perpétue la tradition spirituelle orthodoxe russe à Boulogne-Billancourt. Elle relève du vicariat Sainte-Marie-de-Paris, intégré à la métropole orthodoxe grecque de France, et constitue un lieu de culte historique pour les communautés de tradition byzantine du secteur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St%20Nicolas%20le%20thaumaturge%20de%20Boulogne-Billancourt.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Nicolas-le-Thaumaturge_de_Boulogne-Billancourt",
+            "latitude": 48.82851,
+            "longitude": 2.24444,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Ferme",
+                "distance_m": 572,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2817706",
+            "name": "METAL 57",
+            "category": "site notable",
+            "description": "Édifice emblématique des années 1980, METAL 57 a été conçu par les architectes Claude Vasconi et Dominique Perrault. Implanté sur les berges de Seine à Boulogne-Billancourt, ce bâtiment accueille depuis 2022 le siège de BNP Paribas Real Estate.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/METAL%2057.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/METAL_57",
+            "latitude": 48.827222,
+            "longitude": 2.232222,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Castéja",
+                "distance_m": 536,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q18380245",
+            "name": "Square com",
+            "category": "site notable",
+            "description": "Construit en 1984, le Square Com s'inscrit dans le projet urbain de la ZAC Seguin Rives de Seine à Boulogne-Billancourt. Cette structure architecturale marque le développement du secteur depuis les années 1980, offrant un point de repère dans ce quartier en transformation.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square-Com-Boulogne-Billancourt.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_com",
+            "latitude": 48.8267,
+            "longitude": 2.23132,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Castéja",
+                "distance_m": 622,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q74833255",
+            "name": "place Marcel-Sembat",
+            "category": "place",
+            "description": "Située au cœur de Boulogne-Billancourt, cette place constitue le principal point de convergence urbain de la ville. C'est un carrefour animé où s'entrelacent les flux de circulation et les activités commerciales du centre-ville.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20place%20Marcel%20Sembat%20-%20panoramio.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Marcel-Sembat",
+            "latitude": 48.8337,
+            "longitude": 2.2435,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Billancourt",
+                "distance_m": 399,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q110764671",
+            "name": "place Jules-Guesde",
+            "category": "place",
+            "description": "Situé à Boulogne-Billancourt, ce carrefour structure le tissu urbain local des Hauts-de-Seine. Son rôle de nœud de circulation en fait un passage clé pour les déplacements dans le quartier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Jules%20Guesde%20-%20Boulogne-Billancourt%20%28FR92%29%20-%202023-09-02%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Jules-Guesde_(Boulogne-Billancourt)",
+            "latitude": 48.827244,
+            "longitude": 2.242119,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Ferme",
+                "distance_m": 581,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q2371224",
+            "name": "tour Horizons",
+            "category": "tour",
+            "description": "Réalisée en 2011 par l'architecte Jean Nouvel, cette tour s'élève sur le site du Trapèze à Boulogne-Billancourt. Son édification a mobilisé trente mois de travaux pour ce bâtiment de grande hauteur marquant le paysage urbain de la commune.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Billancourt%E2%80%93Rives%20de%20Seine%2C%2092100%20Boulogne-Billancourt%2C%20France%20-%20panoramio%20%281%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Horizons",
+            "latitude": 48.8279,
+            "longitude": 2.23384,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. Castéja",
+                "distance_m": 411,
+                "walk_minutes": 5
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. de la Ferme",
+            "address_full": "29 Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.831961,
+            "longitude": 2.238645,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. de la Ferme",
+            "address_full": "31 Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.831906,
+            "longitude": 2.238537,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Billancourt",
+            "address_full": "54ter Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.832248,
+            "longitude": 2.238518,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Billancourt",
+            "address_full": "58 Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.832202,
+            "longitude": 2.23841,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. Castéja",
+            "address_full": "577 Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.831209,
+            "longitude": 2.23634,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "r. de Silly",
+            "address_full": "88 Avenue du Général Leclerc 92100 Boulogne-Billancourt",
+            "postcode": "92100",
+            "city": "Boulogne-Billancourt",
+            "latitude": 48.831504,
+            "longitude": 2.236145,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/billancourt/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Billancourt (Métro 9) — photo Wikimedia Commons par Chabe01 (T1-Cat:Entrances)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Billancourt_M%C3%A9tro_Paris_Avenue_G%C3%A9n%C3%A9ral_Leclerc_-_Boulogne-Billancourt_(FR92)_-_2026-02-21_-_12.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/billancourt/billancourt-400.avif",
+                "800": "/assets/img/stations/billancourt/billancourt-800.avif",
+                "1200": "/assets/img/stations/billancourt/billancourt-1200.avif",
+                "1600": "/assets/img/stations/billancourt/billancourt-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/billancourt/billancourt-400.webp",
+                "800": "/assets/img/stations/billancourt/billancourt-800.webp",
+                "1200": "/assets/img/stations/billancourt/billancourt-1200.webp",
+                "1600": "/assets/img/stations/billancourt/billancourt-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/billancourt/billancourt-400.jpg",
+                "800": "/assets/img/stations/billancourt/billancourt-800.jpg",
+                "1200": "/assets/img/stations/billancourt/billancourt-1200.jpg",
+                "1600": "/assets/img/stations/billancourt/billancourt-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q761518",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q761518",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Billancourt_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
