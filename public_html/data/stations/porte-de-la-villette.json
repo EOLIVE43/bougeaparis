@@ -1,0 +1,555 @@
+{
+    "published": true,
+    "slug": "porte-de-la-villette",
+    "name": "Porte de la Villette",
+    "name_full": "Porte de la Villette (Métro 7)",
+    "arrondissement": "19e arrondissement (Paris)",
+    "address": "Avenue Corentin-Cariou, 75019 Paris",
+    "latitude": 48.89750318822357,
+    "longitude": 2.386213565562821,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [
+            "N42",
+            "N140"
+        ],
+        "regional": [
+            "71",
+            "139",
+            "150",
+            "152",
+            "A04 VIL"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 6,
+            "nearby_count": 13
+        }
+    },
+    "seo": {
+        "description": "Station Porte de la Villette (M7) avenue Corentin-Cariou dans le 19e. Parc de la Villette, Cité des Sciences et de l'Industrie, Géode."
+    },
+    "hero": {
+        "tagline": "M7 — Parc de la Villette, Cité des Sciences",
+        "description": "Station <strong>Porte de la Villette</strong> sur l'<strong>avenue Corentin-Cariou</strong> dans le <strong>19e arrondissement</strong>. Desservie par la <strong>M7</strong>, ouverte le <strong>5 novembre 1910</strong>. À la sortie : le <strong>parc de la Villette</strong>, la <strong>Cité des Sciences et de l'Industrie</strong> et la <strong>Géode</strong>."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Corentin Cariou",
+                "slug": "corentin-cariou",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Aubervilliers-Pantin Quatre Chemins",
+                "slug": "aubervilliers-pantin-quatre-chemins",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Porte de la Villette</strong> est implantée sur l'<strong>avenue Corentin-Cariou</strong> dans le <strong>19e arrondissement</strong>. Elle est desservie par la <strong>M7</strong>, entre <strong>Aubervilliers - Pantin - Quatre Chemins</strong> (1 station) et <strong>Corentin Cariou</strong> (1 station). Bus 75, 139, 150, 152, tramway T3b.",
+        "Ouverte le <strong>5 novembre 1910</strong> avec le tronçon initial de la <strong>M7</strong>.",
+        "À la sortie : le <strong>parc de la Villette</strong>, <strong>3e plus grand parc parisien</strong> (~55 hectares), inauguré en <strong>1987</strong> sur les anciennes <strong>halles aux bestiaux et abattoirs de la Villette</strong>. Abrite la <strong>Cité des Sciences et de l'Industrie</strong>, la <strong>Géode</strong>, la <strong>Philharmonie de Paris</strong>, le <strong>Zénith</strong>."
+    ],
+    "history": {
+        "title": "1910 : Villette, anciens abattoirs, parc moderne",
+        "paragraphs": [
+            "La station Porte de la Villette est <strong>inaugurée le 5 novembre 1910</strong> sur le tronçon initial de la <strong>M7</strong> (Opéra ↔ Porte de la Villette).",
+            "Le quartier de la <strong>Villette</strong> est marqué au XIXe-XXe siècle par les <strong>halles aux bestiaux et abattoirs de la Villette</strong>, construits sous <strong>Napoléon III en 1867</strong> par <strong>Adolphe Carlier</strong>. Centre majeur du <strong>commerce de la viande</strong> à Paris. <strong>Fermeture en 1974</strong>.",
+            "Le <strong>parc de la Villette</strong>, inauguré en <strong>1987</strong>, est un <strong>parc thématique culturel et scientifique</strong> de <strong>55 hectares</strong>. <strong>3e plus grand parc parisien</strong>. Conçu par l'architecte <strong>Bernard Tschumi</strong>. Abrite la <strong>Cité des Sciences et de l'Industrie</strong> (1986), la <strong>Géode</strong> (1985), la <strong>Philharmonie de Paris</strong> (2015, Jean Nouvel), le <strong>Zénith de Paris</strong> (1984), la <strong>Cité de la Musique</strong>."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Porte de la Villette ?",
+            "answer": "<strong>M7</strong> et <strong>tramway T3b</strong>. Bus 75, 139, 150, 152."
+        },
+        {
+            "question": "Pour le parc de la Villette ?",
+            "answer": "<strong>Sortie directe</strong>. 55 hectares, 3e plus grand parc parisien."
+        },
+        {
+            "question": "Pour la Cité des Sciences ?",
+            "answer": "<strong>~5 min à pied</strong> dans le parc."
+        },
+        {
+            "question": "Pour la Géode ?",
+            "answer": "<strong>~5 min à pied</strong> dans le parc."
+        },
+        {
+            "question": "Pour la Philharmonie ?",
+            "answer": "<strong>~10 min à pied</strong> dans le parc."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Partiellement</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Cité des Sciences et de l'Industrie</strong> à 5 min : plus grand musée scientifique d'Europe.",
+        "<strong>Géode</strong> à 5 min : salle de cinéma sphérique IMAX (36 m de diamètre).",
+        "<strong>Philharmonie de Paris</strong> (Jean Nouvel, 2015) à 10 min.",
+        "<strong>Tramway T3b</strong> en correspondance.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🔬",
+            "title": "Cité des Sciences et de l'Industrie",
+            "content": "La <strong>Cité des Sciences et de l'Industrie</strong>, à 5 min à pied, est le <strong>plus grand musée scientifique d'Europe</strong>. <strong>Inaugurée le 13 mars 1986</strong> par le président <strong>François Mitterrand</strong>. Conçue par l'architecte <strong>Adrien Fainsilber</strong> sur l'emplacement des <strong>anciens abattoirs de la Villette</strong>. <strong>150 000 m²</strong>, <strong>~2 millions de visiteurs par an</strong>. Expositions permanentes (Explora) et temporaires, planétarium, sous-marin Argonaute."
+        },
+        {
+            "icon": "🎵",
+            "title": "Philharmonie de Paris (2015)",
+            "content": "La <strong>Philharmonie de Paris</strong>, à 10 min à pied, est inaugurée le <strong>14 janvier 2015</strong>. Œuvre de l'architecte <strong>Jean Nouvel</strong>. <strong>Salle de 2 400 places</strong> avec <strong>acoustique exceptionnelle</strong> (Yasuhisa Toyota). Façade aluminisée caractéristique. Concerts classiques, jazz, musiques du monde. <strong>Cité de la Musique</strong> (1995, Christian de Portzamparc) à proximité."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Cité des Sciences",
+            "destination_slug": "porte-de-la-villette",
+            "destination_full_name": "Porte de la Villette → Cité des Sciences",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Parc Villette (5 min)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-porte-de-la-villette/"
+        },
+        {
+            "destination_name": "Géode",
+            "destination_slug": "porte-de-la-villette",
+            "destination_full_name": "Porte de la Villette → Géode",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Parc Villette (5 min)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-porte-de-la-villette/"
+        },
+        {
+            "destination_name": "Philharmonie de Paris",
+            "destination_slug": "porte-de-pantin",
+            "destination_full_name": "Porte de la Villette → Philharmonie de Paris",
+            "lines_used": [
+                "M5 + à pied"
+            ],
+            "lines_label": "Parc Villette (10 min)",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-porte-de-pantin/"
+        },
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Porte de la Villette → Châtelet",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (~16 min)",
+            "duration_minutes": 16,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-chatelet/"
+        },
+        {
+            "destination_name": "Opéra",
+            "destination_slug": "opera",
+            "destination_full_name": "Porte de la Villette → Opéra",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (~14 min)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-opera/"
+        },
+        {
+            "destination_name": "Gare de l'Est",
+            "destination_slug": "gare-de-l-est",
+            "destination_full_name": "Porte de la Villette → Gare de l'Est",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (~8 min)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-porte-de-la-villette/porte-de-la-villette-vers-gare-de-l-est/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1094338",
+            "name": "cité des sciences et de l'industrie",
+            "category": "musée",
+            "description": "Inaugurée en 1986 sous l'impulsion de Valéry Giscard d'Estaing, cette institution majeure du 19e arrondissement explore les frontières entre science, technique et société. Implantée dans le parc de la Villette aux côtés de la Philharmonie, elle propose une plongée dans les enjeux contemporains de la recherche et de l'innovation, accessible à tous les publics.",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_Cit%C3%A9_des_sciences.svg/langfr-330px-Logo_Cit%C3%A9_des_sciences.svg.png",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Cit%C3%A9_des_sciences_et_de_l%27industrie",
+            "latitude": 48.895556,
+            "longitude": 2.388056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Macdonald",
+                "distance_m": 216,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q246448",
+            "name": "parc de la Villette",
+            "category": "jardin",
+            "description": "Conçu par l'architecte Bernard Tschumi et inauguré en 1987, ce jardin public du 19e arrondissement combine espaces verts et équipements culturels. Pensé comme un parc urbain innovant, il accueille résidents et visiteurs autour de ses canaux et installations thématiques.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carousel%20in%20the%20Parc%20de%20la%20Villette%2C%20Paris%208%20September%202012.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_de_la_Villette",
+            "latitude": 48.89306,
+            "longitude": 2.39056,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Parvis de la Cité",
+                "distance_m": 543,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q247566",
+            "name": "Zénith Paris",
+            "category": "site notable",
+            "description": "Inaugurée en 1984 par l'atelier Chaix & Morel, cette salle polyvalente accueille concerts et spectacles au cœur du parc de la Villette. Avec une capacité de 6 804 places, elle figure parmi les plus importantes arènes de la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Z%C3%A9nith%20de%20Paris%20-%20meeting%20Lutte%20Ouvri%C3%A8re%2015-04-2012%20-%201.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Z%C3%A9nith_Paris_-_La_Villette",
+            "latitude": 48.894167,
+            "longitude": 2.393333,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Macdonald",
+                "distance_m": 589,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q3533107",
+            "name": "Tour La Villette",
+            "category": "tour",
+            "description": "Édifiée en 1972 par l'architecte Michel Holley, cette tour de bureaux culmine à 125 mètres et occupe une surface de 1 314 m². Implantée à Aubervilliers en bordure du périphérique, elle marque le paysage urbain entre Paris et sa banlieue nord.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aubervilliers%20hlm%20night.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_La_Villette",
+            "latitude": 48.901667,
+            "longitude": 2.387778,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. de la Pte de la Villette",
+                "distance_m": 357,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q16508090",
+            "name": "Pont de Flandre",
+            "category": "gare",
+            "description": "Ancien point d'arrêt de la Petite Ceinture ferroviaire, cette halte désaffectée témoigne du réseau historique qui ceinturait Paris au XIXe siècle. Les vestiges architecturaux rappellent l'importance du transport ferroviaire local avant son abandon progressif.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontdeflandre.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_du_pont_de_Flandre",
+            "latitude": 48.8954,
+            "longitude": 2.3815,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Parvis de la Cité",
+                "distance_m": 324,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q14352277",
+            "name": "porte de la Villette",
+            "category": "site notable",
+            "description": "Vestige de l'enceinte de Thiers construite au XIXe siècle, cette porte marquait autrefois l'une des dix-sept entrées fortifiées de Paris. Située à la limite du 19e arrondissement, elle demeure un point de passage entre la capitale et les communes limitrophes d'Aubervilliers et Pantin.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%2C%20Porte%20la%20Vilette%20%2852469300626%29.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_la_Villette",
+            "latitude": 48.9005,
+            "longitude": 2.38766,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Chemin de Fer",
+                "distance_m": 230,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q2064737",
+            "name": "pavillon de Paris",
+            "category": "site notable",
+            "description": "Ancienne salle de concert du 19e arrondissement, le Pavillon de Paris occupait le territoire des anciens abattoirs de la Villette. Ce lieu emblématique de la vie musicale parisienne a aujourd'hui disparu, laissant place à la transformation urbaine du secteur.",
+            "image_url": null,
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pavillon_de_Paris",
+            "latitude": 48.892889,
+            "longitude": 2.393003,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Macdonald",
+                "distance_m": 667,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q21294368",
+            "name": "Paris-Abattoirs",
+            "category": "gare",
+            "description": "Ancien terminus ferroviaire désaffecté, cette gare s'inscrivait sur un embranchement de la Petite Ceinture et était dédiée au transport des marchandises vers les abattoirs de la Villette. Vestige du réseau historique parisien, elle témoigne de l'infrastructure logistique du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/PontLevantCanalOurcqCFCeinture.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Abattoirs",
+            "latitude": 48.896709,
+            "longitude": 2.390742,
+            "nearest_exit": {
+                "number": "2",
+                "name": "bd Macdonald",
+                "distance_m": 291,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q3494958",
+            "name": "square de la Porte de la Villette",
+            "category": "site notable",
+            "description": "Situé dans le 19e arrondissement, ce jardin public offre un espace de détente aux riverains. Aménagé près de la Porte-de-la-Villette, il constitue un petit poumon vert du secteur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Square%20Porte%20Villette%20-%20Paris%20XIX%20%28FR75%29%20-%202021-07-24%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_de_la_Porte-de-la-Villette",
+            "latitude": 48.899848,
+            "longitude": 2.389165,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Chemin de Fer",
+                "distance_m": 232,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q82829475",
+            "name": "jardin-promenade Cesária-Évora",
+            "category": "jardin",
+            "description": "Situé dans le 19e arrondissement au cœur du quartier du Pont-de-Flandre, ce jardin public borde la rue Cesária-Évora. Il offre aux habitants une promenade verdoyante dans ce secteur parisien en développement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jardin-promenade%20Ces%C3%A1ria-%C3%89vora%202019%208.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Jardin_Ces%C3%A1ria-%C3%89vora",
+            "latitude": 48.897468,
+            "longitude": 2.375638,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Parvis de la Cité",
+                "distance_m": 728,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q97012315",
+            "name": "Forêt linéaire sud",
+            "category": "site notable",
+            "description": "Inauguré en 2014, ce jardin public s'étend le long de la rue Émile-Bollaert dans le 19e arrondissement, quartier du Pont-de-Flandre. Aménagé en espace vert linéaire, il offre une pause végétalisée en milieu urbain dense.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/For%C3%AAt%20lin%C3%A9aire%20Sud%202020%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/For%C3%AAt_lin%C3%A9aire_sud",
+            "latitude": 48.899976,
+            "longitude": 2.378586,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. de la Pte de la Villette",
+                "distance_m": 569,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q97012319",
+            "name": "forêt linéaire nord",
+            "category": "site notable",
+            "description": "Inauguré en 2019, ce jardin public aménagé le long du Boulevard périphérique offre une pause verdoyante au cœur du 19e arrondissement. Situé dans le quartier du Pont-de-Flandre, ce nouvel espace invite à une promenade entre espaces plantés et perspectives urbaines.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/For%C3%AAt%20lin%C3%A9aire%20Nord%2010.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/For%C3%AAt_lin%C3%A9aire_nord",
+            "latitude": 48.9007,
+            "longitude": 2.379345,
+            "nearest_exit": {
+                "number": "4",
+                "name": "av. de la Pte de la Villette",
+                "distance_m": 544,
+                "walk_minutes": 7
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "av. Corentin Cariou",
+            "address_full": "87b Boulevard Macdonald 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.897326,
+            "longitude": 2.385861,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "bd Macdonald",
+            "address_full": "79 Boulevard Macdonald 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.897331,
+            "longitude": 2.38687,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. du Chemin de Fer",
+            "address_full": "10 Avenue de la Porte de la Villette 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.898526,
+            "longitude": 2.386706,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "av. de la Pte de la Villette",
+            "address_full": "1p1 Avenue de la Porte de la Villette 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.898649,
+            "longitude": 2.386105,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Parvis de la Cité",
+            "address_full": "28t Avenue Corentin Cariou 75019 Paris",
+            "postcode": "75019",
+            "city": "Paris",
+            "latitude": 48.896641,
+            "longitude": 2.385514,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/porte-de-la-villette/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Porte de la Villette (Métro 7) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Porte_Villette_M%C3%A9tro_Paris_Avenue_Porte_Villette_-_Paris_XIX_(FR75)_-_2026-01-20_-_4.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-400.avif",
+                "800": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-800.avif",
+                "1200": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1200.avif",
+                "1600": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-400.webp",
+                "800": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-800.webp",
+                "1200": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1200.webp",
+                "1600": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-400.jpg",
+                "800": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-800.jpg",
+                "1200": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1200.jpg",
+                "1600": "/assets/img/stations/porte-de-la-villette/porte-de-la-villette-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q571446",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q571446",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Porte_de_la_Villette_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}

@@ -1,0 +1,534 @@
+{
+    "published": true,
+    "slug": "poissonniere",
+    "name": "Poissonnière",
+    "name_full": "Poissonnière (Métro 7)",
+    "arrondissement": "9e arrondissement (Paris)",
+    "address": "Boulevard de Magenta, 75009 Paris",
+    "latitude": 48.87753309886302,
+    "longitude": 2.348932857907123,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "7",
+            "slug": "metro-7",
+            "color": "#F49FB3",
+            "text_color": "#000000"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "26",
+            "39"
+        ],
+        "nocturne": [],
+        "regional": [
+            "32",
+            "43",
+            "45",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 5,
+            "nearby_count": 11
+        }
+    },
+    "seo": {
+        "description": "Station Poissonnière (M7) boulevard de Magenta dans le 9e. Nom évoquant l'ancien chemin des marchands de poisson de la mer du Nord."
+    },
+    "hero": {
+        "tagline": "M7 — Poissonnière, ancien chemin marchand",
+        "description": "Station <strong>Poissonnière</strong> sur le <strong>boulevard de Magenta</strong> dans le <strong>9e arrondissement</strong>. Desservie par la <strong>M7</strong>, ouverte le <strong>5 novembre 1910</strong>. Nom rappelant l'ancien <strong>chemin des marchands de poisson</strong> reliant les <strong>côtes de la Manche</strong> à Paris."
+    },
+    "adjacent_stations": {
+        "metro-7": {
+            "previous": {
+                "name": "Cadet",
+                "slug": "cadet",
+                "direction": "Mairie d'Ivry"
+            },
+            "next": {
+                "name": "Gare de l'Est",
+                "slug": "gare-de-l-est",
+                "direction": "La Courneuve - 8 Mai 1945"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Poissonnière</strong> est implantée sur le <strong>boulevard de Magenta</strong> dans le <strong>9e arrondissement</strong>. Elle est desservie par la <strong>M7</strong>, entre <strong>Gare de l'Est</strong> (1 station) et <strong>Cadet</strong> (1 station). Bus 32, 38, 39, 42, 48.",
+        "Ouverte le <strong>5 novembre 1910</strong> sur le tronçon initial de la <strong>M7</strong>.",
+        "Le nom <strong>Poissonnière</strong> rappelle la <strong>rue Poissonnière</strong> et le <strong>boulevard Poissonnière</strong> à proximité. Ces voies rappellent l'<strong>ancien chemin des marchands de poisson</strong> qui acheminaient leur marchandise des <strong>côtes de la Manche</strong> (Dieppe) aux <strong>Halles de Paris</strong>."
+    ],
+    "history": {
+        "title": "1910 : ancien chemin du poisson",
+        "paragraphs": [
+            "La station Poissonnière est <strong>inaugurée le 5 novembre 1910</strong> sur le tronçon initial de la <strong>M7</strong>.",
+            "Le nom <strong>Poissonnière</strong> rappelle l'<strong>ancien chemin des marchands de poisson</strong>. Au <strong>Moyen Âge</strong> et sous l'<strong>Ancien Régime</strong>, le poisson de mer (notamment harengs et morues) était acheminé depuis les <strong>ports de la Manche</strong> (<strong>Dieppe</strong>, <strong>Le Havre</strong>, <strong>Boulogne</strong>) jusqu'aux <strong>Halles de Paris</strong> par un chemin appelé <strong>« chemin de la marée »</strong> ou <strong>« voie Poissonnière »</strong>.",
+            "L'arrivée du poisson, organisée en <strong>convois rapides</strong> appelés <strong>« chasse-marée »</strong>, permettait de garantir la <strong>fraîcheur</strong> du produit. Le boulevard Poissonnière marque l'<strong>entrée historique</strong> de ces convois dans Paris depuis le nord."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Poissonnière ?",
+            "answer": "Uniquement la <strong>M7</strong>. Bus 32, 38, 39, 42, 48."
+        },
+        {
+            "question": "D'où vient le nom Poissonnière ?",
+            "answer": "De l'<strong>ancien chemin des marchands de poisson</strong> qui acheminaient harengs et morues depuis la <strong>Manche</strong> vers les <strong>Halles de Paris</strong>."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>5 novembre 1910</strong>."
+        },
+        {
+            "question": "Qu'est-ce que le « chasse-marée » ?",
+            "answer": "Convoi rapide de transport de poisson frais depuis la côte vers Paris."
+        },
+        {
+            "question": "Pour Opéra ?",
+            "answer": "<strong>M7 directe</strong> (3 stations, ~6 min)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Boulevard Poissonnière</strong> : axe haussmannien.",
+        "Pour <strong>Galeries Lafayette</strong> : <strong>M7 → Chaussée d'Antin</strong>.",
+        "Pour <strong>Opéra Garnier</strong> : <strong>M7 directe</strong> (3 stations).",
+        "Pour <strong>Châtelet</strong> : <strong>M7 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🐟",
+            "title": "Chemin de la marée et chasse-marée",
+            "content": "Au <strong>Moyen Âge</strong> et sous l'<strong>Ancien Régime</strong>, le <strong>chemin de la marée</strong> ou <strong>voie Poissonnière</strong> permettait d'acheminer rapidement le <strong>poisson de mer</strong> (harengs, morues) depuis les <strong>ports de la Manche</strong> (Dieppe, Le Havre, Boulogne) aux <strong>Halles de Paris</strong>. Les convois rapides étaient appelés <strong>« chasse-marée »</strong>. <strong>Réseau de relais</strong> et de <strong>chevaux frais</strong> garantissait la <strong>vitesse</strong>. <strong>Pratique attestée depuis le XIIe siècle</strong>."
+        },
+        {
+            "icon": "🏘️",
+            "title": "Boulevard Poissonnière, axe haussmannien",
+            "content": "Le <strong>boulevard Poissonnière</strong>, à proximité de la station, fait partie des <strong>Grands Boulevards</strong> tracés sous <strong>Louis XIV</strong> à partir de <strong>1670</strong>, élargis sous <strong>Haussmann</strong>. <strong>Centre nerveux</strong> de la <strong>Belle Époque</strong> et du <strong>XXe siècle parisien</strong> : <strong>théâtres</strong> (Rex, Grand Rex), <strong>cinémas</strong>, <strong>cafés</strong>."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Galeries Lafayette",
+            "destination_slug": "chaussee-d-antin-la-fayette",
+            "destination_full_name": "Poissonnière → Galeries Lafayette",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-chaussee-d-antin-la-fayette/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Poissonnière → Opéra Garnier",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-opera/"
+        },
+        {
+            "destination_name": "Grand Rex (cinéma)",
+            "destination_slug": "bonne-nouvelle",
+            "destination_full_name": "Poissonnière → Grand Rex (cinéma)",
+            "lines_used": [
+                "M8 ou à pied"
+            ],
+            "lines_label": "5 min à pied",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-bonne-nouvelle/"
+        },
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Poissonnière → Châtelet",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (~6 min)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-chatelet/"
+        },
+        {
+            "destination_name": "Gare de l'Est",
+            "destination_slug": "gare-de-l-est",
+            "destination_full_name": "Poissonnière → Gare de l'Est",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-gare-de-l-est/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Poissonnière → République",
+            "lines_used": [
+                "M7"
+            ],
+            "lines_label": "M7 directe (~5 min)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-poissonniere/poissonniere-vers-republique/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q745942",
+            "name": "Paris-Nord",
+            "category": "gare",
+            "description": "Édifiée en 1864 par l'architecte Jacques Ignace Hittorff, cette gare historique demeure un monument inscrit au patrimoine. Hub ferroviaire majeur reliant Paris aux régions du Nord et à l'Europe voisine, elle accueille annuellement des centaines de millions de voyageurs, confirmant son statut de carrefour de transport continental.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20du%20nord%204%20bis.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Nord",
+            "latitude": 48.881111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 609,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q330375",
+            "name": "Folies Bergère",
+            "category": "théâtre",
+            "description": "Inauguré en 1869, ce théâtre du 9e arrondissement demeure une référence des salles de spectacles parisiennes. Inscrit au titre de monument historique, il perpétue une longue tradition de programmations artistiques depuis le Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folies%20Berg%C3%A8re%2C%20Paris%206%20February%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Folies_Berg%C3%A8re",
+            "latitude": 48.874167,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Faubourg Poissonnière",
+                "distance_m": 452,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q757180",
+            "name": "Paris-Est",
+            "category": "gare",
+            "description": "Édifiée en 1849 par l'architecte François-Alexandre Duquesney, cette gare ferroviaire termine majestueusement l'axe percé par Haussmann au cœur du 10e arrondissement. Monument historique inscrit, elle demeure l'une des six grandes gares terminus de la SNCF à Paris, accueillant les trajets vers l'est du réseau national.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris-Gare%20de%20l%27Est-2009.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Paris-Est",
+            "latitude": 48.876944,
+            "longitude": 2.359167,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 717,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1130784",
+            "name": "hôpital Lariboisière",
+            "category": "hôpital",
+            "description": "Fondé en 1854 dans le 10e arrondissement, cet établissement de l'Assistance Publique-Hôpitaux de Paris conjugue vocation médicale et patrimoine architectural. Son architecture pavillonnaire du XIXe siècle, inspirée par les principes hygiénistes de l'époque, lui a valu une inscription au titre des monuments historiques depuis 1975.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pitalLariboisi%C3%A8reChapelle1.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Lariboisi%C3%A8re",
+            "latitude": 48.883056,
+            "longitude": 2.353056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 699,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1710383",
+            "name": "église Saint-Vincent-de-Paul",
+            "category": "église",
+            "description": "Édifiée en 1844 par les architectes Lepère et Hittorff, cette église du 10e arrondissement occupe le site de l'ancien enclos Saint-Lazare où vécut saint Vincent de Paul. Monument historique classé, elle domine la place Franz-Liszt et témoigne du patrimoine religieux du XIXe siècle parisien.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Saint-Vincent-de-Paul%20Fassade%203.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Vincent-de-Paul_de_Paris",
+            "latitude": 48.878889,
+            "longitude": 2.351667,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 247,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1710369",
+            "name": "Notre-Dame-de-Lorette",
+            "category": "église",
+            "description": "Édifiée en 1836 par l'architecte Hippolyte Le Bas, cette église du 9e arrondissement témoigne du courant néoclassique du XIXe siècle. Monument historique classé, elle perpétue le culte de Notre-Dame de Lorette à travers son architecture épurée et ses proportions harmonieuses.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Notre-Dame-de-Lorette-Paris-DSC%206121.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-Lorette_de_Paris",
+            "latitude": 48.876389,
+            "longitude": 2.338889,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. La Fayette",
+                "distance_m": 752,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2597719",
+            "name": "musée de la franc-maçonnerie",
+            "category": "musée",
+            "description": "Fondé en 1889, ce musée explore l'histoire et les pratiques de la franc-maçonnerie française à travers ses collections. Installé au sein du siège du Grand Orient de France, rue Cadet dans le 9e, il propose une approche documentée de cette institution et de ses évolutions.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/GODF%20rue%20Cadet%20Paris.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_la_Franc-ma%C3%A7onnerie",
+            "latitude": 48.874722,
+            "longitude": 2.343056,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Faubourg Poissonnière",
+                "distance_m": 523,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q608428",
+            "name": "Magenta",
+            "category": "gare",
+            "description": "Inaugurée en 1999, cette gare souterraine du RER E dessert le secteur est de la gare du Nord dans le 10e arrondissement. Son infrastructure ferroviaire facilite les correspondances avec les transports en surface à environ 670 mètres de Barbès - Rochechouart.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/RER-E-station-Magenta.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Magenta",
+            "latitude": 48.88,
+            "longitude": 2.358056,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 704,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q1575733",
+            "name": "église Saint-Eugène-Sainte-Cécile",
+            "category": "église",
+            "description": "Édifiée en 1855 par les architectes Boileau et Lusson, cette église du 9e arrondissement conjugue architecture du XIXe siècle et fonction spirituelle contemporaine. Protégée au titre des monuments historiques, elle demeure un lieu de culte actif où s'alternent les célébrations selon le rite romain traditionnel et moderne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1030987%20Paris%20IX%20%C3%A9glise%20Saint-Eug%C3%A8ne-Sainte-C%C3%A9cile%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eug%C3%A8ne-Sainte-C%C3%A9cile_de_Paris",
+            "latitude": 48.873333,
+            "longitude": 2.347139,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Faubourg Poissonnière",
+                "distance_m": 452,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q1629067",
+            "name": "église Saint-Laurent",
+            "category": "église",
+            "description": "Édifice religieux du 10e arrondissement, Saint-Laurent bénéficie d'une double protection au titre des monuments historiques. Implantée au cœur de l'ancien enclos Saint-Laurent, cette église occupe un îlot entre rue du Faubourg-Saint-Martin et boulevards de Strasbourg et Magenta.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1300867%20Paris%20X%20eglise%20St-Laurent%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Laurent_de_Paris",
+            "latitude": 48.874847,
+            "longitude": 2.358311,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Chabrol",
+                "distance_m": 706,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2381141",
+            "name": "Le Trianon",
+            "category": "théâtre",
+            "description": "Édifié en 1894 par l'architecte Joseph Cassien-Bernard, ce théâtre conjugue histoire culturelle et patrimoine protégé. Inscrit au titre des monuments historiques, il demeure une salle de spectacle et de cinéma ancrée au cœur du 18e arrondissement, aux portes de Montmartre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Trianon%2C%2080%20boulevard%20de%20Rochechouart%2C%20Paris%2018e.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Trianon_(Paris)",
+            "latitude": 48.882839,
+            "longitude": 2.343059,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. La Fayette",
+                "distance_m": 754,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2055773",
+            "name": "passage Jouffroy",
+            "category": "site notable",
+            "description": "Édifié en 1845, ce passage couvert du 9e arrondissement relie le boulevard Montmartre à la rue de la Grange-Batelière. Inscrit au titre de monument historique, il représente une belle illustration de l'architecture commerciale parisienne du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1020618%20Paris%20IX%20Passage%20Jouffroy%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Passage_Jouffroy",
+            "latitude": 48.872549,
+            "longitude": 2.342141,
+            "nearest_exit": {
+                "number": "3",
+                "name": "r. du Faubourg Poissonnière",
+                "distance_m": 726,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. La Fayette",
+            "address_full": "105 Rue du Faubourg Poissonnière 75009 Paris",
+            "postcode": "75009",
+            "city": "Paris",
+            "latitude": 48.877329,
+            "longitude": 2.349079,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Chabrol",
+            "address_full": "96 Rue la Fayette 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.877249,
+            "longitude": 2.34938,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "r. du Faubourg Poissonnière",
+            "address_full": "94 Rue la Fayette 75010 Paris",
+            "postcode": "75010",
+            "city": "Paris",
+            "latitude": 48.877176,
+            "longitude": 2.349149,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/poissonniere/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Poissonnière (Métro 7) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Poissonni%C3%A8re_M%C3%A9tro_Paris_Place_8_Novembre_1942_-_Paris_X_(FR75)_-_2026-01-21_-_1.jpg",
+            "date": "2026-06-10"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/poissonniere/poissonniere-400.avif",
+                "800": "/assets/img/stations/poissonniere/poissonniere-800.avif",
+                "1200": "/assets/img/stations/poissonniere/poissonniere-1200.avif",
+                "1600": "/assets/img/stations/poissonniere/poissonniere-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/poissonniere/poissonniere-400.webp",
+                "800": "/assets/img/stations/poissonniere/poissonniere-800.webp",
+                "1200": "/assets/img/stations/poissonniere/poissonniere-1200.webp",
+                "1600": "/assets/img/stations/poissonniere/poissonniere-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/poissonniere/poissonniere-400.jpg",
+                "800": "/assets/img/stations/poissonniere/poissonniere-800.jpg",
+                "1200": "/assets/img/stations/poissonniere/poissonniere-1200.jpg",
+                "1600": "/assets/img/stations/poissonniere/poissonniere-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q764106",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q764106",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Poissonni%C3%A8re_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
