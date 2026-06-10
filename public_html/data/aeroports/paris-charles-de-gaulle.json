@@ -23,156 +23,295 @@
     "rank_world": 9,
     "opened": "8 mars 1974",
     "operator": "Groupe ADP",
+    "h1": "Aéroport Paris-Charles de Gaulle (CDG) : guide d'accès complet",
     "seo": {
-        "title": "Aéroport Paris-Charles de Gaulle (CDG/Roissy) : accès, transports 2026",
-        "description": "Comment aller à l'aéroport Paris-Charles de Gaulle (CDG/Roissy) depuis Paris : RER B, Roissybus, taxi forfait, navettes. Terminaux, prix et durées."
+        "title": "Aéroport Paris-Charles de Gaulle (CDG/Roissy) : accès RER B, Roissybus, taxi 2026",
+        "description": "Comment aller à l'aéroport Paris-Charles de Gaulle (CDG / Roissy) depuis Paris : RER B 35 min, Roissybus 60 min, taxi forfait 56€/65€. Terminaux, prix et durées 2026."
     },
     "hero": {
-        "tagline": "2e aéroport d'Europe — Roissy-en-France",
+        "tagline": "2e aéroport d'Europe — Roissy-en-France (25 km nord-est Paris)",
         "description": "<strong>Aéroport Paris-Charles de Gaulle</strong> (CDG / Roissy), à <strong>25 km au nord-est de Paris</strong>, dans le <strong>Val-d'Oise</strong> (95). <strong>2e aéroport d'Europe</strong> et <strong>9e mondial</strong> avec <strong>~67 millions de passagers</strong> par an. Inauguré le <strong>8 mars 1974</strong>. Exploité par le <strong>Groupe ADP</strong>."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/aeroports/paris-charles-de-gaulle/source/wikimedia.jpg",
+        "alt": "Vue aérienne de l'aéroport Paris-Charles de Gaulle (CDG / Roissy)",
+        "width": 1200,
+        "height": 675,
+        "source": "wikimedia",
+        "credit": {
+            "author": "Wilfredor",
+            "license": "CC0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_Gaulle_International_Airport_in_France.jpg"
+        },
+        "keep_hero": true,
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.avif",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.avif",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.avif",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.webp",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.webp",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.webp",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.jpg",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.jpg",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.jpg",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.jpg"
+            }
+        }
     },
     "intro_paragraphs": [
         "L'<strong>aéroport Paris-Charles de Gaulle</strong>, communément appelé <strong>Roissy-CDG</strong>, est le <strong>plus grand aéroport de France</strong> et le <strong>2e d'Europe</strong> après London-Heathrow. Situé à <strong>25 km au nord-est de Paris</strong>, sur la commune de <strong>Roissy-en-France</strong> (Val-d'Oise, 95).",
         "<strong>Inauguré le 8 mars 1974</strong>, il porte le nom du <strong>général Charles de Gaulle</strong> (1890-1970), fondateur de la <strong>Cinquième République</strong>. Exploité par le <strong>Groupe ADP</strong> (Aéroports de Paris). <strong>~67 millions de passagers/an</strong> (2023), <strong>~480 000 mouvements d'avions</strong>.",
-        "L'aéroport comporte <strong>3 terminaux principaux</strong> : <strong>Terminal 1</strong> (architecture circulaire iconique, 1974), <strong>Terminal 2</strong> (modules 2A à 2G), <strong>Terminal 3</strong> (low-cost). Le <strong>CDGVAL</strong> (métro automatique gratuit) relie les terminaux entre eux. <strong>Gare TGV Aéroport-CDG</strong> dans le Terminal 2."
+        "L'aéroport comporte <strong>3 terminaux principaux</strong> : <strong>Terminal 1</strong> (architecture circulaire iconique, 1974, Paul Andreu), <strong>Terminal 2</strong> (modules 2A à 2G), <strong>Terminal 3</strong> (low-cost). Le <strong>CDGVAL</strong> (métro automatique gratuit) relie les terminaux entre eux. <strong>Gare TGV Aéroport-CDG</strong> intégrée au Terminal 2."
+    ],
+    "sections": [
+        {
+            "h2": "RER B : la ligne directe vers Charles de Gaulle",
+            "anchor": "rer-b",
+            "paragraphs": [
+                "Le <strong>RER B</strong> est la <strong>solution la plus rapide</strong> pour rejoindre l'aéroport <strong>Paris-Charles de Gaulle</strong> depuis le centre de Paris. <strong>35 min depuis Châtelet - Les Halles</strong>, avec arrêts intermédiaires à <strong>Gare du Nord</strong>, <strong>Saint-Michel - Notre-Dame</strong>, <strong>Denfert-Rochereau</strong>.",
+                "<strong>Prix du billet</strong> : <strong>11,80 €</strong> à <strong>13,00 €</strong> selon le sens. Compris dans le <strong>pass Navigo Découverte zones 1-5</strong>. Trains toutes les <strong>10 à 20 minutes</strong> selon l'heure.",
+                "<strong>Deux gares</strong> dans l'aéroport : <strong>Aéroport CDG 1</strong> (Terminal 1 via CDGVAL) et <strong>Aéroport CDG 2 TGV</strong> (Terminaux 2A-2F, gare directe). <strong>Premier train à 04h53, dernier à 00h15</strong>."
+            ],
+            "table": {
+                "headers": [
+                    "Critère",
+                    "Valeur"
+                ],
+                "rows": [
+                    [
+                        "Durée depuis Châtelet",
+                        "35 min"
+                    ],
+                    [
+                        "Prix billet",
+                        "11,80 € - 13,00 €"
+                    ],
+                    [
+                        "Fréquence",
+                        "10-20 min"
+                    ],
+                    [
+                        "Premier train",
+                        "04h53"
+                    ],
+                    [
+                        "Dernier train",
+                        "00h15"
+                    ]
+                ]
+            }
+        },
+        {
+            "h2": "Roissybus : bus direct depuis Opéra",
+            "anchor": "roissybus",
+            "paragraphs": [
+                "Le <strong>Roissybus</strong> est un <strong>bus direct</strong> exploité par la <strong>RATP</strong> reliant la <strong>place de l'Opéra</strong> (Paris 9e, rue Scribe) à l'<strong>aéroport Paris-Charles de Gaulle</strong>.",
+                "<strong>Durée : 60 à 75 min</strong> selon le trafic. <strong>Prix : 16,60 €</strong>. <strong>Fréquence : toutes les 15 min</strong>. Premier départ <strong>05h15</strong>, dernier <strong>00h30</strong>. Idéal depuis le <strong>quartier de l'Opéra</strong> ou les <strong>Grands Boulevards</strong>."
+            ],
+            "table": {
+                "headers": [
+                    "Critère",
+                    "Valeur"
+                ],
+                "rows": [
+                    [
+                        "Depuis",
+                        "Opéra (Paris 9e)"
+                    ],
+                    [
+                        "Durée",
+                        "60-75 min"
+                    ],
+                    [
+                        "Prix",
+                        "16,60 €"
+                    ],
+                    [
+                        "Fréquence",
+                        "15 min"
+                    ]
+                ]
+            }
+        },
+        {
+            "h2": "Bus 350 et 351 : options économiques",
+            "anchor": "bus-350-351",
+            "paragraphs": [
+                "Pour rejoindre <strong>Paris-Charles de Gaulle</strong> à <strong>petit prix</strong>, les <strong>bus 350</strong> (Gare de l'Est) et <strong>351</strong> (Place de la Nation) sont les options les <strong>moins chères</strong>.",
+                "<strong>Prix : 2,00 €</strong> (ticket t+ standard). <strong>Durée : 75 à 90 min</strong>. <strong>Fréquence : 30 min</strong>. Plus longs mais accessibles avec un simple ticket métro."
+            ]
+        },
+        {
+            "h2": "Taxi à CDG : forfait Paris ↔ aéroport",
+            "anchor": "taxi",
+            "paragraphs": [
+                "Le <strong>taxi parisien</strong> applique un <strong>tarif forfaitaire réglementé</strong> pour les courses entre Paris intra-muros et <strong>Paris-Charles de Gaulle</strong>.",
+                "<strong>Tarifs forfait 2024</strong> : <strong>56 €</strong> depuis la <strong>Rive Droite</strong>, <strong>65 €</strong> depuis la <strong>Rive Gauche</strong>. Validez le forfait avec le chauffeur avant le départ. <strong>Durée : ~60 min</strong> en conditions normales, jusqu'à 90 min aux heures de pointe.",
+                "<strong>VTC</strong> (Uber, Bolt, Heetch) : <strong>40 à 80 €</strong> selon trafic et heure. Prix variable, à comparer."
+            ]
+        },
+        {
+            "h2": "TGV vers CDG : gare Aéroport-Charles de Gaulle-TGV",
+            "anchor": "tgv",
+            "paragraphs": [
+                "L'aéroport CDG dispose d'une <strong>gare TGV intégrée</strong> au <strong>Terminal 2</strong>, opérationnelle depuis <strong>1994</strong>.",
+                "Liaisons TGV directes : <strong>Lille</strong>, <strong>Bruxelles</strong>, <strong>Londres</strong>, <strong>Marseille</strong>, <strong>Bordeaux</strong>, <strong>Nantes</strong>, <strong>Strasbourg</strong>. Connexion <strong>CDGVAL</strong> vers les autres terminaux."
+            ]
+        },
+        {
+            "h2": "Terminaux Charles de Gaulle (T1, T2A-G, T3)",
+            "anchor": "terminaux",
+            "paragraphs": [
+                "L'aéroport compte <strong>3 terminaux principaux</strong> répartis sur un vaste site."
+            ],
+            "table": {
+                "headers": [
+                    "Terminal",
+                    "Compagnies principales",
+                    "Année"
+                ],
+                "rows": [
+                    [
+                        "T1",
+                        "Star Alliance (Lufthansa, United, Turkish)",
+                        "1974 (Paul Andreu)"
+                    ],
+                    [
+                        "T2A / T2C",
+                        "SkyTeam (Delta, Korean Air)",
+                        "1982-1991"
+                    ],
+                    [
+                        "T2E / T2F",
+                        "Air France + SkyTeam",
+                        "1999-2008"
+                    ],
+                    [
+                        "T2G",
+                        "Air France court-courrier",
+                        "2008"
+                    ],
+                    [
+                        "T3",
+                        "Low-cost (Vueling, easyJet, Transavia)",
+                        "1990"
+                    ]
+                ]
+            }
+        },
+        {
+            "h2": "CDGVAL : navette inter-terminaux gratuite",
+            "anchor": "cdgval",
+            "paragraphs": [
+                "Le <strong>CDGVAL</strong> est un <strong>métro automatique gratuit</strong> reliant les <strong>3 terminaux</strong> entre eux et les <strong>parkings PR-PX</strong>. <strong>Fréquence : 4 min</strong>. <strong>24h/24</strong>."
+            ]
+        },
+        {
+            "h2": "Tableau comparatif des modes d'accès CDG",
+            "anchor": "comparatif",
+            "table": {
+                "headers": [
+                    "Mode",
+                    "Depuis",
+                    "Durée",
+                    "Prix"
+                ],
+                "rows": [
+                    [
+                        "RER B",
+                        "Châtelet",
+                        "35 min",
+                        "11,80 €"
+                    ],
+                    [
+                        "Roissybus",
+                        "Opéra",
+                        "60-75 min",
+                        "16,60 €"
+                    ],
+                    [
+                        "Bus 350/351",
+                        "Gare Est / Nation",
+                        "75-90 min",
+                        "2,00 €"
+                    ],
+                    [
+                        "Taxi",
+                        "Paris",
+                        "60 min",
+                        "56 € / 65 €"
+                    ],
+                    [
+                        "VTC",
+                        "Paris",
+                        "50 min",
+                        "40-80 €"
+                    ],
+                    [
+                        "TGV",
+                        "Lille, Bruxelles…",
+                        "Variable",
+                        "Variable"
+                    ]
+                ]
+            }
+        }
     ],
     "history": [
         "L'<strong>aéroport Paris-Charles de Gaulle</strong> est conçu dès <strong>1957</strong> pour remplacer <strong>Paris-Orly</strong> devenu trop petit. Travaux entamés en <strong>1966</strong>. <strong>Inauguré le 8 mars 1974</strong> par le président <strong>Valéry Giscard d'Estaing</strong>.",
-        "Le <strong>Terminal 1</strong>, conçu par l'architecte <strong>Paul Andreu</strong>, est un <strong>chef-d'œuvre d'architecture aéroportuaire</strong> avec sa <strong>forme circulaire</strong> et ses <strong>tubes vitrés</strong>. <strong>Capacité 10 millions de passagers/an</strong>. Style années 1970 préservé.",
-        "Le <strong>Terminal 2</strong>, mis en service progressivement de <strong>1982 à 2008</strong>, est constitué de <strong>7 modules</strong> (2A à 2G). <strong>Gare TGV Aéroport-CDG</strong> intégrée en <strong>1994</strong> (LGV Nord). Accès direct vers <strong>Lille, Bruxelles, Londres, Marseille</strong>. <strong>Effondrement partiel du Terminal 2E</strong> en <strong>mai 2004</strong> (4 morts), reconstruction et réouverture en 2008."
-    ],
-    "access": {
-        "rer_b": {
-            "name": "RER B",
-            "from": "Châtelet - Les Halles, Gare du Nord, Saint-Michel - Notre-Dame, Denfert-Rochereau",
-            "time_min": 35,
-            "price_eur": "11,80 à 13,00",
-            "frequency_min": 10,
-            "first_train": "04h53",
-            "last_train": "00h15",
-            "stops": [
-                "Aéroport CDG 1",
-                "Aéroport CDG 2 TGV"
-            ],
-            "note": "Solution la plus rapide depuis le centre de Paris. Compris dans le pass Navigo zones 1-5."
-        },
-        "roissybus": {
-            "name": "Roissybus",
-            "from": "Opéra (place de l'Opéra, rue Scribe)",
-            "time_min": 60,
-            "price_eur": "16,60",
-            "frequency_min": 15,
-            "first_bus": "05h15",
-            "last_bus": "00h30",
-            "note": "Bus direct exploité par la RATP. Idéal depuis le 9e arrondissement."
-        },
-        "bus_350_351": {
-            "name": "Bus 350 / 351",
-            "from": "Gare de l'Est (350) / Place de la Nation (351)",
-            "time_min": 75,
-            "price_eur": "2,00",
-            "frequency_min": 30,
-            "note": "Solution la plus économique mais la plus longue."
-        },
-        "taxi": {
-            "name": "Taxi",
-            "from": "Paris intra-muros",
-            "time_min": 60,
-            "price_eur": "56 (Rive Droite) / 65 (Rive Gauche)",
-            "note": "Tarif forfaitaire réglementé. Validez le forfait avec le chauffeur avant le départ."
-        },
-        "vtc": {
-            "name": "VTC (Uber, Bolt, Heetch)",
-            "from": "Paris intra-muros",
-            "time_min": 50,
-            "price_eur": "40 à 80 selon trafic et heure",
-            "note": "Application mobile. Prix variable selon la demande."
-        },
-        "tgv": {
-            "name": "TGV (Gare Aéroport-CDG-TGV)",
-            "from": "Lille, Bruxelles, Londres, Marseille, Bordeaux",
-            "time_min": "Variable",
-            "note": "Gare TGV intégrée au Terminal 2 (1994). Connexion CDGVAL vers les autres terminaux."
-        }
-    },
-    "terminals_detail": [
-        {
-            "code": "T1",
-            "compagnies": "Star Alliance (Lufthansa, Air Canada, United, Turkish Airlines)",
-            "year": 1974,
-            "architect": "Paul Andreu"
-        },
-        {
-            "code": "T2A/T2C",
-            "compagnies": "SkyTeam (Air France, Delta, Korean Air, Aeroflot)",
-            "year": "1982-1991"
-        },
-        {
-            "code": "T2E/T2F",
-            "compagnies": "Air France principales destinations + SkyTeam",
-            "year": "1999-2008"
-        },
-        {
-            "code": "T2G",
-            "compagnies": "Air France court-courrier",
-            "year": 2008
-        },
-        {
-            "code": "T3",
-            "compagnies": "Low-cost (Vueling, easyJet, Transavia)",
-            "year": 1990
-        }
+        "Le <strong>Terminal 1</strong>, conçu par <strong>Paul Andreu</strong>, est un <strong>chef-d'œuvre d'architecture aéroportuaire</strong> avec sa <strong>forme circulaire</strong> et ses <strong>tubes vitrés</strong>. <strong>Style années 1970</strong> préservé.",
+        "Le <strong>Terminal 2</strong>, mis en service progressivement de <strong>1982 à 2008</strong>, est constitué de <strong>7 modules</strong> (2A à 2G). <strong>Gare TGV Aéroport-CDG</strong> intégrée en <strong>1994</strong>."
     ],
     "faq": [
         {
             "question": "Comment aller à CDG depuis Paris ?",
-            "answer": "<strong>RER B</strong> (35 min depuis Châtelet, 11,80€) est le plus rapide. <strong>Roissybus</strong> (60 min depuis Opéra, 16,60€). <strong>Taxi</strong> forfait : 56€ (Rive Droite) / 65€ (Rive Gauche)."
+            "answer": "<strong>RER B</strong> (35 min/11,80€) est le plus rapide. <strong>Roissybus</strong> (60-75 min/16,60€). <strong>Taxi forfait</strong> : 56€ Rive Droite / 65€ Rive Gauche."
         },
         {
             "question": "Quel terminal pour Air France ?",
-            "answer": "<strong>Terminal 2E, 2F</strong> ou <strong>2G</strong>. Vérifiez votre billet."
+            "answer": "<strong>Terminal 2E, 2F</strong> ou <strong>2G</strong>. Vérifiez votre billet pour le sous-terminal exact."
         },
         {
             "question": "Combien coûte le RER B vers CDG ?",
-            "answer": "<strong>11,80€</strong> billet plein tarif (12,80€ depuis CDG selon évolution tarifaire 2024-2025). Compris dans le pass Navigo zones 1-5."
+            "answer": "<strong>11,80 €</strong> en 2024-2025 (12,80 € selon évolution). Compris dans le pass Navigo zones 1-5."
         },
         {
-            "question": "Combien de temps en taxi de Paris à CDG ?",
-            "answer": "<strong>~60 min</strong> en conditions normales. <strong>~90 min</strong> aux heures de pointe."
+            "question": "Combien de temps en taxi Paris → CDG ?",
+            "answer": "<strong>~60 min</strong> en conditions normales. <strong>~90 min</strong> aux heures de pointe (8h-10h, 17h-20h)."
         },
         {
-            "question": "Y a-t-il des hôtels à CDG ?",
-            "answer": "<strong>Oui</strong>. Hilton, Sheraton, Citizen M, Novotel, Mercure aux Terminaux 1, 2, et zone aéroportuaire."
+            "question": "Y a-t-il un train TGV à CDG ?",
+            "answer": "<strong>Oui</strong>. <strong>Gare TGV Aéroport-CDG</strong> au Terminal 2. Liaisons vers Lille, Bruxelles, Londres, Marseille, Bordeaux."
         },
         {
-            "question": "Quand a-t-il été inauguré ?",
-            "answer": "Le <strong>8 mars 1974</strong> par Valéry Giscard d'Estaing."
+            "question": "Le RER B est-il direct vers CDG ?",
+            "answer": "<strong>Oui</strong> depuis Châtelet, Gare du Nord, Saint-Michel et Denfert. Vérifiez la destination du train : « Aéroport CDG 2 TGV » ou « Mitry-Claye »."
         }
     ],
     "nearby_pois": [
         {
             "name": "Roissy-en-France (village)",
-            "description": "Commune de <strong>2 700 habitants</strong> donnant son nom à l'aéropoort. Église Saint-Eloi (XIIe siècle).",
+            "description": "Commune de <strong>2 700 habitants</strong> donnant son nom à l'aéroport. Église Saint-Eloi (XIIe siècle).",
             "distance_km": 5
         },
         {
             "name": "Parc Astérix",
-            "description": "Parc d'attractions sur le thème de la <strong>BD d'Astérix</strong> (1989). 2e parc d'attractions de France après Disneyland.",
+            "description": "Parc d'attractions sur le thème de la <strong>BD d'Astérix</strong> (1989). 2e parc d'attractions de France.",
             "distance_km": 15
         },
         {
             "name": "Disneyland Paris",
-            "description": "Parc d'attractions de <strong>Disney</strong> (1992). 1er parc d'attractions d'Europe.",
+            "description": "Parc d'attractions <strong>Disney</strong> (1992). 1er parc d'attractions d'Europe.",
             "distance_km": 50
         }
     ],
-    "published": true,
-    "hero_image": {
-        "url": "https://bougeaparis.fr/assets/img/aeroports/paris-charles-de-gaulle/source/wikimedia.jpg",
-        "alt": "Vue de l'Aéroport Paris-Charles de Gaulle (CDG / Roissy)",
-        "credit": {
-            "license": "CC BY-SA",
-            "source": "Wikimedia Commons"
-        }
-    }
+    "published": true
 }

@@ -2,26 +2,30 @@
 /**
  * Template : page détail aéroport (CDG, Orly, Beauvais).
  * Props attendues : $aeroport (array décodé depuis data/aeroports/{slug}.json).
+ *
+ * Sections SEO-driven : H1 explicite + H2 par mode de transport
+ * (alignés sur les intentions de recherche GKP).
  */
 $aeroport = $aeroport ?? $props['aeroport'] ?? [];
-$slug     = $aeroport['slug']      ?? 'aeroport';
-$name     = $aeroport['name']      ?? 'Aéroport';
-$full     = $aeroport['full_name'] ?? $name;
-$iata     = $aeroport['iata']      ?? '';
-$dept     = $aeroport['department']?? '';
-$dist     = $aeroport['distance_paris_km'] ?? null;
-$traffic  = $aeroport['annual_traffic'] ?? '';
-$opened   = $aeroport['opened']    ?? '';
-$operator = $aeroport['operator']  ?? '';
+$slug      = $aeroport['slug']      ?? 'aeroport';
+$name      = $aeroport['name']      ?? 'Aéroport';
+$full      = $aeroport['full_name'] ?? $name;
+$iata      = $aeroport['iata']      ?? '';
+$dept      = $aeroport['department']?? '';
+$dist      = $aeroport['distance_paris_km'] ?? null;
+$traffic   = $aeroport['annual_traffic'] ?? '';
+$opened    = $aeroport['opened']    ?? '';
+$operator  = $aeroport['operator']  ?? '';
 $terminals = $aeroport['terminals'] ?? [];
-$tagline  = $aeroport['hero']['tagline'] ?? '';
-$heroDesc = $aeroport['hero']['description'] ?? '';
-$intros   = $aeroport['intro_paragraphs'] ?? [];
-$history  = $aeroport['history'] ?? [];
-$access   = $aeroport['access'] ?? [];
-$terminalsDetail = $aeroport['terminals_detail'] ?? [];
-$faq      = $aeroport['faq'] ?? [];
-$pois     = $aeroport['nearby_pois'] ?? [];
+$h1        = $aeroport['h1'] ?? ("Aéroport " . $name . ($iata ? " (" . $iata . ")" : "") . " : guide d'accès complet");
+$tagline   = $aeroport['hero']['tagline'] ?? '';
+$heroDesc  = $aeroport['hero']['description'] ?? '';
+$intros    = $aeroport['intro_paragraphs'] ?? [];
+$sections  = $aeroport['sections'] ?? [];
+$history   = $aeroport['history'] ?? [];
+$faq       = $aeroport['faq'] ?? [];
+$pois      = $aeroport['nearby_pois'] ?? [];
+$heroImg   = $aeroport['hero_image'] ?? null;
 
 $canonical = '/aeroports/' . $slug . '/';
 
@@ -34,6 +38,16 @@ $tpl->seo
         ['label' => 'Aéroports',  'url' => '/aeroports/'],
         ['label' => $name,        'url' => $canonical],
     ]);
+
+// Build picture sources for hero
+$localVersions = $heroImg['local_versions'] ?? null;
+$buildSrcset = function(array $map): string {
+    $parts = [];
+    foreach ($map as $w => $url) {
+        $parts[] = htmlspecialchars($url, ENT_QUOTES, 'UTF-8') . ' ' . (int)$w . 'w';
+    }
+    return implode(', ', $parts);
+};
 ?>
 
 <?php $tpl->partial('components/breadcrumb', ['items' => [
@@ -45,11 +59,32 @@ $tpl->seo
 <div class="container">
 <article class="aeroport-page">
 
+  <!-- HERO avec image Wikimedia + H1 SEO -->
   <section class="aeroport-hero">
+    <?php if ($heroImg && !empty($heroImg['url'])): ?>
+      <div class="aeroport-hero__image">
+        <?php if (is_array($localVersions) && !empty($localVersions['avif'])): ?>
+          <picture>
+            <source type="image/avif" srcset="<?= $buildSrcset($localVersions['avif']) ?>" sizes="(max-width: 768px) 100vw, 1200px">
+            <source type="image/webp" srcset="<?= $buildSrcset($localVersions['webp']) ?>" sizes="(max-width: 768px) 100vw, 1200px">
+            <img src="<?= Template::e($localVersions['jpg'][1200] ?? reset($localVersions['jpg'])) ?>"
+                 srcset="<?= $buildSrcset($localVersions['jpg']) ?>"
+                 sizes="(max-width: 768px) 100vw, 1200px"
+                 alt="<?= Template::e($heroImg['alt'] ?? $name) ?>"
+                 width="1200" height="675"
+                 loading="eager" fetchpriority="high">
+          </picture>
+        <?php else: ?>
+          <img src="<?= Template::e($heroImg['url']) ?>"
+               alt="<?= Template::e($heroImg['alt'] ?? $name) ?>"
+               width="1200" height="675"
+               loading="eager" fetchpriority="high">
+        <?php endif; ?>
+      </div>
+    <?php endif; ?>
+
     <div class="aeroport-hero__content">
-      <h1><?= Template::e($name) ?>
-        <?php if ($iata): ?><span class="aeroport-iata">(<?= Template::e($iata) ?>)</span><?php endif; ?>
-      </h1>
+      <h1><?= Template::e($h1) ?></h1>
       <?php if ($tagline): ?>
         <p class="aeroport-tagline"><?= Template::e($tagline) ?></p>
       <?php endif; ?>
@@ -74,65 +109,52 @@ $tpl->seo
 
   <?php if (!empty($intros)): ?>
     <section class="aeroport-intro">
-      <h2>Présentation</h2>
+      <h2>Présentation de l'<?= Template::e($full) ?></h2>
       <?php foreach ($intros as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
     </section>
   <?php endif; ?>
 
-  <?php if (!empty($access)): ?>
-    <section class="aeroport-access" id="acces">
-      <h2>Accès depuis Paris</h2>
-      <p class="lead">Plusieurs modes de transport permettent de rejoindre <strong><?= Template::e($name) ?></strong> depuis Paris.</p>
-      <div class="access-grid">
-        <?php foreach ($access as $key => $mode): ?>
-          <div class="access-card">
-            <h3><?= Template::e($mode['name'] ?? $key) ?></h3>
-            <?php if (!empty($mode['from'])): ?>
-              <p><strong>Depuis :</strong> <?= Template::e($mode['from']) ?></p>
-            <?php endif; ?>
-            <?php if (!empty($mode['time_min'])): ?>
-              <p><strong>Durée :</strong> ~<?= Template::e($mode['time_min']) ?> min</p>
-            <?php endif; ?>
-            <?php if (!empty($mode['price_eur'])): ?>
-              <p><strong>Prix :</strong> <?= Template::e($mode['price_eur']) ?> €</p>
-            <?php endif; ?>
-            <?php if (!empty($mode['frequency_min'])): ?>
-              <p><strong>Fréquence :</strong> toutes les <?= Template::e($mode['frequency_min']) ?> min</p>
-            <?php endif; ?>
-            <?php if (!empty($mode['note'])): ?>
-              <p class="access-note"><?= Template::e($mode['note']) ?></p>
-            <?php endif; ?>
-          </div>
-        <?php endforeach; ?>
-      </div>
-    </section>
-  <?php endif; ?>
+  <!-- Sections H2 SEO-driven (modes de transport) -->
+  <?php foreach ($sections as $section): ?>
+    <section class="aeroport-section" <?php if (!empty($section['anchor'])): ?>id="<?= Template::e($section['anchor']) ?>"<?php endif; ?>>
+      <h2><?= Template::e($section['h2'] ?? '') ?></h2>
 
-  <?php if (!empty($terminalsDetail)): ?>
-    <section class="aeroport-terminals" id="terminaux">
-      <h2>Terminaux</h2>
-      <table class="aeroport-terminals-table">
-        <thead>
-          <tr><th>Terminal</th><th>Compagnies principales</th><th>Année</th></tr>
-        </thead>
-        <tbody>
-          <?php foreach ($terminalsDetail as $t): ?>
-            <tr>
-              <td><strong><?= Template::e($t['code'] ?? '') ?></strong></td>
-              <td><?= Template::e($t['compagnies'] ?? '') ?></td>
-              <td><?= Template::e($t['year'] ?? '') ?></td>
-            </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
+      <?php if (!empty($section['paragraphs'])): ?>
+        <?php foreach ($section['paragraphs'] as $p): ?>
+          <p><?= $p ?></p>
+        <?php endforeach; ?>
+      <?php endif; ?>
+
+      <?php if (!empty($section['table'])): ?>
+        <div class="aeroport-table-wrap">
+          <table class="aeroport-table">
+            <thead>
+              <tr>
+                <?php foreach ($section['table']['headers'] as $h): ?>
+                  <th><?= Template::e($h) ?></th>
+                <?php endforeach; ?>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($section['table']['rows'] as $row): ?>
+                <tr>
+                  <?php foreach ($row as $cell): ?>
+                    <td><?= Template::e($cell) ?></td>
+                  <?php endforeach; ?>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+      <?php endif; ?>
     </section>
-  <?php endif; ?>
+  <?php endforeach; ?>
 
   <?php if (!empty($history)): ?>
-    <section class="aeroport-history" id="histoire">
-      <h2>Histoire</h2>
+    <section class="aeroport-section" id="histoire">
+      <h2>Histoire de l'<?= Template::e($full) ?></h2>
       <?php foreach ($history as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
@@ -140,8 +162,8 @@ $tpl->seo
   <?php endif; ?>
 
   <?php if (!empty($pois)): ?>
-    <section class="aeroport-pois" id="proximite">
-      <h2>À proximité</h2>
+    <section class="aeroport-section" id="proximite">
+      <h2>À proximité de l'<?= Template::e($name) ?></h2>
       <ul class="pois-list">
         <?php foreach ($pois as $poi): ?>
           <li>
@@ -157,8 +179,8 @@ $tpl->seo
   <?php endif; ?>
 
   <?php if (!empty($faq)): ?>
-    <section class="aeroport-faq" id="faq">
-      <h2>Questions fréquentes</h2>
+    <section class="aeroport-section" id="faq">
+      <h2>FAQ — <?= Template::e($name) ?></h2>
       <div class="faq-list">
         <?php foreach ($faq as $q): ?>
           <details class="faq-item">
@@ -170,8 +192,8 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
-  <section class="aeroport-meta">
-    <h2>En résumé</h2>
+  <section class="aeroport-section aeroport-meta">
+    <h2>En résumé — <?= Template::e($name) ?></h2>
     <dl class="aeroport-summary">
       <dt>Nom officiel</dt><dd><?= Template::e($full) ?></dd>
       <?php if ($iata): ?><dt>Code IATA</dt><dd><?= Template::e($iata) ?></dd><?php endif; ?>
@@ -180,6 +202,15 @@ $tpl->seo
       <?php if ($operator): ?><dt>Opérateur</dt><dd><?= Template::e($operator) ?></dd><?php endif; ?>
       <?php if ($opened): ?><dt>Ouverture</dt><dd><?= Template::e($opened) ?></dd><?php endif; ?>
     </dl>
+    <?php if (!empty($heroImg['credit'])): ?>
+      <p class="aeroport-credit">
+        Photo : <?= Template::e($heroImg['credit']['author'] ?? '') ?> —
+        <?= Template::e($heroImg['credit']['license'] ?? '') ?> —
+        <?php if (!empty($heroImg['credit']['source_url'])): ?>
+          <a href="<?= Template::e($heroImg['credit']['source_url']) ?>" rel="nofollow noopener" target="_blank">source Wikimedia</a>
+        <?php endif; ?>
+      </p>
+    <?php endif; ?>
   </section>
 
 </article>
@@ -187,25 +218,25 @@ $tpl->seo
 
 <style>
 .aeroport-page { padding: 1.5rem 0; }
-.aeroport-page h2 { margin-top: 2rem; }
-.aeroport-hero { background: linear-gradient(135deg, #0F6E56, #085041); color: #fff; padding: 2rem 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; }
-.aeroport-hero h1 { color: #fff; margin: 0 0 .5rem; font-size: clamp(1.6rem, 4vw, 2.4rem); }
-.aeroport-iata { font-weight: 400; opacity: .8; font-size: .8em; }
-.aeroport-tagline { font-size: 1.05rem; opacity: .95; margin: 0 0 1rem; }
+.aeroport-page h2 { margin-top: 2rem; color: #0F6E56; }
+.aeroport-hero { margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; background: #0F6E56; color: #fff; }
+.aeroport-hero__image img,
+.aeroport-hero__image picture img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+.aeroport-hero__content { padding: 1.5rem; }
+.aeroport-hero h1 { color: #fff; margin: 0 0 .5rem; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.25; }
+.aeroport-tagline { font-size: 1.05rem; opacity: .95; margin: 0 0 1rem; font-weight: 600; }
 .aeroport-hero-desc { line-height: 1.6; margin-bottom: 1.5rem; }
 .aeroport-hero-desc strong { color: #fff; }
 .aeroport-key-figures { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
 .key-figure { background: rgba(255,255,255,.15); padding: .75rem 1rem; border-radius: 8px; min-width: 110px; text-align: center; }
 .kf-value { display: block; font-weight: 700; font-size: 1.3rem; line-height: 1; }
 .kf-label { display: block; font-size: .8rem; opacity: .85; margin-top: .25rem; }
-.access-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
-.access-card { background: #f4f8f6; padding: 1rem; border-radius: 8px; border-left: 4px solid #0F6E56; }
-.access-card h3 { margin: 0 0 .5rem; color: #0F6E56; }
-.access-card p { margin: .25rem 0; font-size: .95rem; }
-.access-note { font-style: italic; font-size: .9rem; color: #555; margin-top: .5rem !important; }
-.aeroport-terminals-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-.aeroport-terminals-table th, .aeroport-terminals-table td { padding: .6rem; border-bottom: 1px solid #ddd; text-align: left; }
-.aeroport-terminals-table th { background: #f4f8f6; }
+.aeroport-section { margin: 2rem 0; }
+.aeroport-section p { line-height: 1.65; }
+.aeroport-table-wrap { overflow-x: auto; margin-top: 1rem; }
+.aeroport-table { width: 100%; border-collapse: collapse; }
+.aeroport-table th, .aeroport-table td { padding: .6rem .8rem; border-bottom: 1px solid #ddd; text-align: left; }
+.aeroport-table th { background: #f4f8f6; color: #0F6E56; font-weight: 600; }
 .pois-list { list-style: none; padding: 0; }
 .pois-list li { background: #f4f8f6; padding: 1rem; border-radius: 8px; margin-bottom: .75rem; }
 .poi-distance { font-size: .85rem; color: #777; margin-left: .5rem; }
@@ -216,4 +247,5 @@ $tpl->seo
 .aeroport-summary { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1rem; margin-top: 1rem; }
 .aeroport-summary dt { font-weight: 600; color: #0F6E56; }
 .aeroport-summary dd { margin: 0; }
+.aeroport-credit { margin-top: 1rem; font-size: .85rem; color: #777; }
 </style>
