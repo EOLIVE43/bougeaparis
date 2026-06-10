@@ -120,6 +120,17 @@ class Routes
             return in_array($matches[1], self::$activeGareSlugs, true);
         }
 
+        // 3bis. Pages aéroport — détection dynamique (data/aeroports/{slug}.json
+        //       existe ET "published": true).
+        if (preg_match('~^/aeroports/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
+            $file = __DIR__ . '/../../public_html/data/aeroports/' . $matches[1] . '.json';
+            if (is_file($file)) {
+                $data = json_decode((string)file_get_contents($file), true);
+                return is_array($data) && ($data['published'] ?? false) === true;
+            }
+            return false;
+        }
+
         // 4. Pages ligne metro — detection dynamique (data/lines/metro-{N}.json
         //    existe ET hero_image.url non vide).
         if (preg_match('~^/metro/ligne-([a-z0-9]+)$~', $clean, $matches) === 1) {

@@ -25,6 +25,7 @@ declare(strict_types=1);
 
 const ROOT_DIR     = __DIR__ . '/..';
 const STATIONS_DIR = ROOT_DIR . '/public_html/data/stations';
+const AEROPORTS_DIR = ROOT_DIR . '/public_html/data/aeroports';
 const LINES_JSON   = ROOT_DIR . '/public_html/data/lines.json';
 const OUT_FILE     = ROOT_DIR . '/public_html/sitemap.xml';
 const BASE_URL     = 'https://bougeaparis.fr';
@@ -111,6 +112,28 @@ foreach ($publishedStations as $st) {
         $st['lastmod']
     );
 }
+
+// 3.4b Aéroports published (3 fiches détail)
+$aeroFiles = glob(AEROPORTS_DIR . '/*.json') ?: [];
+$publishedAeroports = [];
+foreach ($aeroFiles as $f) {
+    $data = json_decode((string)file_get_contents($f), true);
+    if (!is_array($data) || empty($data['published'])) continue;
+    $publishedAeroports[] = [
+        'slug'    => $data['slug'] ?? basename($f, '.json'),
+        'lastmod' => date('Y-m-d', (int)filemtime($f)),
+    ];
+}
+usort($publishedAeroports, fn($a, $b) => strcmp($a['slug'], $b['slug']));
+foreach ($publishedAeroports as $ap) {
+    $xml .= url_entry(
+        BASE_URL . "/aeroports/{$ap['slug']}/",
+        'weekly',
+        '0.8',
+        $ap['lastmod']
+    );
+}
+log_line('Aéroports publiés : ' . count($publishedAeroports));
 
 // 3.5 Pages éditoriales / footer
 $footer = [
