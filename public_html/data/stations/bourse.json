@@ -1,526 +1,500 @@
 {
-  "published": true,
-  "slug": "bourse",
-  "name": "Bourse",
-  "name_full": "Bourse (Métro 3)",
-  "arrondissement": "2e arrondissement (Paris)",
-  "address": "Place de la Bourse, 75002 Paris",
-  "latitude": 48.868743758980536,
-  "longitude": 2.3407473307833064,
-  "tariff_zone": 1,
-  "tariff_zone_context": "Paris intra-muros",
-  "commune": "Paris",
-  "is_major_hub": false,
-  "i18n": {
-    "en": "",
-    "es": ""
-  },
-  "lines": [
-    {
-      "type": "metro",
-      "code": "3",
-      "slug": "metro-3",
-      "color": "#6E6E00",
-      "text_color": "#FFFFFF"
-    }
-  ],
-  "bus_correspondences": {
-    "diurne": [
-      "20",
-      "29",
-      "39"
+    "published": true,
+    "slug": "bourse",
+    "name": "Bourse",
+    "name_full": "Bourse (Métro 3)",
+    "arrondissement": "2e arrondissement (Paris)",
+    "address": "Place de la Bourse, 75002 Paris",
+    "latitude": 48.868743758980536,
+    "longitude": 2.3407473307833064,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "3",
+            "slug": "metro-3",
+            "color": "#6E6E00",
+            "text_color": "#FFFFFF"
+        }
     ],
-    "nocturne": [
-      "N15",
-      "N16"
+    "bus_correspondences": {
+        "diurne": [
+            "20",
+            "29",
+            "39"
+        ],
+        "nocturne": [
+            "N15",
+            "N16"
+        ],
+        "regional": [
+            "74",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-09",
+            "same_node_count": 5,
+            "nearby_count": 12
+        }
+    },
+    "seo": {
+        "description": "Station Bourse (M3) place de la Bourse dans le 2e. Palais Brongniart, ancienne Bourse de Paris (1826-1987). Bibliothèque nationale Richelieu."
+    },
+    "hero": {
+        "tagline": "M3 — Palais Brongniart (Bourse 1826-1987)",
+        "description": "Station <strong>Bourse</strong> sur la <strong>place de la Bourse</strong> dans le <strong>2e arrondissement</strong>. Desservie par la <strong>M3</strong>, ouverte le <strong>19 octobre 1904</strong>. <strong>Palais Brongniart</strong> face à la sortie : ancien <strong>Palais de la Bourse de Paris</strong> (<strong>1826-1987</strong>), aujourd'hui centre de congrès. <strong>Bibliothèque nationale de France site Richelieu</strong> à proximité."
+    },
+    "adjacent_stations": {
+        "metro-3": {
+            "previous": {
+                "name": "Sentier",
+                "slug": "sentier",
+                "direction": "Gallieni"
+            },
+            "next": {
+                "name": "Quatre Septembre",
+                "slug": "quatre-septembre",
+                "direction": "Pont de Levallois - Bécon"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Bourse</strong> est implantée sur la <strong>place de la Bourse</strong> dans le <strong>2e arrondissement</strong>. Elle est desservie par la <strong>ligne 3 du métro parisien</strong>, entre <strong>Quatre-Septembre</strong> (1 station) et <strong>Sentier</strong> (1 station). Bus 20, 39, 74 en correspondance.",
+        "Ouverte le <strong>19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la ligne 3.",
+        "Face à la sortie : le <strong>Palais Brongniart</strong> (anciennement <strong>Palais de la Bourse de Paris</strong>), édifice néo-classique de <strong>Alexandre-Théodore Brongniart</strong> (1808-1826). <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>, aujourd'hui <strong>centre de congrès</strong>. À proximité : la <strong>Bibliothèque nationale de France site Richelieu</strong> (galerie Mazarin, salle Labrouste)."
     ],
-    "regional": [
-      "74",
-      "85"
+    "history": {
+        "title": "1904 : Palais Brongniart, ancien temple de la Bourse",
+        "paragraphs": [
+            "La station Bourse est <strong>inaugurée le 19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la <strong>ligne 3</strong>.",
+            "Le <strong>Palais Brongniart</strong>, face à la sortie de la station, est construit de <strong>1808 à 1826</strong> sous Napoléon Ier, puis sous la Restauration. Œuvre de l'architecte <strong>Alexandre-Théodore Brongniart</strong> (<strong>1739-1813</strong>), achevée par <strong>Éloi Labarre</strong> après sa mort. <strong>Style néo-classique</strong> avec <strong>colonnade corinthienne</strong>. <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>.",
+            "L'<strong>activité boursière</strong> y prit fin en <strong>1987</strong> avec la <strong>dématérialisation</strong> (informatisation des marchés). Le bâtiment est devenu <strong>centre de congrès</strong> et est <strong>classé monument historique</strong> en <strong>1987</strong>. À proximité, le <strong>quartier de la BnF Richelieu</strong> (galerie Mazarin, salle Labrouste, l'<strong>Hôtel Tubeuf</strong>) abrite les collections historiques de la Bibliothèque nationale."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Bourse ?",
+            "answer": "Uniquement la <strong>M3</strong>. Bus 20, 39, 74."
+        },
+        {
+            "question": "Qu'est-ce que le Palais Brongniart ?",
+            "answer": "L'ancien <strong>Palais de la Bourse de Paris</strong> (1826-1987), édifice néo-classique d'<strong>Alexandre-Théodore Brongniart</strong>. Aujourd'hui <strong>centre de congrès</strong>."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>19 octobre 1904</strong>."
+        },
+        {
+            "question": "Pour la BnF Richelieu ?",
+            "answer": "<strong>~5 min à pied</strong> via la rue du Quatre-Septembre. Galerie Mazarin et salle Labrouste."
+        },
+        {
+            "question": "Pour le Sentier ?",
+            "answer": "<strong>M3 directe</strong> (1 station)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
     ],
-    "_audit": {
-      "source": "gtfs-idfm",
-      "buffer_radius_m": 300,
-      "audit_date": "2026-06-09",
-      "same_node_count": 5,
-      "nearby_count": 12
-    }
-  },
-  "seo": {
-    "description": "Station Bourse (M3) place de la Bourse dans le 2e. Palais Brongniart, ancienne Bourse de Paris (1826-1987). Bibliothèque nationale Richelieu."
-  },
-  "hero": {
-    "tagline": "M3 — Palais Brongniart (Bourse 1826-1987)",
-    "description": "Station <strong>Bourse</strong> sur la <strong>place de la Bourse</strong> dans le <strong>2e arrondissement</strong>. Desservie par la <strong>M3</strong>, ouverte le <strong>19 octobre 1904</strong>. <strong>Palais Brongniart</strong> face à la sortie : ancien <strong>Palais de la Bourse de Paris</strong> (<strong>1826-1987</strong>), aujourd'hui centre de congrès. <strong>Bibliothèque nationale de France site Richelieu</strong> à proximité."
-  },
-  "adjacent_stations": {
-    "metro-3": {
-      "previous": {
-        "name": "Sentier",
-        "slug": "sentier",
-        "direction": "Gallieni"
-      },
-      "next": {
-        "name": "Quatre Septembre",
-        "slug": "quatre-septembre",
-        "direction": "Pont de Levallois - Bécon"
-      }
-    }
-  },
-  "intro_paragraphs": [
-    "La station <strong>Bourse</strong> est implantée sur la <strong>place de la Bourse</strong> dans le <strong>2e arrondissement</strong>. Elle est desservie par la <strong>ligne 3 du métro parisien</strong>, entre <strong>Quatre-Septembre</strong> (1 station) et <strong>Sentier</strong> (1 station). Bus 20, 39, 74 en correspondance.",
-    "Ouverte le <strong>19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la ligne 3.",
-    "Face à la sortie : le <strong>Palais Brongniart</strong> (anciennement <strong>Palais de la Bourse de Paris</strong>), édifice néo-classique de <strong>Alexandre-Théodore Brongniart</strong> (1808-1826). <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>, aujourd'hui <strong>centre de congrès</strong>. À proximité : la <strong>Bibliothèque nationale de France site Richelieu</strong> (galerie Mazarin, salle Labrouste)."
-  ],
-  "history": {
-    "title": "1904 : Palais Brongniart, ancien temple de la Bourse",
-    "paragraphs": [
-      "La station Bourse est <strong>inaugurée le 19 octobre 1904</strong> avec le tronçon initial <strong>Père Lachaise ↔ Villiers</strong> de la <strong>ligne 3</strong>.",
-      "Le <strong>Palais Brongniart</strong>, face à la sortie de la station, est construit de <strong>1808 à 1826</strong> sous Napoléon Ier, puis sous la Restauration. Œuvre de l'architecte <strong>Alexandre-Théodore Brongniart</strong> (<strong>1739-1813</strong>), achevée par <strong>Éloi Labarre</strong> après sa mort. <strong>Style néo-classique</strong> avec <strong>colonnade corinthienne</strong>. <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>.",
-      "L'<strong>activité boursière</strong> y prit fin en <strong>1987</strong> avec la <strong>dématérialisation</strong> (informatisation des marchés). Le bâtiment est devenu <strong>centre de congrès</strong> et est <strong>classé monument historique</strong> en <strong>1987</strong>. À proximité, le <strong>quartier de la BnF Richelieu</strong> (galerie Mazarin, salle Labrouste, l'<strong>Hôtel Tubeuf</strong>) abrite les collections historiques de la Bibliothèque nationale."
-    ]
-  },
-  "faq": [
-    {
-      "question": "Quelle ligne dessert Bourse ?",
-      "answer": "Uniquement la <strong>M3</strong>. Bus 20, 39, 74."
-    },
-    {
-      "question": "Qu'est-ce que le Palais Brongniart ?",
-      "answer": "L'ancien <strong>Palais de la Bourse de Paris</strong> (1826-1987), édifice néo-classique d'<strong>Alexandre-Théodore Brongniart</strong>. Aujourd'hui <strong>centre de congrès</strong>."
-    },
-    {
-      "question": "Quand a-t-elle ouvert ?",
-      "answer": "Le <strong>19 octobre 1904</strong>."
-    },
-    {
-      "question": "Pour la BnF Richelieu ?",
-      "answer": "<strong>~5 min à pied</strong> via la rue du Quatre-Septembre. Galerie Mazarin et salle Labrouste."
-    },
-    {
-      "question": "Pour le Sentier ?",
-      "answer": "<strong>M3 directe</strong> (1 station)."
-    },
-    {
-      "question": "La station est-elle accessible PMR ?",
-      "answer": "<strong>Non</strong>. Pas d'ascenseur."
-    }
-  ],
-  "practical_tips": [
-    "<strong>Palais Brongniart</strong> face à la sortie : ancien temple boursier, aujourd'hui centre de congrès.",
-    "<strong>BnF site Richelieu</strong> à 5 min à pied : galerie Mazarin, salle Labrouste (rouverte en 2017).",
-    "Pour <strong>Opéra</strong> : <strong>M3 directe</strong> (2 stations).",
-    "Pour <strong>Châtelet</strong> : <strong>M3 + M14</strong> via Réaumur ou Châtelet directe.",
-    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
-  ],
-  "trivia": [
-    {
-      "icon": "🏛️",
-      "title": "Palais Brongniart, temple néo-classique",
-      "content": "Le <strong>Palais Brongniart</strong>, face à la station, est construit de <strong>1808 à 1826</strong> sous Napoléon Ier et la Restauration. Œuvre de l'architecte <strong>Alexandre-Théodore Brongniart</strong> (1739-1813), achevée par Éloi Labarre. <strong>Style néo-classique</strong>, <strong>colonnade corinthienne</strong> rectangulaire. <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>. L'activité y prit fin avec la <strong>dématérialisation</strong> des marchés. <strong>Centre de congrès</strong> depuis 1987. <strong>Classé monument historique</strong> la même année."
-    },
-    {
-      "icon": "📚",
-      "title": "BnF Richelieu, écrin des trésors français",
-      "content": "La <strong>Bibliothèque nationale de France site Richelieu</strong>, à 5 min à pied, est le <strong>berceau historique</strong> de la BnF. Abrite la <strong>galerie Mazarin</strong> (XVIIe), la <strong>salle Labrouste</strong> (1868, rouverte en <strong>2017</strong> après rénovation) et la <strong>salle Ovale</strong>. <strong>Collections trésors</strong> : manuscrits médiévaux, livres rares, cartes, estampes (Rembrandt), monnaies (Cabinet des Médailles), photographies (Nadar)."
-    }
-  ],
-  "popular_itineraries": [
-    {
-      "destination_name": "Palais Brongniart",
-      "destination_slug": "bourse",
-      "destination_full_name": "Bourse → Palais Brongniart",
-      "lines_used": [
-        "à pied"
-      ],
-      "lines_label": "Sortie directe",
-      "duration_minutes": 1,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-bourse/"
-    },
-    {
-      "destination_name": "BnF Richelieu",
-      "destination_slug": "bourse",
-      "destination_full_name": "Bourse → BnF Richelieu",
-      "lines_used": [
-        "à pied"
-      ],
-      "lines_label": "Rue du Quatre-Septembre (5 min)",
-      "duration_minutes": 5,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-bourse/"
-    },
-    {
-      "destination_name": "Opéra Garnier",
-      "destination_slug": "opera",
-      "destination_full_name": "Bourse → Opéra Garnier",
-      "lines_used": [
-        "M3"
-      ],
-      "lines_label": "M3 directe (2 stations)",
-      "duration_minutes": 4,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-opera/"
-    },
-    {
-      "destination_name": "Sentier",
-      "destination_slug": "sentier",
-      "destination_full_name": "Bourse → Sentier",
-      "lines_used": [
-        "M3"
-      ],
-      "lines_label": "M3 directe (1 station)",
-      "duration_minutes": 2,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-sentier/"
-    },
-    {
-      "destination_name": "Châtelet",
-      "destination_slug": "chatelet",
-      "destination_full_name": "Bourse → Châtelet",
-      "lines_used": [
-        "M3 + M14"
-      ],
-      "lines_label": "M3 → Réaumur + M11 ou via Opéra",
-      "duration_minutes": 10,
-      "changes_count": 1,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-chatelet/"
-    },
-    {
-      "destination_name": "République",
-      "destination_slug": "republique",
-      "destination_full_name": "Bourse → République",
-      "lines_used": [
-        "M3"
-      ],
-      "lines_label": "M3 directe (5 stations)",
-      "duration_minutes": 11,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-bourse/bourse-vers-republique/"
-    }
-  ],
-  "nearby_pois": [
-    {
-      "wikidata_id": "Q187840",
-      "name": "palais Garnier",
-      "category": "palais",
-      "description": "Édifice emblématique du 9e arrondissement, le palais Garnier a été conçu par l'architecte Charles Garnier et inauguré en 1861. Ce théâtre national, classé au titre des monuments historiques, demeure le siège de l'Opéra de Paris et accueille ballets, concerts et spectacles lyriques sur la prestigieuse place de l'Opéra.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Palais%20Garnier%202010-04-06%2016.55.07.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier",
-      "latitude": 48.871944,
-      "longitude": 2.331667,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 732,
-        "walk_minutes": 9
-      }
-    },
-    {
-      "wikidata_id": "Q329948",
-      "name": "Palais-Royal",
-      "category": "palais",
-      "description": "Édifié en 1628, ce palais royal incarne un moment clé du patrimoine français. Pierre-François-Léonard Fontaine en a façonné l'architecture, tandis que son statut de monument historique classé en préserve aujourd'hui l'intégrité. Un lieu chargé de l'histoire parisienne depuis plus de quatre siècles.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
-      "latitude": 48.863333,
-      "longitude": 2.336944,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 676,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q330375",
-      "name": "Folies Bergère",
-      "category": "théâtre",
-      "description": "Inauguré en 1869, ce théâtre du 9e arrondissement demeure une référence des salles de spectacles parisiennes. Inscrit au titre de monument historique, il perpétue une longue tradition de programmations artistiques depuis le Second Empire.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folies%20Berg%C3%A8re%2C%20Paris%206%20February%202016.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Folies_Berg%C3%A8re",
-      "latitude": 48.874167,
-      "longitude": 2.345,
-      "nearest_exit": {
-        "number": "2",
-        "name": "r. Notre-Dame des Victoires",
-        "distance_m": 647,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q1338207",
-      "name": "église Saint-Eustache de Paris",
-      "category": "église",
-      "description": "Édifiée à partir de 1532, cette église paroissiale figure parmi les trois plus importants sanctuaires parisiens. Classée au titre de monument historique, elle domine la rue Rambuteau et constitue un témoignage architectural majeur du quartier des Halles.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
-      "latitude": 48.863333,
-      "longitude": 2.345,
-      "nearest_exit": {
-        "number": "2",
-        "name": "r. Notre-Dame des Victoires",
-        "distance_m": 650,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q872222",
-      "name": "théâtre national de l'Opéra-Comique",
-      "category": "théâtre",
-      "description": "Fondé en 1715, ce théâtre lyrique occupe la place Boieldieu au cœur du 2e arrondissement. La salle Favart propose une programmation d'opéras-comiques et de spectacles musicaux dans un cadre historique singulier.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20Comique%2C%20Paris%2011%20March%202018.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_de_l%27Op%C3%A9ra-Comique",
-      "latitude": 48.870861,
-      "longitude": 2.337511,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 310,
-        "walk_minutes": 4
-      }
-    },
-    {
-      "wikidata_id": "Q1265070",
-      "name": "musée Grévin",
-      "category": "musée",
-      "description": "Fondé en 1882 par Arthur Meyer, ce musée rassemble des figurines en cire représentant des personnalités de tous les domaines. Installé au cœur du 9e arrondissement, il propose une galerie de portraits sculptés des figures publiques les plus marquantes.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Gr%C3%A9vin%2C%20Paris%2030%20July%202016.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gr%C3%A9vin",
-      "latitude": 48.87183,
-      "longitude": 2.3421,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 342,
-        "walk_minutes": 4
-      }
-    },
-    {
-      "wikidata_id": "Q1362670",
-      "name": "place des Victoires",
-      "category": "place",
-      "description": "Édifiée en 1685, cette place du 1er arrondissement honore Louis XIV à travers son architecture classique. Classée au titre des monuments historiques, elle constitue un point de repère majeur du centre parisien, traversant les limites entre deux arrondissements.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
-      "latitude": 48.865833,
-      "longitude": 2.341111,
-      "nearest_exit": {
-        "number": "2",
-        "name": "r. Notre-Dame des Victoires",
-        "distance_m": 329,
-        "walk_minutes": 4
-      }
-    },
-    {
-      "wikidata_id": "Q1854102",
-      "name": "palais Brongniart",
-      "category": "palais",
-      "description": "Édifice de style néoclassique achevé en 1825, le palais Brongniart a été conçu par Alexandre-Théodore Brongniart puis complété par son successeur Éloi Labarre. Construit sur ordre de Napoléon Ier pour accueillir la Bourse de Paris, ce monument historique inscrit demeure un témoignage architectural du début du XIXe siècle.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Brongniart%20Facade.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Brongniart",
-      "latitude": 48.869169,
-      "longitude": 2.340828,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 33,
-        "walk_minutes": 1
-      }
-    },
-    {
-      "wikidata_id": "Q1436962",
-      "name": "église Saint-Roch de Paris",
-      "category": "église",
-      "description": "Édifiée à partir de 1653 par Jacques Le Mercier et Jules Hardouin-Mansart, cette église paroissiale du 1er arrondissement s'étend sur 126 mètres. Son architecture baroque et son classement au titre des monuments historiques en font un témoignage majeur du patrimoine parisien du XVIIe siècle.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint%20Roch%20-%20Paris%20I%20%28FR75%29%20-%202022-05-27%20-%201.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Roch_de_Paris",
-      "latitude": 48.865327,
-      "longitude": 2.332608,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 707,
-        "walk_minutes": 9
-      }
-    },
-    {
-      "wikidata_id": "Q549143",
-      "name": "Cabinet des médailles",
-      "category": "musée",
-      "description": "Fondé en 1560, ce département de la Bibliothèque nationale de France rassemble des collections exceptionnelles de numismatique et d'antiquités. Il conserve et valorise des pièces historiques offrant un aperçu unique du patrimoine monétaire et archéologique français.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabinet%20des%20Medailles%201.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_des_Monnaies,_m%C3%A9dailles_et_antiques_de_la_Biblioth%C3%A8que_nationale_de_France",
-      "latitude": 48.8678,
-      "longitude": 2.3384,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 202,
-        "walk_minutes": 3
-      }
-    },
-    {
-      "wikidata_id": "Q782969",
-      "name": "basilique Notre-Dame-des-Victoires",
-      "category": "basilique",
-      "description": "Édifiée à partir de 1629 par l'architecte Pierre Le Muet, cette basilique mineure du 2e arrondissement a nécessité plus d'un siècle avant son achèvement en 1740. Classée au titre de monument historique, elle occupe la place des Petits-Pères et constitue l'unique témoin subsistant du couvent des Augustins déchaussés.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Notre%20Dame%20Victoires%20-%20Paris%20II%20%28FR75%29%20-%202021-06-16%20-%202.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-des-Victoires_de_Paris",
-      "latitude": 48.866667,
-      "longitude": 2.340833,
-      "nearest_exit": {
-        "number": "2",
-        "name": "r. Notre-Dame des Victoires",
-        "distance_m": 242,
-        "walk_minutes": 3
-      }
-    },
-    {
-      "wikidata_id": "Q1314020",
-      "name": "galerie Vivienne",
-      "category": "site notable",
-      "description": "Édifiée en 1823, la galerie Vivienne est un passage commercial couvert du 2e arrondissement, représentatif de l'architecture commerciale parisienne du XIXe siècle. Inscrite au titre de monument historique, cette galerie témoigne du patrimoine architectural des passages parisiens.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1040471%20Paris%20II%20galerie%20Vivienne%20rwk.JPG?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Galerie_Vivienne",
-      "latitude": 48.866667,
-      "longitude": 2.339722,
-      "nearest_exit": {
-        "number": "1",
-        "name": "Entrée / Sortie",
-        "distance_m": 259,
-        "walk_minutes": 3
-      }
-    }
-  ],
-  "exits": [
-    {
-      "number": "1",
-      "name": "Entrée / Sortie",
-      "address_full": "23 Place de la Bourse 75002 Paris",
-      "postcode": "75002",
-      "city": "Paris",
-      "latitude": 48.868927,
-      "longitude": 2.340568,
-      "accessible": null
-    },
-    {
-      "number": "2",
-      "name": "r. Notre-Dame des Victoires",
-      "address_full": "33 Place de la Bourse 75002 Paris",
-      "postcode": "75002",
-      "city": "Paris",
-      "latitude": 48.868763,
-      "longitude": 2.341715,
-      "accessible": null
-    }
-  ],
-  "services": {
-    "wifi": {
-      "available": false,
-      "location_detail": "",
-      "coverage_detail": ""
-    },
-    "toilets": {
-      "public_paid": {
-        "available": false
-      },
-      "public_free": {
-        "available": false,
-        "location": "",
-        "access": ""
-      }
-    },
-    "atm": {
-      "available": false,
-      "banks_count_estimate": "",
-      "locations": []
-    },
-    "ratp_office": {
-      "available": false,
-      "location": "",
-      "services": ""
-    },
-    "left_luggage": {
-      "ratp_available": false,
-      "third_party": []
-    },
-    "shopping_dining": {
-      "main_location": "",
-      "details": "",
-      "secondary": ""
-    }
-  },
-  "safety": {
-    "audit_status": "pending",
-    "audit_date": null,
-    "level": "",
-    "agents": null,
-    "police": null,
-    "tips": [
-      "Station métro Paris — vigilance pickpockets standard.",
-      "Affluence variable selon heures de pointe."
+    "practical_tips": [
+        "<strong>Palais Brongniart</strong> face à la sortie : ancien temple boursier, aujourd'hui centre de congrès.",
+        "<strong>BnF site Richelieu</strong> à 5 min à pied : galerie Mazarin, salle Labrouste (rouverte en 2017).",
+        "Pour <strong>Opéra</strong> : <strong>M3 directe</strong> (2 stations).",
+        "Pour <strong>Châtelet</strong> : <strong>M3 + M14</strong> via Réaumur ou Châtelet directe.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
     ],
-    "notes": "Audit RATP/IDFM spécifique non disponible."
-  },
-  "hero_image": {
-    "url": "https://bougeaparis.fr/assets/img/stations/bourse/source/mapillary.jpg",
-    "alt": "Vue street-level Mapillary à 26 m de la station Bourse (Métro 3) — perspective rue captée le 2020-12-29 par nlehuby (compass -1°)",
-    "width": 1200,
-    "height": 675,
-    "credit": {
-      "author": "nlehuby (Mapillary)",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=1471758283216632",
-      "date": "2026-06-08"
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Palais Brongniart, temple néo-classique",
+            "content": "Le <strong>Palais Brongniart</strong>, face à la station, est construit de <strong>1808 à 1826</strong> sous Napoléon Ier et la Restauration. Œuvre de l'architecte <strong>Alexandre-Théodore Brongniart</strong> (1739-1813), achevée par Éloi Labarre. <strong>Style néo-classique</strong>, <strong>colonnade corinthienne</strong> rectangulaire. <strong>Siège de la Bourse de Paris de 1826 à 1987</strong>. L'activité y prit fin avec la <strong>dématérialisation</strong> des marchés. <strong>Centre de congrès</strong> depuis 1987. <strong>Classé monument historique</strong> la même année."
+        },
+        {
+            "icon": "📚",
+            "title": "BnF Richelieu, écrin des trésors français",
+            "content": "La <strong>Bibliothèque nationale de France site Richelieu</strong>, à 5 min à pied, est le <strong>berceau historique</strong> de la BnF. Abrite la <strong>galerie Mazarin</strong> (XVIIe), la <strong>salle Labrouste</strong> (1868, rouverte en <strong>2017</strong> après rénovation) et la <strong>salle Ovale</strong>. <strong>Collections trésors</strong> : manuscrits médiévaux, livres rares, cartes, estampes (Rembrandt), monnaies (Cabinet des Médailles), photographies (Nadar)."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Palais Brongniart",
+            "destination_slug": "bourse",
+            "destination_full_name": "Bourse → Palais Brongniart",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-bourse/"
+        },
+        {
+            "destination_name": "BnF Richelieu",
+            "destination_slug": "bourse",
+            "destination_full_name": "Bourse → BnF Richelieu",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Rue du Quatre-Septembre (5 min)",
+            "duration_minutes": 5,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-bourse/"
+        },
+        {
+            "destination_name": "Opéra Garnier",
+            "destination_slug": "opera",
+            "destination_full_name": "Bourse → Opéra Garnier",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 directe (2 stations)",
+            "duration_minutes": 4,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-opera/"
+        },
+        {
+            "destination_name": "Sentier",
+            "destination_slug": "sentier",
+            "destination_full_name": "Bourse → Sentier",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-sentier/"
+        },
+        {
+            "destination_name": "Châtelet",
+            "destination_slug": "chatelet",
+            "destination_full_name": "Bourse → Châtelet",
+            "lines_used": [
+                "M3 + M14"
+            ],
+            "lines_label": "M3 → Réaumur + M11 ou via Opéra",
+            "duration_minutes": 10,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-chatelet/"
+        },
+        {
+            "destination_name": "République",
+            "destination_slug": "republique",
+            "destination_full_name": "Bourse → République",
+            "lines_used": [
+                "M3"
+            ],
+            "lines_label": "M3 directe (5 stations)",
+            "duration_minutes": 11,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-bourse/bourse-vers-republique/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q187840",
+            "name": "palais Garnier",
+            "category": "palais",
+            "description": "Édifice emblématique du 9e arrondissement, le palais Garnier a été conçu par l'architecte Charles Garnier et inauguré en 1861. Ce théâtre national, classé au titre des monuments historiques, demeure le siège de l'Opéra de Paris et accueille ballets, concerts et spectacles lyriques sur la prestigieuse place de l'Opéra.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Palais%20Garnier%202010-04-06%2016.55.07.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier",
+            "latitude": 48.871944,
+            "longitude": 2.331667,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 732,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q329948",
+            "name": "Palais-Royal",
+            "category": "palais",
+            "description": "Édifié en 1628, ce palais royal incarne un moment clé du patrimoine français. Pierre-François-Léonard Fontaine en a façonné l'architecture, tandis que son statut de monument historique classé en préserve aujourd'hui l'intégrité. Un lieu chargé de l'histoire parisienne depuis plus de quatre siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
+            "latitude": 48.863333,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 676,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q330375",
+            "name": "Folies Bergère",
+            "category": "théâtre",
+            "description": "Inauguré en 1869, ce théâtre du 9e arrondissement demeure une référence des salles de spectacles parisiennes. Inscrit au titre de monument historique, il perpétue une longue tradition de programmations artistiques depuis le Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folies%20Berg%C3%A8re%2C%20Paris%206%20February%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Folies_Berg%C3%A8re",
+            "latitude": 48.874167,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Notre-Dame des Victoires",
+                "distance_m": 647,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1338207",
+            "name": "église Saint-Eustache de Paris",
+            "category": "église",
+            "description": "Édifiée à partir de 1532, cette église paroissiale figure parmi les trois plus importants sanctuaires parisiens. Classée au titre de monument historique, elle domine la rue Rambuteau et constitue un témoignage architectural majeur du quartier des Halles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
+            "latitude": 48.863333,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Notre-Dame des Victoires",
+                "distance_m": 650,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q872222",
+            "name": "théâtre national de l'Opéra-Comique",
+            "category": "théâtre",
+            "description": "Fondé en 1715, ce théâtre lyrique occupe la place Boieldieu au cœur du 2e arrondissement. La salle Favart propose une programmation d'opéras-comiques et de spectacles musicaux dans un cadre historique singulier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Op%C3%A9ra%20Comique%2C%20Paris%2011%20March%202018.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_national_de_l%27Op%C3%A9ra-Comique",
+            "latitude": 48.870861,
+            "longitude": 2.337511,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 310,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1265070",
+            "name": "musée Grévin",
+            "category": "musée",
+            "description": "Fondé en 1882 par Arthur Meyer, ce musée rassemble des figurines en cire représentant des personnalités de tous les domaines. Installé au cœur du 9e arrondissement, il propose une galerie de portraits sculptés des figures publiques les plus marquantes.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20Gr%C3%A9vin%2C%20Paris%2030%20July%202016.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_Gr%C3%A9vin",
+            "latitude": 48.87183,
+            "longitude": 2.3421,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 342,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1362670",
+            "name": "place des Victoires",
+            "category": "place",
+            "description": "Édifiée en 1685, cette place du 1er arrondissement honore Louis XIV à travers son architecture classique. Classée au titre des monuments historiques, elle constitue un point de repère majeur du centre parisien, traversant les limites entre deux arrondissements.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20des%20Victoires%2C%20Paris%2026%20May%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_des_Victoires",
+            "latitude": 48.865833,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Notre-Dame des Victoires",
+                "distance_m": 329,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1854102",
+            "name": "palais Brongniart",
+            "category": "palais",
+            "description": "Édifice de style néoclassique achevé en 1825, le palais Brongniart a été conçu par Alexandre-Théodore Brongniart puis complété par son successeur Éloi Labarre. Construit sur ordre de Napoléon Ier pour accueillir la Bourse de Paris, ce monument historique inscrit demeure un témoignage architectural du début du XIXe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais%20Brongniart%20Facade.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais_Brongniart",
+            "latitude": 48.869169,
+            "longitude": 2.340828,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 33,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1436962",
+            "name": "église Saint-Roch de Paris",
+            "category": "église",
+            "description": "Édifiée à partir de 1653 par Jacques Le Mercier et Jules Hardouin-Mansart, cette église paroissiale du 1er arrondissement s'étend sur 126 mètres. Son architecture baroque et son classement au titre des monuments historiques en font un témoignage majeur du patrimoine parisien du XVIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint%20Roch%20-%20Paris%20I%20%28FR75%29%20-%202022-05-27%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Roch_de_Paris",
+            "latitude": 48.865327,
+            "longitude": 2.332608,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 707,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q549143",
+            "name": "Cabinet des médailles",
+            "category": "musée",
+            "description": "Fondé en 1560, ce département de la Bibliothèque nationale de France rassemble des collections exceptionnelles de numismatique et d'antiquités. Il conserve et valorise des pièces historiques offrant un aperçu unique du patrimoine monétaire et archéologique français.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabinet%20des%20Medailles%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/D%C3%A9partement_des_Monnaies,_m%C3%A9dailles_et_antiques_de_la_Biblioth%C3%A8que_nationale_de_France",
+            "latitude": 48.8678,
+            "longitude": 2.3384,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 202,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q782969",
+            "name": "basilique Notre-Dame-des-Victoires",
+            "category": "basilique",
+            "description": "Édifiée à partir de 1629 par l'architecte Pierre Le Muet, cette basilique mineure du 2e arrondissement a nécessité plus d'un siècle avant son achèvement en 1740. Classée au titre de monument historique, elle occupe la place des Petits-Pères et constitue l'unique témoin subsistant du couvent des Augustins déchaussés.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Notre%20Dame%20Victoires%20-%20Paris%20II%20%28FR75%29%20-%202021-06-16%20-%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_Notre-Dame-des-Victoires_de_Paris",
+            "latitude": 48.866667,
+            "longitude": 2.340833,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. Notre-Dame des Victoires",
+                "distance_m": 242,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1314020",
+            "name": "galerie Vivienne",
+            "category": "site notable",
+            "description": "Édifiée en 1823, la galerie Vivienne est un passage commercial couvert du 2e arrondissement, représentatif de l'architecture commerciale parisienne du XIXe siècle. Inscrite au titre de monument historique, cette galerie témoigne du patrimoine architectural des passages parisiens.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1040471%20Paris%20II%20galerie%20Vivienne%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Galerie_Vivienne",
+            "latitude": 48.866667,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "1",
+                "name": "Entrée / Sortie",
+                "distance_m": 259,
+                "walk_minutes": 3
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Entrée / Sortie",
+            "address_full": "23 Place de la Bourse 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.868927,
+            "longitude": 2.340568,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. Notre-Dame des Victoires",
+            "address_full": "33 Place de la Bourse 75002 Paris",
+            "postcode": "75002",
+            "city": "Paris",
+            "latitude": 48.868763,
+            "longitude": 2.341715,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
     },
-    "source": "mapillary_streetview",
-    "confidence_score": 22,
-    "confidence_level": "auto_generated",
-    "local_versions": {
-      "avif": {
-        "400": "/assets/img/stations/bourse/bourse-400.avif",
-        "800": "/assets/img/stations/bourse/bourse-800.avif",
-        "1200": "/assets/img/stations/bourse/bourse-1200.avif",
-        "1600": "/assets/img/stations/bourse/bourse-1600.avif"
-      },
-      "webp": {
-        "400": "/assets/img/stations/bourse/bourse-400.webp",
-        "800": "/assets/img/stations/bourse/bourse-800.webp",
-        "1200": "/assets/img/stations/bourse/bourse-1200.webp",
-        "1600": "/assets/img/stations/bourse/bourse-1600.webp"
-      },
-      "jpg": {
-        "400": "/assets/img/stations/bourse/bourse-400.jpg",
-        "800": "/assets/img/stations/bourse/bourse-800.jpg",
-        "1200": "/assets/img/stations/bourse/bourse-1200.jpg",
-        "1600": "/assets/img/stations/bourse/bourse-1600.jpg"
-      }
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
     },
-    "keep_hero": true
-  },
-  "accessibility": {
-    "audit_status": "pending",
-    "audit_date": null,
-    "level": "",
-    "stats": {
-      "elevators_count": 0,
-      "accessible_lines": 0,
-      "total_lines": 1
+    "hero_image": {
+        "url": "",
+        "alt": "Station Bourse (Métro 3) — visuel illustratif",
+        "width": 1200,
+        "height": 675,
+        "source": "design_placeholder",
+        "fallback": "design_placeholder",
+        "reason": "all_candidates_rejected_by_vision",
+        "keep_hero": true,
+        "credit": null
     },
-    "details": ""
-  },
-  "wikidata": {
-    "qid": "Q895259",
-    "wikidata_url": "https://www.wikidata.org/wiki/Q895259",
-    "wikipedia_url": "https://fr.wikipedia.org/wiki/Bourse_(m%C3%A9tro_de_Paris)",
-    "osm_relation_id": null
-  }
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q895259",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q895259",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Bourse_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
 }

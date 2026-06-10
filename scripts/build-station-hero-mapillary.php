@@ -38,8 +38,14 @@ const SIPS           = '/usr/bin/sips';
 const CWEBP          = '/opt/homebrew/bin/cwebp';
 const AVIFENC        = '/opt/homebrew/bin/avifenc';
 
-const TODAY          = '2026-06-08';
+const TODAY          = '2026-06-10';
 const USER_AGENT     = 'BougeaParisBot/1.0 (https://bougeaparis.fr; ludovic@eoliz.fr)';
+
+// v9 : Vision API constants (validation visuelle de candidates heros)
+const ANTHROPIC_URL   = 'https://api.anthropic.com/v1/messages';
+const VISION_MODEL    = 'claude-sonnet-4-6';
+const VISION_COST_USD = 0.012; // approx coût moyen / image (Sonnet 4.6 vision)
+const VISION_LOG      = '/tmp/vision-validations.log';
 
 // ------------------------------------------------------------------
 // Helpers
@@ -51,6 +57,118 @@ function parse_args(array $argv): array {
         if (preg_match('/^--([^=]+)=(.*)$/', $a, $m)) $args[$m[1]] = $m[2];
     }
     return $args;
+}
+
+/**
+ * v9 : Validation visuelle d'une candidate hero via Claude Vision API.
+ *
+ * Critère : la photo doit permettre d'identifier visuellement la station
+ * précise (extérieur OU intérieur avec nom visible OU décoration iconique).
+ *
+ * Rejets : escalier sans nom, couloir générique, photo floue, panneau macro,
+ * grille hors-sujet, personnes au premier plan dominantes.
+ *
+ * Retour : ['valid' => bool, 'subject' => string, 'identifies' => bool,
+ *          'reason' => string, 'cost_usd' => float].
+ *
+ * Coût ~$0.012/appel (Sonnet 4.6 + image 1600px).
+ */
+function validate_hero_with_vision(string $localPath, string $stationName, string $apiKey): array {
+    if (!is_file($localPath)) {
+        return ['valid' => false, 'subject' => 'unknown', 'identifies' => false,
+                'reason' => 'file_not_found', 'cost_usd' => 0.0];
+    }
+    $imgData = @file_get_contents($localPath);
+    if (!$imgData) {
+        return ['valid' => false, 'subject' => 'unknown', 'identifies' => false,
+                'reason' => 'fetch_failed', 'cost_usd' => 0.0];
+    }
+    // Detection media_type (JPEG/PNG via magic bytes)
+    $mediaType = 'image/jpeg';
+    if (strncmp($imgData, "\x89PNG", 4) === 0) $mediaType = 'image/png';
+    $base64 = base64_encode($imgData);
+
+    $prompt = "Tu valides une photo pour la fiche de la station de métro parisien '{$stationName}'.\n\n"
+        . "OBJECTIF : la photo doit permettre au lecteur d'identifier visuellement la station '{$stationName}' (et pas une autre).\n\n"
+        . "✅ ACCEPTABLES :\n"
+        . "1. Photo nette\n"
+        . "2. Vue extérieure (rue, place, façade, édicule) avec contexte urbain reconnaissable\n"
+        . "3. Édicule métro visible (Guimard, totem, escalier extérieur)\n"
+        . "4. Quartier/monument iconique identifiable (Mairie, église, parc, pont, etc.)\n"
+        . "5. INTÉRIEUR DE STATION SI le nom '{$stationName}' est VISIBLE sur les murs (carrelage métro, lettrage en faïence émaillée)\n"
+        . "6. INTÉRIEUR SI décoration architecturale unique reconnaissable (ex: Arts et Métiers cuivre Nautilus, fresques thématiques)\n\n"
+        . "❌ REJETÉES :\n"
+        . "1. Photo floue\n"
+        . "2. Escalier intérieur sans nom de station visible\n"
+        . "3. Couloir générique sans identification\n"
+        . "4. Quai/rame/wagon (pas identifiable)\n"
+        . "5. Panneau directionnel macro sans contexte\n"
+        . "6. Personnes au premier plan dominantes\n"
+        . "7. Grille/clôture sans intérêt\n"
+        . "8. Vue trop générique (pourrait être n'importe quelle rue/station)\n\n"
+        . "Réponds STRICTEMENT en JSON valide, sans préambule :\n"
+        . '{"valid": true|false, "subject": "Façade"|"Bouche métro"|"Édicule Guimard"|"Intérieur avec nom"|"Décoration iconique"|"Quartier identifiable"|"Escalier sans nom"|"Couloir générique"|"Quai/rame"|"Macro"|"Floue"|"Personnes"|"Grille"|"Générique"|"Autre", "identifies_station": true|false, "reason": "explication brève 1 phrase"}';
+
+    $payload = [
+        'model'      => VISION_MODEL,
+        'max_tokens' => 300,
+        'messages'   => [[
+            'role'    => 'user',
+            'content' => [
+                ['type' => 'image', 'source' => [
+                    'type' => 'base64', 'media_type' => $mediaType, 'data' => $base64,
+                ]],
+                ['type' => 'text', 'text' => $prompt],
+            ],
+        ]],
+    ];
+
+    $ch = curl_init(ANTHROPIC_URL);
+    curl_setopt_array($ch, [
+        CURLOPT_POST           => true,
+        CURLOPT_HTTPHEADER     => [
+            'x-api-key: ' . $apiKey,
+            'anthropic-version: 2023-06-01',
+            'content-type: application/json',
+        ],
+        CURLOPT_POSTFIELDS     => json_encode($payload),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT        => 45,
+    ]);
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpCode !== 200) {
+        return ['valid' => false, 'subject' => 'unknown', 'identifies' => false,
+                'reason' => "api_error_$httpCode", 'cost_usd' => 0.0];
+    }
+    $data = json_decode($response, true);
+    $text = $data['content'][0]['text'] ?? '{}';
+    // Parser le JSON même si entouré de ```json ... ```
+    if (preg_match('/\{[^{}]*\}/s', $text, $matches)) {
+        $parsed = json_decode($matches[0], true) ?: [];
+    } else {
+        $parsed = [];
+    }
+    return [
+        'valid'      => (bool)($parsed['valid'] ?? false),
+        'subject'    => $parsed['subject'] ?? 'unknown',
+        'identifies' => (bool)($parsed['identifies_station'] ?? false),
+        'reason'     => $parsed['reason'] ?? '',
+        'cost_usd'   => VISION_COST_USD,
+    ];
+}
+
+/** v9 : Log validation dans /tmp/vision-validations.log. */
+function vision_log(string $slug, string $candidateSrc, array $result): void {
+    $line = sprintf("[%s] %s | %s | valid=%s identifies=%s subject=%s | %s\n",
+        date('H:i:s'), $slug, basename($candidateSrc),
+        $result['valid'] ? 'YES' : 'NO',
+        $result['identifies'] ? 'YES' : 'NO',
+        $result['subject'], $result['reason']
+    );
+    @file_put_contents(VISION_LOG, $line, FILE_APPEND);
 }
 
 function fail(string $msg): void {
@@ -691,6 +809,17 @@ function process_station(string $slug, string $token): array {
             if (!central_crop_16_9($wkSrc, $cropped)) @copy($wkSrc, $cropped);
             @unlink($wkSrc);
             rename($cropped, $wkSrc);
+            // v9 : validation Claude Vision avant de retenir cette candidate
+            if (!empty($GLOBALS['BP_VISION'])) {
+                $stationName = $station['name_full'] ?? $station['name'];
+                $vRes = validate_hero_with_vision($wkSrc, $stationName, $GLOBALS['BP_VISION_KEY']);
+                vision_log($slug, $wkStation['filename'], $vRes);
+                if (!$vRes['valid'] || !$vRes['identifies']) {
+                    @unlink($wkSrc);
+                    $wkStation = null; // signale rejet → tombe vers Mapillary
+                    goto try_mapillary;
+                }
+            }
             $n = generate_variants($wkSrc, $slug, $outDir);
             $stationName = $station['name_full'] ?? $station['name'];
             $subject = wikimedia_subject_from_filename($wkStation['filename']);
@@ -738,6 +867,7 @@ function process_station(string $slug, string $token): array {
         }
     }
 
+    try_mapillary:
     // 2. Tentative Mapillary avec rayon adaptatif (50 -> 100 -> 200m)
     $adaptive = find_mapillary_adaptive($token, $lat, $lon);
     $best = $adaptive['best'];
@@ -772,6 +902,17 @@ function process_station(string $slug, string $token): array {
                 // Pour stockage source web : on garde la version croppee comme mapillary.jpg
                 @unlink($mapillarySrc);
                 rename($cropped, $mapillarySrc);
+                // v9 : validation Claude Vision avant de retenir
+                if (!empty($GLOBALS['BP_VISION'])) {
+                    $stationName = $station['name_full'] ?? $station['name'];
+                    $vRes = validate_hero_with_vision($mapillarySrc, $stationName, $GLOBALS['BP_VISION_KEY']);
+                    vision_log($slug, 'mapillary_' . ($best['id'] ?? 'unknown'), $vRes);
+                    if (!$vRes['valid'] || !$vRes['identifies']) {
+                        @unlink($mapillarySrc);
+                        $best = null; // tombe vers fallback POI puis placeholder
+                        goto vision_fallback;
+                    }
+                }
                 $n = generate_variants($mapillarySrc, $slug, $outDir);
                 set_hero_mapillary($station, $slug, $best);
                 save_station($slug, $station);
@@ -795,6 +936,7 @@ function process_station(string $slug, string $token): array {
         // Si crop/download fail : on tombe en fallback
     }
 
+    vision_fallback:
     // 2. Fallback Wikimedia (via nearby_pois)
     $reason = $total === 0
         ? 'mapillary_zero_results_all_radii'
@@ -802,6 +944,27 @@ function process_station(string $slug, string $token): array {
 
     $wkFallback = find_wikimedia_fallback($station);
     if ($wkFallback === null) {
+        // v9 : si --vision actif, bascule en design_placeholder
+        if (!empty($GLOBALS['BP_VISION'])) {
+            $station['hero_image'] = [
+                'url'      => '',
+                'alt'      => sprintf("Station %s — visuel illustratif", $station['name_full'] ?? $station['name']),
+                'width'    => 1200,
+                'height'   => 675,
+                'source'   => 'design_placeholder',
+                'fallback' => 'design_placeholder',
+                'reason'   => 'no_candidate_passed_vision',
+                'keep_hero' => true,
+                'credit'   => null,
+            ];
+            save_station($slug, $station);
+            return [
+                'slug'   => $slug,
+                'source' => 'design_placeholder',
+                'reason' => 'no_candidate_passed_vision',
+                'variants' => 0,
+            ];
+        }
         return [
             'slug'            => $slug,
             'source'          => 'no_fallback_available',
@@ -830,6 +993,34 @@ function process_station(string $slug, string $token): array {
     }
     @unlink($wkSrc);
     rename($cropped, $wkSrc);
+    // v9 : validation Claude Vision sur POI fallback
+    if (!empty($GLOBALS['BP_VISION'])) {
+        $stationName = $station['name_full'] ?? $station['name'];
+        $vRes = validate_hero_with_vision($wkSrc, $stationName, $GLOBALS['BP_VISION_KEY']);
+        vision_log($slug, 'poi_' . ($poi['name'] ?? 'unknown'), $vRes);
+        if (!$vRes['valid'] || !$vRes['identifies']) {
+            @unlink($wkSrc);
+            // Bascule en design_placeholder
+            $station['hero_image'] = [
+                'url'      => '',
+                'alt'      => sprintf("Station %s — visuel illustratif", $station['name_full'] ?? $station['name']),
+                'width'    => 1200,
+                'height'   => 675,
+                'source'   => 'design_placeholder',
+                'fallback' => 'design_placeholder',
+                'reason'   => 'all_candidates_rejected_by_vision',
+                'keep_hero' => true,
+                'credit'   => null,
+            ];
+            save_station($slug, $station);
+            return [
+                'slug'   => $slug,
+                'source' => 'design_placeholder',
+                'reason' => 'all_candidates_rejected_by_vision',
+                'variants' => 0,
+            ];
+        }
+    }
     // Read final dimensions after crop
     $finalInfo = shell_exec(escapeshellcmd(SIPS) . ' -g pixelWidth -g pixelHeight ' . escapeshellarg($wkSrc));
     preg_match('/pixelWidth:\s*(\d+).*pixelHeight:\s*(\d+)/s', (string)$finalInfo, $m2);
@@ -874,6 +1065,14 @@ $GLOBALS['BP_DRY_RUN'] = isset($args['dry-run']) || in_array('--dry-run', $argv,
 // rue garantie). Utile quand Wikimedia retourne des photos d'escalier intérieur
 // que le scoring v7 ne distingue pas du nom "Accès Station X" (vue plongeante).
 $GLOBALS['BP_SKIP_WIKIMEDIA'] = isset($args['skip-wikimedia']) || in_array('--skip-wikimedia', $argv, true);
+// v9 : --vision active la validation Claude Vision sur chaque candidate.
+// Si une candidate Wikimedia ou Mapillary échoue la validation, on essaie
+// la suivante. Si toutes échouent, design_placeholder coloré ligne métro.
+$GLOBALS['BP_VISION'] = isset($args['vision']) || in_array('--vision', $argv, true);
+if ($GLOBALS['BP_VISION']) {
+    $GLOBALS['BP_VISION_KEY'] = (function_exists('load_secrets') ? load_secrets() : require SECRETS_PHP)['ANTHROPIC_API_KEY'] ?? null;
+    if (!$GLOBALS['BP_VISION_KEY']) fail('--vision requiert ANTHROPIC_API_KEY dans secrets.php');
+}
 
 $secrets = load_secrets();
 $token = $secrets['MAPILLARY_API_KEY'] ?? null;

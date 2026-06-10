@@ -306,7 +306,31 @@ $tpl->partial('components/breadcrumb', [
   <section class="station-hero <?= $hasImage ? 'station-hero--with-image' : 'station-hero--placeholder' ?>"
            aria-labelledby="station-hero-title">
 
-    <?php if ($hasImage): ?>
+    <?php
+    // v9 : design_placeholder = couleur de la première ligne métro (rejet Vision)
+    $rawHero = $station['hero_image'] ?? [];
+    $isDesignPlaceholder = ($rawHero['source'] ?? '') === 'design_placeholder';
+    $placeholderColor = $isDesignPlaceholder && !empty($lines[0]['color']) ? $lines[0]['color'] : null;
+    ?>
+    <?php if ($isDesignPlaceholder): ?>
+      <div class="station-hero__placeholder station-hero__placeholder--vision"
+           style="background: <?= Template::e($placeholderColor ?? '#0F6E56') ?>;"
+           role="img"
+           aria-label="<?= Template::e($rawHero['alt'] ?? $name) ?>">
+        <div class="station-hero__placeholder-inner">
+          <div class="station-hero__placeholder-icon" aria-hidden="true">🚇</div>
+          <div class="station-hero__placeholder-name"><?= Template::e($name) ?></div>
+          <div class="station-hero__placeholder-lines">
+            <?php foreach ($lines as $ln): ?>
+              <span class="station-hero__placeholder-line"
+                    style="color: <?= Template::e($ln['color'] ?? '#000') ?>;">
+                <?= Template::e(($ln['mode'] ?? 'M') . ($ln['code'] ?? '')) ?>
+              </span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+    <?php elseif ($hasImage): ?>
       <div class="station-hero__image">
         <?php
         $altText = $heroImage['alt'] ?? $name;

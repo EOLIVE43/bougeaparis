@@ -1,527 +1,501 @@
 {
-  "published": true,
-  "slug": "jules-joffrin",
-  "name": "Jules Joffrin",
-  "name_full": "Jules Joffrin (Métro 12)",
-  "arrondissement": "18e arrondissement (Paris)",
-  "address": "Place Jules-Joffrin, 75018 Paris",
-  "latitude": 48.89259762416229,
-  "longitude": 2.3446733099971144,
-  "tariff_zone": 1,
-  "tariff_zone_context": "Paris intra-muros",
-  "commune": "Paris",
-  "is_major_hub": false,
-  "i18n": {
-    "en": "",
-    "es": ""
-  },
-  "lines": [
-    {
-      "type": "metro",
-      "code": "12",
-      "slug": "metro-12",
-      "color": "#007852",
-      "text_color": "#FFFFFF"
-    }
-  ],
-  "bus_correspondences": {
-    "diurne": [
-      "40",
-      "56",
-      "60",
-      "80"
+    "published": true,
+    "slug": "jules-joffrin",
+    "name": "Jules Joffrin",
+    "name_full": "Jules Joffrin (Métro 12)",
+    "arrondissement": "18e arrondissement (Paris)",
+    "address": "Place Jules-Joffrin, 75018 Paris",
+    "latitude": 48.89259762416229,
+    "longitude": 2.3446733099971144,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
     ],
-    "nocturne": [
-      "N14",
-      "N44"
+    "bus_correspondences": {
+        "diurne": [
+            "40",
+            "56",
+            "60",
+            "80"
+        ],
+        "nocturne": [
+            "N14",
+            "N44"
+        ],
+        "regional": [
+            "31",
+            "85"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 7,
+            "nearby_count": 15
+        }
+    },
+    "seo": {
+        "description": "Station Jules Joffrin (M12) place Jules-Joffrin dans le 18e. Mairie du 18e arrondissement. Quartier Montmartre nord (Clignancourt)."
+    },
+    "hero": {
+        "tagline": "M12 — mairie du 18e, Montmartre nord",
+        "description": "Station <strong>Jules Joffrin</strong> sur la <strong>place Jules-Joffrin</strong> dans le <strong>18e arrondissement</strong>. Desservie par la <strong>M12</strong>, ouverte le <strong>31 octobre 1912</strong>. À la sortie : la <strong>mairie du 18e arrondissement</strong>. Quartier <strong>Montmartre nord</strong> (Clignancourt)."
+    },
+    "adjacent_stations": {
+        "metro-12": {
+            "previous": {
+                "name": "Marcadet - Poissonniers / Eugène Sue",
+                "slug": "marcadet-poissonniers-eugene-sue",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Lamarck - Caulaincourt",
+                "slug": "lamarck-caulaincourt",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Jules Joffrin</strong> est implantée sur la <strong>place Jules-Joffrin</strong> dans le <strong>18e arrondissement</strong>, en face de la <strong>mairie du 18e</strong>. Elle est desservie par la <strong>ligne 12 du métro</strong>, entre <strong>Marcadet - Poissonniers</strong> (1 station) et <strong>Lamarck - Caulaincourt</strong> (1 station). Bus 31, 60, 80, 85.",
+        "Ouverte le <strong>31 octobre 1912</strong> avec le prolongement de la <strong>ligne A du Nord-Sud</strong> de Pigalle à Jules Joffrin.",
+        "Le nom <strong>Jules Joffrin</strong> rend hommage à <strong>Jules Joffrin</strong> (<strong>1846-1890</strong>), <strong>élu socialiste</strong>, <strong>conseiller municipal et député du 18e arrondissement</strong>. La <strong>mairie du 18e arrondissement</strong> est à la sortie de la station."
     ],
-    "regional": [
-      "31",
-      "85"
+    "history": {
+        "title": "1912 : Nord-Sud et mairie du 18e",
+        "paragraphs": [
+            "La station Jules Joffrin est <strong>inaugurée le 31 octobre 1912</strong> avec le prolongement de la <strong>ligne A du Nord-Sud</strong> (compagnie privée) de <strong>Pigalle à Jules Joffrin</strong>. Intégrée au réseau métropolitain en 1930.",
+            "Le nom <strong>Jules Joffrin</strong> rend hommage à <strong>Jules François Alexandre Joffrin</strong> (<strong>1846-1890</strong>), <strong>élu socialiste français</strong>. Ouvrier mécanicien, militant <strong>boulangiste</strong> puis socialiste indépendant. <strong>Conseiller municipal de Paris</strong> et <strong>député du 18e arrondissement</strong>.",
+            "La <strong>mairie du 18e arrondissement</strong>, à la sortie de la station, est un édifice de <strong>style néo-Renaissance</strong> construit de <strong>1888 à 1892</strong>. Ses architectes sont <strong>Auguste Joseph Magne</strong> et <strong>Charles Auburtin</strong>. La <strong>basilique du Sacré-Cœur</strong> est à 15 min à pied."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Jules Joffrin ?",
+            "answer": "Uniquement la <strong>M12</strong>. Bus 31, 60, 80, 85."
+        },
+        {
+            "question": "Qui est Jules Joffrin ?",
+            "answer": "<strong>Jules Joffrin</strong> (1846-1890), <strong>élu socialiste français</strong>. <strong>Conseiller municipal de Paris</strong> et <strong>député du 18e arrondissement</strong>."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>31 octobre 1912</strong>."
+        },
+        {
+            "question": "Pour la mairie du 18e ?",
+            "answer": "<strong>Sortie directe</strong>. Édifice néo-Renaissance (1888-1892)."
+        },
+        {
+            "question": "Pour le Sacré-Cœur ?",
+            "answer": "<strong>~15 min à pied</strong> via la rue Custine."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
     ],
-    "_audit": {
-      "source": "gtfs-idfm",
-      "buffer_radius_m": 300,
-      "audit_date": "2026-06-10",
-      "same_node_count": 7,
-      "nearby_count": 15
-    }
-  },
-  "seo": {
-    "description": "Station Jules Joffrin (M12) place Jules-Joffrin dans le 18e. Mairie du 18e arrondissement. Quartier Montmartre nord (Clignancourt)."
-  },
-  "hero": {
-    "tagline": "M12 — mairie du 18e, Montmartre nord",
-    "description": "Station <strong>Jules Joffrin</strong> sur la <strong>place Jules-Joffrin</strong> dans le <strong>18e arrondissement</strong>. Desservie par la <strong>M12</strong>, ouverte le <strong>31 octobre 1912</strong>. À la sortie : la <strong>mairie du 18e arrondissement</strong>. Quartier <strong>Montmartre nord</strong> (Clignancourt)."
-  },
-  "adjacent_stations": {
-    "metro-12": {
-      "previous": {
-        "name": "Marcadet - Poissonniers / Eugène Sue",
-        "slug": "marcadet-poissonniers-eugene-sue",
-        "direction": "Mairie d'Aubervilliers"
-      },
-      "next": {
-        "name": "Lamarck - Caulaincourt",
-        "slug": "lamarck-caulaincourt",
-        "direction": "Mairie d'Issy"
-      }
-    }
-  },
-  "intro_paragraphs": [
-    "La station <strong>Jules Joffrin</strong> est implantée sur la <strong>place Jules-Joffrin</strong> dans le <strong>18e arrondissement</strong>, en face de la <strong>mairie du 18e</strong>. Elle est desservie par la <strong>ligne 12 du métro</strong>, entre <strong>Marcadet - Poissonniers</strong> (1 station) et <strong>Lamarck - Caulaincourt</strong> (1 station). Bus 31, 60, 80, 85.",
-    "Ouverte le <strong>31 octobre 1912</strong> avec le prolongement de la <strong>ligne A du Nord-Sud</strong> de Pigalle à Jules Joffrin.",
-    "Le nom <strong>Jules Joffrin</strong> rend hommage à <strong>Jules Joffrin</strong> (<strong>1846-1890</strong>), <strong>élu socialiste</strong>, <strong>conseiller municipal et député du 18e arrondissement</strong>. La <strong>mairie du 18e arrondissement</strong> est à la sortie de la station."
-  ],
-  "history": {
-    "title": "1912 : Nord-Sud et mairie du 18e",
-    "paragraphs": [
-      "La station Jules Joffrin est <strong>inaugurée le 31 octobre 1912</strong> avec le prolongement de la <strong>ligne A du Nord-Sud</strong> (compagnie privée) de <strong>Pigalle à Jules Joffrin</strong>. Intégrée au réseau métropolitain en 1930.",
-      "Le nom <strong>Jules Joffrin</strong> rend hommage à <strong>Jules François Alexandre Joffrin</strong> (<strong>1846-1890</strong>), <strong>élu socialiste français</strong>. Ouvrier mécanicien, militant <strong>boulangiste</strong> puis socialiste indépendant. <strong>Conseiller municipal de Paris</strong> et <strong>député du 18e arrondissement</strong>.",
-      "La <strong>mairie du 18e arrondissement</strong>, à la sortie de la station, est un édifice de <strong>style néo-Renaissance</strong> construit de <strong>1888 à 1892</strong>. Ses architectes sont <strong>Auguste Joseph Magne</strong> et <strong>Charles Auburtin</strong>. La <strong>basilique du Sacré-Cœur</strong> est à 15 min à pied."
-    ]
-  },
-  "faq": [
-    {
-      "question": "Quelle ligne dessert Jules Joffrin ?",
-      "answer": "Uniquement la <strong>M12</strong>. Bus 31, 60, 80, 85."
-    },
-    {
-      "question": "Qui est Jules Joffrin ?",
-      "answer": "<strong>Jules Joffrin</strong> (1846-1890), <strong>élu socialiste français</strong>. <strong>Conseiller municipal de Paris</strong> et <strong>député du 18e arrondissement</strong>."
-    },
-    {
-      "question": "Quand a-t-elle ouvert ?",
-      "answer": "Le <strong>31 octobre 1912</strong>."
-    },
-    {
-      "question": "Pour la mairie du 18e ?",
-      "answer": "<strong>Sortie directe</strong>. Édifice néo-Renaissance (1888-1892)."
-    },
-    {
-      "question": "Pour le Sacré-Cœur ?",
-      "answer": "<strong>~15 min à pied</strong> via la rue Custine."
-    },
-    {
-      "question": "La station est-elle accessible PMR ?",
-      "answer": "<strong>Non</strong>. Pas d'ascenseur."
-    }
-  ],
-  "practical_tips": [
-    "<strong>Mairie du 18e arrondissement</strong> à la sortie : édifice néo-Renaissance.",
-    "<strong>Sacré-Cœur de Montmartre</strong> à 15 min à pied.",
-    "Pour <strong>Marché Saint-Pierre</strong> (tissus, à Anvers M2) : <strong>~12 min à pied</strong>.",
-    "Pour <strong>Saint-Lazare</strong> : <strong>M12 directe</strong> (~8 min).",
-    "Zone tarifaire <strong>1</strong>, Paris intra-muros."
-  ],
-  "trivia": [
-    {
-      "icon": "🏛️",
-      "title": "Mairie du 18e arrondissement",
-      "content": "La <strong>mairie du 18e arrondissement</strong>, à la sortie de la station, est un <strong>édifice de style néo-Renaissance</strong> construit de <strong>1888 à 1892</strong>. Architectes : <strong>Auguste Joseph Magne</strong> et <strong>Charles Auburtin</strong>. La mairie administre le <strong>plus grand arrondissement de Paris</strong> en termes de population (~200 000 habitants). Le <strong>18e</strong> comprend <strong>Montmartre</strong>, la <strong>Goutte d'Or</strong>, <strong>Clignancourt</strong>, <strong>Lariboisière</strong>."
-    },
-    {
-      "icon": "⛪",
-      "title": "Sacré-Cœur de Montmartre",
-      "content": "La <strong>basilique du Sacré-Cœur de Montmartre</strong>, à 15 min à pied de la station, est l'une des <strong>plus visitées de Paris</strong>. Construite de <strong>1875 à 1914</strong>, consacrée en <strong>1919</strong>. Style <strong>romano-byzantin</strong>, œuvre de <strong>Paul Abadie</strong>. <strong>83 m de haut</strong>. Située au sommet de la <strong>butte Montmartre</strong> (130 m), elle offre un <strong>panorama exceptionnel</strong> sur Paris."
-    }
-  ],
-  "popular_itineraries": [
-    {
-      "destination_name": "Mairie du 18e",
-      "destination_slug": "jules-joffrin",
-      "destination_full_name": "Jules Joffrin → Mairie du 18e",
-      "lines_used": [
-        "à pied"
-      ],
-      "lines_label": "Sortie directe",
-      "duration_minutes": 1,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-jules-joffrin/"
-    },
-    {
-      "destination_name": "Sacré-Cœur",
-      "destination_slug": "abbesses",
-      "destination_full_name": "Jules Joffrin → Sacré-Cœur",
-      "lines_used": [
-        "M12 + à pied"
-      ],
-      "lines_label": "M12 → Abbesses + funiculaire ou à pied",
-      "duration_minutes": 15,
-      "changes_count": 1,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-abbesses/"
-    },
-    {
-      "destination_name": "Marcadet - Poissonniers",
-      "destination_slug": "marcadet-poissonniers",
-      "destination_full_name": "Jules Joffrin → Marcadet - Poissonniers",
-      "lines_used": [
-        "M12"
-      ],
-      "lines_label": "M12 directe (1 station)",
-      "duration_minutes": 2,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-marcadet-poissonniers/"
-    },
-    {
-      "destination_name": "Lamarck - Caulaincourt",
-      "destination_slug": "lamarck-caulaincourt",
-      "destination_full_name": "Jules Joffrin → Lamarck - Caulaincourt",
-      "lines_used": [
-        "M12"
-      ],
-      "lines_label": "M12 directe (1 station)",
-      "duration_minutes": 2,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-lamarck-caulaincourt/"
-    },
-    {
-      "destination_name": "Saint-Lazare",
-      "destination_slug": "saint-lazare",
-      "destination_full_name": "Jules Joffrin → Saint-Lazare",
-      "lines_used": [
-        "M12"
-      ],
-      "lines_label": "M12 directe (~8 min)",
-      "duration_minutes": 8,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-saint-lazare/"
-    },
-    {
-      "destination_name": "Concorde",
-      "destination_slug": "concorde",
-      "destination_full_name": "Jules Joffrin → Concorde",
-      "lines_used": [
-        "M12"
-      ],
-      "lines_label": "M12 directe (~12 min)",
-      "duration_minutes": 12,
-      "changes_count": 0,
-      "search_volume_estimate": "high",
-      "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-concorde/"
-    }
-  ],
-  "nearby_pois": [
-    {
-      "wikidata_id": "Q186115",
-      "name": "Montmartre",
-      "category": "site notable",
-      "description": "Dominant le 18e arrondissement depuis sa colline, Montmartre rayonne autour de la basilique du Sacré-Cœur. Ce quartier historique a attiré depuis le XIXe siècle des figures majeures comme Picasso et Modigliani, incarnant un refuge créatif et une autonomie singulière au cœur de Paris.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
-      "latitude": 48.886944,
-      "longitude": 2.341111,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 651,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q28785",
-      "name": "basilique du Sacré-Cœur de Montmartre",
-      "category": "basilique",
-      "description": "Édifiée à partir de 1875 par l'architecte Paul Abadie, cette basilique s'élève à 83 mètres au sommet de la butte Montmartre. Monument historique classé, elle fonctionne comme sanctuaire d'adoration eucharistique et accueille chaque année des millions de visiteurs venus contempler sa silhouette distinctive depuis le 18e arrondissement.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
-      "latitude": 48.88665,
-      "longitude": 2.34295,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 653,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q2300245",
-      "name": "église Saint-Pierre de Montmartre",
-      "category": "église",
-      "description": "Fondée en 1101, cette église paroissiale catholique romaine figure parmi les monuments historiques classés du 18e arrondissement. Implantée au sommet de la butte Montmartre, elle conserve une architecture médiévale à quelques pas de la basilique du Sacré-Cœur.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
-      "latitude": 48.886667,
-      "longitude": 2.341944,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 664,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q1423353",
-      "name": "Au Lapin agile",
-      "category": "site notable",
-      "description": "Fondé en 1880, ce cabaret historique occupe les pentes de Montmartre depuis plus d'un siècle. Établi rue des Saules dans le 18e arrondissement, il incarne une facette majeure de la vie culturelle parisienne d'époque et demeure un lieu emblématique de la bohème montmartroise.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Gill%20-%20Au%20Lapin%20Agile.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Au_Lapin_agile",
-      "latitude": 48.8886,
-      "longitude": 2.33998,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 521,
-        "walk_minutes": 7
-      }
-    },
-    {
-      "wikidata_id": "Q973216",
-      "name": "Dalí Paris",
-      "category": "musée",
-      "description": "Inauguré en 1991, ce musée montmartrois expose plus de 300 créations du maître catalan, mêlant sculptures et gravures issues de la collection Dali Universe. Entièrement rénové en 2018, il offre un panorama représentatif du travail de Salvador Dalí.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dali%20Paris%20entr%C3%A9e%20.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Dal%C3%AD_Paris",
-      "latitude": 48.886528,
-      "longitude": 2.339722,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 732,
-        "walk_minutes": 9
-      }
-    },
-    {
-      "wikidata_id": "Q2919066",
-      "name": "musée de Montmartre",
-      "category": "musée",
-      "description": "Depuis 1960, ce musée du 18e arrondissement documente l'histoire artistique de Montmartre à travers ses collections permanentes. Installé dans d'anciens ateliers et demeures historiques, il accueille régulièrement des expositions temporaires consacrées aux figures marquantes du quartier.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20Montmartre%20-%20maison%20du%20Bel%20Air.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Montmartre",
-      "latitude": 48.8877,
-      "longitude": 2.3406,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 586,
-        "walk_minutes": 7
-      }
-    },
-    {
-      "wikidata_id": "Q1285196",
-      "name": "église Saint-Sava",
-      "category": "église",
-      "description": "Édifiée en 1906, cette église orthodoxe serbe du 18e arrondissement accueille le siège épiscopal de l'éparchie d'Europe occidentale. Au-delà de sa fonction religieuse, elle revêt aussi le statut de cathédrale au sein de la tradition chrétienne orientale.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Saint%20Sava%2C%20Paris.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Paris",
-      "latitude": 48.8937,
-      "longitude": 2.35,
-      "nearest_exit": {
-        "number": "1",
-        "name": "pl. Jules Joffrin",
-        "distance_m": 416,
-        "walk_minutes": 5
-      }
-    },
-    {
-      "wikidata_id": "Q3389781",
-      "name": "place Dalida",
-      "category": "place",
-      "description": "Située dans le cœur de Montmartre, cette place du 18e arrondissement s'inscrit dans le paysage urbain du quartier historique. Espace public dédié à la mémoire culturelle, elle reflète l'identité artistique qui caractérise ce secteur de Paris.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Dalida%2C%20Paris%2012%20September%202006.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Dalida",
-      "latitude": 48.888531,
-      "longitude": 2.338065,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 616,
-        "walk_minutes": 8
-      }
-    },
-    {
-      "wikidata_id": "Q3491901",
-      "name": "église Notre-Dame de Clignancourt",
-      "category": "église",
-      "description": "Édifiée en 1863 dans le 18e arrondissement, cette église relève de l'architecture catholique parisienne du Second Empire. Le sanctuaire de Clignancourt constitue un témoin du développement urbain du quartier durant cette période.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NotreDameDeClignancourtExt%C3%A9rieur.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Clignancourt",
-      "latitude": 48.893056,
-      "longitude": 2.345,
-      "nearest_exit": {
-        "number": "1",
-        "name": "pl. Jules Joffrin",
-        "distance_m": 65,
-        "walk_minutes": 1
-      }
-    },
-    {
-      "wikidata_id": "Q14397431",
-      "name": "abbaye de Montmartre",
-      "category": "site notable",
-      "description": "Fondée par Louis VI au XIIe siècle, cette abbaye royale de moniales bénédictines s'établit sur les vestiges d'un prieuré clunisien. Institution religieuse majeure de Montmartre, elle incarna pendant des siècles la présence monastique dans ce quartier historique de Paris.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye.de.Montmartre.1625.Gallica.Etienne.Martellange.jpeg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Montmartre",
-      "latitude": 48.888,
-      "longitude": 2.34,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 577,
-        "walk_minutes": 7
-      }
-    },
-    {
-      "wikidata_id": "Q1589139",
-      "name": "synagogue Montmartre",
-      "category": "synagogue",
-      "description": "Édifiée en 1939 par l'architecte Germain Debré, cette synagogue du 18e arrondissement témoigne de l'architecture religieuse parisienne du XXe siècle. Implantée rue Sainte-Isaure, elle constitue un lieu de culte majeur du quartier de Montmartre.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rue%20Sainte%20Isaure%2C%20Synagogue%20Montmartre%2C%20Paris%202015.jpg?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_la_rue_Sainte-Isaure",
-      "latitude": 48.893649,
-      "longitude": 2.344004,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 129,
-        "walk_minutes": 2
-      }
-    },
-    {
-      "wikidata_id": "Q3390093",
-      "name": "square Suzanne-Buisson",
-      "category": "site notable",
-      "description": "Installé dans le 18e arrondissement, ce jardin public offre une pause verdoyante aux habitants du quartier. L'espace invite à la détente et à la promenade en cœur urbain.",
-      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1060375%20Paris%20XVIII%20square%20Suzanne-Buisson%20rwk.JPG?width=400",
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Suzanne-Buisson",
-      "latitude": 48.888056,
-      "longitude": 2.336944,
-      "nearest_exit": {
-        "number": "2",
-        "name": "Mairie",
-        "distance_m": 711,
-        "walk_minutes": 9
-      }
-    }
-  ],
-  "exits": [
-    {
-      "number": "1",
-      "name": "pl. Jules Joffrin",
-      "address_full": "5 Place Jules Joffrin 75018 Paris",
-      "postcode": "75018",
-      "city": "Paris",
-      "latitude": 48.892539,
-      "longitude": 2.344592,
-      "accessible": null
-    },
-    {
-      "number": "2",
-      "name": "Mairie",
-      "address_full": "115 Rue Ordener 75018 Paris",
-      "postcode": "75018",
-      "city": "Paris",
-      "latitude": 48.89249,
-      "longitude": 2.343952,
-      "accessible": null
-    }
-  ],
-  "services": {
-    "wifi": {
-      "available": false,
-      "location_detail": "",
-      "coverage_detail": ""
-    },
-    "toilets": {
-      "public_paid": {
-        "available": false
-      },
-      "public_free": {
-        "available": false,
-        "location": "",
-        "access": ""
-      }
-    },
-    "atm": {
-      "available": false,
-      "banks_count_estimate": "",
-      "locations": []
-    },
-    "ratp_office": {
-      "available": false,
-      "location": "",
-      "services": ""
-    },
-    "left_luggage": {
-      "ratp_available": false,
-      "third_party": []
-    },
-    "shopping_dining": {
-      "main_location": "",
-      "details": "",
-      "secondary": ""
-    }
-  },
-  "safety": {
-    "audit_status": "pending",
-    "audit_date": null,
-    "level": "",
-    "agents": null,
-    "police": null,
-    "tips": [
-      "Station métro Paris — vigilance pickpockets standard.",
-      "Affluence variable selon heures de pointe."
+    "practical_tips": [
+        "<strong>Mairie du 18e arrondissement</strong> à la sortie : édifice néo-Renaissance.",
+        "<strong>Sacré-Cœur de Montmartre</strong> à 15 min à pied.",
+        "Pour <strong>Marché Saint-Pierre</strong> (tissus, à Anvers M2) : <strong>~12 min à pied</strong>.",
+        "Pour <strong>Saint-Lazare</strong> : <strong>M12 directe</strong> (~8 min).",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
     ],
-    "notes": "Audit RATP/IDFM spécifique non disponible."
-  },
-  "hero_image": {
-    "url": "https://bougeaparis.fr/assets/img/stations/jules-joffrin/source/mapillary.jpg",
-    "alt": "Vue street-level Mapillary à 7 m de la station Jules Joffrin (Métro 12) — perspective rue captée le 2021-01-07 par nlehuby (compass 131°)",
-    "width": 1200,
-    "height": 675,
-    "credit": {
-      "author": "nlehuby (Mapillary)",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "source_url": "https://www.mapillary.com/app/?focus=photo&pKey=930873017754390",
-      "date": "2026-06-08"
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Mairie du 18e arrondissement",
+            "content": "La <strong>mairie du 18e arrondissement</strong>, à la sortie de la station, est un <strong>édifice de style néo-Renaissance</strong> construit de <strong>1888 à 1892</strong>. Architectes : <strong>Auguste Joseph Magne</strong> et <strong>Charles Auburtin</strong>. La mairie administre le <strong>plus grand arrondissement de Paris</strong> en termes de population (~200 000 habitants). Le <strong>18e</strong> comprend <strong>Montmartre</strong>, la <strong>Goutte d'Or</strong>, <strong>Clignancourt</strong>, <strong>Lariboisière</strong>."
+        },
+        {
+            "icon": "⛪",
+            "title": "Sacré-Cœur de Montmartre",
+            "content": "La <strong>basilique du Sacré-Cœur de Montmartre</strong>, à 15 min à pied de la station, est l'une des <strong>plus visitées de Paris</strong>. Construite de <strong>1875 à 1914</strong>, consacrée en <strong>1919</strong>. Style <strong>romano-byzantin</strong>, œuvre de <strong>Paul Abadie</strong>. <strong>83 m de haut</strong>. Située au sommet de la <strong>butte Montmartre</strong> (130 m), elle offre un <strong>panorama exceptionnel</strong> sur Paris."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Mairie du 18e",
+            "destination_slug": "jules-joffrin",
+            "destination_full_name": "Jules Joffrin → Mairie du 18e",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Sortie directe",
+            "duration_minutes": 1,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-jules-joffrin/"
+        },
+        {
+            "destination_name": "Sacré-Cœur",
+            "destination_slug": "abbesses",
+            "destination_full_name": "Jules Joffrin → Sacré-Cœur",
+            "lines_used": [
+                "M12 + à pied"
+            ],
+            "lines_label": "M12 → Abbesses + funiculaire ou à pied",
+            "duration_minutes": 15,
+            "changes_count": 1,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-abbesses/"
+        },
+        {
+            "destination_name": "Marcadet - Poissonniers",
+            "destination_slug": "marcadet-poissonniers",
+            "destination_full_name": "Jules Joffrin → Marcadet - Poissonniers",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-marcadet-poissonniers/"
+        },
+        {
+            "destination_name": "Lamarck - Caulaincourt",
+            "destination_slug": "lamarck-caulaincourt",
+            "destination_full_name": "Jules Joffrin → Lamarck - Caulaincourt",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-lamarck-caulaincourt/"
+        },
+        {
+            "destination_name": "Saint-Lazare",
+            "destination_slug": "saint-lazare",
+            "destination_full_name": "Jules Joffrin → Saint-Lazare",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (~8 min)",
+            "duration_minutes": 8,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-saint-lazare/"
+        },
+        {
+            "destination_name": "Concorde",
+            "destination_slug": "concorde",
+            "destination_full_name": "Jules Joffrin → Concorde",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (~12 min)",
+            "duration_minutes": 12,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-jules-joffrin/jules-joffrin-vers-concorde/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q186115",
+            "name": "Montmartre",
+            "category": "site notable",
+            "description": "Dominant le 18e arrondissement depuis sa colline, Montmartre rayonne autour de la basilique du Sacré-Cœur. Ce quartier historique a attiré depuis le XIXe siècle des figures majeures comme Picasso et Modigliani, incarnant un refuge créatif et une autonomie singulière au cœur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Notre-Dame%20de%20Paris%2C%2024%20June%202014%20004.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Montmartre",
+            "latitude": 48.886944,
+            "longitude": 2.341111,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 651,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q28785",
+            "name": "basilique du Sacré-Cœur de Montmartre",
+            "category": "basilique",
+            "description": "Édifiée à partir de 1875 par l'architecte Paul Abadie, cette basilique s'élève à 83 mètres au sommet de la butte Montmartre. Monument historique classé, elle fonctionne comme sanctuaire d'adoration eucharistique et accueille chaque année des millions de visiteurs venus contempler sa silhouette distinctive depuis le 18e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20sacre%20coeur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Basilique_du_Sacr%C3%A9-C%C5%93ur_de_Montmartre",
+            "latitude": 48.88665,
+            "longitude": 2.34295,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 653,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2300245",
+            "name": "église Saint-Pierre de Montmartre",
+            "category": "église",
+            "description": "Fondée en 1101, cette église paroissiale catholique romaine figure parmi les monuments historiques classés du 18e arrondissement. Implantée au sommet de la butte Montmartre, elle conserve une architecture médiévale à quelques pas de la basilique du Sacré-Cœur.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/StPierreDeMontmartreFromEast.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Pierre_de_Montmartre",
+            "latitude": 48.886667,
+            "longitude": 2.341944,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 664,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q1423353",
+            "name": "Au Lapin agile",
+            "category": "site notable",
+            "description": "Fondé en 1880, ce cabaret historique occupe les pentes de Montmartre depuis plus d'un siècle. Établi rue des Saules dans le 18e arrondissement, il incarne une facette majeure de la vie culturelle parisienne d'époque et demeure un lieu emblématique de la bohème montmartroise.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Gill%20-%20Au%20Lapin%20Agile.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Au_Lapin_agile",
+            "latitude": 48.8886,
+            "longitude": 2.33998,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 521,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q973216",
+            "name": "Dalí Paris",
+            "category": "musée",
+            "description": "Inauguré en 1991, ce musée montmartrois expose plus de 300 créations du maître catalan, mêlant sculptures et gravures issues de la collection Dali Universe. Entièrement rénové en 2018, il offre un panorama représentatif du travail de Salvador Dalí.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dali%20Paris%20entr%C3%A9e%20.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Dal%C3%AD_Paris",
+            "latitude": 48.886528,
+            "longitude": 2.339722,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 732,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q2919066",
+            "name": "musée de Montmartre",
+            "category": "musée",
+            "description": "Depuis 1960, ce musée du 18e arrondissement documente l'histoire artistique de Montmartre à travers ses collections permanentes. Installé dans d'anciens ateliers et demeures historiques, il accueille régulièrement des expositions temporaires consacrées aux figures marquantes du quartier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20de%20Montmartre%20-%20maison%20du%20Bel%20Air.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_de_Montmartre",
+            "latitude": 48.8877,
+            "longitude": 2.3406,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 586,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1285196",
+            "name": "église Saint-Sava",
+            "category": "église",
+            "description": "Édifiée en 1906, cette église orthodoxe serbe du 18e arrondissement accueille le siège épiscopal de l'éparchie d'Europe occidentale. Au-delà de sa fonction religieuse, elle revêt aussi le statut de cathédrale au sein de la tradition chrétienne orientale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Saint%20Sava%2C%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Paris",
+            "latitude": 48.8937,
+            "longitude": 2.35,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jules Joffrin",
+                "distance_m": 416,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q3389781",
+            "name": "place Dalida",
+            "category": "place",
+            "description": "Située dans le cœur de Montmartre, cette place du 18e arrondissement s'inscrit dans le paysage urbain du quartier historique. Espace public dédié à la mémoire culturelle, elle reflète l'identité artistique qui caractérise ce secteur de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Place%20Dalida%2C%20Paris%2012%20September%202006.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Place_Dalida",
+            "latitude": 48.888531,
+            "longitude": 2.338065,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 616,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3491901",
+            "name": "église Notre-Dame de Clignancourt",
+            "category": "église",
+            "description": "Édifiée en 1863 dans le 18e arrondissement, cette église relève de l'architecture catholique parisienne du Second Empire. Le sanctuaire de Clignancourt constitue un témoin du développement urbain du quartier durant cette période.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/NotreDameDeClignancourtExt%C3%A9rieur.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame_de_Clignancourt",
+            "latitude": 48.893056,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "1",
+                "name": "pl. Jules Joffrin",
+                "distance_m": 65,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q14397431",
+            "name": "abbaye de Montmartre",
+            "category": "site notable",
+            "description": "Fondée par Louis VI au XIIe siècle, cette abbaye royale de moniales bénédictines s'établit sur les vestiges d'un prieuré clunisien. Institution religieuse majeure de Montmartre, elle incarna pendant des siècles la présence monastique dans ce quartier historique de Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye.de.Montmartre.1625.Gallica.Etienne.Martellange.jpeg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbaye_de_Montmartre",
+            "latitude": 48.888,
+            "longitude": 2.34,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 577,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1589139",
+            "name": "synagogue Montmartre",
+            "category": "synagogue",
+            "description": "Édifiée en 1939 par l'architecte Germain Debré, cette synagogue du 18e arrondissement témoigne de l'architecture religieuse parisienne du XXe siècle. Implantée rue Sainte-Isaure, elle constitue un lieu de culte majeur du quartier de Montmartre.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rue%20Sainte%20Isaure%2C%20Synagogue%20Montmartre%2C%20Paris%202015.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Synagogue_de_la_rue_Sainte-Isaure",
+            "latitude": 48.893649,
+            "longitude": 2.344004,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 129,
+                "walk_minutes": 2
+            }
+        },
+        {
+            "wikidata_id": "Q3390093",
+            "name": "square Suzanne-Buisson",
+            "category": "site notable",
+            "description": "Installé dans le 18e arrondissement, ce jardin public offre une pause verdoyante aux habitants du quartier. L'espace invite à la détente et à la promenade en cœur urbain.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1060375%20Paris%20XVIII%20square%20Suzanne-Buisson%20rwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Square_Suzanne-Buisson",
+            "latitude": 48.888056,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "2",
+                "name": "Mairie",
+                "distance_m": 711,
+                "walk_minutes": 9
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "pl. Jules Joffrin",
+            "address_full": "5 Place Jules Joffrin 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.892539,
+            "longitude": 2.344592,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Mairie",
+            "address_full": "115 Rue Ordener 75018 Paris",
+            "postcode": "75018",
+            "city": "Paris",
+            "latitude": 48.89249,
+            "longitude": 2.343952,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
     },
-    "source": "mapillary_streetview",
-    "confidence_score": 22,
-    "confidence_level": "auto_generated",
-    "local_versions": {
-      "avif": {
-        "400": "/assets/img/stations/jules-joffrin/jules-joffrin-400.avif",
-        "800": "/assets/img/stations/jules-joffrin/jules-joffrin-800.avif",
-        "1200": "/assets/img/stations/jules-joffrin/jules-joffrin-1200.avif",
-        "1600": "/assets/img/stations/jules-joffrin/jules-joffrin-1600.avif"
-      },
-      "webp": {
-        "400": "/assets/img/stations/jules-joffrin/jules-joffrin-400.webp",
-        "800": "/assets/img/stations/jules-joffrin/jules-joffrin-800.webp",
-        "1200": "/assets/img/stations/jules-joffrin/jules-joffrin-1200.webp",
-        "1600": "/assets/img/stations/jules-joffrin/jules-joffrin-1600.webp"
-      },
-      "jpg": {
-        "400": "/assets/img/stations/jules-joffrin/jules-joffrin-400.jpg",
-        "800": "/assets/img/stations/jules-joffrin/jules-joffrin-800.jpg",
-        "1200": "/assets/img/stations/jules-joffrin/jules-joffrin-1200.jpg",
-        "1600": "/assets/img/stations/jules-joffrin/jules-joffrin-1600.jpg"
-      }
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
     },
-    "keep_hero": true
-  },
-  "accessibility": {
-    "audit_status": "pending",
-    "audit_date": null,
-    "level": "",
-    "stats": {
-      "elevators_count": 0,
-      "accessible_lines": 0,
-      "total_lines": 1
+    "hero_image": {
+        "url": "",
+        "alt": "Station Jules Joffrin (Métro 12) — visuel illustratif",
+        "width": 1200,
+        "height": 675,
+        "source": "design_placeholder",
+        "fallback": "design_placeholder",
+        "reason": "all_candidates_rejected_by_vision",
+        "keep_hero": true,
+        "credit": null
     },
-    "details": ""
-  },
-  "wikidata": {
-    "qid": "Q617430",
-    "wikidata_url": "https://www.wikidata.org/wiki/Q617430",
-    "wikipedia_url": "https://fr.wikipedia.org/wiki/Jules_Joffrin_(m%C3%A9tro_de_Paris)",
-    "osm_relation_id": null
-  }
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q617430",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q617430",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Jules_Joffrin_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
 }

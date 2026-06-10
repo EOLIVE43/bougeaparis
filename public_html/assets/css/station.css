@@ -98,6 +98,60 @@
     opacity: 0.5;
 }
 
+/* v9 : design_placeholder coloré couleur ligne (rejet Vision API) */
+.station-hero__placeholder--vision {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 360px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, currentColor, currentColor); /* fallback si JS off */
+}
+.station-hero__placeholder--vision::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,.12), transparent 70%);
+}
+.station-hero__placeholder-inner {
+    position: relative;
+    z-index: 1;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 600px;
+}
+.station-hero__placeholder--vision .station-hero__placeholder-icon {
+    font-size: 3rem;
+    opacity: 0.95;
+    margin-bottom: .5rem;
+}
+.station-hero__placeholder-name {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+.station-hero__placeholder-lines {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.station-hero__placeholder-line {
+    display: inline-block;
+    padding: .3rem .8rem;
+    border-radius: 999px;
+    background: #FFFFFF;
+    font-weight: 700;
+    font-size: .95rem;
+}
+@media (max-width: 600px) {
+    .station-hero__placeholder--vision {
+        aspect-ratio: 4 / 3;
+    }
+}
+
 .station-hero__content {
     padding: 2rem 1.5rem;
     background: var(--color-bg-light, #F4F8F6);
