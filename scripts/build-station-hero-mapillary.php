@@ -372,17 +372,26 @@ function wm_score_filename(string $filename, array $info): int {
     if (str_contains($lower, 'totem'))     $score -= 3;
     if (str_contains($lower, 'plaque'))    $score -= 3;
     if (str_contains($lower, 'fantôme') || str_contains($lower, 'fantome')) $score -= 5;
+    // v8 : penalites anti-escalier (audit utilisateur 2026-06-10)
+    // Le pattern Chabe01 "Accès Station X" est ambigu : peut être façade rue OU
+    // vue plongeante d'escalier intérieur descendant. Penalise les mots
+    // explicites + ratio portrait extrême (escalier vertical étroit).
+    if (str_contains($lower, 'escalier') || str_contains($lower, 'escaliers')) $score -= 15;
+    if (str_contains($lower, 'marche ') || str_contains($lower, 'marches ')) $score -= 10;
+    if (str_contains($lower, 'plongeant') || str_contains($lower, 'descendant')) $score -= 10;
     // Date >= 2020 : signal positif (style Chabe01 pattern recent)
     if (preg_match('/\b(2020|2021|2022|2023|2024|2025|2026)\b/', $filename)) $score += 5;
     // Date < 2015 : signal negatif (vieilles photos parfois bas)
     if (preg_match('/\b(20[01][0-4])\b/', $filename)) $score -= 2;
     // Dimensions : paysage > portrait > carre
+    // v8 : pénalité portrait extrême renforcée (h/w > 1.4 = silhouette escalier vertical)
     $w = (int)($info['width'] ?? 0);
     $h = (int)($info['height'] ?? 0);
     if ($h > 0) {
         $ratio = $w / $h;
         if ($ratio > 1.2)  $score += 5;
         elseif ($ratio < 0.85) $score -= 3;
+        if ($ratio < 0.71)  $score -= 10;  // v8 : portrait extrême = probable escalier
     }
     // Resolution >= 2400 : meilleur pour AVIF 1600 sans pixelisation
     if ($w >= 2400) $score += 3;
@@ -647,7 +656,10 @@ function process_station(string $slug, string $token): array {
     if (!is_dir($srcDir)) @mkdir($srcDir, 0755, true);
 
     // PRIORITE 1 : Wikimedia station (photo edicule/entree/hall de LA gare)
-    $wkStation = find_wikimedia_station($station);
+    // v8 : --skip-wikimedia force le fallback Mapillary (utile pour stations
+    // sans édicule Guimard, où Wikimedia retourne souvent des photos d'escalier
+    // intérieur que le scoring v7 ne distingue pas visuellement).
+    $wkStation = !empty($GLOBALS['BP_SKIP_WIKIMEDIA']) ? null : find_wikimedia_station($station);
     if ($wkStation !== null) {
         // Dry-run : log et exit sans modifier
         if (!empty($GLOBALS['BP_DRY_RUN'])) {
@@ -856,8 +868,12 @@ function process_station(string $slug, string $token): array {
 
 $args = parse_args($argv);
 $slug = $args['station'] ?? null;
-if (!$slug) fail('Usage : --station=<slug> [--dry-run]');
+if (!$slug) fail('Usage : --station=<slug> [--dry-run] [--skip-wikimedia]');
 $GLOBALS['BP_DRY_RUN'] = isset($args['dry-run']) || in_array('--dry-run', $argv, true);
+// v8 : --skip-wikimedia force le fallback Mapillary streetview (vue extérieure
+// rue garantie). Utile quand Wikimedia retourne des photos d'escalier intérieur
+// que le scoring v7 ne distingue pas du nom "Accès Station X" (vue plongeante).
+$GLOBALS['BP_SKIP_WIKIMEDIA'] = isset($args['skip-wikimedia']) || in_array('--skip-wikimedia', $argv, true);
 
 $secrets = load_secrets();
 $token = $secrets['MAPILLARY_API_KEY'] ?? null;
