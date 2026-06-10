@@ -427,6 +427,8 @@ $tpl->partial('components/breadcrumb', [
 
   </section>
 
+  <?php $tpl->partial('ads/slot-header'); ?>
+
   <!-- ============================================================
        1bis. QUICK LINKS (barre de raccourcis vers les sections)
             Place juste sous le hero pour que l'utilisateur puisse
@@ -784,6 +786,8 @@ $tpl->partial('components/breadcrumb', [
     </div>
   </section>
 
+  <?php $tpl->partial('ads/slot-in-article'); ?>
+
   <!-- ============================================================
        3. INTRODUCTION SEO (paragraphes longs)
        ============================================================ -->
@@ -1119,6 +1123,8 @@ $tpl->partial('components/breadcrumb', [
       <time datetime="<?= e(date('Y-m-d', $updatedTs)) ?>"><?= e(dateFr($updatedTs)) ?></time>.
     </p>
   <?php endif; ?>
+
+  <?php $tpl->partial('ads/slot-footer'); ?>
 
 </article>
 </div>

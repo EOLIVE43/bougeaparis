@@ -107,6 +107,8 @@ $buildSrcset = function(array $map): string {
     </div>
   </section>
 
+  <?php $tpl->partial('ads/slot-header'); ?>
+
   <?php if (!empty($intros)): ?>
     <section class="aeroport-intro">
       <h2>Présentation de l'<?= Template::e($full) ?></h2>
@@ -115,6 +117,8 @@ $buildSrcset = function(array $map): string {
       <?php endforeach; ?>
     </section>
   <?php endif; ?>
+
+  <?php $tpl->partial('ads/slot-in-article'); ?>
 
   <!-- Sections H2 SEO-driven (modes de transport) -->
   <?php foreach ($sections as $section): ?>
@@ -212,6 +216,8 @@ $buildSrcset = function(array $map): string {
       </p>
     <?php endif; ?>
   </section>
+
+  <?php $tpl->partial('ads/slot-footer'); ?>
 
 </article>
 </div>

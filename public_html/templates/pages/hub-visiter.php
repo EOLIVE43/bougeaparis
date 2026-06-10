@@ -117,6 +117,8 @@ $faqs = [
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container tarifs-page">
 
@@ -218,3 +220,7 @@ $faqs = [
         </ul>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

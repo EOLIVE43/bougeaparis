@@ -25,6 +25,8 @@ $author = Config::get('authors.ludo');
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:800px;">
         <h2>Spécialités</h2>
@@ -39,6 +41,10 @@ $author = Config::get('authors.ludo');
         <p class="text-muted">Les premiers articles signés par Ludo seront publiés très prochainement.</p>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>
 
 <?php
 // Schema.org Person

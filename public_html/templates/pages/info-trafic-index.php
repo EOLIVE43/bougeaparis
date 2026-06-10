@@ -90,6 +90,8 @@ $tpl->seo
                 <?php endforeach; ?>
             </ul>
         </section>
+
+<?php $tpl->partial('ads/slot-header'); ?>
     <?php else: ?>
         <section class="info-box">
             <h2>Rubrique en cours de construction</h2>
@@ -104,6 +106,10 @@ $tpl->seo
                 <a href="/transilien">Transilien</a> et <a href="/aeroports">aéroports</a>.
             </p>
         </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>
     <?php endif; ?>
 
 </div>

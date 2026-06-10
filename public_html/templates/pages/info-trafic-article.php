@@ -149,6 +149,12 @@ $shareUrlEnc = rawurlencode($shareUrl);
                 Source : données officielles Île-de-France Mobilités (PRIM) · <?= $statsTotal ?> perturbations recensées
             </p>
         </section>
+
+<?php $tpl->partial('ads/slot-header'); ?>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>
     <?php endif; ?>
 <!-- Widget de recherche de ligne -->
     <?php

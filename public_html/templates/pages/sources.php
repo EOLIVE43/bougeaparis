@@ -45,6 +45,8 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:800px;">
 
@@ -302,3 +304,7 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
         <?php endif; ?>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

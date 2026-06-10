@@ -33,3 +33,7 @@
         </p>
     </div>
 </section>
+
+<?php include __DIR__ . '/../ads/slot-in-article.php'; ?>
+
+<?php include __DIR__ . '/../ads/slot-footer.php'; ?>

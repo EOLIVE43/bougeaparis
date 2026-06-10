@@ -27,6 +27,8 @@ $tpl->seo
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:800px;">
         <h2>Éditeur du site</h2>
@@ -109,3 +111,7 @@ $tpl->seo
         <p>Les présentes mentions légales sont régies par le <strong>droit français</strong>. En cas de litige, les <strong>tribunaux français</strong> seront seuls compétents.</p>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

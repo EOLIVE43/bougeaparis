@@ -99,6 +99,8 @@ $renderOption = function (array $o, string $iconOverride = null) {
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container tarifs-page">
 
@@ -201,3 +203,7 @@ $renderOption = function (array $o, string $iconOverride = null) {
 
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

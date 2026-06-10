@@ -302,6 +302,8 @@ $linePillSlug = function (string $line): string {
     </div>
 </section>
 
+<?php include __DIR__ . '/../ads/slot-header.php'; ?>
+
 <!-- =========================================================================
      SECTION 2 — Module trafic temps réel (pleine largeur) + recherche ligne
      - partials/traffic-banner.php : bandeau stats (lit data/traffic/latest.json)

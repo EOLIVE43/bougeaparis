@@ -20,6 +20,8 @@
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:700px;">
         <h2>Par email</h2>
@@ -38,3 +40,7 @@
         <p>Pour toute demande presse, partenariat ou collaboration éditoriale, merci de préciser votre média ou organisation dans le sujet de votre email.</p>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

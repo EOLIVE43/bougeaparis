@@ -21,6 +21,8 @@ $authors = Config::all('authors');
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:800px;">
         <h2>Notre mission</h2>
@@ -51,3 +53,7 @@ $authors = Config::all('authors');
         <p>Une question, une suggestion, un signalement d'erreur ? Écrivez-nous à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>. Nous lisons tous les messages et répondons dans les meilleurs délais.</p>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>

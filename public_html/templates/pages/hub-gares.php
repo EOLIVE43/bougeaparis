@@ -120,6 +120,8 @@ $tpl->addStylesheet('/assets/css/line.css');
       </div>
     </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
     <section class="hub-gares__intro">
       <h2>Pourquoi consulter les guides BougeaParis ?</h2>
       <p>
@@ -129,6 +131,8 @@ $tpl->addStylesheet('/assets/css/line.css');
         Chaque gare a ses spécificités&nbsp;: la <strong>Gare du Nord</strong> accueille l'Eurostar et les trains internationaux, la <strong>Gare de Lyon</strong> dessert le sud-est de la France et l'Italie, <strong>Montparnasse</strong> couvre l'ouest et le sud-ouest. Notre équipe prépare des guides complets pour chacune.
       </p>
     </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
 
     <section class="hub-gares__alternatives">
       <h2>Pour voyager dans Paris et l'Île-de-France</h2>
@@ -142,6 +146,8 @@ $tpl->addStylesheet('/assets/css/line.css');
         <li><a href="/aeroports/">Aéroports parisiens (Roissy CDG, Orly)</a></li>
       </ul>
     </section>
+
+<?php $tpl->partial('ads/slot-footer'); ?>
 
   </div>
 </article>

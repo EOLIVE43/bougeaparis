@@ -19,6 +19,8 @@
     </div>
 </section>
 
+<?php $tpl->partial('ads/slot-header'); ?>
+
 <section class="section">
     <div class="container" style="max-width:800px;">
         <p class="text-muted"><small>Dernière mise à jour : <?= date('d/m/Y') ?></small></p>
@@ -73,3 +75,7 @@
         <p>Pour toute question concernant cette politique de confidentialité, écrivez à <a href="mailto:<?= e($site['contact_email']) ?>"><?= e($site['contact_email']) ?></a>.</p>
     </div>
 </section>
+
+<?php $tpl->partial('ads/slot-in-article'); ?>
+
+<?php $tpl->partial('ads/slot-footer'); ?>
