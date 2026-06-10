@@ -1,0 +1,536 @@
+{
+    "published": true,
+    "slug": "convention",
+    "name": "Convention",
+    "name_full": "Convention (Métro 12)",
+    "arrondissement": "15e arrondissement (Paris)",
+    "address": "Rue de la Convention, 75015 Paris",
+    "latitude": 48.83732023959481,
+    "longitude": 2.297294906137799,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": false,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "metro",
+            "code": "12",
+            "slug": "metro-12",
+            "color": "#007852",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [
+            "39",
+            "62",
+            "80",
+            "88"
+        ],
+        "nocturne": [
+            "N13",
+            "N62"
+        ],
+        "regional": [
+            "Traverse"
+        ],
+        "_audit": {
+            "source": "gtfs-idfm",
+            "buffer_radius_m": 300,
+            "audit_date": "2026-06-10",
+            "same_node_count": 3,
+            "nearby_count": 14
+        }
+    },
+    "seo": {
+        "description": "Station Convention (M12) rue de la Convention dans le 15e. Convention nationale (1792-1795). Quartier Vaugirard du 15e arrondissement."
+    },
+    "hero": {
+        "tagline": "M12 — Convention nationale (1792-1795)",
+        "description": "Station <strong>Convention</strong> sur la <strong>rue de la Convention</strong> dans le <strong>15e arrondissement</strong>. Desservie par la <strong>M12</strong>, ouverte le <strong>5 novembre 1910</strong>. Hommage à la <strong>Convention nationale</strong> (<strong>1792-1795</strong>), assemblée révolutionnaire qui proclama la Première République."
+    },
+    "adjacent_stations": {
+        "metro-12": {
+            "previous": {
+                "name": "Vaugirard",
+                "slug": "vaugirard",
+                "direction": "Mairie d'Aubervilliers"
+            },
+            "next": {
+                "name": "Porte de Versailles",
+                "slug": "porte-de-versailles",
+                "direction": "Mairie d'Issy"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "La station <strong>Convention</strong> est implantée sur la <strong>rue de la Convention</strong> dans le <strong>15e arrondissement</strong>. Elle est desservie par la <strong>ligne 12 du métro</strong>, entre <strong>Vaugirard</strong> (1 station) et <strong>Porte de Versailles</strong> (1 station). Bus 39, 49, 62, 70, 80, 89.",
+        "Ouverte le <strong>5 novembre 1910</strong> avec le tronçon initial de la <strong>ligne A du Nord-Sud</strong>.",
+        "Le nom <strong>Convention</strong> rend hommage à la <strong>Convention nationale</strong> (<strong>20 septembre 1792 - 26 octobre 1795</strong>), <strong>assemblée révolutionnaire française</strong> qui <strong>proclama la Première République française</strong> le <strong>22 septembre 1792</strong>. Quartier <strong>Vaugirard</strong> résidentiel du <strong>15e arrondissement</strong>."
+    ],
+    "history": {
+        "title": "1910 : Convention nationale (1792-1795)",
+        "paragraphs": [
+            "La station Convention est <strong>inaugurée le 5 novembre 1910</strong> avec le tronçon initial de la <strong>ligne A du Nord-Sud</strong>.",
+            "Le nom <strong>Convention</strong> rend hommage à la <strong>Convention nationale</strong> (<strong>20 septembre 1792 - 26 octobre 1795</strong>), <strong>assemblée révolutionnaire française</strong>. Élue au <strong>suffrage universel masculin</strong> (premier vote au suffrage universel en Europe). <strong>749 députés</strong>.",
+            "La Convention <strong>proclama la Première République française</strong> le <strong>22 septembre 1792</strong>. Elle <strong>vota la nouvelle Constitution de l'An I</strong> (24 juin 1793, jamais appliquée), puis la <strong>Constitution de l'An III</strong> (22 août 1795). Elle créa le <strong>Comité de salut public</strong>, le <strong>système métrique décimal</strong>, le <strong>calendrier républicain</strong>, l'<strong>École polytechnique</strong> (1794), le <strong>Conservatoire national des arts et métiers</strong> (1794). Elle abolit l'<strong>esclavage</strong> dans les colonies (<strong>4 février 1794</strong>)."
+        ]
+    },
+    "faq": [
+        {
+            "question": "Quelle ligne dessert Convention ?",
+            "answer": "Uniquement la <strong>M12</strong>. Bus 39, 49, 62, 70, 80, 89."
+        },
+        {
+            "question": "Qu'est-ce que la Convention nationale ?",
+            "answer": "<strong>Assemblée révolutionnaire française</strong> (20 septembre 1792 - 26 octobre 1795). <strong>Proclama la Première République</strong>. Élue au <strong>suffrage universel masculin</strong>."
+        },
+        {
+            "question": "Quand a-t-elle ouvert ?",
+            "answer": "Le <strong>5 novembre 1910</strong>."
+        },
+        {
+            "question": "Quelles réalisations majeures de la Convention ?",
+            "answer": "<strong>Proclamation de la Première République</strong> (22 septembre 1792), <strong>système métrique décimal</strong>, <strong>calendrier républicain</strong>, <strong>abolition de l'esclavage</strong> (1794), <strong>École polytechnique</strong> (1794)."
+        },
+        {
+            "question": "Pour Porte de Versailles ?",
+            "answer": "<strong>M12 directe</strong> (1 station)."
+        },
+        {
+            "question": "La station est-elle accessible PMR ?",
+            "answer": "<strong>Non</strong>. Pas d'ascenseur."
+        }
+    ],
+    "practical_tips": [
+        "<strong>Parc Georges-Brassens</strong> à 10 min à pied : anciens abattoirs.",
+        "Pour <strong>Porte de Versailles</strong> et <strong>Parc des Expositions</strong> : <strong>M12 directe</strong>.",
+        "Quartier <strong>Vaugirard</strong> résidentiel.",
+        "Pour <strong>Montparnasse</strong> : <strong>M12 directe</strong>.",
+        "Zone tarifaire <strong>1</strong>, Paris intra-muros."
+    ],
+    "trivia": [
+        {
+            "icon": "🏛️",
+            "title": "Convention nationale et Première République",
+            "content": "La <strong>Convention nationale</strong> est l'<strong>assemblée constituante française</strong> qui <strong>gouverna la France du 20 septembre 1792 au 26 octobre 1795</strong>. Élue au <strong>suffrage universel masculin</strong> (premier vote au suffrage universel en Europe). <strong>Proclama la Première République française</strong> le <strong>22 septembre 1792</strong>. <strong>Vota la nouvelle Constitution de l'An I</strong> (24 juin 1793, jamais appliquée), puis la <strong>Constitution de l'An III</strong>. <strong>Abolit l'esclavage</strong> dans les colonies (<strong>4 février 1794</strong>, première abolition mondiale)."
+        },
+        {
+            "icon": "📐",
+            "title": "Système métrique décimal, héritage durable",
+            "content": "Parmi les <strong>réalisations majeures et durables</strong> de la <strong>Convention</strong> figure l'<strong>adoption du système métrique décimal</strong> (<strong>1er août 1793</strong>). Inspiré des travaux de la <strong>Commission des poids et mesures</strong> de l'<strong>Académie des sciences</strong>. <strong>Définition du mètre</strong> comme le dix-millionième du quart du méridien terrestre. <strong>Système adopté progressivement en Europe et dans le monde</strong>, sauf États-Unis, Royaume-Uni, Birmanie."
+        }
+    ],
+    "popular_itineraries": [
+        {
+            "destination_name": "Porte de Versailles (Parc Expositions)",
+            "destination_slug": "porte-de-versailles",
+            "destination_full_name": "Convention → Porte de Versailles (Parc Expositions)",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-porte-de-versailles/"
+        },
+        {
+            "destination_name": "Parc Georges-Brassens",
+            "destination_slug": "convention",
+            "destination_full_name": "Convention → Parc Georges-Brassens",
+            "lines_used": [
+                "à pied"
+            ],
+            "lines_label": "Rue de Vaugirard (10 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-convention/"
+        },
+        {
+            "destination_name": "Vaugirard",
+            "destination_slug": "vaugirard",
+            "destination_full_name": "Convention → Vaugirard",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (1 station)",
+            "duration_minutes": 2,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-vaugirard/"
+        },
+        {
+            "destination_name": "Montparnasse",
+            "destination_slug": "montparnasse-bienvenue",
+            "destination_full_name": "Convention → Montparnasse",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (~10 min)",
+            "duration_minutes": 10,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-montparnasse-bienvenue/"
+        },
+        {
+            "destination_name": "Pasteur",
+            "destination_slug": "pasteur",
+            "destination_full_name": "Convention → Pasteur",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (3 stations)",
+            "duration_minutes": 6,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-pasteur/"
+        },
+        {
+            "destination_name": "Madeleine",
+            "destination_slug": "madeleine",
+            "destination_full_name": "Convention → Madeleine",
+            "lines_used": [
+                "M12"
+            ],
+            "lines_label": "M12 directe (~14 min)",
+            "duration_minutes": 14,
+            "changes_count": 0,
+            "search_volume_estimate": "high",
+            "future_url": "/itineraires/station-convention/convention-vers-madeleine/"
+        }
+    ],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q1799101",
+            "name": "La Ruche",
+            "category": "quartier",
+            "description": "Fondée par le sculpteur Alfred Boucher, cette cité d'artistes rassemble une soixantaine d'ateliers au cœur du quartier Saint-Lambert. Inscrite au patrimoine historique, elle demeure un lieu de création et de résidence pour les plasticiens parisiens.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Entrance%20to%20the%20%22La%20Ruche%22%20in%20Paris.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Ruche_(cit%C3%A9_d%27artistes)",
+            "latitude": 48.8325,
+            "longitude": 2.296944,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Vaugirard",
+                "distance_m": 526,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1424710",
+            "name": "parc Georges-Brassens",
+            "category": "jardin",
+            "description": "Inauguré en 1985 dans le 15e arrondissement, ce jardin public de 8,7 hectares occupe les anciens abattoirs de Vaugirard. Son terrain en pente épouse l'histoire du site, anciennement occupé par le vignoble de Périchaux au XVIIIe siècle.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parc%20Georges%20Brassens%2C%20Paris%202015.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Parc_Georges-Brassens",
+            "latitude": 48.831667,
+            "longitude": 2.3,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Vaugirard",
+                "distance_m": 664,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q2349221",
+            "name": "cathédrale des Trois-Saints-Docteurs de Paris",
+            "category": "cathédrale",
+            "description": "Édifiée en 1931, cette cathédrale orthodoxe du Patriarcat de Moscou honore trois saints hiérarques. Implantée rue Petel dans le 15e arrondissement, elle constitue un témoignage architectural de la présence religieuse slave à Paris.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20des%20Trois-Saints-Docteurs%2C%20Paris%208%20January%202017.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_des_Trois-Saints-Docteurs_de_Paris",
+            "latitude": 48.841064,
+            "longitude": 2.299416,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 461,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q959018",
+            "name": "église Notre-Dame-de-la-Salette de Paris",
+            "category": "église",
+            "description": "Édifiée en 1965 par l'architecte Henri Colboc, cette église du 15e arrondissement illustre l'architecture contemporaine remarquable de l'après-guerre. Reconnaissable à son style épuré caractéristique du XXe siècle, elle demeure un témoignage de la création religieuse moderne parisienne.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Notre-Dame-de-la-Salette%20%28Paris%29%202.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Notre-Dame-de-la-Salette_de_Paris",
+            "latitude": 48.83371,
+            "longitude": 2.30042,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Vaugirard",
+                "distance_m": 478,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q3022415",
+            "name": "église Saint-Séraphin-de-Sarov",
+            "category": "église",
+            "description": "Fondée en 1933, cette église de tradition russe byzantine accueille des offices en français et slavon. Implantée rue Lecourbe au cœur du 15e arrondissement, elle constitue un témoignage du patrimoine orthodoxe parisien.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-S%C3%A9raphin-de-Sarov%20%28Paris%29%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-S%C3%A9raphin-de-Sarov_de_Paris",
+            "latitude": 48.8428,
+            "longitude": 2.30389,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 813,
+                "walk_minutes": 10
+            }
+        },
+        {
+            "wikidata_id": "Q3492248",
+            "name": "église Saint-Jean-Baptiste de Grenelle",
+            "category": "église",
+            "description": "Conçue au 19e siècle par l'architecte Étienne-Hippolyte Godde, cette église du 15e arrondissement mêle deux langages architecturaux distincts. Son clocher de style néo-gothique médiéval crée un contraste remarquable avec la façade d'inspiration antique qui caractérise le reste de la construction.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89glise%20Saint-Jean-Baptiste%20de%20Grenelle%20%28Paris%29%2019.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Jean-Baptiste_de_Grenelle",
+            "latitude": 48.843194,
+            "longitude": 2.292583,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 695,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q3582245",
+            "name": "église Saint-Lambert de Vaugirard",
+            "category": "église",
+            "description": "Édifiée en 1853 dans le 15e arrondissement, cette église doit sa conception à l'architecte Claude Naissant. Implantée rue Gerbert, elle témoigne de l'architecture religieuse parisienne du Second Empire.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eglise%20de%20Saint-Lambert%2C%20Paris%2015e%2C%20East%20View%20140201%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Lambert_de_Vaugirard",
+            "latitude": 48.8396,
+            "longitude": 2.29825,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 278,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q15159745",
+            "name": "Vaugirard-Ceinture",
+            "category": "gare",
+            "description": "Vestige de la Petite Ceinture, cette ancienne gare ferroviaire du 15e arrondissement témoigne du réseau historique qui ceinturait Paris. Désaffectée depuis plusieurs décennies, elle demeure un repère architectural du patrimoine ferroviaire parisien, facilement accessible depuis Porte de Versailles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20gare%20pte%20ceinture%20vaugirard.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Gare_de_Vaugirard-Ceinture",
+            "latitude": 48.8333,
+            "longitude": 2.2904,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 629,
+                "walk_minutes": 8
+            }
+        },
+        {
+            "wikidata_id": "Q3496034",
+            "name": "stade de la Rue Olivier-de-Serres",
+            "category": "site notable",
+            "description": "Ancien équipement sportif du 15e arrondissement, le stade de la Légion Saint-Michel a porté initialement le nom de la voie qui l'accueillait. Disparu du tissu urbain parisien, ce site représente l'évolution des infrastructures de loisirs dans la capitale.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Legionsm1921.PNG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Stade_de_la_L%C3%A9gion_Saint-Michel",
+            "latitude": 48.833142,
+            "longitude": 2.293588,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Vaugirard",
+                "distance_m": 507,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q65946352",
+            "name": "chapelle des Frères hospitaliers de Saint-Jean-de-Dieu de Paris",
+            "category": "chapelle",
+            "description": "Édifice religieux du 15e arrondissement, cette chapelle accueille les membres de l'Ordre hospitalier de Saint-Jean-de-Dieu. Placée sous le patronage de Notre-Dame de Charité, elle dessert le centre hospitalier et ses structures connexes situés rue Lecourbe.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chapelle%20Saint-Jean-de-Dieu.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Chapelle_des_Fr%C3%A8res_hospitaliers_de_Saint-Jean-de-Dieu_de_Paris",
+            "latitude": 48.839532,
+            "longitude": 2.294303,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 275,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q3145243",
+            "name": "hôpital Vaugirard - Gabriel-Pallez",
+            "category": "hôpital",
+            "description": "Fondé en 1921, cet établissement de l'AP-HP se consacre à la gériatrie avec ses 315 lits accueillant patients âgés et dépendants. Implanté rue Vaugelas dans le 15e arrondissement, il bénéficie d'un cadre apaisé grâce à la proximité d'un jardin hospitalier.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4pital%20Vaugirard%20Gabriel-Pallez.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4pital_Vaugirard_-_Gabriel-Pallez",
+            "latitude": 48.8345,
+            "longitude": 2.29402,
+            "nearest_exit": {
+                "number": "2",
+                "name": "r. de Vaugirard",
+                "distance_m": 360,
+                "walk_minutes": 5
+            }
+        },
+        {
+            "wikidata_id": "Q60384808",
+            "name": "église luthérienne de la Résurrection de Paris",
+            "category": "église",
+            "description": "Fondée en 1866 dans le 15e arrondissement, cette communauté luthérienne incarne une présence protestante historique au cœur de Paris. Affiliée à l'Église protestante unie de France, elle occupe le 6 rue Quinault, où fidèles et visiteurs trouvent un espace de culte enraciné dans la tradition réformée.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1150646%20Paris%20XV%20rue%20Quinault%20rwk.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_luth%C3%A9rienne_de_la_R%C3%A9surrection_de_Paris",
+            "latitude": 48.84421,
+            "longitude": 2.2982,
+            "nearest_exit": {
+                "number": "1",
+                "name": "r. de la Convention",
+                "distance_m": 764,
+                "walk_minutes": 10
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "r. de la Convention",
+            "address_full": "2 Place Geneviève de Gaulle Anthonioz 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.837396,
+            "longitude": 2.296333,
+            "accessible": null
+        },
+        {
+            "number": "1",
+            "name": "r. de la Convention",
+            "address_full": "2 Place Geneviève de Gaulle Anthonioz 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.837449,
+            "longitude": 2.296319,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "r. de Vaugirard",
+            "address_full": "200 Rue de la Convention 75015 Paris",
+            "postcode": "75015",
+            "city": "Paris",
+            "latitude": 48.837227,
+            "longitude": 2.296676,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [
+            "Station métro Paris — vigilance pickpockets standard.",
+            "Affluence variable selon heures de pointe."
+        ],
+        "notes": "Audit RATP/IDFM spécifique non disponible."
+    },
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/stations/convention/source/wikimedia-station.jpg",
+        "alt": "Entrée extérieure de la station Convention (Métro 12) — photo Wikimedia Commons par Chabe01 (T2-Search:AccesStation)",
+        "width": 1200,
+        "height": 675,
+        "credit": {
+            "author": "Chabe01",
+            "license": "CC BY-SA 4.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Acc%C3%A8s_Station_Convention_M%C3%A9tro_Paris_Rue_Vaugirard_-_Paris_XV_(FR75)_-_2026-02-06_-_2.jpg",
+            "date": "2026-06-08"
+        },
+        "source": "wikimedia_station",
+        "confidence_score": 22,
+        "confidence_level": "auto_generated",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/convention/convention-400.avif",
+                "800": "/assets/img/stations/convention/convention-800.avif",
+                "1200": "/assets/img/stations/convention/convention-1200.avif",
+                "1600": "/assets/img/stations/convention/convention-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/convention/convention-400.webp",
+                "800": "/assets/img/stations/convention/convention-800.webp",
+                "1200": "/assets/img/stations/convention/convention-1200.webp",
+                "1600": "/assets/img/stations/convention/convention-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/convention/convention-400.jpg",
+                "800": "/assets/img/stations/convention/convention-800.jpg",
+                "1200": "/assets/img/stations/convention/convention-1200.jpg",
+                "1600": "/assets/img/stations/convention/convention-1600.jpg"
+            }
+        },
+        "keep_hero": true
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 1
+        },
+        "details": ""
+    },
+    "wikidata": {
+        "qid": "Q630642",
+        "wikidata_url": "https://www.wikidata.org/wiki/Q630642",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Convention_(m%C3%A9tro_de_Paris)",
+        "osm_relation_id": null
+    }
+}
