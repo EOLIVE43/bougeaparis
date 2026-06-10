@@ -135,6 +135,33 @@ foreach ($publishedAeroports as $ap) {
 }
 log_line('Aéroports publiés : ' . count($publishedAeroports));
 
+// 3.4c Pages détail mode-aéroport (data/aeroports/{aeroport}/{mode}.json)
+$modePages = [];
+foreach ($publishedAeroports as $ap) {
+    $aeroDir = AEROPORTS_DIR . '/' . $ap['slug'];
+    if (!is_dir($aeroDir)) continue;
+    $modeFiles = glob($aeroDir . '/*.json') ?: [];
+    foreach ($modeFiles as $f) {
+        $data = json_decode((string)file_get_contents($f), true);
+        if (!is_array($data) || empty($data['published'])) continue;
+        $modePages[] = [
+            'aero'    => $ap['slug'],
+            'mode'    => $data['mode_slug'] ?? basename($f, '.json'),
+            'lastmod' => date('Y-m-d', (int)filemtime($f)),
+        ];
+    }
+}
+usort($modePages, fn($a, $b) => strcmp($a['aero'].$a['mode'], $b['aero'].$b['mode']));
+foreach ($modePages as $mp) {
+    $xml .= url_entry(
+        BASE_URL . "/aeroports/{$mp['aero']}/{$mp['mode']}/",
+        'weekly',
+        '0.7',
+        $mp['lastmod']
+    );
+}
+log_line('Pages mode-aéroport publiées : ' . count($modePages));
+
 // 3.5 Pages éditoriales / footer
 $footer = [
     ['/sources/',            'monthly', '0.5'],

@@ -244,6 +244,23 @@ switch ($path) {
             break;
         }
 
+        // Route dynamique /aeroports/{aeroport}/{mode} - pages détail par mode
+        if (preg_match('#^/aeroports/([a-z0-9\-]+)/([a-z0-9\-]+)$#', $path, $matches)) {
+            $aero = $matches[1]; $mode = $matches[2];
+            $modeFile = __DIR__ . '/data/aeroports/' . $aero . '/' . $mode . '.json';
+            if (file_exists($modeFile)) {
+                $modeData = json_decode(file_get_contents($modeFile), true);
+                if (is_array($modeData) && ($modeData['published'] ?? false) === true) {
+                    $tpl = new Template('aeroport-mode');
+                    $tpl->withData(['mode' => $modeData]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
+            break;
+        }
+
         // Route dynamique /aeroports/{slug} - 3 aéroports parisiens (CDG, Orly, Beauvais)
         if (preg_match('#^/aeroports/([a-z0-9\-]+)$#', $path, $matches)) {
             $slug = $matches[1];

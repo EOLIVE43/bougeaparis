@@ -1,0 +1,176 @@
+{
+    "published": true,
+    "aeroport_slug": "paris-beauvais-tille",
+    "aeroport_name": "Paris-Beauvais",
+    "aeroport_iata": "BVA",
+    "mode_slug": "train",
+    "mode_label": "Train",
+    "color": "#D02D2D",
+    "h1": "Train Paris → Beauvais : TER Paris-Nord + bus, 1h45 trajet total",
+    "seo": {
+        "title": "Train Beauvais : TER Paris-Nord 1h15 + bus aéroport 15 min — alternative navette",
+        "description": "Train Paris → Aéroport Paris-Beauvais : TER depuis Gare du Nord (1h15) + bus 12/14 (15 min). Alternative à la navette. Horaires, prix."
+    },
+    "tagline": "TER Paris-Nord 1h15 + bus 15 min — alternative",
+    "intro_paragraphs": [
+        "Une <strong>alternative à la navette officielle</strong> est de prendre un <strong>TER depuis la Gare du Nord</strong> jusqu'à <strong>Beauvais SNCF</strong>, puis un <strong>bus</strong> vers l'aéroport.",
+        "<strong>Solution plus lente et moins fiable</strong> que la navette, mais utile si vous arrivez en train à la Gare du Nord. <strong>Durée totale : 1h45 à 2h</strong>. <strong>Prix : 14 à 22 €</strong> (TER + bus)."
+    ],
+    "quick_facts": [
+        {
+            "value": "1h45-2h",
+            "label": "durée totale"
+        },
+        {
+            "value": "14-22 €",
+            "label": "prix combiné"
+        },
+        {
+            "value": "TER",
+            "label": "Paris-Nord ↔ Beauvais"
+        },
+        {
+            "value": "Bus 12/14",
+            "label": "vers aéroport"
+        }
+    ],
+    "itineraire": {
+        "h2": "Itinéraire train + bus Paris → Beauvais",
+        "paragraphs": [
+            "Le trajet se compose en <strong>deux étapes</strong> : TER puis bus."
+        ],
+        "steps": [
+            "Se rendre à la <strong>Gare du Nord</strong> (Paris 10e).",
+            "Prendre un <strong>TER direction Beauvais</strong>. Durée : <strong>1h15</strong>. <strong>Pas tous les trains</strong> vont à Beauvais — vérifier les horaires SNCF.",
+            "Arriver à la <strong>Gare SNCF de Beauvais</strong>.",
+            "Sortir de la gare et prendre le <strong>bus 12 ou 14</strong> en direction de l'aéroport. Durée : <strong>15 minutes</strong>.",
+            "Arrivée aux terminaux <strong>T1 ou T2</strong>."
+        ]
+    },
+    "horaires": {
+        "h2": "Horaires TER Paris-Nord ↔ Beauvais",
+        "paragraphs": [
+            "<strong>TER fréquent</strong> en journée, plus rare le soir et la nuit. <strong>Premier train</strong> vers 05h45, <strong>dernier train</strong> vers 23h00."
+        ],
+        "table": {
+            "headers": [
+                "Service",
+                "Premier",
+                "Dernier",
+                "Fréquence"
+            ],
+            "rows": [
+                [
+                    "TER Paris-Nord → Beauvais",
+                    "05h45",
+                    "23h00",
+                    "1h"
+                ],
+                [
+                    "Bus 12/14 Beauvais Gare → Aéroport",
+                    "05h30",
+                    "23h30",
+                    "30-60 min"
+                ]
+            ]
+        }
+    },
+    "tarifs": {
+        "h2": "Tarifs train Paris → Beauvais",
+        "paragraphs": [
+            "Le <strong>TER</strong> est moins cher que la navette mais plus long. <strong>Réservation à l'avance</strong> peut permettre de bénéficier de tarifs réduits."
+        ],
+        "table": {
+            "headers": [
+                "Trajet",
+                "Prix"
+            ],
+            "rows": [
+                [
+                    "TER Paris-Nord → Beauvais SNCF (2e classe)",
+                    "10 à 18 €"
+                ],
+                [
+                    "TER 1re classe",
+                    "18 à 28 €"
+                ],
+                [
+                    "Bus 12 ou 14 (Beauvais ville)",
+                    "4 €"
+                ],
+                [
+                    "Total combiné",
+                    "14-22 €"
+                ]
+            ]
+        }
+    },
+    "itineraires_paris": [
+        {
+            "depart": "Gare du Nord",
+            "station_slug": "gare-du-nord",
+            "duration": "1h45-2h",
+            "trajet": "TER + bus."
+        },
+        {
+            "depart": "Châtelet",
+            "station_slug": "chatelet",
+            "duration": "2h",
+            "trajet": "M4 → Gare du Nord + TER + bus."
+        },
+        {
+            "depart": "Saint-Lazare",
+            "station_slug": "saint-lazare",
+            "duration": "2h",
+            "trajet": "M3/M12 → Gare du Nord + TER + bus."
+        }
+    ],
+    "pois": [
+        {
+            "name": "Gare du Nord (Paris)",
+            "description": "Plus grande gare d'Europe par trafic. Départ TER Beauvais."
+        },
+        {
+            "name": "Gare SNCF de Beauvais",
+            "description": "Au centre-ville de Beauvais, à 8 km de l'aéroport."
+        },
+        {
+            "name": "Bus 12 ou 14 (RTBL)",
+            "description": "Bus de Beauvais ville reliant la gare SNCF à l'aéroport."
+        }
+    ],
+    "alternatives": [
+        {
+            "label": "Navette officielle",
+            "url": "/aeroports/paris-beauvais-tille/navette/",
+            "note": "75 min depuis Porte Maillot, 17 € (recommandé)."
+        },
+        {
+            "label": "Taxi",
+            "url": "/aeroports/paris-beauvais-tille/taxi/",
+            "note": "90 min, 180-250 € (très onéreux)."
+        }
+    ],
+    "faq": [
+        {
+            "question": "Y a-t-il un train direct Paris → Beauvais ?",
+            "answer": "<strong>Non</strong>. <strong>TER Paris-Nord ↔ Beauvais SNCF</strong> (1h15), puis <strong>bus 12/14</strong> vers l'aéroport (15 min)."
+        },
+        {
+            "question": "Combien coûte le train Paris → Beauvais ?",
+            "answer": "<strong>TER 2e classe : 10 à 18 €</strong>. Total combiné train + bus : <strong>14 à 22 €</strong>."
+        },
+        {
+            "question": "Combien de temps train + bus Paris → Beauvais ?",
+            "answer": "<strong>1h45 à 2h</strong> selon les correspondances."
+        },
+        {
+            "question": "Le TER Beauvais est-il fréquent ?",
+            "answer": "<strong>Toutes les heures environ</strong> en journée. Plus rare le soir."
+        },
+        {
+            "question": "Train ou navette pour Beauvais ?",
+            "answer": "<strong>Navette officielle</strong> est plus rapide (75 min vs 2h) et plus fiable. <strong>Train</strong> est utile uniquement si vous arrivez ou repartez de la Gare du Nord en train."
+        }
+    ]
+}
