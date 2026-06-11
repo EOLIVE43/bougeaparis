@@ -103,6 +103,44 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
+  <?php if (!empty($busLines)): ?>
+    <section class="bus-lines-section">
+      <h2>Les <?= count($busLines) ?> lignes de bus vers <?= Template::e($aeroName) ?></h2>
+      <div class="bus-cards-grid">
+        <?php foreach ($busLines as $bl):
+          $blType  = $bl['type'] ?? 'regulier';
+          $blSlug  = $bl['slug'] ?? '';
+          $blUrl   = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/' . $blSlug . '/';
+        ?>
+          <a href="<?= Template::e($blUrl) ?>" class="bus-card bus-card--<?= Template::e($blType) ?>">
+            <div class="bus-card__icon">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="12" width="36" height="22" rx="3"/>
+                <line x1="6" y1="24" x2="42" y2="24"/>
+                <rect x="10" y="16" width="6" height="5" fill="currentColor"/>
+                <rect x="20" y="16" width="6" height="5" fill="currentColor"/>
+                <rect x="30" y="16" width="6" height="5" fill="currentColor"/>
+                <circle cx="14" cy="36" r="3" fill="currentColor"/>
+                <circle cx="34" cy="36" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></h3>
+            <p class="bus-card__route"><?= Template::e($bl['departure'] ?? '') ?> ↔ <?= Template::e($aeroName) ?></p>
+            <div class="bus-card__metrics">
+              <span class="bus-card__duration"><?= Template::e($bl['duration'] ?? '') ?></span>
+              <span class="bus-card__separator">·</span>
+              <span class="bus-card__price"><?= Template::e($bl['price'] ?? '') ?></span>
+            </div>
+            <?php if (!empty($bl['note'])): ?>
+              <p class="bus-card__note"><?= Template::e($bl['note']) ?></p>
+            <?php endif; ?>
+            <span class="bus-card__cta">→ <?= Template::e($bl['cta_anchor'] ?? $bl['name'] ?? '') ?></span>
+          </a>
+        <?php endforeach; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
   <?php if (!empty($itineraire)): ?>
     <section class="mode-section" id="itineraire">
       <h2><?= Template::e($itineraire['h2'] ?? "Itinéraire détaillé") ?></h2>
@@ -256,44 +294,6 @@ $tpl->seo
           ← Retour au guide complet <?= Template::e($aeroName) ?>
         </a>
       </p>
-    </section>
-  <?php endif; ?>
-
-  <?php if (!empty($busLines)): ?>
-    <section class="bus-lines-section">
-      <h2>Les <?= count($busLines) ?> lignes de bus vers <?= Template::e($aeroName) ?></h2>
-      <div class="bus-cards-grid">
-        <?php foreach ($busLines as $bl):
-          $blType  = $bl['type'] ?? 'regulier';
-          $blSlug  = $bl['slug'] ?? '';
-          $blUrl   = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/' . $blSlug . '/';
-        ?>
-          <a href="<?= Template::e($blUrl) ?>" class="bus-card bus-card--<?= Template::e($blType) ?>">
-            <div class="bus-card__icon">
-              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <rect x="6" y="12" width="36" height="22" rx="3"/>
-                <line x1="6" y1="24" x2="42" y2="24"/>
-                <rect x="10" y="16" width="6" height="5" fill="currentColor"/>
-                <rect x="20" y="16" width="6" height="5" fill="currentColor"/>
-                <rect x="30" y="16" width="6" height="5" fill="currentColor"/>
-                <circle cx="14" cy="36" r="3" fill="currentColor"/>
-                <circle cx="34" cy="36" r="3" fill="currentColor"/>
-              </svg>
-            </div>
-            <h3 class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></h3>
-            <p class="bus-card__route"><?= Template::e($bl['departure'] ?? '') ?> ↔ <?= Template::e($aeroName) ?></p>
-            <div class="bus-card__metrics">
-              <span class="bus-card__duration"><?= Template::e($bl['duration'] ?? '') ?></span>
-              <span class="bus-card__separator">·</span>
-              <span class="bus-card__price"><?= Template::e($bl['price'] ?? '') ?></span>
-            </div>
-            <?php if (!empty($bl['note'])): ?>
-              <p class="bus-card__note"><?= Template::e($bl['note']) ?></p>
-            <?php endif; ?>
-            <span class="bus-card__cta">→ <?= Template::e($bl['cta_anchor'] ?? $bl['name'] ?? '') ?></span>
-          </a>
-        <?php endforeach; ?>
-      </div>
     </section>
   <?php endif; ?>
 
