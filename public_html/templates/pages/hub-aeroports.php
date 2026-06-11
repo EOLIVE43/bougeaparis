@@ -26,6 +26,25 @@ foreach (glob($aeroportsDir . '/*.json') ?: [] as $f) {
 $order = ['paris-charles-de-gaulle' => 1, 'paris-orly' => 2, 'paris-beauvais-tille' => 3];
 usort($aeroports, fn($a, $b) => ($order[$a['slug']] ?? 99) <=> ($order[$b['slug']] ?? 99));
 
+// Descriptions riches par aéroport (mutualisation : source unique pour les cards)
+$descriptions = [
+    'paris-charles-de-gaulle' => [
+        'h2'   => 'Aéroport Paris-Charles de Gaulle (CDG)',
+        'desc' => 'Le <strong>plus grand aéroport parisien</strong>, situé à <strong>Roissy-en-France (95)</strong> à 25 km au nord-est de Paris. <strong>2e en Europe</strong> avec ~67 millions de passagers/an. <strong>Hub principal d\'Air France</strong> et de nombreuses compagnies internationales. Accessible depuis Paris en <strong>RER B (35 min, 11,80 €)</strong>, <strong>Roissybus (60 min, 16,60 €)</strong> ou taxi.',
+        'cta'  => 'Voir le guide complet de CDG',
+    ],
+    'paris-orly' => [
+        'h2'   => 'Aéroport Paris-Orly (ORY)',
+        'desc' => '<strong>2e aéroport parisien</strong>, situé dans le <strong>Val-de-Marne (94)</strong> à 14 km au sud de Paris. <strong>~33 millions de passagers/an</strong>. Hub majeur des compagnies low-cost et des vols européens. Accessible depuis Paris par le <strong>métro 14 depuis juin 2024 (25 min, 2,15 €)</strong>, l\'<strong>Orlybus (35 min, 11,50 €)</strong>, le tramway T7 ou taxi.',
+        'cta'  => 'Voir le guide complet d\'Orly',
+    ],
+    'paris-beauvais-tille' => [
+        'h2'   => 'Aéroport Paris-Beauvais (BVA)',
+        'desc' => 'Aéroport low-cost situé à <strong>85 km au nord de Paris (Oise 60)</strong>. <strong>~5,7 millions de passagers/an</strong>. Principalement desservi par <strong>Ryanair</strong> et <strong>Wizz Air</strong>. Accès depuis Paris par <strong>navette officielle depuis Porte Maillot (75 min, 17 €)</strong> ou train + bus.',
+        'cta'  => 'Voir le guide complet de Beauvais',
+    ],
+];
+
 // SEO
 $tpl->seo
     ->setTitle($cocon['seo']['title'] ?? 'Aéroports de Paris : guide d\'accès — CDG, Orly, Beauvais')
@@ -72,22 +91,28 @@ $tpl->seo
         $modes   = $aero['access_modes'] ?? [];
         $modeNames = array_slice(array_column($modes, 'name'), 0, 4);
       ?>
-        <a href="/aeroports/<?= Template::e($aSlug) ?>/" class="aeroport-card" aria-label="Guide complet <?= Template::e($aName) ?>">
-          <div class="aeroport-card__image">
+        <?php
+          $aDescr = $descriptions[$aSlug] ?? null;
+          $aUrl   = '/aeroports/' . $aSlug . '/';
+        ?>
+        <article class="aeroport-card">
+          <a href="<?= Template::e($aUrl) ?>" class="aeroport-card__image" aria-label="Guide <?= Template::e($aName) ?>">
             <?php if ($aImgSrc): ?>
               <img src="<?= Template::e($aImgSrc) ?>" alt="<?= Template::e($aAlt) ?>" loading="lazy" width="600" height="338">
             <?php endif; ?>
             <?php if ($aIata): ?>
               <span class="aeroport-card__iata"><?= Template::e($aIata) ?></span>
             <?php endif; ?>
-          </div>
+          </a>
           <div class="aeroport-card__content">
-            <div class="aeroport-card__title"><?= Template::e($aName) ?></div>
+            <h2 class="aeroport-card__title">
+              <a href="<?= Template::e($aUrl) ?>"><?= Template::e($aDescr['h2'] ?? $aName) ?></a>
+            </h2>
             <?php if ($aCity): ?>
               <p class="aeroport-card__location">📍 <?= Template::e($aCity) ?></p>
             <?php endif; ?>
             <?php if ($aTraf): ?>
-              <p class="aeroport-card__traffic">
+              <p class="aeroport-card__stats">
                 <strong><?= Template::e($aTraf) ?> passagers/an</strong>
                 <?php if (is_int($aRank)): ?> · <?= (int)$aRank ?>e en Europe<?php endif; ?>
               </p>
@@ -95,39 +120,20 @@ $tpl->seo
             <?php if (!empty($modeNames)): ?>
               <p class="aeroport-card__modes"><?= Template::e(implode(' · ', $modeNames)) ?></p>
             <?php endif; ?>
-            <span class="aeroport-card__cta">Voir le guide complet →</span>
+            <?php if (!empty($aDescr['desc'])): ?>
+              <p class="aeroport-card__description"><?= $aDescr['desc'] ?></p>
+            <?php endif; ?>
+            <a href="<?= Template::e($aUrl) ?>" class="aeroport-card__cta">
+              <?= Template::e($aDescr['cta'] ?? ('Voir le guide ' . $aName)) ?> →
+            </a>
           </div>
-        </a>
+        </article>
       <?php endforeach; ?>
     </div>
   </section>
   <?php endif; ?>
 
-  <section class="aeroport-detail">
-    <h2>Aéroport Paris-Charles de Gaulle (CDG)</h2>
-    <p>
-      Le <strong>plus grand aéroport parisien</strong>, situé à <strong>Roissy-en-France (95)</strong> à 25 km au nord-est de Paris. <strong>2e en Europe</strong> avec <strong>~67 millions de passagers/an</strong>. <strong>Hub principal d'Air France</strong> et de nombreuses compagnies internationales. Accessible depuis Paris en <strong>RER B (35 min, 11,80 €)</strong>, <strong>Roissybus (60 min, 16,60 €)</strong> ou taxi.
-    </p>
-    <p><a href="/aeroports/paris-charles-de-gaulle/" class="aeroport-link">Voir le guide complet de CDG →</a></p>
-  </section>
-
   <?php $tpl->partial('ads/slot-in-article'); ?>
-
-  <section class="aeroport-detail">
-    <h2>Aéroport Paris-Orly (ORY)</h2>
-    <p>
-      <strong>2e aéroport parisien</strong>, situé dans le <strong>Val-de-Marne (94)</strong> à 14 km au sud de Paris. <strong>~33 millions de passagers/an</strong>. Hub majeur des compagnies low-cost et des vols européens. Accessible depuis Paris par le <strong>métro 14 depuis juin 2024 (25 min, 2,15 €)</strong>, l'<strong>Orlybus (35 min, 11,50 €)</strong>, le tramway T7 ou taxi.
-    </p>
-    <p><a href="/aeroports/paris-orly/" class="aeroport-link">Voir le guide complet d'Orly →</a></p>
-  </section>
-
-  <section class="aeroport-detail">
-    <h2>Aéroport Paris-Beauvais (BVA)</h2>
-    <p>
-      Aéroport low-cost situé à <strong>85 km au nord de Paris (Oise 60)</strong>. <strong>~5,7 millions de passagers/an</strong>. Principalement desservi par <strong>Ryanair</strong> et <strong>Wizz Air</strong>. Accès depuis Paris par <strong>navette officielle depuis Porte Maillot (75 min, 17 €)</strong> ou train + bus.
-    </p>
-    <p><a href="/aeroports/paris-beauvais-tille/" class="aeroport-link">Voir le guide complet de Beauvais →</a></p>
-  </section>
 
   <section class="aeroport-comparatif">
     <h2>Comparatif rapide des 3 aéroports</h2>
@@ -261,18 +267,18 @@ $tpl->seo
   margin-bottom: 2rem;
 }
 .aeroport-card {
-  display: block; background: #fff;
+  display: flex; flex-direction: column;
+  background: #fff;
   border: 2px solid #E1F5EE; border-radius: 12px; overflow: hidden;
-  text-decoration: none; color: inherit;
   transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
 .aeroport-card:hover {
   border-color: #0F6E56;
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(15,110,86,.15);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15,110,86,.12);
 }
-.aeroport-card__image { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #f4f8f6; }
+.aeroport-card__image { display: block; position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #f4f8f6; }
 .aeroport-card__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .aeroport-card__iata {
   position: absolute; top: 12px; right: 12px;
@@ -280,27 +286,33 @@ $tpl->seo
   padding: .4rem .75rem; border-radius: 6px;
   font-weight: 700; font-size: .95rem; letter-spacing: .5px;
 }
-.aeroport-card__content { padding: 1.25rem 1.5rem 1.5rem; }
-.aeroport-card__title { margin: 0 0 .5rem; color: #0F6E56; font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
-.aeroport-card__location { margin: 0 0 .75rem; font-size: .95rem; color: #555; }
-.aeroport-card__traffic { margin: 0 0 .75rem; font-size: .95rem; color: #333; }
-.aeroport-card__traffic strong { color: #0F6E56; }
-.aeroport-card__modes { margin: 0 0 1rem; font-size: .85rem; color: #777; line-height: 1.5; }
-.aeroport-card__cta { display: inline-block; color: #0F6E56; font-weight: 600; font-size: .95rem; transition: transform .2s; }
-.aeroport-card:hover .aeroport-card__cta { transform: translateX(4px); }
-
-.aeroport-detail { margin: 2rem 0; }
-.aeroport-link {
-  display: inline-block;
+.aeroport-card__content { padding: 1.25rem 1.5rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.aeroport-card__title { margin: 0 0 .5rem; font-size: 1.2rem; line-height: 1.3; font-weight: 700; }
+.aeroport-card__title a { color: #0F6E56; text-decoration: none; }
+.aeroport-card__title a:hover { text-decoration: underline; }
+.aeroport-card__location { margin: 0 0 .5rem; font-size: .95rem; color: #555; }
+.aeroport-card__stats { margin: .25rem 0; font-size: .95rem; color: #333; }
+.aeroport-card__stats strong { color: #0F6E56; }
+.aeroport-card__modes { margin: .25rem 0 .75rem; font-size: .9rem; color: #777; letter-spacing: .3px; }
+.aeroport-card__description { margin: .75rem 0; line-height: 1.55; font-size: .95rem; color: #333; flex: 1; }
+.aeroport-card__description strong { color: #0F6E56; }
+.aeroport-card__cta {
+  display: inline-block; align-self: flex-start;
+  margin-top: 1rem;
+  padding: .6rem 1.25rem;
+  background: #fff;
   color: #0F6E56;
-  font-weight: 600;
-  text-decoration: none;
-  padding: .5rem 1rem;
-  border: 1px solid #0F6E56;
+  border: 2px solid #0F6E56;
   border-radius: 8px;
-  transition: background .2s, color .2s;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+  transition: background .2s, color .2s, transform .2s;
 }
-.aeroport-link:hover { background: #0F6E56; color: #fff; }
+.aeroport-card__cta:hover {
+  background: #0F6E56; color: #fff;
+  transform: translateX(2px);
+}
 
 .aeroport-table-wrap { overflow-x: auto; margin-top: 1rem; }
 .aeroports-comparatif { width: 100%; border-collapse: collapse; }
