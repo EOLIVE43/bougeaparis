@@ -28,6 +28,12 @@ $faq        = $mode['faq'] ?? [];
 
 $canonical = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/';
 
+// Charger le JSON parent aéroport pour récupérer access_modes[] (maillage interne)
+$parentFile = __DIR__ . '/../../data/aeroports/' . $aeroSlug . '.json';
+$parentAero = is_file($parentFile) ? json_decode((string)file_get_contents($parentFile), true) : null;
+$allModes   = is_array($parentAero) ? ($parentAero['access_modes'] ?? []) : [];
+$otherModes = array_values(array_filter($allModes, fn($m) => ($m['slug'] ?? '') !== $modeSlug));
+
 $tpl->seo
     ->setTitle($mode['seo']['title'] ?? $h1)
     ->setDescription($mode['seo']['description'] ?? '')
@@ -243,6 +249,41 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
+  <?php if (!empty($otherModes)):
+    $modeIconDir = __DIR__ . '/../../assets/icons/transport-modes/';
+  ?>
+    <section class="aeroport-mode-other-modes" id="autres-modes">
+      <h2>Aller à l'aéroport <?= Template::e($aeroName) ?> autrement</h2>
+      <div class="modes-grid">
+        <?php foreach ($otherModes as $m):
+          $mSlug  = $m['slug'] ?? '';
+          $mType  = $m['type'] ?? 'metro';
+          $mUrl   = '/aeroports/' . $aeroSlug . '/' . $mSlug . '/';
+          $icoFp  = $modeIconDir . $mType . '.svg';
+          $icoSvg = is_file($icoFp) ? file_get_contents($icoFp) : '';
+        ?>
+          <a href="<?= Template::e($mUrl) ?>" class="mode-card mode-card--<?= Template::e($mType) ?>">
+            <div class="mode-card__icon"><?= $icoSvg ?></div>
+            <h3 class="mode-card__title"><?= Template::e($m['name'] ?? '') ?></h3>
+            <div class="mode-card__details">
+              <span class="mode-card__time"><?= Template::e($m['duration'] ?? '') ?></span>
+              <span class="mode-card__price"><?= Template::e($m['price'] ?? '') ?></span>
+            </div>
+            <?php if (!empty($m['note'])): ?>
+              <p class="mode-card__note"><?= Template::e($m['note']) ?></p>
+            <?php endif; ?>
+            <span class="mode-card__cta">Voir le guide →</span>
+          </a>
+        <?php endforeach; ?>
+      </div>
+      <p class="back-to-hub">
+        <a href="/aeroports/<?= Template::e($aeroSlug) ?>/">
+          ← Retour au guide complet <?= Template::e($aeroName) ?>
+        </a>
+      </p>
+    </section>
+  <?php endif; ?>
+
   <?php $tpl->partial('ads/slot-footer'); ?>
 
 </article>
@@ -273,4 +314,58 @@ $tpl->seo
 .faq-item summary { cursor: pointer; font-weight: 600; }
 .faq-item p { margin-top: .5rem; }
 .back-link { font-weight: 600; color: #0F6E56; }
+
+/* Section "Aller à l'aéroport X autrement" — maillage interne */
+.aeroport-mode-other-modes { margin: 3rem 0 2rem; padding-top: 2rem; border-top: 2px solid #E1F5EE; }
+.aeroport-mode-other-modes h2 { color: #0F6E56; margin: 0 0 1.5rem; font-size: clamp(1.3rem, 2.5vw, 1.6rem); }
+.modes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.mode-card {
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.mode-card:hover { border-color: var(--card-color, #0F6E56); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
+.mode-card__icon { width: 48px; height: 48px; color: var(--card-color, #0F6E56); margin-bottom: .75rem; }
+.mode-card__icon svg { width: 100%; height: 100%; display: block; }
+.mode-card--metro   { --card-color: #0F6E56; }
+.mode-card--bus     { --card-color: #E67E22; }
+.mode-card--rer     { --card-color: #2980B9; }
+.mode-card--tramway { --card-color: #27AE60; }
+.mode-card--taxi    { --card-color: #C9A227; }
+.mode-card--navette { --card-color: #8E44AD; }
+.mode-card--train   { --card-color: #C0392B; }
+.mode-card__title { margin: 0 0 .5rem; font-size: 1.1rem; color: var(--card-color); }
+.mode-card__details { display: flex; flex-direction: column; gap: .15rem; margin-bottom: .5rem; }
+.mode-card__time { font-weight: 700; font-size: 1.05rem; }
+.mode-card__price { color: #555; font-size: .95rem; }
+.mode-card__note { font-size: .85rem; color: #777; margin: .25rem 0 .75rem; flex: 1; }
+.mode-card__cta { display: inline-block; font-weight: 600; color: var(--card-color); font-size: .9rem; margin-top: auto; }
+.back-to-hub { text-align: center; margin-top: 2rem; }
+.back-to-hub a {
+  display: inline-block;
+  color: #0F6E56;
+  text-decoration: none;
+  font-weight: 600;
+  padding: .6rem 1.2rem;
+  border: 1px solid #0F6E56;
+  border-radius: 8px;
+  transition: background .2s, color .2s;
+}
+.back-to-hub a:hover { background: #0F6E56; color: #fff; }
+@media (max-width: 768px) {
+  .modes-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
+  .mode-card { padding: 1rem; }
+  .mode-card__icon { width: 40px; height: 40px; }
+}
 </style>
