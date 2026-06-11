@@ -261,6 +261,25 @@ $tpl->seo
       <strong>Paris-Orly</strong> est l'aéroport le plus proche du centre, à environ <strong>14 km au sud</strong>. Accessible en <strong>25 minutes en métro 14</strong> (depuis juin 2024).
     </p>
   </section>
+  <script type="application/ld+json">
+  <?php
+  $_hubFaq = [
+    ["Combien y a-t-il d'aéroports à Paris ?", "Paris compte 3 aéroports principaux : Paris-Charles de Gaulle (CDG), Paris-Orly (ORY) et Paris-Beauvais-Tillé (BVA)."],
+    ["Quel est le plus grand aéroport parisien ?", "Paris-Charles de Gaulle (CDG) est le plus grand, avec environ 67 millions de passagers/an. C'est le 2e aéroport européen après Londres-Heathrow."],
+    ["Quel aéroport pour Ryanair ?", "Ryanair opère principalement depuis Paris-Beauvais-Tillé (BVA), situé à 85 km au nord de Paris. Quelques vols depuis Paris-Charles de Gaulle."],
+    ["Quel aéroport est le plus proche du centre de Paris ?", "Paris-Orly est l'aéroport le plus proche du centre, à environ 14 km au sud. Accessible en 25 minutes en métro 14 (depuis juin 2024)."],
+  ];
+  $_main = [];
+  foreach ($_hubFaq as [$q, $a]) {
+    $_main[] = ['@type' => 'Question', 'name' => $q, 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $a]];
+  }
+  echo json_encode([
+    '@context' => 'https://schema.org',
+    '@type'    => 'FAQPage',
+    'mainEntity' => $_main,
+  ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+  ?>
+  </script>
 
   <?php $tpl->partial('ads/slot-footer'); ?>
 

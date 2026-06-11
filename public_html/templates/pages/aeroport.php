@@ -223,12 +223,32 @@ $buildSrcset = function(array $map): string {
       <div class="faq-list">
         <?php foreach ($faq as $q): ?>
           <details class="faq-item">
-            <summary><?= Template::e($q['question'] ?? '') ?></summary>
-            <p><?= $q['answer'] ?? '' ?></p>
+            <summary><h3 class="faq-question__title"><?= Template::e($q['question'] ?? '') ?></h3></summary>
+            <div class="faq-answer"><?= $q['answer'] ?? '' ?></div>
           </details>
         <?php endforeach; ?>
       </div>
     </section>
+    <script type="application/ld+json">
+    <?php
+    $_faqMain = [];
+    foreach ($faq as $q) {
+      $_faqMain[] = [
+        '@type' => 'Question',
+        'name'  => $q['question'] ?? '',
+        'acceptedAnswer' => [
+          '@type' => 'Answer',
+          'text'  => trim(strip_tags($q['answer'] ?? '')),
+        ],
+      ];
+    }
+    echo json_encode([
+      '@context' => 'https://schema.org',
+      '@type'    => 'FAQPage',
+      'mainEntity' => $_faqMain,
+    ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+    ?>
+    </script>
   <?php endif; ?>
 
   <section class="aeroport-section aeroport-meta">
@@ -282,8 +302,11 @@ $buildSrcset = function(array $map): string {
 .poi-distance { font-size: .85rem; color: #777; margin-left: .5rem; }
 .faq-list { margin-top: 1rem; }
 .faq-item { background: #f4f8f6; padding: .75rem 1rem; border-radius: 8px; margin-bottom: .5rem; }
-.faq-item summary { cursor: pointer; font-weight: 600; }
-.faq-item p { margin-top: .5rem; }
+.faq-item summary { cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-question__title { display: inline; margin: 0; font-size: 1rem; font-weight: 600; color: #1a1a1a; }
+.faq-answer { margin-top: .5rem; line-height: 1.6; color: #444; }
+.faq-answer p:first-child { margin-top: 0; }
 .aeroport-summary { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1rem; margin-top: 1rem; }
 .aeroport-summary dt { font-weight: 600; color: #0F6E56; }
 .aeroport-summary dd { margin: 0; }
