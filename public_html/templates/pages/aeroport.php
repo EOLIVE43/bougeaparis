@@ -112,7 +112,6 @@ $buildSrcset = function(array $map): string {
 
   <?php if (!empty($intros)): ?>
     <section class="aeroport-intro">
-      <h2>Présentation de <?= Template::e($full) ?></h2>
       <?php foreach ($intros as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
@@ -139,7 +138,7 @@ $buildSrcset = function(array $map): string {
         ?>
           <a href="<?= Template::e($modeUrl) ?>" class="mode-card mode-card--<?= Template::e($modeType) ?>">
             <div class="mode-card__icon"><?= $iconSvg ?></div>
-            <h3 class="mode-card__title"><?= Template::e($mode['name'] ?? '') ?></h3>
+            <div class="mode-card__title"><?= Template::e($mode['name'] ?? '') ?></div>
             <div class="mode-card__details">
               <span class="mode-card__time"><?= Template::e($mode['duration'] ?? '') ?></span>
               <span class="mode-card__price"><?= Template::e($mode['price'] ?? '') ?></span>

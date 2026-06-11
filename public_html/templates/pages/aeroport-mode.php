@@ -124,7 +124,7 @@ $tpl->seo
                 <circle cx="34" cy="36" r="3" fill="currentColor"/>
               </svg>
             </div>
-            <h3 class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></h3>
+            <div class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></div>
             <p class="bus-card__route"><?= Template::e($bl['departure'] ?? '') ?> ↔ <?= Template::e($aeroName) ?></p>
             <div class="bus-card__metrics">
               <span class="bus-card__duration"><?= Template::e($bl['duration'] ?? '') ?></span>
@@ -212,7 +212,7 @@ $tpl->seo
             <div class="info-card info-card--<?= Template::e($iconKey) ?>">
               <div class="info-card__icon"><?= $iconSvg ?></div>
               <div class="info-card__content">
-                <h3 class="info-card__title"><?= Template::e($title) ?></h3>
+                <div class="info-card__title"><?= Template::e($title) ?></div>
                 <div class="info-card__body">
                   <?php if ($price !== ''): ?>
                     <span class="info-card__price"><?= Template::e($price) ?></span>
@@ -326,7 +326,7 @@ $tpl->seo
         ?>
           <a href="<?= Template::e($mUrl) ?>" class="mode-card mode-card--<?= Template::e($mType) ?>">
             <div class="mode-card__icon"><?= $icoSvg ?></div>
-            <h3 class="mode-card__title"><?= Template::e($m['name'] ?? '') ?></h3>
+            <div class="mode-card__title"><?= Template::e($m['name'] ?? '') ?></div>
             <div class="mode-card__details">
               <span class="mode-card__time"><?= Template::e($m['duration'] ?? '') ?></span>
               <span class="mode-card__price"><?= Template::e($m['price'] ?? '') ?></span>
