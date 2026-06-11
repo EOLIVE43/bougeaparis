@@ -313,5 +313,47 @@
             "distance_km": 50
         }
     ],
-    "published": true
+    "published": true,
+    "access_modes": [
+        {
+            "slug": "rer-b",
+            "type": "rer",
+            "name": "RER B",
+            "duration": "35 min",
+            "price": "11,80 €",
+            "note": "Direct depuis Châtelet"
+        },
+        {
+            "slug": "bus",
+            "type": "bus",
+            "name": "Roissybus",
+            "duration": "60-75 min",
+            "price": "16,60 €",
+            "note": "Depuis Opéra"
+        },
+        {
+            "slug": "tgv",
+            "type": "train",
+            "name": "TGV",
+            "duration": "Variable",
+            "price": "Selon trajet",
+            "note": "Gare Aéroport-CDG-TGV (Terminal 2)"
+        },
+        {
+            "slug": "taxi",
+            "type": "taxi",
+            "name": "Taxi",
+            "duration": "60 min",
+            "price": "56 € / 65 €",
+            "note": "Forfait rive droite / gauche"
+        },
+        {
+            "slug": "cdgval",
+            "type": "navette",
+            "name": "CDGVAL",
+            "duration": "5-8 min",
+            "price": "Gratuit",
+            "note": "Métro auto inter-terminaux"
+        }
+    ]
 }

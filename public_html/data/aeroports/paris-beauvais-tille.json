@@ -222,5 +222,31 @@
             "distance_km": 50
         }
     ],
-    "published": true
+    "published": true,
+    "access_modes": [
+        {
+            "slug": "navette",
+            "type": "navette",
+            "name": "Navette officielle",
+            "duration": "75 min",
+            "price": "17 €",
+            "note": "Depuis Porte Maillot"
+        },
+        {
+            "slug": "train",
+            "type": "train",
+            "name": "Train + bus",
+            "duration": "~2h",
+            "price": "14-22 €",
+            "note": "TER Paris-Nord + bus 12/14"
+        },
+        {
+            "slug": "taxi",
+            "type": "taxi",
+            "name": "Taxi",
+            "duration": "90 min",
+            "price": "180-250 €",
+            "note": "85 km (très onéreux)"
+        }
+    ]
 }

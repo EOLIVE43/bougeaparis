@@ -331,5 +331,47 @@
             "distance_km": 2
         }
     ],
-    "published": true
+    "published": true,
+    "access_modes": [
+        {
+            "slug": "metro",
+            "type": "metro",
+            "name": "Métro 14",
+            "duration": "25 min",
+            "price": "2,15 €",
+            "note": "Direct depuis Châtelet (juin 2024)"
+        },
+        {
+            "slug": "bus",
+            "type": "bus",
+            "name": "Orlybus",
+            "duration": "35 min",
+            "price": "11,50 €",
+            "note": "Depuis Denfert-Rochereau"
+        },
+        {
+            "slug": "rer",
+            "type": "rer",
+            "name": "RER B + Orlyval",
+            "duration": "40 min",
+            "price": "13,25 €",
+            "note": "Via correspondance Antony"
+        },
+        {
+            "slug": "tramway",
+            "type": "tramway",
+            "name": "Tramway T7",
+            "duration": "30 min",
+            "price": "2,15 €",
+            "note": "Économique via Villejuif (M7)"
+        },
+        {
+            "slug": "taxi",
+            "type": "taxi",
+            "name": "Taxi",
+            "duration": "35 min",
+            "price": "36 € / 44 €",
+            "note": "Forfait rive gauche / droite"
+        }
+    ]
 }

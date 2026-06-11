@@ -26,6 +26,7 @@ $history   = $aeroport['history'] ?? [];
 $faq       = $aeroport['faq'] ?? [];
 $pois      = $aeroport['nearby_pois'] ?? [];
 $heroImg   = $aeroport['hero_image'] ?? null;
+$accessModes = $aeroport['access_modes'] ?? [];
 
 $canonical = '/aeroports/' . $slug . '/';
 
@@ -111,10 +112,42 @@ $buildSrcset = function(array $map): string {
 
   <?php if (!empty($intros)): ?>
     <section class="aeroport-intro">
-      <h2>Présentation de l'<?= Template::e($full) ?></h2>
+      <h2>Présentation de <?= Template::e($full) ?></h2>
       <?php foreach ($intros as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
+    </section>
+  <?php endif; ?>
+
+  <?php
+    // Cards modes d'accès — refonte UX : grille visuelle cliquable
+    $modeIconDir = __DIR__ . '/../../assets/icons/transport-modes/';
+  ?>
+  <?php if (!empty($accessModes)): ?>
+    <section class="aeroport-modes-grid">
+      <h2>Tous les modes d'accès à <?= Template::e($name) ?></h2>
+      <div class="modes-grid">
+        <?php foreach ($accessModes as $mode):
+          $modeSlug = $mode['slug'] ?? '';
+          $modeType = $mode['type'] ?? 'metro';
+          $modeUrl  = '/aeroports/' . $slug . '/' . $modeSlug . '/';
+          $iconPath = $modeIconDir . $modeType . '.svg';
+          $iconSvg  = is_file($iconPath) ? file_get_contents($iconPath) : '';
+        ?>
+          <a href="<?= Template::e($modeUrl) ?>" class="mode-card mode-card--<?= Template::e($modeType) ?>">
+            <div class="mode-card__icon"><?= $iconSvg ?></div>
+            <h3 class="mode-card__title"><?= Template::e($mode['name'] ?? '') ?></h3>
+            <div class="mode-card__details">
+              <span class="mode-card__time"><?= Template::e($mode['duration'] ?? '') ?></span>
+              <span class="mode-card__price"><?= Template::e($mode['price'] ?? '') ?></span>
+            </div>
+            <?php if (!empty($mode['note'])): ?>
+              <p class="mode-card__note"><?= Template::e($mode['note']) ?></p>
+            <?php endif; ?>
+            <span class="mode-card__cta">Voir le guide →</span>
+          </a>
+        <?php endforeach; ?>
+      </div>
     </section>
   <?php endif; ?>
 
@@ -158,7 +191,7 @@ $buildSrcset = function(array $map): string {
 
   <?php if (!empty($history)): ?>
     <section class="aeroport-section" id="histoire">
-      <h2>Histoire de l'<?= Template::e($full) ?></h2>
+      <h2>Histoire de <?= Template::e($full) ?></h2>
       <?php foreach ($history as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
@@ -167,7 +200,7 @@ $buildSrcset = function(array $map): string {
 
   <?php if (!empty($pois)): ?>
     <section class="aeroport-section" id="proximite">
-      <h2>À proximité de l'<?= Template::e($name) ?></h2>
+      <h2>À proximité de <?= Template::e($name) ?></h2>
       <ul class="pois-list">
         <?php foreach ($pois as $poi): ?>
           <li>
@@ -197,7 +230,6 @@ $buildSrcset = function(array $map): string {
   <?php endif; ?>
 
   <section class="aeroport-section aeroport-meta">
-    <h2>En résumé — <?= Template::e($name) ?></h2>
     <dl class="aeroport-summary">
       <dt>Nom officiel</dt><dd><?= Template::e($full) ?></dd>
       <?php if ($iata): ?><dt>Code IATA</dt><dd><?= Template::e($iata) ?></dd><?php endif; ?>
@@ -227,7 +259,11 @@ $buildSrcset = function(array $map): string {
 .aeroport-page h2 { margin-top: 2rem; color: #0F6E56; }
 .aeroport-hero { margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; background: #0F6E56; color: #fff; }
 .aeroport-hero__image img,
-.aeroport-hero__image picture img { display: block; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; }
+.aeroport-hero__image picture img { display: block; width: 100%; height: auto; max-height: 400px; aspect-ratio: 16/9; object-fit: cover; }
+@media (max-width: 768px) {
+  .aeroport-hero__image img,
+  .aeroport-hero__image picture img { max-height: 250px; }
+}
 .aeroport-hero__content { padding: 1.5rem; }
 .aeroport-hero h1 { color: #fff; margin: 0 0 .5rem; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.25; }
 .aeroport-tagline { font-size: 1.05rem; opacity: .95; margin: 0 0 1rem; font-weight: 600; }
@@ -254,4 +290,49 @@ $buildSrcset = function(array $map): string {
 .aeroport-summary dt { font-weight: 600; color: #0F6E56; }
 .aeroport-summary dd { margin: 0; }
 .aeroport-credit { margin-top: 1rem; font-size: .85rem; color: #777; }
+
+/* Cards modes d'accès — refonte UX P3 */
+.aeroport-modes-grid { margin: 2rem 0; }
+.modes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.mode-card {
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.mode-card:hover {
+  border-color: var(--card-color, #0F6E56);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.1);
+}
+.mode-card__icon { width: 48px; height: 48px; color: var(--card-color, #0F6E56); margin-bottom: .75rem; }
+.mode-card__icon svg { width: 100%; height: 100%; display: block; }
+.mode-card--metro   { --card-color: #0F6E56; }
+.mode-card--bus     { --card-color: #E67E22; }
+.mode-card--rer     { --card-color: #2980B9; }
+.mode-card--tramway { --card-color: #27AE60; }
+.mode-card--taxi    { --card-color: #C9A227; }
+.mode-card--navette { --card-color: #8E44AD; }
+.mode-card--train   { --card-color: #C0392B; }
+.mode-card__title { margin: 0 0 .5rem; font-size: 1.1rem; color: var(--card-color); }
+.mode-card__details { display: flex; flex-direction: column; gap: .15rem; margin-bottom: .5rem; }
+.mode-card__time { font-weight: 700; font-size: 1.05rem; }
+.mode-card__price { color: #555; font-size: .95rem; }
+.mode-card__note { font-size: .85rem; color: #777; margin: .25rem 0 .75rem; flex: 1; }
+.mode-card__cta { display: inline-block; font-weight: 600; color: var(--card-color); font-size: .9rem; margin-top: auto; }
+@media (max-width: 768px) {
+  .modes-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
+  .mode-card { padding: 1rem; }
+  .mode-card__icon { width: 40px; height: 40px; }
+}
 </style>
