@@ -175,23 +175,67 @@ $tpl->seo
     </div>
   </section>
 
-  <section class="aeroport-guide-choisir">
+  <section class="aeroports-choix-section">
     <h2>Quel aéroport choisir selon votre destination ?</h2>
-
-    <h3>Vols long-courriers et internationaux : Paris-CDG</h3>
-    <p>
-      Si vous voyagez en <strong>long-courrier</strong> (Amérique, Asie, Afrique), l'aéroport <strong>Paris-Charles de Gaulle</strong> est votre choix principal. Hub d'Air France avec plus de <strong>300 destinations</strong> et la majorité des compagnies internationales (Delta, KLM, Lufthansa, Emirates, Cathay Pacific, ANA…).
+    <p class="aeroports-choix-intro">
+      Le choix de votre aéroport dépend de votre destination, du type de vol et de votre budget. Voici nos recommandations selon votre profil de voyageur.
     </p>
 
-    <h3>Vols européens et compagnies traditionnelles : Paris-Orly</h3>
-    <p>
-      <strong>Paris-Orly</strong> dessert principalement l'<strong>Europe et le bassin méditerranéen</strong>. Hub de <strong>Transavia, easyJet</strong>, French Bee et de compagnies régulières (Vueling, Iberia, Air Corsica). Accès rapide depuis Paris via le <strong>métro 14 en 25 min</strong>.
-    </p>
+    <div class="choix-grid">
 
-    <h3>Vols low-cost Ryanair et Wizz Air : Paris-Beauvais</h3>
-    <p>
-      <strong>Paris-Beauvais-Tillé</strong> est l'aéroport principal des compagnies <strong>low-cost européennes</strong> (Ryanair, Wizz Air, Volotea). Distance plus importante (85 km) mais billets souvent très compétitifs. Réserver la navette officielle Porte Maillot recommandée.
-    </p>
+      <a href="/aeroports/paris-charles-de-gaulle/" class="choix-card choix-card--longcourrier">
+        <div class="choix-card__icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="24" r="20"/>
+            <line x1="4" y1="24" x2="44" y2="24"/>
+            <path d="M24 4 Q14 14 24 24 Q34 34 24 44"/>
+            <path d="M24 4 Q34 14 24 24 Q14 34 24 44"/>
+          </svg>
+        </div>
+        <h3 class="choix-card__title">Vols long-courriers et internationaux</h3>
+        <div class="choix-card__aeroport">Paris-CDG</div>
+        <p class="choix-card__description">
+          <strong>Hub d'Air France</strong> avec plus de <strong>300 destinations</strong> et la majorité des compagnies internationales (Delta, KLM, Lufthansa, Emirates, Cathay Pacific, ANA…). Idéal pour l'Amérique, l'Asie et l'Afrique.
+        </p>
+        <span class="choix-card__cta">Voir le guide CDG →</span>
+      </a>
+
+      <a href="/aeroports/paris-orly/" class="choix-card choix-card--europe">
+        <div class="choix-card__icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="14" cy="20" r="5"/>
+            <circle cx="34" cy="20" r="5"/>
+            <circle cx="24" cy="36" r="5"/>
+            <line x1="19" y1="20" x2="29" y2="20"/>
+            <line x1="16" y1="24" x2="22" y2="33"/>
+            <line x1="32" y1="24" x2="26" y2="33"/>
+          </svg>
+        </div>
+        <h3 class="choix-card__title">Vols européens et compagnies traditionnelles</h3>
+        <div class="choix-card__aeroport">Paris-Orly</div>
+        <p class="choix-card__description">
+          <strong>Europe et bassin méditerranéen</strong>. Hub de Transavia, easyJet, French Bee et compagnies régulières (Vueling, Iberia, Air Corsica). Accès rapide depuis Paris via le <strong>métro 14 en 25 min</strong>.
+        </p>
+        <span class="choix-card__cta">Voir le guide Orly →</span>
+      </a>
+
+      <a href="/aeroports/paris-beauvais-tille/" class="choix-card choix-card--lowcost">
+        <div class="choix-card__icon">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 28 L42 18 L26 32 L20 24 Z"/>
+            <line x1="20" y1="24" x2="14" y2="34"/>
+            <line x1="4" y1="40" x2="44" y2="40"/>
+          </svg>
+        </div>
+        <h3 class="choix-card__title">Vols low-cost Ryanair et Wizz Air</h3>
+        <div class="choix-card__aeroport">Paris-Beauvais</div>
+        <p class="choix-card__description">
+          <strong>Compagnies low-cost européennes</strong> (Ryanair, Wizz Air, Volotea). Distance plus importante (85 km au nord) mais billets souvent très compétitifs. <strong>Navette officielle Porte Maillot</strong> recommandée.
+        </p>
+        <span class="choix-card__cta">Voir le guide Beauvais →</span>
+      </a>
+
+    </div>
   </section>
 
   <section class="aeroport-faq">
@@ -338,5 +382,84 @@ $tpl->seo
   .aeroports-grid { grid-template-columns: 1fr; gap: 1rem; }
   .aeroport-card__content { padding: 1rem 1.25rem 1.25rem; }
   .aeroport-card__title { font-size: 1.15rem; }
+}
+
+/* Section "Quel aéroport choisir ?" — 3 cards visuelles décisionnelles */
+.aeroports-choix-section { margin: 3rem 0; }
+.aeroports-choix-intro { font-size: 1rem; color: #555; margin-bottom: 1.5rem; max-width: 720px; line-height: 1.6; }
+.choix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.choix-card {
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid #E1F5EE;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.choix-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15,110,86,.15);
+}
+.choix-card--longcourrier { border-color: #0F6E56; }
+.choix-card--longcourrier:hover { border-color: #085041; }
+.choix-card--europe { border-color: #2980B9; }
+.choix-card--europe:hover { border-color: #1f618d; }
+.choix-card--lowcost { border-color: #E67E22; }
+.choix-card--lowcost:hover { border-color: #ba6519; }
+.choix-card__icon { width: 56px; height: 56px; margin-bottom: 1rem; }
+.choix-card__icon svg { width: 100%; height: 100%; display: block; }
+.choix-card--longcourrier .choix-card__icon { color: #0F6E56; }
+.choix-card--europe .choix-card__icon       { color: #2980B9; }
+.choix-card--lowcost .choix-card__icon      { color: #E67E22; }
+.choix-card__title {
+  margin: 0 0 .5rem;
+  font-size: 1.05rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.choix-card__aeroport {
+  display: inline-block; align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: .35rem .85rem;
+  font-weight: 700; font-size: 1.05rem;
+  border-radius: 6px;
+}
+.choix-card--longcourrier .choix-card__aeroport { background: #E1F5EE; color: #0F6E56; }
+.choix-card--europe .choix-card__aeroport       { background: #D6EAF8; color: #2980B9; }
+.choix-card--lowcost .choix-card__aeroport      { background: #FDEAA7; color: #E67E22; }
+.choix-card__description {
+  margin: .5rem 0 1rem;
+  font-size: .93rem;
+  line-height: 1.55;
+  color: #444;
+  flex-grow: 1;
+}
+.choix-card__description strong { color: #1a1a1a; }
+.choix-card__cta {
+  display: inline-block;
+  margin-top: auto;
+  font-weight: 600;
+  font-size: .95rem;
+  padding-top: .5rem;
+  border-top: 1px solid #E1F5EE;
+  transition: transform .2s;
+}
+.choix-card--longcourrier .choix-card__cta { color: #0F6E56; }
+.choix-card--europe .choix-card__cta       { color: #2980B9; }
+.choix-card--lowcost .choix-card__cta      { color: #E67E22; }
+.choix-card:hover .choix-card__cta { transform: translateX(4px); }
+@media (max-width: 768px) {
+  .choix-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .choix-card { padding: 1.25rem; }
+  .choix-card__icon { width: 48px; height: 48px; }
 }
 </style>
