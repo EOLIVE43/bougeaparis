@@ -147,7 +147,7 @@ $buildSrcset = function(array $map): string {
             <?php if (!empty($mode['note'])): ?>
               <p class="mode-card__note"><?= Template::e($mode['note']) ?></p>
             <?php endif; ?>
-            <span class="mode-card__cta">Voir le guide →</span>
+            <span class="mode-card__cta">→ <?= Template::e($mode['cta_anchor'] ?? $mode['name'] ?? 'Voir le guide') ?></span>
           </a>
         <?php endforeach; ?>
       </div>
@@ -295,9 +295,15 @@ $buildSrcset = function(array $map): string {
 .aeroport-modes-grid { margin: 2rem 0; }
 .modes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 1.5rem 0;
+}
+@media (max-width: 900px) {
+  .modes-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .modes-grid { grid-template-columns: 1fr; }
 }
 .mode-card {
   display: flex; flex-direction: column;
@@ -343,7 +349,7 @@ $buildSrcset = function(array $map): string {
 .mode-card__note { font-size: .85rem; color: #777; margin: .25rem 0 .75rem; flex: 1; }
 .mode-card__cta { display: inline-block; font-weight: 600; color: var(--card-color); font-size: .9rem; margin-top: auto; }
 @media (max-width: 768px) {
-  .modes-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
+  .modes-grid { gap: .75rem; }
   .mode-card { padding: 1rem; }
   .mode-card__icon { width: 40px; height: 40px; }
 }
