@@ -131,7 +131,10 @@ $buildSrcset = function(array $map): string {
           $modeSlug = $mode['slug'] ?? '';
           $modeType = $mode['type'] ?? 'metro';
           $modeUrl  = '/aeroports/' . $slug . '/' . $modeSlug . '/';
-          $iconPath = $modeIconDir . $modeType . '.svg';
+          // Mapping vers SVG existants (bus-express réutilise bus.svg)
+          $iconMap  = ['bus-express' => 'bus'];
+          $iconKey  = $iconMap[$modeType] ?? $modeType;
+          $iconPath = $modeIconDir . $iconKey . '.svg';
           $iconSvg  = is_file($iconPath) ? file_get_contents($iconPath) : '';
         ?>
           <a href="<?= Template::e($modeUrl) ?>" class="mode-card mode-card--<?= Template::e($modeType) ?>">
@@ -314,8 +317,20 @@ $buildSrcset = function(array $map): string {
 }
 .mode-card__icon { width: 48px; height: 48px; color: var(--card-color, #0F6E56); margin-bottom: .75rem; }
 .mode-card__icon svg { width: 100%; height: 100%; display: block; }
-.mode-card--metro   { --card-color: #0F6E56; }
-.mode-card--bus     { --card-color: #E67E22; }
+.mode-card--metro       { --card-color: #0F6E56; }
+.mode-card--bus         { --card-color: #E67E22; }
+.mode-card--bus-express { --card-color: #E67E22; position: relative; border-color: #E67E22; }
+.mode-card--bus-express::before {
+  content: "★ Populaire";
+  position: absolute;
+  top: -10px; right: 12px;
+  background: #E67E22; color: #fff;
+  font-size: .72rem; font-weight: 700;
+  padding: .25rem .65rem;
+  border-radius: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
 .mode-card--rer     { --card-color: #2980B9; }
 .mode-card--tramway { --card-color: #27AE60; }
 .mode-card--taxi    { --card-color: #C9A227; }
