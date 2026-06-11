@@ -239,12 +239,8 @@ $buildSrcset = function(array $map): string {
       <?php if ($opened): ?><dt>Ouverture</dt><dd><?= Template::e($opened) ?></dd><?php endif; ?>
     </dl>
     <?php if (!empty($heroImg['credit'])): ?>
-      <p class="aeroport-credit">
-        Photo : <?= Template::e($heroImg['credit']['author'] ?? '') ?> —
-        <?= Template::e($heroImg['credit']['license'] ?? '') ?> —
-        <?php if (!empty($heroImg['credit']['source_url'])): ?>
-          <a href="<?= Template::e($heroImg['credit']['source_url']) ?>" rel="nofollow noopener" target="_blank">source Wikimedia</a>
-        <?php endif; ?>
+      <p class="aeroport-credit-link">
+        Crédits photo et sources des données : <a href="/sources/#credits-photos">voir la page Sources</a>.
       </p>
     <?php endif; ?>
   </section>
@@ -289,7 +285,8 @@ $buildSrcset = function(array $map): string {
 .aeroport-summary { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1rem; margin-top: 1rem; }
 .aeroport-summary dt { font-weight: 600; color: #0F6E56; }
 .aeroport-summary dd { margin: 0; }
-.aeroport-credit { margin-top: 1rem; font-size: .85rem; color: #777; }
+.aeroport-credit-link { margin-top: 1rem; font-size: .85rem; color: #777; }
+.aeroport-credit-link a { color: #0F6E56; }
 
 /* Cards modes d'accès — refonte UX P3 */
 .aeroport-modes-grid { margin: 2rem 0; }

@@ -234,6 +234,13 @@ $lastUpdateLabel = $lastUpdate ? dateFr($lastUpdate, 'long_with_day') : null;
             if (!is_array($d)) continue;
             $pushHero($d, 'station');
         }
+        // 4. Heros aéroports
+        $aeroportsDir = __DIR__ . '/../../data/aeroports';
+        foreach (glob($aeroportsDir . '/*.json') as $f) {
+            $d = json_decode(@file_get_contents($f), true);
+            if (!is_array($d)) continue;
+            $pushHero($d, 'aéroport');
+        }
 
         // Dedup par (context, author) au cas où
         $seen = [];
