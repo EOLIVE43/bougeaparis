@@ -223,6 +223,42 @@ switch ($path) {
             break;
         }
 
+        // Route dynamique /rer/ligne-{a|b|c|d|e} - fiche ligne RER
+        if (preg_match('#^/rer/ligne-([a-e])$#i', $path, $matches)) {
+            $code = strtoupper($matches[1]);
+            $file = __DIR__ . '/data/lines-rer/rer-' . strtolower($code) . '.json';
+            if (file_exists($file)) {
+                $line = json_decode(file_get_contents($file), true);
+                if (is_array($line) && ($line['published'] ?? false) === true) {
+                    $tpl = new Template('line-rer');
+                    $tpl->withData(['line' => $line]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
+            break;
+        }
+
+        // Route dynamique /rer/station/{slug} - URL canonique par station RER
+        // Convention slugs (T16) : "rer-{nomstation}" — distinct des slugs métro
+        // pour éviter cannibalisation (ex: chatelet / rer-chatelet-les-halles).
+        if (preg_match('#^/rer/station/([a-z0-9\-]+)$#', $path, $matches)) {
+            $slug = $matches[1];
+            $stationFile = __DIR__ . '/data/stations-rer/' . $slug . '.json';
+            if (file_exists($stationFile)) {
+                $station = json_decode(file_get_contents($stationFile), true);
+                if (is_array($station) && ($station['published'] ?? false) === true) {
+                    $tpl = new Template('station-rer');
+                    $tpl->withData(['station' => $station]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
+            break;
+        }
+
         // Route dynamique /metro/station/{slug} - URL canonique unique par station
         // (peu importe combien de lignes la desservent, évite duplicate content)
         // Garde-fou : la station n'est servie que si "published": true au niveau

@@ -115,6 +115,26 @@ class Routes
             return self::isStationActive($matches[1]);
         }
 
+        // 2bis. Pages station RER — détection dynamique data/stations-rer/{slug}.json
+        if (preg_match('~^/rer/station/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
+            $file = __DIR__ . '/../../public_html/data/stations-rer/' . $matches[1] . '.json';
+            if (is_file($file)) {
+                $data = json_decode((string)file_get_contents($file), true);
+                return is_array($data) && ($data['published'] ?? false) === true;
+            }
+            return false;
+        }
+
+        // 2ter. Pages ligne RER — détection dynamique data/lines-rer/rer-{code}.json
+        if (preg_match('~^/rer/ligne-([a-e])$~i', $clean, $matches) === 1) {
+            $file = __DIR__ . '/../../public_html/data/lines-rer/rer-' . strtolower($matches[1]) . '.json';
+            if (is_file($file)) {
+                $data = json_decode((string)file_get_contents($file), true);
+                return is_array($data) && ($data['published'] ?? false) === true;
+            }
+            return false;
+        }
+
         // 3. Pages gare — activation par slug-list
         if (preg_match('~^/gare/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
             return in_array($matches[1], self::$activeGareSlugs, true);

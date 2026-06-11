@@ -25,6 +25,8 @@ declare(strict_types=1);
 
 const ROOT_DIR     = __DIR__ . '/..';
 const STATIONS_DIR = ROOT_DIR . '/public_html/data/stations';
+const STATIONS_RER_DIR = ROOT_DIR . '/public_html/data/stations-rer';
+const LINES_RER_DIR = ROOT_DIR . '/public_html/data/lines-rer';
 const AEROPORTS_DIR = ROOT_DIR . '/public_html/data/aeroports';
 const LINES_JSON   = ROOT_DIR . '/public_html/data/lines.json';
 const OUT_FILE     = ROOT_DIR . '/public_html/sitemap.xml';
@@ -161,6 +163,51 @@ foreach ($modePages as $mp) {
     );
 }
 log_line('Pages mode-aéroport publiées : ' . count($modePages));
+
+// 3.4e Stations RER published (data/stations-rer/*.json)
+$rerStationFiles = glob(STATIONS_RER_DIR . '/*.json') ?: [];
+$rerStations = [];
+foreach ($rerStationFiles as $f) {
+    $d = json_decode((string)file_get_contents($f), true);
+    if (!is_array($d) || empty($d['published'])) continue;
+    $rerStations[] = [
+        'slug'    => $d['slug'] ?? basename($f, '.json'),
+        'lastmod' => date('Y-m-d', (int)filemtime($f)),
+    ];
+}
+usort($rerStations, fn($a, $b) => strcmp($a['slug'], $b['slug']));
+foreach ($rerStations as $st) {
+    $xml .= url_entry(
+        BASE_URL . "/rer/station/{$st['slug']}/",
+        'weekly',
+        '0.8',
+        $st['lastmod']
+    );
+}
+log_line('Stations RER publiées : ' . count($rerStations));
+
+// 3.4f Lignes RER published (data/lines-rer/rer-{a..e}.json)
+$rerLineFiles = glob(LINES_RER_DIR . '/*.json') ?: [];
+$rerLines = [];
+foreach ($rerLineFiles as $f) {
+    $d = json_decode((string)file_get_contents($f), true);
+    if (!is_array($d) || empty($d['published'])) continue;
+    $code = $d['code'] ?? str_replace('rer-', '', basename($f, '.json'));
+    $rerLines[] = [
+        'code'    => strtolower($code),
+        'lastmod' => date('Y-m-d', (int)filemtime($f)),
+    ];
+}
+usort($rerLines, fn($a, $b) => strcmp($a['code'], $b['code']));
+foreach ($rerLines as $l) {
+    $xml .= url_entry(
+        BASE_URL . "/rer/ligne-{$l['code']}/",
+        'weekly',
+        '0.9',
+        $l['lastmod']
+    );
+}
+log_line('Lignes RER publiées : ' . count($rerLines));
 
 // 3.4d Sous-pages mode (data/aeroports/{aero}/{mode}/{sub}.json)
 $subPages = [];
