@@ -162,6 +162,36 @@ foreach ($modePages as $mp) {
 }
 log_line('Pages mode-aéroport publiées : ' . count($modePages));
 
+// 3.4d Sous-pages mode (data/aeroports/{aero}/{mode}/{sub}.json)
+$subPages = [];
+foreach ($publishedAeroports as $ap) {
+    $aeroDir = AEROPORTS_DIR . '/' . $ap['slug'];
+    if (!is_dir($aeroDir)) continue;
+    foreach (glob($aeroDir . '/*', GLOB_ONLYDIR) ?: [] as $modeDir) {
+        $modeSlug = basename($modeDir);
+        foreach (glob($modeDir . '/*.json') ?: [] as $f) {
+            $data = json_decode((string)file_get_contents($f), true);
+            if (!is_array($data) || empty($data['published'])) continue;
+            $subPages[] = [
+                'aero'    => $ap['slug'],
+                'mode'    => $modeSlug,
+                'sub'     => basename($f, '.json'),
+                'lastmod' => date('Y-m-d', (int)filemtime($f)),
+            ];
+        }
+    }
+}
+usort($subPages, fn($a, $b) => strcmp($a['aero'].$a['mode'].$a['sub'], $b['aero'].$b['mode'].$b['sub']));
+foreach ($subPages as $sp) {
+    $xml .= url_entry(
+        BASE_URL . "/aeroports/{$sp['aero']}/{$sp['mode']}/{$sp['sub']}/",
+        'weekly',
+        '0.6',
+        $sp['lastmod']
+    );
+}
+log_line('Sous-pages mode publiées : ' . count($subPages));
+
 // 3.5 Pages éditoriales / footer
 $footer = [
     ['/sources/',            'monthly', '0.5'],

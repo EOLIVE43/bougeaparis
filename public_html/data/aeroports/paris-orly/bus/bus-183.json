@@ -1,0 +1,188 @@
+{
+    "published": true,
+    "aeroport_slug": "paris-orly",
+    "aeroport_name": "Paris-Orly",
+    "aeroport_iata": "ORY",
+    "mode_slug": "bus-183",
+    "mode_label": "Bus 183",
+    "color": "#2980B9",
+    "h1": "Bus 183 Orly : ligne régulière depuis Porte de Choisy (M7)",
+    "seo": {
+        "title": "Bus 183 Orly : durée 45 min, prix 2,15 € (ticket t+)",
+        "description": "Bus 183 vers l'aéroport Paris-Orly depuis Porte de Choisy (M7) : 45 min, 2,15 € ticket t+. Fréquence 10-20 min de 5h40 à 00h30. Tarif Navigo."
+    },
+    "tagline": "Option économique 2,15 € depuis Porte de Choisy (M7 terminus)",
+    "intro_paragraphs": [
+        "Le <strong>bus 183</strong> est une ligne régulière RATP qui relie <strong>Porte de Choisy</strong> (terminus de la ligne 7 du métro) à l'<strong>aéroport Paris-Orly</strong>. Solution <strong>économique</strong> au tarif <strong>ticket t+ (2,15 €)</strong>.",
+        "Durée du trajet : <strong>45 minutes</strong>. Fréquence <strong>toutes les 10 à 20 minutes</strong>. <strong>Service de 5h40 à 00h30</strong>."
+    ],
+    "quick_facts": [
+        {
+            "value": "45 min",
+            "label": "depuis Porte de Choisy"
+        },
+        {
+            "value": "2,15 €",
+            "label": "ticket t+"
+        },
+        {
+            "value": "10-20 min",
+            "label": "fréquence"
+        },
+        {
+            "value": "5h40 → 00h30",
+            "label": "amplitude"
+        }
+    ],
+    "itineraire": {
+        "h2": "Itinéraire Bus 183 Porte de Choisy ↔ Orly",
+        "paragraphs": [
+            "Le bus 183 dessert <strong>Porte de Choisy</strong> (M7 terminus) puis fait route vers l'aéroport via Thiais."
+        ],
+        "steps": [
+            "Prendre la <strong>M7</strong> direction Villejuif jusqu'à <strong>Porte de Choisy</strong> (terminus).",
+            "Sortir et trouver l'arrêt <strong>Bus 183</strong> direction Orly.",
+            "Monter dans le bus. Trajet d'environ <strong>45 min</strong> via Thiais.",
+            "Descendre à <strong>Aérogare Sud</strong> (Orly 1-2-3)."
+        ]
+    },
+    "horaires": {
+        "h2": "Horaires Bus 183",
+        "paragraphs": [
+            "Service tous les jours, amplitude étendue jusqu'au début de la nuit."
+        ],
+        "table": {
+            "headers": [
+                "Jour",
+                "Premier",
+                "Dernier",
+                "Fréquence"
+            ],
+            "rows": [
+                [
+                    "Lundi-vendredi",
+                    "5h40",
+                    "00h30",
+                    "10 min"
+                ],
+                [
+                    "Samedi",
+                    "5h40",
+                    "00h30",
+                    "15 min"
+                ],
+                [
+                    "Dimanche",
+                    "6h30",
+                    "00h30",
+                    "20 min"
+                ]
+            ]
+        }
+    },
+    "tarifs": {
+        "h2": "Tarifs Bus 183",
+        "paragraphs": [
+            "Le bus 183 utilise le <strong>ticket t+ standard</strong> à 2,15 €."
+        ],
+        "table": {
+            "headers": [
+                "Titre",
+                "Prix",
+                "Conditions"
+            ],
+            "rows": [
+                [
+                    "Ticket t+ unitaire",
+                    "2,15 €",
+                    "Trajet simple"
+                ],
+                [
+                    "Carnet 10",
+                    "17,35 €",
+                    "Tickets à l'unité"
+                ],
+                [
+                    "Navigo Semaine zones 1-5",
+                    "30,75 €",
+                    "Inclut Orly"
+                ],
+                [
+                    "Navigo Jour",
+                    "12,00 €",
+                    "Tout zone"
+                ]
+            ]
+        }
+    },
+    "itineraires_paris": [
+        {
+            "depart": "Porte de Choisy",
+            "station_slug": "porte-de-choisy",
+            "duration": "45 min",
+            "trajet": "Bus 183 direct."
+        },
+        {
+            "depart": "Châtelet",
+            "station_slug": "chatelet",
+            "duration": "1h05",
+            "trajet": "M7 (15 min) → Porte de Choisy + Bus 183."
+        },
+        {
+            "depart": "Opéra",
+            "station_slug": "opera",
+            "duration": "1h15",
+            "trajet": "M7 → Porte de Choisy + Bus 183."
+        },
+        {
+            "depart": "Place d'Italie",
+            "station_slug": "place-d-italie",
+            "duration": "55 min",
+            "trajet": "M7 → Porte de Choisy + Bus 183."
+        }
+    ],
+    "alternatives": [
+        {
+            "label": "Orlybus",
+            "url": "/aeroports/paris-orly/bus/orlybus/",
+            "note": "35 min depuis Denfert, 11,50 €."
+        },
+        {
+            "label": "Métro 14",
+            "url": "/aeroports/paris-orly/metro/",
+            "note": "25 min depuis Châtelet, 2,15 €."
+        },
+        {
+            "label": "Bus 285",
+            "url": "/aeroports/paris-orly/bus/bus-285/",
+            "note": "30 min depuis Villejuif, 2,15 €."
+        },
+        {
+            "label": "Tramway T7",
+            "url": "/aeroports/paris-orly/tramway/",
+            "note": "30 min depuis Villejuif, 2,15 €."
+        }
+    ],
+    "faq": [
+        {
+            "question": "Le bus 183 va-t-il à Orly ?",
+            "answer": "<strong>Oui</strong>. Le bus 183 relie <strong>Porte de Choisy</strong> (M7 terminus) à l'<strong>aéroport Paris-Orly</strong> en 45 min."
+        },
+        {
+            "question": "Combien coûte le bus 183 pour Orly ?",
+            "answer": "<strong>2,15 €</strong> (ticket t+ standard). Compris dans le <strong>pass Navigo zones 1-5</strong>."
+        },
+        {
+            "question": "Combien de temps Porte de Choisy → Orly en bus 183 ?",
+            "answer": "<strong>45 minutes</strong> en conditions normales."
+        },
+        {
+            "question": "À quelle heure le premier bus 183 ?",
+            "answer": "<strong>5h40</strong> en semaine, <strong>6h30</strong> le dimanche."
+        },
+        {
+            "question": "Bus 183 ou Orlybus pour Orly ?",
+            "answer": "<strong>Bus 183</strong> est moins cher (2,15 € vs 11,50 €) mais plus lent (45 min vs 35 min). Privilégier le 183 avec un pass Navigo, l'Orlybus pour la rapidité depuis Denfert."
+        }
+    ]
+}

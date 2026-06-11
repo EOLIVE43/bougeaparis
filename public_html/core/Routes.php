@@ -131,6 +131,16 @@ class Routes
             return false;
         }
 
+        // 3quater. Sous-pages mode-aéroport (ex: /aeroports/paris-orly/bus/orlybus)
+        if (preg_match('~^/aeroports/([a-z0-9\-]+)/([a-z0-9\-]+)/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
+            $file = __DIR__ . '/../../public_html/data/aeroports/' . $matches[1] . '/' . $matches[2] . '/' . $matches[3] . '.json';
+            if (is_file($file)) {
+                $data = json_decode((string)file_get_contents($file), true);
+                return is_array($data) && ($data['published'] ?? false) === true;
+            }
+            return false;
+        }
+
         // 3ter. Pages mode-aéroport (ex: /aeroports/paris-orly/metro)
         if (preg_match('~^/aeroports/([a-z0-9\-]+)/([a-z0-9\-]+)$~', $clean, $matches) === 1) {
             $file = __DIR__ . '/../../public_html/data/aeroports/' . $matches[1] . '/' . $matches[2] . '.json';

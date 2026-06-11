@@ -28,6 +28,9 @@ $faq        = $mode['faq'] ?? [];
 
 $canonical = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/';
 
+// Cards lignes (ex: bus_lines pour la page bus Orly) — affichées avant FAQ
+$busLines = $mode['bus_lines'] ?? [];
+
 // Charger le JSON parent aéroport pour récupérer access_modes[] (maillage interne)
 $parentFile = __DIR__ . '/../../data/aeroports/' . $aeroSlug . '.json';
 $parentAero = is_file($parentFile) ? json_decode((string)file_get_contents($parentFile), true) : null;
@@ -256,6 +259,44 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
+  <?php if (!empty($busLines)): ?>
+    <section class="bus-lines-section">
+      <h2>Les <?= count($busLines) ?> lignes de bus vers <?= Template::e($aeroName) ?></h2>
+      <div class="bus-cards-grid">
+        <?php foreach ($busLines as $bl):
+          $blType  = $bl['type'] ?? 'regulier';
+          $blSlug  = $bl['slug'] ?? '';
+          $blUrl   = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/' . $blSlug . '/';
+        ?>
+          <a href="<?= Template::e($blUrl) ?>" class="bus-card bus-card--<?= Template::e($blType) ?>">
+            <div class="bus-card__icon">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="6" y="12" width="36" height="22" rx="3"/>
+                <line x1="6" y1="24" x2="42" y2="24"/>
+                <rect x="10" y="16" width="6" height="5" fill="currentColor"/>
+                <rect x="20" y="16" width="6" height="5" fill="currentColor"/>
+                <rect x="30" y="16" width="6" height="5" fill="currentColor"/>
+                <circle cx="14" cy="36" r="3" fill="currentColor"/>
+                <circle cx="34" cy="36" r="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></h3>
+            <p class="bus-card__route"><?= Template::e($bl['departure'] ?? '') ?> ↔ <?= Template::e($aeroName) ?></p>
+            <div class="bus-card__metrics">
+              <span class="bus-card__duration"><?= Template::e($bl['duration'] ?? '') ?></span>
+              <span class="bus-card__separator">·</span>
+              <span class="bus-card__price"><?= Template::e($bl['price'] ?? '') ?></span>
+            </div>
+            <?php if (!empty($bl['note'])): ?>
+              <p class="bus-card__note"><?= Template::e($bl['note']) ?></p>
+            <?php endif; ?>
+            <span class="bus-card__cta">→ <?= Template::e($bl['cta_anchor'] ?? $bl['name'] ?? '') ?></span>
+          </a>
+        <?php endforeach; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
   <?php if (!empty($faq)): ?>
     <section class="mode-section" id="faq">
       <h2>FAQ — <?= Template::e($modeLabel) ?> <?= Template::e($aeroName) ?></h2>
@@ -437,4 +478,45 @@ $tpl->seo
   .info-card__icon { width: 40px; height: 40px; margin: 0 auto; }
   .info-card__body { justify-content: center; }
 }
+
+/* Cards bus_lines — anchor text SEO direct */
+.bus-lines-section { margin: 3rem 0; }
+.bus-lines-section h2 { color: #0F6E56; margin: 0 0 1rem; }
+.bus-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.bus-card {
+  display: flex; flex-direction: column;
+  background: #fff;
+  border: 2px solid #E1F5EE;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.bus-card--express { border-color: #E67E22; }
+.bus-card--express:hover { border-color: #ba6519; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(230,126,34,.15); }
+.bus-card--regulier { border-color: #2980B9; }
+.bus-card--regulier:hover { border-color: #1f618d; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(41,128,185,.15); }
+.bus-card__icon { width: 48px; height: 48px; margin-bottom: .75rem; }
+.bus-card--express .bus-card__icon { color: #E67E22; }
+.bus-card--regulier .bus-card__icon { color: #2980B9; }
+.bus-card__icon svg { width: 100%; height: 100%; display: block; }
+.bus-card__name { margin: 0 0 .5rem; color: #1a1a1a; font-size: 1.25rem; font-weight: 700; }
+.bus-card__route { margin: 0 0 1rem; color: #555; font-size: .95rem; line-height: 1.4; }
+.bus-card__metrics { margin: 0 0 .75rem; font-size: 1rem; font-weight: 600; }
+.bus-card__duration { color: #1a1a1a; }
+.bus-card__separator { margin: 0 .5rem; color: #999; }
+.bus-card__price { color: #0F6E56; font-weight: 700; }
+.bus-card__note { margin: 0 0 1rem; color: #777; font-size: .85rem; flex-grow: 1; }
+.bus-card__cta {
+  margin-top: auto; font-weight: 600; font-size: 1rem;
+  padding-top: .5rem; border-top: 1px solid #f0f0f0;
+}
+.bus-card--express .bus-card__cta { color: #E67E22; }
+.bus-card--regulier .bus-card__cta { color: #2980B9; }
 </style>

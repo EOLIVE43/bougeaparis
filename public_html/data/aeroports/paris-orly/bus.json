@@ -204,5 +204,46 @@
             "question": "Y a-t-il un bus de nuit pour Orly ?",
             "answer": "<strong>Non</strong>. L'Orlybus s'arrête à 00h30. Pour la nuit : taxi ou VTC."
         }
+    ],
+    "bus_lines": [
+        {
+            "slug": "orlybus",
+            "name": "Orlybus",
+            "type": "express",
+            "departure": "Denfert-Rochereau (14e)",
+            "duration": "35 min",
+            "price": "11,50 €",
+            "frequency": "Toutes les 8-15 min",
+            "first": "5h35",
+            "last": "23h35",
+            "note": "Bus direct express RATP/ADP",
+            "cta_anchor": "Orlybus"
+        },
+        {
+            "slug": "bus-183",
+            "name": "Bus 183",
+            "type": "regulier",
+            "departure": "Porte de Choisy (M7 terminus)",
+            "duration": "45 min",
+            "price": "2,15 €",
+            "frequency": "Toutes les 10-20 min",
+            "first": "5h40",
+            "last": "00h30",
+            "note": "Tarif Navigo / ticket t+",
+            "cta_anchor": "Bus 183 Orly"
+        },
+        {
+            "slug": "bus-285",
+            "name": "Bus 285",
+            "type": "regulier",
+            "departure": "Villejuif - Louis Aragon (M7 terminus)",
+            "duration": "30 min",
+            "price": "2,15 €",
+            "frequency": "Toutes les 15-30 min",
+            "first": "5h00",
+            "last": "00h00",
+            "note": "Tarif Navigo / ticket t+",
+            "cta_anchor": "Bus 285 Orly"
+        }
     ]
 }

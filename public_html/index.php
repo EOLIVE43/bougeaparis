@@ -244,6 +244,23 @@ switch ($path) {
             break;
         }
 
+        // Route dynamique /aeroports/{aeroport}/{mode}/{sub} - sous-pages mode (ex: bus/orlybus)
+        if (preg_match('#^/aeroports/([a-z0-9\-]+)/([a-z0-9\-]+)/([a-z0-9\-]+)$#', $path, $matches)) {
+            $aero = $matches[1]; $mode = $matches[2]; $sub = $matches[3];
+            $subFile = __DIR__ . '/data/aeroports/' . $aero . '/' . $mode . '/' . $sub . '.json';
+            if (file_exists($subFile)) {
+                $subData = json_decode(file_get_contents($subFile), true);
+                if (is_array($subData) && ($subData['published'] ?? false) === true) {
+                    $tpl = new Template('aeroport-mode');
+                    $tpl->withData(['mode' => $subData]);
+                    $tpl->render();
+                    break;
+                }
+            }
+            bp_render_404();
+            break;
+        }
+
         // Route dynamique /aeroports/{aeroport}/{mode} - pages détail par mode
         if (preg_match('#^/aeroports/([a-z0-9\-]+)/([a-z0-9\-]+)$#', $path, $matches)) {
             $aero = $matches[1]; $mode = $matches[2];

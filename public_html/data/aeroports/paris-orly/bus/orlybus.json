@@ -1,0 +1,183 @@
+{
+    "published": true,
+    "aeroport_slug": "paris-orly",
+    "aeroport_name": "Paris-Orly",
+    "aeroport_iata": "ORY",
+    "mode_slug": "orlybus",
+    "mode_label": "Orlybus",
+    "color": "#E67E22",
+    "h1": "Orlybus : bus officiel Paris → Orly depuis Denfert-Rochereau",
+    "seo": {
+        "title": "Orlybus Paris → Orly : durée 35 min, prix 11,50 €",
+        "description": "Orlybus, bus officiel RATP/ADP entre Denfert-Rochereau (14e) et l'aéroport Paris-Orly : 35 min, 11,50 €, départs toutes les 8-15 min de 5h35 à 23h35."
+    },
+    "tagline": "Bus express direct depuis Denfert (14e) — 35 min, 11,50 €",
+    "intro_paragraphs": [
+        "L'<strong>Orlybus</strong> est le bus officiel direct entre Paris (Denfert-Rochereau) et l'<strong>aéroport Paris-Orly</strong>. Opéré par la <strong>RATP en partenariat avec Aéroports de Paris (ADP)</strong>, il propose une liaison express en <strong>35 minutes</strong> pour <strong>11,50 €</strong>.",
+        "Départs <strong>toutes les 8 à 15 minutes</strong> de <strong>5h35 à 23h35</strong>. Recommandé pour rejoindre Orly depuis le sud parisien (14e, 13e, 5e, 6e) — alternative complémentaire au métro 14."
+    ],
+    "quick_facts": [
+        {
+            "value": "35 min",
+            "label": "depuis Denfert"
+        },
+        {
+            "value": "11,50 €",
+            "label": "billet"
+        },
+        {
+            "value": "8-15 min",
+            "label": "fréquence"
+        },
+        {
+            "value": "5h35 → 23h35",
+            "label": "amplitude"
+        }
+    ],
+    "itineraire": {
+        "h2": "Itinéraire Orlybus Denfert ↔ Orly",
+        "paragraphs": [
+            "L'Orlybus dessert <strong>Denfert-Rochereau</strong> (point unique à Paris) puis <strong>Aéroport d'Orly Sud</strong> et <strong>Aéroport d'Orly Ouest</strong>."
+        ],
+        "steps": [
+            "Rejoindre <strong>Denfert-Rochereau</strong> (M4, M6, RER B, T6).",
+            "Trouver l'arrêt <strong>Orlybus</strong> place Denfert-Rochereau (côté sud).",
+            "Monter dans l'Orlybus en direction d'<strong>Orly</strong> (panneaux et signalétique RATP).",
+            "Descendre à <strong>Orly Sud</strong> (terminaux 1-2-3) ou <strong>Orly Ouest</strong> (terminal 4) selon votre vol."
+        ]
+    },
+    "horaires": {
+        "h2": "Horaires Orlybus",
+        "paragraphs": [
+            "L'Orlybus circule tous les jours, fréquence soutenue en journée."
+        ],
+        "table": {
+            "headers": [
+                "Jour",
+                "Premier",
+                "Dernier",
+                "Fréquence"
+            ],
+            "rows": [
+                [
+                    "Lundi-vendredi",
+                    "5h35",
+                    "23h35",
+                    "8 min"
+                ],
+                [
+                    "Samedi",
+                    "5h35",
+                    "23h35",
+                    "10 min"
+                ],
+                [
+                    "Dimanche",
+                    "6h00",
+                    "23h35",
+                    "15 min"
+                ]
+            ]
+        }
+    },
+    "tarifs": {
+        "h2": "Tarif Orlybus",
+        "paragraphs": [
+            "L'Orlybus utilise un <strong>billet spécifique ADP</strong> (pas le ticket t+)."
+        ],
+        "table": {
+            "headers": [
+                "Titre",
+                "Prix",
+                "Conditions"
+            ],
+            "rows": [
+                [
+                    "Billet Orlybus aller simple",
+                    "11,50 €",
+                    "Validité 1h30"
+                ],
+                [
+                    "Pass Navigo zones 1-5",
+                    "Inclus",
+                    "Pas de supplément"
+                ],
+                [
+                    "Enfant - 4 ans",
+                    "Gratuit",
+                    "Avec adulte"
+                ]
+            ]
+        }
+    },
+    "itineraires_paris": [
+        {
+            "depart": "Denfert-Rochereau",
+            "station_slug": "denfert-rochereau",
+            "duration": "35 min",
+            "trajet": "Orlybus direct."
+        },
+        {
+            "depart": "Châtelet",
+            "station_slug": "chatelet",
+            "duration": "55 min",
+            "trajet": "M4 (10 min) → Denfert + Orlybus."
+        },
+        {
+            "depart": "Gare du Nord",
+            "station_slug": "gare-du-nord",
+            "duration": "1 h",
+            "trajet": "RER B → Denfert + Orlybus."
+        },
+        {
+            "depart": "Montparnasse",
+            "station_slug": "montparnasse-bienvenue",
+            "duration": "50 min",
+            "trajet": "M6 → Denfert + Orlybus."
+        }
+    ],
+    "alternatives": [
+        {
+            "label": "Métro 14",
+            "url": "/aeroports/paris-orly/metro/",
+            "note": "25 min depuis Châtelet, 2,15 € (depuis juin 2024)."
+        },
+        {
+            "label": "Bus 183",
+            "url": "/aeroports/paris-orly/bus/bus-183/",
+            "note": "45 min depuis Porte de Choisy, 2,15 €."
+        },
+        {
+            "label": "RER B + Orlyval",
+            "url": "/aeroports/paris-orly/rer/",
+            "note": "40 min, 13,25 €."
+        },
+        {
+            "label": "Taxi forfait",
+            "url": "/aeroports/paris-orly/taxi/",
+            "note": "36 € rive gauche, 44 € rive droite."
+        }
+    ],
+    "faq": [
+        {
+            "question": "Combien coûte l'Orlybus ?",
+            "answer": "<strong>11,50 €</strong> billet aller simple. Compris dans le <strong>pass Navigo zones 1-5</strong>."
+        },
+        {
+            "question": "Où prendre l'Orlybus à Paris ?",
+            "answer": "Un seul arrêt parisien : <strong>place Denfert-Rochereau</strong> (14e), accessible en M4, M6, RER B, tramway T6."
+        },
+        {
+            "question": "Combien de temps Denfert → Orly en Orlybus ?",
+            "answer": "<strong>35 minutes</strong> en conditions normales."
+        },
+        {
+            "question": "Quel est le premier Orlybus ?",
+            "answer": "<strong>5h35</strong> du lundi au samedi, <strong>6h00</strong> le dimanche."
+        },
+        {
+            "question": "L'Orlybus dessert-il tous les terminaux ?",
+            "answer": "<strong>Oui</strong> : Orly Sud (terminaux 1-2-3) puis Orly Ouest (terminal 4)."
+        }
+    ]
+}
