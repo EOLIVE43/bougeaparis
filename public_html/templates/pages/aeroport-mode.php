@@ -136,32 +136,40 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
-  <?php if (!empty($tarifs)): ?>
+  <?php if (!empty($tarifs)):
+    // Map mode-slug → SVG icon (icons dispo : metro, bus, rer, tramway, taxi, navette, train)
+    $iconMap = ['rer-b' => 'rer', 'tgv' => 'train', 'cdgval' => 'navette'];
+    $iconKey = $iconMap[$modeSlug] ?? $modeSlug;
+    $iconFp  = __DIR__ . '/../../assets/icons/transport-modes/' . $iconKey . '.svg';
+    $iconSvg = is_file($iconFp) ? file_get_contents($iconFp) : '';
+  ?>
     <section class="mode-section" id="tarifs">
       <h2><?= Template::e($tarifs['h2'] ?? "Tarifs") ?></h2>
       <?php foreach (($tarifs['paragraphs'] ?? []) as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
-      <?php if (!empty($tarifs['table'])): ?>
-        <div class="mode-table-wrap">
-          <table class="mode-table">
-            <thead>
-              <tr>
-                <?php foreach ($tarifs['table']['headers'] as $h): ?>
-                  <th><?= Template::e($h) ?></th>
-                <?php endforeach; ?>
-              </tr>
-            </thead>
-            <tbody>
-              <?php foreach ($tarifs['table']['rows'] as $row): ?>
-                <tr>
-                  <?php foreach ($row as $cell): ?>
-                    <td><?= Template::e($cell) ?></td>
-                  <?php endforeach; ?>
-                </tr>
-              <?php endforeach; ?>
-            </tbody>
-          </table>
+      <?php if (!empty($tarifs['table']['rows'])): ?>
+        <div class="info-cards-grid">
+          <?php foreach ($tarifs['table']['rows'] as $row):
+            $title   = $row[0] ?? '';
+            $price   = $row[1] ?? '';
+            $details = $row[2] ?? '';
+          ?>
+            <div class="info-card info-card--<?= Template::e($iconKey) ?>">
+              <div class="info-card__icon"><?= $iconSvg ?></div>
+              <div class="info-card__content">
+                <h3 class="info-card__title"><?= Template::e($title) ?></h3>
+                <div class="info-card__body">
+                  <?php if ($price !== ''): ?>
+                    <span class="info-card__price"><?= Template::e($price) ?></span>
+                  <?php endif; ?>
+                  <?php if ($details !== ''): ?>
+                    <span class="info-card__details"><?= Template::e($details) ?></span>
+                  <?php endif; ?>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
         </div>
       <?php endif; ?>
     </section>
@@ -367,5 +375,53 @@ $tpl->seo
   .modes-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
   .mode-card { padding: 1rem; }
   .mode-card__icon { width: 40px; height: 40px; }
+}
+
+/* Info-cards Tarifs — refactor table → cards horizontales */
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: .75rem;
+  margin: 1rem 0;
+}
+.info-card {
+  display: flex; gap: 1rem; align-items: center;
+  background: #f4f8f6;
+  border-left: 4px solid var(--info-color, #0F6E56);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+.info-card__icon {
+  flex-shrink: 0; width: 48px; height: 48px;
+  color: var(--info-color, #0F6E56);
+}
+.info-card__icon svg { width: 100%; height: 100%; display: block; }
+.info-card__content { flex: 1; min-width: 0; }
+.info-card__title {
+  margin: 0 0 .25rem;
+  font-size: 1rem;
+  color: var(--info-color, #0F6E56);
+  font-weight: 600;
+}
+.info-card__body { display: flex; flex-wrap: wrap; gap: .25rem 1rem; align-items: baseline; }
+.info-card__price {
+  font-size: 1.25rem; font-weight: 700;
+  color: var(--info-color, #0F6E56);
+}
+.info-card__details { color: #555; font-size: .92rem; }
+.info-card--metro   { --info-color: #0F6E56; }
+.info-card--bus     { --info-color: #E67E22; }
+.info-card--rer     { --info-color: #2980B9; }
+.info-card--tramway { --info-color: #27AE60; }
+.info-card--taxi    { --info-color: #C9A227; }
+.info-card--navette { --info-color: #8E44AD; }
+.info-card--train   { --info-color: #C0392B; }
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column; text-align: center; align-items: stretch;
+    padding: 1rem;
+  }
+  .info-card__icon { width: 40px; height: 40px; margin: 0 auto; }
+  .info-card__body { justify-content: center; }
 }
 </style>
