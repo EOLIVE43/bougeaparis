@@ -89,12 +89,26 @@ $arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
 $metaDesc = buildStationMetaDescription($station);
 $metaKw   = buildStationMetaKeywords($station);
 
-// Title SEO calibré sur les volumes Keyword Planner ("{nom} métro" domine).
-// Voir buildStationTitle() dans core/helpers.php. Second parametre false :
-// desactive le suffixe ' - BougeaParis.fr' (15 car) sur les pages station
-// pour preserver la place des mots-cles SEO sous la limite 60 car SERP.
+// Title SEO via helper centralisé bp_title_station() — pattern :
+// "Métro {Nom} (M1, M4, RER A) : plan et horaires" (≤ 65 car affichés Google).
+// Second param false : désactive le suffixe ' - BougeaParis.fr'.
+$_stationCodes = [];
+foreach (($station['lines'] ?? []) as $_l) {
+    if (($_l['type'] ?? '') === 'metro' && !empty($_l['code'])) {
+        $_stationCodes[] = 'M' . (string)$_l['code'];
+    }
+}
+foreach (($station['rer_correspondences'] ?? []) as $_r) {
+    if (!empty($_r['code'])) $_stationCodes[] = 'RER ' . $_r['code'];
+}
+foreach (($station['tramway_correspondences'] ?? []) as $_t) {
+    if (!empty($_t['code'])) $_stationCodes[] = 'T' . $_t['code'];
+}
+foreach (($station['transilien_correspondences'] ?? []) as $_tr) {
+    if (!empty($_tr['code'])) $_stationCodes[] = (string)$_tr['code'];
+}
 $tpl->seo
-    ->setTitle(buildStationTitle($station), false)
+    ->setTitle(bp_title_station($station['name'] ?? '', $_stationCodes), false)
     ->setDescription($metaDesc)
     ->setKeywords($metaKw)
     ->setCanonical($canonical);

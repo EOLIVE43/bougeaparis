@@ -21,6 +21,9 @@ spl_autoload_register(function ($class) {
 // Helpers métier (fonctions globales : pastilleCorresp, etc.)
 require_once __DIR__ . '/helpers.php';
 
+// Helper centralisé titles SEO (bp_title_*)
+require_once __DIR__ . '/../templates/helpers/title.php';
+
 // Mode debug selon config
 $debug = Config::get('site.debug', false);
 if ($debug) {

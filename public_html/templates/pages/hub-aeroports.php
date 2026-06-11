@@ -47,7 +47,7 @@ $descriptions = [
 
 // SEO
 $tpl->seo
-    ->setTitle($cocon['seo']['title'] ?? 'Aéroports de Paris : guide d\'accès — CDG, Orly, Beauvais')
+    ->setTitle(bp_title_aeroports_hub(), false)
     ->setDescription($cocon['seo']['description'] ?? 'Les 3 aéroports parisiens : guides complets d\'accès Paris-CDG, Paris-Orly et Paris-Beauvais. Modes de transport, tarifs, durées, terminaux 2026.')
     ->setCanonical('/aeroports/')
     ->setBreadcrumb([

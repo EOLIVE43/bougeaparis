@@ -31,7 +31,7 @@ $accessModes = $aeroport['access_modes'] ?? [];
 $canonical = '/aeroports/' . $slug . '/';
 
 $tpl->seo
-    ->setTitle($aeroport['seo']['title'] ?? $name)
+    ->setTitle(bp_title_aeroport_hub($name, $iata), false)
     ->setDescription($aeroport['seo']['description'] ?? '')
     ->setCanonical($canonical)
     ->setBreadcrumb([

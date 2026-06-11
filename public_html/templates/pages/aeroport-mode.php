@@ -34,8 +34,21 @@ $parentAero = is_file($parentFile) ? json_decode((string)file_get_contents($pare
 $allModes   = is_array($parentAero) ? ($parentAero['access_modes'] ?? []) : [];
 $otherModes = array_values(array_filter($allModes, fn($m) => ($m['slug'] ?? '') !== $modeSlug));
 
+// Title SEO via helper centralisé bp_title_aeroport_mode() / bp_title_taxi_aeroport()
+// Extraction durée/prix depuis quick_facts (1er match min/€).
+$_duration = null; $_price = null;
+foreach ($quickFacts as $_qf) {
+    $_v = $_qf['value'] ?? '';
+    if ($_duration === null && preg_match('/min|h\d|→/', $_v)) $_duration = $_v;
+    if ($_price === null && (str_contains($_v, '€') || stripos($_v, 'gratuit') !== false)) $_price = $_v;
+}
+if ($modeSlug === 'taxi' && $_price && $_duration) {
+    $_seoTitle = bp_title_taxi_aeroport($aeroName, $_price, $_duration);
+} else {
+    $_seoTitle = bp_title_aeroport_mode($modeLabel, $aeroName, $_duration, $_price);
+}
 $tpl->seo
-    ->setTitle($mode['seo']['title'] ?? $h1)
+    ->setTitle($_seoTitle, false)
     ->setDescription($mode['seo']['description'] ?? '')
     ->setCanonical($canonical)
     ->setBreadcrumb([

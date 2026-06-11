@@ -4,7 +4,7 @@
  */
 
 $tpl->seo
-    ->setTitle($cocon['seo']['title']       ?? 'Métro de Paris')
+    ->setTitle(bp_title_hub('Métro'), false)
     ->setDescription($cocon['seo']['description'] ?? '')
     ->setCanonical($cocon['seo']['canonical']   ?? '')
     ->setOgType($cocon['seo']['og_type']      ?? 'article');

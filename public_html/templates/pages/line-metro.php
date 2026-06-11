@@ -18,12 +18,11 @@ $lineColor   = $line['color']     ?? '#0F6E56';
 $lineColorTx = $line['color_text']?? '#FFFFFF';
 $lineMode    = $line['mode']      ?? 'metro';
 $h1          = $line['seo']['h1']          ?? ('Ligne ' . $lineCode);
-$pageTitle   = $line['seo']['title']       ?? $h1;
 $pageDesc    = $line['seo']['description'] ?? '';
 $canonical   = '/metro/ligne-' . strtolower($lineCode);
 
 $tpl->seo
-    ->setTitle($pageTitle)
+    ->setTitle(bp_title_ligne_metro((string)$lineCode), false)
     ->setDescription($pageDesc)
     ->setCanonical($canonical)
     ->setOgType('article');

@@ -11,8 +11,19 @@ $cocon_label    = $props['cocon_label']    ?? '';
 $grid_component = $props['grid_component'] ?? '';
 $data_key       = $props['data_key']       ?? '';
 
+// Title SEO via helper centralisé bp_title_hub() (Métro/RER/Bus/Tramway/Transilien Paris : guide complet…)
+$_hubLabelMap = [
+    'metro'      => 'Métro',
+    'rer'        => 'RER',
+    'bus'        => 'Bus',
+    'tramway'    => 'Tramway',
+    'transilien' => 'Transilien',
+];
+$_hubTitle = isset($_hubLabelMap[$cocon_slug])
+    ? bp_title_hub($_hubLabelMap[$cocon_slug])
+    : ($cocon['seo']['title'] ?? '');
 $tpl->seo
-    ->setTitle($cocon['seo']['title']       ?? '')
+    ->setTitle($_hubTitle, false)
     ->setDescription($cocon['seo']['description'] ?? '')
     ->setCanonical($cocon['seo']['canonical']   ?? '')
     ->setOgType($cocon['seo']['og_type']      ?? 'article');
