@@ -103,6 +103,51 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
+  <?php
+    // Section carte ligne tramway (T7 Orly) — CWV-safe (SVG inline + Leaflet lazy)
+    // Conditionnelle : mode tramway + aéroport Paris-Orly + JSON ligne disponible.
+    $_lineTramFile = __DIR__ . '/../../data/lines-tram/t7.json';
+    $_showT7Map = ($modeSlug === 'tramway' && $aeroSlug === 'paris-orly' && is_file($_lineTramFile));
+    if ($_showT7Map):
+      $_t7Line = json_decode((string)file_get_contents($_lineTramFile), true);
+      $_t7Stations = $_t7Line['stations'] ?? [];
+      $_t7First = $_t7Stations[0]['name'] ?? '';
+      $_t7Last  = end($_t7Stations)['name'] ?? '';
+  ?>
+    <section class="tramway-map-section">
+      <h2>Tracé de la ligne T7 vers l'aéroport Paris-Orly</h2>
+      <p>
+        Le <strong>tramway T7</strong> relie <strong><?= Template::e($_t7First) ?></strong>
+        à <strong><?= Template::e($_t7Last) ?></strong> en <?= count($_t7Stations) ?> stations.
+        Données : <a href="https://data.iledefrance-mobilites.fr/" rel="nofollow noopener">IDFM Open Data</a>.
+      </p>
+
+      <?php $tpl->partial('components/svg-line-trace', ['line_data' => $_t7Line]); ?>
+
+      <?php
+        $_pngFile = __DIR__ . '/../../assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png';
+        if (is_file($_pngFile)):
+      ?>
+        <figure class="line-image-figure">
+          <picture>
+            <source srcset="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.webp" type="image/webp">
+            <img src="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png"
+                 alt="Plan officiel ligne T7 du tramway entre Villejuif-Louis Aragon et l'aéroport Paris-Orly (<?= count($_t7Stations) ?> stations)"
+                 loading="lazy" decoding="async"
+                 width="1200" height="675"
+                 style="max-width:100%;height:auto;border-radius:8px">
+          </picture>
+          <figcaption>
+            Plan officiel ligne T7 — Source IDFM Open Data.
+            <a href="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png" download="plan-t7-villejuif-orly.png">⬇ Télécharger (PNG)</a>
+          </figcaption>
+        </figure>
+      <?php endif; ?>
+
+      <?php $tpl->partial('components/leaflet-map-line', ['line_data' => $_t7Line]); ?>
+    </section>
+  <?php endif; ?>
+
   <?php if (!empty($busLines)): ?>
     <section class="bus-lines-section">
       <h2>Les <?= count($busLines) ?> lignes de bus vers <?= Template::e($aeroName) ?></h2>
