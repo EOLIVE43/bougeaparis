@@ -67,16 +67,26 @@ header_ax.text(logo_x + logo_size/2, logo_y + logo_size/2, "B",
                ha="center", va="center",
                fontsize=24, fontweight="bold", color="white", zorder=3)
 
-# "BougeaParis" + ".fr"
+# "BougeaParis" + ".fr" — calcul bbox dynamique pour éviter superposition
 text_x = logo_x + logo_size + 1.5
-header_ax.text(text_x, 5, "BougeaParis", ha="left", va="center",
-               fontsize=15, fontweight="bold", color=DARK)
-fr_x = text_x + 10.5
-header_ax.text(fr_x, 5, ".fr", ha="left", va="center",
-               fontsize=15, fontweight="bold", color=TEAL)
+text_main = header_ax.text(text_x, 5, "BougeaParis", ha="left", va="center",
+                            fontsize=15, fontweight="bold", color=DARK)
 
-# Séparateur vertical gris discret
-sep_x = fr_x + 3
+# Forcer rendu intermédiaire pour mesurer la bbox réelle
+fig.canvas.draw()
+renderer = fig.canvas.get_renderer()
+inv = header_ax.transData.inverted()
+
+bbox_main = text_main.get_window_extent(renderer=renderer).transformed(inv)
+fr_x = bbox_main.x1 + 0.2
+
+text_fr = header_ax.text(fr_x, 5, ".fr", ha="left", va="center",
+                          fontsize=15, fontweight="bold", color=TEAL)
+fig.canvas.draw()
+bbox_fr = text_fr.get_window_extent(renderer=renderer).transformed(inv)
+
+# Séparateur vertical gris discret après ".fr"
+sep_x = bbox_fr.x1 + 1.5
 header_ax.plot([sep_x, sep_x], [1.8, 8.2], color=GRAY, linewidth=1, zorder=1)
 
 # Titre du plan centré
