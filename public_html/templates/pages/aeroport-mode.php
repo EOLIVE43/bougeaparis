@@ -181,16 +181,65 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
-  <?php if (!empty($itineraire)): ?>
+  <?php if (!empty($itineraire)):
+    // Auto-détection du badge ligne (M1-M14, T1-T13, RER A-E, Roissybus, Orlybus, Bus N).
+    // Sémantique HTML <ol>/<li> préservée + texte intégral conservé pour SEO.
+    $stepInfer = function(string $html): array {
+        $clean = strip_tags($html);
+        // Priorité 1 : ligne identifiable (badge)
+        if (preg_match('/\bRoissybus\b/u', $clean))   return ['badge'=>'Bus', 'cls'=>'roissybus', 'type'=>'board'];
+        if (preg_match('/\bOrlybus\b/u', $clean))     return ['badge'=>'Bus', 'cls'=>'orlybus',   'type'=>'board'];
+        if (preg_match('/\bCDGVAL\b/u', $clean))      return ['badge'=>'CDGVAL', 'cls'=>'cdgval', 'type'=>'board'];
+        if (preg_match('/\bOrlyval\b/u', $clean))     return ['badge'=>'Orlyval','cls'=>'orlyval','type'=>'board'];
+        if (preg_match('/\bTGV\b/u', $clean))         return ['badge'=>'TGV',    'cls'=>'tgv',    'type'=>'board'];
+        if (preg_match('/\bRER\s+([A-E])\b/u', $clean, $m))  return ['badge'=>'RER '.$m[1], 'cls'=>'rer-'.strtolower($m[1]), 'type'=>'board'];
+        if (preg_match('/\bM(\d{1,2}\w?)\b/u', $clean, $m))  return ['badge'=>'M'.$m[1], 'cls'=>'m'.strtolower($m[1]), 'type'=>'board'];
+        if (preg_match('/\b(?:métro|m[ée]tro)\s+(?:ligne\s+)?(\d{1,2})\b/iu', $clean, $m)) return ['badge'=>'M'.$m[1], 'cls'=>'m'.$m[1], 'type'=>'board'];
+        if (preg_match('/\bT(\d{1,2})\b/u', $clean, $m))     return ['badge'=>'T'.$m[1], 'cls'=>'t'.$m[1], 'type'=>'board'];
+        if (preg_match('/\b[Tt]ramway\s+T?(\d{1,2})\b/u', $clean, $m)) return ['badge'=>'T'.$m[1], 'cls'=>'t'.$m[1], 'type'=>'board'];
+        if (preg_match('/\bBus\s+(\d{2,3}|N\d+)\b/u', $clean, $m))    return ['badge'=>'Bus', 'cls'=>'bus-'.strtolower($m[1]), 'type'=>'board'];
+        if (preg_match('/\b(?:bus|car|navette)\b/iu', $clean))        return ['badge'=>'Bus', 'cls'=>'bus',  'type'=>'board'];
+        if (preg_match('/\bTaxi\b/iu', $clean))                       return ['badge'=>'Taxi','cls'=>'taxi', 'type'=>'taxi'];
+        // Priorité 2 : type d'action (sans badge ligne)
+        if (preg_match('/^\s*(?:Descendre|Arriver|Arrivée|Sortir|Sortie)/iu', $clean))     return ['badge'=>'', 'cls'=>'alight',   'type'=>'alight'];
+        if (preg_match('/^\s*(?:Suivre|Marcher|à pied|Continuer)/iu', $clean))             return ['badge'=>'', 'cls'=>'walk',     'type'=>'walk'];
+        if (preg_match('/^\s*(?:Changer|Correspondance|Prendre la correspondance)/iu', $clean)) return ['badge'=>'', 'cls'=>'transfer', 'type'=>'transfer'];
+        return ['badge'=>'', 'cls'=>'default', 'type'=>'default'];
+    };
+  ?>
     <section class="mode-section" id="itineraire">
       <h2><?= Template::e($itineraire['h2'] ?? "Itinéraire détaillé") ?></h2>
       <?php foreach (($itineraire['paragraphs'] ?? []) as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
       <?php if (!empty($itineraire['steps'])): ?>
-        <ol class="mode-steps">
-          <?php foreach ($itineraire['steps'] as $step): ?>
-            <li><?= $step ?></li>
+        <ol class="itinerary-steps">
+          <?php foreach ($itineraire['steps'] as $idx => $step):
+            $meta = $stepInfer((string)$step);
+            $badge = $meta['badge']; $cls = $meta['cls']; $type = $meta['type'];
+          ?>
+            <li class="step-card" data-step-type="<?= htmlspecialchars($type) ?>">
+              <div class="step-card__number" aria-hidden="true"><?= $idx + 1 ?></div>
+              <div class="step-card__icon">
+                <?php if ($badge): ?>
+                  <span class="line-badge line-badge--<?= htmlspecialchars($cls) ?>"><?= htmlspecialchars($badge) ?></span>
+                <?php else: ?>
+                  <span class="step-icon step-icon--<?= htmlspecialchars($cls) ?>" aria-hidden="true">
+                    <?php switch ($cls):
+                      case 'alight': ?>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v18M5 13l7 7 7-7"/></svg>
+                      <?php break; case 'walk': ?>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4" r="2"/><path d="M14 6l-2 4 4 4M8 18l3-3 2 3 3 4M10 10l-5 2"/></svg>
+                      <?php break; case 'transfer': ?>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                      <?php break; default: ?>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>
+                    <?php endswitch; ?>
+                  </span>
+                <?php endif; ?>
+              </div>
+              <div class="step-card__content"><?= $step ?></div>
+            </li>
           <?php endforeach; ?>
         </ol>
       <?php endif; ?>
@@ -611,4 +660,101 @@ $tpl->seo
 }
 .line-download-btn:hover { background: #0F6E56; color: #fff; }
 .line-download-meta { color: #777; font-size: .85rem; }
+
+/* Itinerary steps — cards visuelles préservant sémantique <ol>/<li> */
+.itinerary-steps { list-style: none; padding: 0; margin: 1rem 0 0; }
+.step-card {
+  display: grid;
+  grid-template-columns: 48px 56px 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid #E1F5EE;
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+  position: relative;
+  transition: border-color .2s, box-shadow .2s;
+}
+.step-card:hover { border-color: #0F6E56; box-shadow: 0 4px 12px rgba(15,110,86,.08); }
+/* Connecteur flèche entre étapes */
+.step-card:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -.85rem;
+  left: 24px;
+  width: 0; height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid #C8E5DA;
+  z-index: 1;
+}
+.step-card__number {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: #0F6E56; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem; font-weight: 700;
+  flex-shrink: 0;
+}
+.step-card__icon {
+  display: flex; align-items: center; justify-content: center;
+}
+.line-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 48px; height: 44px; padding: 0 .5rem;
+  border-radius: 22px;
+  font-weight: 700; font-size: .9rem;
+  color: #fff; background: #0F6E56;
+  white-space: nowrap;
+}
+.step-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: #F4F8F6; color: #0F6E56;
+  display: flex; align-items: center; justify-content: center;
+}
+.step-icon svg { width: 22px; height: 22px; }
+.step-icon--alight   { background: #E1F5EE; color: #0F6E56; }
+.step-icon--walk     { background: #FEF5E1; color: #C9A227; }
+.step-icon--transfer { background: #D6EAF8; color: #2980B9; }
+.step-card__content { font-size: .95rem; line-height: 1.55; color: #1a1a1a; }
+.step-card__content strong { font-weight: 700; color: #0F6E56; }
+
+/* Couleurs officielles RATP/SNCF */
+.line-badge--m1  { background: #FFCD00; color: #1a1a1a; }
+.line-badge--m2  { background: #003CA6; }
+.line-badge--m3  { background: #837902; }
+.line-badge--m3bis,.line-badge--m3b { background: #6EC4E8; }
+.line-badge--m4  { background: #CF009E; }
+.line-badge--m5  { background: #FF7E2E; }
+.line-badge--m6  { background: #6ECA97; }
+.line-badge--m7  { background: #FA9ABA; color: #1a1a1a; }
+.line-badge--m7bis,.line-badge--m7b { background: #6ECA97; }
+.line-badge--m8  { background: #E19BDF; color: #1a1a1a; }
+.line-badge--m9  { background: #B6BD00; color: #1a1a1a; }
+.line-badge--m10 { background: #C9910D; }
+.line-badge--m11 { background: #704B1C; }
+.line-badge--m12 { background: #007852; }
+.line-badge--m13 { background: #6EC4E8; }
+.line-badge--m14 { background: #62259D; }
+.line-badge--rer-a { background: #E2231A; }
+.line-badge--rer-b { background: #5291CE; }
+.line-badge--rer-c { background: #F3D006; color: #1a1a1a; }
+.line-badge--rer-d { background: #007E49; }
+.line-badge--rer-e { background: #C28FC4; }
+.line-badge--t1,.line-badge--t2,.line-badge--t3,.line-badge--t4,.line-badge--t5,.line-badge--t6,
+.line-badge--t7,.line-badge--t8,.line-badge--t9,.line-badge--t10,.line-badge--t11,.line-badge--t12,.line-badge--t13 { background: #00643C; }
+.line-badge--t7  { background: #FFCD00; color: #1a1a1a; }
+.line-badge--orlybus,.line-badge--roissybus { background: #E67E22; }
+.line-badge--orlyval,.line-badge--cdgval { background: #007AB7; }
+.line-badge--tgv { background: #C61E4D; }
+.line-badge--taxi { background: #2C2C2C; }
+.line-badge--bus,
+.line-badge--bus-183,.line-badge--bus-285,.line-badge--bus-350,.line-badge--bus-351 { background: #E5B100; color: #1a1a1a; }
+
+@media (max-width: 640px) {
+  .step-card { grid-template-columns: 38px 48px 1fr; gap: .75rem; padding: .85rem 1rem; }
+  .step-card__number { width: 36px; height: 36px; font-size: 1rem; }
+  .line-badge, .step-icon { min-width: 40px; width: 40px; height: 40px; font-size: .85rem; }
+  .step-card__content { font-size: .9rem; }
+}
 </style>
