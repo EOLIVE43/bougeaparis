@@ -362,30 +362,6 @@ $tpl->seo
     </section>
   <?php endif; ?>
 
-  <?php if (!empty($alternatives)): ?>
-    <section class="mode-section" id="alternatives">
-      <h2>Alternatives pour rejoindre <?= Template::e($aeroName) ?></h2>
-      <p>D'autres modes de transport relient Paris à <?= Template::e($aeroName) ?> :</p>
-      <ul class="alt-list">
-        <?php foreach ($alternatives as $alt): ?>
-          <li>
-            <a href="<?= Template::e($alt['url']) ?>">
-              <strong><?= Template::e($alt['label']) ?></strong>
-            </a>
-            <?php if (!empty($alt['note'])): ?>
-              — <?= Template::e($alt['note']) ?>
-            <?php endif; ?>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-      <p>
-        <a href="/aeroports/<?= Template::e($aeroSlug) ?>/" class="back-link">
-          ← Retour au guide complet <?= Template::e($aeroName) ?>
-        </a>
-      </p>
-    </section>
-  <?php endif; ?>
-
   <?php if (!empty($faq)): ?>
     <section class="mode-section" id="faq">
       <h2>FAQ — <?= Template::e($modeLabel) ?> <?= Template::e($aeroName) ?></h2>
