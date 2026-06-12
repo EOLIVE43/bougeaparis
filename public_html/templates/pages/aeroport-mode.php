@@ -122,29 +122,24 @@ $tpl->seo
         Données : <a href="https://data.iledefrance-mobilites.fr/" rel="nofollow noopener">IDFM Open Data</a>.
       </p>
 
-      <?php $tpl->partial('components/svg-line-trace', ['line_data' => $_t7Line]); ?>
-
-      <?php
-        $_pngFile = __DIR__ . '/../../assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png';
-        if (is_file($_pngFile)):
-      ?>
-        <figure class="line-image-figure">
-          <picture>
-            <source srcset="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.webp" type="image/webp">
-            <img src="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png"
-                 alt="Plan officiel ligne T7 du tramway entre Villejuif-Louis Aragon et l'aéroport Paris-Orly (<?= count($_t7Stations) ?> stations)"
-                 loading="lazy" decoding="async"
-                 width="1200" height="675"
-                 style="max-width:100%;height:auto;border-radius:8px">
-          </picture>
-          <figcaption>
-            Plan officiel ligne T7 — Source IDFM Open Data.
-            <a href="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png" download="plan-t7-villejuif-orly.png">⬇ Télécharger (PNG)</a>
-          </figcaption>
-        </figure>
-      <?php endif; ?>
-
       <?php $tpl->partial('components/leaflet-map-line', ['line_data' => $_t7Line]); ?>
+
+      <div class="line-download-row">
+        <a href="/assets/images/lines/t7-trace-villejuif-louis-aragon-aeroport-dorly.png"
+           download="plan-t7-villejuif-orly.png"
+           class="line-download-btn"
+           title="Plan officiel ligne T7 entre Villejuif - Louis Aragon et aéroport Paris-Orly (PNG)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Télécharger le plan officiel T7 (PNG)
+        </a>
+        <span class="line-download-meta">
+          Plan officiel ligne T7 — Villejuif ↔ Aéroport Paris-Orly
+        </span>
+      </div>
     </section>
   <?php endif; ?>
 
@@ -587,4 +582,33 @@ $tpl->seo
 }
 .bus-card--express .bus-card__cta { color: #E67E22; }
 .bus-card--regulier .bus-card__cta { color: #2980B9; }
+
+/* Bouton de téléchargement plan ligne (sous carte Leaflet) */
+.line-download-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  background: #F8FBFA;
+  border: 1px solid #E1F5EE;
+  border-radius: 8px;
+}
+.line-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1rem;
+  background: #fff;
+  color: #0F6E56;
+  border: 1px solid #0F6E56;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: .95rem;
+  font-weight: 600;
+  transition: background .2s, color .2s;
+}
+.line-download-btn:hover { background: #0F6E56; color: #fff; }
+.line-download-meta { color: #777; font-size: .85rem; }
 </style>
