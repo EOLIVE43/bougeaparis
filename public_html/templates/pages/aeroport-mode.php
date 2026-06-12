@@ -151,8 +151,10 @@ $tpl->seo
           $blType  = $bl['type'] ?? 'regulier';
           $blSlug  = $bl['slug'] ?? '';
           $blUrl   = '/aeroports/' . $aeroSlug . '/' . $modeSlug . '/' . $blSlug . '/';
-        ?>
-          <a href="<?= Template::e($blUrl) ?>" class="bus-card bus-card--<?= Template::e($blType) ?>">
+          $isDiscontinued = (($bl['status'] ?? '') === 'discontinued');
+          $cssClass = 'bus-card bus-card--' . $blType;
+          // Card content (identique cliquable/non-cliquable)
+          ob_start(); ?>
             <div class="bus-card__icon">
               <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="6" y="12" width="36" height="22" rx="3"/>
@@ -164,6 +166,9 @@ $tpl->seo
                 <circle cx="34" cy="36" r="3" fill="currentColor"/>
               </svg>
             </div>
+            <?php if ($isDiscontinued): ?>
+              <span class="bus-card__status-badge">Service supprimé · <?= Template::e($bl['discontinued_date'] ?? '') ?></span>
+            <?php endif; ?>
             <div class="bus-card__name"><?= Template::e($bl['name'] ?? '') ?></div>
             <p class="bus-card__route"><?= Template::e($bl['departure'] ?? '') ?> ↔ <?= Template::e($aeroName) ?></p>
             <div class="bus-card__metrics">
@@ -175,8 +180,11 @@ $tpl->seo
               <p class="bus-card__note"><?= Template::e($bl['note']) ?></p>
             <?php endif; ?>
             <span class="bus-card__cta">→ <?= Template::e($bl['cta_anchor'] ?? $bl['name'] ?? '') ?></span>
-          </a>
-        <?php endforeach; ?>
+          <?php
+          $cardInner = ob_get_clean();
+          // conditionalLink : si route active → <a>, sinon <span data-future-url>
+          echo conditionalLink($blUrl, $cardInner, $cssClass);
+        endforeach; ?>
       </div>
     </section>
   <?php endif; ?>
@@ -607,6 +615,36 @@ $tpl->seo
 }
 .bus-card--express .bus-card__cta { color: #E67E22; }
 .bus-card--regulier .bus-card__cta { color: #2980B9; }
+.bus-card--noctilien { border-color: #6A4F9C; }
+.bus-card--noctilien:hover { border-color: #4f3a78; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(106,79,156,.15); }
+.bus-card--noctilien .bus-card__icon { color: #6A4F9C; }
+.bus-card--noctilien .bus-card__cta { color: #6A4F9C; }
+
+/* Variant historique (service supprimé) — visuellement grisé mais cliquable */
+.bus-card--historique {
+  border-color: #B0B0B0;
+  background: #f8f8f8;
+  position: relative;
+  padding-top: 2.5rem;
+}
+.bus-card--historique:hover { border-color: #7a7a7a; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,.08); }
+.bus-card--historique .bus-card__icon { color: #7a7a7a; }
+.bus-card--historique .bus-card__name { color: #555; text-decoration: line-through; text-decoration-color: #B0B0B0; text-decoration-thickness: 1.5px; }
+.bus-card--historique .bus-card__cta { color: #555; }
+.bus-card__status-badge {
+  position: absolute; top: .85rem; left: .85rem;
+  background: #C0392B; color: #fff;
+  padding: .25rem .6rem;
+  border-radius: 4px;
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+}
+
+/* État inactive (conditionalLink : URL future) */
+.bus-card--inactive { cursor: default; opacity: .82; }
+.bus-card--inactive:hover { transform: none; box-shadow: none; }
+.bus-card--inactive .bus-card__cta::after { content: " (à venir)"; color: #999; font-weight: 400; font-size: .85rem; }
 
 /* Bouton de téléchargement plan ligne (sous carte Leaflet) */
 .line-download-row {

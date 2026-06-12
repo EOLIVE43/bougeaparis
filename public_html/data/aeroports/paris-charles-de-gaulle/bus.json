@@ -201,5 +201,88 @@
             "question": "Roissybus ou RER B pour CDG ?",
             "answer": "<strong>RER B</strong> est plus rapide (35 min vs 60-75 min) et moins cher (11,80 € vs 16,60 €). <strong>Roissybus</strong> est plus pratique si vous partez du quartier de l'Opéra."
         }
+    ],
+    "bus_lines": [
+        {
+            "slug": "bus-9517",
+            "name": "Ligne 9517",
+            "type": "express",
+            "departure": "Saint-Denis-Pleyel (M14)",
+            "duration": "50-70 min",
+            "price": "Tarif spécial",
+            "frequency": "Variable selon période",
+            "first": "—",
+            "last": "—",
+            "note": "Express Transdev, remplaçant officiel du Roissybus (depuis 2026-03-01)",
+            "cta_anchor": "Bus 9517"
+        },
+        {
+            "slug": "bus-350",
+            "name": "Bus 350",
+            "type": "regulier",
+            "departure": "Porte de la Chapelle (M12)",
+            "duration": "75-90 min",
+            "price": "2,15 €",
+            "frequency": "30 min",
+            "first": "—",
+            "last": "—",
+            "note": "Tarif Navigo / ticket t+",
+            "cta_anchor": "Bus 350"
+        },
+        {
+            "slug": "bus-351",
+            "name": "Bus 351",
+            "type": "regulier",
+            "departure": "Place de la Nation",
+            "duration": "75-90 min",
+            "price": "2,15 €",
+            "frequency": "30 min",
+            "first": "—",
+            "last": "—",
+            "note": "Tarif Navigo / ticket t+",
+            "cta_anchor": "Bus 351"
+        },
+        {
+            "slug": "bus-n140",
+            "name": "Noctilien N140",
+            "type": "noctilien",
+            "departure": "Gare de l'Est",
+            "duration": "60-90 min",
+            "price": "2,15 €",
+            "frequency": "30-60 min",
+            "first": "01h00",
+            "last": "04h30",
+            "note": "Bus de nuit IDFM, dessert tous les terminaux CDG",
+            "cta_anchor": "Noctilien N140"
+        },
+        {
+            "slug": "bus-n143",
+            "name": "Noctilien N143",
+            "type": "noctilien",
+            "departure": "Gare de l'Est",
+            "duration": "60-90 min",
+            "price": "2,15 €",
+            "frequency": "60 min",
+            "first": "01h00",
+            "last": "04h30",
+            "note": "Bus de nuit IDFM, traverse Pantin/Bobigny",
+            "cta_anchor": "Noctilien N143"
+        },
+        {
+            "slug": "roissybus",
+            "name": "Roissybus",
+            "type": "historique",
+            "status": "discontinued",
+            "discontinued_date": "2026-03-01",
+            "last_service_date": "2026-02-28",
+            "departure": "Opéra Garnier (1992–2026)",
+            "duration": "~60 min (historique)",
+            "price": "16,60 € (historique)",
+            "frequency": "—",
+            "first": "—",
+            "last": "—",
+            "note": "Service supprimé — remplacé par la ligne express 9517",
+            "cta_anchor": "Roissybus"
+        }
     ]
 }
