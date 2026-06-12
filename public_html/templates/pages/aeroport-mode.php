@@ -16,6 +16,9 @@ $h1        = $mode['h1'] ?? "$modeLabel pour $aeroName";
 
 $tagline   = $mode['tagline'] ?? '';
 $intros    = $mode['intro_paragraphs'] ?? [];
+$status    = $mode['status'] ?? null;
+$altBlock  = $mode['alternatives_block'] ?? null;
+$history   = $mode['history'] ?? null;
 
 $quickFacts = $mode['quick_facts'] ?? [];
 $itineraire = $mode['itineraire'] ?? [];
@@ -93,11 +96,51 @@ $tpl->seo
     </div>
   </section>
 
+  <?php if (is_array($status) && !empty($status['discontinued'])): ?>
+    <aside class="status-banner status-banner--discontinued" role="alert">
+      <strong>Service supprimé</strong>
+      <?php if (!empty($status['discontinued_date'])): ?>
+        — dernier départ le <?= Template::e($status['last_service_date'] ?? '') ?>, arrêt définitif au <?= Template::e($status['discontinued_date']) ?>.
+      <?php endif; ?>
+      <?php if (!empty($status['replacement_label'])): ?>
+        <br>Remplacé par : <strong><?= Template::e($status['replacement_label']) ?></strong>
+        <?php if (!empty($status['operator_replacement'])): ?> (exploité par <?= Template::e($status['operator_replacement']) ?>)<?php endif; ?>.
+      <?php endif; ?>
+    </aside>
+  <?php endif; ?>
+
   <?php $tpl->partial('ads/slot-header'); ?>
 
   <?php if (!empty($intros)): ?>
     <section class="mode-section">
       <?php foreach ($intros as $p): ?>
+        <p><?= $p ?></p>
+      <?php endforeach; ?>
+    </section>
+  <?php endif; ?>
+
+  <?php if (is_array($altBlock) && !empty($altBlock['items'])): ?>
+    <section class="mode-section" id="alternatives-block">
+      <h2><?= Template::e($altBlock['h2'] ?? "Alternatives") ?></h2>
+      <div class="alt-grid">
+        <?php foreach ($altBlock['items'] as $alt):
+          $anchor = $alt['anchor'] ?? '';
+          $url    = $alt['url'] ?? '';
+          $summary= $alt['summary'] ?? '';
+          $future = !empty($alt['future']);
+          $inner = '<span class="alt-card__anchor">' . htmlspecialchars($anchor) . '</span>'
+                 . '<p class="alt-card__summary">' . htmlspecialchars($summary) . '</p>';
+        ?>
+          <?= conditionalLink($url, $inner, 'alt-card') ?>
+        <?php endforeach; ?>
+      </div>
+    </section>
+  <?php endif; ?>
+
+  <?php if (is_array($history) && !empty($history['paragraphs'])): ?>
+    <section class="mode-section" id="history">
+      <h2><?= Template::e($history['h2'] ?? "Historique") ?></h2>
+      <?php foreach ($history['paragraphs'] as $p): ?>
         <p><?= $p ?></p>
       <?php endforeach; ?>
     </section>
@@ -404,6 +447,31 @@ $tpl->seo
     </script>
   <?php endif; ?>
 
+  <?php
+    // JSON-LD Article — éligible Discover. dateModified = filemtime du JSON
+    // source (fraîcheur Discover-compatible, mis à jour automatiquement à
+    // chaque modification du contenu).
+    $_modeFile = __DIR__ . '/../../data/aeroports/' . $aeroSlug . '/' . $modeSlug . '.json';
+    if (!is_file($_modeFile)) {
+        $_modeFile = __DIR__ . '/../../data/aeroports/' . $aeroSlug . '/bus/' . $modeSlug . '.json';
+    }
+    $_modeMtime = is_file($_modeFile) ? (int)filemtime($_modeFile) : time();
+    $_dateModified = date('c', $_modeMtime);
+    $_datePublished = $mode['date_published'] ?? $_dateModified;
+    $_articleSchema = [
+      '@context'      => 'https://schema.org',
+      '@type'         => 'Article',
+      'headline'      => $mode['h1'] ?? ($modeLabel . ' aéroport ' . $aeroName),
+      'description'   => $mode['seo']['description'] ?? '',
+      'url'           => 'https://bougeaparis.fr' . $canonical,
+      'datePublished' => $_datePublished,
+      'dateModified'  => $_dateModified,
+      'author'        => ['@type' => 'Organization', 'name' => 'BougeaParis.fr'],
+      'publisher'     => ['@type' => 'Organization', 'name' => 'BougeaParis.fr', 'url' => 'https://bougeaparis.fr'],
+    ];
+  ?>
+  <script type="application/ld+json"><?= json_encode($_articleSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?></script>
+
   <?php if (!empty($otherModes)):
     $modeIconDir = __DIR__ . '/../../assets/icons/transport-modes/';
   ?>
@@ -645,6 +713,57 @@ $tpl->seo
 .bus-card--inactive { cursor: default; opacity: .82; }
 .bus-card--inactive:hover { transform: none; box-shadow: none; }
 .bus-card--inactive .bus-card__cta::after { content: " (à venir)"; color: #999; font-weight: 400; font-size: .85rem; }
+
+/* Status banner (Discover-eligible alerte service supprimé) */
+.status-banner {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  font-size: .95rem;
+  line-height: 1.55;
+}
+.status-banner--discontinued {
+  background: #fdecea;
+  border-left: 4px solid #C0392B;
+  color: #6a1c14;
+}
+.status-banner--discontinued strong { color: #C0392B; }
+
+/* Bloc alternatives mis en avant (avant historique) */
+.alt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.alt-card {
+  display: block;
+  background: #fff;
+  border: 2px solid #E1F5EE;
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.alt-card:hover {
+  border-color: #0F6E56;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(15,110,86,.1);
+}
+.alt-card--inactive { opacity: .85; cursor: default; }
+.alt-card--inactive:hover { transform: none; box-shadow: none; border-color: #c8d6cf; }
+.alt-card__anchor {
+  display: inline-block;
+  font-weight: 700;
+  color: #0F6E56;
+  font-size: 1.05rem;
+  margin-bottom: .35rem;
+}
+.alt-card--inactive .alt-card__anchor::after {
+  content: " (à venir)"; color: #999; font-weight: 400; font-size: .85rem;
+}
+.alt-card__summary { margin: 0; color: #444; font-size: .92rem; line-height: 1.5; }
 
 /* Bouton de téléchargement plan ligne (sous carte Leaflet) */
 .line-download-row {
