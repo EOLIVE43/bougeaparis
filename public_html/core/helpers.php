@@ -1339,3 +1339,41 @@ if (!function_exists('buildStationMetaKeywords')) {
         return implode(', ', $kw);
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*  Tarifs centralisés (data/fares.json) — helpers bp_fare + interpolation    */
+/*                                                                            */
+/*  Source unique de vérité pour les tarifs IDFM/RATP. Les JSONs mode-aéroport*/
+/*  référencent les tarifs via des placeholders {{fare:KEY}} ou               */
+/*  {{fare:KEY:field}}, interpolés au rendu par bp_interpolate_fares().       */
+/* -------------------------------------------------------------------------- */
+if (!function_exists('bp_fare')) {
+    function bp_fare(string $key, string $field = 'price'): string
+    {
+        static $fares = null;
+        if ($fares === null) {
+            $f = __DIR__ . '/../data/fares.json';
+            $fares = is_file($f) ? (json_decode((string)file_get_contents($f), true) ?: []) : [];
+        }
+        return (string)(($fares['tickets'][$key] ?? [])[$field] ?? '');
+    }
+}
+
+if (!function_exists('bp_interpolate_fares')) {
+    /**
+     * Remplace les placeholders {{fare:KEY}} / {{fare:KEY:field}} par la valeur
+     * actuelle du fichier data/fares.json. Si la clé n'existe pas, la chaîne
+     * est laissée intacte (rendu silencieusement neutre).
+     */
+    function bp_interpolate_fares(string $s): string
+    {
+        return preg_replace_callback(
+            '/\{\{fare:([a-z0-9\-]+)(?::([a-z_]+))?\}\}/',
+            static function (array $m): string {
+                $value = bp_fare($m[1], $m[2] ?? 'price');
+                return $value !== '' ? $value : $m[0];
+            },
+            $s
+        );
+    }
+}

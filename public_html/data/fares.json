@@ -1,0 +1,29 @@
+{
+    "updated_at": "2026-06-13",
+    "sources": {
+        "ratp_aeroports": "RATP — titres et tarifs aéroports",
+        "ratp_unitaire": "RATP — simplification tarifaire IDFM 2025-2026"
+    },
+    "tickets": {
+        "paris-region-aeroports": {
+            "label": "Ticket Paris Région ⟷ Aéroports",
+            "price": "14 €",
+            "price_reduced": "7 €",
+            "valid_from": "2025-01-01",
+            "applies_to": ["rer-b-cdg", "rer-b-orly-via-orlyval"],
+            "source": "RATP, IDFM"
+        },
+        "ticket-metro-rer-train": {
+            "label": "Ticket Métro / RER / Train (zones 1-5)",
+            "price": "2,50 €",
+            "valid_from": "2025-01-01",
+            "source": "RATP, simplification tarifaire IDFM"
+        },
+        "ticket-bus-tram": {
+            "label": "Ticket Bus / Tramway",
+            "price": "2,05 €",
+            "valid_from": "2025-01-01",
+            "source": "RATP, simplification tarifaire IDFM"
+        }
+    }
+}

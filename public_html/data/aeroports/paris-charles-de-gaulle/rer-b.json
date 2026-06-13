@@ -6,24 +6,24 @@
     "mode_slug": "rer-b",
     "mode_label": "RER B",
     "color": "#0064B0",
-    "h1": "RER B pour Charles de Gaulle : 35 min depuis Châtelet, 11,80 €",
+    "h1": "RER B pour Charles de Gaulle : trajet direct depuis Châtelet",
     "seo": {
-        "title": "RER B CDG : durée 35 min, prix 11,80 €, fréquence 10 min — horaires 2026",
-        "description": "RER B vers Paris-Charles de Gaulle : 35 min depuis Châtelet, 11,80 €, fréquence 10 min. Horaires 04h53-00h15. Stations CDG 1 et CDG 2 TGV."
+        "title": "RER B CDG : tarif, durée et horaires Châtelet → aéroport",
+        "description": "Châtelet, Gare du Nord et Saint-Michel vers Paris-Charles de Gaulle : tarif, durée et fréquences. Gares CDG 1 et CDG 2 TGV."
     },
-    "tagline": "Solution la plus rapide — 35 min Châtelet → CDG",
+    "tagline": "Liaison ferroviaire directe — Châtelet → CDG",
     "intro_paragraphs": [
-        "Le <strong>RER B</strong> est la <strong>solution la plus rapide</strong> pour rejoindre l'<strong>aéroport Paris-Charles de Gaulle</strong> depuis le centre de Paris. <strong>35 minutes depuis Châtelet - Les Halles</strong>, avec arrêts à <strong>Gare du Nord</strong>, <strong>Saint-Michel - Notre-Dame</strong> et <strong>Denfert-Rochereau</strong>.",
-        "<strong>Prix du billet : 11,80 €</strong> en 2024-2025 (compris dans le pass Navigo zones 1-5). <strong>Fréquence : toutes les 10 à 20 minutes</strong> selon l'heure. <strong>Deux gares</strong> dans l'aéroport : Aéroport CDG 1 (Terminal 1 via CDGVAL) et Aéroport CDG 2 TGV (Terminaux 2A-2F)."
+        "Le <strong>RER B</strong> est la liaison ferroviaire directe entre Paris et l'<strong>aéroport Paris-Charles de Gaulle</strong>, avec un trajet d'environ 40 minutes depuis <strong>Châtelet - Les Halles</strong> (source RATP). La ligne dessert également <strong>Gare du Nord</strong>, <strong>Saint-Michel - Notre-Dame</strong> et <strong>Denfert-Rochereau</strong>.",
+        "Tarif via le <strong>Ticket Paris Région ⟷ Aéroports : {{fare:paris-region-aeroports}}</strong> (tarif réduit <strong>{{fare:paris-region-aeroports:price_reduced}}</strong>), en vigueur depuis le 1er janvier 2025 (source RATP, IDFM). Compris dans le <strong>pass Navigo zones 1-5</strong>. <strong>Deux gares</strong> dans l'aéroport : <strong>Aéroport CDG 1</strong> (Terminal 1 via CDGVAL) et <strong>Aéroport CDG 2 TGV</strong> (Terminaux 2A-2F)."
     ],
     "quick_facts": [
         {
-            "value": "35 min",
-            "label": "depuis Châtelet"
+            "value": "~40 min",
+            "label": "depuis Châtelet (RATP)"
         },
         {
-            "value": "11,80 €",
-            "label": "billet plein tarif"
+            "value": "{{fare:paris-region-aeroports}}",
+            "label": "Ticket Paris Région ⟷ Aéroports"
         },
         {
             "value": "10-20 min",
@@ -80,7 +80,7 @@
     "tarifs": {
         "h2": "Tarifs RER B Paris → CDG",
         "paragraphs": [
-            "Le <strong>billet RER B Paris → CDG</strong> coûte <strong>11,80 €</strong> en 2024-2025. <strong>Pas de gratuité enfants</strong> (sauf -4 ans). Le <strong>pass Navigo zones 1-5</strong> couvre intégralement le trajet."
+            "Le RER B Paris → CDG utilise le <strong>Ticket Paris Région ⟷ Aéroports</strong> à <strong>{{fare:paris-region-aeroports}}</strong> (tarif réduit <strong>{{fare:paris-region-aeroports:price_reduced}}</strong>), en vigueur depuis le 1er janvier 2025 (source RATP, IDFM). Le <strong>pass Navigo zones 1-5</strong> couvre intégralement le trajet."
         ],
         "table": {
             "headers": [
@@ -90,37 +90,18 @@
             ],
             "rows": [
                 [
-                    "Billet aéroport plein tarif",
-                    "11,80 €",
-                    "Aller simple"
+                    "Ticket Paris Région ⟷ Aéroports",
+                    "{{fare:paris-region-aeroports}}",
+                    "Aller simple, depuis le 1er janvier 2025"
                 ],
                 [
-                    "Billet enfant 4-9 ans",
-                    "5,90 €",
-                    "Demi-tarif"
-                ],
-                [
-                    "Navigo Semaine zones 1-5",
-                    "30,75 €",
-                    "Inclut CDG"
-                ],
-                [
-                    "Navigo Mois zones 1-5",
-                    "86,40 €",
-                    "Inclut CDG"
-                ],
-                [
-                    "Navigo Jour",
-                    "12,00 €",
-                    "Tout zone"
-                ],
-                [
-                    "Pass Paris Visite (1-5 zones)",
-                    "29,90 €/jour",
-                    "Pass touristique 1 jour"
+                    "Ticket Paris Région ⟷ Aéroports — tarif réduit",
+                    "{{fare:paris-region-aeroports:price_reduced}}",
+                    "Tarif réduit, depuis le 1er janvier 2025"
                 ]
             ]
-        }
+        },
+        "table_note": "Forfaits Navigo : couverts zones 1-5. [[link:/tarifs/aeroports/|Détail des tarifs aéroports]]."
     },
     "itineraires_paris": [
         {
@@ -194,7 +175,7 @@
     "faq": [
         {
             "question": "Combien coûte le RER B vers CDG ?",
-            "answer": "<strong>11,80 €</strong> en 2024-2025. Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "answer": "<strong>{{fare:paris-region-aeroports}}</strong> (tarif réduit <strong>{{fare:paris-region-aeroports:price_reduced}}</strong>) via le <strong>Ticket Paris Région ⟷ Aéroports</strong>, en vigueur depuis le 1er janvier 2025. Compris dans le <strong>pass Navigo zones 1-5</strong>. Source : RATP, IDFM."
         },
         {
             "question": "Combien de temps Châtelet → CDG en RER B ?",

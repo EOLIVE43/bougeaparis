@@ -87,7 +87,7 @@ $tpl->seo
         <div class="mode-quick-facts">
           <?php foreach ($quickFacts as $fact): ?>
             <div class="mode-fact">
-              <span class="fact-value"><?= Template::e($fact['value']) ?></span>
+              <span class="fact-value"><?= Template::e(bp_interpolate_fares((string)($fact['value'] ?? ''))) ?></span>
               <span class="fact-label"><?= Template::e($fact['label']) ?></span>
             </div>
           <?php endforeach; ?>
@@ -114,7 +114,7 @@ $tpl->seo
   <?php if (!empty($intros)): ?>
     <section class="mode-section">
       <?php foreach ($intros as $p): ?>
-        <p><?= $p ?></p>
+        <p><?= bp_interpolate_fares((string)$p) ?></p>
       <?php endforeach; ?>
     </section>
   <?php endif; ?>
@@ -340,14 +340,14 @@ $tpl->seo
     <section class="mode-section" id="tarifs">
       <h2><?= Template::e($tarifs['h2'] ?? "Tarifs") ?></h2>
       <?php foreach (($tarifs['paragraphs'] ?? []) as $p): ?>
-        <p><?= $p ?></p>
+        <p><?= bp_interpolate_fares((string)$p) ?></p>
       <?php endforeach; ?>
       <?php if (!empty($tarifs['table']['rows'])): ?>
         <div class="info-cards-grid">
           <?php foreach ($tarifs['table']['rows'] as $row):
-            $title   = $row[0] ?? '';
-            $price   = $row[1] ?? '';
-            $details = $row[2] ?? '';
+            $title   = bp_interpolate_fares((string)($row[0] ?? ''));
+            $price   = bp_interpolate_fares((string)($row[1] ?? ''));
+            $details = bp_interpolate_fares((string)($row[2] ?? ''));
           ?>
             <div class="info-card info-card--<?= Template::e($iconKey) ?>">
               <div class="info-card__icon"><?= $iconSvg ?></div>
@@ -365,6 +365,17 @@ $tpl->seo
             </div>
           <?php endforeach; ?>
         </div>
+      <?php endif; ?>
+      <?php if (!empty($tarifs['table_note'])):
+        // Rendu note sous table : interpole les liens [[link:URL|label]] via
+        // conditionalLink (route active → <a>, sinon texte seul).
+        $_noteHtml = preg_replace_callback(
+          '/\[\[link:([^|\]]+)\|([^\]]+)\]\]/u',
+          fn($m) => conditionalLink($m[1], htmlspecialchars($m[2], ENT_QUOTES, 'UTF-8'), 'tarifs-table-note__link'),
+          (string)$tarifs['table_note']
+        );
+      ?>
+        <p class="tarifs-table-note"><?= $_noteHtml ?></p>
       <?php endif; ?>
     </section>
   <?php endif; ?>
@@ -420,7 +431,7 @@ $tpl->seo
         <?php foreach ($faq as $q): ?>
           <details class="faq-item">
             <summary><h3 class="faq-question__title"><?= Template::e($q['question'] ?? '') ?></h3></summary>
-            <div class="faq-answer"><?= $q['answer'] ?? '' ?></div>
+            <div class="faq-answer"><?= bp_interpolate_fares((string)($q['answer'] ?? '')) ?></div>
           </details>
         <?php endforeach; ?>
       </div>
@@ -434,7 +445,7 @@ $tpl->seo
         'name'  => $q['question'] ?? '',
         'acceptedAnswer' => [
           '@type' => 'Answer',
-          'text'  => trim(strip_tags($q['answer'] ?? '')),
+          'text'  => trim(strip_tags(bp_interpolate_fares((string)($q['answer'] ?? '')))),
         ],
       ];
     }
@@ -764,6 +775,19 @@ $tpl->seo
   content: " (à venir)"; color: #999; font-weight: 400; font-size: .85rem;
 }
 .alt-card__summary { margin: 0; color: #444; font-size: .92rem; line-height: 1.5; }
+
+/* Note tarifs sous la table (lien interne optionnel via conditionalLink) */
+.tarifs-table-note {
+  margin: 1rem 0 .5rem;
+  padding: .75rem 1rem;
+  background: #f4f8f6;
+  border-left: 3px solid #0F6E56;
+  border-radius: 4px;
+  font-size: .9rem;
+  color: #444;
+}
+.tarifs-table-note__link { color: #0F6E56; font-weight: 600; }
+.tarifs-table-note__link--inactive { color: #777; }
 
 /* Bouton de téléchargement plan ligne (sous carte Leaflet) */
 .line-download-row {
