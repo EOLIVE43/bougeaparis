@@ -48,7 +48,13 @@ foreach ($quickFacts as $_qf) {
     if ($_duration === null && preg_match('/min|h\d|→/', $_v)) $_duration = $_v;
     if ($_price === null && (str_contains($_v, '€') || stripos($_v, 'gratuit') !== false)) $_price = $_v;
 }
-if ($modeSlug === 'taxi' && $_price && $_duration) {
+// Priorité au seo.title défini dans le JSON s'il existe (≤ 65 chars Google,
+// éditorialisé). Sinon fallback sur le helper centralisé qui auto-construit
+// à partir de quick_facts.
+$_seoTitleJson = trim((string)($mode['seo']['title'] ?? ''));
+if ($_seoTitleJson !== '' && strlen($_seoTitleJson) <= 65) {
+    $_seoTitle = $_seoTitleJson;
+} elseif ($modeSlug === 'taxi' && $_price && $_duration) {
     $_seoTitle = bp_title_taxi_aeroport($aeroName, $_price, $_duration);
 } else {
     $_seoTitle = bp_title_aeroport_mode($modeLabel, $aeroName, $_duration, $_price);
