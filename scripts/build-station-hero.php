@@ -445,12 +445,32 @@ function find_hero_for_station(array $station, array &$cache): array {
         return $cache[$slug];
     }
 
-    // 1. Catégories candidates
-    $catCandidates = [
-        'Category:' . $name . ' (Paris Metro)',
-        'Category:Entrance to ' . $name . ' metro station',
-        'Category:' . $name . ' (Paris Metro station)',
-    ];
+    // 1. Catégories candidates — adaptées au type de station (métro vs RER).
+    // Détection RER : lines[0].type === 'rer' (mode principal du JSON station).
+    // Cas image inexistante (gares de banlieue peu documentées) : best reste
+    // null et level=no_good_match → template fait fallback gradient sans erreur.
+    $isRer = false;
+    $firstLine = $station['lines'][0] ?? null;
+    if (is_array($firstLine) && ($firstLine['type'] ?? '') === 'rer') {
+        $isRer = true;
+    }
+    if ($isRer) {
+        // Gares RER : conventions Wikimedia variées en banlieue, on élargit.
+        // Ex: "Category:Gare d'Antony", "Category:Châtelet–Les Halles (Paris RER)".
+        $catCandidates = [
+            'Category:Gare de ' . $name,
+            'Category:Gare d\'' . $name,
+            'Category:' . $name . ' (Paris RER)',
+            'Category:' . $name . ' (Paris RER station)',
+            'Category:' . $name . ' station',
+        ];
+    } else {
+        $catCandidates = [
+            'Category:' . $name . ' (Paris Metro)',
+            'Category:Entrance to ' . $name . ' metro station',
+            'Category:' . $name . ' (Paris Metro station)',
+        ];
+    }
     $titles = [];
     foreach ($catCandidates as $cat) {
         $files = fetch_category_files($cat);
@@ -460,10 +480,11 @@ function find_hero_for_station(array $station, array &$cache): array {
         }
     }
 
-    // 2. Fallback search
+    // 2. Fallback search — terme adapté au type (gare vs métro).
     if (empty($titles)) {
-        log_info("    fallback search : '$name métro'");
-        $titles = fetch_search_files($name . ' métro intitle:' . $name, 30);
+        $searchTerm = $isRer ? "gare de $name" : "$name métro";
+        log_info("    fallback search : '$searchTerm'");
+        $titles = fetch_search_files($searchTerm . ' intitle:' . $name, 30);
     }
 
     if (empty($titles)) {

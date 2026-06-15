@@ -49,7 +49,8 @@ ini_set('memory_limit', '512M');
  */
 
 const GTFS_DIR = __DIR__ . '/cache-gtfs/idfm-gtfs';
-const STATIONS_DIR = __DIR__ . '/../public_html/data/stations';
+const STATIONS_DIR     = __DIR__ . '/../public_html/data/stations';
+const STATIONS_RER_DIR = __DIR__ . '/../public_html/data/stations-rer';
 const LINE_MAPPING_PATH = __DIR__ . '/../public_html/config/line-mapping.php';
 
 // ─────────────────────────────────────────────────────────────
@@ -57,10 +58,12 @@ const LINE_MAPPING_PATH = __DIR__ . '/../public_html/config/line-mapping.php';
 // ─────────────────────────────────────────────────────────────
 
 $opts = ['slug' => '', 'name' => '', 'force' => false, 'dry-run' => false,
-         'skip-pois' => false, 'skip-exits' => false, 'skip-wikidata' => false];
+         'skip-pois' => false, 'skip-exits' => false, 'skip-wikidata' => false,
+         'mode' => 'metro'];
 foreach (array_slice($argv, 1) as $arg) {
     if (preg_match('/^--slug=(.+)$/', $arg, $m)) $opts['slug'] = $m[1];
     elseif (preg_match('/^--name=(.+)$/', $arg, $m)) $opts['name'] = $m[1];
+    elseif (preg_match('/^--mode=(metro|rer)$/', $arg, $m)) $opts['mode'] = $m[1];
     elseif ($arg === '--force') $opts['force'] = true;
     elseif ($arg === '--dry-run') $opts['dry-run'] = true;
     elseif ($arg === '--skip-pois') $opts['skip-pois'] = true;
@@ -69,16 +72,22 @@ foreach (array_slice($argv, 1) as $arg) {
     else { fwrite(STDERR, "Argument inconnu : $arg\n"); exit(2); }
 }
 if ($opts['slug'] === '' && $opts['name'] === '') {
-    fwrite(STDERR, "Usage: php bootstrap-station.php (--slug=<slug>|--name=\"<name>\") [--force] [--dry-run] [--skip-pois] [--skip-exits] [--skip-wikidata]\n");
+    fwrite(STDERR, "Usage: php bootstrap-station.php (--slug=<slug>|--name=\"<name>\") [--mode=metro|rer] [--force] [--dry-run] [--skip-pois] [--skip-exits] [--skip-wikidata]\n");
     exit(2);
 }
+
+// Mode-aware : 'metro' (default, comportement historique) ou 'rer' (bootstrap
+// RER B/A/C/D/E vers data/stations-rer/). Pas d'effet de bord sur le mode metro.
+$mode    = $opts['mode'];
+$outDir  = ($mode === 'rer') ? STATIONS_RER_DIR : STATIONS_DIR;
+$slugPrefix = ($mode === 'rer') ? 'rer-' : '';
 
 // Calcul slug si pas donné
 if ($opts['slug'] === '') $opts['slug'] = slugify($opts['name']);
 if ($opts['name'] === '') $opts['name'] = null;  // sera dérivé du GTFS
 
 $slug = $opts['slug'];
-$jsonPath = STATIONS_DIR . '/' . $slug . '.json';
+$jsonPath = $outDir . '/' . $slug . '.json';
 
 logStep("Bootstrap station : $slug");
 
@@ -136,7 +145,7 @@ if (empty($lines)) {
 // ─────────────────────────────────────────────────────────────
 
 logStep("Calcul adjacent_stations par ligne...");
-$adjacents = buildAdjacentStations($stops, $childStops, $lines);
+$adjacents = buildAdjacentStations($stops, $childStops, $lines, $mode);
 foreach ($adjacents as $lineSlug => $adj) {
     $prev = $adj['previous']['name'] ?? '(début ligne)';
     $next = $adj['next']['name'] ?? '(fin ligne)';
@@ -187,7 +196,7 @@ if ($opts['force'] && file_exists($jsonPath)) {
 
 logStep("Construction du squelette JSON...");
 $json = buildSkeleton(
-    $slug, $parent, $nameFull, $lines, $adjacents, $isMajorHub, $tariffZone, $wikidata, $existing
+    $slug, $parent, $nameFull, $lines, $adjacents, $isMajorHub, $tariffZone, $wikidata, $existing, $mode
 );
 
 // ─────────────────────────────────────────────────────────────
@@ -201,7 +210,7 @@ if ($opts['dry-run']) {
     exit(0);
 }
 
-@mkdir(STATIONS_DIR, 0755, true);
+@mkdir($outDir, 0755, true);
 file_put_contents($jsonPath, json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . "\n");
 logInfo("  Écrit : $jsonPath (" . number_format(strlen(json_encode($json))) . " bytes)");
 
@@ -211,16 +220,19 @@ logInfo("  Écrit : $jsonPath (" . number_format(strlen(json_encode($json))) . "
 
 $warnings = [];
 
+// Propagation du mode aux sous-process (vide en mode=metro pour non-régression).
+$modeArgs = ($mode === 'rer') ? ['--mode=rer'] : [];
+
 if (!$opts['skip-exits']) {
     logStep("Enrichissement exits[] via build-station-exits.php...");
-    if (!runSubprocess($slug, 'build-station-exits.php', 60)) {
+    if (!runSubprocess($slug, 'build-station-exits.php', 60, $modeArgs)) {
         $warnings[] = 'exits non générés';
     }
 }
 
 if (!$opts['skip-pois']) {
     logStep("Enrichissement nearby_pois[] via build-station-pois.php...");
-    if (!runSubprocess($slug, 'build-station-pois.php', 60)) {
+    if (!runSubprocess($slug, 'build-station-pois.php', 60, $modeArgs)) {
         $warnings[] = 'POIs non générés';
     }
 }
@@ -230,7 +242,7 @@ if (!$opts['skip-pois']) {
 // ─────────────────────────────────────────────────────────────
 
 logStep("Validation via validate-station.php...");
-$validateOk = runSubprocess($slug, 'validate-station.php', 30, ['--check-wikidata']);
+$validateOk = runSubprocess($slug, 'validate-station.php', 30, array_merge(['--check-wikidata'], $modeArgs));
 if (!$validateOk) $warnings[] = 'validate-station a signalé des erreurs (voir logs)';
 
 // ─────────────────────────────────────────────────────────────
@@ -432,8 +444,12 @@ function identifyLines(array $childStops, string $parentId): array
     return array_values($unique);
 }
 
-function buildAdjacentStations(array $stops, array $childStops, array $lines): array
+function buildAdjacentStations(array $stops, array $childStops, array $lines, string $mode = 'metro'): array
 {
+    // $mode = 'metro' (default) ou 'rer'. Détermine le préfixe des slugs
+    // adjacents pour respecter la convention T16 ('rer-{nom}').
+    $slugPrefix = ($mode === 'rer') ? 'rer-' : '';
+
     // Pour chaque ligne, prendre un trip représentatif (le plus long en stop_count
     // qui passe par un de nos quais enfants), et lire le stop précédent/suivant.
     $childIds = array_keys($childStops);
@@ -500,7 +516,7 @@ function buildAdjacentStations(array $stops, array $childStops, array $lines): a
                 $prevParent = resolveParent($stops, $prevStop['stop_id']);
                 $adjacents[$line['slug']]['previous'] = [
                     'name' => $stops[$prevParent]['stop_name'] ?? $prevStop['stop_name'],
-                    'slug' => slugify($stops[$prevParent]['stop_name'] ?? $prevStop['stop_name']),
+                    'slug' => $slugPrefix . slugify($stops[$prevParent]['stop_name'] ?? $prevStop['stop_name']),
                     'direction' => $stops[$bestTrip[0]['stop_id']]['stop_name'] ?? '?',
                 ];
             }
@@ -511,7 +527,7 @@ function buildAdjacentStations(array $stops, array $childStops, array $lines): a
                 $nextParent = resolveParent($stops, $nextStop['stop_id']);
                 $adjacents[$line['slug']]['next'] = [
                     'name' => $stops[$nextParent]['stop_name'] ?? $nextStop['stop_name'],
-                    'slug' => slugify($stops[$nextParent]['stop_name'] ?? $nextStop['stop_name']),
+                    'slug' => $slugPrefix . slugify($stops[$nextParent]['stop_name'] ?? $nextStop['stop_name']),
                     'direction' => $stops[end($bestTrip)['stop_id']]['stop_name'] ?? '?',
                 ];
             }
@@ -606,8 +622,11 @@ function fetchWikidataInfo(string $stationName): ?array
 
 function buildSkeleton(string $slug, array $parent, string $nameFull, array $lines,
                        array $adjacents, bool $isMajorHub, int $tariffZone,
-                       ?array $wikidata, array $existing): array
+                       ?array $wikidata, array $existing, string $mode = 'metro'): array
 {
+    // $mode = 'metro' (default, comportement historique) ou 'rer'. Détermine
+    // quels lines sont en primaire (skel.lines) vs en correspondances.
+
     // Garde-fou merge : préserve les champs non-vides de $existing
     $today = date('Y-m-d');
 
@@ -637,11 +656,22 @@ function buildSkeleton(string $slug, array $parent, string $nameFull, array $lin
         'walking_minutes' => 0,
     ], $tramLines);
 
-    // adjacent_stations filtre : conserver uniquement les slugs metro-*
-    // (pattern observe sur stations publiees Chatelet, La Defense, Etoile).
+    // Correspondances métro (utilisée seulement en mode=rer pour symétriser
+    // avec rer_correspondences existante du mode=metro).
+    $metroCorrespondences = $existing['metro_correspondences'] ?? array_map(fn($l) => [
+        'code'            => $l['code'],
+        'color'           => $l['color'],
+        'station_name'    => $parent['stop_name'],
+        'walking_minutes' => 0,
+    ], $metroLines);
+
+    // adjacent_stations filtre : conserver uniquement les lignes du mode courant
+    // (préfixe slug ligne : 'metro-*' en mode=metro, 'rer-*' en mode=rer).
+    // Cas observé sur stations publiées Chatelet, La Defense, Etoile.
+    $adjPrefix = ($mode === 'rer') ? 'rer-' : 'metro-';
     $adjacentsFiltered = [];
     foreach ($adjacents as $slug2 => $adj) {
-        if (str_starts_with($slug2, 'metro-')) {
+        if (str_starts_with($slug2, $adjPrefix)) {
             $adjacentsFiltered[$slug2] = $adj;
         }
     }
@@ -662,11 +692,19 @@ function buildSkeleton(string $slug, array $parent, string $nameFull, array $lin
         'commune' => $existing['commune'] ?? ($tariffZone === 1 ? 'Paris' : ''),
         'is_major_hub' => $isMajorHub,
         'i18n' => $existing['i18n'] ?? ['en' => '', 'es' => ''],
-        'lines' => $metroLines,
+        'lines' => ($mode === 'rer') ? $rerLines : $metroLines,
     ];
-    // rer/tram correspondences inserees conditionnellement, juste apres lines[]
-    if (!empty($rerCorrespondences)) {
-        $skel['rer_correspondences'] = $rerCorrespondences;
+    // Correspondances "autres modes" insérées conditionnellement après lines[].
+    // mode=metro : lines=metro → expose rer + tram en correspondance.
+    // mode=rer   : lines=rer   → expose metro + tram en correspondance.
+    if ($mode === 'rer') {
+        if (!empty($metroCorrespondences)) {
+            $skel['metro_correspondences'] = $metroCorrespondences;
+        }
+    } else {
+        if (!empty($rerCorrespondences)) {
+            $skel['rer_correspondences'] = $rerCorrespondences;
+        }
     }
     if (!empty($tramCorrespondences)) {
         $skel['tram_correspondences'] = $tramCorrespondences;
