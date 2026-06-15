@@ -103,14 +103,11 @@ $tpl->seo
 
   <?php if (is_array($status) && !empty($status['discontinued'])): ?>
     <aside class="status-banner status-banner--discontinued" role="alert">
-      <strong>Service supprimé</strong>
-      <?php if (!empty($status['discontinued_date'])): ?>
-        — dernier départ le <?= Template::e($status['last_service_date'] ?? '') ?>, arrêt définitif au <?= Template::e($status['discontinued_date']) ?>.
-      <?php endif; ?>
-      <?php if (!empty($status['replacement_label'])): ?>
-        <br>Remplacé par : <strong><?= Template::e($status['replacement_label']) ?></strong>
-        <?php if (!empty($status['operator_replacement'])): ?> (exploité par <?= Template::e($status['operator_replacement']) ?>)<?php endif; ?>.
-      <?php endif; ?>
+      <strong>Service supprimé<?php if (!empty($status['discontinued_date'])): ?> le <?= Template::e(dateFr($status['discontinued_date'], 'short')) ?><?php endif; ?></strong><?php
+      if (!empty($status['last_service_date'])): ?> (dernier départ le <?= Template::e(dateFr($status['last_service_date'], 'short')) ?>)<?php endif;
+      if (!empty($status['replacement_label'])): ?> — remplacé par le <strong><?= Template::e($status['replacement_label']) ?></strong><?php
+        if (!empty($status['operator_replacement'])): ?> (exploité par <?= Template::e($status['operator_replacement']) ?>)<?php endif;
+      endif; ?>.
     </aside>
   <?php endif; ?>
 
@@ -822,32 +819,57 @@ $tpl->seo
 }
 .alt-card {
   display: block;
-  background: #fff;
-  border: 2px solid #E1F5EE;
+  background: #F2FBF7;
+  border: 2px solid #0F6E56;
   border-radius: 10px;
   padding: 1.1rem 1.25rem;
   text-decoration: none;
   color: inherit;
-  transition: border-color .2s, box-shadow .2s, transform .2s;
+  box-shadow: 0 2px 8px rgba(15,110,86,.08);
+  transition: border-color .2s, box-shadow .2s, transform .2s, background .2s;
 }
 .alt-card:hover {
-  border-color: #0F6E56;
+  background: #E1F5EE;
+  border-color: #0B5946;
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(15,110,86,.1);
+  box-shadow: 0 8px 20px rgba(15,110,86,.18);
 }
-.alt-card--inactive { opacity: .85; cursor: default; }
-.alt-card--inactive:hover { transform: none; box-shadow: none; border-color: #c8d6cf; }
+.alt-card--inactive {
+  opacity: .75;
+  cursor: default;
+  background: #fafbfc;
+  border-color: #d1dad6;
+  box-shadow: none;
+}
+.alt-card--inactive:hover {
+  transform: none;
+  box-shadow: none;
+  background: #fafbfc;
+  border-color: #d1dad6;
+}
 .alt-card__anchor {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
   color: #0F6E56;
-  font-size: 1.05rem;
-  margin-bottom: .35rem;
+  font-size: 1.15rem;
+  margin-bottom: .5rem;
+  line-height: 1.3;
+}
+.alt-card__anchor::before {
+  content: "→ ";
+  color: #0F6E56;
+  font-weight: 700;
+}
+.alt-card--inactive .alt-card__anchor {
+  color: #555;
+}
+.alt-card--inactive .alt-card__anchor::before {
+  content: "";
 }
 .alt-card--inactive .alt-card__anchor::after {
   content: " (à venir)"; color: #999; font-weight: 400; font-size: .85rem;
 }
-.alt-card__summary { margin: 0; color: #444; font-size: .92rem; line-height: 1.5; }
+.alt-card__summary { margin: 0; color: #333; font-size: .94rem; line-height: 1.55; }
 
 /* Note tarifs sous la table (lien interne optionnel via conditionalLink) */
 .tarifs-table-note {
