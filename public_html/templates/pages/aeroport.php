@@ -39,8 +39,8 @@ if ($_seoTitleJson !== '' && mb_strlen($_seoTitleJson, 'UTF-8') <= 70) {
     $_seoTitle = bp_title_aeroport_hub($name, $iata);
 }
 $tpl->seo
-    ->setTitle($_seoTitle, false)
-    ->setDescription($aeroport['seo']['description'] ?? '')
+    ->setTitle(bp_interpolate_fares($_seoTitle), false)
+    ->setDescription(bp_interpolate_fares((string)($aeroport['seo']['description'] ?? '')))
     ->setCanonical($canonical)
     ->setBreadcrumb([
         ['label' => 'Accueil',    'url' => '/'],
@@ -93,11 +93,11 @@ $buildSrcset = function(array $map): string {
     <?php endif; ?>
 
     <div class="aeroport-hero__content">
-      <h1><?= Template::e($h1) ?></h1>
+      <h1><?= Template::e(bp_interpolate_fares($h1)) ?></h1>
       <?php if ($tagline): ?>
-        <p class="aeroport-tagline"><?= Template::e($tagline) ?></p>
+        <p class="aeroport-tagline"><?= Template::e(bp_interpolate_fares($tagline)) ?></p>
       <?php endif; ?>
-      <p class="aeroport-hero-desc"><?= $heroDesc ?></p>
+      <p class="aeroport-hero-desc"><?= bp_interpolate_fares((string)$heroDesc) ?></p>
 
       <div class="aeroport-key-figures">
         <?php if ($dist): ?>
@@ -110,7 +110,7 @@ $buildSrcset = function(array $map): string {
           <div class="key-figure"><span class="kf-value"><?= count($terminals) ?></span><span class="kf-label">terminaux</span></div>
         <?php endif; ?>
         <?php if ($opened): ?>
-          <div class="key-figure"><span class="kf-value"><?= Template::e($opened) ?></span><span class="kf-label">ouverture</span></div>
+          <div class="key-figure"><span class="kf-value"><?= Template::e(bp_interpolate_fares($opened)) ?></span><span class="kf-label">ouverture</span></div>
         <?php endif; ?>
       </div>
     </div>
@@ -121,7 +121,7 @@ $buildSrcset = function(array $map): string {
   <?php if (!empty($intros)): ?>
     <section class="aeroport-intro">
       <?php foreach ($intros as $p): ?>
-        <p><?= $p ?></p>
+        <p><?= bp_interpolate_fares((string)$p) ?></p>
       <?php endforeach; ?>
     </section>
   <?php endif; ?>
@@ -148,13 +148,13 @@ $buildSrcset = function(array $map): string {
             <div class="mode-card__icon"><?= $iconSvg ?></div>
             <div class="mode-card__title"><?= Template::e($mode['name'] ?? '') ?></div>
             <div class="mode-card__details">
-              <span class="mode-card__time"><?= Template::e($mode['duration'] ?? '') ?></span>
-              <span class="mode-card__price"><?= Template::e($mode['price'] ?? '') ?></span>
+              <span class="mode-card__time"><?= Template::e(bp_interpolate_fares((string)($mode['duration'] ?? ''))) ?></span>
+              <span class="mode-card__price"><?= Template::e(bp_interpolate_fares((string)($mode['price'] ?? ''))) ?></span>
             </div>
             <?php if (!empty($mode['note'])): ?>
-              <p class="mode-card__note"><?= Template::e($mode['note']) ?></p>
+              <p class="mode-card__note"><?= Template::e(bp_interpolate_fares((string)$mode['note'])) ?></p>
             <?php endif; ?>
-            <span class="mode-card__cta">→ <?= Template::e($mode['cta_anchor'] ?? $mode['name'] ?? 'Voir le guide') ?></span>
+            <span class="mode-card__cta">→ <?= Template::e(bp_interpolate_fares((string)($mode['cta_anchor'] ?? $mode['name'] ?? 'Voir le guide'))) ?></span>
           </a>
         <?php endforeach; ?>
       </div>
@@ -170,7 +170,7 @@ $buildSrcset = function(array $map): string {
 
       <?php if (!empty($section['paragraphs'])): ?>
         <?php foreach ($section['paragraphs'] as $p): ?>
-          <p><?= $p ?></p>
+          <p><?= bp_interpolate_fares((string)$p) ?></p>
         <?php endforeach; ?>
       <?php endif; ?>
 
@@ -188,7 +188,7 @@ $buildSrcset = function(array $map): string {
               <?php foreach ($section['table']['rows'] as $row): ?>
                 <tr>
                   <?php foreach ($row as $cell): ?>
-                    <td><?= Template::e($cell) ?></td>
+                    <td><?= Template::e(bp_interpolate_fares((string)$cell)) ?></td>
                   <?php endforeach; ?>
                 </tr>
               <?php endforeach; ?>
@@ -203,7 +203,7 @@ $buildSrcset = function(array $map): string {
     <section class="aeroport-section" id="histoire">
       <h2>Histoire de <?= Template::e($full) ?></h2>
       <?php foreach ($history as $p): ?>
-        <p><?= $p ?></p>
+        <p><?= bp_interpolate_fares((string)$p) ?></p>
       <?php endforeach; ?>
     </section>
   <?php endif; ?>
@@ -218,7 +218,7 @@ $buildSrcset = function(array $map): string {
             <?php if (!empty($poi['distance_km'])): ?>
               <span class="poi-distance">(~<?= (int)$poi['distance_km'] ?> km)</span>
             <?php endif; ?>
-            <p><?= $poi['description'] ?? '' ?></p>
+            <p><?= bp_interpolate_fares((string)($poi['description'] ?? '')) ?></p>
           </li>
         <?php endforeach; ?>
       </ul>
@@ -232,7 +232,7 @@ $buildSrcset = function(array $map): string {
         <?php foreach ($faq as $q): ?>
           <details class="faq-item">
             <summary><h3 class="faq-question__title"><?= Template::e($q['question'] ?? '') ?></h3></summary>
-            <div class="faq-answer"><?= $q['answer'] ?? '' ?></div>
+            <div class="faq-answer"><?= bp_interpolate_fares((string)($q['answer'] ?? '')) ?></div>
           </details>
         <?php endforeach; ?>
       </div>
@@ -246,7 +246,7 @@ $buildSrcset = function(array $map): string {
         'name'  => $q['question'] ?? '',
         'acceptedAnswer' => [
           '@type' => 'Answer',
-          'text'  => trim(strip_tags($q['answer'] ?? '')),
+          'text'  => trim(strip_tags(bp_interpolate_fares((string)($q['answer'] ?? '')))),
         ],
       ];
     }
@@ -266,7 +266,7 @@ $buildSrcset = function(array $map): string {
       <?php if (!empty($aeroport['icao'])): ?><dt>Code ICAO</dt><dd><?= Template::e($aeroport['icao']) ?></dd><?php endif; ?>
       <?php if ($dept): ?><dt>Département</dt><dd><?= Template::e($dept) ?></dd><?php endif; ?>
       <?php if ($operator): ?><dt>Opérateur</dt><dd><?= Template::e($operator) ?></dd><?php endif; ?>
-      <?php if ($opened): ?><dt>Ouverture</dt><dd><?= Template::e($opened) ?></dd><?php endif; ?>
+      <?php if ($opened): ?><dt>Ouverture</dt><dd><?= Template::e(bp_interpolate_fares($opened)) ?></dd><?php endif; ?>
     </dl>
     <?php if (!empty($heroImg['credit'])): ?>
       <p class="aeroport-credit-link">

@@ -5,32 +5,32 @@
     "aeroport_iata": "ORY",
     "mode_slug": "bus",
     "mode_label": "Bus",
-    "h1": "Bus pour Orly : Orlybus, 183, 285 — horaires et tarifs 2026",
+    "h1": "Bus pour Orly : 183, 285 — horaires et tarifs (Orlybus supprimé)",
     "seo": {
         "title": "Bus Orly : 183, 285, Orlybus historique — horaires et tarifs",
-        "description": "Bus pour Aéroport Paris-Orly : Orlybus depuis Denfert-Rochereau (35 min, 11,50 €), bus 183 depuis Porte de Choisy ({{fare:ticket-bus-tram}}), bus 285 depuis Villejuif. Horaires, tarifs."
+        "description": "Bus actifs pour Aéroport Paris-Orly : bus 183 depuis Porte de Choisy ({{fare:ticket-bus-tram}}, 45 min), bus 285 depuis Villejuif ({{fare:ticket-bus-tram}}, 30 min). Orlybus supprimé le 3 mars 2025, remplacé par le métro 14."
     },
-    "tagline": "Orlybus 35 min depuis Denfert-Rochereau — 11,50 €",
+    "tagline": "Bus 183 et 285 — {{fare:ticket-bus-tram}}, Orlybus supprimé en 2025",
     "intro_paragraphs": [
-        "Trois <strong>bus desservent l'aéroport Paris-Orly</strong> depuis Paris. Le plus rapide est l'<strong>Orlybus</strong>, ligne directe depuis <strong>Denfert-Rochereau</strong> (Paris 14e). Les bus <strong>183</strong> et <strong>285</strong> offrent des alternatives plus économiques mais plus longues.",
-        "Depuis le <strong>24 juin 2024</strong>, le <strong>métro 14</strong> a transformé l'accès à Orly et est désormais souvent plus rapide et économique que les bus. Mais l'<strong>Orlybus</strong> reste un choix pertinent depuis le sud parisien (Denfert)."
+        "Deux <strong>bus actifs desservent l'aéroport Paris-Orly</strong> depuis Paris : le <strong>bus 183</strong> depuis <strong>Porte de Choisy</strong> et le <strong>bus 285</strong> depuis <strong>Villejuif - Louis Aragon</strong>. Tous deux au <strong>tarif Bus-Tram {{fare:ticket-bus-tram}}</strong>.",
+        "L'<strong>Orlybus</strong>, ligne directe historique depuis <strong>Denfert-Rochereau</strong>, <strong>a été supprimé le 3 mars 2025</strong> suite au prolongement du <strong>métro 14</strong> jusqu'à Orly le <strong>24 juin 2024</strong>. Le <strong>métro 14</strong> est désormais le <strong>mode d'accès principal</strong> à l'aéroport — voir notre page <a href=\"/aeroports/paris-orly/bus/orlybus/\">Orlybus historique</a> pour le contexte de cette suppression."
     ],
     "quick_facts": [
         {
-            "value": "35 min",
-            "label": "Orlybus (Denfert)"
+            "value": "25 min",
+            "label": "Métro 14 (mode principal)"
         },
         {
-            "value": "11,50 €",
-            "label": "Orlybus"
+            "value": "30 min",
+            "label": "Bus 285 (Villejuif)"
+        },
+        {
+            "value": "45 min",
+            "label": "Bus 183 (P. de Choisy)"
         },
         {
             "value": "{{fare:ticket-bus-tram}}",
-            "label": "Bus 183/285"
-        },
-        {
-            "value": "15 min",
-            "label": "fréquence"
+            "label": "Tarif bus 183/285"
         }
     ],
     "itineraire": {
@@ -39,15 +39,15 @@
             "Selon votre quartier de départ, choisissez le bus le mieux adapté :"
         ],
         "steps": [
-            "<strong>Orlybus</strong> : depuis <strong>Denfert-Rochereau</strong> (14e), arrêt bus dédié devant la gare RER B / M4 / M6. Bus direct vers Orly, <strong>35 min</strong>.",
-            "<strong>Bus 183</strong> : depuis <strong>Porte de Choisy</strong> (M7 terminus). Trajet via avenue Stalingrad. <strong>45 min</strong>, tarif Bus-Tram <strong>{{fare:ticket-bus-tram}}</strong>.",
+            "<strong>Bus 183</strong> : depuis <strong>Porte de Choisy</strong> (M7 terminus). Trajet via avenue de Choisy. <strong>45 min</strong>, tarif Bus-Tram <strong>{{fare:ticket-bus-tram}}</strong>.",
             "<strong>Bus 285</strong> : depuis <strong>Villejuif - Louis Aragon</strong> (M7 terminus + T7). Bus économique. <strong>30 min</strong>, tarif Bus-Tram <strong>{{fare:ticket-bus-tram}}</strong>."
         ]
     },
     "horaires": {
         "h2": "Horaires des bus Paris → Orly",
         "paragraphs": [
-            "L'<strong>Orlybus</strong> circule tous les jours. <strong>Bus de jour</strong> entre 05h35 et 00h30. Pas de service de nuit."
+            "Les <strong>bus 183 et 285</strong> circulent tous les jours, en service de jour uniquement. Pas de bus de nuit pour Orly.",
+            "L'<strong>Orlybus</strong> a circulé jusqu'au <strong>3 mars 2025</strong> (05h35 → 00h30, fréquence 15 min). Il a été supprimé et remplacé par le métro 14."
         ],
         "table": {
             "headers": [
@@ -57,12 +57,6 @@
                 "Fréquence"
             ],
             "rows": [
-                [
-                    "Orlybus",
-                    "05h35",
-                    "00h30",
-                    "15 min"
-                ],
                 [
                     "183",
                     "05h30",
@@ -81,8 +75,7 @@
     "tarifs": {
         "h2": "Tarifs bus pour Orly",
         "paragraphs": [
-            "L'<strong>Orlybus</strong> nécessite un <strong>billet spécifique</strong> à 11,50 €. Les bus 183 et 285 acceptent le <strong>tarif Bus-Tram</strong> à {{fare:ticket-bus-tram}}.",
-            "Le <strong>pass Navigo zones 1-5</strong> couvre intégralement l'Orlybus et les bus 183/285."
+            "Les bus 183 et 285 acceptent le <strong>tarif Bus-Tram</strong> à <strong>{{fare:ticket-bus-tram}}</strong>. Le <strong>pass Navigo zones 1-5</strong> couvre intégralement les bus 183 et 285."
         ],
         "table": {
             "headers": [
@@ -91,11 +84,6 @@
                 "Prix"
             ],
             "rows": [
-                [
-                    "Orlybus",
-                    "Billet Orlybus",
-                    "11,50 €"
-                ],
                 [
                     "183",
                     "{{fare:ticket-bus-tram:label}}",
@@ -107,7 +95,7 @@
                     "{{fare:ticket-bus-tram}}"
                 ],
                 [
-                    "Tous bus",
+                    "183 / 285",
                     "Navigo zones 1-5",
                     "Inclus"
                 ]
@@ -116,56 +104,56 @@
     },
     "itineraires_paris": [
         {
-            "depart": "Denfert-Rochereau",
-            "station_slug": "denfert-rochereau",
-            "duration": "35 min",
-            "trajet": "Orlybus directe."
-        },
-        {
             "depart": "Porte de Choisy",
             "station_slug": "porte-de-choisy",
             "duration": "45 min",
-            "trajet": "Bus 183 directe."
+            "trajet": "Bus 183 directe ({{fare:ticket-bus-tram}})."
         },
         {
             "depart": "Villejuif - Louis Aragon",
             "station_slug": "villejuif-louis-aragon",
             "duration": "30 min",
-            "trajet": "Bus 285 ou tramway T7."
+            "trajet": "Bus 285 ou tramway T7 ({{fare:ticket-bus-tram}})."
         },
         {
             "depart": "Châtelet",
             "station_slug": "chatelet",
-            "duration": "55 min",
-            "trajet": "M4 → Denfert + Orlybus."
+            "duration": "25 min",
+            "trajet": "Métro 14 directe ({{fare:ticket-metro-rer-train}})."
         },
         {
             "depart": "Gare Montparnasse",
             "station_slug": "montparnasse-bienvenue",
-            "duration": "45 min",
-            "trajet": "M6 → Denfert + Orlybus."
+            "duration": "30 min",
+            "trajet": "M4 → Châtelet + Métro 14 ({{fare:ticket-metro-rer-train}})."
+        },
+        {
+            "depart": "Denfert-Rochereau",
+            "station_slug": "denfert-rochereau",
+            "duration": "30 min",
+            "trajet": "M4 → Châtelet + Métro 14 ({{fare:ticket-metro-rer-train}}). Orlybus directe supprimé en mars 2025."
         }
     ],
     "pois": [
         {
-            "name": "Arrêt Orlybus - Aérogare Sud",
-            "description": "Devant Orly 1-2-3."
+            "name": "Arrêt Bus 183 / 285 - Aérogare Sud",
+            "description": "Terminaux Orly 1-2-3."
         },
         {
-            "name": "Arrêt Bus 183 - Aérogare Sud",
-            "description": "Terminaux Orly 1-2."
+            "name": "Arrêt Orlybus historique - Aérogare Sud",
+            "description": "Ancien terminus de l'Orlybus (1983 → 3 mars 2025)."
         }
     ],
     "alternatives": [
         {
             "label": "Métro ligne 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "🆕 25 min depuis Châtelet, {{fare:ticket-bus-tram}} (depuis juin 2024)."
+            "note": "Mode principal : 25 min depuis Châtelet, {{fare:ticket-metro-rer-train}} (depuis juin 2024)."
         },
         {
             "label": "RER B + Orlyval",
             "url": "/aeroports/paris-orly/rer/",
-            "note": "40 min depuis Châtelet, 13,25 €."
+            "note": "40 min depuis Châtelet, {{fare:paris-region-aeroports}}."
         },
         {
             "label": "Tramway T7",
@@ -175,33 +163,33 @@
         {
             "label": "Taxi forfait",
             "url": "/aeroports/paris-orly/taxi/",
-            "note": "36 € / 44 € selon rive."
+            "note": "{{fare:forfait-taxi-orly-rive-gauche}} / {{fare:forfait-taxi-orly-rive-droite}} selon rive (réglementé)."
         }
     ],
     "faq": [
         {
-            "question": "Combien coûte l'Orlybus ?",
-            "answer": "<strong>11,50 €</strong> le billet aller simple. Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "question": "Où est passé l'Orlybus ?",
+            "answer": "L'<strong>Orlybus</strong> a été <strong>supprimé le 3 mars 2025</strong>, suite au prolongement du <strong>métro 14</strong> jusqu'à Orly le <strong>24 juin 2024</strong>. Voir notre page <a href=\"/aeroports/paris-orly/bus/orlybus/\">Orlybus historique</a>."
         },
         {
-            "question": "Combien de temps Denfert → Orly en Orlybus ?",
-            "answer": "<strong>35 minutes</strong> en conditions normales."
-        },
-        {
-            "question": "Quelle est la différence entre Orlybus et bus 183 ?",
-            "answer": "L'<strong>Orlybus</strong> est un bus direct payant (11,50 €) depuis Denfert, plus rapide. Le <strong>bus 183</strong> est un bus standard moins cher ({{fare:ticket-bus-tram}} tarif Bus-Tram) depuis Porte de Choisy, plus lent."
+            "question": "Quel bus actif va à Orly aujourd'hui ?",
+            "answer": "Deux bus actifs : le <strong>bus 183</strong> depuis <strong>Porte de Choisy</strong> (45 min, {{fare:ticket-bus-tram}}) et le <strong>bus 285</strong> depuis <strong>Villejuif - Louis Aragon</strong> (30 min, {{fare:ticket-bus-tram}})."
         },
         {
             "question": "Le bus 183 va-t-il à Orly ?",
             "answer": "<strong>Oui</strong>, depuis <strong>Porte de Choisy</strong> (M7). 45 min, {{fare:ticket-bus-tram}}."
         },
         {
-            "question": "Quels sont les horaires de l'Orlybus ?",
-            "answer": "Premier départ <strong>05h35</strong>, dernier <strong>00h30</strong>. Fréquence <strong>15 min</strong>."
+            "question": "Le bus 285 va-t-il à Orly ?",
+            "answer": "<strong>Oui</strong>, depuis <strong>Villejuif - Louis Aragon</strong> (M7 terminus + T7). 30 min, {{fare:ticket-bus-tram}}."
         },
         {
             "question": "Y a-t-il un bus de nuit pour Orly ?",
-            "answer": "<strong>Non</strong>. L'Orlybus s'arrête à 00h30. Pour la nuit : taxi ou VTC."
+            "answer": "<strong>Non</strong>. Les bus 183 et 285 ne circulent pas la nuit. Pour la nuit : taxi forfait ({{fare:forfait-taxi-orly-rive-gauche}} / {{fare:forfait-taxi-orly-rive-droite}}) ou VTC."
+        },
+        {
+            "question": "Quel est le mode principal d'accès à Orly aujourd'hui ?",
+            "answer": "Le <strong>métro 14</strong>, prolongé jusqu'à l'aéroport depuis le <strong>24 juin 2024</strong>. 25 min depuis Châtelet, {{fare:ticket-metro-rer-train}}."
         }
     ],
     "bus_lines": [
@@ -210,11 +198,11 @@
             "name": "Orlybus",
             "type": "historique",
             "departure": "Denfert-Rochereau (14e)",
-            "duration": "35 min",
-            "price": "11,50 €",
-            "frequency": "Toutes les 8-15 min",
-            "first": "5h35",
-            "last": "23h35",
+            "duration": "—",
+            "price": "—",
+            "frequency": "—",
+            "first": "—",
+            "last": "—",
             "note": "Service supprimé — remplacé par le métro 14",
             "cta_anchor": "Orlybus",
             "status": "discontinued",

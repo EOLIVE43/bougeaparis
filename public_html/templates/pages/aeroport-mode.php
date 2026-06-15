@@ -505,11 +505,11 @@ $tpl->seo
             <div class="mode-card__icon"><?= $icoSvg ?></div>
             <div class="mode-card__title"><?= Template::e($m['name'] ?? '') ?></div>
             <div class="mode-card__details">
-              <span class="mode-card__time"><?= Template::e($m['duration'] ?? '') ?></span>
-              <span class="mode-card__price"><?= Template::e($m['price'] ?? '') ?></span>
+              <span class="mode-card__time"><?= Template::e(bp_interpolate_fares((string)($m['duration'] ?? ''))) ?></span>
+              <span class="mode-card__price"><?= Template::e(bp_interpolate_fares((string)($m['price'] ?? ''))) ?></span>
             </div>
             <?php if (!empty($m['note'])): ?>
-              <p class="mode-card__note"><?= Template::e($m['note']) ?></p>
+              <p class="mode-card__note"><?= Template::e(bp_interpolate_fares((string)$m['note'])) ?></p>
             <?php endif; ?>
             <span class="mode-card__cta">Voir le guide →</span>
           </a>
