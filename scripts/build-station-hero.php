@@ -42,9 +42,10 @@ ini_set('memory_limit', '512M');
  * @package BougeaParis\Scripts
  */
 
-const ROOT          = __DIR__ . '/..';
-const STATIONS_DIR  = ROOT . '/public_html/data/stations';
-const HERO_CACHE    = __DIR__ . '/cache-gtfs/wikimedia-station-hero.json';
+const ROOT             = __DIR__ . '/..';
+const STATIONS_DIR     = ROOT . '/public_html/data/stations';
+const STATIONS_RER_DIR = ROOT . '/public_html/data/stations-rer';
+const HERO_CACHE       = __DIR__ . '/cache-gtfs/wikimedia-station-hero.json';
 
 const COMMONS_API   = 'https://commons.wikimedia.org/w/api.php';
 const SLEEP_MS      = 200_000; // 200 ms entre 2 appels Commons (~5 req/sec)
@@ -80,6 +81,8 @@ $opts = parse_cli_args($argv);
 $onlyStation = $opts['station']     ?? null;
 $preview     = (bool)($opts['preview']     ?? false);
 $reviewOnly  = (bool)($opts['review-only'] ?? false);
+$mode        = isset($opts['mode']) && $opts['mode'] === 'rer' ? 'rer' : 'metro';
+$STATIONS_DIR_RUNTIME = ($mode === 'rer') ? STATIONS_RER_DIR : STATIONS_DIR;
 
 // ============================================================================
 // HELPERS
@@ -579,7 +582,7 @@ if (!$canConvertImages) {
     log_info('    Le script continuera mais ne convertira pas les images.');
 }
 
-$files = glob(STATIONS_DIR . '/*.json');
+$files = glob($STATIONS_DIR_RUNTIME . '/*.json');
 if ($onlyStation) {
     $files = array_filter($files, fn($f) => basename($f, '.json') === $onlyStation);
 }
