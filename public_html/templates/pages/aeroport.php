@@ -30,8 +30,16 @@ $accessModes = $aeroport['access_modes'] ?? [];
 
 $canonical = '/aeroports/' . $slug . '/';
 
+// Priorité au seo.title du JSON s'il existe et ≤ 70 chars (même pattern que
+// aeroport-mode.php). Sinon fallback sur bp_title_aeroport_hub.
+$_seoTitleJson = trim((string)($aeroport['seo']['title'] ?? ''));
+if ($_seoTitleJson !== '' && mb_strlen($_seoTitleJson, 'UTF-8') <= 70) {
+    $_seoTitle = $_seoTitleJson;
+} else {
+    $_seoTitle = bp_title_aeroport_hub($name, $iata);
+}
 $tpl->seo
-    ->setTitle(bp_title_aeroport_hub($name, $iata), false)
+    ->setTitle($_seoTitle, false)
     ->setDescription($aeroport['seo']['description'] ?? '')
     ->setCanonical($canonical)
     ->setBreadcrumb([

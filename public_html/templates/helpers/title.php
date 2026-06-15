@@ -72,16 +72,14 @@ if (!function_exists('bp_title_station')) {
 
     /**
      * Title hub aéroport (CDG / Orly / Beauvais).
-     * Pattern : "Aéroport Paris-{X} ({IATA}) : guide complet 2026"
+     * Pattern : "Aéroport Paris-{X} ({IATA}) : guide complet"
+     * Atemporel par défaut. Une année figée injectée par code = signal
+     * "page non maintenue" pour Google. Les faits datés sourcés vont dans
+     * le corps de la page, pas dans le helper title.
      */
     function bp_title_aeroport_hub(string $name, string $iata): string
     {
-        $year = (int)date('Y');
-        $t = "Aéroport $name ($iata) : guide complet $year";
-        if (strlen($t) > 65) {
-            $t = "Aéroport $name ($iata) : guide complet";
-        }
-        return $t;
+        return "Aéroport $name ($iata) : guide complet";
     }
 
     /**

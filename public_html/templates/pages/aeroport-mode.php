@@ -51,7 +51,7 @@ foreach ($quickFacts as $_qf) {
 // éditorialisé). Sinon fallback sur le helper centralisé qui auto-construit
 // à partir de quick_facts.
 $_seoTitleJson = trim((string)($mode['seo']['title'] ?? ''));
-if ($_seoTitleJson !== '' && strlen($_seoTitleJson) <= 65) {
+if ($_seoTitleJson !== '' && mb_strlen($_seoTitleJson, 'UTF-8') <= 70) {
     $_seoTitle = $_seoTitleJson;
 } elseif ($modeSlug === 'taxi' && $_price && $_duration) {
     $_seoTitle = bp_title_taxi_aeroport($aeroName, $_price, $_duration);
