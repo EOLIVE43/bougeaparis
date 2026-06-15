@@ -50,6 +50,14 @@ $bus       = $station['bus_correspondences'] ?? [];
 $hero      = $station['hero']      ?? [];
 $adjacent  = $station['adjacent_stations'] ?? [];
 $image     = $station['image']     ?? null;
+
+// Mode primaire de la page (rer vs metro). Détermine quelles sections sont
+// "lignes principales" (issues de lines[]) vs "correspondances" (issues de
+// metro_correspondences vs rer_correspondences). Les 320 stations métro prod
+// passent par station-metro.php (fichier séparé) — aucun risque régression.
+$primaryMode  = detectStationMode($station);
+$isRerPage    = ($primaryMode === 'rer_pur');
+$metroCorresp = $station['metro_correspondences'] ?? [];
 $intros    = $station['intro_paragraphs'] ?? [];
 $faq       = $station['faq']       ?? [];
 $tips      = $station['practical_tips'] ?? [];
@@ -398,24 +406,33 @@ $tpl->partial('components/breadcrumb', [
         <?= Template::e(buildStationH1($station)) ?>
       </h1>
 
-      <div class="station-hero__badges" aria-label="Lignes desservant la station">
+      <div class="station-hero__badges" aria-label="Lignes desservant la <?= $isRerPage ? 'gare' : 'station' ?>">
         <?php foreach ($lines as $line):
-          $lineUrl    = '/metro/' . $line['slug'] . '/';
+          // URL + label adaptés au mode primaire de la page.
+          $lineCodeLow = strtolower((string)$line['code']);
+          if ($isRerPage) {
+              $lineUrl   = '/rer/ligne-' . $lineCodeLow . '/';
+              $pillLabel = 'RER ' . $line['code'];
+              $pillSlug  = 'rer-' . $lineCodeLow;
+              $modeNoun  = 'du RER';
+          } else {
+              $lineUrl   = '/metro/' . $line['slug'] . '/';
+              $pillLabel = 'M' . $line['code'];
+              $pillSlug  = strtolower($pillLabel);
+              $modeNoun  = 'du métro';
+          }
           $lineExists = Routes::exists(rtrim($lineUrl, '/'));
-          // Label affiché : "M1", "M4", "M14"… (prepend "M" sur le code numérique)
-          $pillLabel  = 'M' . $line['code'];
           $pillShape  = linePillShape($pillLabel);
-          $pillSlug   = strtolower($pillLabel);
         ?>
           <?php if ($lineExists): ?>
             <a href="<?= Template::e($lineUrl) ?>"
                class="line-pill line-pill--<?= Template::e($pillShape) ?> line-pill--<?= Template::e($pillSlug) ?>"
-               aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+               aria-label="Ligne <?= Template::e($line['code']) ?> <?= Template::e($modeNoun) ?>">
               <?= Template::e($pillLabel) ?>
             </a>
           <?php else: ?>
             <span class="line-pill line-pill--<?= Template::e($pillShape) ?> line-pill--<?= Template::e($pillSlug) ?>"
-                  aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+                  aria-label="Ligne <?= Template::e($line['code']) ?> <?= Template::e($modeNoun) ?>">
               <?= Template::e($pillLabel) ?>
             </span>
           <?php endif; ?>
@@ -505,45 +522,61 @@ $tpl->partial('components/breadcrumb', [
        ============================================================ -->
   <section class="station-section section-correspondances" id="correspondances" aria-labelledby="correspondances-title">
 
-    <h2 id="correspondances-title">Correspondances à la station <?= Template::e($name) ?></h2>
+    <h2 id="correspondances-title">Correspondances à la <?= $isRerPage ? 'gare' : 'station' ?> <?= Template::e($name) ?></h2>
 
     <p class="section-intro">
-      La <strong>station <?= Template::e($name) ?></strong> permet de correspondre entre <?= count($lines) ?> lignes de métro<?= !empty($rer) ? ' et ' . count($rer) . ' lignes de RER' : '' ?>.
+      <?php if ($isRerPage): ?>
+        La <strong>gare <?= Template::e($name) ?></strong> permet de correspondre entre <?= count($lines) ?> ligne<?= count($lines) > 1 ? 's' : '' ?> de RER<?= !empty($metroCorresp) ? ' et ' . count($metroCorresp) . ' ligne' . (count($metroCorresp) > 1 ? 's' : '') . ' de métro' : '' ?>.
+      <?php else: ?>
+        La <strong>station <?= Template::e($name) ?></strong> permet de correspondre entre <?= count($lines) ?> lignes de métro<?= !empty($rer) ? ' et ' . count($rer) . ' lignes de RER' : '' ?>.
+      <?php endif; ?>
     </p>
 
     <div class="correspondances-grid">
 
-      <!-- Métro -->
+      <!-- Lignes primaires : RER (mode rer) ou Métro (mode metro) -->
       <div class="correspondances-block">
-        <h3>Lignes de métro à <?= Template::e($name) ?></h3>
+        <h3>
+          <?php if ($isRerPage): ?>
+            Lignes de RER à <?= Template::e($name) ?>
+          <?php else: ?>
+            Lignes de métro à <?= Template::e($name) ?>
+          <?php endif; ?>
+        </h3>
         <ul class="correspondances-list">
           <?php foreach ($lines as $line):
-            // URL publique : /metro/ligne-{code}/ (derive depuis code, pas slug).
-            $lineUrl = '/metro/ligne-' . strtolower((string)($line['code'] ?? '')) . '/';
+            // URL adaptée au mode primaire : /rer/ligne-{code}/ ou /metro/ligne-{code}/
+            $lineCodeLow = strtolower((string)($line['code'] ?? ''));
+            $lineUrl = $isRerPage
+              ? '/rer/ligne-' . $lineCodeLow . '/'
+              : '/metro/ligne-' . $lineCodeLow . '/';
             $lineExists = Routes::exists(rtrim($lineUrl, '/'));
             $lineMeta = function_exists('getLineMeta')
                 ? getLineMeta((string)($line['slug'] ?? ''))
                 : null;
             $hasTerminus = $lineMeta
                 && ($lineMeta['terminus_a'] !== '' || $lineMeta['terminus_b'] !== '');
+            // Label/slug pill : RER carrée ou Métro cercle/pill selon mode.
+            if ($isRerPage) {
+                $pillLabel = 'RER ' . $line['code'];
+                $pillSlug  = 'rer-' . strtolower((string)$line['code']);
+            } else {
+                $pillLabel = 'M' . $line['code'];
+                $pillSlug  = 'm' . strtolower((string)$line['code']);
+            }
+            $modeNoun = $isRerPage ? 'du RER' : 'du métro';
           ?>
-            <?php
-              // Correction 16a : migration vers .line-pill (correction unifiée 2026-05-12).
-              // Label "M{code}" préfixé pour cohérence avec hero badges (correction 15).
-              $pillLabel = 'M' . $line['code'];
-              $pillSlug  = 'm' . strtolower((string)$line['code']);
-            ?>
             <li>
               <div class="correspondance-line-link<?= $lineExists ? '' : ' correspondance-line-link--inactive' ?>">
                 <span class="line-pill line-pill--<?= Template::e(linePillShape($pillLabel)) ?> line-pill--<?= Template::e($pillSlug) ?>"
-                      aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+                      aria-label="Ligne <?= Template::e($line['code']) ?> <?= Template::e($modeNoun) ?>">
                   <?= Template::e($pillLabel) ?>
                 </span>
                 <div class="correspondance-line-content">
                   <?php if ($lineExists): ?>
-                    <a href="<?= Template::e($lineUrl) ?>" class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</a>
+                    <a href="<?= Template::e($lineUrl) ?>" class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> <?= Template::e($modeNoun) ?></a>
                   <?php else: ?>
-                    <span class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> du métro</span>
+                    <span class="correspondance-line-name">Ligne <?= Template::e($line['code']) ?> <?= Template::e($modeNoun) ?></span>
                   <?php endif; ?>
                   <?php if ($hasTerminus): ?>
                     <small class="correspondance-line-terminus">
@@ -560,8 +593,43 @@ $tpl->partial('components/breadcrumb', [
         </ul>
       </div>
 
-<!-- RER -->
-      <?php if (!empty($rer)): ?>
+<!-- Correspondances métro (uniquement en mode RER : metro_correspondences[]) -->
+      <?php if ($isRerPage && !empty($metroCorresp)): ?>
+        <div class="correspondances-block">
+          <h3>Correspondances métro à <?= Template::e($name) ?></h3>
+          <ul class="correspondances-list">
+            <?php foreach ($metroCorresp as $m):
+              $mCode = (string)($m['code'] ?? '');
+              $mUrl  = '/metro/ligne-' . strtolower($mCode) . '/';
+              $mExists = Routes::exists(rtrim($mUrl, '/'));
+              $mPillLabel = 'M' . $mCode;
+              $mPillSlug  = 'm' . strtolower($mCode);
+            ?>
+              <li>
+                <div class="correspondance-line-link<?= $mExists ? '' : ' correspondance-line-link--inactive' ?>">
+                  <span class="line-pill line-pill--<?= Template::e(linePillShape($mPillLabel)) ?> line-pill--<?= Template::e($mPillSlug) ?>"
+                        aria-label="Ligne <?= Template::e($mCode) ?> du métro">
+                    <?= Template::e($mPillLabel) ?>
+                  </span>
+                  <div class="correspondance-line-content">
+                    <?php if ($mExists): ?>
+                      <a href="<?= Template::e($mUrl) ?>" class="correspondance-line-name">Ligne <?= Template::e($mCode) ?> du métro</a>
+                    <?php else: ?>
+                      <span class="correspondance-line-name">Ligne <?= Template::e($mCode) ?> du métro</span>
+                    <?php endif; ?>
+                    <?php if (!empty($m['walking_minutes'])): ?>
+                      <span class="correspondance-line-walking"><?= (int)$m['walking_minutes'] ?> min à pied</span>
+                    <?php endif; ?>
+                  </div>
+                </div>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+
+      <!-- Correspondances RER (uniquement en mode METRO : rer_correspondences[]) -->
+      <?php if (!$isRerPage && !empty($rer)): ?>
         <div class="correspondances-block">
           <h3>Correspondances RER à <?= Template::e($name) ?></h3>
           <ul class="correspondances-list">
