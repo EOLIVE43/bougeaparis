@@ -71,7 +71,7 @@ if (!is_array($heroImage) || empty($heroImage['url'])) {
     }
 }
 $hasImage  = $heroImage !== null;
-$canonical = '/metro/station/' . $slug . '/';
+$canonical = '/rer/station/' . $slug . '/';
 
 // Charger le CSS dédié
 $tpl->addStylesheet('/assets/css/station.css');
@@ -871,13 +871,26 @@ $tpl->partial('components/breadcrumb', [
             }
             ?>
             <?php
-              // Correction 16a : .line-pill--metro pour stations adjacentes métro (sur la même ligne)
-              $adjPillLabel = 'M' . $line['code'];
-              $adjPillSlug  = 'm' . strtolower((string)$line['code']);
+              // Pill + URL adaptés au type de ligne (RER vs métro). Sur station-rer.php,
+              // line['type'] = 'rer' par défaut, mais une station RER peut avoir des
+              // lignes adjacentes de types mixtes (M + RER) → on conditionne.
+              $adjLineType   = $line['type'] ?? 'rer';
+              $adjLineCode   = (string)$line['code'];
+              if ($adjLineType === 'rer') {
+                  $adjPillLabel = 'RER ' . $adjLineCode;
+                  $adjPillSlug  = 'rer-' . strtolower($adjLineCode);
+                  $adjUrlBase   = '/rer/station/';
+                  $adjModeLabel = 'du RER';
+              } else {
+                  $adjPillLabel = 'M' . $adjLineCode;
+                  $adjPillSlug  = 'm' . strtolower($adjLineCode);
+                  $adjUrlBase   = '/metro/station/';
+                  $adjModeLabel = 'du métro';
+              }
             ?>
             <h3 class="adjacent-line-title">
               <span class="line-pill line-pill--<?= Template::e(linePillShape($adjPillLabel)) ?> line-pill--<?= Template::e($adjPillSlug) ?>"
-                    aria-label="Ligne <?= Template::e($line['code']) ?> du métro">
+                    aria-label="Ligne <?= Template::e($adjLineCode) ?> <?= Template::e($adjModeLabel) ?>">
                 <?= Template::e($adjPillLabel) ?>
               </span>
               <span>Ligne <?= Template::e($line['code']) ?><?= Template::e($dirLabel) ?></span>
@@ -885,7 +898,7 @@ $tpl->partial('components/breadcrumb', [
 
             <div class="adjacent-stations">
               <?php if ($prev):
-                $prevUrl = '/metro/station/' . $prev['slug'] . '/';
+                $prevUrl = $adjUrlBase . $prev['slug'] . '/';
               ?>
                 <div class="adjacent-station adjacent-station--prev">
                   <span class="adjacent-station-arrow" aria-hidden="true">←</span>
@@ -897,7 +910,7 @@ $tpl->partial('components/breadcrumb', [
               <?php endif; ?>
 
               <?php if ($next):
-                $nextUrl = '/metro/station/' . $next['slug'] . '/';
+                $nextUrl = $adjUrlBase . $next['slug'] . '/';
               ?>
                 <div class="adjacent-station adjacent-station--next">
                   <div>
