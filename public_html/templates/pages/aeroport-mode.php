@@ -404,7 +404,7 @@ $tpl->seo
                   <?php endif; ?>
                 </td>
                 <td><?= Template::e($i['duration']) ?></td>
-                <td><?= $i['trajet'] ?? '' ?></td>
+                <td><?= bp_interpolate_fares((string)($i['trajet'] ?? '')) ?></td>
               </tr>
             <?php endforeach; ?>
           </tbody>
