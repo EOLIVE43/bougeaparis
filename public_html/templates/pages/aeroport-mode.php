@@ -11,7 +11,6 @@ $aeroName  = $mode['aeroport_name'] ?? '';
 $aeroIata  = $mode['aeroport_iata'] ?? '';
 $modeSlug  = $mode['mode_slug'] ?? '';
 $modeLabel = $mode['mode_label'] ?? '';
-$color     = $mode['color'] ?? '#0F6E56';
 $h1        = $mode['h1'] ?? "$modeLabel pour $aeroName";
 
 $tagline   = $mode['tagline'] ?? '';
@@ -82,7 +81,7 @@ $tpl->seo
 <article class="aeroport-mode-page">
 
   <!-- HERO mode-colored + H1 SEO -->
-  <section class="mode-hero" style="background: <?= Template::e($color) ?>;">
+  <section class="mode-hero" data-mode-slug="<?= Template::e($modeSlug) ?>">
     <div class="mode-hero__content">
       <h1><?= Template::e($h1) ?></h1>
       <?php if ($tagline): ?>
@@ -532,13 +531,81 @@ $tpl->seo
 <style>
 .aeroport-mode-page { padding: 1.5rem 0; }
 .aeroport-mode-page h2 { margin-top: 2rem; color: #0F6E56; }
-.mode-hero { color: #fff; padding: 2rem 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; }
-.mode-hero h1 { color: #fff; margin: 0 0 .5rem; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.25; }
-.mode-tagline { font-size: 1.05rem; opacity: .95; margin: 0 0 1rem; font-weight: 600; }
-.mode-quick-facts { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
-.mode-fact { background: rgba(255,255,255,.15); padding: .75rem 1rem; border-radius: 8px; min-width: 110px; text-align: center; }
-.fact-value { display: block; font-weight: 700; font-size: 1.3rem; line-height: 1; }
-.fact-label { display: block; font-size: .8rem; opacity: .85; margin-top: .25rem; }
+
+/*
+ * Mode hero — palette éditoriale BougeaParis, non identique aux chartes
+ * officielles IDFM/RATP/SNCF (à l'exception du T7 jaune #FFCD00 qui est la
+ * couleur officielle Tramway IDFM).
+ * Pour les pastilles de correspondance officielles : voir .line-badge--*
+ * (helper pastilleCorresp dans helpers.php).
+ *
+ * Couleurs sélectionnées via data-mode-slug. Voile sombre uniforme 30%
+ * pour garantir le contraste WCAG AA sur tous les fonds, sauf T7 (jaune
+ * trop clair) qui bascule en texte sombre.
+ */
+.mode-hero {
+  background-color: #0F6E56; /* fallback BougeaParis */
+  background-image: linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30));
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+.mode-hero h1 {
+  color: #fff;
+  margin: 0 0 .5rem;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  line-height: 1.25;
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+.mode-tagline {
+  font-size: 1.05rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.mode-quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.mode-fact {
+  background: rgba(0,0,0,.5);   /* fond assombri → contraste AA garanti */
+  padding: .75rem 1rem;
+  border-radius: 8px;
+  min-width: 110px;
+  text-align: center;
+}
+.fact-value { display: block; font-weight: 700; font-size: 1.3rem; line-height: 1; color: #fff; }
+.fact-label { display: block; font-size: .8rem; margin-top: .25rem; color: #fff; font-weight: 500; }
+
+/* Mapping data-mode-slug → couleur (palette éditoriale BougeaParis) */
+.mode-hero[data-mode-slug="rer-b"]      { background-color: #0064B0; }
+.mode-hero[data-mode-slug="rer"]        { background-color: #0064B0; }
+.mode-hero[data-mode-slug="metro"]      { background-color: #7C4E9B; }
+.mode-hero[data-mode-slug="tramway"]    { background-color: #FFCD00; } /* T7 jaune officiel IDFM */
+.mode-hero[data-mode-slug="bus"]        { background-color: #E5B100; }
+.mode-hero[data-mode-slug="bus-183"]    { background-color: #2980B9; }
+.mode-hero[data-mode-slug="bus-285"]    { background-color: #2980B9; }
+.mode-hero[data-mode-slug="orlybus"]    { background-color: #E67E22; }
+.mode-hero[data-mode-slug="roissybus"]  { background-color: #9A9A9A; }
+.mode-hero[data-mode-slug="tgv"]        { background-color: #C61E4D; }
+.mode-hero[data-mode-slug="cdgval"]     { background-color: #007AB7; }
+.mode-hero[data-mode-slug="navette"]    { background-color: #9A4DD0; }
+.mode-hero[data-mode-slug="train"]      { background-color: #D02D2D; }
+.mode-hero[data-mode-slug="taxi"]       { background-color: #222222; }
+
+/* Cas particulier T7 : jaune officiel trop clair pour texte blanc.
+   H1 et tagline en sombre, ratio AA 5.70 sur fond jaune+voile 30%.
+   Les fact-cards (fond rgba(0,0,0,.5)) gardent leur texte blanc. */
+.mode-hero[data-mode-slug="tramway"] h1 {
+  color: #1a1a1a;
+  text-shadow: none;
+}
+.mode-hero[data-mode-slug="tramway"] .mode-tagline {
+  color: #1a1a1a;
+}
 .mode-section { margin: 2rem 0; }
 .mode-section p { line-height: 1.65; }
 .mode-table-wrap { overflow-x: auto; margin-top: 1rem; }
