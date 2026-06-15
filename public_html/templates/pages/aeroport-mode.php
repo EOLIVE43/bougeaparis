@@ -105,9 +105,7 @@ $tpl->seo
     <aside class="status-banner status-banner--discontinued" role="alert">
       <strong>Service supprimé<?php if (!empty($status['discontinued_date'])): ?> le <?= Template::e(dateFr($status['discontinued_date'], 'short')) ?><?php endif; ?></strong><?php
       if (!empty($status['last_service_date'])): ?> (dernier départ le <?= Template::e(dateFr($status['last_service_date'], 'short')) ?>)<?php endif;
-      if (!empty($status['replacement_label'])): ?> — remplacé par le <strong><?= Template::e($status['replacement_label']) ?></strong><?php
-        if (!empty($status['operator_replacement'])): ?> (exploité par <?= Template::e($status['operator_replacement']) ?>)<?php endif;
-      endif; ?>.
+      if (!empty($status['replacement_label'])): ?> — remplacé par <strong><?= Template::e($status['replacement_label']) ?></strong><?php endif; ?>.
     </aside>
   <?php endif; ?>
 

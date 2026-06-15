@@ -52,10 +52,14 @@ if (!function_exists('dateFr')) {
         $y = (int)date('Y', $ts);
         $d = $jours[date('l', $ts)];
 
+        // Ordinal du 1er du mois ("1 mars" → "1er mars"). Convention typographique
+        // française : "1er", "2", "3"… (les autres jours restent en cardinal).
+        $jLabel = ($j === 1) ? '1er' : (string)$j;
+
         if ($format === 'short') {
-            return sprintf('%d %s %d', $j, $m, $y);
+            return "$jLabel $m $y";
         }
-        return sprintf('%s %d %s %d', $d, $j, $m, $y);
+        return "$d $jLabel $m $y";
     }
 }
 
