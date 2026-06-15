@@ -815,13 +815,19 @@ $tpl->seo
   gap: 1rem;
   margin: 1rem 0;
 }
+/* Card cliquable dans son ensemble (zone de clic large + a11y), mais
+   visuellement seul le titre est souligné. Override des règles globales
+   bundle.css qui peuvent forcer text-decoration sur les <a>. */
+.alt-card,
+.alt-card * {
+  text-decoration: none;
+}
 .alt-card {
   display: block;
   background: #F2FBF7;
   border: 2px solid #0F6E56;
   border-radius: 10px;
   padding: 1.1rem 1.25rem;
-  text-decoration: none;
   color: inherit;
   box-shadow: 0 2px 8px rgba(15,110,86,.08);
   transition: border-color .2s, box-shadow .2s, transform .2s, background .2s;
@@ -852,14 +858,23 @@ $tpl->seo
   font-size: 1.15rem;
   margin-bottom: .5rem;
   line-height: 1.3;
+  text-decoration: underline;
+  text-decoration-color: #0F6E56;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.alt-card:hover .alt-card__anchor {
+  text-decoration-color: #0B5946;
 }
 .alt-card__anchor::before {
   content: "→ ";
   color: #0F6E56;
   font-weight: 700;
+  text-decoration: none;
 }
 .alt-card--inactive .alt-card__anchor {
   color: #555;
+  text-decoration: none;
 }
 .alt-card--inactive .alt-card__anchor::before {
   content: "";
