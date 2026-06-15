@@ -139,7 +139,7 @@ $buildSrcset = function(array $map): string {
           $modeType = $mode['type'] ?? 'metro';
           $modeUrl  = '/aeroports/' . $slug . '/' . $modeSlug . '/';
           // Mapping vers SVG existants (bus-express réutilise bus.svg)
-          $iconMap  = ['bus-express' => 'bus'];
+          $iconMap  = ['bus-express' => 'bus', 'featured' => 'metro'];
           $iconKey  = $iconMap[$modeType] ?? $modeType;
           $iconPath = $modeIconDir . $iconKey . '.svg';
           $iconSvg  = is_file($iconPath) ? file_get_contents($iconPath) : '';
@@ -361,6 +361,22 @@ $buildSrcset = function(array $map): string {
   position: absolute;
   top: -10px; right: 12px;
   background: #E67E22; color: #fff;
+  font-size: .72rem; font-weight: 700;
+  padding: .25rem .65rem;
+  border-radius: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/* Mode card 'featured' : mode principal mis en avant (générique, indépendant
+   du transport). Utilisé sur M14 Orly depuis suppression de l'Orlybus
+   (mars 2025) — la ligne 14 est devenue le mode principal d'accès. */
+.mode-card--featured { --card-color: #0F6E56; position: relative; border-color: #0F6E56; }
+.mode-card--featured::before {
+  content: "★ Mode principal";
+  position: absolute;
+  top: -10px; right: 12px;
+  background: #0F6E56; color: #fff;
   font-size: .72rem; font-weight: 700;
   padding: .25rem .65rem;
   border-radius: 12px;

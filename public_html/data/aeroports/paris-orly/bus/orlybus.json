@@ -5,178 +5,79 @@
     "aeroport_iata": "ORY",
     "mode_slug": "orlybus",
     "mode_label": "Orlybus",
-    "h1": "Orlybus : bus officiel Paris → Orly depuis Denfert-Rochereau",
+    "h1": "Orlybus : service supprimé le 3 mars 2025, remplacé par le métro 14",
     "seo": {
-        "title": "Orlybus Paris → Orly : durée 35 min, prix 11,50 €",
-        "description": "Orlybus, bus officiel RATP/ADP entre Denfert-Rochereau (14e) et l'aéroport Paris-Orly : 35 min, 11,50 €, départs toutes les 8-15 min de 5h35 à 23h35."
+        "title": "Orlybus supprimé : alternatives Métro 14, Tramway T7, RER B",
+        "description": "L'Orlybus, ligne directe Denfert-Rochereau ↔ Aéroport d'Orly exploitée par la RATP depuis 1983, a été supprimée le 3 mars 2025. Alternatives : ligne 14 du métro (prolongée jusqu'à Orly en juin 2024), tramway T7, RER B + Orlyval."
     },
-    "tagline": "Bus express direct depuis Denfert (14e) — 35 min, 11,50 €",
+    "status": {
+        "discontinued": true,
+        "discontinued_date": "2025-03-03",
+        "replacement_label": "Métro 14 (Châtelet ↔ Aéroport d'Orly)",
+        "operator_replacement": "RATP / IDFM"
+    },
+    "tagline": "Service supprimé · 3 mars 2025",
     "intro_paragraphs": [
-        "L'<strong>Orlybus</strong> est le bus officiel direct entre Paris (Denfert-Rochereau) et l'<strong>aéroport Paris-Orly</strong>. Opéré par la <strong>RATP en partenariat avec Aéroports de Paris (ADP)</strong>, il propose une liaison express en <strong>35 minutes</strong> pour <strong>11,50 €</strong>.",
-        "Départs <strong>toutes les 8 à 15 minutes</strong> de <strong>5h35 à 23h35</strong>. Recommandé pour rejoindre Orly depuis le sud parisien (14e, 13e, 5e, 6e) — alternative complémentaire au métro 14."
+        "L'<strong>Orlybus</strong>, qui reliait directement la place <strong>Denfert-Rochereau</strong> à l'aéroport de <strong>Paris-Orly</strong>, ne circule plus depuis le <strong>3 mars 2025</strong>. Cette ligne RATP, exploitée sous l'appellation Orlybus depuis 1983, a été supprimée par <strong>Île-de-France Mobilités</strong> après une chute de fréquentation de plus de <strong>80 %</strong>.",
+        "Cette baisse s'explique par le <strong>prolongement de la ligne 14 du métro</strong> jusqu'à l'aéroport d'Orly, mis en service le <strong>24 juin 2024</strong>. Désormais, la ligne 14 relie <strong>Châtelet à Orly en 25 minutes</strong>, captant la grande majorité des voyageurs qui empruntaient auparavant l'Orlybus. Cette page récapitule les alternatives actuelles pour rejoindre Orly depuis le sud de Paris."
     ],
-    "quick_facts": [
-        {
-            "value": "35 min",
-            "label": "depuis Denfert"
-        },
-        {
-            "value": "11,50 €",
-            "label": "billet"
-        },
-        {
-            "value": "8-15 min",
-            "label": "fréquence"
-        },
-        {
-            "value": "5h35 → 23h35",
-            "label": "amplitude"
-        }
-    ],
-    "itineraire": {
-        "h2": "Itinéraire Orlybus Denfert ↔ Orly",
-        "paragraphs": [
-            "L'Orlybus dessert <strong>Denfert-Rochereau</strong> (point unique à Paris) puis <strong>Aéroport d'Orly Sud</strong> et <strong>Aéroport d'Orly Ouest</strong>."
-        ],
-        "steps": [
-            "Rejoindre <strong>Denfert-Rochereau</strong> (M4, M6, RER B, T6).",
-            "Trouver l'arrêt <strong>Orlybus</strong> place Denfert-Rochereau (côté sud).",
-            "Monter dans l'Orlybus en direction d'<strong>Orly</strong> (panneaux et signalétique RATP).",
-            "Descendre à <strong>Orly Sud</strong> (terminaux 1-2-3) ou <strong>Orly Ouest</strong> (terminal 4) selon votre vol."
+    "alternatives_block": {
+        "h2": "Comment aller à Orly depuis Denfert-Rochereau aujourd'hui ?",
+        "items": [
+            {
+                "anchor": "Métro 14",
+                "url": "/aeroports/paris-orly/metro/",
+                "future": false,
+                "summary": "Le remplaçant direct de l'Orlybus. La ligne 14, prolongée jusqu'à Orly depuis juin 2024, relie Châtelet à l'aéroport en 25 minutes, avec des départs fréquents et un service entièrement accessible."
+            },
+            {
+                "anchor": "Tramway T7",
+                "url": "/aeroports/paris-orly/tramway/",
+                "future": false,
+                "summary": "Depuis Villejuif-Louis Aragon (terminus de la ligne 7 du métro), le tramway T7 dessert l'aéroport d'Orly. Une option économique au tarif Bus-Tram."
+            },
+            {
+                "anchor": "RER B + Orlyval",
+                "url": "/aeroports/paris-orly/rer/",
+                "future": false,
+                "summary": "Le RER B jusqu'à Antony, puis la navette Orlyval jusqu'aux terminaux. Environ 40 minutes depuis Châtelet, avec le Ticket Paris Région ⟷ Aéroports à {{fare:paris-region-aeroports}}."
+            }
         ]
     },
-    "horaires": {
-        "h2": "Horaires Orlybus",
+    "history": {
+        "h2": "L'Orlybus : de 1983 à 2025",
         "paragraphs": [
-            "L'Orlybus circule tous les jours, fréquence soutenue en journée."
-        ],
-        "table": {
-            "headers": [
-                "Jour",
-                "Premier",
-                "Dernier",
-                "Fréquence"
-            ],
-            "rows": [
-                [
-                    "Lundi-vendredi",
-                    "5h35",
-                    "23h35",
-                    "8 min"
-                ],
-                [
-                    "Samedi",
-                    "5h35",
-                    "23h35",
-                    "10 min"
-                ],
-                [
-                    "Dimanche",
-                    "6h00",
-                    "23h35",
-                    "15 min"
-                ]
-            ]
-        }
+            "Pendant plus de quatre décennies, l'<strong>Orlybus</strong> a constitué l'une des liaisons les plus connues entre Paris et son aéroport du sud. La ligne portait l'appellation commerciale Orlybus depuis le <strong>1er août 1983</strong>, date à laquelle elle a pris la suite de la ligne 285-DIRECT. Exploitée par la <strong>RATP</strong> sous le numéro 283, elle assurait un trajet direct entre la place <strong>Denfert-Rochereau</strong>, dans le 14e arrondissement, et les terminaux de l'aéroport de Paris-Orly.",
+            "Son principe était simple et lisible : un bus dédié, sans correspondance, reliant un point central et bien desservi de la rive gauche parisienne directement à l'aéroport. Denfert-Rochereau, nœud de correspondance entre la ligne 4 du métro, la ligne 6, le <strong>RER B</strong> et de nombreuses lignes de bus, offrait un point de départ pratique pour les voyageurs venant de tout le sud de Paris. Cette accessibilité a longtemps fait de l'Orlybus une solution appréciée, notamment des passagers chargés de bagages qui préféraient éviter les correspondances souterraines.",
+            "Au fil des années, l'Orlybus s'est imposé comme une référence dans le paysage des transports aéroportuaires franciliens, au même titre que son homologue du nord, le <strong>Roissybus</strong>, qui desservait l'aéroport de Paris-Charles de Gaulle depuis l'Opéra. Les deux lignes partageaient une logique commune : offrir une liaison directe, identifiable, pensée pour les voyageurs aériens plutôt que pour les déplacements quotidiens.",
+            "Le tournant est intervenu avec le <strong>prolongement de la ligne 14 du métro</strong>. Mise en service sur sa section sud jusqu'à l'aéroport d'Orly le <strong>24 juin 2024</strong>, la ligne 14 automatique a transformé l'accès à l'aéroport. En reliant Châtelet à Orly en 25 minutes, avec une fréquence élevée et une accessibilité complète, elle a immédiatement séduit les voyageurs. Plus de 25 000 personnes l'empruntent chaque jour pour rejoindre l'aéroport.",
+            "Cette montée en puissance du métro a eu un effet direct sur l'Orlybus. Selon <strong>Île-de-France Mobilités</strong>, la fréquentation de la ligne a chuté de <strong>plus de 80 %</strong> par rapport aux années précédentes. Des bus circulaient parfois quasiment à vide, l'essentiel des voyageurs ayant basculé vers la ligne 14, jugée plus rapide, plus régulière et mieux protégée des aléas de la circulation routière sur l'autoroute A6.",
+            "Face à ce constat, Île-de-France Mobilités, en accord avec la RATP et le <strong>Groupe ADP</strong>, a décidé de mettre fin au service. L'autorité organisatrice a justifié sa décision par la volonté d'éviter de faire rouler des bus à vide, source de dépenses publiques peu utiles, de gaspillage de moyens pour l'exploitant et de pollution atmosphérique évitable. La logique avancée était celle d'une rationalisation : pourquoi maintenir une ligne routière coûteuse quand une alternative ferroviaire moderne, plus rapide et entièrement accessible, dessert désormais la même destination ?",
+            "L'annonce de la suppression n'a pas fait l'unanimité. Une pétition a été lancée par des usagers attachés à la liaison directe, soulignant que la ligne restait utile pour une partie des voyageurs, notamment ceux pour qui la correspondance vers le métro représentait une contrainte. Les défenseurs de l'Orlybus mettaient en avant la simplicité d'un trajet sans rupture de charge, particulièrement précieux avec des bagages.",
+            "Malgré ces protestations, la décision a été maintenue. L'<strong>Orlybus a cessé de circuler le 3 mars 2025</strong>. Le ticket spécifique Orlybus n'est plus commercialisé, et les voyageurs détenant des titres non utilisés peuvent en demander le remboursement auprès de la RATP.",
+            "Aujourd'hui, pour rejoindre Orly depuis le sud de Paris, trois solutions ferroviaires prennent le relais. La <strong>ligne 14 du métro</strong> constitue le remplaçant le plus direct, reliant le cœur de Paris à l'aéroport en 25 minutes. Le <strong>tramway T7</strong>, depuis Villejuif-Louis Aragon, offre une desserte de proximité au tarif Bus-Tram. Enfin, la combinaison <strong>RER B et navette Orlyval</strong>, via la gare d'Antony, permet de rejoindre les terminaux en une quarantaine de minutes depuis Châtelet. La disparition de l'Orlybus marque ainsi une étape de plus dans le basculement progressif de l'accès aux aéroports parisiens du bus vers le rail."
+        ]
     },
-    "tarifs": {
-        "h2": "Tarif Orlybus",
-        "paragraphs": [
-            "L'Orlybus utilise un <strong>billet spécifique ADP</strong> (pas le tarif Bus-Tram)."
-        ],
-        "table": {
-            "headers": [
-                "Titre",
-                "Prix",
-                "Conditions"
-            ],
-            "rows": [
-                [
-                    "Billet Orlybus aller simple",
-                    "11,50 €",
-                    "Validité 1h30"
-                ],
-                [
-                    "Pass Navigo zones 1-5",
-                    "Inclus",
-                    "Pas de supplément"
-                ],
-                [
-                    "Enfant - 4 ans",
-                    "Gratuit",
-                    "Avec adulte"
-                ]
-            ]
-        }
-    },
-    "itineraires_paris": [
-        {
-            "depart": "Denfert-Rochereau",
-            "station_slug": "denfert-rochereau",
-            "duration": "35 min",
-            "trajet": "Orlybus direct."
-        },
-        {
-            "depart": "Châtelet",
-            "station_slug": "chatelet",
-            "duration": "55 min",
-            "trajet": "M4 (10 min) → Denfert + Orlybus."
-        },
-        {
-            "depart": "Gare du Nord",
-            "station_slug": "gare-du-nord",
-            "duration": "1 h",
-            "trajet": "RER B → Denfert + Orlybus."
-        },
-        {
-            "depart": "Montparnasse",
-            "station_slug": "montparnasse-bienvenue",
-            "duration": "50 min",
-            "trajet": "M6 → Denfert + Orlybus."
-        }
-    ],
-    "alternatives": [
-        {
-            "label": "Métro 14",
-            "url": "/aeroports/paris-orly/metro/",
-            "note": "25 min depuis Châtelet, {{fare:ticket-metro-rer-train}} (depuis juin 2024)."
-        },
-        {
-            "label": "Bus 183",
-            "url": "/aeroports/paris-orly/bus/bus-183/",
-            "note": "45 min depuis Porte de Choisy, {{fare:ticket-bus-tram}}."
-        },
-        {
-            "label": "RER B + Orlyval",
-            "url": "/aeroports/paris-orly/rer/",
-            "note": "40 min, 13,25 €."
-        },
-        {
-            "label": "Taxi forfait",
-            "url": "/aeroports/paris-orly/taxi/",
-            "note": "36 € rive gauche, 44 € rive droite."
-        }
-    ],
     "faq": [
         {
-            "question": "Combien coûte l'Orlybus ?",
-            "answer": "<strong>11,50 €</strong> billet aller simple. Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "question": "L'Orlybus existe-t-il encore ?",
+            "answer": "Non. L'Orlybus a cessé de circuler le <strong>3 mars 2025</strong>. Il reliait la place <strong>Denfert-Rochereau</strong> à l'aéroport d'Orly et a été supprimé par Île-de-France Mobilités."
         },
         {
-            "question": "Où prendre l'Orlybus à Paris ?",
-            "answer": "Un seul arrêt parisien : <strong>place Denfert-Rochereau</strong> (14e), accessible en M4, M6, RER B, tramway T6."
+            "question": "Pourquoi l'Orlybus a-t-il été supprimé ?",
+            "answer": "En raison d'une chute de fréquentation de plus de <strong>80 %</strong>, conséquence du prolongement de la ligne 14 du métro jusqu'à Orly en juin 2024. Île-de-France Mobilités a choisi de ne pas maintenir une ligne dont les bus circulaient souvent à vide."
         },
         {
-            "question": "Combien de temps Denfert → Orly en Orlybus ?",
-            "answer": "<strong>35 minutes</strong> en conditions normales."
+            "question": "Par quoi l'Orlybus est-il remplacé ?",
+            "answer": "Principalement par la <strong>ligne 14 du métro</strong>, qui relie Châtelet à l'aéroport d'Orly en 25 minutes. Le tramway T7 et la combinaison RER B + Orlyval constituent les autres alternatives."
         },
         {
-            "question": "Quel est le premier Orlybus ?",
-            "answer": "<strong>5h35</strong> du lundi au samedi, <strong>6h00</strong> le dimanche."
+            "question": "Comment aller à Orly depuis Denfert-Rochereau maintenant ?",
+            "answer": "Depuis Denfert-Rochereau, vous pouvez rejoindre Orly via le <strong>RER B jusqu'à Antony puis l'Orlyval</strong>, ou rejoindre une station de la ligne 14 pour un trajet direct jusqu'à l'aéroport."
         },
         {
-            "question": "L'Orlybus dessert-il tous les terminaux ?",
-            "answer": "<strong>Oui</strong> : Orly Sud (terminaux 1-2-3) puis Orly Ouest (terminal 4)."
+            "question": "Puis-je me faire rembourser un ticket Orlybus ?",
+            "answer": "Le ticket Orlybus n'est plus commercialisé. Les titres non utilisés peuvent faire l'objet d'une demande de remboursement auprès de la RATP."
         }
     ]
 }

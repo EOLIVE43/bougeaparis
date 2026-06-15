@@ -131,7 +131,7 @@ $tpl->seo
         <?php foreach ($altBlock['items'] as $alt):
           $anchor = $alt['anchor'] ?? '';
           $url    = $alt['url'] ?? '';
-          $summary= $alt['summary'] ?? '';
+          $summary= bp_interpolate_fares((string)($alt['summary'] ?? ''));
           $future = !empty($alt['future']);
           $inner = '<span class="alt-card__anchor">' . htmlspecialchars($anchor) . '</span>'
                  . '<p class="alt-card__summary">' . htmlspecialchars($summary) . '</p>';

@@ -7,7 +7,7 @@
     "mode_label": "Bus",
     "h1": "Bus pour Orly : Orlybus, 183, 285 — horaires et tarifs 2026",
     "seo": {
-        "title": "Bus Orly : Orlybus depuis Denfert (35 min, 11,50 €), 183, 285 — horaires 2026",
+        "title": "Bus Orly : 183, 285, Orlybus historique — horaires et tarifs",
         "description": "Bus pour Aéroport Paris-Orly : Orlybus depuis Denfert-Rochereau (35 min, 11,50 €), bus 183 depuis Porte de Choisy ({{fare:ticket-bus-tram}}), bus 285 depuis Villejuif. Horaires, tarifs."
     },
     "tagline": "Orlybus 35 min depuis Denfert-Rochereau — 11,50 €",
@@ -208,15 +208,17 @@
         {
             "slug": "orlybus",
             "name": "Orlybus",
-            "type": "express",
+            "type": "historique",
             "departure": "Denfert-Rochereau (14e)",
             "duration": "35 min",
             "price": "11,50 €",
             "frequency": "Toutes les 8-15 min",
             "first": "5h35",
             "last": "23h35",
-            "note": "Bus direct express RATP/ADP",
-            "cta_anchor": "Orlybus"
+            "note": "Service supprimé — remplacé par le métro 14",
+            "cta_anchor": "Orlybus",
+            "status": "discontinued",
+            "discontinued_date": "2025-03-03"
         },
         {
             "slug": "bus-183",
