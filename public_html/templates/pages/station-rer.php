@@ -1045,7 +1045,7 @@ $tpl->partial('components/breadcrumb', [
        ============================================================ -->
   <?php if (!empty($history['paragraphs'])): ?>
     <section class="station-section section-history" id="histoire" aria-labelledby="history-title">
-      <h2 id="history-title">Histoire de la station <?= Template::e($nameFull) ?></h2>
+      <h2 id="history-title">Histoire de la <?= detectStationMode($station) === 'rer_pur' ? 'gare' : 'station' ?> <?= Template::e($nameFull) ?></h2>
       <?php if (!empty($history['title']) && $history['title'] !== 'Histoire de la station'): ?>
         <p class="section-subtitle"><em><?= Template::e($history['title']) ?></em></p>
       <?php endif; ?>

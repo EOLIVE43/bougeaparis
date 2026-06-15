@@ -1,0 +1,666 @@
+{
+    "_doc": "Squelette généré par bootstrap-station.php le 2026-06-15. Sections A+B auto, sections C en stubs à compléter (humain/LLM).",
+    "_todo": [
+        "seo.description",
+        "hero",
+        "intro_paragraphs",
+        "history",
+        "faq",
+        "practical_tips",
+        "trivia",
+        "popular_itineraries",
+        "safety",
+        "accessibility"
+    ],
+    "published": false,
+    "slug": "rer-chatelet-les-halles",
+    "name": "Châtelet - Les Halles",
+    "name_full": "Châtelet - Les Halles (RER A, B, D)",
+    "arrondissement": "",
+    "address": "",
+    "latitude": 48.86174503191322,
+    "longitude": 2.34697651043533,
+    "tariff_zone": 1,
+    "tariff_zone_context": "Paris intra-muros",
+    "commune": "Paris",
+    "is_major_hub": true,
+    "i18n": {
+        "en": "",
+        "es": ""
+    },
+    "lines": [
+        {
+            "type": "rer",
+            "code": "A",
+            "slug": "rer-a",
+            "color": "#EB2132",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "rer",
+            "code": "B",
+            "slug": "rer-b",
+            "color": "#5091CB",
+            "text_color": "#FFFFFF"
+        },
+        {
+            "type": "rer",
+            "code": "D",
+            "slug": "rer-d",
+            "color": "#008B5B",
+            "text_color": "#FFFFFF"
+        }
+    ],
+    "bus_correspondences": {
+        "diurne": [],
+        "nocturne": [],
+        "regional": [],
+        "_note": "auto: à compléter via RATP SIRI API en V2"
+    },
+    "seo": {
+        "description": ""
+    },
+    "hero": {
+        "tagline": "",
+        "description": ""
+    },
+    "adjacent_stations": {
+        "rer-a": {
+            "previous": {
+                "name": "Auber",
+                "slug": "rer-auber",
+                "direction": "Cergy le Haut"
+            },
+            "next": {
+                "name": "Gare de Lyon",
+                "slug": "rer-gare-de-lyon",
+                "direction": "Torcy"
+            }
+        },
+        "rer-b": {
+            "previous": {
+                "name": "Gare du Nord",
+                "slug": "rer-gare-du-nord",
+                "direction": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+            },
+            "next": {
+                "name": "Saint-Michel Notre-Dame",
+                "slug": "rer-saint-michel-notre-dame",
+                "direction": "Saint-Rémy-lès-Chevreuse"
+            }
+        },
+        "rer-d": {
+            "previous": {
+                "name": "Gare de Lyon",
+                "slug": "rer-gare-de-lyon",
+                "direction": "Corbeil-Essonnes"
+            },
+            "next": {
+                "name": "Gare du Nord",
+                "slug": "rer-gare-du-nord",
+                "direction": "Creil"
+            }
+        }
+    },
+    "intro_paragraphs": [
+        "",
+        "",
+        ""
+    ],
+    "history": {
+        "title": "",
+        "paragraphs": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "faq": [
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        },
+        {
+            "question": "",
+            "answer": ""
+        }
+    ],
+    "practical_tips": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "trivia": [
+        {
+            "icon": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "icon": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "icon": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "icon": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "icon": "",
+            "title": "",
+            "content": ""
+        }
+    ],
+    "popular_itineraries": [],
+    "nearby_pois": [
+        {
+            "wikidata_id": "Q178065",
+            "name": "Centre national d'art et de culture Georges-Pompidou",
+            "category": "musée",
+            "description": "Ouvert en 1977, ce centre culturel imaginé par les architectes Renzo Piano et Richard Rogers propose musée d'art moderne, bibliothèque publique et cinéma sous un même toit de 42 mètres. Son architecture métallique et colorée en façade redéfinit le paysage urbain du quartier Beaubourg, conjuguant arts plastiques, spectacles et activités pour tous les publics.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Montmartre%20Blick%20aufs%20Centre%20Georges-Pompidou.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou",
+            "latitude": 48.860642,
+            "longitude": 2.352245,
+            "nearest_exit": {
+                "number": "3",
+                "name": "Forum - Pte Lescot",
+                "distance_m": 344,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q190063",
+            "name": "île de la Cité",
+            "category": "île",
+            "description": "Berceau historique de Lutèce, cette île fluviale de 22,5 hectares occupe le cœur de Paris depuis l'Antiquité. Fortifiée au IVe siècle, elle demeure le foyer de la capitale, accueillant patrimoine médiéval et monuments emblématiques entre les deux rives de la Seine.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Notre%20Dame%20DSC00732.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%8Ele_de_la_Cit%C3%A9",
+            "latitude": 48.854722,
+            "longitude": 2.3475,
+            "nearest_exit": {
+                "number": "19",
+                "name": "r. Saint-Martin",
+                "distance_m": 299,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q193193",
+            "name": "Sainte-Chapelle",
+            "category": "chapelle",
+            "description": "Édifiée en 1245 par l'architecte Pierre de Montreuil, cette chapelle palatale de l'île de la Cité s'élève à 75 mètres. Construite pour conserver des reliques précieuses de la Passion, elle demeure un monument historique protégé dont l'architecture gothique a marqué son époque.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris%20Sainte%20Chapelle%20East%20View%2002.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Sainte-Chapelle",
+            "latitude": 48.855369,
+            "longitude": 2.345028,
+            "nearest_exit": {
+                "number": "15",
+                "name": "Théâtre du Châtelet",
+                "distance_m": 302,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q1538826",
+            "name": "musée des Arts et Métiers",
+            "category": "musée",
+            "description": "Fondé en 1794 par initiative de l'abbé Grégoire, ce musée d'État conserve machines, modèles et dessins accumulés depuis deux siècles. Institution scientifique et technique du Conservatoire national des arts et métiers, il enrichit régulièrement ses collections en documentant le patrimoine technologique contemporain.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20des%20Arts%20et%20M%C3%A9tiers%20337.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_et_M%C3%A9tiers",
+            "latitude": 48.866111,
+            "longitude": 2.355278,
+            "nearest_exit": {
+                "number": "4",
+                "name": "Forum - Pte Rambuteau",
+                "distance_m": 727,
+                "walk_minutes": 9
+            }
+        },
+        {
+            "wikidata_id": "Q329948",
+            "name": "Palais-Royal",
+            "category": "palais",
+            "description": "Édifié en 1628, ce palais royal incarne un moment clé du patrimoine français. Pierre-François-Léonard Fontaine en a façonné l'architecture, tandis que son statut de monument historique classé en préserve aujourd'hui l'intégrité. Un lieu chargé de l'histoire parisienne depuis plus de quatre siècles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Conseil%20d%27Etat%20Paris%20WA.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Palais-Royal",
+            "latitude": 48.863333,
+            "longitude": 2.336944,
+            "nearest_exit": {
+                "number": "8",
+                "name": "Forum - Pte du Louvre",
+                "distance_m": 473,
+                "walk_minutes": 6
+            }
+        },
+        {
+            "wikidata_id": "Q335277",
+            "name": "pont Neuf",
+            "category": "pont",
+            "description": "Construit à partir de 1578 par l'architecte Jean-Baptiste Androuet du Cerceau, ce pont en maçonnerie enjambe la Seine à la pointe ouest de l'île de la Cité. Classé au titre de monument historique et intégré au patrimoine mondial, il demeure le plus ancien pont existant de Paris malgré la connotation de son nom.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20western%20sides%20of%20the%20%C3%8Ele%20de%20la%20Cit%C3%A9%20and%20the%20Pont%20Neuf%2C%2014%20July%202008.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_Neuf",
+            "latitude": 48.8575,
+            "longitude": 2.341667,
+            "nearest_exit": {
+                "number": "12",
+                "name": "r. Bertin Poirée",
+                "distance_m": 321,
+                "walk_minutes": 4
+            }
+        },
+        {
+            "wikidata_id": "Q640968",
+            "name": "hôtel de ville de Paris",
+            "category": "mairie",
+            "description": "Depuis 1357, ce bâtiment administre la municipalité parisienne. Construit sous la direction de l'architecte Théodore Ballu, l'Hôtel de Ville est classé au titre de monument historique et demeure le siège des institutions locales.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/H%C3%B4tel%20ville%20fa%C3%A7ade%20principale%20Paris%2011.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/H%C3%B4tel_de_ville_de_Paris",
+            "latitude": 48.856389,
+            "longitude": 2.352222,
+            "nearest_exit": {
+                "number": "19",
+                "name": "r. Saint-Martin",
+                "distance_m": 225,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1329141",
+            "name": "pont des Arts",
+            "category": "pont",
+            "description": "Inaugurée en 1804, cette passerelle piétonne en fonte marque un tournant technologique pour Paris : elle est la première structure métallique franchissant la Seine. Reliant le 1er et le 6e arrondissements, elle demeure un passage emblématique inscrit au titre des monuments historiques.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20des%20Arts%20and%20the%20Palais%20du%20Louvre%2C%20Paris%20July%202013.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Pont_des_Arts",
+            "latitude": 48.858333,
+            "longitude": 2.337778,
+            "nearest_exit": {
+                "number": "12",
+                "name": "r. Bertin Poirée",
+                "distance_m": 544,
+                "walk_minutes": 7
+            }
+        },
+        {
+            "wikidata_id": "Q1338207",
+            "name": "église Saint-Eustache de Paris",
+            "category": "église",
+            "description": "Édifiée à partir de 1532, cette église paroissiale figure parmi les trois plus importants sanctuaires parisiens. Classée au titre de monument historique, elle domine la rue Rambuteau et constitue un témoignage architectural majeur du quartier des Halles.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/St.-Eustache.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Eustache_de_Paris",
+            "latitude": 48.863333,
+            "longitude": 2.345,
+            "nearest_exit": {
+                "number": "5",
+                "name": "Forum - Pte Saint-Eustache",
+                "distance_m": 68,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1583780",
+            "name": "La Samaritaine",
+            "category": "commerce",
+            "description": "Fondé en 1870 par Ernest Cognacq, ce grand magasin historique domine le quartier des Halles depuis la rive droite de la Seine. Ses quatre bâtiments, couvrant 48 000 m² de surface commerciale, en faisaient autrefois l'enseigne parisienne la plus vaste avant sa fermeture en 2005 pour modernisation.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand%20Magasin%20Samaritaine%20-%20Paris%20I%20%28FR75%29%20-%202025-09-03%20-%201.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Samaritaine",
+            "latitude": 48.85889,
+            "longitude": 2.34208,
+            "nearest_exit": {
+                "number": "12",
+                "name": "r. Bertin Poirée",
+                "distance_m": 224,
+                "walk_minutes": 3
+            }
+        },
+        {
+            "wikidata_id": "Q1431547",
+            "name": "tour Saint-Jacques",
+            "category": "tour",
+            "description": "Édifiée entre 1509 et 1523, cette tour de 54 mètres constituait le clocher de l'église Saint-Jacques-de-la-Boucherie, dont elle demeure le seul vestige visible. Classée au titre de monument historique et intégrée au patrimoine mondial, elle se dresse aujourd'hui au cœur du square éponyme dans le 4e arrondissement.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/P1000625%20Paris%20IV%20Tour%20Saint-Jacques%20resultwk.JPG?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Tour_Saint-Jacques",
+            "latitude": 48.857764,
+            "longitude": 2.348778,
+            "nearest_exit": {
+                "number": "18",
+                "name": "av. Victoria",
+                "distance_m": 52,
+                "walk_minutes": 1
+            }
+        },
+        {
+            "wikidata_id": "Q1025693",
+            "name": "café de la Régence",
+            "category": "café",
+            "description": "Établissement historique fondé en 1681, le Café de la Régence représente l'une des plus anciennes adresses de la vie parisienne. Fermé au début du XXe siècle, cet ancien lieu de rendez-vous demeure un témoin majeur de la culture café d'Ancien Régime.",
+            "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27Illustration%2024%20janvier%201851.jpg?width=400",
+            "wikipedia_url": "https://fr.wikipedia.org/wiki/Caf%C3%A9_de_la_R%C3%A9gence",
+            "latitude": 48.859863,
+            "longitude": 2.342579,
+            "nearest_exit": {
+                "number": "12",
+                "name": "r. Bertin Poirée",
+                "distance_m": 192,
+                "walk_minutes": 2
+            }
+        }
+    ],
+    "exits": [
+        {
+            "number": "1",
+            "name": "Porte Marguerite de Navarre",
+            "address_full": "1 Rue de la Lingerie 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.860433,
+            "longitude": 2.346346,
+            "accessible": null
+        },
+        {
+            "number": "2",
+            "name": "Forum Porte Berger",
+            "address_full": "32 Rue Berger 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.861386,
+            "longitude": 2.346334,
+            "accessible": null
+        },
+        {
+            "number": "3",
+            "name": "Forum - Pte Lescot",
+            "address_full": "4 Passage de la Canopée 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.861682,
+            "longitude": 2.347816,
+            "accessible": null
+        },
+        {
+            "number": "4",
+            "name": "Forum - Pte Rambuteau",
+            "address_full": "103 Rue Rambuteau 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.862559,
+            "longitude": 2.346932,
+            "accessible": null
+        },
+        {
+            "number": "5",
+            "name": "Forum - Pte Saint-Eustache",
+            "address_full": "2 Place René Cassin 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.86283,
+            "longitude": 2.345538,
+            "accessible": null
+        },
+        {
+            "number": "6",
+            "name": "Forum - Pte du Pont Neuf",
+            "address_full": "29 Rue Berger 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.861712,
+            "longitude": 2.345103,
+            "accessible": null
+        },
+        {
+            "number": "7",
+            "name": "Forum - Pte du Jour",
+            "address_full": "1 Rue du Jour 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.863171,
+            "longitude": 2.343817,
+            "accessible": null
+        },
+        {
+            "number": "8",
+            "name": "Forum - Pte du Louvre",
+            "address_full": "41 Rue Berger 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.862278,
+            "longitude": 2.343215,
+            "accessible": null
+        },
+        {
+            "number": "9",
+            "name": "r. Montorgueil",
+            "address_full": "132 Rue Rambuteau 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.862808,
+            "longitude": 2.346493,
+            "accessible": null
+        },
+        {
+            "number": "10",
+            "name": "pl. Ste-Opportune",
+            "address_full": "9 Rue des Halles 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.859564,
+            "longitude": 2.346943,
+            "accessible": null
+        },
+        {
+            "number": "11",
+            "name": "r. de Rivoli",
+            "address_full": "114 Rue de Rivoli 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.859191,
+            "longitude": 2.346225,
+            "accessible": null
+        },
+        {
+            "number": "12",
+            "name": "r. Bertin Poirée",
+            "address_full": "19 Rue Bertin Poirée 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.85932,
+            "longitude": 2.345065,
+            "accessible": null
+        },
+        {
+            "number": "13",
+            "name": "r. des Lavandières",
+            "address_full": "19 Rue des Lavandières Sainte-Opportune 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.858957,
+            "longitude": 2.346119,
+            "accessible": null
+        },
+        {
+            "number": "14",
+            "name": "r. Saint-Denis",
+            "address_full": "5 Rue Saint-Denis 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.85863,
+            "longitude": 2.347131,
+            "accessible": null
+        },
+        {
+            "number": "15",
+            "name": "Théâtre du Châtelet",
+            "address_full": "17 Avenue Victoria 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.857836,
+            "longitude": 2.346746,
+            "accessible": null
+        },
+        {
+            "number": "16",
+            "name": "pl. du Châtelet",
+            "address_full": "12 Avenue Victoria 75001 Paris",
+            "postcode": "75001",
+            "city": "Paris",
+            "latitude": 48.85765,
+            "longitude": 2.347294,
+            "accessible": null
+        },
+        {
+            "number": "17",
+            "name": "Théâtre de la Ville",
+            "address_full": "2 Place du Châtelet 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857536,
+            "longitude": 2.347867,
+            "accessible": null
+        },
+        {
+            "number": "18",
+            "name": "av. Victoria",
+            "address_full": "13 Avenue Victoria 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857298,
+            "longitude": 2.348715,
+            "accessible": null
+        },
+        {
+            "number": "19",
+            "name": "r. Saint-Martin",
+            "address_full": "9 Avenue Victoria 75004 Paris",
+            "postcode": "75004",
+            "city": "Paris",
+            "latitude": 48.857122,
+            "longitude": 2.349358,
+            "accessible": null
+        }
+    ],
+    "services": {
+        "wifi": {
+            "available": false,
+            "location_detail": "",
+            "coverage_detail": ""
+        },
+        "toilets": {
+            "public_paid": {
+                "available": false
+            },
+            "public_free": {
+                "available": false,
+                "location": "",
+                "access": ""
+            }
+        },
+        "atm": {
+            "available": false,
+            "banks_count_estimate": "",
+            "locations": []
+        },
+        "ratp_office": {
+            "available": false,
+            "location": "",
+            "services": ""
+        },
+        "left_luggage": {
+            "ratp_available": false,
+            "third_party": []
+        },
+        "shopping_dining": {
+            "main_location": "",
+            "details": "",
+            "secondary": ""
+        }
+    },
+    "safety": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "agents": null,
+        "police": null,
+        "tips": [],
+        "notes": ""
+    },
+    "hero_image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Chatelet-Les-Halles_cCRW_1504.jpg/1920px-Chatelet-Les-Halles_cCRW_1504.jpg",
+        "alt": "Châtelet - Les Halles — gare RER A Paris",
+        "width": 1600,
+        "height": 1067,
+        "credit": {
+            "author": "poudou99",
+            "license": "CC BY-SA 3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Chatelet-Les-Halles_cCRW_1504.jpg",
+            "date": "2008-06-19"
+        },
+        "source": "auto",
+        "confidence_score": 10,
+        "confidence_level": "auto_low_confidence",
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-400.avif",
+                "800": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-800.avif",
+                "1200": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1200.avif",
+                "1600": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-400.webp",
+                "800": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-800.webp",
+                "1200": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1200.webp",
+                "1600": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-400.jpg",
+                "800": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-800.jpg",
+                "1200": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1200.jpg",
+                "1600": "/assets/img/stations/rer-chatelet-les-halles/rer-chatelet-les-halles-1600.jpg"
+            }
+        }
+    },
+    "accessibility": {
+        "audit_status": "pending",
+        "audit_date": null,
+        "level": "",
+        "stats": {
+            "elevators_count": 0,
+            "accessible_lines": 0,
+            "total_lines": 3
+        },
+        "details": ""
+    }
+}

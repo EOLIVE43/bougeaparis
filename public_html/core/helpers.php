@@ -1063,14 +1063,40 @@ if (!function_exists('buildStationH1')) {
         $tramPart  = $tram  ? ('Tram '  . $joinCodes($tram))  : '';
         $transPart = $trans ? ('Transilien ' . $joinCodes($trans)) : '';
 
+        // Suffix lieu commune-aware. "à Paris" UNIQUEMENT si commune renseignée
+        // commence par 'Paris' (matche 'Paris' et 'Paris (75001)' etc.).
+        // Évite "à Paris" faux pour banlieue (Antony, Bourg-la-Reine, etc.) et
+        // évite d'inventer un lieu quand commune absente (formulation neutre).
+        $commune = trim((string)($station['commune'] ?? ''));
+        $locSuffix = str_starts_with($commune, 'Paris') ? ' à Paris' : '';
+
+        // Détection du mode primaire via lines[]. Une station "RER mode" a ses
+        // RER dans lines[] (bootstrap --mode=rer), une métro mode les a en
+        // metro lines[] et les RER en rer_correspondences.
+        $hasRerPrimary = false;
+        foreach (($station['lines'] ?? []) as $line) {
+            if (($line['type'] ?? '') === 'rer') { $hasRerPrimary = true; break; }
+        }
+
         // Detection du mode dominant + prefixe d'introduction
         if ($metro) {
             // CAS 1 ou 2 : metro pur ou metro + correspondances
             $modeIntro = 'Station de métro';
             $codesParts = array_filter([$metroPart, $rerPart, $tramPart, $transPart], static fn($s) => $s !== '');
             $codes = implode(' + ', $codesParts);
+        } elseif ($hasRerPrimary) {
+            // CAS 3 : RER mode primaire. Convention RATP/SNCF = "gare RER", pas
+            // "station de RER". Codes RER lus depuis lines[] (pas correspondances).
+            $rerCodesPrim = [];
+            foreach (($station['lines'] ?? []) as $line) {
+                if (($line['type'] ?? '') === 'rer' && !empty($line['code'])) {
+                    $rerCodesPrim[] = (string)$line['code'];
+                }
+            }
+            $codesStr = $rerCodesPrim ? ' ' . implode(', ', $rerCodesPrim) : '';
+            return 'Gare RER' . $codesStr . ' ' . $name . $locSuffix;
         } elseif ($rer) {
-            // CAS 3 : RER pur
+            // CAS 3bis : RER pur via correspondances (compat ascendante)
             $modeIntro = 'Station de RER';
             $codes = $rerPart;
         } elseif ($tram) {
@@ -1082,11 +1108,11 @@ if (!function_exists('buildStationH1')) {
             $modeIntro = 'Station de Transilien';
             $codes = $transPart;
         } else {
-            return 'Station ' . $name . ' à Paris';
+            return 'Station ' . $name . $locSuffix;
         }
 
-        // Signal geo Paris injecte apres le nom, avant les parentheses de codes.
-        return $modeIntro . ' ' . $name . ' à Paris (' . $codes . ')';
+        // Signal geo injecte apres le nom, avant les parentheses de codes.
+        return $modeIntro . ' ' . $name . $locSuffix . ' (' . $codes . ')';
     }
 }
 
@@ -1104,20 +1130,24 @@ if (!function_exists('detectStationMode')) {
      */
     function detectStationMode(array $station): string
     {
-        $hasMetro = false;
+        // Mode primaire (= lines[].type). Bootstrap --mode=rer met les RER
+        // dans lines[] (correspondances métro éventuelles → metro_correspondences).
+        // Bootstrap --mode=metro fait l'inverse (RER en rer_correspondences).
+        // Compat ascendante : si lines[] ne déclare ni metro ni rer, on retombe
+        // sur l'ancien check rer_correspondences pour ne pas régresser.
+        $hasMetroPrimary = false;
+        $hasRerPrimary   = false;
         foreach (($station['lines'] ?? []) as $line) {
-            if (($line['type'] ?? '') === 'metro') {
-                $hasMetro = true;
-                break;
-            }
+            if (($line['type'] ?? '') === 'metro') $hasMetroPrimary = true;
+            if (($line['type'] ?? '') === 'rer')   $hasRerPrimary   = true;
         }
-        $hasRer  = !empty($station['rer_correspondences']);
-        $hasTram = !empty($station['tramway_correspondences']);
+        $hasRerCorresp = !empty($station['rer_correspondences']);
+        $hasTram       = !empty($station['tramway_correspondences']);
 
-        if ($hasMetro && ($hasRer || $hasTram)) { return 'mixte'; }
-        if ($hasMetro) { return 'metro_pur'; }
-        if ($hasRer)   { return 'rer_pur'; }
-        if ($hasTram)  { return 'tram_pur'; }
+        if ($hasMetroPrimary && ($hasRerCorresp || $hasTram)) return 'mixte';
+        if ($hasMetroPrimary) return 'metro_pur';
+        if ($hasRerPrimary)   return 'rer_pur';
+        if ($hasTram)         return 'tram_pur';
         return 'metro_pur';
     }
 }
@@ -1144,7 +1174,21 @@ if (!function_exists('buildSectionTitleAdjacent')) {
         $name = trim((string)($station['name'] ?? ''));
         switch (detectStationMode($station)) {
             case 'mixte':    return "Stations adjacentes à $name à Paris";
-            case 'rer_pur':  return "Stations adjacentes au RER $name à Paris";
+            case 'rer_pur':
+                // "Stations adjacentes sur la ligne RER B" (sans lieu : le nom
+                // de la gare est déjà dans le H2 plus haut). Si plusieurs RER,
+                // joindre les codes : "ligne RER A, B et D".
+                $rerCodes = [];
+                foreach (($station['lines'] ?? []) as $l) {
+                    if (($l['type'] ?? '') === 'rer' && !empty($l['code'])) {
+                        $rerCodes[] = (string)$l['code'];
+                    }
+                }
+                if (count($rerCodes) === 0) return "Stations adjacentes sur la ligne RER";
+                if (count($rerCodes) === 1) return "Stations adjacentes sur la ligne RER {$rerCodes[0]}";
+                if (count($rerCodes) === 2) return "Stations adjacentes sur les lignes RER {$rerCodes[0]} et {$rerCodes[1]}";
+                $last = array_pop($rerCodes);
+                return "Stations adjacentes sur les lignes RER " . implode(', ', $rerCodes) . " et $last";
             case 'tram_pur': return "Stations adjacentes au tramway $name à Paris";
             case 'metro_pur':
             default:         return "Stations adjacentes au métro $name à Paris";
@@ -1159,7 +1203,7 @@ if (!function_exists('buildSectionTitleSorties')) {
         $name = trim((string)($station['name'] ?? ''));
         switch (detectStationMode($station)) {
             case 'mixte':    return "Sorties de la station $name";
-            case 'rer_pur':  return "Sorties de la station de RER $name";
+            case 'rer_pur':  return "Sorties de la gare $name";
             case 'tram_pur': return "Sorties de la station de tramway $name";
             case 'metro_pur':
             default:         return "Sorties de la station de métro $name";

@@ -617,9 +617,18 @@ foreach ($files as $path) {
             continue;
         }
         $best = $info['best'];
+        // Alt-text mode-aware : "gare RER B Paris" pour les stations RER,
+        // "métro de Paris" pour les métros (compat ascendante 320 stations prod).
+        $firstLineType = $json['lines'][0]['type'] ?? '';
+        if ($firstLineType === 'rer') {
+            $rerCode = $json['lines'][0]['code'] ?? '';
+            $altSuffix = 'gare RER' . ($rerCode ? ' ' . $rerCode : '') . ' Paris';
+        } else {
+            $altSuffix = 'métro de Paris';
+        }
         $json['hero_image'] = [
             'url'    => $best['thumb_url'],
-            'alt'    => $json['name'] . ' — métro de Paris',
+            'alt'    => $json['name'] . ' — ' . $altSuffix,
             'width'  => TARGET_THUMB_W,
             'height' => $best['thumb_h'] ?: (int)round(TARGET_THUMB_W / $best['ratio']),
             'credit' => [
