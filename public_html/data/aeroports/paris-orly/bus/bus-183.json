@@ -7,12 +7,12 @@
     "mode_label": "Bus 183",
     "h1": "Bus 183 Orly : ligne régulière depuis Porte de Choisy (M7)",
     "seo": {
-        "title": "Bus 183 Orly : durée 45 min, prix 2,15 € (ticket t+)",
-        "description": "Bus 183 vers l'aéroport Paris-Orly depuis Porte de Choisy (M7) : 45 min, 2,15 € ticket t+. Fréquence 10-20 min de 5h40 à 00h30. Tarif Navigo."
+        "title": "Bus 183 Orly : durée 45 min, prix {{fare:ticket-bus-tram}} (tarif Bus-Tram)",
+        "description": "Bus 183 vers l'aéroport Paris-Orly depuis Porte de Choisy (M7) : 45 min, {{fare:ticket-bus-tram}} tarif Bus-Tram. Fréquence 10-20 min de 5h40 à 00h30. Tarif Navigo."
     },
-    "tagline": "Option économique 2,15 € depuis Porte de Choisy (M7 terminus)",
+    "tagline": "Option économique {{fare:ticket-bus-tram}} depuis Porte de Choisy (M7 terminus)",
     "intro_paragraphs": [
-        "Le <strong>bus 183</strong> est une ligne régulière RATP qui relie <strong>Porte de Choisy</strong> (terminus de la ligne 7 du métro) à l'<strong>aéroport Paris-Orly</strong>. Solution <strong>économique</strong> au tarif <strong>ticket t+ (2,15 €)</strong>.",
+        "Le <strong>bus 183</strong> est une ligne régulière RATP qui relie <strong>Porte de Choisy</strong> (terminus de la ligne 7 du métro) à l'<strong>aéroport Paris-Orly</strong>. Solution <strong>économique</strong> au tarif <strong>tarif Bus-Tram ({{fare:ticket-bus-tram}})</strong>.",
         "Durée du trajet : <strong>45 minutes</strong>. Fréquence <strong>toutes les 10 à 20 minutes</strong>. <strong>Service de 5h40 à 00h30</strong>."
     ],
     "quick_facts": [
@@ -21,8 +21,8 @@
             "label": "depuis Porte de Choisy"
         },
         {
-            "value": "2,15 €",
-            "label": "ticket t+"
+            "value": "{{fare:ticket-bus-tram}}",
+            "label": "{{fare:ticket-bus-tram:label}}"
         },
         {
             "value": "10-20 min",
@@ -82,7 +82,7 @@
     "tarifs": {
         "h2": "Tarifs Bus 183",
         "paragraphs": [
-            "Le bus 183 utilise le <strong>ticket t+ standard</strong> à 2,15 €."
+            "Le bus 183 utilise le <strong>tarif Bus-Tram</strong> à {{fare:ticket-bus-tram}}."
         ],
         "table": {
             "headers": [
@@ -92,8 +92,8 @@
             ],
             "rows": [
                 [
-                    "Ticket t+ unitaire",
-                    "2,15 €",
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}",
                     "Trajet simple"
                 ],
                 [
@@ -149,17 +149,17 @@
         {
             "label": "Métro 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "25 min depuis Châtelet, 2,15 €."
+            "note": "25 min depuis Châtelet, {{fare:ticket-bus-tram}}."
         },
         {
             "label": "Bus 285",
             "url": "/aeroports/paris-orly/bus/bus-285/",
-            "note": "30 min depuis Villejuif, 2,15 €."
+            "note": "30 min depuis Villejuif, {{fare:ticket-bus-tram}}."
         },
         {
             "label": "Tramway T7",
             "url": "/aeroports/paris-orly/tramway/",
-            "note": "30 min depuis Villejuif, 2,15 €."
+            "note": "30 min depuis Villejuif, {{fare:ticket-bus-tram}}."
         }
     ],
     "faq": [
@@ -169,7 +169,7 @@
         },
         {
             "question": "Combien coûte le bus 183 pour Orly ?",
-            "answer": "<strong>2,15 €</strong> (ticket t+ standard). Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "answer": "<strong>{{fare:ticket-bus-tram}}</strong> (tarif Bus-Tram). Compris dans le <strong>pass Navigo zones 1-5</strong>."
         },
         {
             "question": "Combien de temps Porte de Choisy → Orly en bus 183 ?",
@@ -181,7 +181,7 @@
         },
         {
             "question": "Bus 183 ou Orlybus pour Orly ?",
-            "answer": "<strong>Bus 183</strong> est moins cher (2,15 € vs 11,50 €) mais plus lent (45 min vs 35 min). Privilégier le 183 avec un pass Navigo, l'Orlybus pour la rapidité depuis Denfert."
+            "answer": "<strong>Bus 183</strong> est moins cher ({{fare:ticket-bus-tram}} vs 11,50 €) mais plus lent (45 min vs 35 min). Privilégier le 183 avec un pass Navigo, l'Orlybus pour la rapidité depuis Denfert."
         }
     ]
 }

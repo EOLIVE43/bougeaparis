@@ -5,15 +5,15 @@
     "aeroport_iata": "ORY",
     "mode_slug": "tramway",
     "mode_label": "Tramway T7",
-    "h1": "Tramway T7 pour Orly : option économique 2,15 € depuis Villejuif",
+    "h1": "Tramway T7 pour Orly : option économique {{fare:ticket-bus-tram}} depuis Villejuif",
     "seo": {
-        "title": "Tramway T7 Orly : durée 30 min, prix 2,15 € depuis Villejuif — horaires 2026",
-        "description": "Tramway T7 vers Aéroport Paris-Orly : 30 min depuis Villejuif-Louis Aragon (M7), 2,15 €. Solution économique via métro 7. Horaires, prix."
+        "title": "Tramway T7 Orly : durée 30 min, prix {{fare:ticket-bus-tram}} depuis Villejuif — horaires 2026",
+        "description": "Tramway T7 vers Aéroport Paris-Orly : 30 min depuis Villejuif-Louis Aragon (M7), {{fare:ticket-bus-tram}}. Solution économique via métro 7. Horaires, prix."
     },
-    "tagline": "Option économique 2,15 € depuis Villejuif (M7 terminus)",
+    "tagline": "Option économique {{fare:ticket-bus-tram}} depuis Villejuif (M7 terminus)",
     "intro_paragraphs": [
         "Le <strong>tramway T7</strong> est une <strong>option économique</strong> pour rejoindre l'<strong>aéroport Paris-Orly</strong> depuis le sud parisien. Il relie <strong>Villejuif - Louis Aragon</strong> (terminus de la M7) à <strong>Athis-Mons</strong> en passant par <strong>Orly</strong>.",
-        "Inauguré en <strong>2013</strong>, le T7 dessert l'aéroport <strong>Orly 1-2-3</strong>. Prix : <strong>2,15 €</strong> (ticket t+ standard). Durée : <strong>30 min depuis Villejuif</strong>. Le T7 est moins direct que le métro 14 mais utile depuis le 13e arrondissement ou le sud parisien via la M7."
+        "Inauguré en <strong>2013</strong>, le T7 dessert l'aéroport <strong>Orly 1-2-3</strong>. Prix : <strong>{{fare:ticket-bus-tram}}</strong> (tarif Bus-Tram). Durée : <strong>30 min depuis Villejuif</strong>. Le T7 est moins direct que le métro 14 mais utile depuis le 13e arrondissement ou le sud parisien via la M7."
     ],
     "quick_facts": [
         {
@@ -21,8 +21,8 @@
             "label": "depuis Villejuif"
         },
         {
-            "value": "2,15 €",
-            "label": "ticket t+"
+            "value": "{{fare:ticket-bus-tram}}",
+            "label": "{{fare:ticket-bus-tram:label}}"
         },
         {
             "value": "8 min",
@@ -84,7 +84,7 @@
     "tarifs": {
         "h2": "Tarifs tramway T7 pour Orly",
         "paragraphs": [
-            "Le <strong>ticket t+ standard</strong> à <strong>2,15 €</strong> est valable. Le pass Navigo couvre intégralement le T7."
+            "Le <strong>tarif Bus-Tram</strong> à <strong>{{fare:ticket-bus-tram}}</strong> est valable. Le pass Navigo couvre intégralement le T7."
         ],
         "table": {
             "headers": [
@@ -93,8 +93,8 @@
             ],
             "rows": [
                 [
-                    "Ticket t+ unitaire",
-                    "2,15 €"
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}"
                 ],
                 [
                     "Carnet 10 tickets",
@@ -151,7 +151,7 @@
         {
             "label": "Métro ligne 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "🆕 25 min depuis Châtelet, 2,15 €."
+            "note": "🆕 25 min depuis Châtelet, {{fare:ticket-metro-rer-train}}."
         },
         {
             "label": "Orlybus",
@@ -176,7 +176,7 @@
         },
         {
             "question": "Combien coûte le T7 pour Orly ?",
-            "answer": "<strong>2,15 €</strong> (ticket t+ standard). Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "answer": "<strong>{{fare:ticket-bus-tram}}</strong> (tarif Bus-Tram). Compris dans le <strong>pass Navigo zones 1-5</strong>."
         },
         {
             "question": "Combien de temps T7 Villejuif → Orly ?",

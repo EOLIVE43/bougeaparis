@@ -7,12 +7,12 @@
     "mode_label": "Bus 285",
     "h1": "Bus 285 Orly : ligne régulière depuis Villejuif - Louis Aragon",
     "seo": {
-        "title": "Bus 285 Orly : durée 30 min, prix 2,15 € depuis Villejuif",
-        "description": "Bus 285 vers l'aéroport Paris-Orly depuis Villejuif - Louis Aragon (M7) : 30 min, 2,15 € ticket t+. Fréquence 15-30 min de 5h00 à 00h00."
+        "title": "Bus 285 Orly : durée 30 min, prix {{fare:ticket-bus-tram}} depuis Villejuif",
+        "description": "Bus 285 vers l'aéroport Paris-Orly depuis Villejuif - Louis Aragon (M7) : 30 min, {{fare:ticket-bus-tram}} tarif Bus-Tram. Fréquence 15-30 min de 5h00 à 00h00."
     },
-    "tagline": "Option économique 2,15 € depuis Villejuif (M7 terminus)",
+    "tagline": "Option économique {{fare:ticket-bus-tram}} depuis Villejuif (M7 terminus)",
     "intro_paragraphs": [
-        "Le <strong>bus 285</strong> est une ligne régulière RATP qui relie <strong>Villejuif - Louis Aragon</strong> (terminus de la M7) à l'<strong>aéroport Paris-Orly</strong>. <strong>30 minutes</strong> au tarif <strong>ticket t+ (2,15 €)</strong>.",
+        "Le <strong>bus 285</strong> est une ligne régulière RATP qui relie <strong>Villejuif - Louis Aragon</strong> (terminus de la M7) à l'<strong>aéroport Paris-Orly</strong>. <strong>30 minutes</strong> au tarif <strong>tarif Bus-Tram ({{fare:ticket-bus-tram}})</strong>.",
         "Fréquence <strong>15 à 30 minutes</strong> selon l'heure. <strong>Service de 5h00 à 00h00</strong>. Alternative économique au tramway T7 ou au métro 14 selon votre point de départ."
     ],
     "quick_facts": [
@@ -21,8 +21,8 @@
             "label": "depuis Villejuif"
         },
         {
-            "value": "2,15 €",
-            "label": "ticket t+"
+            "value": "{{fare:ticket-bus-tram}}",
+            "label": "{{fare:ticket-bus-tram:label}}"
         },
         {
             "value": "15-30 min",
@@ -82,7 +82,7 @@
     "tarifs": {
         "h2": "Tarifs Bus 285",
         "paragraphs": [
-            "Le bus 285 utilise le <strong>ticket t+ standard</strong> à 2,15 €."
+            "Le bus 285 utilise le <strong>tarif Bus-Tram</strong> à {{fare:ticket-bus-tram}}."
         ],
         "table": {
             "headers": [
@@ -92,8 +92,8 @@
             ],
             "rows": [
                 [
-                    "Ticket t+ unitaire",
-                    "2,15 €",
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}",
                     "Trajet simple"
                 ],
                 [
@@ -144,7 +144,7 @@
         {
             "label": "Tramway T7",
             "url": "/aeroports/paris-orly/tramway/",
-            "note": "30 min depuis Villejuif (même origine), 2,15 €."
+            "note": "30 min depuis Villejuif (même origine), {{fare:ticket-bus-tram}}."
         },
         {
             "label": "Orlybus",
@@ -154,12 +154,12 @@
         {
             "label": "Métro 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "25 min depuis Châtelet, 2,15 €."
+            "note": "25 min depuis Châtelet, {{fare:ticket-bus-tram}}."
         },
         {
             "label": "Bus 183",
             "url": "/aeroports/paris-orly/bus/bus-183/",
-            "note": "45 min depuis Porte de Choisy, 2,15 €."
+            "note": "45 min depuis Porte de Choisy, {{fare:ticket-bus-tram}}."
         }
     ],
     "faq": [
@@ -169,7 +169,7 @@
         },
         {
             "question": "Combien coûte le bus 285 pour Orly ?",
-            "answer": "<strong>2,15 €</strong> (ticket t+ standard). Compris dans le <strong>pass Navigo zones 1-5</strong>."
+            "answer": "<strong>{{fare:ticket-bus-tram}}</strong> (tarif Bus-Tram). Compris dans le <strong>pass Navigo zones 1-5</strong>."
         },
         {
             "question": "Combien de temps Villejuif → Orly en bus 285 ?",
@@ -177,7 +177,7 @@
         },
         {
             "question": "Bus 285 ou Tramway T7 pour Orly ?",
-            "answer": "Même durée (30 min) et même prix (2,15 €). Le <strong>T7</strong> est plus régulier (toutes les 8 min). Le <strong>bus 285</strong> peut être plus rapide en heure creuse."
+            "answer": "Même durée (30 min) et même prix ({{fare:ticket-bus-tram}}). Le <strong>T7</strong> est plus régulier (toutes les 8 min). Le <strong>bus 285</strong> peut être plus rapide en heure creuse."
         },
         {
             "question": "À quelle heure le premier bus 285 ?",

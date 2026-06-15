@@ -8,7 +8,7 @@
     "h1": "Bus pour CDG : Roissybus, bus 350/351, bus de nuit N140/N143",
     "seo": {
         "title": "Bus CDG : Roissybus 60 min Opéra, 350/351 économiques — horaires 2026",
-        "description": "Bus pour Paris-Charles de Gaulle : Roissybus depuis Opéra (60-75 min, 16,60 €), bus 350 et 351 économiques (2,15 €), bus de nuit N140/N143. Horaires."
+        "description": "Bus pour Paris-Charles de Gaulle : Roissybus depuis Opéra (60-75 min, 16,60 €), bus 350 et 351 économiques ({{fare:ticket-bus-tram}}), bus de nuit N140/N143. Horaires."
     },
     "tagline": "Roissybus 60 min depuis Opéra — 16,60 €",
     "intro_paragraphs": [
@@ -25,7 +25,7 @@
             "label": "Roissybus"
         },
         {
-            "value": "2,15 €",
+            "value": "{{fare:ticket-bus-tram}}",
             "label": "Bus 350/351"
         },
         {
@@ -40,8 +40,8 @@
         ],
         "steps": [
             "<strong>Roissybus</strong> : depuis <strong>Opéra</strong> (Paris 9e, rue Scribe). Bus direct, <strong>60 à 75 min</strong>, <strong>16,60 €</strong>.",
-            "<strong>Bus 350</strong> : depuis <strong>Gare de l'Est</strong>. Bus standard, <strong>75 min</strong>, <strong>2,15 €</strong> (ticket t+).",
-            "<strong>Bus 351</strong> : depuis <strong>Place de la Nation</strong>. <strong>75-90 min</strong>, <strong>2,15 €</strong>.",
+            "<strong>Bus 350</strong> : depuis <strong>Gare de l'Est</strong>. Bus standard, <strong>75 min</strong>, <strong>{{fare:ticket-bus-tram}}</strong> (tarif Bus-Tram).",
+            "<strong>Bus 351</strong> : depuis <strong>Place de la Nation</strong>. <strong>75-90 min</strong>, <strong>{{fare:ticket-bus-tram}}</strong>.",
             "<strong>Bus N140 / N143</strong> (nuit) : depuis <strong>Châtelet</strong> et <strong>Gare de l'Est</strong>. Service nocturne 01h00-05h00."
         ]
     },
@@ -94,7 +94,7 @@
     "tarifs": {
         "h2": "Tarifs bus pour CDG",
         "paragraphs": [
-            "Le <strong>Roissybus</strong> nécessite un <strong>billet spécifique</strong> à 16,60 €. Les bus 350/351 et nuit acceptent le <strong>ticket t+ standard</strong> à 2,15 €. Le <strong>pass Navigo</strong> couvre tous les bus."
+            "Le <strong>Roissybus</strong> nécessite un <strong>billet spécifique</strong> à 16,60 €. Les bus 350/351 et nuit acceptent le <strong>tarif Bus-Tram</strong> à {{fare:ticket-bus-tram}}. Le <strong>pass Navigo</strong> couvre tous les bus."
         ],
         "table": {
             "headers": [
@@ -110,13 +110,13 @@
                 ],
                 [
                     "350 / 351",
-                    "Ticket t+",
-                    "2,15 €"
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}"
                 ],
                 [
                     "N140 / N143",
-                    "Ticket t+",
-                    "2,15 €"
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}"
                 ],
                 [
                     "Tous bus",
@@ -190,11 +190,11 @@
         },
         {
             "question": "Le bus 350 va-t-il à CDG ?",
-            "answer": "<strong>Oui</strong> depuis la <strong>Gare de l'Est</strong>. 75 min, 2,15 € (ticket t+)."
+            "answer": "<strong>Oui</strong> depuis la <strong>Gare de l'Est</strong>. 75 min, {{fare:ticket-bus-tram}} (tarif Bus-Tram)."
         },
         {
             "question": "Y a-t-il un bus de nuit pour CDG ?",
-            "answer": "<strong>Oui</strong>. <strong>N140 et N143</strong> circulent de <strong>01h00 à 05h00</strong>. Tarif ticket t+ 2,15 €."
+            "answer": "<strong>Oui</strong>. <strong>N140 et N143</strong> circulent de <strong>01h00 à 05h00</strong>. Tarif tarif Bus-Tram {{fare:ticket-bus-tram}}."
         },
         {
             "question": "Roissybus ou RER B pour CDG ?",
@@ -221,11 +221,11 @@
             "type": "regulier",
             "departure": "Porte de la Chapelle (M12)",
             "duration": "75-90 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "30 min",
             "first": "—",
             "last": "—",
-            "note": "Tarif Navigo / ticket t+",
+            "note": "Tarif Navigo / tarif Bus-Tram",
             "cta_anchor": "Bus 350"
         },
         {
@@ -234,11 +234,11 @@
             "type": "regulier",
             "departure": "Place de la Nation",
             "duration": "75-90 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "30 min",
             "first": "—",
             "last": "—",
-            "note": "Tarif Navigo / ticket t+",
+            "note": "Tarif Navigo / tarif Bus-Tram",
             "cta_anchor": "Bus 351"
         },
         {
@@ -247,7 +247,7 @@
             "type": "noctilien",
             "departure": "Gare de l'Est",
             "duration": "60-90 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "30-60 min",
             "first": "01h00",
             "last": "04h30",
@@ -260,7 +260,7 @@
             "type": "noctilien",
             "departure": "Gare de l'Est",
             "duration": "60-90 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "60 min",
             "first": "01h00",
             "last": "04h30",

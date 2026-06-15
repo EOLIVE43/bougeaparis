@@ -59,8 +59,8 @@ if ($_seoTitleJson !== '' && strlen($_seoTitleJson) <= 65) {
     $_seoTitle = bp_title_aeroport_mode($modeLabel, $aeroName, $_duration, $_price);
 }
 $tpl->seo
-    ->setTitle($_seoTitle, false)
-    ->setDescription($mode['seo']['description'] ?? '')
+    ->setTitle(bp_interpolate_fares($_seoTitle), false)
+    ->setDescription(bp_interpolate_fares((string)($mode['seo']['description'] ?? '')))
     ->setCanonical($canonical)
     ->setBreadcrumb([
         ['label' => 'Accueil',    'url' => '/'],
@@ -83,9 +83,9 @@ $tpl->seo
   <!-- HERO mode-colored + H1 SEO -->
   <section class="mode-hero" data-mode-slug="<?= Template::e($modeSlug) ?>">
     <div class="mode-hero__content">
-      <h1><?= Template::e($h1) ?></h1>
+      <h1><?= Template::e(bp_interpolate_fares($h1)) ?></h1>
       <?php if ($tagline): ?>
-        <p class="mode-tagline"><?= Template::e($tagline) ?></p>
+        <p class="mode-tagline"><?= Template::e(bp_interpolate_fares($tagline)) ?></p>
       <?php endif; ?>
 
       <?php if (!empty($quickFacts)): ?>
@@ -93,7 +93,7 @@ $tpl->seo
           <?php foreach ($quickFacts as $fact): ?>
             <div class="mode-fact">
               <span class="fact-value"><?= Template::e(bp_interpolate_fares((string)($fact['value'] ?? ''))) ?></span>
-              <span class="fact-label"><?= Template::e($fact['label']) ?></span>
+              <span class="fact-label"><?= Template::e(bp_interpolate_fares((string)($fact['label'] ?? ''))) ?></span>
             </div>
           <?php endforeach; ?>
         </div>
@@ -222,7 +222,7 @@ $tpl->seo
             <div class="bus-card__metrics">
               <span class="bus-card__duration"><?= Template::e($bl['duration'] ?? '') ?></span>
               <span class="bus-card__separator">·</span>
-              <span class="bus-card__price"><?= Template::e($bl['price'] ?? '') ?></span>
+              <span class="bus-card__price"><?= Template::e(bp_interpolate_fares((string)($bl['price'] ?? ''))) ?></span>
             </div>
             <?php if (!empty($bl['note'])): ?>
               <p class="bus-card__note"><?= Template::e($bl['note']) ?></p>
@@ -294,7 +294,7 @@ $tpl->seo
                   </span>
                 <?php endif; ?>
               </div>
-              <div class="step-card__content"><?= $step ?></div>
+              <div class="step-card__content"><?= bp_interpolate_fares((string)$step) ?></div>
             </li>
           <?php endforeach; ?>
         </ol>
@@ -477,8 +477,8 @@ $tpl->seo
     $_articleSchema = [
       '@context'      => 'https://schema.org',
       '@type'         => 'Article',
-      'headline'      => $mode['h1'] ?? ($modeLabel . ' aéroport ' . $aeroName),
-      'description'   => $mode['seo']['description'] ?? '',
+      'headline'      => bp_interpolate_fares($mode['h1'] ?? ($modeLabel . ' aéroport ' . $aeroName)),
+      'description'   => bp_interpolate_fares((string)($mode['seo']['description'] ?? '')),
       'url'           => 'https://bougeaparis.fr' . $canonical,
       'datePublished' => $_datePublished,
       'dateModified'  => $_dateModified,

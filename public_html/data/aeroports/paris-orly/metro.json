@@ -5,14 +5,14 @@
     "aeroport_iata": "ORY",
     "mode_slug": "metro",
     "mode_label": "Métro ligne 14",
-    "h1": "Métro 14 pour Orly : durée 25 min, prix 2,15 € (depuis juin 2024)",
+    "h1": "Métro 14 pour Orly : durée 25 min, prix {{fare:ticket-metro-rer-train}} (depuis juin 2024)",
     "seo": {
         "title": "Métro 14 Orly : durée, prix, horaires 2026 — Châtelet → Aéroport d'Orly 25 min",
-        "description": "Métro ligne 14 vers Aéroport d'Orly depuis juin 2024 : 25 min depuis Châtelet, 2,15 €, fréquence 4 min. Horaires 5h30-00h15. Stations, terminaux."
+        "description": "Métro ligne 14 vers Aéroport d'Orly depuis juin 2024 : 25 min depuis Châtelet, {{fare:ticket-metro-rer-train}}, fréquence 4 min. Horaires 5h30-00h15. Stations, terminaux."
     },
-    "tagline": "🆕 Liaison directe depuis juin 2024 — 2,15 € seulement",
+    "tagline": "🆕 Liaison directe depuis juin 2024 — {{fare:ticket-metro-rer-train}} seulement",
     "intro_paragraphs": [
-        "Depuis le <strong>24 juin 2024</strong>, la <strong>ligne 14 du métro parisien</strong> est <strong>prolongée jusqu'à l'aéroport Paris-Orly</strong>. Cette extension révolutionne l'accès à Orly : <strong>25 minutes depuis Châtelet</strong>, <strong>2,15 € seulement</strong> (tarif ticket t+ standard), <strong>fréquence toutes les 4 minutes</strong> en heure de pointe.",
+        "Depuis le <strong>24 juin 2024</strong>, la <strong>ligne 14 du métro parisien</strong> est <strong>prolongée jusqu'à l'aéroport Paris-Orly</strong>. Cette extension révolutionne l'accès à Orly : <strong>25 minutes depuis Châtelet</strong>, <strong>{{fare:ticket-metro-rer-train}} seulement</strong> (tarif tarif Métro-RER-Train), <strong>fréquence toutes les 4 minutes</strong> en heure de pointe.",
         "C'est désormais la <strong>solution la plus rapide et la moins chère</strong> pour rejoindre Orly depuis le centre de Paris. Elle remplace l'ancien <strong>Orlyval + RER B</strong> (13,25 €) et le <strong>Orlybus</strong> (11,50 €) pour la plupart des trajets.",
         "Le terminus <strong>Aéroport d'Orly</strong> dessert directement les <strong>terminaux Orly 1, 2, 3 et 4</strong> via un parcours piéton couvert balisé."
     ],
@@ -22,8 +22,8 @@
             "label": "depuis Châtelet"
         },
         {
-            "value": "2,15 €",
-            "label": "ticket t+"
+            "value": "{{fare:ticket-metro-rer-train}}",
+            "label": "{{fare:ticket-metro-rer-train:label}}"
         },
         {
             "value": "4 min",
@@ -81,7 +81,7 @@
     "tarifs": {
         "h2": "Tarifs métro 14 vers Orly",
         "paragraphs": [
-            "Le <strong>ticket métro standard</strong> (ticket t+) à <strong>2,15 €</strong> est valable pour le trajet vers Orly.",
+            "Le <strong>ticket métro standard</strong> (tarif Métro-RER-Train) à <strong>{{fare:ticket-metro-rer-train}}</strong> est valable pour le trajet vers Orly.",
             "Le <strong>pass Navigo</strong> (semaine, mois, jour, Découverte) couvre intégralement le trajet sans supplément. La station <strong>Aéroport d'Orly</strong> est en <strong>zone 4</strong>."
         ],
         "table": {
@@ -92,8 +92,8 @@
             ],
             "rows": [
                 [
-                    "Ticket t+ unitaire",
-                    "2,15 €",
+                    "{{fare:ticket-metro-rer-train:label}}",
+                    "{{fare:ticket-metro-rer-train}}",
                     "Trajet simple"
                 ],
                 [
@@ -204,7 +204,7 @@
         {
             "label": "Tramway T7",
             "url": "/aeroports/paris-orly/tramway/",
-            "note": "30 min depuis Villejuif, 2,15 €."
+            "note": "30 min depuis Villejuif, {{fare:ticket-metro-rer-train}}."
         },
         {
             "label": "Taxi forfait",
@@ -215,11 +215,11 @@
     "faq": [
         {
             "question": "La ligne 14 du métro va-t-elle vraiment à Orly ?",
-            "answer": "<strong>Oui depuis le 24 juin 2024</strong>. Terminus <strong>Aéroport d'Orly</strong>. <strong>25 min depuis Châtelet</strong>, <strong>2,15 €</strong>."
+            "answer": "<strong>Oui depuis le 24 juin 2024</strong>. Terminus <strong>Aéroport d'Orly</strong>. <strong>25 min depuis Châtelet</strong>, <strong>{{fare:ticket-metro-rer-train}}</strong>."
         },
         {
             "question": "Combien coûte le métro 14 pour Orly ?",
-            "answer": "<strong>2,15 €</strong> (ticket t+ standard) ou compris dans le <strong>pass Navigo zones 1-5</strong>. Tarif identique aux autres trajets métro."
+            "answer": "<strong>{{fare:ticket-metro-rer-train}}</strong> (tarif Métro-RER-Train) ou compris dans le <strong>pass Navigo zones 1-5</strong>. Tarif identique aux autres trajets métro."
         },
         {
             "question": "Quel est le temps de trajet métro 14 Châtelet → Orly ?",

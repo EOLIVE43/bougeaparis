@@ -8,7 +8,7 @@
     "h1": "Bus pour Orly : Orlybus, 183, 285 — horaires et tarifs 2026",
     "seo": {
         "title": "Bus Orly : Orlybus depuis Denfert (35 min, 11,50 €), 183, 285 — horaires 2026",
-        "description": "Bus pour Aéroport Paris-Orly : Orlybus depuis Denfert-Rochereau (35 min, 11,50 €), bus 183 depuis Porte de Choisy (2,15 €), bus 285 depuis Villejuif. Horaires, tarifs."
+        "description": "Bus pour Aéroport Paris-Orly : Orlybus depuis Denfert-Rochereau (35 min, 11,50 €), bus 183 depuis Porte de Choisy ({{fare:ticket-bus-tram}}), bus 285 depuis Villejuif. Horaires, tarifs."
     },
     "tagline": "Orlybus 35 min depuis Denfert-Rochereau — 11,50 €",
     "intro_paragraphs": [
@@ -25,7 +25,7 @@
             "label": "Orlybus"
         },
         {
-            "value": "2,15 €",
+            "value": "{{fare:ticket-bus-tram}}",
             "label": "Bus 183/285"
         },
         {
@@ -40,8 +40,8 @@
         ],
         "steps": [
             "<strong>Orlybus</strong> : depuis <strong>Denfert-Rochereau</strong> (14e), arrêt bus dédié devant la gare RER B / M4 / M6. Bus direct vers Orly, <strong>35 min</strong>.",
-            "<strong>Bus 183</strong> : depuis <strong>Porte de Choisy</strong> (M7 terminus). Trajet via avenue Stalingrad. <strong>45 min</strong>, ticket t+ <strong>2,15 €</strong>.",
-            "<strong>Bus 285</strong> : depuis <strong>Villejuif - Louis Aragon</strong> (M7 terminus + T7). Bus économique. <strong>30 min</strong>, ticket t+ <strong>2,15 €</strong>."
+            "<strong>Bus 183</strong> : depuis <strong>Porte de Choisy</strong> (M7 terminus). Trajet via avenue Stalingrad. <strong>45 min</strong>, tarif Bus-Tram <strong>{{fare:ticket-bus-tram}}</strong>.",
+            "<strong>Bus 285</strong> : depuis <strong>Villejuif - Louis Aragon</strong> (M7 terminus + T7). Bus économique. <strong>30 min</strong>, tarif Bus-Tram <strong>{{fare:ticket-bus-tram}}</strong>."
         ]
     },
     "horaires": {
@@ -81,7 +81,7 @@
     "tarifs": {
         "h2": "Tarifs bus pour Orly",
         "paragraphs": [
-            "L'<strong>Orlybus</strong> nécessite un <strong>billet spécifique</strong> à 11,50 €. Les bus 183 et 285 acceptent le <strong>ticket t+ standard</strong> à 2,15 €.",
+            "L'<strong>Orlybus</strong> nécessite un <strong>billet spécifique</strong> à 11,50 €. Les bus 183 et 285 acceptent le <strong>tarif Bus-Tram</strong> à {{fare:ticket-bus-tram}}.",
             "Le <strong>pass Navigo zones 1-5</strong> couvre intégralement l'Orlybus et les bus 183/285."
         ],
         "table": {
@@ -98,13 +98,13 @@
                 ],
                 [
                     "183",
-                    "Ticket t+",
-                    "2,15 €"
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}"
                 ],
                 [
                     "285",
-                    "Ticket t+",
-                    "2,15 €"
+                    "{{fare:ticket-bus-tram:label}}",
+                    "{{fare:ticket-bus-tram}}"
                 ],
                 [
                     "Tous bus",
@@ -160,7 +160,7 @@
         {
             "label": "Métro ligne 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "🆕 25 min depuis Châtelet, 2,15 € (depuis juin 2024)."
+            "note": "🆕 25 min depuis Châtelet, {{fare:ticket-bus-tram}} (depuis juin 2024)."
         },
         {
             "label": "RER B + Orlyval",
@@ -170,7 +170,7 @@
         {
             "label": "Tramway T7",
             "url": "/aeroports/paris-orly/tramway/",
-            "note": "30 min depuis Villejuif, 2,15 €."
+            "note": "30 min depuis Villejuif, {{fare:ticket-bus-tram}}."
         },
         {
             "label": "Taxi forfait",
@@ -189,11 +189,11 @@
         },
         {
             "question": "Quelle est la différence entre Orlybus et bus 183 ?",
-            "answer": "L'<strong>Orlybus</strong> est un bus direct payant (11,50 €) depuis Denfert, plus rapide. Le <strong>bus 183</strong> est un bus standard moins cher (2,15 € ticket t+) depuis Porte de Choisy, plus lent."
+            "answer": "L'<strong>Orlybus</strong> est un bus direct payant (11,50 €) depuis Denfert, plus rapide. Le <strong>bus 183</strong> est un bus standard moins cher ({{fare:ticket-bus-tram}} tarif Bus-Tram) depuis Porte de Choisy, plus lent."
         },
         {
             "question": "Le bus 183 va-t-il à Orly ?",
-            "answer": "<strong>Oui</strong>, depuis <strong>Porte de Choisy</strong> (M7). 45 min, 2,15 €."
+            "answer": "<strong>Oui</strong>, depuis <strong>Porte de Choisy</strong> (M7). 45 min, {{fare:ticket-bus-tram}}."
         },
         {
             "question": "Quels sont les horaires de l'Orlybus ?",
@@ -224,11 +224,11 @@
             "type": "regulier",
             "departure": "Porte de Choisy (M7 terminus)",
             "duration": "45 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "Toutes les 10-20 min",
             "first": "5h40",
             "last": "00h30",
-            "note": "Tarif Navigo / ticket t+",
+            "note": "Tarif Navigo / tarif Bus-Tram",
             "cta_anchor": "Bus 183 Orly"
         },
         {
@@ -237,11 +237,11 @@
             "type": "regulier",
             "departure": "Villejuif - Louis Aragon (M7 terminus)",
             "duration": "30 min",
-            "price": "2,15 €",
+            "price": "{{fare:ticket-bus-tram}}",
             "frequency": "Toutes les 15-30 min",
             "first": "5h00",
             "last": "00h00",
-            "note": "Tarif Navigo / ticket t+",
+            "note": "Tarif Navigo / tarif Bus-Tram",
             "cta_anchor": "Bus 285 Orly"
         }
     ]

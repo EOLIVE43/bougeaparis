@@ -82,7 +82,7 @@
     "tarifs": {
         "h2": "Tarif Orlybus",
         "paragraphs": [
-            "L'Orlybus utilise un <strong>billet spécifique ADP</strong> (pas le ticket t+)."
+            "L'Orlybus utilise un <strong>billet spécifique ADP</strong> (pas le tarif Bus-Tram)."
         ],
         "table": {
             "headers": [
@@ -139,12 +139,12 @@
         {
             "label": "Métro 14",
             "url": "/aeroports/paris-orly/metro/",
-            "note": "25 min depuis Châtelet, 2,15 € (depuis juin 2024)."
+            "note": "25 min depuis Châtelet, {{fare:ticket-metro-rer-train}} (depuis juin 2024)."
         },
         {
             "label": "Bus 183",
             "url": "/aeroports/paris-orly/bus/bus-183/",
-            "note": "45 min depuis Porte de Choisy, 2,15 €."
+            "note": "45 min depuis Porte de Choisy, {{fare:ticket-bus-tram}}."
         },
         {
             "label": "RER B + Orlyval",
