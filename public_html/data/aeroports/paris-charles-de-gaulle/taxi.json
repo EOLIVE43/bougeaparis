@@ -5,23 +5,23 @@
     "aeroport_iata": "CDG",
     "mode_slug": "taxi",
     "mode_label": "Taxi",
-    "h1": "Taxi Paris → CDG : forfait 56 € / 65 € (rive droite / gauche)",
+    "h1": "Taxi Paris → CDG : forfait {{fare:forfait-taxi-cdg-rive-droite}} (rive droite) / {{fare:forfait-taxi-cdg-rive-gauche}} (rive gauche)",
     "seo": {
-        "title": "Taxi CDG : forfait 56 € rive droite, 65 € rive gauche — 60 min trajet 2026",
-        "description": "Taxi Paris → Aéroport Paris-Charles de Gaulle : tarif forfaitaire 56 € rive droite, 65 € rive gauche. Durée 60 min. VTC Uber, Bolt alternatifs."
+        "title": "Taxi CDG : forfait 56 € / 65 € rive droite/gauche — durée trajet",
+        "description": "Taxi Paris → Aéroport Paris-Charles de Gaulle : tarif forfaitaire {{fare:forfait-taxi-cdg-rive-droite}} rive droite, {{fare:forfait-taxi-cdg-rive-gauche}} rive gauche (source : arrêté du 24 décembre 2025, JO 31/12/2025). VTC Uber, Bolt alternatifs."
     },
-    "tagline": "Forfait réglementé 56 € rive droite / 65 € rive gauche",
+    "tagline": "Forfait réglementé {{fare:forfait-taxi-cdg-rive-droite}} rive droite / {{fare:forfait-taxi-cdg-rive-gauche}} rive gauche",
     "intro_paragraphs": [
         "Le <strong>taxi parisien</strong> applique un <strong>tarif forfaitaire réglementé</strong> pour les courses entre Paris intra-muros et l'<strong>aéroport Paris-Charles de Gaulle</strong>.",
         "<strong>Durée moyenne : 60 min</strong> en conditions normales, jusqu'à 90 min en heure de pointe. Le forfait couvre <strong>4 passagers + bagages</strong>."
     ],
     "quick_facts": [
         {
-            "value": "56 €",
+            "value": "{{fare:forfait-taxi-cdg-rive-droite}}",
             "label": "rive droite"
         },
         {
-            "value": "65 €",
+            "value": "{{fare:forfait-taxi-cdg-rive-gauche}}",
             "label": "rive gauche"
         },
         {
@@ -42,14 +42,14 @@
             "<strong>Station de taxi</strong> : disponibles devant les grandes gares (Châtelet, Gare de Lyon, Gare du Nord, Saint-Lazare).",
             "<strong>Réservation par téléphone</strong> : G7 (3607), Taxis Bleus (3609). Supplément 7 €.",
             "<strong>Application mobile</strong> : G7, Bolt Taxis, Le Taxi.",
-            "<strong>Confirmer le forfait</strong> avec le chauffeur avant départ : 56 € rive droite, 65 € rive gauche."
+            "<strong>Confirmer le forfait</strong> avec le chauffeur avant départ : {{fare:forfait-taxi-cdg-rive-droite}} rive droite, {{fare:forfait-taxi-cdg-rive-gauche}} rive gauche (source : arrêté du 24 décembre 2025)."
         ]
     },
     "horaires": {},
     "tarifs": {
         "h2": "Tarifs taxi Paris → CDG (2024)",
         "paragraphs": [
-            "<strong>Tarif forfaitaire</strong> couvre la course pour tout passager + bagages."
+            "<strong>Tarif forfaitaire</strong> couvre la course pour tout passager + bagages. Source : arrêté du 24 décembre 2025 (JO 31/12/2025)."
         ],
         "table": {
             "headers": [
@@ -60,13 +60,13 @@
             "rows": [
                 [
                     "Paris Rive Droite → CDG",
-                    "56 €",
-                    "1er-4e, 8e-12e, 16e-20e arr."
+                    "{{fare:forfait-taxi-cdg-rive-droite}}",
+                    "Forfait réglementé"
                 ],
                 [
                     "Paris Rive Gauche → CDG",
-                    "65 €",
-                    "5e-7e, 13e-15e arr."
+                    "{{fare:forfait-taxi-cdg-rive-gauche}}",
+                    "Forfait réglementé"
                 ],
                 [
                     "Supplément 5e passager",
@@ -86,31 +86,31 @@
             "depart": "Châtelet (rive droite)",
             "station_slug": "chatelet",
             "duration": "60 min",
-            "trajet": "Taxi 56 €."
+            "trajet": "Taxi {{fare:forfait-taxi-cdg-rive-droite}}."
         },
         {
             "depart": "Gare de Lyon (rive droite)",
             "station_slug": "gare-de-lyon",
             "duration": "55 min",
-            "trajet": "Taxi 56 €."
+            "trajet": "Taxi {{fare:forfait-taxi-cdg-rive-droite}}."
         },
         {
             "depart": "Saint-Germain (rive gauche)",
             "station_slug": "saint-germain-des-pres",
             "duration": "65 min",
-            "trajet": "Taxi 65 €."
+            "trajet": "Taxi {{fare:forfait-taxi-cdg-rive-gauche}}."
         },
         {
             "depart": "Montparnasse (rive gauche)",
             "station_slug": "montparnasse-bienvenue",
             "duration": "70 min",
-            "trajet": "Taxi 65 €."
+            "trajet": "Taxi {{fare:forfait-taxi-cdg-rive-gauche}}."
         },
         {
             "depart": "Gare du Nord (rive droite)",
             "station_slug": "gare-du-nord",
             "duration": "50 min",
-            "trajet": "Taxi 56 €."
+            "trajet": "Taxi {{fare:forfait-taxi-cdg-rive-droite}}."
         }
     ],
     "pois": [
@@ -147,7 +147,7 @@
     "faq": [
         {
             "question": "Combien coûte un taxi Paris → CDG ?",
-            "answer": "<strong>56 €</strong> depuis la <strong>Rive Droite</strong>, <strong>65 €</strong> depuis la <strong>Rive Gauche</strong>. <strong>Tarif forfaitaire réglementé</strong>."
+            "answer": "<strong>{{fare:forfait-taxi-cdg-rive-droite}}</strong> depuis la <strong>Rive Droite</strong>, <strong>{{fare:forfait-taxi-cdg-rive-gauche}}</strong> depuis la <strong>Rive Gauche</strong>. <strong>Tarif forfaitaire réglementé</strong> (source : arrêté du 24 décembre 2025, JO 31/12/2025)."
         },
         {
             "question": "Combien de temps en taxi Paris → CDG ?",

@@ -1,8 +1,9 @@
 {
-    "updated_at": "2026-06-13",
+    "updated_at": "2026-06-15",
     "sources": {
         "ratp_aeroports": "RATP — titres et tarifs aéroports",
-        "ratp_unitaire": "RATP — simplification tarifaire IDFM 2025-2026"
+        "ratp_unitaire": "RATP — simplification tarifaire IDFM 2025-2026",
+        "arrete_forfait_taxi_2025": "Arrêté du 24 décembre 2025 (JO 31/12/2025) — forfaits taxi Paris ↔ aéroports"
     },
     "tickets": {
         "paris-region-aeroports": {
@@ -10,7 +11,10 @@
             "price": "14 €",
             "price_reduced": "7 €",
             "valid_from": "2025-01-01",
-            "applies_to": ["rer-b-cdg", "rer-b-orly-via-orlyval"],
+            "applies_to": [
+                "rer-b-cdg",
+                "rer-b-orly-via-orlyval"
+            ],
             "source": "RATP, IDFM"
         },
         "ticket-metro-rer-train": {
@@ -24,6 +28,30 @@
             "price": "2,05 €",
             "valid_from": "2025-01-01",
             "source": "RATP, simplification tarifaire IDFM"
+        },
+        "forfait-taxi-cdg-rive-droite": {
+            "label": "Forfait taxi Paris (Rive Droite) → CDG",
+            "price": "56 €",
+            "valid_from": "2026-01-01",
+            "source": "Arrêté du 24 décembre 2025 (JO 31/12/2025)"
+        },
+        "forfait-taxi-cdg-rive-gauche": {
+            "label": "Forfait taxi Paris (Rive Gauche) → CDG",
+            "price": "65 €",
+            "valid_from": "2026-01-01",
+            "source": "Arrêté du 24 décembre 2025 (JO 31/12/2025)"
+        },
+        "forfait-taxi-orly-rive-droite": {
+            "label": "Forfait taxi Paris (Rive Droite) → Orly",
+            "price": "45 €",
+            "valid_from": "2026-01-01",
+            "source": "Arrêté du 24 décembre 2025 (JO 31/12/2025)"
+        },
+        "forfait-taxi-orly-rive-gauche": {
+            "label": "Forfait taxi Paris (Rive Gauche) → Orly",
+            "price": "36 €",
+            "valid_from": "2026-01-01",
+            "source": "Arrêté du 24 décembre 2025 (JO 31/12/2025)"
         }
     }
 }
