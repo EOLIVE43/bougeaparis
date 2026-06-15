@@ -35,8 +35,9 @@ ini_set('memory_limit', '512M');
  * @package BougeaParis\Scripts
  */
 
-const ROOT          = __DIR__ . '/..';
-const STATIONS_DIR  = ROOT . '/public_html/data/stations';
+const ROOT             = __DIR__ . '/..';
+const STATIONS_DIR     = ROOT . '/public_html/data/stations';
+const STATIONS_RER_DIR = ROOT . '/public_html/data/stations-rer';
 const POI_CACHE     = __DIR__ . '/cache-gtfs/wikidata-pois-cache.json';
 const SECRETS_PHP   = ROOT . '/public_html/config/secrets.php';
 
@@ -65,6 +66,8 @@ const NOISE_DESC_REGEX = '/(station du m[ée]tro|ligne du m[ée]tro|station de m
 $opts = parse_cli_args($argv);
 $onlyStation = $opts['station'] ?? null;
 $preview     = (bool)($opts['preview'] ?? false);
+$mode        = isset($opts['mode']) && $opts['mode'] === 'rer' ? 'rer' : 'metro';
+$STATIONS_DIR_RUNTIME = ($mode === 'rer') ? STATIONS_RER_DIR : STATIONS_DIR;
 // v2 : --paraphrase active le post-traitement Claude API sur les descriptions POI
 $paraphrase  = (bool)($opts['paraphrase'] ?? false) || in_array('--paraphrase', $argv, true);
 
@@ -696,12 +699,12 @@ if ($paraphrase) {
     log_info('  Mode --paraphrase active : Claude API ' . ANTHROPIC_MODEL);
 }
 
-log_info('Phase 2: iteration data/stations/*.json');
-$files = glob(STATIONS_DIR . '/*.json');
+log_info('Phase 2: iteration ' . basename($STATIONS_DIR_RUNTIME) . '/*.json (mode=' . $mode . ')');
+$files = glob($STATIONS_DIR_RUNTIME . '/*.json');
 if ($onlyStation) {
     $files = array_filter($files, fn($f) => basename($f, '.json') === $onlyStation);
     if (empty($files)) {
-        fwrite(STDERR, "[ERREUR] Aucun fichier data/stations/$onlyStation.json\n");
+        fwrite(STDERR, "[ERREUR] Aucun fichier $STATIONS_DIR_RUNTIME/$onlyStation.json\n");
         exit(1);
     }
 }

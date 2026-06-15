@@ -33,9 +33,10 @@ ini_set('memory_limit', '512M');
  * @package BougeaParis\Scripts
  */
 
-const ROOT          = __DIR__ . '/..';
-const GTFS_DIR      = __DIR__ . '/cache-gtfs/idfm-gtfs';
-const STATIONS_DIR  = ROOT . '/public_html/data/stations';
+const ROOT             = __DIR__ . '/..';
+const GTFS_DIR         = __DIR__ . '/cache-gtfs/idfm-gtfs';
+const STATIONS_DIR     = ROOT . '/public_html/data/stations';
+const STATIONS_RER_DIR = ROOT . '/public_html/data/stations-rer';
 const ADDR_CACHE_FILE = __DIR__ . '/cache-gtfs/addresses-cache.json';
 
 // API adresse.data.gouv.fr (preconnectee dans templates/layout/base.php)
@@ -70,6 +71,8 @@ const MAX_PRIMARY_MATCH_M = 250;
 // CLI
 $opts = parse_cli_args($argv);
 $onlyStation = $opts['station'] ?? null;
+$mode        = isset($opts['mode']) && $opts['mode'] === 'rer' ? 'rer' : 'metro';
+$STATIONS_DIR_RUNTIME = ($mode === 'rer') ? STATIONS_RER_DIR : STATIONS_DIR;
 $preview     = (bool)($opts['preview'] ?? false);
 
 // ============================================================================
@@ -537,19 +540,19 @@ log_info(sprintf('  %d adresses deja en cache (%s)', count($addrCache),
 // 2. ITERATION SUR LES JSON STATION
 // ============================================================================
 
-log_info('Phase 2: iteration data/stations/*.json');
+log_info('Phase 2: iteration ' . basename($STATIONS_DIR_RUNTIME) . '/*.json (mode=' . $mode . ')');
 
-$files = glob(STATIONS_DIR . '/*.json');
+$files = glob($STATIONS_DIR_RUNTIME . '/*.json');
 if ($onlyStation) {
     $files = array_filter($files, fn($f) => basename($f, '.json') === $onlyStation);
     if (empty($files)) {
-        fwrite(STDERR, "[ERREUR] Aucun fichier data/stations/$onlyStation.json\n");
+        fwrite(STDERR, "[ERREUR] Aucun fichier $STATIONS_DIR_RUNTIME/$onlyStation.json\n");
         exit(1);
     }
 }
 
 if (empty($files)) {
-    fwrite(STDERR, "[ERREUR] Aucun fichier dans " . STATIONS_DIR . "\n");
+    fwrite(STDERR, "[ERREUR] Aucun fichier dans " . $STATIONS_DIR_RUNTIME . "\n");
     exit(1);
 }
 

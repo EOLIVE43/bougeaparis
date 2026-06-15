@@ -30,13 +30,15 @@ declare(strict_types=1);
  */
 
 const ROOT = __DIR__ . '/..';
-const STATIONS_DIR = ROOT . '/public_html/data/stations';
+const STATIONS_DIR     = ROOT . '/public_html/data/stations';
+const STATIONS_RER_DIR = ROOT . '/public_html/data/stations-rer';
 const USER_AGENT = 'BougeaParis-validate-station/1.0 (https://bougeaparis.fr)';
 
 // CLI args
 $slug = null;
 $checkWikidata = false;
 $jsonOutput = false;
+$mode = 'metro';
 foreach (array_slice($argv, 1) as $arg) {
     if (str_starts_with($arg, '--slug=')) {
         $slug = substr($arg, 7);
@@ -44,15 +46,18 @@ foreach (array_slice($argv, 1) as $arg) {
         $checkWikidata = true;
     } elseif ($arg === '--json') {
         $jsonOutput = true;
+    } elseif (preg_match('/^--mode=(metro|rer)$/', $arg, $m)) {
+        $mode = $m[1];
     }
 }
 
 if (!$slug) {
-    fwrite(STDERR, "Usage: php validate-station.php --slug=X [--check-wikidata] [--json]\n");
+    fwrite(STDERR, "Usage: php validate-station.php --slug=X [--mode=metro|rer] [--check-wikidata] [--json]\n");
     exit(2);
 }
 
-$jsonPath = STATIONS_DIR . '/' . $slug . '.json';
+$outDir = ($mode === 'rer') ? STATIONS_RER_DIR : STATIONS_DIR;
+$jsonPath = $outDir . '/' . $slug . '.json';
 if (!is_file($jsonPath)) {
     fwrite(STDERR, "ERROR: $jsonPath not found\n");
     exit(2);
