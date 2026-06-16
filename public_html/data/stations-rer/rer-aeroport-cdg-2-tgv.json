@@ -61,9 +61,9 @@
         }
     },
     "intro_paragraphs": [
-        "",
-        "",
-        ""
+        "<strong>Aéroport Paris-Charles-de-Gaulle 2 TGV</strong> est la <strong>gare terminus nord du RER B</strong>, située au sein de l'aéroport CDG. Elle dessert directement les terminaux <strong>2A, 2C, 2D, 2E et 2F</strong> via la galerie marchande Vinci, et permet de rejoindre <strong>Paris-Châtelet en environ 30 minutes</strong> par le RER B.",
+        "La gare est également une <strong>gare TGV/Intercités SNCF</strong> majeure, intégrée à l'aérogare. Une <strong>navette CDGVAL automatique gratuite</strong> relie cette gare au Terminal 1 et à Roissypôle (CDG 1 / Terminal 3).",
+        "Pour <strong>tous les services aéroportuaires</strong> (terminaux, accès, sorties détaillées, parkings, hôtels, restauration), consultez notre guide complet : <a href=\"/aeroports/paris-charles-de-gaulle/\">Aéroport Paris-Charles-de-Gaulle — guide d'accès</a>."
     ],
     "history": {
         "title": "",
@@ -190,7 +190,41 @@
         "tips": [],
         "notes": ""
     },
-    "hero_image": null,
+    "hero_image": {
+        "url": "https://bougeaparis.fr/assets/img/aeroports/paris-charles-de-gaulle/source/wikimedia.jpg",
+        "alt": "Aéroport Paris-Charles-de-Gaulle — desservi par la gare RER B Terminal 2 TGV",
+        "width": 1200,
+        "height": 675,
+        "source": "cross-cluster",
+        "credit": {
+            "author": "Wilfredor",
+            "license": "CC0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+            "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_Gaulle_International_Airport_in_France.jpg",
+            "_shared_with": "/aeroports/paris-charles-de-gaulle/",
+            "_note": "Image partagée avec le hub aéroport — voir ce hub pour crédit complet"
+        },
+        "local_versions": {
+            "avif": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.avif",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.avif",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.avif",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.avif"
+            },
+            "webp": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.webp",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.webp",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.webp",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.webp"
+            },
+            "jpg": {
+                "400": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-400.jpg",
+                "800": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-800.jpg",
+                "1200": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1200.jpg",
+                "1600": "/assets/img/aeroports/paris-charles-de-gaulle/paris-charles-de-gaulle-1600.jpg"
+            }
+        }
+    },
     "accessibility": {
         "audit_status": "pending",
         "audit_date": null,
@@ -201,5 +235,6 @@
             "total_lines": 1
         },
         "details": ""
-    }
+    },
+    "_doc_cross_cluster": "Hero image partagée avec /aeroports/paris-charles-de-gaulle/ — maillage interne plutôt que duplication. GTFS IDFM ne déclare pas de location_type=2 pour cette gare aéroport (limitation systémique), exits laissés vides — accès terminaux détaillés sur le hub aéroport."
 }

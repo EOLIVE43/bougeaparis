@@ -49,12 +49,13 @@ $count = count($pois);
 
 <section class="station-section section-poi" id="poi-nearby" aria-labelledby="poi-heading">
 
-  <h2 id="poi-heading">Que voir près de la station <?= e($stationName) ?> — <?= (int)$count ?> monuments à proximité</h2>
+  <?php $_modeNoun = (isset($props['mode']) && $props['mode'] === 'rer') ? 'gare' : 'station'; ?>
+  <h2 id="poi-heading">Que voir près de la <?= e($_modeNoun) ?> <?= e($stationName) ?> — <?= (int)$count ?> monuments à proximité</h2>
 
   <p class="section-intro">
     Cette sélection de
     <strong><?= (int)$count ?> monuments et sites notables</strong>
-    autour de la station <strong><?= e($stationName) ?></strong> est composée
+    autour de la <?= e($_modeNoun) ?> <strong><?= e($stationName) ?></strong> est composée
     automatiquement à partir de Wikidata, classée par notoriété (nombre d'articles
     Wikipédia tous langages confondus). Pour chaque lieu, nous indiquons la sortie
     la plus proche et le temps à pied estimé.

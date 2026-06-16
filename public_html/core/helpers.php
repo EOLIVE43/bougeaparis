@@ -1211,6 +1211,132 @@ if (!function_exists('buildSectionTitleSorties')) {
     }
 }
 
+if (!function_exists('buildRerStationFaq')) {
+    /**
+     * Génère une FAQ data-driven pour une gare RER à partir de ses champs
+     * JSON déjà sourcés (lines, metro_correspondences, tariff_zone, exits,
+     * nearby_pois, _doc_cross_cluster). Aucune génération libre : une question
+     * n'apparaît QUE si son champ source existe et est non vide. Aucun
+     * horaire/date/temps inventé.
+     *
+     * Mode-aware : retourne [] si la station n'est pas en mode rer_pur (les
+     * pages métro continuent à utiliser le champ faq[] éditorial classique).
+     *
+     * @param array $station JSON station décodé
+     * @return array Liste de {question, answer} prête à itérer dans le template
+     */
+    function buildRerStationFaq(array $station): array
+    {
+        // Ce générateur est exclusivement pour les gares RER mode-rer.
+        if (detectStationMode($station) !== 'rer_pur') return [];
+
+        $name      = trim((string)($station['name'] ?? 'cette gare'));
+        $lines     = $station['lines'] ?? [];
+        $metroCor  = $station['metro_correspondences'] ?? [];
+        $tariff    = $station['tariff_zone'] ?? null;
+        $exits     = $station['exits'] ?? [];
+        $pois      = $station['nearby_pois'] ?? [];
+        $isAirport = !empty($station['_doc_cross_cluster'])
+                  || (str_contains((string)($station['slug'] ?? ''), 'aeroport'));
+
+        // Helpers locaux : joindre une liste avec virgules + "et" final.
+        $joinAnd = static function (array $items): string {
+            $items = array_values(array_filter(array_map('strval', $items), static fn($s) => $s !== ''));
+            $n = count($items);
+            if ($n === 0) return '';
+            if ($n === 1) return $items[0];
+            if ($n === 2) return $items[0] . ' et ' . $items[1];
+            $last = array_pop($items);
+            return implode(', ', $items) . ' et ' . $last;
+        };
+
+        $rerCodes = [];
+        foreach ($lines as $l) {
+            if (($l['type'] ?? '') === 'rer' && !empty($l['code'])) {
+                $rerCodes[] = (string)$l['code'];
+            }
+        }
+        $metroCodes = [];
+        foreach ($metroCor as $m) {
+            if (!empty($m['code'])) $metroCodes[] = (string)$m['code'];
+        }
+
+        $faq = [];
+
+        // 1. Correspondances (lines RER + metro_correspondences) — toujours si
+        //    au moins une ligne RER est connue.
+        if (!empty($rerCodes)) {
+            $rerLabel = (count($rerCodes) > 1 ? 'les RER ' : 'le RER ') . $joinAnd($rerCodes);
+            $q1 = "Quelles correspondances à la gare $name ?";
+            if (!empty($metroCodes)) {
+                $a1 = "La gare $name est desservie par $rerLabel. Elle est également en correspondance avec "
+                    . (count($metroCodes) > 1 ? 'les lignes de métro ' : 'la ligne de métro ')
+                    . $joinAnd($metroCodes) . '.';
+            } else {
+                $a1 = "La gare $name est desservie par $rerLabel.";
+            }
+            $faq[] = ['question' => $q1, 'answer' => $a1];
+        }
+
+        // 2. Sur quelle(s) ligne(s) RER (forme courte distincte de #1, sourcée).
+        if (!empty($rerCodes)) {
+            $q2 = "Sur quelle ligne se trouve la gare $name ?";
+            $a2 = (count($rerCodes) > 1
+                ? "La gare $name est située sur les lignes de RER " . $joinAnd($rerCodes) . '.'
+                : "La gare $name est située sur la ligne de RER " . $rerCodes[0] . '.');
+            $faq[] = ['question' => $q2, 'answer' => $a2];
+        }
+
+        // 3. Zone tarifaire (si renseignée).
+        if ($tariff !== null && $tariff !== '') {
+            $tariffStr = (string)$tariff;
+            $faq[] = [
+                'question' => "Dans quelle zone tarifaire se trouve la gare $name ?",
+                'answer'   => "La gare $name est située en zone tarifaire $tariffStr du réseau Île-de-France Mobilités.",
+            ];
+        }
+
+        // 4. Combien de sorties (seulement si >0).
+        $nExits = is_array($exits) ? count($exits) : 0;
+        if ($nExits > 0) {
+            $faq[] = [
+                'question' => "Combien de sorties compte la gare $name ?",
+                'answer'   => "La gare $name compte $nExits sortie" . ($nExits > 1 ? 's' : '') . ' numérotée'
+                            . ($nExits > 1 ? 's' : '') . ', recensée'
+                            . ($nExits > 1 ? 's' : '') . ' à partir des données GTFS Île-de-France Mobilités.',
+            ];
+        }
+
+        // 5. POI à proximité (top 3, déjà sourcés Wikidata).
+        if (is_array($pois) && !empty($pois)) {
+            $top = array_slice($pois, 0, 3);
+            $names = array_values(array_filter(array_map(
+                static fn($p) => (string)($p['name'] ?? ''),
+                $top
+            ), static fn($s) => $s !== ''));
+            if (!empty($names)) {
+                $faq[] = [
+                    'question' => "Quels sont les lieux à proximité de la gare $name ?",
+                    'answer'   => "Parmi les lieux notables à proximité de la gare $name : " . $joinAnd($names)
+                                . '. Données issues de Wikidata.',
+                ];
+            }
+        }
+
+        // 6. CDG / aéroport : maillage hub (si _doc_cross_cluster présent).
+        if ($isAirport) {
+            $faq[] = [
+                'question' => "Comment rejoindre les terminaux depuis la gare $name ?",
+                'answer'   => "Les accès aux terminaux, sorties et services aéroportuaires détaillés "
+                            . "sont décrits dans notre <a href=\"/aeroports/paris-charles-de-gaulle/\">"
+                            . "guide complet de l'aéroport Paris-Charles-de-Gaulle</a>.",
+            ];
+        }
+
+        return $faq;
+    }
+}
+
 if (!function_exists('buildSectionTitleItineraires')) {
     /** Titre H2 section Itinéraires populaires, adaptatif au mode. */
     function buildSectionTitleItineraires(array $station): string

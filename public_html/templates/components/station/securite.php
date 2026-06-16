@@ -36,10 +36,11 @@ $levelLabels = [
 
 <section class="station-section section-securite" id="securite" aria-labelledby="securite-title">
 
-  <h2 id="securite-title">Sécurité à la station <?= Template::e($stationName) ?></h2>
+  <?php $_modeNoun = (isset($props['mode']) && $props['mode'] === 'rer') ? 'gare' : 'station'; ?>
+  <h2 id="securite-title">Sécurité à la <?= e($_modeNoun) ?> <?= Template::e($stationName) ?></h2>
 
   <p class="section-intro">
-    Voici les informations sécurité disponibles pour la station <strong><?= Template::e($stationName) ?></strong>. En cas d'incident ou de comportement suspect, prévenez immédiatement un agent RATP ou composez le numéro d'urgence RATP.
+    Voici les informations sécurité disponibles pour la <?= e($_modeNoun) ?> <strong><?= Template::e($stationName) ?></strong>. En cas d'incident ou de comportement suspect, prévenez immédiatement un agent RATP ou composez le numéro d'urgence RATP.
   </p>
 
   <?php if ($level && isset($levelLabels[$level])): ?>

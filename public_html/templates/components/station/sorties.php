@@ -120,8 +120,14 @@ $renderItem = function (array $exit): void {
 
   <h2 id="sorties-title"><?= e($props['sectionTitle'] ?? ('Sorties de la station ' . $stationName)) ?></h2>
 
+  <?php
+    // Mode-aware "gare" (RER) vs "station" (métro). On lit le mode passé par le
+    // template (prop 'mode' = 'rer' | 'metro' | null), avec fallback 'station'.
+    $_modeNoun = (isset($props['mode']) && $props['mode'] === 'rer') ? 'gare' : 'station';
+    $_organizer = $_modeNoun === 'gare' ? 'la RATP/SNCF' : 'la RATP';
+  ?>
   <p class="section-intro">
-    La <strong>station <?= e($stationName) ?></strong> compte
+    La <strong><?= e($_modeNoun) ?> <?= e($stationName) ?></strong> compte
     <strong><?= (int)$count ?> sortie<?= $count > 1 ? 's' : '' ?> numérotée<?= $count > 1 ? 's' : '' ?></strong>
     permettant d'accéder à la surface.
     <?php if ($pmrCount > 0): ?>
@@ -129,7 +135,7 @@ $renderItem = function (array $exit): void {
       aux personnes à mobilité réduite.
     <?php endif; ?>
     <?php if ($displayInSectors): ?>
-      Elles sont organisées par la RATP en <strong><?= count(array_filter($bySector, fn($v) => !empty($v) && $v !== $bySector['_other'])) ?> secteurs</strong> distincts pour faciliter votre orientation en station.
+      Elles sont organisées par <?= e($_organizer) ?> en <strong><?= count(array_filter($bySector, fn($v) => !empty($v) && $v !== $bySector['_other'])) ?> secteurs</strong> distincts pour faciliter votre orientation en <?= e($_modeNoun) ?>.
     <?php else: ?>
       Repérez la sortie la plus proche de votre destination en surface pour gagner du temps.
     <?php endif; ?>

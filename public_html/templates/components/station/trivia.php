@@ -21,6 +21,20 @@ $stationName = $props['stationName'] ?? '';
 if (empty($trivia) || !is_array($trivia)) {
     return;
 }
+
+// Garde réelle : skip si aucun item n'a title ET content non vides (stubs
+// auto-bootstrap = tous les champs en ''). Évite un H2 orphelin "Le saviez-vous"
+// suivi d'une grille vide.
+$_triviaHasContent = false;
+foreach ($trivia as $_item) {
+    if (is_array($_item)
+        && trim((string)($_item['title']   ?? '')) !== ''
+        && trim((string)($_item['content'] ?? '')) !== '') {
+        $_triviaHasContent = true;
+        break;
+    }
+}
+if (!$_triviaHasContent) return;
 ?>
 
 <section class="station-section section-trivia" id="trivia" aria-labelledby="trivia-heading">

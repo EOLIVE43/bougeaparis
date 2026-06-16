@@ -78,7 +78,7 @@ if ($nbExits === 0 && $nbPois === 0) return;
 
 <section class="station-section section-carte" id="plan" aria-labelledby="carte-title">
 
-  <h2 id="carte-title">Plan de la station <?= e($stationName) ?></h2>
+  <h2 id="carte-title">Plan de la <?= (isset($props['mode']) && $props['mode'] === 'rer') ? 'gare' : 'station' ?> <?= e($stationName) ?></h2>
 
   <p class="section-intro">
     Visualisez d'un coup d'œil

@@ -247,17 +247,32 @@ $stationNode = [
     'subwayLine'         => $subwayLines,
 ];
 
-// 3. FAQPage (si la station a une FAQ)
+// 3. FAQPage (alignée sur ce qui est réellement rendu côté HTML).
+//    Priorité : FAQ éditoriale ($faq[] avec questions+answers non vides) sinon
+//    générateur data-driven pour les gares RER. Aucun schema fantôme : la
+//    liste JSON-LD reflète exactement les <details> rendus en HTML plus bas.
+$_faqEditForSchema = array_values(array_filter(
+    $faq,
+    static fn($f) => is_array($f)
+        && !empty(trim((string)($f['question'] ?? '')))
+        && !empty(trim((string)($f['answer'] ?? '')))
+));
+$_faqForSchema = !empty($_faqEditForSchema)
+    ? $_faqEditForSchema
+    : (detectStationMode($station) === 'rer_pur' ? buildRerStationFaq($station) : []);
+
 $faqNode = null;
-if (!empty($faq)) {
+if (!empty($_faqForSchema)) {
     $faqEntities = [];
-    foreach ($faq as $item) {
+    foreach ($_faqForSchema as $item) {
+        // Réponse texte brut (strip_tags) pour le schema (la version HTML reste
+        // dans le rendu visible plus bas via richText()).
         $faqEntities[] = [
             '@type'          => 'Question',
-            'name'           => $item['question'],
+            'name'           => (string)$item['question'],
             'acceptedAnswer' => [
                 '@type' => 'Answer',
-                'text'  => $item['answer'],
+                'text'  => trim(strip_tags((string)$item['answer'])),
             ],
         ];
     }
@@ -1051,6 +1066,7 @@ $tpl->partial('components/breadcrumb', [
       'exitSectors'  => $station['exit_sectors'] ?? null,
       'stationName'  => $name,
       'sectionTitle' => buildSectionTitleSorties($station),
+      'mode'         => detectStationMode($station) === 'rer_pur' ? 'rer' : 'metro',
   ]);
   ?>
 
@@ -1076,6 +1092,7 @@ $tpl->partial('components/breadcrumb', [
       ],
       'exits' => $station['exits']        ?? [],
       'pois'  => $station['nearby_pois']  ?? [],
+      'mode'  => detectStationMode($station) === 'rer_pur' ? 'rer' : 'metro',
   ]);
   ?>
 
@@ -1105,19 +1122,27 @@ $tpl->partial('components/breadcrumb', [
   <?php $tpl->partial('components/station/poi-nearby', [
       'pois'        => $station['nearby_pois'] ?? [],
       'stationName' => $name,
+      'mode'        => detectStationMode($station) === 'rer_pur' ? 'rer' : 'metro',
   ]);
   ?>
 
   <!-- ============================================================
        5. HISTOIRE
        ============================================================ -->
-  <?php if (!empty($history['paragraphs'])): ?>
+  <?php
+  // Garde réelle : skip si tous les paragraphs sont vides (stubs auto-bootstrap).
+  $_historyParas = array_values(array_filter(
+      $history['paragraphs'] ?? [],
+      static fn($p) => is_string($p) && trim($p) !== ''
+  ));
+  ?>
+  <?php if (!empty($_historyParas)): ?>
     <section class="station-section section-history" id="histoire" aria-labelledby="history-title">
       <h2 id="history-title">Histoire de la <?= detectStationMode($station) === 'rer_pur' ? 'gare' : 'station' ?> <?= Template::e($nameFull) ?></h2>
       <?php if (!empty($history['title']) && $history['title'] !== 'Histoire de la station'): ?>
         <p class="section-subtitle"><em><?= Template::e($history['title']) ?></em></p>
       <?php endif; ?>
-      <?php foreach ($history['paragraphs'] as $para): ?>
+      <?php foreach ($_historyParas as $para): ?>
         <p><?= $para ?></p>
       <?php endforeach; ?>
     </section>
@@ -1133,14 +1158,31 @@ $tpl->partial('components/breadcrumb', [
 
   <!-- ============================================================
        6. FAQ (rendu HTML — schema.org est dans le head via $seo->addSchema)
-       ============================================================ -->
-  <?php if (!empty($faq)): ?>
+       ============================================================
+       Source FAQ : éditorial $faq[] (si rempli) sinon générateur data-driven
+       pour les gares RER (T0 strict : aucune donnée inventée, voir
+       buildRerStationFaq dans core/helpers.php). Une question n'apparaît que
+       si son champ source existe. JSON-LD FAQPage rendu plus loin (head)
+       reflète la même liste — pas de schema fantôme.
+  -->
+  <?php
+  // Garde "FAQ éditoriale réellement remplie" : items avec question ET answer
+  // non vides (les stubs auto-bootstrap ont les 2 champs en '').
+  $_faqEdit = array_values(array_filter(
+      $faq,
+      static fn($f) => is_array($f) && !empty(trim((string)($f['question'] ?? ''))) && !empty(trim((string)($f['answer'] ?? '')))
+  ));
+  $_faqRender = !empty($_faqEdit)
+      ? $_faqEdit
+      : (detectStationMode($station) === 'rer_pur' ? buildRerStationFaq($station) : []);
+  ?>
+  <?php if (!empty($_faqRender)): ?>
     <section class="station-section section-faq" id="faq" aria-labelledby="faq-title">
 
-      <h2 id="faq-title">Questions fréquentes sur la station <?= Template::e($name) ?></h2>
+      <h2 id="faq-title">Questions fréquentes sur la <?= detectStationMode($station) === 'rer_pur' ? 'gare' : 'station' ?> <?= Template::e($name) ?></h2>
 
       <div class="faq-list">
-        <?php foreach ($faq as $i => $item): ?>
+        <?php foreach ($_faqRender as $i => $item): ?>
           <details class="faq-item" <?= $i === 0 ? 'open' : '' ?>>
             <summary class="faq-question">
               <h3 class="faq-question__heading"><?= richText($item['question']) ?></h3>
@@ -1163,16 +1205,24 @@ $tpl->partial('components/breadcrumb', [
   <?php $tpl->partial('components/station/securite', [
       'safety'      => $station['safety'] ?? null,
       'stationName' => $name,
+      'mode'        => detectStationMode($station) === 'rer_pur' ? 'rer' : 'metro',
   ]); ?>
 
   <!-- ============================================================
        7. CONSEILS PRATIQUES
        ============================================================ -->
-  <?php if (!empty($tips)): ?>
+  <?php
+  // Garde réelle : skip si tous les tips sont vides (stubs auto-bootstrap).
+  $_tipsNonEmpty = array_values(array_filter(
+      $tips,
+      static fn($t) => is_string($t) && trim($t) !== ''
+  ));
+  ?>
+  <?php if (!empty($_tipsNonEmpty)): ?>
     <section class="station-section section-tips" id="conseils" aria-labelledby="tips-title">
       <h2 id="tips-title">Conseils pratiques pour bien circuler à <?= Template::e($name) ?></h2>
       <ul class="tips-list">
-        <?php foreach ($tips as $tip): ?>
+        <?php foreach ($_tipsNonEmpty as $tip): ?>
           <li><span class="tips-icon" aria-hidden="true">💡</span> <?= richText($tip) ?></li>
         <?php endforeach; ?>
       </ul>
