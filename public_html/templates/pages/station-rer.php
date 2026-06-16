@@ -515,6 +515,7 @@ $tpl->partial('components/breadcrumb', [
   <?php $tpl->partial('components/station/trafic-info-seo', [
       'stationName' => $name,
       'lines'       => $lines,
+      'mode'        => $isRerPage ? 'rer' : 'metro',
   ]);
   ?>
 
@@ -552,8 +553,22 @@ $tpl->partial('components/breadcrumb', [
       <!-- Lignes primaires : RER (mode rer) ou Métro (mode metro) -->
       <div class="correspondances-block">
         <h3>
-          <?php if ($isRerPage): ?>
-            Lignes de RER à <?= Template::e($name) ?>
+          <?php if ($isRerPage):
+            // H3 enrichi code-aware : "Ligne RER B à {Nom}" (1) ou
+            // "Lignes RER A, B et D à {Nom}" (multi). Codes lus depuis lines[].
+            $_rerH3Codes = [];
+            foreach ($lines as $_l) {
+                if (($_l['type'] ?? '') === 'rer' && !empty($_l['code'])) {
+                    $_rerH3Codes[] = (string)$_l['code'];
+                }
+            }
+            $_n = count($_rerH3Codes);
+            $_codesJoin = '';
+            if ($_n === 1)      $_codesJoin = $_rerH3Codes[0];
+            elseif ($_n === 2)  $_codesJoin = $_rerH3Codes[0] . ' et ' . $_rerH3Codes[1];
+            elseif ($_n >= 3)   { $_last = $_rerH3Codes[$_n - 1]; $_codesJoin = implode(', ', array_slice($_rerH3Codes, 0, -1)) . ' et ' . $_last; }
+            ?>
+            <?= $_n === 1 ? 'Ligne' : 'Lignes' ?> RER <?= Template::e($_codesJoin) ?> à <?= Template::e($name) ?>
           <?php else: ?>
             Lignes de métro à <?= Template::e($name) ?>
           <?php endif; ?>
@@ -1050,12 +1065,25 @@ $tpl->partial('components/breadcrumb', [
       $modesList = empty($modesParts) ? $last : implode(', ', $modesParts) . ' et ' . $last;
   }
   ?>
+  <?php
+  // Codes RER pour H2 tarifs enrichi en mode rer.
+  $_tarifsRerCodes = [];
+  if ($isRerPage) {
+      foreach ($lines as $_l) {
+          if (($_l['type'] ?? '') === 'rer' && !empty($_l['code'])) {
+              $_tarifsRerCodes[] = (string)$_l['code'];
+          }
+      }
+  }
+  ?>
   <?php $tpl->partial('components/station/tarifs', [
       'stationName'       => $name,
       'tariffZone'        => $station['tariff_zone'] ?? null,
       'tariffZoneContext' => $station['tariff_zone_context'] ?? null,
       'commune'           => $station['commune'] ?? null,
       'modesList'         => $modesList ?: null,
+      'mode'              => $isRerPage ? 'rer' : 'metro',
+      'rerCodes'          => $_tarifsRerCodes,
   ]); ?>
 
   <!-- ============================================================

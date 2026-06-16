@@ -46,14 +46,22 @@ $linesList = $formatLines($codes);
 $nbLines   = count($codes);
 ?>
 
+<?php
+  // Mode-aware : injecter "RER {codes}" dans H2 quand mode rer (SEO keyword
+  // "trafic RER B"). Métro inchangé.
+  $_modeRer   = (isset($props['mode']) && $props['mode'] === 'rer');
+  $_titleMid  = $_modeRer ? ('RER ' . $linesList . ' en temps réel') : 'en temps réel';
+  $_modeNoun  = $_modeRer ? 'gare' : 'station';
+  $_lineNoun  = $_modeRer ? 'lignes de RER' : 'lignes du métro';
+?>
 <section class="trafic-info-seo" aria-labelledby="trafic-seo-title">
   <h2 id="trafic-seo-title" class="trafic-info-seo__title">
-    Info trafic en temps réel à <?= e($stationName) ?>
+    Info trafic <?= e($_titleMid) ?> à <?= e($stationName) ?>
   </h2>
   <p class="trafic-info-seo__lead">
     Cette page affiche en direct l'état du trafic sur les
-    <strong><?= (int)$nbLines ?> lignes du métro</strong>
-    desservant la station <strong><?= e($stationName) ?></strong> :
+    <strong><?= (int)$nbLines ?> <?= e($_lineNoun) ?></strong>
+    desservant la <?= e($_modeNoun) ?> <strong><?= e($stationName) ?></strong> :
     lignes <?= e($linesList) ?>.
     En cas de <strong>perturbation</strong>, panne de signalisation,
     incident technique ou travaux, le détail s'affiche au-dessus avec la

@@ -145,28 +145,47 @@ $renderCard = function (string $key, array $t) {
 };
 ?>
 
+<?php
+  // Mode-aware : H2 enrichi "Tarifs RER {codes} à {Nom}" (SEO "tarif RER B").
+  // Allègement H3 enfants : pas de "à {Nom}" en mode rer (H2 parent porte
+  // déjà le géo-signal, évite la répétition lourde).
+  $_modeRer    = (isset($props['mode']) && $props['mode'] === 'rer');
+  $_rerCodes   = is_array($props['rerCodes'] ?? null) ? $props['rerCodes'] : [];
+  $_codesStr   = '';
+  if ($_modeRer && !empty($_rerCodes)) {
+      $_n = count($_rerCodes);
+      if ($_n === 1)      $_codesStr = ' RER ' . $_rerCodes[0];
+      elseif ($_n === 2)  $_codesStr = ' RER ' . $_rerCodes[0] . ' et ' . $_rerCodes[1];
+      else {
+          $_last = $_rerCodes[$_n - 1];
+          $_codesStr = ' RER ' . implode(', ', array_slice($_rerCodes, 0, -1)) . ' et ' . $_last;
+      }
+  }
+  // H3 suffix : '' en mode rer (allégé), " à {Nom}" en mode metro (inchangé).
+  $_h3GeoSuffix = $_modeRer ? '' : (' à ' . Template::e($stationName));
+?>
 <section class="station-section section-tarifs" id="tarifs" aria-labelledby="tarifs-title">
 
-  <h2 id="tarifs-title">Tarifs et titres de transport à <?= Template::e($stationName) ?></h2>
+  <h2 id="tarifs-title"><?php if ($_modeRer): ?>Tarifs<?= e($_codesStr) ?> à <?= Template::e($stationName) ?><?php else: ?>Tarifs et titres de transport à <?= Template::e($stationName) ?><?php endif; ?></h2>
 
   <?php foreach ($introParts as $i => $part): ?>
     <p<?= $i === 0 ? ' class="section-intro"' : '' ?>><?= $part ?></p>
   <?php endforeach; ?>
 
-  <h3 class="tarifs-subtitle">Tickets à l'unité ou en carnet à <?= Template::e($stationName) ?></h3>
+  <h3 class="tarifs-subtitle">Tickets à l'unité ou en carnet<?= $_h3GeoSuffix ?></h3>
   <div class="tarifs-grid">
     <?php foreach ($tickets as $key => $t) $renderCard($key, $t); ?>
   </div>
 
   <?php if (!empty($passes)): ?>
-    <h3 class="tarifs-subtitle">Forfaits et abonnements Navigo à <?= Template::e($stationName) ?></h3>
+    <h3 class="tarifs-subtitle">Forfaits et abonnements Navigo<?= $_h3GeoSuffix ?></h3>
     <div class="tarifs-grid">
       <?php foreach ($passes as $key => $t) $renderCard($key, $t); ?>
     </div>
   <?php endif; ?>
 
   <?php if (!empty($free)): ?>
-    <h3 class="tarifs-subtitle">Tarifs réduits et gratuités à <?= Template::e($stationName) ?></h3>
+    <h3 class="tarifs-subtitle">Tarifs réduits et gratuités<?= $_h3GeoSuffix ?></h3>
     <ul class="tarifs-reduits-list">
       <?php foreach ($free as $fc): ?>
         <li>
