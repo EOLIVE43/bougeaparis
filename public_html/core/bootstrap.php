@@ -30,7 +30,10 @@ if ($debug) {
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
 } else {
-    error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
+    // E_STRICT deprecated en PHP 8.4 (retiré en 9.x). E_ALL inclut déjà les
+    // niveaux strict ; ne pas l'exclure explicitement (sinon le constant lookup
+    // émet lui-même un Deprecated dès 8.4).
+    error_reporting(E_ALL & ~E_DEPRECATED);
     ini_set('display_errors', '0');
     ini_set('log_errors', '1');
 }

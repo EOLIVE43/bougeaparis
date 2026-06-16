@@ -161,12 +161,28 @@ if ($hasImage && !empty($heroImage['url'])) {
 
 $siteUrl       = rtrim(Config::get('site.url'), '/');
 $canonicalAbs  = $siteUrl . $canonical;
-$breadcrumbItems = [
-    ['label' => 'Accueil',     'url' => '/'],
-    ['label' => 'Se déplacer', 'url' => '/se-deplacer/'],
-    ['label' => 'Métro',       'url' => '/metro/'],
-    ['label' => $name,         'url' => $canonical],
-];
+
+// Breadcrumb mode-aware : "RER" / "Gare" pour mode rer, "Métro" / "Station"
+// pour mode metro (compat ascendante 320 pages). Les items déclarés ici
+// alimentent le JSON-LD BreadcrumbList ; le HTML visuel utilise la même
+// hiérarchie plus bas (partial breadcrumb).
+if ($isRerPage) {
+    // RER : Accueil > RER > Gares > Gare {Nom} (4 niveaux cohérents HTML+LD)
+    $breadcrumbItems = [
+        ['label' => 'Accueil',       'url' => '/'],
+        ['label' => 'RER',           'url' => '/rer/'],
+        ['label' => 'Gares',         'url' => '/rer/'],
+        ['label' => 'Gare ' . $name, 'url' => $canonical],
+    ];
+} else {
+    // Métro : hiérarchie historique inchangée (320 pages prod).
+    $breadcrumbItems = [
+        ['label' => 'Accueil',     'url' => '/'],
+        ['label' => 'Se déplacer', 'url' => '/se-deplacer/'],
+        ['label' => 'Métro',       'url' => '/metro/'],
+        ['label' => $name,         'url' => $canonical],
+    ];
+}
 
 // 1. BreadcrumbList
 $breadcrumbList = [];
@@ -324,15 +340,26 @@ $tpl->seo->addSchema([
 ?>
 
 <?php
-// Breadcrumb visible en haut de page
-$tpl->partial('components/breadcrumb', [
-    'items' => [
-        ['label' => 'Accueil',  'url' => '/'],
-        ['label' => 'Métro',    'url' => '/metro/'],
-        ['label' => 'Stations', 'url' => '/metro/'],
-        ['label' => 'Station ' . $name],
-    ],
-]);
+// Breadcrumb visible — même hiérarchie mode-aware que le JSON-LD plus haut.
+if ($isRerPage) {
+    $tpl->partial('components/breadcrumb', [
+        'items' => [
+            ['label' => 'Accueil', 'url' => '/'],
+            ['label' => 'RER',     'url' => '/rer/'],
+            ['label' => 'Gares',   'url' => '/rer/'],
+            ['label' => 'Gare ' . $name],
+        ],
+    ]);
+} else {
+    $tpl->partial('components/breadcrumb', [
+        'items' => [
+            ['label' => 'Accueil',  'url' => '/'],
+            ['label' => 'Métro',    'url' => '/metro/'],
+            ['label' => 'Stations', 'url' => '/metro/'],
+            ['label' => 'Station ' . $name],
+        ],
+    ]);
+}
 ?>
 
 <div class="container">
