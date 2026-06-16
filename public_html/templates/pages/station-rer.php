@@ -97,27 +97,19 @@ $arrLabel = $arr ? ' (Paris ' . $arr . ')' : '';
 $metaDesc = buildStationMetaDescription($station);
 $metaKw   = buildStationMetaKeywords($station);
 
-// Title SEO via helper centralisé bp_title_station_rer() — pattern RER :
-// "RER {Nom} (A, B, D) : plan et horaires" (≤ 65 car affichés Google).
-// Codes RER lus depuis $station['lines'] (type=rer), correspondances métro/tram
-// listées en complément.
-$_stationCodes = [];
+// Title SEO via helper centralisé bp_title_station_rer() — pattern code-aware :
+// "RER {codes} {Nom} : plan et horaires" (≤ 65 car affichés Google).
+// SEULEMENT les codes RER de lines[] — les correspondances métro/tram restent
+// hors du title (signal SEO clair, requête utilisateur "RER B Antony" matchée
+// directement plutôt qu'un "(B)" éclaté en fin de title).
+$_rerCodes = [];
 foreach (($station['lines'] ?? []) as $_l) {
     if (($_l['type'] ?? '') === 'rer' && !empty($_l['code'])) {
-        $_stationCodes[] = (string)$_l['code'];
+        $_rerCodes[] = (string)$_l['code'];
     }
 }
-foreach (($station['metro_correspondences'] ?? []) as $_m) {
-    if (!empty($_m['code'])) $_stationCodes[] = 'M' . $_m['code'];
-}
-foreach (($station['tramway_correspondences'] ?? []) as $_t) {
-    if (!empty($_t['code'])) $_stationCodes[] = 'T' . $_t['code'];
-}
-foreach (($station['transilien_correspondences'] ?? []) as $_tr) {
-    if (!empty($_tr['code'])) $_stationCodes[] = (string)$_tr['code'];
-}
 $tpl->seo
-    ->setTitle(bp_title_station_rer($station['name'] ?? '', $_stationCodes), false)
+    ->setTitle(bp_title_station_rer($station['name'] ?? '', $_rerCodes), false)
     ->setDescription($metaDesc)
     ->setKeywords($metaKw)
     ->setCanonical($canonical);

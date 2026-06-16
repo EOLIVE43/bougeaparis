@@ -43,19 +43,42 @@ if (!function_exists('bp_title_station')) {
     }
 
     /**
-     * Title station RER.
-     * Pattern : "RER {Nom} ({lignes}) : plan et horaires"
-     * Ex : "RER Châtelet — Les Halles (A, B, D) : plan et horaires"
+     * Title gare RER (mode-rer pure — codes RER uniquement, pas les
+     * correspondances métro/tram qui doivent être tenues hors du title).
+     *
+     * Pattern : "RER {codes joints} {Nom} : plan et horaires"
+     *   1 ligne : "RER B Antony : plan et horaires"
+     *   N lignes : "RER A, B, D Châtelet - Les Halles : plan et horaires"
+     *
+     * Code-aware = mot-clé "RER {code}" groupé en tête (matche la requête
+     * utilisateur). mb_strlen pour caractères Unicode (pas bytes — le bug
+     * accents 'é' du cluster aéroport ne se reproduira pas).
+     *
+     * Fallbacks longueur (≤65 caractères affichés Google) :
+     *   1. retire " : plan et horaires" → "RER B Antony : plan"
+     *   2. retire encore → "RER B Antony"
      */
-    function bp_title_station_rer(string $name, array $codes): string
+    function bp_title_station_rer(string $name, array $rerCodes): string
     {
-        $codes = array_values(array_filter($codes));
-        $shown = array_slice($codes, 0, 5);
-        $extra = count($codes) > 5 ? '…' : '';
-        $codesStr = $shown ? '(' . implode(', ', $shown) . $extra . ')' : '';
-        $title = trim("RER $name $codesStr : plan et horaires");
-        if (strlen($title) > 65 && $codes) {
-            $title = trim("RER $name : plan et horaires");
+        $name     = trim($name);
+        $rerCodes = array_values(array_filter(
+            array_map('strval', $rerCodes),
+            static fn($c) => $c !== ''
+        ));
+        if (empty($rerCodes)) {
+            // Pas de code RER (cas dégénéré) — fallback minimaliste.
+            return trim("RER $name : plan et horaires");
+        }
+        $shown   = array_slice($rerCodes, 0, 5);
+        $extra   = count($rerCodes) > 5 ? '…' : '';
+        $codesStr = implode(', ', $shown) . $extra;
+
+        $title = "RER $codesStr $name : plan et horaires";
+        if (mb_strlen($title, 'UTF-8') > 65) {
+            $title = "RER $codesStr $name : plan";
+            if (mb_strlen($title, 'UTF-8') > 65) {
+                $title = "RER $codesStr $name";
+            }
         }
         return $title;
     }
