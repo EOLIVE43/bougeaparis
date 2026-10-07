@@ -1,0 +1,2026 @@
+{
+    "generated_at": "2026-10-07T10:48:22+00:00",
+    "date": "2026-10-07",
+    "article_slug": "2026-10-07-bulletin-chiffres",
+    "article_url": "/info-trafic/2026-10-07-bulletin-chiffres/",
+    "total_disruptions": 132,
+    "stats_total": {
+        "bloquante": 82,
+        "perturbee": 45,
+        "information": 5,
+        "total": 132
+    },
+    "stats_by_mode": {
+        "metro": {
+            "bloquante": 3,
+            "perturbee": 8,
+            "information": 0,
+            "total": 11
+        },
+        "rer": {
+            "bloquante": 0,
+            "perturbee": 14,
+            "information": 0,
+            "total": 14
+        },
+        "tramway": {
+            "bloquante": 3,
+            "perturbee": 2,
+            "information": 5,
+            "total": 10
+        },
+        "transilien": {
+            "bloquante": 0,
+            "perturbee": 21,
+            "information": 0,
+            "total": 21
+        },
+        "bus": {
+            "bloquante": 76,
+            "perturbee": 0,
+            "information": 0,
+            "total": 76
+        }
+    },
+    "lines": {
+        "metro-ligne-4": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "4",
+                "label": "Métro 4",
+                "slug": "metro/ligne-4"
+            },
+            "disruptions": [
+                {
+                    "id": "618f61cd-202e-4bdf-8756-4ea8859d8b39",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Métro 4 : Travaux de rénovation - Arrêt non desservi",
+                    "message": "Jusqu'au 19 décembre inclus, l'arrêt n'est pas desservi à Saint-Michel en raison de travaux de rénovation",
+                    "shortMessage": "Arrêt non desservi",
+                    "lastUpdate": "20261002T144411"
+                }
+            ]
+        },
+        "metro-ligne-9": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "9",
+                "label": "Métro 9",
+                "slug": "metro/ligne-9"
+            },
+            "disruptions": [
+                {
+                    "id": "15ac818b-515a-4bf4-8028-03a94a4511b4",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 9 : Bagage oublié dans un train - Trafic interrompu",
+                    "message": "Le trafic est interrompu entre Havre-Caumartin et Oberkampf et perturbé sur le reste de la ligne en raison d'un bagage oublié dans un train à Bonne Nouvelle.\nReprise estimée : 13:00.\nVeuillez emprunter des itinéraires alternatifs et vous rapprocher des agents RATP.",
+                    "shortMessage": "Trafic interrompu",
+                    "lastUpdate": "20261007T123610"
+                }
+            ]
+        },
+        "metro-ligne-8": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "8",
+                "label": "Métro 8",
+                "slug": "metro/ligne-8"
+            },
+            "disruptions": [
+                {
+                    "id": "78b41495-d1df-423f-a43a-be1a8dfe77ca",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Métro 8 : Travaux de rénovation - Arrêt non desservi",
+                    "message": "Jusqu'au 22 avril 2027 inclus, l'arrêt n'est pas desservi à République en raison de travaux de rénovation",
+                    "shortMessage": "Arrêt non desservi",
+                    "lastUpdate": "20260722T044616"
+                },
+                {
+                    "id": "eb059cc5-a32f-4f56-be81-995e27030bff",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 8 : Métro en panne - Trafic perturbé",
+                    "message": "Le trafic est perturbé sur toute la ligne en raison d'un métro en panne à Grands Boulevards .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T123809"
+                }
+            ]
+        },
+        "tramway-ligne-t1": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T1",
+                "label": "Tramway T1",
+                "slug": "tramway/ligne-t1"
+            },
+            "disruptions": [
+                {
+                    "id": "6dffde43-e0d9-4b7a-8290-c2eb1c39f756",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Tramway T1 : Intervention des secours - Trafic interrompu",
+                    "message": "Le trafic est interrompu entre Marché de Saint-Denis et Gare de Saint-Denis en raison d'une intervention des secours à L'Île-Saint-Denis.\nReprise estimée : 12:15.\nVeuillez emprunter des itinéraires alternatifs et vous rapprocher des agents RATP.",
+                    "shortMessage": "Trafic interrompu",
+                    "lastUpdate": "20261007T115409"
+                },
+                {
+                    "id": "d4dffd02-bfc0-48c4-a46c-da4287114a5f",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Tramway T1 : Panne d’alimentation électrique d’un tram - Trafic interrompu",
+                    "message": "Le trafic est interrompu entre Marché de Saint-Denis et Gare de Saint-Denis en raison d'une panne d’alimentation électrique d’un tram à Théâtre Gérard Philippe.\nReprise estimée : 14:00.\nVeuillez emprunter des itinéraires alternatifs et vous rapprocher des agents RATP.",
+                    "shortMessage": "Trafic interrompu",
+                    "lastUpdate": "20261007T115417"
+                }
+            ]
+        },
+        "tramway-t14": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T14",
+                "label": "Tramway T14",
+                "slug": "tramway-t14"
+            },
+            "disruptions": [
+                {
+                    "id": "237d9e9a-7d3c-4cad-aa94-75ea47c070ba",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Tramway T14 -  Mouvement social du 6/10 au 9/10.",
+                    "message": "De mardi 6 au vendredi 9 octobre.\n\nTrafic interrompu sur la ligne T14.\n\nDes bus de remplacement sont mis en œuvre. Prévoyez un allongement de temps de parcours. Dans la mesure du possible, nous vous conseillons de limiter vos déplacements.\n\nRetrouvez toutes ces informations sur l’appli Ile-de-France Mobilités et le site iledefrance-mobilites.fr ou votre appli de mobilité.\n\nMotif : Mouvement social.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261007T094121"
+                }
+            ]
+        },
+        "bus-84": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "84",
+                "label": "Bus 84",
+                "slug": "bus-84"
+            },
+            "disruptions": [
+                {
+                    "id": "0b1fb4eb-ce65-49ae-84ca-3f59b6f691d6",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 84 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 84 est déviée : les arrêts situés entre Assemblée Nationale et Haussmann - Miromesnil ne sont plus desservis en direction de Alsace. Reprise estimée : jeudi 8 octobre 2026, à partir de 23h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T090209"
+                },
+                {
+                    "id": "aca14726-02f6-458c-8bbe-1e4a9b5dee21",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 89 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 89 est déviée : les arrêts situés entre Panthéon et Rennes - Raspail ne sont plus desservis en direction de Gare de Vanves – Malakoff. Reprise estimée : vendredi 16 octobre 2026, à partir de 04h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T122635"
+                },
+                {
+                    "id": "3f80d4d6-5fc3-4ca0-ab35-f909be0719a2",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 84 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 84 est déviée : les arrêts situés entre Charlotte Perriand et Assemblée Nationale ne sont plus desservis en direction de Alsace. Reprise estimée : 18h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T121818"
+                },
+                {
+                    "id": "f6886026-ea05-457f-9f1f-c90841c270db",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 84 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 84 est déviée : les arrêts situés entre Panthéon et Michel Debré ne sont plus desservis en direction de Alsace. Reprise estimée : 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T111327"
+                }
+            ]
+        },
+        "bus-202": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "202",
+                "label": "Bus 202",
+                "slug": "bus-202"
+            },
+            "disruptions": [
+                {
+                    "id": "d4b5b8ce-9f3f-4896-8ba9-5cd166ce779e",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 202 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 202 est déviée : les arrêts situés entre Montreuil - Boissière - Acacia et Mairie de Montreuil - Rouget de Lisle ne sont plus desservis en direction de Porte de Montreuil. Reprise estimée : mercredi 28 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261002T151626"
+                },
+                {
+                    "id": "d3659a2a-1ddf-4ac3-943c-da9e8908f0df",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 202 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 202 est déviée : les arrêts situés entre Lycée Jean Jaurès et Montreuil - Boissière - Acacia ne sont plus desservis en direction de Montreuil – Boissière – Acacia. Reprise estimée : jeudi 8 octobre 2026, à partir de 03h03. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261002T151612"
+                }
+            ]
+        },
+        "bus-46": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "46",
+                "label": "Bus 46",
+                "slug": "bus-46"
+            },
+            "disruptions": [
+                {
+                    "id": "1b29f246-43fc-40c2-a849-ac8652fe7938",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 46 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L'arrêt Canal Saint-Martin de la ligne 46 ne sera pas desservi en direction de Gare de l’Est. Quand : mercredi 7 octobre 2026, de 22h00 à 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T061221"
+                }
+            ]
+        },
+        "bus-20": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "20",
+                "label": "Bus 20",
+                "slug": "bus-20"
+            },
+            "disruptions": [
+                {
+                    "id": "116ecfdf-c6da-420f-a2f0-eb16b6bdf54c",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 20 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 20 est déviée : les arrêts situés entre Saint-Maur - Jean Aicard et Pelleport - Belleville ne sont plus desservis en direction de Porte des Lilas. Reprise estimée : samedi 24 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T200346"
+                },
+                {
+                    "id": "1199caf5-7e51-458f-8668-091f04f607da",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 71 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 71 est déviée : les arrêts situés entre Ménilmontant - Nanettes et Botzaris - Buttes Chaumont ne sont plus desservis en direction de Porte de la Villette. Reprise estimée : samedi 24 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T113611"
+                }
+            ]
+        },
+        "bus-96": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "96",
+                "label": "Bus 96",
+                "slug": "bus-96"
+            },
+            "disruptions": [
+                {
+                    "id": "add2e08c-bea0-4c45-a6e6-e0e2e9e3da54",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 96 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Cité - Palais de Justice de la ligne 96 n'est pas desservi en direction de Gare Montparnasse. Reprise estimée : vendredi 1 janvier 2027, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T100408"
+                },
+                {
+                    "id": "1199caf5-7e51-458f-8668-091f04f607da",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 71 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 71 est déviée : les arrêts situés entre Ménilmontant - Nanettes et Botzaris - Buttes Chaumont ne sont plus desservis en direction de Porte de la Villette. Reprise estimée : samedi 24 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T113611"
+                }
+            ]
+        },
+        "bus-63": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "63",
+                "label": "Bus 63",
+                "slug": "bus-63"
+            },
+            "disruptions": [
+                {
+                    "id": "ffa6ba28-f14f-4e46-a644-11bd3e61d947",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 63 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 63 est déviée : les arrêts situés entre Solférino - Bellechasse et Seine - Buci ne sont plus desservis en direction de Gare de Lyon. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T113410"
+                },
+                {
+                    "id": "8719fdb5-69c2-457a-91d7-9087c97d6913",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 63 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 63 est déviée : les arrêts situés entre Charlotte Perriand et Pont de la Concorde ne sont plus desservis en direction de Porte de la Muette. Reprise estimée : 18h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T121809"
+                }
+            ]
+        },
+        "bus-56": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "56",
+                "label": "Bus 56",
+                "slug": "bus-56"
+            },
+            "disruptions": [
+                {
+                    "id": "fd84c477-5693-4ec0-9661-320d6a89c19f",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N33 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N33 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Gare de Lyon. Reprise estimée : vendredi 23 octobre 2026, à partir de 08h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T024610"
+                },
+                {
+                    "id": "313a5c9b-7a8b-45d1-ab2d-9b0aea768cb4",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 325 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 325 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Quai de la Gare. Reprise estimée : mercredi 28 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T150425"
+                },
+                {
+                    "id": "377c7ced-e0ba-44d6-afe2-0acdafef7e71",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 56 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 56 est déviée : les arrêts situés entre Mairie de Saint-Mandé et Château de Vincennes ne sont plus desservis en direction de Château de Vincennes. Reprise estimée : mardi 27 octobre 2026, à partir de 01h29. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T190412"
+                },
+                {
+                    "id": "9289bf82-5d54-4e7d-97ca-cba2aa676228",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 56 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 56 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Porte de Clignancourt. Reprise estimée : mardi 27 octobre 2026, à partir de 02h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T125410"
+                },
+                {
+                    "id": "5ed44bac-5c98-4d73-8f73-032fb4aec45a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N33 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N33 est déviée : les arrêts situés entre Mairie de Saint-Mandé et Château de Vincennes ne sont plus desservis en direction de Gare de Villiers-sur-Marne – Le Plessis-Trévise . Reprise estimée : samedi 24 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T032609"
+                }
+            ]
+        },
+        "bus-318": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "318",
+                "label": "Bus 318",
+                "slug": "bus-318"
+            },
+            "disruptions": [
+                {
+                    "id": "fd84c477-5693-4ec0-9661-320d6a89c19f",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N33 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N33 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Gare de Lyon. Reprise estimée : vendredi 23 octobre 2026, à partir de 08h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T024610"
+                },
+                {
+                    "id": "313a5c9b-7a8b-45d1-ab2d-9b0aea768cb4",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 325 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 325 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Quai de la Gare. Reprise estimée : mercredi 28 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T150425"
+                },
+                {
+                    "id": "03731024-9dc0-458f-8cc3-40507faf86b7",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 318 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 318 est déviée : les arrêts situés entre Les Laitières et Château de Vincennes ne sont plus desservis en direction de Château de Vincennes. Reprise estimée : jeudi 8 octobre 2026, à partir de 17h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T084636"
+                },
+                {
+                    "id": "1bb63703-66b9-4a6a-a796-0891d2b4faca",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 318 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 318 est déviée : les arrêts situés entre Gallieni et Robespierre ne sont plus desservis en direction de Château de Vincennes. Reprise estimée : 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T080326"
+                },
+                {
+                    "id": "eac1bbb4-46b0-4115-9b31-86b46d874d2e",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 318 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 318 est déviée : les arrêts situés entre Château de Vincennes et Fraternité ne sont plus desservis en direction de Pantin – Raymond Queneau – Route de Noisy. Reprise estimée : jeudi 8 octobre 2026, à partir de 17h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T084445"
+                },
+                {
+                    "id": "5ed44bac-5c98-4d73-8f73-032fb4aec45a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N33 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N33 est déviée : les arrêts situés entre Mairie de Saint-Mandé et Château de Vincennes ne sont plus desservis en direction de Gare de Villiers-sur-Marne – Le Plessis-Trévise . Reprise estimée : samedi 24 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T032609"
+                }
+            ]
+        },
+        "bus-341": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "341",
+                "label": "Bus 341",
+                "slug": "bus-341"
+            },
+            "disruptions": [
+                {
+                    "id": "767300b0-ef26-4cd4-b2be-ae4695c7eb2a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 341 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 341 est déviée : les arrêts situés entre Cimetière et Georges Boisseau ne sont plus desservis en direction de Porte de Clignancourt – Croisset. Reprise estimée : mardi 13 octobre 2026, à partir de 03h32. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T105818"
+                },
+                {
+                    "id": "b5045d1b-81a8-4ec3-9c1f-a42913e4320a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 341 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Square Saint-Odile de la ligne 341 n'est pas desservi en direction de Porte de Clignancourt – Croisset. Reprise estimée : samedi 31 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T105810"
+                }
+            ]
+        },
+        "bus-40": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "40",
+                "label": "Bus 40",
+                "slug": "bus-40"
+            },
+            "disruptions": [
+                {
+                    "id": "914b8985-5566-43ad-a1d0-903d4d9d20da",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 40 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 40 est déviée : les arrêts situés entre Lamarck - Mont Cenis et Moulin de la Galette ne sont plus desservis en direction de Le Peletier. Reprise estimée : 13h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T114457"
+                },
+                {
+                    "id": "1725fa9f-b65c-4a3f-b2be-7daab41c3901",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 40 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 40 est déviée : les arrêts situés entre Funiculaire et Moulin de la Galette ne sont plus desservis en direction de Le Peletier. Reprise estimée : 13h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T114449"
+                }
+            ]
+        },
+        "bus-87": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "87",
+                "label": "Bus 87",
+                "slug": "bus-87"
+            },
+            "disruptions": [
+                {
+                    "id": "2b041ca2-c2a9-4306-82a3-a9fd1c568033",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 87 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 87 est déviée : les arrêts situés entre Gare de Lyon et Bastille ne sont plus desservis en direction de Invalides. Reprise estimée : 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T072611"
+                },
+                {
+                    "id": "e4ef9f07-6ade-49a7-b83d-2692b0ae1814",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 87 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 87 est déviée : les arrêts situés entre Solférino - Bellechasse et Seine - Buci ne sont plus desservis en direction de Porte de Reuilly. Reprise estimée : 20h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T120410"
+                },
+                {
+                    "id": "d4326269-f522-4e3d-8597-e12a392b3dfb",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 87 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 87 est déviée : les arrêts situés entre Solférino - Bellechasse et Seine - Buci ne sont plus desservis en direction de Porte de Reuilly. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T120419"
+                }
+            ]
+        },
+        "bus-n01": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "N01",
+                "label": "Bus N01",
+                "slug": "bus-n01"
+            },
+            "disruptions": [
+                {
+                    "id": "c2de570f-11ae-44be-908a-583bc99a5c82",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N01 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Gare d'Austerlitz de la ligne N01 n'est pas desservi en direction de Circulaire intérieure. Reprise estimée : samedi 31 octobre 2026, à partir de 04h15. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T055010"
+                }
+            ]
+        },
+        "bus-115": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "115",
+                "label": "Bus 115",
+                "slug": "bus-115"
+            },
+            "disruptions": [
+                {
+                    "id": "50fb70d2-5842-42e0-bc7c-4413c1364eac",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 118 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 118 est déviée : les arrêts situés entre Clément Vienot et Château de Vincennes ne sont plus desservis en direction de Château de Vincennes. Reprise estimée : jeudi 8 octobre 2026, à partir de 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T080349"
+                },
+                {
+                    "id": "013b56ca-ad1c-47d4-9cc1-834e6df1517a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 115 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 115 est déviée : les arrêts situés entre Fraternité et Château de Vincennes ne sont plus desservis en direction de Château de Vincennes. Reprise estimée : 17h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T080304"
+                }
+            ]
+        },
+        "bus-245": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "245",
+                "label": "Bus 245",
+                "slug": "bus-245"
+            },
+            "disruptions": [
+                {
+                    "id": "d6841204-e4c7-431c-8027-9850fdff7aa8",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 245 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 245 est déviée : les arrêts situés entre Paul de Kock et Jeanne d'Arc ne sont plus desservis en direction de Gare de Rosny – Bois Perrier. Reprise estimée : jeudi 31 décembre 2026, à partir de 05h27. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T070813"
+                },
+                {
+                    "id": "6a4c7f00-9992-473f-94ac-2db05098a3b2",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 61 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 61 est déviée : les arrêts situés entre Église de Pantin - Métro et Paul Bert - Cimetière ne sont plus desservis en direction de Place d'Italie. Reprise estimée : samedi 10 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T181617"
+                },
+                {
+                    "id": "cafd08b1-f72c-4ac0-8715-b4775f935a91",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 245 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 245 est déviée : les arrêts situés entre Église de Pantin - Métro et Paddock Paris ne sont plus desservis en direction de Gare de Rosny – Bois Perrier. Reprise estimée : samedi 10 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T070828"
+                }
+            ]
+        },
+        "bus-n52": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "N52",
+                "label": "Bus N52",
+                "slug": "bus-n52"
+            },
+            "disruptions": [
+                {
+                    "id": "4eb59f2e-6613-45f1-a090-0d06f41ba6e5",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N52 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Petit Gennevilliers de la ligne N52 n'est pas desservi en direction de Gare de Cormeilles en Parisis. Reprise estimée : dimanche 1 novembre 2026, à partir de 06h22. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261002T032811"
+                },
+                {
+                    "id": "25f375dd-2787-4794-9ac9-c0cccb0a4f6a",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 275 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 275 est déviée : les arrêts situés entre Pompidou et Hérold - Mairie de Courbevoie ne sont plus desservis en direction de La Défense. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T121036"
+                }
+            ]
+        },
+        "bus-76": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "76",
+                "label": "Bus 76",
+                "slug": "bus-76"
+            },
+            "disruptions": [
+                {
+                    "id": "ae3e81d3-4c5f-406e-9bc7-9251793e48af",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 76 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 76 est déviée : les arrêts situés entre Vert Bois et Rue de Romainville ne sont plus desservis en direction de Montreuil – Hôpital. Reprise estimée : samedi 2 janvier 2027, à partir de 04h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T224924"
+                },
+                {
+                    "id": "c408a66c-6bde-432e-bd5a-a18b2dec258b",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 76 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 76 est déviée : les arrêts situés entre Trois Communes et Vert Bois ne sont plus desservis en direction de Châtelet. Reprise estimée : samedi 2 janvier 2027, à partir de 04h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T185811"
+                },
+                {
+                    "id": "09d3a499-8c41-4b3e-8b41-062604fe6d5d",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 76 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 76 est déviée : les arrêts situés entre Gallieni et Girardot ne sont plus desservis en direction de Montreuil – Hôpital. Reprise estimée : 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T080341"
+                }
+            ]
+        },
+        "bus-n43": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "N43",
+                "label": "Bus N43",
+                "slug": "bus-n43"
+            },
+            "disruptions": [
+                {
+                    "id": "6be41989-25b5-49a7-8fed-bebf5f8e3ab3",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N43 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N43 est déviée : les arrêts situés entre Mozart - Malesherbes et Gare de Sarcelles-Saint-Brice ne sont plus desservis en direction de Gare de Sarcelles – Saint-Brice. Reprise estimée : samedi 31 octobre 2026, à partir de 06h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T010211"
+                },
+                {
+                    "id": "a9d8daf9-fb38-409a-a323-091bf22708c2",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N43 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N43 est déviée : les arrêts situés entre Gare de Sarcelles-Saint-Brice et Mozart - Malesherbes ne sont plus desservis en direction de Gare de l'Est. Reprise estimée : samedi 31 octobre 2026, à partir de 06h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T010411"
+                },
+                {
+                    "id": "a742d8ec-e8e2-4418-84de-348c66a2c7c9",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 302 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 302 est déviée : les arrêts situés entre Maraîchers et Ordener - Marx Dormoy ne sont plus desservis en direction de Gare du Nord. Reprise estimée : 18h36. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T114035"
+                }
+            ]
+        },
+        "bus-58": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "58",
+                "label": "Bus 58",
+                "slug": "bus-58"
+            },
+            "disruptions": [
+                {
+                    "id": "aca14726-02f6-458c-8bbe-1e4a9b5dee21",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 89 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 89 est déviée : les arrêts situés entre Panthéon et Rennes - Raspail ne sont plus desservis en direction de Gare de Vanves – Malakoff. Reprise estimée : vendredi 16 octobre 2026, à partir de 04h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T122635"
+                },
+                {
+                    "id": "52cb550b-61d0-4617-9a83-9a21639e1446",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 58 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 58 est déviée : les arrêts situés entre Châtelet et Musée du Luxembourg ne sont plus desservis en direction de Vanves – Lycée Michelet. Reprise estimée : mardi 22 décembre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261002T164458"
+                }
+            ]
+        },
+        "bus-94": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "94",
+                "label": "Bus 94",
+                "slug": "bus-94"
+            },
+            "disruptions": [
+                {
+                    "id": "baaef7f1-e41a-42f0-9c2f-34fc45948c18",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 94 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 94 est déviée : les arrêts situés entre Charlotte Perriand et Assemblée Nationale ne sont plus desservis en direction de Pont de Levallois – Bécon. Reprise estimée : 18h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T121825"
+                },
+                {
+                    "id": "eee54983-90ea-4183-a5ad-f320d8e99ad4",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 94 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 94 est déviée : les arrêts situés entre Assemblée Nationale et Juliette Lamber ne sont plus desservis en direction de Pont de Levallois – Bécon. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T101825"
+                },
+                {
+                    "id": "41894b6e-288b-47d1-a633-8d766d33ab78",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 94 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 94 est déviée : les arrêts situés entre Juliette Lamber et Gare Saint-Lazare ne sont plus desservis en direction de Gare Montparnasse. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T105011"
+                }
+            ]
+        },
+        "bus-82": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "82",
+                "label": "Bus 82",
+                "slug": "bus-82"
+            },
+            "disruptions": [
+                {
+                    "id": "ea182895-3497-4910-a8c5-c5486d13a71c",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 82 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 82 est déviée : les arrêts situés entre Vavin et Luxembourg ne sont plus desservis en direction de Luxembourg. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T083228"
+                },
+                {
+                    "id": "e74298df-121f-4fe6-8dd0-61ed97228f48",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 82 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 82 est déviée : les arrêts situés entre Auguste Comte et Vavin ne sont plus desservis en direction de Neuilly – Hôpital Américain. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T115411"
+                }
+            ]
+        },
+        "bus-169": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "169",
+                "label": "Bus 169",
+                "slug": "bus-169"
+            },
+            "disruptions": [
+                {
+                    "id": "c20f6e98-31a1-49a7-8cc4-0c32b105a66a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 169 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Gare de Clamart de la ligne 169 n'est pas desservi en direction de Hôpital Européen Georges Pompidou. Reprise estimée : lundi 19 octobre 2026, à partir de 17h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T113209"
+                },
+                {
+                    "id": "81b5999e-2402-40ae-b0b5-f40b677b802e",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 394 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Gare de Clamart de la ligne 394 n'est pas desservi en direction de Bourg-la-Reine . Reprise estimée : dimanche 11 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T124610"
+                }
+            ]
+        },
+        "bus-39": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "39",
+                "label": "Bus 39",
+                "slug": "bus-39"
+            },
+            "disruptions": [
+                {
+                    "id": "526408e2-6d56-4783-b407-1a49f57cd129",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 39 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 39 est déviée : les arrêts situés entre Magenta - Maubeuge et Richelieu - Drouot ne sont plus desservis en direction de Issy-les-Moulineaux – Frères Voisin. Reprise estimée : 20h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T120427"
+                },
+                {
+                    "id": "5343ecf8-d668-4e2d-9520-2c81e3c01f2a",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 39 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 39 est déviée : les arrêts situés entre Magenta - Maubeuge et Richelieu - Drouot ne sont plus desservis en direction de Issy-les-Moulineaux – Frères Voisin. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T120436"
+                }
+            ]
+        },
+        "bus-n13": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "N13",
+                "label": "Bus N13",
+                "slug": "bus-n13"
+            },
+            "disruptions": [
+                {
+                    "id": "f7433f36-2414-4bd3-adf7-1f83ec7777b6",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus N13 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne N13 est déviée : les arrêts situés entre Centre Georges Pompidou et Saint-Michel ne sont plus desservis en direction de Mairie d'Issy. Reprise estimée : mardi 31 décembre 2030, à partir de 07h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T041012"
+                }
+            ]
+        },
+        "bus-70": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "70",
+                "label": "Bus 70",
+                "slug": "bus-70"
+            },
+            "disruptions": [
+                {
+                    "id": "d18e59fd-f96d-4bfb-a352-05018627480a",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 70 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 70 est déviée : les arrêts situés entre Hôtel de Ville et Église Saint-Sulpice ne sont plus desservis en direction de Suresnes-De Gaulle. Reprise estimée : mardi 22 décembre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T195212"
+                }
+            ]
+        },
+        "bus-48": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "48",
+                "label": "Bus 48",
+                "slug": "bus-48"
+            },
+            "disruptions": [
+                {
+                    "id": "fd9d70e2-0131-490c-94cb-5479c5c17842",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 61 : Stationnement gênant - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt René Fonck de la ligne 61 n'est pas desservi en direction de Place d'Italie. Reprise estimée : 16h00. Raison : stationnement gênant.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T122620"
+                }
+            ]
+        },
+        "bus-86": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "86",
+                "label": "Bus 86",
+                "slug": "bus-86"
+            },
+            "disruptions": [
+                {
+                    "id": "313a5c9b-7a8b-45d1-ab2d-9b0aea768cb4",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 325 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 325 est déviée : les arrêts situés entre Château de Vincennes et Mairie de Saint-Mandé ne sont plus desservis en direction de Quai de la Gare. Reprise estimée : mercredi 28 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T150425"
+                }
+            ]
+        },
+        "bus-24": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "24",
+                "label": "Bus 24",
+                "slug": "bus-24"
+            },
+            "disruptions": [
+                {
+                    "id": "66996e9b-597c-4183-91af-31f5aebc7eba",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 24 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 24 est déviée : les arrêts situés entre Berthollet - Vauquelin et Panthéon ne sont plus desservis en direction de Panthéon. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T075614"
+                }
+            ]
+        },
+        "bus-121": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "121",
+                "label": "Bus 121",
+                "slug": "bus-121"
+            },
+            "disruptions": [
+                {
+                    "id": "c26345dd-7db9-453e-b498-1ba3bd534c01",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 121 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 121 est déviée : les arrêts situés entre Grand Verger et Mairie de Montreuil ne sont plus desservis en direction de Mairie de Montreuil. Reprise estimée : jeudi 8 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T064011"
+                },
+                {
+                    "id": "38f622e0-be7d-4615-b09c-3282b2e4f321",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 121 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 121 est déviée : les arrêts situés entre Lycée Jean Jaurès et Grand Verger ne sont plus desservis en direction de Château de Villemomble. Reprise estimée : jeudi 8 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T102257"
+                }
+            ]
+        },
+        "bus-28": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "28",
+                "label": "Bus 28",
+                "slug": "bus-28"
+            },
+            "disruptions": [
+                {
+                    "id": "304b7ff7-b313-41fb-a3f2-dee9222d647c",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 28 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 28 est déviée : les arrêts situés entre Haussmann - Miromesnil et Pont Cardinet ne sont plus desservis en direction de Porte de Clichy. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T084020"
+                },
+                {
+                    "id": "94590a14-318f-46c8-bf12-8daf9c69a183",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 28 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 28 est déviée : les arrêts situés entre Pont Cardinet et La Boétie - Miromesnil ne sont plus desservis en direction de Gare Montparnasse. Reprise estimée : 18h00. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T084012"
+                }
+            ]
+        },
+        "bus-102": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "102",
+                "label": "Bus 102",
+                "slug": "bus-102"
+            },
+            "disruptions": [
+                {
+                    "id": "415610a4-f2ed-4a58-b25b-faebfe5b129a",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 102 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 102 est déviée : les arrêts situés entre Lycée Jean Jaurès et Étienne Dolet ne sont plus desservis en direction de Gare de Rosny – Bois-Perrier. Reprise estimée : jeudi 8 octobre 2026 à 03h55. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261004T182013"
+                },
+                {
+                    "id": "b9826f0f-199f-4a5a-88dc-daf428a50405",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 102 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 102 est déviée : les arrêts situés entre Étienne Dolet et Centre Administratif ne sont plus desservis en direction de Gambetta – Japon. Reprise estimée : jeudi 8 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T084018"
+                }
+            ]
+        },
+        "bus-21": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "21",
+                "label": "Bus 21",
+                "slug": "bus-21"
+            },
+            "disruptions": [
+                {
+                    "id": "9425785a-2ea1-48aa-93c8-011de8c47416",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 21 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Cité - Palais de Justice de la ligne 21 n'est pas desservi en direction de Stade Charléty – Porte de Gentilly. Reprise estimée : mardi 22 décembre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T180234"
+                }
+            ]
+        },
+        "bus-322": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "322",
+                "label": "Bus 322",
+                "slug": "bus-322"
+            },
+            "disruptions": [
+                {
+                    "id": "004b4cd2-c31f-4d08-a2a9-f3b2fe2c4bb3",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 322 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Jura de la ligne 322 n'est pas desservi en direction de Mairie de Montreuil. Reprise estimée : samedi 14 novembre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T044809"
+                }
+            ]
+        },
+        "bus-57": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "57",
+                "label": "Bus 57",
+                "slug": "bus-57"
+            },
+            "disruptions": [
+                {
+                    "id": "5c2ff141-2455-40d5-918b-a98218a007d8",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 57 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 57 est déviée : les arrêts situés entre Porte de Bagnolet - Louis Ganne et Porte de Montreuil ne sont plus desservis en direction de Arcueil – Laplace . Reprise estimée : lundi 1 février 2027, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T100010"
+                }
+            ]
+        },
+        "bus-77": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "77",
+                "label": "Bus 77",
+                "slug": "bus-77"
+            },
+            "disruptions": [
+                {
+                    "id": "8838c9b8-1185-4e33-8cff-3c2b2ace6aec",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 77 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Quai de la Rapée de la ligne 77 n'est pas desservi en direction de Joinville-le-Pont . Reprise estimée : 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T070238"
+                },
+                {
+                    "id": "792257e6-a565-4d9f-91b8-2e2946c9d670",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 77 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 77 est déviée : les arrêts situés entre Route de la Terrasse et Joinville-le-Pont RER ne sont plus desservis en direction de Joinville-le-Pont . Reprise estimée : samedi 31 octobre 2026, à partir de 03h30. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261005T201021"
+                }
+            ]
+        },
+        "bus-122": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "122",
+                "label": "Bus 122",
+                "slug": "bus-122"
+            },
+            "disruptions": [
+                {
+                    "id": "4a8340ff-281e-420a-82bb-427bf86bed12",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 116 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 116 est déviée : les arrêts situés entre M.-C. Vaillant Couturier et Val de Fontenay RER ne sont plus desservis en direction de Champigny – Saint-Maur . Reprise estimée : 12h41. Raison : incident.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T115010"
+                },
+                {
+                    "id": "d88c0fca-3706-45c2-96b2-16a4ba053d04",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 122 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 122 est déviée : les arrêts situés entre Gallieni et Charles Delescluze ne sont plus desservis en direction de Gare de Val de Fontenay. Reprise estimée : 18h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T080319"
+                },
+                {
+                    "id": "2c966b26-0f1d-473f-a366-7bcfd0ab37ad",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 116 : Incident sur la voie publique - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 116 est déviée : les arrêts situés entre M.-C. Vaillant Couturier et Val de Fontenay RER ne sont plus desservis en direction de Champigny – Saint-Maur . Reprise estimée : 16h00. Raison : incident.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T114441"
+                }
+            ]
+        },
+        "bus-29": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "29",
+                "label": "Bus 29",
+                "slug": "bus-29"
+            },
+            "disruptions": [
+                {
+                    "id": "c3a1dcb8-50c7-4f13-b44c-73a73a17350b",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 29 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 29 est déviée : les arrêts situés entre Bastille - Beaumarchais et Grenier Saint-Lazare - Quartier de l'Horloge ne sont plus desservis en direction de Gare Saint-Lazare. Reprise estimée : dimanche 11 octobre 2026 à 03h30. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T200320"
+                }
+            ]
+        },
+        "bus-215": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "215",
+                "label": "Bus 215",
+                "slug": "bus-215"
+            },
+            "disruptions": [
+                {
+                    "id": "8b2d606f-c514-4e29-86bc-a109c29eee97",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 215 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 215 est déviée : les arrêts situés entre Les Laitières et Place de la Porte de Montreuil ne sont plus desservis en direction de Gare d'Austerlitz. Reprise estimée : samedi 21 novembre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T085613"
+                }
+            ]
+        },
+        "bus-123": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "123",
+                "label": "Bus 123",
+                "slug": "bus-123"
+            },
+            "disruptions": [
+                {
+                    "id": "79d1fd70-b5ad-42ae-a3a1-723734b03141",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 123 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 123 est déviée : les arrêts situés entre Roger Salengro et Les Moulineaux ne sont plus desservis en direction de Porte d’Auteuil. Reprise estimée : samedi 31 octobre 2026, à partir de 03h48. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T095009"
+                }
+            ]
+        },
+        "bus-2": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "2",
+                "label": "Bus 2",
+                "slug": "bus-2"
+            },
+            "disruptions": [
+                {
+                    "id": "1199caf5-7e51-458f-8668-091f04f607da",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 71 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 71 est déviée : les arrêts situés entre Ménilmontant - Nanettes et Botzaris - Buttes Chaumont ne sont plus desservis en direction de Porte de la Villette. Reprise estimée : samedi 24 octobre 2026, à partir de 03h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T113611"
+                }
+            ]
+        },
+        "bus-38": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "38",
+                "label": "Bus 38",
+                "slug": "bus-38"
+            },
+            "disruptions": [
+                {
+                    "id": "a742d8ec-e8e2-4418-84de-348c66a2c7c9",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 302 : Manifestation - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 302 est déviée : les arrêts situés entre Maraîchers et Ordener - Marx Dormoy ne sont plus desservis en direction de Gare du Nord. Reprise estimée : 18h36. Raison : manifestation.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T114035"
+                },
+                {
+                    "id": "27978737-c22f-472a-9f56-0561d8a141c7",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "Bus 38 : Incident sur la voie publique - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 38 est déviée : les arrêts situés entre Coutellerie et Saint-Michel - Saint-Germain ne sont plus desservis en direction de Porte d'Orléans. Reprise estimée : vendredi 1 janvier 2027, à partir de 03h30. Raison : incident.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T150634"
+                },
+                {
+                    "id": "7a411271-a1f9-4def-bc92-ade1a5022263",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 38 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "L’arrêt Daguerre de la ligne 38 n'est pas desservi en direction de Porte d'Orléans. Reprise estimée : samedi 31 octobre 2026, à partir de 02h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T030221"
+                }
+            ]
+        },
+        "bus-n53": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "N53",
+                "label": "Bus N53",
+                "slug": "bus-n53"
+            },
+            "disruptions": [
+                {
+                    "id": "9e0de431-d9c3-4172-ac1a-77cf03425767",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 160 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 160 est déviée : les arrêts situés entre Marcel Paul et Balzac - Zola ne sont plus desservis en direction de Boulogne Pont de Saint-Cloud. Reprise estimée : mardi 3 novembre 2026, à partir de 04h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T165409"
+                }
+            ]
+        },
+        "bus-188": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "188",
+                "label": "Bus 188",
+                "slug": "bus-188"
+            },
+            "disruptions": [
+                {
+                    "id": "a26d54b8-3189-432f-848b-4f0b24dbb24f",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 391 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 391 est déviée : les arrêts situés entre Pont Royal RER et Frères Lumière ne sont plus desservis en direction de Gare de Vanves – Malakoff. Reprise estimée : vendredi 1 janvier 2027, à partir de 01h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T110635"
+                }
+            ]
+        },
+        "bus-388": {
+            "line": {
+                "mode": "Bus",
+                "shortName": "388",
+                "label": "Bus 388",
+                "slug": "bus-388"
+            },
+            "disruptions": [
+                {
+                    "id": "a26d54b8-3189-432f-848b-4f0b24dbb24f",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Bus 391 : Travaux - Arrêt(s) non desservi(s)",
+                    "message": "La ligne 391 est déviée : les arrêts situés entre Pont Royal RER et Frères Lumière ne sont plus desservis en direction de Gare de Vanves – Malakoff. Reprise estimée : vendredi 1 janvier 2027, à partir de 01h00. Raison : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261006T110635"
+                }
+            ]
+        },
+        "metro-ligne-14": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "14",
+                "label": "Métro 14",
+                "slug": "metro/ligne-14"
+            },
+            "disruptions": [
+                {
+                    "id": "edfd86c7-74af-43a9-bf26-d5b929c86ef8",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 14 : Gêne à la fermeture des portes de quai - Train stationne",
+                    "message": "Un train stationne à Saint-Lazare vers Aéroport d'Orly en raison d'une gêne à la fermeture des portes de quai .",
+                    "shortMessage": "Train stationne",
+                    "lastUpdate": "20261007T122209"
+                }
+            ]
+        },
+        "metro-ligne-7bis": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "7B",
+                "label": "Métro 7B",
+                "slug": "metro/ligne-7bis"
+            },
+            "disruptions": [
+                {
+                    "id": "62ca8cd0-69e3-4f28-8f68-9bea1fc3d44f",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 7B : Incident d'exploitation - Trafic perturbé",
+                    "message": "Le trafic est perturbé sur toute la ligne en raison d'un incident d'exploitation à Pré-Saint-Gervais .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T123209"
+                },
+                {
+                    "id": "a06f219c-2a23-4db5-bd09-a7ba9dc33480",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 7B : Incident d'exploitation - Trafic perturbé",
+                    "message": "Le trafic est perturbé sur toute la ligne en raison d'un incident d'exploitation .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T115010"
+                }
+            ]
+        },
+        "metro-ligne-7": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "7",
+                "label": "Métro 7",
+                "slug": "metro/ligne-7"
+            },
+            "disruptions": [
+                {
+                    "id": "10aa69f8-01bc-4f27-97a6-bd6f9c5c1587",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 7 : Incident (intervention conducteur) - Trafic perturbé",
+                    "message": "Le trafic est perturbé sur toute la ligne en répercussion d'un incident nécessitant l’intervention du conducteur à Porte d'Italie .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T121209"
+                }
+            ]
+        },
+        "metro-ligne-13": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "13",
+                "label": "Métro 13",
+                "slug": "metro/ligne-13"
+            },
+            "disruptions": [
+                {
+                    "id": "88279e31-2041-4c62-9394-bd2526c66abb",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 13 : Ajustement de l'intervalle entre les trains - Train stationne",
+                    "message": "Un train stationne à Montparnasse Bienvenue vers Châtillon - Montrouge en raison d'un ajustement de l'intervalle entre les trains .",
+                    "shortMessage": "Train stationne",
+                    "lastUpdate": "20261007T121618"
+                },
+                {
+                    "id": "49b10b08-2b62-4d32-949f-bef4293d4b1d",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 13 : Incident d'exploitation - Trafic perturbé",
+                    "message": "Le trafic est perturbé entre Asnières - Gennevilliers - Les Courtilles et La Fourche en raison d'un incident d'exploitation à Asnières - Gennevilliers - Les Courtilles .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T121809"
+                }
+            ]
+        },
+        "metro-ligne-12": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "12",
+                "label": "Métro 12",
+                "slug": "metro/ligne-12"
+            },
+            "disruptions": [
+                {
+                    "id": "7bc82a66-94e6-4a1a-90f9-9b0eb65b60a9",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 12 : Dégagement de fumée - Trafic perturbé",
+                    "message": "Le trafic est perturbé sur toute la ligne en répercussion d'un dégagement de fumée à Notre-Dame-des-Champs .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T112231"
+                }
+            ]
+        },
+        "rer-ligne-e": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "E",
+                "label": "RER E",
+                "slug": "rer/ligne-e"
+            },
+            "disruptions": [
+                {
+                    "id": "91945b4a-8bc6-4733-abec-4552e51fbfef",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER E : Nanterre - Chelles 5/10 - 14/10",
+                    "message": "Période : en semaine à partir de 22h15\n\nDates : du lundi 5 octobre au vendredi 14 octobre.\n\nLe trafic est interrompu entre Nanterre-la-Folie et Chelles Gournay.\nLe dernier train NOCY de Chelles Gournay vers Nanterre-la-Folie est à 22h33 (du 5 au 9 octobre) et 22h18 (du 12 au 14 octobre).\nLe dernier train CONY de Nanterre-la-Folie vers Chelles Gournay est à 22h04.\n\nUn service de bus de remplacement est mis en place avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260827T085141"
+                },
+                {
+                    "id": "86c86ebb-f012-4aee-9289-fcaac1125659",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER E : Tournan -> Nanterre horaires modifiés du 07 au 23/10",
+                    "message": "Dates : du mercredi 07 au vendredi 23 octobre.\n\nDe Tournan en direction de Nanterre-La-Folie.\n\nLes horaires de certains trains peuvent être modifiés, voire avancés de quelques minutes. Nous invitons les voyageurs à consulter leurs horaires de train la veille de leur déplacement, à 17h00, sur l'appli Ile de France Mobilités, le site Transilien.com, SNCF Connect ou autre appli de mobilité.\n\nMotif : travaux sur le réseau ferré dans le secteur de Gretz-Armainvilliers.",
+                    "shortMessage": "Trafic fortement perturbé",
+                    "lastUpdate": "20261006T172539"
+                }
+            ]
+        },
+        "rer-ligne-c": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "C",
+                "label": "RER C",
+                "slug": "rer/ligne-c"
+            },
+            "disruptions": [
+                {
+                    "id": "37e7ef27-ff9c-4436-b937-b1e3bef913f4",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: entre Pont de Rungis et Paris Austerlitz du 05/10 au 30/10",
+                    "message": "Période : les soirées.\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche).\n\nLe trafic est interrompu entre Pont de Rungis et Paris Austerlitz:\n- Dernier départ de Paris Austerlitz à 22h27\n- Dernier départ de Pont de Rungis à 22h08\n\nReport : Lignes de métro 7 ou 14, Tramways T3a , T7, T9, bus de ville 180, 182, 183, 323, 325, 482, 483 ou TVM\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T101900"
+                },
+                {
+                    "id": "d61b532a-07c3-4325-97fe-5b98e4f27383",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: Ardoines, Vitry, Ivry non desservies jour. 28/09 au 23/10",
+                    "message": "Période : en semaine de 09h45 à 16h00.\nDates : du lundi 28 septembre au vendredi 23 octobre\n\nDu lundi au vendredi, de 09h45 à 16h00, les trains sont directs de Choisy le Roi à Bibliothèque François Mitterrand. En conséquence, les Ardoines, Vitry sur Seine et Ivry sur Seine ne sont pas desservies par les trains en direction de Paris.\n\nReport : métro 7, ou bus de ville 180, 182, 323 ou 325\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260929T163952"
+                },
+                {
+                    "id": "2d3d279b-b867-424e-b937-67584694e212",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C : entre Avenue Henri Martin et Pontoise du 05/10 au 30/10",
+                    "message": "Période : les soirées.\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche).\n\nLe trafic est interrompu entre Avenue Henri Martin et Pontoise :\n\n- Dernier départ d'Avenue Henri Martin pour Pontoise à 21h41\n- Dernier départ d'Avenue Henri Martin pour Montigny B. à 22h55\n- Dernier départ de Pontoise à 21h58\n- Dernier départ de Montigny Beauchamp à 22h25\n\nReport : ligne H ou bus de remplacement ou J , métro M1, M2, M3, M6, M9, M13 ou M14, tramway T3b, T8 ou T11,ou bus de ville 138.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T104645"
+                },
+                {
+                    "id": "e7f7a331-1dbe-4b54-9b9b-a89c4f6b5fbf",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C : entre Dourdan et Paris Austerlitz du 05/10 au 30/10",
+                    "message": "Période : les soirées\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche)\n\nLe trafic est interrompu entre Dourdan et Paris Austerlitz:\n- Dernier départ de Dourdan 21h07\n- Dernier départ de Paris Austerlitz à 21h17\n\nA partir de 22h15, les trains sont terminus Brétigny.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T083352"
+                },
+                {
+                    "id": "e12bc025-0403-4689-b960-693b5940f4bd",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C:entre Javel et Versail.Château/St-Quentin du 05/10 au 30/10",
+                    "message": "Période : les soirées.\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche).\n\nLe trafic est interrompu entre Javel et Versailles Château/St-Quentin :\n- Dernier départ de Javel pour St-Quentin à 21h17\n- Dernier départ de Javel pour Versailles Château à 23h11\n- Dernier départ de St-Quentin à 21h40\n- Dernier départ de Versailles Château à 22h25\n\nReport : ligne N ou bus de ville 169 ou 171\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T104249"
+                },
+                {
+                    "id": "cc8b379a-a2c9-403a-bf40-679ed4504942",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: St-Martin d'Étam. et Paris Austerlitz du 05/10 au 30/10",
+                    "message": "Période :les soirées.\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche).\n\nLe trafic est interrompu entre Saint-Martin d'Étampes et Paris Austerlitz:\n\n- Dernier départ de Saint-Martin d'Étampes à 21h41\n- Dernier départ de Paris Austerlitz à 22h31\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T083544"
+                },
+                {
+                    "id": "c995f2a4-2516-40b0-b1f4-805fc6acb1f2",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: entre Juvisy et Paris Austerlitz via Choisy du 5 au 30/10",
+                    "message": "Période : les soirées.\n\nDates : du lundi 5 au vendredi 30 octobre (sauf samedi, dimanche)\n\nLe trafic est interrompu entre Juvisy et Paris Austerlitz:\n\n- Dernier départ de Juvisy à 22h29\n- Dernier départ de Paris Austerlitz à 22h36\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260902T090048"
+                }
+            ]
+        },
+        "rer-ligne-d": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "D",
+                "label": "RER D",
+                "slug": "rer/ligne-d"
+            },
+            "disruptions": [
+                {
+                    "id": "24c3e295-f17b-455b-b15a-7cad3b8034aa",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER D : Paris Nord <-> Creil interrompu du 28/09 au 30/10.",
+                    "message": "Période : En semaine à partir de 23h35.\n\nDates : du lundi 28 septembre au vendredi 30 octobre.\n\nLe trafic est interrompu entre Paris Gare du Nord et Creil.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260927T232150"
+                },
+                {
+                    "id": "05d5bab4-0868-44d9-8841-ce294b3e18a9",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "RER D : allègement de l’offre de transport",
+                    "message": "L’offre de transport du RER D est réduite pendant plusieurs mois.\n\nPour préparer votre trajet et avant de vous rendre en gare, vérifiez les horaires des trains qui circulent en vous rendant dans la rubrique recherche d’itinéraire de votre application.\n\nAttention : les horaires du calculateur d’itinéraire tiennent compte de ces modifications à partir de J-15 avant votre date de voyage.\n\nRetrouvez plus d’informations sur le blog du RER D :\nhttps://maligned.transilien.com/2026/08/21/reduction-de-loffre-rer-d-24-aout/\n\nMotif : capacité de maintenance des trains temporairement réduite (création de nouveaux ateliers de maintenance)",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260930T004850"
+                },
+                {
+                    "id": "c6fdcbc7-1756-4061-b840-ca4983ae92a4",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER D : Paris Lyon <> Corbeil/ Melun interrompu du 28/09 au 30/10",
+                    "message": "Période : en semaine à partir de 23h15.\n\nDates : du lundi 28 septembre au vendredi 30 octobre.\n\nLe trafic est interrompu entre Paris Gare de Lyon et Corbeil-Essonnes et entre Paris Gare de Lyon et Melun.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260928T020547"
+                }
+            ]
+        },
+        "rer-ligne-a": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "A",
+                "label": "RER A",
+                "slug": "rer/ligne-a"
+            },
+            "disruptions": [
+                {
+                    "id": "c83b7059-d4dc-472e-aee6-0f540c9f5fcb",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER A : Nanterre-Préf <-> Cergy le Haut et Poissy 14/09-09/10",
+                    "message": "Période : en semaine à partir de 22h.\n\nDates : du lundi 14 septembre au vendredi 09 octobre.\n\nLe trafic est interrompu entre Nanterre Préfecture et Cergy le Haut et entre Nanterre Préfecture et Poissy.\n\nUn service de bus de remplacement est mis en place à Nanterre Université, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260720T092654"
+                }
+            ]
+        },
+        "rer-ligne-b": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "B",
+                "label": "RER B",
+                "slug": "rer/ligne-b"
+            },
+            "disruptions": [
+                {
+                    "id": "209bc1f3-4072-4aa7-9f97-b8fcc1cefc55",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 01/06-31/12",
+                    "message": "Période : en semaine à partir de 22h45.\n\nDates : du lundi 1er juin au jeudi 31 décembre\n\nLe trafic est interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre Châtelet Les Halles et Mitry - Claye.\n\nUn dispositif de bus de remplacement sera mis en place au départ du Gare du Nord.\n\nPour plus d'informations, consultez le site du RER B\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260702T150909"
+                }
+            ]
+        },
+        "tramway-ligne-t8": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T8",
+                "label": "Tramway T8",
+                "slug": "tramway/ligne-t8"
+            },
+            "disruptions": [
+                {
+                    "id": "5c451ccf-a278-45d6-adf9-e0fbb7fc2b14",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Tramway T8 : Panne électrique - Reprise progressive / trafic reste perturbé",
+                    "message": "Le trafic reprend mais reste perturbé sur toute la ligne en répercussion d'une panne électrique .",
+                    "shortMessage": "Reprise progressive / trafic reste perturbé",
+                    "lastUpdate": "20261007T124210"
+                }
+            ]
+        },
+        "tramway-ligne-t4": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T4",
+                "label": "Tramway T4",
+                "slug": "tramway/ligne-t4"
+            },
+            "disruptions": [
+                {
+                    "id": "2693fdf2-3b2f-4eed-9634-777da02d5e4c",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Tramway T4 -  Mouvement social du 5/10 au 9/10.",
+                    "message": "Du lundi 5 au vendredi 9 octobre le trafic est perturbé sur la ligne T4.\n\nPrévoir 1 train toutes les 9 minutes 30. Dans la mesure du possible, nous vous conseillons de limiter vos déplacements.\n\nRetrouvez toutes ces informations sur l'appli Ile-de-France Mobilites, le site Iledefrance-mobilites.fr ou votre appli de mobilité.\n\nMotif : Mouvement Social.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261005T131417"
+                },
+                {
+                    "id": "9bb80841-6d24-4fb9-870b-289d7ed350dc",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "Sonorisation hors service sur l'ensemble de la ligne T4",
+                    "message": "La sonorisation est hors service sur l'ensemble de la ligne T4\n\nNos équipes de maintenance sont mobilisées afin de rétablir le service dans les meilleurs délais.\n\nNous vous prions de bien vouloir nous excuser pour la gêne occasionnée.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261007T114226"
+                }
+            ]
+        },
+        "transilien-ligne-p": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "P",
+                "label": "Transilien P",
+                "slug": "transilien/ligne-p"
+            },
+            "disruptions": [
+                {
+                    "id": "1ca21b21-4b61-41a7-8b39-aaafc5873ecf",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Coulommiers 7/09 – 6/11",
+                    "message": "Période : en semaine à partir de 21h30\n\nDates : du lundi 7 septembre au vendredi 6 novembre\n\nLe trafic est interrompu entre Paris Est et Coulommiers.\nLe dernier train PITU de Coulommiers vers Paris Est est à 20h38.\nLe dernier train CITU de Paris Est vers Coulommiers est à 21h17.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260803T105440"
+                },
+                {
+                    "id": "2091e4b9-2486-4283-95da-d044d1d3cac4",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Provins 7/09 - 11/12",
+                    "message": "Période : en semaine à partir de 21h45\n\nDates : du lundi 7 septembre au vendredi 11 décembre\n\nLe trafic est interrompu entre Paris Est et Provins.\nLe dernier train PIBU de Provins vers Paris Est part à 20h46.\nLe dernier train XIBU de Paris Est vers Provins part à 21h47.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260730T160047"
+                },
+                {
+                    "id": "33fb44e4-6ff4-4081-9839-d404a5460724",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est – Meaux 21/09 au 30/10 et 16/11 au 20/11",
+                    "message": "Période : en semaine à partir de 22h20\n\nDates : du lundi 21 septembre au vendredi 30 octobre et du lundi 16 au vendredi 20 novembre\n\nLe trafic est interrompu entre Paris Est et Meaux.\nLe dernier train PICI de Meaux vers Paris Est est à 21h50.\nLe dernier train MICI de Paris Est vers Meaux est à 22h31.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire (Grand Paris Express à Chelles Gournay, maintenance des installations électriques et de la signalisation mécanique).",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260819T103149"
+                },
+                {
+                    "id": "2f53eb7c-db7a-4ce8-88c2-37c18e628f49",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Ligne P : Paris Est <-> Coulommiers trafic perturbé",
+                    "message": "Le trafic est perturbé entre Paris Est et Coulommiers dans les 2 sens.\n\nPour plus d'informations sur cette perturbation, consultez le fil X de la ligne P.\n\nMotif : panne de signalisation entre Mortcerf et Coulommiers.",
+                    "shortMessage": "Trafic fortement perturbé",
+                    "lastUpdate": "20261007T122238"
+                },
+                {
+                    "id": "b0234ebf-f1b2-4ec4-afa4-98bdbe52cbb6",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Château-Thierry du 31/08 au 4/12",
+                    "message": "Période : en semaine à partir de 21h30\n\nDates : du lundi 31 août au vendredi 16 octobre et du lundi 26 octobre au vendredi 4 décembre\n\nLe trafic est interrompu entre Paris Est et Château Thierry.\nLe dernier train PIMO de Château-Thierry vers Paris Est est à 21h04.\nLe dernier train ZIMO de Paris Est vers Château-Thierry est à 21h49.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire (travaux de maintenance).",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20260717T153650"
+                }
+            ]
+        },
+        "transilien-ligne-u": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "U",
+                "label": "Transilien U",
+                "slug": "transilien/ligne-u"
+            },
+            "disruptions": [
+                {
+                    "id": "28c479fa-9921-4a70-9d43-8c92eff83b69",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne U : La Verrière <-> La Défense 05/10-28/12, 13h30 à 14h30",
+                    "message": "Période : de 13h30 à 14h30.\n\nDates : Les lundis 5 octobre, 2 et 30 novembre et le 28 décembre.\n\nEn raison de travaux de maintenance, certains trains de la ligne U seront exceptionnellement terminus ou origine Saint-Cloud.\n\nLes trains concernés sont :\n\nDEFI de 12h50 sera terminus Saint-Cloud à 13h22\n\nDEFI de 13h20 sera terminus Saint-Cloud à 13h53\n\nDEFI de 13h50 sera terminus Saint-Cloud à 14h17\n\nDEFI de 14h20 sera terminus Saint-Cloud à 14h53\n\nVERI de 13h45 sera origine Saint-Cloud à 13h54\n\nVERI de 14h15 sera origine Saint-Cloud à 14h25\n\nVERI de 14h45 sera origine Saint-Cloud à 14h54\n\nVERI de 15h15 sera origine Saint-Cloud à 15h24\n\nPour poursuivre votre trajet entre Saint-Cloud et La Défense, un report est nécessaire à bord des trains de la ligne L.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "",
+                    "lastUpdate": "20260926T131145"
+                },
+                {
+                    "id": "81971303-eadc-4008-b313-6c6e75511d59",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne U: La Défense <-> La Verrière 01-23/10 en semaine de soirée",
+                    "message": "Période : en semaine, de soirée.\n\nDates : du jeudi 01 au vendredi 23 octobre.\n\nLe trafic est interrompu entre La Défense et La Verrière.\n\nDernier train de La Défense pour La Verrière : le VERI de 21h15.\n\nDernier train de La Verrière pour La Défense : le DEFI de 20h20.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260914T120144"
+                }
+            ]
+        },
+        "transilien-ligne-n": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "N",
+                "label": "Transilien N",
+                "slug": "transilien/ligne-n"
+            },
+            "disruptions": [
+                {
+                    "id": "21bb15d8-fe18-4d3e-bc09-f4973bcb0079",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. -> Mantes-la-Jolie 01-23/10",
+                    "message": "Période : en semaine de soirée.\n\nDates : du jeudi 01 au vendredi 23 octobre.\n\nLe trafic est interrompu de Plaisir-Grignon vers Mantes-la-Jolie.\n\nDernier train de Paris Montparnasse pour Mantes-la-Jolie : le MOPI de 20h50.\n\nLe MOPI de 21h50 au départ de Paris Montparnasse est terminus Plaisir-Grignon, puis bus de substitution jusqu'à Mantes-la-Jolie.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260804T162345"
+                },
+                {
+                    "id": "970d1c36-ee83-4fc0-986e-7e66886098b8",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Rambouillet <-> Paris Montp. 05-08/10",
+                    "message": "Période : les lundi, mardi, mercredi, jeudi en soirée.\n\nDates : du lundi 05 au jeudi 08 octobre.\n\nLe trafic est interrompu entre Rambouillet et Paris Montparnasse.\n\nDernier train au départ de Paris Montparnasse vers Rambouillet : ROPO de 22h35.\n\nLe train ROPO de 23h35 au départ de Paris Montparnasse est terminus Versailles-Chantiers puis bus de substitution jusqu'à Rambouillet.\n\nDernier train au départ de Rambouillet vers Paris Montparnasse : PORO de 22h25.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260804T162939"
+                },
+                {
+                    "id": "0157f92e-9446-42d0-9cba-6e7991118580",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. <-> Vers.Chantiers 05-30/10",
+                    "message": "Période : en semaine de soirée.\n\nDates : du lundi 12 au vendredi 30 octobre.\n\nLe trafic est interrompu de Paris Montparnasse vers Versailles Chantiers.\n\nDernier départ de Paris Montparnasse à destination de Versailles Chantiers : le ROPO de 23h35.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260930T184639"
+                },
+                {
+                    "id": "d0e9826f-5a95-4ec7-913a-005edbfb2023",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. -> Vers.Chantiers du 05 au 08/10.",
+                    "message": "Période : en soirée\n\nDates : du lundi 05 au jeudi 08 octobre.\n\nLe trafic est interrompu en soirée de Paris Montparnasse vers Versailles Chantiers.\n\nDernier départ de Paris Montparnasse à destination de Versailles Chantiers : le ROPO de 23h35.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260930T140147"
+                }
+            ]
+        },
+        "transilien-ligne-l": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "L",
+                "label": "Transilien L",
+                "slug": "transilien/ligne-l"
+            },
+            "disruptions": [
+                {
+                    "id": "ec455b80-70fb-4908-8be3-664c0ea75413",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Houilles Carrières <> Maisons-Laffitte du 05 au 09/10",
+                    "message": "Période : à partir de 21h20.\n\nDates : du lundi 05 au vendredi 09 octobre.\n\nLe trafic est interrompu entre Houilles Carrières sur Seine <> Maisons-Laffitte.\n\nLes trains terminus / origine Houilles Carrières Sur Seine ne desservent pas la gare de Nanterre Université.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Nanterre Université.\n- Nanterre Université <> Poissy / Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h20\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\nInformation complémentaire :\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260812T120301"
+                },
+                {
+                    "id": "41af5191-9b96-42bb-8806-1398918b1bd3",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Houilles Carrières <> Maisons-Laffitte du 05 au 09/10",
+                    "message": "Période : à partir de 21h20.\n\nDates : du lundi 05 au vendredi 09 octobre.\n\nLe trafic est interrompu entre Houilles Carrières sur Seine <> Maisons-Laffitte.\n\nLes trains terminus / origine Houilles Carrières Sur Seine ne desservent pas la gare de Nanterre Université.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Nanterre Université.\n- Nanterre Université <> Poissy / Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h20\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\nInformation complémentaire :\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260812T120301"
+                },
+                {
+                    "id": "9b801b25-4016-49ef-b38c-d0f5be0cafb9",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Houilles Carrières <> Maisons-Laffitte du 05 au 09/10",
+                    "message": "Période : à partir de 21h20.\n\nDates : du lundi 05 au vendredi 09 octobre.\n\nLe trafic est interrompu entre Houilles Carrières sur Seine <> Maisons-Laffitte.\n\nLes trains terminus / origine Houilles Carrières Sur Seine ne desservent pas la gare de Nanterre Université.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Nanterre Université.\n- Nanterre Université <> Poissy / Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h20\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\nInformation complémentaire :\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260812T120301"
+                }
+            ]
+        },
+        "transilien-ligne-h": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "H",
+                "label": "Transilien H",
+                "slug": "transilien/ligne-h"
+            },
+            "disruptions": [
+                {
+                    "id": "a78aff06-f605-4372-8f80-d6ecceb65b99",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Trafic interrompu entre Sarcelles – Persan/Luzarches",
+                    "message": "Période : du lundi au vendredi à partir de 21h00\n\nDates : du 24 août au 9 octobre\n\nLe trafic sera interrompu du 24 août au 9 octobre entre Sarcelles-St-Brice et Persan-Beaumont et entre Sarcelles-St-Brice et Luzarches du lundi au vendredi à partir de 21h00.\n\nLes trains circuleront de Paris-Nord jusqu’à Sarcelles-St-Brice où seront mis en place des dispositifs de bus de remplacement :\n\nSarcelles <>Persan\nSarcelles <> Luzarches\n\nDerniers trains axe Montsoult / Luzarches :\n\nParis vers Luzarches : 19h25\nLuzarches vers Paris : 20h21\nParis Persan via Montsoult : 20h04\nPersan vers Paris via Montsoult : 19h39\n\nLes 2 derniers trains vers Persan via Montsoult départ de Paris-Nord à 00h04 et 00h49 sont supprimés.\n\nEmpruntez depuis Paris-Nord les trains en direction d’Ermont-Eaubonne puis descendez à Epinay-Villetaneuse où un dispositif de bus sera également mis en place.\n\nDernier train départ de Paris-Nord : 00h41\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260912T062157"
+                }
+            ]
+        },
+        "transilien-ligne-r": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "R",
+                "label": "Transilien R",
+                "slug": "transilien/ligne-r"
+            },
+            "disruptions": [
+                {
+                    "id": "7875e002-6b9c-4e9a-b4ec-5702e9f534f3",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne R : Paris Lyon <> Montargis interrompu du 05 au 30/10.",
+                    "message": "Période : en semaine à partir de 23h15.\n\nDates : du lundi 05 au vendredi 30 octobre.\n\nLe trafic est interrompu entre Paris Gare de Lyon et Montereau via Moret Veneux les S. et entre Paris Gare de Lyon et Montargis.\n\nAttention : Le train PEHA au départ de Montereau à 22h03 passe par Héricy et détourné par Corbeil.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260928T014247"
+                }
+            ]
+        },
+        "transilien-ligne-j": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "J",
+                "label": "Transilien J",
+                "slug": "transilien/ligne-j"
+            },
+            "disruptions": [
+                {
+                    "id": "34be9e1b-9f8f-450f-a15c-116eeb1a7d5b",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Issou Porcheville <> Mantes la Jolie du 21/09 au 16/10",
+                    "message": "Période : en semaine, à partir de 21h00.\n\nDates : du lundi 21 septembre au vendredi 16 octobre.\n\nLes deux derniers trains au départ de Paris Saint-Lazare vers Mantes la Jolie via Conflans Sainte-Honorine sont rendus terminus en gare de Issou Porcheville.\n\nUn service de bus de remplacement est mis en place entre Issou Porcheville <> Mantes la Jolie, avec desserte des gares intermédiaires.\n\nLe dernier train à circuler normalement :\n- Paris Saint-Lazare vers Mantes la Jolie via Conflans Sainte-Honorine : 21h16\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260819T092041"
+                },
+                {
+                    "id": "afb46afd-7370-431d-a775-f32e936c9687",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Paris St-Lazare <> Mantes via Poissy du 14/09 au 16/10",
+                    "message": "Période : en semaine, à partir de 21h40.\n\nDates : du lundi 14 septembre au vendredi 16 octobre.\n\nLe trafic est interrompu entre Paris Saint-Lazare <> Mantes la Jolie via Poissy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- Sartrouville <> Les Mureaux / Mantes la Jolie, du lundi 14 septembre au vendredi 02 octobre et du lundi 12 au vendredi 16 octobre.\n\n- Houilles Carrières <> Les Mureaux / Mantes la Jolie, du lundi 05 au vendredi 09 octobre.\n\nRenforcement de lignes régulières :\n- Bus 7820 entre La Défense <> Mantes la Jolie.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Mantes la Jolie via Poissy : 21h47\n- Mantes la Jolie vers Paris Saint-Lazare via Poissy : 21h43\n\nLes horaires du calculateur d’itinéraires tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261007T023416"
+                },
+                {
+                    "id": "4d9e9d20-e925-432c-820b-2e95f2e28dcc",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Ligne J : Ralentissements.",
+                    "message": "Le trafic est ralenti de la gare d'Argenteuil vers Mantes-la-Jolie via Conflans Ste-H. et de la gare d'Argenteuil vers Gisors.\n\nPour plus d'informations sur cette perturbation, consultez le fil X de la ligne J.\n\nMotif : incident affectant la voie dans le secteur du Val d'Argenteuil.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T123548"
+                },
+                {
+                    "id": "0e54aaad-8f6c-442c-aa38-36386ce6af89",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Ligne J : Ralentissements.",
+                    "message": "Le trafic est ralenti de la gare d'Argenteuil vers Mantes-la-Jolie via Conflans Ste-H. et de la gare d'Argenteuil vers Gisors.\n\nPour plus d'informations sur cette perturbation, consultez le fil X de la ligne J.\n\nMotif : incident affectant la voie dans le secteur du Val d'Argenteuil.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261007T123548"
+                },
+                {
+                    "id": "bab42734-1f4c-4263-9308-c4e42262630c",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Ligne J. Offre de transport adaptée axe Conflans-Sainte-Honorine.",
+                    "message": "Ligne J. L'offre de transport est adaptée sur l'axe Conflans-Sainte-Honorine.\n\nCertains matériels nécessitent une maintenance prolongée dans nos ateliers impactant la desserte de l'axe Conflans-Sainte-Honorine.\n\nLe plan de transport du 05 octobre au 09 octobre :\n\nles trains ayant pour origine ou terminus Conflans-Sainte-Honorine sont supprimés.\n\nPour compenser la réduction de desserte, des trains marqueront des arrêts supplémentaires dans certaines gares.\n\nLes équipes restent mobilisées pour un retour à la normale au cours de l'automne pour l'axe Conflans-Sainte-Honorine.\n\nRetrouvez chaque vendredi dès 17h les horaires des trains qui circuleront la semaine suivante sur la rubrique \"Recherche Itinéraire\". Nous vous recommandons également de vérifier vos horaires avant de vous rendre en gare.\n\nPour plus d’informations rendez vous sur le Blog Ligne J",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261005T135645"
+                }
+            ]
+        },
+        "tramway-ligne-t12": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T12",
+                "label": "Tramway T12",
+                "slug": "tramway/ligne-t12"
+            },
+            "disruptions": [
+                {
+                    "id": "abbf7da5-351a-490c-a9be-9c47c4efb90b",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "#Terminus Café ☕​",
+                    "message": "Chers Voyageurs,\n\nVos trajets quotidiens méritent un temps d'échange.\n\nLe lundi 19 octobre 2026, de 15h à 17h en station d'Epinay-sur-Orge.\n\nVenez échanger, partager et rencontrer nos équipes lors de notre Terminus Café.\n\nA très vite sur votre ligne T12",
+                    "shortMessage": "",
+                    "lastUpdate": "20261006T115652"
+                }
+            ]
+        },
+        "tramway-ligne-t13": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T13",
+                "label": "Tramway T13",
+                "slug": "tramway/ligne-t13"
+            },
+            "disruptions": [
+                {
+                    "id": "aca4fcf1-7972-49dd-b18f-4fe9e0226ff4",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "#Terminus Café ☕​",
+                    "message": "Chers Voyageurs,\n\nVos trajets quotidiens méritent un temps d'échange.\n\nLe lundi 26 octobre 2026, de 15h à 17h en station de Saint-Germain-en-Laye.\n\nVenez échanger, partager et rencontrer nos équipes lors de notre Terminus Café.\n\nA très vite sur votre ligne T13",
+                    "shortMessage": "",
+                    "lastUpdate": "20261006T120412"
+                }
+            ]
+        },
+        "tramway-ligne-t7": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T7",
+                "label": "Tramway T7",
+                "slug": "tramway/ligne-t7"
+            },
+            "disruptions": [
+                {
+                    "id": "25a6a572-7c0f-4cfd-9b93-a8e72ffdd247",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "Tramway T7 : Information - Autre",
+                    "message": "En raison de travaux, l'ascenseur de la station Aéroport d'Orly est indisponible.\nNous recommandons aux personnes à mobilité réduite ou ayant des difficultés à se déplacer :\n• d'emprunter la ligne 14 du métro jusqu'à la station Aéroport d'Orly, entièrement accessible (tarification spéciale)\n• de descendre à la station du tramway T7 Cœur d’Orly et prendre la navette aéroportuaire (ADP).",
+                    "shortMessage": "Autre",
+                    "lastUpdate": "20260731T075609"
+                }
+            ]
+        },
+        "tramway-ligne-t11": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T11",
+                "label": "Tramway T11",
+                "slug": "tramway/ligne-t11"
+            },
+            "disruptions": [
+                {
+                    "id": "a3e3d648-0fd0-4ae9-85be-5d7918e67f47",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "Dysfonctionnement des écrans d'information voyageurs.",
+                    "message": "En raison d'un dysfonctionnement informatique, les prochains départs ne sont actuellement plus affichés sur les écrans d'information voyageurs situés sur les quais.\n\nNos équipes de maintenance sont mobilisées et mettent tout en œuvre afin de rétablir le fonctionnement des écrans dans les meilleurs délais.\n\nDans l'attente du rétablissement de l'affichage, nous vous invitons à consulter les fiches horaires disponibles sur le site Ile-de-France Mobilités, sur l'application IDFM, ainsi que sur les différentes applications de mobilité.\n\nNous vous remercions pour votre compréhension et vous prions de nous excuser pour la gêne occasionnée.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261006T231625"
+                }
+            ]
+        }
+    }
+}
