@@ -1,0 +1,807 @@
+{
+    "generated_at": "2026-11-23T13:56:15+00:00",
+    "date": "2026-11-23",
+    "article_slug": "2026-11-23-bulletin-semaine-a-venir",
+    "article_url": "/info-trafic/2026-11-23-bulletin-semaine-a-venir/",
+    "total_disruptions": 60,
+    "stats_total": {
+        "bloquante": 4,
+        "perturbee": 53,
+        "information": 3,
+        "total": 60
+    },
+    "stats_by_mode": {
+        "metro": {
+            "bloquante": 2,
+            "perturbee": 5,
+            "information": 0,
+            "total": 7
+        },
+        "rer": {
+            "bloquante": 1,
+            "perturbee": 21,
+            "information": 0,
+            "total": 22
+        },
+        "tramway": {
+            "bloquante": 1,
+            "perturbee": 3,
+            "information": 3,
+            "total": 7
+        },
+        "transilien": {
+            "bloquante": 0,
+            "perturbee": 24,
+            "information": 0,
+            "total": 24
+        },
+        "bus": {
+            "bloquante": 0,
+            "perturbee": 0,
+            "information": 0,
+            "total": 0
+        }
+    },
+    "lines": {
+        "metro-ligne-8": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "8",
+                "label": "Métro 8",
+                "slug": "metro/ligne-8"
+            },
+            "disruptions": [
+                {
+                    "id": "78b41495-d1df-423f-a43a-be1a8dfe77ca",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Métro 8 : Travaux de rénovation - Arrêt non desservi",
+                    "message": "Jusqu'au 22 avril 2027 inclus, l'arrêt n'est pas desservi à République en raison de travaux de rénovation",
+                    "shortMessage": "Arrêt non desservi",
+                    "lastUpdate": "20260722T044616"
+                }
+            ]
+        },
+        "metro-ligne-4": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "4",
+                "label": "Métro 4",
+                "slug": "metro/ligne-4"
+            },
+            "disruptions": [
+                {
+                    "id": "e9363590-80f4-491f-9aee-d191819026d2",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Métro 4 : Travaux de rénovation - Arrêt non desservi",
+                    "message": "Jusqu'au 19 décembre inclus, l'arrêt n'est pas desservi à Saint-Michel en raison de travaux de rénovation",
+                    "shortMessage": "Arrêt non desservi",
+                    "lastUpdate": "20261011T180411"
+                },
+                {
+                    "id": "24c6b568-4b64-4fea-b359-22739ee69b2a",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 4 : Ajustement de l'intervalle entre les trains - Train stationne",
+                    "message": "Un train stationne à Alésia vers Porte de Clignancourt en raison d'un ajustement de l'intervalle entre les trains .",
+                    "shortMessage": "Train stationne",
+                    "lastUpdate": "20261123T140410"
+                }
+            ]
+        },
+        "rer-ligne-c": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "C",
+                "label": "RER C",
+                "slug": "rer/ligne-c"
+            },
+            "disruptions": [
+                {
+                    "id": "c89aa2ea-1d8f-430e-81cc-067631144ce4",
+                    "severity": "BLOQUANTE",
+                    "cause": "PERTURBATION",
+                    "title": "RER C : perturbations",
+                    "message": "Le trafic est perturbé entre Biblio. F.Mitterrand et Pontoise, St-Quentin en Yvelines et Versailles Château dans les 2 sens.\n\nRendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation.\n\nPour plus d'informations sur cette perturbation, consultez le fil X du RER C.\n\nMotif : obstacle sur la voie à St Michel Notre Dame.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261123T141105"
+                },
+                {
+                    "id": "995b1c14-7ca7-4490-94be-69d297c1cf81",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: Chaville et Versailles Château/St-Quentin les 22-29/11",
+                    "message": "Période : les soirées.\n\nDates : les dimanches 22 et 29 novembre.\n\nLe trafic est interrompu entre Chaville et Versailles Château/St-Quentin en Yvelines:\n\n- Dernier départ de Chaville pour Versailles Château à 20h12\n- Dernier départ de Chaville pour Saint-Quentin à 20h05\n- Dernier départ de Versailles Château à 20h25\n- Dernier départ de St-Quentin à 18h40\nReport : bus de ville 169 ou 171\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261112T145242"
+                },
+                {
+                    "id": "8e9e08e6-b0ce-4a75-b69e-3dd9bdadb5b8",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C : Pont de Rungis et Paris Austerlitz du 02/11 au 30/11.",
+                    "message": "Période : les soirées.\n\nDates : du lundi 2 au lundi 30 novembre (sauf samedi, dimanche et fête).\n\nLe trafic est interrompu entre Pont de Rungis et Paris Austerlitz :\n\n- Dernier départ de Paris Austerlitz à 22h27\n\n- Dernier départ de Pont de Rungis à 22h08\n\nReport : Lignes de métro 7 ou 14, Tramways T3a , T7, T9, bus de ville 180, 182, 183, 323, 325, 482, 483 ou TVM\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T145848"
+                },
+                {
+                    "id": "55d17d51-c36b-4103-9f4f-c4078ddd617c",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C : entre Avenue Henri Martin et Pontoise du 02/11 au 30/11",
+                    "message": "Période : les soirées.\n\nDates : du lundi 2 au lundi 30 novembre (sauf samedi, dimanche et fête).\n\nLe trafic est interrompu entre Avenue Henri Martin et Montigny - Beauchamp et Pontoise :\n\n- Dernier départ d'Avenue Henri Martin pour Pontoise à 21h41\n- Dernier départ d'Avenue Henri Martin pour Montigny B. à 22h55\n- Dernier départ de Pontoise à 21h58\n- Dernier départ de Montigny Beauchamp à 22h25\n\nReport : ligne H , métros, tramway ou bus de ville 138 entre St-Ouen et Ermont Eaubonne.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T151747"
+                },
+                {
+                    "id": "76b5b62b-5fb6-4a3e-b7ab-6d046d36108b",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "RER C : perturbations",
+                    "message": "Le trafic est perturbé entre Biblio. F.Mitterrand et Pontoise, St-Quentin en Yvelines et Versailles Château dans les 2 sens.\n\nRendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation.\n\nPour plus d'informations sur cette perturbation, consultez le fil X du RER C.\n\nMotif : obstacle sur la voie à St Michel Notre Dame.",
+                    "shortMessage": "Trafic fortement perturbé",
+                    "lastUpdate": "20261123T141105"
+                },
+                {
+                    "id": "a1f7ef72-cb90-43d0-b99e-37b5b067b84e",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C:entre Javel et Versail.Château/St-Quentin du 16/11 au 30/11",
+                    "message": "Période : les soirées.\n\nDates : du lundi 16 au lundi 30 novembre (sauf samedi, dimanche)\n\nLe trafic est interrompu entre Javel et Versailles Château / St-Quentin en Yvelines :\n\n- Dernier départ de Javel pour St-Quentin à 21h17\n- Dernier départ de Javel pour Versailles Château à 23h11\n- Dernier départ de St-Quentin à 21h40\n- Dernier départ de Versailles Château à 22h25\n\nReport : ligne N ou bus de ville 169, 171\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T151346"
+                },
+                {
+                    "id": "2458128a-8e9c-4631-8ee5-b5d12f2cd924",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Métro 4 : Fermeture de la station Saint-Michel du 14/09 au 19/12",
+                    "message": "La station Saint-Michel métro 4 n'est pas desservie. Pas de correspondance à Saint-Michel Notre Dame.\n\nMotif : travaux de rénovation.",
+                    "shortMessage": "Trafic fortement perturbé",
+                    "lastUpdate": "20261120T085451"
+                },
+                {
+                    "id": "7fdb8acf-00c1-4eb7-b299-5d2204513be6",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RERC:entre St-Martin d'Étamp.- Paris Auster. 01-08-11-15-22-29/11",
+                    "message": "Période : les soirées.\n\nDates : les dimanches 1er, 8, 15, 22 et 29 novembre et le mercredi 11 novembre.\n\nLe trafic est interrompu entre Saint-Martin d'Étampes et Paris Austerlitz :\n\n- Dernier départ de Saint-Martin d'Etampes à 21h41\n- Dernier départ de Paris Austerlitz à 22h45\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T154248"
+                },
+                {
+                    "id": "60ddba24-ba94-4d3b-add2-b256e13f0b44",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: entre Dourdan et Paris Austerlitz du 02/11 au 30/11",
+                    "message": "Période : Les soirées.\n\nDates : du lundi 2 au lundi 30 novembre (sauf samedi, dimanche et fête).\n\nLe trafic est interrompu entre Dourdan et Paris Austerlitz :\n- Dernier départ de Dourdan 21h07\n- Dernier départ de Paris Austerlitz à 21h17\n\nA partir de 21h45, les trains sont terminus Brétigny.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260930T095344"
+                },
+                {
+                    "id": "452d5894-a178-4500-98c7-2d01cc9f0557",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: entre Dourdan et Paris Austerlitz les 01-08-11-15-22-29/11",
+                    "message": "Période : les soirées.\n\nDates : les dimanches 1er, 8, 15, 22 et 29 novembre et le mercredi 11 novembre.\n\nLe trafic est interrompu entre Dourdan et Paris Austerlitz :\n\n- Dernier départ de Dourdan à 21h07\n- Dernier départ de Paris Austerlitz à 22h15\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T154258"
+                },
+                {
+                    "id": "24f72995-f0af-49cc-9152-b12570cdd938",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C: entre St-Martin d'Étam. et Paris Auster. 02/11 au 30/11",
+                    "message": "Période : les soirées.\n\nDates : du lundi 2 au lundi 30 novembre (sauf samedi, dimanche et fête).\n\nLe trafic est interrompu entre Saint-Martin d'Étampes et Paris Austerlitz :\n\n- Dernier départ de Saint-Martin d'Étampes à 21h41\n- Dernier départ de Paris Austerlitz à 22h31\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T144345"
+                },
+                {
+                    "id": "a1b0b0d9-fb87-4580-b1c0-f8d7a8b2142f",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "RER C : perturbations",
+                    "message": "Le trafic est perturbé entre Biblio. F.Mitterrand et Pontoise, St-Quentin en Yvelines et Versailles Château dans les 2 sens.\n\nRendez-vous sur la rubrique \"Recherche Itinéraire\", pour retrouver un itinéraire prenant en compte cette perturbation.\n\nPour plus d'informations sur cette perturbation, consultez le fil X du RER C.\n\nMotif : obstacle sur la voie à St Michel Notre Dame.",
+                    "shortMessage": "Trafic fortement perturbé",
+                    "lastUpdate": "20261123T141105"
+                },
+                {
+                    "id": "1286e4f9-194e-48b6-8a23-607ac4989f6d",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER C:entre Juvisy- Paris Austerlitz via Choisy du 02/11 au 30/11",
+                    "message": "Période :les soirées.\n\nDates : du lundi 2 au lundi 30 novembre (sauf samedi, dimanche et fête)\n\nLe trafic est interrompu entre Juvisy et Paris Austerlitz (via Choisy le Roi) :\n\n- Dernier départ de Juvisy à 22h29\n- Dernier départ de Paris Austerlitz à 22h36\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261001T145347"
+                }
+            ]
+        },
+        "tramway-ligne-t4": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T4",
+                "label": "Tramway T4",
+                "slug": "tramway/ligne-t4"
+            },
+            "disruptions": [
+                {
+                    "id": "2ed20212-cf46-486e-b3bf-991b1541b0a5",
+                    "severity": "BLOQUANTE",
+                    "cause": "TRAVAUX",
+                    "title": "Tramway T4 - Travaux : Trafic interrompu sur toute la ligne du 16/11 au 04/12 à partir de 21h15 sauf les week-end.",
+                    "message": "Du lundi 16 novembre au vendredi 4 décembre, sauf les week-end, le trafic est interrompu sur l'ensemble de la ligne à partir de 21h15.\n\nLe dernier tram de Bondy et Aulnay-sous-Bois est à 21h01.\n\nLe dernier tram de Bondy vers Hôpital de Montfermeil est à 21h07.\n\nLe dernier tram d'Hôpital de Montfermeil vers Bondy est à 21h32.\n\nPremier départ de Bondy vers Aulnay-sous-Bois est à 5h06 du lundi au vendredi et 5h le samedi et dimanche.\n\nPremier départ d'Aulnay-sous-Bois vers Bondy est à 5h04 du lundi au vendredi et 5h03 le samedi et dimanche.\n\nUn service de bus de substitution est mis en place avec desserte des stations intermédiaires.\n\nLes résultats du calculateur d'itinéraire tiennent compte de cette perturbation.\n\nMotif : Travaux.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261106T163619"
+                },
+                {
+                    "id": "376e400a-5014-4d25-be62-b99b6f4305fb",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "Tramway T4 - Ecrans d'information voyageurs hors service en gare de Bondy.",
+                    "message": "Les écrans d'information voyageurs sont indisponibles en gare de Bondy, sur la ligne T4.\n\nNous vous invitions à consulter l'application Ile-de-France Mobilités pour connaître les horaires de passage de vos tramways.\n\nVeuillez nous excuser pour la gêne occasionnée.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261020T164847"
+                }
+            ]
+        },
+        "metro-ligne-10": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "10",
+                "label": "Métro 10",
+                "slug": "metro/ligne-10"
+            },
+            "disruptions": [
+                {
+                    "id": "9b925fdb-1381-43ab-bf1f-2ecf0d3b48b9",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 10 : Bagage oublié dans un train - Train stationne",
+                    "message": "Un train stationne à Mabillon vers Boulogne Pont de Saint-Cloud en raison d'un bagage oublié dans un train .",
+                    "shortMessage": "Train stationne",
+                    "lastUpdate": "20261123T144811"
+                }
+            ]
+        },
+        "metro-ligne-11": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "11",
+                "label": "Métro 11",
+                "slug": "metro/ligne-11"
+            },
+            "disruptions": [
+                {
+                    "id": "b6dbda0e-ee58-4327-8540-771438c25c9c",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 11 : Incident (intervention conducteur) - Stationnement prolongé",
+                    "message": "Le stationnement est prolongé à Arts et Métiers vers Châtelet en raison d'un incident nécessitant l’intervention du conducteur .",
+                    "shortMessage": "Stationnement prolongé",
+                    "lastUpdate": "20261123T134811"
+                }
+            ]
+        },
+        "metro-ligne-7": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "7",
+                "label": "Métro 7",
+                "slug": "metro/ligne-7"
+            },
+            "disruptions": [
+                {
+                    "id": "b85282b7-f022-470f-b260-a7a7917e0c02",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 7 : Incident d'exploitation - Trafic perturbé",
+                    "message": "Le trafic est perturbé entre Villejuif - Louis Aragon et Maison Blanche vers La Courneuve - 8 Mai 1945 en raison d'un incident d'exploitation entre Villejuif - Louis Aragon et Maison Blanche .",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261123T134411"
+                }
+            ]
+        },
+        "metro-ligne-9": {
+            "line": {
+                "mode": "Metro",
+                "shortName": "9",
+                "label": "Métro 9",
+                "slug": "metro/ligne-9"
+            },
+            "disruptions": [
+                {
+                    "id": "b9e3857d-bf4a-4c3f-9fa8-70892fb8e8f0",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Métro 9 : Ajustement de l'intervalle entre les trains - Vitesse réduite",
+                    "message": "Les trains circulent à vitesse réduite entre Mairie de Montreuil et Porte de Montreuil en raison d'un ajustement de l'intervalle entre les trains .",
+                    "shortMessage": "Vitesse réduite",
+                    "lastUpdate": "20261123T145212"
+                }
+            ]
+        },
+        "rer-ligne-d": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "D",
+                "label": "RER D",
+                "slug": "rer/ligne-d"
+            },
+            "disruptions": [
+                {
+                    "id": "b31eb50b-cf9f-4fe4-bc11-bc8587514a0a",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER D : Paris Nord <-> Creil 02-27/11, en semaine dès 23h25",
+                    "message": "Période : en semaine dès 23h25\n\nDates : du lundi 02 au vendredi 27 novembre, sauf les jours fériés.\n\nLe trafic est interrompu entre Paris Gare du Nord et Creil.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261028T114254"
+                },
+                {
+                    "id": "bb957de6-c9ac-4e4d-9f15-76dc8cfa5428",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER D : Paris Lyon <> Melun / Corbeil interrompu 02-27/11.",
+                    "message": "Période : en semaine dès 23h15.\n\nDates : du lundi 02 au vendredi 27 novembre, sauf les jours fériés.\n\nLe trafic est interrompu entre Paris Gare de Lyon et Melun et entre Paris Gare de Lyon et Corbeil-Essonnes.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261015T004852"
+                }
+            ]
+        },
+        "rer-ligne-e": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "E",
+                "label": "RER E",
+                "slug": "rer/ligne-e"
+            },
+            "disruptions": [
+                {
+                    "id": "c9acc5b7-81cf-4fac-9329-cd9e85e9b8b2",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER E : Nanterre – Villiers/Tournan 9/11 – 11/12",
+                    "message": "Période : en semaine à partir de 22h30. Dates : du lundi 9 novembre au vendredi 11 décembre. Le trafic est interrompu entre Nanterre-la-Folie et Villiers-sur-Marne et entre Nanterre-la-Folie et Tournan. Le dernier train VONY, au départ de Nanterre-la-Folie est prévu à 22h11. Le dernier train NOVY, au départ de Villiers-sur-Marne est prévu à 22h25. Le dernier train TONU, au départ de Nanterre-la-Folie est prévu à 21h56. Le dernier train NATU, au départ de Tournan est prévu à 21h53. Un service de bus de remplacement est mis en place avec desserte des gares intermédiaires. Les horaires du calculateur d’itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261115T152738"
+                },
+                {
+                    "id": "6a541403-f377-4abd-a990-f65e6f8f9495",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER E : Nanterre - Chelles 26/09 - 6/12",
+                    "message": "Période : à partir de 22h45\n\nDates : le week-end du 26/09 au 6/12 sauf le 14, 21/11 et le 22/11.\n\nLe trafic est interrompu entre Nanterre-la-Folie et Chelles Gournay.\nLe dernier train NOCY de Chelles Gournay vers Nanterre-la-Folie est à 22h33.\nLe dernier train CONY de Nanterre-la-Folie vers Chelles Gournay est à 22h49.\n\nUn service de bus de remplacement est mis en place avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire (Grand Paris Express).",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261113T102840"
+                },
+                {
+                    "id": "5209aa7d-8ae1-465b-b7c5-67060206322f",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER E : Nanterre - Chelles 15/06 - 2/10 et du 15/10 - 11/12",
+                    "message": "Période : en semaine à partir de 22h45\n\nDates : du lundi 15 juin au vendredi 2 octobre et du jeudi 15 octobre au vendredi 11 décembre.\n\nLe trafic est interrompu entre Nanterre-la-Folie et Chelles Gournay.\nLe dernier train NOCY de Chelles Gournay vers Nanterre-la-Folie est à 22h33.\nLe dernier train CONY de Nanterre-la-Folie vers Chelles Gournay est à 22h49, sauf du 15 au 16 juin, le dernier train CONY de Nanterre-la-Folie à Chelles Gournay est à 22h38.\n\nUn service de bus de remplacement est mis en place avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux\n\nMotif : travaux sur le réseau ferroviaire",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261116T122540"
+                },
+                {
+                    "id": "f6572214-88c3-4ef0-8379-f0aca53ef367",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "RER E : Val de Fontenay – Travaux en gare – du 20/10 au 17/12",
+                    "message": "Période : du lundi au dimanche, toute la journée\nDates : Du 20 octobre au 17 décembre 2026\nGare : Val de Fontenay\n\nAccès du RER E vers le RER A modifié.\n\nCheminement recommandé en gare :\n\nPour rejoindre le quai du RER A en direction Paris : empruntez l’accès vers le quai du RER A en direction de Marne-la-Vallée.\n\nNous vous conseillons autant que possible de vous positionner à l’avant du train avant de descendre en gare de Val de Fontenay.\n\nMotif : remplacement d’un escalier mécanique en gare",
+                    "shortMessage": "",
+                    "lastUpdate": "20261114T085928"
+                }
+            ]
+        },
+        "rer-ligne-a": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "A",
+                "label": "RER A",
+                "slug": "rer/ligne-a"
+            },
+            "disruptions": [
+                {
+                    "id": "4090a8ae-05ff-42a8-95f6-ea28e8537554",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER A : Maisons-Laffitte - Cergy le Haut du 16 au 27/11",
+                    "message": "Période : en semaine à partir de 21h50.\n\nDates : du lundi 16 au vendredi 27 novembre.\n\nLe trafic est interrompu entre Maisons-Laffitte et Cergy le Haut.\n\nUn service de bus de remplacement est mis en place à Sartrouville, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261109T154148"
+                }
+            ]
+        },
+        "rer-ligne-b": {
+            "line": {
+                "mode": "RapidTransit",
+                "shortName": "B",
+                "label": "RER B",
+                "slug": "rer/ligne-b"
+            },
+            "disruptions": [
+                {
+                    "id": "fe668353-1b21-4d5e-961a-83d256bf8f33",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER B : Aéroport CDG2/Mitry <-> Châtelet Les H.",
+                    "message": "Période : en semaine à partir de 22h45 (sauf jour férié).\n\nDates : toute l'année sauf les 25 septembre, 2 et 5 octobre et 11 et 13 novembre\n\nLe trafic est interrompu entre Châtelet les Halles et Aéroport Charles de Gaulle/Mitry-Claye\n\nUn dispositif de bus de remplacement sera mis en place au départ du Gare du Nord.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261020T135500"
+                },
+                {
+                    "id": "209bc1f3-4072-4aa7-9f97-b8fcc1cefc55",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "RER B : Châtelet <-> Aéroport CDG2 - Mitry - Claye 01/06-31/12",
+                    "message": "Période : en semaine à partir de 22h45.\n\nDates : du lundi 1er juin au jeudi 31 décembre\n\nLe trafic est interrompu entre Châtelet Les Halles et Aérop. C De Gaulle 2 et entre Châtelet Les Halles et Mitry - Claye.\n\nUn dispositif de bus de remplacement sera mis en place au départ du Gare du Nord.\n\nPour plus d'informations, consultez le site du RER B\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20260702T150909"
+                }
+            ]
+        },
+        "tramway-ligne-t12": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T12",
+                "label": "Tramway T12",
+                "slug": "tramway/ligne-t12"
+            },
+            "disruptions": [
+                {
+                    "id": "7c2c7ea6-0cd2-4ab4-a271-0ded553948ba",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Départ non assuré - Ligne T12 : panne de tramway le lundi 23 novembre 2026",
+                    "message": "En raison d'une panne de tramway, les départs suivants de la ligne T12 sont supprimés : Massy - Palaiseau : 13h29 Évry-Courcouronnes - voie 1 : 14h19",
+                    "shortMessage": "",
+                    "lastUpdate": "20261123T132700"
+                },
+                {
+                    "id": "3f0f6f60-88f5-4889-9ead-e5fa465ae1ed",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "☕Terminus Café - Novembre 2026",
+                    "message": "Chers Voyageurs,\n\nLe vendredi 27 novembre 2026, de 15h00 à 17h00 en station d'Evry-Courcouronnes, venez échanger, partager et rencontrer nos équipes.\n\nVos trajets méritent un temps d'échange.\n\nOn vous attend nombreux !\n\nL'Equipe du T12",
+                    "shortMessage": "",
+                    "lastUpdate": "20261117T094336"
+                }
+            ]
+        },
+        "tramway-ligne-t13": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T13",
+                "label": "Tramway T13",
+                "slug": "tramway/ligne-t13"
+            },
+            "disruptions": [
+                {
+                    "id": "9cb8411e-e0ab-41e4-a6da-66a5cdc8de1d",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Travaux d'entretien des voies en gare de Garches-Marne-la-Coquette",
+                    "message": "Chers voyageurs,\n\nDes travaux d'entretien des voies en gare de Garches-Marne-la-Coquette vont avoir lieu et cela va impacter la circulation des trains sur votre ligne.\n\nDu lundi 16 novembre au vendredi 27 novembre inclus, la circulation sur votre ligne sera entièrement interrompue de 22h00 jusqu'à la fin de service du lundi au vendredi uniquement.Du samedi 28 novembre au dimanche 29 novembre jusqu'à 12h30, aucun train ne circulera sur votre ligne.\n\nDes bus de remplacement seront mis à votre disposition.\n\nSi vous souhaitez consulter ou télécharger les fiches horaires au format PDF pour les travaux du 16/11 au 27/11 veuillez cliquer ICI.\n\nSi vous souhaitez consulter ou télécharger les fiches horaires au format PDF pour les travaux du 28/11 au 29/11 veuillez cliquer ICI.\n\nSinon, merci de consulter l'affichage en station ou vos applications de mobilité.",
+                    "shortMessage": "",
+                    "lastUpdate": "20261103T085244"
+                },
+                {
+                    "id": "3d72194a-a99a-480a-8058-4b562fed4fae",
+                    "severity": "INFORMATION",
+                    "cause": "INFORMATION",
+                    "title": "☕Terminus Café - Novembre 2026",
+                    "message": "Chers Voyageurs,\n\nLe lundi 30 novembre 2026, de 15h00 à 17h00 en station de Saint-Cyr, venez échanger, partager et rencontrer nos équipes.\n\nVos trajets méritent un temps d'échange.\n\nOn vous attend nombreux !\n\nL'Equipe du T13",
+                    "shortMessage": "",
+                    "lastUpdate": "20261123T081014"
+                }
+            ]
+        },
+        "tramway-t14": {
+            "line": {
+                "mode": "Tramway",
+                "shortName": "T14",
+                "label": "Tramway T14",
+                "slug": "tramway-t14"
+            },
+            "disruptions": [
+                {
+                    "id": "b3a995e4-1447-4f2b-adbb-9335c06ba7e8",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Tramway T14 : Premier départ du 24/11 à 05h10 de Crécy la Chapelle vers Esbly supprimé",
+                    "message": "Le premier départ du 24/11 à 05h10 de Crécy la Chapelle vers Esbly est supprimé.\n\nLe premier départ de Crécy la Chapelle vers Esbly sera prévu à 05h54.\n\nLe premier départ de Esbly vers Crécy la Chapelle sera prévu à 05h30.\n\nUn bus de substitution est prévu pour assurer votre premier départ depuis Crécy la Chapelle.\n\nMotif : Travaux",
+                    "shortMessage": "",
+                    "lastUpdate": "20261119T202849"
+                }
+            ]
+        },
+        "transilien-ligne-u": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "U",
+                "label": "Transilien U",
+                "slug": "transilien/ligne-u"
+            },
+            "disruptions": [
+                {
+                    "id": "02f58e12-45c5-4def-abb9-8f32ecfee1e7",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne U: La Déf. <->La Verrière 02/11-04/12 en semaine de soirée",
+                    "message": "Période : en semaine, de soirée.\n\nDates : du lundi 02 novembre au vendredi 4 décembre.\n\nLe trafic est interrompu entre La Défense et La Verrière.\n\nDernier train de La Défense pour La Verrière : le VERI de 21h15.\n\nDernier train de La Verrière pour La Défense : le DEFI de 20h20.\n\nParticularité du mercredi 11 novembre :\n\nDernier train de La Défense pour La Verrière : le VERI de 23h15.\n\nDernier train de La Verrière pour La Défense : le DEFI de 22h20.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261110T155706"
+                },
+                {
+                    "id": "73d4441d-273e-4089-870c-66aa056b8eb5",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne U : La Défense <-> La Verrière 29/11, le dimanche.",
+                    "message": "Période : jusqu'à 7h00 et à partir de 20h30.\n\nDates : le dimanche 29 novembre.\n\nLe trafic est interrompu entre La Défense et La Verrière.\n\nLes premiers trains à circuler :\n\nAu départ de La Verrière ; DEFI de 7h20\n\nAu départ de La Défense : VERI de 8h15\n\nLes derniers trains à circuler :\n\nAu départ de La Verrière ; DEFI de 18h50\n\nAu départ de La Défense : VERI de 19h45\n\nReport sur les itinéraires alternatifs entre La Défense et Versailles Chantiers.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261123T094441"
+                }
+            ]
+        },
+        "transilien-ligne-l": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "L",
+                "label": "Transilien L",
+                "slug": "transilien/ligne-l"
+            },
+            "disruptions": [
+                {
+                    "id": "efefb9e8-9bf1-4c8f-b7de-237827f67ade",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Paris <> Nanterre Univ./Maisons-Laffitte du 16 au 27/11",
+                    "message": "Période : en semaine, à partir de 21h50.\n\nDates : du lundi 16 au vendredi 27 novembre.\n\nAxe Paris Saint-Lazare <> Maisons-Laffitte :\n- Trafic interrompu entre Sartrouville <> Maisons-Laffitte.\n- La gare de Nanterre Université n’est pas desservie.\n\nAxe Paris Saint-Lazare <> Nanterre Université :\n- Moins de trains (les trains origine / terminus Nanterre Université sont supprimés).\n\nLes clients souhaitant rejoindre ou quitter la gare de Maisons-Laffitte peuvent également emprunter le RER A branche Poissy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Sartrouville.\n- Sartrouville <> Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h50\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\n- Paris Saint-Lazare vers Nanterre Université : 22h05\n- Nanterre Université vers Paris Saint-Lazare : 22h30\n\nInformations complémentaires :\n- Le train de 22h35 au départ de Paris Saint-Lazare et à destination de Nanterre Université est rendu terminus La Garenne Colombes.\n- Le train de 22h38 au départ de Maisons-Laffitte et à destination de Paris Saint-Lazare\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261012T141857"
+                },
+                {
+                    "id": "bdb49e76-b887-4dd4-b24b-c10f2b9a0e38",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Paris <> Nanterre Univ./Maisons-Laffitte du 16 au 27/11",
+                    "message": "Période : en semaine, à partir de 21h50.\n\nDates : du lundi 16 au vendredi 27 novembre.\n\nAxe Paris Saint-Lazare <> Maisons-Laffitte :\n- Trafic interrompu entre Sartrouville <> Maisons-Laffitte.\n- La gare de Nanterre Université n’est pas desservie.\n\nAxe Paris Saint-Lazare <> Nanterre Université :\n- Moins de trains (les trains origine / terminus Nanterre Université sont supprimés).\n\nLes clients souhaitant rejoindre ou quitter la gare de Maisons-Laffitte peuvent également emprunter le RER A branche Poissy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Sartrouville.\n- Sartrouville <> Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h50\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\n- Paris Saint-Lazare vers Nanterre Université : 22h05\n- Nanterre Université vers Paris Saint-Lazare : 22h30\n\nInformations complémentaires :\n- Le train de 22h35 au départ de Paris Saint-Lazare et à destination de Nanterre Université est rendu terminus La Garenne Colombes.\n- Le train de 22h38 au départ de Maisons-Laffitte et à destination de Paris Saint-Lazare\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261012T141857"
+                },
+                {
+                    "id": "ad153d10-8117-4281-8601-0486506a10ef",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : La Défense <> Versailles R.D./St-Nom la Bret. 16-27/11",
+                    "message": "Période : en semaine, à partir de 22h10.\n\nDates : du lundi 16 au vendredi 27 novembre.\n\nLe trafic est interrompu entre :\n- La Défense <> Versailles Rive Droite.\n- La Défense <> Saint-Nom la Bretèche.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Défense <> Versailles Rive Droite.\n- La Défense <> Saint-Nom la Bretèche.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Versailles Rive Droite : 22h26\n- Versailles Rive Droite vers Paris Saint-Lazare : 22h12\n\n- Paris Saint-Lazare vers Saint-Nom la Bretèche : 22h11\n- Saint-Nom la Bretèche vers Paris Saint-Lazare : 22h18\n\nInformation complémentaire :\n- , le train de 22h11 au départ de Paris Saint-Lazare et à destination de Saint-Nom la Bretèche est .\n\nLes horaires du calculateur d’itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261016T114528"
+                },
+                {
+                    "id": "7537023c-8c51-417e-ada5-693581a26f8d",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne L : Paris <> Nanterre Univ./Maisons-Laffitte du 16 au 27/11",
+                    "message": "Période : en semaine, à partir de 21h50.\n\nDates : du lundi 16 au vendredi 27 novembre.\n\nAxe Paris Saint-Lazare <> Maisons-Laffitte :\n- Trafic interrompu entre Sartrouville <> Maisons-Laffitte.\n- La gare de Nanterre Université n’est pas desservie.\n\nAxe Paris Saint-Lazare <> Nanterre Université :\n- Moins de trains (les trains origine / terminus Nanterre Université sont supprimés).\n\nLes clients souhaitant rejoindre ou quitter la gare de Maisons-Laffitte peuvent également emprunter le RER A branche Poissy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- La Garenne Colombes <> Sartrouville.\n- Sartrouville <> Cergy le Haut.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Maisons-Laffitte : 21h50\n- Maisons-Laffitte vers Paris Saint-Lazare : 22h04\n\n- Paris Saint-Lazare vers Nanterre Université : 22h05\n- Nanterre Université vers Paris Saint-Lazare : 22h30\n\nInformations complémentaires :\n- Le train de 22h35 au départ de Paris Saint-Lazare et à destination de Nanterre Université est rendu terminus La Garenne Colombes.\n- Le train de 22h38 au départ de Maisons-Laffitte et à destination de Paris Saint-Lazare\n- Le train de 00h29 au départ de Paris Saint-Lazare et à destination de Maisons-Laffitte est supprimé.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261012T141857"
+                }
+            ]
+        },
+        "transilien-ligne-r": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "R",
+                "label": "Transilien R",
+                "slug": "transilien/ligne-r"
+            },
+            "disruptions": [
+                {
+                    "id": "cfce8cf3-67af-4b70-a6a3-6b29a8a9cced",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne R : Paris Lyon <> Montargis / Montereau interrompu 02-27/11",
+                    "message": "Période : en semaine dès 23h15.\n\nDates : du lundi 02 au vendredi 27 novembre, sauf les jours fériés.\n\nLe trafic est interrompu entre Paris Gare de Lyon et Montargis et entre Paris Gare de Lyon et Montereau via Moret Veneux les Sablons.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261115T231248"
+                },
+                {
+                    "id": "6097fa27-6cf9-4e85-812a-90dadc82e4f0",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne R : Entre Melun et Montereau du 07 au 29/11, les week-ends",
+                    "message": "Période : les week-ends, toute la journée.\n\nDates : Les samedis et dimanches : 7/8, 21/22 et 28/29 novembre.\n\nLe trafic est interrompu entre Melun et Montereau via Héricy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261115T232248"
+                },
+                {
+                    "id": "29816313-a262-4a19-95d6-0dcf1e063fca",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne R : modification des horaires des trains novembre.",
+                    "message": "Période : Du lundi au dimanche.\n\nDates : du 1er au 30 novembre.\n\nLes horaires de départ, d'arrivée ou de passage en gare de certains trains de la ligne R peuvent être avancés et vos temps de trajet peuvent être impactés.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux de maintenance et de création du réseau",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261028T114738"
+                }
+            ]
+        },
+        "transilien-ligne-j": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "J",
+                "label": "Transilien J",
+                "slug": "transilien/ligne-j"
+            },
+            "disruptions": [
+                {
+                    "id": "eba6e7d9-ee97-40b4-b459-2a80b2440b73",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Issou Porcheville <> Mantes via Conflans 23/11-24/12",
+                    "message": "Période : en semaine, à partir de 21h00.\n\nDates : du lundi 23 novembre au jeudi 24 décembre.\n\nLes deux derniers trains au départ de Paris Saint-Lazare vers Mantes la Jolie via Conflans Sainte-Honorine sont rendus terminus en gare de Issou Porcheville.\n\nUn service de bus de remplacement est mis en place de Issou Porcheville vers Mantes la Jolie, avec desserte des gares intermédiaires.\n\nLe dernier train à circuler normalement :\n- Paris Saint-Lazare vers Mantes la Jolie via Conflans Sainte-Honorine : 21h16\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261020T163141"
+                },
+                {
+                    "id": "032147ed-ed2a-4f68-997d-93a4224e6e0e",
+                    "severity": "PERTURBEE",
+                    "cause": "PERTURBATION",
+                    "title": "Ligne J : réduction de l’offre de transport",
+                    "message": "L’offre de transport de la ligne J est réduite en raison d’une capacité de maintenance des trains limitée.\n\nPour plus d'informations, consultez le blog de la ligne J.\n\nPour préparer votre trajet et avant de vous rendre en gare, vérifiez les horaires des trains sur la rubrique \"Recherche Itinéraire\".\n\nMotif : capacité de maintenance des trains limitée.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261121T180346"
+                },
+                {
+                    "id": "777b77ce-6fc3-4f28-bc87-1d66c4d123cd",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Les Mureaux <> Mantes J. week-ends 21-22 et 28-29/11",
+                    "message": "Période : toute la journée\n\nDates : les samedis 21, 28 et dimanches 22, 29 novembre.\n\nLe trafic est interrompu entre Les Mureaux <> Mantes la Jolie.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- Les Mureaux <> Mantes la Jolie.\n\nRenforcement de lignes régulières :\n- Bus 7820 entre La défense <> Mantes la Jolie.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261014T131046"
+                },
+                {
+                    "id": "9b8d35f5-89fa-43f3-b6b3-17ecba495252",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Paris St-Lazare <> Mantes via Poissy du 23/11 au 18/12",
+                    "message": "Période : en semaine, à partir de 21h40.\n\nDates : du lundi 23 novembre au vendredi 18 décembre.\n\nLe trafic est interrompu entre Paris Saint-Lazare <> Mantes la Jolie via Poissy.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires, entre :\n- Sartrouville <> Les Mureaux.\n- Sartrouville <> Mantes la Jolie.\n\nRenforcement de lignes régulières :\n- Bus 7820 entre La Défense <> Mantes la Jolie.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Mantes la Jolie via Poissy : 21h47\n- Mantes la Jolie vers Paris Saint-Lazare via Poissy : 21h43\n\nLes horaires du calculateur d’itinéraires tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261020T151047"
+                },
+                {
+                    "id": "e0f9ce9c-2342-40a8-957d-3e3910ab0639",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne J : Conflans Sainte-Honorine <> Pontoise du 23/11 au 04/12",
+                    "message": "Période : en semaine, à partir de 21h55.\n\nDates : du lundi 23 novembre au vendredi 04 décembre.\n\nLe trafic est interrompu entre Conflans Sainte-Honorine <> Pontoise.\n\nUn service de bus de remplacement est mis en place entre Conflans Sainte-Honorine <> Pontoise, avec desserte des gares intermédiaires.\n\nLes derniers trains à circuler normalement :\n- Paris Saint-Lazare vers Pontoise : 21h57\n- Pontoise vers Paris Saint-Lazare : 22h19\n\nLes horaires du calculateur d’itinéraire tiennent compte des travaux.\n\nMotif : travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261021T150550"
+                }
+            ]
+        },
+        "transilien-ligne-p": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "P",
+                "label": "Transilien P",
+                "slug": "transilien/ligne-p"
+            },
+            "disruptions": [
+                {
+                    "id": "dc61d51f-111b-4d81-845b-4cec5703d6d4",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est – Meaux 2/11 au 13/11 et 23/11 au 11/12",
+                    "message": "Période : la semaine à partir de 22h50Dates : du lundi 2 novembre au vendredi 13 novembre et du lundi 23 novembre au vendredi 11 décembre. Le trafic est interrompu entre Paris Est et Meaux. Le dernier train PICI de Meaux vers Paris Est est à 22h20. Le dernier train MICI de Paris Est vers Meaux est à 23h01. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Les horaires du calculateur d’itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261121T130510"
+                },
+                {
+                    "id": "bc018339-d0c3-4827-8485-757668320338",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Coulommiers 9/11 – 11/12",
+                    "message": "Période : la semaine à partir de 22h00\n\nDates : du 9 novembre au 11 décembre.\n\nLe trafic est interrompu entre Paris Est et Coulommiers.\nLe dernier train PITU de Coulommiers vers Paris Est est à 21h38.\nLe dernier train CITU de Paris Est vers Coulommiers est à 22h17.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261117T231002"
+                },
+                {
+                    "id": "22aa556e-1b75-41c1-958c-83c33731ab6b",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Château-Thierry 26/09 - 6/12",
+                    "message": "Période : le week-end à partir de 23h00\n\nDates : du 26 septembre au 6 décembre (sauf les samedis 14 et 21 novembre)\n\nLe trafic est interrompu entre Paris Est et Château-Thierry.\nLe dernier train PIMO de Château-Thierry vers Paris Est est à 22h04.\nLe dernier train ZIMO de Paris Est vers Château-Thierry est à 22h49.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261116T122720"
+                },
+                {
+                    "id": "d33e24bc-e43d-433c-852c-82e1d88218e1",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Provins 7/09 - 11/12",
+                    "message": "Période : en semaine à partir de 21h45\n\nDates : du lundi 7 septembre au vendredi 11 décembre\n\nLe trafic est interrompu entre Paris Est et Provins.\nLe dernier train PIBU de Provins vers Paris Est part à 20h46.\nLe dernier train XIBU de Paris Est vers Provins part à 21h47.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261116T122638"
+                },
+                {
+                    "id": "465bf99d-ec91-4f5a-af00-683903a14987",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Meaux du 26/09 au 6/12",
+                    "message": "Période : les week-ends à partir de 22h50Dates : du samedi 26 septembre au dimanche 6 décembre, sauf les samedis 14 et 21 novembre. Le trafic est interrompu entre Paris Est et Meaux. Le dernier train PICI de Meaux vers Paris Est est à 22h20. Le dernier train MICI de Paris Est vers Meaux est à 23h01. Un service de bus de remplacement est mis en place, avec desserte des gares intermédiaires. Les horaires du calculateur d’itinéraire tiennent compte des travaux. Motif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261121T130441"
+                },
+                {
+                    "id": "89605b9a-c526-4c68-bef5-edce60186e12",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne P : Paris Est - Château-Thierry du 31/08 au 4/12",
+                    "message": "Période : en semaine à partir de 21h30\n\nDates : du lundi 31 août au vendredi 16 octobre et du lundi 26 octobre au vendredi 4 décembre\n\nLe trafic est interrompu entre Paris Est et Château Thierry.\nLe dernier train PIMO de Château-Thierry vers Paris Est est à 21h04.\nLe dernier train ZIMO de Paris Est vers Château-Thierry est à 21h49.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire (travaux de maintenance).",
+                    "shortMessage": "Trafic perturbé",
+                    "lastUpdate": "20261116T122457"
+                }
+            ]
+        },
+        "transilien-ligne-h": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "H",
+                "label": "Transilien H",
+                "slug": "transilien/ligne-h"
+            },
+            "disruptions": [
+                {
+                    "id": "1a1a46e3-2067-4c92-81a5-3e1c388357e6",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne H du 23 au 27 nov,interrompu Sarcelles/Persan/Luzarches",
+                    "message": "Période: à partir de 23h35\n\nDates : Du 23 au 27 nov à partir de 23h35\n\nDu 23 au 27 nov à partir de 23h35, le trafic est interrompu entre Sarcelles - Persan et entre Sarcelles-Luzarches.\n\nUn dispositif de bus de remplacement est mis en place en gare de Sarcelles.\n\nDerniers trains :\n\nParis - Persan via Montsoult : 22h34\n\nPersan via Montsoult -Paris : 22h39\n\nParis - Luzarches : 22h04\n\nLuzarches - Paris : 23h06\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261118T103349"
+                }
+            ]
+        },
+        "transilien-ligne-n": {
+            "line": {
+                "mode": "LocalTrain",
+                "shortName": "N",
+                "label": "Transilien N",
+                "slug": "transilien/ligne-n"
+            },
+            "disruptions": [
+                {
+                    "id": "ba5a5435-086c-4c55-ae1b-0b658a7b84e1",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. -> Rambouillet 16-26/11",
+                    "message": "Période : en semaine de soirée.\n\nDates : du lundi 16 au jeudi 26 novembre sauf le vendredi 20 Novembre.\n\nLe trafic est interrompu de Paris Montparnasse vers Rambouillet.\n\nDernier départ de Paris Montparnasse à destination de Rambouillet: le ROPO de 23h35.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferroviaire.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261013T150314"
+                },
+                {
+                    "id": "8cda0459-ab33-440f-9f80-15737a351be1",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. <-> Vers.Chantiers 29/11, le dimanche.",
+                    "message": "Période : dimanche, jusqu'à 7h00 et à partir de 20h30.\n\nDates : le dimanche 29 novembre.\n\nLe trafic est interrompu entre Paris Montparnasse et Versailles Chantiers.\n\nTrafic interrompu de 04h00 à 7h00, les premiers trains à circuler :\n\nAxe Dreux <-> Paris Montparnasse :\n\nPADO de 7h55 au départ de Dreux\n\nDAPO de 6h58 au départ de Paris Montparnasse\n\nAxe Rambouillet <-> Paris Montparnasse :\n\nPORO de 6h39 au départ de Rambouillet\n\nROPO de 7h20 au départ de Paris Montparnasse\n\nAxe Plaisir-Grignon <-> Paris Montparnasse :\n\nPOGI de 7h26 au départ de Plaisir-Grignon\n\nGOPI de 7h50 au départ de Paris Montparnasse\n\nTrafic interrompu de 20h30 à 02h00, les derniers trains à circuler :\n\nAxe Dreux <-> Paris Montparnasse :\n\nPADO de 18h55 au départ de Dreux\n\nDAPO de 19h58 au départ de Paris Montparnasse\n\nAxe Rambouillet <-> Paris Montparnasse :\n\nPORO de 19h25 au départ de Rambouillet\n\nROPO de 19h35 au départ de Paris Montparnasse\n\nAxe Plaisir-Grignon <-> Paris Montparnasse :\n\nPOGI de 18h52 au départ de Plaisir-Grignon\n\nGOPI de 19h50 au départ de Paris Montparnasse\n\nReport sur les itinéraires alternatifs entre Paris Montparnasse et Versailles Chantiers. Empruntez la ligne B et V ou le métro 9 et le bus 171.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.\n\nMotif : travaux sur le réseau ferré.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261123T094551"
+                },
+                {
+                    "id": "815c7e34-c89c-406d-8958-03d0a1e2b2f7",
+                    "severity": "PERTURBEE",
+                    "cause": "TRAVAUX",
+                    "title": "Ligne N : Paris Montp. -> Mantes-la-Jolie 23-27/11",
+                    "message": "Période : en semaine, de soirée.\n\nDates : du lundi 23 au vendredi 27 novembre.\n\nLe trafic est interrompu de Paris Montparnasse vers Mantes-la-Jolie.\n\nDernier train à circuler au départ de Paris Montparnasse ; MOPI de 20h50. Il sera terminus Plaisir-Grignon puis bus de remplacement jusqu'à Mantes-la-Jolie.\n\nUn service de bus de remplacement est mis en place, avec desserte des gares intermédiaires.\n\nLes horaires du calculateur d'itinéraire tiennent compte des travaux.",
+                    "shortMessage": "Arrêt(s) non desservi(s)",
+                    "lastUpdate": "20261013T151644"
+                }
+            ]
+        }
+    }
+}
